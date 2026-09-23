@@ -573,6 +573,41 @@ ol.refs p{font-size:14.5px}
 @media (max-width:760px){.nav{display:none}}
 @media (prefers-reduced-motion:reduce){.drawer,.drawer-scrim,.menu-btn span{transition:none}}
 
+
+/* ---- v8: fundo animado, legenda do ClinVar ---- */
+#bgfx{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0;pointer-events:none;opacity:0}
+.bg-grid{position:fixed;inset:-64px;z-index:0;pointer-events:none;opacity:0;background-image:linear-gradient(rgba(39,54,90,.55) 1px,transparent 1px),linear-gradient(90deg,rgba(39,54,90,.55) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse at 50% 50%,transparent 35%,#000 95%);mask-image:radial-gradient(ellipse at 50% 50%,transparent 35%,#000 95%);animation:gridDrift 48s linear infinite}
+@keyframes gridDrift{to{transform:translate(64px,64px)}}
+main,footer,.hero{position:relative;z-index:1}
+.cv-key{display:inline-block;width:10px;height:10px;border-radius:50%;vertical-align:-1px;margin:0 2px 0 4px;border:2px solid var(--muted)}
+.cv-key.full{background:var(--muted)}
+@media (prefers-reduced-motion:reduce){.bg-grid{animation:none}}
+
+
+/* ---- v9: quadradinhos e mapa ---- */
+.waffle{grid-template-columns:repeat(25,minmax(0,1fr));gap:4px;cursor:pointer}
+.waffle i{border-radius:3px;background:var(--c);animation:cellWave 5.6s ease-in-out infinite;animation-delay:var(--d,0ms);transition:opacity .25s,transform .25s,box-shadow .25s}
+.waffle i:hover{transform:scale(1.45);box-shadow:0 0 12px var(--c);position:relative;z-index:1}
+@keyframes cellWave{0%,68%,100%{filter:brightness(1)}80%{filter:brightness(1.7) saturate(1.2)}}
+.waffle.dim i{opacity:.14}
+.waffle.dim i.hl{opacity:1;transform:scale(1.12);box-shadow:0 0 10px var(--c)}
+.waffle-info{margin-top:16px;min-height:1.6em;font-size:15px;line-height:1.5;color:var(--muted)}
+.waffle-info b{font-weight:600}
+.hay{position:relative}
+.hay-tag{position:absolute;transform:translate(-50%,-50%);z-index:1;pointer-events:none;white-space:nowrap;font:500 11.5px/1.2 var(--mono);padding:5px 8px;border-radius:6px;background:rgba(6,10,19,.82);border:1px solid var(--line2);color:var(--muted)}
+.hay-tag b{font-weight:600;color:var(--text)}
+.hay-tag.r{border-color:rgba(255,84,112,.55)}
+.hay-tag.r b{color:#FF8A9D}
+.hay-tag.a{border-color:rgba(255,178,63,.55);color:#FFC76E}
+.hay-tag.a b{color:#FFB23F}
+.hay-tag.rem{left:auto!important;right:10px;top:auto!important;bottom:10px;transform:none;display:inline-flex;align-items:center;gap:6px}
+.hay-tag.rem i{width:8px;height:8px;border-radius:50%;background:#FF5470;display:inline-block}
+.leg-ring{background:none!important;border:2px solid var(--amber);width:10px!important;height:10px!important}
+@media (max-width:760px){.hay-tag{font-size:10px;padding:3px 6px}.hay-tag.opt{display:none}}
+@media (max-width:520px){.hay-tag:not(.rem){display:none}.hay-tag.rem{font-size:9.5px}}
+@media (max-width:600px){.waffle{grid-template-columns:repeat(15,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){.waffle i{animation:none}}
+
 /* responsive */
 @media (max-width:980px){
   .hero-in{grid-template-columns:1fr;padding-block:64px 48px}
@@ -610,6 +645,9 @@ ol.refs p{font-size:14.5px}
   *{transition-duration:.01ms!important}
 }
 </style>
+
+<canvas id="bgfx" aria-hidden="true"></canvas>
+<div class="bg-grid" aria-hidden="true"></div>
 </head>
 <body>
 <!-- ================= HUD ================= -->
@@ -718,13 +756,13 @@ ol.refs p{font-size:14.5px}
     <div class="grid2">
       <div class="panel risk" id="risco">
         <div class="panel-title"><h3>Em que idade o câncer costuma aparecer</h3><span class="src">Giacomazzi et al.<a class="cite" href="#ref-5">5</a></span></div>
-        <svg id="riskChart" viewBox="0 0 520 300" role="img" aria-label="Chance acumulada de câncer na SLF: cerca de 50% aos 30 anos e mais de 90% aos 60 anos; picos de diagnóstico antes dos 10 anos e entre 30 e 50 anos."></svg>
+        <svg id="riskChart" viewBox="0 0 520 320" role="img" aria-label="Chance acumulada de câncer na SLF: cerca de 50% aos 30 anos e mais de 90% aos 60 anos; picos de diagnóstico antes dos 10 anos e entre 30 e 50 anos."></svg>
         <p class="note">Faixas vermelhas: os dois picos de diagnóstico (antes dos 10 anos e entre 30 e 50). A linha liga os valores do estudo; entre eles, o traçado é aproximado.</p>
       </div>
       <div class="panel" id="penetrancia">
         <div class="panel-title"><h3>Quantos portadores têm câncer, por sexo</h3><span class="src">Giacomazzi et al.<a class="cite" href="#ref-5">5</a></span></div>
         <div class="pen" id="pen"></div>
-        <p class="note">Os dois sexos herdam a variante igualmente. A taxa maior nas mulheres vem do câncer de mama.</p>
+        <p class="note">Nas mulheres, a taxa é próxima de 100%, mas não exatamente 100%: nem toda portadora terá câncer. Os dois sexos herdam a variante igualmente; a taxa maior nas mulheres vem do câncer de mama.</p>
       </div>
     </div>
 
@@ -1008,7 +1046,7 @@ ol.refs p{font-size:14.5px}
         <div class="panel">
           <div class="panel-title"><h3>Quem avaliou, e quando</h3><span class="src">ClinVar (2026)</span></div>
           <svg id="cvChart" viewBox="0 0 520 330" role="img" aria-label="Linha do tempo das seis avaliações no ClinVar entre 2019 e 2026: cinco patogênicas e uma provavelmente patogênica."></svg>
-          <p class="note">Todas vieram de testes clínicos em portadores.</p>
+          <p class="note">Cada cor é um laboratório. <b class="cv-key full"></b> bolinha cheia: patogênica · <b class="cv-key hollow"></b> bolinha vazada: provavelmente patogênica. Todas vieram de testes clínicos em portadores.</p>
         </div>
       </div>
       <div class="figs" data-figs="clinvar-submissoes,clinvar-condicoes,clinvar-evidencias,clinvar-descricao"></div>
@@ -1031,7 +1069,13 @@ ol.refs p{font-size:14.5px}
           </div>
           <div>
             <div class="hay"><canvas id="hay" aria-label="Campo de pontos representando 1,6 milhão de cópias do gene, com 5 destacadas" role="img"></canvas></div>
-            <div class="hay-leg"><span><i style="background:#2A3A60"></i>cada ponto ≈ 100 cópias do gene</span><span><i style="background:var(--his)"></i>ponto que contém uma cópia com a variante (5)</span></div>
+            <div class="hay-leg">
+              <span><i style="background:#26345A"></i>cada ponto ≈ 100 cópias do gene</span>
+              <span><i style="background:#5A76C0"></i>pontos claros formam o mapa-múndi</span>
+              <span><i style="background:var(--his)"></i>onde a variante apareceu no gnomAD (5 cópias)</span>
+              <span><i class="leg-ring"></i>Sul e Sudeste do Brasil (~0,3%)</span>
+            </div>
+            <p class="note">As marcações vermelhas mostram os grupos de ancestralidade do gnomAD em que a variante apareceu: 3 cópias em <em>Admixed American</em> (Américas), 1 em europeus não finlandeses e 1 sem região definida. São grupos, não países exatos. A linha âmbar indica a origem lusitana/hispânica descrita para a variante (efeito fundador).<a class="cite" href="#ref-10">10</a><a class="cite" href="#ref-20">20</a></p>
           </div>
         </div>
       </div>
@@ -1134,7 +1178,7 @@ ol.refs p{font-size:14.5px}
         <div class="panel">
           <div class="panel-title"><h3>Cada quadrado = 1 tumor registrado</h3><span class="src">150 no total</span></div>
           <div class="waffle" id="waffle" aria-hidden="true"></div>
-          <p class="note">Clique num local da lista para destacar seus quadrados.</p>
+          <p class="waffle-info" id="wInfo" aria-live="polite">Passe o mouse ou toque num quadrado para ver o local do tumor.</p>
         </div>
         <div class="panel">
           <div class="panel-title"><h3>Onde os tumores apareceram</h3><span class="src">TP53 Database</span></div>
@@ -1417,6 +1461,49 @@ addEventListener('scroll',onScroll,{passive:true});onScroll();
   let raf=0;addEventListener('scroll',()=>{if(!open&&raf)return;cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{raf=0;mark();});},{passive:true});mark();
 })();
 
+/* ---------------- fundo animado em todo o site ---------------- */
+(function(){
+  const cv=$('#bgfx'),grid=$('.bg-grid'),hero=$('.hero'),r=mkRenderer(cv);
+  if(!r){grid.style.opacity=.6;return;}
+  r.setPixelRatio(Math.min(devicePixelRatio||1,1.5));
+  const scene=new THREE.Scene();scene.fog=new THREE.Fog(0x060a13,18,48);
+  const cam=new THREE.PerspectiveCamera(40,1,.1,140);cam.position.set(0,0,22);
+  scene.add(new THREE.AmbientLight(0x8899cc,.65));const dl=new THREE.DirectionalLight(0xffffff,.9);dl.position.set(5,8,10);scene.add(dl);
+  const SEG=7,GAP=24,m4=new THREE.Matrix4(),q=new THREE.Quaternion(),up=new THREE.Vector3(0,1,0),col=new THREE.Color();
+  function helix(k){const g=new THREE.Group(),N=30,rise=.52,R=1.9,tw=Math.PI*2/10.5,hot=8+(k*5)%14;
+    const bb=new THREE.InstancedMesh(new THREE.SphereGeometry(.17,10,8),new THREE.MeshStandardMaterial({metalness:.3,roughness:.4,transparent:true,opacity:.6}),N*2);
+    const rung=new THREE.InstancedMesh(new THREE.CylinderGeometry(.06,.06,1,6),new THREE.MeshStandardMaterial({roughness:.5,transparent:true,opacity:.5}),N);
+    const s1=[],s2=[];
+    for(let i=0;i<N;i++){const a=i*tw,y=(i-N/2)*rise,p1=new THREE.Vector3(R*Math.cos(a),y,R*Math.sin(a)),p2=new THREE.Vector3(R*Math.cos(a+Math.PI*.8),y,R*Math.sin(a+Math.PI*.8));s1.push(p1);s2.push(p2);
+      m4.makeTranslation(p1.x,p1.y,p1.z);bb.setMatrixAt(i*2,m4);m4.makeTranslation(p2.x,p2.y,p2.z);bb.setMatrixAt(i*2+1,m4);
+      col.set(i===hot?'#ff5470':'#9fb3e6');bb.setColorAt(i*2,col);bb.setColorAt(i*2+1,col);
+      const d=p2.clone().sub(p1),len=d.length();q.setFromUnitVectors(up,d.normalize());m4.compose(p1.clone().add(p2).multiplyScalar(.5),q,new THREE.Vector3(1,len*.92,1));rung.setMatrixAt(i,m4);
+      col.set(i===hot?'#ff5470':['#3456b8','#5b7fe0','#7d9cf0','#2d4590'][(i*7+k)%4]);rung.setColorAt(i,col);}
+    const tm=new THREE.MeshStandardMaterial({color:0x3a5bb8,transparent:true,opacity:.35,metalness:.4,roughness:.3});
+    g.add(bb,rung,new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(s1),N*5,.045,5),tm),new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(s2),N*5,.045,5),tm));
+    return g;}
+  const hs=[];for(let k=0;k<SEG;k++){const g=helix(k);g.userData={side:k%2?1:-1,y:-k*GAP,z:-4-(k%3)*2.5,tilt:(k%2?.55:-.55),spin:.12+(k%3)*.05};scene.add(g);hs.push(g);}
+  const P=innerWidth<700?700:1400,pg=new THREE.BufferGeometry(),pos=new Float32Array(P*3),span=SEG*GAP+30;
+  for(let i=0;i<P;i++){pos[i*3]=(Math.random()-.5)*56;pos[i*3+1]=12-Math.random()*span;pos[i*3+2]=(Math.random()-.5)*30-6;}
+  pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  const pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0x6d8cff,size:.07,transparent:true,opacity:.6,depthWrite:false}));scene.add(pts);
+  const H=90,hg=new THREE.BufferGeometry(),hp=new Float32Array(H*3);for(let i=0;i<H;i++){hp[i*3]=(Math.random()-.5)*50;hp[i*3+1]=12-Math.random()*span;hp[i*3+2]=(Math.random()-.5)*20-4;}
+  hg.setAttribute('position',new THREE.BufferAttribute(hp,3));const hot=new THREE.Points(hg,new THREE.PointsMaterial({color:0xff5470,size:.11,transparent:true,opacity:.7,depthWrite:false}));scene.add(hot);
+  let mx=0,my=0,camY=0,vis=0,raf=0;const t0=performance.now();
+  addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;},{passive:true});
+  function fade(){const hh=hero?hero.offsetHeight:600;vis=Math.max(0,Math.min(1,(scrollY-hh*.35)/(hh*.55)));cv.style.opacity=(vis*.85).toFixed(3);grid.style.opacity=(vis*.55).toFixed(3);}
+  function frame(){raf=0;fit(r,cam,canvas2size());if(vis<=0||document.hidden)return;const t=(performance.now()-t0)/1000;
+    const halfW=Math.tan(20*Math.PI/180)*26*cam.aspect,xo=Math.max(3,halfW*.8);
+    const prog=scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight);camY+=((-prog*(SEG-1)*GAP)-camY)*(RM?1:.08);
+    cam.position.set(cam.position.x+((mx*1.6)-cam.position.x)*.04,camY+(-my*1.2),22);cam.lookAt(0,camY,0);
+    hs.forEach(g=>{const u=g.userData;g.position.set(u.side*xo,u.y,u.z);g.rotation.set(0,RM?.6:t*u.spin,u.tilt);});
+    pts.rotation.y=RM?0:t*.008;hot.rotation.y=pts.rotation.y;
+    r.render(scene,cam);if(!RM)raf=requestAnimationFrame(frame);}
+  function canvas2size(){return cv;}
+  function kick(){fade();if(!raf&&vis>0)raf=requestAnimationFrame(frame);}
+  addEventListener('scroll',kick,{passive:true});addEventListener('resize',kick);document.addEventListener('visibilitychange',kick);kick();
+})();
+
 /* ---------------- Hero intro ---------------- */
 if(window.gsap&&!RM){
   gsap.from('.hero h1 span',{yPercent:60,opacity:0,duration:1.1,ease:'expo.out',stagger:.08,delay:.15});
@@ -1485,9 +1572,9 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
 })();
 
 /* ---------------- Risk chart ---------------- */
-(function(){const s=$('#riskChart');const L=46,Rr=500,T=20,B=250;const X=a=>L+(a/80)*(Rr-L),Y=p=>B-(p/100)*(B-T);
+(function(){const s=$('#riskChart');const L=46,Rr=500,T=46,B=262;const X=a=>L+(a/80)*(Rr-L),Y=p=>B-(p/100)*(B-T);
   // peak bands
-  [[0,10,'infância'],[30,50,'vida adulta']].forEach(([a,b,t])=>{el('rect',{x:X(a),y:T,width:X(b)-X(a),height:B-T,fill:'rgba(255,84,112,.08)'},s);el('text',{x:(X(a)+X(b))/2,y:T+14,'text-anchor':'middle',class:'lbl',fill:C.his,style:'fill:'+C.his},s,t);});
+  [[0,10,'infância'],[30,50,'vida adulta']].forEach(([a,b,t])=>{el('rect',{x:X(a),y:T,width:X(b)-X(a),height:B-T,fill:'rgba(255,84,112,.08)'},s);el('text',{x:(X(a)+X(b))/2,y:T-12,'text-anchor':'middle',class:'lbl',style:'fill:'+C.his+';font-weight:500'},s,t);});
   [0,25,50,75,100].forEach(p=>{el('line',{x1:L,x2:Rr,y1:Y(p),y2:Y(p),class:'gridl'},s);el('text',{x:L-8,y:Y(p)+4,'text-anchor':'end',class:'lbl'},s,p+'%');});
   [0,10,20,30,40,50,60,70,80].forEach(a=>el('text',{x:X(a),y:B+18,'text-anchor':'middle',class:'lbl'},s,a));
   el('text',{x:(L+Rr)/2,y:B+40,'text-anchor':'middle',class:'lbl'},s,'idade (anos)');
@@ -1498,15 +1585,15 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
   const defs=el('defs',{},s);const lg=el('linearGradient',{id:'rg',x1:0,x2:0,y1:0,y2:1},defs);el('stop',{offset:0,'stop-color':C.arg,'stop-opacity':.35},lg);el('stop',{offset:1,'stop-color':C.arg,'stop-opacity':0},lg);
   const line=el('path',{d,fill:'none',stroke:C.arg,'stroke-width':2.5,'stroke-linecap':'round'},s);
   el('path',{d:'M'+X(60)+' '+Y(91)+' L'+X(80)+' '+Y(96),fill:'none',stroke:C.arg,'stroke-width':2,'stroke-dasharray':'3 5',opacity:.6},s);
-  [[30,50,'≈50% aos 30'],[60,91,'>90% aos 60']].forEach(([a,p,t])=>{el('circle',{cx:X(a),cy:Y(p),r:5.5,fill:C.ink,stroke:C.amber,'stroke-width':2.5},s);el('text',{x:X(a)-10,y:Y(p)-12,'text-anchor':'end',class:'lbl-strong'},s,t);});
+  [[30,50,'≈50% aos 30',-12,-12,'end'],[60,91,'>90% aos 60',12,24,'start']].forEach(([a,p,t,dx,dy,an])=>{el('circle',{cx:X(a),cy:Y(p),r:5.5,fill:C.ink,stroke:C.amber,'stroke-width':2.5},s);el('text',{x:X(a)+dx,y:Y(p)+dy,'text-anchor':an,class:'lbl-strong',style:'paint-order:stroke;stroke:#0B1221;stroke-width:5px;stroke-linejoin:round'},s,t);});
   onSeen(s,()=>{if(RM)return;const len=line.getTotalLength();line.style.strokeDasharray=len;line.animate([{strokeDashoffset:len},{strokeDashoffset:0}],{duration:1600,easing:'cubic-bezier(.3,.7,.2,1)'});area.animate([{opacity:0},{opacity:1}],{duration:1600});});
 })();
 /* penetrance rings */
-(function(){const w=$('#pen');[['Homens',73,C.arg,'≈73%'],['Mulheres',100,C.his,'≈100%']].forEach(([n,v,c,t])=>{
+(function(){const w=$('#pen');[['Homens',73,C.arg,'73%','cerca de'],['Mulheres',97,C.his,'100%','quase']].forEach(([n,v,c,t,pre])=>{
   const f=document.createElement('figure');const s=el('svg',{viewBox:'0 0 150 150'},f);const R=60,circ=2*Math.PI*R;
   el('circle',{cx:75,cy:75,r:R,fill:'none',stroke:C.line2,'stroke-width':12},s);
   const a=el('circle',{cx:75,cy:75,r:R,fill:'none',stroke:c,'stroke-width':12,'stroke-linecap':'round','stroke-dasharray':circ,'stroke-dashoffset':circ*(1-v/100),transform:'rotate(-90 75 75)'},s);
-  el('text',{x:75,y:82,'text-anchor':'middle',style:'font:600 24px var(--display);fill:'+C.text},s,t);
+  el('text',{x:75,y:63,'text-anchor':'middle',style:'font:500 12px var(--mono);fill:'+C.muted},s,pre);el('text',{x:75,y:92,'text-anchor':'middle',style:'font:600 26px var(--display);fill:'+C.text},s,t);
   const fc=document.createElement('figcaption');fc.textContent=n;f.appendChild(fc);w.appendChild(f);
   onSeen(s,()=>{if(!RM)a.animate([{strokeDashoffset:circ},{strokeDashoffset:circ*(1-v/100)}],{duration:1400,easing:'cubic-bezier(.3,.7,.2,1)'});});});})();
 
@@ -1594,10 +1681,10 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
   el('line',{x1:L,x2:Rr,y1:y0,y2:y0,class:'axis'},s);
   for(let y=2019;y<=2027;y++){el('line',{x1:X(y),x2:X(y),y1:y0-4,y2:y0+4,class:'axis'},s);if(y<2027)el('text',{x:X(y),y:y0+20,'text-anchor':'middle',class:'lbl'},s,y);}
   const g=el('g',{},s);
-  subs.forEach(([n,d,c],i)=>{const x=X(t(d)),y=30+i*40;const col=c==='P'?C.his:C.amber;
+  subs.forEach(([n,d,c],i)=>{const x=X(t(d)),y=30+i*40;const col=['#4D7CFF','#FFB23F','#3FC1C9','#A58CFF','#FF5470','#5FD39A'][i];
     const row=el('g',{},g);
     el('line',{x1:x,x2:x,y1:y+6,y2:y0,stroke:col,'stroke-opacity':.35,'stroke-dasharray':'2 3'},row);
-    el('circle',{cx:x,cy:y,r:6,fill:col},row);el('circle',{cx:x,cy:y,r:11,fill:'none',stroke:col,'stroke-opacity':.35},row);
+    el('circle',{cx:x,cy:y,r:6,fill:c==='P'?col:C.ink,stroke:col,'stroke-width':2.5},row);el('circle',{cx:x,cy:y,r:11,fill:'none',stroke:col,'stroke-opacity':.35},row);
     const right=x<300;const [yy,mm]=d.split('-');
     el('text',{x:right?x+18:x-18,y:y-2,'text-anchor':right?'start':'end',class:'lbl-strong'},row,n);
     el('text',{x:right?x+18:x-18,y:y+13,'text-anchor':right?'start':'end',class:'lbl'},row,(c==='P'?'Patogênica':'Provavelmente patogênica')+' · '+mm+'/'+yy);
@@ -1606,22 +1693,47 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
   onSeen(s,()=>{if(RM)return;[...g.children].forEach((row,i)=>row.animate([{opacity:0,transform:'translateY(-10px)'},{opacity:1,transform:'none'}],{duration:600,delay:i*120,easing:'ease-out',fill:'backwards'}));});
 })();
 
-/* ---------------- gnomAD haystack ---------------- */
-(function(){const cv=$('#hay'),ctx=cv.getContext('2d');const TOTAL=16139;let hits=[];let dots=[];
-  function build(){const w=cv.parentElement.clientWidth;const pr=Math.min(devicePixelRatio||1,2);const sp=w<500?3.2:4.2;const cols=Math.floor(w/sp);const rows=Math.ceil(TOTAL/cols);const h=rows*sp;
-    cv.width=w*pr;cv.height=h*pr;cv.style.height=h+'px';ctx.setTransform(pr,0,0,pr,0,0);
-    dots=[];for(let i=0;i<TOTAL;i++)dots.push([(i%cols)*sp+sp/2,Math.floor(i/cols)*sp+sp/2]);
-    const seedIdx=[2311,5120,8804,11999,14650];hits=seedIdx.map(i=>dots[i]);return{sp,w,h};}
-  let geo=build();
-  function draw(sweep,t){const {sp,w,h}=geo;ctx.clearRect(0,0,w,h);const rr=sp*.28;ctx.fillStyle='#2A3A60';
-    for(let i=0;i<dots.length;i++){const d=dots[i];if(sweep<1&&d[0]>sweep*w)continue;ctx.fillRect(d[0]-rr,d[1]-rr,rr*2,rr*2);}
-    hits.forEach((d,i)=>{if(sweep<1&&d[0]>sweep*w)return;const p=RM?0:(Math.sin(t*2.6+i)+1)/2;ctx.beginPath();ctx.arc(d[0],d[1],sp*.9,0,7);ctx.fillStyle=C.his;ctx.fill();
-      ctx.beginPath();ctx.arc(d[0],d[1],sp*(2.2+p*2.2),0,7);ctx.strokeStyle='rgba(255,84,112,'+(0.75-p*.5)+')';ctx.lineWidth=1.4;ctx.stroke();});}
-  draw(1,0);
-  let start=0,running=false;
-  function frame(now){const t=now/1000;const sw=start?Math.min(1,(now-start)/1800):1;draw(sw,t);if(running)requestAnimationFrame(frame);}
-  if(!RM){const io=new IntersectionObserver(es=>{const vis=es[0].isIntersecting;if(vis&&!start)start=performance.now();if(vis&&!running){running=true;requestAnimationFrame(frame);}if(!vis)running=false;},{threshold:.15});io.observe(cv);}
-  addEventListener('resize',()=>{geo=build();draw(1,performance.now()/1000);});
+/* ---------------- gnomAD: palheiro sobre o mapa-múndi ---------------- */
+(function(){const cv=$('#hay'),ctx=cv.getContext('2d'),wrap=cv.parentElement,TOTAL=16139,LAT0=84,LATS=142;
+  const MB=atob('AAAAAAAAAAAAAAAAAAAAAAAH/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADf//8AAf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB////D//////n/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gf/x////////wAAAAAbgAAB4AAAAAAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAf//8A///////+AAAAB/ngAAAAAAAAAAH8AAAAAAAAAAAAAAAAAAAAAAAAcH3Hv/5////////8AAAAA/gAAAAAAAAAAAAD4AAAAAAAAAAAAAAAAAAAAAAcIAAQP/AH///////+AAAAAPCAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAADwDAc+f+AP///////4AAAAAAAAAAAAAB4AAAAB/8AAAAAAAAAAAAAAAAAAAAAH9wc374AAAf/////8AAAAAAAAAAAAH4AAAA////AAAB/gAAAAAAAAAAAAAAAAwAAA/QAAAH/////8AAAAAAAAAAAAOAAAAP///wAAAAAAAAAAAAAAAAAAAAP8AYe+c3AAAD/////4AAAAAAAAAAAA4AAAH////++HgAOAAAAAAAAAAAAAAAfv+4+w/4gAAB/////wAAAAAAAAAAADwAHgH///////4AfgAAAAAgAAAAAAAAPf/4O4//9AAB/////wAAAAAAAAAAADwAPb////////4m//gAAAAAAAf+AAAAAA/+A8f//4AB////8gAAAAAAA/gAAAAAfv/////////////8AAAAAB///+H//H/+PeDwf+AA3////AAAAAAA//4AAAA8fv///////////////P8gAf////////A4CPz4H8AAP///wAAAAAAD///wADH/n3/////////////////8AD////////////34Z/wA///4AAAAAAAP///+M////n/////////////////+4E/////////////gD/8Af//gAAAAAAAf//5+P////f/////////////////fw/////////////6AD8YAf/wAAf8AAAA/8f+D///////////////////////AgEf///////////zw7/AAP/gAAP4AAAB/4/+f//////////////////////8AMAf//////////+DIA/gAH/gAAAAAAAH/z/////////////////////////+AAH///////////8AwgOAAD+AAAAAAAA//H/////////////////////////6AAP///////////wAA/AAAB+AAAAAAAB/+H//////////////////////nP+AAAH//z////////wAA/wAAAOAAAAAAAB//D/////////////////////+A/4AAAA/zAD///////gAA/4wAAAAAAAAAAB//Ab///////////////////+eDgAAAAABwAA///////4AA/94AAAAAAAAAYA5+A///////////////////4AAHAAAAAADcAAD//////4AAf/8AAAAAAAAA8AC+C///////////////////wAAfgAAAAAMAAAA///////wAf/8AAAAAAAAA4AO8H///////////////////AAA/gAAAABgAAAA///////8A///AAAAAAAAA8ANwH//////////////////8AAB/AAAAAEAAAAAf///////z///4AAAAAAAHOAEDv//////////////////+AAA+AAAAAAAAAABH///////x///8AAAAAAAHHAf/////////////////////6AA8AAAAAAAAAAAD///////x///8AAAAAAAGPz//////////////////////6AAwAAAAAAAAAAAD///////9///6AAAAAAAAPj//////////////////////6AAQAAAAAAAAAAAC///////////EAAAAAAAAYf//////////////////////7AAAAAAAAAAAAAABv////////+MNAAAAAAAAD///////////////////////zAAAAAAAAAAAAAAAH////////7gfgAAAAAAAf///////////////////////yAAAAAAAAAAAAAAAL/////////gCgAAAAAAAH///////////////////////iAAAAAAAAAAAAAAAP/////////pAAAAAAAAAD/////uP/x//////////////DAAAAAAAAAAAAAAAP/////////+AAAAAAAAAB//v//Gf/B/////////////+AAAAAAAAAAAAAAAAP////////8wAAAAAAAAAB//H/+AP+P/////////////8CAAAAAAAAAAAAAAAP////////wAAAAAAAAADj/jz/8AD/H/////////////4HgAAAAAAAAAAAAAAP////////gAAAAAAAAAH/4Bw/8AA/B////////////+APAAAAAAAAAAAAAAAP////////gAAAAAAAAAH/wA8f8Ph/g////////////8AAAAAAAAAAAAAAAAAP///////8AAAAAAAAAAH/gMHfJ///x///////////v4AMAAAAAAAAAAAAAAAP///////8AAAAAAAAAAH/AMCOP///h//////////+JwAMAAAAAAAAAAAAAAAH///////4AAAAAAAAAAH/AAAHH///g//////////8BwAIAAAAAAAAAAAAAAAH///////wAAAAAAAAAAH+AAYGH///w//////////+w4A4AAAAAAAAAAAAAAAD///////wAAAAAAAAAAAgf+ACBs//////////////g4D4AAAAAAAAAAAAAAAB///////wAAAAAAAAAAAj/+AAAA//////////////AYf4AAAAAAAAAAAAAAAA///////gAAAAAAAAAAB//8AAAA//////////////Ah2AAAAAAAAAAAAAAAAAP/////+AAAAAAAAAAAD//+AAAB//////////////gDwAAAAAAAAAAAAAAAAAH/////8AAAAAAAAAAAH///4GAB//////////////gDAAAAAAAAAAAAAAAAAAG/////4AAAAAAAAAAAP///8P4h//////////////wCAAAAAAAAAAAAAAAAAACf////4AAAAAAAAAAAP////v////////////////gAAAAAAAAAAAAAAAAAAABP//hgYAAAAAAAAAAAP//////3//P///////////wAAAAAAAAAAAAAAAAAAAAv//AAYAAAAAAAAAAAf//////9//H///////////wAAAAAAAAAAAAAAAAAAAB3/+AAcAAAAAAAAAAB///////4//h///////////gAAAAAAAAAAAAAAAAAAAAR/+AANAAAAAAAAAAD///////8//wH//////////AAAAAAAAAAAAAAAAAAAAAJ/+AAEAAAAAAAAAAH///////+f/0B/////////+AAAAAAAAAAAAAAAAAAAAAI/8AAAAAAAAAAAAAH///////+f/44Af///////+QAAAAAAAAAAAAAAAAAAAAAf8AAAAAAAAAAAAAP////////H//+AP///////4gAAAAAAAAAAAAAAAAAAAAAP8AAuAAAAAAAAAAP////////H///AD///v///ggAAAAAAAAAAAAAAAAAAAAAH+AABgAAAAAAAAAf////////n//+AD//4P//YAAAAAAAAAAAAAAAAAAAAAAAP+A4AYAAAAAAAAAP////////j//+AAf/4H/+AAAAAAAAAAAAAAAAgAAAAAAAH/B4ABwAAAAAAAAP////////h//8AAf/gD/8YAAAAAAAAAAAAAAAAAAAAAAAD/nwAD9AAAAAAAAP////////x//4AAf/AD/8QAAAAAAAAAAAAAAAAAAAAAAAAf/wAAAAAAAAAAAP////////4//gAAf+AD/+AAwAAAAAAAAAAAAAAAAAAAAAAH/wAAAAAAAAAAAf////////4f+AAAf8AD//AAwAAAAAAAAAAAAAAAAAAAAAAAH/AAAAAAAAAAAf////////8f8AAAPwAAP/gAwAAAAAAAAAAAAAAAAAAAAAAAD/gAAAAAAAAAAf////////+fgAAAPwAAP/gAwAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAf/////////eAAAAHwAAP/gAMAAAAAAAAAAAAAAAAAAAAAAAAHgAAAAAAAAAAf/////////gAAAAHwAAM/gACAAAAAAAAAAAAAAAAAAAAAAAADABAAAAAAAAAP/////////gYAAADwAAEfgAJAAAAAAAAAAAAAAAAAAAAAAAADgPfOAAAAAAAH/////////34AAADwAAIOABAAAAAAAAAAAAAAAAAAAAAAAAAAyPf+AAAAAAAD//////////4AAADoAAIEACBAAAAAAAAAAAAAAAAAAAAAAAAA8///AAAAAAAB//////////wAAABIAAMAAAFAAAAAAAAAAAAAAAAAAAAAAAAAE///gAAAAAAB//////////wAAAAMAAEAAALgAAAAAAAAAAAAAAAAAAAAAAAAAf//wAAAAAAAf/////////gAAAAMAADAAMCAAAAAAAAAAAAAAAAAAAAAAAAAA////gAAAAAAP/B///////gAAAAAAADgAOAAAAAAAAAAAAAAAAAAAAAAAAAAAf///wAAAAAACAA///////AAAAAAAAxgA+AAAAAAAAAAAAAAAAAAAAAAAAAAAf///4AAAAAAAAAD/////+AAAAAAAAZgB4AAAAAAAAAAAAAAAAAAAAAAAAAAB////4AAAAAAAAAD/////8AAAAAAAAMwH8AAAAAAAAAAAAAAAAAAAAAAAAAAB////8AAAAAAAAAH/////4AAAAAAAAHQf8AIAAAAAAAAAAAAAAAAAAAAAAAAD////8AAAAAAAAAH/////gAAAAAAAAHgf88IAAAAAAAAAAAAAAAAAAAAAAAAD////+AAAAAAAAAH/////AAAAAAAAADwf8AAgAAAAAAAAAAAAAAAAAAAAAAAH/////4AAAAAAAAH/////AAAAAAAAABwP5wBwAAAAAAAAAAAAAAAAAAAAAAAH/////6AAAAAAAAD////+AAAAAAAAAB8P5wATwAAAAAAAAAAAAAAAAAAAAAAD//////4AAAAAAAB////8AAAAAAAAAA8AxQif+AAAAAAAAAAAAAAAAAAAAAAH//////8AAAAAAAB////4AAAAAAAAAAcAAIAD/gAAAAAAAAAAAAAAAAAAAAAH///////gAAAAAAA////4AAAAAAAAAAMAAIAI/ywAAAAAAAAAAAAAAAAAAAAH///////gAAAAAAA////4AAAAAAAAAADgAAAI/8BAAAAAAAAAAAAAAAAAAAAD///////gAAAAAAAf///4AAAAAAAAAAB+AAAA/4AIAAAAAAAAAAAAAAAAAAAB///////gAAAAAAAf///4AAAAAAAAAAAAmogAOMAAAAAAAAAAAAAAAAAAAAAB///////AAAAAAAAf///8AAAAAAAAAAAABCAAAGADAAAAAAAAAAAAAAAAAAAA///////AAAAAAAAf///8AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAf/////+AAAAAAAAP///8AAAAAAAAAAAAAAAgCAAAAAAAAAAAAAAAAAAAAAAAf/////8AAAAAAAAf///+AQAAAAAAAAAAAAB+CAAAAAAAAAAAAAAAAAAAAAAAP/////4AAAAAAAAf///+AQAAAAAAAAAAAAD8DAAAAAAAAAAAAAAAAAAAAAAAP/////4AAAAAAAA////+AwAAAAAAAAAAAA38DgAAAAAAAAAAAAAAAAAAAAAAH/////4AAAAAAAA////8BwAAAAAAAAAAAD/8DgAAAAAAAAAAAAAAAAAAAAAAB/////4AAAAAAAA////8PwAAAAAAAAAAAD//HwAABABAAAAAAAAAAAAAAAAAAf////4AAAAAAAA////wPgAAAAAAAAAAAP//3wAAAACAAAAAAAAAAAAAAAAAAP////wAAAAAAAA////APgAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAP////wAAAAAAAAf//+APgAAAAAAAAAAAf///4AAAAAAAAAAAAAAAAAAAAAAAP////wAAAAAAAAf//+APgAAAAAAAAAAD////+AAIAAAAAAAAAAAAAAAAAAAAP////gAAAAAAAAP//+AfAAAAAAAAAAAf////+AAEAAAAAAAAAAAAAAAAAAAAP////AAAAAAAAAP///AfAAAAAAAAAAA//////AAAAAAAAAAAAAAAAAAAAAAAP///4AAAAAAAAAP//+APAAAAAAAAAAA//////gAAAAAAAAAAAAAAAAAAAAAAf///gAAAAAAAAAH//+AOAAAAAAAAAAB//////wAAAAAAAAAAAAAAAAAAAAAAf///AAAAAAAAAAH//4AEAAAAAAAAAAA//////4AAAAAAAAAAAAAAAAAAAAAAf//+AAAAAAAAAAH//4AAAAAAAAAAAAB//////4AAAAAAAAAAAAAAAAAAAAAAf//+AAAAAAAAAAH//4AAAAAAAAAAAAA//////4AAAAAAAAAAAAAAAAAAAAAAf//+AAAAAAAAAAD//wAAAAAAAAAAAAAf/////8AAAAAAAAAAAAAAAAAAAAAAf//8AAAAAAAAAAB//gAAAAAAAAAAAAAf/////4AAAAAAAAAAAAAAAAAAAAAA///8AAAAAAAAAAB//gAAAAAAAAAAAAAf/////4AAAAAAAAAAAAAAAAAAAAAA///4AAAAAAAAAAA//AAAAAAAAAAAAAAP/////4AAAAAAAAAAAAAAAAAAAAAAf//wAAAAAAAAAAA/+AAAAAAAAAAAAAAP/AP//wAAAAAAAAAAAAAAAAAAAAAA///gAAAAAAAAAAA/4AAAAAAAAAAAAAAf8AG//gAAAAAAAAAAAAAAAAAAAAAA//3AAAAAAAAAAAAYAAAAAAAAAAAAAAAOAAF//gAAAAAAAAAAAAAAAAAAAAAB//4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//AAABAAAAAAAAAAAAAAAAAAB//4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/AAAAgAAAAAAAAAAAAAAAAAD//4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/AAAAQAAAAAAAAAAAAAAAAAB//gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYAAAAcAAAAAAAAAAAAAAAAAB/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAD/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAD/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAADQAAAAAAAAAAAAAAAAAD/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAHAAAAAAAAAAAAAAAAAAB/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAOAAAAAAAAAAAAAAAAAAD/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAH+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAAAAAH+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');const land=(lon,lat)=>{const r=Math.floor(LAT0-lat),c=Math.floor(lon+180);if(r<0||r>=LATS||c<0||c>=360)return 0;const i=r*360+c;return (MB.charCodeAt(i>>3)>>(7-(i&7)))&1;};
+  // grupos do gnomAD com a variante: 3 Admixed American (Américas) + 1 europeu não finlandês; o 5º ("Remaining") não tem região
+  const HITS=[[-80,6],[-68,-6],[-58,2],[10,49]],BR=[-47,-22],IB=[-6,40];
+  const TAGS=[{k:'am',ll:[-128,-4],html:'<b>Admixed American</b> · 3 cópias',cls:'r'},{k:'eu',ll:[14,68],html:'<b>Europeu (não finlandês)</b> · 1 cópia',cls:'r'},
+    {k:'br',ll:[-66,-45],html:'<b>Sul e Sudeste do Brasil</b> · ~0,3%',cls:'a'},{k:'arc',ll:[-50,34],html:'origem lusitana/hispânica',cls:'a opt'}];
+  const tagEls=TAGS.map(t=>{const e=document.createElement('span');e.className='hay-tag '+t.cls;e.innerHTML=t.html;wrap.appendChild(e);return e;});
+  let g,dots,hits,pings=[0,0,0,0],prevScan=0,t0=performance.now();
+  function build(){const w=wrap.clientWidth,pr=Math.min(devicePixelRatio||1,2),sp=w/Math.sqrt(2.54*TOTAL),cols=Math.floor(w/sp),rows=Math.ceil(TOTAL/cols),h=rows*sp;
+    cv.width=Math.round(w*pr);cv.height=Math.round(h*pr);cv.style.height=h+'px';ctx.setTransform(pr,0,0,pr,0,0);
+    const P=(lon,lat)=>[(lon+180)/360*w,(LAT0-lat)/LATS*h];
+    dots=new Float32Array(TOTAL*3);for(let i=0;i<TOTAL;i++){const x=(i%cols)*sp+sp/2,y=Math.floor(i/cols)*sp+sp/2;dots[i*3]=x;dots[i*3+1]=y;dots[i*3+2]=land(x/w*360-180,LAT0-y/h*LATS);}
+    const snap=([x,y])=>[Math.floor(x/sp)*sp+sp/2,Math.floor(y/sp)*sp+sp/2];
+    hits=HITS.map(p=>snap(P(...p)));g={w,h,sp,br:P(...BR),ib:P(...IB)};
+    TAGS.forEach((t,i)=>{const [x,y]=P(...t.ll);tagEls[i].style.left=(x/w*100)+'%';tagEls[i].style.top=(y/h*100)+'%';});}
+  function draw(now){const {w,h,sp}=g,t=(now-t0)/1000,rr=Math.max(.5,sp*.28);ctx.clearRect(0,0,w,h);
+    const reveal=RM?w:Math.min(1,t/1.8)*w, scan=RM?-999:((t*.12)%1.3)*w-.15*w;
+    // oceano, depois continentes, depois a faixa da "busca"
+    for(let pass=0;pass<3;pass++){ctx.fillStyle=pass===0?'#1C2748':pass===1?'#4B66B0':'#A9C0FF';
+      for(let i=0;i<TOTAL;i++){const x=dots[i*3];if(x>reveal)continue;const L=dots[i*3+2];
+        if(pass===0&&L)continue;if(pass===1&&!L)continue;if(pass===2){const d=scan-x;if(!(d>0&&d<(L?46:18)))continue;}
+        const y=dots[i*3+1];ctx.fillRect(x-rr,y-rr,rr*2,rr*2);}}
+    if(!RM&&scan>-50){const gr=ctx.createLinearGradient(scan-60,0,scan,0);gr.addColorStop(0,'rgba(109,140,255,0)');gr.addColorStop(1,'rgba(109,140,255,.22)');ctx.fillStyle=gr;ctx.fillRect(scan-60,0,60,h);
+      ctx.fillStyle='rgba(169,192,255,.55)';ctx.fillRect(scan,0,1,h);}
+    // Brasil (âmbar) e arco da origem lusitana/hispânica
+    if(reveal>=g.br[0]){const [bx,by]=g.br,p=RM?.5:(Math.sin(t*1.8)+1)/2,R=sp*(5+p*3);
+      const rg=ctx.createRadialGradient(bx,by,0,bx,by,R*2.4);rg.addColorStop(0,'rgba(255,178,63,.35)');rg.addColorStop(1,'rgba(255,178,63,0)');ctx.fillStyle=rg;ctx.beginPath();ctx.arc(bx,by,R*2.4,0,7);ctx.fill();
+      ctx.beginPath();ctx.arc(bx,by,R,0,7);ctx.strokeStyle='rgba(255,178,63,.9)';ctx.lineWidth=1.6;ctx.stroke();
+      const [ix,iy]=g.ib;ctx.save();ctx.setLineDash([5,5]);ctx.lineDashOffset=RM?0:-t*18;ctx.strokeStyle='rgba(255,178,63,.8)';ctx.lineWidth=1.4;ctx.beginPath();ctx.moveTo(ix,iy);
+      ctx.quadraticCurveTo((ix+bx)/2-w*.07,Math.min(iy,by)-h*.02,bx,by);ctx.stroke();ctx.restore();ctx.fillStyle='#FFB23F';ctx.beginPath();ctx.arc(ix,iy,Math.max(2,sp*.7),0,7);ctx.fill();}
+    // as "agulhas": cópias com a variante; a faixa de busca faz cada uma "piscar" ao passar
+    hits.forEach(([x,y],i)=>{if(x>reveal)return;if(!RM&&prevScan<x&&scan>=x)pings[i]=t;
+      const p=RM?0:(Math.sin(t*2.6+i)+1)/2;ctx.beginPath();ctx.arc(x,y,Math.max(2.2,sp*.95),0,7);ctx.fillStyle='#FF5470';ctx.fill();
+      ctx.beginPath();ctx.arc(x,y,sp*(2.2+p*2),0,7);ctx.strokeStyle='rgba(255,84,112,'+(.75-p*.5)+')';ctx.lineWidth=1.4;ctx.stroke();
+      const e=t-pings[i];if(pings[i]&&e<1.4){ctx.beginPath();ctx.arc(x,y,sp*(3+e*16),0,7);ctx.strokeStyle='rgba(255,84,112,'+(1-e/1.4)*.8+')';ctx.lineWidth=2;ctx.stroke();}});
+    prevScan=scan;}
+  build();draw(t0+2000);
+  let running=false;function frame(now){if(!running)return;draw(now);requestAnimationFrame(frame);}
+  if(!RM){new IntersectionObserver(es=>{const v=es[0].isIntersecting;if(v&&!running){running=true;t0=performance.now();requestAnimationFrame(frame);}if(!v)running=false;},{threshold:.15}).observe(cv);}
+  addEventListener('resize',()=>{build();draw(performance.now());});
 })();
 /* ancestry + brazil bars */
 (function(){const A=[['Admixed American',3,59966],['Outros (“Remaining”)',1,62486],['Europeu (não finlandês)',1,1179976],['Todos os demais grupos',0,311430]];
@@ -1660,16 +1772,23 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
 /* ---------------- TP53 Database ---------------- */
 (function(){const S=[['Glândula adrenal',92,C.arg],['Mama',21,C.his],['Cérebro',16,C.amber],['Tecidos moles',5,'#8A7CFF'],['Rim',2,'#3FC1C9'],['Tireoide',2,'#5FD39A'],['Pulmão',2,'#C57BFF'],['Estômago',2,'#E88D5A'],
   ['Coração/mediastino/pleura',1,'#7A8BB0'],['Pele',1,'#7A8BB0'],['Peritônio',1,'#7A8BB0'],['Ossos – outros',1,'#7A8BB0'],['Sistema hematopoiético',1,'#7A8BB0'],['Glândula parótida',1,'#7A8BB0'],['Colo uterino',1,'#7A8BB0'],['Outros órgãos genitais femininos',1,'#7A8BB0']];
-  const wf=$('#waffle'),list=$('#sites');const cells=[];
-  S.forEach((s,si)=>{for(let k=0;k<s[1];k++){const i=document.createElement('i');i.style.background=s[2];i.dataset.s=si;wf.appendChild(i);cells.push(i);}});
-  let sel=null;const fills=[];
+  const wf=$('#waffle'),list=$('#sites'),info=$('#wInfo'),DEF=info.innerHTML,cells=[],btns=[],fills=[];let sel=null;
+  S.forEach((s,si)=>{for(let k=0;k<s[1];k++){const i=document.createElement('i');i.style.setProperty('--c',s[2]);i.dataset.s=si;wf.appendChild(i);cells.push(i);}});
+  function waves(){const n=getComputedStyle(wf).gridTemplateColumns.split(' ').length||25;cells.forEach((c,i)=>c.style.setProperty('--d',((i%n)+Math.floor(i/n))*90+'ms'));}
+  waves();addEventListener('resize',waves);
+  const txt=si=>{const s=S[si];return '<b style="color:'+s[2]+'">'+s[0]+'</b> · '+s[1]+(s[1]>1?' registros':' registro')+' ('+fmt(s[1]/150*100,2)+'%)';};
+  function paint(si){wf.classList.toggle('dim',si!==null);cells.forEach(c=>c.classList.toggle('hl',si!==null&&+c.dataset.s===si));info.innerHTML=si===null?DEF:txt(si);}
+  function choose(si){sel=sel===si?null:si;btns.forEach((x,j)=>x.classList.toggle('on',j===sel));paint(sel);
+    if(sel!==null&&!RM)cells.filter(c=>+c.dataset.s===sel).forEach((c,k)=>c.animate([{transform:'scale(1)'},{transform:'scale(1.6)'},{transform:'scale(1.12)'}],{duration:520,delay:k*10,easing:'cubic-bezier(.3,1.6,.5,1)'}));}
   S.forEach((s,si)=>{const b=document.createElement('button');b.className='site';b.type='button';const p=s[1]/150*100;
     b.innerHTML='<span class="sw" style="background:'+s[2]+'"></span><span>'+s[0]+'</span><span class="tr"><span class="fl" style="width:'+(s[1]/92*100)+'%;background:'+s[2]+'"></span></span><span class="v tnum">'+s[1]+' <small>'+fmt(p,2)+'%</small></span>';
-    b.addEventListener('click',()=>{sel=sel===si?null:si;$$('.site').forEach((x,j)=>x.classList.toggle('on',j===sel));wf.classList.toggle('dim',sel!==null);cells.forEach(c=>c.classList.toggle('hl',+c.dataset.s===sel));});
-    b.addEventListener('mouseenter',()=>{if(sel!==null)return;wf.classList.add('dim');cells.forEach(c=>c.classList.toggle('hl',+c.dataset.s===si));});
-    b.addEventListener('mouseleave',()=>{if(sel!==null)return;wf.classList.remove('dim');cells.forEach(c=>c.classList.remove('hl'));});
-    list.appendChild(b);fills.push(b.querySelector('.fl'));});
-  onSeen(wf,()=>{if(RM)return;cells.forEach((c,i)=>c.animate([{transform:'scale(0)',opacity:0},{transform:'scale(1)',opacity:1}],{duration:380,delay:i*9,easing:'cubic-bezier(.3,1.5,.5,1)',fill:'backwards'}));grow(fills,200);});
+    b.addEventListener('click',()=>choose(si));b.addEventListener('mouseenter',()=>{if(sel===null)paint(si);});b.addEventListener('mouseleave',()=>{if(sel===null)paint(null);});
+    list.appendChild(b);btns.push(b);fills.push(b.querySelector('.fl'));});
+  wf.addEventListener('pointerover',e=>{const c=e.target.closest('i');if(c&&sel===null)paint(+c.dataset.s);});
+  wf.addEventListener('pointerleave',()=>{if(sel===null)paint(null);});
+  wf.addEventListener('click',e=>{const c=e.target.closest('i');if(c)choose(+c.dataset.s);});
+  onSeen(wf,()=>{if(RM)return;cells.forEach((c,i)=>{const an=Math.random()*Math.PI*2,r=40+Math.random()*70;
+    c.animate([{transform:'translate('+(Math.cos(an)*r).toFixed(1)+'px,'+(Math.sin(an)*r).toFixed(1)+'px) scale(.2) rotate('+(Math.random()*180-90).toFixed(0)+'deg)',opacity:0},{transform:'none',opacity:1}],{duration:900,delay:i*7,easing:'cubic-bezier(.2,1.3,.4,1)',fill:'backwards'});});grow(fills,200);});
 })();
 
 /* ---------------- Integration ---------------- */
