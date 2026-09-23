@@ -9,8 +9,8 @@ Sistema visual e interativo que reúne as evidências sobre a variante **TP53 R3
 - **Resumo em 1 minuto:** a história da pesquisa em quatro passos.
 - **Síndrome, mutação e proteína:** o que é a Síndrome de Li-Fraumeni, como uma letra trocada no DNA muda a proteína p53 e onde a R337H fica na estrutura.
 - **Laboratório 3D:** as imagens reais do DynaMut2 (p53 normal × R337H) e um modelo 3D ilustrativo do tetrâmero da p53.
-- **Lacuna científica, método e resultados:** ClinVar, gnomAD, DynaMut2 e TP53 Database, com gráficos interativos.
-- **Discussão, conclusão, galeria de imagens, glossário e referências** (estilo Vancouver).
+- **Método e resultados:** ClinVar, gnomAD, DynaMut2 e TP53 Database, com gráficos interativos.
+- **Discussão, conclusão, galeria de imagens, glossário, lacuna científica e referências** (estilo Vancouver).
 
 ## Estrutura
 
