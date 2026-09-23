@@ -303,7 +303,7 @@ ol.refs p{font-size:13.5px;line-height:1.55;color:#D7DEEB}
 ol.refs .t{color:var(--text);font-weight:500}
 ol.refs a.pm{display:inline-block;margin-top:8px;font:500 11.5px/1 var(--mono);color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line2);padding-bottom:3px}
 ol.refs a.pm:hover{color:var(--text)}
-.datasrc{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:28px}
+.datasrc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:28px}
 .datasrc a{display:block;text-decoration:none;padding:16px;border-radius:12px;border:1px solid var(--line);background:var(--panel)}
 .datasrc a:hover{border-color:var(--line2)}
 .datasrc b{display:block;font:600 14px/1.3 var(--display)}
@@ -925,7 +925,6 @@ ol.refs p{font-size:14.5px}
 
     <div class="ev-tabs" id="evTabs">
       <a href="#ev-clinvar"><b>1</b>ClinVar</a>
-      <a href="#ev-clingen"><b>+</b>ClinGen</a>
       <a href="#ev-gnomad"><b>2</b>gnomAD</a>
       <a href="#ev-dynamut"><b>3</b>DynaMut2</a>
       <a href="#ev-tp53db"><b>4</b>TP53 Database</a>
@@ -960,39 +959,6 @@ ol.refs p{font-size:14.5px}
         </div>
       </div>
       <div class="figs" data-figs="clinvar-submissoes,clinvar-condicoes,clinvar-evidencias,clinvar-descricao"></div>
-    </article>
-
-    <!-- ClinGen -->
-    <article class="ev" id="ev-clingen">
-      <div class="ev-head">
-        <div><p class="what">Evidência complementar · o gene TP53 está comprovadamente ligado à síndrome?</p><p class="tool">ClinGen</p></div>
-        <span class="verdict red">Resposta: sim, ligação definitiva</span>
-      </div>
-      <p class="ev-plain">Aqui, especialistas avaliam se um <strong>gene</strong> causa uma doença (o ClinVar avalia a <strong>variante</strong>). A ligação TP53 × Li-Fraumeni recebeu o nível máximo: <strong>Definitiva</strong>.</p>
-      <div class="grid2">
-        <div class="panel">
-          <div class="panel-title"><h3>Ficha da curadoria</h3><span class="src">ClinGen · CCID:006419</span></div>
-          <dl class="kv">
-            <dt>Gene</dt><dd>TP53 · HGNC:11998</dd>
-            <dt>Doença</dt><dd>Síndrome de Li-Fraumeni · MONDO:0018875</dd>
-            <dt>Classificação</dt><dd style="color:var(--his)">Definitiva</dd>
-            <dt>Data da classificação</dt><dd>22/03/2024</dd>
-            <dt>Modo de herança</dt><dd>Autossômica dominante</dd>
-            <dt>Painel de especialistas</dt><dd>Câncer Hereditário</dd>
-            <dt>Evidências contraditórias</dt><dd>Não</dd>
-            <dt>Confirmada ao longo do tempo</dt><dd>Sim</dd>
-            <dt>Pontuação</dt><dd>genética 12,00 · experimental 6,00</dd>
-          </dl>
-        </div>
-        <div class="panel">
-          <div class="panel-title"><h3>Onde essa classificação fica na escala</h3><span class="src">escala do ClinGen</span></div>
-          <ol class="cg-scale" aria-label="Escala de validade gene-doença do ClinGen">
-            <li>Sem evidência</li><li>Limitada</li><li>Moderada</li><li>Forte</li><li class="on">Definitiva</li>
-          </ol>
-          <p class="scale-read">“Definitiva” é o nível mais alto: a ligação foi confirmada várias vezes e nunca contestada.</p>
-        </div>
-      </div>
-      <div class="figs" data-figs="clingen-validade"></div>
     </article>
 
     <!-- gnomAD -->
@@ -1214,7 +1180,6 @@ ol.refs p{font-size:14.5px}
     <p class="eyebrow" style="margin-top:44px">Bancos de dados consultados</p>
     <div class="datasrc">
       <a href="https://www.ncbi.nlm.nih.gov/clinvar/variation/12379/" target="_blank" rel="noopener"><b>ClinVar ↗</b><span>NCBI · Variation ID 12379<br>acesso 30/08/2026</span></a>
-      <a href="https://search.clinicalgenome.org/CCID:006419" target="_blank" rel="noopener"><b>ClinGen ↗</b><span>Validade gene–doença · CCID:006419<br>evidência complementar</span></a>
       <a href="https://gnomad.broadinstitute.org/variant/17-7670699-C-T?dataset=gnomad_r4" target="_blank" rel="noopener"><b>gnomAD v4.1.1 ↗</b><span>Broad Institute · 17-7670699-C-T<br>acesso 05/09/2026</span></a>
       <a href="https://biosig.lab.uq.edu.au/dynamut2/" target="_blank" rel="noopener"><b>DynaMut2 ↗</b><span>Biosig Lab · estabilidade de proteínas<br>acesso 16/09/2026</span></a>
       <a href="https://tp53.cancer.gov/" target="_blank" rel="noopener"><b>TP53 Database ↗</b><span>NCI · variantes germinativas<br>acesso 18/09/2026</span></a>
@@ -1310,7 +1275,6 @@ const IMGS=[
  {id:'clinvar-condicoes',p:'ClinVar',t:'Condições ligadas à variante',c:'Além da Síndrome de Li-Fraumeni (6 avaliações), a R337H aparece ligada à síndrome hereditária de predisposição ao câncer (4), ao carcinoma adrenocortical pediátrico e hereditário, à neoplasia de mama, entre outras.'},
  {id:'clinvar-evidencias',p:'ClinVar',t:'Aba de evidências',c:'Resumo das submissões (origem germinativa, testagem clínica) e artigos científicos citados como evidência pelos laboratórios.'},
  {id:'clinvar-descricao',p:'ClinVar',t:'Justificativa de um laboratório',c:'Texto do laboratório Labcorp explicando a classificação: a variante foi vista em pessoas com vários tipos de câncer, acompanha a doença dentro das famílias e estudos mostram que ela afeta a função da p53.'},
- {id:'clingen-validade',p:'ClinGen',t:'Validade da ligação gene–doença',c:'Curadoria do ClinGen: a ligação entre o gene TP53 e a Síndrome de Li-Fraumeni é “Definitiva” (22/03/2024), com herança autossômica dominante e sem evidências contraditórias.'},
  {id:'gnomad-frequencia',p:'gnomAD',t:'Figura 2 · Frequência na população',c:'Página da variante 17-7670699-C-T no gnomAD v4.1.1: 5 cópias com a variante entre 1.613.858 analisadas, nenhuma pessoa homozigota e maior frequência no grupo Admixed American.'},
  {id:'dynamut2-resultado',p:'DynaMut2',t:'Figura 3 · Resultado do cálculo',c:'Resultado do DynaMut2: variação de estabilidade prevista (ΔΔG) de −0,94 kcal/mol, classificada como desestabilizante. Abaixo, os tipos de ligação que o programa desenha.'},
  {id:'dynamut2-normal-arg337',p:'DynaMut2',t:'Figura 4 · p53 normal (Arg337)',c:'Ligações ao redor da arginina 337 na proteína normal. Cada linha pontilhada colorida é um tipo de ligação com uma peça vizinha.'},
@@ -1357,7 +1321,7 @@ function onScroll(){const h=document.documentElement;const p=h.scrollTop/(h.scro
   let cur=-1;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.35)cur=i;});
   navLinks.forEach((a,i)=>a.classList.toggle('on',i===cur));
   if(cur>=0){const a=navLinks[cur];const nav=$('#nav');const want=a.offsetLeft-nav.clientWidth/2+a.clientWidth/2;if(Math.abs(nav.scrollLeft-want)>40)nav.scrollTo({left:want,behavior:RM?'auto':'smooth'});}
-  const evs=['#ev-clinvar','#ev-clingen','#ev-gnomad','#ev-dynamut','#ev-tp53db'].map(q=>$(q));let ce=-1;evs.forEach((s,i)=>{if(s.getBoundingClientRect().top<innerHeight*.45)ce=i;});
+  const evs=['#ev-clinvar','#ev-gnomad','#ev-dynamut','#ev-tp53db'].map(q=>$(q));let ce=-1;evs.forEach((s,i)=>{if(s.getBoundingClientRect().top<innerHeight*.45)ce=i;});
   $$('#evTabs a').forEach((a,i)=>a.classList.toggle('on',i===ce));}
 addEventListener('scroll',onScroll,{passive:true});onScroll();
 
