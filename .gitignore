@@ -1,0 +1,9 @@
+# PDF do TCC fica fora do repositório público
+*.pdf
+
+# Fonte usada para a versão hospedada no Claude (o site do GitHub usa o index.html)
+genoevidence.html
+
+# Arquivos de sistema e testes
+.DS_Store
+_teste.html
