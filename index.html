@@ -1046,7 +1046,7 @@ main,footer,.hero{position:relative;z-index:1}
         <div class="panel">
           <div class="panel-title"><h3>Quem avaliou, e quando</h3><span class="src">ClinVar (2026)</span></div>
           <svg id="cvChart" viewBox="0 0 520 330" role="img" aria-label="Linha do tempo das seis avaliações no ClinVar entre 2019 e 2026: cinco patogênicas e uma provavelmente patogênica."></svg>
-          <p class="note">Cada cor é um laboratório. <b class="cv-key full"></b> bolinha cheia: patogênica · <b class="cv-key hollow"></b> bolinha vazada: provavelmente patogênica. Todas vieram de testes clínicos em portadores.</p>
+          <p class="note">Cada cor é um laboratório, e a classificação aparece embaixo do nome. Todas as avaliações vieram de testes clínicos em portadores.</p>
         </div>
       </div>
       <div class="figs" data-figs="clinvar-submissoes,clinvar-condicoes,clinvar-evidencias,clinvar-descricao"></div>
@@ -1662,9 +1662,9 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
   view.addEventListener('pointerup',()=>drag=null);view.addEventListener('pointercancel',()=>drag=null);
   const t0=performance.now();
   kick=loopWhenVisible(canvas,()=>{fit(r,cam,canvas);const t=(performance.now()-t0)/1000;
-    inst+=(target-inst)*(RM?1:.06);if(!drag&&!RM)rotY+=.0028;world.rotation.set(rotX,rotY,0);
+    inst+=(target-inst)*(RM?1:.06);cam.position.set(0,2.6+inst*.5,13+inst*3.4);cam.lookAt(0,0,0);if(!drag&&!RM)rotY+=.0028;world.rotation.set(rotX,rotY,0);
     const his=mode==='mut';
-    monos.forEach((m,i)=>{const u=m.userData,off=inst*2.4;m.position.copy(u.dir).multiplyScalar(off);
+    monos.forEach((m,i)=>{const u=m.userData,off=inst*2.1;m.position.copy(u.dir).multiplyScalar(off);
       const j=RM?0:inst*.28;m.rotation.x=Math.sin(t*1.2+u.ph)*j;m.rotation.z=Math.cos(t*1.05+u.ph)*j;
       resMats[i].color.set(his?0xff5470:0x9db6ff);resMats[i].emissive.set(his?0xff5470:0x4d7cff);
       sprites[i].material.map=his?gR:gB;const s=1.1+(RM?0:.22*Math.sin(t*3+i));sprites[i].scale.set(s,s,1);});
@@ -1684,7 +1684,7 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
   subs.forEach(([n,d,c],i)=>{const x=X(t(d)),y=30+i*40;const col=['#4D7CFF','#FFB23F','#3FC1C9','#A58CFF','#FF5470','#5FD39A'][i];
     const row=el('g',{},g);
     el('line',{x1:x,x2:x,y1:y+6,y2:y0,stroke:col,'stroke-opacity':.35,'stroke-dasharray':'2 3'},row);
-    el('circle',{cx:x,cy:y,r:6,fill:c==='P'?col:C.ink,stroke:col,'stroke-width':2.5},row);el('circle',{cx:x,cy:y,r:11,fill:'none',stroke:col,'stroke-opacity':.35},row);
+    el('circle',{cx:x,cy:y,r:7,fill:col},row);el('circle',{cx:x,cy:y,r:11,fill:'none',stroke:col,'stroke-opacity':.35},row);
     const right=x<300;const [yy,mm]=d.split('-');
     el('text',{x:right?x+18:x-18,y:y-2,'text-anchor':right?'start':'end',class:'lbl-strong'},row,n);
     el('text',{x:right?x+18:x-18,y:y+13,'text-anchor':right?'start':'end',class:'lbl'},row,(c==='P'?'Patogênica':'Provavelmente patogênica')+' · '+mm+'/'+yy);
@@ -1728,11 +1728,11 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
     hits.forEach(([x,y],i)=>{if(x>reveal)return;if(!RM&&prevScan<x&&scan>=x)pings[i]=t;
       const p=RM?0:(Math.sin(t*2.6+i)+1)/2;ctx.beginPath();ctx.arc(x,y,Math.max(2.2,sp*.95),0,7);ctx.fillStyle='#FF5470';ctx.fill();
       ctx.beginPath();ctx.arc(x,y,sp*(2.2+p*2),0,7);ctx.strokeStyle='rgba(255,84,112,'+(.75-p*.5)+')';ctx.lineWidth=1.4;ctx.stroke();
-      const e=t-pings[i];if(pings[i]&&e<1.4){ctx.beginPath();ctx.arc(x,y,sp*(3+e*16),0,7);ctx.strokeStyle='rgba(255,84,112,'+(1-e/1.4)*.8+')';ctx.lineWidth=2;ctx.stroke();}});
+      const e=t-pings[i];if(pings[i]&&e>=0&&e<1.4){ctx.beginPath();ctx.arc(x,y,sp*(3+e*16),0,7);ctx.strokeStyle='rgba(255,84,112,'+(1-e/1.4)*.8+')';ctx.lineWidth=2;ctx.stroke();}});
     prevScan=scan;}
   build();draw(t0+2000);
-  let running=false;function frame(now){if(!running)return;draw(now);requestAnimationFrame(frame);}
-  if(!RM){new IntersectionObserver(es=>{const v=es[0].isIntersecting;if(v&&!running){running=true;t0=performance.now();requestAnimationFrame(frame);}if(!v)running=false;},{threshold:.15}).observe(cv);}
+  let running=false;function frame(now){if(!running)return;try{draw(now);}catch(err){}requestAnimationFrame(frame);}
+  if(!RM){new IntersectionObserver(es=>{const v=es[0].isIntersecting;if(v&&!running){running=true;t0=performance.now();pings=[0,0,0,0];prevScan=-1e9;requestAnimationFrame(frame);}if(!v)running=false;},{threshold:.15}).observe(cv);}
   addEventListener('resize',()=>{build();draw(performance.now());});
 })();
 /* ancestry + brazil bars */
