@@ -532,6 +532,47 @@ ol.refs p{font-size:14.5px}
 .lab-mini i{width:20px;height:4px;border-radius:2px;flex:none}
 @media (max-width:600px){.lab-view{min-height:360px}.lab-real .fig img{padding:52px 8px 40px}}
 
+
+/* ---- v7: menu lateral ---- */
+.menu-btn{all:unset;box-sizing:border-box;cursor:pointer;flex:none;width:40px;height:40px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:1px solid var(--line2);background:var(--panel);position:relative;overflow:hidden;transition:background .2s}
+.menu-btn span{display:block;width:18px;height:2px;border-radius:2px;background:var(--text);transition:transform .3s cubic-bezier(.2,.8,.2,1),opacity .2s}
+.menu-btn:hover{background:var(--panel2)}
+.menu-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.menu-btn:active{transform:scale(.94)}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.drawer{position:fixed;top:0;left:0;bottom:0;z-index:130;width:min(340px,86vw);box-sizing:border-box;background:#0A1120;border-right:1px solid var(--line2);box-shadow:24px 0 60px rgba(0,0,0,.5);transform:translateX(-104%);transition:transform .38s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px))}
+.drawer.open{transform:none}
+.drawer-scrim{position:fixed;inset:0;z-index:120;background:rgba(3,6,12,.62);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);opacity:0;transition:opacity .3s}
+.drawer-scrim.show{opacity:1}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.drawer-head b{font:600 16px/1 var(--display)}
+.drawer-close{all:unset;cursor:pointer;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line2);color:var(--text);font-size:14px}
+.drawer-close:hover{background:var(--panel2)}
+.drawer-close:focus-visible{outline:2px solid var(--amber)}
+#drawerSearch{width:100%;box-sizing:border-box;background:var(--panel);border:1px solid var(--line2);border-radius:10px;padding:12px 14px;color:var(--text);font:400 15px/1.2 var(--sans);margin-bottom:12px}
+#drawerSearch::placeholder{color:var(--dim)}
+#drawerSearch:focus{outline:2px solid var(--amber);outline-offset:1px}
+.drawer-nav{overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:2px;margin:0 -6px;padding:0 6px;overscroll-behavior:contain}
+.dr-group{display:flex;flex-direction:column}
+.dr-item{display:flex;align-items:center;gap:12px;padding:11px 10px;border-radius:10px;text-decoration:none;color:var(--text);font:500 15.5px/1.3 var(--sans);transition:background .2s;position:relative;overflow:hidden}
+.dr-item:hover{background:var(--panel)}
+.dr-n{font:500 11.5px/1 var(--mono);color:var(--dim);width:20px;flex:none;transition:color .2s}
+.dr-item.on{background:var(--panel2)}
+.dr-item.on .dr-n{color:var(--his)}
+.dr-sub{display:block;padding:8px 10px 8px 44px;border-radius:8px;text-decoration:none;color:var(--muted);font:400 14.5px/1.3 var(--sans);position:relative;overflow:hidden;transition:color .2s,background .2s}
+.dr-sub::before{content:"";position:absolute;left:24px;top:50%;width:8px;height:1px;background:var(--line2);transition:width .2s,background .2s}
+.dr-sub:hover{background:var(--panel);color:var(--text)}
+.dr-sub.on{color:var(--text)}
+.dr-sub.on::before{background:var(--his);width:12px}
+.dr-item:focus-visible,.dr-sub:focus-visible{outline:2px solid var(--amber);outline-offset:-2px}
+.dr-empty{color:var(--muted);font-size:14px;padding:10px}
+.drawer-foot{font:400 12.5px/1.4 var(--sans);color:var(--dim);padding-top:12px;border-top:1px solid var(--line);margin:10px 0 0}
+.hud-in{gap:14px}
+@media (max-width:760px){.nav{display:none}}
+@media (prefers-reduced-motion:reduce){.drawer,.drawer-scrim,.menu-btn span{transition:none}}
+
 /* responsive */
 @media (max-width:980px){
   .hero-in{grid-template-columns:1fr;padding-block:64px 48px}
@@ -574,6 +615,7 @@ ol.refs p{font-size:14.5px}
 <!-- ================= HUD ================= -->
 <header class="hud">
   <div class="hud-in">
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu de tópicos" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
     <a class="brand" href="#top" aria-label="GenoEvidence — voltar ao início"><span class="brand-mark"></span><b>GenoEvidence</b></a>
     <nav class="nav" id="nav" aria-label="Seções">
       <a href="#resumo">Resumo</a>
@@ -592,6 +634,17 @@ ol.refs p{font-size:14.5px}
   </div>
   <div class="progress" id="progress"></div>
 </header>
+
+<div class="drawer-scrim" id="drawerScrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Tópicos do site">
+  <div class="drawer-head">
+    <b>Tópicos</b>
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Fechar menu">✕</button>
+  </div>
+  <input type="search" id="drawerSearch" placeholder="Filtrar tópicos…" aria-label="Filtrar tópicos" autocomplete="off">
+  <nav class="drawer-nav" id="drawerNav" aria-label="Ir para o tópico"></nav>
+  <p class="drawer-foot">Clique em um tópico para ir direto até ele.</p>
+</aside>
 
 <!-- ================= HERO ================= -->
 <section class="hero" id="top">
@@ -718,7 +771,7 @@ ol.refs p{font-size:14.5px}
           G vira A
         </div>
         <div class="codon">
-          <span class="eyebrow">Com R337H</span>
+          <span class="eyebrow">Mutante (R337H)</span>
           <div class="bases"><span class="base">C</span><span class="base x" id="bMut">A</span><span class="base">C</span></div>
           <div class="aa" style="color:var(--his)">Histidina (H)<small>peça sensível à acidez (pH)</small></div>
         </div>
@@ -782,11 +835,11 @@ ol.refs p{font-size:14.5px}
     <div class="lab" id="lab">
       <div class="lab-view is-real" id="labView">
         <div class="lab-real" id="labReal" data-m="mut" data-gallery>
-          <button class="fig wt" type="button" data-cap="Figura 4 · p53 normal: ligações ao redor da arginina 337. Fonte: DynaMut2 (2026)."><img src="imagens/dynamut2-normal-arg337.jpg" alt="Imagem real do DynaMut2: p53 normal com a arginina 337 e suas ligações"></button>
-          <button class="fig mut" type="button" data-cap="Figura 5 · p53 com R337H: ligações ao redor da histidina 337. Fonte: DynaMut2 (2026)."><img src="imagens/dynamut2-mutante-his337.jpg" alt="Imagem real do DynaMut2: p53 mutante com a histidina 337 e suas ligações"></button>
+          <button class="fig wt" type="button" data-cap="Figura 4 · p53 normal: ligações ao redor da arginina 337. Fonte: DynaMut2 (2026)."><img src="imagens/dynamut2-normal-arg337.webp" data-full="imagens/dynamut2-normal-arg337.webp" decoding="async" alt="Imagem real do DynaMut2: p53 normal com a arginina 337 e suas ligações"></button>
+          <button class="fig mut" type="button" data-cap="Figura 5 · p53 mutante, com a arginina 337 trocada por histidina: ligações ao redor da histidina 337. Fonte: DynaMut2 (2026)."><img src="imagens/dynamut2-mutante-his337.webp" data-full="imagens/dynamut2-mutante-his337.webp" decoding="async" alt="Imagem real do DynaMut2: p53 mutante com a histidina 337 e suas ligações"></button>
         </div>
         <canvas id="tetra" aria-label="Modelo 3D ilustrativo das quatro cópias da p53 unidas" role="img" hidden></canvas>
-        <span class="lab-state" id="labState">p53 com R337H · Histidina 337</span>
+        <span class="lab-state" id="labState">p53 mutante · Histidina 337</span>
         <span class="lab-hint" id="labHint">Clique na imagem para ampliar · imagem real do DynaMut2</span>
       </div>
       <div class="lab-ctrl">
@@ -804,8 +857,8 @@ ol.refs p{font-size:14.5px}
         <div class="ctrl-group">
           <span class="ctrl-label">Versão da proteína</span>
           <div class="seg" role="group" aria-label="Escolha a versão da proteína">
-            <button type="button" data-m="wt" aria-pressed="false">p53 normal</button>
-            <button type="button" data-m="mut" aria-pressed="true">p53 com R337H</button>
+            <button type="button" data-m="wt" aria-pressed="false">Normal · arginina</button>
+            <button type="button" data-m="mut" aria-pressed="true">Mutante · histidina</button>
           </div>
         </div>
         <div class="show-block" data-show="real">
@@ -825,7 +878,7 @@ ol.refs p{font-size:14.5px}
           <input type="range" id="ph" min="0" max="100" value="30">
           <div class="range-ends"><span>pH mais baixo</span><span>pH mais alto</span></div>
         </div>
-        <p>Com R337H, a p53 <strong style="color:var(--text)">ainda forma o grupo de quatro</strong>, mas a união fica mais frágil conforme o pH.<a class="cite" href="#ref-9">9</a><a class="cite" href="#ref-10">10</a> Em células de laboratório (H1299), ela reduziu a multiplicação celular e aumentou a morte das células.<a class="cite" href="#ref-9">9</a><a class="cite" href="#ref-10">10</a></p>
+        <p>Com a troca da arginina pela histidina, a p53 <strong style="color:var(--text)">ainda forma o grupo de quatro</strong>, mas a união fica mais frágil conforme o pH.<a class="cite" href="#ref-9">9</a><a class="cite" href="#ref-10">10</a> Em células de laboratório (H1299), ela reduziu a multiplicação celular e aumentou a morte das células.<a class="cite" href="#ref-9">9</a><a class="cite" href="#ref-10">10</a></p>
         <div class="lab-leg">
           <span><i style="background:#4D7CFF"></i><i style="background:#9DB6FF"></i>1º par de cópias</span>
           <span><i style="background:#8A7CFF"></i><i style="background:#C9BDFF"></i>2º par de cópias</span>
@@ -978,7 +1031,7 @@ ol.refs p{font-size:14.5px}
           </div>
           <div>
             <div class="hay"><canvas id="hay" aria-label="Campo de pontos representando 1,6 milhão de cópias do gene, com 5 destacadas" role="img"></canvas></div>
-            <div class="hay-leg"><span><i style="background:#2A3A60"></i>cada ponto ≈ 100 cópias do gene</span><span><i style="background:var(--his)"></i>ponto que contém uma cópia com R337H (5)</span></div>
+            <div class="hay-leg"><span><i style="background:#2A3A60"></i>cada ponto ≈ 100 cópias do gene</span><span><i style="background:var(--his)"></i>ponto que contém uma cópia com a variante (5)</span></div>
           </div>
         </div>
       </div>
@@ -1021,7 +1074,7 @@ ol.refs p{font-size:14.5px}
             <li><b>Calcula o ΔΔG:</b> abaixo de zero significa proteína menos estável.</li>
             <li><b>Resultado: −0,94 kcal/mol</b>, desestabilizante.</li>
           </ol>
-          <button class="fig fig-wide" type="button" data-gallery-solo data-cap="Figura 3 · Impacto da variante R337H na estabilidade da p53: ΔΔG −0,94 kcal/mol (desestabilizante). Fonte: DynaMut2 (2026)."><img src="imagens/dynamut2-resultado.jpg" alt="Figura 3: resultado do DynaMut2" loading="lazy"><span><b>Figura 3</b> · Tela original do resultado</span></button>
+          <button class="fig fig-wide" type="button" data-gallery-solo data-cap="Figura 3 · Impacto da variante R337H na estabilidade da p53: ΔΔG −0,94 kcal/mol (desestabilizante). Fonte: DynaMut2 (2026)."><img src="imagens/mini/dynamut2-resultado.webp" data-full="imagens/dynamut2-resultado.webp" decoding="async" alt="Figura 3: resultado do DynaMut2" loading="lazy"><span><b>Figura 3</b> · Tela original do resultado</span></button>
         </div>
       </div>
 
@@ -1030,13 +1083,13 @@ ol.refs p{font-size:14.5px}
         <div class="pair" data-gallery>
           <button class="fig pair-fig" type="button" data-cap="Figura 4 · Interações ao redor do resíduo 337 na p53 normal (Arg337). Fonte: DynaMut2 (2026).">
             <span class="pair-tag wt">Normal · Arginina 337</span>
-            <img src="imagens/dynamut2-normal-arg337.jpg" loading="lazy" alt="Figura 4: ligações ao redor da arginina 337 na p53 normal">
+            <img src="imagens/mini/dynamut2-normal-arg337.webp" data-full="imagens/dynamut2-normal-arg337.webp" decoding="async" loading="lazy" alt="Figura 4: ligações ao redor da arginina 337 na p53 normal">
             <span><b>Figura 4</b> · p53 normal</span>
           </button>
           <button class="fig pair-fig" type="button" data-cap="Figura 5 · Interações moleculares locais da p53 mutante R337H (His337). Fonte: DynaMut2 (2026).">
             <span class="pair-tag mut">Mutante · Histidina 337</span>
-            <img src="imagens/dynamut2-mutante-his337.jpg" loading="lazy" alt="Figura 5: ligações ao redor da histidina 337 na p53 mutante">
-            <span><b>Figura 5</b> · p53 com R337H</span>
+            <img src="imagens/mini/dynamut2-mutante-his337.webp" data-full="imagens/dynamut2-mutante-his337.webp" decoding="async" loading="lazy" alt="Figura 5: ligações ao redor da histidina 337 na p53 mutante">
+            <span><b>Figura 5</b> · p53 mutante (histidina 337)</span>
           </button>
         </div>
         <div class="pair-read">
@@ -1261,7 +1314,7 @@ function goTo(id){const t=document.querySelector(id);if(!t)return false;const hu
   try{history.replaceState(null,'',id==='#top'?location.pathname+location.search:id);}catch(_){}return true;}
 document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||a.classList.contains('cite'))return;const id=a.getAttribute('href');if(id.length<2)return;if(goTo(id))e.preventDefault();});
 /* resposta ao toque: ondulação em botões e cartões */
-document.addEventListener('pointerdown',e=>{if(RM)return;const t=e.target.closest('.gal-filter button,.fact[data-href],.gap-chain a,.cta,.nav a,.ev-tabs a,.story-card,a.fact,a.step,a.cg,a.chip,.fig,.swap-btn,.seg button,.site,.datasrc a,.totop,.readout-link,.more');if(!t)return;
+document.addEventListener('pointerdown',e=>{if(RM)return;const t=e.target.closest('.menu-btn,.dr-item,.dr-sub,.gal-filter button,.fact[data-href],.gap-chain a,.cta,.nav a,.ev-tabs a,.story-card,a.fact,a.step,a.cg,a.chip,.fig,.swap-btn,.seg button,.site,.datasrc a,.totop,.readout-link,.more');if(!t)return;
   t.classList.add('rpl');const r=t.getBoundingClientRect(),d=Math.max(r.width,r.height)*2.2,sp=document.createElement('span');sp.className='ripple';
   sp.style.cssText='width:'+d+'px;height:'+d+'px;left:'+(e.clientX-r.left-d/2)+'px;top:'+(e.clientY-r.top-d/2)+'px';t.appendChild(sp);setTimeout(()=>sp.remove(),650);});
 /* números de referência vizinhos viram um só grupo: 3,10,14 */
@@ -1278,7 +1331,7 @@ const IMGS=[
  {id:'gnomad-frequencia',p:'gnomAD',t:'Figura 2 · Frequência na população',c:'Página da variante 17-7670699-C-T no gnomAD v4.1.1: 5 cópias com a variante entre 1.613.858 analisadas, nenhuma pessoa homozigota e maior frequência no grupo Admixed American.'},
  {id:'dynamut2-resultado',p:'DynaMut2',t:'Figura 3 · Resultado do cálculo',c:'Resultado do DynaMut2: variação de estabilidade prevista (ΔΔG) de −0,94 kcal/mol, classificada como desestabilizante. Abaixo, os tipos de ligação que o programa desenha.'},
  {id:'dynamut2-normal-arg337',p:'DynaMut2',t:'Figura 4 · p53 normal (Arg337)',c:'Ligações ao redor da arginina 337 na proteína normal. Cada linha pontilhada colorida é um tipo de ligação com uma peça vizinha.'},
- {id:'dynamut2-mutante-his337',p:'DynaMut2',t:'Figura 5 · p53 com R337H (His337)',c:'Ligações ao redor da histidina 337 na proteína mutante. O padrão de ligações muda em relação à versão normal.'},
+ {id:'dynamut2-mutante-his337',p:'DynaMut2',t:'Figura 5 · p53 mutante (histidina 337)',c:'Ligações ao redor da histidina 337 na proteína mutante. O padrão de ligações muda em relação à versão normal.'},
  {id:'dynamut2-contatos-normal',p:'DynaMut2',t:'Painel de contatos · versão normal',c:'Tela de contatos do DynaMut2 com a estrutura normal (“Wild-type”) e a lista de tipos de ligação que podem ser exibidos.'},
  {id:'dynamut2-vista-mutante',p:'DynaMut2',t:'Vista da hélice · versão mutante',c:'Outra vista da região com a histidina 337, mostrando a hélice inteira e as peças vizinhas ARG335, MET340 e PHE341.'},
  {id:'tp53db-registros',p:'TP53 Database',t:'Figura 6 · Registros germinativos',c:'Resultado da busca no TP53 Database: pessoas com a variante c.1010G>A (p.R337H), com país, local do tumor, tipo de tumor e artigo de origem.'},
@@ -1286,7 +1339,7 @@ const IMGS=[
  {id:'tp53db-estrutura-3d',p:'TP53 Database',t:'Estrutura 3D da p53',c:'Visualizador 3D (JSmol) do TP53 Database mostrando a proteína p53 em fitas e, em linhas finas, a molécula de DNA. A legenda indica cores por frequência de mutação: alta, média e baixa.'}];
 const IMG=Object.fromEntries(IMGS.map(o=>[o.id,o]));
 function figBtn(o){const b=document.createElement('button');b.type='button';b.className='fig';b.dataset.cap=o.t+' — '+o.c+' Fonte: '+o.p+' (2026).';
-  b.innerHTML='<img src="imagens/'+o.id+'.jpg" alt="'+o.t.replace(/"/g,'')+'" loading="lazy"><span class="fig-p">'+o.p+'</span><span><b>'+o.t+'</b></span>';return b;}
+  b.innerHTML='<img src="imagens/mini/'+o.id+'.webp" data-full="imagens/'+o.id+'.webp" alt="'+o.t.replace(/"/g,'')+'" loading="lazy" decoding="async"><span class="fig-p">'+o.p+'</span><span><b>'+o.t+'</b></span>';return b;}
 $$('.figs[data-figs]').forEach(box=>{box.setAttribute('data-gallery','');box.dataset.figs.split(',').forEach(id=>{if(IMG[id])box.appendChild(figBtn(IMG[id]));});});
 (function(){const gal=$('#gallery'),fl=$('#galFilter');
   IMGS.forEach(o=>{const b=figBtn(o);b.classList.add('gcard');b.dataset.p=o.p;const d=document.createElement('span');d.className='gdesc';d.textContent=o.c;b.appendChild(d);gal.appendChild(b);});
@@ -1295,7 +1348,7 @@ $$('.figs[data-figs]').forEach(box=>{box.setAttribute('data-gallery','');box.dat
       if(!RM)gal.animate([{opacity:.25,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:320,easing:'ease-out'});});fl.appendChild(b);});})();
 /* figuras ampliáveis, com setas, teclado e deslizar */
 (function(){const lb=$('#lightbox'),im=$('#lbImg'),cap=$('#lbCap'),cnt=$('#lbCount'),x=$('#lbClose'),pv=$('#lbPrev'),nx=$('#lbNext');let last=null,grp=[],k=0;
-  function show(i,dir){k=(i+grp.length)%grp.length;const b=grp[k],src=b.querySelector('img');im.src=src.currentSrc||src.src;im.alt=src.alt;cap.textContent=b.dataset.cap||'';
+  function show(i,dir){k=(i+grp.length)%grp.length;const b=grp[k],src=b.querySelector('img'),full=src.dataset.full||src.currentSrc||src.src;im.src=src.currentSrc||src.src;if(full!==im.src){const pre=new Image();pre.onload=()=>{if(grp[k]===b)im.src=full;};pre.src=full;}[grp[(k+1)%grp.length],grp[(k-1+grp.length)%grp.length]].forEach(n=>{const t=n&&n.querySelector('img');if(t&&t.dataset.full){const q=new Image();q.src=t.dataset.full;}});im.alt=src.alt;cap.textContent=b.dataset.cap||'';
     cnt.textContent=grp.length>1?(k+1)+' / '+grp.length:'';pv.hidden=nx.hidden=grp.length<2;
     if(!RM)im.animate([{transform:'translateX('+(dir||0)*28+'px) scale(.96)',opacity:0},{transform:'none',opacity:1}],{duration:300,easing:'cubic-bezier(.2,.8,.2,1)'});}
   document.addEventListener('click',e=>{const b=e.target.closest('.fig');if(!b||lb.contains(b))return;const g=b.closest('[data-gallery]');
@@ -1324,6 +1377,45 @@ function onScroll(){const h=document.documentElement;const p=h.scrollTop/(h.scro
   const evs=['#ev-clinvar','#ev-gnomad','#ev-dynamut','#ev-tp53db'].map(q=>$(q));let ce=-1;evs.forEach((s,i)=>{if(s.getBoundingClientRect().top<innerHeight*.45)ce=i;});
   $$('#evTabs a').forEach((a,i)=>a.classList.toggle('on',i===ce));}
 addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* ---------------- menu lateral de tópicos ---------------- */
+(function(){
+  const TOPICS=[
+    ['#resumo','Resumo em 1 minuto',[]],
+    ['#sindrome','A síndrome',[['#risco','Idade e risco de câncer'],['#penetrancia','Penetrância por sexo']]],
+    ['#mutacao','A mutação',[['#brasil','Por que é comum no Brasil'],['#origem','Ter a variante não é sentença']]],
+    ['#proteina','A proteína p53',[['#lab','Laboratório 3D']]],
+    ['#lacuna','Lacuna científica',[]],
+    ['#metodo','Método',[]],
+    ['#evidencias','Resultados',[['#ev-clinvar','ClinVar'],['#ev-gnomad','gnomAD'],['#ev-dynamut','DynaMut2'],['#ev-tp53db','TP53 Database']]],
+    ['#integracao','Discussão',[]],
+    ['#conclusao','Conclusão',[]],
+    ['#imagens','Imagens da pesquisa',[]],
+    ['#glossario','Glossário',[]],
+    ['#referencias','Referências',[]]];
+  const btn=$('#menuBtn'),dr=$('#drawer'),scrim=$('#drawerScrim'),nav=$('#drawerNav'),q=$('#drawerSearch'),x=$('#drawerClose');
+  const norm=t=>t.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+  TOPICS.forEach(([h,l,subs],i)=>{const g=document.createElement('div');g.className='dr-group';g.dataset.s=norm(l+' '+subs.map(x=>x[1]).join(' '));
+    g.innerHTML='<a class="dr-item" href="'+h+'"><span class="dr-n">'+String(i+1).padStart(2,'0')+'</span><span>'+l+'</span></a>'+
+      subs.map(([sh,sl])=>'<a class="dr-sub" href="'+sh+'" data-s="'+norm(sl)+'">'+sl+'</a>').join('');nav.appendChild(g);});
+  const empty=document.createElement('p');empty.className='dr-empty';empty.textContent='Nenhum tópico encontrado.';empty.hidden=true;nav.appendChild(empty);
+  let open=false,t=0;dr.inert=true;
+  function setOpen(v){if(v===open)return;open=v;clearTimeout(t);btn.setAttribute('aria-expanded',String(v));btn.setAttribute('aria-label',v?'Fechar menu de tópicos':'Abrir menu de tópicos');
+    dr.classList.toggle('open',v);dr.inert=!v;document.body.style.overflow=v?'hidden':'';
+    if(v){scrim.hidden=false;requestAnimationFrame(()=>scrim.classList.add('show'));mark();setTimeout(()=>{(innerWidth>600?q:x).focus();const on=nav.querySelector('.dr-item.on');if(on)on.scrollIntoView({block:'nearest'});},60);}
+    else{scrim.classList.remove('show');t=setTimeout(()=>{scrim.hidden=true;if(q.value){q.value='';q.dispatchEvent(new Event('input'));}},320);btn.focus({preventScroll:true});}}
+  btn.addEventListener('click',()=>setOpen(!open));x.addEventListener('click',()=>setOpen(false));scrim.addEventListener('click',()=>setOpen(false));
+  addEventListener('keydown',e=>{if(open&&e.key==='Escape')setOpen(false);});
+  // fecha antes de rolar, para a página poder se mover até o tópico
+  nav.addEventListener('click',e=>{if(e.target.closest('a'))setOpen(false);});
+  q.addEventListener('input',()=>{const v=norm(q.value.trim());let n=0;nav.querySelectorAll('.dr-group').forEach(g=>{const hit=!v||g.dataset.s.includes(v);g.hidden=!hit;if(hit)n++;
+    g.querySelectorAll('.dr-sub').forEach(s=>{s.hidden=!!v&&!s.dataset.s.includes(v)&&!norm(g.querySelector('.dr-item').textContent).includes(v);});});empty.hidden=n>0;});
+  q.addEventListener('keydown',e=>{if(e.key==='Enter'){const f=[...nav.querySelectorAll('a')].find(a=>!a.hidden&&!a.closest('[hidden]'));if(f){e.preventDefault();f.click();}}});
+  const links=[...nav.querySelectorAll('a')].map(a=>[a,document.querySelector(a.getAttribute('href'))]).filter(p=>p[1]);
+  function mark(){let top=null,sub=null;const lim=innerHeight*.35;links.forEach(([a,el])=>{if(el.getBoundingClientRect().top<lim){if(a.classList.contains('dr-item')){top=a;sub=null;}else sub=a;}});
+    links.forEach(([a])=>a.classList.toggle('on',a===top||a===sub));}
+  let raf=0;addEventListener('scroll',()=>{if(!open&&raf)return;cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{raf=0;mark();});},{passive:true});mark();
+})();
 
 /* ---------------- Hero intro ---------------- */
 if(window.gsap&&!RM){
@@ -1423,7 +1515,7 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
   const box=$('#seq');let mut=true;
   function draw(){box.innerHTML='';seq.forEach(([a,n])=>{const d=document.createElement('div');d.className='res'+(n===337?' hot':'');const l=n===337?(mut?'H':'R'):a;d.innerHTML='<span class="aa-l" style="'+(n===337?'color:'+(mut?C.his:C.arg):'')+'">'+l+'</span><small>'+n+'</small>';box.appendChild(d);});}
   draw();const b=$('#swapSeq');
-  b.addEventListener('click',()=>{mut=!mut;b.setAttribute('aria-pressed',String(!mut));b.textContent=mut?'↺ Ver versão normal':'↺ Ver versão com R337H';draw();
+  b.addEventListener('click',()=>{mut=!mut;b.setAttribute('aria-pressed',String(!mut));b.textContent=mut?'↺ Ver versão normal':'↺ Ver versão mutante';draw();
     const bm=$('#bMut');if(!RM)bm.animate([{transform:'rotateY(90deg)'},{transform:'rotateY(0)'}],{duration:400});
     if(!RM)box.querySelector('.hot').animate([{transform:'scale(1.25)'},{transform:'scale(1)'}],{duration:450,easing:'cubic-bezier(.3,1.6,.5,1)'});});
   onSeen($('#bMut'),()=>{if(RM)return;$('#bMut').animate([{transform:'translateY(-40px) rotateX(90deg)',opacity:0},{transform:'none',opacity:1}],{duration:900,delay:300,easing:'cubic-bezier(.3,1.4,.5,1)',fill:'backwards'});});
@@ -1444,8 +1536,8 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
   const state=$('#labState'),ph=$('#ph'),segBtns=$$('.seg button[data-m]'),real=$('#labReal'),hint=$('#labHint'),vBtns=$$('.seg button[data-v]');
   let mode='mut',kick=null,inst=0,target=0,vmode='real';
   function update(){const p=ph.value/100;target=mode==='mut'?Math.max(0,Math.min(1,(p-.4)/.45)):p*.04;
-    const unstable=target>.35;state.textContent=mode==='wt'?'p53 normal · equipe de 4 estável':unstable?'R337H · a equipe se desfaz':'R337H · equipe formada';
-    state.style.color=unstable?C.his:mode==='wt'?'#9DB6FF':C.amber;state.style.borderColor=unstable?'rgba(255,84,112,.5)':C.line2;if(vmode==='real'){state.textContent=mode==='wt'?'p53 normal · Arginina 337':'p53 com R337H · Histidina 337';state.style.color=mode==='wt'?'#9DB6FF':C.his;state.style.borderColor=mode==='wt'?'rgba(77,124,255,.55)':'rgba(255,84,112,.55)';}}
+    const unstable=target>.35;state.textContent=mode==='wt'?'p53 normal · equipe de 4 estável':unstable?'p53 mutante · a equipe se desfaz':'p53 mutante · equipe formada';
+    state.style.color=unstable?C.his:mode==='wt'?'#9DB6FF':C.amber;state.style.borderColor=unstable?'rgba(255,84,112,.5)':C.line2;if(vmode==='real'){state.textContent=mode==='wt'?'p53 normal · Arginina 337':'p53 mutante · Histidina 337';state.style.color=mode==='wt'?'#9DB6FF':C.his;state.style.borderColor=mode==='wt'?'rgba(77,124,255,.55)':'rgba(255,84,112,.55)';}}
   function setMode(m){mode=m;real.dataset.m=m;if(!RM&&vmode==='real'){const im=real.querySelector('.fig.'+m+' img');im.animate([{transform:'scale(1.05)',filter:'blur(3px)'},{transform:'none',filter:'none'}],{duration:650,easing:'cubic-bezier(.2,.8,.2,1)'});}segBtns.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.m===m)));update();if(kick)kick();}
   segBtns.forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.m)));
   ph.addEventListener('input',()=>{update();if(kick)kick();});function setView(v){vmode=v;vBtns.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===v)));view.classList.toggle('is-real',v==='real');real.hidden=v!=='real';canvas.hidden=v==='real';$$('.lab-ctrl [data-show]').forEach(e=>{e.hidden=e.dataset.show!==v;});hint.textContent=v==='real'?'Clique na imagem para ampliar · imagem real do DynaMut2':'Arraste para girar · ilustração';if(!RM)view.animate([{opacity:.4},{opacity:1}],{duration:400,easing:'ease-out'});update();if(kick)kick();}vBtns.forEach(b=>b.addEventListener('click',()=>setView(b.dataset.v)));setView('real');

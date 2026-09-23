@@ -16,7 +16,8 @@ Sistema visual e interativo que reúne as evidências sobre a variante **TP53 R3
 
 ```
 index.html   página completa do site
-imagens/     capturas de tela das plataformas usadas na pesquisa
+imagens/     capturas de tela das plataformas (WebP)
+imagens/mini miniaturas leves usadas nos cartões e na galeria
 ```
 
 Para abrir no computador, basta dar dois cliques em `index.html`. O site usa Three.js (r128) e GSAP (3.12.5) pelo cdnjs e fontes do Google Fonts, então precisa de internet para carregar esses recursos.
