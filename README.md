@@ -18,7 +18,7 @@ com resumo em 1 minuto, gráficos interativos, figuras, glossário, título trad
 
 ## Estudos no app
 
-Pesquisadoras em destaque: **Patrícia Lius Melo Alves** (Uniso) e **Juliana Machado Rugolo** (HC da Faculdade de Medicina de Botucatu · Uniso).
+Pesquisadoras em destaque: **Patrícia Lius Melo Alves** (Uniso) e **Juliana Machado Rugolo** (HC da Faculdade de Medicina de Botucatu, Unesp).
 
 | Estudo | Tema | Revista |
 |---|---|---|
