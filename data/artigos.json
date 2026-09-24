@@ -1,6 +1,100 @@
 {
-  "_como_usar": "Cada item vira um cartão na aba Artigos (e o mais recente aparece em destaque no Início). Veja docs/COMO-ADICIONAR-ARTIGO.md.",
+  "_como_usar": "Cada item vira um cartão na aba Temas (no tema indicado em \"temas\"; cada estudo fica em um só tema). \"pesquisadoras\" liga o artigo às pesquisadoras em destaque; \"primeira_autora\" marca os artigos em que a pesquisadora é a autora principal: o mais recente deles fica \"Em destaque\" no Início. Veja docs/COMO-ADICIONAR-ARTIGO.md.",
+  "temas": [
+    {
+      "id": "genetica",
+      "nome": "Genética",
+      "cor": "#7B4DE0",
+      "sobre": "Genes, mutações e como elas influenciam a saúde."
+    },
+    {
+      "id": "biologia-molecular",
+      "nome": "Biologia molecular",
+      "cor": "#2F5BEA",
+      "sobre": "DNA, RNA e proteínas: o que acontece dentro das células."
+    },
+    {
+      "id": "bioinformatica",
+      "nome": "Bioinformática",
+      "cor": "#0E9AA7",
+      "sobre": "Computadores e bancos de dados para entender genes e proteínas."
+    },
+    {
+      "id": "oncologia",
+      "nome": "Oncologia",
+      "cor": "#E0385A",
+      "sobre": "Câncer: como surge, como se trata e o que funciona."
+    },
+    {
+      "id": "microbiologia",
+      "nome": "Microbiologia",
+      "cor": "#14864A",
+      "sobre": "Bactérias: as que causam infecções e as que ajudam a ciência."
+    },
+    {
+      "id": "biomateriais",
+      "nome": "Biomateriais e nanotecnologia",
+      "cor": "#D98A0B",
+      "sobre": "Materiais para curar feridas, levar remédios e reconstruir tecidos."
+    },
+    {
+      "id": "toxinologia",
+      "nome": "Toxinologia",
+      "cor": "#A21C5A",
+      "sobre": "Venenos de animais e os soros que protegem."
+    },
+    {
+      "id": "saude-publica",
+      "nome": "Saúde pública e SUS",
+      "cor": "#0369A1",
+      "sobre": "Tratamentos, evidências e decisões que afetam milhões de pessoas."
+    },
+    {
+      "id": "meio-ambiente",
+      "nome": "Meio ambiente",
+      "cor": "#5B8C12",
+      "sobre": "Ciência para limpar a água e proteger a natureza."
+    }
+  ],
+  "pesquisadoras": [
+    {
+      "id": "patricia",
+      "nome": "Patrícia Lius Melo Alves",
+      "vinculo": "Universidade de Sorocaba (Uniso)",
+      "iniciais": "PA",
+      "cor": "#7B4DE0"
+    },
+    {
+      "id": "juliana",
+      "nome": "Juliana Machado Rugolo",
+      "vinculo": "HC da Faculdade de Medicina de Botucatu (Unesp) · Uniso",
+      "iniciais": "JR",
+      "cor": "#0E9AA7"
+    }
+  ],
   "artigos": [
+    {
+      "id": "r337h",
+      "url": "r337h/",
+      "titulo_curto": "A variante R337H no gene TP53 e a Síndrome de Li-Fraumeni",
+      "titulo": "Análise in silico da mutação R337H no gene TP53: relação com a Síndrome de Li-Fraumeni",
+      "autores_curto": "Ana Júlia Silva Rodrigues e Thaisa Carvalho",
+      "selo": "Estudo em andamento",
+      "ano": 2026,
+      "data": "2026-01-01",
+      "resumo": "Estudo em andamento: a troca da arginina pela histidina na proteína p53, muito comum no Brasil, analisada com bancos de dados, estrutura 3D e todas as evidências.",
+      "tags": [
+        "Bioinformática",
+        "TP53"
+      ],
+      "capa": "r337h/imagens/mini/tp53db-estrutura-3d.webp",
+      "capa_alt": "Estrutura 3D da proteína p53",
+      "temas": [
+        "bioinformatica"
+      ],
+      "pesquisadoras": [],
+      "estudo_completo": true
+    },
     {
       "id": "micrurus-spixii",
       "url": "artigos/micrurus-spixii/",
@@ -9,7 +103,11 @@
       "autores_curto": "Passos, Costa, Cantuária, Alves, Azevedo, Hyslop e Oshima-Franco",
       "ano": 2026,
       "resumo": "O veneno derrubou as células saudáveis do músculo de 66% para menos de 1%. O soro antielapídico protegeu, mas só em parte: melhor contra o inchaço e a morte das células.",
-      "tags": ["Toxinologia", "Histologia", "Soro antiofídico"],
+      "tags": [
+        "Toxinologia",
+        "Histologia",
+        "Soro antiofídico"
+      ],
       "capa": "artigos/micrurus-spixii/imagens/mini/figura1-tipos-de-lesao.webp",
       "capa_alt": "Corte de músculo corado em rosa visto ao microscópio",
       "revista": {
@@ -22,7 +120,387 @@
         "doi": "10.56238/arev8n2-068",
         "url": "https://doi.org/10.56238/arev8n2-068",
         "site": "https://periodicos.newsciencepubl.com/arace"
+      },
+      "data": "2026-02-12",
+      "temas": [
+        "toxinologia"
+      ],
+      "pesquisadoras": [
+        "patricia"
+      ]
+    },
+    {
+      "id": "ibrutinibe-leucemia",
+      "url": "artigos/ibrutinibe-leucemia/",
+      "titulo_curto": "Ibrutinibe com rituximabe contra a leucemia linfocítica crônica: mais tempo sem a doença avançar",
+      "titulo": "Efficacy and safety analysis of the use of ibrutinib associated with rituximab for the first-line treatment of patients with chronic lymphocytic leukaemia",
+      "titulo_pt": "Análise de eficácia e segurança do uso de ibrutinibe associado ao rituximabe no tratamento de primeira linha de pacientes com leucemia linfocítica crônica",
+      "autores_curto": "Nascimento, Curado, Montezuma, Barbosa, Machado-Rugolo e Fachi",
+      "ano": 2026,
+      "data": "2025-12-15",
+      "resumo": "Juntando os dois grandes ensaios clínicos, o ibrutinibe com rituximabe reduziu em 59% o risco de a leucemia avançar, com segurança parecida à do tratamento do SUS.",
+      "tags": [
+        "Leucemia",
+        "Metanálise"
+      ],
+      "capa": "artigos/ibrutinibe-leucemia/imagens/capa.svg",
+      "capa_alt": "Ilustração de células do sangue",
+      "temas": [
+        "oncologia"
+      ],
+      "pesquisadoras": [
+        "juliana"
+      ],
+      "revista": {
+        "nome": "Hematology, Transfusion and Cell Therapy",
+        "cidade": "Rio de Janeiro (ABHH · Elsevier)",
+        "issn": "2531-1379",
+        "ano": "2026",
+        "volume": "48",
+        "numero": "1",
+        "doi": "10.1016/j.htct.2025.106234",
+        "url": "https://doi.org/10.1016/j.htct.2025.106234",
+        "site": "https://www.htct.com.br"
       }
+    },
+    {
+      "id": "curativo-celulose-nisina",
+      "url": "artigos/curativo-celulose-nisina/",
+      "titulo_curto": "Um curativo de celulose que combate bactérias resistentes",
+      "titulo": "Development of a Drug Delivery System with Bacterial Cellulose and Gelatin: Physicochemical and Microbiological Evaluation",
+      "titulo_pt": "Desenvolvimento de um sistema de liberação de fármacos com celulose bacteriana e gelatina: avaliação físico-química e microbiológica",
+      "autores_curto": "Machado, Ibanez, Alves e outros",
+      "ano": 2025,
+      "data": "2025-08-27",
+      "resumo": "Um filme de celulose bacteriana, gelatina e nisina barrou as 7 bactérias testadas, inclusive resistentes de hospital, e teve ação antioxidante.",
+      "tags": [
+        "Curativos",
+        "Resistência bacteriana"
+      ],
+      "capa": "artigos/curativo-celulose-nisina/imagens/capa.svg",
+      "capa_alt": "Ilustração de fibras de celulose",
+      "temas": [
+        "biomateriais"
+      ],
+      "pesquisadoras": [
+        "patricia"
+      ],
+      "revista": {
+        "nome": "Macromol",
+        "cidade": "Basileia, Suíça (MDPI)",
+        "issn": "2673-6209",
+        "ano": "2025",
+        "volume": "5",
+        "numero": "3",
+        "doi": "10.3390/macromol5030039",
+        "url": "https://doi.org/10.3390/macromol5030039",
+        "site": "https://www.mdpi.com/journal/macromol"
+      }
+    },
+    {
+      "id": "sintese-qualitativa-ats",
+      "url": "artigos/sintese-qualitativa-ats/",
+      "titulo_curto": "Ouvir os pacientes nas decisões de saúde: como reunir as pesquisas qualitativas",
+      "titulo": "Mapping frameworks for synthesizing qualitative evidence in health technology assessment",
+      "titulo_pt": "Mapeamento dos referenciais para sintetizar evidências qualitativas na avaliação de tecnologias em saúde",
+      "autores_curto": "Cardoso, Marques, Machado-Rugolo e outros",
+      "ano": 2024,
+      "data": "2024-11-13",
+      "resumo": "Um mapa de 31 documentos que ensinam a reunir pesquisas qualitativas, com a voz de pacientes e famílias, nas decisões sobre tecnologias em saúde.",
+      "tags": [
+        "Avaliação de tecnologias",
+        "Pesquisa qualitativa"
+      ],
+      "capa": "artigos/sintese-qualitativa-ats/imagens/capa.svg",
+      "capa_alt": "Ilustração de rede com balões de fala",
+      "temas": [
+        "saude-publica"
+      ],
+      "pesquisadoras": [
+        "juliana"
+      ],
+      "revista": {
+        "nome": "International Journal of Technology Assessment in Health Care",
+        "cidade": "Cambridge, Reino Unido (Cambridge University Press)",
+        "issn": "0266-4623",
+        "ano": "2024",
+        "volume": "40",
+        "numero": "1",
+        "doi": "10.1017/S0266462324000369",
+        "url": "https://doi.org/10.1017/S0266462324000369",
+        "site": "https://www.cambridge.org/core/journals/international-journal-of-technology-assessment-in-health-care"
+      }
+    },
+    {
+      "id": "cosmeticos-antienvelhecimento",
+      "url": "artigos/cosmeticos-antienvelhecimento/",
+      "titulo_curto": "Nanotecnologia nos cosméticos antienvelhecimento: o que a ciência já testou",
+      "titulo": "Unveiling New Horizons: Advancing Technologies in Cosmeceuticals for Anti-Aging Solutions",
+      "titulo_pt": "Revelando novos horizontes: avanços tecnológicos em cosmecêuticos para soluções antienvelhecimento",
+      "autores_curto": "Alves, Nieri, Moreli, Constantino, Souza, Oshima-Franco e Grotto",
+      "ano": 2024,
+      "data": "2024-10-15",
+      "resumo": "Revisão de 38 estudos: nanopartículas, lipossomas e niossomas dominam os cosméticos antienvelhecimento, mas faltam testes longos e maiores.",
+      "tags": [
+        "Nanotecnologia",
+        "Cosméticos"
+      ],
+      "capa": "artigos/cosmeticos-antienvelhecimento/imagens/capa.svg",
+      "capa_alt": "Ilustração de nanopartículas",
+      "temas": [
+        "biomateriais"
+      ],
+      "pesquisadoras": [
+        "patricia"
+      ],
+      "revista": {
+        "nome": "Molecules",
+        "cidade": "Basileia, Suíça (MDPI)",
+        "issn": "1420-3049",
+        "ano": "2024",
+        "volume": "29",
+        "numero": "20",
+        "doi": "10.3390/molecules29204890",
+        "url": "https://doi.org/10.3390/molecules29204890",
+        "site": "https://www.mdpi.com/journal/molecules"
+      },
+      "primeira_autora": "patricia"
+    },
+    {
+      "id": "erlotinibe-gefitinibe",
+      "url": "artigos/erlotinibe-gefitinibe/",
+      "titulo_curto": "Remédios-alvo contra o câncer de pulmão funcionam fora dos estudos? O que mostra o mundo real",
+      "titulo": "Revisão Sistemática de Estudos Observacionais sobre o uso de Erlotinibe e Gefitinibe no Tratamento do Câncer de Pulmão de Células Não Pequenas",
+      "autores_curto": "Livinalli, Cruz, Emmerick, Pestana, Machado-Rugolo e outros",
+      "ano": 2024,
+      "data": "2024-08-30",
+      "resumo": "No mundo real, gefitinibe e erlotinibe deram mais tempo sem progressão do câncer de pulmão do que a quimioterapia, com adesão acima de 85%.",
+      "tags": [
+        "Câncer de pulmão",
+        "Mundo real"
+      ],
+      "capa": "artigos/erlotinibe-gefitinibe/imagens/capa.svg",
+      "capa_alt": "Ilustração de curvas de sobrevida",
+      "temas": [
+        "oncologia"
+      ],
+      "pesquisadoras": [
+        "juliana"
+      ],
+      "revista": {
+        "nome": "Revista Brasileira de Cancerologia",
+        "cidade": "Rio de Janeiro (INCA)",
+        "issn": "2176-9745",
+        "ano": "2024",
+        "volume": "70",
+        "numero": "3",
+        "doi": "10.32635/2176-9745.RBC.2024v70n3.4656",
+        "url": "https://doi.org/10.32635/2176-9745.RBC.2024v70n3.4656",
+        "site": "https://rbc.inca.gov.br"
+      }
+    },
+    {
+      "id": "bacteria-metais-pesados",
+      "url": "artigos/bacteria-metais-pesados/",
+      "titulo_curto": "Uma bactéria que limpa a água contaminada por chumbo, cobre e cádmio",
+      "titulo": "Bacillus subtilis as an effective tool for bioremediation of lead, copper and cadmium in water",
+      "titulo_pt": "Bacillus subtilis como ferramenta eficaz para a biorremediação de chumbo, cobre e cádmio na água",
+      "autores_curto": "Rocco, Freire, Oliveira, Alves e outros",
+      "ano": 2024,
+      "data": "2024-08-05",
+      "resumo": "A bactéria Bacillus subtilis removeu da água até 100% do chumbo, 92,3% do cádmio e 89% do cobre.",
+      "tags": [
+        "Biorremediação",
+        "Metais pesados"
+      ],
+      "capa": "artigos/bacteria-metais-pesados/imagens/mini/capa.webp",
+      "capa_alt": "Bactérias vistas ao microscópio eletrônico",
+      "temas": [
+        "microbiologia"
+      ],
+      "pesquisadoras": [
+        "patricia"
+      ],
+      "revista": {
+        "nome": "Discover Applied Sciences",
+        "cidade": "Cham, Suíça (Springer Nature)",
+        "issn": "3004-9261",
+        "ano": "2024",
+        "volume": "6",
+        "numero": "8",
+        "doi": "10.1007/s42452-024-06101-y",
+        "url": "https://doi.org/10.1007/s42452-024-06101-y",
+        "site": "https://link.springer.com/journal/42452"
+      }
+    },
+    {
+      "id": "arcabouco-osso",
+      "url": "artigos/arcabouco-osso/",
+      "titulo_curto": "Um “andaime” de quitosana, colágeno e ácido hialurônico que ajuda a formar osso",
+      "titulo": "Enhanced bone matrix formation through a dense lamellar scaffold of chitosan, collagen type I, and hyaluronic acid",
+      "titulo_pt": "Formação aumentada de matriz óssea com um arcabouço lamelar denso de quitosana, colágeno tipo I e ácido hialurônico",
+      "autores_curto": "Sallum, Sacramento, Alves, Alves e outros",
+      "ano": 2024,
+      "data": "2024-07-21",
+      "resumo": "Um arcabouço de quitosana, colágeno e ácido hialurônico fez células de osso amadurecerem mais cedo e depositarem mais minerais.",
+      "tags": [
+        "Engenharia de tecidos",
+        "Osso"
+      ],
+      "capa": "artigos/arcabouco-osso/imagens/capa.svg",
+      "capa_alt": "Ilustração de camadas de um arcabouço",
+      "temas": [
+        "biomateriais"
+      ],
+      "pesquisadoras": [
+        "patricia"
+      ],
+      "revista": {
+        "nome": "Carbohydrate Polymer Technologies and Applications",
+        "cidade": "Amsterdã, Holanda (Elsevier)",
+        "issn": "2666-8939",
+        "ano": "2024",
+        "volume": "8",
+        "doi": "10.1016/j.carpta.2024.100549",
+        "url": "https://doi.org/10.1016/j.carpta.2024.100549",
+        "site": "https://www.sciencedirect.com/journal/carbohydrate-polymer-technologies-and-applications"
+      }
+    },
+    {
+      "id": "juca-nanocelulose",
+      "url": "artigos/juca-nanocelulose/",
+      "titulo_curto": "O jucá dentro da nanocelulose: um curativo natural contra bactérias",
+      "titulo": "Atividade antimicrobiana da nanocelulose bacteriana contendo Caesalpinia ferrea",
+      "autores_curto": "Alves, Borba, Machado e outros",
+      "ano": 2024,
+      "data": "2024-04-25",
+      "resumo": "Membranas de nanocelulose com extrato de jucá liberaram o extrato por até 40 horas e barraram três bactérias.",
+      "tags": [
+        "Plantas medicinais",
+        "Curativos"
+      ],
+      "capa": "artigos/juca-nanocelulose/imagens/mini/capa.webp",
+      "capa_alt": "Placas de laboratório com halos sem bactérias",
+      "temas": [
+        "microbiologia"
+      ],
+      "pesquisadoras": [
+        "patricia"
+      ],
+      "revista": {
+        "nome": "Observatorio de la Economía Latinoamericana",
+        "cidade": "Curitiba (PR)",
+        "issn": "1696-8352",
+        "ano": "2024",
+        "volume": "22",
+        "numero": "4",
+        "doi": "10.55905/oelv22n4-178",
+        "url": "https://doi.org/10.55905/oelv22n4-178",
+        "site": "https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel"
+      },
+      "primeira_autora": "patricia"
+    },
+    {
+      "id": "ia-conitec",
+      "url": "artigos/ia-conitec/",
+      "titulo_curto": "Uma inteligência artificial que lê os relatórios da Conitec e prevê a decisão",
+      "titulo": "Application of natural language processing to predict final recommendation of Brazilian health technology assessment reports",
+      "titulo_pt": "Aplicação do processamento de linguagem natural para prever a recomendação final dos relatórios brasileiros de avaliação de tecnologias em saúde",
+      "autores_curto": "Cardoso, Machado-Rugolo, Thabane e outros",
+      "ano": 2024,
+      "data": "2024-04-12",
+      "resumo": "Uma rede neural leu 432 relatórios da Conitec e acertou 76,9% das decisões sobre o que entra no SUS.",
+      "tags": [
+        "Inteligência artificial",
+        "SUS"
+      ],
+      "capa": "artigos/ia-conitec/imagens/capa.svg",
+      "capa_alt": "Ilustração de rede de dados",
+      "temas": [
+        "saude-publica"
+      ],
+      "pesquisadoras": [
+        "juliana"
+      ],
+      "revista": {
+        "nome": "International Journal of Technology Assessment in Health Care",
+        "cidade": "Cambridge, Reino Unido (Cambridge University Press)",
+        "issn": "0266-4623",
+        "ano": "2024",
+        "volume": "40",
+        "numero": "1",
+        "doi": "10.1017/S0266462324000163",
+        "url": "https://doi.org/10.1017/S0266462324000163",
+        "site": "https://www.cambridge.org/core/journals/international-journal-of-technology-assessment-in-health-care"
+      }
+    },
+    {
+      "id": "celulose-remedios-agua",
+      "url": "artigos/celulose-remedios-agua/",
+      "titulo_curto": "Celulose de bactéria para tirar remédios e hormônios da água",
+      "titulo": "Exploring Bacterial Cellulose and a Biosurfactant as Eco-Friendly Strategies for Addressing Pharmaceutical Contaminants",
+      "titulo_pt": "Explorando a celulose bacteriana e um biossurfactante como estratégias ecológicas contra contaminantes farmacêuticos",
+      "autores_curto": "Castanho, Marco, Caetano, Alves e outros",
+      "ano": 2024,
+      "data": "2024-01-17",
+      "resumo": "Membranas de celulose feita por bactérias capturaram até 88% de um hormônio de anticoncepcional presente na água.",
+      "tags": [
+        "Poluição da água",
+        "Celulose bacteriana"
+      ],
+      "capa": "artigos/celulose-remedios-agua/imagens/capa.svg",
+      "capa_alt": "Ilustração de moléculas na água",
+      "temas": [
+        "meio-ambiente"
+      ],
+      "pesquisadoras": [
+        "patricia"
+      ],
+      "revista": {
+        "nome": "Molecules",
+        "cidade": "Basileia, Suíça (MDPI)",
+        "issn": "1420-3049",
+        "ano": "2024",
+        "volume": "29",
+        "numero": "2",
+        "doi": "10.3390/molecules29020448",
+        "url": "https://doi.org/10.3390/molecules29020448",
+        "site": "https://www.mdpi.com/journal/molecules"
+      }
+    },
+    {
+      "id": "tp53-egfr-pulmao",
+      "url": "artigos/tp53-egfr-pulmao/",
+      "titulo_curto": "TP53 e EGFR juntos no câncer de pulmão: o que isso muda para pacientes brasileiros",
+      "titulo": "Concomitant TP53 mutation in early-stage resected EGFR-mutated non-small cell lung cancer: a narrative approach in a genetically admixed Brazilian cohort",
+      "titulo_pt": "Mutação concomitante no TP53 no câncer de pulmão de células não pequenas com mutação no EGFR, em estágio inicial e operado: uma abordagem narrativa em uma coorte brasileira geneticamente miscigenada",
+      "autores_curto": "Machado-Rugolo, Baldavira, Prieto e outros",
+      "ano": 2023,
+      "data": "2023-04-07",
+      "resumo": "Em 70 tumores de pulmão, quase metade dos que tinham EGFR mutado também tinha o TP53 mutado, e o TP53 tendeu a piorar a sobrevida.",
+      "tags": [
+        "TP53",
+        "Câncer de pulmão"
+      ],
+      "capa": "artigos/tp53-egfr-pulmao/imagens/capa.svg",
+      "capa_alt": "Ilustração de dupla hélice de DNA",
+      "temas": [
+        "genetica"
+      ],
+      "pesquisadoras": [
+        "juliana"
+      ],
+      "revista": {
+        "nome": "Brazilian Journal of Medical and Biological Research",
+        "cidade": "Ribeirão Preto (SP)",
+        "issn": "1414-431X",
+        "ano": "2023",
+        "volume": "56",
+        "doi": "10.1590/1414-431X2023e12488",
+        "url": "https://doi.org/10.1590/1414-431X2023e12488",
+        "site": "https://www.bjournal.org"
+      },
+      "primeira_autora": "juliana"
     }
   ]
 }

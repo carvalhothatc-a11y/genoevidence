@@ -49,8 +49,8 @@
       ]
     },
     {
-      "name": "Artigos explicados",
-      "short_name": "Artigos",
+      "name": "Temas",
+      "short_name": "Temas",
       "url": "./artigos/",
       "icons": [
         {
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "name": "Estudo R337H",
+      "name": "Estudo em andamento: R337H",
       "short_name": "R337H",
       "url": "./r337h/",
       "icons": [

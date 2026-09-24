@@ -1,0 +1,152 @@
+{
+  "id": "arcabouco-osso",
+  "tipo": "artigo",
+  "rotulo": "Artigo publicado",
+  "arte": "fibras",
+  "arte_legenda": "ilustração · fibras de um arcabouço para osso",
+  "tema": "Biomateriais e nanotecnologia",
+  "tema_id": "biomateriais",
+  "titulo": "Enhanced bone matrix formation through a dense lamellar scaffold of chitosan, collagen type I, and hyaluronic acid",
+  "titulo_pt": "Formação aumentada de matriz óssea com um arcabouço lamelar denso de quitosana, colágeno tipo I e ácido hialurônico",
+  "titulo_curto": "Um “andaime” de quitosana, colágeno e ácido hialurônico que ajuda a formar osso",
+  "breadcrumb": "Arcabouço para osso",
+  "autores": [
+    {"nome": "Gabrielle Christine Bonetti Sallum", "afiliacao": "Periodontia · Faculdade de Odontologia de Piracicaba (Unicamp)"},
+    {"nome": "Catharina Marques Sacramento", "afiliacao": "Periodontia · Faculdade de Odontologia de Piracicaba (Unicamp)"},
+    {"nome": "Thais Alves", "afiliacao": "Pós-graduação em Biotecnologia · Universidade Tiradentes (Unit)"},
+    {"nome": "Patrícia Lius Melo Alves", "destaque": true, "afiliacao": "Microbiologia Industrial (LAMINFE) · Uniso"},
+    {"nome": "Angela Faustino Jozala", "afiliacao": "LAMINFE · Uniso"},
+    {"nome": "Denise Grotto", "afiliacao": "LAMINFE · Uniso"},
+    {"nome": "Marco Vinícius Chaud", "afiliacao": "Biomateriais e Nanotecnologia · Uniso"},
+    {"nome": "Norberto Aranha", "afiliacao": "LAMINFE · Uniso"},
+    {"nome": "Karina Gonzales Silvério", "afiliacao": "Periodontia · Faculdade de Odontologia de Piracicaba (Unicamp)"}
+  ],
+  "revista": {
+    "nome": "Carbohydrate Polymer Technologies and Applications",
+    "cidade": "Amsterdã, Holanda (Elsevier)",
+    "issn": "2666-8939",
+    "volume": "8",
+    "paginas": "artigo 100549",
+    "ano": "2024",
+    "publicado": "2024-07-21",
+    "doi": "10.1016/j.carpta.2024.100549",
+    "url": "https://doi.org/10.1016/j.carpta.2024.100549",
+    "site": "https://www.sciencedirect.com/journal/carbohydrate-polymer-technologies-and-applications"
+  },
+  "palavras_chave": ["Arcabouço", "Quitosana", "Colágeno tipo I", "Ácido hialurônico", "Regeneração óssea"],
+
+  "em_1_minuto": [
+    {"rotulo": "A pergunta", "titulo": "Dá para ajudar o osso a se refazer?", "texto": "Na engenharia de tecidos, as células precisam de um suporte, um “andaime”, para crescer e formar tecido novo. O estudo testou um andaime feito de três materiais naturais."},
+    {"rotulo": "O que fizeram", "titulo": "Células de osso sobre o arcabouço", "texto": "Em laboratório, células que ainda vão virar osteoblastos (as células que fazem osso) foram cultivadas sobre o arcabouço e comparadas com células cultivadas direto na placa."},
+    {"rotulo": "O que acharam", "titulo": "Mais osso em formação, e mais cedo", "texto": "As células viveram bem no arcabouço, depositaram mais nódulos minerais em 14 dias e ligaram mais cedo os genes de formação de osso."},
+    {"rotulo": "Por que importa", "titulo": "Um material promissor", "texto": "O arcabouço pode ser útil em futuros tratamentos para regenerar osso. Ainda são resultados de laboratório."}
+  ],
+
+  "numeros": [
+    {"valor": "3", "texto": "materiais naturais combinados: quitosana, colágeno tipo I e ácido hialurônico", "cor": "amber"},
+    {"valor": "14 dias", "texto": "até o arcabouço mostrar mais nódulos minerais que o controle", "cor": "ok"},
+    {"valor": "2 genes", "texto": "de formação de osso (Runx2 e Ocn) mais ativos, e mais cedo", "cor": "violet"},
+    {"valor": "2 meios", "texto": "de cultura testados (padrão e osteogênico), com o mesmo resultado", "cor": "teal"}
+  ],
+
+  "secoes": [
+    {
+      "id": "fonte",
+      "menu": "Sobre esta página",
+      "eyebrow": "Aviso",
+      "titulo": "Como esta explicação foi feita",
+      "lede": "Honestidade sobre a fonte.",
+      "blocos": [
+        {"tipo": "destaque", "html": "Esta página foi escrita a partir do <strong>resumo publicado</strong> pela revista, porque o texto completo não pôde ser lido de forma automática. Por isso, ela não traz números além dos que estão no resumo. O artigo completo é de acesso aberto e pode ser lido no botão <strong>Ler na revista</strong>."}
+      ]
+    },
+    {
+      "id": "contexto",
+      "menu": "Contexto",
+      "eyebrow": "Contexto",
+      "titulo": "O que é um arcabouço, e por que estes materiais",
+      "lede": "Para regenerar um tecido, as células precisam de um lugar para se prender, crescer e trabalhar.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>Na <strong>engenharia de tecidos</strong>, um <strong>arcabouço</strong> (em inglês, <em>scaffold</em>) é uma estrutura tridimensional que serve de suporte para as células, como um andaime numa obra. Um bom arcabouço precisa ser bem tolerado pelo corpo, ter poros para as células entrarem e, de preferência, estimular a formação do tecido desejado.</p><p>O arcabouço deste estudo é <strong>lamelar e denso</strong>, ou seja, formado por camadas compactas, e junta três materiais de origem natural.</p>"},
+        {"tipo": "cartoes", "titulo": "Os três materiais do arcabouço", "itens": [
+          {"titulo": "Quitosana", "texto": "Obtida da quitina, presente na casca de crustáceos. É biocompatível e biodegradável, muito usada em biomateriais.", "cor": "amber"},
+          {"titulo": "Colágeno tipo I", "texto": "A principal proteína da parte orgânica do osso. Serve de base para o depósito dos minerais.", "cor": "his"},
+          {"titulo": "Ácido hialurônico", "texto": "Molécula presente naturalmente nos tecidos. Retém água e participa da comunicação entre as células.", "cor": "violet"}
+        ]}
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Como foi feito",
+      "eyebrow": "Método",
+      "titulo": "Como o estudo foi feito",
+      "lede": "Um estudo in vitro, ou seja, com células em laboratório.",
+      "blocos": [
+        {"tipo": "passos", "itens": [
+          {"titulo": "As células", "texto": "Foram usadas células pré-osteoblásticas imortalizadas: células que ainda vão se transformar em osteoblastos, as responsáveis por fabricar osso."},
+          {"titulo": "Dois grupos", "texto": "Controle: células cultivadas direto na placa de plástico. Arcabouço: células cultivadas sobre o arcabouço de quitosana, colágeno tipo I e ácido hialurônico."},
+          {"titulo": "Dois meios de cultura", "texto": "Cada grupo foi cultivado em meio padrão e em meio osteogênico, que tem substâncias que estimulam a formação de osso."},
+          {"titulo": "O que foi medido", "texto": "A atividade metabólica das células (se estavam bem), o depósito de nódulos minerais, a atividade da enzima fosfatase alcalina e a ativação dos genes Runx2 e Ocn."}
+        ]}
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "O arcabouço empurrou as células para virar osso",
+      "lede": "Os sinais de formação óssea apareceram mais fortes e mais cedo nas células do arcabouço.",
+      "blocos": [
+        {"tipo": "cartoes", "itens": [
+          {"titulo": "As células viveram bem", "texto": "A atividade metabólica das células no arcabouço foi parecida com a do controle: o material não prejudicou as células.", "cor": "ok"},
+          {"titulo": "Mais nódulos minerais", "texto": "Depois de 14 dias, houve mais depósito de nódulos minerais no arcabouço do que no controle, tanto no meio padrão quanto no osteogênico.", "cor": "amber"},
+          {"titulo": "Mais fosfatase alcalina", "texto": "O próprio arcabouço aumentou a atividade dessa enzima, que prepara o terreno para a mineralização do osso.", "cor": "violet"},
+          {"titulo": "Genes ligados mais cedo", "texto": "A produção de mRNA dos genes Runx2 e Ocn aumentou, e antes do que no grupo controle.", "cor": "his"}
+        ]},
+        {"tipo": "cadeia", "itens": [
+          "Pré-osteoblasto: a célula ainda não faz osso",
+          "Runx2 “liga” o programa de virar osteoblasto",
+          "A fosfatase alcalina prepara a mineralização",
+          "A osteocalcina (Ocn) marca o osteoblasto maduro",
+          "Nódulos minerais: o começo da matriz óssea"
+        ]},
+        {"tipo": "nota", "html": "A sequência acima mostra, de forma simplificada, as etapas de amadurecimento que os marcadores medidos no estudo representam."}
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusão",
+      "eyebrow": "Conclusão",
+      "titulo": "O que o estudo permite dizer",
+      "lede": "Um passo inicial, feito em laboratório, rumo a novos materiais para regenerar osso.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>O arcabouço lamelar denso de quitosana, colágeno tipo I e ácido hialurônico <strong>estimulou o amadurecimento das células rumo ao osso</strong>. Os autores concluem que ele é um material promissor para futuras estratégias de <strong>regeneração óssea</strong>.</p><p>Por ser um estudo com células em laboratório, ainda são necessários testes em animais e, depois, em pessoas.</p>"}
+      ]
+    }
+  ],
+
+  "glossario": [
+    {"termo": "Arcabouço (scaffold)", "def": "Estrutura 3D que serve de suporte para as células crescerem e formarem um tecido."},
+    {"termo": "Engenharia de tecidos", "def": "Área que combina células, materiais e sinais químicos para reconstruir tecidos do corpo."},
+    {"termo": "Quitosana", "def": "Polímero natural obtido da quitina da casca de crustáceos. Biocompatível e biodegradável."},
+    {"termo": "Colágeno tipo I", "def": "Proteína mais abundante do osso, da pele e dos tendões."},
+    {"termo": "Ácido hialurônico", "def": "Molécula natural dos tecidos que retém água e ajuda na comunicação entre as células."},
+    {"termo": "Osteoblasto", "def": "Célula que produz a matriz do osso."},
+    {"termo": "Pré-osteoblasto", "def": "Célula ainda imatura que pode se transformar em osteoblasto."},
+    {"termo": "Meio osteogênico", "def": "Meio de cultura com substâncias que estimulam as células a formar osso."},
+    {"termo": "Nódulos de mineralização", "def": "Pontos onde as células depositam cálcio e fosfato, o início da parte dura do osso."},
+    {"termo": "Fosfatase alcalina", "def": "Enzima produzida pelos osteoblastos que ajuda a mineralizar o osso."},
+    {"termo": "Runx2 e osteocalcina (Ocn)", "def": "Genes marcadores da formação de osso: o Runx2 inicia o processo e a osteocalcina marca o osteoblasto maduro."},
+    {"termo": "mRNA", "def": "A “cópia de trabalho” de um gene. Mais mRNA significa que o gene está mais ativo."}
+  ],
+
+  "citacao": "SALLUM, G. C. B.; SACRAMENTO, C. M.; ALVES, T.; ALVES, P. L. M.; JOZALA, A. F.; GROTTO, D.; CHAUD, M. V.; ARANHA, N.; SILVÉRIO, K. G. Enhanced bone matrix formation through a dense lamellar scaffold of chitosan, collagen type I, and hyaluronic acid. Carbohydrate Polymer Technologies and Applications, Amsterdam, v. 8, art. 100549, 2024. DOI: 10.1016/j.carpta.2024.100549.",
+
+  "referencias": [
+    {"texto": "RICO-LLANOS, G. A. et al. Collagen Type I Biomaterials as Scaffolds for Bone Tissue Engineering. Polymers, v. 13, 599, 2021.", "doi": "10.3390/polym13040599"},
+    {"texto": "KOMORI, T. Regulation of Proliferation, Differentiation and Functions of Osteoblasts by Runx2. International Journal of Molecular Sciences, v. 20, 1694, 2019.", "doi": "10.3390/ijms20071694"},
+    {"texto": "COLLINS, M. N.; BIRKINSHAW, C. Hyaluronic acid based scaffolds for tissue engineering – a review. Carbohydrate Polymers, 2013.", "doi": "10.1016/j.carbpol.2012.10.028"},
+    {"texto": "RODRÍGUEZ-VÁZQUEZ, M. et al. Chitosan and its potential use as a scaffold for tissue engineering in regenerative medicine. BioMed Research International, 2015.", "doi": "10.1155/2015/821279"},
+    {"texto": "LOH, Q. L.; CHOONG, C. Three-dimensional scaffolds for tissue engineering applications: role of porosity and pore size. Tissue Engineering Part B, 2013.", "doi": "10.1089/ten.teb.2012.0437"}
+  ]
+}

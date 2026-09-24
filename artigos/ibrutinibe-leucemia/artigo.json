@@ -1,0 +1,183 @@
+{
+  "id": "ibrutinibe-leucemia",
+  "tipo": "artigo",
+  "rotulo": "Revisão sistemática e metanálise",
+  "arte": "sangue",
+  "arte_legenda": "ilustração · linfócitos e hemácias no sangue",
+  "tema": "Oncologia",
+  "tema_id": "oncologia",
+  "titulo": "Efficacy and safety analysis of the use of ibrutinib associated with rituximab for the first-line treatment of patients with chronic lymphocytic leukaemia",
+  "titulo_pt": "Análise de eficácia e segurança do uso de ibrutinibe associado ao rituximabe no tratamento de primeira linha de pacientes com leucemia linfocítica crônica",
+  "titulo_curto": "Ibrutinibe com rituximabe contra a leucemia linfocítica crônica: mais tempo sem a doença avançar",
+  "breadcrumb": "Ibrutinibe na leucemia",
+  "autores": [
+    {"nome": "Aline do Nascimento", "afiliacao": "Universidade de Brasília · Ministério da Saúde"},
+    {"nome": "Daniel da Silva Pereira Curado", "afiliacao": "Universidade de Brasília · Ministério da Saúde"},
+    {"nome": "Thais Montezuma", "afiliacao": "Universidade de Brasília · Hospital Alemão Oswaldo Cruz"},
+    {"nome": "Wallace Breno Barbosa", "afiliacao": "Universidade de Brasília · Ministério da Saúde"},
+    {"nome": "Juliana Machado-Rugolo", "destaque": true, "afiliacao": "UnB · HC da Faculdade de Medicina de Botucatu · Uniso"},
+    {"nome": "Mariana Millan Fachi", "afiliacao": "Universidade de Brasília · Hospital Alemão Oswaldo Cruz"}
+  ],
+  "revista": {
+    "nome": "Hematology, Transfusion and Cell Therapy",
+    "cidade": "Rio de Janeiro (ABHH · Elsevier)",
+    "issn": "2531-1379",
+    "volume": "48",
+    "numero": "1",
+    "paginas": "artigo 106234",
+    "ano": "2026",
+    "publicado": "2025-12-15",
+    "doi": "10.1016/j.htct.2025.106234",
+    "url": "https://doi.org/10.1016/j.htct.2025.106234",
+    "site": "https://www.htct.com.br"
+  },
+  "palavras_chave": ["Revisão sistemática", "Leucemia linfocítica crônica", "Ibrutinibe", "Rituximabe"],
+
+  "em_1_minuto": [
+    {"rotulo": "O problema", "titulo": "Um câncer do sangue comum em idosos", "texto": "A leucemia linfocítica crônica (LLC) é diagnosticada, em geral, entre 65 e 74 anos. No SUS, o primeiro tratamento é o FCR: quimioterapia com fludarabina e ciclofosfamida mais o rituximabe."},
+    {"rotulo": "O que fizeram", "titulo": "Juntaram os melhores estudos", "texto": "Numa revisão sistemática com metanálise, reuniram os dois grandes ensaios clínicos (1.300 pacientes) que compararam ibrutinibe com rituximabe (IR) ao FCR."},
+    {"rotulo": "O que acharam", "titulo": "59% menos risco de a doença avançar", "texto": "Com IR, o risco de a doença voltar a avançar caiu 59%. Na sobrevida total não houve diferença clara, e a segurança foi parecida com a do FCR."},
+    {"rotulo": "Por que importa", "titulo": "Evidência para decisões no SUS", "texto": "A Conitec ainda não avaliou o IR como primeiro tratamento. O estudo reúne as melhores provas disponíveis para essa decisão."}
+  ],
+
+  "numeros": [
+    {"valor": "59%", "texto": "menos risco de a doença avançar ou de morte com IR (HR 0,41)", "cor": "violet"},
+    {"valor": "1.300", "texto": "pacientes em 2 ensaios clínicos, nos EUA e no Reino Unido", "cor": "arg"},
+    {"valor": "14% × 54%", "texto": "neutropenia grave com IR × com FCR", "cor": "ok"},
+    {"valor": "88,1%", "texto": "das pessoas com LLC estão vivas 5 anos após o diagnóstico", "cor": "amber"}
+  ],
+
+  "secoes": [
+    {
+      "id": "doenca",
+      "menu": "A doença",
+      "eyebrow": "Contexto",
+      "titulo": "O que é a leucemia linfocítica crônica",
+      "lede": "Um câncer em que linfócitos B, células de defesa do sangue, se acumulam aos poucos.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>Na <strong>leucemia linfocítica crônica (LLC)</strong>, linfócitos B pequenos e maduros se multiplicam e se acumulam no sangue, na medula óssea, nos gânglios linfáticos e no baço. É um dos cânceres do sangue mais comuns em adultos: a idade mediana no diagnóstico é de <strong>69 anos</strong>.</p><p>No início, muitas vezes não dá sintomas e aparece só como um aumento de linfócitos no exame de sangue. Quando aparecem, os sinais mais comuns são <strong>gânglios aumentados</strong>, febre, suor noturno, perda de peso, cansaço e falta de outras células do sangue.</p>"},
+        {"tipo": "cartoes", "titulo": "Alguns números da doença", "itens": [
+          {"titulo": "4,5 casos por 100 mil", "texto": "pessoas por ano (5,8 em homens e 3,3 em mulheres). Acima de 80 anos, chega a 30 por 100 mil.", "cor": "violet"},
+          {"titulo": "88,1% em 5 anos", "texto": "é a sobrevida relativa em 5 anos. Algumas pessoas vivem muitos anos; outras têm uma doença que avança rápido.", "cor": "ok"},
+          {"titulo": "11.540 casos por ano", "texto": "de leucemias de todos os tipos são esperados no Brasil a cada ano entre 2023 e 2025, segundo o INCA.", "cor": "amber"}
+        ]}
+      ]
+    },
+    {
+      "id": "tratamentos",
+      "menu": "Os tratamentos",
+      "eyebrow": "A comparação",
+      "titulo": "Os dois tratamentos comparados",
+      "lede": "Um já está no SUS. O outro combina um remédio em comprimido com o mesmo anticorpo.",
+      "blocos": [
+        {"tipo": "cartoes", "itens": [
+          {"titulo": "FCR (padrão no SUS)", "texto": "Fludarabina e ciclofosfamida (quimioterapia) com rituximabe (imunoterapia). É o primeiro tratamento para pacientes em boas condições no SUS.", "cor": "his"},
+          {"titulo": "IR (o que foi avaliado)", "texto": "Ibrutinibe, uma terapia-alvo tomada em comprimido todos os dias, de forma contínua, com rituximabe.", "cor": "violet"}
+        ]},
+        {"tipo": "destaque", "html": "A Conitec já avaliou o ibrutinibe como <strong>segundo</strong> tratamento e não recomendou sua entrada no SUS por causa da relação entre custo e benefício. O uso de IR como <strong>primeiro</strong> tratamento ainda não foi avaliado, e é essa lacuna que o estudo ajuda a preencher."}
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Como foi feito",
+      "eyebrow": "Método",
+      "titulo": "Como a revisão foi feita",
+      "lede": "Uma revisão sistemática com metanálise junta os resultados de vários estudos em um só, com regras fixas.",
+      "blocos": [
+        {"tipo": "passos", "itens": [
+          {"titulo": "Protocolo registrado", "texto": "O plano foi registrado antes no PROSPERO (CRD42023494868) e seguiu as diretrizes PRISMA."},
+          {"titulo": "Busca", "texto": "Em dezembro de 2023, a equipe buscou em Medline (PubMed), EMBASE, Biblioteca Cochrane e ClinicalTrials.gov, sem restrição de ano ou idioma."},
+          {"titulo": "Seleção em dupla", "texto": "Dois pesquisadores escolheram os estudos de forma independente. Dos 1.678 registros encontrados, 25 foram lidos na íntegra e 3 artigos, de 2 ensaios clínicos, entraram."},
+          {"titulo": "Metanálise", "texto": "Os resultados foram combinados num modelo de efeitos aleatórios. O risco de viés foi avaliado com a ferramenta RoB 2 e a certeza da evidência com o GRADE."}
+        ]},
+        {"tipo": "cartoes", "titulo": "Os dois ensaios clínicos incluídos", "itens": [
+          {"titulo": "E1912 · Estados Unidos", "texto": "529 pacientes (354 com IR e 175 com FCR), até 70 anos, idade média de 56,7 anos, 67% homens. Acompanhamento mediano de 5,8 anos.", "cor": "arg"},
+          {"titulo": "FLAIR · Reino Unido", "texto": "771 pacientes (386 com IR e 385 com FCR), de 18 a 75 anos, idade mediana de 62 anos, 73% homens. Acompanhamento mediano de 4,4 anos.", "cor": "teal"}
+        ]}
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "Menos progressão da doença, com segurança parecida",
+      "lede": "Escolha um resultado para comparar os dois tratamentos.",
+      "blocos": [
+        {"tipo": "grafico", "rotulo_chips": "Escolha o resultado", "grupos": [
+          {"nome": "Ibrutinibe + rituximabe (IR)", "cor": "#A58CFF"},
+          {"nome": "FCR", "cor": "#FF5470"}
+        ], "parametros": [
+          {"rotulo": "Doença avançou · E1912", "valores": [{"m": 23.7}, {"m": 42.3}], "leitura": "Em 5,8 anos, 84 dos 354 pacientes com IR tiveram a doença avançar ou morreram, contra 74 dos 175 com FCR."},
+          {"rotulo": "Doença avançou · FLAIR", "valores": [{"m": 15.3}, {"m": 30.6}], "leitura": "Em 4,4 anos, isso aconteceu com 59 dos 386 pacientes com IR e com 118 dos 385 com FCR: praticamente a metade."},
+          {"rotulo": "Neutropenia grave", "valores": [{"m": 14}, {"m": 54}], "leitura": "A queda grave dos neutrófilos, células de defesa, foi bem menos frequente com IR."},
+          {"rotulo": "Anemia grave", "valores": [{"m": 3}, {"m": 14}], "leitura": "A anemia grave também foi menos comum no grupo que recebeu IR."},
+          {"rotulo": "Pressão alta · E1912", "valores": [{"m": 11.4}, {"m": 1.9}], "leitura": "Efeito esperado do ibrutinibe: a pressão alta grave foi mais frequente com IR."},
+          {"rotulo": "Problemas no coração · E1912", "valores": [{"m": 7.7}, {"m": 0}], "leitura": "Eventos cardíacos também apareceram mais com IR, um ponto de atenção no uso do ibrutinibe."}
+        ], "nota": "Porcentagem de pacientes. “Doença avançou” = progressão da doença ou morte, calculada a partir dos números da Tabela 2 do artigo (eventos ÷ participantes). Efeitos adversos graves = grau 3 ou maior."},
+        {"tipo": "cartoes", "titulo": "O que a metanálise mostrou", "itens": [
+          {"titulo": "Sobrevida livre de progressão", "texto": "HR 0,41 (IC 95%: 0,31 a 0,53): o IR reduziu em 59% o risco de a doença avançar. Certeza da evidência: moderada.", "cor": "ok"},
+          {"titulo": "Sobrevida global", "texto": "HR 0,71 (IC 95%: 0,33 a 1,49): sem diferença estatística entre os tratamentos. Certeza: muito baixa.", "cor": "amber"},
+          {"titulo": "Efeitos graves", "texto": "Risco parecido nos dois tratamentos (RR 0,88 no E1912 e 0,99 no FLAIR). Não foi possível combinar os estudos. Certeza: baixa.", "cor": "arg"},
+          {"titulo": "Qualidade de vida", "texto": "Nenhum dos estudos trouxe dados de qualidade de vida que pudessem ser usados.", "cor": "his"}
+        ]},
+        {"tipo": "figura", "src": "imagens/mini/figura2-forest-plot.webp", "full": "imagens/figura2-forest-plot.webp", "alt": "Quatro gráficos de floresta com quadrados vermelhos e losangos pretos à esquerda da linha central", "legenda": "Figura 2 · Gráficos de floresta (forest plots): (a) sobrevida livre de progressão, (b) sobrevida global, (c) pacientes com IGHV não mutado e (d) com IGHV mutado. Cada quadrado é um estudo; o losango é o resultado combinado. À esquerda da linha vertical, o resultado favorece o IR.", "credito": "Nascimento et al. (2026), Hematology, Transfusion and Cell Therapy, licença CC BY 4.0"},
+        {"tipo": "texto", "html": "<p><strong>O tipo de doença importa.</strong> Nos pacientes com o gene <strong>IGHV não mutado</strong>, que costumam ter uma doença mais agressiva, o IR foi claramente melhor (HR 0,33). Nos pacientes com IGHV mutado, a diferença não foi significativa (HR 0,44; IC 95%: 0,19 a 1,02). No estudo E1912, o IR também reduziu o risco de morte no grupo IGHV não mutado (HR 0,35).</p>"}
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discussão",
+      "eyebrow": "Discussão",
+      "titulo": "O que pesa a favor, e o que pede cautela",
+      "lede": "O benefício é relevante, mas os dois estudos têm diferenças que é preciso considerar.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>Pela escala da Sociedade Europeia de Oncologia (ESMO), um HR de até 0,70 indica benefício clínico relevante, e o IR atingiu esse limite na sobrevida livre de progressão. Um estudo sobre a preferência dos pacientes mostrou que <strong>mais tempo sem a doença avançar</strong> é o resultado que eles mais valorizam, e que muitos preferem remédios em comprimido aos aplicados na veia.</p><p>Até onde os autores sabem, esta é a <strong>primeira revisão sistemática</strong> a comparar diretamente IR e FCR incluindo o estudo FLAIR, publicado em 2023.</p>"},
+        {"tipo": "lista", "titulo": "Limitações apontadas pelos autores", "itens": [
+          "Nenhum dos dois estudos informou o sigilo da alocação dos pacientes, o que reduziu a certeza da evidência.",
+          "Os pacientes eram diferentes: nos EUA eram mais jovens (média de 56,7 anos) do que no Reino Unido (mediana de 62).",
+          "Os estudos usaram sistemas diferentes para classificar o estágio da doença (Rai e Binet).",
+          "O tempo de acompanhamento foi diferente (70 × 53 meses), o que impediu combinar os dados de segurança.",
+          "Não havia dados de qualidade de vida."
+        ]}
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusão",
+      "eyebrow": "Conclusão",
+      "titulo": "O que o estudo permite dizer",
+      "lede": "Uma opção eficaz e segura para o primeiro tratamento da LLC.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>O IR foi <strong>mais eficaz que o FCR</strong> para manter a doença sob controle por mais tempo. Não houve ganho adicional em sobrevida global nem diferença em efeitos graves: o IR foi <strong>pelo menos tão seguro</strong> quanto o FCR. Para os autores, apesar das diferenças entre os estudos, o ibrutinibe com rituximabe deve ser considerado uma opção eficaz e segura no primeiro tratamento da LLC.</p>"}
+      ]
+    }
+  ],
+
+  "glossario": [
+    {"termo": "Leucemia linfocítica crônica (LLC)", "def": "Câncer em que linfócitos B maduros se acumulam no sangue, na medula e nos gânglios."},
+    {"termo": "Linfócito B", "def": "Célula de defesa do sangue responsável por produzir anticorpos."},
+    {"termo": "Primeira linha", "def": "O primeiro tratamento usado depois do diagnóstico."},
+    {"termo": "Ibrutinibe", "def": "Remédio em comprimido que bloqueia a proteína BTK, importante para a sobrevivência dos linfócitos B doentes."},
+    {"termo": "Rituximabe", "def": "Anticorpo que se liga aos linfócitos B e ajuda o sistema de defesa a destruí-los."},
+    {"termo": "Sobrevida livre de progressão", "def": "Tempo em que o paciente vive sem que a doença volte a avançar."},
+    {"termo": "Sobrevida global", "def": "Tempo em que o paciente continua vivo, por qualquer causa."},
+    {"termo": "Hazard ratio (HR)", "def": "Compara o risco entre dois grupos. HR 0,41 quer dizer 59% menos risco no grupo tratado."},
+    {"termo": "IC 95%", "def": "Intervalo de confiança: a faixa onde o valor real provavelmente está. Se inclui o 1, a diferença pode ser acaso."},
+    {"termo": "Metanálise", "def": "Técnica estatística que combina os resultados de vários estudos em um só."},
+    {"termo": "Ensaio clínico randomizado", "def": "Estudo em que os pacientes são sorteados para receber um ou outro tratamento."},
+    {"termo": "GRADE", "def": "Sistema que classifica a certeza de uma evidência: alta, moderada, baixa ou muito baixa."},
+    {"termo": "IGHV", "def": "Gene dos anticorpos. Quando não está mutado, a LLC costuma ser mais agressiva."},
+    {"termo": "Neutropenia", "def": "Falta de neutrófilos, células de defesa, que aumenta o risco de infecções."},
+    {"termo": "Conitec", "def": "Comissão do Ministério da Saúde que avalia se tratamentos devem entrar no SUS."}
+  ],
+
+  "citacao": "NASCIMENTO, A.; CURADO, D. S. P.; MONTEZUMA, T.; BARBOSA, W. B.; MACHADO-RUGOLO, J.; FACHI, M. M. Efficacy and safety analysis of the use of ibrutinib associated with rituximab for the first-line treatment of patients with chronic lymphocytic leukaemia. Hematology, Transfusion and Cell Therapy, v. 48, n. 1, art. 106234, 2026. DOI: 10.1016/j.htct.2025.106234.",
+
+  "referencias": [
+    {"texto": "SHANAFELT, T. D. et al. Ibrutinib–Rituximab or Chemoimmunotherapy for Chronic Lymphocytic Leukemia. New England Journal of Medicine, v. 381, p. 432-443, 2019.", "doi": "10.1056/NEJMoa1817073"},
+    {"texto": "SHANAFELT, T. D. et al. Long-term outcomes for ibrutinib–rituximab and chemoimmunotherapy in CLL: updated results of the E1912 trial. Blood, v. 140, n. 2, p. 112-120, 2022.", "doi": "10.1182/blood.2021014960"},
+    {"texto": "HILLMEN, P. et al. Ibrutinib and rituximab versus fludarabine, cyclophosphamide, and rituximab for patients with previously untreated chronic lymphocytic leukaemia (FLAIR): interim analysis of a multicentre, open-label, randomised, phase 3 trial. The Lancet Oncology, 2023."},
+    {"texto": "HALLEK, M. et al. iwCLL guidelines for diagnosis, indications for treatment, response assessment, and supportive management of CLL. Blood, v. 131, n. 25, p. 2745-2760, 2018.", "doi": "10.1182/blood-2017-09-806398"},
+    {"texto": "RAVELO, A. et al. Patient preferences for chronic lymphocytic leukemia treatments: a discrete-choice experiment. Future Oncology, v. 20, n. 28, p. 2059-2070, 2024.", "doi": "10.1080/14796694.2024.2348440"}
+  ]
+}

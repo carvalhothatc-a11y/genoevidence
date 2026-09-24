@@ -14,7 +14,7 @@
 <meta name="apple-mobile-web-app-title" content="GenoEvidence">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>GenoEvidence</title>
-<meta name="description" content="GenoEvidence: notícias de ciência do dia, artigos científicos explicados em linguagem simples e as revistas onde foram publicados.">
+<meta name="description" content="GenoEvidence: estudos científicos explicados em linguagem simples, separados por tema, e as notícias da ciência de hoje.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap">
@@ -24,40 +24,48 @@
 <!-- barra do topo e barra de abas: montadas pelo assets/js/shell.js -->
 <header id="appbar"></header>
 
-<main class="wrap">
-  <section class="hello">
-    <p class="kicker" id="saudacao">&nbsp;</p>
-    <h1>A ciência de hoje, <em>explicada</em>.</h1>
-    <p class="sub">Notícias da ciência atualizadas todos os dias, artigos explicados em linguagem simples e as revistas onde tudo foi publicado.</p>
+<main class="wrap home">
+  <!-- abertura: pouco texto, DNA em 3D (assets/js/hero3d.js) -->
+  <section class="hero-home">
+    <div class="hero-txt">
+      <p class="kicker" id="saudacao">&nbsp;</p>
+      <h1>A ciência de hoje, <em>explicada</em>.</h1>
+      <p class="sub">Estudos completos, temas e notícias da ciência em linguagem simples, com o link direto para a fonte.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#destaques">Ver os destaques</a>
+        <a class="btn ghost" href="artigos/">Explorar por tema</a>
+      </div>
+    </div>
+    <div class="hero-3d" aria-hidden="true">
+      <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+      <canvas id="dna3d"></canvas>
+    </div>
+  </section>
+
+  <!-- em destaque: o artigo mais recente de cada pesquisadora (data/artigos.json) -->
+  <section class="sec" id="destaques" style="--c:var(--accent)">
+    <div class="sec-head"><h2>Em destaque</h2><a class="link-more" href="artigos/">Todos os estudos →</a></div>
+    <div class="destaques" id="destaquesPesq"><p class="loading">Carregando…</p></div>
+  </section>
+
+  <section class="sec" style="--c:var(--amber)">
+    <div class="sec-head"><h2>Estudo em andamento</h2></div>
+    <a class="study-banner" href="r337h/">
+      <span class="big"><span class="r">R</span>337<span class="h">H</span></span>
+      <div><span class="andamento">Ainda não publicado</span><b>A variante R337H no gene TP53 e a Síndrome de Li-Fraumeni</b><p>Com modelo 3D, gráficos, mapa e todas as evidências reunidas até agora.</p></div>
+      <span class="go">Abrir estudo →</span>
+    </a>
+  </section>
+
+  <section class="sec" style="--c:var(--teal)">
+    <div class="sec-head"><h2>Explore por tema</h2><a class="link-more" href="artigos/">Ver todos →</a></div>
+    <div class="tema-grid" id="temasInicio"></div>
   </section>
 
   <section class="sec" style="--c:var(--ok)">
     <div class="sec-head"><h2>Notícias da ciência</h2><a class="link-more" href="noticias/">Ver todas →</a></div>
-    <p class="today-badge" style="margin:-4px 0 14px">Atualizado todos os dias</p>
-    <div class="news-top">
-      <div id="noticiaDestaque"><p class="loading">Carregando as notícias de hoje…</p></div>
-      <ul class="list card" id="hojeNoticias"></ul>
-    </div>
+    <ul class="list card news-mini" id="hojeNoticias"></ul>
     <p class="note" id="atualizado"></p>
-  </section>
-
-  <section class="sec" style="--c:var(--accent)">
-    <div class="sec-head"><h2>Artigo em destaque</h2><a class="link-more" href="artigos/">Todos os artigos →</a></div>
-    <div id="destaque"><p class="loading">Carregando…</p></div>
-  </section>
-
-  <section class="sec" style="--c:var(--blue)">
-    <div class="sec-head"><h2>Acabou de sair nas revistas</h2><a class="link-more" href="revistas/">Ver revistas →</a></div>
-    <ul class="list card" id="hojePublicacoes"></ul>
-  </section>
-
-  <section class="sec" style="--c:var(--violet)">
-    <div class="sec-head"><h2>Estudo completo</h2></div>
-    <a class="study-banner" href="r337h/">
-      <span class="big"><span class="r">R</span>337<span class="h">H</span></span>
-      <div><b>A variante R337H no gene TP53 e a Síndrome de Li-Fraumeni</b><p>O estudo completo, com modelo 3D, gráficos, mapa e todas as evidências.</p></div>
-      <span class="go">Abrir estudo →</span>
-    </a>
   </section>
 
   <div class="card install-card">
@@ -69,6 +77,8 @@
 <footer class="foot"><div class="wrap">GenoEvidence · a ciência por trás das evidências · <a href="./sobre/">Sobre o app</a></div></footer>
 <nav id="tabbar"></nav>
 <script src="./assets/js/shell.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="./assets/js/hero3d.js" defer></script>
 <script src="./assets/js/pwa.js"></script>
 </body>
 </html>

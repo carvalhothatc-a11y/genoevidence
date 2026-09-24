@@ -26,14 +26,14 @@
 
 <main class="wrap">
   <header class="page-head">
-    <p class="kicker">Notícias da ciência · atualizadas todos os dias</p>
-    <h1>Notícias</h1>
-    <p class="sub">Tudo o que a ciência publicou hoje, reunido de fontes confiáveis do Brasil e do mundo. Toque em uma notícia para ler na fonte original.</p>
+    <p class="kicker">Notícias da ciência · escolhidas todos os dias</p>
+    <h1>O que importa hoje</h1>
+    <p class="sub">Só as notícias de ciência mais relevantes do dia: as principais de fontes brasileiras e do mundo, com as estrangeiras traduzidas para o português. Toque em uma notícia para ler na fonte original.</p>
   </header>
 
   <div class="chips" id="filtros" role="group" aria-label="Filtrar notícias">
     <button type="button" class="chip" data-f="todas" aria-pressed="true">Todas</button>
-    <button type="button" class="chip" data-f="pt" aria-pressed="false">Em português</button>
+    <button type="button" class="chip" data-f="pt" aria-pressed="false">Fontes do Brasil</button>
     <button type="button" class="chip" data-f="Genética" aria-pressed="false">Genética</button>
     <button type="button" class="chip" data-f="Câncer" aria-pressed="false">Câncer</button>
     <button type="button" class="chip" data-f="Saúde" aria-pressed="false">Saúde</button>
@@ -42,7 +42,7 @@
     <button type="button" class="chip" data-f="Ciência" aria-pressed="false">Ciência</button>
   </div>
   <ul class="list card" id="lista"><li class="loading" style="padding:14px 18px">Carregando as notícias de hoje…</li></ul>
-  <div style="text-align:center;margin-top:18px"><button type="button" class="btn ghost" id="mais" hidden>Mostrar mais notícias</button></div>
+  <button type="button" class="btn ghost" id="mais" hidden>Mostrar mais notícias</button>
   <p class="note" id="info"></p>
 </main>
 

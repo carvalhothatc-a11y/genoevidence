@@ -3,7 +3,7 @@
      e guarda uma cópia; sem internet, usa a cópia guardada.
    - Imagens, ícones e fontes: usa a cópia guardada (carrega rápido) e atualiza em segundo plano.
    Ao mudar a lista BASICO, aumente a VERSAO. */
-const VERSAO = "genoevidence-v5";
+const VERSAO = "genoevidence-v6";
 const BASICO = [
   "./",
   "index.html",
@@ -20,6 +20,7 @@ const BASICO = [
   "assets/js/dna.js",
   "assets/js/artigo.js",
   "assets/js/pwa.js",
+  "assets/js/hero3d.js",
   "data/artigos.json",
   "data/noticias.json",
   "icons/icon-192.png",
@@ -28,7 +29,29 @@ const BASICO = [
   "r337h/",
   "r337h/r337h.js",
   "artigos/micrurus-spixii/",
-  "artigos/micrurus-spixii/artigo.json"
+  "artigos/micrurus-spixii/artigo.json",
+  "artigos/ibrutinibe-leucemia/",
+  "artigos/ibrutinibe-leucemia/artigo.json",
+  "artigos/curativo-celulose-nisina/",
+  "artigos/curativo-celulose-nisina/artigo.json",
+  "artigos/sintese-qualitativa-ats/",
+  "artigos/sintese-qualitativa-ats/artigo.json",
+  "artigos/cosmeticos-antienvelhecimento/",
+  "artigos/cosmeticos-antienvelhecimento/artigo.json",
+  "artigos/erlotinibe-gefitinibe/",
+  "artigos/erlotinibe-gefitinibe/artigo.json",
+  "artigos/bacteria-metais-pesados/",
+  "artigos/bacteria-metais-pesados/artigo.json",
+  "artigos/arcabouco-osso/",
+  "artigos/arcabouco-osso/artigo.json",
+  "artigos/juca-nanocelulose/",
+  "artigos/juca-nanocelulose/artigo.json",
+  "artigos/ia-conitec/",
+  "artigos/ia-conitec/artigo.json",
+  "artigos/celulose-remedios-agua/",
+  "artigos/celulose-remedios-agua/artigo.json",
+  "artigos/tp53-egfr-pulmao/",
+  "artigos/tp53-egfr-pulmao/artigo.json"
 ];
 const CDN = [
   "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js",

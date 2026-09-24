@@ -1,0 +1,182 @@
+{
+  "id": "cosmeticos-antienvelhecimento",
+  "tipo": "artigo",
+  "rotulo": "Revisão sistemática",
+  "arte": "particulas",
+  "arte_legenda": "ilustração · nanopartículas levando ativos para a pele",
+  "tema": "Biomateriais e nanotecnologia",
+  "tema_id": "biomateriais",
+  "titulo": "Unveiling New Horizons: Advancing Technologies in Cosmeceuticals for Anti-Aging Solutions",
+  "titulo_pt": "Revelando novos horizontes: avanços tecnológicos em cosmecêuticos para soluções antienvelhecimento",
+  "titulo_curto": "Nanotecnologia nos cosméticos antienvelhecimento: o que a ciência já testou",
+  "breadcrumb": "Cosméticos antienvelhecimento",
+  "autores": [
+    {"nome": "Patrícia Lius Melo Alves", "destaque": true, "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Vitor Nieri", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Fernanda de Campos Moreli", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Ederson Constantino", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Jocimar de Souza", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Yoko Oshima-Franco", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Denise Grotto", "afiliacao": "Farmácia · Uniso"}
+  ],
+  "revista": {
+    "nome": "Molecules",
+    "cidade": "Basileia, Suíça (MDPI)",
+    "issn": "1420-3049",
+    "volume": "29",
+    "numero": "20",
+    "paginas": "artigo 4890",
+    "ano": "2024",
+    "publicado": "2024-10-15",
+    "doi": "10.3390/molecules29204890",
+    "url": "https://doi.org/10.3390/molecules29204890",
+    "site": "https://www.mdpi.com/journal/molecules",
+    "pdf": "https://www.mdpi.com/1420-3049/29/20/4890/pdf"
+  },
+  "palavras_chave": ["Cosmecêuticos", "Antienvelhecimento", "Nanotecnologia", "Sistemas de liberação", "Polímeros"],
+
+  "em_1_minuto": [
+    {"rotulo": "A pergunta", "titulo": "O que há de novo nos cosméticos contra o envelhecimento?", "texto": "O resultado de um creme depende do ativo e também do “veículo” que o leva até a pele. O estudo reuniu as tecnologias mais novas desses veículos."},
+    {"rotulo": "O que fizeram", "titulo": "Uma revisão de 5 anos de pesquisa", "texto": "Buscaram estudos de 2018 a 2023. Dos 265 artigos encontrados, 38 cumpriram todos os critérios e foram analisados em detalhe."},
+    {"rotulo": "O que acharam", "titulo": "A nanotecnologia domina", "texto": "A maioria dos estudos usou nanopartículas, lipossomas e niossomas. O efeito mais comum foi o antioxidante, que protege a pele dos radicais livres."},
+    {"rotulo": "O cuidado", "titulo": "Promissor, mas com lacunas", "texto": "Muitos testes em pessoas foram pequenos e curtos. Faltam dados de segurança a longo prazo, e os produtos com nanotecnologia tendem a ser mais caros."}
+  ],
+
+  "numeros": [
+    {"valor": "265 → 38", "texto": "artigos encontrados × artigos analisados na revisão", "cor": "arg"},
+    {"valor": "17 · 11 · 10", "texto": "estudos em células, em animais e em pessoas", "cor": "teal"},
+    {"valor": "7", "texto": "estudos usaram lipossomas, o veículo mais citado", "cor": "violet"},
+    {"valor": "2018–2023", "texto": "período das pesquisas revisadas", "cor": "amber"}
+  ],
+
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Contexto",
+      "eyebrow": "Contexto",
+      "titulo": "Por que a pele envelhece, e o que os cosméticos tentam fazer",
+      "lede": "Rugas, perda de firmeza e manchas têm causas biológicas. Os cosmecêuticos tentam agir nelas.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>Com a idade, a pele produz menos <strong>colágeno</strong> e <strong>elastina</strong>, as proteínas que dão firmeza e elasticidade. O sol e a poluição aceleram esse processo, porque geram <strong>radicais livres</strong> que degradam o colágeno. Mudanças hormonais, como na menopausa, também contribuem.</p><p><strong>Cosmecêuticos</strong> são produtos que ficam entre o cosmético e o medicamento: prometem um efeito real sobre a pele, e não só sobre a aparência. Nenhum produto tópico para o envelhecimento por completo, mas retinoides, antioxidantes e filtros solares podem reduzir e atrasar os sinais.</p>"},
+        {"tipo": "destaque", "html": "O mercado mundial de cosméticos era de <strong>US$ 532,43 bilhões</strong> em 2017, com projeção de chegar a <strong>US$ 805,61 bilhões</strong> em 2023. A busca por produtos mais eficazes impulsiona a pesquisa de novos veículos."},
+        {"tipo": "texto", "html": "<p>A eficácia de um cosmético não depende só do ativo, mas da tecnologia que o leva até o lugar certo da pele e o mantém lá tempo suficiente. É aí que entram as <strong>nanopartículas</strong>: partículas de 1 a 100 nanômetros (um nanômetro é um milionésimo de milímetro), capazes de proteger ativos instáveis e atravessar melhor a barreira da pele.</p>"}
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Como foi feito",
+      "eyebrow": "Método",
+      "titulo": "Como a revisão foi feita",
+      "lede": "Uma revisão sistemática segue regras fixas para encontrar e filtrar os estudos, e evitar escolhas a dedo.",
+      "blocos": [
+        {"tipo": "passos", "itens": [
+          {"titulo": "Busca", "texto": "Em 24 de agosto de 2023, a equipe buscou no PubMed e na literatura cinza, usando termos oficiais do vocabulário MeSH. Só entraram artigos em inglês publicados de 2018 a 2023."},
+          {"titulo": "Primeiro filtro: títulos", "texto": "Dos 265 artigos, 135 saíram pelo título (eram revisões ou tratavam de produtos injetáveis). Outros 2 não estavam disponíveis na íntegra."},
+          {"titulo": "Segundo filtro: resumos", "texto": "Dos 128 restantes, 38 foram excluídos após a leitura do resumo por fugirem do tema."},
+          {"titulo": "Leitura completa", "texto": "Os 90 artigos que sobraram foram lidos inteiros. 52 saíram por não focarem em antienvelhecimento. Ficaram 38."},
+          {"titulo": "Cinco avaliadores", "texto": "Cinco pessoas participaram de todas as etapas, e os artigos foram redistribuídos entre elas ao acaso a cada fase, para tornar a seleção mais confiável."}
+        ]}
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "O que os 38 estudos mostraram",
+      "lede": "Escolha o que quer ver: o funil de seleção, onde os produtos foram testados ou quais veículos mais apareceram.",
+      "blocos": [
+        {"tipo": "grafico", "rotulo_chips": "Escolha o que comparar", "unidade": "", "eixo": "número de artigos", "grupos": [
+          {"nome": "Em células", "cor": "#3FC1C9"},
+          {"nome": "Em animais", "cor": "#FFB23F"},
+          {"nome": "Em pessoas", "cor": "#FF5470"}
+        ], "parametros": [
+          {"rotulo": "Onde foram testados", "valores": [{"m": 17}, {"m": 11}, {"m": 10}], "leitura": "Quase metade dos estudos foi feita só em laboratório, com células. Os 10 estudos em pessoas são a fase final, mais próxima do uso real."},
+          {"rotulo": "Funil de seleção", "grupos": [
+            {"nome": "Encontrados", "cor": "#9DB6FF"},
+            {"nome": "Após títulos", "cor": "#7C9CFF"},
+            {"nome": "Lidos inteiros", "cor": "#A58CFF"},
+            {"nome": "Analisados", "cor": "#5FD39A"}
+          ], "valores": [{"m": 265}, {"m": 130}, {"m": 90}, {"m": 38}], "leitura": "De cada 7 artigos encontrados, só 1 cumpriu todos os critérios. Esse filtro rigoroso é o que diferencia uma revisão sistemática."},
+          {"rotulo": "Veículos mais usados", "grupos": [
+            {"nome": "Lipossomas", "cor": "#A58CFF"},
+            {"nome": "Metálicas", "cor": "#FFB23F"},
+            {"nome": "Niossomas", "cor": "#3FC1C9"},
+            {"nome": "Nanoemulsões", "cor": "#5FD39A"}
+          ], "valores": [{"m": 7}, {"m": 4}, {"m": 3}, {"m": 3}], "leitura": "Os lipossomas, pequenas bolhas de gordura parecidas com a membrana das células, foram os mais estudados. Em seguida vieram as nanopartículas de metal (ouro, óxido de zinco)."}
+        ], "nota": "Contagens a partir das Tabelas 1 a 4 do artigo. Um mesmo estudo pode ter testado mais de um veículo."},
+        {"tipo": "cartoes", "titulo": "Os principais “veículos” encontrados", "itens": [
+          {"titulo": "Lipossomas", "texto": "Bolhas com dupla camada de gordura (como a membrana das células). Carregam ativos que se dissolvem em água ou em óleo.", "cor": "violet"},
+          {"titulo": "Niossomas", "texto": "Parecidos com lipossomas, mas feitos de tensoativos. São mais baratos, estáveis e fáceis de guardar.", "cor": "teal"},
+          {"titulo": "Nanopartículas lipídicas sólidas", "texto": "Um núcleo de gordura sólida em escala nanométrica, que protege o ativo e o libera aos poucos.", "cor": "amber"},
+          {"titulo": "Nanoemulsões", "texto": "Gotas de 50 a 200 nm de óleo em água (ou o contrário). São transparentes, leves e penetram bem.", "cor": "ok"},
+          {"titulo": "Nanopartículas metálicas", "texto": "De ouro, prata, óxido de zinco ou dióxido de titânio. Algumas protegem do sol; outras têm ação antimicrobiana.", "cor": "his"}
+        ]},
+        {"tipo": "texto", "html": "<p>Os ativos foram muito variados, quase todos de origem natural: <strong>ácido gálico, licopeno, resveratrol, curcumina, bakuchiol</strong> (um “retinol vegetal”), <strong>vitamina C, coenzima Q10, cafeína, própolis, geleia real</strong> e extratos de plantas como semente de uva, linhaça e ginkgo.</p><p>A maior parte das formulações teve <strong>ação antioxidante</strong>. Outras reduziram a produção de <strong>melanina</strong> (manchas), bloquearam enzimas que degradam o colágeno e a elastina e evitaram mudanças típicas do envelhecimento nas células.</p>"},
+        {"tipo": "cartoes", "titulo": "Alguns resultados em pessoas", "itens": [
+          {"titulo": "Rugas", "texto": "Um sistema de liberação de adenosina melhorou as rugas 203% mais do que a adenosina pura.", "cor": "ok"},
+          {"titulo": "Manchas", "texto": "Niacinamida e sulforafano em nanocompósitos com ouro reduziram a melanina da pele 123% e 222% mais que as versões puras.", "cor": "amber"},
+          {"titulo": "Melasma", "texto": "Aspasomas com um derivado de vitamina C trataram melasma melhor que o peeling químico, sem efeitos colaterais.", "cor": "violet"},
+          {"titulo": "Celulose bacteriana", "texto": "Máscaras de celulose bacteriana melhoraram firmeza, elasticidade e textura da pele após um a dois meses.", "cor": "teal"}
+        ]},
+        {"tipo": "destaque", "html": "Nem todo resultado foi positivo: em um estudo com células, as <strong>nanopartículas menores de óxido de zinco aceleraram sinais de envelhecimento</strong>, ativando genes ligados a ele (como NF-kB e p53). O tamanho da partícula importa para a segurança."}
+      ]
+    },
+    {
+      "id": "limitacoes",
+      "menu": "Limitações",
+      "eyebrow": "Olhar crítico",
+      "titulo": "As lacunas dos estudos revisados",
+      "lede": "A revisão também apontou por que é preciso cautela antes de acreditar em qualquer promessa.",
+      "blocos": [
+        {"tipo": "lista", "titulo": "Problemas encontrados", "itens": [
+          "Poucos participantes: um estudo testou o produto em só 13 mulheres de 25 a 40 anos; outro, em apenas 6 voluntários.",
+          "Estudos simples-cegos e feitos em um único centro, o que reduz a confiança nos resultados.",
+          "Algumas fórmulas testadas continham ingredientes discutíveis, como parabenos.",
+          "Falta de testes de estabilidade: ativos como a vitamina C se degradam fácil com luz e ar.",
+          "Estudos em animais sem informar a idade dos animais ou quantos foram usados.",
+          "Quase nenhum dado sobre os efeitos a longo prazo."
+        ]},
+        {"tipo": "cartoes", "titulo": "Nanotecnologia × cosmético convencional", "itens": [
+          {"titulo": "A favor da nanotecnologia", "texto": "Penetra mais fundo, libera o ativo aos poucos, protege ativos que estragam com luz e ar e pode usar doses menores.", "cor": "ok"},
+          {"titulo": "Contra (por enquanto)", "texto": "É mais cara, e ainda há dúvidas sobre partículas que possam atravessar barreiras do corpo ao longo dos anos.", "cor": "his"},
+          {"titulo": "O convencional", "texto": "Mais barato e com segurança bem conhecida, mas os retinoides podem irritar, avermelhar e descamar peles sensíveis.", "cor": "arg"}
+        ]}
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusão",
+      "eyebrow": "Conclusão",
+      "titulo": "O que a revisão conclui",
+      "lede": "Um campo em plena expansão, que ainda precisa de estudos maiores e mais longos.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>As novas formas de levar ativos até a pele, principalmente com <strong>nanotecnologia</strong>, mostram resultados promissores: menos rugas, mais hidratação, mais elasticidade e menos manchas. Há uma continuidade animadora entre o que funciona em células e o que aparece em pessoas.</p><p>Para que esses avanços cheguem com segurança ao consumidor, os autores defendem estudos que acompanhem os efeitos por mais tempo, testem a estabilidade das fórmulas e incluam participantes de idades e perfis variados.</p>"},
+        {"tipo": "nota", "html": "Os países que mais publicaram sobre o tema no período foram Egito (6 artigos), Portugal, Itália e Irã (3 cada). O Brasil não aparece entre os estudos incluídos."}
+      ]
+    }
+  ],
+
+  "glossario": [
+    {"termo": "Cosmecêutico", "def": "Produto entre o cosmético e o medicamento, com ativos que prometem efeito real sobre a pele."},
+    {"termo": "Nanopartícula", "def": "Partícula com 1 a 100 nanômetros. Um nanômetro é um milionésimo de milímetro."},
+    {"termo": "Sistema de liberação", "def": "O “veículo” que transporta o ativo até o local certo e controla como ele é liberado."},
+    {"termo": "Lipossoma", "def": "Bolha microscópica com dupla camada de gordura, usada para carregar ativos."},
+    {"termo": "Niossoma", "def": "Vesícula parecida com o lipossoma, feita de tensoativos não iônicos. Mais barata e estável."},
+    {"termo": "Radicais livres", "def": "Moléculas instáveis, geradas pelo sol e pela poluição, que danificam células e o colágeno."},
+    {"termo": "Antioxidante", "def": "Substância que neutraliza radicais livres e protege as células."},
+    {"termo": "Colágeno e elastina", "def": "Proteínas que dão firmeza e elasticidade à pele. Diminuem com a idade."},
+    {"termo": "Melanina", "def": "Pigmento que dá cor à pele. Em excesso em certos pontos, forma manchas."},
+    {"termo": "Fotoenvelhecimento", "def": "Envelhecimento da pele causado principalmente pela exposição ao sol."},
+    {"termo": "Revisão sistemática", "def": "Estudo que reúne e avalia, com regras fixas, todas as pesquisas sobre uma pergunta."},
+    {"termo": "In vitro, in vivo e clínico", "def": "Testes em células no laboratório, em animais e em pessoas, respectivamente."}
+  ],
+
+  "citacao": "ALVES, P. L. M.; NIERI, V.; MORELI, F. C.; CONSTANTINO, E.; SOUZA, J.; OSHIMA-FRANCO, Y.; GROTTO, D. Unveiling New Horizons: Advancing Technologies in Cosmeceuticals for Anti-Aging Solutions. Molecules, Basel, v. 29, n. 20, art. 4890, 2024. DOI: 10.3390/molecules29204890.",
+
+  "referencias": [
+    {"texto": "BILAL, M.; IQBAL, H. M. N. New Insights on Unique Features and Role of Nanostructured Materials in Cosmetics. Cosmetics, v. 7, 24, 2020.", "doi": "10.3390/cosmetics7020024"},
+    {"texto": "SALVIONI, L. et al. The emerging role of nanotechnology in skincare. Advances in Colloid and Interface Science, v. 293, 102437, 2021.", "doi": "10.1016/j.cis.2021.102437"},
+    {"texto": "GU, Y. et al. Biomarkers, oxidative stress and autophagy in skin aging. Ageing Research Reviews, v. 59, 101036, 2020.", "doi": "10.1016/j.arr.2020.101036"},
+    {"texto": "SETHI, M. et al. Nanocosmeceuticals: Trends and Recent Advancements in Self Care. AAPS PharmSciTech, v. 25, 51, 2024.", "doi": "10.1208/s12249-024-02761-6"}
+  ]
+}

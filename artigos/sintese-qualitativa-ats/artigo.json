@@ -1,0 +1,173 @@
+{
+  "id": "sintese-qualitativa-ats",
+  "tipo": "artigo",
+  "rotulo": "Revisão de escopo",
+  "arte": "rede",
+  "arte_legenda": "ilustração · vozes e evidências conectadas",
+  "tema": "Saúde pública e SUS",
+  "tema_id": "saude-publica",
+  "titulo": "Mapping frameworks for synthesizing qualitative evidence in health technology assessment",
+  "titulo_pt": "Mapeamento dos referenciais para sintetizar evidências qualitativas na avaliação de tecnologias em saúde",
+  "titulo_curto": "Ouvir os pacientes nas decisões de saúde: como reunir as pesquisas qualitativas",
+  "breadcrumb": "Evidência qualitativa na ATS",
+  "autores": [
+    {"nome": "Marilia Mastrocolla de Almeida Cardoso", "afiliacao": "HC de Botucatu · Centro Brasileiro de Saúde Baseada em Evidências (JBI)"},
+    {"nome": "Rafael Thomaz Marques", "afiliacao": "Faculdade de Medicina · Unesp Botucatu"},
+    {"nome": "Juliana Machado-Rugolo", "destaque": true, "afiliacao": "Hospital das Clínicas da Faculdade de Medicina de Botucatu"},
+    {"nome": "Lehana Thabane", "afiliacao": "McMaster University · Canadá"},
+    {"nome": "Vilanice Alves de Araújo Püschel", "afiliacao": "Escola de Enfermagem · USP"},
+    {"nome": "Silke Anna Theresa Weber", "afiliacao": "HC de Botucatu · Faculdade de Medicina (Unesp)"},
+    {"nome": "Rosimary Terezinha Almeida", "afiliacao": "Engenharia Biomédica (COPPE) · UFRJ"},
+    {"nome": "Graciela Paula do Nascimento Duque", "afiliacao": "COPPE · UFRJ · EBSERH"},
+    {"nome": "Cristiane Cardoso De Paula", "afiliacao": "EBSERH · Universidade Federal de Santa Maria"},
+    {"nome": "Luciane Cruz Lopes", "afiliacao": "Pós-graduação em Ciências Farmacêuticas · Uniso"},
+    {"nome": "Mariana Gabriel", "afiliacao": "Faculdade de Odontologia · USP"},
+    {"nome": "Sybelle Drumond", "afiliacao": "Associação de Mucoviscidose do Estado do Rio de Janeiro"},
+    {"nome": "Clarice Maria Rodrigues", "afiliacao": "Centro de Estudos Estratégicos da Fiocruz · UFRJ"},
+    {"nome": "Meredith Vanstone", "afiliacao": "McMaster University · Canadá"}
+  ],
+  "revista": {
+    "nome": "International Journal of Technology Assessment in Health Care",
+    "cidade": "Cambridge, Reino Unido (Cambridge University Press)",
+    "issn": "0266-4623",
+    "volume": "40",
+    "numero": "1",
+    "paginas": "e53",
+    "ano": "2024",
+    "publicado": "2024-11-13",
+    "doi": "10.1017/S0266462324000369",
+    "url": "https://doi.org/10.1017/S0266462324000369",
+    "site": "https://www.cambridge.org/core/journals/international-journal-of-technology-assessment-in-health-care"
+  },
+  "palavras_chave": ["Avaliação de tecnologias em saúde", "Pesquisa qualitativa", "Revisão", "Saúde baseada em evidências"],
+
+  "em_1_minuto": [
+    {"rotulo": "O problema", "titulo": "Decisões que olham só para números", "texto": "Para decidir se um tratamento entra num sistema de saúde, costuma-se olhar eficácia e custo. As pesquisas qualitativas mostram outra parte: o que pacientes, famílias e profissionais vivem e pensam."},
+    {"rotulo": "O que fizeram", "titulo": "Um mapa dos “manuais” existentes", "texto": "Numa revisão de escopo, buscaram em 10 bases de dados e em sites de agências todos os documentos que ensinam a reunir pesquisas qualitativas para essas decisões."},
+    {"rotulo": "O que acharam", "titulo": "31 documentos, quase todos europeus", "texto": "Dos 2.054 registros, 31 documentos entraram. A maioria veio da Europa, e quase metade eram guias. Poucos explicam o processo inteiro, do começo ao fim."},
+    {"rotulo": "Por que importa", "titulo": "Dar voz a quem usa o sistema", "texto": "Padronizar o uso das evidências qualitativas pode tornar as decisões mais completas, levando em conta aceitação, viabilidade e equidade."}
+  ],
+
+  "numeros": [
+    {"valor": "2.054 → 31", "texto": "registros encontrados × documentos incluídos", "cor": "arg"},
+    {"valor": "> 80%", "texto": "dos documentos vieram da Europa, sobretudo Reino Unido, Suécia e Alemanha", "cor": "violet"},
+    {"valor": "45%", "texto": "eram guias (14 documentos), o tipo mais comum", "cor": "teal"},
+    {"valor": "71%", "texto": "não foram produzidos por agências de avaliação de tecnologias", "cor": "amber"}
+  ],
+
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Contexto",
+      "eyebrow": "Contexto",
+      "titulo": "Por que ouvir pessoas nas decisões sobre tecnologias",
+      "lede": "Uma avaliação fica mais forte quando junta números e experiências.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>A <strong>avaliação de tecnologias em saúde (ATS)</strong> estuda o valor de remédios, exames, equipamentos e programas para orientar decisões num sistema de saúde justo e eficiente. Tradicionalmente, ela dá mais peso a <strong>eficácia e custos</strong>.</p><p>A <strong>evidência qualitativa</strong>, que vem de entrevistas, grupos e observações, explica <em>por que</em> uma intervenção funciona ou não, do ponto de vista das pessoas. Juntar vários estudos desse tipo, numa <strong>síntese de evidências qualitativas</strong>, produz uma evidência mais forte que cada estudo isolado.</p>"},
+        {"tipo": "cartoes", "titulo": "O que a evidência qualitativa acrescenta", "itens": [
+          {"titulo": "Aceitação", "texto": "As pessoas aceitam esse tratamento? O que sentem ao usá-lo?", "cor": "violet"},
+          {"titulo": "Viabilidade", "texto": "Dá para aplicar na prática, nos serviços reais?", "cor": "teal"},
+          {"titulo": "Equidade", "texto": "Todos os grupos têm acesso de forma justa?", "cor": "amber"},
+          {"titulo": "Valores e experiências", "texto": "O que importa para pacientes, famílias e profissionais?", "cor": "ok"}
+        ]},
+        {"tipo": "destaque", "html": "Um estudo recente mostrou que, embora o ponto de vista dos pacientes apareça muito nas submissões às agências do Reino Unido (NICE) e do Canadá (CADTH), só <strong>14 de 107</strong> e <strong>24 de 124</strong> delas, respectivamente, coletaram dados qualitativos de forma formal."}
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Como foi feito",
+      "eyebrow": "Método",
+      "titulo": "Como o mapeamento foi feito",
+      "lede": "Uma revisão de escopo mapeia tudo o que existe sobre um tema, sem julgar só um resultado.",
+      "blocos": [
+        {"tipo": "passos", "itens": [
+          {"titulo": "Protocolo público", "texto": "O plano foi registrado na plataforma OSF e publicado antes, seguindo as regras PRISMA para revisões de escopo."},
+          {"titulo": "Busca ampla", "texto": "Até junho de 2023, em Medline, LILACS, CINAHL, Embase, Web of Science, Scopus, PsycINFO, Cochrane, JBI e ScienceDirect, além de literatura cinza e sites de agências de ATS. Sem limite de ano, em seis idiomas."},
+          {"titulo": "Seleção em dupla", "texto": "Dois revisores independentes leram títulos, resumos e textos completos; um terceiro resolvia as discordâncias."},
+          {"titulo": "Os números da seleção", "texto": "Dos 2.054 registros, 57 foram lidos na íntegra e 17 serviram. Outros 9 vieram de agências e bancos de teses e 5 das referências: 31 documentos no total."},
+          {"titulo": "Conversa com quem vive o tema", "texto": "Pacientes, membros de núcleos de ATS e especialistas em pesquisa qualitativa foram convidados a discutir os resultados."}
+        ]}
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "O que os 31 documentos mostram",
+      "lede": "Veja que tipos de documento existem e como o interesse pelo tema cresceu.",
+      "blocos": [
+        {"tipo": "grafico", "rotulo_chips": "Escolha o que ver", "unidade": "", "eixo": "número de documentos", "grupos": [
+          {"nome": "Guias", "cor": "#3FC1C9"},
+          {"nome": "Séries de artigos", "cor": "#A58CFF"},
+          {"nome": "Revisões", "cor": "#9DB6FF"},
+          {"nome": "Metodológicos", "cor": "#FFB23F"},
+          {"nome": "Outros", "cor": "#8A93A8"}
+        ], "parametros": [
+          {"rotulo": "Tipo de documento", "valores": [{"m": 14}, {"m": 4}, {"m": 4}, {"m": 4}, {"m": 5}], "leitura": "Quase metade dos documentos são guias. “Outros” inclui 2 capítulos de livro, 1 manual e 2 artigos."},
+          {"rotulo": "Ano de publicação", "grupos": [
+            {"nome": "2011 a 2017", "cor": "#9DB6FF"},
+            {"nome": "2018", "cor": "#FF5470"},
+            {"nome": "2019 a 2022", "cor": "#5FD39A"}
+          ], "valores": [{"m": 11}, {"m": 7}, {"m": 13}], "leitura": "Nenhum documento é de 2010 ou antes. O ano de 2018 concentrou 7 publicações (23%), e o interesse seguiu crescendo depois."}
+        ], "nota": "Contagens a partir das Tabelas 1 e 2 e do texto do artigo."},
+        {"tipo": "figura", "src": "imagens/mini/figura2-documentos.webp", "full": "imagens/figura2-documentos.webp", "alt": "Infográfico com mapa-múndi, ícone de guia, prédios de universidade e de agência e pilhas de documentos por ano", "legenda": "Figura 2 · Resumo visual dos documentos (em inglês): de onde vieram (Publications, mapa), o tipo mais comum (Document model: guias, 45%), quem os escreveu (Authors’ origins: universidades e agências de ATS; 71% não foram feitos por agências) e quantos saíram por ano de 2011 a 2022 (Distribution of documents).", "credito": "Cardoso et al. (2024), International Journal of Technology Assessment in Health Care, licença CC BY 4.0"},
+        {"tipo": "passos", "itens": [
+          {"titulo": "1. Fazer a pergunta · SPICE", "texto": "A sigla mais indicada para montar a pergunta: cenário, perspectiva, intervenção, comparação e avaliação."},
+          {"titulo": "2. Escolher o método · RETREAT", "texto": "Ferramenta mais citada para decidir como fazer a síntese, conforme a pergunta, o tempo, os recursos e o público."},
+          {"titulo": "3. Juntar os achados · síntese temática", "texto": "O método mais usado: agrupar os achados dos estudos em temas comuns."},
+          {"titulo": "4. Avaliar os estudos · CASP", "texto": "O instrumento mais citado para checar a qualidade de cada estudo qualitativo."},
+          {"titulo": "5. Medir a confiança · GRADE-CERQual", "texto": "A principal ferramenta para dizer o quanto se pode confiar em cada achado da síntese."},
+          {"titulo": "6. Relatar · ENTREQ", "texto": "O guia mais citado para escrever a síntese com transparência."},
+          {"titulo": "7. Recomendar · GRADE EtD", "texto": "O único referencial citado para transformar evidências em recomendações, considerando eficácia, recursos, aceitação, viabilidade e equidade."}
+        ]},
+        {"tipo": "nota", "html": "Os passos acima reúnem as ferramentas mais citadas em cada etapa. Nenhum documento isolado, porém, cobre todas elas."}
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discussão",
+      "eyebrow": "Discussão",
+      "titulo": "Muitos reconhecem a importância, poucos explicam como fazer",
+      "lede": "O caminho existe em pedaços, espalhado em vários documentos.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>Agências experientes, como o NICE (Inglaterra), o SMC (Escócia) e o SBU (Suécia), dizem em seus guias que é importante considerar dados qualitativos. Mas só <strong>três documentos de agências, da Suécia, da Escócia e da Alemanha</strong>, explicam como conduzir o processo.</p><p>A maioria dos documentos descreve apenas uma etapa: a pergunta, a avaliação da qualidade, a síntese ou a recomendação. Para os autores, incluir dados qualitativos reforça o caráter interdisciplinar da ATS e amplia as informações que apoiam as decisões.</p>"},
+        {"tipo": "destaque", "html": "<strong>Padronizar</strong> o modo de incorporar evidências qualitativas na ATS pode melhorar as decisões e garantir que a experiência de pacientes e famílias seja levada em conta de forma sistemática."}
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusão",
+      "eyebrow": "Conclusão",
+      "titulo": "O que o estudo permite dizer",
+      "lede": "Um movimento crescente, que ainda precisa de um caminho único.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>O mapeamento mostra um movimento para <strong>incorporar evidências qualitativas na ATS</strong> usando referenciais específicos. Apesar das semelhanças, a maioria dos documentos descreve só parte do processo. Os achados trazem considerações essenciais para quem faz avaliação de tecnologias, inclusive no Brasil.</p>"}
+      ]
+    }
+  ],
+
+  "glossario": [
+    {"termo": "ATS", "def": "Avaliação de tecnologias em saúde: estudo do valor de um tratamento, exame ou programa para orientar decisões."},
+    {"termo": "Evidência qualitativa", "def": "Conhecimento que vem de entrevistas, grupos e observações sobre experiências, opiniões e valores das pessoas."},
+    {"termo": "Síntese de evidências qualitativas", "def": "Revisão que reúne e combina os achados de vários estudos qualitativos."},
+    {"termo": "Revisão de escopo", "def": "Revisão que mapeia o que existe sobre um tema e identifica lacunas."},
+    {"termo": "Literatura cinza", "def": "Documentos fora das revistas científicas, como relatórios de agências, teses e manuais."},
+    {"termo": "SPICE", "def": "Sigla para montar perguntas qualitativas: cenário, perspectiva, intervenção, comparação e avaliação."},
+    {"termo": "RETREAT", "def": "Critérios para escolher o método de síntese: pergunta, epistemologia, tempo, recursos, experiência, público e tipo de dado."},
+    {"termo": "Síntese temática", "def": "Método que organiza os achados de vários estudos em temas comuns."},
+    {"termo": "CASP", "def": "Lista de perguntas para avaliar a qualidade de um estudo."},
+    {"termo": "GRADE-CERQual", "def": "Ferramenta para classificar o quanto se pode confiar em um achado de síntese qualitativa."},
+    {"termo": "ENTREQ", "def": "Guia para relatar com transparência uma síntese de pesquisas qualitativas."},
+    {"termo": "GRADE EtD", "def": "Referencial “da evidência à decisão”, que ajuda a transformar evidências em recomendações."},
+    {"termo": "NICE", "def": "Instituto Nacional de Excelência em Saúde e Cuidados, a agência de ATS da Inglaterra."}
+  ],
+
+  "citacao": "CARDOSO, M. M. A.; MARQUES, R. T.; MACHADO-RUGOLO, J.; THABANE, L.; PÜSCHEL, V. A. A.; WEBER, S. A. T.; ALMEIDA, R. T.; DUQUE, G. P. N.; PAULA, C. C.; LOPES, L. C.; GABRIEL, M.; DRUMOND, S.; RODRIGUES, C. M.; VANSTONE, M. Mapping frameworks for synthesizing qualitative evidence in health technology assessment. International Journal of Technology Assessment in Health Care, Cambridge, v. 40, n. 1, e53, 2024. DOI: 10.1017/S0266462324000369.",
+
+  "referencias": [
+    {"texto": "TONG, A. et al. Enhancing transparency in reporting the synthesis of qualitative research: ENTREQ. BMC Medical Research Methodology, v. 12, 181, 2012.", "doi": "10.1186/1471-2288-12-181"},
+    {"texto": "BOOTH, A. et al. Structured methodology review identified seven (RETREAT) criteria for selecting qualitative evidence synthesis approaches. Journal of Clinical Epidemiology, v. 99, p. 41-52, 2018.", "doi": "10.1016/j.jclinepi.2018.03.003"},
+    {"texto": "LEWIN, S. et al. Applying GRADE-CERQual to qualitative evidence synthesis findings: introduction to the series. Implementation Science, v. 13, 2, 2018.", "doi": "10.1186/s13012-017-0688-3"},
+    {"texto": "GERMENI, E.; SZABO, S. Beyond clinical and cost-effectiveness: the contribution of qualitative research to health technology assessment. International Journal of Technology Assessment in Health Care, v. 39, e23, 2023.", "doi": "10.1017/S0266462323000211"}
+  ]
+}

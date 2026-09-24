@@ -1,0 +1,165 @@
+{
+  "id": "bacteria-metais-pesados",
+  "tipo": "artigo",
+  "rotulo": "Artigo publicado",
+  "arte": "bastonetes",
+  "arte_legenda": "ilustração · bactérias capturando íons de metal",
+  "tema": "Microbiologia",
+  "tema_id": "microbiologia",
+  "titulo": "Bacillus subtilis as an effective tool for bioremediation of lead, copper and cadmium in water",
+  "titulo_pt": "Bacillus subtilis como ferramenta eficaz para a biorremediação de chumbo, cobre e cádmio na água",
+  "titulo_curto": "Uma bactéria que limpa a água contaminada por chumbo, cobre e cádmio",
+  "breadcrumb": "Bactéria contra metais pesados",
+  "autores": [
+    {"nome": "Debora H. E. Rocco", "afiliacao": "LAMINFE e LAPETOX · Uniso"},
+    {"nome": "Bruna Moreira Freire", "afiliacao": "LAMINFE e LAPETOX · Uniso"},
+    {"nome": "Thais Jardim Oliveira", "afiliacao": "LAMINFE e LAPETOX · Uniso"},
+    {"nome": "Patricia Lius Melo Alves", "destaque": true, "afiliacao": "LAMINFE e LAPETOX · Uniso"},
+    {"nome": "José Martins de Oliveira Júnior", "afiliacao": "Física Nuclear Aplicada (LAFINAU) · Uniso"},
+    {"nome": "Bruno Lemos Batista", "afiliacao": "Ciências Naturais e Humanas · UFABC"},
+    {"nome": "Denise Grotto", "afiliacao": "Pesquisa Toxicológica (LAPETOX) · Uniso"},
+    {"nome": "Angela Faustino Jozala", "afiliacao": "Microbiologia Industrial (LAMINFE) · Uniso (autora correspondente)"}
+  ],
+  "revista": {
+    "nome": "Discover Applied Sciences",
+    "cidade": "Cham, Suíça (Springer Nature)",
+    "issn": "3004-9261",
+    "volume": "6",
+    "numero": "8",
+    "paginas": "artigo 430",
+    "ano": "2024",
+    "submetido": "2024-01-24",
+    "publicado": "2024-08-05",
+    "doi": "10.1007/s42452-024-06101-y",
+    "url": "https://doi.org/10.1007/s42452-024-06101-y",
+    "site": "https://link.springer.com/journal/42452",
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s42452-024-06101-y.pdf"
+  },
+  "palavras_chave": ["Bactéria", "Bacillus subtilis", "Biorremediação", "Metais pesados"],
+
+  "em_1_minuto": [
+    {"rotulo": "O problema", "titulo": "Metais pesados na água", "texto": "Chumbo, cobre e cádmio chegam à água e ao solo pela indústria, pela mineração e por fertilizantes. Mesmo em pouca quantidade, fazem mal a pessoas e animais."},
+    {"rotulo": "O que fizeram", "titulo": "Uma bactéria na água contaminada", "texto": "Em laboratório, colocaram a bactéria Bacillus subtilis em água com chumbo, cobre ou cádmio, separados e misturados, por até 6 dias."},
+    {"rotulo": "O que acharam", "titulo": "Até 100% do chumbo removido", "texto": "A bactéria tirou da água todo o chumbo, 92,3% do cádmio e 89% do cobre. Com os três metais juntos, o cobre não foi removido."},
+    {"rotulo": "Por que importa", "titulo": "Limpeza barata e ecológica", "texto": "Usar seres vivos para limpar a poluição (biorremediação) pode ser uma forma econômica de tratar efluentes de indústrias e áreas contaminadas."}
+  ],
+
+  "numeros": [
+    {"valor": "100%", "texto": "do chumbo removido da água, em 96 horas", "cor": "violet"},
+    {"valor": "92,3%", "texto": "do cádmio removido, em 144 horas", "cor": "amber"},
+    {"valor": "89%", "texto": "do cobre removido", "cor": "teal"},
+    {"valor": "500 → 8 ppm", "texto": "chumbo na água depois de apenas 1 hora com a bactéria", "cor": "ok"}
+  ],
+
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "O problema",
+      "eyebrow": "Contexto",
+      "titulo": "Metais pesados: um veneno que não some sozinho",
+      "lede": "Centenas de milhões de pessoas no mundo são afetadas por água, solo ou ar contaminados por metais tóxicos.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>Mercúrio, cádmio, cromo, arsênio, cobre e chumbo estão entre os metais mais perigosos para o ambiente e a saúde. Eles chegam à natureza por <strong>fertilizantes e corretivos agrícolas, água de irrigação contaminada, lodo de esgoto, lixo urbano e resíduos de indústrias e mineração</strong>. No solo, ficam disponíveis para as plantas e entram na cadeia alimentar.</p><p>Mesmo em concentrações baixas, esses metais podem causar <strong>infertilidade, queda das defesas do corpo, problemas de crescimento</strong> e doenças que podem levar à morte.</p>"},
+        {"tipo": "cartoes", "titulo": "Como uma bactéria pode tirar metal da água", "itens": [
+          {"titulo": "Biossorção", "texto": "O metal gruda na parede da bactéria. É um processo passivo, que acontece mesmo sem a célula estar “trabalhando”.", "cor": "violet"},
+          {"titulo": "Bioacumulação", "texto": "A bactéria leva o metal para dentro de si e o acumula.", "cor": "ok"},
+          {"titulo": "Bioprecipitação", "texto": "A bactéria transforma o metal em uma forma sólida, que se separa da água.", "cor": "amber"}
+        ]},
+        {"tipo": "texto", "html": "<p>A <strong><em>Bacillus subtilis</em></strong> é uma bactéria Gram-positiva conhecida por remover metais com eficiência. Ela aguenta grandes variações de pH e de temperatura e, quando falta alimento, forma <strong>endósporos</strong>, estruturas de resistência que a protegem até as condições melhorarem.</p>"}
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Como foi feito",
+      "eyebrow": "Método",
+      "titulo": "Como o experimento foi feito",
+      "lede": "A bactéria foi desafiada com cada metal separado e depois com os três juntos.",
+      "blocos": [
+        {"tipo": "passos", "itens": [
+          {"titulo": "A bactéria", "texto": "Foi usada a cepa B. subtilis 7611, vinda da coleção do Instituto André Tosello."},
+          {"titulo": "Curva de crescimento", "texto": "Primeiro, mediram como a bactéria cresce em meio de cultura completo (TSB 100%) e diluído (TSB 33%), pesando a massa de células ao longo de 4 dias."},
+          {"titulo": "Um metal por vez", "texto": "A bactéria foi posta em água com 500 ppm de chumbo, 100 ppm de cobre ou 100 ppm de cádmio, a 35 °C, sob agitação. Amostras foram colhidas de 1 a 144 horas."},
+          {"titulo": "Os três metais juntos", "texto": "Num desafio mais difícil, a água recebeu 100 ppm de chumbo, cobre e cádmio ao mesmo tempo, com amostras de 10 minutos a 144 horas."},
+          {"titulo": "Medir o que sobrou", "texto": "O chumbo foi medido por fluorescência de raios X; cádmio, cobre e a mistura, por espectrometria de massas (ICP-MS). A eficiência foi calculada como (inicial − final) ÷ inicial × 100."},
+          {"titulo": "Olhar a bactéria de perto", "texto": "As bactérias da água com chumbo foram vistas ao microscópio eletrônico, e a análise EDS mostrou quais elementos estavam nelas."}
+        ]},
+        {"tipo": "nota", "html": "ppm = partes por milhão. 100 ppm equivalem a 100 miligramas do metal em cada litro de água."}
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "Quanto de cada metal a bactéria tirou da água",
+      "lede": "Compare a remoção logo na primeira hora com o melhor resultado de cada metal.",
+      "blocos": [
+        {"tipo": "grafico", "rotulo_chips": "Escolha o momento", "grupos": [
+          {"nome": "Chumbo (Pb)", "cor": "#A58CFF"},
+          {"nome": "Cádmio (Cd)", "cor": "#FFB23F"},
+          {"nome": "Cobre (Cu)", "cor": "#3FC1C9"}
+        ], "parametros": [
+          {"rotulo": "Na 1ª hora", "valores": [{"m": 98.4}, {"m": 73.7}, {"m": 87}], "leitura": "A remoção é rápida: em apenas 1 hora, o chumbo caiu de 500 para 8 ppm, o cobre de 100 para 13 ppm e o cádmio perdeu 73,7%."},
+          {"rotulo": "Melhor resultado", "valores": [{"m": 100}, {"m": 92.3}, {"m": 89}], "leitura": "Com o tempo, a bactéria chegou a remover todo o chumbo (em 96 h), 92,3% do cádmio (em 144 h) e 89% do cobre."}
+        ], "nota": "Metais testados separadamente, em água, a 35 °C. Valores de remoção informados no texto do artigo."},
+        {"tipo": "figura", "src": "imagens/mini/figura6-microscopia.webp", "full": "imagens/figura6-microscopia.webp", "alt": "Imagem de microscópio eletrônico com bactérias em forma de bastão sobre um aglomerado, e ao lado um gráfico de picos de elementos químicos", "legenda": "Figura 6 · (A) B. subtilis na água com chumbo, ao microscópio eletrônico: a forma das bactérias não mudou. (B) Espectro EDS da massa de bactérias, com picos de chumbo (Pb), sinal de que o metal ficou preso nelas.", "credito": "Rocco et al. (2024), Discover Applied Sciences, licença CC BY 4.0"},
+        {"tipo": "cartoes", "titulo": "Outros achados", "itens": [
+          {"titulo": "O chumbo “alimentou” a bactéria", "texto": "Sem metal, a massa de bactérias em meio diluído não passou de 0,7 g/L. Com chumbo, chegou a 17,42 g/L em 48 horas, quando o chumbo já nem era detectado.", "cor": "violet"},
+          {"titulo": "Mistura é mais difícil", "texto": "Com os três metais juntos, chumbo e cádmio caíram cerca de 50% em 10 minutos, mas o cobre não foi removido. Os metais parecem competir entre si.", "cor": "his"},
+          {"titulo": "Sobe e desce", "texto": "Os níveis oscilaram: no meio diluído, o chumbo voltou a cerca de 100 ppm após 144 horas. Parte do metal pode voltar para a água com o tempo.", "cor": "amber"}
+        ]}
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Como funciona",
+      "eyebrow": "Discussão",
+      "titulo": "Como a bactéria prende os metais",
+      "lede": "Os autores acreditam que vários mecanismos agem juntos.",
+      "blocos": [
+        {"tipo": "cadeia", "itens": [
+          "Os íons de metal encontram a parede da bactéria",
+          "Grudam na superfície (biossorção)",
+          "Parte entra e fica acumulada dentro da célula",
+          "O biossurfactante produzido pela bactéria forma complexos com o metal",
+          "O metal sai da água"
+        ]},
+        {"tipo": "texto", "html": "<p>Como os testes foram feitos em água pura, sem nutrientes, é improvável que a bactéria tenha crescido tanto sem usar algo do meio. Por isso, os autores propõem que <strong>parte do metal foi usada no metabolismo e parte ficou presa na superfície</strong>. A queda de massa de bactérias em alguns momentos pode ser explicada pela formação de esporos, uma defesa contra o estresse.</p><p>Uma revisão sistemática anterior já apontava a <em>B. subtilis</em> como uma das bactérias mais eficazes para limpar metais em ambientes aquáticos. No caso da mistura, outro estudo mostrou que a presença de ferro e cádmio atrapalha a remoção de cobre, o que combina com o que foi visto aqui.</p>"}
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusão",
+      "eyebrow": "Conclusão",
+      "titulo": "O que o estudo permite dizer",
+      "lede": "Uma aliada barata contra a poluição por metais, que ainda precisa de ajustes para misturas.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>A <em>B. subtilis</em> resistiu aos três metais, continuou se multiplicando e reduziu a concentração deles na água. O melhor desempenho foi com o <strong>chumbo</strong>, seguido de <strong>cádmio</strong> e <strong>cobre</strong>. Em misturas, as interações entre os metais mudaram o resultado, e o cobre não foi removido.</p><p>Os autores concluem que a biomassa da bactéria pode ser um <strong>tratamento econômico e eficaz</strong> para efluentes industriais e áreas contaminadas por metais pesados.</p>"}
+      ]
+    }
+  ],
+
+  "glossario": [
+    {"termo": "Metais pesados", "def": "Metais como chumbo, cádmio, cobre e mercúrio, tóxicos para os seres vivos mesmo em pouca quantidade."},
+    {"termo": "Biorremediação", "def": "Uso de seres vivos, como bactérias e plantas, para limpar a poluição."},
+    {"termo": "Biossorção", "def": "Quando uma substância gruda na superfície de um ser vivo ou de sua biomassa."},
+    {"termo": "Bioacumulação", "def": "Quando o ser vivo absorve e acumula a substância dentro de si."},
+    {"termo": "Biossurfactante", "def": "Substância parecida com sabão, produzida por micróbios. Pode se ligar a metais."},
+    {"termo": "Endósporo", "def": "Forma de resistência de algumas bactérias, que as protege de calor, falta de alimento e outros estresses."},
+    {"termo": "ppm", "def": "Partes por milhão. Em água, 1 ppm equivale a 1 miligrama por litro."},
+    {"termo": "ICP-MS", "def": "Técnica que mede quantidades muito pequenas de metais numa amostra."},
+    {"termo": "Fluorescência de raios X", "def": "Técnica que identifica e mede elementos químicos pelo “brilho” que emitem ao receber raios X."},
+    {"termo": "EDS", "def": "Análise feita no microscópio eletrônico que mostra quais elementos químicos há em um ponto da amostra."},
+    {"termo": "Efluente industrial", "def": "Água residual descartada por uma indústria, que pode carregar poluentes."},
+    {"termo": "Meio TSB", "def": "Caldo nutritivo usado para cultivar bactérias em laboratório."}
+  ],
+
+  "citacao": "ROCCO, D. H. E.; FREIRE, B. M.; OLIVEIRA, T. J.; ALVES, P. L. M.; OLIVEIRA JÚNIOR, J. M.; BATISTA, B. L.; GROTTO, D.; JOZALA, A. F. Bacillus subtilis as an effective tool for bioremediation of lead, copper and cadmium in water. Discover Applied Sciences, Cham, v. 6, art. 430, 2024. DOI: 10.1007/s42452-024-06101-y.",
+
+  "referencias": [
+    {"texto": "AL-GHEETHI, A. et al. Removal of heavy metal ions from aqueous solutions using Bacillus subtilis biomass pre-treated by supercritical carbon dioxide. CLEAN – Soil, Air, Water, 2017.", "doi": "10.1002/clen.201700356"},
+    {"texto": "PHAM, V. H. T. et al. Bacterial biosorbents, an efficient heavy metals green clean-up strategy: prospects, challenges, and opportunities. Microorganisms, v. 10, 610, 2022.", "doi": "10.3390/microorganisms10030610"},
+    {"texto": "ZHAO, P. et al. Capability of Bacillus subtilis to remove Pb2+ via producing lipopeptides. Science of the Total Environment, 2020.", "doi": "10.1016/j.scitotenv.2020.138941"},
+    {"texto": "ALENCAR, F. L. S.; NAVONI, J. A.; AMARAL, V. S. The use of bacterial bioremediation of metals in aquatic environments in the twenty-first century: a systematic review. Environmental Science and Pollution Research, 2017.", "doi": "10.1007/s11356-017-9129-8"},
+    {"texto": "MITRA, S. et al. Impact of heavy metals on the environment and human health: novel therapeutic insights to counter the toxicity. Journal of King Saud University – Science, 2022.", "doi": "10.1016/j.jksus.2022.101865"}
+  ]
+}

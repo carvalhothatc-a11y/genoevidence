@@ -24,8 +24,11 @@ artigos/veneno-cascavel/
 | Campo | O que colocar |
 |---|---|
 | `titulo` | O título completo, igual ao da revista. |
+| `titulo_pt` | Se o título original for em inglês, a tradução em português (aparece em destaque; o original fica embaixo). |
+| `tema` e `tema_id` | O tema do estudo (ex.: `"Genética"` e `"genetica"`), igual ao usado em `data/artigos.json`. |
+| `arte` | A ilustração animada do topo: `celulas`, `rede`, `helice`, `fibras`, `particulas`, `bastonetes` ou `sangue`. Use `arte_legenda` para a legenda. |
 | `titulo_curto` | Um título claro, em linguagem simples (aparece grande no topo). |
-| `autores` | Nome e afiliação de cada autor. |
+| `autores` | Nome e afiliação de cada autor. Coloque `"destaque": true` no nome da pesquisadora em destaque. |
 | `revista` | Nome da revista, volume, número, páginas, datas, ISSN, **DOI** e links. O botão **Ler na revista** usa o campo `url` (de preferência `https://doi.org/` + DOI). |
 | `em_1_minuto` | Quatro cartões: o problema, o que fizeram, o que acharam, por que importa. |
 | `numeros` | Números-chave do estudo, em destaque. |
@@ -47,7 +50,7 @@ artigos/veneno-cascavel/
 | `cadeia` | Sequência de eventos com setas (causa → efeito). |
 | `figura` | Imagem grande, ampliável, com legenda e crédito. |
 | `galeria` | Várias imagens lado a lado, ampliáveis. |
-| `grafico` | Gráfico de barras interativo com abas (veja o exemplo em `artigos/micrurus-spixii/artigo.json`). |
+| `grafico` | Gráfico de barras interativo com abas (veja o exemplo em `artigos/micrurus-spixii/artigo.json`). Use `unidade` (ex.: `" mm"`, `" meses"`; o padrão é `%`), e cada aba pode ter seus próprios `grupos` e `unidade`. |
 
 Dica: no VS Code, dentro do `artigo.json`, digite `ge-` e escolha um bloco pronto
 (`ge-texto`, `ge-figura`, `ge-passos`, `ge-cartoes`, `ge-destaque`).
@@ -60,14 +63,24 @@ Sempre coloque o crédito da figura no campo `credito`.
 
 ## 4. Mostre o artigo nas abas do app
 
-Abra `data/artigos.json` e adicione um item **no começo** da lista `artigos`
-(copie o item do `micrurus-spixii` e troque os dados). Com isso:
+Abra `data/artigos.json` e adicione um item na lista `artigos`
+(copie o item de um artigo parecido e troque os dados). Campos importantes:
 
-- o artigo aparece na aba **Artigos**;
-- o primeiro da lista vira o **Artigo em destaque** do Início;
+| Campo | Para que serve |
+|---|---|
+| `temas` | O tema do estudo, com um só item (ex.: `["genetica"]`). Cada estudo fica em um só tema. Os temas ficam na lista `temas`, no começo do arquivo. |
+| `pesquisadoras` | Liga o estudo a uma pesquisadora em destaque (ex.: `["patricia"]`). |
+| `primeira_autora` | Se ela for a autora principal, coloque o id dela (ex.: `"patricia"`). O mais recente desses fica **Em destaque** no Início. |
+| `data` | Data da publicação (`AAAA-MM-DD`), usada para ordenar. |
+| `titulo_pt` | Tradução do título, se ele for em inglês. |
+| `selo` | Para estudos ainda não publicados, use `"Estudo em andamento"` e deixe sem `revista`. |
+
+Com isso:
+
+- o estudo aparece na aba **Temas**, no tema escolhido, e no menu de barrinhas;
 - a revista aparece na aba **Revistas**, em "Revistas dos artigos explicados".
 
-O campo `capa` é a imagem do cartão (use a versão pequena, em `imagens/mini/`).
+O campo `capa` é a imagem do cartão (use a versão pequena, em `imagens/mini/`, ou um `capa.svg`).
 
 ## 5. Veja como ficou e publique
 

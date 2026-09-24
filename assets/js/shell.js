@@ -16,18 +16,18 @@
   const ICONES = {
     inicio: '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/>',
     noticias: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/>',
-    artigos: '<path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2z"/><path d="M22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/>',
+    artigos: '<rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><circle cx="17.25" cy="17.25" r="3.75"/>',
     revistas: '<path d="M5 4v16M10 4v16"/><path d="M14.5 5.5l4.2 14"/><path d="M3 20h18"/>',
-    sobre: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5h.01"/>',
-    r337h: '<path d="M7 3c0 5 10 5 10 9s-10 4-10 9"/><path d="M17 3c0 5-10 5-10 9s10 4 10 9"/><path d="M8.5 7h7M8.5 17h7"/>'
+    sobre: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5h.01"/>'
   };
   const svg = n => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONES[n] + "</svg>";
-  const ABAS = [["inicio", "Início", ""], ["noticias", "Notícias", "noticias/"], ["artigos", "Artigos", "artigos/"], ["revistas", "Revistas", "revistas/"], ["r337h", "R337H", "r337h/"]];
+  const ABAS = [["inicio", "Início", ""], ["noticias", "Notícias", "noticias/"], ["artigos", "Temas", "artigos/"], ["revistas", "Revistas", "revistas/"]];
   const atual = n => (n === PAGINA ? ' aria-current="page"' : "");
   const topo = $("#appbar");
   if (topo) {
     topo.className = "appbar";
-    topo.innerHTML = '<div class="appbar-in"><a class="logo" href="' + RAIZ + '" aria-label="GenoEvidence, início"><i></i><b>GenoEvidence</b></a>' +
+    topo.innerHTML = '<div class="appbar-in"><button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir o menu" aria-expanded="false" aria-controls="gaveta"><span></span><span></span><span></span></button>' +
+      '<a class="logo" href="' + RAIZ + '" aria-label="GenoEvidence, início"><i></i><b>GenoEvidence</b></a>' +
       '<nav class="tabs-top" aria-label="Seções do app">' + ABAS.map(([n, l, h]) => '<a class="tab-' + n + '" href="' + RAIZ + h + '"' + atual(n) + ">" + l + "</a>").join("") + "</nav>" +
       '<a class="icon-btn" href="' + RAIZ + 'sobre/" aria-label="Sobre o GenoEvidence"' + atual("sobre") + ">" + svg("sobre") + "</a></div>";
   }
@@ -37,6 +37,58 @@
     abas.setAttribute("aria-label", "Seções do app");
     abas.innerHTML = ABAS.map(([n, l, h]) => '<a class="tab-' + n + '" href="' + RAIZ + h + '"' + atual(n) + ">" + svg(n) + "<span>" + l + "</span></a>").join("");
   }
+
+  /* ---------- menu de barrinhas: um painel lateral com filtro para ir a qualquer lugar ---------- */
+  function montarMenu() {
+    const btn = $("#menuBtn"); if (!btn) return;
+    document.body.insertAdjacentHTML("beforeend",
+      '<div class="gaveta-fundo" id="gavetaFundo"></div>' +
+      '<aside class="gaveta" id="gaveta" aria-label="Menu do GenoEvidence" aria-hidden="true">' +
+      '<div class="gaveta-topo"><b>Ir para</b><button type="button" class="gaveta-fechar" id="gavetaFechar" aria-label="Fechar o menu">✕</button></div>' +
+      '<input type="search" id="gavetaBusca" class="search" placeholder="Filtrar: câncer, Patrícia, DNA…" aria-label="Filtrar o menu" autocomplete="off">' +
+      '<nav id="gavetaLista" aria-label="Destinos"></nav><p class="gaveta-vazio" id="gavetaVazio" hidden>Nada encontrado.</p></aside>');
+    const gav = $("#gaveta"), fundo = $("#gavetaFundo"), busca = $("#gavetaBusca"), lista = $("#gavetaLista");
+    const grupo = (titulo, itens) => itens.length ? '<div class="gv-grupo"><p class="gv-titulo">' + esc(titulo) + "</p>" + itens.map(i =>
+      '<a class="gv-item" href="' + esc(i.href) + '" data-busca="' + esc((i.nome + " " + (i.extra || "")).toLowerCase()) + '"' + (i.cor ? ' style="--c:' + esc(i.cor) + '"' : "") + ">" +
+      (i.cor ? "<i></i>" : "") + "<span>" + esc(i.nome) + "</span>" + (i.n != null ? '<em>' + i.n + "</em>" : "") + "</a>").join("") + "</div>" : "";
+    const paginas = [
+      { nome: "Início", href: RAIZ }, { nome: "Em destaque", href: RAIZ + "#destaques", extra: "pesquisadoras" },
+      { nome: "Notícias da ciência", href: RAIZ + "noticias/", extra: "hoje" }, { nome: "Temas", href: RAIZ + "artigos/", extra: "artigos estudos" },
+      { nome: "Revistas", href: RAIZ + "revistas/", extra: "publicações" }, { nome: "Estudo em andamento: R337H", href: RAIZ + "r337h/", extra: "tp53 li-fraumeni dna" },
+      { nome: "Sobre o app", href: RAIZ + "sobre/", extra: "instalar" }];
+    lista.innerHTML = grupo("Páginas", paginas);
+    getJSON("data/artigos.json").then(d => {
+      const arts = d.artigos || [];
+      const temas = (d.temas || []).map(t => ({ nome: t.nome, href: RAIZ + "artigos/#" + t.id, cor: t.cor, extra: t.sobre, n: arts.filter(a => (a.temas || []).includes(t.id)).length })).filter(t => t.n);
+      const pesq = (d.pesquisadoras || []).map(p => ({ nome: p.nome, href: RAIZ + "artigos/?pesquisadora=" + p.id, cor: p.cor, extra: p.vinculo, n: arts.filter(a => (a.pesquisadoras || []).includes(p.id)).length }));
+      const estudos = arts.map(a => ({ nome: a.titulo_curto, href: RAIZ + a.url, extra: [a.titulo, a.titulo_pt, a.resumo, (a.tags || []).join(" "), (a.revista || {}).nome, a.autores_curto].join(" ") }));
+      lista.innerHTML = grupo("Páginas", paginas) + grupo("Temas", temas) + grupo("Pesquisadoras", pesq) + grupo("Estudos", estudos);
+      filtrar();
+    }).catch(() => {});
+    const norm = t => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    function filtrar() {
+      const v = norm(busca.value.trim());
+      $$(".gv-grupo", lista).forEach(g => {
+        let algum = false;
+        $$(".gv-item", g).forEach(a => { const ok = !v || norm(a.dataset.busca).includes(v); a.hidden = !ok; algum = algum || ok; });
+        g.hidden = !algum;
+      });
+      $("#gavetaVazio").hidden = $$(".gv-grupo", lista).some(g => !g.hidden);
+    }
+    function abrir(sim) {
+      gav.classList.toggle("aberta", sim); fundo.classList.toggle("aberta", sim);
+      gav.setAttribute("aria-hidden", String(!sim)); btn.setAttribute("aria-expanded", String(sim));
+      document.documentElement.classList.toggle("sem-rolagem", sim);
+      if (sim) setTimeout(() => busca.focus({ preventScroll: true }), 180); else btn.focus({ preventScroll: true });
+    }
+    btn.addEventListener("click", () => abrir(true));
+    fundo.addEventListener("click", () => abrir(false));
+    $("#gavetaFechar").addEventListener("click", () => abrir(false));
+    addEventListener("keydown", e => { if (e.key === "Escape" && gav.classList.contains("aberta")) abrir(false); });
+    busca.addEventListener("input", filtrar);
+    lista.addEventListener("click", e => { if (e.target.closest(".gv-item")) abrir(false); });
+  }
+  montarMenu();
 
   /* ---------- utilidades ---------- */
   const CORES = ["#7C9CFF", "#FFB23F", "#5FD39A", "#FF8A9D", "#A58CFF", "#3FC1C9", "#F4A6FF", "#7FD1FF"];
@@ -64,18 +116,21 @@
     nodes.forEach((n, i) => n.animate([{ opacity: 0, transform: "translateY(10px)" }, { opacity: 1, transform: "none" }], { duration: 420, delay: Math.min(i, 10) * 40, easing: "cubic-bezier(.2,.8,.2,1)", fill: "backwards" }));
   }
   const linhaNoticia = n =>
-    '<li><a class="row" href="' + esc(n.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="t" data-t="' + esc(n.tema) + '">' + esc(n.tema) + '</span><span class="src">' + esc(n.fonte) + '</span><span class="dot">' + esc(quando(n.data)) + '</span><span class="dot">' + (n.idioma === "pt" ? "PT" : "EN") + "</span></div>" +
-    "<h3>" + esc(n.titulo) + '<span class="ext">↗</span></h3>' + (n.resumo ? "<p>" + esc(n.resumo) + "</p>" : "") + "</a></li>";
+    '<li><a class="row" href="' + esc(n.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="t" data-t="' + esc(n.tema) + '">' + esc(n.tema) + '</span><span class="src">' + esc(n.fonte) + '</span><span class="dot">' + esc(quando(n.data)) + '</span><span class="dot"' + (n.traduzido ? ' title="Original em inglês: ' + esc(n.titulo_original) + '"' : "") + ">" + (n.idioma === "pt" ? "PT" : n.traduzido ? "traduzido do inglês" : "EN") + "</span></div>" +
+    "<h3>" + esc(n.titulo) + '<span class="ext">↗</span></h3>' + (n.resumo && (n.idioma === "pt" || n.resumo_original) ? "<p>" + esc(n.resumo) + "</p>" : "") + "</a></li>";
   const linhaPublicacao = a =>
     '<li><a class="row" href="' + esc(a.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="pill j" style="--j:' + corDe(a.revista) + '">' + esc(a.revista) + '</span><span>' + esc(diaMes(a.data)) + "</span>" +
-    (a.acesso_aberto ? '<span class="oa">acesso aberto</span>' : "") + "</div><h3>" + esc(a.titulo) + '<span class="ext">↗</span></h3>' + (a.autores ? "<p>" + esc(a.autores) + "</p>" : "") + "</a></li>";
+    (a.acesso_aberto ? '<span class="oa">acesso aberto</span>' : "") + (a.traduzido ? '<span class="dot" title="Original em inglês: ' + esc(a.titulo_original) + '">traduzido do inglês</span>' : "") + "</div><h3>" + esc(a.titulo) + '<span class="ext">↗</span></h3>' + (a.autores ? "<p>" + esc(a.autores) + "</p>" : "") + "</a></li>";
+  let PESQ = {}; // id → pesquisadora (preenchido quando data/artigos.json carrega)
   function cartaoArtigo(a) {
     const r = a.revista || {};
+    const quem = (a.pesquisadoras || []).map(id => PESQ[id]).filter(Boolean);
     return '<a class="card art-card" href="' + RAIZ + esc(a.url) + '">' +
       (a.capa ? '<div class="art-cover" role="img" aria-label="' + esc(a.capa_alt || "") + '" style="background-image:url(\'' + RAIZ + esc(a.capa) + '\')"></div>' : "") +
-      '<div class="art-body"><div class="tags">' + (r.nome ? '<span class="pill j" style="--j:' + corDe(r.nome) + '">' + esc(r.nome) + (r.ano ? " · " + esc(r.ano) : "") + "</span>" : "") +
+      '<div class="art-body"><div class="tags">' + (r.nome ? '<span class="pill j" style="--j:' + corDe(r.nome) + '">' + esc(r.nome) + (r.ano ? " · " + esc(r.ano) : "") + "</span>" : a.selo ? '<span class="pill andamento">' + esc(a.selo) + "</span>" : "") +
       (a.tags || []).slice(0, 2).map(t => '<span class="tag">' + esc(t) + "</span>").join("") + "</div>" +
-      "<h3>" + esc(a.titulo_curto || a.titulo) + '</h3><p class="full">' + esc(a.titulo) + '</p><p class="res">' + esc(a.resumo) + "</p>" +
+      "<h3>" + esc(a.titulo_curto || a.titulo) + '</h3><p class="res">' + esc(a.resumo) + "</p>" +
+      quem.map(p => '<p class="pesq-tag" style="--c:' + esc(p.cor) + '"><span class="av-mini">' + esc(p.iniciais) + "</span>" + esc(p.nome) + "</p>").join("") +
       '<div class="art-foot"><span class="jr">' + esc(a.autores_curto || "") + '</span><span class="read">Ler →</span></div></div></a>';
   }
 
@@ -84,45 +139,55 @@
     const h = new Date().getHours();
     $("#saudacao").textContent = (h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite") + " · " + new Date().toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long" });
     getJSON("data/artigos.json").then(d => {
-      const a = (d.artigos || [])[0], alvo = $("#destaque");
-      if (!a) { alvo.innerHTML = '<p class="empty card">Os artigos explicados aparecem aqui.</p>'; return; }
-      const r = a.revista || {};
-      alvo.innerHTML = '<a class="card feature" href="' + RAIZ + esc(a.url) + '"><div class="feature-img" role="img" aria-label="' + esc(a.capa_alt || "") + '" style="background-image:url(\'' + RAIZ + esc(a.capa) + '\')"></div>' +
-        '<div class="feature-body"><div class="tags">' + (r.nome ? '<span class="pill j" style="--j:' + corDe(r.nome) + '">Publicado em ' + esc(r.nome) + (r.ano ? " · " + esc(r.ano) : "") + "</span>" : "") + "</div>" +
-        "<h3>" + esc(a.titulo_curto) + "</h3><p>" + esc(a.resumo) + '</p><span class="go">Ler o artigo explicado →</span></div></a>';
-      entrar([$(".feature", alvo)]);
-    }).catch(() => { $("#destaque").innerHTML = '<p class="loading">Não foi possível carregar o destaque.</p>'; });
+      const arts = d.artigos || [];
+      // em destaque: o artigo publicado mais recente de cada pesquisadora
+      $("#destaquesPesq").innerHTML = (d.pesquisadoras || []).map(p => {
+        const dela = arts.filter(a => (a.pesquisadoras || []).includes(p.id)).sort((x, y) => String(y.data).localeCompare(String(x.data)));
+        // destaque: o mais recente em que ela é a autora principal (primeira autora)
+        const a = dela.find(x => x.primeira_autora === p.id) || dela[0]; if (!a) return "";
+        const r = a.revista || {}, nome1 = p.nome.split(" ")[0];
+        return '<article class="destaque-card" style="--c:' + esc(p.cor) + '"><a class="dc-link" href="' + RAIZ + esc(a.url) + '">' +
+          '<div class="dc-img" role="img" aria-label="' + esc(a.capa_alt || "") + '" style="background-image:url(\'' + RAIZ + esc(a.capa) + '\')"></div>' +
+          '<div class="dc-body"><div class="pesq-head"><span class="av" aria-hidden="true">' + esc(p.iniciais) + "</span><div><b>" + esc(p.nome) + "</b><span>" + esc(p.vinculo || "") + "</span></div></div>" +
+          (a.primeira_autora === p.id ? '<span class="autora">Autora principal</span>' : "") +
+          '<span class="pill j" style="--j:' + corDe(r.nome || "") + '">Publicado em ' + esc(r.nome || "") + (r.ano ? " · " + esc(r.ano) : "") + "</span>" +
+          "<h3>" + esc(a.titulo_curto) + "</h3><p>" + esc(a.resumo) + '</p><span class="go">Ler o estudo completo →</span></div></a>' +
+          '<a class="dc-todos" href="' + RAIZ + "artigos/?pesquisadora=" + esc(p.id) + '">Ver todos os ' + dela.length + " estudos de " + esc(nome1) + " →</a></article>";
+      }).join("");
+      entrar($$(".destaque-card"));
+      $("#temasInicio").innerHTML = (d.temas || []).map(t => { const n = arts.filter(x => (x.temas || []).includes(t.id)).length;
+        return n ? '<a class="tema-tile" href="' + RAIZ + "artigos/#" + esc(t.id) + '" style="--c:' + esc(t.cor) + '"><b>' + esc(t.nome) + "</b><span>" + n + (n > 1 ? " estudos" : " estudo") + "</span></a>" : ""; }).join("");
+      entrar($$(".tema-tile"));
+    }).catch(() => { $("#destaquesPesq").innerHTML = '<p class="loading">Não foi possível carregar os destaques.</p>'; });
     getJSON("data/noticias.json").then(d => {
-      const ns = d.noticias || [], pt = ns.filter(n => n.idioma === "pt"), lead = pt[0] || ns[0];
-      if (lead) {
-        $("#noticiaDestaque").innerHTML = '<a class="news-lead" href="' + esc(lead.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="t" data-t="' + esc(lead.tema) + '">' + esc(lead.tema) + '</span><span class="src">' + esc(lead.fonte) + '</span><span class="dot">' + esc(quando(lead.data)) + "</span></div>" +
-          "<h3>" + esc(lead.titulo) + "</h3>" + (lead.resumo ? "<p>" + esc(lead.resumo) + "</p>" : "") + '<span class="go">Ler na fonte ↗</span></a>';
-        entrar([$(".news-lead")]);
+      const ns = d.noticias || [];
+      // as 3 mais relevantes do dia (o robô já as ordena), no máximo 2 da mesma fonte
+      const porFonte = {}, escolha = [];
+      for (const n of ns.filter(n => n.idioma === "pt" || n.traduzido)) {
+        if (escolha.length === 3) break;
+        if ((porFonte[n.fonte] || 0) < 2) { porFonte[n.fonte] = (porFonte[n.fonte] || 0) + 1; escolha.push(n); }
       }
-      $("#hojeNoticias").innerHTML = ns.filter(n => n !== lead).slice(0, 5).map(linhaNoticia).join("") || '<li class="empty">Sem notícias por enquanto.</li>';
-      $("#hojePublicacoes").innerHTML = (d.artigos || []).slice(0, 4).map(linhaPublicacao).join("") || '<li class="empty">Sem publicações novas.</li>';
-      $("#atualizado").textContent = "Atualizado " + atualizadoTxt(d.atualizado_em) + ".";
-      entrar($$("#hojeNoticias li, #hojePublicacoes li"));
-    }).catch(() => {
-      $("#hojeNoticias").innerHTML = '<li class="loading" style="padding:14px 18px">Sem conexão para carregar as notícias agora.</li>';
-      $("#hojePublicacoes").innerHTML = "";
-    });
+      $("#hojeNoticias").innerHTML = escolha.map(n => '<li><a class="row" href="' + esc(n.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="t" data-t="' + esc(n.tema) + '">' + esc(n.tema) + '</span><span class="src">' + esc(n.fonte) + '</span><span class="dot">' + esc(quando(n.data)) + "</span></div><h3>" + esc(n.titulo) + '<span class="ext">↗</span></h3></a></li>').join("") || '<li class="empty">Sem notícias novas agora.</li>';
+      if (d.atualizado_em) $("#atualizado").textContent = "Atualizado " + atualizadoTxt(d.atualizado_em) + " · notícias novas todos os dias.";
+      entrar($$("#hojeNoticias li"));
+    }).catch(() => { $("#hojeNoticias").innerHTML = '<li class="empty">Não foi possível carregar as notícias.</li>'; });
   }
 
   /* ---------- Notícias ---------- */
   function noticias() {
-    let todas = [], filtro = "todas", mostrar = 12;
+    let todas = [], filtro = "todas", mostrar = 15;
     const lista = $("#lista"), mais = $("#mais"), chips = $("#filtros");
     const passa = n => filtro === "todas" || (filtro === "pt" ? n.idioma === "pt" : n.tema === filtro);
     function render() {
       const itens = todas.filter(passa);
-      lista.innerHTML = itens.slice(0, mostrar).map(linhaNoticia).join("") || '<li class="empty">Nenhuma notícia neste filtro hoje.</li>';
+      // as 3 primeiras (as mais relevantes do dia) ganham a etiqueta "Em alta"
+      lista.innerHTML = itens.slice(0, mostrar).map((n, i) => linhaNoticia(n).replace('<div class="meta">', '<div class="meta">' + (filtro === "todas" && i < 3 ? '<span class="hot">Em alta</span>' : ""))).join("") || '<li class="empty">Nenhuma notícia neste filtro hoje.</li>';
       mais.hidden = itens.length <= mostrar;
       entrar($$("li", lista));
     }
     chips.addEventListener("click", e => {
       const b = e.target.closest(".chip"); if (!b) return;
-      filtro = b.dataset.f; mostrar = 12;
+      filtro = b.dataset.f; mostrar = 15;
       $$(".chip", chips).forEach(x => x.setAttribute("aria-pressed", String(x === b)));
       render();
     });
@@ -135,24 +200,70 @@
       });
       render();
       const fontes = (d.fontes || []).filter(f => f !== "Europe PMC").map(f => f.split(" · ")[0]).filter((v, i, a) => a.indexOf(v) === i);
-      $("#info").textContent = "Atualizado " + atualizadoTxt(d.atualizado_em) + ". Fontes: " + fontes.join(", ") + ". Toque em uma notícia para ler na fonte original.";
+      $("#info").textContent = "Atualizado " + atualizadoTxt(d.atualizado_em) + ". Escolhidas entre: " + fontes.join(", ") + ".";
     }).catch(() => { lista.innerHTML = '<li class="loading" style="padding:14px 18px">Sem conexão para carregar as notícias agora.</li>'; });
   }
 
   /* ---------- Artigos ---------- */
+  /* ---------- Temas (aba "Temas", página artigos/) ----------
+     Os temas e os artigos de cada tema vêm de data/artigos.json ("temas" e o campo "temas" de cada artigo).
+     Um artigo pode estar em mais de um tema. */
   function artigos() {
-    let todos = [];
-    const grid = $("#grade"), busca = $("#busca");
-    const norm = t => String(t).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    let todos = [], temas = [], pesq = [], quem = "";
+    const bar = $("#temaBar"), box = $("#porTema"), busca = $("#busca"), chips = $("#porPesquisadora");
+    const norm = t => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const doTema = (t, lista) => lista.filter(a => (a.temas || []).includes(t.id));
     function render() {
       const v = norm(busca.value.trim());
-      const itens = todos.filter(a => !v || norm([a.titulo, a.titulo_curto, a.resumo, (a.tags || []).join(" "), (a.revista || {}).nome].join(" ")).includes(v));
-      grid.innerHTML = itens.map(cartaoArtigo).join("") || '<p class="empty card">Nenhum artigo encontrado.</p>';
-      entrar($$(".art-card", grid));
+      const lista = todos.filter(a => (!quem || (a.pesquisadoras || []).includes(quem)) &&
+        (!v || norm([a.titulo, a.titulo_curto, a.resumo, a.autores_curto, (a.tags || []).join(" "), (a.revista || {}).nome, a.selo].join(" ")).includes(v)));
+      bar.innerHTML = temas.map(t => { const n = doTema(t, lista).length;
+        return '<a class="tema-chip" href="#' + esc(t.id) + '" style="--c:' + esc(t.cor) + '"' + (n ? "" : ' aria-disabled="true"') + "><i></i>" + esc(t.nome) + '<span class="n">' + n + "</span></a>"; }).join("");
+      const secs = temas.map(t => { const itens = doTema(t, lista); if (!itens.length) return "";
+        return '<section class="tema-sec" id="' + esc(t.id) + '" style="--c:' + esc(t.cor) + '"><div class="tema-head"><h2>' + esc(t.nome) + "</h2>" +
+          (t.sobre ? "<p>" + esc(t.sobre) + "</p>" : "") + '<span class="tema-n">' + itens.length + (itens.length > 1 ? " estudos" : " estudo") + "</span></div>" +
+          '<div class="art-grid">' + itens.map(cartaoArtigo).join("") + "</div></section>"; }).join("");
+      box.innerHTML = secs || '<p class="empty card">Nenhum artigo encontrado.</p>';
+      entrar($$(".tema-sec", box));
+      espiar();
     }
+    // destaca, na barra, o tema que está na tela
+    let io;
+    function espiar() {
+      if (io) io.disconnect();
+      io = new IntersectionObserver(es => es.forEach(e => {
+        if (!e.isIntersecting) return;
+        $$(".tema-chip", bar).forEach(c => c.classList.toggle("on", c.getAttribute("href") === "#" + e.target.id));
+        const c = $(".tema-chip.on", bar); if (c) bar.scrollTo({ left: c.offsetLeft - 16, behavior: RM ? "auto" : "smooth" });
+      }), { rootMargin: "-140px 0px -55% 0px" });
+      $$(".tema-sec", box).forEach(s => io.observe(s));
+    }
+    bar.addEventListener("click", e => {
+      const c = e.target.closest(".tema-chip"); if (!c) return;
+      e.preventDefault(); if (c.getAttribute("aria-disabled")) return;
+      const alvo = $(c.getAttribute("href")); if (!alvo) return;
+      history.replaceState(null, "", c.getAttribute("href"));
+      alvo.scrollIntoView({ behavior: RM ? "auto" : "smooth", block: "start" });
+    });
     busca.addEventListener("input", render);
-    getJSON("data/artigos.json").then(d => { todos = d.artigos || []; $("#total").textContent = todos.length + (todos.length === 1 ? " artigo" : " artigos"); render(); })
-      .catch(() => { grid.innerHTML = '<p class="loading">Não foi possível carregar os artigos.</p>'; });
+    chips.addEventListener("click", e => {
+      const b = e.target.closest(".chip"); if (!b) return;
+      quem = b.dataset.p;
+      $$(".chip", chips).forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+      render();
+    });
+    getJSON("data/artigos.json").then(d => {
+      todos = d.artigos || []; pesq = d.pesquisadoras || [];
+      temas = (d.temas || []).filter(t => todos.some(a => (a.temas || []).includes(t.id)));
+      pesq.forEach(p => { PESQ[p.id] = p; });
+      $("#total").textContent = temas.length + " temas · " + todos.length + " estudos";
+      chips.innerHTML = pesq.length ? '<span class="pesq-lbl">Pesquisadoras:</span><button type="button" class="chip" data-p="" aria-pressed="true">Todas</button>' +
+        pesq.map(p => '<button type="button" class="chip pesq-chip" data-p="' + esc(p.id) + '" aria-pressed="false" style="--c:' + esc(p.cor) + '"><span class="av-mini">' + esc(p.iniciais) + "</span>" + esc(p.nome) + '<span class="n">' + todos.filter(a => (a.pesquisadoras || []).includes(p.id)).length + "</span></button>").join("") : "";
+      render();
+      const q = new URLSearchParams(location.search).get("pesquisadora"), alvoP = q && $('.chip[data-p="' + q + '"]', chips);
+      if (alvoP) alvoP.click();
+      if (location.hash && $(location.hash)) setTimeout(() => $(location.hash).scrollIntoView({ block: "start" }), 60);
+    }).catch(() => { box.innerHTML = '<p class="loading">Não foi possível carregar os artigos.</p>'; });
   }
 
   /* ---------- Revistas ---------- */

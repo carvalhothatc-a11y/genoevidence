@@ -1,0 +1,172 @@
+{
+  "id": "tp53-egfr-pulmao",
+  "tipo": "artigo",
+  "rotulo": "Artigo publicado",
+  "arte": "helice",
+  "arte_legenda": "ilustração · DNA com uma mutação em destaque",
+  "tema": "Genética",
+  "tema_id": "genetica",
+  "titulo": "Concomitant TP53 mutation in early-stage resected EGFR-mutated non-small cell lung cancer: a narrative approach in a genetically admixed Brazilian cohort",
+  "titulo_pt": "Mutação concomitante no TP53 no câncer de pulmão de células não pequenas com mutação no EGFR, em estágio inicial e operado: uma abordagem narrativa em uma coorte brasileira geneticamente miscigenada",
+  "titulo_curto": "TP53 e EGFR juntos no câncer de pulmão: o que isso muda para pacientes brasileiros",
+  "breadcrumb": "TP53 e EGFR no pulmão",
+  "autores": [
+    {"nome": "Juliana Machado-Rugolo", "destaque": true, "afiliacao": "Patologia · Faculdade de Medicina da USP · HC de Botucatu (Unesp)"},
+    {"nome": "C. M. Baldavira", "afiliacao": "Patologia · Faculdade de Medicina da USP"},
+    {"nome": "T. G. Prieto", "afiliacao": "Patologia · Faculdade de Medicina da USP"},
+    {"nome": "E. H. R. Olivieri", "afiliacao": "Centro Internacional de Pesquisa · A.C. Camargo Cancer Center"},
+    {"nome": "A. T. Fabro", "afiliacao": "Faculdade de Medicina de Ribeirão Preto (USP)"},
+    {"nome": "C. A. Rainho", "afiliacao": "Instituto de Biociências · Unesp Botucatu"},
+    {"nome": "E. C. Castelli", "afiliacao": "Genética Molecular e Bioinformática · Unesp Botucatu"},
+    {"nome": "P. E. M. Ribolla", "afiliacao": "Instituto de Biotecnologia · Unesp Botucatu"},
+    {"nome": "A. M. Ab'Saber", "afiliacao": "Patologia · Faculdade de Medicina da USP"},
+    {"nome": "T. Takagaki", "afiliacao": "Pneumologia · Instituto do Coração (USP)"},
+    {"nome": "M. A. Nagai", "afiliacao": "Instituto do Câncer do Estado de São Paulo (USP)"},
+    {"nome": "V. L. Capelozzi", "afiliacao": "Patologia · Faculdade de Medicina da USP"}
+  ],
+  "revista": {
+    "nome": "Brazilian Journal of Medical and Biological Research",
+    "cidade": "Ribeirão Preto (SP)",
+    "issn": "1414-431X",
+    "volume": "56",
+    "paginas": "e12488",
+    "ano": "2023",
+    "submetido": "2022-12-07",
+    "publicado": "2023-04-07",
+    "doi": "10.1590/1414-431X2023e12488",
+    "url": "https://doi.org/10.1590/1414-431X2023e12488",
+    "site": "https://www.bjournal.org"
+  },
+  "palavras_chave": ["Câncer de pulmão de células não pequenas", "EGFR", "TP53", "Mutação", "Sobrevida"],
+
+  "em_1_minuto": [
+    {"rotulo": "A pergunta", "titulo": "E quando o tumor tem duas mutações?", "texto": "Mutações no gene TP53 são comuns no câncer de pulmão e costumam indicar pior evolução. Não se sabia o que acontece quando elas aparecem junto com mutações no EGFR em pacientes brasileiros."},
+    {"rotulo": "O que fizeram", "titulo": "Leram o DNA de 70 tumores", "texto": "Tumores de 70 pacientes operados foram sequenciados para os genes EGFR e TP53, e a evolução dos pacientes foi acompanhada por anos."},
+    {"rotulo": "O que acharam", "titulo": "O TP53 tende a piorar o quadro", "texto": "Quase metade dos tumores com EGFR mutado também tinha o TP53 mutado. Com o TP53 mutado, a sobrevida mediana foi de 59 meses; sem a mutação, de 95 meses."},
+    {"rotulo": "Por que importa", "titulo": "Olhar o TP53 no exame genético", "texto": "Testar o TP53 de rotina pode ajudar a prever a evolução e a resposta ao tratamento. O estudo ainda lembra a variante R337H, muito comum no Brasil."}
+  ],
+
+  "numeros": [
+    {"valor": "70", "texto": "pacientes operados tiveram o tumor sequenciado", "cor": "arg"},
+    {"valor": "41,5%", "texto": "dos tumores tinham mutação no TP53", "cor": "his"},
+    {"valor": "43,5%", "texto": "dos tumores com EGFR mutado tinham também o TP53 mutado", "cor": "violet"},
+    {"valor": "95 × 59", "texto": "meses de sobrevida mediana: TP53 normal × TP53 mutado", "cor": "amber"}
+  ],
+
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Os genes",
+      "eyebrow": "Contexto",
+      "titulo": "Um acelerador e um freio",
+      "lede": "EGFR e TP53 têm papéis opostos no crescimento das células, e os dois podem falhar no mesmo tumor.",
+      "blocos": [
+        {"tipo": "cartoes", "itens": [
+          {"titulo": "EGFR · o acelerador", "texto": "Gene de um receptor que manda a célula crescer. Mutado, fica “ligado” o tempo todo. Existem remédios-alvo contra ele, como o erlotinibe.", "cor": "arg"},
+          {"titulo": "TP53 · o freio", "texto": "Gene supressor de tumor, no cromossomo 17. Ajuda a reparar o DNA, parar a divisão da célula e eliminar células danificadas. Ainda não há remédio aprovado que o corrija no câncer de pulmão.", "cor": "his"}
+        ]},
+        {"tipo": "texto", "html": "<p>O câncer de pulmão foi a principal causa de morte por câncer no mundo em 2020. O tipo mais comum, o <strong>câncer de pulmão de células não pequenas (CPCNP)</strong>, responde por 85% a 90% dos casos. Os remédios contra o EGFR melhoraram muito o tratamento, mas cerca de <strong>30% dos pacientes</strong> não respondem desde o início. Uma das suspeitas são as <strong>comutações</strong>, e a mais frequente delas é no TP53.</p><p>A frequência de mutações no EGFR muda conforme a ancestralidade: cerca de 60% nos asiáticos e 20% nos europeus. No Brasil, varia de 19% no Sul a 22%–30% no Sudeste. Sobre a combinação EGFR + TP53 em brasileiros, não havia dados.</p>"}
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Como foi feito",
+      "eyebrow": "Método",
+      "titulo": "Do tumor congelado à leitura do DNA",
+      "lede": "Um estudo que juntou patologia, sequenciamento e bioinformática.",
+      "blocos": [
+        {"tipo": "passos", "itens": [
+          {"titulo": "As amostras", "texto": "70 tumores congelados a fresco, retirados em cirurgias de 2003 a 2010 no A.C. Camargo Cancer Center, em São Paulo. O congelamento evita erros de leitura que o formol pode causar no DNA."},
+          {"titulo": "Revisão ao microscópio", "texto": "Dois patologistas experientes confirmaram o diagnóstico pela classificação da OMS de 2021: 46 tumores não escamosos e 24 escamosos."},
+          {"titulo": "Sequenciamento", "texto": "O DNA foi extraído e os genes EGFR e TP53 foram lidos por sequenciamento de nova geração (Illumina MiSeq), com cada trecho lido pelo menos 100 vezes."},
+          {"titulo": "Bioinformática", "texto": "As leituras foram alinhadas ao genoma humano de referência (BWA), as variantes foram identificadas (GATK) e anotadas (VEP, dbSNP, COSMIC e ClinVar), com filtros para separar mutações do tumor de variantes herdadas."},
+          {"titulo": "Estatística", "texto": "A sobrevida foi analisada com curvas de Kaplan-Meier e modelos de Cox, levando em conta estágio, recaída, tratamento e mutações."}
+        ]},
+        {"tipo": "nota", "html": "Para evitar falsos positivos, só contaram mutações vistas em pelo menos 10 leituras, com frequência mínima de 5% no tumor e raras na população (menos de 0,1% nos bancos 1000 Genomes e ExAC)."}
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "O que o DNA dos tumores mostrou",
+      "lede": "Veja quantos tumores tinham cada mutação e como isso se relacionou à sobrevida.",
+      "blocos": [
+        {"tipo": "grafico", "rotulo_chips": "Escolha o que ver", "grupos": [
+          {"nome": "TP53 mutado", "cor": "#FF5470"},
+          {"nome": "EGFR mutado", "cor": "#7C9CFF"},
+          {"nome": "EGFR + TP53", "cor": "#A58CFF"}
+        ], "parametros": [
+          {"rotulo": "Mutações nos 70 tumores", "valores": [{"m": 41.5}, {"m": 32.9}, {"m": 14.3}], "leitura": "29 tumores tinham o TP53 mutado e 23 o EGFR. Dez tinham os dois: 14,3% do total, mas 43,5% dos que tinham EGFR mutado."},
+          {"rotulo": "Sobrevida por TP53", "unidade": " meses", "eixo": "meses (mediana)", "grupos": [
+            {"nome": "TP53 normal", "cor": "#5FD39A"},
+            {"nome": "TP53 mutado", "cor": "#FF5470"}
+          ], "valores": [{"m": 95}, {"m": 59}], "leitura": "Com o TP53 mutado, a sobrevida mediana caiu de 95 para 59 meses. A diferença ficou no limite da significância estatística (p = 0,079)."},
+          {"rotulo": "Sobrevida por estágio", "unidade": " meses", "eixo": "meses (mediana)", "grupos": [
+            {"nome": "Estágios I e II", "cor": "#5FD39A"},
+            {"nome": "Estágios IIIA e IIIB", "cor": "#FFB23F"}
+          ], "valores": [{"m": 94}, {"m": 46}], "leitura": "O estágio do tumor depois da cirurgia foi o fator mais claro: nos estágios mais avançados, a sobrevida mediana caiu pela metade (p = 0,028)."}
+        ], "nota": "Porcentagens e medianas de sobrevida do texto, da Tabela 1 e da Figura 1 do artigo."},
+        {"tipo": "figura", "src": "imagens/mini/figura1-sobrevida.webp", "full": "imagens/figura1-sobrevida.webp", "alt": "Duas curvas de sobrevida em degraus, com tabelas de medianas abaixo de cada uma", "legenda": "Figura 1 · Curvas de sobrevida global (Overall Survival) ao longo do tempo em meses (Time). (A) Por estágio: I + II × IIIA + IIIB. (B) Pelo TP53: mutado (mutant, em azul) × normal (wild type, em amarelo). Quanto mais a curva cai, mais pacientes morreram.", "credito": "Machado-Rugolo et al. (2023), Brazilian Journal of Medical and Biological Research, licença CC BY 4.0"},
+        {"tipo": "cartoes", "titulo": "Quem eram os pacientes", "itens": [
+          {"titulo": "Perfil", "texto": "44 homens e 21 mulheres, com idade mediana de 65 anos (de 41 a 96). A maioria de ascendência europeia, segundo o prontuário.", "cor": "arg"},
+          {"titulo": "Evolução", "texto": "Em cerca de 4 anos de acompanhamento (mediana), 54,3% morreram. Houve recaída local em 17,4% e metástase à distância em 17,4%, mais no cérebro e nos ossos.", "cor": "his"},
+          {"titulo": "As mutações do TP53", "texto": "A maioria era do tipo missense e classificada como patogênica. A mais repetida, p.Gly245Cys, apareceu em 3 pacientes.", "cor": "violet"}
+        ]},
+        {"tipo": "destaque", "html": "No modelo que combina vários fatores, o <strong>maior risco de morte</strong> (p = 0,029) reuniu: estágio IIIA–IIIB, recaída com metástase à distância, falta de resposta à quimioterapia com platina e ao erlotinibe, mutações incomuns no EGFR, <strong>TP53 mutado</strong> e a <strong>comutação EGFR + TP53</strong>."}
+      ]
+    },
+    {
+      "id": "brasil",
+      "menu": "O Brasil e o R337H",
+      "eyebrow": "Discussão",
+      "titulo": "Uma população miscigenada, e uma variante bem brasileira",
+      "lede": "A mistura de ancestralidades pode mudar o perfil de mutações dos tumores.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>A população brasileira é uma das mais geneticamente diversas do mundo, fruto de cinco séculos de mistura entre povos asiáticos, europeus, africanos e indígenas. Neste grupo, a taxa de mutações no TP53 foi <strong>cerca de metade</strong> da descrita em outros estudos: 21,4% nos tumores não escamosos e 20% nos escamosos, contra 40% e 51% na literatura.</p><p>Já a comutação EGFR + TP53 (43,5%) ficou dentro da faixa relatada em outros países (17% a 72%). Outro estudo, de Labbé e colegas, não encontrou efeito da comutação na sobrevida em estágio inicial, o que mostra que o tema ainda está em aberto.</p>"},
+        {"tipo": "destaque", "html": "Os autores lembram que a <strong>síndrome de Li-Fraumeni</strong>, causada pela variante <strong>R337H</strong> no TP53, é rara no mundo, mas muito frequente no Brasil. Encontrar essa variante no perfil genético de um tumor deve levantar a suspeita da síndrome. Um paciente deste estudo tinha a variante, mas sem mutação no EGFR. <a href='../../r337h/'>Conheça o estudo completo sobre a R337H →</a>"},
+        {"tipo": "lista", "titulo": "Limitações apontadas pelos autores", "itens": [
+          "O grupo é pequeno: só 10 pacientes tinham a comutação EGFR + TP53.",
+          "O estudo é descritivo e exploratório; os achados precisam ser confirmados em grupos maiores.",
+          "A ancestralidade veio do prontuário, e não de testes genéticos de ancestralidade."
+        ]}
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusão",
+      "eyebrow": "Conclusão",
+      "titulo": "O que o estudo permite dizer",
+      "lede": "Um alerta sobre o TP53, que ainda precisa ser confirmado.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>O estudo sugere que a mutação no TP53 <strong>tende a piorar a sobrevida</strong> e pode indicar <strong>pior resposta</strong> à quimioterapia com platina e ao erlotinibe em pacientes com CPCNP com EGFR mutado, operados em estágio inicial. Para os autores, incluir o TP53 nos testes genéticos de rotina ajudaria a entender melhor seu papel, sozinho ou junto com outras mutações.</p>"}
+      ]
+    }
+  ],
+
+  "glossario": [
+    {"termo": "CPCNP", "def": "Câncer de pulmão de células não pequenas, o tipo mais comum de câncer de pulmão."},
+    {"termo": "EGFR", "def": "Gene de um receptor que estimula o crescimento das células. Mutado, pode impulsionar o tumor."},
+    {"termo": "TP53", "def": "Gene “guardião do genoma”, que produz a proteína p53, responsável por frear células com DNA danificado."},
+    {"termo": "Comutação", "def": "Quando duas mutações aparecem juntas no mesmo tumor."},
+    {"termo": "Mutação missense", "def": "Troca de uma letra do DNA que muda um aminoácido da proteína."},
+    {"termo": "Sequenciamento de nova geração (NGS)", "def": "Técnica que lê milhões de trechos de DNA ao mesmo tempo."},
+    {"termo": "Bioinformática", "def": "Uso de computadores e bancos de dados para analisar informações biológicas, como sequências de DNA."},
+    {"termo": "Variante de significado incerto", "def": "Mudança no DNA cujo efeito na saúde ainda não se conhece."},
+    {"termo": "Tumor congelado a fresco", "def": "Amostra congelada logo após a cirurgia. Preserva melhor o DNA do que o bloco de parafina com formol."},
+    {"termo": "Curva de Kaplan-Meier", "def": "Gráfico em degraus que mostra a porcentagem de pacientes vivos ao longo do tempo."},
+    {"termo": "Modelo de Cox", "def": "Análise estatística que mede o efeito de vários fatores ao mesmo tempo sobre o risco de morte."},
+    {"termo": "Estágio (TNM)", "def": "Classificação do tamanho e da extensão do câncer. Estágios III são mais avançados que I e II."},
+    {"termo": "Síndrome de Li-Fraumeni", "def": "Síndrome hereditária que aumenta o risco de vários cânceres, causada por variantes no TP53, como a R337H."}
+  ],
+
+  "citacao": "MACHADO-RUGOLO, J.; BALDAVIRA, C. M.; PRIETO, T. G.; OLIVIERI, E. H. R.; FABRO, A. T.; RAINHO, C. A.; CASTELLI, E. C.; RIBOLLA, P. E. M.; AB'SABER, A. M.; TAKAGAKI, T.; NAGAI, M. A.; CAPELOZZI, V. L. Concomitant TP53 mutation in early-stage resected EGFR-mutated non-small cell lung cancer: a narrative approach in a genetically admixed Brazilian cohort. Brazilian Journal of Medical and Biological Research, Ribeirão Preto, v. 56, e12488, 2023. DOI: 10.1590/1414-431X2023e12488.",
+
+  "referencias": [
+    {"texto": "LABBÉ, C. et al. Prognostic and predictive effects of TP53 co-mutation in patients with EGFR-mutated non-small cell lung cancer (NSCLC). Lung Cancer, v. 111, p. 23-29, 2017.", "doi": "10.1016/j.lungcan.2017.06.014"},
+    {"texto": "LIU, S. et al. TP53 co-mutations in advanced EGFR-mutated non-small cell lung cancer: prognosis and therapeutic strategy for cancer therapy. Frontiers in Oncology, v. 12, 860563, 2022.", "doi": "10.3389/fonc.2022.860563"},
+    {"texto": "MOK, T. S. et al. Gefitinib or carboplatin-paclitaxel in pulmonary adenocarcinoma. New England Journal of Medicine, v. 361, p. 947-957, 2009.", "doi": "10.1056/NEJMoa0810699"},
+    {"texto": "WONG, S. Q. et al. Sequence artefacts in a prospective series of formalin-fixed tumours tested for mutations in hotspot regions by massively parallel sequencing. BMC Medical Genomics, v. 7, 23, 2014.", "doi": "10.1186/1755-8794-7-23"},
+    {"texto": "PAO, W.; CHMIELECKI, J. Rational, biologically based treatment of EGFR-mutant non-small-cell lung cancer. Nature Reviews Cancer, v. 10, p. 760-774, 2010.", "doi": "10.1038/nrc2947"}
+  ]
+}

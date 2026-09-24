@@ -1,0 +1,178 @@
+{
+  "id": "curativo-celulose-nisina",
+  "tipo": "artigo",
+  "rotulo": "Artigo publicado",
+  "arte": "fibras",
+  "arte_legenda": "ilustração · fibras de celulose liberando o ativo",
+  "tema": "Biomateriais e nanotecnologia",
+  "tema_id": "biomateriais",
+  "titulo": "Development of a Drug Delivery System with Bacterial Cellulose and Gelatin: Physicochemical and Microbiological Evaluation",
+  "titulo_pt": "Desenvolvimento de um sistema de liberação de fármacos com celulose bacteriana e gelatina: avaliação físico-química e microbiológica",
+  "titulo_curto": "Um curativo de celulose que combate bactérias resistentes",
+  "breadcrumb": "Curativo com nisina",
+  "autores": [
+    {"nome": "Gabriel P. Machado", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Natasha L. A. Ibanez", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Patricia L. M. Alves", "destaque": true, "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Ana C. Chacon", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Larissa Simões", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Victoria Schultz", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Samanta Oliveira", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Denise Grotto", "afiliacao": "Farmácia · Uniso"},
+    {"nome": "Angela F. Jozala", "afiliacao": "Farmácia · Uniso (autora correspondente)"}
+  ],
+  "revista": {
+    "nome": "Macromol",
+    "cidade": "Basileia, Suíça (MDPI)",
+    "issn": "2673-6209",
+    "volume": "5",
+    "numero": "3",
+    "paginas": "artigo 39",
+    "ano": "2025",
+    "submetido": "2025-04-29",
+    "publicado": "2025-08-27",
+    "doi": "10.3390/macromol5030039",
+    "url": "https://doi.org/10.3390/macromol5030039",
+    "site": "https://www.mdpi.com/journal/macromol",
+    "pdf": "https://www.mdpi.com/2673-6209/5/3/39/pdf"
+  },
+  "palavras_chave": ["Celulose bacteriana", "Filmes bioativos", "Liberação controlada", "Nisina", "Resistência antimicrobiana"],
+
+  "em_1_minuto": [
+    {"rotulo": "O problema", "titulo": "Bactérias cada vez mais resistentes", "texto": "Segundo a OMS, a resistência a antibióticos causou 1,27 milhão de mortes em 2019. Feridas infectadas por bactérias resistentes são difíceis de tratar."},
+    {"rotulo": "O que fizeram", "titulo": "Um filme-curativo com seis ingredientes", "texto": "Juntaram gelatina, celulose produzida por bactérias, sericina (proteína da seda), ácido cítrico, PEG 400 e nisina, uma molécula natural que mata bactérias."},
+    {"rotulo": "O que acharam", "titulo": "Funcionou até contra bactérias de hospital", "texto": "O filme impediu o crescimento das 7 bactérias testadas, inclusive 4 resistentes vindas de hospital, e ainda teve ação antioxidante."},
+    {"rotulo": "Por que importa", "titulo": "Um primeiro passo para curativos inteligentes", "texto": "É um estudo inicial, feito em laboratório. Antes de chegar às pessoas, ainda faltam testes de resistência do material e de segurança."}
+  ],
+
+  "numeros": [
+    {"valor": "21,7 mm", "texto": "maior área sem bactérias em volta do filme (contra E. coli)", "cor": "ok"},
+    {"valor": "7 de 7", "texto": "bactérias testadas tiveram o crescimento barrado pelo filme com nisina", "cor": "arg"},
+    {"valor": "2 de 7", "texto": "bactérias barradas pelo filme sem nisina e sem sericina", "cor": "amber"},
+    {"valor": "0,00125 mg/mL", "texto": "menor quantidade de nisina que já impediu o crescimento de S. aureus", "cor": "violet"}
+  ],
+
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "O problema",
+      "eyebrow": "Contexto",
+      "titulo": "Por que criar um curativo novo",
+      "lede": "Os antibióticos estão perdendo força, e as feridas infectadas pedem soluções que ajam no local por mais tempo.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>A <strong>resistência antimicrobiana</strong> acontece quando bactérias deixam de responder aos remédios que antes as matavam. O uso exagerado de antibióticos é o principal motor desse problema. Na pandemia de COVID-19, por exemplo, só cerca de <strong>8%</strong> dos pacientes internados tinham infecção por bactéria, mas aproximadamente <strong>75%</strong> receberam antibióticos.</p><p>Bactérias como <em>Escherichia coli</em>, <em>Staphylococcus aureus</em>, <em>Pseudomonas aeruginosa</em> e <em>Enterobacter</em> estão entre as que mais preocupam nos hospitais.</p>"},
+        {"tipo": "texto", "html": "<p>Pomadas e cremes passados na pele saem com facilidade da ferida. Por isso, cresce o interesse por <strong>filmes e curativos feitos de polímeros naturais</strong>, que ficam no lugar, protegem a lesão e liberam o remédio aos poucos. O grupo da Uniso já trabalha há anos com <strong>celulose bacteriana</strong>, um material muito puro, resistente e bem tolerado pelo corpo.</p>"},
+        {"tipo": "cartoes", "titulo": "Os seis ingredientes do filme (e o papel de cada um)", "itens": [
+          {"titulo": "Gelatina", "texto": "A base do filme. Preenche os espaços entre as fibras de celulose.", "cor": "amber"},
+          {"titulo": "Celulose bacteriana", "texto": "Dá estrutura e resistência. É produzida pela bactéria Komagataeibacter xylinus.", "cor": "teal"},
+          {"titulo": "PEG 400", "texto": "Plastificante: deixa o filme mais maleável e evita que resseque.", "cor": "arg"},
+          {"titulo": "Ácido cítrico", "texto": "Une as moléculas do filme e ajuda a “abrir” a proteção de certas bactérias.", "cor": "ok"},
+          {"titulo": "Sericina", "texto": "Proteína da seda. Dá elasticidade e ajuda a manter o filme hidratado.", "cor": "violet"},
+          {"titulo": "Nisina", "texto": "Peptídeo natural que mata bactérias. É o “princípio ativo” do curativo.", "cor": "his"}
+        ]}
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Como foi feito",
+      "eyebrow": "Método",
+      "titulo": "Como o filme foi feito e testado",
+      "lede": "Tudo foi feito em laboratório, comparando o filme completo com um filme “em branco”, sem nisina e sem sericina.",
+      "blocos": [
+        {"tipo": "passos", "itens": [
+          {"titulo": "Produzir a celulose", "texto": "A bactéria cresceu 4 dias a 30 °C em meio de cultura e formou membranas de cerca de 10 cm. Elas foram limpas, lavadas até pH neutro e esterilizadas."},
+          {"titulo": "Quebrar a celulose com enzima", "texto": "A celulose foi tratada por 4 horas a 50 °C com celulase, uma enzima que desfaz os grumos. Assim ela se espalha melhor no filme."},
+          {"titulo": "Montar o filme", "texto": "A gelatina foi dissolvida a 80 °C. Depois de esfriar a cerca de 40 °C, recebeu os outros ingredientes, foi para uma placa e secou por 48 horas."},
+          {"titulo": "Medir a força da nisina", "texto": "Em placas com 96 pocinhos, testaram qual a menor quantidade de nisina e de sericina capaz de impedir o crescimento das bactérias (CIM)."},
+          {"titulo": "Colocar o filme sobre as bactérias", "texto": "Pedaços do filme foram postos sobre placas com 7 bactérias: 3 de coleção (ATCC) e 4 resistentes isoladas em hospital. Depois de 24 horas, mediram a área sem crescimento em volta (o halo)."},
+          {"titulo": "Antioxidante e microscópio", "texto": "Mediram, por 1 hora, quanto o filme neutraliza radicais livres (teste DPPH) e observaram a superfície em microscópio eletrônico, com aumento de 20 mil vezes."}
+        ]},
+        {"tipo": "nota", "html": "Nas comparações estatísticas foi usado o teste t de Student; diferenças com p &lt; 0,05 foram consideradas reais. Os testes foram feitos em triplicata."}
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "O filme barrou todas as bactérias testadas",
+      "lede": "Escolha uma bactéria e compare o filme completo com o filme sem nisina e sem sericina.",
+      "blocos": [
+        {"tipo": "grafico", "rotulo_chips": "Escolha a bactéria", "unidade": " mm", "grupos": [
+          {"nome": "Filme com nisina (E5)", "cor": "#5FD39A"},
+          {"nome": "Filme sem nisina (BE)", "cor": "#9DB6FF"}
+        ], "parametros": [
+          {"rotulo": "S. aureus", "valores": [{"m": 18.96, "ep": 0.15}, {"m": 0}], "leitura": "Bactéria Gram-positiva, comum em infecções de pele. Só o filme com nisina formou halo."},
+          {"rotulo": "E. coli", "valores": [{"m": 21.68, "ep": 0.59}, {"m": 8.95, "ep": 0.06}], "leitura": "O maior halo do estudo. O filme sem nisina também agiu um pouco, provavelmente por causa do ácido cítrico."},
+          {"rotulo": "P. aeruginosa", "valores": [{"m": 20.35, "ep": 0.33}, {"m": 0}], "leitura": "Bactéria Gram-negativa muito presente em hospitais. Só o filme com nisina a barrou."},
+          {"rotulo": "E. cloacae resistente", "valores": [{"m": 18.34, "ep": 0.13}, {"m": 0}], "leitura": "Bactéria de hospital resistente a antibióticos. O filme completo formou um halo de mais de 18 mm."},
+          {"rotulo": "S. marcescens resistente", "valores": [{"m": 13.34, "ep": 0.16}, {"m": 0}], "leitura": "O menor halo entre as bactérias testadas, mas ainda assim o filme completo impediu o crescimento em volta."},
+          {"rotulo": "P. aeruginosa resistente", "valores": [{"m": 18.54, "ep": 0.24}, {"m": 0}], "leitura": "Mesmo a versão resistente da P. aeruginosa foi barrada pelo filme com nisina."},
+          {"rotulo": "E. coli resistente", "valores": [{"m": 17.40, "ep": 0.11}, {"m": 5.18, "ep": 0.09}], "leitura": "O filme sem nisina teve um efeito pequeno. O filme completo teve um halo mais de 3 vezes maior."}
+        ], "nota": "Halo = área em volta do filme onde as bactérias não cresceram (média ± desvio padrão, em milímetros). “Resistente” = bactéria isolada em hospital. Valor 0 = nenhum halo. Dados da Tabela 2 do artigo."},
+        {"tipo": "texto", "html": "<p><strong>A nisina é o ingrediente que mata as bactérias.</strong> Sozinha, ela impediu o crescimento de <em>S. aureus</em> a partir de <strong>0,00125 mg/mL</strong> e de <em>E. coli</em> e <em>P. aeruginosa</em> a partir de <strong>0,0125 mg/mL</strong>. A sericina, sozinha, não teve ação contra as bactérias.</p>"},
+        {"tipo": "cartoes", "titulo": "O que mais os testes mostraram", "itens": [
+          {"titulo": "Aparência", "texto": "Filme semirrígido, translúcido e sem cheiro, com flocos de celulose visíveis: boas características para uso na pele.", "cor": "teal"},
+          {"titulo": "Antioxidante", "texto": "O filme completo neutralizou cada vez mais radicais livres ao longo do tempo, com diferença clara a partir de 10 minutos. O filme sem nisina quase não reagiu.", "cor": "amber"},
+          {"titulo": "Microscópio eletrônico", "texto": "A gelatina cobriu a superfície e os componentes se misturaram à matriz, com alguns aglomerados de nisina e sericina perto das bordas.", "cor": "violet"}
+        ]}
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Por que funcionou",
+      "eyebrow": "Discussão",
+      "titulo": "Como a nisina passou a vencer bactérias Gram-negativas",
+      "lede": "Sozinha, a nisina age quase só contra bactérias Gram-positivas. No filme, ela ganhou um reforço.",
+      "blocos": [
+        {"tipo": "cadeia", "itens": [
+          "O ácido cítrico “sequestra” o cálcio e o magnésio que firmam a membrana externa das bactérias Gram-negativas",
+          "Essa membrana de proteção fica mais frágil",
+          "A nisina, que antes não conseguia passar, entra na bactéria",
+          "A bactéria é destruída, inclusive as resistentes a antibióticos"
+        ]},
+        {"tipo": "texto", "html": "<p>Filmes feitos só de gelatina costumam ser duros e quebradiços. A <strong>celulose bacteriana</strong>, com suas nanofibras, deixou o material mais coeso e resistente. A <strong>sericina</strong> trouxe elasticidade e ajudou a evitar o ressecamento, e o <strong>PEG 400</strong> deixou o filme mais maleável.</p><p>Um efeito parecido já tinha sido descrito com a nisina combinada ao EDTA, outra substância que tira cálcio e magnésio da membrana das bactérias.</p>"},
+        {"tipo": "destaque", "html": "Os autores propõem que o filme vence a resistência por três caminhos: libera nisina em quantidade alta o bastante para <strong>saturar as defesas</strong> das bactérias, <strong>penetra no biofilme</strong> e mantém uma <strong>pressão contínua</strong>, que dificulta a fuga por bombas de efluxo ou mutações."}
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusão",
+      "eyebrow": "Conclusão",
+      "titulo": "O que o estudo permite dizer",
+      "lede": "Um material promissor para feridas infectadas, que ainda está no começo do caminho.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>A combinação de biopolímeros naturais com nisina gerou um filme estável, flexível, com <strong>ação contra bactérias Gram-positivas e Gram-negativas</strong>, inclusive resistentes, e com <strong>ação antioxidante</strong>. Juntar essas duas funções é útil em feridas de pele, onde infecção e estresse oxidativo atrasam a cicatrização.</p>"},
+        {"tipo": "lista", "titulo": "O que ainda falta, segundo os próprios autores", "itens": [
+          "Medir melhor as propriedades mecânicas do filme (resistência, elasticidade).",
+          "Avaliar a biocompatibilidade: se o material é bem tolerado pelas células e tecidos.",
+          "Fazer testes de segurança biológica antes de qualquer uso em pessoas."
+        ]}
+      ]
+    }
+  ],
+
+  "glossario": [
+    {"termo": "Resistência antimicrobiana", "def": "Quando bactérias e outros micróbios deixam de responder aos remédios que antes os eliminavam."},
+    {"termo": "Nisina", "def": "Peptídeo natural produzido por bactérias do leite, usado como conservante e capaz de matar outras bactérias."},
+    {"termo": "Celulose bacteriana", "def": "Celulose pura, formada por nanofibras, produzida por bactérias como a Komagataeibacter xylinus."},
+    {"termo": "Sericina", "def": "Proteína que envolve o fio do bicho-da-seda. Ajuda a hidratar e dar elasticidade."},
+    {"termo": "Gram-positiva e Gram-negativa", "def": "Dois grandes grupos de bactérias. As Gram-negativas têm uma membrana externa extra, que as torna mais difíceis de atingir."},
+    {"termo": "Halo de inibição", "def": "Área em volta de um material, numa placa com bactérias, onde elas não conseguiram crescer. Quanto maior, mais forte a ação."},
+    {"termo": "CIM", "def": "Concentração inibitória mínima: a menor quantidade de uma substância que impede o crescimento de uma bactéria."},
+    {"termo": "DPPH", "def": "Radical livre estável usado para medir a ação antioxidante: quanto mais ele some, mais antioxidante é a amostra."},
+    {"termo": "MEV", "def": "Microscopia eletrônica de varredura: mostra a superfície de um material com aumentos de milhares de vezes."},
+    {"termo": "Plastificante", "def": "Substância que deixa um material mais flexível e menos quebradiço."},
+    {"termo": "Liberação controlada", "def": "Quando o remédio sai do material aos poucos, agindo no local por mais tempo."},
+    {"termo": "ATCC", "def": "Coleção de referência de microrganismos. Bactérias “ATCC” são padronizadas para comparar estudos."}
+  ],
+
+  "citacao": "MACHADO, G. P.; IBANEZ, N. L. A.; ALVES, P. L. M.; CHACON, A. C.; SIMÕES, L.; SCHULTZ, V.; OLIVEIRA, S.; GROTTO, D.; JOZALA, A. F. Development of a Drug Delivery System with Bacterial Cellulose and Gelatin: Physicochemical and Microbiological Evaluation. Macromol, Basel, v. 5, n. 3, art. 39, 2025. DOI: 10.3390/macromol5030039.",
+
+  "referencias": [
+    {"texto": "DOS SANTOS, G. R. et al. Bacterial Cellulose Membranes as Carriers for Nisin: Incorporation, Antimicrobial Activity, Cytotoxicity and Morphology. Polymers, v. 14, 3497, 2022.", "doi": "10.3390/polym14173497"},
+    {"texto": "BUREL, C.; KALA, A.; PUREVDORJ-GAGE, L. Impact of pH on citric acid antimicrobial activity against Gram-negative bacteria. Letters in Applied Microbiology, v. 72, p. 332-340, 2021.", "doi": "10.1111/lam.13420"},
+    {"texto": "JOZALA, A. F. et al. Bacterial cellulose production by Gluconacetobacter xylinus by employing alternative culture media. Applied Microbiology and Biotechnology, v. 99, p. 1181-1190, 2015.", "doi": "10.1007/s00253-014-6232-3"},
+    {"texto": "LAMBONI, L. et al. Silk sericin: A versatile material for tissue engineering and drug delivery. Biotechnology Advances, v. 33, p. 1855-1867, 2015.", "doi": "10.1016/j.biotechadv.2015.10.014"},
+    {"texto": "WORLD HEALTH ORGANIZATION. Antimicrobial resistance (fact sheet). Genebra: WHO, 2023.", "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"}
+  ]
+}

@@ -3,6 +3,8 @@
   "tipo": "artigo",
   "rotulo": "Artigo publicado",
   "arte": "celulas",
+  "tema": "Toxinologia",
+  "tema_id": "toxinologia",
   "titulo": "Análise histológica da miotoxicidade do veneno de Micrurus spixii (cobra coral amazônica) em músculo biventer cervicis de pintainho e sua neutralização por soro antielapídico",
   "titulo_curto": "O veneno da cobra coral amazônica no músculo, e quanto o soro protege",
   "breadcrumb": "Cobra coral amazônica",
@@ -10,7 +12,7 @@
     {"nome": "Fernanda Ruis Passos", "afiliacao": "Biomedicina · Uniso"},
     {"nome": "Wanessa Regis da Costa", "afiliacao": "Biomedicina · Uniso"},
     {"nome": "Nathalia Margarida Cantuária", "afiliacao": "Ciências Farmacêuticas · Uniso"},
-    {"nome": "Patricia Lius Melo Alves", "afiliacao": "Biomedicina · Uniso"},
+    {"nome": "Patricia Lius Melo Alves", "destaque": true, "afiliacao": "Biomedicina · Uniso"},
     {"nome": "Jonas Eligio Garcia de Azevedo", "afiliacao": "Ciências Farmacêuticas · Uniso"},
     {"nome": "Stephen Hyslop", "afiliacao": "Farmacologia · Unicamp"},
     {"nome": "Yoko Oshima-Franco", "afiliacao": "Ciências Farmacêuticas · Uniso"}
@@ -104,7 +106,7 @@
       "titulo": "O que o veneno fez, e o que o soro evitou",
       "lede": "Escolha um tipo de célula para comparar os três grupos.",
       "blocos": [
-        {"tipo": "grafico", "grupos": [
+        {"tipo": "grafico", "rotulo_chips": "Escolha o tipo de célula", "grupos": [
           {"nome": "Controle (Krebs)", "cor": "#9DB6FF"},
           {"nome": "Veneno", "cor": "#FF5470"},
           {"nome": "Veneno + soro", "cor": "#5FD39A"}

@@ -13,8 +13,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="GenoEvidence">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>Artigos · GenoEvidence</title>
-<meta name="description" content="Artigos científicos publicados, explicados em linguagem simples, com link direto para a revista.">
+<title>Temas · GenoEvidence</title>
+<meta name="description" content="Artigos científicos separados por tema (genética, biologia molecular, bioinformática e mais), explicados em linguagem simples, com link direto para a revista.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap">
@@ -27,12 +27,18 @@
 <main class="wrap">
   <header class="page-head">
     <p class="kicker" id="total">&nbsp;</p>
-    <h1>Artigos explicados</h1>
-    <p class="sub">Artigos científicos publicados, explicados em linguagem simples, com imagens, gráficos e o link direto para a revista.</p>
+    <h1>Artigos por tema</h1>
+    <p class="sub">Escolha um tema e veja os estudos explicados em linguagem simples. Toque em um estudo para abrir a página completa dele, com imagens, gráficos e o link para a revista.</p>
   </header>
 
-  <input class="search" id="busca" type="search" placeholder="Buscar por tema, revista ou palavra…" aria-label="Buscar artigos">
-  <div class="art-grid" id="grade"><p class="loading">Carregando…</p></div>
+  <!-- temas: montados a partir de data/artigos.json -->
+  <nav class="tema-bar" id="temaBar" aria-label="Temas"></nav>
+
+  <div class="temas-tools">
+    <input class="search" id="busca" type="search" placeholder="Buscar artigo, revista ou palavra…" aria-label="Buscar artigos">
+    <div class="chips pesq-chips" id="porPesquisadora" role="group" aria-label="Filtrar por pesquisadora"></div>
+  </div>
+  <div id="porTema"><p class="loading">Carregando…</p></div>
 </main>
 
 <footer class="foot"><div class="wrap">GenoEvidence · a ciência por trás das evidências · <a href="../sobre/">Sobre o app</a></div></footer>

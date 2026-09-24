@@ -38,9 +38,8 @@
     grafico: (b, id) => {
       const gid = "g-" + id;
       return '<div class="chart-art" id="' + gid + '">' +
-        '<div class="chips-f" role="tablist" aria-label="Escolha o tipo de célula">' + b.parametros.map((p, i) => '<button type="button" class="chip-f" role="tab" data-i="' + i + '" aria-selected="' + (i === 0) + '" aria-pressed="' + (i === 0) + '">' + esc(p.rotulo) + "</button>").join("") + "</div>" +
-        '<div class="chart-body"><svg viewBox="0 0 560 320" role="img" aria-live="polite"></svg><div class="chart-side"><ul class="chart-leg">' +
-        b.grupos.map(g => '<li><i style="background:' + g.cor + '"></i>' + esc(g.nome) + "</li>").join("") + '</ul><p class="chart-read"></p></div></div>' +
+        '<div class="chips-f" role="tablist" aria-label="' + esc(b.rotulo_chips || "Escolha o que comparar") + '">' + b.parametros.map((p, i) => '<button type="button" class="chip-f" role="tab" data-i="' + i + '" aria-selected="' + (i === 0) + '" aria-pressed="' + (i === 0) + '">' + esc(p.rotulo) + "</button>").join("") + "</div>" +
+        '<div class="chart-body"><svg viewBox="0 0 560 320" role="img" aria-live="polite"></svg><div class="chart-side"><ul class="chart-leg"></ul><p class="chart-read"></p></div></div>' +
         (b.nota ? '<p class="note art-note">' + esc(b.nota) + "</p>" : "") + "</div>";
     }
   };
@@ -48,23 +47,30 @@
   function desenharGrafico(el, b) {
     const svg = $("svg", el), leitura = $(".chart-read", el), NS = "http://www.w3.org/2000/svg";
     const mk = (tag, at, pai, txt) => { const e = document.createElementNS(NS, tag); for (const k in at) e.setAttribute(k, at[k]); if (txt != null) e.textContent = txt; (pai || svg).appendChild(e); return e; };
+    const passoBom = x => { const p = Math.pow(10, Math.floor(Math.log10(x))), f = x / p; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10) * p; };
     let atual = 0;
     function mostrar(i) {
       atual = i;
-      const p = b.parametros[i];
+      const p = b.parametros[i], grupos = p.grupos || b.grupos;
+      // unidade dos valores ("%" se não for informada; ex.: " mm", " meses"), que cada aba pode trocar
+      const uni = p.unidade != null ? p.unidade : b.unidade != null ? b.unidade : "%", pre = p.prefixo || b.prefixo || "", eixo = p.eixo || b.eixo;
+      const fmt = v => pre + num(v) + uni;
+      const noEixo = v => pre + num(v) + (uni.trim().length <= 2 ? uni : "");
       svg.innerHTML = "";
-      svg.setAttribute("aria-label", p.rotulo + ": " + p.valores.map((v, k) => b.grupos[k].nome + " " + num(v.m) + "%").join("; "));
+      svg.setAttribute("aria-label", p.rotulo + ": " + p.valores.map((v, k) => grupos[k].nome + " " + fmt(v.m)).join("; "));
+      $(".chart-leg", el).innerHTML = grupos.map(g => '<li><i style="background:' + g.cor + '"></i>' + esc(g.nome) + "</li>").join("");
       const L = 56, R = 540, T = 30, B = 270, max = Math.max(...p.valores.map(v => v.m + (v.ep || 0))) || 1;
-      const passo = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 25, 50][[0.5, 1, 2.5, 5, 10, 25, 50, 100, 125, 250].findIndex(x => max * 1.15 <= x)] || 20;
+      const passo = passoBom((max * 1.15) / 5);
       const topo = Math.ceil((max * 1.15) / passo) * passo, Y = v => B - (v / topo) * (B - T);
       for (let v = 0; v <= topo + 1e-9; v += passo) {
         mk("line", { x1: L, x2: R, y1: Y(v), y2: Y(v), class: "gridl" });
-        mk("text", { x: L - 10, y: Y(v) + 4, "text-anchor": "end", class: "lbl" }, null, num(+v.toFixed(2)) + "%");
+        mk("text", { x: L - 10, y: Y(v) + 4, "text-anchor": "end", class: "lbl" }, null, noEixo(+v.toFixed(2)));
       }
+      if (uni.trim().length > 2 || eixo) mk("text", { x: 8, y: 14, class: "lbl" }, null, eixo || uni.trim());
       mk("line", { x1: L, x2: R, y1: B, y2: B, class: "axis" });
       const w = (R - L) / p.valores.length, bw = Math.min(96, w * .52);
       p.valores.forEach((v, k) => {
-        const cx = L + w * k + w / 2, g = b.grupos[k], y = Y(v.m);
+        const cx = L + w * k + w / 2, g = grupos[k], y = Y(v.m);
         const bar = mk("rect", { x: cx - bw / 2, y: y, width: bw, height: Math.max(0, B - y), rx: 6, fill: g.cor });
         if (!RM) { bar.style.transformBox = "fill-box"; bar.style.transformOrigin = "center bottom"; bar.animate([{ transform: "scaleY(0)" }, { transform: "scaleY(1)" }], { duration: 700, delay: k * 90, easing: "cubic-bezier(.2,.8,.2,1)", fill: "backwards" }); }
         if (v.ep) {
@@ -73,7 +79,7 @@
           mk("line", { x1: cx - 9, x2: cx + 9, y1, y2: y1, stroke: "#E7ECF6", "stroke-width": 1.5 });
         }
         const topoBarra = Y(v.m + (v.ep || 0));
-        mk("text", { x: cx, y: topoBarra - 10, "text-anchor": "middle", class: "val" }, null, num(v.m) + (v.ep ? " ± " + num(v.ep) : "") + "%");
+        mk("text", { x: cx, y: topoBarra - 10, "text-anchor": "middle", class: "val" }, null, pre + num(v.m) + (v.ep ? " ± " + num(v.ep) : "") + (uni.trim().length <= 2 ? uni : ""));
         if (v.sig) mk("text", { x: cx, y: topoBarra - 28, "text-anchor": "middle", class: "sig" }, null, v.sig);
         mk("text", { x: cx, y: B + 22, "text-anchor": "middle", class: "lbl-strong" }, null, g.nome);
       });
@@ -129,37 +135,158 @@
     addEventListener("resize", () => { build(); if (!raf) draw(performance.now()); });
   }
 
+  /* ---------------- outras ilustrações da abertura (campo "arte" do artigo.json) ----------------
+     rede: dados e inteligência artificial · helice: DNA · fibras: celulose e curativos
+     particulas: nanopartículas e cosméticos · bastonetes: bactérias · sangue: células do sangue */
+  const ARTES = {
+    rede: {
+      criar: (W, H, rnd) => ({ ns: Array.from({ length: W < 700 ? 34 : 60 }, () => ({ x: rnd(W), y: rnd(H), vx: rnd(.3) - .15, vy: rnd(.3) - .15, q: Math.random() < .12 })) }),
+      desenhar(c, s, t, W, H) {
+        for (const n of s.ns) { n.x = (n.x + n.vx + W) % W; n.y = (n.y + n.vy + H) % H; }
+        for (let i = 0; i < s.ns.length; i++) for (let j = i + 1; j < s.ns.length; j++) {
+          const a = s.ns[i], b = s.ns[j], d = Math.hypot(a.x - b.x, a.y - b.y);
+          if (d < 130) { c.strokeStyle = "rgba(120,160,255," + (.32 * (1 - d / 130)).toFixed(3) + ")"; c.beginPath(); c.moveTo(a.x, a.y); c.lineTo(b.x, b.y); c.stroke(); }
+        }
+        for (const n of s.ns) {
+          const pulso = n.q ? .5 + .5 * Math.sin(t * 2 + n.x) : 0;
+          c.fillStyle = n.q ? "rgba(255,84,112," + (.55 + pulso * .45) + ")" : "rgba(170,195,255,.75)";
+          c.beginPath(); c.arc(n.x, n.y, n.q ? 3.2 + pulso * 2 : 2.2, 0, 6.283); c.fill();
+        }
+      }
+    },
+    helice: {
+      criar: () => ({}),
+      desenhar(c, s, t, W, H) {
+        const cy = H * .5, A = Math.min(H * .2, 120), x0 = W < 980 ? 0 : W * .38;
+        for (let x = x0, k = 0; x < W + 20; x += 15, k++) {
+          const f = x * .018 + t * .7, y1 = cy + A * Math.sin(f), y2 = cy - A * Math.sin(f), z = Math.cos(f);
+          if (k % 2 === 0) { const alvo = (k % 22 === 10); c.strokeStyle = alvo ? "rgba(255,84,112,.8)" : "rgba(140,170,255,.28)"; c.lineWidth = alvo ? 3 : 1.4; c.beginPath(); c.moveTo(x, y1); c.lineTo(x, y2); c.stroke(); }
+          c.fillStyle = "rgba(125,160,255," + (.45 + .4 * z) + ")"; c.beginPath(); c.arc(x, y1, 3.6 + 1.6 * z, 0, 6.283); c.fill();
+          c.fillStyle = "rgba(190,150,255," + (.45 - .4 * z) + ")"; c.beginPath(); c.arc(x, y2, 3.6 - 1.6 * z, 0, 6.283); c.fill();
+        }
+        c.lineWidth = 1;
+      }
+    },
+    fibras: {
+      criar: (W, H, rnd) => ({ fs: Array.from({ length: 26 }, (_, i) => ({ y: (i + .5) * H / 26 + rnd(20) - 10, a: 8 + rnd(26), f: .004 + rnd(.01), v: .2 + rnd(.5), p: rnd(6.28), w: .6 + rnd(1.6) })), gs: Array.from({ length: 16 }, () => ({ f: Math.floor(rnd(26)), x: rnd(W), v: .4 + rnd(.8) })) }),
+      desenhar(c, s, t, W, H) {
+        const yDe = (f, x) => f.y + f.a * Math.sin(x * f.f + f.p + t * f.v);
+        for (const f of s.fs) {
+          c.strokeStyle = "rgba(95,211,200,.22)"; c.lineWidth = f.w; c.beginPath();
+          for (let x = 0; x <= W; x += 12) { const y = yDe(f, x); x ? c.lineTo(x, y) : c.moveTo(x, y); }
+          c.stroke();
+        }
+        // gotinhas do ativo sendo liberadas ao longo das fibras
+        for (const g of s.gs) {
+          g.x += g.v; if (g.x > W + 10) { g.x = -10; g.f = Math.floor(Math.random() * s.fs.length); }
+          const f = s.fs[g.f], y = yDe(f, g.x);
+          c.fillStyle = "rgba(255,178,63,.85)"; c.beginPath(); c.arc(g.x, y, 2.6, 0, 6.283); c.fill();
+        }
+        c.lineWidth = 1;
+      }
+    },
+    particulas: {
+      criar: (W, H, rnd) => ({ ps: Array.from({ length: W < 700 ? 22 : 38 }, () => ({ x: rnd(W), y: rnd(H), r: 6 + rnd(22), v: .15 + rnd(.45), h: [340, 38, 170, 255][Math.floor(rnd(4))] })) }),
+      desenhar(c, s, t, W, H) {
+        for (const p of s.ps) {
+          p.y -= p.v; if (p.y < -p.r * 2) { p.y = H + p.r * 2; p.x = Math.random() * W; }
+          const x = p.x + Math.sin(t * .6 + p.r) * 8;
+          const g = c.createRadialGradient(x - p.r * .3, p.y - p.r * .3, p.r * .1, x, p.y, p.r);
+          g.addColorStop(0, "hsla(" + p.h + ",90%,82%,.55)"); g.addColorStop(1, "hsla(" + p.h + ",80%,60%,.06)");
+          c.fillStyle = g; c.beginPath(); c.arc(x, p.y, p.r, 0, 6.283); c.fill();
+          c.strokeStyle = "hsla(" + p.h + ",85%,80%,.35)"; c.beginPath(); c.arc(x, p.y, p.r * .72, 0, 6.283); c.stroke();
+        }
+      }
+    },
+    bastonetes: {
+      criar: (W, H, rnd) => ({ bs: Array.from({ length: W < 700 ? 12 : 20 }, () => ({ x: rnd(W), y: rnd(H), a: rnd(6.28), va: rnd(.01) - .005, vx: rnd(.4) - .2, vy: rnd(.4) - .2 })), is: Array.from({ length: 70 }, () => ({ x: rnd(W), y: rnd(H), b: Math.floor(rnd(12)) })) }),
+      desenhar(c, s, t, W, H) {
+        for (const b of s.bs) {
+          b.x = (b.x + b.vx + W) % W; b.y = (b.y + b.vy + H) % H; b.a += b.va;
+          c.save(); c.translate(b.x, b.y); c.rotate(b.a);
+          c.fillStyle = "rgba(95,211,154,.28)"; c.strokeStyle = "rgba(140,235,190,.55)";
+          c.beginPath(); c.roundRect ? c.roundRect(-26, -8, 52, 16, 8) : c.rect(-26, -8, 52, 16); c.fill(); c.stroke(); c.restore();
+        }
+        // íons de metal sendo atraídos e presos pelas bactérias
+        for (const m of s.is) {
+          const b = s.bs[m.b % s.bs.length], dx = b.x - m.x, dy = b.y - m.y, d = Math.hypot(dx, dy);
+          if (d < 14 || d > W * .6) { m.x = Math.random() * W; m.y = Math.random() * H; m.b = Math.floor(Math.random() * s.bs.length); continue; }
+          m.x += dx / d * .7; m.y += dy / d * .7;
+          c.fillStyle = "rgba(200,210,230," + Math.min(.9, d / 120) + ")"; c.beginPath(); c.arc(m.x, m.y, 1.8, 0, 6.283); c.fill();
+        }
+      }
+    },
+    sangue: {
+      criar: (W, H, rnd) => ({ cs: Array.from({ length: W < 700 ? 26 : 44 }, () => ({ x: rnd(W), y: rnd(H), r: 7 + rnd(9), v: .3 + rnd(.8), l: Math.random() < .35 })) }),
+      desenhar(c, s, t, W, H) {
+        for (const e of s.cs) {
+          e.x += e.v; if (e.x > W + 20) { e.x = -20; e.y = Math.random() * H; }
+          const y = e.y + Math.sin(t + e.x * .01) * 6;
+          if (e.l) { // linfócito: núcleo grande
+            c.fillStyle = "rgba(165,140,255,.22)"; c.beginPath(); c.arc(e.x, y, e.r * 1.1, 0, 6.283); c.fill();
+            c.fillStyle = "rgba(150,120,255,.7)"; c.beginPath(); c.arc(e.x, y, e.r * .8, 0, 6.283); c.fill();
+          } else { // hemácia
+            c.fillStyle = "rgba(255,84,112,.45)"; c.beginPath(); c.ellipse(e.x, y, e.r, e.r * .82, 0, 0, 6.283); c.fill();
+            c.fillStyle = "rgba(6,10,19,.25)"; c.beginPath(); c.ellipse(e.x, y, e.r * .45, e.r * .35, 0, 0, 6.283); c.fill();
+          }
+        }
+      }
+    }
+  };
+
+  function arteAnimada(cv, tipo) {
+    const ctx = cv.getContext("2d"), A = ARTES[tipo];
+    let W = 0, H = 0, s = null, raf = 0, vis = true;
+    const t0 = performance.now(), rnd = n => Math.random() * n;
+    function build() {
+      const r = cv.getBoundingClientRect(), pr = Math.min(devicePixelRatio || 1, 2);
+      W = r.width; H = r.height; cv.width = W * pr; cv.height = H * pr; ctx.setTransform(pr, 0, 0, pr, 0, 0);
+      s = A.criar(W, H, rnd);
+    }
+    function draw(now) {
+      raf = 0; ctx.clearRect(0, 0, W, H);
+      A.desenhar(ctx, s, RM ? 0 : (now - t0) / 1000, W, H);
+      // no computador, o desenho fica à direita e some atrás do texto
+      if (W >= 980) { const m = ctx.createLinearGradient(W * .38, 0, W * .62, 0); m.addColorStop(0, "#060A13"); m.addColorStop(1, "rgba(6,10,19,0)"); ctx.fillStyle = m; ctx.fillRect(0, 0, W * .62, H); }
+      else { ctx.fillStyle = "rgba(6,10,19,.45)"; ctx.fillRect(0, 0, W, H); }
+      if (!RM && vis) raf = requestAnimationFrame(draw);
+    }
+    build(); draw(performance.now());
+    new IntersectionObserver(es => { vis = es[0].isIntersecting; if (vis && !raf && !RM) raf = requestAnimationFrame(draw); }).observe(cv);
+    addEventListener("resize", () => { build(); if (!raf) draw(performance.now()); });
+  }
+
   /* ---------------- montagem da página ---------------- */
   function montar(d) {
     const rv = d.revista || {};
     document.title = (d.titulo_curto || d.titulo) + " · GenoEvidence";
     const desc = $('meta[name="description"]'); if (desc) desc.content = d.titulo;
     const autores = d.autores || [];
-    const nomes = autores.map(a => a.nome || a);
 
     const hero = document.createElement("section");
     hero.className = "hero art-hero"; hero.id = "top";
     hero.innerHTML = '<canvas id="artCanvas" aria-hidden="true"></canvas><div class="hero-grid"></div>' +
       '<div class="wrap hero-in" lang="pt-BR"><div>' +
-      '<p class="eyebrow crumb"><a href="' + RAIZ + '">GenoEvidence</a> <span aria-hidden="true">/</span> <a href="' + RAIZ + 'artigos/">Artigos</a> <span aria-hidden="true">/</span> <span style="color:var(--text)">' + esc(d.breadcrumb || d.titulo_curto) + "</span></p>" +
+      '<p class="eyebrow crumb"><a href="' + RAIZ + '">GenoEvidence</a> <span aria-hidden="true">/</span> <a href="' + RAIZ + "artigos/" + (d.tema_id ? "#" + esc(d.tema_id) : "") + '">' + esc(d.tema || "Temas") + '</a> <span aria-hidden="true">/</span> <span style="color:var(--text)">' + esc(d.breadcrumb || d.titulo_curto) + "</span></p>" +
       '<div class="kind-row"><span class="badge tipo">' + esc(d.rotulo || "Artigo publicado") + "</span>" + (rv.nome ? '<a class="badge rev" href="' + esc(rv.site || rv.url) + '" target="_blank" rel="noopener">Revista ' + esc(rv.nome) + (rv.ano ? " · " + esc(rv.ano) : "") + "</a>" : "") + "</div>" +
       '<h1 class="art-title">' + esc(d.titulo_curto || d.titulo) + "</h1>" +
-      '<p class="sub art-full">' + esc(d.titulo) + "</p>" +
-      '<p class="authors art-authors">' + nomes.map(n => "<span>" + esc(n) + "</span>").join("") + "</p>" +
+      // título completo: em português; se o original for em outra língua, ele aparece embaixo
+      '<p class="sub art-full">' + esc(d.titulo_pt || d.titulo) + (d.titulo_pt ? '<span class="art-orig">Título original em inglês: ' + esc(d.titulo) + "</span>" : "") + "</p>" +
+      '<p class="authors art-authors">' + autores.map(a => "<span" + (a.destaque ? ' class="hl" title="Pesquisadora em destaque no GenoEvidence"' : "") + ">" + esc(a.nome || a) + "</span>").join("") + "</p>" +
       '<div class="cta-row">' +
       (rv.url ? '<a class="cta journal-cta" href="' + esc(rv.url) + '" target="_blank" rel="noopener">Ler na revista <span aria-hidden="true">↗</span></a>' : "") +
       '<a class="cta ghost" href="#em-1-minuto">Resumo em 1 minuto</a>' +
       (rv.pdf ? '<a class="cta ghost" href="' + esc(rv.pdf) + '" target="_blank" rel="noopener">Baixar PDF <span aria-hidden="true">↗</span></a>' : "") +
       "</div></div>" +
       '<aside class="readout" aria-label="Onde foi publicado"><p class="eyebrow" style="margin-bottom:6px">Publicado em</p>' +
-      '<p class="rv-name">' + esc(rv.nome || "—") + "</p>" +
+      '<p class="rv-name' + ((rv.nome || "").length > 22 ? " longo" : "") + '">' + esc(rv.nome || "—") + "</p>" +
       (rv.volume ? '<div class="row"><span class="k">Volume · número</span><span class="v">v. ' + esc(rv.volume) + (rv.numero ? ", n. " + esc(rv.numero) : "") + "</span></div>" : "") +
       (rv.paginas ? '<div class="row"><span class="k">Páginas</span><span class="v">' + esc(rv.paginas) + "</span></div>" : "") +
       (rv.publicado ? '<div class="row"><span class="k">Publicação</span><span class="v">' + esc(data(rv.publicado)) + "</span></div>" : "") +
       (rv.issn ? '<div class="row"><span class="k">ISSN</span><span class="v">' + esc(rv.issn) + "</span></div>" : "") +
       (rv.doi ? '<div class="row"><span class="k">DOI</span><span class="v his">' + esc(rv.doi) + "</span></div>" : "") +
       '<a class="readout-link" href="#revista">Sobre a revista e como citar →</a></aside></div>' +
-      '<span class="art-canvas-tag">ilustração · fibras musculares ao microscópio</span>';
+      '<span class="art-canvas-tag">' + esc(d.arte_legenda || "ilustração · fibras musculares ao microscópio") + "</span>";
     main.before(hero);
 
     let html = "";
@@ -190,11 +317,11 @@
       '<div class="jp-btns">' + (rv.url ? '<a class="journal-btn" href="' + esc(rv.url) + '" target="_blank" rel="noopener">Ler na revista ↗</a>' : "") +
       (rv.pdf ? '<a class="cta ghost" href="' + esc(rv.pdf) + '" target="_blank" rel="noopener">PDF do artigo ↗</a>' : "") +
       (rv.site ? '<a class="cta ghost" href="' + esc(rv.site) + '" target="_blank" rel="noopener">Site da revista ↗</a>' : "") + "</div></div>" +
-      (autores.length ? '<h3 class="blk-title">Autores</h3><ul class="author-list">' + autores.map(a => "<li><b>" + esc(a.nome || a) + "</b>" + (a.afiliacao ? "<span>" + esc(a.afiliacao) + "</span>" : "") + "</li>").join("") + "</ul>" : "") +
+      (autores.length ? '<h3 class="blk-title">Autores</h3><ul class="author-list">' + autores.map(a => "<li" + (a.destaque ? ' class="hl"' : "") + "><b>" + esc(a.nome || a) + "</b>" + (a.afiliacao ? "<span>" + esc(a.afiliacao) + "</span>" : "") + "</li>").join("") + "</ul>" : "") +
       (d.citacao ? '<div class="cite-box"><div class="cite-head"><h3 class="blk-title">Como citar (ABNT)</h3><button type="button" class="copy-btn" data-copy="#citacao">Copiar citação</button></div><p id="citacao">' + esc(d.citacao) + "</p></div>" : "") +
       "</div></section>";
     if (d.referencias) {
-      html += '<section class="s" id="referencias"><div class="wrap"><div class="s-head"><p class="eyebrow">Referências</p><h2>Referências citadas nesta página</h2><p class="lede">Estudos mencionados na explicação acima. A lista completa está no artigo original.</p></div>' +
+      html += '<section class="s" id="referencias"><div class="wrap"><div class="s-head"><p class="eyebrow">Referências</p><h2>Referências citadas nesta página</h2><p class="lede">Estudos mencionados na explicação acima, com os títulos no idioma original, como pede a norma ABNT. A lista completa está no artigo original.</p></div>' +
         '<ol class="ref-list">' + d.referencias.map(r => "<li><p>" + esc(r.texto) + "</p>" + (r.doi ? '<a href="https://doi.org/' + esc(r.doi) + '" target="_blank" rel="noopener">doi.org/' + esc(r.doi) + " ↗</a>" : r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">Acessar ↗</a>' : "") + "</li>").join("") + "</ol></div></section>";
     }
     main.innerHTML = html;
@@ -204,7 +331,7 @@
     // animação da cadeia de eventos
     $$(".chain").forEach(ch => new IntersectionObserver((es, io) => { if (es[0].isIntersecting) { ch.classList.add("on"); io.disconnect(); } }, { threshold: .3 }).observe(ch));
     // ilustração da abertura
-    const cv = $("#artCanvas"); if (cv) arteCelulas(cv);
+    const cv = $("#artCanvas"); if (cv) ARTES[d.arte] ? arteAnimada(cv, d.arte) : arteCelulas(cv);
 
     // menu do topo e menu lateral
     const secs = [["#em-1-minuto", "Resumo"]].concat((d.secoes || []).map(s => ["#" + s.id, s.menu || s.titulo]));

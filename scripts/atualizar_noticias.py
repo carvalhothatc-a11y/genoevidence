@@ -6,6 +6,11 @@ publicações científicas mais recentes sobre os temas do GenoEvidence.
 Roda sozinho todos os dias pelo GitHub Actions (.github/workflows/noticias.yml)
 e também pode ser rodado à mão:  python3 scripts/atualizar_noticias.py
 
+Notícias e publicações em inglês são traduzidas para o português pelo serviço
+gratuito MyMemory (api.mymemory.translated.net). As traduções ficam guardadas em
+data/traducoes.json, para não traduzir o mesmo texto de novo no dia seguinte.
+Se a tradução falhar, o texto fica em inglês e o app mostra a etiqueta "EN".
+
 Não usa bibliotecas externas: só Python 3.
 """
 import html
@@ -21,6 +26,9 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "data" / "noticias.json"
+TRADUCOES = RAIZ / "data" / "traducoes.json"
+# O MyMemory gratuito permite cerca de 5.000 caracteres por dia; ficamos abaixo disso.
+ORCAMENTO_TRADUCAO = 4600
 AGENTE = "Mozilla/5.0 (GenoEvidence; +https://carvalhothatc-a11y.github.io/genoevidence/)"
 
 # Fontes de notícias. "filtro" = só entram itens com alguma dessas palavras.
@@ -59,6 +67,67 @@ TEMAS = [
     ("Meio ambiente", r"\b(clima\w*|climate|ambient\w*|environment\w*|biodivers\w*|espécies?|species|florest\w*|forests?|oceanos?|oceans?|seca|drought|el niño|aquecimento|warming|carbon\w*|poluiç\w*|pollution|animais?|animals?|plantas?|plants?|insetos?|insects?|abelhas?|bees?)\b"),
     ("Espaço", r"\b(espaço|space|planet\w*|galáxia\w*|galax\w*|estrelas?|stars?|nasa|astron\w*|universo|universe|lua|moon|marte|mars|telescóp\w*|telescope\w*|cosm\w*|asteroid\w*|buraco negro|black holes?)\b"),
 ]
+
+# ---------- relevância: o app mostra só as notícias mais importantes do dia ----------
+# Pontos por assunto em alta (câncer, vacinas, clima, IA, Nobel, saúde...), por fonte e por ser recente.
+INTERESSE = [
+    (r"\b(câncer|cancer|cancers|tumor\w*|leucemia|leukemia)\b", 4),
+    (r"\b(vacina\w*|vaccin\w*|imuniza\w*)\b", 4),
+    (r"\b(nobel)\b", 3),
+    (r"\b(covid|pandemi\w*|epidemi\w*|vírus|virus|dengue|gripe|influenza|sarampo|measles|mpox|bactéria\w*|bacteri\w*)\b", 2),
+    (r"\b(clima\w*|climate|el niño|la niña|aquecimento|warming|seca|drought|enchente\w*|flood\w*|calor extremo|heatwave\w*)\b", 2),
+    (r"\b(inteligência artificial|artificial intelligence|openai|chatgpt|ia|ai)\b", 2),
+    (r"\b(genétic\w*|genetic\w*|dna|genes?|genoma|genome|crispr|hereditár\w*)\b", 2),
+    (r"\b(alzheimer|demência|dementia|autism\w*|autis\w*|obesidade|obesity|diabetes|ozempic|glp-1|infarto|heart attacks?|avc|stroke|sono|sleep)\b", 2),
+    (r"\b(brasil\w*|brazil\w*|sus|amazôn\w*|amazon|fiocruz|butantan)\b", 2),
+    (r"\b(saúde|health|doenças?|diseases?|tratamento\w*|treatments?|remédios?|medicamento\w*|drugs?|pacientes?|patients?)\b", 1),
+]
+EVITAR = r"\b(crossword|quiz|podcast|daily briefing|book review|resenha|obituar\w*|horóscopo|sponsored|patrocinado)\b"
+# avisos institucionais (eventos, inscrições, painéis) não são notícia de ciência para o leitor
+INSTITUCIONAL = r"\b(participa|inscriç\w*|seminário\w*|congresso\w*|webinar\w*|edita(l|is)|painel|eleiç\w*|posse|homenage\w*|premiaç\w*)\b"
+PESO_FONTE = {"pt": 4}
+PESO_FONTE_NOME = {"Nature": 1, "New Scientist": 1, "Scientific American": 1}
+TOTAL_PT, TOTAL_EN, POR_FONTE_PT, POR_FONTE_EN = 8, 7, 3, 2
+
+
+def relevancia(n, agora_dt):
+    texto = (n["titulo"] + " " + n.get("resumo", "")).lower()
+    pontos = sum(peso for padrao, peso in INTERESSE if re.search(padrao, texto))
+    pontos += PESO_FONTE.get(n["idioma"], 0) + PESO_FONTE_NOME.get(n["fonte"], 0)
+    try:
+        horas = (agora_dt - datetime.fromisoformat(n["data"])).total_seconds() / 3600
+    except ValueError:
+        horas = 999
+    pontos += 3 if horas < 24 else 2 if horas < 48 else 1 if horas < 72 else -3 if horas > 24 * 7 else 0
+    if re.search(EVITAR, texto):
+        pontos -= 5
+    if re.search(INSTITUCIONAL, n["titulo"].lower()):
+        pontos -= 4
+    if not n.get("resumo"):
+        pontos -= 1
+    return pontos
+
+
+def selecionar(noticias, agora_dt):
+    """Escolhe as mais relevantes: 8 de fontes brasileiras e 7 internacionais, sem repetir muito a mesma fonte."""
+    for n in noticias:
+        n["relevancia"] = relevancia(n, agora_dt)
+    ordem = sorted(noticias, key=lambda n: (n["relevancia"], n["data"]), reverse=True)
+    escolhidas = []
+    palavras = lambda n: set(re.findall(r"[a-zà-ú0-9]{5,}", (n.get("titulo_original", n["titulo"]) + " " + n.get("resumo_original", n.get("resumo", ""))).lower()))
+    parecida = lambda n, lista: any(len(palavras(n) & palavras(x)) >= 4 for x in lista)
+    for idioma, total, por_fonte in (("pt", TOTAL_PT, POR_FONTE_PT), ("en", TOTAL_EN, POR_FONTE_EN)):
+        cont, pegas = {}, []
+        for n in ordem:
+            if n["idioma"] != idioma or cont.get(n["fonte"], 0) >= por_fonte or parecida(n, pegas):
+                continue  # mesmo assunto de outra notícia já escolhida
+            cont[n["fonte"]] = cont.get(n["fonte"], 0) + 1
+            pegas.append(n)
+            if len(pegas) == total:
+                break
+        escolhidas += pegas
+    return sorted(escolhidas, key=lambda n: (n["relevancia"], n["data"]), reverse=True)
+
 
 NS = {
     "dc": "http://purl.org/dc/elements/1.1/",
@@ -103,6 +172,75 @@ def classificar(texto):
     return "Ciência"
 
 
+class Tradutor:
+    """Traduz do inglês para o português, com memória e limite diário de caracteres."""
+
+    def __init__(self):
+        self.memoria = {}
+        if TRADUCOES.exists():
+            try:
+                self.memoria = json.loads(TRADUCOES.read_text(encoding="utf-8"))
+            except ValueError:
+                pass
+        self.usadas = {}
+        self.gasto = 0
+        self.parou = False
+
+    def __call__(self, texto):
+        texto = (texto or "").strip()
+        if not texto:
+            return None
+        if texto in self.memoria:
+            self.usadas[texto] = self.memoria[texto]
+            return self.memoria[texto]
+        if self.parou or self.gasto + len(texto) > ORCAMENTO_TRADUCAO:
+            return None
+        url = ("https://api.mymemory.translated.net/get?"
+               + urllib.parse.urlencode({"q": texto[:480], "langpair": "en|pt-BR"}))
+        try:
+            dados = json.loads(baixar(url, timeout=20))
+        except Exception as e:
+            print(f"  Tradução: ERRO {e}", file=sys.stderr)
+            self.parou = True
+            return None
+        pt = html.unescape((dados.get("responseData") or {}).get("translatedText") or "").strip()
+        if dados.get("responseStatus") != 200 or dados.get("quotaFinished") or not pt or "MYMEMORY WARNING" in pt.upper():
+            self.parou = True
+            return None
+        self.gasto += len(texto)
+        self.memoria[texto] = self.usadas[texto] = pt
+        return pt
+
+    def salvar(self):
+        # guarda só o que foi usado hoje, para o arquivo não crescer sem parar
+        TRADUCOES.write_text(json.dumps(self.usadas, ensure_ascii=False, indent=0), encoding="utf-8")
+
+
+def traduzir(noticias, artigos):
+    """Títulos primeiro (notícias e publicações), depois os resumos das notícias."""
+    t = Tradutor()
+    ingles = [n for n in noticias if n.get("idioma") == "en"]
+    for n in ingles:
+        pt = t(n.get("titulo_original") or n["titulo"])
+        if pt:
+            n["titulo_original"] = n.get("titulo_original") or n["titulo"]
+            n["titulo"], n["traduzido"] = pt, True
+    for a in artigos:
+        pt = t(a.get("titulo_original") or a["titulo"])
+        if pt:
+            a["titulo_original"] = a.get("titulo_original") or a["titulo"]
+            a["titulo"], a["traduzido"] = pt, True
+    for n in ingles:
+        if n.get("traduzido") and n.get("resumo"):
+            pt = t(n.get("resumo_original") or n["resumo"])
+            if pt:
+                n["resumo_original"] = n.get("resumo_original") or n["resumo"]
+                n["resumo"] = pt
+    t.salvar()
+    feitos = sum(1 for x in ingles + artigos if x.get("traduzido"))
+    print(f"  Tradução: {feitos} de {len(ingles) + len(artigos)} itens em inglês traduzidos ({t.gasto} caracteres novos)")
+
+
 def ler_feed(fonte, agora):
     raiz = ET.fromstring(baixar(fonte["url"]))
     itens = raiz.findall(".//item") or raiz.findall(".//rss1:item", NS)
@@ -117,6 +255,7 @@ def ler_feed(fonte, agora):
         titulo = limpar(campo("title", "rss1:title"), 200)
         link = campo("link", "rss1:link")
         resumo = limpar(campo("description", "rss1:description", "content:encoded"))
+        resumo = re.sub(r"^Nature, Published online: [^;]+; doi:\S+\s*", "", resumo)  # tira o cabeçalho da Nature
         if not titulo or not link:
             continue
         if fonte["filtro"] and not any(p in (titulo + " " + resumo).lower() for p in fonte["filtro"]):
@@ -182,7 +321,8 @@ def main():
             for n in itens:  # fontes sem data (ex.: FAPESP) guardam o dia em que a notícia apareceu
                 if n["url"] in ja_vistas and n["data"] == agora:
                     n["data"] = ja_vistas[n["url"]]
-            noticias.extend(itens[:8])
+            # fontes em inglês trazem menos itens, para caber no limite diário de tradução
+            noticias.extend(itens[:8] if fonte["idioma"] == "pt" else itens[:5])
             print(f"  {fonte['nome']}: {len(itens)} itens")
         except Exception as e:  # uma fonte fora do ar não derruba as outras
             erros.append(f"{fonte['nome']}: {e}")
@@ -208,14 +348,16 @@ def main():
         artigos = anterior["artigos"]
 
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
+    unicas, artigos = selecionar(unicas, agora_dt), artigos[:30]
+    traduzir(unicas, artigos)
     SAIDA.write_text(json.dumps({
         "atualizado_em": agora,
-        "noticias": unicas[:60],
-        "artigos": artigos[:30],
+        "noticias": unicas,
+        "artigos": artigos,
         "fontes": [f["nome"] for f in FONTES] + ["Europe PMC"],
         "erros": erros,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"Pronto: {len(unicas[:60])} notícias e {len(artigos[:30])} artigos em {SAIDA.relative_to(RAIZ)}")
+    print(f"Pronto: {len(unicas)} notícias e {len(artigos)} artigos em {SAIDA.relative_to(RAIZ)}")
 
 
 if __name__ == "__main__":

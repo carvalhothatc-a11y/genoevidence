@@ -118,3 +118,10 @@
   .chain li:not(:last-child)::after{content:"↓"}
   .chain{flex-direction:column;align-items:flex-start}
 }
+
+/* título original (quando o artigo é em inglês) e pesquisadora em destaque */
+.art-orig{display:block;margin-top:8px;font:400 13px/1.5 var(--mono);color:var(--dim)}
+.art-authors span.hl{color:#fff;background:rgba(165,140,255,.2);border:1px solid rgba(165,140,255,.55);border-radius:999px;padding:2px 10px}
+.author-list li.hl{border-color:rgba(165,140,255,.6);background:rgba(165,140,255,.1)}
+.author-list li.hl b::after{content:" · pesquisadora em destaque";font:400 12px var(--mono);color:#C9B8FF}
+.rv-name.longo{font-size:clamp(17px,2vw,22px);line-height:1.2}
