@@ -4,13 +4,14 @@
 
 | Aba | O que tem |
 |---|---|
-| **Início** | Artigo em destaque, notícias de hoje e o que acabou de sair nas revistas. |
-| **Notícias** | Notícias de ciência e saúde do dia (Agência FAPESP, Jornal da USP, Nature, ScienceDaily), com filtros. |
+| **Início** | Notícias da ciência do dia, artigo em destaque e o que acabou de sair nas revistas. |
+| **Notícias** | Notícias de ciência atualizadas todos os dias (Agência FAPESP, Pesquisa FAPESP, Fiocruz, Jornal da Unicamp, Jornal da USP, Nature, New Scientist, Scientific American, ScienceDaily), com filtros por tema. |
 | **Artigos** | Artigos publicados explicados em linguagem simples. Cada um abre a sua página de leitura. |
 | **Revistas** | As revistas dos artigos explicados e as publicações científicas mais recentes (Europe PMC), com filtro por revista. |
+| **R337H** | O estudo completo sobre a mutação R337H no gene TP53 e a Síndrome de Li-Fraumeni (TCC de Biomedicina). |
 | **Sobre** | Como funciona, como instalar e créditos. |
 
-As abas têm visual claro e limpo. A página de leitura de cada artigo tem um visual imersivo próprio,
+As abas têm fundo branco, com textos e detalhes coloridos. A página do R337H e a página de leitura de cada artigo tem um visual imersivo próprio,
 com resumo em 1 minuto, gráficos interativos, figuras, glossário e o botão **Ler na revista**.
 
 **Acesse:** https://carvalhothatc-a11y.github.io/genoevidence/
@@ -29,6 +30,7 @@ noticias/index.html         aba Notícias
 artigos/index.html          aba Artigos
 revistas/index.html         aba Revistas
 sobre/index.html            página Sobre
+r337h/                      estudo completo R337H (página, r337h.js e imagens)
 artigos/micrurus-spixii/    página de leitura de um artigo (conteúdo em artigo.json)
 artigos/_modelo/            modelo para criar um artigo novo
 data/artigos.json           lista de artigos explicados (aba Artigos e destaque do Início)

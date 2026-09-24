@@ -688,3 +688,9 @@ button.cta{border:0;cursor:pointer;-webkit-appearance:none;appearance:none;font:
 .chip-f[aria-pressed="true"]{background:var(--text);color:var(--ink);border-color:var(--text)}
 .chip-f:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
 .chip-f .n{opacity:.55;margin-left:6px}
+
+/* botão voltar (página de leitura) */
+.back-btn{flex:none;width:40px;height:40px;border-radius:10px;display:grid;place-items:center;border:1px solid var(--line2);background:var(--panel);color:var(--text);transition:background .2s}
+.back-btn:hover{background:var(--panel2)}
+.back-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.back-btn svg{width:20px;height:20px}

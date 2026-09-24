@@ -9,8 +9,8 @@
   "id": "./",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#F5F6F8",
-  "theme_color": "#F5F6F8",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
   "categories": [
     "education",
     "medical",
@@ -63,6 +63,17 @@
       "name": "Revistas",
       "short_name": "Revistas",
       "url": "./revistas/",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Estudo R337H",
+      "short_name": "R337H",
+      "url": "./r337h/",
       "icons": [
         {
           "src": "icons/icon-192.png",

@@ -25,14 +25,22 @@ AGENTE = "Mozilla/5.0 (GenoEvidence; +https://carvalhothatc-a11y.github.io/genoe
 
 # Fontes de notícias. "filtro" = só entram itens com alguma dessas palavras.
 FONTES = [
+    # em português
     {"nome": "Agência FAPESP", "url": "https://agencia.fapesp.br/rss/", "idioma": "pt", "filtro": None},
+    {"nome": "Revista Pesquisa FAPESP", "url": "https://revistapesquisa.fapesp.br/feed/", "idioma": "pt", "filtro": None},
+    {"nome": "Agência Fiocruz", "url": "https://agencia.fiocruz.br/rss.xml", "idioma": "pt", "filtro": None},
+    {"nome": "Jornal da Unicamp", "url": "https://jornal.unicamp.br/feed/", "idioma": "pt", "filtro": None},
     {"nome": "Jornal da USP", "url": "https://jornal.usp.br/feed/", "idioma": "pt",
-     "filtro": ["saúde", "câncer", "gene", "genét", "dna", "célula", "doença", "tumor", "medicina",
-                "biolog", "vacina", "hospital", "tratamento", "diagnóstico", "proteína", "paciente"]},
+     "filtro": ["saúde", "câncer", "gene", "genét", "dna", "célula", "doença", "tumor", "medicina", "biolog",
+                "vacina", "hospital", "tratamento", "diagnóstico", "proteína", "paciente", "pesquisa", "cientist",
+                "clima", "ambiente", "espécie", "planeta", "física", "química"]},
+    # em inglês
+    {"nome": "Nature", "url": "https://www.nature.com/nature.rss", "idioma": "en", "filtro": None},
     {"nome": "Nature · Genética", "url": "https://www.nature.com/subjects/genetics.rss", "idioma": "en", "filtro": None},
-    {"nome": "Nature · Genética do câncer", "url": "https://www.nature.com/subjects/cancer-genetics.rss", "idioma": "en", "filtro": None},
-    {"nome": "ScienceDaily · Genes", "url": "https://www.sciencedaily.com/rss/health_medicine/genes.xml", "idioma": "en", "filtro": None},
-    {"nome": "ScienceDaily · Câncer", "url": "https://www.sciencedaily.com/rss/health_medicine/cancer.xml", "idioma": "en", "filtro": None},
+    {"nome": "New Scientist", "url": "https://www.newscientist.com/feed/home/", "idioma": "en", "filtro": None},
+    {"nome": "Scientific American", "url": "https://www.scientificamerican.com/platform/syndication/rss/", "idioma": "en", "filtro": None},
+    {"nome": "ScienceDaily", "url": "https://www.sciencedaily.com/rss/top/science.xml", "idioma": "en", "filtro": None},
+    {"nome": "ScienceDaily · Saúde", "url": "https://www.sciencedaily.com/rss/top/health.xml", "idioma": "en", "filtro": None},
 ]
 
 # Publicações científicas recentes (Europe PMC) sobre os temas do app.
@@ -47,7 +55,9 @@ BUSCA_ARTIGOS = "(" + " OR ".join(f'TITLE_ABS:"{t}"' for t in TERMOS_ARTIGOS) + 
 TEMAS = [
     ("Câncer", r"\b(câncer|cancer|cancers|tumor|tumores|tumour|oncolog\w*|carcinoma\w*|sarcoma\w*|leukemia|leucemia|lymphoma|linfoma|metast\w*)\b"),
     ("Genética", r"\b(genes?|genétic\w*|genetic\w*|genom\w*|dna|rna|mutation\w*|mutaç\w*|mutante\w*|variant\w*|hereditár\w*|hereditary|crispr|chromosom\w*|cromoss\w*|epigenet\w*|epigenét\w*)\b"),
-    ("Saúde", r"\b(saúde|health|doenças?|diseases?|hospita\w*|tratamento\w*|treatments?|vacinas?|vaccines?|diagnós\w*|diagnos\w*|pacientes?|patients?)\b"),
+    ("Saúde", r"\b(saúde|health|doenças?|diseases?|hospita\w*|tratamento\w*|treatments?|vacinas?|vaccines?|diagnós\w*|diagnos\w*|pacientes?|patients?|vírus|virus\w*|infec\w*|srag|gripe|dengue|medicin\w*)\b"),
+    ("Meio ambiente", r"\b(clima\w*|climate|ambient\w*|environment\w*|biodivers\w*|espécies?|species|florest\w*|forests?|oceanos?|oceans?|seca|drought|el niño|aquecimento|warming|carbon\w*|poluiç\w*|pollution|animais?|animals?|plantas?|plants?|insetos?|insects?|abelhas?|bees?)\b"),
+    ("Espaço", r"\b(espaço|space|planet\w*|galáxia\w*|galax\w*|estrelas?|stars?|nasa|astron\w*|universo|universe|lua|moon|marte|mars|telescóp\w*|telescope\w*|cosm\w*|asteroid\w*|buraco negro|black holes?)\b"),
 ]
 
 NS = {
@@ -172,7 +182,7 @@ def main():
             for n in itens:  # fontes sem data (ex.: FAPESP) guardam o dia em que a notícia apareceu
                 if n["url"] in ja_vistas and n["data"] == agora:
                     n["data"] = ja_vistas[n["url"]]
-            noticias.extend(itens[:12])
+            noticias.extend(itens[:8])
             print(f"  {fonte['nome']}: {len(itens)} itens")
         except Exception as e:  # uma fonte fora do ar não derruba as outras
             erros.append(f"{fonte['nome']}: {e}")
@@ -200,12 +210,12 @@ def main():
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     SAIDA.write_text(json.dumps({
         "atualizado_em": agora,
-        "noticias": unicas[:40],
+        "noticias": unicas[:60],
         "artigos": artigos[:30],
         "fontes": [f["nome"] for f in FONTES] + ["Europe PMC"],
         "erros": erros,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"Pronto: {len(unicas[:40])} notícias e {len(artigos[:24])} artigos em {SAIDA.relative_to(RAIZ)}")
+    print(f"Pronto: {len(unicas[:60])} notícias e {len(artigos[:30])} artigos em {SAIDA.relative_to(RAIZ)}")
 
 
 if __name__ == "__main__":

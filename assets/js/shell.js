@@ -18,23 +18,24 @@
     noticias: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/>',
     artigos: '<path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2z"/><path d="M22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/>',
     revistas: '<path d="M5 4v16M10 4v16"/><path d="M14.5 5.5l4.2 14"/><path d="M3 20h18"/>',
-    sobre: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5h.01"/>'
+    sobre: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5h.01"/>',
+    r337h: '<path d="M7 3c0 5 10 5 10 9s-10 4-10 9"/><path d="M17 3c0 5-10 5-10 9s10 4 10 9"/><path d="M8.5 7h7M8.5 17h7"/>'
   };
   const svg = n => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONES[n] + "</svg>";
-  const ABAS = [["inicio", "Início", ""], ["noticias", "Notícias", "noticias/"], ["artigos", "Artigos", "artigos/"], ["revistas", "Revistas", "revistas/"]];
+  const ABAS = [["inicio", "Início", ""], ["noticias", "Notícias", "noticias/"], ["artigos", "Artigos", "artigos/"], ["revistas", "Revistas", "revistas/"], ["r337h", "R337H", "r337h/"]];
   const atual = n => (n === PAGINA ? ' aria-current="page"' : "");
   const topo = $("#appbar");
   if (topo) {
     topo.className = "appbar";
     topo.innerHTML = '<div class="appbar-in"><a class="logo" href="' + RAIZ + '" aria-label="GenoEvidence, início"><i></i><b>GenoEvidence</b></a>' +
-      '<nav class="tabs-top" aria-label="Seções do app">' + ABAS.map(([n, l, h]) => '<a href="' + RAIZ + h + '"' + atual(n) + ">" + l + "</a>").join("") + "</nav>" +
+      '<nav class="tabs-top" aria-label="Seções do app">' + ABAS.map(([n, l, h]) => '<a class="tab-' + n + '" href="' + RAIZ + h + '"' + atual(n) + ">" + l + "</a>").join("") + "</nav>" +
       '<a class="icon-btn" href="' + RAIZ + 'sobre/" aria-label="Sobre o GenoEvidence"' + atual("sobre") + ">" + svg("sobre") + "</a></div>";
   }
   const abas = $("#tabbar");
   if (abas) {
     abas.className = "tabbar";
     abas.setAttribute("aria-label", "Seções do app");
-    abas.innerHTML = ABAS.map(([n, l, h]) => '<a href="' + RAIZ + h + '"' + atual(n) + ">" + svg(n) + "<span>" + l + "</span></a>").join("");
+    abas.innerHTML = ABAS.map(([n, l, h]) => '<a class="tab-' + n + '" href="' + RAIZ + h + '"' + atual(n) + ">" + svg(n) + "<span>" + l + "</span></a>").join("");
   }
 
   /* ---------- utilidades ---------- */
@@ -63,7 +64,7 @@
     nodes.forEach((n, i) => n.animate([{ opacity: 0, transform: "translateY(10px)" }, { opacity: 1, transform: "none" }], { duration: 420, delay: Math.min(i, 10) * 40, easing: "cubic-bezier(.2,.8,.2,1)", fill: "backwards" }));
   }
   const linhaNoticia = n =>
-    '<li><a class="row" href="' + esc(n.url) + '" target="_blank" rel="noopener"><div class="meta"><span>' + esc(n.fonte) + '</span><span class="dot">' + esc(quando(n.data)) + '</span><span class="dot">' + (n.idioma === "pt" ? "PT" : "EN") + "</span></div>" +
+    '<li><a class="row" href="' + esc(n.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="t" data-t="' + esc(n.tema) + '">' + esc(n.tema) + '</span><span class="src">' + esc(n.fonte) + '</span><span class="dot">' + esc(quando(n.data)) + '</span><span class="dot">' + (n.idioma === "pt" ? "PT" : "EN") + "</span></div>" +
     "<h3>" + esc(n.titulo) + '<span class="ext">↗</span></h3>' + (n.resumo ? "<p>" + esc(n.resumo) + "</p>" : "") + "</a></li>";
   const linhaPublicacao = a =>
     '<li><a class="row" href="' + esc(a.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="pill j" style="--j:' + corDe(a.revista) + '">' + esc(a.revista) + '</span><span>' + esc(diaMes(a.data)) + "</span>" +
@@ -92,7 +93,13 @@
       entrar([$(".feature", alvo)]);
     }).catch(() => { $("#destaque").innerHTML = '<p class="loading">Não foi possível carregar o destaque.</p>'; });
     getJSON("data/noticias.json").then(d => {
-      $("#hojeNoticias").innerHTML = (d.noticias || []).slice(0, 4).map(linhaNoticia).join("") || '<li class="empty">Sem notícias por enquanto.</li>';
+      const ns = d.noticias || [], pt = ns.filter(n => n.idioma === "pt"), lead = pt[0] || ns[0];
+      if (lead) {
+        $("#noticiaDestaque").innerHTML = '<a class="news-lead" href="' + esc(lead.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="t" data-t="' + esc(lead.tema) + '">' + esc(lead.tema) + '</span><span class="src">' + esc(lead.fonte) + '</span><span class="dot">' + esc(quando(lead.data)) + "</span></div>" +
+          "<h3>" + esc(lead.titulo) + "</h3>" + (lead.resumo ? "<p>" + esc(lead.resumo) + "</p>" : "") + '<span class="go">Ler na fonte ↗</span></a>';
+        entrar([$(".news-lead")]);
+      }
+      $("#hojeNoticias").innerHTML = ns.filter(n => n !== lead).slice(0, 5).map(linhaNoticia).join("") || '<li class="empty">Sem notícias por enquanto.</li>';
       $("#hojePublicacoes").innerHTML = (d.artigos || []).slice(0, 4).map(linhaPublicacao).join("") || '<li class="empty">Sem publicações novas.</li>';
       $("#atualizado").textContent = "Atualizado " + atualizadoTxt(d.atualizado_em) + ".";
       entrar($$("#hojeNoticias li, #hojePublicacoes li"));
