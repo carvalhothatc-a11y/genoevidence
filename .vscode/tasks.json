@@ -3,6 +3,13 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Baixar a versão mais nova do GitHub",
+      "type": "shell",
+      "command": "git pull --rebase --autostash",
+      "problemMatcher": [],
+      "detail": "Traz para o computador as notícias do dia e tudo o que foi publicado. Use antes de começar a editar."
+    },
+    {
       "label": "Abrir o site no navegador (servidor local)",
       "type": "shell",
       "command": "python3 -m http.server 8000",
@@ -20,9 +27,9 @@
     {
       "label": "Publicar no site (GitHub)",
       "type": "shell",
-      "command": "git add -A && git commit -m \"Atualiza o GenoEvidence\" && git push",
+      "command": "git pull --rebase --autostash && git add -A && (git diff --cached --quiet || git commit -m \"Atualiza o GenoEvidence\") && git push",
       "problemMatcher": [],
-      "detail": "Envia as mudanças; o site é atualizado em cerca de 1 minuto."
+      "detail": "Baixa antes as notícias que o robô gravou no GitHub e depois envia as suas mudanças; o site é atualizado em cerca de 1 minuto."
     }
   ]
 }
