@@ -1,0 +1,62 @@
+{
+  "_como_usar": "Cada item da lista 'estudos' vira um cartão na página inicial. Para um artigo publicado, preencha 'revista' (nome, ano, doi, url). Veja docs/COMO-ADICIONAR-ARTIGO.md.",
+  "estudos": [
+    {
+      "id": "micrurus-spixii",
+      "url": "estudos/micrurus-spixii/",
+      "tipo": "artigo",
+      "rotulo": "Artigo publicado",
+      "status": "Toxinologia · histologia",
+      "destaque": "M. spixii",
+      "titulo": "O veneno da cobra coral amazônica no músculo, e quanto o soro protege",
+      "subtitulo": "Miotoxicidade do veneno de Micrurus spixii e neutralização por soro antielapídico",
+      "autores": [
+        "Passos, F. R.",
+        "Costa, W. R.",
+        "Cantuária, N. M.",
+        "Alves, P. L. M.",
+        "Azevedo, J. E. G.",
+        "Hyslop, S.",
+        "Oshima-Franco, Y."
+      ],
+      "ano": 2026,
+      "resumo": "O veneno derrubou as células saudáveis do músculo de 66% para menos de 1%. O soro antielapídico protegeu, mas só em parte: melhor contra o inchaço e a morte das células.",
+      "tags": [
+        "Toxinologia",
+        "Histologia",
+        "Soro antiofídico"
+      ],
+      "revista": {
+        "nome": "ARACÊ",
+        "ano": 2026,
+        "doi": "10.56238/arev8n2-068",
+        "url": "https://doi.org/10.56238/arev8n2-068",
+        "site": "https://periodicos.newsciencepubl.com/arace"
+      }
+    },
+    {
+      "id": "r337h",
+      "url": "estudos/r337h/",
+      "tipo": "tcc",
+      "rotulo": "TCC · Biomedicina",
+      "status": "Estudo in silico",
+      "destaque": "R337H",
+      "titulo": "Análise in silico da mutação R337H no gene TP53",
+      "subtitulo": "Relação com a Síndrome de Li-Fraumeni",
+      "autores": [
+        "Ana Júlia Silva Rodrigues",
+        "Thaisa Carvalho"
+      ],
+      "orientacao": "Profa. Dra. Patrícia Alves",
+      "ano": 2026,
+      "resumo": "Uma única letra trocada no gene TP53, e por que ela importa tanto no Brasil. Evidências do ClinVar, gnomAD, DynaMut2 e TP53 Database, com modelo 3D e imagens reais.",
+      "tags": [
+        "TP53",
+        "Li-Fraumeni",
+        "Genética do câncer",
+        "Bioinformática"
+      ],
+      "revista": null
+    }
+  ]
+}

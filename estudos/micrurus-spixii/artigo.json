@@ -1,0 +1,174 @@
+{
+  "id": "micrurus-spixii",
+  "tipo": "artigo",
+  "rotulo": "Artigo publicado",
+  "arte": "celulas",
+  "titulo": "Análise histológica da miotoxicidade do veneno de Micrurus spixii (cobra coral amazônica) em músculo biventer cervicis de pintainho e sua neutralização por soro antielapídico",
+  "titulo_curto": "O veneno da cobra coral amazônica no músculo, e quanto o soro protege",
+  "breadcrumb": "Cobra coral amazônica",
+  "autores": [
+    {"nome": "Fernanda Ruis Passos", "afiliacao": "Biomedicina · Uniso"},
+    {"nome": "Wanessa Regis da Costa", "afiliacao": "Biomedicina · Uniso"},
+    {"nome": "Nathalia Margarida Cantuária", "afiliacao": "Ciências Farmacêuticas · Uniso"},
+    {"nome": "Patricia Lius Melo Alves", "afiliacao": "Biomedicina · Uniso"},
+    {"nome": "Jonas Eligio Garcia de Azevedo", "afiliacao": "Ciências Farmacêuticas · Uniso"},
+    {"nome": "Stephen Hyslop", "afiliacao": "Farmacologia · Unicamp"},
+    {"nome": "Yoko Oshima-Franco", "afiliacao": "Ciências Farmacêuticas · Uniso"}
+  ],
+  "revista": {
+    "nome": "ARACÊ",
+    "cidade": "São José dos Pinhais (PR)",
+    "issn": "2358-2472",
+    "volume": "8",
+    "numero": "2",
+    "paginas": "1–18",
+    "ano": "2026",
+    "submetido": "2026-01-12",
+    "publicado": "2026-02-12",
+    "doi": "10.56238/arev8n2-068",
+    "url": "https://doi.org/10.56238/arev8n2-068",
+    "site": "https://periodicos.newsciencepubl.com/arace",
+    "pdf": "https://periodicos.newsciencepubl.com/arace/article/download/12172/13403"
+  },
+  "palavras_chave": ["Micrurus spixii", "Veneno de serpente", "Soro antielapídico", "Microscopia de luz", "Biventer cervicis"],
+
+  "em_1_minuto": [
+    {"rotulo": "O problema", "titulo": "Um veneno que ataca nervos e músculos", "texto": "Acidentes com cobras são uma doença tropical negligenciada. A cobra coral amazônica (Micrurus spixii) tem um veneno que paralisa e também lesa o músculo."},
+    {"rotulo": "O que fizeram", "titulo": "Veneno, com e sem soro, no microscópio", "texto": "Músculos de pintainho foram expostos ao veneno, sozinho ou misturado antes ao soro usado no Brasil, e as células lesionadas foram contadas ao microscópio."},
+    {"rotulo": "O que acharam", "titulo": "Quase nenhuma célula saudável", "texto": "Com o veneno, as células saudáveis caíram de 66% para menos de 1%. Com o soro, subiram para cerca de 5%."},
+    {"rotulo": "Por que importa", "titulo": "Proteção parcial", "texto": "O soro protegeu bem contra o inchaço e a morte das células, mas pouco contra outros danos. Ele é feito com o veneno de outras duas espécies de coral."}
+  ],
+
+  "numeros": [
+    {"valor": "66,1% → 0,92%", "texto": "células saudáveis no controle × com o veneno", "cor": "his"},
+    {"valor": "4,8%", "texto": "células saudáveis quando o veneno foi misturado antes ao soro", "cor": "ok"},
+    {"valor": "2×", "texto": "o veneno dobrou as células com vacúolos (de 31% para 62%)", "cor": "amber"},
+    {"valor": "0,38% → 0,05%", "texto": "células mortas (ghost): o soro quase eliminou esse dano", "cor": "arg"}
+  ],
+
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "A cobra e o veneno",
+      "eyebrow": "Contexto",
+      "titulo": "A cobra coral amazônica e o seu veneno",
+      "lede": "Cobras corais são discretas e produzem pouco veneno, mas um acidente com elas é sempre tratado como grave.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>Existem cerca de <strong>80 espécies</strong> de cobras corais do gênero <em>Micrurus</em> nas Américas; no Brasil, já foram registradas <strong>38</strong>. A <em>Micrurus spixii</em>, a cobra coral amazônica, vive no Acre, no Amazonas, em Mato Grosso, no Pará e em Rondônia. Essas cobras vivem escondidas em locais úmidos e escuros, muitas vezes enterradas, e produzem pouco veneno.</p>"},
+        {"tipo": "cartoes", "titulo": "As duas famílias de toxinas do veneno", "itens": [
+          {"titulo": "3FTx · toxinas de três dígitos", "texto": "Bloqueiam os receptores que recebem o sinal do nervo no músculo. São a principal causa da paralisia.", "cor": "arg"},
+          {"titulo": "PLA2 · fosfolipases A2", "texto": "Enzimas que “digerem” a membrana das células. Além de agir nos nervos, lesam o músculo: é a miotoxicidade.", "cor": "his"}
+        ]},
+        {"tipo": "destaque", "html": "No Brasil, o tratamento é o <strong>soro antielapídico bivalente</strong>, produzido em cavalos com o veneno de duas outras corais (<em>M. frontalis</em> e <em>M. corallinus</em>). O Ministério da Saúde recomenda 10 ampolas na veia e considera todo acidente com coral potencialmente grave, pelo risco de insuficiência respiratória."},
+        {"tipo": "texto", "html": "<p>O veneno varia muito de uma espécie para outra. Por isso, não se sabia se esse soro protege contra o dano muscular causado pela coral amazônica. É essa a pergunta do estudo.</p>"}
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Como foi feito",
+      "eyebrow": "Método",
+      "titulo": "Como o estudo foi feito",
+      "lede": "Um experimento em laboratório com três grupos de músculo, analisados às cegas ao microscópio.",
+      "blocos": [
+        {"tipo": "passos", "itens": [
+          {"titulo": "Três grupos de músculo", "texto": "Músculos biventer cervicis de pintainho (3 por grupo) ficaram 2 horas em solução nutritiva de Krebs (controle), com veneno de M. spixii (10 µg/mL) ou com veneno misturado antes ao soro."},
+          {"titulo": "Veneno + soro", "texto": "Antes de encostar no músculo, o veneno ficou 30 minutos a 37 °C com 0,03 mL de soro antielapídico, na proporção indicada pelo fabricante."},
+          {"titulo": "Preparo das lâminas", "texto": "Os músculos foram fixados em formalina, incluídos em parafina e cortados em fatias de 4 µm, coradas com hematoxilina-eosina."},
+          {"titulo": "Contagem ao microscópio", "texto": "As lâminas foram analisadas em duplo-cego, com aumento de 400 vezes, contando as células saudáveis e as com cada tipo de lesão."},
+          {"titulo": "Estatística", "texto": "Média ± erro padrão, comparadas por ANOVA e teste de Tukey. A diferença conta como significativa quando p < 0,05."}
+        ]},
+        {"tipo": "nota", "html": "A dose de 10 µg/mL veio de um estudo anterior do grupo: 5 µg/mL lesava pouco e 20 µg/mL lesava demais para medir o efeito do soro. O protocolo foi aprovado pela Comissão de Ética no Uso de Animais da Uniso (nº 229/2022)."}
+      ]
+    },
+    {
+      "id": "lesoes",
+      "menu": "Tipos de lesão",
+      "eyebrow": "Ao microscópio",
+      "titulo": "Como reconhecer cada tipo de lesão",
+      "lede": "Na coloração hematoxilina-eosina, as fibras do músculo aparecem em rosa. Cada tipo de dano deixa uma marca diferente.",
+      "blocos": [
+        {"tipo": "figura", "src": "imagens/mini/figura1-tipos-de-lesao.webp", "full": "imagens/figura1-tipos-de-lesao.webp", "alt": "Corte de músculo corado em rosa, com setas indicando células normais, edema, vacúolos, condensação de miofibrilas e células ghost", "legenda": "Figura 1 · Tipos de lesão em músculo biventer cervicis de pintainho (hematoxilina-eosina; barra = 40 µm).", "credito": "Passos et al. (2026), ARACÊ"},
+        {"tipo": "cartoes", "itens": [
+          {"titulo": "Normal", "texto": "Fibra íntegra, de formato regular.", "cor": "ok"},
+          {"titulo": "Edema", "texto": "A célula incha por acúmulo de líquido. Costuma ser um dos primeiros sinais do dano.", "cor": "amber"},
+          {"titulo": "Vacúolos", "texto": "Espaços vazios dentro da célula, sinal de membrana danificada.", "cor": "arg"},
+          {"titulo": "Miofibrilas condensadas", "texto": "As fibras que fazem o músculo contrair se aglomeram em áreas escuras e perdem a organização.", "cor": "violet"},
+          {"titulo": "Células ghost (“fantasma”)", "texto": "A fibra morre (mionecrose) e sobra um espaço quase vazio, com núcleos soltos.", "cor": "his"}
+        ]}
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "O que o veneno fez, e o que o soro evitou",
+      "lede": "Escolha um tipo de célula para comparar os três grupos.",
+      "blocos": [
+        {"tipo": "grafico", "grupos": [
+          {"nome": "Controle (Krebs)", "cor": "#9DB6FF"},
+          {"nome": "Veneno", "cor": "#FF5470"},
+          {"nome": "Veneno + soro", "cor": "#5FD39A"}
+        ], "parametros": [
+          {"rotulo": "Células normais", "valores": [{"m": 66.1, "ep": 0.1}, {"m": 0.92, "ep": 0.08, "sig": "*"}, {"m": 4.8, "ep": 0.42, "sig": "*#"}], "leitura": "O veneno eliminou quase todas as células saudáveis. Misturado antes ao soro, ele preservou cerca de 5 vezes mais células (4,8% contra 0,92%), ainda muito abaixo do controle."},
+          {"rotulo": "Edema", "valores": [{"m": 9.5, "ep": 0.01}, {"m": 10.8, "ep": 0.2, "sig": "*"}, {"m": 6.7, "ep": 1.4, "sig": "*#"}], "leitura": "O veneno aumentou um pouco o inchaço das células. Com o soro, o edema ficou abaixo até do controle: foi a lesão mais bem neutralizada."},
+          {"rotulo": "Vacúolos", "valores": [{"m": 31.0, "ep": 1.5}, {"m": 62.2, "ep": 0.5, "sig": "*"}, {"m": 54.2, "ep": 2.9, "sig": "*#"}], "leitura": "O veneno dobrou as células com vacúolos. O soro reduziu esse dano em cerca de 13%."},
+          {"rotulo": "Miofibrilas condensadas", "valores": [{"m": 54.5, "ep": 1.0}, {"m": 71.7, "ep": 1.9, "sig": "*"}, {"m": 62.3, "ep": 0.2, "sig": "*#"}], "leitura": "Com o veneno, 72% das células ficaram com as fibras condensadas, contra 54% no controle. O soro reduziu esse dano em cerca de 13%."},
+          {"rotulo": "Células ghost", "valores": [{"m": 0, "ep": 0}, {"m": 0.38, "ep": 0.07, "sig": "*"}, {"m": 0.05, "ep": 0.05, "sig": "#"}], "leitura": "Células mortas só apareceram com o veneno. O soro quase aboliu esse dano: com ele, o resultado não foi diferente do controle."}
+        ], "nota": "Média ± erro padrão (3 músculos por grupo). * diferente do controle; # diferente do veneno (p < 0,05). Uma célula pode ter mais de um tipo de lesão, por isso as porcentagens não somam 100%. O grupo controle teve alguns artefatos de armazenamento e manuseio, o que explica parte das lesões nele."},
+        {"tipo": "galeria", "itens": [
+          {"src": "imagens/mini/figura2-graficos.webp", "full": "imagens/figura2-graficos.webp", "titulo": "Figura 2 · Gráficos originais", "legenda": "Figura 2 · Análise quantitativa das lesões: (a) células normais, (b) edema, (c) vacúolos, (d) miofibrilas condensadas, (e) células ghost.", "credito": "Passos et al. (2026), ARACÊ"},
+          {"src": "imagens/mini/figura1-tipos-de-lesao.webp", "full": "imagens/figura1-tipos-de-lesao.webp", "titulo": "Figura 1 · Tipos de lesão", "legenda": "Figura 1 · Classificação dos tipos de lesão celular (hematoxilina-eosina; barra = 40 µm).", "credito": "Passos et al. (2026), ARACÊ"}
+        ]}
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "O que significa",
+      "eyebrow": "Discussão",
+      "titulo": "O que esses resultados significam",
+      "lede": "O dano segue uma cadeia de eventos, e o soro age melhor no começo dela.",
+      "blocos": [
+        {"tipo": "cadeia", "itens": ["PLA2 atinge a membrana da fibra", "Cálcio entra sem controle na célula", "Edema e vacúolos", "Miofibrilas se condensam", "Mionecrose: células ghost"]},
+        {"tipo": "texto", "html": "<p>As PLA2 do veneno rompem a membrana da fibra muscular. O cálcio entra sem controle, surgem vacúolos e as miofibrilas se condensam, até a fibra morrer. O <strong>edema</strong> é um dos primeiros passos dessa cadeia: ao reduzi-lo, o soro também evitou o estágio final, as <strong>células ghost</strong>.</p><p>Por que a proteção foi só parcial? O soro usado no Brasil é produzido com o veneno de apenas duas espécies, e sua capacidade de neutralizar o veneno de outras corais varia. Estudos anteriores já mostravam que o veneno da coral amazônica está entre os mais letais do gênero e que esse soro não neutraliza por completo a sua atividade de fosfolipase.</p>"},
+        {"tipo": "destaque", "html": "Em testes anteriores com camundongos, o mesmo soro protegeu pouco contra o dano muscular desse veneno, mesmo usando o dobro da dose recomendada."}
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusão",
+      "eyebrow": "Conclusão",
+      "titulo": "Em resumo",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>O veneno da cobra coral amazônica causa <strong>mionecrose</strong> no músculo, e o soro antielapídico, misturado antes ao veneno, protegeu de forma significativa, mas em graus diferentes para cada tipo de dano. Os autores atribuem o dano principalmente às PLA2; o papel das 3FTx e de outras toxinas ainda precisa ser estudado.</p>"},
+        {"tipo": "lista", "titulo": "Cuidados ao interpretar", "itens": ["Estudo feito em laboratório (in vitro), com músculo de pintainho.", "Três músculos por grupo.", "Foi testada uma única proporção de soro para veneno.", "O grupo controle teve alguns artefatos de preparo das lâminas."]}
+      ]
+    }
+  ],
+
+  "glossario": [
+    {"termo": "Miotoxicidade", "def": "Capacidade de uma substância de lesar o músculo."},
+    {"termo": "Mionecrose", "def": "Morte das fibras musculares."},
+    {"termo": "Neurotoxicidade", "def": "Capacidade de lesar ou bloquear o sistema nervoso; no caso das corais, causa paralisia."},
+    {"termo": "Biventer cervicis", "def": "Músculo do pescoço de aves muito usado em laboratório para estudar como venenos agem sobre nervos e músculos."},
+    {"termo": "Soro antielapídico", "def": "Antiveneno contra cobras corais, produzido em cavalos. No Brasil é feito com o veneno de M. frontalis e M. corallinus."},
+    {"termo": "PLA2 (fosfolipase A2)", "def": "Enzima do veneno que quebra os lipídios da membrana das células."},
+    {"termo": "3FTx", "def": "Toxinas de três dígitos, que bloqueiam os receptores do sinal nervoso no músculo."},
+    {"termo": "Hematoxilina-eosina (HE)", "def": "Coloração clássica de lâminas: deixa núcleos em roxo e o citoplasma em rosa."},
+    {"termo": "Duplo-cego", "def": "Análise em que quem avalia não sabe a que grupo pertence cada amostra, para evitar viés."},
+    {"termo": "Pré-incubação", "def": "Misturar o veneno com o soro e esperar um tempo antes de colocar no músculo."},
+    {"termo": "In vitro", "def": "Experimento feito fora do organismo vivo, em laboratório."},
+    {"termo": "p < 0,05", "def": "Critério estatístico: a diferença é considerada real, e não fruto do acaso, com menos de 5% de chance de erro."}
+  ],
+
+  "citacao": "PASSOS, F. R.; COSTA, W. R.; CANTUÁRIA, N. M.; ALVES, P. L. M.; AZEVEDO, J. E. G.; HYSLOP, S.; OSHIMA-FRANCO, Y. Análise histológica da miotoxicidade do veneno de Micrurus spixii (cobra coral amazônica) em músculo biventer cervicis de pintainho e sua neutralização por soro antielapídico. ARACÊ, São José dos Pinhais, v. 8, n. 2, p. 1-18, 2026. DOI: 10.56238/arev8n2-068.",
+
+  "referencias": [
+    {"texto": "TERRA, A. L. C. et al. Biological characterization of the Amazon coral Micrurus spixii snake venom: isolation of a new neurotoxic phospholipase A2. Toxicon, v. 103, p. 1-11, 2015.", "doi": "10.1016/j.toxicon.2015.06.011"},
+    {"texto": "TANAKA, G. D. et al. Diversity of Micrurus snake species related to their venom toxic effects and the prospective of antivenom neutralization. PLoS Neglected Tropical Diseases, v. 4, n. 3, 2010.", "doi": "10.1371/journal.pntd.0000622"},
+    {"texto": "GUTIÉRREZ, J. M.; OWNBY, C. L. Skeletal muscle degeneration induced by venom phospholipases A2: insights into the mechanisms of local and systemic myotoxicity. Toxicon, v. 42, n. 8, p. 915-931, 2003.", "doi": "10.1016/j.toxicon.2003.11.005"},
+    {"texto": "SANZ, L. et al. Comparative venomics of Brazilian coral snakes: Micrurus frontalis, Micrurus spixii spixii, and Micrurus surinamensis. Toxicon, v. 166, p. 39-45, 2019.", "doi": "10.1016/j.toxicon.2019.05.001"},
+    {"texto": "BUCARETCHI, F. et al. Coral snake bites (Micrurus spp.) in Brazil: a review of literature reports. Clinical Toxicology, v. 54, n. 3, p. 222-234, 2016.", "doi": "10.3109/15563650.2015.1135337"},
+    {"texto": "MONTECUCCO, C.; GUTIÉRREZ, J. M.; LOMONTE, B. Cellular pathology induced by snake venom phospholipase A2 myotoxins and neurotoxins. Cellular and Molecular Life Sciences, v. 65, n. 18, p. 2897-2912, 2008.", "doi": "10.1007/s00018-008-8113-3"},
+    {"texto": "WORLD HEALTH ORGANIZATION. Snakebite envenoming: a strategy for prevention and control. Genebra: WHO, 2019.", "url": "https://www.who.int/publications/i/item/9789241515641"}
+  ]
+}

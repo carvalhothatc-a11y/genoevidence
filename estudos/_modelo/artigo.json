@@ -1,0 +1,54 @@
+{
+  "id": "nome-da-pasta",
+  "tipo": "artigo",
+  "rotulo": "Artigo publicado",
+  "titulo": "Título completo do artigo, como aparece na revista",
+  "titulo_curto": "Título curto e claro, em linguagem simples",
+  "breadcrumb": "Nome curto para o caminho do topo",
+  "autores": [
+    {"nome": "Nome Completo da Autora", "afiliacao": "Curso · Instituição"}
+  ],
+  "revista": {
+    "nome": "NOME DA REVISTA",
+    "cidade": "Cidade (UF)",
+    "issn": "0000-0000",
+    "volume": "1",
+    "numero": "1",
+    "paginas": "1–10",
+    "ano": "2026",
+    "submetido": "2026-01-01",
+    "publicado": "2026-02-01",
+    "doi": "10.0000/exemplo",
+    "url": "https://doi.org/10.0000/exemplo",
+    "site": "https://site-da-revista",
+    "pdf": ""
+  },
+  "em_1_minuto": [
+    {"rotulo": "O problema", "titulo": "Frase curta", "texto": "Uma ou duas frases."},
+    {"rotulo": "O que fizeram", "titulo": "Frase curta", "texto": "Uma ou duas frases."},
+    {"rotulo": "O que acharam", "titulo": "Frase curta", "texto": "Uma ou duas frases."},
+    {"rotulo": "Por que importa", "titulo": "Frase curta", "texto": "Uma ou duas frases."}
+  ],
+  "numeros": [
+    {"valor": "00%", "texto": "o que esse número significa", "cor": "his"}
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Contexto",
+      "eyebrow": "Contexto",
+      "titulo": "Título da seção",
+      "lede": "Frase de abertura da seção.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>Parágrafo explicando o assunto.</p>"}
+      ]
+    }
+  ],
+  "glossario": [
+    {"termo": "Termo", "def": "Explicação simples."}
+  ],
+  "citacao": "SOBRENOME, N. Título do artigo. NOME DA REVISTA, Cidade, v. 1, n. 1, p. 1-10, 2026. DOI: 10.0000/exemplo.",
+  "referencias": [
+    {"texto": "Referência citada na explicação.", "doi": "10.0000/exemplo"}
+  ]
+}

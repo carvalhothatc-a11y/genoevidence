@@ -1,0 +1,32 @@
+{
+  "Bloco de texto": {
+    "scope": "json",
+    "prefix": "ge-texto",
+    "body": ["{\"tipo\": \"texto\", \"html\": \"<p>${1:Texto do parágrafo.}</p>\"}"],
+    "description": "GenoEvidence: parágrafo de texto num artigo"
+  },
+  "Bloco de destaque": {
+    "scope": "json",
+    "prefix": "ge-destaque",
+    "body": ["{\"tipo\": \"destaque\", \"html\": \"${1:Frase importante em destaque.}\"}"],
+    "description": "GenoEvidence: caixa de destaque"
+  },
+  "Bloco de figura": {
+    "scope": "json",
+    "prefix": "ge-figura",
+    "body": ["{\"tipo\": \"figura\", \"src\": \"imagens/mini/${1:arquivo}.webp\", \"full\": \"imagens/${1:arquivo}.webp\", \"alt\": \"${2:Descrição da imagem}\", \"legenda\": \"${3:Figura 1 · Legenda}\", \"credito\": \"${4:Autor et al. (ano), Revista}\"}"],
+    "description": "GenoEvidence: figura ampliável com legenda e crédito"
+  },
+  "Bloco de passos": {
+    "scope": "json",
+    "prefix": "ge-passos",
+    "body": ["{\"tipo\": \"passos\", \"itens\": [", "  {\"titulo\": \"${1:Passo 1}\", \"texto\": \"${2:O que foi feito.}\"}", "]}"],
+    "description": "GenoEvidence: lista numerada de etapas (método)"
+  },
+  "Bloco de cartões": {
+    "scope": "json",
+    "prefix": "ge-cartoes",
+    "body": ["{\"tipo\": \"cartoes\", \"itens\": [", "  {\"titulo\": \"${1:Título}\", \"texto\": \"${2:Explicação curta.}\", \"cor\": \"${3|arg,his,amber,ok,violet,teal|}\"}", "]}"],
+    "description": "GenoEvidence: grade de cartões coloridos"
+  }
+}

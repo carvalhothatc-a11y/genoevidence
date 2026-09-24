@@ -1,51 +1,61 @@
 # GenoEvidence
 
-Sistema visual e interativo que reúne as evidências sobre a variante **TP53 R337H** (c.1010G>A, p.Arg337His) e sua relação com a **Síndrome de Li-Fraumeni**, com base em análises *in silico* feitas em bancos de dados públicos.
+**A ciência por trás das evidências.** Aplicativo web (PWA) que reúne:
 
-**Acesse o site:** https://carvalhothatc-a11y.github.io/genoevidence/
+- **Notícias de ciência do dia**, atualizadas automaticamente todas as manhãs
+  (Agência FAPESP, Jornal da USP, Nature, ScienceDaily);
+- **Artigos científicos novos** sobre TP53, Síndrome de Li-Fraumeni e câncer hereditário,
+  com a revista em destaque e o botão *Ler na revista* (Europe PMC);
+- **Estudos e artigos explicados**, cada um com a sua página: resumo em 1 minuto,
+  explicação em linguagem simples, gráficos, imagens, glossário e link para a revista.
 
-## O que o site mostra
+**Acesse:** https://carvalhothatc-a11y.github.io/genoevidence/
 
-- **Resumo em 1 minuto:** a história da pesquisa em quatro passos.
-- **Síndrome, mutação e proteína:** o que é a Síndrome de Li-Fraumeni, como uma letra trocada no DNA muda a proteína p53 e onde a R337H fica na estrutura.
-- **Laboratório 3D:** as imagens reais do DynaMut2 (p53 normal × R337H) e um modelo 3D ilustrativo do tetrâmero da p53.
-- **Lacuna científica, método e resultados:** ClinVar, gnomAD, DynaMut2 e TP53 Database, com gráficos interativos.
-- **Discussão, conclusão, galeria de imagens, glossário e referências** (estilo Vancouver).
+## Estudos no app
+
+| Página | Tipo | Revista |
+|---|---|---|
+| [Cobra coral amazônica (*Micrurus spixii*)](https://carvalhothatc-a11y.github.io/genoevidence/estudos/micrurus-spixii/) | Artigo publicado | ARACÊ, v. 8, n. 2, 2026 · [DOI 10.56238/arev8n2-068](https://doi.org/10.56238/arev8n2-068) |
+| [R337H no gene TP53](https://carvalhothatc-a11y.github.io/genoevidence/estudos/r337h/) | TCC · Biomedicina | — |
+
+## Estrutura do projeto
+
+```
+index.html                  página inicial (notícias, artigos novos, estudos, revistas)
+estudos/
+  r337h/                    estudo R337H (página própria, com 3D e gráficos)
+  micrurus-spixii/          artigo publicado (conteúdo em artigo.json)
+  _modelo/                  modelo para criar um artigo novo
+data/
+  estudos.json              lista de estudos mostrados no início
+  noticias.json             notícias e artigos do dia (gerado automaticamente)
+assets/
+  css/                      estilos (base, início, artigo)
+  js/                       app.js (menu, navegação), inicio.js, artigo.js, dna.js (3D), pwa.js (instalar/offline)
+scripts/atualizar_noticias.py   robô que busca as notícias do dia
+.github/workflows/noticias.yml  roda o robô todo dia às 6h (Brasília)
+docs/COMO-ADICIONAR-ARTIGO.md   passo a passo para publicar um artigo novo
+manifest.webmanifest, sw.js, icons/   aplicativo instalável e modo offline
+```
+
+## Trabalhando no VS Code
+
+1. Abra a pasta do projeto no VS Code (**Arquivo → Abrir Pasta…**).
+2. Aceite as extensões recomendadas (Live Preview, Prettier, corretor em português).
+3. Para ver o site: **Terminal → Executar Tarefa… → Abrir o site no navegador (servidor local)**
+   e abra `http://localhost:8000`.
+4. Para publicar: **Terminal → Executar Tarefa… → Publicar no site (GitHub)**.
+
+Para adicionar um artigo novo, siga [docs/COMO-ADICIONAR-ARTIGO.md](docs/COMO-ADICIONAR-ARTIGO.md).
 
 ## Instalar como aplicativo
 
-O GenoEvidence pode ser instalado como app e funciona sem internet depois da primeira visita:
+- **Android (Chrome):** toque em **Instalar como app** (ou menu ⋮ → Instalar app).
+- **iPhone/iPad (Safari):** Compartilhar → **Adicionar à Tela de Início**.
+- **Computador (Chrome ou Edge):** **Instalar como app** ou o ícone de instalação da barra de endereço.
 
-- **Android (Chrome):** abra o site e toque em **Instalar como app** (ou menu ⋮ → Instalar app).
-- **iPhone/iPad (Safari):** toque em **Compartilhar** → **Adicionar à Tela de Início**.
-- **Computador (Chrome ou Edge):** clique em **Instalar como app** ou no ícone de instalação da barra de endereço.
+## Créditos
 
-## Estrutura
-
-```
-index.html   página completa do site
-manifest.webmanifest, sw.js, icons/   arquivos do aplicativo (instalação e modo offline)
-imagens/     capturas de tela das plataformas (WebP)
-imagens/mini miniaturas leves usadas nos cartões e na galeria
-```
-
-Para abrir no computador, basta dar dois cliques em `index.html`. O site usa Three.js (r128) e GSAP (3.12.5) pelo cdnjs e fontes do Google Fonts, então precisa de internet para carregar esses recursos.
-
-## Bancos de dados consultados
-
-| Plataforma | Uso na pesquisa |
-|---|---|
-| [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/variation/12379/) | Classificação clínica da variante |
-| [gnomAD v4.1.1](https://gnomad.broadinstitute.org/variant/17-7670699-C-T?dataset=gnomad_r4) | Frequência populacional |
-| [DynaMut2](https://biosig.lab.uq.edu.au/dynamut2/) | Predição do impacto na estabilidade da p53 |
-| [TP53 Database](https://tp53.cancer.gov/) | Registros tumorais germinativos |
-
-As imagens da pasta `imagens/` são capturas de tela dessas plataformas, usadas para fins acadêmicos.
-
-## Autoria
-
-- Ana Júlia Silva Rodrigues
-- Thaisa Carvalho
-- Orientação: Profa. Dra. Patrícia Alves
-
-Conteúdo educativo. Não substitui aconselhamento genético.
+Resumos e explicações produzidos pelo GenoEvidence a partir dos artigos originais;
+figuras reproduzidas com crédito à publicação. Notícias: títulos e trechos com link para a fonte.
+Conteúdo educativo: não substitui orientação médica ou aconselhamento genético.

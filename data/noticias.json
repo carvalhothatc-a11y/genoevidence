@@ -1,0 +1,637 @@
+{
+ "atualizado_em": "2026-09-24T17:09:08.714347+00:00",
+ "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "Compostos associados ao câncer são detectados em resíduos de espumas, plásticos e artigos infantis",
+   "resumo": "Estudo encontrou em locais de descarte materiais contendo substâncias tóxicas antigamente usadas como plastificantes e retardantes de chama. Sem triagem rigorosa, reciclagem pode se tornar vetor de contaminação, alertam cientistas",
+   "url": "https://agencia.fapesp.br/compostos-associados-ao-cancer-sao-detectados-em-residuos-de-espumas-plasticos-e-artigos-infantis/59263",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-24T17:07:57.775063+00:00",
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "‘Para ganhar um Nobel, o Brasil precisa de mais gente fazendo pesquisa’",
+   "resumo": "Avaliação foi feita pelo hematologista Fernando Ferreira Costa, ex-reitor da Unicamp, em entrevista ao Centro de Memória FAPESP",
+   "url": "https://agencia.fapesp.br/para-ganhar-um-nobel-o-brasil-precisa-de-mais-gente-fazendo-pesquisa/59264",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-24T17:07:57.775063+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Vinhedos irrigados resistem à seca no Vale do São Francisco",
+   "resumo": "Estudo conduzido na Unicamp mostra que a produção de uvas cresceu durante a estiagem de 2011 a 2019, mas a dependência de energia, infraestrutura e tecnologia expõe diferenças entre pequenos produtores e empresas",
+   "url": "https://agencia.fapesp.br/vinhedos-irrigados-resistem-a-seca-no-vale-do-sao-francisco/59268",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-24T17:07:57.775063+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Ameaça de um ‘super El Niño’ desafia cidades brasileiras a se preparar para eventos extremos",
+   "resumo": "A chegada do fenômeno e sua intensificação pelo aquecimento do planeta poderão produzir secas e chuvas intensas em diversas regiões do país. Projeto apoiado pela FAPESP mapeia os territórios para orientar gestores nessa adaptação dos…",
+   "url": "https://revistapesquisa.fapesp.br/ameaca-de-um-super-el-nino-desafia-cidades-brasileiras-a-se-preparar-para-eventos-extremos/",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-24T17:07:57.775063+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Fundo GovTech lança chamada para startups",
+   "resumo": "Empresas proponentes devem trazer impactos positivos sobre desafios públicos em temas como saúde, educação, segurança pública e outros",
+   "url": "https://agencia.fapesp.br/fundo-govtech-lanca-chamada-para-startups/59266",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-24T17:07:57.775063+00:00",
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "1ª Conferência internacional sobre o Sistema de Justiça",
+   "resumo": "Centro Multidisciplinar de Estratégia, Pesquisa e Inovação (CeMEPI) e Grupo de Estudos Habeas Data promovem evento gratuito de 5 a 7 de outubro, em Ribeirão Preto (SP)",
+   "url": "https://agencia.fapesp.br/1a-conferencia-internacional-sobre-o-sistema-de-justica/59238",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-24T17:07:57.775063+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A importância dos insetos no cotidiano",
+   "resumo": "Evento na Esalq-USP, aberto à comunidade, mostrará em atividades práticas os vários papéis desses organismos, de funções ecológicas e econômicas essenciais até os impactos negativos",
+   "url": "https://agencia.fapesp.br/a-importancia-dos-insetos-no-cotidiano/59267",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-24T17:07:57.775063+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Células de defesa raras podem ajudar a explicar a longevidade de supercentenários",
+   "resumo": "Pesquisa realizada por cientistas japoneses mostram que, em pessoas com 110 anos ou mais, o sistema imunológico continua a se adaptar",
+   "url": "https://jornal.usp.br/radio-usp/celulas-de-defesa-raras-podem-ajudar-a-explicar-a-longevidade-de-supercentenarios/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-09-24T12:09:14+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Novos compostos eliminam a resistência do parasita da malária",
+   "resumo": "Testados em laboratório e em modelo animal, compostos foram sintetizados a partir de substâncias já adotadas no tratamento da doença",
+   "url": "https://jornal.usp.br/ciencias/novos-compostos-eliminam-a-resistencia-do-parasita-da-malaria/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-09-24T11:46:03+00:00",
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Divergent medulloblastoma chromatin states disclose KDM2B as a selective dependency",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41588-026-02745-1",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Human facial development atlas illuminates enhancer-based control of facial individuality",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41588-026-02746-0",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Genomic background and subinhibitory azithromycin exposure shape ceftriaxone resistance evolution in Neisseria gonorrhoeae",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s44259-026-00273-w",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Genética"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Integrative analysis and external validation identify a novel seven-gene signature for preeclampsia risk stratification",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41598-026-72846-8",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Genética"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Gamma ray-induced phenotypic variability and mid-density SNP-based mutation characterization in forage sorghum (Sorghum bicolor L. Moench) genotype IS 33,871",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41598-026-67763-9",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Genética"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "DR-GEM enables self-supervised machine learning for single-cell embeddings and annotations",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41467-026-77908-z",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Atlas of cell types and regulatory elements underlying human facial diversity",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41588-026-02748-y",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "ResolVI: addressing noise and bias in spatial transcriptomics",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41592-026-03212-9",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "The analysis of minor taxa highlights the role of the environment and phylogeny in the distribution of the LTR-retrotransposon Copia clades",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41437-026-00888-9",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A cross-species single-cell kidney epigenome atlas reveals epithelial-dominant aging-like states in disease",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s43587-026-01221-z",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Dual northward overseas radiation from Japanese islands shaped the phylogeography of North-East Asian tree frog",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41598-026-69101-5",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-24T00:00:00+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Estudo da USP aponta desafios na elaboração de política de saúde para migrantes e refugiados",
+   "resumo": "Pesquisa da Faculdade de Saúde Pública mostra limitações na participação social, na transparência e na continuidade do processo de formulação da política nacional",
+   "url": "https://jornal.usp.br/radio-usp/estudo-da-usp-aponta-desafios-na-elaboracao-de-politica-de-saude-para-migrantes-e-refugiados/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-09-23T17:47:37+00:00",
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Breakthrough drug reverses skin aging and dramatically speeds healing",
+   "resumo": "A topical drug that removes aging, damaged cells helped older mice heal skin wounds significantly faster. The treatment appeared to reactivate repair pathways involved in inflammation, collagen production, and new blood vessel growth.",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260922223008.htm",
+   "fonte": "ScienceDaily · Genes",
+   "idioma": "en",
+   "data": "2026-09-23T12:32:35+00:00",
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "This new drug could break cancer’s resistance to treatment",
+   "resumo": "A new experimental drug called CS18 may help break through cancer drug resistance by disabling several of the defenses tumors use to survive treatment. It strengthened existing therapies, restored drug sensitivity in resistant lung cancer…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260921081112.htm",
+   "fonte": "ScienceDaily · Câncer",
+   "idioma": "en",
+   "data": "2026-09-23T01:27:00+00:00",
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "The gene-regulatory evolution of the human skeleton",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41586-026-11053-x",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-09-23T00:00:00+00:00",
+   "tema": "Genética"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Stem cells reverse stroke damage and restore movement in mice",
+   "resumo": "Stem cell transplants helped regenerate stroke-damaged brain tissue in mice, producing new neurons and restoring lost motor function. The treatment also improved blood vessels, inflammation, and the blood-brain barrier, raising hopes that…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260921081116.htm",
+   "fonte": "ScienceDaily · Genes",
+   "idioma": "en",
+   "data": "2026-09-22T01:49:32+00:00",
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Actionable genetic landscape and dynamics in circulating DNA from 12,827 patients with metastatic breast cancer",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41467-026-75976-9",
+   "fonte": "Nature · Genética do câncer",
+   "idioma": "en",
+   "data": "2026-09-22T00:00:00+00:00",
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Patient-derived separation-of-function mutations reveal specific role for BRCA1 coiled coil domain in genome stability",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41467-026-77330-5",
+   "fonte": "Nature · Genética do câncer",
+   "idioma": "en",
+   "data": "2026-09-22T00:00:00+00:00",
+   "tema": "Genética"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Performance and safety of a multi-cancer early detection test: the PATHFINDER 2 study",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41591-026-04618-w",
+   "fonte": "Nature · Genética do câncer",
+   "idioma": "en",
+   "data": "2026-09-22T00:00:00+00:00",
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Replication stress in cancer: origins, consequences and therapeutic opportunities",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41568-026-00979-z",
+   "fonte": "Nature · Genética do câncer",
+   "idioma": "en",
+   "data": "2026-09-22T00:00:00+00:00",
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Chronic stress may be quietly reshaping your heart",
+   "resumo": "Chronic inflammation tied to stress, lifestyle, mental health, and socioeconomic conditions may silently change the heart for years before any symptoms appear. People with the highest inflammation levels faced a 43% greater risk of heart…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260920222354.htm",
+   "fonte": "ScienceDaily · Genes",
+   "idioma": "en",
+   "data": "2026-09-21T11:35:13+00:00",
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Millions take calcium and vitamin D for bone health. A major review finds little benefit",
+   "resumo": "A sweeping review of more than 153,000 adults found that calcium and vitamin D supplements, alone or together, do little to prevent fractures or falls in most older people. Researchers say the findings challenge routine supplementation for…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260920030147.htm",
+   "fonte": "ScienceDaily · Câncer",
+   "idioma": "en",
+   "data": "2026-09-21T01:59:17+00:00",
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Methodological considerations in defining CBL as a prognostic biomarker in stage II melanoma",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41416-026-03628-2",
+   "fonte": "Nature · Genética do câncer",
+   "idioma": "en",
+   "data": "2026-09-21T00:00:00+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Hidden gut defect that may explain why IBD keeps coming back",
+   "resumo": "Researchers have uncovered a hidden molecular warning sign of inflammatory bowel disease (IBD) that can linger even when patients feel well and appear to be in remission. By studying around 900 human gut biopsies and patient-derived…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260918024814.htm",
+   "fonte": "ScienceDaily · Genes",
+   "idioma": "en",
+   "data": "2026-09-20T03:41:48+00:00",
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A deadly ebola relative is surging after years in the shadows",
+   "resumo": "A growing Bundibugyo virus outbreak is showing how a little-known relative of Ebola can become a major threat when diagnosis and treatment options are limited. Experts warn that preparing only for familiar pathogens could leave the world…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260919031042.htm",
+   "fonte": "ScienceDaily · Câncer",
+   "idioma": "en",
+   "data": "2026-09-20T02:26:36+00:00",
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Scientists solve a 50-year mystery and discover a new human blood group",
+   "resumo": "Scientists have identified the genetic cause behind the mysterious AnWj blood group antigen, solving a puzzle that began in 1972 and establishing a new blood group system called MAL. The discovery could make it much easier to find…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260918024828.htm",
+   "fonte": "ScienceDaily · Genes",
+   "idioma": "en",
+   "data": "2026-09-19T10:14:15+00:00",
+   "tema": "Genética"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Genomic and transcriptomic landscape of spread through air spaces in stage 1 lung adenocarcinoma",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41416-026-03622-8",
+   "fonte": "Nature · Genética do câncer",
+   "idioma": "en",
+   "data": "2026-09-19T00:00:00+00:00",
+   "tema": "Genética"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Scientists discover cells that cheat death and rebuild damaged tissue",
+   "resumo": "Scientists discovered a population of cells that can start the process of programmed cell death, survive it, and then help rapidly rebuild damaged tissue. Their descendants become far more resistant to future damage, revealing a mechanism…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260917003722.htm",
+   "fonte": "ScienceDaily · Genes",
+   "idioma": "en",
+   "data": "2026-09-18T12:30:43+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Scientists restore a brain protein and reverse signs of aging in mice",
+   "resumo": "Scientists found that declining levels of the brain protein Menin may help drive aging, with lower levels in mice linked to inflammation, cognitive decline, weaker bones, and thinner skin. Restoring Menin reversed several age-related…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260918000437.htm",
+   "fonte": "ScienceDaily · Genes",
+   "idioma": "en",
+   "data": "2026-09-18T04:25:45+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A canonical role of SMAD4 in safeguarding 3D genome architecture to suppress lung tumorigenesis",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41388-026-03984-6",
+   "fonte": "Nature · Genética do câncer",
+   "idioma": "en",
+   "data": "2026-09-18T00:00:00+00:00",
+   "tema": "Genética"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Chromosomal instability in cancer: sources, consequences and new therapeutic opportunities",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41392-026-02940-w",
+   "fonte": "Nature · Genética do câncer",
+   "idioma": "en",
+   "data": "2026-09-18T00:00:00+00:00",
+   "tema": "Câncer"
+  }
+ ],
+ "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "From genomic instability to epigenetic regulation: the role of DNA repair gene variants and non-coding RNAs in colorectal carcinogenesis.",
+   "autores": "Alsubeeh K, Yaltır A, Yalın AE, Doğruer Ünal N, Yalın S.",
+   "revista": "Nucleosides Nucleotides Nucleic Acids",
+   "data": "2026-09-22T03:00:00+00:00",
+   "doi": "10.1080/15257770.2026.2735915",
+   "url": "https://doi.org/10.1080/15257770.2026.2735915",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Role-play in graduate genetic counseling education: a practicum experience in South Korea.",
+   "autores": "Lee SA, Park MS, Kim A, Huh J.",
+   "revista": "Ewha Med J",
+   "data": "2026-09-21T03:00:00+00:00",
+   "doi": "10.12771/emj.2026.01452",
+   "url": "https://doi.org/10.12771/emj.2026.01452",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Next-generation tumor-agnostic targets on the horizon.",
+   "autores": "Coleman N, Liu J, Beal J, Subbiah V.",
+   "revista": "Trends Cancer",
+   "data": "2026-09-21T03:00:00+00:00",
+   "doi": "10.1016/j.trecan.2026.08.009",
+   "url": "https://doi.org/10.1016/j.trecan.2026.08.009",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "CD36 links fatty acid metabolism to tumor immune microenvironment remodeling in breast cancer.",
+   "autores": "Wu X, Ren L, Peng L, Tan X, Yan W, Qi X, Wang Y, Zhang Y.",
+   "revista": "Transl Oncol",
+   "data": "2026-09-21T03:00:00+00:00",
+   "doi": "10.1016/j.tranon.2026.103045",
+   "url": "https://doi.org/10.1016/j.tranon.2026.103045",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "GMPS drives pancreatic cancer progression via suppressing DNA damage, STING activation and cellular senescence.",
+   "autores": "Li Y, Zhang Z, Li D, Zhou C, Chen Y, Zhu C, Yang J, Tang R, Wang W, Yu X, Xu J.",
+   "revista": "Transl Oncol",
+   "data": "2026-09-21T03:00:00+00:00",
+   "doi": "10.1016/j.tranon.2026.103044",
+   "url": "https://doi.org/10.1016/j.tranon.2026.103044",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "A Case of Leukemic Phase of Mantle Cell Lymphoma Diagnosed With Scarring Conjunctivitis and Bilateral Upper Palpebral Conjunctival Tumor.",
+   "autores": "Sumioka T, Yasuda S, Imai K, Iwanishi H, Tanigawa I, Hosoi H, Sonoki T, Sagan K, Mikasa Y, Murata SI, Kokado M, Okada…",
+   "revista": "Cornea",
+   "data": "2026-09-21T03:00:00+00:00",
+   "doi": "10.1097/ico.0000000000004281",
+   "url": "https://doi.org/10.1097/ico.0000000000004281",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Opportunities in cancer gene therapy: inhibiting MDM2 and restoring p14ARF as a means to activate p53.",
+   "autores": "de Oliveira SB, Alves ALV, Niitsuma BN, Antunes F, Marinho GB, Amanatidis GL, Luz J, Barbosa M, Zambotti PEO, Rodrigues…",
+   "revista": "Mol Cell Biochem",
+   "data": "2026-09-21T03:00:00+00:00",
+   "doi": "10.1007/s11010-026-05742-4",
+   "url": "https://doi.org/10.1007/s11010-026-05742-4",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "KRAS-mutated endometrial carcinomas: a comprehensive analysis of clinicopathological and molecular profiles across histological subtypes.",
+   "autores": "Li WQ, Wu HX, Li HB, Zhang Q, Si JW, Pang SJ, Shen Y.",
+   "revista": "Virchows Arch",
+   "data": "2026-09-21T03:00:00+00:00",
+   "doi": "10.1007/s00428-026-04723-8",
+   "url": "https://doi.org/10.1007/s00428-026-04723-8",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Targeting the YAP-BST2 Axis Overcomes Intrinsic Anti-PD-1 Resistance in Metastatic Gastric Cancer.",
+   "autores": "Zhang W, Wang S, Wang M, Yu R, Yue J, Shao L, Zhang H, Zhu M, Tian L, Cheng S, Qin W, Tang Y, Han Y, Wang W, An L, Meng…",
+   "revista": "Adv Sci (Weinh)",
+   "data": "2026-09-21T03:00:00+00:00",
+   "doi": "10.1002/advs.77708",
+   "url": "https://doi.org/10.1002/advs.77708",
+   "acesso_aberto": true,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Dynamic ctDNA Monitoring Predicts Recurrence and Guides Therapy in Postoperative Hepatocellular Carcinoma.",
+   "autores": "Xu J, Wang H, Xu M, Li Y, Zhang Y, Tan J, Lin N.",
+   "revista": "J Surg Oncol",
+   "data": "2026-09-20T03:00:00+00:00",
+   "doi": "10.1002/jso.70405",
+   "url": "https://doi.org/10.1002/jso.70405",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Emerging Patterns of Kidney Cancer in Young Adults: Where Do We Stand? Emerging Patterns of Kidney Cancer in Young Adults: Where Do We Stand?",
+   "autores": "Troisi P, Occhipinti D, Ligato C, Sardaro V, Campi R, Merenda E, Cappoli N, Arduini D, Messina G, Di Leo D, Neri A…",
+   "revista": "Crit Rev Oncol Hematol",
+   "data": "2026-09-20T03:00:00+00:00",
+   "doi": "10.1016/j.critrevonc.2026.105607",
+   "url": "https://doi.org/10.1016/j.critrevonc.2026.105607",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Emerging therapeutic strategies and clinical development of investigational agents for conventional chondrosarcoma.",
+   "autores": "Torrado C, Conley AP.",
+   "revista": "Expert Opin Investig Drugs",
+   "data": "2026-09-20T03:00:00+00:00",
+   "doi": "10.1080/13543784.2026.2734584",
+   "url": "https://doi.org/10.1080/13543784.2026.2734584",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Clinicopathologic Characteristics of Somatic <i>TP53</i> Mutations in Philadelphia Chromosome-Negative Myeloproliferative Neoplasms: A Systematic Review.",
+   "autores": "Aldapt M, Kaddoura R, Saleh AO, Najim M, Salem A, Al-Mashdali AF, Muthanna B, Aweer RA, Rabadi M, Mohamed SF.",
+   "revista": "EJHaem",
+   "data": "2026-09-19T03:00:00+00:00",
+   "doi": "10.1002/jha2.70385",
+   "url": "https://doi.org/10.1002/jha2.70385",
+   "acesso_aberto": true,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Integrated Urine and Plasma DNA Analysis for Molecular Staging of Upper Tract Urothelial Carcinoma.",
+   "autores": "Pallauf M, Bronimann S, Rapiey S, Baraban E, Chai S, Fischer DS, Bicocca VT, Levin TG, McConkey DJ, Singla N.",
+   "revista": "Eur Urol Oncol",
+   "data": "2026-09-19T03:00:00+00:00",
+   "doi": "10.1016/j.euo.2026.08.008",
+   "url": "https://doi.org/10.1016/j.euo.2026.08.008",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Beyond Exons 19 and 21: mapping the clinical and molecular diversity of uncommon EGFR mutations in a Brazilian NSCLC cohort.",
+   "autores": "de Sousa JC, Nogueira C, Veloso GS, da Silva EL, Alves MS, Nasser F, Martins Neto F, Ornellas ACP, Nascimento E, Tavora…",
+   "revista": "Cancer Treat Res Commun",
+   "data": "2026-09-19T03:00:00+00:00",
+   "doi": "10.1016/j.ctarc.2026.101444",
+   "url": "https://doi.org/10.1016/j.ctarc.2026.101444",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Current patterns of next-generation sequencing implementation in hepatocellular carcinoma in Spain.",
+   "autores": "Gutiérrez LC, López CL, Zambrano CB, Abad CB, Campos MC, Rúa MC, Verdejo FJG, Caro NL, Roura RM, Martelo MP, Muñoz AML.",
+   "revista": "Clin Transl Oncol",
+   "data": "2026-09-19T03:00:00+00:00",
+   "doi": "10.1007/s12094-026-04556-6",
+   "url": "https://doi.org/10.1007/s12094-026-04556-6",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Genomic and transcriptomic landscape of spread through air spaces in stage 1 lung adenocarcinoma.",
+   "autores": "Saw SPL, Pang M, Patteri C, Takano A, Yeo JC, Sim NL, Lai GGY, Lim DWT, Ang MK, Kanesvaran R, Ng QS, Jain A, Tan WL…",
+   "revista": "Br J Cancer",
+   "data": "2026-09-19T03:00:00+00:00",
+   "doi": "10.1038/s41416-026-03622-8",
+   "url": "https://doi.org/10.1038/s41416-026-03622-8",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Systematic Evaluation of Combination Strategies with Rezatapopt in p53 Y220C-Mutant Cancer Models.",
+   "autores": "Ahmed T, Michaud EE, Xu L, Yang H, Li W, Lu L, McBrayer MK, Sun Y, Russo BM, Mulligan CL, Battaglia J, Dumble ML…",
+   "revista": "Mol Cancer Ther",
+   "data": "2026-09-18T03:00:00+00:00",
+   "doi": "10.1158/1535-7163.mct-26-0264",
+   "url": "https://doi.org/10.1158/1535-7163.mct-26-0264",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Total laparoscopic R0 resection of a large retroperitoneal leiomyosarcoma HARBORING a rare TP53 mutation: a case report.",
+   "autores": "Van Mai D, Duong PDT, Van Nguyen T, Le Nguyen KG.",
+   "revista": "J Surg Case Rep",
+   "data": "2026-09-18T03:00:00+00:00",
+   "doi": "10.1093/jscr/rjag829",
+   "url": "https://doi.org/10.1093/jscr/rjag829",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Autophagy inhibition sensitizes radiotherapy responses in high-grade mutant IDH1 glioma.",
+   "autores": "Núñez FJ, Banerjee K, Mujeeb AA, Mauser A, Tronrud CE, Zhu Z, Raghuram S, Sheth MR, Pena Agudelo JA, Zelaya J, Taher A…",
+   "revista": "Nat Commun",
+   "data": "2026-09-18T03:00:00+00:00",
+   "doi": "10.1038/s41467-026-77320-7",
+   "url": "https://doi.org/10.1038/s41467-026-77320-7",
+   "acesso_aberto": true,
+   "tema": "Ciência"
+  }
+ ],
+ "fontes": [
+  "Agência FAPESP",
+  "Jornal da USP",
+  "Nature · Genética",
+  "Nature · Genética do câncer",
+  "ScienceDaily · Genes",
+  "ScienceDaily · Câncer",
+  "Europe PMC"
+ ],
+ "erros": []
+}

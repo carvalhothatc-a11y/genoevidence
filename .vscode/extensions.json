@@ -1,0 +1,8 @@
+{
+  // Extensões recomendadas: o VS Code vai sugerir instalar ao abrir a pasta.
+  "recommendations": [
+    "ms-vscode.live-server",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian"
+  ]
+}

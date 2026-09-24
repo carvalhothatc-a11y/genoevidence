@@ -1,7 +1,7 @@
 {
   "name": "GenoEvidence",
   "short_name": "GenoEvidence",
-  "description": "Evidências sobre a variante TP53 R337H e a Síndrome de Li-Fraumeni, em um sistema visual e interativo.",
+  "description": "A ciência por trás das evidências: estudos e artigos explicados, notícias de ciência do dia e as revistas onde tudo foi publicado.",
   "lang": "pt-BR",
   "dir": "ltr",
   "start_url": "./",
@@ -34,6 +34,41 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Notícias de hoje",
+      "short_name": "Notícias",
+      "url": "./#noticias",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Artigos científicos novos",
+      "short_name": "Artigos",
+      "url": "./#publicacoes",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Estudos explicados",
+      "short_name": "Estudos",
+      "url": "./#estudos",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }

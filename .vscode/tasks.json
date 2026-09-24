@@ -1,0 +1,28 @@
+{
+  // Terminal > Executar Tarefa…
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Abrir o site no navegador (servidor local)",
+      "type": "shell",
+      "command": "python3 -m http.server 8000",
+      "isBackground": true,
+      "problemMatcher": [],
+      "detail": "Depois abra http://localhost:8000 no navegador. Para parar: Ctrl+C no terminal."
+    },
+    {
+      "label": "Atualizar notícias agora",
+      "type": "shell",
+      "command": "python3 scripts/atualizar_noticias.py",
+      "problemMatcher": [],
+      "detail": "Busca as notícias e os artigos científicos do dia e salva em data/noticias.json."
+    },
+    {
+      "label": "Publicar no site (GitHub)",
+      "type": "shell",
+      "command": "git add -A && git commit -m \"Atualiza o GenoEvidence\" && git push",
+      "problemMatcher": [],
+      "detail": "Envia as mudanças; o site é atualizado em cerca de 1 minuto."
+    }
+  ]
+}

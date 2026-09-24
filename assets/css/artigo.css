@@ -1,0 +1,120 @@
+/* GenoEvidence · página de artigo publicado */
+
+.art-hero{min-height:620px}
+.art-hero .hero-in{padding-block:80px 64px}
+.kind-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.badge{font:500 11.5px/1 var(--mono);padding:7px 9px;border-radius:6px;border:1px solid var(--line2);color:var(--muted);text-decoration:none}
+.badge.tipo{color:var(--amber);border-color:rgba(255,178,63,.45)}
+.badge.rev{color:#0A1120;background:#9DB6FF;border-color:transparent;font-weight:600}
+.badge.rev:hover{background:#B9CCFF}
+.hero h1.art-title{font-size:clamp(28px,3.4vw,48px);font-weight:800;line-height:1.08;letter-spacing:-.03em;margin-top:18px;max-width:20ch}
+.hero .sub.art-full{font:400 15px/1.55 var(--sans);color:var(--muted);max-width:60ch;margin-top:18px;text-align:left}
+.art-authors{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:18px}
+.art-authors span{white-space:nowrap}
+.journal-cta{background:linear-gradient(90deg,#9DB6FF,#FFB3C1)!important}
+.rv-name{font:800 30px/1 var(--display);letter-spacing:-.02em;margin:4px 0 12px}
+.art-canvas-tag{position:absolute;right:16px;bottom:12px;z-index:2;font:400 11px/1 var(--mono);color:var(--dim)}
+@media (max-width:980px){.art-hero canvas{opacity:.35}}
+
+/* resumo */
+.story-card{display:flex;flex-direction:column;gap:10px}
+.num-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
+.num-tile{padding:20px;border-radius:16px;border:1px solid var(--line);background:var(--panel);position:relative;overflow:hidden}
+.num-tile::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:var(--c)}
+.num-v{display:block;font:800 clamp(24px,2.6vw,34px)/1.05 var(--display);letter-spacing:-.02em;color:var(--c)}
+.num-tile p{margin-top:10px;font-size:14.5px;line-height:1.5;color:#C4CDDD}
+
+/* blocos */
+.blocks{display:flex;flex-direction:column;gap:22px}
+.art-prose p{font-size:17px;line-height:1.7;max-width:70ch;color:#D7DEEB}
+.art-prose p+p{margin-top:1em}
+.art-note{max-width:80ch}
+.blk-title{font:600 18px/1.3 var(--display);margin:6px 0 12px}
+.cards-art{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:12px}
+.card-art{padding:18px;border-radius:14px;border:1px solid var(--line);background:var(--panel);border-top:3px solid var(--c)}
+.card-art b{font:600 16px/1.3 var(--display);color:var(--text)}
+.card-art p{margin-top:8px;font-size:15px;line-height:1.55;color:#C4CDDD}
+.callout{padding:18px 20px;border-radius:0 14px 14px 0;border-left:3px solid var(--amber);background:var(--amber-soft);font-size:16.5px;line-height:1.6;color:var(--text);max-width:80ch}
+.art-list h3{font:600 16px/1.3 var(--display);margin-bottom:10px}
+.art-list ul{margin:0;padding-left:20px;color:#C4CDDD;display:flex;flex-direction:column;gap:6px;font-size:15.5px}
+
+/* passos do método */
+.steps{list-style:none;margin:0;padding:0;counter-reset:p;display:grid;gap:12px}
+.steps li{counter-increment:p;display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;align-items:start;padding:16px 18px;border-radius:14px;border:1px solid var(--line);background:var(--panel)}
+.steps li::before{content:counter(p);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:700 16px/1 var(--display);color:#0A1120;background:linear-gradient(135deg,#9DB6FF,#FF8A9D)}
+.steps b{font:600 16.5px/1.3 var(--display)}
+.steps p{margin-top:6px;font-size:15.5px;line-height:1.6;color:#C4CDDD}
+
+/* cadeia de eventos */
+.chain{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.chain li{display:flex;align-items:center;gap:10px;opacity:.25;transform:translateY(8px);transition:opacity .5s ease,transform .5s ease;transition-delay:calc(var(--k)*180ms)}
+.chain.on li{opacity:1;transform:none}
+.chain li span{padding:12px 14px;border-radius:12px;border:1px solid var(--line2);background:var(--panel);font:500 14.5px/1.3 var(--sans)}
+.chain li:last-child span{border-color:rgba(255,84,112,.6);background:var(--his-soft);color:#FFB3C1}
+.chain li:not(:last-child)::after{content:"→";color:var(--his);font-size:18px}
+@media (prefers-reduced-motion:reduce){.chain li{opacity:1;transform:none}}
+
+/* figura */
+.art-fig{margin:0;display:flex;flex-direction:column;gap:10px}
+.fig-art{all:unset;box-sizing:border-box;cursor:zoom-in;position:relative;display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff;max-width:900px}
+.fig-art img{display:block;width:100%;height:auto}
+.fig-art:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.fig-zoom{position:absolute;right:10px;bottom:10px;font:500 11.5px/1 var(--mono);padding:7px 9px;border-radius:7px;background:rgba(6,10,19,.85);color:var(--amber)}
+.art-fig figcaption{font-size:14px;line-height:1.5;color:var(--muted);max-width:900px}
+.art-fig .cred{color:var(--dim)}
+.fig-art .fig-zoom::after{content:none}
+
+/* gráfico */
+.chart-art{padding:22px;border-radius:18px;border:1px solid var(--line);background:var(--panel)}
+.chart-body{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:24px;align-items:center}
+.chart-body svg{width:100%;height:auto;display:block}
+.chart-body .val{fill:var(--text);font:600 13px var(--mono)}
+.chart-body .sig{fill:var(--amber);font:700 15px var(--mono)}
+.chart-leg{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-direction:column;gap:8px;font-size:14.5px;color:#C4CDDD}
+.chart-leg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:8px;vertical-align:-1px}
+.chart-read{font-size:16px;line-height:1.6;color:var(--text)}
+.chart-read b{display:block;font:500 11.5px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:8px}
+
+/* revista */
+.journal-panel{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px 32px;align-items:center;padding:26px;border-radius:20px;border:1px solid var(--line2);background:linear-gradient(135deg,rgba(77,124,255,.10),rgba(255,84,112,.06)),var(--panel)}
+.jp-main{display:flex;align-items:center;gap:18px}
+.jp-mark{width:64px;height:64px;flex:none;border-radius:16px;display:grid;place-items:center;font:800 22px/1 var(--display);color:#0A1120;background:linear-gradient(135deg,#9DB6FF,#FFB3C1)}
+.jp-name{font:800 clamp(28px,3.4vw,44px)/1 var(--display);letter-spacing:-.02em;margin-top:6px}
+.jp-meta{font:400 13px/1.5 var(--mono);color:var(--muted);margin-top:8px}
+.jp-kv{margin:0}
+.jp-kv dd a{color:var(--text)}
+.jp-btns{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px}
+.jp-btns .cta{margin:0;width:auto;height:auto;padding:12px 18px}
+.author-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.author-list li{padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;gap:4px}
+.author-list b{font:600 15px/1.3 var(--sans)}
+.author-list span{font:400 12.5px/1.4 var(--mono);color:var(--muted)}
+.cite-box{margin-top:18px;padding:18px 20px;border-radius:14px;border:1px dashed var(--line2)}
+.cite-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.cite-head .blk-title{margin:0}
+.cite-box p{margin-top:10px;font:400 14px/1.6 var(--mono);color:#C4CDDD}
+.copy-btn{all:unset;cursor:pointer;position:relative;overflow:hidden;font:600 13px/1 var(--sans);padding:10px 14px;border-radius:999px;border:1px solid var(--line2);color:var(--text)}
+.copy-btn:hover{background:var(--panel2)}
+.copy-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+
+/* referências */
+.ref-list{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:12px;color:#C4CDDD}
+.ref-list li{font-size:14.5px;line-height:1.55}
+.ref-list a{display:inline-block;margin-top:4px;font:500 12.5px/1 var(--mono);color:var(--amber);text-decoration:none}
+.ref-list a:hover{text-decoration:underline}
+
+.journal-btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;padding:12px 18px;border-radius:999px;background:var(--text);color:var(--ink);text-decoration:none;font:600 14px/1 var(--sans)}
+.journal-btn:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+
+@media (max-width:980px){
+  .num-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .chart-body,.journal-panel{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .num-grid{grid-template-columns:1fr}
+  .art-hero{min-height:0}
+  .steps li{grid-template-columns:40px minmax(0,1fr);padding:14px}
+  .steps li::before{width:34px;height:34px;font-size:14px}
+  .chain li:not(:last-child)::after{content:"↓"}
+  .chain{flex-direction:column;align-items:flex-start}
+}
