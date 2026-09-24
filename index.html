@@ -28,9 +28,15 @@
   <!-- abertura: pouco texto, DNA em 3D (assets/js/hero3d.js) -->
   <section class="hero-home">
     <div class="hero-txt">
+      <!-- frase do dia: muda sozinha a cada dia (data/frases.json) -->
+      <figure class="frase-dia" id="fraseDia" hidden><blockquote id="fraseTexto"></blockquote><figcaption id="fraseAutor"></figcaption></figure>
       <p class="kicker" id="saudacao">&nbsp;</p>
       <h1>A ciência de hoje, <em>explicada</em>.</h1>
       <p class="sub">Estudos completos, temas e notícias da ciência em linguagem simples, com o link direto para a fonte.</p>
+      <div class="busca-home" role="search">
+        <input class="search" id="buscaHome" type="search" placeholder="Pesquisar estudos, temas, pesquisadoras, notícias…" aria-label="Pesquisar no GenoEvidence" aria-controls="buscaRes" autocomplete="off">
+        <div class="busca-res" id="buscaRes" role="listbox" aria-label="Resultados da pesquisa" hidden></div>
+      </div>
       <div class="hero-cta">
         <a class="btn" href="#destaques">Ver os destaques</a>
         <a class="btn ghost" href="artigos/">Explorar por tema</a>

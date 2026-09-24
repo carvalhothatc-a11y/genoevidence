@@ -135,7 +135,67 @@
   }
 
   /* ---------- Início ---------- */
+  // frase do dia: a lista em data/frases.json é percorrida em ordem, uma frase por dia
+  function fraseDoDia() {
+    getJSON("data/frases.json").then(d => {
+      const fs = d.frases || []; if (!fs.length) return;
+      const hoje = new Date(), dia = Math.floor((hoje - hoje.getTimezoneOffset() * 60000) / 86400000);
+      const f = fs[dia % fs.length];
+      $("#fraseTexto").textContent = "“" + f.texto + "”";
+      $("#fraseAutor").textContent = "— " + f.autor + (f.fonte ? " · " + f.fonte : "");
+      $("#fraseDia").hidden = false;
+      entrar([$("#fraseDia")]);
+      // no celular, o DNA desce para ficar ao lado do título, logo abaixo da frase
+      const alinhar = () => { const hh = $(".hero-home"), fr = $("#fraseDia"); if (hh && fr) hh.style.setProperty("--dna-top", (fr.offsetHeight + 14) + "px"); };
+      alinhar(); addEventListener("resize", alinhar);
+    }).catch(() => {});
+  }
+
+  // barra de pesquisa do Início: procura em estudos, temas, pesquisadoras e notícias
+  function buscaInicio() {
+    const campo = $("#buscaHome"), res = $("#buscaRes"); if (!campo) return;
+    const norm = t => String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    let itens = [], ativo = -1;
+    Promise.all([getJSON("data/artigos.json").catch(() => ({})), getJSON("data/noticias.json").catch(() => ({}))]).then(([da, dn]) => {
+      const arts = da.artigos || [];
+      itens = [].concat(
+        arts.map(a => ({ tipo: "Estudo", nome: a.titulo_curto, href: RAIZ + a.url, txt: [a.titulo_curto, a.titulo, a.titulo_pt, a.resumo, (a.tags || []).join(" "), (a.revista || {}).nome, a.autores_curto, a.selo].join(" ") })),
+        (da.temas || []).filter(t => arts.some(a => (a.temas || []).includes(t.id))).map(t => ({ tipo: "Tema", nome: t.nome, href: RAIZ + "artigos/#" + t.id, cor: t.cor, txt: t.nome + " " + t.sobre })),
+        (da.pesquisadoras || []).map(p => ({ tipo: "Pesquisadora", nome: p.nome, href: RAIZ + "artigos/?pesquisadora=" + p.id, cor: p.cor, txt: p.nome + " " + p.vinculo })),
+        (dn.noticias || []).filter(n => n.idioma === "pt" || n.traduzido).map(n => ({ tipo: "Notícia", nome: n.titulo, href: n.url, fora: true, txt: [n.titulo, n.resumo, n.fonte, n.tema].join(" ") })));
+      itens.forEach(i => { i.busca = norm(i.txt); });
+    });
+    const COR_TIPO = { "Estudo": "#2F5BEA", "Notícia": "#14864A" };
+    function mostrar() {
+      const v = norm(campo.value.trim()); ativo = -1;
+      if (v.length < 2) { res.hidden = true; res.innerHTML = ""; return; }
+      const palavras = v.split(/\s+/);
+      const achados = itens.filter(i => palavras.every(p => i.busca.includes(p))).slice(0, 8);
+      res.innerHTML = achados.map((i, k) => '<a class="br-item" role="option" id="br-' + k + '" href="' + esc(i.href) + '"' + (i.fora ? ' target="_blank" rel="noopener"' : "") +
+        ' style="--c:' + esc(i.cor || COR_TIPO[i.tipo] || "#7B4DE0") + '"><span class="br-tipo">' + esc(i.tipo) + '</span><span class="br-nome">' + esc(i.nome) + (i.fora ? " ↗" : "") + "</span></a>").join("") ||
+        '<p class="br-vazio">Nada encontrado para “' + esc(campo.value.trim()) + '”. Tente outra palavra, como câncer, DNA ou bactéria.</p>';
+      res.hidden = false;
+    }
+    function marcar(k) {
+      const els = $$(".br-item", res); if (!els.length) return;
+      ativo = (k + els.length) % els.length;
+      els.forEach((e, i) => e.classList.toggle("ativo", i === ativo));
+      els[ativo].scrollIntoView({ block: "nearest" });
+    }
+    campo.addEventListener("input", mostrar);
+    campo.addEventListener("focus", mostrar);
+    campo.addEventListener("keydown", e => {
+      if (e.key === "ArrowDown") { e.preventDefault(); marcar(ativo + 1); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); marcar(ativo - 1); }
+      else if (e.key === "Enter") { const el = $$(".br-item", res)[Math.max(ativo, 0)]; if (el) { e.preventDefault(); el.click(); } }
+      else if (e.key === "Escape") { res.hidden = true; }
+    });
+    document.addEventListener("click", e => { if (!e.target.closest(".busca-home")) res.hidden = true; });
+  }
+
   function inicio() {
+    fraseDoDia();
+    buscaInicio();
     const h = new Date().getHours();
     $("#saudacao").textContent = (h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite") + " · " + new Date().toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long" });
     getJSON("data/artigos.json").then(d => {

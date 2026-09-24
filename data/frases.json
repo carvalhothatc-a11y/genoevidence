@@ -1,0 +1,25 @@
+{
+  "_como_usar": "Frase do dia no Início: o app troca de frase sozinho a cada dia, seguindo esta lista em ordem. Para acrescentar, copie um item e troque o texto, o autor e a fonte (use só frases com autoria confirmada).",
+  "frases": [
+    {"texto": "Se enxerguei mais longe, foi por estar sobre os ombros de gigantes.", "autor": "Isaac Newton", "fonte": "Carta a Robert Hooke, 1675"},
+    {"texto": "O importante é não parar de questionar.", "autor": "Albert Einstein", "fonte": "Entrevista à revista Life, 1955"},
+    {"texto": "Alegações extraordinárias exigem evidências extraordinárias.", "autor": "Carl Sagan", "fonte": "Série Cosmos, 1980"},
+    {"texto": "No campo da observação, o acaso favorece apenas as mentes preparadas.", "autor": "Louis Pasteur", "fonte": "Aula na Universidade de Lille, 1854"},
+    {"texto": "O primeiro princípio é não enganar a si mesmo, e você é a pessoa mais fácil de enganar.", "autor": "Richard Feynman", "fonte": "Discurso “Cargo Cult Science”, Caltech, 1974"},
+    {"texto": "A ignorância gera confiança com mais frequência do que o conhecimento.", "autor": "Charles Darwin", "fonte": "A Origem do Homem, 1871"},
+    {"texto": "Sou daquelas que pensam que a ciência tem uma grande beleza.", "autor": "Marie Curie", "fonte": "Citada por Ève Curie em “Madame Curie”, 1937"},
+    {"texto": "Lembre-se de olhar para as estrelas, e não para os seus pés.", "autor": "Stephen Hawking", "fonte": "Abertura dos Jogos Paralímpicos de Londres, 2012"},
+    {"texto": "Ciência e vida cotidiana não podem e não devem ser separadas.", "autor": "Rosalind Franklin", "fonte": "Carta ao pai, c. 1940"},
+    {"texto": "A imaginação é mais importante que o conhecimento.", "autor": "Albert Einstein", "fonte": "Entrevista ao Saturday Evening Post, 1929"},
+    {"texto": "Não esmorecer para não desmerecer.", "autor": "Oswaldo Cruz", "fonte": "Lema de Oswaldo Cruz"},
+    {"texto": "A ciência não tem pátria, porque o conhecimento pertence à humanidade.", "autor": "Louis Pasteur", "fonte": "Discurso em Milão, 1876"},
+    {"texto": "Nós somos feitos de matéria das estrelas.", "autor": "Carl Sagan", "fonte": "Série Cosmos, 1980"},
+    {"texto": "Descobrir é ver o que todo mundo viu e pensar o que ninguém pensou.", "autor": "Albert Szent-Györgyi", "fonte": "The Scientist Speculates, 1962"},
+    {"texto": "A melhor maneira de ter uma boa ideia é ter muitas ideias.", "autor": "Linus Pauling", "fonte": "Citado por Francis Crick, 1995"},
+    {"texto": "O grande livro da natureza está escrito em linguagem matemática.", "autor": "Galileu Galilei", "fonte": "O Ensaiador, 1623 (adaptado)"},
+    {"texto": "Conhecimento é poder.", "autor": "Francis Bacon", "fonte": "Meditationes Sacrae, 1597"},
+    {"texto": "A ciência é mais do que um conjunto de conhecimentos: é uma maneira de pensar.", "autor": "Carl Sagan", "fonte": "Skeptical Inquirer, 1990"},
+    {"texto": "O que você faz faz diferença, e você precisa decidir que tipo de diferença quer fazer.", "autor": "Jane Goodall", "fonte": "Palestras e entrevistas"},
+    {"texto": "Onde há amor pela medicina, há também amor pela humanidade.", "autor": "Hipócrates", "fonte": "Preceitos (atribuído)"}
+  ]
+}

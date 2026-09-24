@@ -4,8 +4,8 @@
 
 | Aba | O que tem |
 |---|---|
-| **Início** | DNA em 3D, o estudo mais recente de cada pesquisadora em destaque (como autora principal), o estudo em andamento R337H, os temas e as 3 notícias mais relevantes do dia. |
-| **Notícias** | As 15 notícias de ciência mais relevantes do dia (8 de fontes brasileiras e 7 internacionais, traduzidas para o português). |
+| **Início** | Frase do dia de um cientista (muda sozinha todo dia), barra de pesquisa, DNA em 3D, as 3 notícias mais relevantes, o estudo mais recente de cada pesquisadora em destaque (como autora principal), o estudo em andamento R337H e os temas. |
+| **Notícias** | As 15 notícias de ciência mais relevantes do dia (8 de fontes brasileiras e 7 internacionais, traduzidas para o português), atualizadas todo dia às 7h (horário de Brasília). |
 | **Temas** | Os estudos separados por tema (genética, bioinformática, oncologia, microbiologia…), com filtro por pesquisadora. Cada estudo fica em um só tema e abre a sua página completa. |
 | **Revistas** | As revistas dos artigos explicados e as publicações científicas mais recentes (Europe PMC), com filtro por revista. |
 
@@ -48,7 +48,8 @@ r337h/                      estudo completo R337H (página, r337h.js e imagens)
 artigos/micrurus-spixii/    página de leitura de um artigo (conteúdo em artigo.json)
 artigos/_modelo/            modelo para criar um artigo novo
 data/artigos.json           lista de artigos explicados (aba Artigos e destaque do Início)
-data/noticias.json          notícias e publicações do dia (gerado automaticamente)
+data/noticias.json          notícias e publicações do dia (gerado automaticamente às 7h)
+data/frases.json            frases de cientistas para a “frase do dia” do Início
 assets/css/shell.css        visual das abas
 assets/css/base.css, artigo.css   visual da página de leitura
 assets/js/shell.js          barra do topo, barra de abas e conteúdo das abas

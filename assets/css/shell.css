@@ -264,6 +264,20 @@ html.sem-rolagem{overflow:hidden}
 .btn.ghost{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
 .btn.ghost:hover{border-color:var(--muted)}
 
+/* ---------- frase do dia e pesquisa do Início ---------- */
+.hero-txt{position:relative;z-index:2}
+.frase-dia{margin:0 0 14px;padding-left:12px;border-left:3px solid var(--violet);max-width:46ch}
+.frase-dia blockquote{margin:0;font:italic 500 15px/1.45 var(--sans);color:var(--ink2)}
+.frase-dia figcaption{margin-top:5px;font:500 11.5px/1.35 var(--mono);color:var(--violet)}
+.busca-home{position:relative;margin-top:18px;max-width:480px}
+.busca-home .search{margin:0;padding-left:42px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B7590' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.5-3.5'/%3E%3C/svg%3E") 14px center/18px no-repeat;box-shadow:0 4px 16px rgba(16,22,38,.06)}
+.busca-res{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:45;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 36px rgba(16,22,38,.14);padding:6px;max-height:60vh;overflow:auto}
+.br-item{display:flex;gap:10px;align-items:flex-start;padding:10px;border-radius:10px;text-decoration:none;color:var(--ink)}
+.br-item:hover,.br-item.ativo{background:var(--surface2)}
+.br-tipo{flex:none;font:600 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--c);background:color-mix(in srgb,var(--c) 12%,var(--surface));border-radius:6px;padding:5px 6px;margin-top:2px}
+.br-nome{font:500 14.5px/1.35 var(--sans)}
+.br-vazio{padding:12px;color:var(--muted);font-size:14px}
+
 /* ---------- Estudos completos (Início) ---------- */
 .study-banner .andamento,.pill.andamento{display:inline-block;font:600 11.5px/1 var(--mono);letter-spacing:.02em;color:#8A5A00;background:var(--amber-soft);border:1px solid #F3D9A8;border-radius:999px;padding:5px 9px}
 .study-banner .andamento{display:table;margin-bottom:8px}
@@ -303,8 +317,10 @@ html.sem-rolagem{overflow:hidden}
 @media (max-width:600px){
   /* no celular, o DNA fica à direita da frase, no espaço em branco */
   .hero-home{display:block;position:relative;padding-top:4px}
-  .hero-3d{position:absolute;top:0;right:calc(var(--gutter) * -1);width:42%;height:172px}
+  .hero-3d{position:absolute;top:var(--dna-top,0px);right:calc(var(--gutter) * -1);width:42%;height:172px}
   .hero-txt .kicker,.hero-txt h1{max-width:60%;position:relative}
+  .frase-dia blockquote{font-size:13.5px}
+  .busca-home{max-width:none}
   .hero-txt h1{font-size:clamp(28px,8.4vw,36px)}
   .hero-txt .sub{margin-top:24px;font-size:16px;position:relative}
 }

@@ -1,10 +1,10 @@
 # Atualiza as notícias e os artigos científicos do dia (data/noticias.json).
-# Roda todo dia às 6h (horário de Brasília) e também pelo botão "Run workflow" na aba Actions.
+# Roda todo dia às 7h (horário de Brasília) e também pelo botão "Run workflow" na aba Actions.
 name: Notícias do dia
 
 on:
   schedule:
-    - cron: "0 9 * * *"   # 09:00 UTC = 06:00 em Brasília
+    - cron: "0 10 * * *"  # 10:00 UTC = 07:00 em Brasília
   workflow_dispatch:
 
 permissions:
