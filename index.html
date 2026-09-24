@@ -3,200 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#060A13">
+<meta name="theme-color" content="#F5F6F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0F19" media="(prefers-color-scheme: dark)">
 <meta name="ge-root" content="./">
-<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
-<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
+<link rel="manifest" href="./manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="GenoEvidence">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>GenoEvidence</title>
-<meta name="description" content="GenoEvidence: estudos e artigos de genética explicados de forma visual, com as notícias de ciência do dia e as revistas onde tudo foi publicado.">
-<meta property="og:title" content="GenoEvidence">
-<meta property="og:description" content="A ciência por trás das evidências: estudos explicados, notícias do dia e artigos científicos novos.">
+<meta name="description" content="GenoEvidence: notícias de ciência do dia, artigos científicos explicados em linguagem simples e as revistas onde foram publicados.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Unbounded:wght@400;600;800&display=swap">
-<link rel="stylesheet" href="assets/css/base.css">
-<link rel="stylesheet" href="assets/css/inicio.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="./assets/css/shell.css">
 </head>
-<body>
-<canvas id="bgfx" aria-hidden="true"></canvas>
-<div class="bg-grid" aria-hidden="true"></div>
+<body data-pagina="inicio">
+<!-- barra do topo e barra de abas: montadas pelo assets/js/shell.js -->
+<header id="appbar"></header>
 
-<header class="hud">
-  <div class="hud-in">
-    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu de tópicos" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    <a class="brand" href="#top" aria-label="GenoEvidence — início"><span class="brand-mark"></span><b>GenoEvidence</b></a>
-    <nav class="nav" id="nav" aria-label="Seções">
-      <a href="#noticias">Notícias</a>
-      <a href="#publicacoes">Artigos novos</a>
-      <a href="#estudos">Estudos</a>
-      <a href="#revistas">Revistas</a>
-      <a href="#sobre">Como funciona</a>
-    </nav>
-  </div>
-  <div class="progress" id="progress"></div>
-</header>
+<main class="wrap">
+  <section class="hello">
+    <p class="kicker" id="saudacao">&nbsp;</p>
+    <h1>A ciência de hoje, <em>explicada</em>.</h1>
+    <p class="sub">Notícias do dia, artigos científicos explicados em linguagem simples e as revistas onde tudo foi publicado.</p>
+  </section>
 
-<div class="drawer-scrim" id="drawerScrim" hidden></div>
-<aside class="drawer" id="drawer" aria-label="Tópicos do app">
-  <div class="drawer-head">
-    <b>GenoEvidence</b>
-    <button class="drawer-close" id="drawerClose" type="button" aria-label="Fechar menu">✕</button>
-  </div>
-  <input type="search" id="drawerSearch" placeholder="Filtrar tópicos…" aria-label="Filtrar tópicos" autocomplete="off">
-  <nav class="drawer-nav" id="drawerNav" aria-label="Ir para o tópico"></nav>
-  <p class="drawer-foot">Toque em um tópico para ir direto até ele.</p>
-</aside>
-<script type="application/json" id="ge-topicos">
-[
-  ["#top", "Início"],
-  ["#noticias", "Notícias de hoje"],
-  ["#publicacoes", "Artigos científicos novos"],
-  ["#estudos", "Estudos e artigos explicados", [["estudos/r337h/", "R337H · Síndrome de Li-Fraumeni"]]],
-  ["#revistas", "Revistas em destaque"],
-  ["#sobre", "Como funciona"]
-]
-</script>
+  <section class="sec">
+    <div class="sec-head"><h2>Artigo em destaque</h2><a class="link-more" href="artigos/">Todos os artigos →</a></div>
+    <div id="destaque"><p class="loading">Carregando…</p></div>
+  </section>
 
-<!-- ================= ABERTURA ================= -->
-<section class="hero hero-home" id="top">
-  <canvas id="helix" aria-hidden="true"></canvas>
-  <div class="hero-grid"></div>
-  <div class="mut-label" id="mutLabel"><span>cada estudo, uma evidência</span></div>
-  <div class="wrap hero-in" lang="pt-BR">
-    <div>
-      <p class="eyebrow"><span style="color:var(--text)">GenoEvidence</span> · ciência explicada</p>
-      <h1 class="home-title">A ciência por trás das <em>evidências</em></h1>
-      <p class="sub">Estudos e artigos de genética explicados de forma visual, e as notícias de ciência que saem <strong>todos os dias</strong>.</p>
-      <div class="cta-row">
-        <a class="cta" href="#noticias">Notícias de hoje <span aria-hidden="true">↓</span></a>
-        <a class="cta ghost" href="#estudos">Ver estudos</a>
-        <a class="cta ghost" href="#publicacoes">Artigos novos</a>
-      </div>
-    </div>
-    <aside class="readout" aria-label="Resumo de hoje">
-      <p class="eyebrow" style="margin-bottom:6px">Hoje no GenoEvidence</p>
-      <div class="row"><span class="k">Notícias do dia</span><span class="v" id="hjNoticias">…</span></div>
-      <div class="row"><span class="k">Artigos científicos novos</span><span class="v" id="hjArtigos">…</span></div>
-      <div class="row"><span class="k">Revistas em destaque</span><span class="v" id="hjRevistas">…</span></div>
-      <div class="row"><span class="k">Estudos explicados</span><span class="v" id="hjEstudos">…</span></div>
-      <div class="row"><span class="k">Atualizado</span><span class="v his" id="hjData">…</span></div>
-      <a class="readout-link" href="#sobre">De onde vêm as notícias →</a>
-    </aside>
+  <div class="split">
+    <section class="sec">
+      <div class="sec-head"><h2>Notícias de hoje</h2><a class="link-more" href="noticias/">Ver todas →</a></div>
+      <ul class="list card" id="hojeNoticias"><li class="loading" style="padding:14px 18px">Carregando…</li></ul>
+    </section>
+    <section class="sec">
+      <div class="sec-head"><h2>Acabou de sair nas revistas</h2><a class="link-more" href="revistas/">Ver revistas →</a></div>
+      <ul class="list card" id="hojePublicacoes"></ul>
+    </section>
   </div>
-</section>
+  <p class="note" id="atualizado"></p>
 
-<main lang="pt-BR">
-<!-- ================= NOTÍCIAS ================= -->
-<section class="s" id="noticias">
-  <div class="wrap">
-    <div class="s-head">
-      <p class="eyebrow">Notícias de hoje</p>
-      <h2>O que a ciência contou hoje</h2>
-      <p class="lede">Notícias de ciência e saúde reunidas automaticamente todos os dias, de fontes confiáveis. Toque em uma notícia para ler na fonte original.</p>
-    </div>
-    <div class="chips-f" id="fNoticias" role="group" aria-label="Filtrar notícias">
-      <button type="button" class="chip-f" data-f="todas" aria-pressed="true">Todas</button>
-      <button type="button" class="chip-f" data-f="pt" aria-pressed="false">Em português</button>
-      <button type="button" class="chip-f" data-f="Genética" aria-pressed="false">Genética</button>
-      <button type="button" class="chip-f" data-f="Câncer" aria-pressed="false">Câncer</button>
-      <button type="button" class="chip-f" data-f="Saúde" aria-pressed="false">Saúde</button>
-      <button type="button" class="chip-f" data-f="Ciência" aria-pressed="false">Ciência</button>
-    </div>
-    <div class="news-grid" id="noticiasGrid" aria-live="polite"><p class="loading">Carregando as notícias de hoje…</p></div>
-    <div class="more-row"><button type="button" class="cta ghost" id="maisNoticias" hidden>Mostrar mais notícias</button></div>
-    <p class="note" id="noticiasInfo"></p>
+  <div class="card install-card">
+    <div><b>Leve o GenoEvidence no celular</b><p>Instale como aplicativo e leia mesmo sem internet.</p></div>
+    <div data-instalar></div>
   </div>
-</section>
-
-<!-- ================= ARTIGOS CIENTÍFICOS NOVOS ================= -->
-<section class="s" id="publicacoes">
-  <div class="wrap">
-    <div class="s-head">
-      <p class="eyebrow">Artigos científicos novos</p>
-      <h2>Acabou de sair nas revistas</h2>
-      <p class="lede">Artigos publicados nas últimas semanas sobre <strong>TP53, Síndrome de Li-Fraumeni e câncer hereditário</strong>. Cada um mostra a revista em que saiu e leva direto para ela.</p>
-    </div>
-    <ol class="pub-list" id="artigosLista" aria-live="polite"><li class="loading">Buscando os artigos mais recentes…</li></ol>
-    <div class="more-row"><button type="button" class="cta ghost" id="maisArtigos" hidden>Mostrar mais artigos</button></div>
-    <p class="note" id="artigosInfo">Fonte: Europe PMC, base pública de literatura biomédica.</p>
-  </div>
-</section>
-
-<!-- ================= ESTUDOS ================= -->
-<section class="s" id="estudos">
-  <div class="wrap">
-    <div class="s-head">
-      <p class="eyebrow">Estudos e artigos explicados</p>
-      <h2>Cada estudo, uma página</h2>
-      <p class="lede">Resumo, explicação em linguagem simples, imagens, gráficos e, nos artigos publicados, o botão para ler direto na revista.</p>
-    </div>
-    <div class="study-grid" id="estudosGrid"></div>
-  </div>
-</section>
-
-<!-- ================= REVISTAS ================= -->
-<section class="s" id="revistas">
-  <div class="wrap">
-    <div class="s-head">
-      <p class="eyebrow">Revistas em destaque</p>
-      <h2>Onde a ciência está sendo publicada</h2>
-      <p class="lede">As revistas científicas dos artigos mais recentes e dos estudos do app. Toque em uma revista para ver os artigos dela.</p>
-    </div>
-    <div class="journal-grid" id="revistasGrid"></div>
-  </div>
-</section>
-
-<!-- ================= COMO FUNCIONA ================= -->
-<section class="s" id="sobre">
-  <div class="wrap">
-    <div class="s-head">
-      <p class="eyebrow">Como funciona</p>
-      <h2>Três camadas de evidência</h2>
-      <p class="lede">O GenoEvidence junta o que está saindo agora com a explicação aprofundada de cada estudo, sempre com o caminho de volta para a fonte original.</p>
-    </div>
-    <div class="how">
-      <div class="how-card"><span class="how-n">1</span><h3>Notícias do dia</h3><p>Todos os dias o app reúne notícias de ciência e saúde da Agência FAPESP, do Jornal da USP, da Nature e do ScienceDaily.</p></div>
-      <div class="how-card"><span class="how-n">2</span><h3>Estudos explicados</h3><p>Cada estudo ou artigo ganha uma página com resumo, explicação simples, imagens, gráficos e glossário.</p></div>
-      <div class="how-card"><span class="how-n">3</span><h3>Direto da revista</h3><p>Todo artigo mostra a revista em que foi publicado, com o DOI e o botão <strong>Ler na revista</strong>.</p></div>
-    </div>
-    <p class="note">Títulos e resumos das notícias pertencem às suas fontes; o GenoEvidence mostra um trecho e leva você à publicação original. Conteúdo educativo: não substitui orientação médica ou aconselhamento genético.</p>
-  </div>
-</section>
 </main>
 
-<footer lang="pt-BR">
-  <div class="wrap">
-    <div>
-      <h3>GenoEvidence</h3>
-      <p>A ciência por trás das evidências: estudos de genética explicados de forma visual, notícias de ciência do dia e as revistas onde tudo foi publicado.</p>
-    </div>
-    <div>
-      <h3>Fontes</h3>
-      <p>Agência FAPESP · Jornal da USP · Nature · ScienceDaily · Europe PMC. Cada estudo traz as suas próprias referências.</p>
-    </div>
-  </div>
-</footer>
-
-<a class="totop" id="totop" href="#top" aria-label="Voltar ao topo">↑</a>
-<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Imagem ampliada">
-  <button class="lb-close" id="lbClose" type="button" aria-label="Fechar">✕</button>
-  <button class="lb-nav prev" id="lbPrev" type="button" aria-label="Imagem anterior">‹</button>
-  <img id="lbImg" alt="">
-  <button class="lb-nav next" id="lbNext" type="button" aria-label="Próxima imagem">›</button>
-  <p class="lb-meta"><span id="lbCount"></span> <span id="lbCap"></span></p>
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="assets/js/dna.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="assets/js/inicio.js"></script>
-<script src="assets/js/pwa.js"></script>
+<footer class="foot"><div class="wrap">GenoEvidence · a ciência por trás das evidências · <a href="./sobre/">Sobre o app</a></div></footer>
+<nav id="tabbar"></nav>
+<script src="./assets/js/shell.js"></script>
+<script src="./assets/js/pwa.js"></script>
 </body>
 </html>

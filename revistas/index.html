@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F5F6F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0F19" media="(prefers-color-scheme: dark)">
+<meta name="ge-root" content="../">
+<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="GenoEvidence">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Revistas · GenoEvidence</title>
+<meta name="description" content="As revistas científicas dos artigos explicados no app e as publicações mais recentes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/shell.css">
+</head>
+<body data-pagina="revistas">
+<!-- barra do topo e barra de abas: montadas pelo assets/js/shell.js -->
+<header id="appbar"></header>
+
+<main class="wrap">
+  <header class="page-head">
+    <p class="kicker">Fontes originais</p>
+    <h1>Revistas</h1>
+    <p class="sub">Onde a ciência está sendo publicada: as revistas dos artigos explicados no app e o que acabou de sair.</p>
+  </header>
+
+  <section class="sec">
+    <div class="sec-head"><h2>Revistas dos artigos explicados</h2></div>
+    <div class="jr-grid" id="doApp"><p class="loading">Carregando…</p></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><h2>Publicações recentes</h2><a class="link-more" id="verRevista" target="_blank" rel="noopener" hidden></a></div>
+    <div class="chips" id="porRevista" role="group" aria-label="Filtrar por revista"></div>
+    <ul class="list card pub" id="publicacoes"><li class="loading" style="padding:14px 18px">Carregando…</li></ul>
+    <p class="note" id="pubInfo"></p>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap">GenoEvidence · a ciência por trás das evidências · <a href="../sobre/">Sobre o app</a></div></footer>
+<nav id="tabbar"></nav>
+<script src="../assets/js/shell.js"></script>
+<script src="../assets/js/pwa.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "_como_usar": "Cada item vira um cartão na aba Artigos (e o mais recente aparece em destaque no Início). Veja docs/COMO-ADICIONAR-ARTIGO.md.",
+  "artigos": [
+    {
+      "id": "micrurus-spixii",
+      "url": "artigos/micrurus-spixii/",
+      "titulo_curto": "O veneno da cobra coral amazônica no músculo, e quanto o soro protege",
+      "titulo": "Análise histológica da miotoxicidade do veneno de Micrurus spixii (cobra coral amazônica) em músculo biventer cervicis de pintainho e sua neutralização por soro antielapídico",
+      "autores_curto": "Passos, Costa, Cantuária, Alves, Azevedo, Hyslop e Oshima-Franco",
+      "ano": 2026,
+      "resumo": "O veneno derrubou as células saudáveis do músculo de 66% para menos de 1%. O soro antielapídico protegeu, mas só em parte: melhor contra o inchaço e a morte das células.",
+      "tags": ["Toxinologia", "Histologia", "Soro antiofídico"],
+      "capa": "artigos/micrurus-spixii/imagens/mini/figura1-tipos-de-lesao.webp",
+      "capa_alt": "Corte de músculo corado em rosa visto ao microscópio",
+      "revista": {
+        "nome": "ARACÊ",
+        "cidade": "São José dos Pinhais (PR)",
+        "issn": "2358-2472",
+        "ano": 2026,
+        "volume": "8",
+        "numero": "2",
+        "doi": "10.56238/arev8n2-068",
+        "url": "https://doi.org/10.56238/arev8n2-068",
+        "site": "https://periodicos.newsciencepubl.com/arace"
+      }
+    }
+  ]
+}

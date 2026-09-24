@@ -5,14 +5,14 @@ Você não precisa mexer em código: basta copiar o modelo e preencher os textos
 
 ## 1. Copie o modelo
 
-No VS Code, na barra lateral, clique com o botão direito em `estudos/_modelo` → **Copiar**,
-cole dentro de `estudos/` e renomeie a pasta com um nome curto, sem espaços nem acentos.
-Exemplo: `estudos/veneno-cascavel/`.
+No VS Code, na barra lateral, clique com o botão direito em `artigos/_modelo` → **Copiar**,
+cole dentro de `artigos/` e renomeie a pasta com um nome curto, sem espaços nem acentos.
+Exemplo: `artigos/veneno-cascavel/`.
 
 A pasta tem:
 
 ```
-estudos/veneno-cascavel/
+artigos/veneno-cascavel/
   index.html      página (não precisa editar)
   artigo.json     todo o conteúdo do artigo  ← é aqui que você escreve
   imagens/        figuras do artigo
@@ -47,7 +47,7 @@ estudos/veneno-cascavel/
 | `cadeia` | Sequência de eventos com setas (causa → efeito). |
 | `figura` | Imagem grande, ampliável, com legenda e crédito. |
 | `galeria` | Várias imagens lado a lado, ampliáveis. |
-| `grafico` | Gráfico de barras interativo com abas (veja o exemplo em `estudos/micrurus-spixii/artigo.json`). |
+| `grafico` | Gráfico de barras interativo com abas (veja o exemplo em `artigos/micrurus-spixii/artigo.json`). |
 
 Dica: no VS Code, dentro do `artigo.json`, digite `ge-` e escolha um bloco pronto
 (`ge-texto`, `ge-figura`, `ge-passos`, `ge-cartoes`, `ge-destaque`).
@@ -58,11 +58,16 @@ Salve as figuras em `imagens/` (de preferência em `.webp`) e uma cópia menor
 (cerca de 720 px de largura) em `imagens/mini/` com o mesmo nome.
 Sempre coloque o crédito da figura no campo `credito`.
 
-## 4. Mostre o artigo na página inicial
+## 4. Mostre o artigo nas abas do app
 
-Abra `data/estudos.json` e adicione um item no começo da lista `estudos`
-(copie o item do `micrurus-spixii` e troque os dados). O campo `revista`
-faz o nome da revista aparecer no cartão e em **Revistas em destaque**.
+Abra `data/artigos.json` e adicione um item **no começo** da lista `artigos`
+(copie o item do `micrurus-spixii` e troque os dados). Com isso:
+
+- o artigo aparece na aba **Artigos**;
+- o primeiro da lista vira o **Artigo em destaque** do Início;
+- a revista aparece na aba **Revistas**, em "Revistas dos artigos explicados".
+
+O campo `capa` é a imagem do cartão (use a versão pequena, em `imagens/mini/`).
 
 ## 5. Veja como ficou e publique
 

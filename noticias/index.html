@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F5F6F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0F19" media="(prefers-color-scheme: dark)">
+<meta name="ge-root" content="../">
+<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="GenoEvidence">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Notícias · GenoEvidence</title>
+<meta name="description" content="Notícias de ciência e saúde do dia, reunidas de fontes confiáveis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/shell.css">
+</head>
+<body data-pagina="noticias">
+<!-- barra do topo e barra de abas: montadas pelo assets/js/shell.js -->
+<header id="appbar"></header>
+
+<main class="wrap">
+  <header class="page-head">
+    <p class="kicker">Atualizadas todos os dias</p>
+    <h1>Notícias</h1>
+    <p class="sub">Ciência e saúde de hoje, reunidas de fontes confiáveis. Toque em uma notícia para ler na fonte original.</p>
+  </header>
+
+  <div class="chips" id="filtros" role="group" aria-label="Filtrar notícias">
+    <button type="button" class="chip" data-f="todas" aria-pressed="true">Todas</button>
+    <button type="button" class="chip" data-f="pt" aria-pressed="false">Em português</button>
+    <button type="button" class="chip" data-f="Genética" aria-pressed="false">Genética</button>
+    <button type="button" class="chip" data-f="Câncer" aria-pressed="false">Câncer</button>
+    <button type="button" class="chip" data-f="Saúde" aria-pressed="false">Saúde</button>
+    <button type="button" class="chip" data-f="Ciência" aria-pressed="false">Ciência</button>
+  </div>
+  <ul class="list card" id="lista"><li class="loading" style="padding:14px 18px">Carregando as notícias de hoje…</li></ul>
+  <div style="text-align:center;margin-top:18px"><button type="button" class="btn ghost" id="mais" hidden>Mostrar mais notícias</button></div>
+  <p class="note" id="info"></p>
+</main>
+
+<footer class="foot"><div class="wrap">GenoEvidence · a ciência por trás das evidências · <a href="../sobre/">Sobre o app</a></div></footer>
+<nav id="tabbar"></nav>
+<script src="../assets/js/shell.js"></script>
+<script src="../assets/js/pwa.js"></script>
+</body>
+</html>

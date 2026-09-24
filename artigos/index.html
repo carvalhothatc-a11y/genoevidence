@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F5F6F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0F19" media="(prefers-color-scheme: dark)">
+<meta name="ge-root" content="../">
+<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="GenoEvidence">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Artigos · GenoEvidence</title>
+<meta name="description" content="Artigos científicos publicados, explicados em linguagem simples, com link direto para a revista.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/shell.css">
+</head>
+<body data-pagina="artigos">
+<!-- barra do topo e barra de abas: montadas pelo assets/js/shell.js -->
+<header id="appbar"></header>
+
+<main class="wrap">
+  <header class="page-head">
+    <p class="kicker" id="total">&nbsp;</p>
+    <h1>Artigos explicados</h1>
+    <p class="sub">Artigos científicos publicados, explicados em linguagem simples, com imagens, gráficos e o link direto para a revista.</p>
+  </header>
+
+  <input class="search" id="busca" type="search" placeholder="Buscar por tema, revista ou palavra…" aria-label="Buscar artigos">
+  <div class="art-grid" id="grade"><p class="loading">Carregando…</p></div>
+</main>
+
+<footer class="foot"><div class="wrap">GenoEvidence · a ciência por trás das evidências · <a href="../sobre/">Sobre o app</a></div></footer>
+<nav id="tabbar"></nav>
+<script src="../assets/js/shell.js"></script>
+<script src="../assets/js/pwa.js"></script>
+</body>
+</html>

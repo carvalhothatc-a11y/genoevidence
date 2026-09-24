@@ -118,3 +118,9 @@
   .chain li:not(:last-child)::after{content:"↓"}
   .chain{flex-direction:column;align-items:flex-start}
 }
+
+/* botão voltar (página de leitura) */
+.back-btn{flex:none;width:40px;height:40px;border-radius:10px;display:grid;place-items:center;border:1px solid var(--line2);background:var(--panel);color:var(--text);transition:background .2s}
+.back-btn:hover{background:var(--panel2)}
+.back-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.back-btn svg{width:20px;height:20px}

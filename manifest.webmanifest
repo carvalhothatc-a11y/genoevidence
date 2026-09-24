@@ -1,7 +1,7 @@
 {
   "name": "GenoEvidence",
   "short_name": "GenoEvidence",
-  "description": "A ciência por trás das evidências: estudos e artigos explicados, notícias de ciência do dia e as revistas onde tudo foi publicado.",
+  "description": "Notícias de ciência do dia, artigos científicos explicados em linguagem simples e as revistas onde foram publicados.",
   "lang": "pt-BR",
   "dir": "ltr",
   "start_url": "./",
@@ -9,8 +9,8 @@
   "id": "./",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#060A13",
-  "theme_color": "#060A13",
+  "background_color": "#F5F6F8",
+  "theme_color": "#F5F6F8",
   "categories": [
     "education",
     "medical",
@@ -40,7 +40,7 @@
     {
       "name": "Notícias de hoje",
       "short_name": "Notícias",
-      "url": "./#noticias",
+      "url": "./noticias/",
       "icons": [
         {
           "src": "icons/icon-192.png",
@@ -49,9 +49,9 @@
       ]
     },
     {
-      "name": "Artigos científicos novos",
+      "name": "Artigos explicados",
       "short_name": "Artigos",
-      "url": "./#publicacoes",
+      "url": "./artigos/",
       "icons": [
         {
           "src": "icons/icon-192.png",
@@ -60,9 +60,9 @@
       ]
     },
     {
-      "name": "Estudos explicados",
-      "short_name": "Estudos",
-      "url": "./#estudos",
+      "name": "Revistas",
+      "short_name": "Revistas",
+      "url": "./revistas/",
       "icons": [
         {
           "src": "icons/icon-192.png",

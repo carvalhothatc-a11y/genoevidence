@@ -37,8 +37,10 @@ FONTES = [
 
 # Publicações científicas recentes (Europe PMC) sobre os temas do app.
 # Busca só no título e no resumo, para vir apenas o que é realmente sobre esses temas.
+# Temas dos artigos explicados no app: ao adicionar um artigo de outro assunto, acrescente termos aqui.
 TERMOS_ARTIGOS = ["Li-Fraumeni", "TP53", "hereditary cancer", "cancer predisposition",
-                  "germline variant", "germline variants"]
+                  "germline variant", "germline variants",
+                  "snake venom", "antivenom", "coral snake", "Micrurus"]
 BUSCA_ARTIGOS = "(" + " OR ".join(f'TITLE_ABS:"{t}"' for t in TERMOS_ARTIGOS) + ")"
 
 # Temas por palavras inteiras (ou início de palavra), para "gente" não virar "gene".
@@ -127,7 +129,7 @@ def ler_artigos(agora_dt):
     fim = agora_dt.strftime("%Y-%m-%d")
     consulta = f"{BUSCA_ARTIGOS} AND FIRST_PDATE:[{inicio} TO {fim}] sort_date:y"
     url = ("https://www.ebi.ac.uk/europepmc/webservices/rest/search?"
-           + urllib.parse.urlencode({"query": consulta, "format": "json", "pageSize": "30",
+           + urllib.parse.urlencode({"query": consulta, "format": "json", "pageSize": "40",
                                      "resultType": "lite"}))
     dados = json.loads(baixar(url))
     saida = []
@@ -199,7 +201,7 @@ def main():
     SAIDA.write_text(json.dumps({
         "atualizado_em": agora,
         "noticias": unicas[:40],
-        "artigos": artigos[:24],
+        "artigos": artigos[:30],
         "fontes": [f["nome"] for f in FONTES] + ["Europe PMC"],
         "erros": erros,
     }, ensure_ascii=False, indent=1), encoding="utf-8")

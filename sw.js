@@ -3,28 +3,30 @@
      e guarda uma cópia; sem internet, usa a cópia guardada.
    - Imagens, ícones e fontes: usa a cópia guardada (carrega rápido) e atualiza em segundo plano.
    Ao mudar a lista BASICO, aumente a VERSAO. */
-const VERSAO = "genoevidence-v3";
+const VERSAO = "genoevidence-v4";
 const BASICO = [
   "./",
   "index.html",
+  "noticias/",
+  "artigos/",
+  "revistas/",
+  "sobre/",
   "manifest.webmanifest",
+  "assets/css/shell.css",
   "assets/css/base.css",
-  "assets/css/inicio.css",
   "assets/css/artigo.css",
+  "assets/js/shell.js",
   "assets/js/app.js",
   "assets/js/dna.js",
-  "assets/js/inicio.js",
   "assets/js/artigo.js",
   "assets/js/pwa.js",
-  "data/estudos.json",
+  "data/artigos.json",
   "data/noticias.json",
   "icons/icon-192.png",
   "icons/icon-512.png",
   "icons/apple-touch-icon.png",
-  "estudos/r337h/",
-  "estudos/r337h/r337h.js",
-  "estudos/micrurus-spixii/",
-  "estudos/micrurus-spixii/artigo.json"
+  "artigos/micrurus-spixii/",
+  "artigos/micrurus-spixii/artigo.json"
 ];
 const CDN = [
   "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js",

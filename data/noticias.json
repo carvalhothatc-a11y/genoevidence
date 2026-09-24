@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-24T17:09:08.714347+00:00",
+ "atualizado_em": "2026-09-24T17:36:27.630671+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -70,26 +70,6 @@
    "idioma": "pt",
    "data": "2026-09-24T17:07:57.775063+00:00",
    "tema": "Ciência"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Células de defesa raras podem ajudar a explicar a longevidade de supercentenários",
-   "resumo": "Pesquisa realizada por cientistas japoneses mostram que, em pessoas com 110 anos ou mais, o sistema imunológico continua a se adaptar",
-   "url": "https://jornal.usp.br/radio-usp/celulas-de-defesa-raras-podem-ajudar-a-explicar-a-longevidade-de-supercentenarios/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-24T12:09:14+00:00",
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Novos compostos eliminam a resistência do parasita da malária",
-   "resumo": "Testados em laboratório e em modelo animal, compostos foram sintetizados a partir de substâncias já adotadas no tratamento da doença",
-   "url": "https://jornal.usp.br/ciencias/novos-compostos-eliminam-a-resistencia-do-parasita-da-malaria/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-24T11:46:03+00:00",
-   "tema": "Saúde"
   },
   {
    "tipo": "noticia",
@@ -200,16 +180,6 @@
    "idioma": "en",
    "data": "2026-09-24T00:00:00+00:00",
    "tema": "Ciência"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Estudo da USP aponta desafios na elaboração de política de saúde para migrantes e refugiados",
-   "resumo": "Pesquisa da Faculdade de Saúde Pública mostra limitações na participação social, na transparência e na continuidade do processo de formulação da política nacional",
-   "url": "https://jornal.usp.br/radio-usp/estudo-da-usp-aponta-desafios-na-elaboracao-de-politica-de-saude-para-migrantes-e-refugiados/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-23T17:47:37+00:00",
-   "tema": "Saúde"
   },
   {
    "tipo": "noticia",
@@ -400,6 +370,36 @@
    "idioma": "en",
    "data": "2026-09-18T00:00:00+00:00",
    "tema": "Câncer"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Scientists find a natural gut compound that helps heal the intestine",
+   "resumo": "A natural compound produced by gut bacteria after digesting foods such as pomegranates, walnuts, and berries may help repair and protect the intestinal lining. The discovery reveals a surprising beneficial side of an inflammatory pathway…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260916232529.htm",
+   "fonte": "ScienceDaily · Genes",
+   "idioma": "en",
+   "data": "2026-09-17T11:13:50+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Textbooks may have misdrawn this basic brain structure for 100 years",
+   "resumo": "Scientists discovered that brain-cell axons may not be smooth tubes as textbooks have shown for more than a century, but instead naturally resemble strings of tiny pearls. Those pearl-like structures can change with neural activity and may…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260915232138.htm",
+   "fonte": "ScienceDaily · Genes",
+   "idioma": "en",
+   "data": "2026-09-17T10:54:28+00:00",
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "New mesothelioma drug turns cancer’s own defenses against it",
+   "resumo": "Scientists are testing a counterintuitive way to fight mesothelioma, an aggressive asbestos-linked cancer with few effective treatments. A new experimental mesothelioma drug kills cancer cells by disabling PRX3, an antioxidant defense that…",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260915232136.htm",
+   "fonte": "ScienceDaily · Genes",
+   "idioma": "en",
+   "data": "2026-09-17T05:11:51+00:00",
+   "tema": "Câncer"
   }
  ],
  "artigos": [
@@ -438,6 +438,17 @@
   },
   {
    "tipo": "artigo",
+   "titulo": "Large vessel occlusion stroke in venom-induced consumption coagulopathy after viper envenomation.",
+   "autores": "Aryan A, Goyal D, Alam S, Kumar M.",
+   "revista": "BMJ Case Rep",
+   "data": "2026-09-21T03:00:00+00:00",
+   "doi": "10.1136/bcr-2026-273987",
+   "url": "https://doi.org/10.1136/bcr-2026-273987",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
    "titulo": "CD36 links fatty acid metabolism to tumor immune microenvironment remodeling in breast cancer.",
    "autores": "Wu X, Ren L, Peng L, Tan X, Yan W, Qi X, Wang Y, Zhang Y.",
    "revista": "Transl Oncol",
@@ -457,6 +468,17 @@
    "url": "https://doi.org/10.1016/j.tranon.2026.103044",
    "acesso_aberto": false,
    "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Adjunctive Varespladib after antivenom administration for snakebite: A phase II randomized clinical trial.",
+   "autores": "Gerardo CJ, Bhalla A, Mohanty CR, Sahu BK, Kumar S, Agrawal S, Ayyan S M, Shu E, Deuson T, Kumar R M, Beatty NL…",
+   "revista": "PLoS Negl Trop Dis",
+   "data": "2026-09-21T03:00:00+00:00",
+   "doi": "10.1371/journal.pntd.0014736",
+   "url": "https://doi.org/10.1371/journal.pntd.0014736",
+   "acesso_aberto": false,
+   "tema": "Ciência"
   },
   {
    "tipo": "artigo",
@@ -622,6 +644,72 @@
    "url": "https://doi.org/10.1038/s41467-026-77320-7",
    "acesso_aberto": true,
    "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "LncRNA NR2F1-AS1 serves as a diagnostic biomarker for diabetic peripheral neuropathy and promotes disease progression by regulating miR-150-5p.",
+   "autores": "Zhao Y, Rong S, Ren X, Zhang G, Li X.",
+   "revista": "Mol Cell Probes",
+   "data": "2026-09-18T03:00:00+00:00",
+   "doi": "10.1016/j.mcp.2026.102088",
+   "url": "https://doi.org/10.1016/j.mcp.2026.102088",
+   "acesso_aberto": false,
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Germline cancer predisposition gene mutations and upgrade rate to breast cancer among patients with pleomorphic and florid lobular carcinoma in situ.",
+   "autores": "Ijaz K, Arun B, Weber DM, Bevers TB, Yi M, Hunt KK, Middleton LP.",
+   "revista": "Hum Pathol",
+   "data": "2026-09-18T03:00:00+00:00",
+   "doi": "10.1016/j.humpath.2026.106262",
+   "url": "https://doi.org/10.1016/j.humpath.2026.106262",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "TP53/p53 alterations in thyroid cancer: dedifferentiation, radioiodine refractoriness and risk stratification.",
+   "autores": "Shi Y, Huang J, Dong W, Lv C, Guan Y, Liu P, Zhao G, Li Z, Zhang P, Zhang H.",
+   "revista": "Crit Rev Oncol Hematol",
+   "data": "2026-09-18T03:00:00+00:00",
+   "doi": "10.1016/j.critrevonc.2026.105601",
+   "url": "https://doi.org/10.1016/j.critrevonc.2026.105601",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Precision prevention and early detection: framework for a new clinical cancer control pathway.",
+   "autores": "Rebbeck TR.",
+   "revista": "Lancet",
+   "data": "2026-09-18T03:00:00+00:00",
+   "doi": "10.1016/s0140-6736(26)01669-7",
+   "url": "https://doi.org/10.1016/s0140-6736(26)01669-7",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "An Accessible Approach to Molecular and Biomarker Testing for Risk Stratification in Oral Cavity Squamous Cell Carcinoma.",
+   "autores": "Afkhami M, Haghighi N, Ma H, Reyes A, Fei F, Dyer T, Telatar M, Arias-Romero J, Haghighi Y, Mehrazma A, Massarelli E…",
+   "revista": "Head Neck Pathol",
+   "data": "2026-09-18T03:00:00+00:00",
+   "doi": "10.1007/s12105-026-01968-2",
+   "url": "https://doi.org/10.1007/s12105-026-01968-2",
+   "acesso_aberto": true,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "TP53-Altered Aggressive Large B-Cell Lymphoma (LBCL) Outcomes by Treatment Modality: A Multicenter Cohort From 14 US Centers.",
+   "autores": "Duarte C, Bosma GN, Abbott D, Jean-Louis G, Kabat M, Stapor D, Hill B, Musoke N, Gorzewski AM, Selvakumar T, Trabolsi…",
+   "revista": "Eur J Haematol",
+   "data": "2026-09-18T03:00:00+00:00",
+   "doi": "10.1111/ejh.70330",
+   "url": "https://doi.org/10.1111/ejh.70330",
+   "acesso_aberto": false,
+   "tema": "Câncer"
   }
  ],
  "fontes": [
@@ -633,5 +721,7 @@
   "ScienceDaily · Câncer",
   "Europe PMC"
  ],
- "erros": []
+ "erros": [
+  "Jornal da USP: The read operation timed out"
+ ]
 }
