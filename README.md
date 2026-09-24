@@ -12,10 +12,19 @@ Sistema visual e interativo que reúne as evidências sobre a variante **TP53 R3
 - **Lacuna científica, método e resultados:** ClinVar, gnomAD, DynaMut2 e TP53 Database, com gráficos interativos.
 - **Discussão, conclusão, galeria de imagens, glossário e referências** (estilo Vancouver).
 
+## Instalar como aplicativo
+
+O GenoEvidence pode ser instalado como app e funciona sem internet depois da primeira visita:
+
+- **Android (Chrome):** abra o site e toque em **Instalar como app** (ou menu ⋮ → Instalar app).
+- **iPhone/iPad (Safari):** toque em **Compartilhar** → **Adicionar à Tela de Início**.
+- **Computador (Chrome ou Edge):** clique em **Instalar como app** ou no ícone de instalação da barra de endereço.
+
 ## Estrutura
 
 ```
 index.html   página completa do site
+manifest.webmanifest, sw.js, icons/   arquivos do aplicativo (instalação e modo offline)
 imagens/     capturas de tela das plataformas (WebP)
 imagens/mini miniaturas leves usadas nos cartões e na galeria
 ```

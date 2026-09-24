@@ -4,6 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#060A13">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="GenoEvidence">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="application-name" content="GenoEvidence">
+<style>
+.install-btn{display:inline-flex;align-items:center;gap:8px}
+.install-btn svg{width:16px;height:16px;flex:none}
+.drawer-install{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:10px;padding:12px 14px;border-radius:10px;background:var(--text);color:var(--ink);font:600 14px/1 var(--sans)}
+.drawer-install:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.drawer-install:active{transform:scale(.97)}
+.install-help{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:210;width:min(360px,calc(100vw - 32px));box-sizing:border-box;padding:18px;border-radius:16px;background:#131E35;border:1px solid var(--line2);box-shadow:0 20px 50px rgba(0,0,0,.55);color:var(--text);font:400 15px/1.5 var(--sans)}
+.install-help b.t{display:block;font:600 16px/1.2 var(--display);margin-bottom:8px}
+.install-help ol{margin:0 0 12px;padding-left:20px;color:#D7DEEB}
+.install-help button{all:unset;cursor:pointer;display:block;width:100%;box-sizing:border-box;text-align:center;padding:11px;border-radius:10px;background:var(--text);color:var(--ink);font:600 14px/1 var(--sans)}
+@media (display-mode:standalone){.install-btn,.drawer-install{display:none!important}}
+</style>
+
 <meta property="og:title" content="GenoEvidence">
 <meta property="og:description" content="Sistema visual interativo sobre a variante TP53 R337H e a Síndrome de Li-Fraumeni.">
 <style>html{color-scheme:dark}body{margin:0}img{max-width:100%}</style>
@@ -1851,6 +1872,25 @@ const REFS=[
   document.addEventListener('click',e=>{const a=e.target.closest('a.cite');if(!a)return;const li=document.querySelector(a.getAttribute('href'));if(!li)return;e.preventDefault();inp.value='';inp.dispatchEvent(new Event('input'));
     li.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});li.classList.add('flash');setTimeout(()=>li.classList.remove('flash'),1600);});
 })();
+})();
+</script>
+<script>
+/* aplicativo: registra o modo offline e mostra o botão "Instalar como app" */
+(function(){
+  if('serviceWorker' in navigator && location.protocol==='https:'){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}
+  var standalone=matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;if(standalone)return;
+  var ua=navigator.userAgent,ios=/iphone|ipad|ipod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1),deferred=null;
+  var row=document.querySelector('.cta-row'),foot=document.querySelector('.drawer-foot');
+  function mk(cls){var b=document.createElement('button');b.type='button';b.className=cls;b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Instalar como app</span>';b.hidden=true;b.addEventListener('click',install);return b;}
+  var b1=mk('cta ghost install-btn'),b2=mk('drawer-install');if(row)row.appendChild(b1);if(foot)foot.parentNode.insertBefore(b2,foot);
+  var help=document.createElement('div');help.className='install-help';help.hidden=true;help.setAttribute('role','dialog');help.setAttribute('aria-label','Como instalar');
+  help.innerHTML='<b class="t">Instalar no iPhone ou iPad</b><ol><li>No Safari, toque em <b>Compartilhar</b> (quadrado com seta para cima).</li><li>Escolha <b>Adicionar à Tela de Início</b>.</li><li>Toque em <b>Adicionar</b>.</li></ol><button type="button">Entendi</button>';
+  document.body.appendChild(help);help.querySelector('button').addEventListener('click',function(){help.hidden=true;});
+  function show(v){b1.hidden=b2.hidden=!v;}
+  addEventListener('beforeinstallprompt',function(e){e.preventDefault();deferred=e;show(true);});
+  addEventListener('appinstalled',function(){deferred=null;show(false);});
+  if(ios)show(true);
+  function install(){if(deferred){deferred.prompt();deferred.userChoice.then(function(r){if(r.outcome==='accepted')show(false);deferred=null;});}else if(ios){help.hidden=false;help.querySelector('button').focus();}}
 })();
 </script>
 </body>
