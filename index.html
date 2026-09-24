@@ -618,6 +618,20 @@ main,footer,.hero{position:relative;z-index:1}
 @media (max-width:600px){.waffle{grid-template-columns:repeat(15,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){.waffle i{animation:none}}
 
+
+/* ---- v11: seta da mutação ---- */
+.arrow-mut{gap:8px;max-width:200px;margin-inline:auto}
+.arrow-mut .am-dna{font:500 12px/1.2 var(--mono);color:var(--amber);letter-spacing:.04em}
+.arrow-mut .am-prot{font:400 13.5px/1.45 var(--sans);color:var(--muted)}
+.arrow-mut .am-prot b{font-weight:600}
+.arrow-mut svg.am-v{display:none}
+@media (max-width:600px){
+  .arrow-mut{max-width:300px;padding-block:4px}
+  .arrow-mut svg{transform:none!important}
+  .arrow-mut svg.am-h{display:none}
+  .arrow-mut svg.am-v{display:block;width:24px;height:48px}
+}
+
 /* responsive */
 @media (max-width:980px){
   .hero-in{grid-template-columns:1fr;padding-block:64px 48px}
@@ -840,8 +854,10 @@ button.cta{border:0;cursor:pointer;-webkit-appearance:none;appearance:none;font:
           <div class="aa" style="color:#9DB6FF">Arginina (R)<small>peça com carga positiva</small></div>
         </div>
         <div class="arrow-mut">
-          <svg viewBox="0 0 84 24" aria-hidden="true"><path d="M2 12h74" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M70 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-          G vira A
+          <span class="am-dna">no DNA: G → A</span>
+          <svg class="am-h" viewBox="0 0 84 24" aria-hidden="true"><path d="M2 12h74" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M70 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          <svg class="am-v" viewBox="0 0 24 48" aria-hidden="true"><path d="M12 2v40" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M5 36l7 8 7-8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="am-prot">na proteína: <b style="color:#9DB6FF">Arginina (R)</b> vira <b style="color:var(--his)">Histidina (H)</b></span>
         </div>
         <div class="codon">
           <span class="eyebrow">Mutante (R337H)</span>
