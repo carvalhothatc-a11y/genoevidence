@@ -142,7 +142,7 @@
       const hoje = new Date(), dia = Math.floor((hoje - hoje.getTimezoneOffset() * 60000) / 86400000);
       const f = fs[dia % fs.length];
       $("#fraseTexto").textContent = "“" + f.texto + "”";
-      $("#fraseAutor").textContent = "— " + f.autor + (f.fonte ? " · " + f.fonte : "");
+      $("#fraseAutor").innerHTML = "— " + esc(f.autor) + (f.fonte ? '<span class="fonte"> · ' + esc(f.fonte) + "</span>" : "");
       $("#fraseDia").hidden = false;
       entrar([$("#fraseDia")]);
       // no celular, o DNA desce para ficar ao lado do título, logo abaixo da frase

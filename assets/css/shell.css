@@ -266,9 +266,10 @@ html.sem-rolagem{overflow:hidden}
 
 /* ---------- frase do dia e pesquisa do Início ---------- */
 .hero-txt{position:relative;z-index:2}
-.frase-dia{margin:0 0 14px;padding-left:12px;border-left:3px solid var(--violet);max-width:46ch}
-.frase-dia blockquote{margin:0;font:italic 500 15px/1.45 var(--sans);color:var(--ink2)}
-.frase-dia figcaption{margin-top:5px;font:500 11.5px/1.35 var(--mono);color:var(--violet)}
+.frase-dia{margin:0 0 10px;padding-left:10px;border-left:2px solid var(--line);max-width:52ch;opacity:.85}
+.frase-dia blockquote{margin:0;font:italic 400 13px/1.45 var(--sans);color:var(--muted)}
+.frase-dia figcaption{margin-top:3px;font:400 10.5px/1.3 var(--mono);color:#98A0B3}
+.frase-dia .fonte{opacity:.8}
 .busca-home{position:relative;margin-top:18px;max-width:480px}
 .busca-home .search{margin:0;padding-left:42px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B7590' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.5-3.5'/%3E%3C/svg%3E") 14px center/18px no-repeat;box-shadow:0 4px 16px rgba(16,22,38,.06)}
 .busca-res{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:45;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 36px rgba(16,22,38,.14);padding:6px;max-height:60vh;overflow:auto}
@@ -317,9 +318,10 @@ html.sem-rolagem{overflow:hidden}
 @media (max-width:600px){
   /* no celular, o DNA fica à direita da frase, no espaço em branco */
   .hero-home{display:block;position:relative;padding-top:4px}
-  .hero-3d{position:absolute;top:var(--dna-top,0px);right:calc(var(--gutter) * -1);width:42%;height:172px}
+  .hero-3d{position:absolute;top:var(--dna-top,0px);right:calc(var(--gutter) * -1);width:42%;height:150px}
   .hero-txt .kicker,.hero-txt h1{max-width:60%;position:relative}
-  .frase-dia blockquote{font-size:13.5px}
+  .frase-dia blockquote{font-size:12px}
+  .frase-dia .fonte{display:none}
   .busca-home{max-width:none}
   .hero-txt h1{font-size:clamp(28px,8.4vw,36px)}
   .hero-txt .sub{margin-top:24px;font-size:16px;position:relative}
