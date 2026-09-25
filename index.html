@@ -40,7 +40,7 @@
 <link rel="stylesheet" href="./assets/css/shell.css">
 </head>
 <body data-pagina="inicio">
-<!-- tela de abertura: o DNA do Início girando por 1 segundo, só na primeira entrada (assets/js/hero3d.js) -->
+<!-- tela de abertura: o DNA do Início girando por 2 segundos, só na primeira entrada (assets/js/hero3d.js) -->
 <div class="splash" id="splash" aria-hidden="true">
   <canvas id="dnaSplash"></canvas>
   <p class="logo splash-marca"><i></i><b>GenoEvidence</b></p>
@@ -49,7 +49,7 @@
   // mostra a abertura uma vez por visita; nas voltas ao Início ela não aparece de novo
   try { if (sessionStorage.getItem("ge-abertura")) document.getElementById("splash").remove(); else sessionStorage.setItem("ge-abertura", "1"); } catch (e) {}
   // segurança: se algo não carregar, a abertura some sozinha
-  setTimeout(function () { var s = document.getElementById("splash"); if (s) s.remove(); }, 4000);
+  setTimeout(function () { var s = document.getElementById("splash"); if (s) s.remove(); }, 5000);
 </script>
 <!-- barra do topo e barra de abas: montadas pelo assets/js/shell.js -->
 <header id="appbar"></header>
