@@ -90,7 +90,13 @@ PESO_FONTE_NOME = {"Nature": 1, "New Scientist": 1, "Scientific American": 1}
 TOTAL_PT, TOTAL_EN, POR_FONTE_PT, POR_FONTE_EN = 8, 7, 3, 2
 
 
-def relevancia(n, agora_dt):
+def chave_titulo(n):
+    import unicodedata
+    t = unicodedata.normalize("NFD", n.get("titulo_original") or n["titulo"]).encode("ascii", "ignore").decode().lower()
+    return " ".join(re.findall(r"[a-z0-9]+", t))
+
+
+def relevancia(n, agora_dt, mostradas=None):
     texto = (n["titulo"] + " " + n.get("resumo", "")).lower()
     pontos = sum(peso for padrao, peso in INTERESSE if re.search(padrao, texto))
     pontos += PESO_FONTE.get(n["idioma"], 0) + PESO_FONTE_NOME.get(n["fonte"], 0)
@@ -105,13 +111,21 @@ def relevancia(n, agora_dt):
         pontos -= 4
     if not n.get("resumo"):
         pontos -= 1
+    # notícia que já apareceu em dias anteriores (mesmo republicada por outra fonte) sai do topo
+    visto = (mostradas or {}).get(chave_titulo(n))
+    if visto:
+        try:
+            if (agora_dt - datetime.fromisoformat(visto)).total_seconds() > 18 * 3600:
+                pontos -= 6
+        except ValueError:
+            pass
     return pontos
 
 
-def selecionar(noticias, agora_dt):
+def selecionar(noticias, agora_dt, mostradas=None):
     """Escolhe as mais relevantes: 8 de fontes brasileiras e 7 internacionais, sem repetir muito a mesma fonte."""
     for n in noticias:
-        n["relevancia"] = relevancia(n, agora_dt)
+        n["relevancia"] = relevancia(n, agora_dt, mostradas)
     ordem = sorted(noticias, key=lambda n: (n["relevancia"], n["data"]), reverse=True)
     escolhidas = []
     palavras = lambda n: set(re.findall(r"[a-zà-ú0-9]{5,}", (n.get("titulo_original", n["titulo"]) + " " + n.get("resumo_original", n.get("resumo", ""))).lower()))
@@ -348,7 +362,15 @@ def main():
         artigos = anterior["artigos"]
 
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
-    unicas, artigos = selecionar(unicas, agora_dt), artigos[:30]
+    # memória das notícias já mostradas (últimos 10 dias), para o topo mudar todo dia
+    mostradas = dict(anterior.get("mostradas", {}))
+    for n in anterior.get("noticias", []):
+        mostradas.setdefault(chave_titulo(n), anterior.get("atualizado_em", agora))
+    unicas, artigos = selecionar(unicas, agora_dt, mostradas), artigos[:30]
+    for n in unicas:
+        mostradas.setdefault(chave_titulo(n), agora)
+    limite = (agora_dt - timedelta(days=10)).isoformat()
+    mostradas = {k: v for k, v in mostradas.items() if v >= limite}
     traduzir(unicas, artigos)
     SAIDA.write_text(json.dumps({
         "atualizado_em": agora,
@@ -356,6 +378,7 @@ def main():
         "artigos": artigos,
         "fontes": [f["nome"] for f in FONTES] + ["Europe PMC"],
         "erros": erros,
+        "mostradas": mostradas,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Pronto: {len(unicas)} notícias e {len(artigos)} artigos em {SAIDA.relative_to(RAIZ)}")
 

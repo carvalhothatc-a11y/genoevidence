@@ -1,10 +1,16 @@
 # Atualiza as notícias e os artigos científicos do dia (data/noticias.json).
-# Roda todo dia às 7h (horário de Brasília) e também pelo botão "Run workflow" na aba Actions.
+# Deixa as notícias prontas todo dia até as 7h (horário de Brasília); também roda pelo botão "Run workflow" na aba Actions.
 name: Notícias do dia
 
 on:
   schedule:
-    - cron: "0 10 * * *"  # 10:00 UTC = 07:00 em Brasília
+    # Várias tentativas de manhã, fora do minuto cheio: o GitHub às vezes atrasa agendamentos
+    # (em 25/09/2026 o das 7h só rodou às 11h57). Quem rodar primeiro atualiza; as outras só
+    # gravam se aparecer notícia nova.
+    - cron: "7 9 * * *"    # 06:07 em Brasília
+    - cron: "37 9 * * *"   # 06:37
+    - cron: "7 10 * * *"   # 07:07
+    - cron: "37 10 * * *"  # 07:37
   workflow_dispatch:
 
 permissions:
@@ -33,5 +39,6 @@ jobs:
             echo "Nada novo hoje."
           else
             git commit -m "Notícias do dia: $(date -u +%Y-%m-%d)"
+            git pull --rebase
             git push
           fi
