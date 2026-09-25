@@ -1,7 +1,7 @@
 /* GenoEvidence · DNA em 3D
    Dupla hélice girando devagar, com um “degrau” em destaque (a mutação) que pulsa.
    Usado em dois lugares do Início:
-   - a tela de abertura (#splash), que aparece por meio segundo quando a pessoa entra no app;
+   - a tela de abertura (#splash), que aparece por 1 segundo quando a pessoa entra no app;
    - a abertura da página (#dna3d), ao lado do título.
    Se o 3D não estiver disponível, a página segue normal. */
 (function () {
@@ -102,7 +102,7 @@
     };
   }
 
-  // ---------- tela de abertura: o DNA aparece, gira meio segundo e some ----------
+  // ---------- tela de abertura: o DNA aparece, gira 1 segundo e some ----------
   const splash = document.getElementById("splash");
   if (splash) {
     let saiu = false;
@@ -113,10 +113,10 @@
     };
     const dnaSplash = criarDNA(document.getElementById("dnaSplash"), {
       seguirMouse: false, velocidade: 1.1,
-      aoDesenhar: () => setTimeout(sair, 500)   // meio segundo com o DNA girando
+      aoDesenhar: () => setTimeout(sair, 1000)  // 1 segundo com o DNA girando
     });
-    if (!dnaSplash) setTimeout(sair, 500);
-    setTimeout(sair, 3000);                      // nunca prende a pessoa, mesmo se a internet estiver lenta
+    if (!dnaSplash) setTimeout(sair, 1000);
+    setTimeout(sair, 3500);                      // nunca prende a pessoa, mesmo se a internet estiver lenta
   }
 
   // ---------- DNA ao lado do título ----------

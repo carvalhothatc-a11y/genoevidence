@@ -18,6 +18,21 @@
   --maxw:1040px; --gutter:clamp(16px,4vw,32px); --tabbar:64px;
 }
 @view-transition{navigation:auto}
+/* ---------- troca de aba: página virando ----------
+   A barra do topo e a barra de abas ficam paradas; só o conteúdo vira, como a folha de um livro. */
+.appbar{view-transition-name:barra-topo}
+.tabbar{view-transition-name:barra-abas}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.6s;animation-timing-function:cubic-bezier(.45,.05,.25,1);mix-blend-mode:normal;backface-visibility:hidden}
+/* avançar (padrão): a página atual vira para a esquerda e revela a próxima por baixo */
+::view-transition-old(root){z-index:2;transform-origin:left center;animation-name:folha-vai}
+::view-transition-new(root){z-index:1;animation-name:por-baixo}
+/* voltar: a folha anterior volta por cima */
+html:active-view-transition-type(voltar)::view-transition-new(root){z-index:2;transform-origin:left center;animation-name:folha-volta}
+html:active-view-transition-type(voltar)::view-transition-old(root){z-index:1;animation-name:por-baixo-sai}
+@keyframes folha-vai{from{transform:perspective(1800px) rotateY(0);filter:brightness(1)}to{transform:perspective(1800px) rotateY(-100deg);filter:brightness(.8)}}
+@keyframes folha-volta{from{transform:perspective(1800px) rotateY(-100deg);filter:brightness(.8)}to{transform:perspective(1800px) rotateY(0);filter:brightness(1)}}
+@keyframes por-baixo{from{filter:brightness(.8)}to{filter:brightness(1)}}
+@keyframes por-baixo-sai{from{filter:brightness(1)}to{filter:brightness(.8)}}
 
 *{box-sizing:border-box}
 html{background:var(--bg);-webkit-text-size-adjust:100%}
@@ -244,7 +259,15 @@ footer.foot a{color:var(--ink2)}
 .gv-item i{flex:none;width:9px;height:9px;border-radius:50%;background:var(--c)}
 .gv-item span{flex:1}
 .gv-item em{font:500 12px/1 var(--mono);font-style:normal;color:var(--muted)}
-.gv-item[hidden],.gv-grupo[hidden]{display:none}
+.gv-item[hidden],.gv-grupo[hidden],.gv-ramo[hidden],.gv-sub[hidden]{display:none}
+.gv-abre{width:100%;border:0;background:none;cursor:pointer;text-align:left}
+.gv-seta{flex:none;font:400 20px/1 var(--sans);color:var(--muted);transition:transform .2s}
+.gv-abre[aria-expanded="true"]{background:color-mix(in srgb,var(--c) 9%,var(--surface))}
+.gv-abre[aria-expanded="true"] .gv-seta{transform:rotate(90deg);color:var(--c)}
+.gv-sub{margin:2px 0 6px 14px;padding-left:10px;border-left:2px solid color-mix(in srgb,var(--c) 45%,var(--line));animation:abreRamo .22s ease}
+.gv-estudo{font-size:13.5px;line-height:1.35;padding:8px 10px;color:var(--ink2)}
+.gv-todos{font:600 13px/1 var(--sans);color:var(--c);padding:9px 10px}
+@keyframes abreRamo{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 .gaveta-vazio{color:var(--muted);font-size:14px;padding:6px}
 html.sem-rolagem{overflow:hidden}
 

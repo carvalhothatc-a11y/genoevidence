@@ -84,7 +84,7 @@ INTERESSE = [
 ]
 EVITAR = r"\b(crossword|quiz|podcast|daily briefing|book review|resenha|obituar\w*|horóscopo|sponsored|patrocinado)\b"
 # avisos institucionais (eventos, inscrições, painéis) não são notícia de ciência para o leitor
-INSTITUCIONAL = r"\b(participa|inscriç\w*|seminário\w*|congresso\w*|webinar\w*|edita(l|is)|painel|eleiç\w*|posse|homenage\w*|premiaç\w*)\b"
+INSTITUCIONAL = r"\b(participa|inscriç\w*|seminário\w*|congresso\w*|webinar\w*|workshop\w*|palestra\w*|chamada\w*|reunirá|edição impressa|nova edição|edita(l|is)|painel|eleiç\w*|eleic\w*|posse|homenage\w*|premiaç\w*)\b"
 PESO_FONTE = {"pt": 4}
 PESO_FONTE_NOME = {"Nature": 1, "New Scientist": 1, "Scientific American": 1}
 TOTAL_PT, TOTAL_EN, POR_FONTE_PT, POR_FONTE_EN = 8, 7, 3, 2
@@ -101,7 +101,7 @@ def relevancia(n, agora_dt):
     pontos += 3 if horas < 24 else 2 if horas < 48 else 1 if horas < 72 else -3 if horas > 24 * 7 else 0
     if re.search(EVITAR, texto):
         pontos -= 5
-    if re.search(INSTITUCIONAL, n["titulo"].lower()):
+    if re.search(INSTITUCIONAL, (n["titulo"] + " " + n.get("resumo", "")[:90]).lower()):
         pontos -= 4
     if not n.get("resumo"):
         pontos -= 1

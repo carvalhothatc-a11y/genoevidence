@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="ge-root" content="../">
+<script>
+  /* troca de aba com efeito de página virando: indo para a direita (Início → Notícias → Temas → Revistas)
+     a folha vira para a esquerda; voltando, a folha anterior volta por cima (navegadores com View Transitions) */
+  (function () {
+    function aba(u) {
+      try { var p = new URL(u).pathname; } catch (e) { return -1; }
+      if (/\/noticias\/(index\.html)?$/.test(p)) return 1;
+      if (/\/artigos\/(index\.html)?$/.test(p)) return 2;
+      if (/\/revistas\/(index\.html)?$/.test(p)) return 3;
+      if (/\/(sobre|r337h|artigos\/[^/]+)\//.test(p)) return 9;
+      return 0;
+    }
+    addEventListener("pagereveal", function (e) {
+      if (!e.viewTransition || !window.navigation || !navigation.activation || !navigation.activation.from) return;
+      var de = aba(navigation.activation.from.url), para = aba(navigation.activation.entry.url);
+      e.viewTransition.types.add(para < de ? "voltar" : "avancar");
+    });
+  })();
+</script>
 <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">

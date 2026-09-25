@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="ge-root" content="./">
+<script>
+  /* troca de aba com efeito de página virando: indo para a direita (Início → Notícias → Temas → Revistas)
+     a folha vira para a esquerda; voltando, a folha anterior volta por cima (navegadores com View Transitions) */
+  (function () {
+    function aba(u) {
+      try { var p = new URL(u).pathname; } catch (e) { return -1; }
+      if (/\/noticias\/(index\.html)?$/.test(p)) return 1;
+      if (/\/artigos\/(index\.html)?$/.test(p)) return 2;
+      if (/\/revistas\/(index\.html)?$/.test(p)) return 3;
+      if (/\/(sobre|r337h|artigos\/[^/]+)\//.test(p)) return 9;
+      return 0;
+    }
+    addEventListener("pagereveal", function (e) {
+      if (!e.viewTransition || !window.navigation || !navigation.activation || !navigation.activation.from) return;
+      var de = aba(navigation.activation.from.url), para = aba(navigation.activation.entry.url);
+      e.viewTransition.types.add(para < de ? "voltar" : "avancar");
+    });
+  })();
+</script>
 <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
@@ -21,7 +40,7 @@
 <link rel="stylesheet" href="./assets/css/shell.css">
 </head>
 <body data-pagina="inicio">
-<!-- tela de abertura: o DNA do Início girando por meio segundo, só na primeira entrada (assets/js/hero3d.js) -->
+<!-- tela de abertura: o DNA do Início girando por 1 segundo, só na primeira entrada (assets/js/hero3d.js) -->
 <div class="splash" id="splash" aria-hidden="true">
   <canvas id="dnaSplash"></canvas>
   <p class="logo splash-marca"><i></i><b>GenoEvidence</b></p>
@@ -30,7 +49,7 @@
   // mostra a abertura uma vez por visita; nas voltas ao Início ela não aparece de novo
   try { if (sessionStorage.getItem("ge-abertura")) document.getElementById("splash").remove(); else sessionStorage.setItem("ge-abertura", "1"); } catch (e) {}
   // segurança: se algo não carregar, a abertura some sozinha
-  setTimeout(function () { var s = document.getElementById("splash"); if (s) s.remove(); }, 3500);
+  setTimeout(function () { var s = document.getElementById("splash"); if (s) s.remove(); }, 4000);
 </script>
 <!-- barra do topo e barra de abas: montadas pelo assets/js/shell.js -->
 <header id="appbar"></header>

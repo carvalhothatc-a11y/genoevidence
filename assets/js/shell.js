@@ -56,13 +56,19 @@
       { nome: "Notícias da ciência", href: RAIZ + "noticias/", extra: "hoje" }, { nome: "Temas", href: RAIZ + "artigos/", extra: "artigos estudos" },
       { nome: "Revistas", href: RAIZ + "revistas/", extra: "publicações" }, { nome: "Estudo em andamento: R337H", href: RAIZ + "r337h/", extra: "tp53 li-fraumeni dna" },
       { nome: "Sobre o app", href: RAIZ + "sobre/", extra: "instalar" }];
+    // tema ou pesquisadora: ao tocar, abre uma ramificação com os estudos dela(e)
+    const ramos = (titulo, itens) => itens.length ? '<div class="gv-grupo"><p class="gv-titulo">' + esc(titulo) + "</p>" + itens.map(i =>
+      '<div class="gv-ramo" data-busca="' + esc((i.nome + " " + (i.extra || "")).toLowerCase()) + '" style="--c:' + esc(i.cor) + '">' +
+      '<button type="button" class="gv-item gv-abre" aria-expanded="false"><i></i><span>' + esc(i.nome) + "</span><em>" + i.estudos.length + '</em><b class="gv-seta" aria-hidden="true">›</b></button>' +
+      '<div class="gv-sub" hidden>' + i.estudos.map(a => '<a class="gv-item gv-estudo" href="' + esc(RAIZ + a.url) + '" data-busca="' +
+        esc([a.titulo_curto, a.titulo, a.titulo_pt, a.resumo, (a.tags || []).join(" "), (a.revista || {}).nome, a.autores_curto, a.selo].join(" ").toLowerCase()) + '">' + esc(a.titulo_curto) + "</a>").join("") +
+      '<a class="gv-item gv-todos" href="' + esc(i.href) + '">' + esc(i.todos) + " →</a></div></div>").join("") + "</div>" : "";
     lista.innerHTML = grupo("Páginas", paginas);
     getJSON("data/artigos.json").then(d => {
       const arts = d.artigos || [];
-      const temas = (d.temas || []).map(t => ({ nome: t.nome, href: RAIZ + "artigos/#" + t.id, cor: t.cor, extra: t.sobre, n: arts.filter(a => (a.temas || []).includes(t.id)).length })).filter(t => t.n);
-      const pesq = (d.pesquisadoras || []).map(p => ({ nome: p.nome, href: RAIZ + "artigos/?pesquisadora=" + p.id, cor: p.cor, extra: p.vinculo, n: arts.filter(a => (a.pesquisadoras || []).includes(p.id)).length }));
-      const estudos = arts.map(a => ({ nome: a.titulo_curto, href: RAIZ + a.url, extra: [a.titulo, a.titulo_pt, a.resumo, (a.tags || []).join(" "), (a.revista || {}).nome, a.autores_curto].join(" ") }));
-      lista.innerHTML = grupo("Páginas", paginas) + grupo("Temas", temas) + grupo("Pesquisadoras", pesq) + grupo("Estudos", estudos);
+      const temas = (d.temas || []).map(t => ({ nome: t.nome, href: RAIZ + "artigos/#" + t.id, cor: t.cor, extra: t.sobre, todos: "Abrir o tema", estudos: arts.filter(a => (a.temas || []).includes(t.id)) })).filter(t => t.estudos.length);
+      const pesq = (d.pesquisadoras || []).map(p => ({ nome: p.nome, href: RAIZ + "artigos/?pesquisadora=" + p.id, cor: p.cor, extra: p.vinculo, todos: "Ver todos os estudos dela", estudos: arts.filter(a => (a.pesquisadoras || []).includes(p.id)).sort((x, y) => String(y.data).localeCompare(String(x.data))) }));
+      lista.innerHTML = grupo("Páginas", paginas) + ramos("Temas", temas) + ramos("Pesquisadoras", pesq);
       filtrar();
     }).catch(() => {});
     const norm = t => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -70,7 +76,16 @@
       const v = norm(busca.value.trim());
       $$(".gv-grupo", lista).forEach(g => {
         let algum = false;
-        $$(".gv-item", g).forEach(a => { const ok = !v || norm(a.dataset.busca).includes(v); a.hidden = !ok; algum = algum || ok; });
+        $$(":scope > a.gv-item", g).forEach(a => { const ok = !v || norm(a.dataset.busca).includes(v); a.hidden = !ok; algum = algum || ok; });
+        $$(".gv-ramo", g).forEach(r => {
+          const proprio = !v || norm(r.dataset.busca).includes(v);
+          let filhos = 0;
+          $$(".gv-estudo", r).forEach(a => { const ok = proprio || norm(a.dataset.busca).includes(v); a.hidden = !ok; if (ok) filhos++; });
+          r.hidden = !(proprio || filhos); algum = algum || !r.hidden;
+          // se a palavra só aparece nos estudos, a ramificação já abre mostrando quais
+          const aberto = !!v && !proprio && filhos > 0;
+          $(".gv-sub", r).hidden = !aberto; $(".gv-abre", r).setAttribute("aria-expanded", String(aberto));
+        });
         g.hidden = !algum;
       });
       $("#gavetaVazio").hidden = $$(".gv-grupo", lista).some(g => !g.hidden);
@@ -86,7 +101,11 @@
     $("#gavetaFechar").addEventListener("click", () => abrir(false));
     addEventListener("keydown", e => { if (e.key === "Escape" && gav.classList.contains("aberta")) abrir(false); });
     busca.addEventListener("input", filtrar);
-    lista.addEventListener("click", e => { if (e.target.closest(".gv-item")) abrir(false); });
+    lista.addEventListener("click", e => {
+      const b = e.target.closest(".gv-abre");
+      if (b) { const aberto = b.getAttribute("aria-expanded") === "true"; b.setAttribute("aria-expanded", String(!aberto)); b.nextElementSibling.hidden = aberto; return; }
+      if (e.target.closest("a.gv-item")) abrir(false);
+    });
   }
   montarMenu();
 
