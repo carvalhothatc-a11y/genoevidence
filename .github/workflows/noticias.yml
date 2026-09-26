@@ -1,16 +1,14 @@
 # Atualiza as notícias e os artigos científicos do dia (data/noticias.json).
-# Deixa as notícias prontas todo dia até as 7h (horário de Brasília); também roda pelo botão "Run workflow" na aba Actions.
+# Atualiza as notícias ao longo do dia (de hora em hora) para estarem prontas cedo; também roda pelo botão "Run workflow" na aba Actions.
 name: Notícias do dia
 
 on:
   schedule:
-    # Várias tentativas de manhã, fora do minuto cheio: o GitHub às vezes atrasa agendamentos
-    # (em 25/09/2026 o das 7h só rodou às 11h57). Quem rodar primeiro atualiza; as outras só
-    # gravam se aparecer notícia nova.
-    - cron: "7 9 * * *"    # 06:07 em Brasília
-    - cron: "37 9 * * *"   # 06:37
-    - cron: "7 10 * * *"   # 07:07
-    - cron: "37 10 * * *"  # 07:37
+    # O GitHub não garante o horário dos agendamentos: em 25/09/2026 o das 7h só rodou às 11h57
+    # e em 26/09 as tentativas da manhã foram descartadas. Por isso o robô tenta de hora em hora
+    # (no minuto 23, fora do horário cheio) e só grava quando aparece notícia nova. Assim as
+    # notícias do dia ficam prontas cedo, mesmo que algumas tentativas não rodem.
+    - cron: "23 * * * *"
   workflow_dispatch:
 
 permissions:

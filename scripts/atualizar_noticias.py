@@ -84,10 +84,11 @@ INTERESSE = [
 ]
 EVITAR = r"\b(crossword|quiz|podcast|daily briefing|book review|resenha|obituar\w*|horóscopo|sponsored|patrocinado)\b"
 # avisos institucionais (eventos, inscrições, painéis) não são notícia de ciência para o leitor
-INSTITUCIONAL = r"\b(participa|inscriç\w*|seminário\w*|congresso\w*|webinar\w*|workshop\w*|palestra\w*|chamada\w*|reunirá|edição impressa|nova edição|edita(l|is)|painel|eleiç\w*|eleic\w*|posse|homenage\w*|premiaç\w*)\b"
+INSTITUCIONAL = r"\b(participa|inscriç\w*|seminário\w*|congresso\w*|webinar\w*|workshop\w*|palestra\w*|chamada\w*|reunirá|edição impressa|nova edição|ranking\w*|melhores do mundo|folheie|baixe a edição|residência artística|espetáculo\w*|exposição|concerto\w*|linha do tempo|aniversário|comemora\w*|marcas de um instituto|edita(l|is)|painel|eleiç\w*|eleic\w*|posse|homenage\w*|premiaç\w*)\b"
 PESO_FONTE = {"pt": 4}
 PESO_FONTE_NOME = {"Nature": 1, "New Scientist": 1, "Scientific American": 1}
 TOTAL_PT, TOTAL_EN, POR_FONTE_PT, POR_FONTE_EN = 8, 7, 3, 2
+MINIMO = 3  # abaixo disso a notícia não entra: melhor mostrar menos do que mostrar notícia fraca
 
 
 def chave_titulo(n):
@@ -108,7 +109,7 @@ def relevancia(n, agora_dt, mostradas=None):
     if re.search(EVITAR, texto):
         pontos -= 5
     if re.search(INSTITUCIONAL, (n["titulo"] + " " + n.get("resumo", "")[:90]).lower()):
-        pontos -= 4
+        pontos -= 10  # aviso institucional: fica de fora
     if not n.get("resumo"):
         pontos -= 1
     # notícia que já apareceu em dias anteriores (mesmo republicada por outra fonte) sai do topo
@@ -133,7 +134,7 @@ def selecionar(noticias, agora_dt, mostradas=None):
     for idioma, total, por_fonte in (("pt", TOTAL_PT, POR_FONTE_PT), ("en", TOTAL_EN, POR_FONTE_EN)):
         cont, pegas = {}, []
         for n in ordem:
-            if n["idioma"] != idioma or cont.get(n["fonte"], 0) >= por_fonte or parecida(n, pegas):
+            if n["idioma"] != idioma or n["relevancia"] < MINIMO or cont.get(n["fonte"], 0) >= por_fonte or parecida(n, pegas):
                 continue  # mesmo assunto de outra notícia já escolhida
             cont[n["fonte"]] = cont.get(n["fonte"], 0) + 1
             pegas.append(n)
@@ -372,6 +373,11 @@ def main():
     limite = (agora_dt - timedelta(days=10)).isoformat()
     mostradas = {k: v for k, v in mostradas.items() if v >= limite}
     traduzir(unicas, artigos)
+    # se a lista não mudou desde a última vez, não grava (o robô roda de hora em hora)
+    if anterior.get("noticias") and [n["url"] for n in unicas] == [n["url"] for n in anterior["noticias"]] \
+            and [a.get("url") for a in artigos] == [a.get("url") for a in anterior.get("artigos", [])]:
+        print("Nada novo desde a última atualização; o arquivo fica como está.")
+        return
     SAIDA.write_text(json.dumps({
         "atualizado_em": agora,
         "noticias": unicas,
