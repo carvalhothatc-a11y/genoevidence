@@ -1,0 +1,475 @@
+{
+  "id": "ia-conitec",
+  "tipo": "artigo",
+  "rotulo": "Published study",
+  "arte": "rede",
+  "arte_legenda": "illustration · a neural network reading reports",
+  "tema": "Public health",
+  "tema_id": "saude-publica",
+  "titulo": "Application of natural language processing to predict final recommendation of Brazilian health technology assessment reports",
+  "titulo_curto": "An artificial intelligence that reads Conitec's reports and predicts the decision",
+  "breadcrumb": "AI and Conitec decisions",
+  "autores": [
+    {
+      "nome": "Marilia Mastrocolla de Almeida Cardoso",
+      "afiliacao": "Health Technology Assessment Unit · Hospital das Clínicas, Botucatu Medical School"
+    },
+    {
+      "nome": "Juliana Machado-Rugolo",
+      "destaque": true,
+      "afiliacao": "Health Technology Assessment Unit · Hospital das Clínicas, Botucatu Medical School"
+    },
+    {
+      "nome": "Lehana Thabane",
+      "afiliacao": "McMaster University · Canada"
+    },
+    {
+      "nome": "Naila Camila da Rocha",
+      "afiliacao": "Health Data Science Laboratory · HC-FMB"
+    },
+    {
+      "nome": "Abner Mácula Pacheco Barbosa",
+      "afiliacao": "Botucatu Medical School (Unesp)"
+    },
+    {
+      "nome": "Denis Satoshi Komoda",
+      "afiliacao": "Public Health · Unicamp"
+    },
+    {
+      "nome": "Juliana Tereza Coneglian de Almeida",
+      "afiliacao": "Health Technology Assessment Unit · HC-FMB"
+    },
+    {
+      "nome": "Daniel da Silva Pereira Curado",
+      "afiliacao": "Ministry of Health · Brasília"
+    },
+    {
+      "nome": "Silke Anna Theresa Weber",
+      "afiliacao": "Botucatu Medical School (Unesp)"
+    },
+    {
+      "nome": "Luis Gustavo Modelli de Andrade",
+      "afiliacao": "Botucatu Medical School (Unesp)"
+    }
+  ],
+  "revista": {
+    "nome": "International Journal of Technology Assessment in Health Care",
+    "cidade": "Cambridge, United Kingdom (Cambridge University Press)",
+    "issn": "0266-4623",
+    "volume": "40",
+    "numero": "1",
+    "paginas": "e19",
+    "ano": "2024",
+    "submetido": "2023-10-09",
+    "publicado": "2024-04-12",
+    "doi": "10.1017/S0266462324000163",
+    "url": "https://doi.org/10.1017/S0266462324000163",
+    "site": "https://www.cambridge.org/core/journals/international-journal-of-technology-assessment-in-health-care"
+  },
+  "palavras_chave": [
+    "Health technology assessment",
+    "Brazil",
+    "Prediction analysis",
+    "Machine learning",
+    "Natural language processing"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "The problem",
+      "titulo": "Deciding what enters the public health system takes a lot of work",
+      "texto": "Conitec assesses whether drugs, products and procedures should be offered by SUS, Brazil's public health system. Each assessment takes time, experts and lots of documents."
+    },
+    {
+      "rotulo": "What they did",
+      "titulo": "They taught computers to read reports",
+      "texto": "Six artificial intelligence models “read” the summaries of 432 Conitec reports, from 2012 to 2022, to predict whether the technology would be approved or not."
+    },
+    {
+      "rotulo": "What they found",
+      "titulo": "The neural network got 77% right",
+      "texto": "The best model got 76.9% of the decisions right. Requests made by the government tended to be approved; those made by industry were rejected more often."
+    },
+    {
+      "rotulo": "Why it matters",
+      "titulo": "A helper, not a judge",
+      "texto": "The idea is an initial screening, with transparent criteria, to support the experts. The decision is still made by people."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "76.9%",
+      "texto": "accuracy of the neural network, the best of the 6 models",
+      "cor": "violet"
+    },
+    {
+      "valor": "0.871",
+      "texto": "AUC: ability to separate approved from non-approved technologies (the maximum is 1)",
+      "cor": "ok"
+    },
+    {
+      "valor": "432",
+      "texto": "reports analyzed, out of 627 published between 2012 and 2022",
+      "cor": "arg"
+    },
+    {
+      "valor": "6",
+      "texto": "artificial intelligence models compared",
+      "cor": "amber"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Context",
+      "eyebrow": "Context",
+      "titulo": "Who decides what enters the public health system",
+      "lede": "Health technology assessment (HTA) guides decisions that affect millions of people.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p><strong>Conitec</strong> (Brazil's National Committee for Health Technology Incorporation into SUS) was created by Law No. 12,401 of April 28, 2011. It advises the Ministry of Health on whether to <strong>incorporate, remove or change</strong> technologies in SUS, the public health system. Since 2012, all of its reports have been public.</p><p>By law, the decision must consider evidence on efficacy, safety, cost and budget impact. But studies show that, in practice, implicit factors such as personal values, pressure and context also weigh in. This can undermine the fairness and predictability of decisions.</p>"
+        },
+        {
+          "tipo": "texto",
+          "html": "<p><strong>Natural language processing (NLP)</strong> is an artificial intelligence technique that turns text into data a computer can analyze. In Brazilian courts, for example, models like this have already been used to predict the outcome of appeals more accurately than experts. The study's question: can the same be done with Conitec's decisions?</p>"
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "How it was done",
+      "eyebrow": "Method",
+      "titulo": "How the AI was trained",
+      "lede": "From the report text to the prediction, step by step.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Gather the reports",
+              "texto": "Of the 627 reports published on Conitec's website from 2012 to 2022, 432 had a summary and a final decision (“incorporate” or “do not incorporate”)."
+            },
+            {
+              "titulo": "Hide the answer",
+              "texto": "The parts of the summary that stated Conitec's recommendation were removed, so the AI couldn't “cheat”."
+            },
+            {
+              "titulo": "Clean the text",
+              "texto": "Stop words (such as “the”, “a”, “of”), punctuation and accents were removed. Words were reduced to their root (stemming)."
+            },
+            {
+              "titulo": "Turn text into numbers",
+              "texto": "Using TF-IDF and n-gram techniques, each report became a list of numbers showing which words and phrases matter in it."
+            },
+            {
+              "titulo": "Train and test",
+              "texto": "75% of the reports (324) were used for training and 25% (108) for testing. Six models were compared: LASSO, logistic regression, SVM, random forest, neural network and XGBoost."
+            },
+            {
+              "titulo": "Understand the AI",
+              "texto": "The SHAP method showed which words weighed most in each prediction, and a clustering analysis (k-modes) split the reports into two groups."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Results",
+      "eyebrow": "Results",
+      "titulo": "Which model got the most right",
+      "lede": "Choose a measure to compare the six models on the 108 test reports.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Choose the measure",
+          "grupos": [
+            {
+              "nome": "LASSO",
+              "cor": "#9DB6FF"
+            },
+            {
+              "nome": "Regression",
+              "cor": "#7C9CFF"
+            },
+            {
+              "nome": "SVM",
+              "cor": "#3FC1C9"
+            },
+            {
+              "nome": "Forest",
+              "cor": "#FFB23F"
+            },
+            {
+              "nome": "Neural network",
+              "cor": "#A58CFF"
+            },
+            {
+              "nome": "XGBoost",
+              "cor": "#5FD39A"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "Accuracy",
+              "valores": [
+                {
+                  "m": 63.9
+                },
+                {
+                  "m": 70.4
+                },
+                {
+                  "m": 75.0
+                },
+                {
+                  "m": 63.0
+                },
+                {
+                  "m": 76.9
+                },
+                {
+                  "m": 70.4
+                }
+              ],
+              "leitura": "Overall percentage of correct predictions. The neural network was the best, closely followed by SVM."
+            },
+            {
+              "rotulo": "AUC",
+              "valores": [
+                {
+                  "m": 67.2
+                },
+                {
+                  "m": 71.0
+                },
+                {
+                  "m": 75.9
+                },
+                {
+                  "m": 59.4
+                },
+                {
+                  "m": 87.1
+                },
+                {
+                  "m": 81.1
+                }
+              ],
+              "leitura": "Measures the ability to separate approved from non-approved technologies (shown here in %, 87.1 = 0.871). The neural network stood out, and XGBoost came second."
+            },
+            {
+              "rotulo": "Precision",
+              "valores": [
+                {
+                  "m": 72.7
+                },
+                {
+                  "m": 77.6
+                },
+                {
+                  "m": 84.8
+                },
+                {
+                  "m": 59.8
+                },
+                {
+                  "m": 81.5
+                },
+                {
+                  "m": 74.5
+                }
+              ],
+              "leitura": "When the model said “approved”, how often it was right. SVM and the neural network were the most precise."
+            },
+            {
+              "rotulo": "Sensitivity",
+              "valores": [
+                {
+                  "m": 54.2
+                },
+                {
+                  "m": 64.4
+                },
+                {
+                  "m": 66.1
+                },
+                {
+                  "m": 98.3
+                },
+                {
+                  "m": 74.6
+                },
+                {
+                  "m": 69.5
+                }
+              ],
+              "leitura": "Of the approved technologies, how many the model found. The random forest found almost all of them, but only because it said “approved” for almost everything: its precision was the lowest."
+            }
+          ],
+          "nota": "Values from Table 1 of the paper, on the test set."
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "What weighed most in the predictions",
+          "itens": [
+            {
+              "titulo": "Who made the request",
+              "texto": "Requests from the government (Ministry of Health departments) weighed heavily in favor of approval.",
+              "cor": "ok"
+            },
+            {
+              "titulo": "Experience of other countries",
+              "texto": "Mentions of international HTA agencies, such as the UK's NICE, weighed for or against.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Expanding use",
+              "texto": "Requests to expand the use of something already offered by SUS were more likely to be approved.",
+              "cor": "teal"
+            },
+            {
+              "titulo": "Procedures",
+              "texto": "Procedures, although less frequent than drugs, were more likely to be approved.",
+              "cor": "amber"
+            }
+          ]
+        },
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura2-grupos.webp",
+          "full": "imagens/figura2-grupos.webp",
+          "alt": "Bar chart with two groups: group 0 with a tall red bar (government) and group 1 with a blue bar (industry)",
+          "legenda": "Figure 2 · The two groups found by the AI, by who made the request: government (red), industry (blue) and society (lilac). Group 0 gathers the approved technologies, almost always requested by the government; in group 1, of non-approved ones, industry predominates.",
+          "credito": "Cardoso et al. (2024), International Journal of Technology Assessment in Health Care, CC BY 4.0 license"
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discussion",
+      "eyebrow": "Discussion",
+      "titulo": "What this reveals, and how to use it carefully",
+      "lede": "Features of the request, and not only the evidence, help predict the decision.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>The model showed that the <strong>type of technology</strong> and <strong>who made the request</strong> help predict the decision, even though they are not among the criteria set by law. Earlier studies, using other methods, had already seen the same pattern: drugs are the most assessed, and the government is the requester with the most approvals.</p>"
+        },
+        {
+          "tipo": "destaque",
+          "html": "The AI <strong>does not replace</strong> the committee. The authors propose using it as an <strong>initial screening</strong>, with documentation of the model, a simple interface, ongoing dialogue with decision-makers and training, to build trust and transparency."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Limitations pointed out by the authors",
+          "itens": [
+            "Only the summaries were analyzed, not the full reports; the figures from the economic analyses were left out.",
+            "There were no similar studies to compare the results with.",
+            "There is no computerized system with the report data, as there is in the courts.",
+            "Simpler (and easier to interpret) language models were used, rather than models like GPT."
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "In 2023, Conitec began working with three thematic committees (drugs, clinical protocols, and products and procedures). According to the authors, models like this one can make this new process easier."
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusion",
+      "eyebrow": "Conclusion",
+      "titulo": "What the study allows us to say",
+      "lede": "It is possible to predict incorporation decisions from the text of the reports.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>A natural language processing model was able to identify <strong>possible predictors of the final decision</strong> on bringing technologies into SUS. It could make the HTA system more efficient by offering experts early criteria and signals. The next challenge is to validate the model with full reports and at agencies in other countries, adapted to each context.</p>"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "HTA",
+      "def": "Health technology assessment: the study of efficacy, safety and costs to decide what the health system should offer."
+    },
+    {
+      "termo": "Conitec",
+      "def": "Brazil's National Committee for Health Technology Incorporation into SUS, part of the Ministry of Health."
+    },
+    {
+      "termo": "Requester",
+      "def": "Whoever asks for a technology to be assessed: government, industry or society."
+    },
+    {
+      "termo": "Natural language processing (NLP)",
+      "def": "Branch of artificial intelligence that teaches computers to analyze texts written by people."
+    },
+    {
+      "termo": "Machine learning",
+      "def": "When a computer learns patterns from examples, without hand-written rules."
+    },
+    {
+      "termo": "Neural network",
+      "def": "AI model inspired by neurons, made of layers that learn complex patterns."
+    },
+    {
+      "termo": "XGBoost and random forest",
+      "def": "Models that combine many “decision trees” to reach an answer."
+    },
+    {
+      "termo": "TF-IDF",
+      "def": "Technique that gives more weight to words that are frequent in one document but rare in the others."
+    },
+    {
+      "termo": "n-grams",
+      "def": "Sequences of consecutive words (e.g., “market research”) that help capture context."
+    },
+    {
+      "termo": "Stemming",
+      "def": "Reducing words to their root, like “treatment” and “treat” to “treat”."
+    },
+    {
+      "termo": "Accuracy",
+      "def": "Overall percentage of correct predictions by the model."
+    },
+    {
+      "termo": "Precision and sensitivity",
+      "def": "Precision: how many predicted “approved” were right. Sensitivity: how many truly approved technologies the model found."
+    },
+    {
+      "termo": "AUC",
+      "def": "Area under the ROC curve: ranges from 0.5 (a guess) to 1 (perfect)."
+    },
+    {
+      "termo": "SHAP",
+      "def": "Method that shows which information most influenced each AI prediction."
+    },
+    {
+      "termo": "Cross-validation",
+      "def": "Training and testing the model several times with different parts of the data, to check whether it is reliable."
+    }
+  ],
+  "citacao": "CARDOSO, M. M. A.; MACHADO-RUGOLO, J.; THABANE, L.; ROCHA, N. C.; BARBOSA, A. M. P.; KOMODA, D. S.; ALMEIDA, J. T. C.; CURADO, D. S. P.; WEBER, S. A. T.; ANDRADE, L. G. M. Application of natural language processing to predict final recommendation of Brazilian health technology assessment reports. International Journal of Technology Assessment in Health Care, Cambridge, v. 40, n. 1, e19, 2024. DOI: 10.1017/S0266462324000163.",
+  "referencias": [
+    {
+      "texto": "HARRISON, C. J.; SIDEY-GIBBONS, C. J. Machine learning in medicine: a practical introduction to natural language processing. BMC Medical Research Methodology, v. 21, 158, 2021.",
+      "doi": "10.1186/s12874-021-01347-1"
+    },
+    {
+      "texto": "MENEZES-NETO, J. E.; CLEMENTINO, M. B. M. Using deep learning to predict outcomes of legal appeals better than human experts: a study with data from Brazilian federal courts. PLoS One, v. 17, n. 7, e0272287, 2022.",
+      "doi": "10.1371/journal.pone.0272287"
+    },
+    {
+      "texto": "LIMA, S. G. G.; BRITO, C.; ANDRADE, C. J. C. Health technology assessment in Brazil – an international perspective. Ciência & Saúde Coletiva, v. 24, n. 5, p. 1709-1722, 2019.",
+      "doi": "10.1590/1413-81232018245.17582017"
+    },
+    {
+      "texto": "SILVA, H. P.; ELIAS, F. T. S. Incorporation of technologies by the Canadian and Brazilian health systems: prospects for progress in assessment processes. Cadernos de Saúde Pública, v. 35, n. 2, e00071518, 2019.",
+      "doi": "10.1590/0102-311X00071518"
+    }
+  ],
+  "idioma": "en"
+}

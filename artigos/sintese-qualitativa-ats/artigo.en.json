@@ -1,0 +1,452 @@
+{
+  "id": "sintese-qualitativa-ats",
+  "tipo": "artigo",
+  "rotulo": "Scoping review",
+  "arte": "rede",
+  "arte_legenda": "illustration · connected voices and evidence",
+  "tema": "Public health",
+  "tema_id": "saude-publica",
+  "titulo": "Mapping frameworks for synthesizing qualitative evidence in health technology assessment",
+  "titulo_curto": "Listening to patients in health decisions: how to bring qualitative research together",
+  "breadcrumb": "Qualitative evidence in HTA",
+  "autores": [
+    {
+      "nome": "Marilia Mastrocolla de Almeida Cardoso",
+      "afiliacao": "HC Botucatu · Brazilian Centre for Evidence-Based Healthcare (JBI)"
+    },
+    {
+      "nome": "Rafael Thomaz Marques",
+      "afiliacao": "Medical School · Unesp Botucatu"
+    },
+    {
+      "nome": "Juliana Machado-Rugolo",
+      "destaque": true,
+      "afiliacao": "Hospital das Clínicas, Botucatu Medical School"
+    },
+    {
+      "nome": "Lehana Thabane",
+      "afiliacao": "McMaster University · Canada"
+    },
+    {
+      "nome": "Vilanice Alves de Araújo Püschel",
+      "afiliacao": "School of Nursing · USP"
+    },
+    {
+      "nome": "Silke Anna Theresa Weber",
+      "afiliacao": "HC Botucatu · Medical School (Unesp)"
+    },
+    {
+      "nome": "Rosimary Terezinha Almeida",
+      "afiliacao": "Biomedical Engineering (COPPE) · UFRJ"
+    },
+    {
+      "nome": "Graciela Paula do Nascimento Duque",
+      "afiliacao": "COPPE · UFRJ · EBSERH"
+    },
+    {
+      "nome": "Cristiane Cardoso De Paula",
+      "afiliacao": "EBSERH · Federal University of Santa Maria"
+    },
+    {
+      "nome": "Luciane Cruz Lopes",
+      "afiliacao": "Graduate Program in Pharmaceutical Sciences · Uniso"
+    },
+    {
+      "nome": "Mariana Gabriel",
+      "afiliacao": "School of Dentistry · USP"
+    },
+    {
+      "nome": "Sybelle Drumond",
+      "afiliacao": "Cystic Fibrosis Association of the State of Rio de Janeiro"
+    },
+    {
+      "nome": "Clarice Maria Rodrigues",
+      "afiliacao": "Fiocruz Center for Strategic Studies · UFRJ"
+    },
+    {
+      "nome": "Meredith Vanstone",
+      "afiliacao": "McMaster University · Canada"
+    }
+  ],
+  "revista": {
+    "nome": "International Journal of Technology Assessment in Health Care",
+    "cidade": "Cambridge, United Kingdom (Cambridge University Press)",
+    "issn": "0266-4623",
+    "volume": "40",
+    "numero": "1",
+    "paginas": "e53",
+    "ano": "2024",
+    "publicado": "2024-11-13",
+    "doi": "10.1017/S0266462324000369",
+    "url": "https://doi.org/10.1017/S0266462324000369",
+    "site": "https://www.cambridge.org/core/journals/international-journal-of-technology-assessment-in-health-care"
+  },
+  "palavras_chave": [
+    "Health technology assessment",
+    "Qualitative research",
+    "Review",
+    "Evidence-based health care"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "The problem",
+      "titulo": "Decisions that look only at numbers",
+      "texto": "To decide whether a treatment enters a health system, people usually look at efficacy and cost. Qualitative research shows another side: what patients, families and professionals experience and think."
+    },
+    {
+      "rotulo": "What they did",
+      "titulo": "A map of existing “handbooks”",
+      "texto": "In a scoping review, they searched 10 databases and agency websites for every document that teaches how to bring qualitative research into these decisions."
+    },
+    {
+      "rotulo": "What they found",
+      "titulo": "31 documents, almost all European",
+      "texto": "Of 2,054 records, 31 documents were included. Most came from Europe, and almost half were guides. Few explain the whole process, from start to finish."
+    },
+    {
+      "rotulo": "Why it matters",
+      "titulo": "Giving a voice to those who use the system",
+      "texto": "Standardizing the use of qualitative evidence can make decisions more complete, taking into account acceptability, feasibility and equity."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "2,054 → 31",
+      "texto": "records found × documents included",
+      "cor": "arg"
+    },
+    {
+      "valor": "> 80%",
+      "texto": "of the documents came from Europe, mainly the UK, Sweden and Germany",
+      "cor": "violet"
+    },
+    {
+      "valor": "45%",
+      "texto": "were guides (14 documents), the most common type",
+      "cor": "teal"
+    },
+    {
+      "valor": "71%",
+      "texto": "were not produced by health technology assessment agencies",
+      "cor": "amber"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Context",
+      "eyebrow": "Context",
+      "titulo": "Why listen to people in decisions about technologies",
+      "lede": "An assessment is stronger when it combines numbers and experiences.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p><strong>Health technology assessment (HTA)</strong> studies the value of drugs, tests, equipment and programs to guide decisions in a fair and efficient health system. Traditionally, it gives more weight to <strong>efficacy and costs</strong>.</p><p><strong>Qualitative evidence</strong>, which comes from interviews, focus groups and observation, explains <em>why</em> an intervention works or not, from people's point of view. Combining several studies of this kind, in a <strong>qualitative evidence synthesis</strong>, produces stronger evidence than any single study.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "What qualitative evidence adds",
+          "itens": [
+            {
+              "titulo": "Acceptability",
+              "texto": "Do people accept this treatment? How do they feel when using it?",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Feasibility",
+              "texto": "Can it be applied in practice, in real services?",
+              "cor": "teal"
+            },
+            {
+              "titulo": "Equity",
+              "texto": "Do all groups have fair access?",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Values and experiences",
+              "texto": "What matters to patients, families and professionals?",
+              "cor": "ok"
+            }
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "html": "A recent study showed that, although the patient perspective appears often in submissions to the agencies of the UK (NICE) and Canada (CADTH), only <strong>14 of 107</strong> and <strong>24 of 124</strong> of them, respectively, collected qualitative data formally."
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "How it was done",
+      "eyebrow": "Method",
+      "titulo": "How the mapping was done",
+      "lede": "A scoping review maps everything that exists on a topic, without judging a single result.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Public protocol",
+              "texto": "The plan was registered on the OSF platform and published in advance, following the PRISMA rules for scoping reviews."
+            },
+            {
+              "titulo": "Broad search",
+              "texto": "Up to June 2023, in Medline, LILACS, CINAHL, Embase, Web of Science, Scopus, PsycINFO, Cochrane, JBI and ScienceDirect, plus grey literature and HTA agency websites. No year limit, in six languages."
+            },
+            {
+              "titulo": "Selection in pairs",
+              "texto": "Two independent reviewers read titles, abstracts and full texts; a third resolved disagreements."
+            },
+            {
+              "titulo": "The selection numbers",
+              "texto": "Of the 2,054 records, 57 were read in full and 17 were eligible. Another 9 came from agencies and thesis databases and 5 from reference lists: 31 documents in total."
+            },
+            {
+              "titulo": "Talking with people who live the topic",
+              "texto": "Patients, members of HTA units and experts in qualitative research were invited to discuss the results."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Results",
+      "eyebrow": "Results",
+      "titulo": "What the 31 documents show",
+      "lede": "See what types of documents exist and how interest in the topic has grown.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Choose what to see",
+          "unidade": "",
+          "eixo": "number of documents",
+          "grupos": [
+            {
+              "nome": "Guides",
+              "cor": "#3FC1C9"
+            },
+            {
+              "nome": "Article series",
+              "cor": "#A58CFF"
+            },
+            {
+              "nome": "Reviews",
+              "cor": "#9DB6FF"
+            },
+            {
+              "nome": "Methodological",
+              "cor": "#FFB23F"
+            },
+            {
+              "nome": "Other",
+              "cor": "#8A93A8"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "Type of document",
+              "valores": [
+                {
+                  "m": 14
+                },
+                {
+                  "m": 4
+                },
+                {
+                  "m": 4
+                },
+                {
+                  "m": 4
+                },
+                {
+                  "m": 5
+                }
+              ],
+              "leitura": "Almost half of the documents are guides. “Other” includes 2 book chapters, 1 handbook and 2 papers."
+            },
+            {
+              "rotulo": "Year of publication",
+              "grupos": [
+                {
+                  "nome": "2011 to 2017",
+                  "cor": "#9DB6FF"
+                },
+                {
+                  "nome": "2018",
+                  "cor": "#FF5470"
+                },
+                {
+                  "nome": "2019 to 2022",
+                  "cor": "#5FD39A"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 11
+                },
+                {
+                  "m": 7
+                },
+                {
+                  "m": 13
+                }
+              ],
+              "leitura": "No document is from 2010 or earlier. 2018 alone had 7 publications (23%), and interest kept growing afterward."
+            }
+          ],
+          "nota": "Counts from Tables 1 and 2 and the text of the paper."
+        },
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura2-documentos.webp",
+          "full": "imagens/figura2-documentos.webp",
+          "alt": "Infographic with a world map, a guide icon, university and agency buildings and stacks of documents by year",
+          "legenda": "Figure 2 · Visual summary of the documents: where they came from (Publications, map), the most common type (Document model: guides, 45%), who wrote them (Authors’ origins: universities and HTA agencies; 71% were not produced by agencies) and how many came out each year from 2011 to 2022 (Distribution of documents).",
+          "credito": "Cardoso et al. (2024), International Journal of Technology Assessment in Health Care, CC BY 4.0 license"
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "1. Ask the question · SPICE",
+              "texto": "The most recommended acronym for building the question: setting, perspective, intervention, comparison and evaluation."
+            },
+            {
+              "titulo": "2. Choose the method · RETREAT",
+              "texto": "The most cited tool for deciding how to do the synthesis, based on the question, time, resources and audience."
+            },
+            {
+              "titulo": "3. Pool the findings · thematic synthesis",
+              "texto": "The most used method: grouping the studies' findings into common themes."
+            },
+            {
+              "titulo": "4. Appraise the studies · CASP",
+              "texto": "The most cited tool for checking the quality of each qualitative study."
+            },
+            {
+              "titulo": "5. Measure confidence · GRADE-CERQual",
+              "texto": "The main tool for stating how much each finding of the synthesis can be trusted."
+            },
+            {
+              "titulo": "6. Report · ENTREQ",
+              "texto": "The most cited guide for writing up the synthesis transparently."
+            },
+            {
+              "titulo": "7. Recommend · GRADE EtD",
+              "texto": "The only framework cited for turning evidence into recommendations, considering efficacy, resources, acceptability, feasibility and equity."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "The steps above bring together the most cited tools at each stage. No single document, however, covers all of them."
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discussion",
+      "eyebrow": "Discussion",
+      "titulo": "Many recognize the importance, few explain how to do it",
+      "lede": "The path exists in pieces, scattered across several documents.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Experienced agencies such as NICE (England), SMC (Scotland) and SBU (Sweden) state in their guides that it is important to consider qualitative data. But only <strong>three agency documents, from Sweden, Scotland and Germany</strong>, explain how to carry out the process.</p><p>Most documents describe only one step: the question, the quality appraisal, the synthesis or the recommendation. According to the authors, including qualitative data strengthens the interdisciplinary nature of HTA and broadens the information that supports decisions.</p>"
+        },
+        {
+          "tipo": "destaque",
+          "html": "<strong>Standardizing</strong> the way qualitative evidence is incorporated into HTA can improve decisions and ensure that the experience of patients and families is taken into account systematically."
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusion",
+      "eyebrow": "Conclusion",
+      "titulo": "What the study allows us to say",
+      "lede": "A growing movement that still needs a single path.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>The mapping shows a movement to <strong>incorporate qualitative evidence into HTA</strong> using specific frameworks. Despite the similarities, most documents describe only part of the process. The findings offer essential considerations for those who carry out technology assessment, including in Brazil.</p>"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "HTA",
+      "def": "Health technology assessment: the study of the value of a treatment, test or program to guide decisions."
+    },
+    {
+      "termo": "Qualitative evidence",
+      "def": "Knowledge from interviews, focus groups and observation about people's experiences, opinions and values."
+    },
+    {
+      "termo": "Qualitative evidence synthesis",
+      "def": "A review that gathers and combines the findings of several qualitative studies."
+    },
+    {
+      "termo": "Scoping review",
+      "def": "A review that maps what exists on a topic and identifies gaps."
+    },
+    {
+      "termo": "Grey literature",
+      "def": "Documents outside scientific journals, such as agency reports, theses and handbooks."
+    },
+    {
+      "termo": "SPICE",
+      "def": "Acronym for building qualitative questions: setting, perspective, intervention, comparison and evaluation."
+    },
+    {
+      "termo": "RETREAT",
+      "def": "Criteria for choosing the synthesis method: review question, epistemology, time, resources, expertise, audience and type of data."
+    },
+    {
+      "termo": "Thematic synthesis",
+      "def": "A method that organizes the findings of several studies into common themes."
+    },
+    {
+      "termo": "CASP",
+      "def": "A checklist of questions for appraising the quality of a study."
+    },
+    {
+      "termo": "GRADE-CERQual",
+      "def": "A tool for rating how much a finding from a qualitative synthesis can be trusted."
+    },
+    {
+      "termo": "ENTREQ",
+      "def": "A guide for transparently reporting a synthesis of qualitative research."
+    },
+    {
+      "termo": "GRADE EtD",
+      "def": "The “evidence to decision” framework, which helps turn evidence into recommendations."
+    },
+    {
+      "termo": "NICE",
+      "def": "National Institute for Health and Care Excellence, England's HTA agency."
+    }
+  ],
+  "citacao": "CARDOSO, M. M. A.; MARQUES, R. T.; MACHADO-RUGOLO, J.; THABANE, L.; PÜSCHEL, V. A. A.; WEBER, S. A. T.; ALMEIDA, R. T.; DUQUE, G. P. N.; PAULA, C. C.; LOPES, L. C.; GABRIEL, M.; DRUMOND, S.; RODRIGUES, C. M.; VANSTONE, M. Mapping frameworks for synthesizing qualitative evidence in health technology assessment. International Journal of Technology Assessment in Health Care, Cambridge, v. 40, n. 1, e53, 2024. DOI: 10.1017/S0266462324000369.",
+  "referencias": [
+    {
+      "texto": "TONG, A. et al. Enhancing transparency in reporting the synthesis of qualitative research: ENTREQ. BMC Medical Research Methodology, v. 12, 181, 2012.",
+      "doi": "10.1186/1471-2288-12-181"
+    },
+    {
+      "texto": "BOOTH, A. et al. Structured methodology review identified seven (RETREAT) criteria for selecting qualitative evidence synthesis approaches. Journal of Clinical Epidemiology, v. 99, p. 41-52, 2018.",
+      "doi": "10.1016/j.jclinepi.2018.03.003"
+    },
+    {
+      "texto": "LEWIN, S. et al. Applying GRADE-CERQual to qualitative evidence synthesis findings: introduction to the series. Implementation Science, v. 13, 2, 2018.",
+      "doi": "10.1186/s13012-017-0688-3"
+    },
+    {
+      "texto": "GERMENI, E.; SZABO, S. Beyond clinical and cost-effectiveness: the contribution of qualitative research to health technology assessment. International Journal of Technology Assessment in Health Care, v. 39, e23, 2023.",
+      "doi": "10.1017/S0266462323000211"
+    }
+  ],
+  "idioma": "en"
+}

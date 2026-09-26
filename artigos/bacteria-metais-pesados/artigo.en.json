@@ -1,0 +1,393 @@
+{
+  "id": "bacteria-metais-pesados",
+  "tipo": "artigo",
+  "rotulo": "Published study",
+  "arte": "bastonetes",
+  "arte_legenda": "illustration · bacteria capturing metal ions",
+  "tema": "Microbiology",
+  "tema_id": "microbiologia",
+  "titulo": "Bacillus subtilis as an effective tool for bioremediation of lead, copper and cadmium in water",
+  "titulo_curto": "A bacterium that cleans water contaminated with lead, copper and cadmium",
+  "breadcrumb": "Bacteria against heavy metals",
+  "autores": [
+    {
+      "nome": "Debora H. E. Rocco",
+      "afiliacao": "LAMINFE and LAPETOX · Uniso"
+    },
+    {
+      "nome": "Bruna Moreira Freire",
+      "afiliacao": "LAMINFE and LAPETOX · Uniso"
+    },
+    {
+      "nome": "Thais Jardim Oliveira",
+      "afiliacao": "LAMINFE and LAPETOX · Uniso"
+    },
+    {
+      "nome": "Patricia Lius Melo Alves",
+      "destaque": true,
+      "afiliacao": "LAMINFE and LAPETOX · Uniso"
+    },
+    {
+      "nome": "José Martins de Oliveira Júnior",
+      "afiliacao": "Applied Nuclear Physics (LAFINAU) · Uniso"
+    },
+    {
+      "nome": "Bruno Lemos Batista",
+      "afiliacao": "Natural and Human Sciences · UFABC"
+    },
+    {
+      "nome": "Denise Grotto",
+      "afiliacao": "Toxicological Research (LAPETOX) · Uniso"
+    },
+    {
+      "nome": "Angela Faustino Jozala",
+      "afiliacao": "Industrial Microbiology (LAMINFE) · Uniso (corresponding author)"
+    }
+  ],
+  "revista": {
+    "nome": "Discover Applied Sciences",
+    "cidade": "Cham, Switzerland (Springer Nature)",
+    "issn": "3004-9261",
+    "volume": "6",
+    "numero": "8",
+    "paginas": "article 430",
+    "ano": "2024",
+    "submetido": "2024-01-24",
+    "publicado": "2024-08-05",
+    "doi": "10.1007/s42452-024-06101-y",
+    "url": "https://doi.org/10.1007/s42452-024-06101-y",
+    "site": "https://link.springer.com/journal/42452",
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s42452-024-06101-y.pdf"
+  },
+  "palavras_chave": [
+    "Bacteria",
+    "Bacillus subtilis",
+    "Bioremediation",
+    "Heavy metals"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "The problem",
+      "titulo": "Heavy metals in water",
+      "texto": "Lead, copper and cadmium reach water and soil through industry, mining and fertilizers. Even in small amounts, they harm people and animals."
+    },
+    {
+      "rotulo": "What they did",
+      "titulo": "A bacterium in contaminated water",
+      "texto": "In the lab, they placed the bacterium Bacillus subtilis in water with lead, copper or cadmium, separately and mixed, for up to 6 days."
+    },
+    {
+      "rotulo": "What they found",
+      "titulo": "Up to 100% of the lead removed",
+      "texto": "The bacterium removed all the lead, 92.3% of the cadmium and 89% of the copper from the water. With the three metals together, the copper was not removed."
+    },
+    {
+      "rotulo": "Why it matters",
+      "titulo": "Cheap, eco-friendly cleanup",
+      "texto": "Using living organisms to clean up pollution (bioremediation) can be an affordable way to treat industrial effluents and contaminated areas."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "100%",
+      "texto": "of the lead removed from the water, in 96 hours",
+      "cor": "violet"
+    },
+    {
+      "valor": "92.3%",
+      "texto": "of the cadmium removed, in 144 hours",
+      "cor": "amber"
+    },
+    {
+      "valor": "89%",
+      "texto": "of the copper removed",
+      "cor": "teal"
+    },
+    {
+      "valor": "500 → 8 ppm",
+      "texto": "lead in the water after just 1 hour with the bacterium",
+      "cor": "ok"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "The problem",
+      "eyebrow": "Context",
+      "titulo": "Heavy metals: a poison that doesn't go away on its own",
+      "lede": "Hundreds of millions of people worldwide are affected by water, soil or air contaminated with toxic metals.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Mercury, cadmium, chromium, arsenic, copper and lead are among the most dangerous metals for the environment and health. They reach nature through <strong>fertilizers and soil amendments, contaminated irrigation water, sewage sludge, urban waste and industrial and mining residues</strong>. In the soil, they become available to plants and enter the food chain.</p><p>Even at low concentrations, these metals can cause <strong>infertility, weakened immune defenses, growth problems</strong> and diseases that can be fatal.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "How a bacterium can pull metal out of water",
+          "itens": [
+            {
+              "titulo": "Biosorption",
+              "texto": "The metal sticks to the bacterial wall. It is a passive process that happens even when the cell isn't “working”.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Bioaccumulation",
+              "texto": "The bacterium takes the metal inside itself and accumulates it.",
+              "cor": "ok"
+            },
+            {
+              "titulo": "Bioprecipitation",
+              "texto": "The bacterium turns the metal into a solid form that separates from the water.",
+              "cor": "amber"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "html": "<p><strong><em>Bacillus subtilis</em></strong> is a Gram-positive bacterium known for removing metals efficiently. It tolerates wide variations in pH and temperature and, when food runs short, it forms <strong>endospores</strong>, resistant structures that protect it until conditions improve.</p>"
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "How it was done",
+      "eyebrow": "Method",
+      "titulo": "How the experiment was done",
+      "lede": "The bacterium was challenged with each metal separately and then with all three together.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "The bacterium",
+              "texto": "The strain B. subtilis 7611 was used, from the André Tosello Institute collection."
+            },
+            {
+              "titulo": "Growth curve",
+              "texto": "First, they measured how the bacterium grows in full (TSB 100%) and diluted (TSB 33%) culture medium, weighing the cell mass over 4 days."
+            },
+            {
+              "titulo": "One metal at a time",
+              "texto": "The bacterium was placed in water with 500 ppm of lead, 100 ppm of copper or 100 ppm of cadmium, at 35 °C, with shaking. Samples were taken from 1 to 144 hours."
+            },
+            {
+              "titulo": "All three metals together",
+              "texto": "In a harder challenge, the water received 100 ppm of lead, copper and cadmium at the same time, with samples from 10 minutes to 144 hours."
+            },
+            {
+              "titulo": "Measure what was left",
+              "texto": "Lead was measured by X-ray fluorescence; cadmium, copper and the mixture by mass spectrometry (ICP-MS). Efficiency was calculated as (initial − final) ÷ initial × 100."
+            },
+            {
+              "titulo": "A close look at the bacterium",
+              "texto": "Bacteria from the lead-containing water were viewed under an electron microscope, and EDS analysis showed which elements were in them."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "ppm = parts per million. 100 ppm equals 100 milligrams of metal per liter of water."
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Results",
+      "eyebrow": "Results",
+      "titulo": "How much of each metal the bacterium removed from the water",
+      "lede": "Compare removal in the very first hour with the best result for each metal.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Choose the time point",
+          "grupos": [
+            {
+              "nome": "Lead (Pb)",
+              "cor": "#A58CFF"
+            },
+            {
+              "nome": "Cadmium (Cd)",
+              "cor": "#FFB23F"
+            },
+            {
+              "nome": "Copper (Cu)",
+              "cor": "#3FC1C9"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "In the 1st hour",
+              "valores": [
+                {
+                  "m": 98.4
+                },
+                {
+                  "m": 73.7
+                },
+                {
+                  "m": 87
+                }
+              ],
+              "leitura": "Removal is fast: in just 1 hour, lead dropped from 500 to 8 ppm, copper from 100 to 13 ppm and cadmium fell by 73.7%."
+            },
+            {
+              "rotulo": "Best result",
+              "valores": [
+                {
+                  "m": 100
+                },
+                {
+                  "m": 92.3
+                },
+                {
+                  "m": 89
+                }
+              ],
+              "leitura": "Over time, the bacterium removed all the lead (in 96 h), 92.3% of the cadmium (in 144 h) and 89% of the copper."
+            }
+          ],
+          "nota": "Metals tested separately, in water, at 35 °C. Removal values reported in the text of the paper."
+        },
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura6-microscopia.webp",
+          "full": "imagens/figura6-microscopia.webp",
+          "alt": "Electron microscope image with rod-shaped bacteria on a cluster, and next to it a graph with peaks of chemical elements",
+          "legenda": "Figure 6 · (A) B. subtilis in lead-containing water, under the electron microscope: the shape of the bacteria did not change. (B) EDS spectrum of the bacterial mass, with lead (Pb) peaks, a sign that the metal was trapped in them.",
+          "credito": "Rocco et al. (2024), Discover Applied Sciences, CC BY 4.0 license"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "Other findings",
+          "itens": [
+            {
+              "titulo": "Lead “fed” the bacterium",
+              "texto": "Without metal, the bacterial mass in diluted medium did not exceed 0.7 g/L. With lead, it reached 17.42 g/L in 48 hours, when lead was no longer even detected.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Mixtures are harder",
+              "texto": "With the three metals together, lead and cadmium fell by about 50% in 10 minutes, but copper was not removed. The metals seem to compete with each other.",
+              "cor": "his"
+            },
+            {
+              "titulo": "Up and down",
+              "texto": "Levels fluctuated: in the diluted medium, lead rose back to about 100 ppm after 144 hours. Some of the metal may return to the water over time.",
+              "cor": "amber"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "How it works",
+      "eyebrow": "Discussion",
+      "titulo": "How the bacterium traps metals",
+      "lede": "The authors believe several mechanisms act together.",
+      "blocos": [
+        {
+          "tipo": "cadeia",
+          "itens": [
+            "Metal ions meet the bacterial wall",
+            "They stick to the surface (biosorption)",
+            "Some get inside and accumulate in the cell",
+            "The biosurfactant produced by the bacterium forms complexes with the metal",
+            "The metal leaves the water"
+          ]
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>Since the tests were done in pure water, without nutrients, it is unlikely the bacterium grew so much without using something from the medium. So the authors propose that <strong>some of the metal was used in metabolism and some stayed trapped on the surface</strong>. The drop in bacterial mass at some points may be explained by spore formation, a defense against stress.</p><p>An earlier systematic review had already pointed to <em>B. subtilis</em> as one of the most effective bacteria for cleaning metals from aquatic environments. As for mixtures, another study showed that the presence of iron and cadmium hinders copper removal, which matches what was seen here.</p>"
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusion",
+      "eyebrow": "Conclusion",
+      "titulo": "What the study allows us to say",
+      "lede": "A cheap ally against metal pollution that still needs fine-tuning for mixtures.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p><em>B. subtilis</em> withstood all three metals, kept multiplying and reduced their concentration in the water. The best performance was with <strong>lead</strong>, followed by <strong>cadmium</strong> and <strong>copper</strong>. In mixtures, interactions between the metals changed the result, and copper was not removed.</p><p>The authors conclude that the bacterium's biomass could be an <strong>affordable and effective treatment</strong> for industrial effluents and areas contaminated with heavy metals.</p>"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Heavy metals",
+      "def": "Metals such as lead, cadmium, copper and mercury, toxic to living things even in small amounts."
+    },
+    {
+      "termo": "Bioremediation",
+      "def": "Using living organisms, such as bacteria and plants, to clean up pollution."
+    },
+    {
+      "termo": "Biosorption",
+      "def": "When a substance sticks to the surface of a living organism or its biomass."
+    },
+    {
+      "termo": "Bioaccumulation",
+      "def": "When a living organism absorbs a substance and accumulates it inside."
+    },
+    {
+      "termo": "Biosurfactant",
+      "def": "A soap-like substance produced by microbes. It can bind to metals."
+    },
+    {
+      "termo": "Endospore",
+      "def": "Resistant form of some bacteria that protects them from heat, lack of food and other stresses."
+    },
+    {
+      "termo": "ppm",
+      "def": "Parts per million. In water, 1 ppm equals 1 milligram per liter."
+    },
+    {
+      "termo": "ICP-MS",
+      "def": "Technique that measures very small amounts of metals in a sample."
+    },
+    {
+      "termo": "X-ray fluorescence",
+      "def": "Technique that identifies and measures chemical elements by the “glow” they give off when hit by X-rays."
+    },
+    {
+      "termo": "EDS",
+      "def": "Analysis done in the electron microscope that shows which chemical elements are present at a point in the sample."
+    },
+    {
+      "termo": "Industrial effluent",
+      "def": "Wastewater discharged by an industry, which may carry pollutants."
+    },
+    {
+      "termo": "TSB medium",
+      "def": "Nutrient broth used to grow bacteria in the lab."
+    }
+  ],
+  "citacao": "ROCCO, D. H. E.; FREIRE, B. M.; OLIVEIRA, T. J.; ALVES, P. L. M.; OLIVEIRA JÚNIOR, J. M.; BATISTA, B. L.; GROTTO, D.; JOZALA, A. F. Bacillus subtilis as an effective tool for bioremediation of lead, copper and cadmium in water. Discover Applied Sciences, Cham, v. 6, art. 430, 2024. DOI: 10.1007/s42452-024-06101-y.",
+  "referencias": [
+    {
+      "texto": "AL-GHEETHI, A. et al. Removal of heavy metal ions from aqueous solutions using Bacillus subtilis biomass pre-treated by supercritical carbon dioxide. CLEAN – Soil, Air, Water, 2017.",
+      "doi": "10.1002/clen.201700356"
+    },
+    {
+      "texto": "PHAM, V. H. T. et al. Bacterial biosorbents, an efficient heavy metals green clean-up strategy: prospects, challenges, and opportunities. Microorganisms, v. 10, 610, 2022.",
+      "doi": "10.3390/microorganisms10030610"
+    },
+    {
+      "texto": "ZHAO, P. et al. Capability of Bacillus subtilis to remove Pb2+ via producing lipopeptides. Science of the Total Environment, 2020.",
+      "doi": "10.1016/j.scitotenv.2020.138941"
+    },
+    {
+      "texto": "ALENCAR, F. L. S.; NAVONI, J. A.; AMARAL, V. S. The use of bacterial bioremediation of metals in aquatic environments in the twenty-first century: a systematic review. Environmental Science and Pollution Research, 2017.",
+      "doi": "10.1007/s11356-017-9129-8"
+    },
+    {
+      "texto": "MITRA, S. et al. Impact of heavy metals on the environment and human health: novel therapeutic insights to counter the toxicity. Journal of King Saud University – Science, 2022.",
+      "doi": "10.1016/j.jksus.2022.101865"
+    }
+  ],
+  "idioma": "en"
+}

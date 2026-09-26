@@ -8,7 +8,10 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 function el(tag,attrs,parent,text){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e;}
 function onSeen(node,fn,th){if(!('IntersectionObserver' in window)){fn();return;}const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){io.disconnect();fn();}})},{threshold:th||.25});io.observe(node);}
 function grow(nodes,delay){if(RM)return;nodes.forEach((n,i)=>n.animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}],{duration:900,delay:(delay||0)+i*60,easing:'cubic-bezier(.2,.8,.2,1)',fill:'backwards'}));}
-const fmt=(n,d)=>n.toLocaleString('pt-BR',{minimumFractionDigits:d||0,maximumFractionDigits:d||0});
+/* idiomas: na versão em inglês ou espanhol (r337h/en/, r337h/es/), os textos passam pelo dicionário de r337h-i18n.js */
+const GI=window.GE_I18N,LG=GI?GI.lang:'pt',T=s=>(GI&&LG!=='pt')?GI.t(s):s;
+const BASE=(document.querySelector('meta[name="r337h-base"]')||{}).content||'';
+const fmt=(n,d)=>n.toLocaleString(GI?GI.locale:'pt-BR',{minimumFractionDigits:d||0,maximumFractionDigits:d||0});
 
 /* ---------------- Glossário ---------------- */
 const GLOSS={
@@ -33,10 +36,11 @@ const GLOSS={
  hgvs:['HGVS','Padrão internacional para escrever o nome de uma variante. “c.” indica a posição no DNA; “p.” indica a mudança na proteína.',1],
  mane:['MANE Select','Versão de referência do gene, padronizada internacionalmente, usada para dar nomes consistentes às variantes.',1]
 };
+for(const k in GLOSS){GLOSS[k][0]=T(GLOSS[k][0]);GLOSS[k][1]=T(GLOSS[k][1]);}
 /* glossário */
-(function(){const dl=$('#gloss'),inp=$('#glossSearch'),cnt=$('#glossCount');const keys=Object.keys(GLOSS).filter(k=>!GLOSS[k][2]).sort((a,b)=>GLOSS[a][0].localeCompare(GLOSS[b][0],'pt'));
+(function(){const dl=$('#gloss'),inp=$('#glossSearch'),cnt=$('#glossCount');const keys=Object.keys(GLOSS).filter(k=>!GLOSS[k][2]).sort((a,b)=>GLOSS[a][0].localeCompare(GLOSS[b][0],LG));
   keys.forEach(k=>{const d=document.createElement('div');d.id='gl-'+k;d.innerHTML='<dt>'+GLOSS[k][0]+'</dt><dd>'+GLOSS[k][1]+'</dd>';d.dataset.s=(GLOSS[k][0]+' '+GLOSS[k][1]).toLowerCase();dl.appendChild(d);});
-  const upd=()=>{const v=inp.value.trim().toLowerCase();let n=0;dl.querySelectorAll('div').forEach(d=>{const ok=!v||d.dataset.s.includes(v);d.hidden=!ok;if(ok)n++;});cnt.textContent=n+(n===1?' termo':' termos');};inp.addEventListener('input',upd);upd();})();
+  const upd=()=>{const v=inp.value.trim().toLowerCase();let n=0;dl.querySelectorAll('div').forEach(d=>{const ok=!v||d.dataset.s.includes(v);d.hidden=!ok;if(ok)n++;});cnt.textContent=n+' '+T(n===1?'termo':'termos');};inp.addEventListener('input',upd);upd();})();
 /* navegação precisa: todo link interno rola até o ponto certo e destaca o destino */
 function goTo(id){const t=document.querySelector(id);if(!t)return false;const hud=document.querySelector('.hud').offsetHeight;let off=hud+14;
   if(t.closest('#evidencias')&&t.id!=='evidencias')off+=$('#evTabs').offsetHeight;
@@ -68,13 +72,14 @@ const IMGS=[
  {id:'tp53db-registros',p:'TP53 Database',t:'Figura 6 · Registros germinativos',c:'Resultado da busca no TP53 Database: pessoas com a variante c.1010G>A (p.R337H), com país, local do tumor, tipo de tumor e artigo de origem.'},
  {id:'tp53db-sitios',p:'TP53 Database',t:'Figura 7 · Locais dos tumores',c:'Os 150 registros por local do tumor: glândula adrenal 92 (61,33%), mama 21 (14,00%), cérebro 16 (10,67%) e outros locais com frequências menores.'},
  {id:'tp53db-estrutura-3d',p:'TP53 Database',t:'Estrutura 3D da p53',c:'Visualizador 3D (JSmol) do TP53 Database mostrando a proteína p53 em fitas e, em linhas finas, a molécula de DNA. A legenda indica cores por frequência de mutação: alta, média e baixa.'}];
+IMGS.forEach(o=>{o.t=T(o.t);o.c=T(o.c);});
 const IMG=Object.fromEntries(IMGS.map(o=>[o.id,o]));
-function figBtn(o){const b=document.createElement('button');b.type='button';b.className='fig';b.dataset.cap=o.t+' — '+o.c+' Fonte: '+o.p+' (2026).';
-  b.innerHTML='<img src="imagens/mini/'+o.id+'.webp" data-full="imagens/'+o.id+'.webp" alt="'+o.t.replace(/"/g,'')+'" loading="lazy" decoding="async"><span class="fig-p">'+o.p+'</span><span><b>'+o.t+'</b></span>';return b;}
+function figBtn(o){const b=document.createElement('button');b.type='button';b.className='fig';b.dataset.cap=o.t+' — '+o.c+' '+T('Fonte:')+' '+o.p+' (2026).';
+  b.innerHTML='<img src="'+BASE+'imagens/mini/'+o.id+'.webp" data-full="'+BASE+'imagens/'+o.id+'.webp" alt="'+o.t.replace(/"/g,'')+'" loading="lazy" decoding="async"><span class="fig-p">'+o.p+'</span><span><b>'+o.t+'</b></span>';return b;}
 $$('.figs[data-figs]').forEach(box=>{box.setAttribute('data-gallery','');box.dataset.figs.split(',').forEach(id=>{if(IMG[id])box.appendChild(figBtn(IMG[id]));});});
 (function(){const gal=$('#gallery'),fl=$('#galFilter');
   IMGS.forEach(o=>{const b=figBtn(o);b.classList.add('gcard');b.dataset.p=o.p;const d=document.createElement('span');d.className='gdesc';d.textContent=o.c;b.appendChild(d);gal.appendChild(b);});
-  ['Todas',...new Set(IMGS.map(o=>o.p))].forEach((p,i)=>{const b=document.createElement('button');b.type='button';b.textContent=p+' · '+(i?IMGS.filter(o=>o.p===p).length:IMGS.length);b.setAttribute('aria-pressed',String(!i));
+  [T('Todas'),...new Set(IMGS.map(o=>o.p))].forEach((p,i)=>{const b=document.createElement('button');b.type='button';b.textContent=p+' · '+(i?IMGS.filter(o=>o.p===p).length:IMGS.length);b.setAttribute('aria-pressed',String(!i));
     b.addEventListener('click',()=>{fl.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));gal.querySelectorAll('.gcard').forEach(c=>{c.hidden=!!i&&c.dataset.p!==p;});
       if(!RM)gal.animate([{opacity:.25,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:320,easing:'ease-out'});});fl.appendChild(b);});})();
 /* figuras ampliáveis, com setas, teclado e deslizar */
@@ -124,14 +129,15 @@ addEventListener('scroll',onScroll,{passive:true});onScroll();
     ['#imagens','Imagens da pesquisa',[]],
     ['#glossario','Glossário',[]],
     ['#referencias','Referências',[]]];
+  TOPICS.forEach(t=>{t[1]=T(t[1]);t[2].forEach(x=>{x[1]=T(x[1]);});});
   const btn=$('#menuBtn'),dr=$('#drawer'),scrim=$('#drawerScrim'),nav=$('#drawerNav'),q=$('#drawerSearch'),x=$('#drawerClose');
   const norm=t=>t.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
   TOPICS.forEach(([h,l,subs],i)=>{const g=document.createElement('div');g.className='dr-group';g.dataset.s=norm(l+' '+subs.map(x=>x[1]).join(' '));
     g.innerHTML='<a class="dr-item" href="'+h+'"><span class="dr-n">'+String(i+1).padStart(2,'0')+'</span><span>'+l+'</span></a>'+
       subs.map(([sh,sl])=>'<a class="dr-sub" href="'+sh+'" data-s="'+norm(sl)+'">'+sl+'</a>').join('');nav.appendChild(g);});
-  const empty=document.createElement('p');empty.className='dr-empty';empty.textContent='Nenhum tópico encontrado.';empty.hidden=true;nav.appendChild(empty);
+  const empty=document.createElement('p');empty.className='dr-empty';empty.textContent=T('Nenhum tópico encontrado.');empty.hidden=true;nav.appendChild(empty);
   let open=false,t=0;dr.inert=true;
-  function setOpen(v){if(v===open)return;open=v;clearTimeout(t);btn.setAttribute('aria-expanded',String(v));btn.setAttribute('aria-label',v?'Fechar menu de tópicos':'Abrir menu de tópicos');
+  function setOpen(v){if(v===open)return;open=v;clearTimeout(t);btn.setAttribute('aria-expanded',String(v));btn.setAttribute('aria-label',T(v?'Fechar menu de tópicos':'Abrir menu de tópicos'));
     dr.classList.toggle('open',v);dr.inert=!v;document.body.style.overflow=v?'hidden':'';
     if(v){scrim.hidden=false;requestAnimationFrame(()=>scrim.classList.add('show'));mark();setTimeout(()=>{(innerWidth>600?q:x).focus();const on=nav.querySelector('.dr-item.on');if(on)on.scrollIntoView({block:'nearest'});},60);}
     else{scrim.classList.remove('show');t=setTimeout(()=>{scrim.hidden=true;if(q.value){q.value='';q.dispatchEvent(new Event('input'));}},320);btn.focus({preventScroll:true});}}
@@ -289,7 +295,7 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
   const box=$('#seq');let mut=true;
   function draw(){box.innerHTML='';seq.forEach(([a,n])=>{const d=document.createElement('div');d.className='res'+(n===337?' hot':'');const l=n===337?(mut?'H':'R'):a;d.innerHTML='<span class="aa-l" style="'+(n===337?'color:'+(mut?C.his:C.arg):'')+'">'+l+'</span><small>'+n+'</small>';box.appendChild(d);});}
   draw();const b=$('#swapSeq');
-  b.addEventListener('click',()=>{mut=!mut;b.setAttribute('aria-pressed',String(!mut));b.textContent=mut?'↺ Ver versão normal':'↺ Ver versão mutante';draw();
+  b.addEventListener('click',()=>{mut=!mut;b.setAttribute('aria-pressed',String(!mut));b.textContent=T(mut?'↺ Ver versão normal':'↺ Ver versão mutante');draw();
     const bm=$('#bMut');if(!RM)bm.animate([{transform:'rotateY(90deg)'},{transform:'rotateY(0)'}],{duration:400});
     if(!RM)box.querySelector('.hot').animate([{transform:'scale(1.25)'},{transform:'scale(1)'}],{duration:450,easing:'cubic-bezier(.3,1.6,.5,1)'});});
   onSeen($('#bMut'),()=>{if(RM)return;$('#bMut').animate([{transform:'translateY(-40px) rotateX(90deg)',opacity:0},{transform:'none',opacity:1}],{duration:900,delay:300,easing:'cubic-bezier(.3,1.4,.5,1)',fill:'backwards'});});
@@ -297,6 +303,7 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
 
 /* ---------------- Domain map ---------------- */
 (function(){const D=[['TAD',1,61,'#5B6883','Liga e desliga outros genes'],['PRD',62,94,'#46557a','Região de apoio'],['DBD',95,292,C.arg,'Encaixa no DNA · onde está a maioria das alterações da SLF'],['NLS',293,322,'#3a4a70','Leva a p53 para o núcleo'],['TD',323,356,C.amber,'Une as 4 cópias · onde está a R337H'],['CTD',357,393,'#5B6883','Controle da atividade']];
+  D.forEach(x=>{x[4]=T(x[4]);});
   const bar=$('#domBar'),leg=$('#domLeg');const pct=v=>((v-1)/392*100);
   D.forEach(([k,a,b,c,t])=>{const d=document.createElement('div');d.className='dom';d.style.left=pct(a)+'%';d.style.width=(pct(b)-pct(a))+'%';d.style.background=c;d.textContent=(b-a)>30?k:'';d.title=t+' ('+a+'–'+b+')';bar.appendChild(d);
     const l=document.createElement('span');l.innerHTML='<i style="background:'+c+'"></i>'+k+' · '+t+' <span class="mono" style="color:var(--dim)">'+a+'–'+b+'</span>';leg.appendChild(l);});
@@ -374,7 +381,7 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
     el('circle',{cx:x,cy:y,r:7,fill:col},row);el('circle',{cx:x,cy:y,r:11,fill:'none',stroke:col,'stroke-opacity':.35},row);
     const right=x<300;const [yy,mm]=d.split('-');
     el('text',{x:right?x+18:x-18,y:y-2,'text-anchor':right?'start':'end',class:'lbl-strong'},row,n);
-    el('text',{x:right?x+18:x-18,y:y+13,'text-anchor':right?'start':'end',class:'lbl'},row,(c==='P'?'Patogênica':'Provavelmente patogênica')+' · '+mm+'/'+yy);
+    el('text',{x:right?x+18:x-18,y:y+13,'text-anchor':right?'start':'end',class:'lbl'},row,T(c==='P'?'Patogênica':'Provavelmente patogênica')+' · '+mm+'/'+yy);
     row.style.transformBox='fill-box';
   });
   onSeen(s,()=>{if(RM)return;[...g.children].forEach((row,i)=>row.animate([{opacity:0,transform:'translateY(-10px)'},{opacity:1,transform:'none'}],{duration:600,delay:i*120,easing:'ease-out',fill:'backwards'}));});
@@ -459,11 +466,12 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
 /* ---------------- TP53 Database ---------------- */
 (function(){const S=[['Glândula adrenal',92,C.arg],['Mama',21,C.his],['Cérebro',16,C.amber],['Tecidos moles',5,'#8A7CFF'],['Rim',2,'#3FC1C9'],['Tireoide',2,'#5FD39A'],['Pulmão',2,'#C57BFF'],['Estômago',2,'#E88D5A'],
   ['Coração/mediastino/pleura',1,'#7A8BB0'],['Pele',1,'#7A8BB0'],['Peritônio',1,'#7A8BB0'],['Ossos – outros',1,'#7A8BB0'],['Sistema hematopoiético',1,'#7A8BB0'],['Glândula parótida',1,'#7A8BB0'],['Colo uterino',1,'#7A8BB0'],['Outros órgãos genitais femininos',1,'#7A8BB0']];
+  S.forEach(x=>{x[0]=T(x[0]);});
   const wf=$('#waffle'),list=$('#sites'),info=$('#wInfo'),DEF=info.innerHTML,cells=[],btns=[],fills=[];let sel=null;
   S.forEach((s,si)=>{for(let k=0;k<s[1];k++){const i=document.createElement('i');i.style.setProperty('--c',s[2]);i.dataset.s=si;wf.appendChild(i);cells.push(i);}});
   function waves(){const n=getComputedStyle(wf).gridTemplateColumns.split(' ').length||25;cells.forEach((c,i)=>c.style.setProperty('--d',((i%n)+Math.floor(i/n))*90+'ms'));}
   waves();addEventListener('resize',waves);
-  const txt=si=>{const s=S[si];return '<b style="color:'+s[2]+'">'+s[0]+'</b> · '+s[1]+(s[1]>1?' registros':' registro')+' ('+fmt(s[1]/150*100,2)+'%)';};
+  const txt=si=>{const s=S[si];return '<b style="color:'+s[2]+'">'+s[0]+'</b> · '+s[1]+' '+T(s[1]>1?'registros':'registro')+' ('+fmt(s[1]/150*100,2)+'%)';};
   function paint(si){wf.classList.toggle('dim',si!==null);cells.forEach(c=>c.classList.toggle('hl',si!==null&&+c.dataset.s===si));info.innerHTML=si===null?DEF:txt(si);}
   function choose(si){sel=sel===si?null:si;btns.forEach((x,j)=>x.classList.toggle('on',j===sel));paint(sel);
     if(sel!==null&&!RM)cells.filter(c=>+c.dataset.s===sel).forEach((c,k)=>c.animate([{transform:'scale(1)'},{transform:'scale(1.6)'},{transform:'scale(1.12)'}],{duration:520,delay:k*10,easing:'cubic-bezier(.3,1.6,.5,1)'}));}
@@ -484,6 +492,7 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
   {k:'gnomAD',d:'População',href:'#ev-gnomad',x:370,y:95,c:C.arg,show:'Apenas 5 em 1.613.858 cópias do gene (0,00031%), sem homozigotos; mais frequente no grupo Admixed American.',lit:'Estudos brasileiros descrevem ~0,3% no Sul e Sudeste, pelo efeito fundador.',refs:[4,10,13,19,20],lim:'Reflete apenas a população analisada e não representa todas as populações.'},
   {k:'DynaMut2',d:'Estrutura',href:'#ev-dynamut',x:110,y:325,c:C.amber,show:'ΔΔG de −0,94 kcal/mol: a p53 fica menos estável, e as ligações ao redor da peça 337 mudam.',lit:'Concorda com estudos que mostram redução da estabilidade do tetrâmero e alteração da oligomerização.',refs:[4,9,13],lim:'Realiza predição estrutural e não substitui testes experimentais.'},
   {k:'TP53 DB',d:'Tumores',href:'#ev-tp53db',x:370,y:325,c:'#8A7CFF',show:'150 tumores registrados: adrenal 61,33%, mama 14,00%, cérebro 10,67%.',lit:'A literatura associa a R337H a sarcomas, mama, adrenocortical, SNC e outras neoplasias do espectro da SLF.',refs:[2,3,17,18,19,20,21],lim:'Apresenta registros disponíveis e não estima risco individual de câncer.'}];
+  N.forEach(n=>{n.d=T(n.d);n.show=T(n.show);n.lit=T(n.lit);n.lim=T(n.lim);});
   const s=$('#integSvg'),card=$('#intCard'),cx=240,cy=210;
   N.forEach(n=>{el('line',{x1:n.x,y1:n.y,x2:cx,y2:cy,stroke:n.c,'stroke-opacity':.25,'stroke-width':1},s);el('line',{x1:n.x,y1:n.y,x2:cx,y2:cy,stroke:n.c,'stroke-width':2,class:RM?'':'flow'},s);});
   el('circle',{cx,cy,r:70,fill:'rgba(255,84,112,.06)',stroke:C.line2},s);
@@ -494,9 +503,9 @@ function glowTex(col){const c=document.createElement('canvas');c.width=c.height=
   const nodes=[];
   function pick(i){const n=N[i];nodes.forEach((g,j)=>{g.querySelector('.ring').setAttribute('stroke-width',j===i?3:1.5);g.querySelector('.core').setAttribute('fill',j===i?n.c:C.panel2);g.setAttribute('aria-pressed',String(j===i));});
     card.innerHTML='<span class="eyebrow" style="color:'+n.c+'">'+n.d+'</span><h3>'+n.k+(n.k==='TP53 DB'?'':'')+'</h3>'+
-    '<div class="blk"><b style="color:var(--muted)">O que mostrou</b><p>'+n.show+'</p></div>'+
-    '<div class="blk"><b style="color:var(--muted)">Literatura</b><p>'+n.lit+cite(n.refs)+'</p></div>'+
-    '<div class="blk"><b style="color:var(--his)">Cuidado ao interpretar</b><p>'+n.lim+'</p></div><a class="more" href="'+n.href+'">Ver resultado completo →</a>';}
+    '<div class="blk"><b style="color:var(--muted)">'+T('O que mostrou')+'</b><p>'+n.show+'</p></div>'+
+    '<div class="blk"><b style="color:var(--muted)">'+T('Literatura')+'</b><p>'+n.lit+cite(n.refs)+'</p></div>'+
+    '<div class="blk"><b style="color:var(--his)">'+T('Cuidado ao interpretar')+'</b><p>'+n.lim+'</p></div><a class="more" href="'+n.href+'">'+T('Ver resultado completo →')+'</a>';}
   N.forEach((n,i)=>{const g=el('g',{class:'node',tabindex:0,role:'button','aria-label':n.k+' — '+n.d},s);
     el('circle',{class:'ring',cx:n.x,cy:n.y,r:44,fill:'none',stroke:n.c,'stroke-width':1.5},g);
     el('circle',{class:'core',cx:n.x,cy:n.y,r:36,fill:C.panel2},g);
@@ -532,9 +541,9 @@ const REFS=[
  ['Formiga MNDC, de Andrade KC, Kowalski LP, Achatz MI.','Frequency of thyroid carcinoma in Brazilian TP53 p.R337H carriers with Li Fraumeni syndrome.','JAMA Oncol. 2017;3(10):1400-1402.']];
 (function(){const ol=$('#refs');REFS.forEach((r,i)=>{const li=document.createElement('li');li.id='ref-'+(i+1);
   const q=encodeURIComponent(r[1].replace(/\.$/,''));
-  li.innerHTML='<span class="n">'+(i+1)+'</span><div><p>'+r[0]+' <span class="t">'+r[1]+'</span> '+r[2]+'</p><a class="pm" href="https://pubmed.ncbi.nlm.nih.gov/?term='+q+'" target="_blank" rel="noopener">Buscar no PubMed ↗</a></div>';
+  li.innerHTML='<span class="n">'+(i+1)+'</span><div><p>'+r[0]+' <span class="t">'+r[1]+'</span> '+r[2]+'</p><a class="pm" href="https://pubmed.ncbi.nlm.nih.gov/?term='+q+'" target="_blank" rel="noopener">'+T('Buscar no PubMed ↗')+'</a></div>';
   li.dataset.s=(r.join(' ')).toLowerCase();ol.appendChild(li);});
-  const inp=$('#refSearch'),cnt=$('#refCount');inp.addEventListener('input',()=>{const v=inp.value.trim().toLowerCase();let n=0;ol.querySelectorAll('li').forEach(li=>{const ok=!v||li.dataset.s.includes(v);li.hidden=!ok;if(ok)n++;});cnt.textContent=n+(n===1?' referência':' referências');});
+  const inp=$('#refSearch'),cnt=$('#refCount');inp.addEventListener('input',()=>{const v=inp.value.trim().toLowerCase();let n=0;ol.querySelectorAll('li').forEach(li=>{const ok=!v||li.dataset.s.includes(v);li.hidden=!ok;if(ok)n++;});cnt.textContent=n+' '+T(n===1?'referência':'referências');});
   document.addEventListener('click',e=>{const a=e.target.closest('a.cite');if(!a)return;const li=document.querySelector(a.getAttribute('href'));if(!li)return;e.preventDefault();inp.value='';inp.dispatchEvent(new Event('input'));
     li.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});li.classList.add('flash');setTimeout(()=>li.classList.remove('flash'),1600);});
 })();

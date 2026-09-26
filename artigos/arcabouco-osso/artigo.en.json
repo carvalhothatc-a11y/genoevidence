@@ -1,0 +1,328 @@
+{
+  "id": "arcabouco-osso",
+  "tipo": "artigo",
+  "rotulo": "Published study",
+  "arte": "fibras",
+  "arte_legenda": "illustration · fibers of a bone scaffold",
+  "tema": "Biomaterials and nanotechnology",
+  "tema_id": "biomateriais",
+  "titulo": "Enhanced bone matrix formation through a dense lamellar scaffold of chitosan, collagen type I, and hyaluronic acid",
+  "titulo_curto": "A chitosan, collagen and hyaluronic acid “scaffold” that helps form bone",
+  "breadcrumb": "Bone scaffold",
+  "autores": [
+    {
+      "nome": "Gabrielle Christine Bonetti Sallum",
+      "afiliacao": "Periodontics · Piracicaba Dental School (Unicamp)"
+    },
+    {
+      "nome": "Catharina Marques Sacramento",
+      "afiliacao": "Periodontics · Piracicaba Dental School (Unicamp)"
+    },
+    {
+      "nome": "Thais Alves",
+      "afiliacao": "Graduate Program in Biotechnology · Tiradentes University (Unit)"
+    },
+    {
+      "nome": "Patrícia Lius Melo Alves",
+      "destaque": true,
+      "afiliacao": "Industrial Microbiology (LAMINFE) · Uniso"
+    },
+    {
+      "nome": "Angela Faustino Jozala",
+      "afiliacao": "LAMINFE · Uniso"
+    },
+    {
+      "nome": "Denise Grotto",
+      "afiliacao": "LAMINFE · Uniso"
+    },
+    {
+      "nome": "Marco Vinícius Chaud",
+      "afiliacao": "Biomaterials and Nanotechnology · Uniso"
+    },
+    {
+      "nome": "Norberto Aranha",
+      "afiliacao": "LAMINFE · Uniso"
+    },
+    {
+      "nome": "Karina Gonzales Silvério",
+      "afiliacao": "Periodontics · Piracicaba Dental School (Unicamp)"
+    }
+  ],
+  "revista": {
+    "nome": "Carbohydrate Polymer Technologies and Applications",
+    "cidade": "Amsterdam, Netherlands (Elsevier)",
+    "issn": "2666-8939",
+    "volume": "8",
+    "paginas": "article 100549",
+    "ano": "2024",
+    "publicado": "2024-07-21",
+    "doi": "10.1016/j.carpta.2024.100549",
+    "url": "https://doi.org/10.1016/j.carpta.2024.100549",
+    "site": "https://www.sciencedirect.com/journal/carbohydrate-polymer-technologies-and-applications"
+  },
+  "palavras_chave": [
+    "Scaffold",
+    "Chitosan",
+    "Type I collagen",
+    "Hyaluronic acid",
+    "Bone regeneration"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "The question",
+      "titulo": "Can we help bone rebuild itself?",
+      "texto": "In tissue engineering, cells need a support, a “scaffold”, to grow and form new tissue. The study tested a scaffold made of three natural materials."
+    },
+    {
+      "rotulo": "What they did",
+      "titulo": "Bone cells on the scaffold",
+      "texto": "In the lab, cells that will become osteoblasts (the cells that make bone) were grown on the scaffold and compared with cells grown directly on the plate."
+    },
+    {
+      "rotulo": "What they found",
+      "titulo": "More bone forming, and sooner",
+      "texto": "The cells thrived on the scaffold, deposited more mineral nodules in 14 days and switched on bone-forming genes earlier."
+    },
+    {
+      "rotulo": "Why it matters",
+      "titulo": "A promising material",
+      "texto": "The scaffold may be useful in future treatments to regenerate bone. These are still lab results."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "3",
+      "texto": "natural materials combined: chitosan, type I collagen and hyaluronic acid",
+      "cor": "amber"
+    },
+    {
+      "valor": "14 days",
+      "texto": "until the scaffold showed more mineral nodules than the control",
+      "cor": "ok"
+    },
+    {
+      "valor": "2 genes",
+      "texto": "for bone formation (Runx2 and Ocn) more active, and sooner",
+      "cor": "violet"
+    },
+    {
+      "valor": "2 media",
+      "texto": "culture media tested (standard and osteogenic), with the same result",
+      "cor": "teal"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "fonte",
+      "menu": "About this page",
+      "eyebrow": "Notice",
+      "titulo": "How this explanation was made",
+      "lede": "Honesty about the source.",
+      "blocos": [
+        {
+          "tipo": "destaque",
+          "html": "This page was written from the <strong>published abstract</strong>, because the full text could not be read automatically. So it contains no numbers beyond those in the abstract. The full paper is open access and can be read using the <strong>Read in the journal</strong> button."
+        }
+      ]
+    },
+    {
+      "id": "contexto",
+      "menu": "Context",
+      "eyebrow": "Context",
+      "titulo": "What a scaffold is, and why these materials",
+      "lede": "To regenerate a tissue, cells need a place to attach, grow and work.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>In <strong>tissue engineering</strong>, a <strong>scaffold</strong> is a three-dimensional structure that supports cells, like scaffolding on a building site. A good scaffold must be well tolerated by the body, have pores for cells to enter and, ideally, stimulate the formation of the desired tissue.</p><p>The scaffold in this study is <strong>lamellar and dense</strong>, that is, made of compact layers, and combines three materials of natural origin.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "The scaffold's three materials",
+          "itens": [
+            {
+              "titulo": "Chitosan",
+              "texto": "Obtained from chitin, found in crustacean shells. It is biocompatible and biodegradable, widely used in biomaterials.",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Type I collagen",
+              "texto": "The main protein in the organic part of bone. It serves as the base where minerals are deposited.",
+              "cor": "his"
+            },
+            {
+              "titulo": "Hyaluronic acid",
+              "texto": "A molecule naturally present in tissues. It holds water and takes part in communication between cells.",
+              "cor": "violet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "How it was done",
+      "eyebrow": "Method",
+      "titulo": "How the study was done",
+      "lede": "An in vitro study, that is, with cells in the lab.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "The cells",
+              "texto": "Immortalized pre-osteoblastic cells were used: cells that will still turn into osteoblasts, the ones responsible for making bone."
+            },
+            {
+              "titulo": "Two groups",
+              "texto": "Control: cells grown directly on the plastic plate. Scaffold: cells grown on the chitosan, type I collagen and hyaluronic acid scaffold."
+            },
+            {
+              "titulo": "Two culture media",
+              "texto": "Each group was grown in standard medium and in osteogenic medium, which contains substances that stimulate bone formation."
+            },
+            {
+              "titulo": "What was measured",
+              "texto": "The cells' metabolic activity (whether they were healthy), the deposit of mineral nodules, the activity of the enzyme alkaline phosphatase and the activation of the Runx2 and Ocn genes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Results",
+      "eyebrow": "Results",
+      "titulo": "The scaffold pushed the cells toward becoming bone",
+      "lede": "Signs of bone formation appeared stronger and sooner in the cells on the scaffold.",
+      "blocos": [
+        {
+          "tipo": "cartoes",
+          "itens": [
+            {
+              "titulo": "The cells thrived",
+              "texto": "The metabolic activity of cells on the scaffold was similar to the control: the material did not harm the cells.",
+              "cor": "ok"
+            },
+            {
+              "titulo": "More mineral nodules",
+              "texto": "After 14 days, there were more mineral nodules deposited on the scaffold than in the control, in both standard and osteogenic media.",
+              "cor": "amber"
+            },
+            {
+              "titulo": "More alkaline phosphatase",
+              "texto": "The scaffold itself increased the activity of this enzyme, which paves the way for bone mineralization.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Genes switched on earlier",
+              "texto": "mRNA production from the Runx2 and Ocn genes increased, and earlier than in the control group.",
+              "cor": "his"
+            }
+          ]
+        },
+        {
+          "tipo": "cadeia",
+          "itens": [
+            "Pre-osteoblast: the cell doesn't make bone yet",
+            "Runx2 “switches on” the program to become an osteoblast",
+            "Alkaline phosphatase prepares mineralization",
+            "Osteocalcin (Ocn) marks the mature osteoblast",
+            "Mineral nodules: the beginning of the bone matrix"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "The sequence above shows, in simplified form, the maturation steps that the markers measured in the study represent."
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusion",
+      "eyebrow": "Conclusion",
+      "titulo": "What the study allows us to say",
+      "lede": "An early lab step toward new materials for regenerating bone.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>The dense lamellar scaffold of chitosan, type I collagen and hyaluronic acid <strong>stimulated the cells to mature toward bone</strong>. The authors conclude that it is a promising material for future <strong>bone regeneration</strong> strategies.</p><p>Since this is a lab study with cells, tests in animals and then in people are still needed.</p>"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Scaffold",
+      "def": "3D structure that supports cells so they can grow and form a tissue."
+    },
+    {
+      "termo": "Tissue engineering",
+      "def": "Field that combines cells, materials and chemical signals to rebuild body tissues."
+    },
+    {
+      "termo": "Chitosan",
+      "def": "Natural polymer obtained from the chitin in crustacean shells. Biocompatible and biodegradable."
+    },
+    {
+      "termo": "Type I collagen",
+      "def": "The most abundant protein in bone, skin and tendons."
+    },
+    {
+      "termo": "Hyaluronic acid",
+      "def": "Natural tissue molecule that holds water and helps cells communicate."
+    },
+    {
+      "termo": "Osteoblast",
+      "def": "Cell that produces the bone matrix."
+    },
+    {
+      "termo": "Pre-osteoblast",
+      "def": "Still-immature cell that can turn into an osteoblast."
+    },
+    {
+      "termo": "Osteogenic medium",
+      "def": "Culture medium with substances that stimulate cells to form bone."
+    },
+    {
+      "termo": "Mineralization nodules",
+      "def": "Spots where cells deposit calcium and phosphate, the beginning of the hard part of bone."
+    },
+    {
+      "termo": "Alkaline phosphatase",
+      "def": "Enzyme produced by osteoblasts that helps mineralize bone."
+    },
+    {
+      "termo": "Runx2 and osteocalcin (Ocn)",
+      "def": "Marker genes of bone formation: Runx2 starts the process and osteocalcin marks the mature osteoblast."
+    },
+    {
+      "termo": "mRNA",
+      "def": "The “working copy” of a gene. More mRNA means the gene is more active."
+    }
+  ],
+  "citacao": "SALLUM, G. C. B.; SACRAMENTO, C. M.; ALVES, T.; ALVES, P. L. M.; JOZALA, A. F.; GROTTO, D.; CHAUD, M. V.; ARANHA, N.; SILVÉRIO, K. G. Enhanced bone matrix formation through a dense lamellar scaffold of chitosan, collagen type I, and hyaluronic acid. Carbohydrate Polymer Technologies and Applications, Amsterdam, v. 8, art. 100549, 2024. DOI: 10.1016/j.carpta.2024.100549.",
+  "referencias": [
+    {
+      "texto": "RICO-LLANOS, G. A. et al. Collagen Type I Biomaterials as Scaffolds for Bone Tissue Engineering. Polymers, v. 13, 599, 2021.",
+      "doi": "10.3390/polym13040599"
+    },
+    {
+      "texto": "KOMORI, T. Regulation of Proliferation, Differentiation and Functions of Osteoblasts by Runx2. International Journal of Molecular Sciences, v. 20, 1694, 2019.",
+      "doi": "10.3390/ijms20071694"
+    },
+    {
+      "texto": "COLLINS, M. N.; BIRKINSHAW, C. Hyaluronic acid based scaffolds for tissue engineering – a review. Carbohydrate Polymers, 2013.",
+      "doi": "10.1016/j.carbpol.2012.10.028"
+    },
+    {
+      "texto": "RODRÍGUEZ-VÁZQUEZ, M. et al. Chitosan and its potential use as a scaffold for tissue engineering in regenerative medicine. BioMed Research International, 2015.",
+      "doi": "10.1155/2015/821279"
+    },
+    {
+      "texto": "LOH, Q. L.; CHOONG, C. Three-dimensional scaffolds for tissue engineering applications: role of porosity and pore size. Tissue Engineering Part B, 2013.",
+      "doi": "10.1089/ten.teb.2012.0437"
+    }
+  ],
+  "idioma": "en"
+}

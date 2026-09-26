@@ -1,0 +1,386 @@
+{
+  "id": "celulose-remedios-agua",
+  "tipo": "artigo",
+  "rotulo": "Estudio publicado",
+  "arte": "particulas",
+  "arte_legenda": "ilustración · moléculas de fármacos en el agua",
+  "tema": "Medio ambiente",
+  "tema_id": "meio-ambiente",
+  "titulo": "Exploring Bacterial Cellulose and a Biosurfactant as Eco-Friendly Strategies for Addressing Pharmaceutical Contaminants",
+  "titulo_pt": "Explorando la celulosa bacteriana y un biosurfactante como estrategias ecológicas contra contaminantes farmacéuticos",
+  "titulo_curto": "Celulosa de bacteria para quitar fármacos y hormonas del agua",
+  "breadcrumb": "Fármacos en el agua",
+  "autores": [
+    {
+      "nome": "Nathália Roberta Cardoso Mendes Castanho",
+      "afiliacao": "Farmacia · Uniso"
+    },
+    {
+      "nome": "Nathane de Marco",
+      "afiliacao": "Farmacia · Uniso"
+    },
+    {
+      "nome": "Érika Leão Ajala Caetano",
+      "afiliacao": "Farmacia · Uniso"
+    },
+    {
+      "nome": "Patrícia Lius Melo Alves",
+      "destaque": true,
+      "afiliacao": "Farmacia · Uniso"
+    },
+    {
+      "nome": "Thaisa Borim Pickler",
+      "afiliacao": "Farmacia · Uniso"
+    },
+    {
+      "nome": "Natasha Lien de Almeida Ibanez",
+      "afiliacao": "Farmacia · Uniso"
+    },
+    {
+      "nome": "Angela Faustino Jozala",
+      "afiliacao": "Farmacia · Uniso"
+    },
+    {
+      "nome": "Denise Grotto",
+      "afiliacao": "Farmacia · Uniso"
+    }
+  ],
+  "revista": {
+    "nome": "Molecules",
+    "cidade": "Basilea, Suiza (MDPI)",
+    "issn": "1420-3049",
+    "volume": "29",
+    "numero": "2",
+    "paginas": "artículo 448",
+    "ano": "2024",
+    "submetido": "2023-11-27",
+    "publicado": "2024-01-17",
+    "doi": "10.3390/molecules29020448",
+    "url": "https://doi.org/10.3390/molecules29020448",
+    "site": "https://www.mdpi.com/journal/molecules",
+    "pdf": "https://www.mdpi.com/1420-3049/29/2/448/pdf"
+  },
+  "palavras_chave": [
+    "Biosorción",
+    "Celulosa bacteriana",
+    "Biosurfactante",
+    "Hormonas",
+    "Microcontaminantes",
+    "Medicamentos"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "El problema",
+      "titulo": "Fármacos que terminan en los ríos",
+      "texto": "Restos de medicamentos y de hormonas, como las de los anticonceptivos, llegan al agua y pueden causar daños incluso en cantidades muy pequeñas."
+    },
+    {
+      "rotulo": "Qué hicieron",
+      "titulo": "Tres versiones de una celulosa “esponja”",
+      "texto": "Probaron membranas de celulosa hecha por bacterias, comunes, secadas en frío o con un biosurfactante, para capturar paracetamol y la hormona etinilestradiol del agua."
+    },
+    {
+      "rotulo": "Qué encontraron",
+      "titulo": "Excelente para la hormona",
+      "texto": "La celulosa capturó hasta el 88% de la hormona y hasta el 31,8% del paracetamol. El biosurfactante ayudó con el paracetamol, pero perjudicó con la hormona."
+    },
+    {
+      "rotulo": "Por qué importa",
+      "titulo": "Limpieza del agua más ecológica",
+      "texto": "La celulosa bacteriana es natural y biodegradable y puede ayudar a quitar hormonas de aguas contaminadas. El biosurfactante todavía necesita ajustes."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "88%",
+      "texto": "de la hormona EE2 capturada por la celulosa secada en frío (liofilizada)",
+      "cor": "ok"
+    },
+    {
+      "valor": "74%",
+      "texto": "de la hormona capturada por la membrana de celulosa común",
+      "cor": "teal"
+    },
+    {
+      "valor": "31,8%",
+      "texto": "del paracetamol capturado, el mejor resultado para este fármaco",
+      "cor": "amber"
+    },
+    {
+      "valor": "20 min",
+      "texto": "tiempo ideal para que la celulosa capture la hormona",
+      "cor": "violet"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "El problema",
+      "eyebrow": "Contexto",
+      "titulo": "Los “microcontaminantes” del agua",
+      "lede": "Analgésicos, antibióticos, antiinflamatorios y hormonas llegan a los ríos por las aguas residuales y todavía no tienen límites de seguridad bien definidos.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>La industria y el día a día de las ciudades vierten al agua sustancias en cantidades mínimas, los <strong>microcontaminantes</strong>. Entre ellos están medicamentos y hormonas naturales y sintéticas, como estrona, estradiol, estriol y <strong>etinilestradiol</strong>. Hay evidencias de toxicidad para la vida acuática, <strong>alteración hormonal</strong> e incluso estímulo a la resistencia a los antibióticos.</p><p>Todavía no hay consenso sobre qué cantidades son seguras para el ambiente y para la salud humana.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "Los dos contaminantes estudiados",
+          "itens": [
+            {
+              "titulo": "Etinilestradiol (EE2)",
+              "texto": "Hormona presente en los anticonceptivos. Incluso en concentraciones extremadamente bajas, puede alterar el sistema hormonal de los animales.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Paracetamol",
+              "texto": "Analgésico y antipirético muy usado. En exceso, puede dañar el hígado y los riñones; sus efectos a lo largo del tiempo son difíciles de rastrear.",
+              "cor": "amber"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>Una forma de quitar estas sustancias es la <strong>sorción</strong>: un material poroso “jala” el contaminante del agua, ya sea hacia adentro (absorción) o hacia su superficie (adsorción). El estudio probó la <strong>celulosa bacteriana</strong> como ese material y, por primera vez, la combinó con un <strong>biosurfactante</strong>, una especie de “jabón natural” producido por la bacteria <em>Bacillus subtilis</em>.</p>"
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Cómo se hizo",
+      "eyebrow": "Método",
+      "titulo": "Cómo se hizo el experimento",
+      "lede": "Tres versiones de la celulosa se sumergieron en agua contaminada y se siguieron a lo largo del tiempo.",
+      "blocos": [
+        {
+          "tipo": "cartoes",
+          "titulo": "Las tres versiones probadas",
+          "itens": [
+            {
+              "titulo": "Celulosa común",
+              "texto": "Membrana entera de celulosa bacteriana, sin el agua de la superficie.",
+              "cor": "teal"
+            },
+            {
+              "titulo": "Celulosa + biosurfactante",
+              "texto": "Membrana dejada 24 horas en una solución del biosurfactante, para incorporarlo.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Celulosa liofilizada",
+              "texto": "Celulosa congelada a −80 °C, secada en frío durante 48 horas y triturada.",
+              "cor": "ok"
+            }
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Producir la celulosa",
+              "texto": "La bacteria Gluconacetobacter xylinus creció 7 días a 30 °C en placas de 24 pocillos. Las membranas se limpiaron con soda cáustica, se lavaron y se esterilizaron."
+            },
+            {
+              "titulo": "Producir el biosurfactante",
+              "texto": "Bacillus subtilis creció 96 horas a 35 °C. El biosurfactante se separó por centrifugación, acidificación y extracción con solventes, y después se secó en frío."
+            },
+            {
+              "titulo": "Verificar el biosurfactante",
+              "texto": "Un análisis por infrarrojo (FTIR) mostró que tenía las mismas “firmas químicas” que la surfactina estándar y que siguió en la celulosa incluso después de lavada."
+            },
+            {
+              "titulo": "Contaminar el agua",
+              "texto": "Muestras de 0,5 g de celulosa se colocaron en 60 mL de agua con paracetamol (2 g/L) o con la hormona EE2 (2 mg/L)."
+            },
+            {
+              "titulo": "Medir lo que quedó en el agua",
+              "texto": "Se tomaron muestras de 10 minutos a 24 horas. El paracetamol se midió por espectrofotometría (430 nm) y la hormona por cromatografía (HPLC)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "Cuánto de cada contaminante capturó la celulosa",
+      "lede": "Elige el contaminante y compara las tres versiones de la celulosa.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Elige el contaminante",
+          "grupos": [
+            {
+              "nome": "Celulosa común",
+              "cor": "#3FC1C9"
+            },
+            {
+              "nome": "Con biosurfactante",
+              "cor": "#9DB6FF"
+            },
+            {
+              "nome": "Liofilizada",
+              "cor": "#5FD39A"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "Hormona EE2",
+              "valores": [
+                {
+                  "m": 74
+                },
+                {
+                  "m": 42
+                },
+                {
+                  "m": 88
+                }
+              ],
+              "leitura": "La celulosa fue muy eficaz contra la hormona, sobre todo la versión secada en frío. Con el biosurfactante, la captura cayó casi a la mitad."
+            },
+            {
+              "rotulo": "Paracetamol",
+              "valores": [
+                {
+                  "m": 7.4
+                },
+                {
+                  "m": 19.1
+                },
+                {
+                  "m": 31.8
+                }
+              ],
+              "leitura": "El paracetamol fue más difícil de capturar: la mayor parte siguió en el agua. Aquí el biosurfactante ayudó, y la celulosa liofilizada tuvo el mejor resultado."
+            }
+          ],
+          "nota": "Mayor porcentaje capturado en cada caso (pico de adsorción), según el texto del artículo."
+        },
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura3-paracetamol.webp",
+          "full": "imagens/figura3-paracetamol.webp",
+          "alt": "Tres gráficos de líneas que muestran la concentración de paracetamol en el agua bajando y después subiendo a lo largo del tiempo",
+          "legenda": "Figura 3 · Paracetamol en el agua a lo largo del tiempo con (A) celulosa común, (B) celulosa + biosurfactante y (C) celulosa liofilizada. Cuando la línea baja, la celulosa está capturando el fármaco; cuando sube, una parte vuelve al agua.",
+          "credito": "Castanho et al. (2024), Molecules, licencia CC BY 4.0"
+        },
+        {
+          "tipo": "destaque",
+          "html": "El tiempo marca la diferencia. La celulosa captura el contaminante rápido, pero después <strong>queda “llena” (saturada) y parte de él vuelve al agua</strong>. En la celulosa liofilizada, por ejemplo, ese retorno empezó después de unos 100 minutos. Para la hormona, el mejor momento fue a los <strong>20 minutos</strong>."
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discusión",
+      "eyebrow": "Discusión",
+      "titulo": "Por qué el biosurfactante ayudó a uno y perjudicó al otro",
+      "lede": "Los surfactantes cambian la forma en que las moléculas se adhieren a las superficies, y el efecto no siempre es previsible.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Los biosurfactantes forman pequeñas esferas (<strong>micelas</strong>) que pueden “envolver” el contaminante y protegerlo, cambiando su movilidad. Estudios anteriores ya mostraban que pueden acelerar o retrasar la limpieza de contaminantes, sin que sea posible prever el resultado antes de la prueba. Esto ayuda a explicar la <strong>liberación rápida</strong> vista en la celulosa con biosurfactante.</p><p>La atracción entre la celulosa y la hormona probablemente involucra <strong>enlaces de hidrógeno y fuerzas eléctricas</strong>, como ya se describió para celulosas modificadas. En comparación, la cáscara de arroz necesitó 120 minutos para capturar mejor el 17β-estradiol, mientras que la celulosa bacteriana llegó a su mejor punto con el EE2 en 20 minutos.</p>"
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusión",
+      "eyebrow": "Conclusión",
+      "titulo": "Lo que el estudio permite afirmar",
+      "lede": "Un material natural prometedor contra las hormonas en el agua.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>El biosurfactante se produjo e incorporó a la celulosa con éxito. La <strong>celulosa liofilizada</strong> fue la más eficiente para capturar la hormona EE2, y el biosurfactante mejoró la captura del paracetamol, pero redujo la de la hormona. La celulosa bacteriana, sobre todo secada en frío, es candidata a <strong>biosorbente ecológico</strong> para quitar ciertos medicamentos de aguas contaminadas.</p>"
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Próximos pasos sugeridos",
+          "itens": [
+            "Ajustar la concentración del biosurfactante, para mejorar la captura sin perder la eficacia natural de la celulosa.",
+            "Estudiar el tiempo de contacto ideal, ya que el contaminante puede volver al agua después de la saturación."
+          ]
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Microcontaminantes",
+      "def": "Sustancias presentes en el agua en cantidades mínimas, como restos de fármacos y hormonas."
+    },
+    {
+      "termo": "Disruptor endocrino",
+      "def": "Sustancia que interfiere en el funcionamiento de las hormonas de personas y animales."
+    },
+    {
+      "termo": "Etinilestradiol (EE2)",
+      "def": "Hormona sintética, parecida al estrógeno, usada en anticonceptivos."
+    },
+    {
+      "termo": "Sorción",
+      "def": "Cuando un material quita una sustancia de un líquido, por absorción o adsorción."
+    },
+    {
+      "termo": "Adsorción",
+      "def": "Cuando la sustancia se pega a la superficie de un material."
+    },
+    {
+      "termo": "Desorción",
+      "def": "Lo contrario de la adsorción: la sustancia se suelta del material y vuelve al líquido."
+    },
+    {
+      "termo": "Biosurfactante",
+      "def": "Sustancia con acción parecida a la del jabón, producida por microbios. Es biodegradable."
+    },
+    {
+      "termo": "Surfactina",
+      "def": "Biosurfactante clásico producido por Bacillus subtilis, usado como patrón de comparación."
+    },
+    {
+      "termo": "Liofilización",
+      "def": "Secado en frío y al vacío, que quita el agua sin dañar el material."
+    },
+    {
+      "termo": "FTIR",
+      "def": "Análisis por luz infrarroja que identifica los grupos químicos de una sustancia."
+    },
+    {
+      "termo": "HPLC",
+      "def": "Cromatografía líquida de alta eficiencia: separa y mide sustancias en cantidades muy pequeñas."
+    },
+    {
+      "termo": "Espectrofotometría",
+      "def": "Técnica que mide cuánto de una sustancia hay en una muestra por la luz que absorbe."
+    }
+  ],
+  "citacao": "CASTANHO, N. R. C. M.; MARCO, N.; CAETANO, É. L. A.; ALVES, P. L. M.; PICKLER, T. B.; IBANEZ, N. L. A.; JOZALA, A. F.; GROTTO, D. Exploring Bacterial Cellulose and a Biosurfactant as Eco-Friendly Strategies for Addressing Pharmaceutical Contaminants. Molecules, Basel, v. 29, n. 2, art. 448, 2024. DOI: 10.3390/molecules29020448.",
+  "referencias": [
+    {
+      "texto": "FREO, U. et al. Paracetamol: A Review of Guideline Recommendations. Journal of Clinical Medicine, v. 10, 3420, 2021.",
+      "doi": "10.3390/jcm10153420"
+    },
+    {
+      "texto": "DZIEWECZYNSKI, T. L.; BUCKMAN, C. M. Acute exposure to 17α-ethinylestradiol disrupts audience effects on male-male interactions in Siamese fighting fish, Betta splendens. Hormones and Behavior, v. 63, p. 497-502, 2013.",
+      "doi": "10.1016/j.yhbeh.2013.01.002"
+    },
+    {
+      "texto": "RON, E. Z.; ROSENBERG, E. Natural roles of biosurfactants. Environmental Microbiology, v. 3, p. 229-236, 2001.",
+      "doi": "10.1046/j.1462-2920.2001.00190.x"
+    },
+    {
+      "texto": "ZHANG, R.; SOMASUNDARAN, P. Advances in adsorption of surfactants and their mixtures at solid/solution interfaces. Advances in Colloid and Interface Science, v. 123-126, p. 213-229, 2006.",
+      "doi": "10.1016/j.cis.2006.07.004"
+    },
+    {
+      "texto": "MCGILL, M. R.; HINSON, J. A. The development and hepatotoxicity of acetaminophen: reviewing over a century of progress. Drug Metabolism Reviews, v. 52, p. 472-500, 2020.",
+      "doi": "10.1080/03602532.2020.1832112"
+    }
+  ],
+  "rotulo_original": "Título original en inglés:",
+  "idioma": "es"
+}

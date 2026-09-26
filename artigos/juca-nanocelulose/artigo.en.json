@@ -1,0 +1,409 @@
+{
+  "id": "juca-nanocelulose",
+  "tipo": "artigo",
+  "rotulo": "Published study",
+  "arte": "fibras",
+  "arte_legenda": "illustration · nanocellulose releasing jucá extract",
+  "tema": "Microbiology",
+  "tema_id": "microbiologia",
+  "titulo": "Atividade antimicrobiana da nanocelulose bacteriana contendo Caesalpinia ferrea",
+  "titulo_curto": "Jucá inside nanocellulose: a natural dressing against bacteria",
+  "breadcrumb": "Jucá and nanocellulose",
+  "autores": [
+    {
+      "nome": "Patrícia Lius Melo Alves",
+      "destaque": true,
+      "afiliacao": "LAMINFE and LAPETOX · Uniso"
+    },
+    {
+      "nome": "Machelle Watuse de Borba",
+      "afiliacao": "LAMINFE and LAPETOX · Uniso"
+    },
+    {
+      "nome": "Gabriel Pereira Machado",
+      "afiliacao": "LAMINFE and LAPETOX · Uniso"
+    },
+    {
+      "nome": "Ana Carolina Souza Chacon",
+      "afiliacao": "Biomedicine · Uniso"
+    },
+    {
+      "nome": "Larissa Oliveira Simões",
+      "afiliacao": "Biomedicine · Uniso"
+    },
+    {
+      "nome": "Thaisa Borim Pickler",
+      "afiliacao": "LAMINFE and LAPETOX · Uniso"
+    },
+    {
+      "nome": "Denise Grotto",
+      "afiliacao": "LAMINFE and LAPETOX · Uniso"
+    },
+    {
+      "nome": "Angela Faustino Jozala",
+      "afiliacao": "University of Sorocaba"
+    }
+  ],
+  "revista": {
+    "nome": "Observatorio de la Economía Latinoamericana",
+    "cidade": "Curitiba, Brazil",
+    "issn": "1696-8352",
+    "volume": "22",
+    "numero": "4",
+    "paginas": "1–16",
+    "ano": "2024",
+    "submetido": "2024-03-22",
+    "publicado": "2024-04-25",
+    "doi": "10.55905/oelv22n4-178",
+    "url": "https://doi.org/10.55905/oelv22n4-178",
+    "site": "https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel",
+    "pdf": "https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/download/4332/2900"
+  },
+  "palavras_chave": [
+    "Caesalpinia ferrea",
+    "Bacterial nanocellulose",
+    "Antimicrobial"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "The starting point",
+      "titulo": "A plant used to heal wounds",
+      "texto": "Jucá (Caesalpinia ferrea), a Brazilian tree also known as Brazilian ironwood (pau-ferro), is used in folk medicine to heal wounds and relieve inflammation and pain."
+    },
+    {
+      "rotulo": "What they did",
+      "titulo": "The extract inside a membrane",
+      "texto": "They loaded jucá bark extract into nanocellulose membranes made by bacteria and tested whether they released the extract and blocked bacteria."
+    },
+    {
+      "rotulo": "What they found",
+      "titulo": "Release and action against 3 bacteria",
+      "texto": "The membrane released the extract for up to 40 hours, peaking at 30 hours, and every sample stopped the growth of the three bacteria tested."
+    },
+    {
+      "rotulo": "Why it matters",
+      "titulo": "A potential natural dressing",
+      "texto": "Combining the qualities of nanocellulose with those of jucá could lead to a dressing. The next step is to test whether it helps healing."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "36 mm",
+      "texto": "average bacteria-free zone around the membrane, against S. aureus",
+      "cor": "ok"
+    },
+    {
+      "valor": "29 mm",
+      "texto": "average bacteria-free zone against E. coli and P. aeruginosa",
+      "cor": "teal"
+    },
+    {
+      "valor": "30 h",
+      "texto": "peak extract release: 218 µg/mL of protein",
+      "cor": "amber"
+    },
+    {
+      "valor": "195 µg/mL",
+      "texto": "lowest extract concentration that already blocked E. coli",
+      "cor": "violet"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Jucá",
+      "eyebrow": "Context",
+      "titulo": "Jucá and nanocellulose",
+      "lede": "A tree from Brazilian folk medicine and a material produced by bacteria, together in a possible dressing.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>In Brazil, <em>Caesalpinia ferrea</em> (also called <em>Libidibia ferrea</em>) is known as <strong>pau-ferro, jucá, ibirá-obi or muirá-obi</strong>. It grows throughout the country, mainly in the North and Northeast, such as in Pernambuco and Ceará. Leaves, fruits, pods and bark are used in teas, syrups, extracts and macerates.</p><p>Studies have already found <strong>flavonoids, saponins, coumarins, phenols and tannins</strong> in the plant, especially <strong>gallic acid</strong> and <strong>ellagic acid</strong>. Because of them, jucá has healing, antimicrobial, antifungal, anti-inflammatory and antioxidant action.</p>"
+        },
+        {
+          "tipo": "texto",
+          "html": "<p><strong>Bacterial nanocellulose</strong> is a very pure cellulose made of nanofibers, produced by bacteria. It holds about <strong>99% water</strong>, contains no animal-derived components and is already used as a temporary skin substitute and as a dressing for burns and ulcers.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "What nanocellulose offers a dressing",
+          "itens": [
+            {
+              "titulo": "Pure and safe",
+              "texto": "It is not toxic and is produced without other polymers mixed in.",
+              "cor": "teal"
+            },
+            {
+              "titulo": "Strong and flexible",
+              "texto": "The nanofiber network handles well and molds to the skin.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Barrier",
+              "texto": "It protects the wound against microbes and helps relieve pain.",
+              "cor": "ok"
+            },
+            {
+              "titulo": "Carries active ingredients",
+              "texto": "It traps substances between the fibers and releases them gradually.",
+              "cor": "amber"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "How it was done",
+      "eyebrow": "Method",
+      "titulo": "From tree bark to membrane",
+      "lede": "The study was done in the lab, at the University of Sorocaba.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Produce the membranes",
+              "texto": "The bacterium Gluconacetobacter xylinus grew for 4 days at 30 °C in 24-well plates, forming membranes about 2 mm thick and 22 mm wide."
+            },
+            {
+              "titulo": "Harvest and dry the bark",
+              "texto": "Jucá stem bark was collected in Rio Grande do Norte and registered at the UFRN Herbarium (no. 12181). It dried for 72 hours at 40 °C."
+            },
+            {
+              "titulo": "Make the extract",
+              "texto": "The 230 g of ground bark went through percolation with 70% alcohol. The liquid was concentrated and freeze-dried, yielding 88 g of extract (38%)."
+            },
+            {
+              "titulo": "Load the extract into the membrane",
+              "texto": "The membranes were soaked for 24 hours in an extract solution (100 mg/mL), with gentle shaking."
+            },
+            {
+              "titulo": "Measure the release",
+              "texto": "The membranes were placed in saline, and the amount of extract released was measured (by protein content) after 2, 4, 6, 24, 30 and 40 hours."
+            },
+            {
+              "titulo": "Test against bacteria",
+              "texto": "Two tests were used: the lowest concentration that stops growth (MIC) and agar diffusion, with the membrane in the center of plates with S. aureus, E. coli or P. aeruginosa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Results",
+      "eyebrow": "Results",
+      "titulo": "The membrane released jucá and blocked the bacteria",
+      "lede": "See the size of the protected area and the extract's strength against each bacterium.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Choose what to see",
+          "unidade": " mm",
+          "grupos": [
+            {
+              "nome": "S. aureus",
+              "cor": "#5FD39A"
+            },
+            {
+              "nome": "E. coli and P. aeruginosa",
+              "cor": "#3FC1C9"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "Halo around the membrane",
+              "valores": [
+                {
+                  "m": 36
+                },
+                {
+                  "m": 29
+                }
+              ],
+              "leitura": "The jucá membrane created a bacteria-free zone of about 36 mm against S. aureus (Gram-positive) and 29 mm, on average, against the Gram-negatives."
+            },
+            {
+              "rotulo": "Extract strength (MIC)",
+              "unidade": " µg/mL",
+              "eixo": "µg/mL (lower = stronger)",
+              "grupos": [
+                {
+                  "nome": "E. coli",
+                  "cor": "#5FD39A"
+                },
+                {
+                  "nome": "S. aureus",
+                  "cor": "#FFB23F"
+                },
+                {
+                  "nome": "P. aeruginosa",
+                  "cor": "#FF5470"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 195
+                },
+                {
+                  "m": 391
+                },
+                {
+                  "m": 791
+                }
+              ],
+              "leitura": "Here, the shorter the bar, the stronger the extract: little extract was enough to block E. coli. Even P. aeruginosa, which needed more, was inhibited."
+            }
+          ],
+          "nota": "Halo = bacteria-free area around the membrane (mean of 3 replicates). MIC = lowest extract concentration that stopped growth."
+        },
+        {
+          "tipo": "galeria",
+          "itens": [
+            {
+              "src": "imagens/mini/figura5-halos.webp",
+              "full": "imagens/figura5-halos.webp",
+              "titulo": "Halos around the membranes",
+              "legenda": "Figure 5 · Agar diffusion of the jucá membrane against (A) S. aureus, (B) P. aeruginosa and (C) E. coli, in triplicate. (D) Control with nanocellulose only, no halo.",
+              "credito": "Alves et al. (2024), Observatorio de la Economía Latinoamericana, CC BY-NC 4.0 license"
+            },
+            {
+              "src": "imagens/mini/figura2-liberacao.webp",
+              "full": "imagens/figura2-liberacao.webp",
+              "titulo": "How much the membrane released",
+              "legenda": "Figure 2 · Extract proteins released by the membrane at six time points: the highest value was at 30 hours.",
+              "credito": "Alves et al. (2024), Observatorio de la Economía Latinoamericana, CC BY-NC 4.0 license"
+            }
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "html": "The control was decisive: the <strong>nanocellulose-only membrane had no action at all</strong> against the bacteria. The jucá does the work; the nanocellulose acts as a carrier, releasing the extract gradually."
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>All the samples released by the membrane, <strong>from 2 to 40 hours</strong>, stopped the growth of the three bacteria: on the plates, only the positive controls formed colonies. The authors suggest that the extract's proteins may be responsible for part of this effect.</p>"
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "How it works",
+      "eyebrow": "Discussion",
+      "titulo": "How the dressing would work",
+      "lede": "The idea is to add jucá's power to nanocellulose's protection and slow release.",
+      "blocos": [
+        {
+          "tipo": "cadeia",
+          "itens": [
+            "Jucá extract enters the nanofiber network",
+            "The membrane releases the extract gradually (peak at 30 hours)",
+            "Jucá compounds stop bacterial growth",
+            "The membrane also protects the wound as a barrier"
+          ]
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>Nanocellulose alone does not kill bacteria. But its structure is excellent for <strong>trapping substances without strong chemical bonds</strong>, which lets the active ingredient come out easily. There may be a small loss of activity during this release.</p><p>The results match jucá's traditional use on wounds, ulcers and skin lesions. For comparison, an earlier study found an MIC of 4,000 µg/mL for jucá against the tuberculosis bacterium, much higher than the values found here.</p>"
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusion",
+      "eyebrow": "Conclusion",
+      "titulo": "What the study allows us to say",
+      "lede": "A promising combination that still needs to be tested for healing.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Both the jucá extract in solution and the extract inside nanocellulose showed <strong>action against Gram-positive and Gram-negative bacteria</strong>. According to the authors, the jucá-loaded membrane brings together the best of both components and could be a new system for delivering bioactive molecules to the skin.</p>"
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Next step pointed out by the authors",
+          "itens": [
+            "Assess whether the jucá membrane actually helps wounds heal."
+          ]
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Caesalpinia ferrea (jucá)",
+      "def": "Brazilian tree, also called pau-ferro (Brazilian ironwood), used in folk medicine for wound healing."
+    },
+    {
+      "termo": "Bacterial nanocellulose",
+      "def": "Pure cellulose in the form of nanofibers, produced by bacteria. Widely used in dressings."
+    },
+    {
+      "termo": "Extract",
+      "def": "Liquid or powder that concentrates the substances taken from a plant."
+    },
+    {
+      "termo": "Percolation",
+      "def": "Technique in which a liquid (here, 70% alcohol) slowly passes through the plant powder, carrying its compounds."
+    },
+    {
+      "termo": "Freeze-drying (lyophilization)",
+      "def": "Drying at low temperature under vacuum, which turns the extract into powder without damaging the compounds."
+    },
+    {
+      "termo": "MIC",
+      "def": "Minimum inhibitory concentration: the smallest amount that stops the bacterium from growing."
+    },
+    {
+      "termo": "Inhibition halo",
+      "def": "Area around the material, on the plate, where bacteria did not grow."
+    },
+    {
+      "termo": "BCA method",
+      "def": "Lab test that measures the amount of protein in a sample through a color change."
+    },
+    {
+      "termo": "PBS",
+      "def": "Saline solution with controlled pH, similar to body fluids."
+    },
+    {
+      "termo": "Gram-positive and Gram-negative",
+      "def": "The two large groups of bacteria, which differ in their cell wall."
+    },
+    {
+      "termo": "Tannins",
+      "def": "Plant compounds with an astringent taste and antimicrobial and healing action."
+    },
+    {
+      "termo": "Herbarium",
+      "def": "Scientific collection of dried, cataloged plants, which ensures the species is correctly identified."
+    }
+  ],
+  "citacao": "ALVES, P. L. M.; BORBA, M. W.; MACHADO, G. P.; CHACON, A. C. S.; SIMÕES, L. O.; PICKLER, T. B.; GROTTO, D.; JOZALA, A. F. Atividade antimicrobiana da nanocelulose bacteriana contendo Caesalpinia ferrea. Observatorio de la Economía Latinoamericana, Curitiba, v. 22, n. 4, p. 1-16, 2024. DOI: 10.55905/oelv22n4-178.",
+  "referencias": [
+    {
+      "texto": "MACÊDO, N. S. et al. Caesalpinia ferrea C. Mart. (Fabaceae) Phytochemistry, Ethnobotany, and Bioactivities: A Review. Molecules, v. 25, n. 17, p. 3831, 2020.",
+      "doi": "10.3390/molecules25173831"
+    },
+    {
+      "texto": "PICHETH, G. F. et al. Bacterial cellulose in biomedical applications: A review. International Journal of Biological Macromolecules, v. 104, p. 97-106, 2017.",
+      "doi": "10.1016/j.ijbiomac.2017.05.171"
+    },
+    {
+      "texto": "SHAH, N. et al. Overview of bacterial cellulose composites: A multipurpose advanced material. Carbohydrate Polymers, v. 98, n. 2, p. 1585-1598, 2013.",
+      "doi": "10.1016/j.carbpol.2013.08.018"
+    },
+    {
+      "texto": "PAVAN, F. R. et al. In vitro anti-Mycobacterium tuberculosis activity of some Brazilian “Cerrado” plants. Revista Brasileira de Farmacognosia, v. 19, n. 1b, p. 204-206, 2009.",
+      "doi": "10.1590/S0102-695X2009000200004"
+    },
+    {
+      "texto": "LOPES, N. et al. Sulfated polysaccharide of Caesalpinia ferrea inhibits herpes simplex virus and poliovirus. International Journal of Biological Macromolecules, v. 60, p. 93-99, 2013.",
+      "doi": "10.1016/j.ijbiomac.2013.05.015"
+    }
+  ],
+  "titulo_pt": "Antimicrobial activity of bacterial nanocellulose containing Caesalpinia ferrea",
+  "rotulo_original": "Original title in Portuguese:",
+  "idioma": "en"
+}

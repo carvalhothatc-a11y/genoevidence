@@ -6,10 +6,12 @@ publicações científicas mais recentes sobre os temas do GenoEvidence.
 Roda sozinho todos os dias pelo GitHub Actions (.github/workflows/noticias.yml)
 e também pode ser rodado à mão:  python3 scripts/atualizar_noticias.py
 
-Notícias e publicações em inglês são traduzidas para o português pelo serviço
-gratuito MyMemory (api.mymemory.translated.net). As traduções ficam guardadas em
-data/traducoes.json, para não traduzir o mesmo texto de novo no dia seguinte.
-Se a tradução falhar, o texto fica em inglês e o app mostra a etiqueta "EN".
+O app tem três idiomas (português, inglês e espanhol). As notícias são traduzidas
+pelo serviço gratuito MyMemory (api.mymemory.translated.net): as em inglês para o
+português e o espanhol, as brasileiras para o inglês e o espanhol. As traduções ficam
+guardadas em data/traducoes.json, para não traduzir o mesmo texto de novo na próxima
+rodada. Se a tradução falhar ou o limite do dia acabar, o texto aparece no idioma
+original, com a etiqueta do idioma (EN ou PT), e é traduzido numa rodada seguinte.
 
 Não usa bibliotecas externas: só Python 3.
 """
@@ -187,8 +189,12 @@ def classificar(texto):
     return "Ciência"
 
 
+# pares de idiomas do MyMemory: (origem, destino) → código do serviço
+PARES = {("en", "pt"): "en|pt-BR", ("en", "es"): "en|es", ("pt", "en"): "pt-BR|en", ("pt", "es"): "pt-BR|es"}
+
+
 class Tradutor:
-    """Traduz do inglês para o português, com memória e limite diário de caracteres."""
+    """Traduz entre inglês, português e espanhol, com memória e limite diário de caracteres."""
 
     def __init__(self):
         self.memoria = {}
@@ -201,59 +207,95 @@ class Tradutor:
         self.gasto = 0
         self.parou = False
 
-    def __call__(self, texto):
+    def __call__(self, texto, origem="en", destino="pt"):
         texto = (texto or "").strip()
         if not texto:
             return None
-        if texto in self.memoria:
-            self.usadas[texto] = self.memoria[texto]
-            return self.memoria[texto]
+        # a memória antiga (inglês → português) usa só o texto como chave; os outros pares levam o prefixo
+        chave = texto if (origem, destino) == ("en", "pt") else f"{origem}>{destino}|{texto}"
+        if chave in self.memoria:
+            self.usadas[chave] = self.memoria[chave]
+            return self.memoria[chave]
         if self.parou or self.gasto + len(texto) > ORCAMENTO_TRADUCAO:
             return None
         url = ("https://api.mymemory.translated.net/get?"
-               + urllib.parse.urlencode({"q": texto[:480], "langpair": "en|pt-BR"}))
+               + urllib.parse.urlencode({"q": texto[:480], "langpair": PARES[(origem, destino)]}))
         try:
             dados = json.loads(baixar(url, timeout=20))
         except Exception as e:
             print(f"  Tradução: ERRO {e}", file=sys.stderr)
             self.parou = True
             return None
-        pt = html.unescape((dados.get("responseData") or {}).get("translatedText") or "").strip()
-        if dados.get("responseStatus") != 200 or dados.get("quotaFinished") or not pt or "MYMEMORY WARNING" in pt.upper():
+        trad = html.unescape((dados.get("responseData") or {}).get("translatedText") or "").strip()
+        if dados.get("responseStatus") != 200 or dados.get("quotaFinished") or not trad or "MYMEMORY WARNING" in trad.upper():
             self.parou = True
             return None
         self.gasto += len(texto)
-        self.memoria[texto] = self.usadas[texto] = pt
-        return pt
+        self.memoria[chave] = self.usadas[chave] = trad
+        return trad
 
     def salvar(self):
-        # guarda só o que foi usado hoje, para o arquivo não crescer sem parar
+        # guarda só o que foi usado nesta rodada, para o arquivo não crescer sem parar
         TRADUCOES.write_text(json.dumps(self.usadas, ensure_ascii=False, indent=0), encoding="utf-8")
 
 
 def traduzir(noticias, artigos):
-    """Títulos primeiro (notícias e publicações), depois os resumos das notícias."""
+    """Traduz para os três idiomas do app, do mais importante para o menos:
+    títulos das notícias → resumos das notícias → títulos das publicações científicas.
+    O português fica em "titulo"/"resumo" (como sempre); inglês e espanhol ficam em "i18n"."""
     t = Tradutor()
     ingles = [n for n in noticias if n.get("idioma") == "en"]
-    for n in ingles:
-        pt = t(n.get("titulo_original") or n["titulo"])
+    brasil = [n for n in noticias if n.get("idioma") == "pt"]
+
+    def para_pt(n, campo):
+        orig = n.get(campo + "_original") or n.get(campo)
+        pt = t(orig, "en", "pt")
         if pt:
-            n["titulo_original"] = n.get("titulo_original") or n["titulo"]
-            n["titulo"], n["traduzido"] = pt, True
+            n[campo + "_original"] = orig
+            n[campo] = pt
+            if campo == "titulo":
+                n["traduzido"] = True
+        return pt
+
+    def para(n, campo, origem, destino):
+        orig = n.get(campo + "_original") or n.get(campo) if origem == "en" else n.get(campo)
+        tr = t(orig, origem, destino)
+        if tr:
+            n.setdefault("i18n", {}).setdefault(destino, {})[campo] = tr
+        return tr
+
+    for n in ingles:
+        para_pt(n, "titulo")
+    for n in brasil:
+        para(n, "titulo", "pt", "en")
+        para(n, "titulo", "pt", "es")
+    for n in ingles:
+        para(n, "titulo", "en", "es")
+    for n in ingles:
+        if n.get("resumo"):
+            if n.get("traduzido"):
+                para_pt(n, "resumo")
+            if (n.get("i18n") or {}).get("es", {}).get("titulo"):
+                para(n, "resumo", "en", "es")
+    for n in brasil:
+        if n.get("resumo"):
+            for lg in ("en", "es"):
+                if (n.get("i18n") or {}).get(lg, {}).get("titulo"):
+                    para(n, "resumo", "pt", lg)
     for a in artigos:
-        pt = t(a.get("titulo_original") or a["titulo"])
-        if pt:
-            a["titulo_original"] = a.get("titulo_original") or a["titulo"]
-            a["titulo"], a["traduzido"] = pt, True
-    for n in ingles:
-        if n.get("traduzido") and n.get("resumo"):
-            pt = t(n.get("resumo_original") or n["resumo"])
-            if pt:
-                n["resumo_original"] = n.get("resumo_original") or n["resumo"]
-                n["resumo"] = pt
+        para_pt(a, "titulo")
+    for a in artigos:
+        para(a, "titulo", "en", "es")
     t.salvar()
     feitos = sum(1 for x in ingles + artigos if x.get("traduzido"))
-    print(f"  Tradução: {feitos} de {len(ingles) + len(artigos)} itens em inglês traduzidos ({t.gasto} caracteres novos)")
+    print(f"  Tradução: {feitos} de {len(ingles) + len(artigos)} itens em inglês traduzidos para o português; "
+          f"{t.gasto} caracteres novos nesta rodada")
+
+
+def assinatura(noticias, artigos):
+    """O que o app mostra (links, títulos e traduções); se nada disso mudou, não precisa gravar."""
+    return json.dumps([[n.get("url"), n.get("titulo"), n.get("resumo"), n.get("i18n")] for n in noticias]
+                      + [[a.get("url"), a.get("titulo"), a.get("i18n")] for a in artigos], ensure_ascii=False)
 
 
 def ler_feed(fonte, agora):
@@ -373,9 +415,8 @@ def main():
     limite = (agora_dt - timedelta(days=10)).isoformat()
     mostradas = {k: v for k, v in mostradas.items() if v >= limite}
     traduzir(unicas, artigos)
-    # se a lista não mudou desde a última vez, não grava (o robô roda de hora em hora)
-    if anterior.get("noticias") and [n["url"] for n in unicas] == [n["url"] for n in anterior["noticias"]] \
-            and [a.get("url") for a in artigos] == [a.get("url") for a in anterior.get("artigos", [])]:
+    # se nada do que o app mostra mudou desde a última vez, não grava (o robô roda de hora em hora)
+    if anterior.get("noticias") and assinatura(unicas, artigos) == assinatura(anterior["noticias"], anterior.get("artigos", [])):
         print("Nada novo desde a última atualização; o arquivo fica como está.")
         return
     SAIDA.write_text(json.dumps({

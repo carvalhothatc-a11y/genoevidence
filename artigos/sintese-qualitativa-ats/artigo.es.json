@@ -1,0 +1,454 @@
+{
+  "id": "sintese-qualitativa-ats",
+  "tipo": "artigo",
+  "rotulo": "Revisión de alcance",
+  "arte": "rede",
+  "arte_legenda": "ilustración · voces y evidencias conectadas",
+  "tema": "Salud pública",
+  "tema_id": "saude-publica",
+  "titulo": "Mapping frameworks for synthesizing qualitative evidence in health technology assessment",
+  "titulo_pt": "Mapeo de los marcos para sintetizar evidencia cualitativa en la evaluación de tecnologías sanitarias",
+  "titulo_curto": "Escuchar a los pacientes en las decisiones de salud: cómo reunir la investigación cualitativa",
+  "breadcrumb": "Evidencia cualitativa en la ETS",
+  "autores": [
+    {
+      "nome": "Marilia Mastrocolla de Almeida Cardoso",
+      "afiliacao": "HC de Botucatu · Centro Brasileño de Salud Basada en Evidencias (JBI)"
+    },
+    {
+      "nome": "Rafael Thomaz Marques",
+      "afiliacao": "Facultad de Medicina · Unesp Botucatu"
+    },
+    {
+      "nome": "Juliana Machado-Rugolo",
+      "destaque": true,
+      "afiliacao": "Hospital das Clínicas de la Facultad de Medicina de Botucatu"
+    },
+    {
+      "nome": "Lehana Thabane",
+      "afiliacao": "McMaster University · Canadá"
+    },
+    {
+      "nome": "Vilanice Alves de Araújo Püschel",
+      "afiliacao": "Escuela de Enfermería · USP"
+    },
+    {
+      "nome": "Silke Anna Theresa Weber",
+      "afiliacao": "HC de Botucatu · Facultad de Medicina (Unesp)"
+    },
+    {
+      "nome": "Rosimary Terezinha Almeida",
+      "afiliacao": "Ingeniería Biomédica (COPPE) · UFRJ"
+    },
+    {
+      "nome": "Graciela Paula do Nascimento Duque",
+      "afiliacao": "COPPE · UFRJ · EBSERH"
+    },
+    {
+      "nome": "Cristiane Cardoso De Paula",
+      "afiliacao": "EBSERH · Universidad Federal de Santa Maria"
+    },
+    {
+      "nome": "Luciane Cruz Lopes",
+      "afiliacao": "Posgrado en Ciencias Farmacéuticas · Uniso"
+    },
+    {
+      "nome": "Mariana Gabriel",
+      "afiliacao": "Facultad de Odontología · USP"
+    },
+    {
+      "nome": "Sybelle Drumond",
+      "afiliacao": "Asociación de Fibrosis Quística del Estado de Río de Janeiro"
+    },
+    {
+      "nome": "Clarice Maria Rodrigues",
+      "afiliacao": "Centro de Estudios Estratégicos de Fiocruz · UFRJ"
+    },
+    {
+      "nome": "Meredith Vanstone",
+      "afiliacao": "McMaster University · Canadá"
+    }
+  ],
+  "revista": {
+    "nome": "International Journal of Technology Assessment in Health Care",
+    "cidade": "Cambridge, Reino Unido (Cambridge University Press)",
+    "issn": "0266-4623",
+    "volume": "40",
+    "numero": "1",
+    "paginas": "e53",
+    "ano": "2024",
+    "publicado": "2024-11-13",
+    "doi": "10.1017/S0266462324000369",
+    "url": "https://doi.org/10.1017/S0266462324000369",
+    "site": "https://www.cambridge.org/core/journals/international-journal-of-technology-assessment-in-health-care"
+  },
+  "palavras_chave": [
+    "Evaluación de tecnologías sanitarias",
+    "Investigación cualitativa",
+    "Revisión",
+    "Salud basada en evidencias"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "El problema",
+      "titulo": "Decisiones que solo miran números",
+      "texto": "Para decidir si un tratamiento entra en un sistema de salud, se suele mirar la eficacia y el costo. La investigación cualitativa muestra otra parte: lo que viven y piensan pacientes, familias y profesionales."
+    },
+    {
+      "rotulo": "Qué hicieron",
+      "titulo": "Un mapa de los “manuales” existentes",
+      "texto": "En una revisión de alcance, buscaron en 10 bases de datos y en sitios de agencias todos los documentos que enseñan a reunir la investigación cualitativa para estas decisiones."
+    },
+    {
+      "rotulo": "Qué encontraron",
+      "titulo": "31 documentos, casi todos europeos",
+      "texto": "De 2.054 registros, entraron 31 documentos. La mayoría vino de Europa, y casi la mitad eran guías. Pocos explican el proceso completo, de principio a fin."
+    },
+    {
+      "rotulo": "Por qué importa",
+      "titulo": "Dar voz a quienes usan el sistema",
+      "texto": "Estandarizar el uso de la evidencia cualitativa puede hacer las decisiones más completas, considerando la aceptación, la viabilidad y la equidad."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "2.054 → 31",
+      "texto": "registros encontrados × documentos incluidos",
+      "cor": "arg"
+    },
+    {
+      "valor": "> 80%",
+      "texto": "de los documentos vinieron de Europa, sobre todo Reino Unido, Suecia y Alemania",
+      "cor": "violet"
+    },
+    {
+      "valor": "45%",
+      "texto": "eran guías (14 documentos), el tipo más común",
+      "cor": "teal"
+    },
+    {
+      "valor": "71%",
+      "texto": "no fueron producidos por agencias de evaluación de tecnologías",
+      "cor": "amber"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Contexto",
+      "eyebrow": "Contexto",
+      "titulo": "Por qué escuchar a las personas en las decisiones sobre tecnologías",
+      "lede": "Una evaluación es más sólida cuando une números y experiencias.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>La <strong>evaluación de tecnologías sanitarias (ETS)</strong> estudia el valor de medicamentos, pruebas, equipos y programas para orientar decisiones en un sistema de salud justo y eficiente. Tradicionalmente, da más peso a la <strong>eficacia y los costos</strong>.</p><p>La <strong>evidencia cualitativa</strong>, que viene de entrevistas, grupos y observaciones, explica <em>por qué</em> una intervención funciona o no, desde el punto de vista de las personas. Reunir varios estudios de este tipo, en una <strong>síntesis de evidencia cualitativa</strong>, produce una evidencia más sólida que cada estudio aislado.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "Lo que aporta la evidencia cualitativa",
+          "itens": [
+            {
+              "titulo": "Aceptación",
+              "texto": "¿Las personas aceptan este tratamiento? ¿Qué sienten al usarlo?",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Viabilidad",
+              "texto": "¿Se puede aplicar en la práctica, en los servicios reales?",
+              "cor": "teal"
+            },
+            {
+              "titulo": "Equidad",
+              "texto": "¿Todos los grupos tienen acceso de forma justa?",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Valores y experiencias",
+              "texto": "¿Qué les importa a pacientes, familias y profesionales?",
+              "cor": "ok"
+            }
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "html": "Un estudio reciente mostró que, aunque el punto de vista de los pacientes aparece mucho en las solicitudes a las agencias del Reino Unido (NICE) y de Canadá (CADTH), solo <strong>14 de 107</strong> y <strong>24 de 124</strong> de ellas, respectivamente, recogieron datos cualitativos de manera formal."
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Cómo se hizo",
+      "eyebrow": "Método",
+      "titulo": "Cómo se hizo el mapeo",
+      "lede": "Una revisión de alcance mapea todo lo que existe sobre un tema, sin juzgar un solo resultado.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Protocolo público",
+              "texto": "El plan se registró en la plataforma OSF y se publicó antes, siguiendo las reglas PRISMA para revisiones de alcance."
+            },
+            {
+              "titulo": "Búsqueda amplia",
+              "texto": "Hasta junio de 2023, en Medline, LILACS, CINAHL, Embase, Web of Science, Scopus, PsycINFO, Cochrane, JBI y ScienceDirect, además de literatura gris y sitios de agencias de ETS. Sin límite de año, en seis idiomas."
+            },
+            {
+              "titulo": "Selección en pareja",
+              "texto": "Dos revisores independientes leyeron títulos, resúmenes y textos completos; un tercero resolvía los desacuerdos."
+            },
+            {
+              "titulo": "Los números de la selección",
+              "texto": "De los 2.054 registros, 57 se leyeron completos y 17 sirvieron. Otros 9 vinieron de agencias y bancos de tesis y 5 de las referencias: 31 documentos en total."
+            },
+            {
+              "titulo": "Conversación con quienes viven el tema",
+              "texto": "Pacientes, miembros de núcleos de ETS y especialistas en investigación cualitativa fueron invitados a discutir los resultados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "Lo que muestran los 31 documentos",
+      "lede": "Mira qué tipos de documento existen y cómo creció el interés por el tema.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Elige qué ver",
+          "unidade": "",
+          "eixo": "número de documentos",
+          "grupos": [
+            {
+              "nome": "Guías",
+              "cor": "#3FC1C9"
+            },
+            {
+              "nome": "Series de artículos",
+              "cor": "#A58CFF"
+            },
+            {
+              "nome": "Revisiones",
+              "cor": "#9DB6FF"
+            },
+            {
+              "nome": "Metodológicos",
+              "cor": "#FFB23F"
+            },
+            {
+              "nome": "Otros",
+              "cor": "#8A93A8"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "Tipo de documento",
+              "valores": [
+                {
+                  "m": 14
+                },
+                {
+                  "m": 4
+                },
+                {
+                  "m": 4
+                },
+                {
+                  "m": 4
+                },
+                {
+                  "m": 5
+                }
+              ],
+              "leitura": "Casi la mitad de los documentos son guías. “Otros” incluye 2 capítulos de libro, 1 manual y 2 artículos."
+            },
+            {
+              "rotulo": "Año de publicación",
+              "grupos": [
+                {
+                  "nome": "2011 a 2017",
+                  "cor": "#9DB6FF"
+                },
+                {
+                  "nome": "2018",
+                  "cor": "#FF5470"
+                },
+                {
+                  "nome": "2019 a 2022",
+                  "cor": "#5FD39A"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 11
+                },
+                {
+                  "m": 7
+                },
+                {
+                  "m": 13
+                }
+              ],
+              "leitura": "Ningún documento es de 2010 o antes. El año 2018 concentró 7 publicaciones (23%), y el interés siguió creciendo después."
+            }
+          ],
+          "nota": "Recuentos a partir de las Tablas 1 y 2 y del texto del artículo."
+        },
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura2-documentos.webp",
+          "full": "imagens/figura2-documentos.webp",
+          "alt": "Infografía con mapamundi, ícono de guía, edificios de universidad y de agencia y pilas de documentos por año",
+          "legenda": "Figura 2 · Resumen visual de los documentos (en inglés): de dónde vinieron (Publications, mapa), el tipo más común (Document model: guías, 45%), quién los escribió (Authors’ origins: universidades y agencias de ETS; el 71% no fue hecho por agencias) y cuántos salieron por año de 2011 a 2022 (Distribution of documents).",
+          "credito": "Cardoso et al. (2024), International Journal of Technology Assessment in Health Care, licencia CC BY 4.0"
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "1. Formular la pregunta · SPICE",
+              "texto": "La sigla más indicada para armar la pregunta: escenario, perspectiva, intervención, comparación y evaluación."
+            },
+            {
+              "titulo": "2. Elegir el método · RETREAT",
+              "texto": "La herramienta más citada para decidir cómo hacer la síntesis, según la pregunta, el tiempo, los recursos y el público."
+            },
+            {
+              "titulo": "3. Reunir los hallazgos · síntesis temática",
+              "texto": "El método más usado: agrupar los hallazgos de los estudios en temas comunes."
+            },
+            {
+              "titulo": "4. Evaluar los estudios · CASP",
+              "texto": "El instrumento más citado para comprobar la calidad de cada estudio cualitativo."
+            },
+            {
+              "titulo": "5. Medir la confianza · GRADE-CERQual",
+              "texto": "La principal herramienta para decir cuánto se puede confiar en cada hallazgo de la síntesis."
+            },
+            {
+              "titulo": "6. Informar · ENTREQ",
+              "texto": "La guía más citada para escribir la síntesis con transparencia."
+            },
+            {
+              "titulo": "7. Recomendar · GRADE EtD",
+              "texto": "El único marco citado para transformar evidencias en recomendaciones, considerando eficacia, recursos, aceptación, viabilidad y equidad."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "Los pasos de arriba reúnen las herramientas más citadas en cada etapa. Ningún documento aislado, sin embargo, las cubre todas."
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discusión",
+      "eyebrow": "Discusión",
+      "titulo": "Muchos reconocen la importancia, pocos explican cómo hacerlo",
+      "lede": "El camino existe en pedazos, repartido en varios documentos.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Agencias experimentadas, como el NICE (Inglaterra), el SMC (Escocia) y el SBU (Suecia), dicen en sus guías que es importante considerar datos cualitativos. Pero solo <strong>tres documentos de agencias, de Suecia, Escocia y Alemania</strong>, explican cómo conducir el proceso.</p><p>La mayoría de los documentos describe apenas una etapa: la pregunta, la evaluación de la calidad, la síntesis o la recomendación. Para los autores, incluir datos cualitativos refuerza el carácter interdisciplinario de la ETS y amplía la información que apoya las decisiones.</p>"
+        },
+        {
+          "tipo": "destaque",
+          "html": "<strong>Estandarizar</strong> la forma de incorporar evidencias cualitativas en la ETS puede mejorar las decisiones y garantizar que la experiencia de pacientes y familias se tenga en cuenta de forma sistemática."
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusión",
+      "eyebrow": "Conclusión",
+      "titulo": "Lo que el estudio permite afirmar",
+      "lede": "Un movimiento creciente, que todavía necesita un camino único.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>El mapeo muestra un movimiento para <strong>incorporar evidencias cualitativas en la ETS</strong> usando marcos específicos. A pesar de las similitudes, la mayoría de los documentos describe solo parte del proceso. Los hallazgos aportan consideraciones esenciales para quienes hacen evaluación de tecnologías, también en Brasil.</p>"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "ETS",
+      "def": "Evaluación de tecnologías sanitarias: estudio del valor de un tratamiento, prueba o programa para orientar decisiones."
+    },
+    {
+      "termo": "Evidencia cualitativa",
+      "def": "Conocimiento que viene de entrevistas, grupos y observaciones sobre experiencias, opiniones y valores de las personas."
+    },
+    {
+      "termo": "Síntesis de evidencia cualitativa",
+      "def": "Revisión que reúne y combina los hallazgos de varios estudios cualitativos."
+    },
+    {
+      "termo": "Revisión de alcance",
+      "def": "Revisión que mapea lo que existe sobre un tema e identifica vacíos."
+    },
+    {
+      "termo": "Literatura gris",
+      "def": "Documentos fuera de las revistas científicas, como informes de agencias, tesis y manuales."
+    },
+    {
+      "termo": "SPICE",
+      "def": "Sigla para armar preguntas cualitativas: escenario, perspectiva, intervención, comparación y evaluación."
+    },
+    {
+      "termo": "RETREAT",
+      "def": "Criterios para elegir el método de síntesis: pregunta, epistemología, tiempo, recursos, experiencia, público y tipo de dato."
+    },
+    {
+      "termo": "Síntesis temática",
+      "def": "Método que organiza los hallazgos de varios estudios en temas comunes."
+    },
+    {
+      "termo": "CASP",
+      "def": "Lista de preguntas para evaluar la calidad de un estudio."
+    },
+    {
+      "termo": "GRADE-CERQual",
+      "def": "Herramienta para clasificar cuánto se puede confiar en un hallazgo de síntesis cualitativa."
+    },
+    {
+      "termo": "ENTREQ",
+      "def": "Guía para informar con transparencia una síntesis de investigaciones cualitativas."
+    },
+    {
+      "termo": "GRADE EtD",
+      "def": "Marco “de la evidencia a la decisión”, que ayuda a transformar evidencias en recomendaciones."
+    },
+    {
+      "termo": "NICE",
+      "def": "Instituto Nacional de Excelencia en Salud y Atención (NICE), la agencia de ETS de Inglaterra."
+    }
+  ],
+  "citacao": "CARDOSO, M. M. A.; MARQUES, R. T.; MACHADO-RUGOLO, J.; THABANE, L.; PÜSCHEL, V. A. A.; WEBER, S. A. T.; ALMEIDA, R. T.; DUQUE, G. P. N.; PAULA, C. C.; LOPES, L. C.; GABRIEL, M.; DRUMOND, S.; RODRIGUES, C. M.; VANSTONE, M. Mapping frameworks for synthesizing qualitative evidence in health technology assessment. International Journal of Technology Assessment in Health Care, Cambridge, v. 40, n. 1, e53, 2024. DOI: 10.1017/S0266462324000369.",
+  "referencias": [
+    {
+      "texto": "TONG, A. et al. Enhancing transparency in reporting the synthesis of qualitative research: ENTREQ. BMC Medical Research Methodology, v. 12, 181, 2012.",
+      "doi": "10.1186/1471-2288-12-181"
+    },
+    {
+      "texto": "BOOTH, A. et al. Structured methodology review identified seven (RETREAT) criteria for selecting qualitative evidence synthesis approaches. Journal of Clinical Epidemiology, v. 99, p. 41-52, 2018.",
+      "doi": "10.1016/j.jclinepi.2018.03.003"
+    },
+    {
+      "texto": "LEWIN, S. et al. Applying GRADE-CERQual to qualitative evidence synthesis findings: introduction to the series. Implementation Science, v. 13, 2, 2018.",
+      "doi": "10.1186/s13012-017-0688-3"
+    },
+    {
+      "texto": "GERMENI, E.; SZABO, S. Beyond clinical and cost-effectiveness: the contribution of qualitative research to health technology assessment. International Journal of Technology Assessment in Health Care, v. 39, e23, 2023.",
+      "doi": "10.1017/S0266462323000211"
+    }
+  ],
+  "rotulo_original": "Título original en inglés:",
+  "idioma": "es"
+}

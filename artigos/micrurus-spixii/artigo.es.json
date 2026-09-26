@@ -1,0 +1,515 @@
+{
+  "id": "micrurus-spixii",
+  "tipo": "artigo",
+  "rotulo": "Estudio publicado",
+  "arte": "celulas",
+  "tema": "Toxinología",
+  "tema_id": "toxinologia",
+  "titulo": "Análise histológica da miotoxicidade do veneno de Micrurus spixii (cobra coral amazônica) em músculo biventer cervicis de pintainho e sua neutralização por soro antielapídico",
+  "titulo_curto": "El veneno de la serpiente coral amazónica en el músculo, y cuánto protege el suero",
+  "breadcrumb": "Serpiente coral amazónica",
+  "autores": [
+    {
+      "nome": "Fernanda Ruis Passos",
+      "afiliacao": "Biomedicina · Uniso"
+    },
+    {
+      "nome": "Wanessa Regis da Costa",
+      "afiliacao": "Biomedicina · Uniso"
+    },
+    {
+      "nome": "Nathalia Margarida Cantuária",
+      "afiliacao": "Ciencias Farmacéuticas · Uniso"
+    },
+    {
+      "nome": "Patricia Lius Melo Alves",
+      "destaque": true,
+      "afiliacao": "Biomedicina · Uniso"
+    },
+    {
+      "nome": "Jonas Eligio Garcia de Azevedo",
+      "afiliacao": "Ciencias Farmacéuticas · Uniso"
+    },
+    {
+      "nome": "Stephen Hyslop",
+      "afiliacao": "Farmacología · Unicamp"
+    },
+    {
+      "nome": "Yoko Oshima-Franco",
+      "afiliacao": "Ciencias Farmacéuticas · Uniso"
+    }
+  ],
+  "revista": {
+    "nome": "ARACÊ",
+    "cidade": "São José dos Pinhais (PR), Brasil",
+    "issn": "2358-2472",
+    "volume": "8",
+    "numero": "2",
+    "paginas": "1–18",
+    "ano": "2026",
+    "submetido": "2026-01-12",
+    "publicado": "2026-02-12",
+    "doi": "10.56238/arev8n2-068",
+    "url": "https://doi.org/10.56238/arev8n2-068",
+    "site": "https://periodicos.newsciencepubl.com/arace",
+    "pdf": "https://periodicos.newsciencepubl.com/arace/article/download/12172/13403"
+  },
+  "palavras_chave": [
+    "Micrurus spixii",
+    "Veneno de serpiente",
+    "Suero antielapídico",
+    "Microscopía óptica",
+    "Biventer cervicis"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "El problema",
+      "titulo": "Un veneno que ataca nervios y músculos",
+      "texto": "Los accidentes con serpientes son una enfermedad tropical desatendida. La serpiente coral amazónica (Micrurus spixii) tiene un veneno que paraliza y además daña el músculo."
+    },
+    {
+      "rotulo": "Qué hicieron",
+      "titulo": "Veneno, con y sin suero, al microscopio",
+      "texto": "Músculos de pollito se expusieron al veneno, solo o mezclado antes con el suero usado en Brasil, y las células dañadas se contaron al microscopio."
+    },
+    {
+      "rotulo": "Qué encontraron",
+      "titulo": "Casi ninguna célula sana",
+      "texto": "Con el veneno, las células sanas cayeron del 66% a menos del 1%. Con el suero, subieron a cerca del 5%."
+    },
+    {
+      "rotulo": "Por qué importa",
+      "titulo": "Protección parcial",
+      "texto": "El suero protegió bien contra la hinchazón y la muerte de las células, pero poco contra otros daños. Se produce con el veneno de otras dos especies de coral."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "66,1% → 0,92%",
+      "texto": "células sanas en el control × con el veneno",
+      "cor": "his"
+    },
+    {
+      "valor": "4,8%",
+      "texto": "células sanas cuando el veneno se mezcló antes con el suero",
+      "cor": "ok"
+    },
+    {
+      "valor": "2×",
+      "texto": "el veneno duplicó las células con vacuolas (del 31% al 62%)",
+      "cor": "amber"
+    },
+    {
+      "valor": "0,38% → 0,05%",
+      "texto": "células muertas (ghost): el suero casi eliminó este daño",
+      "cor": "arg"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "La serpiente y el veneno",
+      "eyebrow": "Contexto",
+      "titulo": "La serpiente coral amazónica y su veneno",
+      "lede": "Las serpientes coral son discretas y producen poco veneno, pero un accidente con ellas siempre se trata como grave.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Existen cerca de <strong>80 especies</strong> de serpientes coral del género <em>Micrurus</em> en las Américas; en Brasil, ya se registraron <strong>38</strong>. <em>Micrurus spixii</em>, la serpiente coral amazónica, vive en los estados brasileños de Acre, Amazonas, Mato Grosso, Pará y Rondônia. Estas serpientes viven escondidas en lugares húmedos y oscuros, muchas veces enterradas, y producen poco veneno.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "Las dos familias de toxinas del veneno",
+          "itens": [
+            {
+              "titulo": "3FTx · toxinas de tres dedos",
+              "texto": "Bloquean los receptores que reciben la señal del nervio en el músculo. Son la principal causa de la parálisis.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "PLA2 · fosfolipasas A2",
+              "texto": "Enzimas que “digieren” la membrana de las células. Además de actuar en los nervios, dañan el músculo: es la miotoxicidad.",
+              "cor": "his"
+            }
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "html": "En Brasil, el tratamiento es el <strong>suero antielapídico bivalente</strong>, producido en caballos con el veneno de otras dos corales (<em>M. frontalis</em> y <em>M. corallinus</em>). El Ministerio de Salud recomienda 10 ampollas por vía intravenosa y considera todo accidente con coral potencialmente grave, por el riesgo de insuficiencia respiratoria."
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>El veneno varía mucho de una especie a otra. Por eso, no se sabía si este suero protege contra el daño muscular causado por la coral amazónica. Esa es la pregunta del estudio.</p>"
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Cómo se hizo",
+      "eyebrow": "Método",
+      "titulo": "Cómo se hizo el estudio",
+      "lede": "Un experimento de laboratorio con tres grupos de músculos, analizados a ciegas al microscopio.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Tres grupos de músculos",
+              "texto": "Músculos biventer cervicis de pollito (3 por grupo) pasaron 2 horas en solución nutritiva de Krebs (control), con veneno de M. spixii (10 µg/mL) o con veneno mezclado antes con el suero."
+            },
+            {
+              "titulo": "Veneno + suero",
+              "texto": "Antes de tocar el músculo, el veneno pasó 30 minutos a 37 °C con 0,03 mL de suero antielapídico, en la proporción indicada por el fabricante."
+            },
+            {
+              "titulo": "Preparación de las láminas",
+              "texto": "Los músculos se fijaron en formalina, se incluyeron en parafina y se cortaron en láminas de 4 µm, teñidas con hematoxilina-eosina."
+            },
+            {
+              "titulo": "Recuento al microscopio",
+              "texto": "Las láminas se analizaron a doble ciego, con aumento de 400 veces, contando las células sanas y las que tenían cada tipo de lesión."
+            },
+            {
+              "titulo": "Estadística",
+              "texto": "Media ± error estándar, comparadas por ANOVA y prueba de Tukey. La diferencia cuenta como significativa cuando p < 0,05."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "La dosis de 10 µg/mL vino de un estudio anterior del grupo: 5 µg/mL dañaba poco y 20 µg/mL dañaba demasiado para medir el efecto del suero. El protocolo fue aprobado por la Comisión de Ética en el Uso de Animales de la Uniso (n.º 229/2022)."
+        }
+      ]
+    },
+    {
+      "id": "lesoes",
+      "menu": "Tipos de lesión",
+      "eyebrow": "Al microscopio",
+      "titulo": "Cómo reconocer cada tipo de lesión",
+      "lede": "Con la tinción de hematoxilina-eosina, las fibras del músculo aparecen en rosa. Cada tipo de daño deja una marca diferente.",
+      "blocos": [
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura1-tipos-de-lesao.webp",
+          "full": "imagens/figura1-tipos-de-lesao.webp",
+          "alt": "Corte de músculo teñido de rosa, con flechas que señalan células normales, edema, vacuolas, condensación de miofibrillas y células ghost",
+          "legenda": "Figura 1 · Tipos de lesión en el músculo biventer cervicis de pollito (hematoxilina-eosina; barra = 40 µm).",
+          "credito": "Passos et al. (2026), ARACÊ"
+        },
+        {
+          "tipo": "cartoes",
+          "itens": [
+            {
+              "titulo": "Normal",
+              "texto": "Fibra íntegra, de forma regular.",
+              "cor": "ok"
+            },
+            {
+              "titulo": "Edema",
+              "texto": "La célula se hincha por acumulación de líquido. Suele ser una de las primeras señales del daño.",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Vacuolas",
+              "texto": "Espacios vacíos dentro de la célula, señal de membrana dañada.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Miofibrillas condensadas",
+              "texto": "Las fibras que hacen contraer el músculo se aglomeran en áreas oscuras y pierden la organización.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Células ghost (“fantasma”)",
+              "texto": "La fibra muere (mionecrosis) y queda un espacio casi vacío, con núcleos sueltos.",
+              "cor": "his"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "Lo que hizo el veneno, y lo que evitó el suero",
+      "lede": "Elige un tipo de célula para comparar los tres grupos.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Elige el tipo de célula",
+          "grupos": [
+            {
+              "nome": "Control (Krebs)",
+              "cor": "#9DB6FF"
+            },
+            {
+              "nome": "Veneno",
+              "cor": "#FF5470"
+            },
+            {
+              "nome": "Veneno + suero",
+              "cor": "#5FD39A"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "Células normales",
+              "valores": [
+                {
+                  "m": 66.1,
+                  "ep": 0.1
+                },
+                {
+                  "m": 0.92,
+                  "ep": 0.08,
+                  "sig": "*"
+                },
+                {
+                  "m": 4.8,
+                  "ep": 0.42,
+                  "sig": "*#"
+                }
+              ],
+              "leitura": "El veneno eliminó casi todas las células sanas. Mezclado antes con el suero, se preservaron cerca de 5 veces más células (4,8% frente a 0,92%), todavía muy por debajo del control."
+            },
+            {
+              "rotulo": "Edema",
+              "valores": [
+                {
+                  "m": 9.5,
+                  "ep": 0.01
+                },
+                {
+                  "m": 10.8,
+                  "ep": 0.2,
+                  "sig": "*"
+                },
+                {
+                  "m": 6.7,
+                  "ep": 1.4,
+                  "sig": "*#"
+                }
+              ],
+              "leitura": "El veneno aumentó un poco la hinchazón de las células. Con el suero, el edema quedó incluso por debajo del control: fue la lesión mejor neutralizada."
+            },
+            {
+              "rotulo": "Vacuolas",
+              "valores": [
+                {
+                  "m": 31.0,
+                  "ep": 1.5
+                },
+                {
+                  "m": 62.2,
+                  "ep": 0.5,
+                  "sig": "*"
+                },
+                {
+                  "m": 54.2,
+                  "ep": 2.9,
+                  "sig": "*#"
+                }
+              ],
+              "leitura": "El veneno duplicó las células con vacuolas. El suero redujo este daño en cerca de un 13%."
+            },
+            {
+              "rotulo": "Miofibrillas condensadas",
+              "valores": [
+                {
+                  "m": 54.5,
+                  "ep": 1.0
+                },
+                {
+                  "m": 71.7,
+                  "ep": 1.9,
+                  "sig": "*"
+                },
+                {
+                  "m": 62.3,
+                  "ep": 0.2,
+                  "sig": "*#"
+                }
+              ],
+              "leitura": "Con el veneno, el 72% de las células quedó con las fibras condensadas, frente al 54% en el control. El suero redujo este daño en cerca de un 13%."
+            },
+            {
+              "rotulo": "Células ghost",
+              "valores": [
+                {
+                  "m": 0,
+                  "ep": 0
+                },
+                {
+                  "m": 0.38,
+                  "ep": 0.07,
+                  "sig": "*"
+                },
+                {
+                  "m": 0.05,
+                  "ep": 0.05,
+                  "sig": "#"
+                }
+              ],
+              "leitura": "Las células muertas solo aparecieron con el veneno. El suero casi abolió este daño: con él, el resultado no fue diferente del control."
+            }
+          ],
+          "nota": "Media ± error estándar (3 músculos por grupo). * diferente del control; # diferente del veneno (p < 0,05). Una célula puede tener más de un tipo de lesión, por eso los porcentajes no suman 100%. El grupo control tuvo algunos artefactos de almacenamiento y manipulación, lo que explica parte de sus lesiones."
+        },
+        {
+          "tipo": "galeria",
+          "itens": [
+            {
+              "src": "imagens/mini/figura2-graficos.webp",
+              "full": "imagens/figura2-graficos.webp",
+              "titulo": "Figura 2 · Gráficos originales",
+              "legenda": "Figura 2 · Análisis cuantitativo de las lesiones: (a) células normales, (b) edema, (c) vacuolas, (d) miofibrillas condensadas, (e) células ghost.",
+              "credito": "Passos et al. (2026), ARACÊ"
+            },
+            {
+              "src": "imagens/mini/figura1-tipos-de-lesao.webp",
+              "full": "imagens/figura1-tipos-de-lesao.webp",
+              "titulo": "Figura 1 · Tipos de lesión",
+              "legenda": "Figura 1 · Clasificación de los tipos de lesión celular (hematoxilina-eosina; barra = 40 µm).",
+              "credito": "Passos et al. (2026), ARACÊ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Qué significa",
+      "eyebrow": "Discusión",
+      "titulo": "Lo que significan estos resultados",
+      "lede": "El daño sigue una cadena de eventos, y el suero actúa mejor al comienzo de ella.",
+      "blocos": [
+        {
+          "tipo": "cadeia",
+          "itens": [
+            "La PLA2 alcanza la membrana de la fibra",
+            "El calcio entra sin control en la célula",
+            "Edema y vacuolas",
+            "Las miofibrillas se condensan",
+            "Mionecrosis: células ghost"
+          ]
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>Las PLA2 del veneno rompen la membrana de la fibra muscular. El calcio entra sin control, surgen vacuolas y las miofibrillas se condensan, hasta que la fibra muere. El <strong>edema</strong> es uno de los primeros pasos de esta cadena: al reducirlo, el suero también evitó la etapa final, las <strong>células ghost</strong>.</p><p>¿Por qué la protección fue solo parcial? El suero usado en Brasil se produce con el veneno de apenas dos especies, y su capacidad para neutralizar el veneno de otras corales varía. Estudios anteriores ya mostraban que el veneno de la coral amazónica está entre los más letales del género y que este suero no neutraliza por completo su actividad de fosfolipasa.</p>"
+        },
+        {
+          "tipo": "destaque",
+          "html": "En pruebas anteriores con ratones, el mismo suero protegió poco contra el daño muscular de este veneno, incluso usando el doble de la dosis recomendada."
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusión",
+      "eyebrow": "Conclusión",
+      "titulo": "En resumen",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>El veneno de la serpiente coral amazónica causa <strong>mionecrosis</strong> en el músculo, y el suero antielapídico, mezclado antes con el veneno, protegió de forma significativa, pero en grados diferentes para cada tipo de daño. Los autores atribuyen el daño principalmente a las PLA2; el papel de las 3FTx y de otras toxinas todavía debe estudiarse.</p>"
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Cuidados al interpretar",
+          "itens": [
+            "Estudio hecho en laboratorio (in vitro), con músculo de pollito.",
+            "Tres músculos por grupo.",
+            "Se probó una única proporción de suero para veneno.",
+            "El grupo control tuvo algunos artefactos de preparación de las láminas."
+          ]
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Miotoxicidad",
+      "def": "Capacidad de una sustancia de dañar el músculo."
+    },
+    {
+      "termo": "Mionecrosis",
+      "def": "Muerte de las fibras musculares."
+    },
+    {
+      "termo": "Neurotoxicidad",
+      "def": "Capacidad de dañar o bloquear el sistema nervioso; en el caso de las corales, causa parálisis."
+    },
+    {
+      "termo": "Biventer cervicis",
+      "def": "Músculo del cuello de las aves muy usado en laboratorio para estudiar cómo actúan los venenos sobre nervios y músculos."
+    },
+    {
+      "termo": "Suero antielapídico",
+      "def": "Antiveneno contra serpientes coral, producido en caballos. En Brasil se hace con el veneno de M. frontalis y M. corallinus."
+    },
+    {
+      "termo": "PLA2 (fosfolipasa A2)",
+      "def": "Enzima del veneno que rompe los lípidos de la membrana de las células."
+    },
+    {
+      "termo": "3FTx",
+      "def": "Toxinas de tres dedos, que bloquean los receptores de la señal nerviosa en el músculo."
+    },
+    {
+      "termo": "Hematoxilina-eosina (HE)",
+      "def": "Tinción clásica de láminas: deja los núcleos en morado y el citoplasma en rosa."
+    },
+    {
+      "termo": "Doble ciego",
+      "def": "Análisis en el que quien evalúa no sabe a qué grupo pertenece cada muestra, para evitar sesgos."
+    },
+    {
+      "termo": "Preincubación",
+      "def": "Mezclar el veneno con el suero y esperar un tiempo antes de ponerlo en el músculo."
+    },
+    {
+      "termo": "In vitro",
+      "def": "Experimento hecho fuera del organismo vivo, en laboratorio."
+    },
+    {
+      "termo": "p < 0,05",
+      "def": "Criterio estadístico: la diferencia se considera real, y no fruto del azar, con menos del 5% de probabilidad de error."
+    }
+  ],
+  "citacao": "PASSOS, F. R.; COSTA, W. R.; CANTUÁRIA, N. M.; ALVES, P. L. M.; AZEVEDO, J. E. G.; HYSLOP, S.; OSHIMA-FRANCO, Y. Análise histológica da miotoxicidade do veneno de Micrurus spixii (cobra coral amazônica) em músculo biventer cervicis de pintainho e sua neutralização por soro antielapídico. ARACÊ, São José dos Pinhais, v. 8, n. 2, p. 1-18, 2026. DOI: 10.56238/arev8n2-068.",
+  "referencias": [
+    {
+      "texto": "TERRA, A. L. C. et al. Biological characterization of the Amazon coral Micrurus spixii snake venom: isolation of a new neurotoxic phospholipase A2. Toxicon, v. 103, p. 1-11, 2015.",
+      "doi": "10.1016/j.toxicon.2015.06.011"
+    },
+    {
+      "texto": "TANAKA, G. D. et al. Diversity of Micrurus snake species related to their venom toxic effects and the prospective of antivenom neutralization. PLoS Neglected Tropical Diseases, v. 4, n. 3, 2010.",
+      "doi": "10.1371/journal.pntd.0000622"
+    },
+    {
+      "texto": "GUTIÉRREZ, J. M.; OWNBY, C. L. Skeletal muscle degeneration induced by venom phospholipases A2: insights into the mechanisms of local and systemic myotoxicity. Toxicon, v. 42, n. 8, p. 915-931, 2003.",
+      "doi": "10.1016/j.toxicon.2003.11.005"
+    },
+    {
+      "texto": "SANZ, L. et al. Comparative venomics of Brazilian coral snakes: Micrurus frontalis, Micrurus spixii spixii, and Micrurus surinamensis. Toxicon, v. 166, p. 39-45, 2019.",
+      "doi": "10.1016/j.toxicon.2019.05.001"
+    },
+    {
+      "texto": "BUCARETCHI, F. et al. Coral snake bites (Micrurus spp.) in Brazil: a review of literature reports. Clinical Toxicology, v. 54, n. 3, p. 222-234, 2016.",
+      "doi": "10.3109/15563650.2015.1135337"
+    },
+    {
+      "texto": "MONTECUCCO, C.; GUTIÉRREZ, J. M.; LOMONTE, B. Cellular pathology induced by snake venom phospholipase A2 myotoxins and neurotoxins. Cellular and Molecular Life Sciences, v. 65, n. 18, p. 2897-2912, 2008.",
+      "doi": "10.1007/s00018-008-8113-3"
+    },
+    {
+      "texto": "WORLD HEALTH ORGANIZATION. Snakebite envenoming: a strategy for prevention and control. Genebra: WHO, 2019.",
+      "url": "https://www.who.int/publications/i/item/9789241515641"
+    }
+  ],
+  "titulo_pt": "Análisis histológico de la miotoxicidad del veneno de Micrurus spixii (serpiente coral amazónica) en el músculo biventer cervicis de pollito y su neutralización por suero antielapídico",
+  "rotulo_original": "Título original en portugués:",
+  "idioma": "es",
+  "arte_legenda": "ilustración · fibras musculares al microscopio"
+}

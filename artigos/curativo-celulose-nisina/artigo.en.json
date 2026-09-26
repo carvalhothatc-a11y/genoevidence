@@ -1,0 +1,481 @@
+{
+  "id": "curativo-celulose-nisina",
+  "tipo": "artigo",
+  "rotulo": "Published study",
+  "arte": "fibras",
+  "arte_legenda": "illustration · cellulose fibers releasing the active ingredient",
+  "tema": "Biomaterials and nanotechnology",
+  "tema_id": "biomateriais",
+  "titulo": "Development of a Drug Delivery System with Bacterial Cellulose and Gelatin: Physicochemical and Microbiological Evaluation",
+  "titulo_curto": "A cellulose dressing that fights resistant bacteria",
+  "breadcrumb": "Nisin dressing",
+  "autores": [
+    {
+      "nome": "Gabriel P. Machado",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Natasha L. A. Ibanez",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Patricia L. M. Alves",
+      "destaque": true,
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Ana C. Chacon",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Larissa Simões",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Victoria Schultz",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Samanta Oliveira",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Denise Grotto",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Angela F. Jozala",
+      "afiliacao": "Pharmacy · Uniso (corresponding author)"
+    }
+  ],
+  "revista": {
+    "nome": "Macromol",
+    "cidade": "Basel, Switzerland (MDPI)",
+    "issn": "2673-6209",
+    "volume": "5",
+    "numero": "3",
+    "paginas": "article 39",
+    "ano": "2025",
+    "submetido": "2025-04-29",
+    "publicado": "2025-08-27",
+    "doi": "10.3390/macromol5030039",
+    "url": "https://doi.org/10.3390/macromol5030039",
+    "site": "https://www.mdpi.com/journal/macromol",
+    "pdf": "https://www.mdpi.com/2673-6209/5/3/39/pdf"
+  },
+  "palavras_chave": [
+    "Bacterial cellulose",
+    "Bioactive films",
+    "Controlled release",
+    "Nisin",
+    "Antimicrobial resistance"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "The problem",
+      "titulo": "Bacteria that are more and more resistant",
+      "texto": "According to the WHO, antibiotic resistance caused 1.27 million deaths in 2019. Wounds infected by resistant bacteria are hard to treat."
+    },
+    {
+      "rotulo": "What they did",
+      "titulo": "A dressing film with six ingredients",
+      "texto": "They combined gelatin, cellulose produced by bacteria, sericin (a silk protein), citric acid, PEG 400 and nisin, a natural molecule that kills bacteria."
+    },
+    {
+      "rotulo": "What they found",
+      "titulo": "It worked even against hospital bacteria",
+      "texto": "The film stopped the growth of all 7 bacteria tested, including 4 resistant ones from hospitals, and also showed antioxidant action."
+    },
+    {
+      "rotulo": "Why it matters",
+      "titulo": "A first step toward smart dressings",
+      "texto": "This is an early lab study. Before reaching people, tests of the material's strength and safety are still needed."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "21.7 mm",
+      "texto": "largest bacteria-free zone around the film (against E. coli)",
+      "cor": "ok"
+    },
+    {
+      "valor": "7 of 7",
+      "texto": "bacteria tested had their growth blocked by the nisin film",
+      "cor": "arg"
+    },
+    {
+      "valor": "2 of 7",
+      "texto": "bacteria blocked by the film without nisin and sericin",
+      "cor": "amber"
+    },
+    {
+      "valor": "0.00125 mg/mL",
+      "texto": "smallest amount of nisin that already stopped S. aureus growth",
+      "cor": "violet"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "The problem",
+      "eyebrow": "Context",
+      "titulo": "Why create a new dressing",
+      "lede": "Antibiotics are losing strength, and infected wounds call for solutions that act locally for longer.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p><strong>Antimicrobial resistance</strong> happens when bacteria stop responding to the drugs that used to kill them. Overuse of antibiotics is the main driver of this problem. During the COVID-19 pandemic, for example, only about <strong>8%</strong> of hospitalized patients had a bacterial infection, but approximately <strong>75%</strong> received antibiotics.</p><p>Bacteria such as <em>Escherichia coli</em>, <em>Staphylococcus aureus</em>, <em>Pseudomonas aeruginosa</em> and <em>Enterobacter</em> are among the most worrying in hospitals.</p>"
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>Ointments and creams applied to the skin come off the wound easily. That is why there is growing interest in <strong>films and dressings made of natural polymers</strong>, which stay in place, protect the wound and release the drug gradually. The Uniso group has worked for years with <strong>bacterial cellulose</strong>, a very pure, strong material that the body tolerates well.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "The film's six ingredients (and the role of each)",
+          "itens": [
+            {
+              "titulo": "Gelatin",
+              "texto": "The base of the film. It fills the spaces between the cellulose fibers.",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Bacterial cellulose",
+              "texto": "Provides structure and strength. It is produced by the bacterium Komagataeibacter xylinus.",
+              "cor": "teal"
+            },
+            {
+              "titulo": "PEG 400",
+              "texto": "Plasticizer: makes the film more flexible and keeps it from drying out.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Citric acid",
+              "texto": "Binds the film's molecules together and helps “open up” the protection of certain bacteria.",
+              "cor": "ok"
+            },
+            {
+              "titulo": "Sericin",
+              "texto": "Silk protein. Adds elasticity and helps keep the film hydrated.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Nisin",
+              "texto": "Natural peptide that kills bacteria. It is the dressing's “active ingredient”.",
+              "cor": "his"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "How it was done",
+      "eyebrow": "Method",
+      "titulo": "How the film was made and tested",
+      "lede": "Everything was done in the lab, comparing the complete film with a “blank” film, without nisin or sericin.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Produce the cellulose",
+              "texto": "The bacterium grew for 4 days at 30 °C in culture medium and formed membranes about 10 cm across. They were cleaned, washed to neutral pH and sterilized."
+            },
+            {
+              "titulo": "Break down the cellulose with an enzyme",
+              "texto": "The cellulose was treated for 4 hours at 50 °C with cellulase, an enzyme that breaks up clumps. This way it spreads better in the film."
+            },
+            {
+              "titulo": "Assemble the film",
+              "texto": "The gelatin was dissolved at 80 °C. After cooling to about 40 °C, it received the other ingredients, was poured into a dish and dried for 48 hours."
+            },
+            {
+              "titulo": "Measure nisin's strength",
+              "texto": "In 96-well plates, they tested the smallest amount of nisin and sericin able to stop bacterial growth (MIC)."
+            },
+            {
+              "titulo": "Place the film on the bacteria",
+              "texto": "Pieces of the film were placed on plates with 7 bacteria: 3 from a reference collection (ATCC) and 4 resistant ones isolated in a hospital. After 24 hours, they measured the growth-free area around it (the halo)."
+            },
+            {
+              "titulo": "Antioxidant and microscope",
+              "texto": "For 1 hour, they measured how much the film neutralizes free radicals (DPPH test) and examined its surface under an electron microscope at 20,000× magnification."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "Student's t-test was used for statistical comparisons; differences with p &lt; 0.05 were considered real. Tests were done in triplicate."
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Results",
+      "eyebrow": "Results",
+      "titulo": "The film blocked all the bacteria tested",
+      "lede": "Choose a bacterium and compare the complete film with the film without nisin and sericin.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Choose the bacterium",
+          "unidade": " mm",
+          "grupos": [
+            {
+              "nome": "Film with nisin (E5)",
+              "cor": "#5FD39A"
+            },
+            {
+              "nome": "Film without nisin (BE)",
+              "cor": "#9DB6FF"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "S. aureus",
+              "valores": [
+                {
+                  "m": 18.96,
+                  "ep": 0.15
+                },
+                {
+                  "m": 0
+                }
+              ],
+              "leitura": "Gram-positive bacterium, common in skin infections. Only the nisin film formed a halo."
+            },
+            {
+              "rotulo": "E. coli",
+              "valores": [
+                {
+                  "m": 21.68,
+                  "ep": 0.59
+                },
+                {
+                  "m": 8.95,
+                  "ep": 0.06
+                }
+              ],
+              "leitura": "The largest halo in the study. The film without nisin also acted a little, probably because of the citric acid."
+            },
+            {
+              "rotulo": "P. aeruginosa",
+              "valores": [
+                {
+                  "m": 20.35,
+                  "ep": 0.33
+                },
+                {
+                  "m": 0
+                }
+              ],
+              "leitura": "Gram-negative bacterium very common in hospitals. Only the nisin film blocked it."
+            },
+            {
+              "rotulo": "Resistant E. cloacae",
+              "valores": [
+                {
+                  "m": 18.34,
+                  "ep": 0.13
+                },
+                {
+                  "m": 0
+                }
+              ],
+              "leitura": "Antibiotic-resistant hospital bacterium. The complete film formed a halo of more than 18 mm."
+            },
+            {
+              "rotulo": "Resistant S. marcescens",
+              "valores": [
+                {
+                  "m": 13.34,
+                  "ep": 0.16
+                },
+                {
+                  "m": 0
+                }
+              ],
+              "leitura": "The smallest halo among the bacteria tested, but the complete film still stopped growth around it."
+            },
+            {
+              "rotulo": "Resistant P. aeruginosa",
+              "valores": [
+                {
+                  "m": 18.54,
+                  "ep": 0.24
+                },
+                {
+                  "m": 0
+                }
+              ],
+              "leitura": "Even the resistant version of P. aeruginosa was blocked by the nisin film."
+            },
+            {
+              "rotulo": "Resistant E. coli",
+              "valores": [
+                {
+                  "m": 17.4,
+                  "ep": 0.11
+                },
+                {
+                  "m": 5.18,
+                  "ep": 0.09
+                }
+              ],
+              "leitura": "The film without nisin had a small effect. The complete film had a halo more than 3 times larger."
+            }
+          ],
+          "nota": "Halo = area around the film where bacteria did not grow (mean ± standard deviation, in millimeters). “Resistant” = bacterium isolated in a hospital. Value 0 = no halo. Data from Table 2 of the paper."
+        },
+        {
+          "tipo": "texto",
+          "html": "<p><strong>Nisin is the ingredient that kills the bacteria.</strong> On its own, it stopped the growth of <em>S. aureus</em> from <strong>0.00125 mg/mL</strong> and of <em>E. coli</em> and <em>P. aeruginosa</em> from <strong>0.0125 mg/mL</strong>. Sericin alone had no action against the bacteria.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "What else the tests showed",
+          "itens": [
+            {
+              "titulo": "Appearance",
+              "texto": "Semi-rigid, translucent, odorless film with visible cellulose flakes: good features for use on the skin.",
+              "cor": "teal"
+            },
+            {
+              "titulo": "Antioxidant",
+              "texto": "The complete film neutralized more and more free radicals over time, with a clear difference from 10 minutes on. The film without nisin barely reacted.",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Electron microscope",
+              "texto": "The gelatin covered the surface and the components blended into the matrix, with some clusters of nisin and sericin near the edges.",
+              "cor": "violet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Why it worked",
+      "eyebrow": "Discussion",
+      "titulo": "How nisin started beating Gram-negative bacteria",
+      "lede": "On its own, nisin acts almost only against Gram-positive bacteria. In the film, it got a boost.",
+      "blocos": [
+        {
+          "tipo": "cadeia",
+          "itens": [
+            "Citric acid “grabs” the calcium and magnesium that hold together the outer membrane of Gram-negative bacteria",
+            "This protective membrane becomes weaker",
+            "Nisin, which couldn't get through before, enters the bacterium",
+            "The bacterium is destroyed, including antibiotic-resistant ones"
+          ]
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>Films made only of gelatin tend to be hard and brittle. <strong>Bacterial cellulose</strong>, with its nanofibers, made the material more cohesive and strong. <strong>Sericin</strong> added elasticity and helped prevent drying, and <strong>PEG 400</strong> made the film more flexible.</p><p>A similar effect had already been described with nisin combined with EDTA, another substance that pulls calcium and magnesium from bacterial membranes.</p>"
+        },
+        {
+          "tipo": "destaque",
+          "html": "The authors propose that the film overcomes resistance in three ways: it releases enough nisin to <strong>overwhelm the bacteria's defenses</strong>, <strong>penetrates the biofilm</strong> and keeps up <strong>continuous pressure</strong>, which makes escape through efflux pumps or mutations harder."
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusion",
+      "eyebrow": "Conclusion",
+      "titulo": "What the study allows us to say",
+      "lede": "A promising material for infected wounds, still at the start of the road.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Combining natural biopolymers with nisin produced a stable, flexible film with <strong>action against Gram-positive and Gram-negative bacteria</strong>, including resistant ones, and <strong>antioxidant action</strong>. Combining these two functions is useful in skin wounds, where infection and oxidative stress delay healing.</p>"
+        },
+        {
+          "tipo": "lista",
+          "titulo": "What is still missing, according to the authors themselves",
+          "itens": [
+            "Better measure the film's mechanical properties (strength, elasticity).",
+            "Assess biocompatibility: whether the material is well tolerated by cells and tissues.",
+            "Run biological safety tests before any use in people."
+          ]
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Antimicrobial resistance",
+      "def": "When bacteria and other microbes stop responding to the drugs that used to eliminate them."
+    },
+    {
+      "termo": "Nisin",
+      "def": "Natural peptide produced by milk bacteria, used as a preservative and able to kill other bacteria."
+    },
+    {
+      "termo": "Bacterial cellulose",
+      "def": "Pure cellulose made of nanofibers, produced by bacteria such as Komagataeibacter xylinus."
+    },
+    {
+      "termo": "Sericin",
+      "def": "Protein that coats the silkworm's thread. It helps hydrate and adds elasticity."
+    },
+    {
+      "termo": "Gram-positive and Gram-negative",
+      "def": "Two large groups of bacteria. Gram-negatives have an extra outer membrane that makes them harder to reach."
+    },
+    {
+      "termo": "Inhibition halo",
+      "def": "Area around a material, on a plate with bacteria, where they could not grow. The larger it is, the stronger the action."
+    },
+    {
+      "termo": "MIC",
+      "def": "Minimum inhibitory concentration: the smallest amount of a substance that stops a bacterium from growing."
+    },
+    {
+      "termo": "DPPH",
+      "def": "Stable free radical used to measure antioxidant action: the more it disappears, the more antioxidant the sample."
+    },
+    {
+      "termo": "SEM",
+      "def": "Scanning electron microscopy: shows the surface of a material at magnifications of thousands of times."
+    },
+    {
+      "termo": "Plasticizer",
+      "def": "A substance that makes a material more flexible and less brittle."
+    },
+    {
+      "termo": "Controlled release",
+      "def": "When the drug leaves the material gradually, acting locally for longer."
+    },
+    {
+      "termo": "ATCC",
+      "def": "Reference collection of microorganisms. “ATCC” bacteria are standardized so studies can be compared."
+    }
+  ],
+  "citacao": "MACHADO, G. P.; IBANEZ, N. L. A.; ALVES, P. L. M.; CHACON, A. C.; SIMÕES, L.; SCHULTZ, V.; OLIVEIRA, S.; GROTTO, D.; JOZALA, A. F. Development of a Drug Delivery System with Bacterial Cellulose and Gelatin: Physicochemical and Microbiological Evaluation. Macromol, Basel, v. 5, n. 3, art. 39, 2025. DOI: 10.3390/macromol5030039.",
+  "referencias": [
+    {
+      "texto": "DOS SANTOS, G. R. et al. Bacterial Cellulose Membranes as Carriers for Nisin: Incorporation, Antimicrobial Activity, Cytotoxicity and Morphology. Polymers, v. 14, 3497, 2022.",
+      "doi": "10.3390/polym14173497"
+    },
+    {
+      "texto": "BUREL, C.; KALA, A.; PUREVDORJ-GAGE, L. Impact of pH on citric acid antimicrobial activity against Gram-negative bacteria. Letters in Applied Microbiology, v. 72, p. 332-340, 2021.",
+      "doi": "10.1111/lam.13420"
+    },
+    {
+      "texto": "JOZALA, A. F. et al. Bacterial cellulose production by Gluconacetobacter xylinus by employing alternative culture media. Applied Microbiology and Biotechnology, v. 99, p. 1181-1190, 2015.",
+      "doi": "10.1007/s00253-014-6232-3"
+    },
+    {
+      "texto": "LAMBONI, L. et al. Silk sericin: A versatile material for tissue engineering and drug delivery. Biotechnology Advances, v. 33, p. 1855-1867, 2015.",
+      "doi": "10.1016/j.biotechadv.2015.10.014"
+    },
+    {
+      "texto": "WORLD HEALTH ORGANIZATION. Antimicrobial resistance (fact sheet). Genebra: WHO, 2023.",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"
+    }
+  ],
+  "idioma": "en"
+}

@@ -1,0 +1,477 @@
+{
+  "id": "ia-conitec",
+  "tipo": "artigo",
+  "rotulo": "Estudio publicado",
+  "arte": "rede",
+  "arte_legenda": "ilustración · una red neuronal leyendo informes",
+  "tema": "Salud pública",
+  "tema_id": "saude-publica",
+  "titulo": "Application of natural language processing to predict final recommendation of Brazilian health technology assessment reports",
+  "titulo_pt": "Aplicación del procesamiento del lenguaje natural para predecir la recomendación final de los informes brasileños de evaluación de tecnologías sanitarias",
+  "titulo_curto": "Una inteligencia artificial que lee los informes de la Conitec y predice la decisión",
+  "breadcrumb": "IA y decisiones de la Conitec",
+  "autores": [
+    {
+      "nome": "Marilia Mastrocolla de Almeida Cardoso",
+      "afiliacao": "Núcleo de Evaluación de Tecnologías Sanitarias · Hospital das Clínicas de la Facultad de Medicina de Botucatu"
+    },
+    {
+      "nome": "Juliana Machado-Rugolo",
+      "destaque": true,
+      "afiliacao": "Núcleo de Evaluación de Tecnologías Sanitarias · Hospital das Clínicas de la Facultad de Medicina de Botucatu"
+    },
+    {
+      "nome": "Lehana Thabane",
+      "afiliacao": "McMaster University · Canadá"
+    },
+    {
+      "nome": "Naila Camila da Rocha",
+      "afiliacao": "Laboratorio de Ciencia de Datos en Salud · HC-FMB"
+    },
+    {
+      "nome": "Abner Mácula Pacheco Barbosa",
+      "afiliacao": "Facultad de Medicina de Botucatu (Unesp)"
+    },
+    {
+      "nome": "Denis Satoshi Komoda",
+      "afiliacao": "Salud Colectiva · Unicamp"
+    },
+    {
+      "nome": "Juliana Tereza Coneglian de Almeida",
+      "afiliacao": "Núcleo de Evaluación de Tecnologías Sanitarias · HC-FMB"
+    },
+    {
+      "nome": "Daniel da Silva Pereira Curado",
+      "afiliacao": "Ministerio de Salud · Brasilia"
+    },
+    {
+      "nome": "Silke Anna Theresa Weber",
+      "afiliacao": "Facultad de Medicina de Botucatu (Unesp)"
+    },
+    {
+      "nome": "Luis Gustavo Modelli de Andrade",
+      "afiliacao": "Facultad de Medicina de Botucatu (Unesp)"
+    }
+  ],
+  "revista": {
+    "nome": "International Journal of Technology Assessment in Health Care",
+    "cidade": "Cambridge, Reino Unido (Cambridge University Press)",
+    "issn": "0266-4623",
+    "volume": "40",
+    "numero": "1",
+    "paginas": "e19",
+    "ano": "2024",
+    "submetido": "2023-10-09",
+    "publicado": "2024-04-12",
+    "doi": "10.1017/S0266462324000163",
+    "url": "https://doi.org/10.1017/S0266462324000163",
+    "site": "https://www.cambridge.org/core/journals/international-journal-of-technology-assessment-in-health-care"
+  },
+  "palavras_chave": [
+    "Evaluación de tecnologías sanitarias",
+    "Brasil",
+    "Análisis de predicción",
+    "Aprendizaje automático",
+    "Procesamiento del lenguaje natural"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "El problema",
+      "titulo": "Decidir qué entra en el sistema público de salud da mucho trabajo",
+      "texto": "La Conitec evalúa si medicamentos, productos y procedimientos deben ofrecerse en el SUS, el sistema público de salud de Brasil. Cada análisis exige tiempo, especialistas y muchos documentos."
+    },
+    {
+      "rotulo": "Qué hicieron",
+      "titulo": "Enseñaron a las computadoras a leer informes",
+      "texto": "Seis modelos de inteligencia artificial “leyeron” los resúmenes de 432 informes de la Conitec, de 2012 a 2022, para predecir si la tecnología sería aprobada o no."
+    },
+    {
+      "rotulo": "Qué encontraron",
+      "titulo": "La red neuronal acertó el 77%",
+      "texto": "El mejor modelo acertó el 76,9% de las decisiones. Las solicitudes del gobierno tendían a ser aprobadas; las de la industria se rechazaban con más frecuencia."
+    },
+    {
+      "rotulo": "Por qué importa",
+      "titulo": "Una ayuda, no un juez",
+      "texto": "La idea es un primer filtro, con criterios transparentes, para apoyar a los especialistas. La decisión sigue siendo humana."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "76,9%",
+      "texto": "de aciertos de la red neuronal, el mejor de los 6 modelos",
+      "cor": "violet"
+    },
+    {
+      "valor": "0,871",
+      "texto": "de AUC: capacidad de separar aprobados de no aprobados (el máximo es 1)",
+      "cor": "ok"
+    },
+    {
+      "valor": "432",
+      "texto": "informes analizados, de 627 publicados entre 2012 y 2022",
+      "cor": "arg"
+    },
+    {
+      "valor": "6",
+      "texto": "modelos de inteligencia artificial comparados",
+      "cor": "amber"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Contexto",
+      "eyebrow": "Contexto",
+      "titulo": "Quién decide qué entra en el sistema público de salud",
+      "lede": "La evaluación de tecnologías sanitarias (ETS) orienta decisiones que afectan a millones de personas.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>La <strong>Conitec</strong> (Comisión Nacional de Incorporación de Tecnologías al SUS) fue creada por la Ley n.º 12.401, del 28 de abril de 2011. Asesora al Ministerio de Salud sobre <strong>incorporar, excluir o modificar</strong> tecnologías en el SUS, el sistema público de salud de Brasil. Desde 2012, todos sus informes son públicos.</p><p>Por ley, la decisión debe considerar evidencias de eficacia, seguridad, costo e impacto en el presupuesto. Pero los estudios muestran que, en la práctica, también pesan factores implícitos, como valores personales, presiones y el contexto. Esto puede comprometer la justicia y la previsibilidad de las decisiones.</p>"
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>El <strong>procesamiento del lenguaje natural (PLN)</strong> es una técnica de inteligencia artificial que transforma textos en datos que la computadora puede analizar. En la justicia brasileña, por ejemplo, modelos de este tipo ya se usaron para predecir el resultado de recursos con más aciertos que los especialistas. La pregunta del estudio: ¿se puede hacer lo mismo con las decisiones de la Conitec?</p>"
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Cómo se hizo",
+      "eyebrow": "Método",
+      "titulo": "Cómo se entrenó la IA",
+      "lede": "Del texto del informe a la predicción, paso a paso.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Reunir los informes",
+              "texto": "De los 627 informes publicados en el sitio de la Conitec de 2012 a 2022, 432 tenían resumen y decisión final (“incorporar” o “no incorporar”)."
+            },
+            {
+              "titulo": "Ocultar la respuesta",
+              "texto": "Se quitaron las partes del resumen que traían la recomendación de la Conitec, para que la IA no “copiara”."
+            },
+            {
+              "titulo": "Limpiar el texto",
+              "texto": "Se eliminaron palabras vacías (como “el”, “un”, “de”), puntuación y tildes. Las palabras se redujeron a su raíz (stemming)."
+            },
+            {
+              "titulo": "Transformar el texto en números",
+              "texto": "Con las técnicas TF-IDF y n-gramas, cada informe se convirtió en una lista de números que indica qué palabras y expresiones son importantes en él."
+            },
+            {
+              "titulo": "Entrenar y probar",
+              "texto": "El 75% de los informes (324) sirvió para entrenar y el 25% (108) para probar. Se compararon seis modelos: LASSO, regresión logística, SVM, bosque aleatorio, red neuronal y XGBoost."
+            },
+            {
+              "titulo": "Entender la IA",
+              "texto": "El método SHAP mostró qué palabras pesaron más en cada predicción, y un análisis de agrupamiento (k-modes) separó los informes en dos grupos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "Qué modelo acertó más",
+      "lede": "Elige una medida para comparar los seis modelos en los 108 informes de prueba.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Elige la medida",
+          "grupos": [
+            {
+              "nome": "LASSO",
+              "cor": "#9DB6FF"
+            },
+            {
+              "nome": "Regresión",
+              "cor": "#7C9CFF"
+            },
+            {
+              "nome": "SVM",
+              "cor": "#3FC1C9"
+            },
+            {
+              "nome": "Bosque",
+              "cor": "#FFB23F"
+            },
+            {
+              "nome": "Red neuronal",
+              "cor": "#A58CFF"
+            },
+            {
+              "nome": "XGBoost",
+              "cor": "#5FD39A"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "Exactitud",
+              "valores": [
+                {
+                  "m": 63.9
+                },
+                {
+                  "m": 70.4
+                },
+                {
+                  "m": 75.0
+                },
+                {
+                  "m": 63.0
+                },
+                {
+                  "m": 76.9
+                },
+                {
+                  "m": 70.4
+                }
+              ],
+              "leitura": "Porcentaje total de aciertos. La red neuronal fue la mejor, seguida de cerca por el SVM."
+            },
+            {
+              "rotulo": "AUC",
+              "valores": [
+                {
+                  "m": 67.2
+                },
+                {
+                  "m": 71.0
+                },
+                {
+                  "m": 75.9
+                },
+                {
+                  "m": 59.4
+                },
+                {
+                  "m": 87.1
+                },
+                {
+                  "m": 81.1
+                }
+              ],
+              "leitura": "Mide la capacidad de separar aprobados de no aprobados (aquí en %, 87,1 = 0,871). La red neuronal se destacó, y el XGBoost quedó segundo."
+            },
+            {
+              "rotulo": "Precisión",
+              "valores": [
+                {
+                  "m": 72.7
+                },
+                {
+                  "m": 77.6
+                },
+                {
+                  "m": 84.8
+                },
+                {
+                  "m": 59.8
+                },
+                {
+                  "m": 81.5
+                },
+                {
+                  "m": 74.5
+                }
+              ],
+              "leitura": "Cuando el modelo dijo “aprobado”, cuántas veces acertó. El SVM y la red neuronal fueron los más precisos."
+            },
+            {
+              "rotulo": "Sensibilidad",
+              "valores": [
+                {
+                  "m": 54.2
+                },
+                {
+                  "m": 64.4
+                },
+                {
+                  "m": 66.1
+                },
+                {
+                  "m": 98.3
+                },
+                {
+                  "m": 74.6
+                },
+                {
+                  "m": 69.5
+                }
+              ],
+              "leitura": "De las tecnologías aprobadas, cuántas encontró el modelo. El bosque aleatorio encontró casi todas, pero porque decía “aprobado” para casi todo: su precisión fue la más baja."
+            }
+          ],
+          "nota": "Valores de la Tabla 1 del artículo, en el conjunto de prueba."
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "Lo que más pesó en las predicciones",
+          "itens": [
+            {
+              "titulo": "Quién hizo la solicitud",
+              "texto": "Las solicitudes del gobierno (secretarías del Ministerio de Salud) pesaron mucho a favor de la aprobación.",
+              "cor": "ok"
+            },
+            {
+              "titulo": "Experiencia de otros países",
+              "texto": "Las menciones a agencias internacionales de ETS, como el NICE del Reino Unido, pesaron a favor o en contra.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Ampliar el uso",
+              "texto": "Las solicitudes para ampliar el uso de algo que ya existe en el SUS tuvieron más probabilidad de aprobación.",
+              "cor": "teal"
+            },
+            {
+              "titulo": "Procedimientos",
+              "texto": "Los procedimientos, aunque menos frecuentes que los medicamentos, tuvieron más probabilidad de ser aprobados.",
+              "cor": "amber"
+            }
+          ]
+        },
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura2-grupos.webp",
+          "full": "imagens/figura2-grupos.webp",
+          "alt": "Gráfico de barras con dos grupos: el grupo 0 con una barra roja alta (gobierno) y el grupo 1 con una barra azul (industria)",
+          "legenda": "Figura 2 · Los dos grupos encontrados por la IA, según quién hizo la solicitud: gobierno (rojo), industria (azul) y sociedad (lila). El grupo 0 reúne las tecnologías aprobadas, casi siempre solicitadas por el gobierno; en el grupo 1, de las no aprobadas, predomina la industria.",
+          "credito": "Cardoso et al. (2024), International Journal of Technology Assessment in Health Care, licencia CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discusión",
+      "eyebrow": "Discusión",
+      "titulo": "Lo que esto revela, y cómo usarlo con cuidado",
+      "lede": "Las características de la solicitud, y no solo las evidencias, ayudan a predecir la decisión.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>El modelo mostró que el <strong>tipo de tecnología</strong> y <strong>quién hizo la solicitud</strong> ayudan a predecir la decisión, aunque no forman parte de los criterios de la ley. Estudios anteriores, con otros métodos, ya habían visto el mismo patrón: los medicamentos son los más evaluados, y el gobierno es el solicitante con más aprobaciones.</p>"
+        },
+        {
+          "tipo": "destaque",
+          "html": "La IA <strong>no sustituye</strong> a la comisión. Los autores proponen usarla como un <strong>filtro inicial</strong>, con documentación del modelo, una interfaz sencilla, diálogo continuo con quienes deciden y capacitación, para ganar confianza y transparencia."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Limitaciones señaladas por los autores",
+          "itens": [
+            "Solo se analizaron los resúmenes, no los informes completos; los números de los análisis económicos quedaron fuera.",
+            "No había estudios parecidos para comparar los resultados.",
+            "No existe un sistema informatizado con los datos de los informes, como en la justicia.",
+            "Se usaron modelos de lenguaje más simples (y más fáciles de interpretar) que modelos como GPT."
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "En 2023, la Conitec pasó a funcionar con tres comités temáticos (medicamentos, protocolos clínicos y productos y procedimientos). Para los autores, modelos como este pueden facilitar ese nuevo proceso."
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusión",
+      "eyebrow": "Conclusión",
+      "titulo": "Lo que el estudio permite afirmar",
+      "lede": "Es posible predecir decisiones de incorporación a partir del texto de los informes.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Un modelo de procesamiento del lenguaje natural logró identificar <strong>posibles predictores de la decisión final</strong> sobre la entrada de tecnologías en el SUS. Puede hacer más eficiente el sistema de ETS, ofreciendo a los especialistas criterios y señales iniciales. El próximo desafío es validar el modelo con informes completos y en agencias de otros países, adaptado a cada contexto.</p>"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "ETS",
+      "def": "Evaluación de tecnologías sanitarias: estudio de eficacia, seguridad y costos para decidir qué debe ofrecer el sistema de salud."
+    },
+    {
+      "termo": "Conitec",
+      "def": "Comisión Nacional de Incorporación de Tecnologías al SUS, del Ministerio de Salud de Brasil."
+    },
+    {
+      "termo": "Solicitante",
+      "def": "Quien pide la evaluación de una tecnología: gobierno, industria o sociedad."
+    },
+    {
+      "termo": "Procesamiento del lenguaje natural (PLN)",
+      "def": "Rama de la inteligencia artificial que enseña a las computadoras a analizar textos escritos por personas."
+    },
+    {
+      "termo": "Aprendizaje automático",
+      "def": "Cuando la computadora aprende patrones a partir de ejemplos, sin reglas escritas a mano."
+    },
+    {
+      "termo": "Red neuronal",
+      "def": "Modelo de IA inspirado en las neuronas, formado por capas que aprenden patrones complejos."
+    },
+    {
+      "termo": "XGBoost y bosque aleatorio",
+      "def": "Modelos que combinan muchos “árboles de decisión” para llegar a una respuesta."
+    },
+    {
+      "termo": "TF-IDF",
+      "def": "Técnica que da más peso a las palabras frecuentes en un documento, pero raras en los demás."
+    },
+    {
+      "termo": "n-gramas",
+      "def": "Secuencias de palabras seguidas (p. ej., “estudio de mercado”), que ayudan a captar el contexto."
+    },
+    {
+      "termo": "Stemming",
+      "def": "Reducir las palabras a su raíz, como “tratamiento” y “tratar” a “trat”."
+    },
+    {
+      "termo": "Exactitud",
+      "def": "Porcentaje total de aciertos del modelo."
+    },
+    {
+      "termo": "Precisión y sensibilidad",
+      "def": "Precisión: cuántos “aprobados” previstos eran correctos. Sensibilidad: cuántos aprobados de verdad encontró el modelo."
+    },
+    {
+      "termo": "AUC",
+      "def": "Área bajo la curva ROC: va de 0,5 (azar) a 1 (perfecto)."
+    },
+    {
+      "termo": "SHAP",
+      "def": "Método que muestra qué información influyó más en cada predicción de la IA."
+    },
+    {
+      "termo": "Validación cruzada",
+      "def": "Entrenar y probar el modelo varias veces con distintas partes de los datos, para comprobar si es confiable."
+    }
+  ],
+  "citacao": "CARDOSO, M. M. A.; MACHADO-RUGOLO, J.; THABANE, L.; ROCHA, N. C.; BARBOSA, A. M. P.; KOMODA, D. S.; ALMEIDA, J. T. C.; CURADO, D. S. P.; WEBER, S. A. T.; ANDRADE, L. G. M. Application of natural language processing to predict final recommendation of Brazilian health technology assessment reports. International Journal of Technology Assessment in Health Care, Cambridge, v. 40, n. 1, e19, 2024. DOI: 10.1017/S0266462324000163.",
+  "referencias": [
+    {
+      "texto": "HARRISON, C. J.; SIDEY-GIBBONS, C. J. Machine learning in medicine: a practical introduction to natural language processing. BMC Medical Research Methodology, v. 21, 158, 2021.",
+      "doi": "10.1186/s12874-021-01347-1"
+    },
+    {
+      "texto": "MENEZES-NETO, J. E.; CLEMENTINO, M. B. M. Using deep learning to predict outcomes of legal appeals better than human experts: a study with data from Brazilian federal courts. PLoS One, v. 17, n. 7, e0272287, 2022.",
+      "doi": "10.1371/journal.pone.0272287"
+    },
+    {
+      "texto": "LIMA, S. G. G.; BRITO, C.; ANDRADE, C. J. C. Health technology assessment in Brazil – an international perspective. Ciência & Saúde Coletiva, v. 24, n. 5, p. 1709-1722, 2019.",
+      "doi": "10.1590/1413-81232018245.17582017"
+    },
+    {
+      "texto": "SILVA, H. P.; ELIAS, F. T. S. Incorporation of technologies by the Canadian and Brazilian health systems: prospects for progress in assessment processes. Cadernos de Saúde Pública, v. 35, n. 2, e00071518, 2019.",
+      "doi": "10.1590/0102-311X00071518"
+    }
+  ],
+  "rotulo_original": "Título original en inglés:",
+  "idioma": "es"
+}

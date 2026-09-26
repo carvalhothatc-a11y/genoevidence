@@ -1,25 +1,185 @@
 {
-  "_como_usar": "Frase do dia no Início: o app troca de frase sozinho a cada dia, seguindo esta lista em ordem. Para acrescentar, copie um item e troque o texto, o autor e a fonte (use só frases com autoria confirmada).",
+  "_como_usar": "Frase do dia no Início: o app troca de frase sozinho a cada dia, seguindo esta lista em ordem. Para acrescentar, copie um item e troque o texto, o autor e a fonte (use só frases com autoria confirmada). Para inglês e espanhol, preencha também \"en\", \"es\", \"fonte_en\" e \"fonte_es\".",
   "frases": [
-    {"texto": "Se enxerguei mais longe, foi por estar sobre os ombros de gigantes.", "autor": "Isaac Newton", "fonte": "Carta a Robert Hooke, 1675"},
-    {"texto": "O importante é não parar de questionar.", "autor": "Albert Einstein", "fonte": "Entrevista à revista Life, 1955"},
-    {"texto": "Alegações extraordinárias exigem evidências extraordinárias.", "autor": "Carl Sagan", "fonte": "Série Cosmos, 1980"},
-    {"texto": "No campo da observação, o acaso favorece apenas as mentes preparadas.", "autor": "Louis Pasteur", "fonte": "Aula na Universidade de Lille, 1854"},
-    {"texto": "O primeiro princípio é não enganar a si mesmo, e você é a pessoa mais fácil de enganar.", "autor": "Richard Feynman", "fonte": "Discurso “Cargo Cult Science”, Caltech, 1974"},
-    {"texto": "A ignorância gera confiança com mais frequência do que o conhecimento.", "autor": "Charles Darwin", "fonte": "A Origem do Homem, 1871"},
-    {"texto": "Sou daquelas que pensam que a ciência tem uma grande beleza.", "autor": "Marie Curie", "fonte": "Citada por Ève Curie em “Madame Curie”, 1937"},
-    {"texto": "Lembre-se de olhar para as estrelas, e não para os seus pés.", "autor": "Stephen Hawking", "fonte": "Abertura dos Jogos Paralímpicos de Londres, 2012"},
-    {"texto": "Ciência e vida cotidiana não podem e não devem ser separadas.", "autor": "Rosalind Franklin", "fonte": "Carta ao pai, c. 1940"},
-    {"texto": "A imaginação é mais importante que o conhecimento.", "autor": "Albert Einstein", "fonte": "Entrevista ao Saturday Evening Post, 1929"},
-    {"texto": "Não esmorecer para não desmerecer.", "autor": "Oswaldo Cruz", "fonte": "Lema de Oswaldo Cruz"},
-    {"texto": "A ciência não tem pátria, porque o conhecimento pertence à humanidade.", "autor": "Louis Pasteur", "fonte": "Discurso em Milão, 1876"},
-    {"texto": "Nós somos feitos de matéria das estrelas.", "autor": "Carl Sagan", "fonte": "Série Cosmos, 1980"},
-    {"texto": "Descobrir é ver o que todo mundo viu e pensar o que ninguém pensou.", "autor": "Albert Szent-Györgyi", "fonte": "The Scientist Speculates, 1962"},
-    {"texto": "A melhor maneira de ter uma boa ideia é ter muitas ideias.", "autor": "Linus Pauling", "fonte": "Citado por Francis Crick, 1995"},
-    {"texto": "O grande livro da natureza está escrito em linguagem matemática.", "autor": "Galileu Galilei", "fonte": "O Ensaiador, 1623 (adaptado)"},
-    {"texto": "Conhecimento é poder.", "autor": "Francis Bacon", "fonte": "Meditationes Sacrae, 1597"},
-    {"texto": "A ciência é mais do que um conjunto de conhecimentos: é uma maneira de pensar.", "autor": "Carl Sagan", "fonte": "Skeptical Inquirer, 1990"},
-    {"texto": "O que você faz faz diferença, e você precisa decidir que tipo de diferença quer fazer.", "autor": "Jane Goodall", "fonte": "Palestras e entrevistas"},
-    {"texto": "Onde há amor pela medicina, há também amor pela humanidade.", "autor": "Hipócrates", "fonte": "Preceitos (atribuído)"}
+    {
+      "texto": "Se enxerguei mais longe, foi por estar sobre os ombros de gigantes.",
+      "autor": "Isaac Newton",
+      "fonte": "Carta a Robert Hooke, 1675",
+      "en": "If I have seen further, it is by standing on the shoulders of giants.",
+      "es": "Si he visto más lejos, es por estar sobre los hombros de gigantes.",
+      "fonte_en": "Letter to Robert Hooke, 1675",
+      "fonte_es": "Carta a Robert Hooke, 1675"
+    },
+    {
+      "texto": "O importante é não parar de questionar.",
+      "autor": "Albert Einstein",
+      "fonte": "Entrevista à revista Life, 1955",
+      "en": "The important thing is not to stop questioning.",
+      "es": "Lo importante es no dejar de hacerse preguntas.",
+      "fonte_en": "Interview in Life magazine, 1955",
+      "fonte_es": "Entrevista a la revista Life, 1955"
+    },
+    {
+      "texto": "Alegações extraordinárias exigem evidências extraordinárias.",
+      "autor": "Carl Sagan",
+      "fonte": "Série Cosmos, 1980",
+      "en": "Extraordinary claims require extraordinary evidence.",
+      "es": "Las afirmaciones extraordinarias requieren evidencias extraordinarias.",
+      "fonte_en": "Cosmos series, 1980",
+      "fonte_es": "Serie Cosmos, 1980"
+    },
+    {
+      "texto": "No campo da observação, o acaso favorece apenas as mentes preparadas.",
+      "autor": "Louis Pasteur",
+      "fonte": "Aula na Universidade de Lille, 1854",
+      "en": "In the fields of observation, chance favors only the prepared mind.",
+      "es": "En el campo de la observación, el azar favorece solo a las mentes preparadas.",
+      "fonte_en": "Lecture at the University of Lille, 1854",
+      "fonte_es": "Clase en la Universidad de Lille, 1854"
+    },
+    {
+      "texto": "O primeiro princípio é não enganar a si mesmo, e você é a pessoa mais fácil de enganar.",
+      "autor": "Richard Feynman",
+      "fonte": "Discurso “Cargo Cult Science”, Caltech, 1974",
+      "en": "The first principle is that you must not fool yourself, and you are the easiest person to fool.",
+      "es": "El primer principio es no engañarte a ti mismo, y tú eres la persona más fácil de engañar.",
+      "fonte_en": "“Cargo Cult Science” speech, Caltech, 1974",
+      "fonte_es": "Discurso “Cargo Cult Science”, Caltech, 1974"
+    },
+    {
+      "texto": "A ignorância gera confiança com mais frequência do que o conhecimento.",
+      "autor": "Charles Darwin",
+      "fonte": "A Origem do Homem, 1871",
+      "en": "Ignorance more frequently begets confidence than does knowledge.",
+      "es": "La ignorancia genera confianza con más frecuencia que el conocimiento.",
+      "fonte_en": "The Descent of Man, 1871",
+      "fonte_es": "El origen del hombre, 1871"
+    },
+    {
+      "texto": "Sou daquelas que pensam que a ciência tem uma grande beleza.",
+      "autor": "Marie Curie",
+      "fonte": "Citada por Ève Curie em “Madame Curie”, 1937",
+      "en": "I am among those who think that science has great beauty.",
+      "es": "Soy de las que piensan que la ciencia tiene una gran belleza.",
+      "fonte_en": "Quoted by Ève Curie in “Madame Curie”, 1937",
+      "fonte_es": "Citada por Ève Curie en “Madame Curie”, 1937"
+    },
+    {
+      "texto": "Lembre-se de olhar para as estrelas, e não para os seus pés.",
+      "autor": "Stephen Hawking",
+      "fonte": "Abertura dos Jogos Paralímpicos de Londres, 2012",
+      "en": "Remember to look up at the stars and not down at your feet.",
+      "es": "Recuerda mirar hacia las estrellas y no hacia tus pies.",
+      "fonte_en": "London Paralympic Games opening, 2012",
+      "fonte_es": "Apertura de los Juegos Paralímpicos de Londres, 2012"
+    },
+    {
+      "texto": "Ciência e vida cotidiana não podem e não devem ser separadas.",
+      "autor": "Rosalind Franklin",
+      "fonte": "Carta ao pai, c. 1940",
+      "en": "Science and everyday life cannot and should not be separated.",
+      "es": "La ciencia y la vida cotidiana no pueden ni deben separarse.",
+      "fonte_en": "Letter to her father, c. 1940",
+      "fonte_es": "Carta a su padre, c. 1940"
+    },
+    {
+      "texto": "A imaginação é mais importante que o conhecimento.",
+      "autor": "Albert Einstein",
+      "fonte": "Entrevista ao Saturday Evening Post, 1929",
+      "en": "Imagination is more important than knowledge.",
+      "es": "La imaginación es más importante que el conocimiento.",
+      "fonte_en": "Interview in the Saturday Evening Post, 1929",
+      "fonte_es": "Entrevista en el Saturday Evening Post, 1929"
+    },
+    {
+      "texto": "Não esmorecer para não desmerecer.",
+      "autor": "Oswaldo Cruz",
+      "fonte": "Lema de Oswaldo Cruz",
+      "en": "Do not lose heart, so as not to lose merit.",
+      "es": "No desanimarse para no desmerecer.",
+      "fonte_en": "Oswaldo Cruz’s motto",
+      "fonte_es": "Lema de Oswaldo Cruz"
+    },
+    {
+      "texto": "A ciência não tem pátria, porque o conhecimento pertence à humanidade.",
+      "autor": "Louis Pasteur",
+      "fonte": "Discurso em Milão, 1876",
+      "en": "Science knows no country, because knowledge belongs to humanity.",
+      "es": "La ciencia no tiene patria, porque el conocimiento pertenece a la humanidad.",
+      "fonte_en": "Speech in Milan, 1876",
+      "fonte_es": "Discurso en Milán, 1876"
+    },
+    {
+      "texto": "Nós somos feitos de matéria das estrelas.",
+      "autor": "Carl Sagan",
+      "fonte": "Série Cosmos, 1980",
+      "en": "We are made of star-stuff.",
+      "es": "Estamos hechos de materia de estrellas.",
+      "fonte_en": "Cosmos series, 1980",
+      "fonte_es": "Serie Cosmos, 1980"
+    },
+    {
+      "texto": "Descobrir é ver o que todo mundo viu e pensar o que ninguém pensou.",
+      "autor": "Albert Szent-Györgyi",
+      "fonte": "The Scientist Speculates, 1962",
+      "en": "Discovery consists of seeing what everybody has seen and thinking what nobody has thought.",
+      "es": "Descubrir es ver lo que todos han visto y pensar lo que nadie ha pensado.",
+      "fonte_en": "The Scientist Speculates, 1962",
+      "fonte_es": "The Scientist Speculates, 1962"
+    },
+    {
+      "texto": "A melhor maneira de ter uma boa ideia é ter muitas ideias.",
+      "autor": "Linus Pauling",
+      "fonte": "Citado por Francis Crick, 1995",
+      "en": "The best way to have a good idea is to have lots of ideas.",
+      "es": "La mejor manera de tener una buena idea es tener muchas ideas.",
+      "fonte_en": "Quoted by Francis Crick, 1995",
+      "fonte_es": "Citado por Francis Crick, 1995"
+    },
+    {
+      "texto": "O grande livro da natureza está escrito em linguagem matemática.",
+      "autor": "Galileu Galilei",
+      "fonte": "O Ensaiador, 1623 (adaptado)",
+      "en": "The great book of nature is written in the language of mathematics.",
+      "es": "El gran libro de la naturaleza está escrito en lenguaje matemático.",
+      "fonte_en": "The Assayer, 1623 (adapted)",
+      "fonte_es": "El ensayador, 1623 (adaptado)"
+    },
+    {
+      "texto": "Conhecimento é poder.",
+      "autor": "Francis Bacon",
+      "fonte": "Meditationes Sacrae, 1597",
+      "en": "Knowledge is power.",
+      "es": "El conocimiento es poder.",
+      "fonte_en": "Meditationes Sacrae, 1597",
+      "fonte_es": "Meditationes Sacrae, 1597"
+    },
+    {
+      "texto": "A ciência é mais do que um conjunto de conhecimentos: é uma maneira de pensar.",
+      "autor": "Carl Sagan",
+      "fonte": "Skeptical Inquirer, 1990",
+      "en": "Science is more than a body of knowledge: it is a way of thinking.",
+      "es": "La ciencia es más que un conjunto de conocimientos: es una forma de pensar.",
+      "fonte_en": "Skeptical Inquirer, 1990",
+      "fonte_es": "Skeptical Inquirer, 1990"
+    },
+    {
+      "texto": "O que você faz faz diferença, e você precisa decidir que tipo de diferença quer fazer.",
+      "autor": "Jane Goodall",
+      "fonte": "Palestras e entrevistas",
+      "en": "What you do makes a difference, and you have to decide what kind of difference you want to make.",
+      "es": "Lo que haces marca la diferencia, y tienes que decidir qué tipo de diferencia quieres marcar.",
+      "fonte_en": "Talks and interviews",
+      "fonte_es": "Charlas y entrevistas"
+    },
+    {
+      "texto": "Onde há amor pela medicina, há também amor pela humanidade.",
+      "autor": "Hipócrates",
+      "fonte": "Preceitos (atribuído)",
+      "en": "Wherever the art of medicine is loved, there is also a love of humanity.",
+      "es": "Donde se ama la medicina, también se ama a la humanidad.",
+      "fonte_en": "Precepts (attributed)",
+      "fonte_es": "Preceptos (atribuido)"
+    }
   ]
 }

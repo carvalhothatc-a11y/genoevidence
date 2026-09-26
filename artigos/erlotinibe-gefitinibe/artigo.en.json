@@ -1,0 +1,446 @@
+{
+  "id": "erlotinibe-gefitinibe",
+  "tipo": "artigo",
+  "rotulo": "Systematic review",
+  "arte": "rede",
+  "arte_legenda": "illustration · real-world patient data",
+  "tema": "Oncology",
+  "tema_id": "oncologia",
+  "titulo": "Revisão Sistemática de Estudos Observacionais sobre o uso de Erlotinibe e Gefitinibe no Tratamento do Câncer de Pulmão de Células Não Pequenas",
+  "titulo_curto": "Do targeted lung cancer drugs work outside trials? What the real world shows",
+  "breadcrumb": "Erlotinib and gefitinib",
+  "autores": [
+    {
+      "nome": "Annemeri Livinalli",
+      "afiliacao": "Ministry of Health · Jundiaí, Brazil"
+    },
+    {
+      "nome": "Barbara Delano Cruz",
+      "afiliacao": "Merck Sharp & Dohme · Belo Horizonte, Brazil"
+    },
+    {
+      "nome": "Isabel Cristina Martins Emmerick",
+      "afiliacao": "University of Massachusetts · USA"
+    },
+    {
+      "nome": "Isabela de Pinho Pestana",
+      "afiliacao": "Brazilian National Cancer Institute (INCA)"
+    },
+    {
+      "nome": "Juliana Machado Rugolo",
+      "destaque": true,
+      "afiliacao": "São Paulo State University (Unesp) · Botucatu, Brazil"
+    },
+    {
+      "nome": "Leticia Barbosa Teixeira",
+      "afiliacao": "Brazilian National Cancer Institute (INCA)"
+    },
+    {
+      "nome": "Mariana Michel Barbosa",
+      "afiliacao": "Federal University of Minas Gerais (UFMG)"
+    },
+    {
+      "nome": "Mario Jorge Sobreira da Silva",
+      "afiliacao": "Brazilian National Cancer Institute (INCA) · corresponding author"
+    }
+  ],
+  "revista": {
+    "nome": "Revista Brasileira de Cancerologia",
+    "cidade": "Rio de Janeiro, Brazil (INCA)",
+    "issn": "2176-9745",
+    "volume": "70",
+    "numero": "3",
+    "paginas": "e-214656",
+    "ano": "2024",
+    "publicado": "2024-08-30",
+    "doi": "10.32635/2176-9745.RBC.2024v70n3.4656",
+    "url": "https://doi.org/10.32635/2176-9745.RBC.2024v70n3.4656",
+    "site": "https://rbc.inca.gov.br",
+    "pdf": "https://rbc.inca.gov.br/index.php/revista/article/download/4656/3639"
+  },
+  "palavras_chave": [
+    "Erlotinib hydrochloride",
+    "Gefitinib",
+    "Lung neoplasms",
+    "Treatment outcome",
+    "Systematic review"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "The question",
+      "titulo": "Do they work in everyday hospital practice?",
+      "texto": "Gefitinib and erlotinib were added to SUS, Brazil's public health system, in 2013 for a type of lung cancer with a mutation in the EGFR gene. Since then, no one had gathered data on their real-world use."
+    },
+    {
+      "rotulo": "What they did",
+      "titulo": "A review of real-world studies",
+      "texto": "They searched for observational studies from 2014 to 2023. Of the 9,765 publications found, 8 studies made it into the final analysis."
+    },
+    {
+      "rotulo": "What they found",
+      "titulo": "More time without the disease progressing",
+      "texto": "The targeted drugs gave longer survival and more time without progression than chemotherapy, with few adverse effects and adherence above 85%."
+    },
+    {
+      "rotulo": "Why it matters",
+      "titulo": "Monitoring what is already in SUS",
+      "texto": "Assessing technologies after they enter the health system shows whether the promised benefit holds up in patients' real lives."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "19.4 × 11.4",
+      "texto": "months of median survival with gefitinib × platinum chemotherapy (largest study)",
+      "cor": "violet"
+    },
+    {
+      "valor": "9,765 → 8",
+      "texto": "publications found × studies analyzed",
+      "cor": "arg"
+    },
+    {
+      "valor": "> 85%",
+      "texto": "treatment adherence in the studies that measured it",
+      "cor": "ok"
+    },
+    {
+      "valor": "≈ 30%",
+      "texto": "of metastatic cases of this cancer have an EGFR mutation",
+      "cor": "amber"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Context",
+      "eyebrow": "Context",
+      "titulo": "Lung cancer and targeted drugs",
+      "lede": "The deadliest cancer in the world gained treatments that target a specific tumor mutation.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Lung cancer is the deadliest (18.7% of cancer deaths) and the most frequent (12.4% of cases) cancer in the world. In Brazil, the estimate for each year from 2023 to 2025 was <strong>18,020 cases in men and 14,540 in women</strong>. The most common type is <strong>non-small cell lung cancer (NSCLC)</strong>, almost always found at an advanced stage.</p><p>The <strong>EGFR</strong> gene makes a receptor that controls the growth of the cells lining the tissues. When it mutates, the cell gets a nonstop “grow” signal. This mutation appears in about <strong>30% of metastatic NSCLC</strong>. Gefitinib and erlotinib block this receptor: they are <strong>tyrosine kinase inhibitors (TKIs)</strong>.</p>"
+        },
+        {
+          "tipo": "cadeia",
+          "itens": [
+            "2006 · Anvisa, Brazil's health regulator, registers erlotinib",
+            "2010 · Gefitinib becomes the first targeted therapy approved in Brazil for this cancer",
+            "2013 · Conitec adds both drugs to SUS",
+            "2024 · This review gathers real-world usage data for the first time"
+          ]
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "Why look at the “real world”",
+          "itens": [
+            {
+              "titulo": "Clinical trial",
+              "texto": "Controlled conditions and selected patients. It shows whether the drug works in the ideal setting.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Observational study",
+              "texto": "Follows everyday use, with all kinds of patients. It shows whether the benefit holds up in practice.",
+              "cor": "teal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "How it was done",
+      "eyebrow": "Method",
+      "titulo": "How the review was done",
+      "lede": "The question: do patients treated in everyday practice get the same results seen in clinical trials?",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Registered protocol",
+              "texto": "The review plan was registered in PROSPERO (CRD42022337969) before it started."
+            },
+            {
+              "titulo": "Who was included",
+              "texto": "Adults with advanced or metastatic NSCLC with an activating EGFR mutation, treated for the first time with gefitinib or erlotinib alone, compared with chemotherapy, placebo or supportive care."
+            },
+            {
+              "titulo": "Where they searched",
+              "texto": "MEDLINE, EMBASE, Cochrane, LILACS, CINAHL, the Brazilian Digital Library of Theses and Dissertations and the Capes Journal Portal, from January 2014 to March 2023, in Portuguese, English and Spanish."
+            },
+            {
+              "titulo": "Selection in pairs",
+              "texto": "Two reviewers chose the studies and extracted the data independently; a third resolved disagreements. Of the 9,765 publications, 48 were read in full and 8 studies were included in the analysis."
+            },
+            {
+              "titulo": "Study quality",
+              "texto": "Risk of bias was assessed with the Joanna Briggs Institute checklists. The planned meta-analysis was not possible, because the studies were too different from one another."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "The 8 studies (6 prospective and 2 retrospective cohorts, from 2015 to 2020) came from the Czech Republic, Taiwan, Germany, China, the US and the Netherlands, with samples of 62 to 38,100 people. Gefitinib predominated, with just over 6,200 participants."
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Results",
+      "eyebrow": "Results",
+      "titulo": "What the real-world studies showed",
+      "lede": "Choose a result: survival, treatment adherence or symptom improvement.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Choose the result",
+          "unidade": " months",
+          "eixo": "months (median)",
+          "grupos": [
+            {
+              "nome": "Gefitinib",
+              "cor": "#A58CFF"
+            },
+            {
+              "nome": "Erlotinib",
+              "cor": "#3FC1C9"
+            },
+            {
+              "nome": "Platinum chemo",
+              "cor": "#FF5470"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "Overall survival",
+              "valores": [
+                {
+                  "m": 19.4
+                },
+                {
+                  "m": 17.5
+                },
+                {
+                  "m": 11.4
+                }
+              ],
+              "leitura": "In the largest study, done in Taiwan with more than 15,000 patients, those who took gefitinib or erlotinib lived a median of 6 to 8 months longer than those who had platinum chemotherapy."
+            },
+            {
+              "rotulo": "Treatment adherence",
+              "unidade": "%",
+              "eixo": " ",
+              "grupos": [
+                {
+                  "nome": "USA (Hess, 2017)",
+                  "cor": "#5FD39A"
+                },
+                {
+                  "nome": "Netherlands (Timmers, 2015)",
+                  "cor": "#3FC1C9"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 85.7
+                },
+                {
+                  "m": 92.7
+                }
+              ],
+              "leitura": "In the two erlotinib studies, the vast majority of patients took the drug as prescribed. In the US study, 14.3% were not adherent."
+            },
+            {
+              "rotulo": "Symptom improvement at 12 weeks",
+              "unidade": "%",
+              "eixo": " ",
+              "grupos": [
+                {
+                  "nome": "Gefitinib",
+                  "cor": "#A58CFF"
+                },
+                {
+                  "nome": "Erlotinib",
+                  "cor": "#3FC1C9"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 46.5
+                },
+                {
+                  "m": 38.9
+                }
+              ],
+              "leitura": "In the only quality-of-life study (Taiwan), improvement in disease symptoms was greater and longer-lasting with gefitinib."
+            }
+          ],
+          "nota": "Overall survival: study by Chung et al. (2019), with 5,638 patients on gefitinib, 1,433 on erlotinib and 8,703 on chemotherapy. Adherence: percentage of adherent patients. Symptoms: percentage of patients who improved."
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "The results, study by study",
+          "itens": [
+            {
+              "titulo": "Time without progression",
+              "texto": "In 3 of the 4 studies that measured it, gefitinib or erlotinib were better. The exception was a very small study (11 × 23 patients).",
+              "cor": "ok"
+            },
+            {
+              "titulo": "Overall survival",
+              "texto": "In 3 of 5 studies, the targeted drugs were better. In a German study, chemotherapy had a slight edge (18.1 × 17.4 months).",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Adverse effects",
+              "texto": "They were infrequent. The most common were diarrhea and skin rash, because the drug also acts on healthy lining tissues.",
+              "cor": "his"
+            }
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "html": "The mutation makes all the difference. In a Chinese study, patients <strong>with an EGFR mutation</strong> lived a median of <strong>19 months</strong> on gefitinib; those <strong>without the mutation</strong>, only <strong>7 months</strong>, less than with docetaxel chemotherapy (10 months). That is why testing for the mutation before treatment is essential."
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discussion",
+      "eyebrow": "Discussion",
+      "titulo": "Real world × the studies that led to SUS",
+      "lede": "The authors compared the real-world results with those of the clinical trials used in the 2013 decision.",
+      "blocos": [
+        {
+          "tipo": "cartoes",
+          "itens": [
+            {
+              "titulo": "Time without progression: confirmed",
+              "texto": "With gefitinib, the trials showed 9.2 to 10.8 months; in the real world, 9.6 to 11.0 months. With chemotherapy, 4.9 to 8.7 months.",
+              "cor": "ok"
+            },
+            {
+              "titulo": "Overall survival: lower than in the trials",
+              "texto": "The trial at the time showed 30.5 months with gefitinib. In the real world, 19.0 to 19.6 months: much less, but still better than standard chemotherapy.",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Erlotinib",
+              "texto": "The only real-world study that measured time without progression on erlotinib found 12.2 × 5.6 months, a result similar to the trials.",
+              "cor": "teal"
+            }
+          ]
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Limitations pointed out by the authors",
+          "itens": [
+            "The studies were very different from one another, which prevented a meta-analysis.",
+            "There were few events, which makes the estimates imprecise.",
+            "Observational studies have confounding factors, and all those included had some type of bias.",
+            "No studies with Brazilian patients were found."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusion",
+      "eyebrow": "Conclusion",
+      "titulo": "What the study allows us to say",
+      "lede": "The benefit exists in the real world, and monitoring technologies already incorporated is essential.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Real-world data confirm the <strong>benefit of gefitinib and erlotinib in time without disease progression</strong>, but not the same gain in overall survival seen in the trials. Adverse effects were infrequent, <strong>adherence was high</strong> and there was a prolonged improvement in quality of life, especially with gefitinib.</p><p>Since Conitec decided on incorporation in 2013 with still-partial data, the authors stress the importance of <strong>monitoring technologies after they enter SUS</strong>.</p>"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "NSCLC",
+      "def": "Non-small cell lung cancer: the most common type of lung cancer."
+    },
+    {
+      "termo": "EGFR",
+      "def": "Receptor that controls cell growth. When the gene mutates, it drives the tumor."
+    },
+    {
+      "termo": "Activating mutation",
+      "def": "A change in the gene that leaves the receptor “switched on” all the time."
+    },
+    {
+      "termo": "Tyrosine kinase inhibitor (TKI)",
+      "def": "Targeted drug that blocks the growth signal sent by EGFR."
+    },
+    {
+      "termo": "Gefitinib and erlotinib",
+      "def": "Two TKIs taken as pills, used in NSCLC with an EGFR mutation."
+    },
+    {
+      "termo": "Platinum chemotherapy",
+      "def": "Treatment with cisplatin or carboplatin, the standard before targeted drugs."
+    },
+    {
+      "termo": "Overall survival",
+      "def": "Time the patient stays alive."
+    },
+    {
+      "termo": "Progression-free survival",
+      "def": "Time the patient lives without the disease progressing."
+    },
+    {
+      "termo": "Median",
+      "def": "The middle value: half of the patients were above it and half below."
+    },
+    {
+      "termo": "Observational study",
+      "def": "A study that follows patients treated in everyday practice, without random assignment of treatment."
+    },
+    {
+      "termo": "Treatment adherence",
+      "def": "How closely the patient follows the treatment as prescribed."
+    },
+    {
+      "termo": "Real world",
+      "def": "Data obtained outside clinical trials, in everyday health care practice."
+    },
+    {
+      "termo": "Conitec",
+      "def": "Ministry of Health committee that assesses whether technologies should enter SUS, Brazil's public health system."
+    },
+    {
+      "termo": "PROSPERO",
+      "def": "International registry where researchers publish the plan of a review before carrying it out."
+    }
+  ],
+  "citacao": "LIVINALLI, A.; CRUZ, B. D.; EMMERICK, I. C. M.; PESTANA, I. P.; MACHADO-RUGOLO, J.; TEIXEIRA, L. B.; BARBOSA, M. M.; SOBREIRA-DA-SILVA, M. J. Revisão Sistemática de Estudos Observacionais sobre o uso de Erlotinibe e Gefitinibe no Tratamento do Câncer de Pulmão de Células Não Pequenas. Revista Brasileira de Cancerologia, Rio de Janeiro, v. 70, n. 3, e-214656, 2024. DOI: 10.32635/2176-9745.RBC.2024v70n3.4656.",
+  "referencias": [
+    {
+      "texto": "CHUNG, C. H. EGFR tyrosine kinase inhibitor therapy for lung cancer treatments and their clinical outcomes: a cohort study in Taiwan. Oncology Letters, v. 18, n. 6, p. 6090-6100, 2019.",
+      "doi": "10.3892/ol.2019.10942"
+    },
+    {
+      "texto": "BRAT, K. et al. Real-life effectiveness of first-line anticancer treatments in stage IIIB/IV NSCLC patients: data from the Czech TULUNG Registry. Thoracic Cancer, 2020.",
+      "doi": "10.1111/1759-7714.13679"
+    },
+    {
+      "texto": "MAEMONDO, M. et al. Gefitinib or chemotherapy for non-small-cell lung cancer with mutated EGFR. New England Journal of Medicine, v. 362, n. 25, p. 2380-2388, 2010.",
+      "doi": "10.1056/NEJMoa0909530"
+    },
+    {
+      "texto": "ROSELL, R. et al. Erlotinib versus standard chemotherapy as first-line treatment for European patients with advanced EGFR mutation-positive non-small-cell lung cancer (EURTAC). The Lancet Oncology, 2012.",
+      "doi": "10.1016/S1470-2045(11)70393-X"
+    },
+    {
+      "texto": "HESS, L. M. et al. Factors associated with adherence to and treatment duration of erlotinib among patients with non-small cell lung cancer. Journal of Managed Care & Specialty Pharmacy, 2017.",
+      "doi": "10.18553/jmcp.2017.16389"
+    }
+  ],
+  "titulo_pt": "Systematic review of observational studies on the use of erlotinib and gefitinib in the treatment of non-small cell lung cancer",
+  "rotulo_original": "Original title in Portuguese:",
+  "idioma": "en"
+}

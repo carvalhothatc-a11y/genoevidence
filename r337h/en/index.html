@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#060A13">
+<meta name="ge-root" content="../../">
+<meta name="ge-versoes" content="pt:../,en:../en/,es:../es/">
+<meta name="ge-idioma-pagina" content="en">
+<meta name="r337h-base" content="../">
+<script src="../../assets/js/i18n.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../icons/icon-192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="GenoEvidence">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>R337H · GenoEvidence</title>
+<meta name="description" content="GenoEvidence: ongoing study — in silico analysis of the TP53 R337H variant and its relationship with Li-Fraumeni syndrome.">
+<meta property="og:title" content="R337H · GenoEvidence">
+<meta property="og:description" content="In silico analysis of the TP53 R337H variant and its relationship with Li-Fraumeni syndrome.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Unbounded:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="../../assets/css/base.css">
+</head>
+<body>
+<canvas id="bgfx" aria-hidden="true"></canvas>
+<div class="bg-grid" aria-hidden="true"></div>
+<!-- ================= HUD ================= -->
+<header class="hud">
+  <div class="hud-in">
+    <a class="back-btn" href="../../artigos/#bioinformatica" aria-label="Back to the Bioinformatics topic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open topics menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    <a class="brand" href="../../" aria-label="GenoEvidence — go to the app home"><span class="brand-mark"></span><b>GenoEvidence</b></a>
+    <nav class="nav" id="nav" aria-label="Sections">      <a href="#resumo">Summary</a>
+      <a href="#sindrome">Syndrome</a>
+      <a href="#mutacao">Mutation</a>
+      <a href="#proteina">Protein</a>
+      <a href="#lacuna">Research gap</a>
+      <a href="#metodo">Method</a>
+      <a href="#evidencias">Results</a>
+      <a href="#integracao">Discussion</a>
+      <a href="#conclusao">Conclusion</a>
+      <a href="#imagens">Images</a>
+      <a href="#glossario">Glossary</a>
+      <a href="#referencias">References</a></nav>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<div class="drawer-scrim" id="drawerScrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Site topics">
+  <div class="drawer-head">    <b>Topics</b>
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu">✕</button></div>
+  <a class="dr-home" href="../../">← GenoEvidence home</a>
+  <input type="search" id="drawerSearch" placeholder="Filter topics…" aria-label="Filter topics" autocomplete="off">
+  <nav class="drawer-nav" id="drawerNav" aria-label="Go to topic"></nav>
+  <p class="drawer-foot">Tap a topic to jump straight to it.</p>
+</aside>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <canvas id="helix" aria-hidden="true"></canvas>
+  <div class="hero-grid"></div>
+  <div class="mut-label" id="mutLabel"><span>the swapped letter · c.1010G&gt;A</span></div>
+  <div class="wrap hero-in" lang="pt-BR">
+    <div>
+      <p class="eyebrow crumb"><a href="../../">GenoEvidence</a> <span aria-hidden="true">/</span> <a href="../../artigos/#bioinformatica">Bioinformatics</a> <span aria-hidden="true">/</span> <span style="color:var(--text)">R337H · ongoing study</span></p>
+      <h1 aria-label="R337H"><span class="r">R</span><span class="n">337</span><span class="h">H</span></h1>
+      <p class="sub">The small change in the <strong>TP53</strong> gene that raises cancer risk in <strong>Li-Fraumeni syndrome</strong>. <em>And why it is so common in Brazil.</em></p>
+      <div class="authors">        <span><b>Ana Júlia Silva Rodrigues</b></span>
+        <span><b>Thaisa Carvalho</b></span>
+        <span>Advisor: Prof. Dr. Patrícia Alves</span></div>
+      <div class="cta-row">        <a class="cta" href="#resumo">Start with the summary <span aria-hidden="true">↓</span></a>
+        <a class="cta ghost" href="#evidencias">See results</a>
+        <a class="cta ghost" href="#imagens">See images</a></div>
+    </div>
+    <aside class="readout" aria-label="Variant identification">
+      <p class="eyebrow" style="margin-bottom:6px">Variant ID card</p>
+      <div class="row"><span class="k">Gene</span><span class="v">TP53 · chromosome 17</span></div>
+      <div class="row"><span class="k">In DNA (<button class="term" data-t="hgvs">HGVS</button>)</span><span class="v">c.1010G&gt;A</span></div>
+      <div class="row"><span class="k">In the protein</span><span class="v his">p.(Arg337His)</span></div>
+      <div class="row"><span class="k">Genome address</span><span class="v">17-7670699-C-T</span></div>
+      <div class="row"><span class="k">dbSNP code</span><span class="v">rs121912664</span></div>
+      <div class="row"><span class="k">Type</span><span class="v"><button class="term" data-t="missense">Missense</button> · <button class="term" data-t="germinativa">germline</button></span></div>
+      <a class="readout-link" href="#mutacao">How to read these codes →</a>
+    </aside>
+  </div>
+</section>
+
+<main lang="pt-BR">
+<!-- ================= RESUMO ================= -->
+<section class="s" id="resumo">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">In 1 minute</p>
+      <h2>The whole story, in four steps</h2>
+      <p class="lede">Start here. Each card leads to the detailed section.</p>
+    </div>
+    <div class="story">
+      <a class="story-card" href="#sindrome"><span class="eyebrow">1 · The problem</span><h3>Some families inherit a higher cancer risk</h3><p>Li-Fraumeni syndrome is passed from parents to children and can cause several types of cancer, often early in life.</p><span class="go">Understand the syndrome →</span></a>
+      <a class="story-card" href="#mutacao"><span class="eyebrow">2 · The cause</span><h3>One swapped letter in the TP53 gene</h3><p>TP53 is the “recipe” for p53, a protein that protects against cancer. In R337H, one letter is swapped. It is common in Brazil's South and Southeast.</p><span class="go">See the mutation →</span></a>
+      <a class="story-card" href="#metodo"><span class="eyebrow">3 · The study</span><h3>Four public databases</h3><p>Everything was done on the computer, cross-referencing patient data and research from around the world.</p><span class="go">See how it was done →</span></a>
+      <a class="story-card" href="#conclusao"><span class="eyebrow">4 · The answer</span><h3>The evidence agrees</h3><p>The variant causes disease, is rare worldwide and makes p53 less stable. But having the variant is <strong>not</strong> a certainty of cancer.</p><span class="go">See the conclusion →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SÍNDROME ================= -->
+<section class="s" id="sindrome">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">The syndrome</p>
+      <h2>Li-Fraumeni: an inheritance that raises cancer risk</h2>
+      <p class="lede">A rare condition, passed from parents to children (<button class="term" data-t="autossomica">autosomal dominant inheritance</button>), caused by changes in the <strong>TP53</strong> gene. People who have it may develop <strong>several tumors</strong> over their lifetime, sometimes already in childhood.<a class="cite" href="#ref-1">1</a><a class="cite" href="#ref-4">4</a></p>
+    </div>
+    <p class="tldr"><b>In a few words</b>The risk starts early and grows with age. Carriers need medical follow-up.<a class="cite" href="#ref-11">11</a></p>
+
+    <div class="facts">
+      <div class="fact" data-href="#risco"><span class="eyebrow">By age 30</span><span class="big tnum" data-count="50" data-suffix="%">50%</span><p>approximate chance of having already had cancer.<a class="cite" href="#ref-5">5</a></p><a class="go" href="#risco">See chart →</a></div>
+      <div class="fact" data-href="#risco"><span class="eyebrow">By age 60</span><span class="big tnum" data-count="90" data-prefix="&gt;" data-suffix="%">&gt;90%</span><p>the chance rises above 90%.<a class="cite" href="#ref-5">5</a></p><a class="go" href="#risco">See chart →</a></div>
+      <div class="fact" data-href="#brasil"><span class="eyebrow">South and Southeast Brazil</span><span class="big tnum">~0.3%</span><p>about 3 in every 1,000 people carry R337H.<a class="cite" href="#ref-11">11</a><a class="cite" href="#ref-12">12</a></p><a class="go" href="#brasil">Why in Brazil? →</a></div>
+      <div class="fact" data-href="#origem"><span class="eyebrow">Note</span><span class="big">Not a sentence</span><p>having the variant does <strong>not</strong> guarantee cancer (<button class="term" data-t="penetrancia">incomplete penetrance</button>).<a class="cite" href="#ref-3">3</a></p><a class="go" href="#origem">Understand →</a></div>
+    </div>
+
+    <div class="grid2">
+      <div class="panel risk" id="risco">
+        <div class="panel-title"><h3>At what age cancer usually appears</h3><span class="src">Giacomazzi et al.<a class="cite" href="#ref-5">5</a></span></div>
+        <svg id="riskChart" viewBox="0 0 520 320" role="img" aria-label="Cumulative cancer risk in LFS: about 50% by age 30 and over 90% by age 60; diagnosis peaks before age 10 and between 30 and 50."></svg>
+        <p class="note">Red bands: the two diagnosis peaks (before age 10 and between 30 and 50). The line connects the study's values; between them, the curve is approximate.</p>
+      </div>
+      <div class="panel" id="penetrancia">
+        <div class="panel-title"><h3>How many carriers get cancer, by sex</h3><span class="src">Giacomazzi et al.<a class="cite" href="#ref-5">5</a></span></div>
+        <div class="pen" id="pen"></div>
+        <p class="note">In women, the rate is close to 100%, but not exactly 100%: not every female carrier will get cancer. Both sexes inherit the variant equally; the higher rate in women comes from breast cancer.</p>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:20px">
+      <div class="panel-title"><h3>Cancer types most linked to the syndrome</h3><span class="src">refs.<a class="cite" href="#ref-1">1</a><a class="cite" href="#ref-2">2</a><a class="cite" href="#ref-17">17</a><a class="cite" href="#ref-21">21</a></span></div>
+      <div class="spectrum">        <a class="chip" href="#ev-tp53db">Adrenal gland <i>(on top of the kidneys)</i></a>
+        <a class="chip" href="#ev-tp53db">Breast</a>
+        <a class="chip" href="#ev-tp53db">Sarcomas <i>(bones and muscles)</i></a>
+        <a class="chip" href="#ev-tp53db">Brain and nervous system</a>
+        <a class="chip" href="#ev-tp53db">Blood <i>(leukemias)</i></a>
+        <a class="chip" href="#ev-tp53db">Lung</a>
+        <a class="chip" href="#ev-tp53db">Thyroid</a></div>
+      <p class="note">Tap a type to see the recorded cases.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MUTAÇÃO ================= -->
+<section class="s" id="mutacao">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">The mutation</p>
+      <h2>One swapped letter changes one piece of the protein</h2>
+      <p class="lede">DNA is read in triplets of letters (<button class="term" data-t="codon">codons</button>), and each triplet specifies one piece of the protein (an <button class="term" data-t="aminoacido">amino acid</button>). In R337H, a <strong>G</strong> became an <strong>A</strong>: the triplet CGC became CAC, and piece 337 of p53 swapped <span style="color:#9DB6FF">arginine</span> for <span style="color:var(--his)">histidine</span>.<a class="cite" href="#ref-8">8</a></p>
+    </div>
+
+    <div class="decode" aria-label="How to read the name R337H">
+      <div><span class="dl" style="color:#9DB6FF">R</span><p><b>Arginine</b>, the original piece</p></div>
+      <div><span class="dl">337</span><p><b>Position</b> in p53, which has 393 pieces</p></div>
+      <div><span class="dl" style="color:var(--his)">H</span><p><b>Histidine</b>, the new piece</p></div>
+    </div>
+
+    <div class="panel" style="margin-top:20px">
+      <div class="codon-stage">
+        <div class="codon">
+          <span class="eyebrow">Normal</span>
+          <div class="bases"><span class="base">C</span><span class="base g" id="bWt">G</span><span class="base">C</span></div>
+          <div class="aa" style="color:#9DB6FF">Arginine (R)<small>positively charged piece</small></div>
+        </div>
+        <div class="arrow-mut">
+          <span class="am-dna">in DNA: G → A</span>
+          <svg class="am-h" viewBox="0 0 84 24" aria-hidden="true"><path d="M2 12h74" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M70 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          <svg class="am-v" viewBox="0 0 24 48" aria-hidden="true"><path d="M12 2v40" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M5 36l7 8 7-8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="am-prot">in the protein: <b style="color:#9DB6FF">Arginine (R)</b> becomes <b style="color:var(--his)">Histidine (H)</b></span>
+        </div>
+        <div class="codon">
+          <span class="eyebrow">Mutant (R337H)</span>
+          <div class="bases"><span class="base">C</span><span class="base x" id="bMut">A</span><span class="base">C</span></div>
+          <div class="aa" style="color:var(--his)">Histidine (H)<small>piece sensitive to acidity (pH)</small></div>
+        </div>
+      </div>
+
+      <div class="seq" id="seq" aria-label="Pieces 332 to 341 of p53"></div>
+      <div style="text-align:center"><button class="swap-btn" id="swapSeq" type="button" aria-pressed="false">↺ See normal version</button></div>
+
+      <dl class="nomen">
+        <div><dt>Reference used</dt><dd><button class="term" data-t="mane">MANE Select</button> NM_000546.6</dd></div>
+        <div><dt>Genome address</dt><dd>chromosome 17, position 7,670,699</dd></div>
+        <div><dt>Why does it show C&gt;T?</dt><dd class="plain">The gene sits on the opposite strand: G&gt;A in the gene = C&gt;T in the genome.</dd></div>
+        <div><dt>Scientific nickname</dt><dd>“the Brazilian germline TP53 mutation”<a class="cite" href="#ref-2">2</a></dd></div>
+      </dl>
+    </div>
+
+    <div class="grid2" style="margin-top:20px">
+      <div class="panel" id="brasil">
+        <div class="panel-title"><h3>Why is it common in Brazil?</h3><span class="src">refs.<a class="cite" href="#ref-10">10</a><a class="cite" href="#ref-20">20</a></span></div>
+        <div class="prose">
+          <p>The variant came from <strong>Portuguese or Spanish ancestors</strong> and was passed down generation after generation in Brazil. That is why it is much more common here, especially in the South and Southeast: it is the <button class="term" data-t="fundador">founder effect</button>.<a class="cite" href="#ref-10">10</a><a class="cite" href="#ref-20">20</a></p>
+        </div>
+        <a class="more" href="#ev-gnomad">Compare Brazil × world →</a>
+      </div>
+      <div class="panel" id="origem">
+        <div class="panel-title"><h3>Having the variant is not a sentence</h3><span class="src">refs.<a class="cite" href="#ref-3">3</a><a class="cite" href="#ref-6">6</a></span></div>
+        <div class="prose">
+          <p>Many carriers <strong>never get cancer</strong>. Sex, age, other genes and the environment play a role, and the weight of each factor is not yet fully known.<a class="cite" href="#ref-3">3</a><a class="cite" href="#ref-6">6</a></p>
+        </div>
+        <a class="more" href="#penetrancia">See data by sex →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROTEÍNA ================= -->
+<section class="s" id="proteina">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">The protein</p>
+      <h2>p53, the cells' “guardian”, works in teams of four</h2>
+      <p class="lede">p53 watches over DNA: it orders defects to be repaired, pauses cell division or eliminates the cell if the damage is severe. It acts in groups of <strong>four copies</strong>, and R337H sits right in the part that joins these copies together, the <button class="term" data-t="tetramerizacao">tetramerization domain</button>.<a class="cite" href="#ref-7">7</a><a class="cite" href="#ref-8">8</a></p>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title"><h3>The parts of p53, from piece 1 to 393</h3><span class="src">approximate boundaries</span></div>
+      <div class="domains" style="margin-top:40px">
+        <div class="dom-bar" id="domBar"></div>
+        <div class="dom-scale"><span>1</span><span>100</span><span>200</span><span>300</span><span>393</span></div>
+      </div>
+      <div class="dom-legend" id="domLeg"></div>
+
+      <div class="funcs">
+        <div class="func"><b>Repairs DNA</b><p>Triggers repair of damage to genetic material.</p></div>
+        <div class="func"><b>Pauses division</b><p>Holds back cell multiplication until the problem is solved.</p></div>
+        <div class="func"><b>Self-destruction</b><p>Eliminates badly damaged cells (apoptosis).</p></div>
+        <div class="func"><b>Retirement</b><p>Makes the cell stop dividing for good (senescence).</p></div>
+      </div>
+    </div>
+
+    <div class="lab" id="lab">
+      <div class="lab-view is-real" id="labView">
+        <div class="lab-real" id="labReal" data-m="mut" data-gallery>
+          <button class="fig wt" type="button" data-cap="Figure 4 · normal p53: bonds around arginine 337. Source: DynaMut2 (2026)."><img src="../imagens/dynamut2-normal-arg337.webp" data-full="../imagens/dynamut2-normal-arg337.webp" decoding="async" alt="Real DynaMut2 image: normal p53 with arginine 337 and its bonds"></button>
+          <button class="fig mut" type="button" data-cap="Figure 5 · mutant p53, with arginine 337 swapped for histidine: bonds around histidine 337. Source: DynaMut2 (2026)."><img src="../imagens/dynamut2-mutante-his337.webp" data-full="../imagens/dynamut2-mutante-his337.webp" decoding="async" alt="Real DynaMut2 image: mutant p53 with histidine 337 and its bonds"></button>
+        </div>
+        <canvas id="tetra" aria-label="Illustrative 3D model of the four joined copies of p53" role="img" hidden></canvas>
+        <span class="lab-state" id="labState">mutant p53 · Histidine 337</span>
+        <span class="lab-hint" id="labHint">Tap the image to enlarge · real DynaMut2 image</span>
+      </div>
+      <div class="lab-ctrl">
+        <div>
+          <p class="eyebrow" style="margin-bottom:10px">3D lab</p>
+          <h3 style="font-size:20px;line-height:1.2">Piece 337 up close</h3>
+        </div>
+        <div class="ctrl-group">
+          <span class="ctrl-label">View</span>
+          <div class="seg" role="group" aria-label="Type of view">            <button type="button" data-v="real" aria-pressed="true">Real image</button>
+            <button type="button" data-v="3d" aria-pressed="false">3D model</button></div>
+        </div>
+        <div class="ctrl-group">
+          <span class="ctrl-label">Protein version</span>
+          <div class="seg" role="group" aria-label="Choose the protein version">            <button type="button" data-m="wt" aria-pressed="false">Normal · arginine</button>
+            <button type="button" data-m="mut" aria-pressed="true">Mutant · histidine</button></div>
+        </div>
+        <div class="show-block" data-show="real">
+          <p>Real images generated in DynaMut2. Switch between the versions and watch the dotted lines (the bonds of piece 337) move.</p>
+          <ul class="lab-mini" aria-label="Bond colors">
+            <li><i style="background:#F44336"></i>hydrogen</li>
+            <li><i style="background:#FF9800"></i>polar</li>
+            <li><i style="background:#43A047"></i>hydrophobic</li>
+            <li><i style="background:#90CAF9"></i>Van der Waals</li>
+            <li><i style="background:#F06292"></i>clash between atoms</li>
+          </ul>
+          <a class="more" href="#ev-dynamut">See the full DynaMut2 result →</a>
+        </div>
+        <div class="show-block" data-show="3d" hidden>
+        <div class="range">
+          <label for="ph">Move the pH (acidity) slider</label>
+          <input type="range" id="ph" min="0" max="100" value="30">
+          <div class="range-ends"><span>Lower pH</span><span>Higher pH</span></div>
+        </div>
+        <p>With arginine swapped for histidine, p53 <strong style="color:var(--text)">still forms the group of four</strong>, but the bond becomes weaker depending on pH.<a class="cite" href="#ref-9">9</a><a class="cite" href="#ref-10">10</a> In lab cells (H1299), it reduced cell multiplication and increased cell death.<a class="cite" href="#ref-9">9</a><a class="cite" href="#ref-10">10</a></p>
+        <div class="lab-leg">          <span><i style="background:#4D7CFF"></i><i style="background:#9DB6FF"></i>1st pair of copies</span>
+          <span><i style="background:#8A7CFF"></i><i style="background:#C9BDFF"></i>2nd pair of copies</span>
+          <span><i class="dot"></i>piece 337</span></div>
+        <p class="note" style="margin-top:0">Each copy has a strand (arrow) and a spring (helix). Teaching illustration, not a real simulation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LACUNA ================= -->
+<section class="s" id="lacuna">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">Research gap</p>
+      <h2>What still needed to be understood, and why study it</h2>
+      <p class="lede">The link between R337H and the syndrome was already known. What was missing was <strong>bringing together the clinical, population and structural evidence</strong>.</p>
+    </div>
+    <div class="gap-grid">
+      <article class="gap-card">
+        <span class="gap-k">Gap</span>
+        <h3>An integrated view</h3>
+        <p class="gap-lead">The link was already known, but a view that brought all the evidence together was missing.</p>
+        <details class="gap-full"><summary>Read full text</summary><p>The research gap of this work lies in the fact that, although the TP53 R337H variant is already recognized as associated with Li-Fraumeni syndrome, there is still a need to understand in an integrated way how its clinical, population and structural features contribute to cancer predisposition.</p></details>
+      </article>
+      <article class="gap-card">
+        <span class="gap-k">Rationale</span>
+        <h3>A Brazilian topic</h3>
+        <p class="gap-lead">The variant is especially common in Brazil.</p>
+        <details class="gap-full"><summary>Read full text</summary><p>This topic was chosen because of the importance of R337H in Brazil, due to the founder effect and its frequency in certain populations.</p></details>
+        <a class="more" href="#brasil">Why in Brazil? →</a>
+      </article>
+      <article class="gap-card">
+        <span class="gap-k">Relevance</span>
+        <h3>From genetic change to tumor</h3>
+        <p class="gap-lead">The computer makes it possible to cross-reference data from several sources at once.</p>
+        <details class="gap-full"><summary>Read full text</summary><p>The relevance of the study lies in using bioinformatics tools to gather different evidence about this variant, allowing a broader understanding of the relationship between genetic change, p53 protein function and tumor development.</p></details>
+        <a class="more" href="#metodo">See how it was done →</a>
+      </article>
+    </div>
+    <div class="gap-chain" aria-label="Chain the study connects">      <a href="#mutacao"><b>Genetic change</b><span>c.1010G&gt;A</span></a>
+      <i aria-hidden="true">→</i>
+      <a href="#proteina"><b>p53 protein</b><span>tetramerization</span></a>
+      <i aria-hidden="true">→</i>
+      <a href="#ev-tp53db"><b>Tumor development</b><span>150 records</span></a></div>
+  </div>
+</section>
+
+<!-- ================= MÉTODO ================= -->
+<section class="s" id="metodo">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">Method</p>
+      <h2>How the study was done: 4 databases, 4 questions</h2>
+      <p class="lede">Everything was done on the computer (<button class="term" data-t="insilico">in silico</button>), with public data. Each database answered one question.</p>
+    </div>
+
+    <p class="tldr"><b>How the question was built</b>PCC strategy: <em>what</em>, <em>which aspect</em> and <em>in what context</em>.</p>
+    <div class="pcc">
+      <div><span class="L">P</span><h3>Problem · what?</h3><p>The R337H variant of the TP53 gene.</p></div>
+      <div><span class="L">C</span><h3>Concept · which aspect?</h3><p>Clinical classification, frequency, effect on p53 and tumors.</p></div>
+      <div><span class="L">C</span><h3>Context · where?</h3><p>Li-Fraumeni syndrome and inherited cancer risk.</p></div>
+    </div>
+
+    <div class="panel" style="margin-top:20px">
+      <p class="eyebrow" style="margin-bottom:6px">Research question</p>
+      <p class="question">What evidence from public databases and bioinformatics tools supports the link between R337H and cancer risk in Li-Fraumeni syndrome?</p>
+    </div>
+
+    <div class="pipe" aria-label="Databases consulted, in order">
+      <a class="step" href="#ev-clinvar"><span class="dot"></span><span class="date">AUG 30, 2026</span><h3>ClinVar</h3><p class="q">Do laboratories consider the variant disease-causing?</p><span class="k">Clinical</span><span class="go">See result →</span></a>
+      <a class="step" href="#ev-gnomad"><span class="dot"></span><span class="date">SEP 5, 2026</span><h3>gnomAD</h3><p class="q">How common is it in the world population?</p><span class="k">Population</span><span class="go">See result →</span></a>
+      <a class="step" href="#ev-dynamut"><span class="dot"></span><span class="date">SEP 16, 2026</span><h3>DynaMut2</h3><p class="q">Does the swap change the shape and stability of p53?</p><span class="k">Structure</span><span class="go">See result →</span></a>
+      <a class="step" href="#ev-tp53db"><span class="dot"></span><span class="date">SEP 18, 2026</span><h3>TP53 Database</h3><p class="q">In which parts of the body do carriers' tumors appear?</p><span class="k">Tumors</span><span class="go">See result →</span></a>
+    </div>
+
+    <div class="search" aria-label="Search strategy">      <span class="eyebrow" style="margin-right:6px">Paper search · PubMed and Google Scholar · 2016–2026</span>
+      <span class="chip">TP53</span><span class="op">AND</span><span class="chip">R337H</span><span class="op">AND</span><span class="chip">Li-Fraumeni Syndrome</span><span class="op">OR</span><span class="chip">cancer predisposition</span><span class="op">OR</span><span class="chip">pathogenicity</span><span class="op">OR</span><span class="chip">bioinformatics</span></div>
+    <p class="note">All queries used the same gene reference (MANE Select) and genome reference (GRCh38).</p>
+  </div>
+</section>
+
+<!-- ================= EVIDÊNCIAS ================= -->
+<section class="s" id="evidencias">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">Results</p>
+      <h2>What each database showed</h2>
+      <p class="lede">Each database shows one side of the variant. Tap the images to enlarge.</p>
+    </div>
+
+    <div class="ev-tabs" id="evTabs">      <a href="#ev-clinvar"><b>1</b>ClinVar</a>
+      <a href="#ev-gnomad"><b>2</b>gnomAD</a>
+      <a href="#ev-dynamut"><b>3</b>DynaMut2</a>
+      <a href="#ev-tp53db"><b>4</b>TP53 Database</a></div>
+
+    <!-- ClinVar -->
+    <article class="ev" id="ev-clinvar">
+      <div class="ev-head">
+        <div><p class="what">Do laboratories consider the variant disease-causing?</p><p class="tool">ClinVar</p></div>
+        <span class="verdict red">Answer: yes, pathogenic</span>
+      </div>
+      <p class="ev-plain">A public database where laboratories record how they classify variants. <strong>Six laboratories</strong> assessed R337H: five as <button class="term" data-t="patogenica">pathogenic</button> and one as likely pathogenic. <strong>None disagreed.</strong></p>
+      <div class="grid2">
+        <div class="panel">
+          <div class="panel-title"><h3>Table 1 · The variant's record</h3><span class="src">Prepared by the authors</span></div>
+          <dl class="kv">
+            <dt>Gene</dt><dd>TP53</dd>
+            <dt>Variant</dt><dd>R337H · p.Arg337His</dd>
+            <dt>Condition analyzed</dt><dd>Li-Fraumeni syndrome</dd>
+            <dt>Type</dt><dd>Germline (inherited)</dd>
+            <dt>Classification</dt><dd style="color:var(--his)">Pathogenic / Likely pathogenic</dd>
+            <dt>Laboratories</dt><dd class="tnum">6</dd>
+            <dt>Review</dt><dd>Multiple laboratories, no conflicts</dd>
+            <dt>Confidence level</dt><dd><span class="stars" aria-label="2 of 4 stars">★★<i>★★</i></span> 2 of 4 stars</dd>
+            <dt>Last assessment</dt><dd>May 28, 2026</dd>
+          </dl>
+        </div>
+        <div class="panel">
+          <div class="panel-title"><h3>Who assessed it, and when</h3><span class="src">ClinVar (2026)</span></div>
+          <svg id="cvChart" viewBox="0 0 520 330" role="img" aria-label="Timeline of the six ClinVar assessments between 2019 and 2026: five pathogenic and one likely pathogenic."></svg>
+          <p class="note">Each color is a laboratory, and the classification appears below the name. All assessments came from clinical testing of carriers.</p>
+        </div>
+      </div>
+      <div class="figs" data-figs="clinvar-submissoes,clinvar-condicoes,clinvar-evidencias,clinvar-descricao"></div>
+    </article>
+
+    <!-- gnomAD -->
+    <article class="ev" id="ev-gnomad">
+      <div class="ev-head">
+        <div><p class="what">How common is the variant in the world population?</p><p class="tool">gnomAD <span class="mono" style="font-size:14px;color:var(--muted);letter-spacing:0">v4.1.1</span></p></div>
+        <span class="verdict blu">Answer: very rare worldwide</span>
+      </div>
+      <p class="ev-plain">It gathers the DNA of hundreds of thousands of people. R337H appeared in only <strong>5 of 1.6 million</strong> copies of the gene, with no <button class="term" data-t="homozigoto">homozygous</button> person. But the database has few Brazilians: here it is about <strong>a thousand times more common</strong>.</p>
+      <div class="panel">
+        <div class="panel-title"><h3>A needle in a haystack</h3><span class="src">gnomAD (2026)</span></div>
+        <div class="hay-grid">
+          <div style="display:flex;flex-direction:column;gap:22px">
+            <div class="big-num tnum" style="color:var(--his)">5<small>copies with the variant</small></div>
+            <div class="big-num tnum" style="font-size:clamp(28px,3.6vw,44px)">1,613,858<small>gene copies (<button class="term" data-t="alelo">alleles</button>) analyzed</small></div>
+            <div class="big-num tnum" style="font-size:clamp(28px,3.6vw,44px);color:var(--amber)">0.00031%<small>that is, about 1 in every 323,000</small></div>
+          </div>
+          <div>
+            <div class="hay"><canvas id="hay" aria-label="Field of dots representing 1.6 million gene copies, with 5 highlighted" role="img"></canvas></div>
+            <div class="hay-leg">              <span><i style="background:#26345A"></i>each dot ≈ 100 gene copies</span>
+              <span><i style="background:#5A76C0"></i>light dots form the world map</span>
+              <span><i style="background:var(--his)"></i>where the variant appeared in gnomAD (5 copies)</span>
+              <span><i class="leg-ring"></i>South and Southeast Brazil (~0.3%)</span></div>
+            <p class="note">The red marks show the gnomAD ancestry groups in which the variant appeared: 3 copies in <em>Admixed American</em> (the Americas), 1 in non-Finnish Europeans and 1 with no defined region. These are groups, not exact countries. The amber line shows the Portuguese/Spanish origin described for the variant (founder effect).<a class="cite" href="#ref-10">10</a><a class="cite" href="#ref-20">20</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="grid2" style="margin-top:20px">
+        <div class="panel">
+          <div class="panel-title"><h3>By ancestry group</h3><span class="src">copies with the variant / total</span></div>
+          <div class="compare" id="ancestry"></div>
+          <p class="note">Highest frequency in the <em>Admixed American</em> group (admixed peoples of the Americas). In the other groups: no copies.</p>
+        </div>
+        <div class="panel">
+          <div class="panel-title"><h3>World × Brazil</h3><span class="src">scale that grows 100-fold at each step</span></div>
+          <div class="compare" id="brazil"></div>
+          <p class="note">Slightly different measures (gene copies × people), but the difference shows the weight of the population's origin.<a class="cite" href="#ref-4">4</a><a class="cite" href="#ref-10">10</a><a class="cite" href="#ref-13">13</a><a class="cite" href="#ref-19">19</a><a class="cite" href="#ref-20">20</a></p>
+        </div>
+      </div>
+      <div class="figs" data-figs="gnomad-frequencia"></div>
+    </article>
+
+    <!-- DynaMut2 -->
+    <article class="ev" id="ev-dynamut">
+      <div class="ev-head">
+        <div><p class="what">Does the swap change the shape and stability of p53?</p><p class="tool">DynaMut2</p></div>
+        <span class="verdict amb">Answer: probably yes</span>
+      </div>
+      <p class="ev-plain">A program that calculates how a mutation affects the protein's 3D shape. Result: <button class="term" data-t="ddg">ΔΔG</button> of <strong>−0.94 kcal/mol</strong>, meaning p53 becomes <strong>less stable</strong> in this region.</p>
+      <div class="grid2">
+        <div class="panel">
+          <div class="panel-title"><h3>Stability gauge</h3><span class="src">DynaMut2 (2026)</span></div>
+          <div class="gauge-wrap"><svg id="gauge" viewBox="0 0 420 250" role="img" aria-label="ΔΔG gauge pointing to −0.94 kcal/mol, on the destabilizing side."></svg></div>
+          <dl class="kv" style="margin-top:10px">
+            <dt>Position analyzed</dt><dd>piece 337 (chain A)</dd>
+            <dt>Swap</dt><dd><span style="color:#9DB6FF">R (arginine)</span> → <span style="color:var(--his)">H (histidine)</span></dd>
+            <dt>Result</dt><dd style="color:var(--amber)">−0.94 kcal/mol · destabilizing</dd>
+          </dl>
+        </div>
+        <div class="panel read-panel">
+          <div class="panel-title"><h3>How to read this result</h3><span class="src">DynaMut2 (2026)</span></div>
+          <ol class="read-steps">
+            <li><b>Compares</b> normal p53 (arginine 337) with the mutant (histidine 337).</li>
+            <li><b>Calculates ΔΔG:</b> below zero means a less stable protein.</li>
+            <li><b>Result: −0.94 kcal/mol</b>, destabilizing.</li>
+          </ol>
+          <button class="fig fig-wide" type="button" data-gallery-solo data-cap="Figure 3 · Impact of the R337H variant on p53 stability: ΔΔG −0.94 kcal/mol (destabilizing). Source: DynaMut2 (2026)."><img src="../imagens/mini/dynamut2-resultado.webp" data-full="../imagens/dynamut2-resultado.webp" decoding="async" alt="Figure 3: DynaMut2 result" loading="lazy"><span><b>Figure 3</b> · Original result screen</span></button>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:20px">
+        <div class="panel-title"><h3>The neighborhood of piece 337: normal × mutant</h3><span class="src">DynaMut2 (2026) · Figures 4 and 5</span></div>
+        <div class="pair" data-gallery>
+          <button class="fig pair-fig" type="button" data-cap="Figure 4 · Interactions around residue 337 in normal p53 (Arg337). Source: DynaMut2 (2026).">
+            <span class="pair-tag wt">Normal · Arginine 337</span>
+            <img src="../imagens/mini/dynamut2-normal-arg337.webp" data-full="../imagens/dynamut2-normal-arg337.webp" decoding="async" loading="lazy" alt="Figure 4: bonds around arginine 337 in normal p53">
+            <span><b>Figure 4</b> · normal p53</span>
+          </button>
+          <button class="fig pair-fig" type="button" data-cap="Figure 5 · Local molecular interactions of mutant p53 R337H (His337). Source: DynaMut2 (2026).">
+            <span class="pair-tag mut">Mutant · Histidine 337</span>
+            <img src="../imagens/mini/dynamut2-mutante-his337.webp" data-full="../imagens/dynamut2-mutante-his337.webp" decoding="async" loading="lazy" alt="Figure 5: bonds around histidine 337 in mutant p53">
+            <span><b>Figure 5</b> · mutant p53 (histidine 337)</span>
+          </button>
+        </div>
+        <div class="pair-read">
+          <div>
+            <p class="eyebrow">What the images show</p>
+            <p>The blue ribbon is the p53 helix; the little balls are neighboring pieces; each dotted line is a bond.</p>
+          </div>
+          <div>
+            <p class="eyebrow">What changes</p>
+            <p>With histidine, the bonds around piece 337 move: a sign of local reorganization.</p>
+          </div>
+          <div>
+            <p class="eyebrow">Neighboring pieces</p>
+            <div class="neigh"><span>ILE332</span><span>ARG333</span><span>GLY334</span><span>ARG335</span><span class="c">337</span><span>GLU339</span><span>MET340</span><span>PHE341</span></div>
+          </div>
+        </div>
+        <div class="ilegend" aria-label="Key to the bond colors in DynaMut2">
+          <p class="eyebrow">Key to the dotted lines (DynaMut2 colors)</p>
+          <ul>
+            <li><i style="background:#F44336"></i><b>Red</b> hydrogen bond</li>
+            <li><i style="background:#FF9800"></i><b>Orange</b> polar bond</li>
+            <li><i style="background:#43A047"></i><b>Green</b> hydrophobic contact</li>
+            <li><i style="background:#90CAF9"></i><b>Light blue</b> Van der Waals</li>
+            <li><i style="background:#F06292"></i><b>Pink</b> clash between atoms</li>
+            <li><i style="background:#2196F3"></i><b>Blue</b> carbonyl</li>
+            <li><i style="background:#FDD835"></i><b>Yellow</b> ionic bond</li>
+            <li><i style="background:#9CCC65"></i><b>Light green</b> aromatic</li>
+          </ul>
+        </div>
+      </div>
+      <div class="figs" data-figs="dynamut2-contatos-normal,dynamut2-vista-mutante"></div>
+    </article>
+
+    <!-- TP53 DB -->
+    <article class="ev" id="ev-tp53db">
+      <div class="ev-head">
+        <div><p class="what">In which parts of the body do carriers' tumors appear?</p><p class="tool">TP53 Database</p></div>
+        <span class="verdict red">Answer: mainly in the adrenal gland</span>
+      </div>
+      <p class="ev-plain">It gathers published cases of people with TP53 changes. There were <strong>150 tumors</strong> in R337H carriers, most in the <strong>adrenal gland</strong> (61%, on top of the kidneys), followed by breast (14%) and brain (11%).</p>
+      <div class="grid2">
+        <div class="panel">
+          <div class="panel-title"><h3>Each square = 1 recorded tumor</h3><span class="src">150 in total</span></div>
+          <div class="waffle" id="waffle" aria-hidden="true"></div>
+          <p class="waffle-info" id="wInfo" aria-live="polite">Hover over or tap a square to see the tumor site.</p>
+        </div>
+        <div class="panel">
+          <div class="panel-title"><h3>Where the tumors appeared</h3><span class="src">TP53 Database</span></div>
+          <div class="sites" id="sites"></div>
+        </div>
+      </div>
+      <p class="note">These are recorded cases, <strong>not</strong> the individual chance of each cancer.</p>
+      <div class="figs" data-figs="tp53db-registros,tp53db-sitios,tp53db-estrutura-3d"></div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= INTEGRAÇÃO ================= -->
+<section class="s" id="integracao">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">Discussion</p>
+      <h2>Putting the pieces together</h2>
+      <p class="lede">Together, the databases tell the same story, each with its limits. <strong>Tap the circles.</strong><a class="cite" href="#ref-3">3</a><a class="cite" href="#ref-10">10</a><a class="cite" href="#ref-14">14</a><a class="cite" href="#ref-15">15</a><a class="cite" href="#ref-16">16</a></p>
+    </div>
+    <div class="integ">
+      <svg id="integSvg" viewBox="0 0 480 420" role="group" aria-label="Diagram: the four lines of evidence converging on R337H"></svg>
+      <div class="int-card panel" id="intCard" aria-live="polite"></div>
+    </div>
+
+    <div style="overflow-x:auto">
+      <table class="lim-table">
+        <caption class="eyebrow" style="text-align:left;padding-bottom:6px">Table 2 · Limitations of each platform</caption>
+        <thead><tr><th scope="col">Platform</th><th scope="col">What it showed</th><th scope="col">Caveats when interpreting</th></tr></thead>
+        <tbody id="limBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONCLUSÃO ================= -->
+<section class="s" id="conclusao">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:22px">Conclusion</p>
+    <p class="concl">R337H <em>causes disease</em>, is rare worldwide and common in Brazil's South and Southeast, makes p53 less stable and appears in several tumors. But, <em>on its own, it does not determine</em> who will get cancer.</p>
+    <div class="concl-grid">
+      <a class="cg" href="#ev-clinvar"><span class="eyebrow">Clinical</span><p>6 laboratories: pathogenic, no conflicts.</p><span class="go">See →</span></a>
+      <a class="cg" href="#ev-gnomad"><span class="eyebrow">Population</span><p>Rare worldwide; ~0.3% in the South and Southeast.</p><span class="go">See →</span></a>
+      <a class="cg" href="#ev-dynamut"><span class="eyebrow">Structure</span><p>ΔΔG −0.94 kcal/mol: less stable p53.</p><span class="go">See →</span></a>
+      <a class="cg" href="#ev-tp53db"><span class="eyebrow">Tumors</span><p>150 records; 61% in the adrenal gland.</p><span class="go">See →</span></a>
+    </div>
+    <div class="prose" style="margin-top:36px">
+      <p>Knowing about the variant helps doctors and families understand inherited risk. Finding it even in tumor tests should lead to genetic testing of the family,<a class="cite" href="#ref-12">12</a> and carriers benefit from personalized follow-up.<a class="cite" href="#ref-3">3</a><a class="cite" href="#ref-11">11</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMAGENS ================= -->
+<section class="s" id="imagens">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">Research images</p>
+      <h2>The original screens from each platform</h2>
+      <p class="lede">Original screens from each platform. Filter, tap to enlarge and use the arrows to browse.</p>
+    </div>
+    <div class="gal-filter" id="galFilter" role="group" aria-label="Filter images by platform"></div>
+    <div class="gallery" id="gallery" data-gallery></div>
+  </div>
+</section>
+
+<!-- ================= GLOSSÁRIO ================= -->
+<section class="s" id="glossario">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">Glossary</p>
+      <h2>Key words, made simple</h2>
+      <p class="lede">Main terms in plain language. In the text, words underlined in yellow also explain themselves when you hover over them.</p>
+    </div>
+    <div class="ref-tools">
+      <input id="glossSearch" type="search" placeholder="Look up a term…" aria-label="Search the glossary">
+      <span class="ref-count" id="glossCount"></span>
+    </div>
+    <dl class="gloss" id="gloss"></dl>
+  </div>
+</section>
+
+<!-- ================= REFERÊNCIAS ================= -->
+<section class="s" id="referencias">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">References</p>
+      <h2>Bibliographic references</h2>
+      <p class="lede">Vancouver style, in the order of the work. Tap the yellow numbers in the text to get here.</p>
+    </div>
+    <div class="ref-tools">
+      <input id="refSearch" type="search" placeholder="Search by author, title, journal or year…" aria-label="Search references">
+      <span class="ref-count" id="refCount">21 references</span>
+    </div>
+    <ol class="refs" id="refs"></ol>
+
+    <p class="eyebrow" style="margin-top:44px">Databases consulted</p>
+    <div class="datasrc">      <a href="https://www.ncbi.nlm.nih.gov/clinvar/variation/12379/" target="_blank" rel="noopener"><b>ClinVar ↗</b><span>NCBI · Variation ID 12379<br>accessed 08/30/2026</span></a>
+      <a href="https://gnomad.broadinstitute.org/variant/17-7670699-C-T?dataset=gnomad_r4" target="_blank" rel="noopener"><b>gnomAD v4.1.1 ↗</b><span>Broad Institute · 17-7670699-C-T<br>accessed 09/05/2026</span></a>
+      <a href="https://biosig.lab.uq.edu.au/dynamut2/" target="_blank" rel="noopener"><b>DynaMut2 ↗</b><span>Biosig Lab · protein stability<br>accessed 09/16/2026</span></a>
+      <a href="https://tp53.cancer.gov/" target="_blank" rel="noopener"><b>TP53 Database ↗</b><span>NCI · germline variants<br>accessed 09/18/2026</span></a></div>
+  </div>
+</section>
+</main>
+
+<footer lang="pt-BR">
+  <div class="wrap">
+    <div>
+      <h3><a href="../../" class="foot-home">GenoEvidence</a></h3>
+      <p>Brings together the evidence on the TP53 R337H variant and its relationship with Li-Fraumeni syndrome. Authors: Ana Júlia Silva Rodrigues and Thaisa Carvalho. Advisor: Prof. Dr. Patrícia Alves.</p>
+    </div>
+    <div>
+      <h3>Use of artificial intelligence</h3>
+      <p>Perplexity, Claude and ChatGPT supported the planning of the study. The answers were reviewed by the authors and were not used as a source of evidence. Educational content; it does not replace genetic counseling.</p>
+    </div>
+    <p class="credito">Developed by <strong>Thaisa Carvalho</strong></p>
+  </div>
+</footer>
+
+<a class="totop" id="totop" href="#top" aria-label="Back to top">↑</a>
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <button class="lb-close" id="lbClose" type="button" aria-label="Close">✕</button>
+  <button class="lb-nav prev" id="lbPrev" type="button" aria-label="Previous image">‹</button>
+  <img id="lbImg" alt="">
+  <button class="lb-nav next" id="lbNext" type="button" aria-label="Next image">›</button>
+  <p class="lb-meta"><span id="lbCount"></span> <span id="lbCap"></span></p>
+</div>
+
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="../r337h-i18n.js"></script>
+<script src="../r337h.js"></script>
+<script src="../../assets/js/pwa.js"></script>
+</body>
+</html>

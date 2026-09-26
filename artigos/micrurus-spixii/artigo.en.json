@@ -1,0 +1,515 @@
+{
+  "id": "micrurus-spixii",
+  "tipo": "artigo",
+  "rotulo": "Published study",
+  "arte": "celulas",
+  "tema": "Toxinology",
+  "tema_id": "toxinologia",
+  "titulo": "Análise histológica da miotoxicidade do veneno de Micrurus spixii (cobra coral amazônica) em músculo biventer cervicis de pintainho e sua neutralização por soro antielapídico",
+  "titulo_curto": "Amazonian coral snake venom in muscle, and how much the antivenom protects",
+  "breadcrumb": "Amazonian coral snake",
+  "autores": [
+    {
+      "nome": "Fernanda Ruis Passos",
+      "afiliacao": "Biomedicine · Uniso"
+    },
+    {
+      "nome": "Wanessa Regis da Costa",
+      "afiliacao": "Biomedicine · Uniso"
+    },
+    {
+      "nome": "Nathalia Margarida Cantuária",
+      "afiliacao": "Pharmaceutical Sciences · Uniso"
+    },
+    {
+      "nome": "Patricia Lius Melo Alves",
+      "destaque": true,
+      "afiliacao": "Biomedicine · Uniso"
+    },
+    {
+      "nome": "Jonas Eligio Garcia de Azevedo",
+      "afiliacao": "Pharmaceutical Sciences · Uniso"
+    },
+    {
+      "nome": "Stephen Hyslop",
+      "afiliacao": "Pharmacology · Unicamp"
+    },
+    {
+      "nome": "Yoko Oshima-Franco",
+      "afiliacao": "Pharmaceutical Sciences · Uniso"
+    }
+  ],
+  "revista": {
+    "nome": "ARACÊ",
+    "cidade": "São José dos Pinhais, Brazil",
+    "issn": "2358-2472",
+    "volume": "8",
+    "numero": "2",
+    "paginas": "1–18",
+    "ano": "2026",
+    "submetido": "2026-01-12",
+    "publicado": "2026-02-12",
+    "doi": "10.56238/arev8n2-068",
+    "url": "https://doi.org/10.56238/arev8n2-068",
+    "site": "https://periodicos.newsciencepubl.com/arace",
+    "pdf": "https://periodicos.newsciencepubl.com/arace/article/download/12172/13403"
+  },
+  "palavras_chave": [
+    "Micrurus spixii",
+    "Snake venom",
+    "Antielapidic serum",
+    "Light microscopy",
+    "Biventer cervicis"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "The problem",
+      "titulo": "A venom that attacks nerves and muscles",
+      "texto": "Snakebites are a neglected tropical disease. The Amazonian coral snake (Micrurus spixii) has a venom that paralyzes and also damages muscle."
+    },
+    {
+      "rotulo": "What they did",
+      "titulo": "Venom, with and without antivenom, under the microscope",
+      "texto": "Chick muscles were exposed to the venom, alone or pre-mixed with the antivenom used in Brazil, and the damaged cells were counted under the microscope."
+    },
+    {
+      "rotulo": "What they found",
+      "titulo": "Almost no healthy cells",
+      "texto": "With the venom, healthy cells dropped from 66% to less than 1%. With the antivenom, they rose to about 5%."
+    },
+    {
+      "rotulo": "Why it matters",
+      "titulo": "Partial protection",
+      "texto": "The antivenom protected well against swelling and cell death, but little against other damage. It is made with the venom of two other coral snake species."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "66.1% → 0.92%",
+      "texto": "healthy cells in the control × with the venom",
+      "cor": "his"
+    },
+    {
+      "valor": "4.8%",
+      "texto": "healthy cells when the venom was pre-mixed with the antivenom",
+      "cor": "ok"
+    },
+    {
+      "valor": "2×",
+      "texto": "the venom doubled the cells with vacuoles (from 31% to 62%)",
+      "cor": "amber"
+    },
+    {
+      "valor": "0.38% → 0.05%",
+      "texto": "dead (ghost) cells: the antivenom almost eliminated this damage",
+      "cor": "arg"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "The snake and the venom",
+      "eyebrow": "Context",
+      "titulo": "The Amazonian coral snake and its venom",
+      "lede": "Coral snakes are secretive and produce little venom, but a bite is always treated as serious.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>There are about <strong>80 species</strong> of coral snakes of the genus <em>Micrurus</em> in the Americas; in Brazil, <strong>38</strong> have been recorded. <em>Micrurus spixii</em>, the Amazonian coral snake, lives in the Brazilian states of Acre, Amazonas, Mato Grosso, Pará and Rondônia. These snakes hide in damp, dark places, often buried, and produce little venom.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "The two toxin families in the venom",
+          "itens": [
+            {
+              "titulo": "3FTx · three-finger toxins",
+              "texto": "They block the receptors that receive the nerve signal in muscle. They are the main cause of paralysis.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "PLA2 · phospholipases A2",
+              "texto": "Enzymes that “digest” cell membranes. Besides acting on nerves, they damage muscle: this is myotoxicity.",
+              "cor": "his"
+            }
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "html": "In Brazil, the treatment is the <strong>bivalent antielapidic serum</strong>, produced in horses with the venom of two other coral snakes (<em>M. frontalis</em> and <em>M. corallinus</em>). The Ministry of Health recommends 10 vials intravenously and considers every coral snake bite potentially serious, because of the risk of respiratory failure."
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>Venom varies a lot from one species to another. So it was not known whether this antivenom protects against the muscle damage caused by the Amazonian coral snake. That is the study's question.</p>"
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "How it was done",
+      "eyebrow": "Method",
+      "titulo": "How the study was done",
+      "lede": "A lab experiment with three groups of muscles, analyzed blindly under the microscope.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Three muscle groups",
+              "texto": "Chick biventer cervicis muscles (3 per group) spent 2 hours in Krebs nutrient solution (control), with M. spixii venom (10 µg/mL) or with venom pre-mixed with the antivenom."
+            },
+            {
+              "titulo": "Venom + antivenom",
+              "texto": "Before touching the muscle, the venom spent 30 minutes at 37 °C with 0.03 mL of antielapidic serum, in the proportion recommended by the manufacturer."
+            },
+            {
+              "titulo": "Slide preparation",
+              "texto": "The muscles were fixed in formalin, embedded in paraffin and cut into 4 µm slices, stained with hematoxylin-eosin."
+            },
+            {
+              "titulo": "Counting under the microscope",
+              "texto": "The slides were analyzed double-blind at 400× magnification, counting healthy cells and those with each type of damage."
+            },
+            {
+              "titulo": "Statistics",
+              "texto": "Mean ± standard error, compared by ANOVA and Tukey's test. A difference counts as significant when p < 0.05."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "The 10 µg/mL dose came from an earlier study by the group: 5 µg/mL caused little damage and 20 µg/mL caused too much to measure the antivenom's effect. The protocol was approved by Uniso's Animal Use Ethics Committee (no. 229/2022)."
+        }
+      ]
+    },
+    {
+      "id": "lesoes",
+      "menu": "Types of damage",
+      "eyebrow": "Under the microscope",
+      "titulo": "How to recognize each type of damage",
+      "lede": "With hematoxylin-eosin staining, muscle fibers appear pink. Each type of damage leaves a different mark.",
+      "blocos": [
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura1-tipos-de-lesao.webp",
+          "full": "imagens/figura1-tipos-de-lesao.webp",
+          "alt": "Pink-stained muscle section, with arrows pointing to normal cells, edema, vacuoles, myofibril condensation and ghost cells",
+          "legenda": "Figure 1 · Types of damage in chick biventer cervicis muscle (hematoxylin-eosin; bar = 40 µm).",
+          "credito": "Passos et al. (2026), ARACÊ"
+        },
+        {
+          "tipo": "cartoes",
+          "itens": [
+            {
+              "titulo": "Normal",
+              "texto": "Intact fiber with a regular shape.",
+              "cor": "ok"
+            },
+            {
+              "titulo": "Edema",
+              "texto": "The cell swells as fluid builds up. It is usually one of the first signs of damage.",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Vacuoles",
+              "texto": "Empty spaces inside the cell, a sign of a damaged membrane.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Condensed myofibrils",
+              "texto": "The fibers that make muscle contract clump into dark areas and lose their organization.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Ghost cells",
+              "texto": "The fiber dies (myonecrosis), leaving an almost empty space with loose nuclei.",
+              "cor": "his"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Results",
+      "eyebrow": "Results",
+      "titulo": "What the venom did, and what the antivenom prevented",
+      "lede": "Choose a cell type to compare the three groups.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Choose the cell type",
+          "grupos": [
+            {
+              "nome": "Control (Krebs)",
+              "cor": "#9DB6FF"
+            },
+            {
+              "nome": "Venom",
+              "cor": "#FF5470"
+            },
+            {
+              "nome": "Venom + antivenom",
+              "cor": "#5FD39A"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "Normal cells",
+              "valores": [
+                {
+                  "m": 66.1,
+                  "ep": 0.1
+                },
+                {
+                  "m": 0.92,
+                  "ep": 0.08,
+                  "sig": "*"
+                },
+                {
+                  "m": 4.8,
+                  "ep": 0.42,
+                  "sig": "*#"
+                }
+              ],
+              "leitura": "The venom wiped out almost all the healthy cells. When pre-mixed with the antivenom, it preserved about 5 times more cells (4.8% versus 0.92%), still far below the control."
+            },
+            {
+              "rotulo": "Edema",
+              "valores": [
+                {
+                  "m": 9.5,
+                  "ep": 0.01
+                },
+                {
+                  "m": 10.8,
+                  "ep": 0.2,
+                  "sig": "*"
+                },
+                {
+                  "m": 6.7,
+                  "ep": 1.4,
+                  "sig": "*#"
+                }
+              ],
+              "leitura": "The venom slightly increased cell swelling. With the antivenom, edema fell even below the control: it was the best-neutralized damage."
+            },
+            {
+              "rotulo": "Vacuoles",
+              "valores": [
+                {
+                  "m": 31.0,
+                  "ep": 1.5
+                },
+                {
+                  "m": 62.2,
+                  "ep": 0.5,
+                  "sig": "*"
+                },
+                {
+                  "m": 54.2,
+                  "ep": 2.9,
+                  "sig": "*#"
+                }
+              ],
+              "leitura": "The venom doubled the cells with vacuoles. The antivenom reduced this damage by about 13%."
+            },
+            {
+              "rotulo": "Condensed myofibrils",
+              "valores": [
+                {
+                  "m": 54.5,
+                  "ep": 1.0
+                },
+                {
+                  "m": 71.7,
+                  "ep": 1.9,
+                  "sig": "*"
+                },
+                {
+                  "m": 62.3,
+                  "ep": 0.2,
+                  "sig": "*#"
+                }
+              ],
+              "leitura": "With the venom, 72% of the cells had condensed fibers, versus 54% in the control. The antivenom reduced this damage by about 13%."
+            },
+            {
+              "rotulo": "Ghost cells",
+              "valores": [
+                {
+                  "m": 0,
+                  "ep": 0
+                },
+                {
+                  "m": 0.38,
+                  "ep": 0.07,
+                  "sig": "*"
+                },
+                {
+                  "m": 0.05,
+                  "ep": 0.05,
+                  "sig": "#"
+                }
+              ],
+              "leitura": "Dead cells appeared only with the venom. The antivenom almost abolished this damage: with it, the result was no different from the control."
+            }
+          ],
+          "nota": "Mean ± standard error (3 muscles per group). * different from control; # different from venom (p < 0.05). A cell may have more than one type of damage, so the percentages don't add up to 100%. The control group had some storage and handling artifacts, which explains part of its damage."
+        },
+        {
+          "tipo": "galeria",
+          "itens": [
+            {
+              "src": "imagens/mini/figura2-graficos.webp",
+              "full": "imagens/figura2-graficos.webp",
+              "titulo": "Figure 2 · Original charts",
+              "legenda": "Figure 2 · Quantitative analysis of the damage: (a) normal cells, (b) edema, (c) vacuoles, (d) condensed myofibrils, (e) ghost cells.",
+              "credito": "Passos et al. (2026), ARACÊ"
+            },
+            {
+              "src": "imagens/mini/figura1-tipos-de-lesao.webp",
+              "full": "imagens/figura1-tipos-de-lesao.webp",
+              "titulo": "Figure 1 · Types of damage",
+              "legenda": "Figure 1 · Classification of the types of cell damage (hematoxylin-eosin; bar = 40 µm).",
+              "credito": "Passos et al. (2026), ARACÊ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "What it means",
+      "eyebrow": "Discussion",
+      "titulo": "What these results mean",
+      "lede": "The damage follows a chain of events, and the antivenom works best at its start.",
+      "blocos": [
+        {
+          "tipo": "cadeia",
+          "itens": [
+            "PLA2 hits the fiber membrane",
+            "Calcium floods into the cell uncontrolled",
+            "Edema and vacuoles",
+            "Myofibrils condense",
+            "Myonecrosis: ghost cells"
+          ]
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>The venom's PLA2 enzymes rupture the muscle fiber membrane. Calcium floods in uncontrolled, vacuoles appear and the myofibrils condense, until the fiber dies. <strong>Edema</strong> is one of the first steps in this chain: by reducing it, the antivenom also prevented the final stage, the <strong>ghost cells</strong>.</p><p>Why was the protection only partial? The antivenom used in Brazil is made with the venom of just two species, and its ability to neutralize the venom of other coral snakes varies. Earlier studies had already shown that the Amazonian coral snake's venom is among the most lethal in the genus and that this antivenom does not fully neutralize its phospholipase activity.</p>"
+        },
+        {
+          "tipo": "destaque",
+          "html": "In earlier tests with mice, the same antivenom offered little protection against this venom's muscle damage, even at twice the recommended dose."
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusion",
+      "eyebrow": "Conclusion",
+      "titulo": "In short",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>The Amazonian coral snake's venom causes <strong>myonecrosis</strong> in muscle, and the antielapidic serum, pre-mixed with the venom, gave significant protection, but to different degrees for each type of damage. The authors attribute the damage mainly to PLA2; the role of 3FTx and other toxins still needs to be studied.</p>"
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Caveats when interpreting",
+          "itens": [
+            "Lab (in vitro) study, using chick muscle.",
+            "Three muscles per group.",
+            "Only one antivenom-to-venom ratio was tested.",
+            "The control group had some slide-preparation artifacts."
+          ]
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Myotoxicity",
+      "def": "A substance's ability to damage muscle."
+    },
+    {
+      "termo": "Myonecrosis",
+      "def": "Death of muscle fibers."
+    },
+    {
+      "termo": "Neurotoxicity",
+      "def": "Ability to damage or block the nervous system; in coral snakes, it causes paralysis."
+    },
+    {
+      "termo": "Biventer cervicis",
+      "def": "A bird neck muscle widely used in the lab to study how venoms act on nerves and muscles."
+    },
+    {
+      "termo": "Antielapidic serum",
+      "def": "Antivenom against coral snakes, produced in horses. In Brazil it is made with the venom of M. frontalis and M. corallinus."
+    },
+    {
+      "termo": "PLA2 (phospholipase A2)",
+      "def": "Venom enzyme that breaks down the lipids in cell membranes."
+    },
+    {
+      "termo": "3FTx",
+      "def": "Three-finger toxins, which block the nerve-signal receptors in muscle."
+    },
+    {
+      "termo": "Hematoxylin-eosin (HE)",
+      "def": "Classic slide stain: it turns nuclei purple and cytoplasm pink."
+    },
+    {
+      "termo": "Double-blind",
+      "def": "Analysis in which the evaluator doesn't know which group each sample belongs to, to avoid bias."
+    },
+    {
+      "termo": "Pre-incubation",
+      "def": "Mixing the venom with the antivenom and waiting a while before applying it to the muscle."
+    },
+    {
+      "termo": "In vitro",
+      "def": "Experiment done outside the living organism, in the lab."
+    },
+    {
+      "termo": "p < 0.05",
+      "def": "Statistical criterion: the difference is considered real, not due to chance, with less than a 5% chance of error."
+    }
+  ],
+  "citacao": "PASSOS, F. R.; COSTA, W. R.; CANTUÁRIA, N. M.; ALVES, P. L. M.; AZEVEDO, J. E. G.; HYSLOP, S.; OSHIMA-FRANCO, Y. Análise histológica da miotoxicidade do veneno de Micrurus spixii (cobra coral amazônica) em músculo biventer cervicis de pintainho e sua neutralização por soro antielapídico. ARACÊ, São José dos Pinhais, v. 8, n. 2, p. 1-18, 2026. DOI: 10.56238/arev8n2-068.",
+  "referencias": [
+    {
+      "texto": "TERRA, A. L. C. et al. Biological characterization of the Amazon coral Micrurus spixii snake venom: isolation of a new neurotoxic phospholipase A2. Toxicon, v. 103, p. 1-11, 2015.",
+      "doi": "10.1016/j.toxicon.2015.06.011"
+    },
+    {
+      "texto": "TANAKA, G. D. et al. Diversity of Micrurus snake species related to their venom toxic effects and the prospective of antivenom neutralization. PLoS Neglected Tropical Diseases, v. 4, n. 3, 2010.",
+      "doi": "10.1371/journal.pntd.0000622"
+    },
+    {
+      "texto": "GUTIÉRREZ, J. M.; OWNBY, C. L. Skeletal muscle degeneration induced by venom phospholipases A2: insights into the mechanisms of local and systemic myotoxicity. Toxicon, v. 42, n. 8, p. 915-931, 2003.",
+      "doi": "10.1016/j.toxicon.2003.11.005"
+    },
+    {
+      "texto": "SANZ, L. et al. Comparative venomics of Brazilian coral snakes: Micrurus frontalis, Micrurus spixii spixii, and Micrurus surinamensis. Toxicon, v. 166, p. 39-45, 2019.",
+      "doi": "10.1016/j.toxicon.2019.05.001"
+    },
+    {
+      "texto": "BUCARETCHI, F. et al. Coral snake bites (Micrurus spp.) in Brazil: a review of literature reports. Clinical Toxicology, v. 54, n. 3, p. 222-234, 2016.",
+      "doi": "10.3109/15563650.2015.1135337"
+    },
+    {
+      "texto": "MONTECUCCO, C.; GUTIÉRREZ, J. M.; LOMONTE, B. Cellular pathology induced by snake venom phospholipase A2 myotoxins and neurotoxins. Cellular and Molecular Life Sciences, v. 65, n. 18, p. 2897-2912, 2008.",
+      "doi": "10.1007/s00018-008-8113-3"
+    },
+    {
+      "texto": "WORLD HEALTH ORGANIZATION. Snakebite envenoming: a strategy for prevention and control. Genebra: WHO, 2019.",
+      "url": "https://www.who.int/publications/i/item/9789241515641"
+    }
+  ],
+  "titulo_pt": "Histological analysis of Micrurus spixii (Amazonian coral snake) venom myotoxicity in chick biventer cervicis muscle and its neutralization by antielapidic serum",
+  "rotulo_original": "Original title in Portuguese:",
+  "idioma": "en",
+  "arte_legenda": "illustration · muscle fibers under the microscope"
+}

@@ -10,7 +10,27 @@
   const PAGINA = document.body.dataset.pagina;
   const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-  const getJSON = u => fetch(RAIZ + u, { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  // idiomas (assets/js/i18n.js): textos fixos são traduzidos sozinhos; aqui os dados já chegam no idioma escolhido
+  const I = window.GE_I18N || { lang: "pt", locale: "pt-BR", t: s => s, montarSeletor: () => {} };
+  function localizar(u, d) {
+    const lg = I.lang; if (lg === "pt" || !d) return d;
+    const sobre = o => { const tr = o && o.i18n && o.i18n[lg]; if (tr) Object.assign(o, tr); };
+    if (u.endsWith("artigos.json")) {
+      ["artigos", "temas", "pesquisadoras"].forEach(k => (d[k] || []).forEach(sobre));
+      // lista de autores: “e outros” → “et al.”, “e” → “and” / “y”
+      (d.artigos || []).forEach(a => { if (a.autores_curto) a.autores_curto = a.autores_curto.replace(/ e outros$/, " et al.").replace(/ e ([^,]+)$/, (lg === "es" ? " y " : " and ") + "$1"); });
+    }
+    if (u.endsWith("frases.json")) (d.frases || []).forEach(f => { if (f[lg]) f.texto = f[lg]; if (f["fonte_" + lg]) f.fonte = f["fonte_" + lg]; });
+    if (u.endsWith("noticias.json")) (d.noticias || []).concat(d.artigos || []).forEach(n => {
+      if (n.fonte) n.fonte = n.fonte.replace(/ · (.+)$/, (m, x) => " · " + I.t(x));   // ex.: "Nature · Genética"
+      const origem = n.idioma || "en", tr = n.i18n && n.i18n[lg];
+      if (origem === lg) { n.titulo = n.titulo_original || n.titulo; n.resumo = n.resumo_original || n.resumo; n.traduzido = false; n.mostrarResumo = true; }
+      else if (tr && tr.titulo) { n.titulo = tr.titulo; n.resumo = tr.resumo || ""; n.traduzido = true; n.mostrarResumo = !!tr.resumo; }
+      else { n.titulo = n.titulo_original || n.titulo; n.resumo = ""; n.traduzido = false; n.mostrarResumo = false; }
+    });
+    return d;
+  }
+  const getJSON = u => fetch(RAIZ + u, { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => localizar(u, d));
 
   /* ---------- barra do topo e abas ---------- */
   const ICONES = {
@@ -30,6 +50,7 @@
       '<a class="logo" href="' + RAIZ + '" aria-label="GenoEvidence, início"><i></i><b>GenoEvidence</b></a>' +
       '<nav class="tabs-top" aria-label="Seções do app">' + ABAS.map(([n, l, h]) => '<a class="tab-' + n + '" href="' + RAIZ + h + '"' + atual(n) + ">" + l + "</a>").join("") + "</nav>" +
       '<a class="icon-btn" href="' + RAIZ + 'sobre/" aria-label="Sobre o GenoEvidence"' + atual("sobre") + ">" + svg("sobre") + "</a></div>";
+    I.montarSeletor($(".appbar-in", topo), $(".icon-btn", topo));
   }
   const abas = $("#tabbar");
   if (abas) {
@@ -113,33 +134,36 @@
   const CORES = ["#7C9CFF", "#FFB23F", "#5FD39A", "#FF8A9D", "#A58CFF", "#3FC1C9", "#F4A6FF", "#7FD1FF"];
   const corDe = nome => { let h = 0; for (const c of nome) h = (h * 31 + c.charCodeAt(0)) >>> 0; return CORES[h % CORES.length]; };
   const sigla = nome => nome.replace(/\(.*?\)/g, "").split(/\s+/).filter(w => /^[A-Za-zÀ-ú]/.test(w)).slice(0, 2).map(w => w[0].toUpperCase()).join("") || "R";
-  const rtf = new Intl.RelativeTimeFormat("pt-BR", { numeric: "auto" });
+  const rtf = new Intl.RelativeTimeFormat(I.locale, { numeric: "auto" });
   function quando(iso) {
     const d = new Date(iso), s = (d - Date.now()) / 1000, a = Math.abs(s);
     if (isNaN(d)) return "";
     if (a < 3600) return rtf.format(Math.round(s / 60), "minute");
     if (a < 86400) return rtf.format(Math.round(s / 3600), "hour");
     if (a < 86400 * 7) return rtf.format(Math.round(s / 86400), "day");
-    return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "short" });
+    return d.toLocaleDateString(I.locale, { day: "2-digit", month: "short" });
   }
-  const diaMes = iso => new Date(iso).toLocaleDateString("pt-BR", { day: "2-digit", month: "short", year: "numeric" });
+  const diaMes = iso => new Date(iso).toLocaleDateString(I.locale, { day: "2-digit", month: "short", year: "numeric" });
   const revistaBusca = nome => "https://europepmc.org/search?query=" + encodeURIComponent('JOURNAL:"' + nome + '"');
   function atualizadoTxt(iso) {
     const at = new Date(iso);
     return at.toDateString() === new Date().toDateString()
-      ? "hoje às " + at.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })
-      : at.toLocaleDateString("pt-BR", { day: "2-digit", month: "long" });
+      ? I.t("hoje às " + at.toLocaleTimeString(I.locale, { hour: "2-digit", minute: "2-digit" }))
+      : at.toLocaleDateString(I.locale, { day: "2-digit", month: "long" });
   }
   function entrar(nodes) {
     if (RM) return;
     nodes.forEach((n, i) => n.animate([{ opacity: 0, transform: "translateY(10px)" }, { opacity: 1, transform: "none" }], { duration: 420, delay: Math.min(i, 10) * 40, easing: "cubic-bezier(.2,.8,.2,1)", fill: "backwards" }));
   }
+  // etiqueta de idioma da notícia: PT, EN ou "traduzido"
+  const rotuloIdioma = n => I.lang === "pt" ? (n.idioma === "pt" ? "PT" : n.traduzido ? "traduzido do inglês" : "EN")
+    : (n.traduzido ? I.t("traduzido") : (n.idioma || "en").toUpperCase());
   const linhaNoticia = n =>
-    '<li><a class="row" href="' + esc(n.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="t" data-t="' + esc(n.tema) + '">' + esc(n.tema) + '</span><span class="src">' + esc(n.fonte) + '</span><span class="dot">' + esc(quando(n.data)) + '</span><span class="dot"' + (n.traduzido ? ' title="Original em inglês: ' + esc(n.titulo_original) + '"' : "") + ">" + (n.idioma === "pt" ? "PT" : n.traduzido ? "traduzido do inglês" : "EN") + "</span></div>" +
-    "<h3>" + esc(n.titulo) + '<span class="ext">↗</span></h3>' + (n.resumo && (n.idioma === "pt" || n.resumo_original) ? "<p>" + esc(n.resumo) + "</p>" : "") + "</a></li>";
+    '<li><a class="row" href="' + esc(n.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="t" data-t="' + esc(n.tema) + '">' + esc(n.tema) + '</span><span class="src">' + esc(n.fonte) + '</span><span class="dot">' + esc(quando(n.data)) + '</span><span class="dot">' + esc(rotuloIdioma(n)) + "</span></div>" +
+    "<h3>" + esc(n.titulo) + '<span class="ext">↗</span></h3>' + (n.resumo && (I.lang === "pt" ? (n.idioma === "pt" || n.resumo_original) : n.mostrarResumo) ? "<p>" + esc(n.resumo) + "</p>" : "") + "</a></li>";
   const linhaPublicacao = a =>
     '<li><a class="row" href="' + esc(a.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="pill j" style="--j:' + corDe(a.revista) + '">' + esc(a.revista) + '</span><span>' + esc(diaMes(a.data)) + "</span>" +
-    (a.acesso_aberto ? '<span class="oa">acesso aberto</span>' : "") + (a.traduzido ? '<span class="dot" title="Original em inglês: ' + esc(a.titulo_original) + '">traduzido do inglês</span>' : "") + "</div><h3>" + esc(a.titulo) + '<span class="ext">↗</span></h3>' + (a.autores ? "<p>" + esc(a.autores) + "</p>" : "") + "</a></li>";
+    (a.acesso_aberto ? '<span class="oa">acesso aberto</span>' : "") + (a.traduzido ? '<span class="dot">' + esc(I.lang === "pt" ? "traduzido do inglês" : I.t("traduzido")) + "</span>" : "") + "</div><h3>" + esc(a.titulo) + '<span class="ext">↗</span></h3>' + (a.autores ? "<p>" + esc(a.autores) + "</p>" : "") + "</a></li>";
   let PESQ = {}; // id → pesquisadora (preenchido quando data/artigos.json carrega)
   function cartaoArtigo(a) {
     const r = a.revista || {};
@@ -181,7 +205,7 @@
         arts.map(a => ({ tipo: "Estudo", nome: a.titulo_curto, href: RAIZ + a.url, txt: [a.titulo_curto, a.titulo, a.titulo_pt, a.resumo, (a.tags || []).join(" "), (a.revista || {}).nome, a.autores_curto, a.selo].join(" ") })),
         (da.temas || []).filter(t => arts.some(a => (a.temas || []).includes(t.id))).map(t => ({ tipo: "Tema", nome: t.nome, href: RAIZ + "artigos/#" + t.id, cor: t.cor, txt: t.nome + " " + t.sobre })),
         (da.pesquisadoras || []).map(p => ({ tipo: "Pesquisadora", nome: p.nome, href: RAIZ + "artigos/?pesquisadora=" + p.id, cor: p.cor, txt: p.nome + " " + p.vinculo })),
-        (dn.noticias || []).filter(n => n.idioma === "pt" || n.traduzido).map(n => ({ tipo: "Notícia", nome: n.titulo, href: n.url, fora: true, txt: [n.titulo, n.resumo, n.fonte, n.tema].join(" ") })));
+        (dn.noticias || []).filter(n => I.lang !== "pt" || n.idioma === "pt" || n.traduzido).map(n => ({ tipo: "Notícia", nome: n.titulo, href: n.url, fora: true, txt: [n.titulo, n.resumo, n.fonte, n.tema].join(" ") })));
       itens.forEach(i => { i.busca = norm(i.txt); });
     });
     const COR_TIPO = { "Estudo": "#2F5BEA", "Notícia": "#14864A" };
@@ -216,7 +240,7 @@
     fraseDoDia();
     buscaInicio();
     const h = new Date().getHours();
-    $("#saudacao").textContent = (h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite") + " · " + new Date().toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long" });
+    $("#saudacao").textContent = I.t(h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite") + " · " + new Date().toLocaleDateString(I.locale, { weekday: "long", day: "numeric", month: "long" });
     getJSON("data/artigos.json").then(d => {
       const arts = d.artigos || [];
       // em destaque: o artigo publicado mais recente de cada pesquisadora
@@ -229,7 +253,7 @@
           '<div class="dc-img" role="img" aria-label="' + esc(a.capa_alt || "") + '" style="background-image:url(\'' + RAIZ + esc(a.capa) + '\')"></div>' +
           '<div class="dc-body"><div class="pesq-head"><span class="av" aria-hidden="true">' + esc(p.iniciais) + "</span><div><b>" + esc(p.nome) + "</b><span>" + esc(p.vinculo || "") + "</span></div></div>" +
           (a.primeira_autora === p.id ? '<span class="autora">Autora principal</span>' : "") +
-          '<span class="pill j" style="--j:' + corDe(r.nome || "") + '">Publicado em ' + esc(r.nome || "") + (r.ano ? " · " + esc(r.ano) : "") + "</span>" +
+          '<span class="pill j" style="--j:' + corDe(r.nome || "") + '">' + esc(I.t("Publicado em")) + " " + esc(r.nome || "") + (r.ano ? " · " + esc(r.ano) : "") + "</span>" +
           "<h3>" + esc(a.titulo_curto) + "</h3><p>" + esc(a.resumo) + '</p><span class="go">Ler o estudo completo →</span></div></a>' +
           '<a class="dc-todos" href="' + RAIZ + "artigos/?pesquisadora=" + esc(p.id) + '">Ver todos os ' + dela.length + " estudos de " + esc(nome1) + " →</a></article>";
       }).join("");
@@ -242,7 +266,7 @@
       const ns = d.noticias || [];
       // as 3 mais relevantes do dia (o robô já as ordena), no máximo 2 da mesma fonte
       const porFonte = {}, escolha = [];
-      for (const n of ns.filter(n => n.idioma === "pt" || n.traduzido)) {
+      for (const n of ns.filter(n => I.lang !== "pt" || n.idioma === "pt" || n.traduzido)) {
         if (escolha.length === 3) break;
         if ((porFonte[n.fonte] || 0) < 2) { porFonte[n.fonte] = (porFonte[n.fonte] || 0) + 1; escolha.push(n); }
       }

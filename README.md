@@ -36,6 +36,16 @@ Pesquisadoras em destaque: **Patrícia Lius Melo Alves** (Uniso) e **Juliana Mac
 | [Celulose de bactéria para tirar remédios e hormônios da água](https://carvalhothatc-a11y.github.io/genoevidence/artigos/celulose-remedios-agua/) | Meio ambiente | Molecules, 2024 · [DOI 10.3390/molecules29020448](https://doi.org/10.3390/molecules29020448) |
 | [TP53 e EGFR juntos no câncer de pulmão: o que isso muda para pacientes brasileiros](https://carvalhothatc-a11y.github.io/genoevidence/artigos/tp53-egfr-pulmao/) | Genética | Brazilian Journal of Medical and Biological Research, 2023 · [DOI 10.1590/1414-431X2023e12488](https://doi.org/10.1590/1414-431X2023e12488) |
 
+## Idiomas
+
+O app tem três idiomas: português, inglês e espanhol. O botão de idioma fica no topo (🌐 PT · EN · ES) e a escolha fica guardada no aparelho; quem abre o app pela primeira vez vê o idioma do próprio celular ou computador (se não for nenhum dos três, português).
+
+- Textos fixos (menus, botões, avisos): dicionário em `assets/js/i18n.js`.
+- Temas, pesquisadoras e cartões dos estudos: campo `i18n` em `data/artigos.json`.
+- Frase do dia: campos `en`, `es`, `fonte_en` e `fonte_es` em `data/frases.json`.
+- Página de cada estudo: `artigo.en.json` e `artigo.es.json` ao lado do `artigo.json`.
+- Notícias: o robô traduz sozinho (campo `i18n` de cada notícia).
+
 ## Estrutura do projeto
 
 ```
@@ -45,19 +55,21 @@ artigos/index.html          aba Temas (estudos por tema)
 revistas/index.html         aba Revistas
 sobre/index.html            página Sobre
 r337h/                      estudo completo R337H (página, r337h.js e imagens)
-artigos/micrurus-spixii/    página de leitura de um artigo (conteúdo em artigo.json)
+r337h/en/, r337h/es/        a mesma página em inglês e espanhol (textos do r337h.js em r337h-i18n.js)
+artigos/micrurus-spixii/    página de leitura de um artigo (conteúdo em artigo.json; inglês e espanhol em artigo.en.json e artigo.es.json)
 artigos/_modelo/            modelo para criar um artigo novo
 data/artigos.json           lista de artigos explicados (aba Artigos e destaque do Início)
 data/noticias.json          notícias e publicações do dia (gerado automaticamente às 7h)
 data/frases.json            frases de cientistas para a “frase do dia” do Início
 assets/css/shell.css        visual das abas
 assets/css/base.css, artigo.css   visual da página de leitura
+assets/js/i18n.js           idiomas (português, inglês e espanhol): seletor no topo e tradução dos textos fixos
 assets/js/shell.js          barra do topo, barra de abas e conteúdo das abas
 assets/js/artigo.js         monta a página de leitura a partir do artigo.json
 assets/js/app.js, dna.js    menu lateral e animações da página de leitura
 assets/js/pwa.js            instalar como app e modo offline
 assets/js/hero3d.js         DNA em 3D da abertura do Início
-scripts/atualizar_noticias.py   robô que escolhe as notícias mais relevantes do dia e traduz as estrangeiras
+scripts/atualizar_noticias.py   robô que escolhe as notícias mais relevantes do dia e as traduz para os três idiomas
 docs/COMO-ADICIONAR-ARTIGO.md   passo a passo para publicar um artigo novo
 manifest.webmanifest, sw.js, icons/   aplicativo instalável e modo offline
 ```

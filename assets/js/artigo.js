@@ -9,13 +9,16 @@
   const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const COR = { his: "#FF5470", arg: "#4D7CFF", amber: "#FFB23F", ok: "#5FD39A", violet: "#A58CFF", teal: "#3FC1C9" };
   const cor = c => COR[c] || c || COR.arg;
-  const num = v => Number(v).toLocaleString("pt-BR", { maximumFractionDigits: 2 });
-  const data = iso => new Date(iso + "T12:00:00").toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" });
+  const I = window.GE_I18N || { lang: "pt", locale: "pt-BR" };
+  const num = v => Number(v).toLocaleString(I.locale, { maximumFractionDigits: 2 });
+  const data = iso => new Date(iso + "T12:00:00").toLocaleDateString(I.locale, { day: "2-digit", month: "long", year: "numeric" });
   const main = $("#artigo");
   const RAIZ = (document.querySelector('meta[name="ge-root"]') || {}).content || "../../";
 
-  fetch(main.dataset.dados || "artigo.json", { cache: "no-cache" })
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  // no inglês e no espanhol, usa artigo.en.json / artigo.es.json; se não existir, o original em português
+  const arquivo = main.dataset.dados || "artigo.json";
+  const buscar = u => fetch(u, { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  (I.lang !== "pt" ? buscar(arquivo.replace(/\.json$/, "." + I.lang + ".json")).catch(() => buscar(arquivo)) : buscar(arquivo))
     .then(montar)
     .catch(err => {
       main.innerHTML = '<div class="wrap s"><p class="loading">Não foi possível carregar este artigo (' + esc(err.message) + "). Se você abriu o arquivo direto do computador, use um servidor local (veja o README).</p></div>";
@@ -266,12 +269,12 @@
     const hero = document.createElement("section");
     hero.className = "hero art-hero"; hero.id = "top";
     hero.innerHTML = '<canvas id="artCanvas" aria-hidden="true"></canvas><div class="hero-grid"></div>' +
-      '<div class="wrap hero-in" lang="pt-BR"><div>' +
+      '<div class="wrap hero-in"><div>' +
       '<p class="eyebrow crumb"><a href="' + RAIZ + '">GenoEvidence</a> <span aria-hidden="true">/</span> <a href="' + RAIZ + "artigos/" + (d.tema_id ? "#" + esc(d.tema_id) : "") + '">' + esc(d.tema || "Temas") + '</a> <span aria-hidden="true">/</span> <span style="color:var(--text)">' + esc(d.breadcrumb || d.titulo_curto) + "</span></p>" +
       '<div class="kind-row"><span class="badge tipo">' + esc(d.rotulo || "Artigo publicado") + "</span>" + (rv.nome ? '<a class="badge rev" href="' + esc(rv.site || rv.url) + '" target="_blank" rel="noopener">Revista ' + esc(rv.nome) + (rv.ano ? " · " + esc(rv.ano) : "") + "</a>" : "") + "</div>" +
       '<h1 class="art-title">' + esc(d.titulo_curto || d.titulo) + "</h1>" +
       // título completo: em português; se o original for em outra língua, ele aparece embaixo
-      '<p class="sub art-full">' + esc(d.titulo_pt || d.titulo) + (d.titulo_pt ? '<span class="art-orig">Título original em inglês: ' + esc(d.titulo) + "</span>" : "") + "</p>" +
+      '<p class="sub art-full">' + esc(d.titulo_pt || d.titulo) + (d.titulo_pt ? '<span class="art-orig">' + esc(d.rotulo_original || "Título original em inglês:") + " " + esc(d.titulo) + "</span>" : "") + "</p>" +
       '<p class="authors art-authors">' + autores.map(a => "<span" + (a.destaque ? ' class="hl" title="Pesquisadora em destaque no GenoEvidence"' : "") + ">" + esc(a.nome || a) + "</span>").join("") + "</p>" +
       '<div class="cta-row">' +
       (rv.url ? '<a class="cta journal-cta" href="' + esc(rv.url) + '" target="_blank" rel="noopener">Ler na revista <span aria-hidden="true">↗</span></a>' : "") +

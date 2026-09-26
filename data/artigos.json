@@ -5,55 +5,145 @@
       "id": "genetica",
       "nome": "Genética",
       "cor": "#7B4DE0",
-      "sobre": "Genes, mutações e como elas influenciam a saúde."
+      "sobre": "Genes, mutações e como elas influenciam a saúde.",
+      "i18n": {
+        "en": {
+          "nome": "Genetics",
+          "sobre": "Genes, mutations and how they affect health."
+        },
+        "es": {
+          "nome": "Genética",
+          "sobre": "Genes, mutaciones y cómo influyen en la salud."
+        }
+      }
     },
     {
       "id": "biologia-molecular",
       "nome": "Biologia molecular",
       "cor": "#2F5BEA",
-      "sobre": "DNA, RNA e proteínas: o que acontece dentro das células."
+      "sobre": "DNA, RNA e proteínas: o que acontece dentro das células.",
+      "i18n": {
+        "en": {
+          "nome": "Molecular biology",
+          "sobre": "DNA, RNA and proteins: what happens inside cells."
+        },
+        "es": {
+          "nome": "Biología molecular",
+          "sobre": "ADN, ARN y proteínas: lo que ocurre dentro de las células."
+        }
+      }
     },
     {
       "id": "bioinformatica",
       "nome": "Bioinformática",
       "cor": "#0E9AA7",
-      "sobre": "Computadores e bancos de dados para entender genes e proteínas."
+      "sobre": "Computadores e bancos de dados para entender genes e proteínas.",
+      "i18n": {
+        "en": {
+          "nome": "Bioinformatics",
+          "sobre": "Computers and databases to understand genes and proteins."
+        },
+        "es": {
+          "nome": "Bioinformática",
+          "sobre": "Computadoras y bases de datos para entender genes y proteínas."
+        }
+      }
     },
     {
       "id": "oncologia",
       "nome": "Oncologia",
       "cor": "#E0385A",
-      "sobre": "Câncer: como surge, como se trata e o que funciona."
+      "sobre": "Câncer: como surge, como se trata e o que funciona.",
+      "i18n": {
+        "en": {
+          "nome": "Oncology",
+          "sobre": "Cancer: how it arises, how it is treated and what works."
+        },
+        "es": {
+          "nome": "Oncología",
+          "sobre": "Cáncer: cómo surge, cómo se trata y qué funciona."
+        }
+      }
     },
     {
       "id": "microbiologia",
       "nome": "Microbiologia",
       "cor": "#14864A",
-      "sobre": "Bactérias: as que causam infecções e as que ajudam a ciência."
+      "sobre": "Bactérias: as que causam infecções e as que ajudam a ciência.",
+      "i18n": {
+        "en": {
+          "nome": "Microbiology",
+          "sobre": "Bacteria: those that cause infections and those that help science."
+        },
+        "es": {
+          "nome": "Microbiología",
+          "sobre": "Bacterias: las que causan infecciones y las que ayudan a la ciencia."
+        }
+      }
     },
     {
       "id": "biomateriais",
       "nome": "Biomateriais e nanotecnologia",
       "cor": "#D98A0B",
-      "sobre": "Materiais para curar feridas, levar remédios e reconstruir tecidos."
+      "sobre": "Materiais para curar feridas, levar remédios e reconstruir tecidos.",
+      "i18n": {
+        "en": {
+          "nome": "Biomaterials and nanotechnology",
+          "sobre": "Materials that heal wounds, deliver drugs and rebuild tissues."
+        },
+        "es": {
+          "nome": "Biomateriales y nanotecnología",
+          "sobre": "Materiales para curar heridas, llevar fármacos y reconstruir tejidos."
+        }
+      }
     },
     {
       "id": "toxinologia",
       "nome": "Toxinologia",
       "cor": "#A21C5A",
-      "sobre": "Venenos de animais e os soros que protegem."
+      "sobre": "Venenos de animais e os soros que protegem.",
+      "i18n": {
+        "en": {
+          "nome": "Toxinology",
+          "sobre": "Animal venoms and the antivenoms that protect us."
+        },
+        "es": {
+          "nome": "Toxinología",
+          "sobre": "Venenos de animales y los antivenenos que protegen."
+        }
+      }
     },
     {
       "id": "saude-publica",
       "nome": "Saúde pública e SUS",
       "cor": "#0369A1",
-      "sobre": "Tratamentos, evidências e decisões que afetam milhões de pessoas."
+      "sobre": "Tratamentos, evidências e decisões que afetam milhões de pessoas.",
+      "i18n": {
+        "en": {
+          "nome": "Public health",
+          "sobre": "Treatments, evidence and decisions that affect millions of people."
+        },
+        "es": {
+          "nome": "Salud pública",
+          "sobre": "Tratamientos, evidencias y decisiones que afectan a millones de personas."
+        }
+      }
     },
     {
       "id": "meio-ambiente",
       "nome": "Meio ambiente",
       "cor": "#5B8C12",
-      "sobre": "Ciência para limpar a água e proteger a natureza."
+      "sobre": "Ciência para limpar a água e proteger a natureza.",
+      "i18n": {
+        "en": {
+          "nome": "Environment",
+          "sobre": "Science to clean water and protect nature."
+        },
+        "es": {
+          "nome": "Medio ambiente",
+          "sobre": "Ciencia para limpiar el agua y proteger la naturaleza."
+        }
+      }
     }
   ],
   "pesquisadoras": [
@@ -62,14 +152,30 @@
       "nome": "Patrícia Lius Melo Alves",
       "vinculo": "Universidade de Sorocaba (Uniso)",
       "iniciais": "PA",
-      "cor": "#7B4DE0"
+      "cor": "#7B4DE0",
+      "i18n": {
+        "en": {
+          "vinculo": "University of Sorocaba (Uniso), Brazil"
+        },
+        "es": {
+          "vinculo": "Universidad de Sorocaba (Uniso), Brasil"
+        }
+      }
     },
     {
       "id": "juliana",
       "nome": "Juliana Machado Rugolo",
       "vinculo": "HC da Faculdade de Medicina de Botucatu (Unesp)",
       "iniciais": "JR",
-      "cor": "#0E9AA7"
+      "cor": "#0E9AA7",
+      "i18n": {
+        "en": {
+          "vinculo": "Hospital das Clínicas, Botucatu Medical School (Unesp), Brazil"
+        },
+        "es": {
+          "vinculo": "Hospital das Clínicas de la Facultad de Medicina de Botucatu (Unesp), Brasil"
+        }
+      }
     }
   ],
   "artigos": [
@@ -93,7 +199,31 @@
         "bioinformatica"
       ],
       "pesquisadoras": [],
-      "estudo_completo": true
+      "estudo_completo": true,
+      "i18n": {
+        "en": {
+          "titulo_curto": "The R337H variant in the TP53 gene and Li-Fraumeni syndrome",
+          "titulo_pt": "In silico analysis of the R337H mutation in the TP53 gene: relationship with Li-Fraumeni syndrome",
+          "selo": "Ongoing study",
+          "resumo": "Ongoing study: the swap of arginine for histidine in the p53 protein, very common in Brazil, analyzed with databases, 3D structure and all the evidence.",
+          "tags": [
+            "Bioinformatics",
+            "TP53"
+          ],
+          "capa_alt": "3D structure of the p53 protein"
+        },
+        "es": {
+          "titulo_curto": "La variante R337H en el gen TP53 y el síndrome de Li-Fraumeni",
+          "titulo_pt": "Análisis in silico de la mutación R337H en el gen TP53: relación con el síndrome de Li-Fraumeni",
+          "selo": "Estudio en curso",
+          "resumo": "Estudio en curso: el cambio de arginina por histidina en la proteína p53, muy común en Brasil, analizado con bases de datos, estructura 3D y todas las evidencias.",
+          "tags": [
+            "Bioinformática",
+            "TP53"
+          ],
+          "capa_alt": "Estructura 3D de la proteína p53"
+        }
+      }
     },
     {
       "id": "micrurus-spixii",
@@ -127,7 +257,31 @@
       ],
       "pesquisadoras": [
         "patricia"
-      ]
+      ],
+      "i18n": {
+        "en": {
+          "titulo_curto": "Amazonian coral snake venom in muscle, and how much the antivenom protects",
+          "titulo_pt": "Histological analysis of Micrurus spixii (Amazonian coral snake) venom myotoxicity in chick biventer cervicis muscle and its neutralization by antielapidic serum",
+          "resumo": "The venom dropped healthy muscle cells from 66% to less than 1%. The coral snake antivenom protected, but only partly: better against swelling and cell death.",
+          "tags": [
+            "Toxinology",
+            "Histology",
+            "Antivenom"
+          ],
+          "capa_alt": "Pink-stained muscle section seen under the microscope"
+        },
+        "es": {
+          "titulo_curto": "El veneno de la serpiente coral amazónica en el músculo, y cuánto protege el suero",
+          "titulo_pt": "Análisis histológico de la miotoxicidad del veneno de Micrurus spixii (serpiente coral amazónica) en el músculo biventer cervicis de pollito y su neutralización por suero antielapídico",
+          "resumo": "El veneno redujo las células musculares sanas de 66% a menos de 1%. El suero antielapídico protegió, pero solo en parte: mejor contra la hinchazón y la muerte celular.",
+          "tags": [
+            "Toxinología",
+            "Histología",
+            "Suero antiofídico"
+          ],
+          "capa_alt": "Corte de músculo teñido de rosa visto al microscopio"
+        }
+      }
     },
     {
       "id": "ibrutinibe-leucemia",
@@ -161,6 +315,28 @@
         "doi": "10.1016/j.htct.2025.106234",
         "url": "https://doi.org/10.1016/j.htct.2025.106234",
         "site": "https://www.htct.com.br"
+      },
+      "i18n": {
+        "en": {
+          "titulo_curto": "Ibrutinib plus rituximab against chronic lymphocytic leukemia: more time without disease progression",
+          "resumo": "Pooling the two large clinical trials, ibrutinib plus rituximab cut the risk of leukemia progression by 59%, with safety similar to the treatment used in Brazil's public health system.",
+          "tags": [
+            "Leukemia",
+            "Meta-analysis"
+          ],
+          "capa_alt": "Illustration of blood cells",
+          "titulo_pt": "Efficacy and safety analysis of the use of ibrutinib associated with rituximab for the first-line treatment of patients with chronic lymphocytic leukaemia"
+        },
+        "es": {
+          "titulo_curto": "Ibrutinib con rituximab contra la leucemia linfocítica crónica: más tiempo sin que la enfermedad avance",
+          "titulo_pt": "Análisis de eficacia y seguridad del uso de ibrutinib asociado a rituximab en el tratamiento de primera línea de pacientes con leucemia linfocítica crónica",
+          "resumo": "Al reunir los dos grandes ensayos clínicos, ibrutinib con rituximab redujo en 59% el riesgo de que la leucemia avance, con seguridad similar a la del tratamiento del sistema público de salud de Brasil.",
+          "tags": [
+            "Leucemia",
+            "Metaanálisis"
+          ],
+          "capa_alt": "Ilustración de células de la sangre"
+        }
       }
     },
     {
@@ -195,6 +371,28 @@
         "doi": "10.3390/macromol5030039",
         "url": "https://doi.org/10.3390/macromol5030039",
         "site": "https://www.mdpi.com/journal/macromol"
+      },
+      "i18n": {
+        "en": {
+          "titulo_curto": "A cellulose dressing that fights resistant bacteria",
+          "resumo": "A film made of bacterial cellulose, gelatin and nisin blocked all 7 bacteria tested, including resistant hospital strains, and showed antioxidant activity.",
+          "tags": [
+            "Wound dressings",
+            "Bacterial resistance"
+          ],
+          "capa_alt": "Illustration of cellulose fibers",
+          "titulo_pt": "Development of a Drug Delivery System with Bacterial Cellulose and Gelatin: Physicochemical and Microbiological Evaluation"
+        },
+        "es": {
+          "titulo_curto": "Un apósito de celulosa que combate bacterias resistentes",
+          "titulo_pt": "Desarrollo de un sistema de liberación de fármacos con celulosa bacteriana y gelatina: evaluación fisicoquímica y microbiológica",
+          "resumo": "Una película de celulosa bacteriana, gelatina y nisina bloqueó las 7 bacterias probadas, incluidas cepas resistentes de hospital, y mostró acción antioxidante.",
+          "tags": [
+            "Apósitos",
+            "Resistencia bacteriana"
+          ],
+          "capa_alt": "Ilustración de fibras de celulosa"
+        }
       }
     },
     {
@@ -229,6 +427,28 @@
         "doi": "10.1017/S0266462324000369",
         "url": "https://doi.org/10.1017/S0266462324000369",
         "site": "https://www.cambridge.org/core/journals/international-journal-of-technology-assessment-in-health-care"
+      },
+      "i18n": {
+        "en": {
+          "titulo_curto": "Listening to patients in health decisions: how to bring qualitative research together",
+          "resumo": "A map of 31 documents that teach how to combine qualitative research, with the voice of patients and families, in decisions about health technologies.",
+          "tags": [
+            "Health technology assessment",
+            "Qualitative research"
+          ],
+          "capa_alt": "Illustration of a network with speech bubbles",
+          "titulo_pt": "Mapping frameworks for synthesizing qualitative evidence in health technology assessment"
+        },
+        "es": {
+          "titulo_curto": "Escuchar a los pacientes en las decisiones de salud: cómo reunir la investigación cualitativa",
+          "titulo_pt": "Mapeo de los marcos para sintetizar evidencia cualitativa en la evaluación de tecnologías sanitarias",
+          "resumo": "Un mapa de 31 documentos que enseñan a reunir la investigación cualitativa, con la voz de pacientes y familias, en las decisiones sobre tecnologías sanitarias.",
+          "tags": [
+            "Evaluación de tecnologías",
+            "Investigación cualitativa"
+          ],
+          "capa_alt": "Ilustración de una red con globos de diálogo"
+        }
       }
     },
     {
@@ -264,7 +484,29 @@
         "url": "https://doi.org/10.3390/molecules29204890",
         "site": "https://www.mdpi.com/journal/molecules"
       },
-      "primeira_autora": "patricia"
+      "primeira_autora": "patricia",
+      "i18n": {
+        "en": {
+          "titulo_curto": "Nanotechnology in anti-aging cosmetics: what science has already tested",
+          "resumo": "A review of 38 studies: nanoparticles, liposomes and niosomes dominate anti-aging cosmetics, but longer and larger trials are still missing.",
+          "tags": [
+            "Nanotechnology",
+            "Cosmetics"
+          ],
+          "capa_alt": "Illustration of nanoparticles",
+          "titulo_pt": "Unveiling New Horizons: Advancing Technologies in Cosmeceuticals for Anti-Aging Solutions"
+        },
+        "es": {
+          "titulo_curto": "Nanotecnología en cosméticos antienvejecimiento: lo que la ciencia ya probó",
+          "titulo_pt": "Revelando nuevos horizontes: avances tecnológicos en cosmecéuticos para soluciones antienvejecimiento",
+          "resumo": "Revisión de 38 estudios: nanopartículas, liposomas y niosomas dominan los cosméticos antienvejecimiento, pero faltan pruebas más largas y más grandes.",
+          "tags": [
+            "Nanotecnología",
+            "Cosméticos"
+          ],
+          "capa_alt": "Ilustración de nanopartículas"
+        }
+      }
     },
     {
       "id": "erlotinibe-gefitinibe",
@@ -297,6 +539,28 @@
         "doi": "10.32635/2176-9745.RBC.2024v70n3.4656",
         "url": "https://doi.org/10.32635/2176-9745.RBC.2024v70n3.4656",
         "site": "https://rbc.inca.gov.br"
+      },
+      "i18n": {
+        "en": {
+          "titulo_curto": "Do targeted lung cancer drugs work outside trials? What the real world shows",
+          "titulo_pt": "Systematic review of observational studies on the use of erlotinib and gefitinib in the treatment of non-small cell lung cancer",
+          "resumo": "In the real world, gefitinib and erlotinib gave more time without lung cancer progression than chemotherapy, with adherence above 85%.",
+          "tags": [
+            "Lung cancer",
+            "Real world"
+          ],
+          "capa_alt": "Illustration of survival curves"
+        },
+        "es": {
+          "titulo_curto": "¿Los fármacos dirigidos contra el cáncer de pulmón funcionan fuera de los ensayos? Lo que muestra el mundo real",
+          "titulo_pt": "Revisión sistemática de estudios observacionales sobre el uso de erlotinib y gefitinib en el tratamiento del cáncer de pulmón de células no pequeñas",
+          "resumo": "En el mundo real, gefitinib y erlotinib dieron más tiempo sin progresión del cáncer de pulmón que la quimioterapia, con adherencia superior al 85%.",
+          "tags": [
+            "Cáncer de pulmón",
+            "Mundo real"
+          ],
+          "capa_alt": "Ilustración de curvas de supervivencia"
+        }
       }
     },
     {
@@ -331,6 +595,28 @@
         "doi": "10.1007/s42452-024-06101-y",
         "url": "https://doi.org/10.1007/s42452-024-06101-y",
         "site": "https://link.springer.com/journal/42452"
+      },
+      "i18n": {
+        "en": {
+          "titulo_curto": "A bacterium that cleans water contaminated with lead, copper and cadmium",
+          "resumo": "The bacterium Bacillus subtilis removed up to 100% of the lead, 92.3% of the cadmium and 89% of the copper from water.",
+          "tags": [
+            "Bioremediation",
+            "Heavy metals"
+          ],
+          "capa_alt": "Bacteria seen under the electron microscope",
+          "titulo_pt": "Bacillus subtilis as an effective tool for bioremediation of lead, copper and cadmium in water"
+        },
+        "es": {
+          "titulo_curto": "Una bacteria que limpia el agua contaminada con plomo, cobre y cadmio",
+          "titulo_pt": "Bacillus subtilis como herramienta eficaz para la biorremediación de plomo, cobre y cadmio en el agua",
+          "resumo": "La bacteria Bacillus subtilis eliminó del agua hasta el 100% del plomo, el 92,3% del cadmio y el 89% del cobre.",
+          "tags": [
+            "Biorremediación",
+            "Metales pesados"
+          ],
+          "capa_alt": "Bacterias vistas al microscopio electrónico"
+        }
       }
     },
     {
@@ -364,6 +650,28 @@
         "doi": "10.1016/j.carpta.2024.100549",
         "url": "https://doi.org/10.1016/j.carpta.2024.100549",
         "site": "https://www.sciencedirect.com/journal/carbohydrate-polymer-technologies-and-applications"
+      },
+      "i18n": {
+        "en": {
+          "titulo_curto": "A chitosan, collagen and hyaluronic acid “scaffold” that helps form bone",
+          "resumo": "A scaffold made of chitosan, collagen and hyaluronic acid made bone cells mature earlier and deposit more minerals.",
+          "tags": [
+            "Tissue engineering",
+            "Bone"
+          ],
+          "capa_alt": "Illustration of scaffold layers",
+          "titulo_pt": "Enhanced bone matrix formation through a dense lamellar scaffold of chitosan, collagen type I, and hyaluronic acid"
+        },
+        "es": {
+          "titulo_curto": "Un “andamio” de quitosano, colágeno y ácido hialurónico que ayuda a formar hueso",
+          "titulo_pt": "Mayor formación de matriz ósea con un andamio laminar denso de quitosano, colágeno tipo I y ácido hialurónico",
+          "resumo": "Un andamio de quitosano, colágeno y ácido hialurónico hizo que las células óseas maduraran antes y depositaran más minerales.",
+          "tags": [
+            "Ingeniería de tejidos",
+            "Hueso"
+          ],
+          "capa_alt": "Ilustración de capas de un andamio"
+        }
       }
     },
     {
@@ -398,7 +706,29 @@
         "url": "https://doi.org/10.55905/oelv22n4-178",
         "site": "https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel"
       },
-      "primeira_autora": "patricia"
+      "primeira_autora": "patricia",
+      "i18n": {
+        "en": {
+          "titulo_curto": "Jucá inside nanocellulose: a natural dressing against bacteria",
+          "titulo_pt": "Antimicrobial activity of bacterial nanocellulose containing Caesalpinia ferrea",
+          "resumo": "Nanocellulose membranes loaded with jucá extract released the extract for up to 40 hours and blocked three bacteria.",
+          "tags": [
+            "Medicinal plants",
+            "Wound dressings"
+          ],
+          "capa_alt": "Lab plates with bacteria-free halos"
+        },
+        "es": {
+          "titulo_curto": "El jucá dentro de la nanocelulosa: un apósito natural contra bacterias",
+          "titulo_pt": "Actividad antimicrobiana de la nanocelulosa bacteriana que contiene Caesalpinia ferrea",
+          "resumo": "Membranas de nanocelulosa con extracto de jucá liberaron el extracto hasta por 40 horas y bloquearon tres bacterias.",
+          "tags": [
+            "Plantas medicinales",
+            "Apósitos"
+          ],
+          "capa_alt": "Placas de laboratorio con halos sin bacterias"
+        }
+      }
     },
     {
       "id": "ia-conitec",
@@ -432,6 +762,28 @@
         "doi": "10.1017/S0266462324000163",
         "url": "https://doi.org/10.1017/S0266462324000163",
         "site": "https://www.cambridge.org/core/journals/international-journal-of-technology-assessment-in-health-care"
+      },
+      "i18n": {
+        "en": {
+          "titulo_curto": "An artificial intelligence that reads Conitec's reports and predicts the decision",
+          "resumo": "A neural network read 432 reports from Conitec, the Brazilian health technology agency, and got 76.9% of the decisions on what enters the public health system right.",
+          "tags": [
+            "Artificial intelligence",
+            "Public health system"
+          ],
+          "capa_alt": "Illustration of a data network",
+          "titulo_pt": "Application of natural language processing to predict final recommendation of Brazilian health technology assessment reports"
+        },
+        "es": {
+          "titulo_curto": "Una inteligencia artificial que lee los informes de la Conitec y predice la decisión",
+          "titulo_pt": "Aplicación del procesamiento del lenguaje natural para predecir la recomendación final de los informes brasileños de evaluación de tecnologías sanitarias",
+          "resumo": "Una red neuronal leyó 432 informes de la Conitec, la agencia brasileña de tecnologías sanitarias, y acertó el 76,9% de las decisiones sobre qué entra en el sistema público de salud.",
+          "tags": [
+            "Inteligencia artificial",
+            "Salud pública"
+          ],
+          "capa_alt": "Ilustración de una red de datos"
+        }
       }
     },
     {
@@ -466,6 +818,28 @@
         "doi": "10.3390/molecules29020448",
         "url": "https://doi.org/10.3390/molecules29020448",
         "site": "https://www.mdpi.com/journal/molecules"
+      },
+      "i18n": {
+        "en": {
+          "titulo_curto": "Bacterial cellulose to remove drugs and hormones from water",
+          "resumo": "Membranes of cellulose made by bacteria captured up to 88% of a contraceptive hormone present in water.",
+          "tags": [
+            "Water pollution",
+            "Bacterial cellulose"
+          ],
+          "capa_alt": "Illustration of molecules in water",
+          "titulo_pt": "Exploring Bacterial Cellulose and a Biosurfactant as Eco-Friendly Strategies for Addressing Pharmaceutical Contaminants"
+        },
+        "es": {
+          "titulo_curto": "Celulosa de bacteria para quitar fármacos y hormonas del agua",
+          "titulo_pt": "Explorando la celulosa bacteriana y un biosurfactante como estrategias ecológicas contra contaminantes farmacéuticos",
+          "resumo": "Membranas de celulosa producida por bacterias capturaron hasta el 88% de una hormona anticonceptiva presente en el agua.",
+          "tags": [
+            "Contaminación del agua",
+            "Celulosa bacteriana"
+          ],
+          "capa_alt": "Ilustración de moléculas en el agua"
+        }
       }
     },
     {
@@ -500,7 +874,29 @@
         "url": "https://doi.org/10.1590/1414-431X2023e12488",
         "site": "https://www.bjournal.org"
       },
-      "primeira_autora": "juliana"
+      "primeira_autora": "juliana",
+      "i18n": {
+        "en": {
+          "titulo_curto": "TP53 and EGFR together in lung cancer: what it changes for Brazilian patients",
+          "resumo": "In 70 lung tumors, almost half of those with a mutated EGFR also had a mutated TP53, and TP53 tended to worsen survival.",
+          "tags": [
+            "TP53",
+            "Lung cancer"
+          ],
+          "capa_alt": "Illustration of a DNA double helix",
+          "titulo_pt": "Concomitant TP53 mutation in early-stage resected EGFR-mutated non-small cell lung cancer: a narrative approach in a genetically admixed Brazilian cohort"
+        },
+        "es": {
+          "titulo_curto": "TP53 y EGFR juntos en el cáncer de pulmón: qué cambia para los pacientes brasileños",
+          "titulo_pt": "Mutación concomitante de TP53 en cáncer de pulmón de células no pequeñas con mutación de EGFR, en estadio temprano y operado: un enfoque narrativo en una cohorte brasileña genéticamente mestiza",
+          "resumo": "En 70 tumores de pulmón, casi la mitad de los que tenían EGFR mutado también tenían TP53 mutado, y el TP53 tendió a empeorar la supervivencia.",
+          "tags": [
+            "TP53",
+            "Cáncer de pulmón"
+          ],
+          "capa_alt": "Ilustración de una doble hélice de ADN"
+        }
+      }
     }
   ]
 }

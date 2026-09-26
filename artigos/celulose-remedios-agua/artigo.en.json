@@ -1,0 +1,384 @@
+{
+  "id": "celulose-remedios-agua",
+  "tipo": "artigo",
+  "rotulo": "Published study",
+  "arte": "particulas",
+  "arte_legenda": "illustration · drug molecules in water",
+  "tema": "Environment",
+  "tema_id": "meio-ambiente",
+  "titulo": "Exploring Bacterial Cellulose and a Biosurfactant as Eco-Friendly Strategies for Addressing Pharmaceutical Contaminants",
+  "titulo_curto": "Bacterial cellulose to remove drugs and hormones from water",
+  "breadcrumb": "Drugs in water",
+  "autores": [
+    {
+      "nome": "Nathália Roberta Cardoso Mendes Castanho",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Nathane de Marco",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Érika Leão Ajala Caetano",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Patrícia Lius Melo Alves",
+      "destaque": true,
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Thaisa Borim Pickler",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Natasha Lien de Almeida Ibanez",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Angela Faustino Jozala",
+      "afiliacao": "Pharmacy · Uniso"
+    },
+    {
+      "nome": "Denise Grotto",
+      "afiliacao": "Pharmacy · Uniso"
+    }
+  ],
+  "revista": {
+    "nome": "Molecules",
+    "cidade": "Basel, Switzerland (MDPI)",
+    "issn": "1420-3049",
+    "volume": "29",
+    "numero": "2",
+    "paginas": "article 448",
+    "ano": "2024",
+    "submetido": "2023-11-27",
+    "publicado": "2024-01-17",
+    "doi": "10.3390/molecules29020448",
+    "url": "https://doi.org/10.3390/molecules29020448",
+    "site": "https://www.mdpi.com/journal/molecules",
+    "pdf": "https://www.mdpi.com/1420-3049/29/2/448/pdf"
+  },
+  "palavras_chave": [
+    "Biosorption",
+    "Bacterial cellulose",
+    "Biosurfactant",
+    "Hormones",
+    "Micropollutants",
+    "Drugs"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "The problem",
+      "titulo": "Drugs that end up in rivers",
+      "texto": "Traces of medicines and hormones, such as those in birth control pills, reach the water and can cause harm even in very small amounts."
+    },
+    {
+      "rotulo": "What they did",
+      "titulo": "Three versions of a cellulose “sponge”",
+      "texto": "They tested membranes of cellulose made by bacteria, plain, freeze-dried or with a biosurfactant, to capture paracetamol and the hormone ethinylestradiol from water."
+    },
+    {
+      "rotulo": "What they found",
+      "titulo": "Great for the hormone",
+      "texto": "The cellulose captured up to 88% of the hormone and up to 31.8% of the paracetamol. The biosurfactant helped with paracetamol but hindered the hormone."
+    },
+    {
+      "rotulo": "Why it matters",
+      "titulo": "Greener water cleanup",
+      "texto": "Bacterial cellulose is natural and biodegradable and can help remove hormones from contaminated water. The biosurfactant still needs fine-tuning."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "88%",
+      "texto": "of the EE2 hormone captured by freeze-dried (lyophilized) cellulose",
+      "cor": "ok"
+    },
+    {
+      "valor": "74%",
+      "texto": "of the hormone captured by the plain cellulose membrane",
+      "cor": "teal"
+    },
+    {
+      "valor": "31.8%",
+      "texto": "of the paracetamol captured, the best result for this drug",
+      "cor": "amber"
+    },
+    {
+      "valor": "20 min",
+      "texto": "ideal time for the cellulose to capture the hormone",
+      "cor": "violet"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "The problem",
+      "eyebrow": "Context",
+      "titulo": "Water “micropollutants”",
+      "lede": "Painkillers, antibiotics, anti-inflammatories and hormones reach rivers through sewage and still lack well-defined safety limits.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Industry and everyday city life release substances into water in tiny amounts, the <strong>micropollutants</strong>. Among them are drugs and natural and synthetic hormones, such as estrone, estradiol, estriol and <strong>ethinylestradiol</strong>. There is evidence of toxicity to aquatic life, <strong>hormonal disruption</strong> and even encouragement of antibiotic resistance.</p><p>There is still no consensus on which amounts are safe for the environment and human health.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "The two contaminants studied",
+          "itens": [
+            {
+              "titulo": "Ethinylestradiol (EE2)",
+              "texto": "Hormone found in birth control pills. Even at extremely low concentrations, it can disrupt animals' hormonal systems.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Paracetamol",
+              "texto": "A widely used painkiller and fever reducer. In excess, it can damage the liver and kidneys; its long-term effects are hard to track.",
+              "cor": "amber"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>One way to remove these substances is <strong>sorption</strong>: a porous material “pulls” the contaminant out of the water, either into itself (absorption) or onto its surface (adsorption). The study tested <strong>bacterial cellulose</strong> as this material and, for the first time, combined it with a <strong>biosurfactant</strong>, a kind of “natural soap” produced by the bacterium <em>Bacillus subtilis</em>.</p>"
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "How it was done",
+      "eyebrow": "Method",
+      "titulo": "How the experiment was done",
+      "lede": "Three versions of the cellulose were immersed in contaminated water and monitored over time.",
+      "blocos": [
+        {
+          "tipo": "cartoes",
+          "titulo": "The three versions tested",
+          "itens": [
+            {
+              "titulo": "Plain cellulose",
+              "texto": "Whole bacterial cellulose membrane, with the surface water removed.",
+              "cor": "teal"
+            },
+            {
+              "titulo": "Cellulose + biosurfactant",
+              "texto": "Membrane left for 24 hours in a biosurfactant solution to absorb it.",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Freeze-dried cellulose",
+              "texto": "Cellulose frozen at −80 °C, freeze-dried for 48 hours and ground.",
+              "cor": "ok"
+            }
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Produce the cellulose",
+              "texto": "The bacterium Gluconacetobacter xylinus grew for 7 days at 30 °C in 24-well plates. The membranes were cleaned with caustic soda, washed and sterilized."
+            },
+            {
+              "titulo": "Produce the biosurfactant",
+              "texto": "Bacillus subtilis grew for 96 hours at 35 °C. The biosurfactant was separated by centrifugation, acidification and solvent extraction, then freeze-dried."
+            },
+            {
+              "titulo": "Check the biosurfactant",
+              "texto": "An infrared (FTIR) analysis showed it had the same “chemical signatures” as standard surfactin and that it remained in the cellulose even after washing."
+            },
+            {
+              "titulo": "Contaminate the water",
+              "texto": "Samples of 0.5 g of cellulose were placed in 60 mL of water with paracetamol (2 g/L) or with the EE2 hormone (2 mg/L)."
+            },
+            {
+              "titulo": "Measure what was left in the water",
+              "texto": "Samples were taken from 10 minutes to 24 hours. Paracetamol was measured by spectrophotometry (430 nm) and the hormone by chromatography (HPLC)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Results",
+      "eyebrow": "Results",
+      "titulo": "How much of each contaminant the cellulose captured",
+      "lede": "Choose the contaminant and compare the three versions of the cellulose.",
+      "blocos": [
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Choose the contaminant",
+          "grupos": [
+            {
+              "nome": "Plain cellulose",
+              "cor": "#3FC1C9"
+            },
+            {
+              "nome": "With biosurfactant",
+              "cor": "#9DB6FF"
+            },
+            {
+              "nome": "Freeze-dried",
+              "cor": "#5FD39A"
+            }
+          ],
+          "parametros": [
+            {
+              "rotulo": "EE2 hormone",
+              "valores": [
+                {
+                  "m": 74
+                },
+                {
+                  "m": 42
+                },
+                {
+                  "m": 88
+                }
+              ],
+              "leitura": "The cellulose was very effective against the hormone, especially the freeze-dried version. With the biosurfactant, capture fell by almost half."
+            },
+            {
+              "rotulo": "Paracetamol",
+              "valores": [
+                {
+                  "m": 7.4
+                },
+                {
+                  "m": 19.1
+                },
+                {
+                  "m": 31.8
+                }
+              ],
+              "leitura": "Paracetamol was harder to capture: most of it stayed in the water. Here the biosurfactant helped, and the freeze-dried cellulose had the best result."
+            }
+          ],
+          "nota": "Highest percentage captured in each case (adsorption peak), according to the text of the paper."
+        },
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura3-paracetamol.webp",
+          "full": "imagens/figura3-paracetamol.webp",
+          "alt": "Three line graphs showing paracetamol concentration in the water falling and then rising over time",
+          "legenda": "Figure 3 · Paracetamol in the water over time with (A) plain cellulose, (B) cellulose + biosurfactant and (C) freeze-dried cellulose. When the line goes down, the cellulose is capturing the drug; when it goes up, some of it returns to the water.",
+          "credito": "Castanho et al. (2024), Molecules, CC BY 4.0 license"
+        },
+        {
+          "tipo": "destaque",
+          "html": "Time makes a difference. The cellulose captures the contaminant quickly, but then <strong>becomes “full” (saturated) and some of it goes back into the water</strong>. In the freeze-dried cellulose, for example, this release began after about 100 minutes. For the hormone, the best moment was at <strong>20 minutes</strong>."
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discussion",
+      "eyebrow": "Discussion",
+      "titulo": "Why the biosurfactant helped one and hindered the other",
+      "lede": "Surfactants change how molecules attach to surfaces, and the effect is not always predictable.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Biosurfactants form small spheres (<strong>micelles</strong>) that can “wrap” the contaminant and shield it, changing its mobility. Earlier studies had already shown they can speed up or slow down pollutant cleanup, with no way to predict the result before testing. This helps explain the <strong>fast release</strong> seen in the cellulose with biosurfactant.</p><p>The attraction between the cellulose and the hormone probably involves <strong>hydrogen bonds and electrical forces</strong>, as already described for modified celluloses. By comparison, rice husk needed 120 minutes to best capture 17β-estradiol, while bacterial cellulose reached its best point with EE2 in 20 minutes.</p>"
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusion",
+      "eyebrow": "Conclusion",
+      "titulo": "What the study allows us to say",
+      "lede": "A promising natural material against hormones in water.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>The biosurfactant was successfully produced and incorporated into the cellulose. <strong>Freeze-dried cellulose</strong> was the most efficient at capturing the EE2 hormone, and the biosurfactant improved paracetamol capture but reduced hormone capture. Bacterial cellulose, especially freeze-dried, is a candidate <strong>eco-friendly biosorbent</strong> for removing certain drugs from polluted water.</p>"
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Suggested next steps",
+          "itens": [
+            "Adjust the biosurfactant concentration to improve capture without losing the cellulose's natural effectiveness.",
+            "Study the ideal contact time, since the contaminant can return to the water after saturation."
+          ]
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Micropollutants",
+      "def": "Substances present in water in tiny amounts, such as traces of drugs and hormones."
+    },
+    {
+      "termo": "Endocrine disruptor",
+      "def": "A substance that interferes with how hormones work in people and animals."
+    },
+    {
+      "termo": "Ethinylestradiol (EE2)",
+      "def": "Synthetic hormone, similar to estrogen, used in birth control pills."
+    },
+    {
+      "termo": "Sorption",
+      "def": "When a material removes a substance from a liquid, by absorption or adsorption."
+    },
+    {
+      "termo": "Adsorption",
+      "def": "When a substance sticks to the surface of a material."
+    },
+    {
+      "termo": "Desorption",
+      "def": "The opposite of adsorption: the substance comes off the material and returns to the liquid."
+    },
+    {
+      "termo": "Biosurfactant",
+      "def": "A substance that acts like soap, produced by microbes. It is biodegradable."
+    },
+    {
+      "termo": "Surfactin",
+      "def": "Classic biosurfactant produced by Bacillus subtilis, used as a standard for comparison."
+    },
+    {
+      "termo": "Freeze-drying (lyophilization)",
+      "def": "Drying at low temperature under vacuum, which removes water without damaging the material."
+    },
+    {
+      "termo": "FTIR",
+      "def": "Infrared light analysis that identifies the chemical groups in a substance."
+    },
+    {
+      "termo": "HPLC",
+      "def": "High-performance liquid chromatography: separates and measures substances in very small amounts."
+    },
+    {
+      "termo": "Spectrophotometry",
+      "def": "Technique that measures how much of a substance is in a sample by the light it absorbs."
+    }
+  ],
+  "citacao": "CASTANHO, N. R. C. M.; MARCO, N.; CAETANO, É. L. A.; ALVES, P. L. M.; PICKLER, T. B.; IBANEZ, N. L. A.; JOZALA, A. F.; GROTTO, D. Exploring Bacterial Cellulose and a Biosurfactant as Eco-Friendly Strategies for Addressing Pharmaceutical Contaminants. Molecules, Basel, v. 29, n. 2, art. 448, 2024. DOI: 10.3390/molecules29020448.",
+  "referencias": [
+    {
+      "texto": "FREO, U. et al. Paracetamol: A Review of Guideline Recommendations. Journal of Clinical Medicine, v. 10, 3420, 2021.",
+      "doi": "10.3390/jcm10153420"
+    },
+    {
+      "texto": "DZIEWECZYNSKI, T. L.; BUCKMAN, C. M. Acute exposure to 17α-ethinylestradiol disrupts audience effects on male-male interactions in Siamese fighting fish, Betta splendens. Hormones and Behavior, v. 63, p. 497-502, 2013.",
+      "doi": "10.1016/j.yhbeh.2013.01.002"
+    },
+    {
+      "texto": "RON, E. Z.; ROSENBERG, E. Natural roles of biosurfactants. Environmental Microbiology, v. 3, p. 229-236, 2001.",
+      "doi": "10.1046/j.1462-2920.2001.00190.x"
+    },
+    {
+      "texto": "ZHANG, R.; SOMASUNDARAN, P. Advances in adsorption of surfactants and their mixtures at solid/solution interfaces. Advances in Colloid and Interface Science, v. 123-126, p. 213-229, 2006.",
+      "doi": "10.1016/j.cis.2006.07.004"
+    },
+    {
+      "texto": "MCGILL, M. R.; HINSON, J. A. The development and hepatotoxicity of acetaminophen: reviewing over a century of progress. Drug Metabolism Reviews, v. 52, p. 472-500, 2020.",
+      "doi": "10.1080/03602532.2020.1832112"
+    }
+  ],
+  "idioma": "en"
+}

@@ -82,6 +82,12 @@ Com isso:
 
 O campo `capa` é a imagem do cartão (use a versão pequena, em `imagens/mini/`, ou um `capa.svg`).
 
+## Inglês e espanhol
+
+- Página do estudo: copie o `artigo.json` para `artigo.en.json` e `artigo.es.json` e traduza só os textos (deixe `id`, `tipo`, `cor`, imagens, números dos gráficos, `doi` e `url` iguais). Se o título original já estiver no idioma da página, apague `titulo_pt`; se não, coloque em `titulo_pt` a tradução e em `rotulo_original` algo como "Original title in Portuguese:". Sem esses arquivos, a página aparece em português.
+- Cartão do estudo, temas e pesquisadoras: em `data/artigos.json`, preencha o campo `i18n` (`en` e `es`) com `titulo_curto`, `resumo`, `tags` e `capa_alt` traduzidos.
+- No inglês, use ponto nos decimais (76.9%); no espanhol, vírgula (76,9%).
+
 ## 5. Veja como ficou e publique
 
 1. No VS Code: **Terminal → Executar Tarefa… → Abrir o site no navegador (servidor local)**

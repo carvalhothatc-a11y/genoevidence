@@ -1,0 +1,330 @@
+{
+  "id": "arcabouco-osso",
+  "tipo": "artigo",
+  "rotulo": "Estudio publicado",
+  "arte": "fibras",
+  "arte_legenda": "ilustración · fibras de un andamio para hueso",
+  "tema": "Biomateriales y nanotecnología",
+  "tema_id": "biomateriais",
+  "titulo": "Enhanced bone matrix formation through a dense lamellar scaffold of chitosan, collagen type I, and hyaluronic acid",
+  "titulo_pt": "Mayor formación de matriz ósea con un andamio laminar denso de quitosano, colágeno tipo I y ácido hialurónico",
+  "titulo_curto": "Un “andamio” de quitosano, colágeno y ácido hialurónico que ayuda a formar hueso",
+  "breadcrumb": "Andamio para hueso",
+  "autores": [
+    {
+      "nome": "Gabrielle Christine Bonetti Sallum",
+      "afiliacao": "Periodoncia · Facultad de Odontología de Piracicaba (Unicamp)"
+    },
+    {
+      "nome": "Catharina Marques Sacramento",
+      "afiliacao": "Periodoncia · Facultad de Odontología de Piracicaba (Unicamp)"
+    },
+    {
+      "nome": "Thais Alves",
+      "afiliacao": "Posgrado en Biotecnología · Universidad Tiradentes (Unit)"
+    },
+    {
+      "nome": "Patrícia Lius Melo Alves",
+      "destaque": true,
+      "afiliacao": "Microbiología Industrial (LAMINFE) · Uniso"
+    },
+    {
+      "nome": "Angela Faustino Jozala",
+      "afiliacao": "LAMINFE · Uniso"
+    },
+    {
+      "nome": "Denise Grotto",
+      "afiliacao": "LAMINFE · Uniso"
+    },
+    {
+      "nome": "Marco Vinícius Chaud",
+      "afiliacao": "Biomateriales y Nanotecnología · Uniso"
+    },
+    {
+      "nome": "Norberto Aranha",
+      "afiliacao": "LAMINFE · Uniso"
+    },
+    {
+      "nome": "Karina Gonzales Silvério",
+      "afiliacao": "Periodoncia · Facultad de Odontología de Piracicaba (Unicamp)"
+    }
+  ],
+  "revista": {
+    "nome": "Carbohydrate Polymer Technologies and Applications",
+    "cidade": "Ámsterdam, Países Bajos (Elsevier)",
+    "issn": "2666-8939",
+    "volume": "8",
+    "paginas": "artículo 100549",
+    "ano": "2024",
+    "publicado": "2024-07-21",
+    "doi": "10.1016/j.carpta.2024.100549",
+    "url": "https://doi.org/10.1016/j.carpta.2024.100549",
+    "site": "https://www.sciencedirect.com/journal/carbohydrate-polymer-technologies-and-applications"
+  },
+  "palavras_chave": [
+    "Andamio",
+    "Quitosano",
+    "Colágeno tipo I",
+    "Ácido hialurónico",
+    "Regeneración ósea"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "La pregunta",
+      "titulo": "¿Se puede ayudar al hueso a rehacerse?",
+      "texto": "En la ingeniería de tejidos, las células necesitan un soporte, un “andamio”, para crecer y formar tejido nuevo. El estudio probó un andamio hecho de tres materiales naturales."
+    },
+    {
+      "rotulo": "Qué hicieron",
+      "titulo": "Células de hueso sobre el andamio",
+      "texto": "En el laboratorio, células que todavía se convertirán en osteoblastos (las células que fabrican hueso) se cultivaron sobre el andamio y se compararon con células cultivadas directamente en la placa."
+    },
+    {
+      "rotulo": "Qué encontraron",
+      "titulo": "Más hueso en formación, y antes",
+      "texto": "Las células vivieron bien en el andamio, depositaron más nódulos minerales en 14 días y activaron antes los genes de formación de hueso."
+    },
+    {
+      "rotulo": "Por qué importa",
+      "titulo": "Un material prometedor",
+      "texto": "El andamio puede ser útil en futuros tratamientos para regenerar hueso. Todavía son resultados de laboratorio."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "3",
+      "texto": "materiales naturales combinados: quitosano, colágeno tipo I y ácido hialurónico",
+      "cor": "amber"
+    },
+    {
+      "valor": "14 días",
+      "texto": "hasta que el andamio mostró más nódulos minerales que el control",
+      "cor": "ok"
+    },
+    {
+      "valor": "2 genes",
+      "texto": "de formación de hueso (Runx2 y Ocn) más activos, y antes",
+      "cor": "violet"
+    },
+    {
+      "valor": "2 medios",
+      "texto": "de cultivo probados (estándar y osteogénico), con el mismo resultado",
+      "cor": "teal"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "fonte",
+      "menu": "Sobre esta página",
+      "eyebrow": "Aviso",
+      "titulo": "Cómo se hizo esta explicación",
+      "lede": "Honestidad sobre la fuente.",
+      "blocos": [
+        {
+          "tipo": "destaque",
+          "html": "Esta página se escribió a partir del <strong>resumen publicado</strong> por la revista, porque el texto completo no se pudo leer de forma automática. Por eso, no trae números además de los que están en el resumen. El artículo completo es de acceso abierto y se puede leer con el botón <strong>Leer en la revista</strong>."
+        }
+      ]
+    },
+    {
+      "id": "contexto",
+      "menu": "Contexto",
+      "eyebrow": "Contexto",
+      "titulo": "Qué es un andamio, y por qué estos materiales",
+      "lede": "Para regenerar un tejido, las células necesitan un lugar donde adherirse, crecer y trabajar.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>En la <strong>ingeniería de tejidos</strong>, un <strong>andamio</strong> (en inglés, <em>scaffold</em>) es una estructura tridimensional que sirve de soporte para las células, como un andamio en una obra. Un buen andamio debe ser bien tolerado por el cuerpo, tener poros para que entren las células y, de preferencia, estimular la formación del tejido deseado.</p><p>El andamio de este estudio es <strong>laminar y denso</strong>, es decir, formado por capas compactas, y une tres materiales de origen natural.</p>"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "Los tres materiales del andamio",
+          "itens": [
+            {
+              "titulo": "Quitosano",
+              "texto": "Se obtiene de la quitina, presente en la cáscara de los crustáceos. Es biocompatible y biodegradable, muy usado en biomateriales.",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Colágeno tipo I",
+              "texto": "La principal proteína de la parte orgánica del hueso. Sirve de base para el depósito de los minerales.",
+              "cor": "his"
+            },
+            {
+              "titulo": "Ácido hialurónico",
+              "texto": "Molécula presente de forma natural en los tejidos. Retiene agua y participa en la comunicación entre las células.",
+              "cor": "violet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Cómo se hizo",
+      "eyebrow": "Método",
+      "titulo": "Cómo se hizo el estudio",
+      "lede": "Un estudio in vitro, es decir, con células en laboratorio.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Las células",
+              "texto": "Se usaron células preosteoblásticas inmortalizadas: células que todavía se transformarán en osteoblastos, las encargadas de fabricar hueso."
+            },
+            {
+              "titulo": "Dos grupos",
+              "texto": "Control: células cultivadas directamente en la placa de plástico. Andamio: células cultivadas sobre el andamio de quitosano, colágeno tipo I y ácido hialurónico."
+            },
+            {
+              "titulo": "Dos medios de cultivo",
+              "texto": "Cada grupo se cultivó en medio estándar y en medio osteogénico, que tiene sustancias que estimulan la formación de hueso."
+            },
+            {
+              "titulo": "Qué se midió",
+              "texto": "La actividad metabólica de las células (si estaban bien), el depósito de nódulos minerales, la actividad de la enzima fosfatasa alcalina y la activación de los genes Runx2 y Ocn."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "El andamio impulsó a las células a convertirse en hueso",
+      "lede": "Las señales de formación ósea aparecieron más fuertes y antes en las células del andamio.",
+      "blocos": [
+        {
+          "tipo": "cartoes",
+          "itens": [
+            {
+              "titulo": "Las células vivieron bien",
+              "texto": "La actividad metabólica de las células en el andamio fue parecida a la del control: el material no perjudicó a las células.",
+              "cor": "ok"
+            },
+            {
+              "titulo": "Más nódulos minerales",
+              "texto": "Después de 14 días, hubo más depósito de nódulos minerales en el andamio que en el control, tanto en el medio estándar como en el osteogénico.",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Más fosfatasa alcalina",
+              "texto": "El propio andamio aumentó la actividad de esta enzima, que prepara el terreno para la mineralización del hueso.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "Genes activados antes",
+              "texto": "La producción de ARNm de los genes Runx2 y Ocn aumentó, y antes que en el grupo control.",
+              "cor": "his"
+            }
+          ]
+        },
+        {
+          "tipo": "cadeia",
+          "itens": [
+            "Preosteoblasto: la célula todavía no fabrica hueso",
+            "Runx2 “enciende” el programa para convertirse en osteoblasto",
+            "La fosfatasa alcalina prepara la mineralización",
+            "La osteocalcina (Ocn) marca al osteoblasto maduro",
+            "Nódulos minerales: el comienzo de la matriz ósea"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "La secuencia de arriba muestra, de forma simplificada, las etapas de maduración que representan los marcadores medidos en el estudio."
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusión",
+      "eyebrow": "Conclusión",
+      "titulo": "Lo que el estudio permite afirmar",
+      "lede": "Un paso inicial, hecho en laboratorio, hacia nuevos materiales para regenerar hueso.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>El andamio laminar denso de quitosano, colágeno tipo I y ácido hialurónico <strong>estimuló la maduración de las células hacia el hueso</strong>. Los autores concluyen que es un material prometedor para futuras estrategias de <strong>regeneración ósea</strong>.</p><p>Por ser un estudio con células en laboratorio, todavía se necesitan pruebas en animales y, después, en personas.</p>"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Andamio (scaffold)",
+      "def": "Estructura 3D que sirve de soporte para que las células crezcan y formen un tejido."
+    },
+    {
+      "termo": "Ingeniería de tejidos",
+      "def": "Área que combina células, materiales y señales químicas para reconstruir tejidos del cuerpo."
+    },
+    {
+      "termo": "Quitosano",
+      "def": "Polímero natural obtenido de la quitina de la cáscara de los crustáceos. Biocompatible y biodegradable."
+    },
+    {
+      "termo": "Colágeno tipo I",
+      "def": "La proteína más abundante del hueso, la piel y los tendones."
+    },
+    {
+      "termo": "Ácido hialurónico",
+      "def": "Molécula natural de los tejidos que retiene agua y ayuda en la comunicación entre las células."
+    },
+    {
+      "termo": "Osteoblasto",
+      "def": "Célula que produce la matriz del hueso."
+    },
+    {
+      "termo": "Preosteoblasto",
+      "def": "Célula todavía inmadura que puede transformarse en osteoblasto."
+    },
+    {
+      "termo": "Medio osteogénico",
+      "def": "Medio de cultivo con sustancias que estimulan a las células a formar hueso."
+    },
+    {
+      "termo": "Nódulos de mineralización",
+      "def": "Puntos donde las células depositan calcio y fosfato, el inicio de la parte dura del hueso."
+    },
+    {
+      "termo": "Fosfatasa alcalina",
+      "def": "Enzima producida por los osteoblastos que ayuda a mineralizar el hueso."
+    },
+    {
+      "termo": "Runx2 y osteocalcina (Ocn)",
+      "def": "Genes marcadores de la formación de hueso: Runx2 inicia el proceso y la osteocalcina marca al osteoblasto maduro."
+    },
+    {
+      "termo": "ARNm",
+      "def": "La “copia de trabajo” de un gen. Más ARNm significa que el gen está más activo."
+    }
+  ],
+  "citacao": "SALLUM, G. C. B.; SACRAMENTO, C. M.; ALVES, T.; ALVES, P. L. M.; JOZALA, A. F.; GROTTO, D.; CHAUD, M. V.; ARANHA, N.; SILVÉRIO, K. G. Enhanced bone matrix formation through a dense lamellar scaffold of chitosan, collagen type I, and hyaluronic acid. Carbohydrate Polymer Technologies and Applications, Amsterdam, v. 8, art. 100549, 2024. DOI: 10.1016/j.carpta.2024.100549.",
+  "referencias": [
+    {
+      "texto": "RICO-LLANOS, G. A. et al. Collagen Type I Biomaterials as Scaffolds for Bone Tissue Engineering. Polymers, v. 13, 599, 2021.",
+      "doi": "10.3390/polym13040599"
+    },
+    {
+      "texto": "KOMORI, T. Regulation of Proliferation, Differentiation and Functions of Osteoblasts by Runx2. International Journal of Molecular Sciences, v. 20, 1694, 2019.",
+      "doi": "10.3390/ijms20071694"
+    },
+    {
+      "texto": "COLLINS, M. N.; BIRKINSHAW, C. Hyaluronic acid based scaffolds for tissue engineering – a review. Carbohydrate Polymers, 2013.",
+      "doi": "10.1016/j.carbpol.2012.10.028"
+    },
+    {
+      "texto": "RODRÍGUEZ-VÁZQUEZ, M. et al. Chitosan and its potential use as a scaffold for tissue engineering in regenerative medicine. BioMed Research International, 2015.",
+      "doi": "10.1155/2015/821279"
+    },
+    {
+      "texto": "LOH, Q. L.; CHOONG, C. Three-dimensional scaffolds for tissue engineering applications: role of porosity and pore size. Tissue Engineering Part B, 2013.",
+      "doi": "10.1089/ten.teb.2012.0437"
+    }
+  ],
+  "rotulo_original": "Título original en inglés:",
+  "idioma": "es"
+}
