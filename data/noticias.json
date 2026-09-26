@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-26T15:06:21.477439+00:00",
+ "atualizado_em": "2026-09-26T15:08:43.678660+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -64,29 +64,8 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Estudo comprova efetividade e viabilidade da PrEP de longa duração",
-   "resumo": "Estudo comprova efetividade e viabilidade da PrEP de longa duração renata.moehlecke Sex, 25/09/2026 - 10:20",
-   "url": "https://agencia.fiocruz.br/estudo-comprova-efetividade-e-viabilidade-da-prep-de-longa-duracao",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-09-25T13:20:45+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "i18n": {
-    "en": {
-     "titulo": "Study proves effectiveness and feasibility of long-term PrEP",
-     "resumo": "Study proves effectiveness and feasibility of long-term PrEP renata.moehlecke Fri, 09/25/2026 - 10:20"
-    },
-    "es": {
-     "titulo": "El estudio demuestra la efectividad y viabilidad de la PrEP a largo plazo",
-     "resumo": "El estudio demuestra la efectividad y viabilidad de la PrEP a largo plazo renata.moehlecke Vie, 25/09/2026 - 10:20"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "2ª Feira InterCOCEN mostra que ciência é antídoto para desinformação",
-   "resumo": "Nesta segunda edição, Átila Iamarino participou como convidado, além da presença de visitantes de mais de 30 cidades O post 2ª Feira InterCOCEN mostra que ciência é antídoto para desinformação apareceu primeiro em Jornal da Unicamp .",
+   "resumo": "Nesta segunda edição, Átila Iamarino participou como convidado, além da presença de visitantes de mais de 30 cidades",
    "url": "https://jornal.unicamp.br/noticias/2026/09/24/2a-feira-intercocen-mostra-que-ciencia-e-antidoto-para-desinformacao/",
    "fonte": "Jornal da Unicamp",
    "idioma": "pt",
@@ -96,11 +75,11 @@
    "i18n": {
     "en": {
      "titulo": "2nd InterCOCEN Fair shows that science is an antidote to misinformation",
-     "resumo": "In this second edition, Átila Iamarino participated as a guest, in addition to the presence of visitors from more than 30 cities. The post 2nd InterCOCEN Fair shows that science is an antidote to misinformation appeared first in Jornal da Unicamp ."
+     "resumo": "In this second edition, Átila Iamarino participated as a guest, in addition to the presence of visitors from more than 30 cities"
     },
     "es": {
      "titulo": "2ª Feria InterCOCEN muestra que la ciencia es un antídoto contra la desinformación",
-     "resumo": "En esta segunda edición, Átila Iamarino participó como invitado, además de la presencia de visitantes de más de 30 ciudades, y la post 2ª Feria InterCOCEN demuestra que la ciencia es un antídoto a la desinformación aparecida por primera vez en el Jornal da Unicamp ."
+     "resumo": "En esta segunda edición, Átila Iamarino participó como invitado, además de contar con la presencia de visitantes de más de 30 ciudades"
     }
    }
   },
@@ -147,6 +126,25 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Estudo comprova efetividade e viabilidade da PrEP de longa duração",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/estudo-comprova-efetividade-e-viabilidade-da-prep-de-longa-duracao",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-09-25T13:20:45+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "i18n": {
+    "en": {
+     "titulo": "Study proves effectiveness and feasibility of long-term PrEP"
+    },
+    "es": {
+     "titulo": "El estudio demuestra la efectividad y viabilidad de la PrEP a largo plazo"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Os cientistas deram bactérias magnéticas aos vermes. Eles viveram 43% mais",
    "resumo": "Uma bactéria produtora de ímãs prolongou a vida útil média dos vermes C. elegans em mais de 43%, ajudando a proteger sua saúde neurológica e intestinal. Os pesquisadores atribuíram grande parte do efeito à supressão da ferroptose, uma doença prejudicial...",
    "url": "https://www.sciencedaily.com/releases/2026/09/260924020357.htm",
@@ -184,6 +182,27 @@
     }
    },
    "resumo_original": "The UN’s climate loss and damage fund needs to consider how to make decisions about finance fairly and quickly, without disadvantaging low-resource nations."
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "‘Para ganhar um Nobel, o Brasil precisa de mais gente fazendo pesquisa’",
+   "resumo": "Avaliação foi feita pelo hematologista Fernando Costa, ex-reitor da Unicamp, em entrevista ao Centro de Memória Fapesp",
+   "url": "https://agencia.fapesp.br/para-ganhar-um-nobel-o-brasil-precisa-de-mais-gente-fazendo-pesquisa/59264",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-09-24T15:25:50+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "i18n": {
+    "en": {
+     "titulo": "‘To win a Nobel, Brazil needs more people doing research’",
+     "resumo": "The evaluation was made by hematologist Fernando Costa, former dean of Unicamp, in an interview with the FAPESP Memory Center"
+    },
+    "es": {
+     "titulo": "‘Para ganar un Nobel, Brasil necesita más gente investigando’",
+     "resumo": "La evaluación fue realizada por el hematólogo Fernando Costa, ex decano de la Unicamp, en entrevista con el Centro de Memoria de la FAPESP"
+    }
+   }
   },
   {
    "tipo": "noticia",
@@ -292,7 +311,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Modeling Liver Cancer Molecular and Histological Features by CRISPR Editing of Porcine Hepatocytes.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Modeling Liver Cancer Molecular and Histological Features by CRISPR Editing of Porcine Hepatocytes."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -305,7 +329,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Elucidating the potential anti-liver cancer mechanisms of the medicinal food <i>Rosa roxburghii</i> Tratt. by integrating HPLC-Q Exactive MS/MS, network pharmacology, and <i>in vitro</i> validation.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Elucidar los posibles mecanismos contra el cáncer de hígado del alimento medicinal <i>Rosa roxburghii</i> Tratt. mediante la integración de HPLC-Q Exactive MS/MS, farmacología de red y validación <i>in vitro</i>."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -318,7 +347,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Anal canal neoplasms in the modern era: integrating HPV biology, LAST terminology, and evolving molecular classification.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Neoplasias del canal anal en la era moderna: integración de la biología del VPH, la ÚLTIMA terminología y la evolución de la clasificación molecular."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -331,7 +365,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "From genomic instability to epigenetic regulation: the role of DNA repair gene variants and non-coding RNAs in colorectal carcinogenesis.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "De la inestabilidad genómica a la regulación epigenética: el papel de las variantes del gen de reparación del ADN y los ARN no codificantes en la carcinogénesis colorrectal."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -344,7 +383,12 @@
    "acesso_aberto": true,
    "tema": "Genética",
    "titulo_original": "Germline genomic testing to assess the suitability of stem cell donors in the treatment of haematological malignancy: clinical ethics commentary.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Pruebas genómicas de la línea germinal para evaluar la idoneidad de los donantes de células madre en el tratamiento de la neoplasia hematológica: comentario de ética clínica."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -357,7 +401,12 @@
    "acesso_aberto": true,
    "tema": "Ciência",
    "titulo_original": "Hemoperfusion as Adjunctive Therapy in Severe Snake Envenomation Refractory to Antivenom: A Case Series.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Hemoperfusion as Adjunctive Therapy in Severe Snake Envenomation Refractory to Antivenom: A Case Series."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -370,7 +419,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Role-play in graduate genetic counseling education: a practicum experience in South Korea.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Juego de roles en la educación de posgrado en asesoramiento genético: una experiencia práctica en Corea del Sur."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -401,7 +455,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Large vessel occlusion stroke in venom-induced consumption coagulopathy after viper envenomation.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Accidente cerebrovascular de oclusión de vasos grandes en la coagulopatía de consumo inducida por veneno después del envenenamiento de la víbora."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -414,7 +473,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "CD36 links fatty acid metabolism to tumor immune microenvironment remodeling in breast cancer.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "CD36 vincula el metabolismo de los ácidos grasos con la remodelación del microambiente inmunitario tumoral en el cáncer de mama."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -427,7 +491,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "GMPS drives pancreatic cancer progression via suppressing DNA damage, STING activation and cellular senescence.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "GMPS impulsa la progresión del cáncer de páncreas mediante la supresión del daño en el ADN, la activación de la PICADURA y la senescencia celular."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -440,7 +509,12 @@
    "acesso_aberto": true,
    "tema": "Ciência",
    "titulo_original": "Adjunctive Varespladib after antivenom administration for snakebite: A phase II randomized clinical trial.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Adjunctive Varespladib after antivenenom administration for snakebite: A phase II randomized clinical trial."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -453,7 +527,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "A Case of Leukemic Phase of Mantle Cell Lymphoma Diagnosed With Scarring Conjunctivitis and Bilateral Upper Palpebral Conjunctival Tumor.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Un caso de fase leucémica de linfoma de células del manto diagnosticado con conjuntivitis cicatricial y tumor conjuntival palpebral superior bilateral."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -466,7 +545,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Opportunities in cancer gene therapy: inhibiting MDM2 and restoring p14ARF as a means to activate p53.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Oportunidades en la terapia génica del cáncer: inhibición de MDM2 y restauración de p14ARF como medio para activar p53."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -479,7 +563,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "KRAS-mutated endometrial carcinomas: a comprehensive analysis of clinicopathological and molecular profiles across histological subtypes.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "KRAS-mutated endometrial carcinomas: a comprehensive analysis of clinicopathological and molecular profiles across histological subtypes."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -492,7 +581,12 @@
    "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "Targeting the YAP-BST2 Axis Overcomes Intrinsic Anti-PD-1 Resistance in Metastatic Gastric Cancer.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Dirigirse al eje YAP-BST2 supera la resistencia intrínseca anti-PD-1 en el cáncer gástrico metastásico."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -505,7 +599,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Dynamic ctDNA Monitoring Predicts Recurrence and Guides Therapy in Postoperative Hepatocellular Carcinoma.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El monitoreo dinámico de ADNct predice la recurrencia y guía la terapia en el carcinoma hepatocelular postoperatorio."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -518,7 +617,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Emerging patterns of kidney cancer in young adults: where do we stand?",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Patrones emergentes de cáncer de riñón en adultos jóvenes: ¿dónde estamos?"
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -531,7 +635,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Emerging therapeutic strategies and clinical development of investigational agents for conventional chondrosarcoma.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Estrategias terapéuticas emergentes y desarrollo clínico de agentes en investigación para el condrosarcoma convencional."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -544,7 +653,12 @@
    "acesso_aberto": true,
    "tema": "Genética",
    "titulo_original": "Clinicopathologic Characteristics of Somatic <i>TP53</i> Mutations in Philadelphia Chromosome-Negative Myeloproliferative Neoplasms: A Systematic Review.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Características clinicopatológicas de las mutaciones somáticas de <i>TP53</i> en neoplasias mieloproliferativas negativas para el cromosoma Filadelfia: una revisión sistemática."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -557,7 +671,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Integrated Urine and Plasma DNA Analysis for Molecular Staging of Upper Tract Urothelial Carcinoma.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Análisis integrado de ADN en orina y plasma para la estadificación molecular del carcinoma urotelial del tracto superior."
+    }
+   }
   }
  ],
  "fontes": [
