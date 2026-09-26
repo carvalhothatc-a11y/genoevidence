@@ -1,6 +1,26 @@
 {
- "atualizado_em": "2026-09-26T19:57:41.157426+00:00",
+ "atualizado_em": "2026-09-26T22:59:16.003076+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "O exame de sangue pode avaliar se um bebê tem uma infecção perigosa em 15 minutos",
+   "resumo": "Presume-se que bebês febris no hospital tenham uma infecção bacteriana grave e sejam tratados com antibióticos. Mas um teste que avalie se a infecção é bacteriana ou viral, que tende a ser mais branda, pode evitar...",
+   "url": "https://www.newscientist.com/article/2590894-blood-test-could-gauge-if-a-baby-has-a-dangerous-infection-in-15-minutes/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-09-26T22:01:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 6,
+   "titulo_original": "Blood test could gauge if a baby has a dangerous infection in 15 minutes",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El análisis de sangre podría medir si un bebé tiene una infección peligrosa en 15 minutos",
+     "resumo": "A menudo se supone que los bebés con fiebre en el hospital tienen una infección bacteriana grave y son tratados con antibióticos. Pero una prueba que mide si la infección es bacteriana o viral, que tienden a ser más leves, podría evitar innecesariamente..."
+    }
+   },
+   "resumo_original": "Feverish babies in hospital are often assumed to have a serious bacterial infection and are treated with antibiotics. But a test that gauges whether the infection is bacterial or viral, which tend to be milder, could prevent unnecessary…"
+  },
   {
    "tipo": "noticia",
    "titulo": "2ª Feira InterCOCEN mostra que ciência é antídoto para desinformação",
@@ -141,26 +161,6 @@
     }
    },
    "resumo_original": "Tirzepatide, sold as Mounjaro and Zepbound, activated calorie-burning brown fat in obese mice, revealing a potential metabolic effect beyond appetite suppression. If confirmed in humans, the finding could help explain the drug’s powerful…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Espaços verdes virtuais e música clássica reduzem a pressão arterial no hospital",
-   "resumo": "Ver um rio fluir através de um fone de ouvido de realidade virtual enquanto ouve música clássica parece reduzir rapidamente a pressão arterial das pessoas de um nível perigosamente alto no hospital",
-   "url": "https://www.newscientist.com/article/2590932-virtual-green-spaces-and-classical-music-reduce-blood-pressure-in-hospital/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-09-25T22:01:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "titulo_original": "Virtual green spaces and classical music reduce blood pressure in hospital",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los espacios verdes virtuales y la música clásica reducen la presión arterial en el hospital",
-     "resumo": "Ver el flujo de un río a través de un auricular de realidad virtual mientras se escucha música clásica parece reducir rápidamente la presión arterial de las personas desde un nivel peligrosamente alto en el hospital"
-    }
-   },
-   "resumo_original": "Watching a river flow via a virtual-reality headset while listening to classical music seems to quickly bring people's blood pressure down from a dangerously high level in hospital"
   },
   {
    "tipo": "noticia",
@@ -811,6 +811,7 @@
   "rem sleep paradox dreaming may drain the brains energy even as fuel supply rises": "2026-09-26T19:57:41.157426+00:00",
   "how a horse flu crisis fueled animals rights advocacy in the u s": "2026-09-26T19:57:41.157426+00:00",
   "zepbound and mounjaro may turn on the bodys calorie burning brown fat": "2026-09-26T19:57:41.157426+00:00",
-  "that fresh cleaning smell could be filling your home with nanoparticles": "2026-09-26T19:57:41.157426+00:00"
+  "that fresh cleaning smell could be filling your home with nanoparticles": "2026-09-26T19:57:41.157426+00:00",
+  "blood test could gauge if a baby has a dangerous infection in 15 minutes": "2026-09-26T22:59:16.003076+00:00"
  }
 }
