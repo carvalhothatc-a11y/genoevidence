@@ -167,6 +167,18 @@ def limpar(texto, limite=240):
     return texto
 
 
+def limpar_resumo(texto, titulo):
+    """Tira do resumo o que não é texto da notícia: o rodapé do WordPress ("O post … apareceu
+    primeiro em …"), o autor e a data que alguns sites Drupal põem no fim, e o título repetido."""
+    t = html.unescape(re.sub(r"<[^>]+>", " ", texto or ""))
+    t = re.sub(r"\s+", " ", t).strip()
+    t = re.split(r"\s*(?:O post|The post) .{0,300}?(?:apareceu primeiro em|appeared first on)\b", t)[0]
+    t = re.sub(r"\s+\S+\s+(?:Seg|Ter|Qua|Qui|Sex|Sáb|Dom|Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+\d{1,2}/\d{1,2}/\d{4}\s*-\s*\d{1,2}:\d{2}\s*$", "", t)
+    if titulo and t.lower().startswith(titulo.lower().rstrip("…")):
+        t = t[len(titulo):].lstrip(" .:-–—")
+    return limpar(t)
+
+
 def data_iso(bruta, padrao):
     if not bruta:
         return padrao
@@ -311,7 +323,7 @@ def ler_feed(fonte, agora):
             return ""
         titulo = limpar(campo("title", "rss1:title"), 200)
         link = campo("link", "rss1:link")
-        resumo = limpar(campo("description", "rss1:description", "content:encoded"))
+        resumo = limpar_resumo(campo("description", "rss1:description", "content:encoded"), titulo)
         resumo = re.sub(r"^Nature, Published online: [^;]+; doi:\S+\s*", "", resumo)  # tira o cabeçalho da Nature
         if not titulo or not link:
             continue
