@@ -1,67 +1,6 @@
 {
- "atualizado_em": "2026-09-26T15:08:43.678660+00:00",
+ "atualizado_em": "2026-09-26T19:57:41.157426+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "O mundo da matemática mudou com a IA?",
-   "resumo": "Marcelo Finger explica os limites da inteligência artificial na resolução das equações de Navier-Stokes e destaca a importância do trabalho humano na pesquisa matemática",
-   "url": "https://jornal.usp.br/radio-usp/o-mundo-da-matematica-mudou-com-a-ia/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-25T12:00:37+00:00",
-   "tema": "Ciência",
-   "relevancia": 8,
-   "i18n": {
-    "en": {
-     "titulo": "Has the world of mathematics changed with AI?",
-     "resumo": "Marcelo Finger explains the limits of artificial intelligence in solving Navier-Stokes equations and highlights the importance of human work in mathematical research"
-    },
-    "es": {
-     "titulo": "¿Ha cambiado el mundo de las matemáticas con la IA?",
-     "resumo": "Marcelo Finger explica los límites de la inteligencia artificial en la resolución de ecuaciones de Navier-Stokes y destaca la importancia del trabajo humano en la investigación matemática"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O biolab de IA da Anthropic encontra DNA ‘semelhante a CRISPR’ em vírus. O que vem a seguir?",
-   "resumo": "O esforço de detecção envolveu cerca de 950 agentes de IA que passaram mais de 21 horas vasculhando bancos de dados de sequências de DNA.",
-   "url": "https://www.nature.com/articles/d41586-026-03039-6",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-09-25T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 7,
-   "titulo_original": "Anthropic’s AI biolab finds ‘CRISPR-like’ DNA in viruses. What’s next?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El biolab de IA de Anthropic encuentra ADN ‘similar a CRISPR’ en virus. ¿Cuál es el siguiente paso?",
-     "resumo": "El esfuerzo de detección contó con aproximadamente 950 agentes de IA que pasaron más de 21 horas revisando bases de datos de secuencias de ADN."
-    }
-   },
-   "resumo_original": "The detection effort enlisted roughly 950 AI agents that spent more than 21 hours combing through DNA sequence databases."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "2026 pode ser o ponto de virada na ação climática, diz Al Gore",
-   "resumo": "O ex-vice-presidente acha que este ano é quando vamos levar a sério as mudanças climáticas",
-   "url": "https://www.scientificamerican.com/article/2026-could-be-the-turning-point-on-climate-action-al-gore-says/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-09-25T16:04:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "titulo_original": "2026 could be the turning point on climate action, Al Gore says",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "2026 podría ser el punto de inflexión en la acción climática, dice Al Gore",
-     "resumo": "El ex vicepresidente cree que este año es cuando nos tomaremos en serio el cambio climático"
-    }
-   },
-   "resumo_original": "The former vice president thinks this year is when we’ll get serious about climate change"
-  },
   {
    "tipo": "noticia",
    "titulo": "2ª Feira InterCOCEN mostra que ciência é antídoto para desinformação",
@@ -126,6 +65,26 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Paradoxo do sono REM: sonhar pode drenar a energia do cérebro mesmo quando o suprimento de combustível aumenta",
+   "resumo": "Os cientistas descobriram um surpreendente paradoxo energético no cérebro durante o sono REM, o estágio mais intimamente associado ao sonho. O suprimento de sangue para o cérebro começa a aumentar antes mesmo do início do REM, mas os neurônios estão imediatamente disponíveis...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260925093206.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-09-26T11:30:49+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "titulo_original": "REM sleep paradox: Dreaming may drain the brain’s energy even as fuel supply rises",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Paradoja del sueño REM: Soñar puede drenar la energía del cerebro incluso a medida que aumenta el suministro de combustible",
+     "resumo": "Los científicos descubrieron una sorprendente paradoja energética en el cerebro durante el sueño REM, la etapa más estrechamente asociada con el sueño. El suministro de sangre al cerebro comienza a aumentar incluso antes de que comience el REM, pero las neuronas están disponibles de inmediato..."
+    }
+   },
+   "resumo_original": "Scientists discovered a surprising energy paradox in the brain during REM sleep, the stage most closely associated with dreaming. Blood supply to the brain begins increasing even before REM starts, but neurons’ immediately available…"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Estudo comprova efetividade e viabilidade da PrEP de longa duração",
    "resumo": "",
    "url": "https://agencia.fiocruz.br/estudo-comprova-efetividade-e-viabilidade-da-prep-de-longa-duracao",
@@ -145,64 +104,43 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Os cientistas deram bactérias magnéticas aos vermes. Eles viveram 43% mais",
-   "resumo": "Uma bactéria produtora de ímãs prolongou a vida útil média dos vermes C. elegans em mais de 43%, ajudando a proteger sua saúde neurológica e intestinal. Os pesquisadores atribuíram grande parte do efeito à supressão da ferroptose, uma doença prejudicial...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260924020357.htm",
-   "fonte": "ScienceDaily · Saúde",
+   "titulo": "Como uma crise de gripe equina alimentou a defesa dos direitos dos animais nos EUA",
+   "resumo": "Em 1872, a epizootia devastadora de Nova York deu ao jovem fundador da ASPCA um poderoso argumento moral para a proteção animal",
+   "url": "https://www.scientificamerican.com/article/how-a-horse-flu-crisis-fueled-animals-rights-advocacy-in-the-u-s/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-09-25T03:52:22+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "titulo_original": "Scientists gave worms magnetic bacteria. They lived 43% longer",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos dieron a los gusanos bacterias magnéticas. Vivían un 43% más",
-     "resumo": "Una bacteria productora de imanes prolongó la vida media de los gusanos C. elegans en más de un 43%, al tiempo que ayudaba a proteger su salud neurológica e intestinal. Los investigadores rastrearon gran parte del efecto a la supresión de la ferroptosis, una perjudicial..."
-    }
-   },
-   "resumo_original": "A magnet-producing bacterium extended the average lifespan of C. elegans worms by more than 43% while helping protect their neurological and intestinal health. Researchers traced much of the effect to suppression of ferroptosis, a damaging…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "As inundações no Nepal expõem problemas com o financiamento de desastres climáticos — políticas mais firmes são necessárias rapidamente",
-   "resumo": "O fundo de perdas e danos climáticos da ONU precisa considerar como tomar decisões sobre finanças de forma justa e rápida, sem prejudicar as nações com poucos recursos.",
-   "url": "https://www.nature.com/articles/d41586-026-03016-z",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-09-25T00:00:00+00:00",
+   "data": "2026-09-26T14:00:00+00:00",
    "tema": "Meio ambiente",
-   "relevancia": 5,
-   "titulo_original": "Nepal’s floods expose issues with climate-disaster funding — firmer policies are needed fast",
+   "relevancia": 4,
+   "titulo_original": "How a horse flu crisis fueled animals rights advocacy in the U.S.",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Las inundaciones de Nepal exponen problemas con la financiación para desastres climáticos: se necesitan políticas más firmes rápidamente",
-     "resumo": "El fondo de pérdidas y daños climáticos de la ONU debe considerar cómo tomar decisiones sobre finanzas de manera justa y rápida, sin perjudicar a las naciones de bajos recursos."
+     "titulo": "Cómo una crisis de gripe equina impulsó la defensa de los derechos de los animales en los EE. UU.",
+     "resumo": "En 1872, la devastadora epizootia de Nueva York le dio al joven fundador de la ASPCA un poderoso argumento moral para la protección de los animales"
     }
    },
-   "resumo_original": "The UN’s climate loss and damage fund needs to consider how to make decisions about finance fairly and quickly, without disadvantaging low-resource nations."
+   "resumo_original": "In 1872, New York’s devastating epizootic gave the ASPCA’s young founder a powerful moral argument for animal protection"
   },
   {
    "tipo": "noticia",
-   "titulo": "‘Para ganhar um Nobel, o Brasil precisa de mais gente fazendo pesquisa’",
-   "resumo": "Avaliação foi feita pelo hematologista Fernando Costa, ex-reitor da Unicamp, em entrevista ao Centro de Memória Fapesp",
-   "url": "https://agencia.fapesp.br/para-ganhar-um-nobel-o-brasil-precisa-de-mais-gente-fazendo-pesquisa/59264",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-09-24T15:25:50+00:00",
+   "titulo": "Zepbound e Mounjaro podem ativar a gordura marrom que queima calorias do corpo",
+   "resumo": "Tirzepatide, vendido como Mounjaro e Zepbound, ativou a gordura marrom de queima de calorias em camundongos obesos, revelando um efeito metabólico potencial além da supressão do apetite. Se confirmada em humanos, a descoberta pode ajudar a explicar o poder da droga...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260925093210.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-09-26T12:31:07+00:00",
    "tema": "Ciência",
-   "relevancia": 5,
+   "relevancia": 4,
+   "titulo_original": "Zepbound and Mounjaro may turn on the body’s calorie-burning brown fat",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "‘To win a Nobel, Brazil needs more people doing research’",
-     "resumo": "The evaluation was made by hematologist Fernando Costa, former dean of Unicamp, in an interview with the FAPESP Memory Center"
-    },
     "es": {
-     "titulo": "‘Para ganar un Nobel, Brasil necesita más gente investigando’",
-     "resumo": "La evaluación fue realizada por el hematólogo Fernando Costa, ex decano de la Unicamp, en entrevista con el Centro de Memoria de la FAPESP"
+     "titulo": "Zepbound y Mounjaro pueden activar la grasa marrón que quema calorías del cuerpo",
+     "resumo": "La tirzepatida, vendida como Mounjaro y Zepbound, activó la grasa marrón que quema calorías en ratones obesos, revelando un efecto metabólico potencial más allá de la supresión del apetito. Si se confirma en humanos, el hallazgo podría ayudar a explicar el poderoso..."
     }
-   }
+   },
+   "resumo_original": "Tirzepatide, sold as Mounjaro and Zepbound, activated calorie-burning brown fat in obese mice, revealing a potential metabolic effect beyond appetite suppression. If confirmed in humans, the finding could help explain the drug’s powerful…"
   },
   {
    "tipo": "noticia",
@@ -243,6 +181,47 @@
     }
    },
    "resumo_original": "The AI company Anthropic has announced that its Claude large language model has discovered a system reminiscent of CRISPR, but that doesn’t mean the Nobel prizes will start rolling in, says Michael Le Page"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "‘Para ganhar um Nobel, o Brasil precisa de mais gente fazendo pesquisa’",
+   "resumo": "Avaliação foi feita pelo hematologista Fernando Costa, ex-reitor da Unicamp, em entrevista ao Centro de Memória Fapesp",
+   "url": "https://agencia.fapesp.br/para-ganhar-um-nobel-o-brasil-precisa-de-mais-gente-fazendo-pesquisa/59264",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-09-24T15:25:50+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "i18n": {
+    "en": {
+     "titulo": "‘To win a Nobel, Brazil needs more people doing research’",
+     "resumo": "The evaluation was made by hematologist Fernando Costa, former dean of Unicamp, in an interview with the FAPESP Memory Center"
+    },
+    "es": {
+     "titulo": "‘Para ganar un Nobel, Brasil necesita más gente investigando’",
+     "resumo": "La evaluación fue realizada por el hematólogo Fernando Costa, ex decano de la Unicamp, en entrevista con el Centro de Memoria de la FAPESP"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Esse cheiro fresco de limpeza pode estar enchendo sua casa de nanopartículas",
+   "resumo": "Os pesquisadores descobriram que produtos de limpeza perfumados podem reagir com o ozônio em ambientes fechados para criar bilhões ou trilhões de nanopartículas invisíveis que podem penetrar profundamente nos pulmões. A poluição se forma em poucos minutos e, em alguns casos, pode produzir um...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260925093152.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-09-26T14:49:45+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 3,
+   "titulo_original": "That fresh cleaning smell could be filling your home with nanoparticles",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Ese olor a limpieza fresca podría estar llenando tu casa de nanopartículas",
+     "resumo": "Los investigadores descubrieron que los limpiadores perfumados pueden reaccionar con el ozono en interiores para crear miles de millones o billones de nanopartículas invisibles que pueden penetrar profundamente en los pulmones. La contaminación se forma en cuestión de minutos y, en algunos casos, puede producir un..."
+    }
+   },
+   "resumo_original": "Researchers found that scented cleaners can react with ozone indoors to create billions or trillions of invisible nanoparticles that can penetrate deep into the lungs. The pollution forms within minutes and, in some cases, may produce an…"
   }
  ],
  "artigos": [
@@ -828,6 +807,10 @@
   "inscricoes abertas para o curso de verao em fisiologia": "2026-09-26T13:25:14.985563+00:00",
   "ivan vilela abre residencia artistica no idea com aula espetaculo sobre a historia da viola": "2026-09-26T13:25:14.985563+00:00",
   "crispr based gene drive systems alter the transcriptome in anopheles gambiae mosquitoes": "2026-09-26T13:25:14.985563+00:00",
-  "folheie ou baixe a edicao 365": "2026-09-26T13:25:40.144337+00:00"
+  "folheie ou baixe a edicao 365": "2026-09-26T13:25:40.144337+00:00",
+  "rem sleep paradox dreaming may drain the brains energy even as fuel supply rises": "2026-09-26T19:57:41.157426+00:00",
+  "how a horse flu crisis fueled animals rights advocacy in the u s": "2026-09-26T19:57:41.157426+00:00",
+  "zepbound and mounjaro may turn on the bodys calorie burning brown fat": "2026-09-26T19:57:41.157426+00:00",
+  "that fresh cleaning smell could be filling your home with nanoparticles": "2026-09-26T19:57:41.157426+00:00"
  }
 }
