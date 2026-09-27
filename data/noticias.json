@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-27T23:13:06.056390+00:00",
+ "atualizado_em": "2026-09-27T23:16:34.440070+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -111,10 +111,10 @@
    "data": "2026-09-24T15:25:50+00:00",
    "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://agencia.fapesp.br/lib/photo.php?src=https://agencia.fapesp.br/files/post/59264.jpg&w=615&h=300",
+   "imagem": "https://agencia.fapesp.br/files/post/59264.jpg",
    "foco": {
-    "x": 37,
-    "y": 50
+    "x": 50,
+    "y": 0
    },
    "i18n": {
     "en": {
