@@ -426,6 +426,20 @@ def foco_da_imagem(url):
     return {"x": 50, "y": round(ini / (H - vis) * 100) if H - vis > 1 else 50}
 
 
+def foto_original(url):
+    """Alguns sites entregam uma miniatura já recortada por um redimensionador
+    (ex.: .../photo.php?src=https://.../foto.jpg&w=615&h=300), que pode vir com a cabeça cortada.
+    Nesses casos usa a foto original, que está no próprio endereço."""
+    if not url:
+        return url
+    q = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)
+    for chave in ("src", "url", "image", "img", "u"):
+        for v in q.get(chave, []):
+            if v.startswith("https://") and re.search(r"\.(jpe?g|png|webp)(\?|$)", v, re.I):
+                return v
+    return url
+
+
 def imagens(noticias, anterior):
     """Uma imagem para cada notícia escolhida: a que já estava guardada, a capa da matéria ou a do feed.
     Imagens repetidas em várias notícias da mesma fonte (logotipo, banner) são descartadas."""
@@ -434,10 +448,10 @@ def imagens(noticias, anterior):
     for n in noticias:
         feed = n.pop("_img_feed", "")
         if n["url"] in guardadas:
-            n["imagem"] = guardadas[n["url"]]
+            n["imagem"] = foto_original(guardadas[n["url"]])
             continue
         ok = lambda u: u.startswith("https://") and not urllib.parse.urlparse(u).path.endswith("/")
-        img = imagem_da_pagina(n["url"])
+        img, feed = foto_original(imagem_da_pagina(n["url"])), foto_original(feed)
         n["imagem"] = img if ok(img) else (feed if ok(feed) else "")
     vistas = {}
     for n in noticias:
