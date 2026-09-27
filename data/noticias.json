@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-27T01:34:28.814930+00:00",
+ "atualizado_em": "2026-09-27T08:21:31.290160+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -23,47 +23,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O menino cresceu",
-   "resumo": "Não bastassem os desafios sociais e econômicos, as provações climáticas também não dão nem darão descanso às atuais e às próximas gerações. Entre elas, poucas são tão familiares e presentes quanto El Niño, nome dado por pescadores do norte…",
-   "url": "https://revistapesquisa.fapesp.br/o-menino-cresceu/?utm_source=rss&utm_medium=rss&utm_campaign=o-menino-cresceu",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-09-21T09:00:49+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "i18n": {
-    "en": {
-     "titulo": "The boy grew up",
-     "resumo": "If social and economic challenges were not enough, climatic trials also do not and will not give rest to current and future generations. Among them, few are as familiar and present as El Niño, the name given by northern fishermen…"
-    },
-    "es": {
-     "titulo": "El niño creció",
-     "resumo": "Si los desafíos sociales y económicos no fueran suficientes, las pruebas climáticas tampoco dan y no darán descanso a las generaciones actuales y futuras. Entre ellos, pocos son tan familiares y presentes como El Niño, el nombre dado por los pescadores del norte…"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Como o próprio sistema imunológico do corpo pode atacar o cérebro",
-   "resumo": "Os anticorpos produzidos pelo sistema imunológico às vezes podem ter como alvo as células cerebrais humanas, produzindo sintomas psiquiátricos. Os pesquisadores visam identificar melhor esses casos raros, bem como ajustar os tratamentos.",
-   "url": "https://www.scientificamerican.com/article/how-the-bodys-own-immune-system-can-attack-the-brain/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-09-26T12:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "titulo_original": "How the body’s own immune system can attack the brain",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Cómo el propio sistema inmunitario del cuerpo puede atacar al cerebro",
-     "resumo": "Los anticuerpos producidos por el sistema inmunitario a veces pueden dirigirse a las células cerebrales humanas, produciendo síntomas psiquiátricos. Los investigadores tienen como objetivo identificar mejor estos casos raros, así como perfeccionar los tratamientos."
-    }
-   },
-   "resumo_original": "Antibodies made by the immune system can sometimes target human brain cells, producing psychiatric symptoms. Researchers aim to better identify such rare cases as well as fine-tune treatments."
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Paradoxo do sono REM: sonhar pode drenar a energia do cérebro mesmo quando o suprimento de combustível aumenta",
    "resumo": "Os cientistas descobriram um surpreendente paradoxo energético no cérebro durante o sono REM, o estágio mais intimamente associado ao sonho. O suprimento de sangue para o cérebro começa a aumentar antes mesmo do início do REM, mas os neurônios estão imediatamente disponíveis...",
    "url": "https://www.sciencedaily.com/releases/2026/09/260925093206.htm",
@@ -81,46 +40,6 @@
     }
    },
    "resumo_original": "Scientists discovered a surprising energy paradox in the brain during REM sleep, the stage most closely associated with dreaming. Blood supply to the brain begins increasing even before REM starts, but neurons’ immediately available…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Estudo comprova efetividade e viabilidade da PrEP de longa duração",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/estudo-comprova-efetividade-e-viabilidade-da-prep-de-longa-duracao",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-09-25T13:20:45+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "i18n": {
-    "en": {
-     "titulo": "Study proves effectiveness and feasibility of long-term PrEP"
-    },
-    "es": {
-     "titulo": "El estudio demuestra la efectividad y viabilidad de la PrEP a largo plazo"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "2ª Feira InterCOCEN mostra que ciência é antídoto para desinformação",
-   "resumo": "Nesta segunda edição, Átila Iamarino participou como convidado, além da presença de visitantes de mais de 30 cidades",
-   "url": "https://jornal.unicamp.br/noticias/2026/09/24/2a-feira-intercocen-mostra-que-ciencia-e-antidoto-para-desinformacao/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-09-25T01:14:44+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "i18n": {
-    "en": {
-     "titulo": "2nd InterCOCEN Fair shows that science is an antidote to misinformation",
-     "resumo": "In this second edition, Átila Iamarino participated as a guest, in addition to the presence of visitors from more than 30 cities"
-    },
-    "es": {
-     "titulo": "2ª Feria InterCOCEN muestra que la ciencia es un antídoto contra la desinformación",
-     "resumo": "En esta segunda edición, Átila Iamarino participó como invitado, además de contar con la presencia de visitantes de más de 30 ciudades"
-    }
-   }
   },
   {
    "tipo": "noticia",
@@ -222,6 +141,26 @@
     }
    },
    "resumo_original": "Researchers found that scented cleaners can react with ozone indoors to create billions or trillions of invisible nanoparticles that can penetrate deep into the lungs. The pollution forms within minutes and, in some cases, may produce an…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Os cientistas acabaram de encontrar um objeto cósmico bizarro ‘escondido à vista de todos’",
+   "resumo": "Conheça o primeiro microblazar da Via Láctea",
+   "url": "https://www.scientificamerican.com/article/scientists-just-found-a-bizarre-cosmic-object-hiding-in-plain-sight/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-09-25T18:00:00+00:00",
+   "tema": "Espaço",
+   "relevancia": 3,
+   "titulo_original": "Scientists just found a bizarre cosmic object ‘hiding in plain sight’",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos acaban de encontrar un extraño objeto cósmico \"escondido a plena vista\"",
+     "resumo": "Conoce el primer microblazar de la Vía Láctea"
+    }
+   },
+   "resumo_original": "Meet the Milky Way’s first microblazar"
   }
  ],
  "artigos": [
@@ -812,6 +751,7 @@
   "how a horse flu crisis fueled animals rights advocacy in the u s": "2026-09-26T19:57:41.157426+00:00",
   "zepbound and mounjaro may turn on the bodys calorie burning brown fat": "2026-09-26T19:57:41.157426+00:00",
   "that fresh cleaning smell could be filling your home with nanoparticles": "2026-09-26T19:57:41.157426+00:00",
-  "blood test could gauge if a baby has a dangerous infection in 15 minutes": "2026-09-26T22:59:16.003076+00:00"
+  "blood test could gauge if a baby has a dangerous infection in 15 minutes": "2026-09-26T22:59:16.003076+00:00",
+  "scientists just found a bizarre cosmic object hiding in plain sight": "2026-09-27T08:21:31.290160+00:00"
  }
 }
