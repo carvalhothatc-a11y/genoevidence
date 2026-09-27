@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-26T22:59:16.003076+00:00",
+ "atualizado_em": "2026-09-27T01:34:28.814930+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -20,27 +20,6 @@
     }
    },
    "resumo_original": "Feverish babies in hospital are often assumed to have a serious bacterial infection and are treated with antibiotics. But a test that gauges whether the infection is bacterial or viral, which tend to be milder, could prevent unnecessary…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "2ª Feira InterCOCEN mostra que ciência é antídoto para desinformação",
-   "resumo": "Nesta segunda edição, Átila Iamarino participou como convidado, além da presença de visitantes de mais de 30 cidades",
-   "url": "https://jornal.unicamp.br/noticias/2026/09/24/2a-feira-intercocen-mostra-que-ciencia-e-antidoto-para-desinformacao/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-09-25T01:14:44+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "i18n": {
-    "en": {
-     "titulo": "2nd InterCOCEN Fair shows that science is an antidote to misinformation",
-     "resumo": "In this second edition, Átila Iamarino participated as a guest, in addition to the presence of visitors from more than 30 cities"
-    },
-    "es": {
-     "titulo": "2ª Feria InterCOCEN muestra que la ciencia es un antídoto contra la desinformación",
-     "resumo": "En esta segunda edición, Átila Iamarino participó como invitado, además de contar con la presencia de visitantes de más de 30 ciudades"
-    }
-   }
   },
   {
    "tipo": "noticia",
@@ -119,6 +98,27 @@
     },
     "es": {
      "titulo": "El estudio demuestra la efectividad y viabilidad de la PrEP a largo plazo"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "2ª Feira InterCOCEN mostra que ciência é antídoto para desinformação",
+   "resumo": "Nesta segunda edição, Átila Iamarino participou como convidado, além da presença de visitantes de mais de 30 cidades",
+   "url": "https://jornal.unicamp.br/noticias/2026/09/24/2a-feira-intercocen-mostra-que-ciencia-e-antidoto-para-desinformacao/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-09-25T01:14:44+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "i18n": {
+    "en": {
+     "titulo": "2nd InterCOCEN Fair shows that science is an antidote to misinformation",
+     "resumo": "In this second edition, Átila Iamarino participated as a guest, in addition to the presence of visitors from more than 30 cities"
+    },
+    "es": {
+     "titulo": "2ª Feria InterCOCEN muestra que la ciencia es un antídoto contra la desinformación",
+     "resumo": "En esta segunda edición, Átila Iamarino participó como invitado, además de contar con la presencia de visitantes de más de 30 ciudades"
     }
    }
   },
