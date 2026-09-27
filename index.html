@@ -81,7 +81,13 @@
 
   <section class="sec" style="--c:var(--ok)">
     <div class="sec-head"><h2>Notícias da ciência</h2><a class="link-more" href="noticias/">Ver todas →</a></div>
-    <ul class="list card news-mini" id="hojeNoticias"></ul>
+    <!-- carrossel: passe o dedo (ou use as setas) para ver as notícias com imagem -->
+    <div class="carrossel" aria-roledescription="carrossel" aria-label="Notícias da ciência">
+      <div class="car-trilho" id="hojeNoticias" tabindex="0"></div>
+      <button class="car-seta ant" type="button" aria-label="Notícia anterior" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="car-seta prox" type="button" aria-label="Próxima notícia" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+    <div class="car-pontos" id="carPontos"></div>
     <p class="note" id="atualizado"></p>
   </section>
 

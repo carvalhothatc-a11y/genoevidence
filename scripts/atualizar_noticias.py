@@ -17,6 +17,7 @@ Não usa bibliotecas externas: só Python 3.
 """
 import html
 import json
+import urllib.error
 import re
 import sys
 import urllib.parse
@@ -150,6 +151,7 @@ NS = {
     "dc": "http://purl.org/dc/elements/1.1/",
     "rss1": "http://purl.org/rss/1.0/",
     "content": "http://purl.org/rss/1.0/modules/content/",
+    "media": "http://search.yahoo.com/mrss/",
 }
 
 
@@ -306,7 +308,7 @@ def traduzir(noticias, artigos):
 
 def assinatura(noticias, artigos):
     """O que o app mostra (links, títulos e traduções); se nada disso mudou, não precisa gravar."""
-    return json.dumps([[n.get("url"), n.get("titulo"), n.get("resumo"), n.get("i18n")] for n in noticias]
+    return json.dumps([[n.get("url"), n.get("titulo"), n.get("resumo"), n.get("i18n"), n.get("imagem")] for n in noticias]
                       + [[a.get("url"), a.get("titulo"), a.get("i18n")] for a in artigos], ensure_ascii=False)
 
 
@@ -330,6 +332,7 @@ def ler_feed(fonte, agora):
         if fonte["filtro"] and not any(p in (titulo + " " + resumo).lower() for p in fonte["filtro"]):
             continue
         saida.append({
+            "_img_feed": imagem_do_feed(it, link),
             "tipo": "noticia",
             "titulo": titulo,
             "resumo": resumo,
@@ -340,6 +343,55 @@ def ler_feed(fonte, agora):
             "tema": classificar(titulo + " " + resumo),
         })
     return saida
+
+
+def imagem_do_feed(it, link):
+    """Imagem que o próprio feed manda junto com a notícia (media:content, enclosure ou <img> no texto)."""
+    for el in it.findall("media:content", NS) + it.findall("media:thumbnail", NS) + it.findall("enclosure"):
+        url, tipo = el.get("url", ""), el.get("type", "")
+        if url and (tipo.startswith("image") or re.search(r"\.(jpe?g|png|webp)(\?|$)", url, re.I)):
+            return urllib.parse.urljoin(link, url)
+    texto = (it.findtext("content:encoded", namespaces=NS) or "") + (it.findtext("description") or "")
+    m = re.search(r'<img[^>]+src=["\']([^"\']+)', texto, re.I)
+    return urllib.parse.urljoin(link, html.unescape(m.group(1))) if m else ""
+
+
+def imagem_da_pagina(url):
+    """Imagem de capa que a própria matéria usa quando é compartilhada (og:image / twitter:image)."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": AGENTE, "Accept": "text/html"})
+        with urllib.request.urlopen(req, timeout=12) as r:
+            pagina = r.read(400_000).decode("utf-8", "replace")
+    except (urllib.error.URLError, OSError, ValueError):
+        return ""
+    for meta in re.findall(r"<meta\b[^>]*>", pagina, re.I):
+        if re.search(r'(?:property|name)=["\'](?:og:image(?::secure_url)?|twitter:image(?::src)?)["\']', meta, re.I):
+            m = re.search(r'content=["\']([^"\']+)', meta, re.I)
+            if m:
+                return urllib.parse.urljoin(url, html.unescape(m.group(1).strip()))
+    return ""
+
+
+def imagens(noticias, anterior):
+    """Uma imagem para cada notícia escolhida: a que já estava guardada, a capa da matéria ou a do feed.
+    Imagens repetidas em várias notícias da mesma fonte (logotipo, banner) são descartadas."""
+    guardadas = {n["url"]: n["imagem"] for n in anterior.get("noticias", []) if "imagem" in n}
+    for n in noticias:
+        feed = n.pop("_img_feed", "")
+        if n["url"] in guardadas:
+            n["imagem"] = guardadas[n["url"]]
+            continue
+        ok = lambda u: u.startswith("https://") and not urllib.parse.urlparse(u).path.endswith("/")
+        img = imagem_da_pagina(n["url"])
+        n["imagem"] = img if ok(img) else (feed if ok(feed) else "")
+    vistas = {}
+    for n in noticias:
+        if n["imagem"]:
+            vistas[n["imagem"]] = vistas.get(n["imagem"], 0) + 1
+    for n in noticias:
+        if n["imagem"] and vistas[n["imagem"]] > 1:
+            n["imagem"] = ""
+    print(f"  Imagens: {sum(1 for n in noticias if n['imagem'])} de {len(noticias)} notícias com imagem")
 
 
 def ler_artigos(agora_dt):
@@ -426,6 +478,7 @@ def main():
         mostradas.setdefault(chave_titulo(n), agora)
     limite = (agora_dt - timedelta(days=10)).isoformat()
     mostradas = {k: v for k, v in mostradas.items() if v >= limite}
+    imagens(unicas, anterior)
     traduzir(unicas, artigos)
     # se nada do que o app mostra mudou desde a última vez, não grava (o robô roda de hora em hora)
     if anterior.get("noticias") and assinatura(unicas, artigos) == assinatura(anterior["noticias"], anterior.get("artigos", [])):

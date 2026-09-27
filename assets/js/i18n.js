@@ -50,7 +50,7 @@
       "Filtrar o menu": "Filter the menu", "Nada encontrado.": "Nothing found.", "Páginas": "Pages", "Pesquisadoras": "Researchers",
       "Em destaque": "Featured", "Notícias da ciência": "Science news", "Estudo em andamento: R337H": "Ongoing study: R337H",
       "Abrir o tema": "Open the topic", "Ver todos os estudos dela": "See all her studies", "Menu do GenoEvidence": "GenoEvidence menu",
-      "Destinos": "Destinations", "Idioma": "Language", "Escolher idioma": "Choose language", "Sobre": "About", "Desenvolvido por": "Developed by", "Idiomas: o app pode ser lido em português, inglês e espanhol. É só tocar no botão de idioma, no topo da tela. As páginas dos estudos foram traduzidas pelo GenoEvidence.": "Languages: the app can be read in Portuguese, English and Spanish. Just tap the language button at the top of the screen. The study pages were translated by GenoEvidence.",
+      "Destinos": "Destinations", "Idioma": "Language", "Escolher idioma": "Choose language", "Sobre": "About", "Notícia anterior": "Previous story", "Próxima notícia": "Next story", "Desenvolvido por": "Developed by", "Idiomas: o app pode ser lido em português, inglês e espanhol. É só tocar no botão de idioma, no topo da tela. As páginas dos estudos foram traduzidas pelo GenoEvidence.": "Languages: the app can be read in Portuguese, English and Spanish. Just tap the language button at the top of the screen. The study pages were translated by GenoEvidence.",
       // Início
       "A ciência de hoje,": "Today's science,", "explicada": "explained",
       "Estudos completos, temas e notícias da ciência em linguagem simples, com o link direto para a fonte.": "Full studies, topics and science news in plain language, with a direct link to the source.",
@@ -108,8 +108,8 @@
       "Abra o site no Chrome.": "Open the site in Chrome.", "Toque em Instalar app, ou no menu ⋮ → Instalar app.": "Tap Install app, or menu ⋮ → Install app.",
       "Computador": "Computer", "No Chrome ou no Edge, clique no ícone de instalar na barra de endereço.": "In Chrome or Edge, click the install icon in the address bar.",
       "Fontes e créditos": "Sources and credits",
-      "Notícias: as mais relevantes do dia, escolhidas entre Agência FAPESP, Pesquisa FAPESP, Agência Fiocruz, Jornal da Unicamp, Jornal da USP, Nature, New Scientist, Scientific American e ScienceDaily, com título, um trecho e o link para a matéria original. As notícias são traduzidas automaticamente (serviço MyMemory). Publicações recentes: Europe PMC. Os resumos dos artigos explicados são produzidos pelo GenoEvidence a partir das publicações originais, e as figuras são reproduzidas com crédito.":
-        "News: the most relevant of the day, picked from Agência FAPESP, Pesquisa FAPESP, Agência Fiocruz, Jornal da Unicamp, Jornal da USP, Nature, New Scientist, Scientific American and ScienceDaily, with the headline, an excerpt and a link to the original story. Stories are translated automatically (MyMemory service). Recent publications: Europe PMC. The summaries of the explained studies are written by GenoEvidence from the original publications, and figures are reproduced with credit.",
+      "Notícias: as mais relevantes do dia, escolhidas entre Agência FAPESP, Pesquisa FAPESP, Agência Fiocruz, Jornal da Unicamp, Jornal da USP, Nature, New Scientist, Scientific American e ScienceDaily, com título, um trecho e o link para a matéria original. As imagens das notícias são as das próprias matérias, exibidas com o nome da fonte e o link para o original. As notícias são traduzidas automaticamente (serviço MyMemory). Publicações recentes: Europe PMC. Os resumos dos artigos explicados são produzidos pelo GenoEvidence a partir das publicações originais, e as figuras são reproduzidas com crédito.":
+        "News: the most relevant of the day, picked from Agência FAPESP, Pesquisa FAPESP, Agência Fiocruz, Jornal da Unicamp, Jornal da USP, Nature, New Scientist, Scientific American and ScienceDaily, with the headline, an excerpt and a link to the original story. News images come from the stories themselves, shown with the source name and a link to the original. Stories are translated automatically (MyMemory service). Recent publications: Europe PMC. The summaries of the explained studies are written by GenoEvidence from the original publications, and figures are reproduced with credit.",
       "Conteúdo educativo: não substitui orientação médica ou aconselhamento genético.": "Educational content: it does not replace medical advice or genetic counseling.",
       // página de cada estudo
       "Carregando o artigo…": "Loading the study…", "Tópicos": "Topics", "Filtrar tópicos…": "Filter topics…", "Filtrar tópicos": "Filter topics",
@@ -146,7 +146,7 @@
       "Ir para": "Ir a", "Fechar o menu": "Cerrar el menú", "Filtrar: câncer, Patrícia, DNA…": "Filtrar: cáncer, Patrícia, ADN…",
       "Filtrar o menu": "Filtrar el menú", "Nada encontrado.": "No se encontró nada.", "Páginas": "Páginas", "Pesquisadoras": "Investigadoras",
       "Em destaque": "Destacados", "Notícias da ciência": "Noticias de ciencia", "Estudo em andamento: R337H": "Estudio en curso: R337H",
-      "Abrir o tema": "Abrir el tema", "Ver todos os estudos dela": "Ver todos sus estudios", "Menu do GenoEvidence": "Menú de GenoEvidence", "Sobre": "Acerca de", "Desenvolvido por": "Desarrollado por", "Idiomas: o app pode ser lido em português, inglês e espanhol. É só tocar no botão de idioma, no topo da tela. As páginas dos estudos foram traduzidas pelo GenoEvidence.": "Idiomas: la app se puede leer en portugués, inglés y español. Solo toca el botón de idioma, arriba en la pantalla. Las páginas de los estudios fueron traducidas por GenoEvidence.",
+      "Abrir o tema": "Abrir el tema", "Ver todos os estudos dela": "Ver todos sus estudios", "Menu do GenoEvidence": "Menú de GenoEvidence", "Sobre": "Acerca de", "Notícia anterior": "Noticia anterior", "Próxima notícia": "Noticia siguiente", "Desenvolvido por": "Desarrollado por", "Idiomas: o app pode ser lido em português, inglês e espanhol. É só tocar no botão de idioma, no topo da tela. As páginas dos estudos foram traduzidas pelo GenoEvidence.": "Idiomas: la app se puede leer en portugués, inglés y español. Solo toca el botón de idioma, arriba en la pantalla. Las páginas de los estudios fueron traducidas por GenoEvidence.",
       "Destinos": "Destinos", "Idioma": "Idioma", "Escolher idioma": "Elegir idioma",
       "A ciência de hoje,": "La ciencia de hoy,", "explicada": "explicada",
       "Estudos completos, temas e notícias da ciência em linguagem simples, com o link direto para a fonte.": "Estudios completos, temas y noticias de ciencia en lenguaje sencillo, con el enlace directo a la fuente.",
@@ -200,8 +200,8 @@
       "Abra o site no Chrome.": "Abre el sitio en Chrome.", "Toque em Instalar app, ou no menu ⋮ → Instalar app.": "Toca Instalar app, o en el menú ⋮ → Instalar app.",
       "Computador": "Computadora", "No Chrome ou no Edge, clique no ícone de instalar na barra de endereço.": "En Chrome o Edge, haz clic en el ícono de instalar en la barra de direcciones.",
       "Fontes e créditos": "Fuentes y créditos",
-      "Notícias: as mais relevantes do dia, escolhidas entre Agência FAPESP, Pesquisa FAPESP, Agência Fiocruz, Jornal da Unicamp, Jornal da USP, Nature, New Scientist, Scientific American e ScienceDaily, com título, um trecho e o link para a matéria original. As notícias são traduzidas automaticamente (serviço MyMemory). Publicações recentes: Europe PMC. Os resumos dos artigos explicados são produzidos pelo GenoEvidence a partir das publicações originais, e as figuras são reproduzidas com crédito.":
-        "Noticias: las más relevantes del día, elegidas entre Agência FAPESP, Pesquisa FAPESP, Agência Fiocruz, Jornal da Unicamp, Jornal da USP, Nature, New Scientist, Scientific American y ScienceDaily, con el título, un fragmento y el enlace a la nota original. Se traducen automáticamente (servicio MyMemory). Publicaciones recientes: Europe PMC. Los resúmenes de los estudios explicados son elaborados por GenoEvidence a partir de las publicaciones originales, y las figuras se reproducen con crédito.",
+      "Notícias: as mais relevantes do dia, escolhidas entre Agência FAPESP, Pesquisa FAPESP, Agência Fiocruz, Jornal da Unicamp, Jornal da USP, Nature, New Scientist, Scientific American e ScienceDaily, com título, um trecho e o link para a matéria original. As imagens das notícias são as das próprias matérias, exibidas com o nome da fonte e o link para o original. As notícias são traduzidas automaticamente (serviço MyMemory). Publicações recentes: Europe PMC. Os resumos dos artigos explicados são produzidos pelo GenoEvidence a partir das publicações originais, e as figuras são reproduzidas com crédito.":
+        "Noticias: las más relevantes del día, elegidas entre Agência FAPESP, Pesquisa FAPESP, Agência Fiocruz, Jornal da Unicamp, Jornal da USP, Nature, New Scientist, Scientific American y ScienceDaily, con el título, un fragmento y el enlace a la nota original. Las imágenes de las noticias son las de las propias notas, mostradas con el nombre de la fuente y el enlace al original. Se traducen automáticamente (servicio MyMemory). Publicaciones recientes: Europe PMC. Los resúmenes de los estudios explicados son elaborados por GenoEvidence a partir de las publicaciones originales, y las figuras se reproducen con crédito.",
       "Conteúdo educativo: não substitui orientação médica ou aconselhamento genético.": "Contenido educativo: no sustituye la orientación médica ni el asesoramiento genético.",
       "Carregando o artigo…": "Cargando el estudio…", "Tópicos": "Temas", "Filtrar tópicos…": "Filtrar temas…", "Filtrar tópicos": "Filtrar temas",
       "Toque em um tópico para ir direto até ele.": "Toca un tema para ir directo a él.", "← Início do GenoEvidence": "← Inicio de GenoEvidence",
@@ -244,6 +244,7 @@
       [/^Atualizado (.+) · notícias novas todos os dias\.$/, "Updated $1 · new stories every day."],
       [/^Atualizado (.+)\. Escolhidas entre: (.+)\.$/, "Updated $1. Picked from: $2."],
       [/^hoje às (.+)$/, "today at $1"],
+      [/^Notícia (\d+) de (\d+)$/, "Story $1 of $2"],
       [/^(.+) · GenoEvidence$/, function (m) { return t(m[1]) + " · GenoEvidence"; }],
       [/^Título original em (inglês|português):$/, function (m) { return "Original title in " + (m[1] === "inglês" ? "English" : "Portuguese") + ":"; }]
     ],
@@ -258,6 +259,7 @@
       [/^Atualizado (.+) · notícias novas todos os dias\.$/, "Actualizado $1 · noticias nuevas todos los días."],
       [/^Atualizado (.+)\. Escolhidas entre: (.+)\.$/, "Actualizado $1. Elegidas entre: $2."],
       [/^hoje às (.+)$/, "hoy a las $1"],
+      [/^Notícia (\d+) de (\d+)$/, "Noticia $1 de $2"],
       [/^(.+) · GenoEvidence$/, function (m) { return t(m[1]) + " · GenoEvidence"; }],
       [/^Título original em (inglês|português):$/, function (m) { return "Título original en " + (m[1] === "inglês" ? "inglés" : "portugués") + ":"; }]
     ]

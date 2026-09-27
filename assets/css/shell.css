@@ -345,6 +345,38 @@ html:has(.splash:not(.saindo)){overflow:hidden}
 .pesq-head span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
 .news-mini .row p{display:none}
 
+/* ---------- carrossel de notícias do Início ---------- */
+.carrossel{position:relative}
+.car-trilho{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0;scrollbar-width:none;overscroll-behavior-x:contain;padding:2px 2px 6px;margin:-2px -2px 0;outline:none;-webkit-overflow-scrolling:touch}
+.car-trilho::-webkit-scrollbar{display:none}
+.car-trilho:focus-visible{box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 35%,transparent);border-radius:18px}
+.car-card{--c:var(--amber);flex:0 0 calc((100% - 28px)/3);scroll-snap-align:start;display:flex;flex-direction:column;border-radius:18px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;text-decoration:none;color:inherit;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s}
+.car-card:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgba(15,23,48,.05),0 14px 30px rgba(15,23,48,.10)}
+.car-card[data-t="Genética"]{--c:var(--blue)}.car-card[data-t="Câncer"]{--c:var(--accent)}.car-card[data-t="Saúde"]{--c:var(--ok)}
+.car-card[data-t="Meio ambiente"]{--c:var(--teal)}.car-card[data-t="Espaço"]{--c:var(--violet)}
+.car-img{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,color-mix(in srgb,var(--c) 28%,#fff),color-mix(in srgb,var(--c) 8%,#fff));overflow:hidden}
+.car-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.car-card:hover .car-img img{transform:scale(1.04)}
+.car-sem{display:none}
+.car-img.sem .car-sem{display:grid;place-items:center;position:absolute;inset:0;font:700 clamp(18px,2.4vw,24px)/1 var(--display);color:color-mix(in srgb,var(--c) 70%,#0F1730);letter-spacing:-.01em;opacity:.55}
+.car-txt{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px}
+.car-txt .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:12.5px;color:var(--muted)}
+.car-txt h3{margin:0;font:600 16px/1.35 var(--display);color:var(--ink);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.car-txt .ext{font-size:.85em;color:var(--muted);margin-left:4px}
+.car-seta{position:absolute;top:var(--seta-top,22%);z-index:2;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 94%,transparent);color:var(--ink);box-shadow:0 6px 18px rgba(15,23,48,.14);cursor:pointer;backdrop-filter:blur(8px)}
+.car-seta svg{width:20px;height:20px}
+.car-seta.ant{left:-10px}.car-seta.prox{right:-10px}
+.car-seta:hover{background:var(--surface2)}
+.car-pontos{display:flex;justify-content:center;gap:7px;margin-top:12px}
+.car-pontos button{width:8px;height:8px;padding:0;border:0;border-radius:999px;background:#D5DAE5;cursor:pointer;transition:width .3s,background .3s}
+.car-pontos button[aria-current="true"]{width:22px;background:var(--accent)}
+@media (max-width:760px){
+  .car-card{flex-basis:84%}
+  .car-seta{display:none}
+  .car-txt h3{font-size:15.5px;-webkit-line-clamp:4}
+}
+@media (prefers-reduced-motion:reduce){.car-card,.car-img img{transition:none}}
+
 /* ---------- etiquetas ---------- */
 .av-mini{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;font:700 10px/1 var(--display);color:#fff;background:var(--c);margin-right:7px;vertical-align:middle}
 .pesq-tag{display:flex;align-items:center;font:600 13px/1.2 var(--sans);color:var(--c);margin-top:4px}

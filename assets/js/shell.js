@@ -236,6 +236,39 @@
     document.addEventListener("click", e => { if (!e.target.closest(".busca-home")) res.hidden = true; });
   }
 
+  // carrossel de notícias do Início: deslizar com o dedo, setas no computador, bolinhas de posição
+  function carrossel() {
+    const trilho = $("#hojeNoticias"), cards = $$(".car-card", trilho), pontos = $("#carPontos");
+    const ant = $(".car-seta.ant"), prox = $(".car-seta.prox");
+    // imagem que não carrega vira um fundo colorido com o tema
+    $$(".car-img img", trilho).forEach(img => img.addEventListener("error", () => { img.parentNode.classList.add("sem"); img.remove(); }));
+    if (cards.length < 2) { pontos.innerHTML = ""; return; }
+    pontos.innerHTML = cards.map((c, i) => '<button type="button" aria-label="' + esc(I.t("Notícia " + (i + 1) + " de " + cards.length)) + '"></button>').join("");
+    const bolas = $$("button", pontos);
+    const passo = () => cards[1].offsetLeft - cards[0].offsetLeft;
+    const atual = () => Math.round(trilho.scrollLeft / passo());
+    const ir = i => trilho.scrollTo({ left: Math.max(0, Math.min(cards.length - 1, i)) * passo(), behavior: RM ? "auto" : "smooth" });
+    let raf = 0;
+    const marcar = () => {
+      raf = 0;
+      const i = Math.min(atual(), cards.length - 1), fim = trilho.scrollLeft + trilho.clientWidth >= trilho.scrollWidth - 4;
+      bolas.forEach((b, j) => b.setAttribute("aria-current", String(j === (fim ? cards.length - 1 : i))));
+      ant.hidden = trilho.scrollLeft < 4; prox.hidden = fim;
+      const img = $(".car-img", cards[0]);   // setas no meio da altura da imagem
+      if (img) trilho.parentNode.style.setProperty("--seta-top", (img.offsetHeight / 2 - 21) + "px");
+    };
+    trilho.addEventListener("scroll", () => { if (!raf) raf = requestAnimationFrame(marcar); }, { passive: true });
+    addEventListener("resize", marcar);
+    bolas.forEach((b, i) => b.addEventListener("click", () => ir(i)));
+    ant.addEventListener("click", () => ir(atual() - 1));
+    prox.addEventListener("click", () => ir(atual() + 1));
+    trilho.addEventListener("keydown", e => {
+      if (e.key === "ArrowRight") { e.preventDefault(); ir(atual() + 1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); ir(atual() - 1); }
+    });
+    marcar();
+  }
+
   function inicio() {
     fraseDoDia();
     buscaInicio();
@@ -264,16 +297,23 @@
     }).catch(() => { $("#destaquesPesq").innerHTML = '<p class="loading">Não foi possível carregar os destaques.</p>'; });
     getJSON("data/noticias.json").then(d => {
       const ns = d.noticias || [];
-      // as 3 mais relevantes do dia (o robô já as ordena), no máximo 2 da mesma fonte
+      // as 8 mais relevantes do dia (o robô já as ordena), no máximo 2 da mesma fonte
       const porFonte = {}, escolha = [];
       for (const n of ns.filter(n => I.lang !== "pt" || n.idioma === "pt" || n.traduzido)) {
-        if (escolha.length === 3) break;
+        if (escolha.length === 8) break;
         if ((porFonte[n.fonte] || 0) < 2) { porFonte[n.fonte] = (porFonte[n.fonte] || 0) + 1; escolha.push(n); }
       }
-      $("#hojeNoticias").innerHTML = escolha.map(n => '<li><a class="row" href="' + esc(n.url) + '" target="_blank" rel="noopener"><div class="meta"><span class="t" data-t="' + esc(n.tema) + '">' + esc(n.tema) + '</span><span class="src">' + esc(n.fonte) + '</span><span class="dot">' + esc(quando(n.data)) + "</span></div><h3>" + esc(n.titulo) + '<span class="ext">↗</span></h3></a></li>').join("") || '<li class="empty">Sem notícias novas agora.</li>';
+      $("#hojeNoticias").innerHTML = escolha.map((n, i) =>
+        '<a class="car-card" href="' + esc(n.url) + '" target="_blank" rel="noopener" data-t="' + esc(n.tema) + '">' +
+          '<div class="car-img' + (n.imagem ? "" : " sem") + '">' +
+            (n.imagem ? '<img src="' + esc(n.imagem) + '" alt="" referrerpolicy="no-referrer" decoding="async"' + (i > 1 ? ' loading="lazy"' : "") + ">" : "") +
+            '<span class="car-sem" aria-hidden="true">' + esc(n.tema) + "</span></div>" +
+          '<div class="car-txt"><div class="meta"><span class="t" data-t="' + esc(n.tema) + '">' + esc(n.tema) + '</span><span class="src">' + esc(n.fonte) + '</span><span class="dot">' + esc(quando(n.data)) + "</span></div>" +
+          "<h3>" + esc(n.titulo) + '<span class="ext">↗</span></h3></div></a>').join("") || '<p class="empty">Sem notícias novas agora.</p>';
       if (d.atualizado_em) $("#atualizado").textContent = "Atualizado " + atualizadoTxt(d.atualizado_em) + " · notícias novas todos os dias.";
-      entrar($$("#hojeNoticias li"));
-    }).catch(() => { $("#hojeNoticias").innerHTML = '<li class="empty">Não foi possível carregar as notícias.</li>'; });
+      carrossel();
+      entrar($$("#hojeNoticias .car-card").slice(0, 3));
+    }).catch(() => { $("#hojeNoticias").innerHTML = '<p class="empty">Não foi possível carregar as notícias.</p>'; });
   }
 
   /* ---------- Notícias ---------- */
