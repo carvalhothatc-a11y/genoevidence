@@ -17,6 +17,7 @@ Não usa bibliotecas externas: só Python 3.
 """
 import html
 import json
+import os
 import urllib.error
 import re
 import sys
@@ -308,7 +309,7 @@ def traduzir(noticias, artigos):
 
 def assinatura(noticias, artigos):
     """O que o app mostra (links, títulos e traduções); se nada disso mudou, não precisa gravar."""
-    return json.dumps([[n.get("url"), n.get("titulo"), n.get("resumo"), n.get("i18n"), n.get("imagem")] for n in noticias]
+    return json.dumps([[n.get("url"), n.get("titulo"), n.get("resumo"), n.get("i18n"), n.get("imagem"), n.get("foco")] for n in noticias]
                       + [[a.get("url"), a.get("titulo"), a.get("i18n")] for a in artigos], ensure_ascii=False)
 
 
@@ -372,10 +373,64 @@ def imagem_da_pagina(url):
     return ""
 
 
+MODELO_ROSTOS = RAIZ / "scripts" / "modelos" / "face_detection_yunet_2023mar.onnx"
+PROPORCAO_CARTAO = 16 / 9   # formato da imagem nos cartões do Início
+
+
+def foco_da_imagem(url):
+    """Onde cortar a imagem no cartão do Início sem cortar rostos.
+    Procura rostos (detector YuNet da OpenCV) e devolve:
+      {"x": 50, "y": 30}   posição do corte, em %, que mantém todos os rostos inteiros;
+      {"inteira": True}    quando os rostos não cabem no corte (a foto aparece inteira, sem corte);
+      None                 se não deu para analisar (o app usa o corte padrão)."""
+    os.environ.setdefault("OPENCV_LOG_LEVEL", "ERROR")   # a OpenCV avisa muito; só mostra erros
+    try:
+        import cv2
+        import numpy as np
+    except ImportError:
+        return None
+    try:
+        dados = baixar(url, timeout=15)
+        img = cv2.imdecode(np.frombuffer(dados, np.uint8), cv2.IMREAD_COLOR)
+    except Exception:
+        return None
+    if img is None:
+        return None
+    H, W = img.shape[:2]
+    if not 1.25 <= W / H <= 2.1:          # banner muito largo ou foto em pé: mostra inteira
+        return {"inteira": True}
+    esc = min(1.0, 640 / max(W, H))
+    peq = cv2.resize(img, (max(1, int(W * esc)), max(1, int(H * esc))))
+    det = cv2.FaceDetectorYN.create(str(MODELO_ROSTOS), "", (peq.shape[1], peq.shape[0]), 0.8)
+    _, rostos = det.detect(peq)
+    if rostos is None or not len(rostos):
+        return {"x": 50, "y": 50}
+    caixas = [(x / esc, y / esc, w / esc, h / esc) for x, y, w, h in rostos[:, :4]]
+    maior = max(w * h for _, _, w, h in caixas)
+    caixas = [c for c in caixas if c[2] * c[3] >= maior * 0.2]   # ignora rostos pequenos no fundo
+    # área a proteger: o rosto com cabelo, queixo e um pouco dos lados
+    x0 = max(0, min(x - 0.2 * w for x, y, w, h in caixas))
+    x1 = min(W, max(x + 1.2 * w for x, y, w, h in caixas))
+    y0 = max(0, min(y - 0.45 * h for x, y, w, h in caixas))
+    y1 = min(H, max(y + 1.25 * h for x, y, w, h in caixas))
+    if W / H >= PROPORCAO_CARTAO:          # a foto é mais larga que o cartão: corta dos lados
+        vis = H * PROPORCAO_CARTAO
+        if x1 - x0 > vis:
+            return {"inteira": True}
+        ini = min(max((x0 + x1) / 2 - vis / 2, 0), W - vis)
+        return {"x": round(ini / (W - vis) * 100) if W - vis > 1 else 50, "y": 50}
+    vis = W / PROPORCAO_CARTAO             # a foto é mais alta que o cartão: corta em cima e embaixo
+    if y1 - y0 > vis:
+        return {"inteira": True}
+    ini = min(max((y0 + y1) / 2 - vis / 2, 0), H - vis)
+    return {"x": 50, "y": round(ini / (H - vis) * 100) if H - vis > 1 else 50}
+
+
 def imagens(noticias, anterior):
     """Uma imagem para cada notícia escolhida: a que já estava guardada, a capa da matéria ou a do feed.
     Imagens repetidas em várias notícias da mesma fonte (logotipo, banner) são descartadas."""
     guardadas = {n["url"]: n["imagem"] for n in anterior.get("noticias", []) if "imagem" in n}
+    focos = {n["imagem"]: n["foco"] for n in anterior.get("noticias", []) if n.get("imagem") and n.get("foco")}
     for n in noticias:
         feed = n.pop("_img_feed", "")
         if n["url"] in guardadas:
@@ -391,7 +446,16 @@ def imagens(noticias, anterior):
     for n in noticias:
         if n["imagem"] and vistas[n["imagem"]] > 1:
             n["imagem"] = ""
-    print(f"  Imagens: {sum(1 for n in noticias if n['imagem'])} de {len(noticias)} notícias com imagem")
+    # onde cortar cada imagem sem cortar rostos (só calcula para imagens novas)
+    for n in noticias:
+        n.pop("foco", None)
+        if n["imagem"]:
+            foco = focos.get(n["imagem"]) or foco_da_imagem(n["imagem"])
+            if foco:
+                n["foco"] = foco
+    com_rosto = sum(1 for n in noticias if n.get("foco") and n["foco"] != {"x": 50, "y": 50})
+    print(f"  Imagens: {sum(1 for n in noticias if n['imagem'])} de {len(noticias)} notícias com imagem; "
+          f"{com_rosto} com rosto(s) protegido(s) no corte")
 
 
 def ler_artigos(agora_dt):

@@ -26,6 +26,8 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - name: Instalar o detector de rostos (para não cortar rostos nas imagens do Início)
+        run: pip install --quiet opencv-python-headless
       - name: Buscar notícias e artigos
         run: python3 scripts/atualizar_noticias.py
       - name: Salvar no repositório (só se mudou)

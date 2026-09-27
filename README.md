@@ -69,7 +69,8 @@ assets/js/artigo.js         monta a página de leitura a partir do artigo.json
 assets/js/app.js, dna.js    menu lateral e animações da página de leitura
 assets/js/pwa.js            instalar como app e modo offline
 assets/js/hero3d.js         DNA em 3D da abertura do Início
-scripts/atualizar_noticias.py   robô que escolhe as notícias mais relevantes do dia e as traduz para os três idiomas
+scripts/atualizar_noticias.py   robô que escolhe as notícias mais relevantes do dia, pega a imagem de cada uma (sem cortar rostos) e as traduz para os três idiomas
+scripts/modelos/            detector de rostos YuNet (OpenCV, licença MIT) usado pelo robô
 docs/COMO-ADICIONAR-ARTIGO.md   passo a passo para publicar um artigo novo
 manifest.webmanifest, sw.js, icons/   aplicativo instalável e modo offline
 ```

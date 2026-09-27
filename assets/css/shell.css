@@ -355,7 +355,10 @@ html:has(.splash:not(.saindo)){overflow:hidden}
 .car-card[data-t="Genética"]{--c:var(--blue)}.car-card[data-t="Câncer"]{--c:var(--accent)}.car-card[data-t="Saúde"]{--c:var(--ok)}
 .car-card[data-t="Meio ambiente"]{--c:var(--teal)}.car-card[data-t="Espaço"]{--c:var(--violet)}
 .car-img{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,color-mix(in srgb,var(--c) 28%,#fff),color-mix(in srgb,var(--c) 8%,#fff));overflow:hidden}
-.car-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.car-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.car-img.inteira img:not(.car-fundo){object-fit:contain;object-position:50% 50%}
+.car-img .car-fundo,.car-card:hover .car-img .car-fundo{filter:blur(18px) saturate(1.1);transform:scale(1.15);opacity:.75}
+.car-card:hover .car-img.inteira img:not(.car-fundo){transform:none}
 .car-card:hover .car-img img{transform:scale(1.04)}
 .car-sem{display:none}
 .car-img.sem .car-sem{display:grid;place-items:center;position:absolute;inset:0;font:700 clamp(18px,2.4vw,24px)/1 var(--display);color:color-mix(in srgb,var(--c) 70%,#0F1730);letter-spacing:-.01em;opacity:.55}

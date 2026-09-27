@@ -242,6 +242,16 @@
     const ant = $(".car-seta.ant"), prox = $(".car-seta.prox");
     // imagem que não carrega vira um fundo colorido com o tema
     $$(".car-img img", trilho).forEach(img => img.addEventListener("error", () => { img.parentNode.classList.add("sem"); img.remove(); }));
+    // rostos que não cabem no corte, banner muito largo ou foto em pé: mostra a imagem inteira,
+    // sobre um fundo desfocado feito com ela mesma (o robô marca os casos com rosto; o formato é conferido aqui)
+    const inteira = img => {
+      const r = img.naturalWidth / img.naturalHeight;
+      if (!(img.dataset.inteira || r > 2.1 || r < 1.25) || img.parentNode.classList.contains("inteira")) return;
+      const fundo = img.cloneNode(); fundo.className = "car-fundo"; fundo.removeAttribute("style"); fundo.alt = "";
+      fundo.setAttribute("aria-hidden", "true");
+      img.parentNode.classList.add("inteira"); img.parentNode.insertBefore(fundo, img);
+    };
+    $$(".car-img img", trilho).forEach(img => { if (img.complete && img.naturalWidth) inteira(img); else img.addEventListener("load", () => inteira(img), { once: true }); });
     if (cards.length < 2) { pontos.innerHTML = ""; return; }
     pontos.innerHTML = cards.map((c, i) => '<button type="button" aria-label="' + esc(I.t("Notícia " + (i + 1) + " de " + cards.length)) + '"></button>').join("");
     const bolas = $$("button", pontos);
@@ -306,7 +316,9 @@
       $("#hojeNoticias").innerHTML = escolha.map((n, i) =>
         '<a class="car-card" href="' + esc(n.url) + '" target="_blank" rel="noopener" data-t="' + esc(n.tema) + '">' +
           '<div class="car-img' + (n.imagem ? "" : " sem") + '">' +
-            (n.imagem ? '<img src="' + esc(n.imagem) + '" alt="" referrerpolicy="no-referrer" decoding="async"' + (i > 1 ? ' loading="lazy"' : "") + ">" : "") +
+            (n.imagem ? '<img src="' + esc(n.imagem) + '" alt="" referrerpolicy="no-referrer" decoding="async"' + (i > 1 ? ' loading="lazy"' : "") +
+              (n.foco && n.foco.x != null ? ' style="object-position:' + (+n.foco.x) + "% " + (+n.foco.y) + '%"' : "") +
+              (n.foco && n.foco.inteira ? ' data-inteira="1"' : "") + ">" : "") +
             '<span class="car-sem" aria-hidden="true">' + esc(n.tema) + "</span></div>" +
           '<div class="car-txt"><div class="meta"><span class="t" data-t="' + esc(n.tema) + '">' + esc(n.tema) + '</span><span class="src">' + esc(n.fonte) + '</span><span class="dot">' + esc(quando(n.data)) + "</span></div>" +
           "<h3>" + esc(n.titulo) + '<span class="ext">↗</span></h3></div></a>').join("") || '<p class="empty">Sem notícias novas agora.</p>';
