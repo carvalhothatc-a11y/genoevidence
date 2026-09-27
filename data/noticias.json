@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-27T14:09:38.653722+00:00",
+ "atualizado_em": "2026-09-27T18:30:56.950612+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -20,26 +20,6 @@
     }
    },
    "resumo_original": "A large health-record analysis found that glucosamine use was associated with a 25% higher likelihood of mild cognitive impairment progressing to dementia. Lab experiments suggest the popular joint supplement may intensify an abnormal…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O exame de sangue pode avaliar se um bebê tem uma infecção perigosa em 15 minutos",
-   "resumo": "Presume-se que bebês febris no hospital tenham uma infecção bacteriana grave e sejam tratados com antibióticos. Mas um teste que avalie se a infecção é bacteriana ou viral, que tende a ser mais branda, pode evitar...",
-   "url": "https://www.newscientist.com/article/2590894-blood-test-could-gauge-if-a-baby-has-a-dangerous-infection-in-15-minutes/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-09-26T22:01:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "titulo_original": "Blood test could gauge if a baby has a dangerous infection in 15 minutes",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El análisis de sangre podría medir si un bebé tiene una infección peligrosa en 15 minutos",
-     "resumo": "A menudo se supone que los bebés con fiebre en el hospital tienen una infección bacteriana grave y son tratados con antibióticos. Pero una prueba que mide si la infección es bacteriana o viral, que tienden a ser más leves, podría evitar innecesariamente..."
-    }
-   },
-   "resumo_original": "Feverish babies in hospital are often assumed to have a serious bacterial infection and are treated with antibiotics. But a test that gauges whether the infection is bacterial or viral, which tend to be milder, could prevent unnecessary…"
   },
   {
    "tipo": "noticia",
@@ -83,47 +63,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "‘Para ganhar um Nobel, o Brasil precisa de mais gente fazendo pesquisa’",
-   "resumo": "Avaliação foi feita pelo hematologista Fernando Costa, ex-reitor da Unicamp, em entrevista ao Centro de Memória Fapesp",
-   "url": "https://agencia.fapesp.br/para-ganhar-um-nobel-o-brasil-precisa-de-mais-gente-fazendo-pesquisa/59264",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-09-24T15:25:50+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "i18n": {
-    "en": {
-     "titulo": "‘To win a Nobel, Brazil needs more people doing research’",
-     "resumo": "The evaluation was made by hematologist Fernando Costa, former dean of Unicamp, in an interview with the FAPESP Memory Center"
-    },
-    "es": {
-     "titulo": "‘Para ganar un Nobel, Brasil necesita más gente investigando’",
-     "resumo": "La evaluación fue realizada por el hematólogo Fernando Costa, ex decano de la Unicamp, en entrevista con el Centro de Memoria de la FAPESP"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Os cientistas acabaram de encontrar um objeto cósmico bizarro ‘escondido à vista de todos’",
-   "resumo": "Conheça o primeiro microblazar da Via Láctea",
-   "url": "https://www.scientificamerican.com/article/scientists-just-found-a-bizarre-cosmic-object-hiding-in-plain-sight/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-09-25T18:00:00+00:00",
-   "tema": "Espaço",
-   "relevancia": 3,
-   "titulo_original": "Scientists just found a bizarre cosmic object ‘hiding in plain sight’",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos acaban de encontrar un extraño objeto cósmico \"escondido a plena vista\"",
-     "resumo": "Conoce el primer microblazar de la Vía Láctea"
-    }
-   },
-   "resumo_original": "Meet the Milky Way’s first microblazar"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "A descoberta do Anthropic será, na melhor das hipóteses, apenas mais uma ferramenta de edição de genes",
    "resumo": "A empresa de IA Anthropic anunciou que seu modelo de linguagem grande Claude descobriu um sistema que lembra o CRISPR, mas isso não significa que os prêmios Nobel começarão a chegar, diz Michael Le Page",
    "url": "https://www.newscientist.com/article/2590769-has-anthropics-claude-really-made-a-discovery-comparable-to-crispr/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -141,6 +80,27 @@
     }
    },
    "resumo_original": "The AI company Anthropic has announced that its Claude large language model has discovered a system reminiscent of CRISPR, but that doesn’t mean the Nobel prizes will start rolling in, says Michael Le Page"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "‘Para ganhar um Nobel, o Brasil precisa de mais gente fazendo pesquisa’",
+   "resumo": "Avaliação foi feita pelo hematologista Fernando Costa, ex-reitor da Unicamp, em entrevista ao Centro de Memória Fapesp",
+   "url": "https://agencia.fapesp.br/para-ganhar-um-nobel-o-brasil-precisa-de-mais-gente-fazendo-pesquisa/59264",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-09-24T15:25:50+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "i18n": {
+    "en": {
+     "titulo": "‘To win a Nobel, Brazil needs more people doing research’",
+     "resumo": "The evaluation was made by hematologist Fernando Costa, former dean of Unicamp, in an interview with the FAPESP Memory Center"
+    },
+    "es": {
+     "titulo": "‘Para ganar un Nobel, Brasil necesita más gente investigando’",
+     "resumo": "La evaluación fue realizada por el hematólogo Fernando Costa, ex decano de la Unicamp, en entrevista con el Centro de Memoria de la FAPESP"
+    }
+   }
   }
  ],
  "artigos": [
@@ -592,6 +552,7 @@
   "Europe PMC"
  ],
  "erros": [
+  "Agência Fiocruz: <urlopen error timed out>",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
