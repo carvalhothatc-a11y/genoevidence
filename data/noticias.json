@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-27T22:59:59.638632+00:00",
+ "atualizado_em": "2026-09-27T23:13:06.056390+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -12,6 +12,10 @@
    "tema": "Saúde",
    "relevancia": 6,
    "imagem": "https://www.sciencedaily.com/images/1920/senior-woman-taking-vitamin-supplement-medication-pill.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
    "titulo_original": "Glucosamine, a popular joint supplement, linked to faster Alzheimer’s progression",
    "traduzido": true,
    "i18n": {
@@ -33,6 +37,10 @@
    "tema": "Ciência",
    "relevancia": 5,
    "imagem": "https://www.sciencedaily.com/images/1920/woman-joint-inflammation-hands-rheumatoid-arthritis-pain.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
    "titulo_original": "Why rheumatoid arthritis pain may persist even when inflammation is under control",
    "traduzido": true,
    "i18n": {
@@ -54,6 +62,10 @@
    "tema": "Ciência",
    "relevancia": 4,
    "imagem": "https://static.scientificamerican.com/dam/asset/34350458-e778-4f10-b370-5b0314675994/Tetris.jpg?m=1790349057.387&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
    "titulo_original": "The secret Cold War history of Tetris",
    "traduzido": true,
    "i18n": {
@@ -75,6 +87,10 @@
    "tema": "Genética",
    "relevancia": 3,
    "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_313839108.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
    "titulo_original": "Anthropic’s discovery will, at best, be just another gene-editing tool",
    "traduzido": true,
    "i18n": {
@@ -96,6 +112,10 @@
    "tema": "Ciência",
    "relevancia": 3,
    "imagem": "https://agencia.fapesp.br/lib/photo.php?src=https://agencia.fapesp.br/files/post/59264.jpg&w=615&h=300",
+   "foco": {
+    "x": 37,
+    "y": 50
+   },
    "i18n": {
     "en": {
      "titulo": "‘To win a Nobel, Brazil needs more people doing research’",
