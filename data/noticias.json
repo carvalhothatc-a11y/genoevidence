@@ -1,6 +1,32 @@
 {
- "atualizado_em": "2026-09-28T07:04:12.734400+00:00",
+ "atualizado_em": "2026-09-28T15:39:15.825868+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "Resposta global negligente ao ebola é marca da desigualdade geopolítica na saúde",
+   "resumo": "A mobilização internacional diante de epidemias varia conforme o alcance geográfico do vírus, o que evidencia a negligência com crises de saúde pública que afetam populações vulneráveis",
+   "url": "https://jornal.usp.br/ciencias/resposta-global-negligente-ao-ebola-e-marca-da-desigualdade-geopolitica-na-saude/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-09-28T11:00:12+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260925_isolamentoebola.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Negligent global response to Ebola is hallmark of geopolitical health inequality",
+     "resumo": "International mobilization in the face of epidemics varies according to the geographical scope of the virus, which highlights the neglect of public health crises that affect vulnerable populations"
+    },
+    "es": {
+     "titulo": "La respuesta global negligente al ébola es un sello distintivo de la desigualdad geopolítica en salud",
+     "resumo": "La movilización internacional frente a las epidemias varía según el alcance geográfico del virus, lo que pone de manifiesto el abandono de las crisis de salud pública que afectan a las poblaciones vulnerables"
+    }
+   }
+  },
   {
    "tipo": "noticia",
    "titulo": "Bactérias formam ‘escudo microbiológico’ e protegem o trigo contra fungo patogênico",
@@ -55,129 +81,196 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Musculação faz células de gordura encolherem antes mesmo da perda de peso",
-   "resumo": "A matéria mais acessada entre 18 e 24/09 detalha estudo com camundongos feito na Unicamp que mostra que apenas sete dias de treinamento de força já ativaram mecanismos de quebra de lipídios",
-   "url": "https://agencia.fapesp.br/musculacao-faz-celulas-de-gordura-encolherem-antes-mesmo-da-perda-de-peso/59246",
+   "titulo": "Concurso aberto para professor assistente no ICTS-Unesp",
+   "resumo": "Docente vai trabalhar na área de “Sistemas de Computação”, no Departamento de Engenharia de Controle e Automação, em Sorocaba",
+   "url": "https://agencia.fapesp.br/concurso-aberto-para-professor-assistente-no-icts-unesp/59277",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-09-28T07:04:12.734400+00:00",
+   "data": "2026-09-28T15:39:15.825868+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59246.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59277.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Weight training causes fat cells to shrink even before weight loss",
-     "resumo": "The most accessed article between 09/18 and 09/24 details a study with mice done at Unicamp that shows that just seven days of strength training have already activated lipid breaking mechanisms"
+     "titulo": "Open competition for assistant professor at ICTS-Unesp",
+     "resumo": "Professor will work in the area of \"Computer Systems\", in the Department of Control and Automation Engineering, in Sorocaba"
     },
     "es": {
-     "titulo": "El entrenamiento con pesas hace que las células grasas se reduzcan incluso antes de perder peso",
-     "resumo": "El artículo más consultado entre el 18/09 y el 24/09 detalla un estudio con ratones realizado en la Unicamp que muestra que solo siete días de entrenamiento de fuerza ya han activado los mecanismos de rotura de lípidos"
+     "titulo": "Concurso abierto para profesor asistente en ICTS-Unesp",
+     "resumo": "Profesor en el área de “Sistemas Informáticos”, en el Departamento de Ingeniería de Control y Automatización, en Sorocaba"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Glucosamina, um suplemento comum popular, ligado à progressão mais rápida da doença de Alzheimer",
-   "resumo": "Uma grande análise de registros de saúde descobriu que o uso de glucosamina estava associado a uma probabilidade 25% maior de comprometimento cognitivo leve progredir para demência. Experimentos de laboratório sugerem que o popular suplemento articular pode intensificar uma anormalidade...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260927033754.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-09-27T13:53:39+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/senior-woman-taking-vitamin-supplement-medication-pill.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Glucosamine, a popular joint supplement, linked to faster Alzheimer’s progression",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La glucosamina, un popular suplemento para las articulaciones, relacionado con una progresión más rápida del Alzheimer",
-     "resumo": "Un gran análisis de registros de salud encontró que el uso de glucosamina se asoció con una probabilidad un 25% mayor de que el deterioro cognitivo leve progresara a demencia. Los experimentos de laboratorio sugieren que el popular suplemento para articulaciones puede intensificar una anormalidad..."
-    }
-   },
-   "resumo_original": "A large health-record analysis found that glucosamine use was associated with a 25% higher likelihood of mild cognitive impairment progressing to dementia. Lab experiments suggest the popular joint supplement may intensify an abnormal…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Por que a dor da artrite reumatoide pode persistir mesmo quando a inflamação está sob controle",
-   "resumo": "A dor e a fadiga na artrite reumatoide podem persistir mesmo após a melhora da inflamação, com depressão, falta de sono, obesidade, tabagismo e dor crônica potencialmente ajudando a sustentar os sintomas. Pesquisadores dizem que identificar esses motivadores ocultos...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260925093208.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-09-27T10:49:13+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/woman-joint-inflammation-hands-rheumatoid-arthritis-pain.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Why rheumatoid arthritis pain may persist even when inflammation is under control",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Por qué el dolor de la artritis reumatoide puede persistir incluso cuando la inflamación está bajo control",
-     "resumo": "El dolor y la fatiga en la artritis reumatoide pueden persistir incluso después de que la inflamación mejore, y la depresión, la falta de sueño, la obesidad, el tabaquismo y el dolor crónico pueden ayudar a mantener los síntomas. Los investigadores dicen que identificar estos impulsores ocultos..."
-    }
-   },
-   "resumo_original": "Pain and fatigue in rheumatoid arthritis can persist even after inflammation improves, with depression, poor sleep, obesity, smoking, and chronic pain potentially helping sustain symptoms. Researchers say identifying these hidden drivers…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A história secreta da Guerra Fria de Tetris",
-   "resumo": "O amado jogo surgiu das forças opostas dos EUA e da União Soviética",
-   "url": "https://www.scientificamerican.com/article/the-secret-cold-war-history-of-tetris/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-09-27T11:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/34350458-e778-4f10-b370-5b0314675994/Tetris.jpg?m=1790349057.387&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "The secret Cold War history of Tetris",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La historia secreta del Tetris durante la Guerra Fría",
-     "resumo": "El juego amado surgió de las fuerzas opuestas de los EE. UU. y la Unión Soviética"
-    }
-   },
-   "resumo_original": "The beloved game arose out of the opposing forces of the U.S. and the Soviet Union"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A descoberta do Anthropic será, na melhor das hipóteses, apenas mais uma ferramenta de edição de genes",
-   "resumo": "A empresa de IA Anthropic anunciou que seu modelo de linguagem grande Claude descobriu um sistema que lembra o CRISPR, mas isso não significa que os prêmios Nobel começarão a chegar, diz Michael Le Page",
-   "url": "https://www.newscientist.com/article/2590769-has-anthropics-claude-really-made-a-discovery-comparable-to-crispr/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "A IA encontra uma forma 3D que preenche todo o espaço com um padrão que nunca se repete",
+   "resumo": "Uma forma 3D que pode revestir o espaço 3D, sem deixar lacunas e nunca formando um padrão de repetição, foi descoberta usando um modelo de IA. O pesquisador por trás das descobertas, que não tem formação acadêmica na área, diz que seu trabalho irritou...",
+   "url": "https://www.newscientist.com/article/2589966-ai-finds-3d-shape-that-fills-all-space-with-a-never-repeating-pattern/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-09-25T11:04:53+00:00",
-   "tema": "Genética",
-   "relevancia": 3,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_313839108.jpg",
+   "data": "2026-09-28T13:00:00+00:00",
+   "tema": "Espaço",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_313987774.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Anthropic’s discovery will, at best, be just another gene-editing tool",
+   "titulo_original": "AI finds 3D shape that fills all space with a never-repeating pattern",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El descubrimiento de Anthropic será, en el mejor de los casos, solo otra herramienta de edición de genes",
-     "resumo": "La empresa de IA Anthropic ha anunciado que su modelo de lenguaje grande Claude ha descubierto un sistema que recuerda a CRISPR, pero eso no significa que los premios Nobel empiecen a llegar, dice Michael Le Page"
+     "titulo": "La IA encuentra una forma 3D que llena todo el espacio con un patrón que nunca se repite",
+     "resumo": "Se ha descubierto una forma 3D que puede embaldosar el espacio 3D, sin dejar huecos y sin formar nunca un patrón repetitivo, utilizando un modelo de IA. El investigador detrás de los hallazgos, que no tiene formación académica en el área, dice que su trabajo ha enfurecido..."
     }
    },
-   "resumo_original": "The AI company Anthropic has announced that its Claude large language model has discovered a system reminiscent of CRISPR, but that doesn’t mean the Nobel prizes will start rolling in, says Michael Le Page"
+   "resumo_original": "A 3D shape that can tile 3D space, leaving no gaps and never forming a repeating pattern, has been discovered using an AI model. The researcher behind the findings, who has no academic background in the area, says his work has angered…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Por que esse monstro El Niño é tão forte?",
+   "resumo": "Embora o El Niño ainda esteja a meses de seu pico, ele já está quebrando muitos recordes. Dois fatores principais estão por trás de como se tornou tão poderoso",
+   "url": "https://www.newscientist.com/article/2590917-what-has-made-this-monster-el-nino-so-strong/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-09-28T11:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_314424523.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Why is this monster El Niño so strong?",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Por qué es tan fuerte este monstruo de El Niño?",
+     "resumo": "Aunque El Niño todavía está a meses de su punto máximo, ya está batiendo muchos récords. Dos factores principales están detrás de cómo se hizo tan poderoso"
+    }
+   },
+   "resumo_original": "Though the El Niño is still months from its peak, it is already breaking many records. Two main factors are behind how it became so powerful"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Demandas crescentes de energia de IA, a busca por partículas subatômicas e a ameba mais quente",
+   "resumo": "Dos menores blocos de construção da vida ao vômito pré-histórico e uma ameba recém-descoberta que pode realmente aguentar o calor.",
+   "url": "https://www.scientificamerican.com/podcast/episode/growing-ai-energy-demands-the-search-for-subatomic-particles-and-the-hottest-amoeba/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-09-28T10:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/52f503f7-7298-46a7-80ed-496662de6b12/2609_SQ_MON_SEPT_28.png?m=1790370215.297&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Growing AI energy demands, the search for subatomic particles and the hottest amoeba",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La creciente demanda de energía de la IA, la búsqueda de partículas subatómicas y la ameba más caliente",
+     "resumo": "Desde los bloques de construcción más pequeños de la vida hasta el vómito prehistórico y una ameba recién descubierta que realmente puede soportar el calor."
+    }
+   },
+   "resumo_original": "From the smallest building blocks of life to prehistoric vomit and a newly discovered amoeba that can really take the heat."
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Maior que o CRISPR? Um guia para os editores de genoma mais recentes",
+   "resumo": "As técnicas de edição de genes podem em breve permitir que os pesquisadores substituam genes inteiros e criem circuitos celulares complexos — se os sistemas puderem ser entregues com segurança em...",
+   "url": "https://www.nature.com/articles/d41586-026-02964-w",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-09-28T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "Bigger than CRISPR? A guide to the latest genome editors",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Más grande que CRISPR? Una guía de los últimos editores genómicos",
+     "resumo": "Las técnicas de edición de genes pronto podrían permitir a los investigadores reemplazar genes enteros y diseñar circuitos celulares complejos, si los sistemas se pueden entregar de manera segura en..."
+    }
+   },
+   "resumo_original": "Gene-editing techniques could soon allow researchers to replace entire genes and engineer complex cellular circuits — if the systems can be delivered safely into…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Estudo sobre diabetes descobre que manter o açúcar no sangue muito estável pode ter um preço",
+   "resumo": "Pessoas com diabetes relataram melhor qualidade de vida após dias em que sua glicose permaneceu em grande parte dentro de uma faixa saudável, mesmo quando os níveis flutuaram mais do que o habitual. A descoberta inesperada sugere que perseguir a glicose extremamente apertada...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260927225019.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-09-28T13:53:25+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/diabetes-test-blood-drop-finger.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Diabetes study finds keeping blood sugar too steady may come at a price",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Un estudio sobre la diabetes encuentra que mantener el azúcar en la sangre demasiado estable puede tener un precio",
+     "resumo": "Las personas con diabetes informaron una mejor calidad de vida después de los días en que su glucosa se mantuvo en gran medida dentro de un rango saludable, incluso cuando los niveles fluctuaron más de lo habitual. El hallazgo inesperado sugiere que buscar glucosa extremadamente apretada..."
+    }
+   },
+   "resumo_original": "People with diabetes reported better quality of life after days when their glucose stayed largely within a healthy range, even when levels fluctuated more than usual. The unexpected finding suggests that pursuing extremely tight glucose…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Exames de sangue revelam por que astronautas ficam constipados no espaço",
+   "resumo": "O voo espacial pode mudar drasticamente o intestino dentro de semanas, fazendo com que as bactérias quebrem mais proteínas à medida que os alimentos se movem mais lentamente através dos intestinos. A mudança pode ajudar a explicar a constipação dos astronautas e pode ter efeitos mais amplos sobre...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260927225030.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-09-28T12:49:59+00:00",
+   "tema": "Espaço",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/astronaut-in-space-constipation.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Blood tests reveal why astronauts get constipated in space",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los análisis de sangre revelan por qué los astronautas se estreñen en el espacio",
+     "resumo": "Los vuelos espaciales pueden cambiar drásticamente el intestino en cuestión de semanas, haciendo que las bacterias descompongan más proteínas a medida que los alimentos se mueven más lentamente a través de los intestinos. El cambio podría ayudar a explicar el estreñimiento de los astronautas y puede tener efectos más amplios en..."
+    }
+   },
+   "resumo_original": "Spaceflight may dramatically change the gut within weeks, causing bacteria to break down more protein as food moves more slowly through the intestines. The shift could help explain astronaut constipation and may have wider effects on…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Vaping na infância tem maiores riscos para a saúde do que pensávamos",
+   "resumo": "O uso de cigarros eletrônicos aumenta a probabilidade de jovens desenvolverem transtornos mentais e começarem a fumar. Os governos precisam agir.",
+   "url": "https://www.nature.com/articles/d41586-026-02962-y",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-09-28T00:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "Vaping in childhood has bigger health risks than we’d thought",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El vapeo en la infancia tiene mayores riesgos para la salud de lo que pensábamos",
+     "resumo": "El uso de cigarrillos electrónicos hace que sea más probable que los jóvenes experimenten trastornos de salud mental y comiencen a fumar. Los gobiernos deben actuar."
+    }
+   },
+   "resumo_original": "Use of e-cigarettes makes it more likely that young people will experience mental-health disorders and take up smoking. Governments must act."
   },
   {
    "tipo": "noticia",
@@ -209,6 +302,230 @@
  "artigos": [
   {
    "tipo": "artigo",
+   "titulo": "Senescência miocárdica como desfecho mecanicista de cardiotoxicidade por arsênio: ativação e reversão de p53/p21 associada à cisteína pela quercetina.",
+   "autores": "Wang H, Wang Y, Huang S, Wang J, Xu E, Pang Y, Shen J, Luo C, Tan J.",
+   "revista": "Toxicol Appl Pharmacol",
+   "data": "2026-09-26T00:00:00+00:00",
+   "doi": "10.1016/j.taap.2026.118050",
+   "url": "https://doi.org/10.1016/j.taap.2026.118050",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Myocardial senescence as a mechanistic endpoint of arsenic cardiotoxicity: Cysteine-associated p53/p21 activation and reversal by quercetin.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Associação de alta carga mutacional tumoral com metástases cerebrais: insights de uma análise de banco de dados em larga escala.",
+   "autores": "Abboud M, Sisoudiya S, Kaplan B, Elisha T, Goodman L, Khair F, Sivakumar S, Sokol E, Wolf I, Rubinek T.",
+   "revista": "Neuro Oncol",
+   "data": "2026-09-26T00:00:00+00:00",
+   "doi": "10.1093/neuonc/noag222",
+   "url": "https://doi.org/10.1093/neuonc/noag222",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Association of high tumor mutational burden with brain metastases: Insights from a large-scale database analysis.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Scorpion sting during pregnancy: a systematic review.",
+   "autores": "Balachandran DM, Nair JJ, Rajendran G.",
+   "revista": "Eur J Obstet Gynecol Reprod Biol",
+   "data": "2026-09-25T00:00:00+00:00",
+   "doi": "10.1016/j.ejogrb.2026.115459",
+   "url": "https://doi.org/10.1016/j.ejogrb.2026.115459",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Pathogenic germline variants in BRCA1/2 are associated with a decreased number of hypomethylated rDNA copies.",
+   "autores": "Kießling S, Durackova J, Michler A, Geisen ABC, Santana Acevedo N, Haaf T.",
+   "revista": "Breast Cancer Res",
+   "data": "2026-09-25T00:00:00+00:00",
+   "doi": "10.1186/s13058-026-02387-5",
+   "url": "https://doi.org/10.1186/s13058-026-02387-5",
+   "acesso_aberto": true,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Interdisciplinary management and genetic evaluation of pediatric cancer predisposition syndromes: a retrospective cohort study.",
+   "autores": "Dikow N, Nitschke AL, Hirsch S, Roth E, Orec L, Fischer T, Choukair D, Grund K, Lüttich P, Sutter C, Hinderhofer K…",
+   "revista": "Eur J Hum Genet",
+   "data": "2026-09-25T00:00:00+00:00",
+   "doi": "10.1038/s41431-026-02244-1",
+   "url": "https://doi.org/10.1038/s41431-026-02244-1",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Grade 3 Lung Carcinoids/NETs: The IASLC Pathology Committee Study with Proposal of a New Diagnostic Category.",
+   "autores": "Rekhtman N, Hanna MG, Hofman P, Mino-Kenudson M, Joubert P, Papotti M, Sholl LM, Shim HS, Han Y, Hofman V, Hung YP…",
+   "revista": "J Thorac Oncol",
+   "data": "2026-09-25T00:00:00+00:00",
+   "doi": "10.1016/j.jtho.2026.106121",
+   "url": "https://doi.org/10.1016/j.jtho.2026.106121",
+   "acesso_aberto": false,
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "PDLIM2 in lung adenocarcinoma metastasis.",
+   "autores": "Gao F, Xiao Y, Zhang H, Shapiro SD, Qu Z, Xiao G.",
+   "revista": "Neoplasia",
+   "data": "2026-09-25T00:00:00+00:00",
+   "doi": "10.1016/j.neo.2026.101371",
+   "url": "https://doi.org/10.1016/j.neo.2026.101371",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "<i>TRAF7</i> mutations stabilize K/NRAS and hyperactivate MAPK signaling to cause CAFDADD neurodevelopmental defects.",
+   "autores": "Xiao M, Liu Y, Song X, Liu J, Tang X, Dou M, Yu W, Zhang H, Weng W, Han D, Lan X, Zhao T, Wang C, Ma L, Xu NJ, Wu S.",
+   "revista": "Sci Adv",
+   "data": "2026-09-25T00:00:00+00:00",
+   "doi": "10.1126/sciadv.adw8672",
+   "url": "https://doi.org/10.1126/sciadv.adw8672",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Exploring the cytotoxic potential of Artemisia herba-alba crude extract and key phytoconstituents using in vitro assays and molecular docking insights.",
+   "autores": "Al-Halaseh LK, Al-Samydai AM, Moshawih S, Al-Qaraleh M, Al-Zregat DM, Amareen ZS, Al Soub MN, Abdelhadi NN, Qaraghuli S.",
+   "revista": "PLoS One",
+   "data": "2026-09-25T00:00:00+00:00",
+   "doi": "10.1371/journal.pone.0359068",
+   "url": "https://doi.org/10.1371/journal.pone.0359068",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "ATM mutations in myelodysplastic neoplasms, acute myeloid leukemia, and myeloproliferative neoplasms: a systematic review.",
+   "autores": "Laurindo LO, Parente MLB, Sasahara GL, Goes JVC, Sampaio LR, Pinheiro YV, Pinheiro RF.",
+   "revista": "Med Oncol",
+   "data": "2026-09-25T00:00:00+00:00",
+   "doi": "10.1007/s12032-026-03378-4",
+   "url": "https://doi.org/10.1007/s12032-026-03378-4",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Randomized Prospective Comparison Between Neoadjuvant Mitomycin C Plus Cisplatin and Paclitaxel Plus Carboplatin in Patients With BRCA1-Associated Ovarian Cancer.",
+   "autores": "Gorodnova TV, Sokolenko AP, Kotiv KB, Donskih RV, Yakovleva MG, Trifanov YN, Aleksakhina SN, Morozova NS, Kolesnikova…",
+   "revista": "Int J Cancer",
+   "data": "2026-09-25T00:00:00+00:00",
+   "doi": "10.1002/ijc.70750",
+   "url": "https://doi.org/10.1002/ijc.70750",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "In-frame variants in TP53 gene identified in adult leukemia samples are predominantly deleterious: a study of the TP53 Network of Education and Research Initiative on CLL.",
+   "autores": "Pavlová Š, Gombíková J, Petrezsélyová S, Macůrek L, Ženatová M, Zádrapová M, Panovská A, Zapletalová E, Lores BF…",
+   "revista": "J Pathol",
+   "data": "2026-09-24T00:00:00+00:00",
+   "doi": "10.1002/path.70124",
+   "url": "https://doi.org/10.1002/path.70124",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Association of <i>ATM</i> Alterations with Outcomes After <sup>177</sup>Lu-PSMA-617 Treatment in Patients with Metastatic Castration-Resistant Prostate Cancer.",
+   "autores": "Mahajan V, Yu L, Kollitz L, Boytim E, Zorko NA, Okazaki IJ, Cayci Z, Dehm SM, Hwang J, Arafa AT, Antonarakis ES.",
+   "revista": "J Nucl Med",
+   "data": "2026-09-24T00:00:00+00:00",
+   "doi": "10.2967/jnumed.126.273055",
+   "url": "https://doi.org/10.2967/jnumed.126.273055",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Long-term Endoscopic Surveillance in Hereditary Diffuse Gastric Cancer Syndrome.",
+   "autores": "Li M, Lynch D, Dewan T, Patel K, Patel D, Chung DC.",
+   "revista": "Cancer Prev Res (Phila)",
+   "data": "2026-09-24T00:00:00+00:00",
+   "doi": "10.1158/1940-6207.capr-26-0102",
+   "url": "https://doi.org/10.1158/1940-6207.capr-26-0102",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationwide spatiotemporal analysis, 2010-2025.",
+   "autores": "Grados Vásquez M, Guerra Blas JC, Salcedo-Prudencio A, Santos Siqueira T, Monteiro W, Amaya Parra J, Martinez-Espinosa…",
+   "revista": "PLoS Negl Trop Dis",
+   "data": "2026-09-24T00:00:00+00:00",
+   "doi": "10.1371/journal.pntd.0014747",
+   "url": "https://doi.org/10.1371/journal.pntd.0014747",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Universal versus guideline-based germline multigene panel testing in solid tumors: Diagnostic yield, variant of uncertain significance burden, and clinical actionability - A systematic review with meta-analysis.",
+   "autores": "Barjij I, Naciri S, Lkhoyaali S, Kharmoum S, Inrhaouen H, Elghissassi I, Boutayeb S, Mrabti H, Errihani H.",
+   "revista": "Genet Med",
+   "data": "2026-09-24T00:00:00+00:00",
+   "doi": "10.1016/j.gim.2026.102733",
+   "url": "https://doi.org/10.1016/j.gim.2026.102733",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Bridging the BRCA1/2 variant previvor gap in health care.",
+   "autores": "Gopal S.",
+   "revista": "JAAPA",
+   "data": "2026-09-24T00:00:00+00:00",
+   "doi": "10.1097/01.jaa.0000000000000423",
+   "url": "https://doi.org/10.1097/01.jaa.0000000000000423",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Puerarin attenuates binge ethanol-induced cortical neurotoxicity in association with AKT/mTOR signaling and autophagy-related responses.",
+   "autores": "Liu F, Huang S, Xiao H, Zhou Y, Lin L, Liu Z, Lan J, Chen X, Tian H.",
+   "revista": "Toxicol Mech Methods",
+   "data": "2026-09-24T00:00:00+00:00",
+   "doi": "10.1080/15376516.2026.2733168",
+   "url": "https://doi.org/10.1080/15376516.2026.2733168",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "[Emotional impact of hereditary cancer risk on patients and their families].",
+   "autores": "Buitrago Ramírez F.",
+   "revista": "Aten Primaria",
+   "data": "2026-09-23T00:00:00+00:00",
+   "doi": "10.1016/j.aprim.2026.103612",
+   "url": "https://doi.org/10.1016/j.aprim.2026.103612",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Targeting snake venom metalloproteinases: structural diversity, molecular pathogenesis and therapeutic interventions.",
+   "autores": "Dodakallanavar J, Harish DR, Hiremath K, Sampat GH, Patil VS, Mahadevamurthy RK, Ugare S, Akula KK, Manjunathachar HV.",
+   "revista": "Mol Biol Rep",
+   "data": "2026-09-23T00:00:00+00:00",
+   "doi": "10.1007/s11033-026-12781-z",
+   "url": "https://doi.org/10.1007/s11033-026-12781-z",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
    "titulo": "Uma rede microbiota-substrato-metabólito-alvo sugere ligações associadas a AKT1 entre metabólitos derivados da microbiota intestinal e osteoporose.",
    "autores": "Zeng W, Gong Y, Liao Y, Xie X, Qin Z, Li C, Zhang X.",
    "revista": "Int Microbiol",
@@ -224,6 +541,28 @@
      "titulo": "Una red de microbiota-sustrato-metabolito-diana sugiere vínculos asociados a AKT1 entre los metabolitos derivados de la microbiota intestinal y la osteoporosis."
     }
    }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Spectrum of germline variants in moderate to high penetrance non-BRCA breast cancer susceptibility genes in a Pakistani early-onset cohort.",
+   "autores": "Saleem H, Nasir M, Khan S, Irfan M, Shakeel M, Saleem L, Shafiq-Ur-Rehman, Khan IA.",
+   "revista": "Cancer Genet",
+   "data": "2026-09-22T00:00:00+00:00",
+   "doi": "10.1016/j.cancergen.2026.09.009",
+   "url": "https://doi.org/10.1016/j.cancergen.2026.09.009",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "BRCA1/BRCA2 Double Heterozygosity Presenting as Intrahepatic Cholangiocarcinoma.",
+   "autores": "Inagaki N, Yamauchi Y, Matsumoto S, Naito S, Bingo M, Cho H, Ueda Y, Dong J, Kiribayashi K, Yamamoto A, Sukeda A, Nagao…",
+   "revista": "Intern Med",
+   "data": "2026-09-22T00:00:00+00:00",
+   "doi": "10.2169/internalmedicine.7739-26",
+   "url": "https://doi.org/10.2169/internalmedicine.7739-26",
+   "acesso_aberto": false,
+   "tema": "Ciência"
   },
   {
    "tipo": "artigo",
@@ -294,348 +633,6 @@
    "i18n": {
     "es": {
      "titulo": "Elucidar los posibles mecanismos contra el cáncer de hígado del alimento medicinal <i>Rosa roxburghii</i> Tratt. mediante la integración de HPLC-Q Exactive MS/MS, farmacología de red y validación <i>in vitro</i>."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Neoplasias do canal anal na era moderna: integrando a biologia do HPV, ÚLTIMA terminologia e classificação molecular em evolução.",
-   "autores": "Byrnes K, Voltaggio L.",
-   "revista": "Virchows Arch",
-   "data": "2026-09-22T00:00:00+00:00",
-   "doi": "10.1007/s00428-026-04719-4",
-   "url": "https://doi.org/10.1007/s00428-026-04719-4",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Anal canal neoplasms in the modern era: integrating HPV biology, LAST terminology, and evolving molecular classification.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Neoplasias del canal anal en la era moderna: integración de la biología del VPH, la ÚLTIMA terminología y la evolución de la clasificación molecular."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Da instabilidade genômica à regulação epigenética: o papel das variantes do gene de reparo do DNA e dos RNAs não codificantes na carcinogênese colorretal.",
-   "autores": "Alsubeeh K, Yaltır A, Yalın AE, Doğruer Ünal N, Yalın S.",
-   "revista": "Nucleosides Nucleotides Nucleic Acids",
-   "data": "2026-09-22T00:00:00+00:00",
-   "doi": "10.1080/15257770.2026.2735915",
-   "url": "https://doi.org/10.1080/15257770.2026.2735915",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "From genomic instability to epigenetic regulation: the role of DNA repair gene variants and non-coding RNAs in colorectal carcinogenesis.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "De la inestabilidad genómica a la regulación epigenética: el papel de las variantes del gen de reparación del ADN y los ARN no codificantes en la carcinogénesis colorrectal."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Teste genômico de linhagem germinativa para avaliar a adequação de doadores de células-tronco no tratamento de malignidade hematológica: comentário de ética clínica.",
-   "autores": "Carley H, Sahan K, Hanson H, Snape K, Westbury S, Parker MJ, Lucassen AM.",
-   "revista": "J Med Ethics",
-   "data": "2026-09-22T00:00:00+00:00",
-   "doi": "10.1136/jme-2025-111111",
-   "url": "https://doi.org/10.1136/jme-2025-111111",
-   "acesso_aberto": true,
-   "tema": "Genética",
-   "titulo_original": "Germline genomic testing to assess the suitability of stem cell donors in the treatment of haematological malignancy: clinical ethics commentary.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Pruebas genómicas de la línea germinal para evaluar la idoneidad de los donantes de células madre en el tratamiento de la neoplasia hematológica: comentario de ética clínica."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Hemoperfusão como Terapia Adjunta em Envenenamento por Serpente Grave Refratário ao Antiveneno: Uma Série de Casos.",
-   "autores": "Hosseini SM, Shadnia S, Mostafazadeh B, Rahimi M, Zandiyeh F, Nezhad AR, Evini PET.",
-   "revista": "Clin Case Rep",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.1002/ccr3.73512",
-   "url": "https://doi.org/10.1002/ccr3.73512",
-   "acesso_aberto": true,
-   "tema": "Ciência",
-   "titulo_original": "Hemoperfusion as Adjunctive Therapy in Severe Snake Envenomation Refractory to Antivenom: A Case Series.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Hemoperfusion as Adjunctive Therapy in Severe Snake Envenomation Refractory to Antivenom: A Case Series."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Role-play in graduate genetic counseling education: a practicum experience in South Korea.",
-   "autores": "Lee SA, Park MS, Kim A, Huh J.",
-   "revista": "Ewha Med J",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.12771/emj.2026.01452",
-   "url": "https://doi.org/10.12771/emj.2026.01452",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Role-play in graduate genetic counseling education: a practicum experience in South Korea.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Juego de roles en la educación de posgrado en asesoramiento genético: una experiencia práctica en Corea del Sur."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Alvos agnósticos de tumor de próxima geração no horizonte.",
-   "autores": "Coleman N, Liu J, Beal J, Subbiah V.",
-   "revista": "Trends Cancer",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.1016/j.trecan.2026.08.009",
-   "url": "https://doi.org/10.1016/j.trecan.2026.08.009",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Next-generation tumor-agnostic targets on the horizon.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Dianas agnósticas tumorales de próxima generación en el horizonte."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "AVC de oclusão de grandes vasos na coagulopatia de consumo induzida por veneno após envenenamento por víbora.",
-   "autores": "Aryan A, Goyal D, Alam S, Kumar M.",
-   "revista": "BMJ Case Rep",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.1136/bcr-2026-273987",
-   "url": "https://doi.org/10.1136/bcr-2026-273987",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Large vessel occlusion stroke in venom-induced consumption coagulopathy after viper envenomation.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Accidente cerebrovascular de oclusión de vasos grandes en la coagulopatía de consumo inducida por veneno después del envenenamiento de la víbora."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "O CD36 liga o metabolismo de ácidos graxos à remodelação do microambiente imune tumoral no câncer de mama.",
-   "autores": "Wu X, Ren L, Peng L, Tan X, Yan W, Qi X, Wang Y, Zhang Y.",
-   "revista": "Transl Oncol",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.1016/j.tranon.2026.103045",
-   "url": "https://doi.org/10.1016/j.tranon.2026.103045",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "CD36 links fatty acid metabolism to tumor immune microenvironment remodeling in breast cancer.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "CD36 vincula el metabolismo de los ácidos grasos con la remodelación del microambiente inmunitario tumoral en el cáncer de mama."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "O GMPS impulsiona a progressão do câncer de pâncreas através da supressão de danos no DNA, ativação de STING e senescência celular.",
-   "autores": "Li Y, Zhang Z, Li D, Zhou C, Chen Y, Zhu C, Yang J, Tang R, Wang W, Yu X, Xu J.",
-   "revista": "Transl Oncol",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.1016/j.tranon.2026.103044",
-   "url": "https://doi.org/10.1016/j.tranon.2026.103044",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "GMPS drives pancreatic cancer progression via suppressing DNA damage, STING activation and cellular senescence.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "GMPS impulsa la progresión del cáncer de páncreas mediante la supresión del daño en el ADN, la activación de la PICADURA y la senescencia celular."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Adjuntive Varespladib after antivenenom administration for snakebite: A phase II randomized clinical trial.",
-   "autores": "Gerardo CJ, Bhalla A, Mohanty CR, Sahu BK, Kumar S, Agrawal S, Ayyan S M, Shu E, Deuson T, Kumar R M, Beatty NL…",
-   "revista": "PLoS Negl Trop Dis",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.1371/journal.pntd.0014736",
-   "url": "https://doi.org/10.1371/journal.pntd.0014736",
-   "acesso_aberto": true,
-   "tema": "Ciência",
-   "titulo_original": "Adjunctive Varespladib after antivenom administration for snakebite: A phase II randomized clinical trial.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Adjunctive Varespladib after antivenenom administration for snakebite: A phase II randomized clinical trial."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Um caso de fase leucêmica de linfoma de células do manto diagnosticado com conjuntivite cicatricial e tumor conjuntival palpebral superior bilateral.",
-   "autores": "Sumioka T, Yasuda S, Imai K, Iwanishi H, Tanigawa I, Hosoi H, Sonoki T, Sagan K, Mikasa Y, Murata SI, Kokado M, Okada…",
-   "revista": "Cornea",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.1097/ico.0000000000004281",
-   "url": "https://doi.org/10.1097/ico.0000000000004281",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "A Case of Leukemic Phase of Mantle Cell Lymphoma Diagnosed With Scarring Conjunctivitis and Bilateral Upper Palpebral Conjunctival Tumor.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Un caso de fase leucémica de linfoma de células del manto diagnosticado con conjuntivitis cicatricial y tumor conjuntival palpebral superior bilateral."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Oportunidades na terapia gênica do câncer: inibir o MDM2 e restaurar o p14ARF como meio de ativar o p53.",
-   "autores": "de Oliveira SB, Alves ALV, Niitsuma BN, Antunes F, Marinho GB, Amanatidis GL, Luz J, Barbosa M, Zambotti PEO, Rodrigues…",
-   "revista": "Mol Cell Biochem",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.1007/s11010-026-05742-4",
-   "url": "https://doi.org/10.1007/s11010-026-05742-4",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Opportunities in cancer gene therapy: inhibiting MDM2 and restoring p14ARF as a means to activate p53.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Oportunidades en la terapia génica del cáncer: inhibición de MDM2 y restauración de p14ARF como medio para activar p53."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Carcinomas endometriais mutados por KRAS: uma análise abrangente de perfis clínico-patológicos e moleculares em subtipos histológicos.",
-   "autores": "Li WQ, Wu HX, Li HB, Zhang Q, Si JW, Pang SJ, Shen Y.",
-   "revista": "Virchows Arch",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.1007/s00428-026-04723-8",
-   "url": "https://doi.org/10.1007/s00428-026-04723-8",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "KRAS-mutated endometrial carcinomas: a comprehensive analysis of clinicopathological and molecular profiles across histological subtypes.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "KRAS-mutated endometrial carcinomas: a comprehensive analysis of clinicopathological and molecular profiles across histological subtypes."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "O direcionamento do eixo YAP-BST2 supera a resistência intrínseca anti-PD-1 no câncer gástrico metastático.",
-   "autores": "Zhang W, Wang S, Wang M, Yu R, Yue J, Shao L, Zhang H, Zhu M, Tian L, Cheng S, Qin W, Tang Y, Han Y, Wang W, An L, Meng…",
-   "revista": "Adv Sci (Weinh)",
-   "data": "2026-09-21T00:00:00+00:00",
-   "doi": "10.1002/advs.77708",
-   "url": "https://doi.org/10.1002/advs.77708",
-   "acesso_aberto": true,
-   "tema": "Câncer",
-   "titulo_original": "Targeting the YAP-BST2 Axis Overcomes Intrinsic Anti-PD-1 Resistance in Metastatic Gastric Cancer.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Dirigirse al eje YAP-BST2 supera la resistencia intrínseca anti-PD-1 en el cáncer gástrico metastásico."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "O monitoramento dinâmico de ctDNA prevê a recorrência e orienta a terapia no carcinoma hepatocelular pós-operatório.",
-   "autores": "Xu J, Wang H, Xu M, Li Y, Zhang Y, Tan J, Lin N.",
-   "revista": "J Surg Oncol",
-   "data": "2026-09-20T00:00:00+00:00",
-   "doi": "10.1002/jso.70405",
-   "url": "https://doi.org/10.1002/jso.70405",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Dynamic ctDNA Monitoring Predicts Recurrence and Guides Therapy in Postoperative Hepatocellular Carcinoma.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El monitoreo dinámico de ADNct predice la recurrencia y guía la terapia en el carcinoma hepatocelular postoperatorio."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Padrões emergentes de câncer renal em adultos jovens: onde estamos?",
-   "autores": "Troisi P, Occhipinti D, Ligato C, Sardaro V, Campi R, Merenda E, Cappoli N, Arduini D, Messina G, Di Leo D, Neri A…",
-   "revista": "Crit Rev Oncol Hematol",
-   "data": "2026-09-20T00:00:00+00:00",
-   "doi": "10.1016/j.critrevonc.2026.105607",
-   "url": "https://doi.org/10.1016/j.critrevonc.2026.105607",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Emerging patterns of kidney cancer in young adults: where do we stand?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Patrones emergentes de cáncer de riñón en adultos jóvenes: ¿dónde estamos?"
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Estratégias terapêuticas emergentes e desenvolvimento clínico de agentes investigacionais para condrossarcoma convencional.",
-   "autores": "Torrado C, Conley AP.",
-   "revista": "Expert Opin Investig Drugs",
-   "data": "2026-09-20T00:00:00+00:00",
-   "doi": "10.1080/13543784.2026.2734584",
-   "url": "https://doi.org/10.1080/13543784.2026.2734584",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Emerging therapeutic strategies and clinical development of investigational agents for conventional chondrosarcoma.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Estrategias terapéuticas emergentes y desarrollo clínico de agentes en investigación para el condrosarcoma convencional."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Características clínico-patológicas de mutações somáticas <i>TP53</i> em neoplasias mieloproliferativas negativas para cromossomos Filadélfia: uma revisão sistemática.",
-   "autores": "Aldapt M, Kaddoura R, Saleh AO, Najim M, Salem A, Al-Mashdali AF, Muthanna B, Aweer RA, Rabadi M, Mohamed SF.",
-   "revista": "EJHaem",
-   "data": "2026-09-19T00:00:00+00:00",
-   "doi": "10.1002/jha2.70385",
-   "url": "https://doi.org/10.1002/jha2.70385",
-   "acesso_aberto": true,
-   "tema": "Genética",
-   "titulo_original": "Clinicopathologic Characteristics of Somatic <i>TP53</i> Mutations in Philadelphia Chromosome-Negative Myeloproliferative Neoplasms: A Systematic Review.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Características clinicopatológicas de las mutaciones somáticas de <i>TP53</i> en neoplasias mieloproliferativas negativas para el cromosoma Filadelfia: una revisión sistemática."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Análise combinada do DNA na urina e no plasma para o estadiamento molecular do carcinoma urotelial do trato urinário superior.",
-   "autores": "Pallauf M, Bronimann S, Rapiey S, Baraban E, Chai S, Fischer DS, Bicocca VT, Levin TG, McConkey DJ, Singla N.",
-   "revista": "Eur Urol Oncol",
-   "data": "2026-09-19T00:00:00+00:00",
-   "doi": "10.1016/j.euo.2026.08.008",
-   "url": "https://doi.org/10.1016/j.euo.2026.08.008",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Integrated Urine and Plasma DNA Analysis for Molecular Staging of Upper Tract Urothelial Carcinoma.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Análisis integrado de ADN en orina y plasma para la estadificación molecular del carcinoma urotelial del tracto superior."
     }
    }
   }
@@ -801,6 +798,15 @@
   "the secret cold war history of tetris": "2026-09-27T14:09:38.653722+00:00",
   "bacterias formam escudo microbiologico e protegem o trigo contra fungo patogenico": "2026-09-28T07:04:12.734400+00:00",
   "falha no reparo do dna materno compromete desenvolvimento embrionario e gera mutacoes pos fecundacao": "2026-09-28T07:04:12.734400+00:00",
-  "musculacao faz celulas de gordura encolherem antes mesmo da perda de peso": "2026-09-28T07:04:12.734400+00:00"
+  "musculacao faz celulas de gordura encolherem antes mesmo da perda de peso": "2026-09-28T07:04:12.734400+00:00",
+  "resposta global negligente ao ebola e marca da desigualdade geopolitica na saude": "2026-09-28T15:39:15.825868+00:00",
+  "concurso aberto para professor assistente no icts unesp": "2026-09-28T15:39:15.825868+00:00",
+  "ai finds 3d shape that fills all space with a never repeating pattern": "2026-09-28T15:39:15.825868+00:00",
+  "why is this monster el nino so strong": "2026-09-28T15:39:15.825868+00:00",
+  "growing ai energy demands the search for subatomic particles and the hottest amoeba": "2026-09-28T15:39:15.825868+00:00",
+  "bigger than crispr a guide to the latest genome editors": "2026-09-28T15:39:15.825868+00:00",
+  "diabetes study finds keeping blood sugar too steady may come at a price": "2026-09-28T15:39:15.825868+00:00",
+  "blood tests reveal why astronauts get constipated in space": "2026-09-28T15:39:15.825868+00:00",
+  "vaping in childhood has bigger health risks than wed thought": "2026-09-28T15:39:15.825868+00:00"
  }
 }
