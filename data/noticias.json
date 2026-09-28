@@ -1,6 +1,84 @@
 {
- "atualizado_em": "2026-09-27T23:16:34.440070+00:00",
+ "atualizado_em": "2026-09-28T07:04:12.734400+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "Bactérias formam ‘escudo microbiológico’ e protegem o trigo contra fungo patogênico",
+   "resumo": "Aplicadas nas sementes, espécies bacterianas reduziram em cerca de 60% os sintomas de uma doença conhecida como podridão da raiz, que prejudica a absorção de nutrientes e gera prejuízo às lavouras",
+   "url": "https://agencia.fapesp.br/bacterias-formam-escudo-microbiologico-e-protegem-o-trigo-contra-fungo-patogenico/59281",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-28T07:04:12.734400+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://agencia.fapesp.br/files/post/59281.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Bacteria form ‘microbiological shield’ and protect wheat against pathogenic fungus",
+     "resumo": "Applied to the seeds, bacterial species reduced by about 60% the symptoms of a disease known as root rot, which impairs nutrient absorption and damages crops"
+    },
+    "es": {
+     "titulo": "Las bacterias forman un \"escudo microbiológico\" y protegen al trigo contra los hongos patógenos",
+     "resumo": "Aplicado a las semillas, las especies bacterianas redujeron en aproximadamente un 60% los síntomas de una enfermedad conocida como podredumbre de la raíz, que perjudica la absorción de nutrientes y daña los cultivos"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Falha no reparo do DNA materno compromete desenvolvimento embrionário e gera mutações pós-fecundação",
+   "resumo": "Pesquisa com camundongos revela que a falta da proteína RAD51 em óvulos provoca danos no genoma do embrião, reduz o número de filhotes e favorece o surgimento de alterações genéticas espontâneas. Achado abre caminho para novas abordagens…",
+   "url": "https://agencia.fapesp.br/falha-no-reparo-do-dna-materno-compromete-desenvolvimento-embrionario-e-gera-mutacoes-pos-fecundacao/59280",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-28T07:04:12.734400+00:00",
+   "tema": "Genética",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59280.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Failure to repair maternal DNA compromises embryonic development and generates post-fecundation mutations",
+     "resumo": "Research with mice reveals that the lack of RAD51 protein in eggs causes damage to the embryo genome, reduces the number of offspring and favors the emergence of spontaneous genetic changes. Findings pave the way for new approaches…"
+    },
+    "es": {
+     "titulo": "La falta de reparación del ADN materno compromete el desarrollo embrionario y genera mutaciones posteriores a la fecundación",
+     "resumo": "La investigación con ratones revela que la falta de proteína RAD51 en los huevos provoca daños en el genoma embrionario, reduce el número de crías y favorece la aparición de cambios genéticos espontáneos. Los hallazgos allanan el camino para nuevos enfoques..."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Musculação faz células de gordura encolherem antes mesmo da perda de peso",
+   "resumo": "A matéria mais acessada entre 18 e 24/09 detalha estudo com camundongos feito na Unicamp que mostra que apenas sete dias de treinamento de força já ativaram mecanismos de quebra de lipídios",
+   "url": "https://agencia.fapesp.br/musculacao-faz-celulas-de-gordura-encolherem-antes-mesmo-da-perda-de-peso/59246",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-28T07:04:12.734400+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59246.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Weight training causes fat cells to shrink even before weight loss",
+     "resumo": "The most accessed article between 09/18 and 09/24 details a study with mice done at Unicamp that shows that just seven days of strength training have already activated lipid breaking mechanisms"
+    },
+    "es": {
+     "titulo": "El entrenamiento con pesas hace que las células grasas se reduzcan incluso antes de perder peso",
+     "resumo": "El artículo más consultado entre el 18/09 y el 24/09 detalla un estudio con ratones realizado en la Unicamp que muestra que solo siete días de entrenamiento de fuerza ya han activado los mecanismos de rotura de lípidos"
+    }
+   }
+  },
   {
    "tipo": "noticia",
    "titulo": "Glucosamina, um suplemento comum popular, ligado à progressão mais rápida da doença de Alzheimer",
@@ -720,6 +798,9 @@
   "scientists just found a bizarre cosmic object hiding in plain sight": "2026-09-27T08:21:31.290160+00:00",
   "glucosamine a popular joint supplement linked to faster alzheimers progression": "2026-09-27T14:09:38.653722+00:00",
   "why rheumatoid arthritis pain may persist even when inflammation is under control": "2026-09-27T14:09:38.653722+00:00",
-  "the secret cold war history of tetris": "2026-09-27T14:09:38.653722+00:00"
+  "the secret cold war history of tetris": "2026-09-27T14:09:38.653722+00:00",
+  "bacterias formam escudo microbiologico e protegem o trigo contra fungo patogenico": "2026-09-28T07:04:12.734400+00:00",
+  "falha no reparo do dna materno compromete desenvolvimento embrionario e gera mutacoes pos fecundacao": "2026-09-28T07:04:12.734400+00:00",
+  "musculacao faz celulas de gordura encolherem antes mesmo da perda de peso": "2026-09-28T07:04:12.734400+00:00"
  }
 }
