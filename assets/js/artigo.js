@@ -262,16 +262,21 @@
   /* ---------------- montagem da página ---------------- */
   function montar(d) {
     const rv = d.revista || {};
+    // estudo em andamento (ainda sem revista): campo "estudo" com programa, instituição, situação e ano
+    const et = d.estudo || null;
     document.title = (d.titulo_curto || d.titulo) + " · GenoEvidence";
     const desc = $('meta[name="description"]'); if (desc) desc.content = d.titulo;
     const autores = d.autores || [];
+    // botão de voltar: leva ao tema do estudo
+    const volta = $(".back-btn");
+    if (volta && d.tema_id) { volta.href = "../#" + d.tema_id; volta.setAttribute("aria-label", "Voltar para o tema " + (d.tema || "")); }
 
     const hero = document.createElement("section");
     hero.className = "hero art-hero"; hero.id = "top";
     hero.innerHTML = '<canvas id="artCanvas" aria-hidden="true"></canvas><div class="hero-grid"></div>' +
       '<div class="wrap hero-in"><div>' +
       '<p class="eyebrow crumb"><a href="' + RAIZ + '">GenoEvidence</a> <span aria-hidden="true">/</span> <a href="' + RAIZ + "artigos/" + (d.tema_id ? "#" + esc(d.tema_id) : "") + '">' + esc(d.tema || "Temas") + '</a> <span aria-hidden="true">/</span> <span style="color:var(--text)">' + esc(d.breadcrumb || d.titulo_curto) + "</span></p>" +
-      '<div class="kind-row"><span class="badge tipo">' + esc(d.rotulo || "Artigo publicado") + "</span>" + (rv.nome ? '<a class="badge rev" href="' + esc(rv.site || rv.url) + '" target="_blank" rel="noopener">Revista ' + esc(rv.nome) + (rv.ano ? " · " + esc(rv.ano) : "") + "</a>" : "") + "</div>" +
+      '<div class="kind-row"><span class="badge tipo">' + esc(d.rotulo || "Artigo publicado") + "</span>" + (et ? '<span class="badge rev">Ainda não publicado</span>' : rv.nome ? '<a class="badge rev" href="' + esc(rv.site || rv.url) + '" target="_blank" rel="noopener">Revista ' + esc(rv.nome) + (rv.ano ? " · " + esc(rv.ano) : "") + "</a>" : "") + "</div>" +
       '<h1 class="art-title">' + esc(d.titulo_curto || d.titulo) + "</h1>" +
       // título completo: em português; se o original for em outra língua, ele aparece embaixo
       '<p class="sub art-full">' + esc(d.titulo_pt || d.titulo) + (d.titulo_pt ? '<span class="art-orig">' + esc(d.rotulo_original || "Título original em inglês:") + " " + esc(d.titulo) + "</span>" : "") + "</p>" +
@@ -281,6 +286,12 @@
       '<a class="cta ghost" href="#em-1-minuto">Resumo em 1 minuto</a>' +
       (rv.pdf ? '<a class="cta ghost" href="' + esc(rv.pdf) + '" target="_blank" rel="noopener">Baixar PDF <span aria-hidden="true">↗</span></a>' : "") +
       "</div></div>" +
+      (et ? '<aside class="readout" aria-label="Sobre o estudo"><p class="eyebrow" style="margin-bottom:6px">Estudo em andamento</p>' +
+        '<p class="rv-name' + ((et.programa || "").length > 22 ? " longo" : "") + '">' + esc(et.programa || "") + "</p>" +
+        (et.instituicao ? '<div class="row"><span class="k">Instituição</span><span class="v">' + esc(et.instituicao) + "</span></div>" : "") +
+        (et.situacao ? '<div class="row"><span class="k">Situação</span><span class="v">' + esc(et.situacao) + "</span></div>" : "") +
+        (et.ano ? '<div class="row"><span class="k">Ano</span><span class="v">' + esc(et.ano) + "</span></div>" : "") +
+        '<a class="readout-link" href="#revista">Sobre o estudo →</a></aside></div>' :
       '<aside class="readout" aria-label="Onde foi publicado"><p class="eyebrow" style="margin-bottom:6px">Publicado em</p>' +
       '<p class="rv-name' + ((rv.nome || "").length > 22 ? " longo" : "") + '">' + esc(rv.nome || "—") + "</p>" +
       (rv.volume ? '<div class="row"><span class="k">Volume · número</span><span class="v">v. ' + esc(rv.volume) + (rv.numero ? ", n. " + esc(rv.numero) : "") + "</span></div>" : "") +
@@ -288,14 +299,14 @@
       (rv.publicado ? '<div class="row"><span class="k">Publicação</span><span class="v">' + esc(data(rv.publicado)) + "</span></div>" : "") +
       (rv.issn ? '<div class="row"><span class="k">ISSN</span><span class="v">' + esc(rv.issn) + "</span></div>" : "") +
       (rv.doi ? '<div class="row"><span class="k">DOI</span><span class="v his">' + esc(rv.doi) + "</span></div>" : "") +
-      '<a class="readout-link" href="#revista">Sobre a revista e como citar →</a></aside></div>' +
+      '<a class="readout-link" href="#revista">Sobre a revista e como citar →</a></aside></div>') +
       '<span class="art-canvas-tag">' + esc(d.arte_legenda || "ilustração · fibras musculares ao microscópio") + "</span>";
     main.before(hero);
 
     let html = "";
     // em 1 minuto + números-chave
     if (d.em_1_minuto) {
-      html += '<section class="s" id="em-1-minuto"><div class="wrap"><div class="s-head"><p class="eyebrow">Em 1 minuto</p><h2>O artigo em quatro passos</h2><p class="lede">Para quem tem pouco tempo: o essencial do estudo, em linguagem simples.</p></div>' +
+      html += '<section class="s" id="em-1-minuto"><div class="wrap"><div class="s-head"><p class="eyebrow">Em 1 minuto</p><h2>' + (d.estudo ? "O estudo em quatro passos" : "O artigo em quatro passos") + '</h2><p class="lede">Para quem tem pouco tempo: o essencial do estudo, em linguagem simples.</p></div>' +
         '<div class="story">' + d.em_1_minuto.map(i => '<div class="story-card"><span class="eyebrow">' + esc(i.rotulo) + "</span><h3>" + esc(i.titulo) + "</h3><p>" + esc(i.texto) + "</p></div>").join("") + "</div>" +
         (d.numeros ? '<div class="num-grid">' + d.numeros.map(n => '<div class="num-tile" style="--c:' + cor(n.cor) + '"><span class="num-v">' + esc(n.valor) + "</span><p>" + esc(n.texto) + "</p></div>").join("") + "</div>" : "") +
         "</div></section>";
@@ -308,8 +319,15 @@
       html += '<section class="s" id="glossario"><div class="wrap"><div class="s-head"><p class="eyebrow">Glossário</p><h2>Palavras-chave, sem complicação</h2><p class="lede">Os termos técnicos deste artigo explicados de forma simples.</p></div>' +
         '<dl class="gloss">' + d.glossario.map(g => "<div><dt>" + esc(g.termo) + "</dt><dd>" + esc(g.def) + "</dd></div>").join("") + "</dl></div></section>";
     }
+    // estudo em andamento: no lugar da revista, um quadro sobre o estudo e a autoria
+    if (et) html += '<section class="s" id="revista"><div class="wrap"><div class="s-head"><p class="eyebrow">O estudo</p><h2>Sobre este estudo</h2><p class="lede">Estudo em andamento: ainda não foi publicado em revista científica, e os resultados podem mudar até a publicação.</p></div>' +
+      '<div class="journal-panel"><div class="jp-main"><span class="jp-mark">' + esc(et.sigla || "IC") + '</span><div><p class="eyebrow">' + esc(et.tipo || "Estudo em andamento") + '</p><p class="jp-name">' + esc(et.programa || "") + "</p>" +
+      '<p class="jp-meta">' + [et.instituicao, et.ano].filter(Boolean).map(esc).join(" · ") + "</p></div></div>" +
+      (et.situacao ? '<dl class="kv jp-kv"><dt>Situação</dt><dd>' + esc(et.situacao) + "</dd></dl>" : "") + "</div>" +
+      (autores.length ? '<h3 class="blk-title">Autoria</h3><ul class="author-list">' + autores.map(a => "<li" + (a.destaque ? ' class="hl"' : "") + "><b>" + esc(a.nome || a) + "</b>" + (a.afiliacao ? "<span>" + esc(a.afiliacao) + "</span>" : "") + "</li>").join("") + "</ul>" : "") +
+      "</div></section>";
     // a revista em destaque + autores + como citar
-    html += '<section class="s" id="revista"><div class="wrap"><div class="s-head"><p class="eyebrow">A revista</p><h2>Onde este artigo foi publicado</h2><p class="lede">Toda evidência tem uma fonte. Leia o artigo completo diretamente na revista.</p></div>' +
+    if (!et) html += '<section class="s" id="revista"><div class="wrap"><div class="s-head"><p class="eyebrow">A revista</p><h2>Onde este artigo foi publicado</h2><p class="lede">Toda evidência tem uma fonte. Leia o artigo completo diretamente na revista.</p></div>' +
       '<div class="journal-panel"><div class="jp-main"><span class="jp-mark">' + esc((rv.nome || "R").slice(0, 2)) + '</span><div><p class="eyebrow">Revista científica</p><p class="jp-name">' + esc(rv.nome || "") + "</p>" +
       '<p class="jp-meta">' + [rv.cidade, rv.volume && "v. " + rv.volume, rv.numero && "n. " + rv.numero, rv.paginas && "p. " + rv.paginas, rv.ano].filter(Boolean).map(esc).join(" · ") + "</p></div></div>" +
       '<dl class="kv jp-kv">' +
@@ -339,7 +357,7 @@
     // menu do topo e menu lateral
     const secs = [["#em-1-minuto", "Resumo"]].concat((d.secoes || []).map(s => ["#" + s.id, s.menu || s.titulo]));
     if (d.glossario) secs.push(["#glossario", "Glossário"]);
-    secs.push(["#revista", "Revista"]);
+    secs.push(["#revista", et ? "O estudo" : "Revista"]);
     if (d.referencias) secs.push(["#referencias", "Referências"]);
     $("#nav").innerHTML = secs.map(([h, l]) => '<a href="' + h + '">' + esc(l) + "</a>").join("");
     $("#ge-topicos").textContent = JSON.stringify([["#top", "Início do artigo"]].concat(secs.map(([h, l]) => [h, l])));

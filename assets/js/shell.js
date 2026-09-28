@@ -75,7 +75,7 @@
     const paginas = [
       { nome: "Início", href: RAIZ }, { nome: "Em destaque", href: RAIZ + "#destaques", extra: "pesquisadoras" },
       { nome: "Notícias da ciência", href: RAIZ + "noticias/", extra: "hoje" }, { nome: "Temas", href: RAIZ + "artigos/", extra: "artigos estudos" },
-      { nome: "Revistas", href: RAIZ + "revistas/", extra: "publicações" }, { nome: "Estudo em andamento: R337H", href: RAIZ + "r337h/", extra: "tp53 li-fraumeni dna" },
+      { nome: "Revistas", href: RAIZ + "revistas/", extra: "publicações" },
       { nome: "Sobre o app", href: RAIZ + "sobre/", extra: "instalar" }];
     // tema ou pesquisadora: ao tocar, abre uma ramificação com os estudos dela(e)
     const ramos = (titulo, itens) => itens.length ? '<div class="gv-grupo"><p class="gv-titulo">' + esc(titulo) + "</p>" + itens.map(i =>
@@ -89,7 +89,10 @@
       const arts = d.artigos || [];
       const temas = (d.temas || []).map(t => ({ nome: t.nome, href: RAIZ + "artigos/#" + t.id, cor: t.cor, extra: t.sobre, todos: "Abrir o tema", estudos: arts.filter(a => (a.temas || []).includes(t.id)) })).filter(t => t.estudos.length);
       const pesq = (d.pesquisadoras || []).map(p => ({ nome: p.nome, href: RAIZ + "artigos/?pesquisadora=" + p.id, cor: p.cor, extra: p.vinculo, todos: "Ver todos os estudos dela", estudos: arts.filter(a => (a.pesquisadoras || []).includes(p.id)).sort((x, y) => String(y.data).localeCompare(String(x.data))) }));
-      lista.innerHTML = grupo("Páginas", paginas) + ramos("Temas", temas) + ramos("Pesquisadoras", pesq);
+      // estudos em andamento: os que ainda não têm revista (R337H, Iniciação Científica…)
+      const andamento = arts.filter(a => !a.revista && a.selo).map(a => ({ nome: a.titulo_curto, href: RAIZ + a.url,
+        extra: [a.titulo, a.titulo_pt, a.resumo, (a.tags || []).join(" "), a.autores_curto, a.selo, a.id].join(" ") }));
+      lista.innerHTML = grupo("Páginas", paginas) + grupo("Estudos em andamento", andamento) + ramos("Temas", temas) + ramos("Pesquisadoras", pesq);
       filtrar();
     }).catch(() => {});
     const norm = t => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();

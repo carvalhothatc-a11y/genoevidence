@@ -23,6 +23,7 @@ Pesquisadoras em destaque: **Patrícia Lius Melo Alves** (Uniso) e **Juliana Mac
 | Estudo | Tema | Revista |
 |---|---|---|
 | [A variante R337H no gene TP53 e a Síndrome de Li-Fraumeni](https://carvalhothatc-a11y.github.io/genoevidence/r337h/) | Bioinformática | Estudo em andamento |
+| [O gene TP53 no câncer de pulmão, investigado em bancos de dados públicos](https://carvalhothatc-a11y.github.io/genoevidence/artigos/tp53-pulmao-in-silico/) | Bioinformática | Estudo em andamento (Iniciação Científica) |
 | [O veneno da cobra coral amazônica no músculo, e quanto o soro protege](https://carvalhothatc-a11y.github.io/genoevidence/artigos/micrurus-spixii/) | Toxinologia | ARACÊ, 2026 · [DOI 10.56238/arev8n2-068](https://doi.org/10.56238/arev8n2-068) |
 | [Ibrutinibe com rituximabe contra a leucemia linfocítica crônica: mais tempo sem a doença avançar](https://carvalhothatc-a11y.github.io/genoevidence/artigos/ibrutinibe-leucemia/) | Oncologia | Hematology, Transfusion and Cell Therapy, 2026 · [DOI 10.1016/j.htct.2025.106234](https://doi.org/10.1016/j.htct.2025.106234) |
 | [Um curativo de celulose que combate bactérias resistentes](https://carvalhothatc-a11y.github.io/genoevidence/artigos/curativo-celulose-nisina/) | Biomateriais e nanotecnologia | Macromol, 2025 · [DOI 10.3390/macromol5030039](https://doi.org/10.3390/macromol5030039) |

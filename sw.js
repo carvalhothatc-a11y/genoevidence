@@ -3,7 +3,7 @@
      e guarda uma cópia; sem internet, usa a cópia guardada.
    - Imagens, ícones e fontes: usa a cópia guardada (carrega rápido) e atualiza em segundo plano.
    Ao mudar a lista BASICO, aumente a VERSAO. */
-const VERSAO = "genoevidence-v15";
+const VERSAO = "genoevidence-v16";
 const BASICO = [
   "./",
   "index.html",
@@ -57,7 +57,9 @@ const BASICO = [
   "artigos/celulose-remedios-agua/",
   "artigos/celulose-remedios-agua/artigo.json",
   "artigos/tp53-egfr-pulmao/",
-  "artigos/tp53-egfr-pulmao/artigo.json"
+  "artigos/tp53-egfr-pulmao/artigo.json",
+  "artigos/tp53-pulmao-in-silico/",
+  "artigos/tp53-pulmao-in-silico/artigo.json"
 ];
 const CDN = [
   "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js",

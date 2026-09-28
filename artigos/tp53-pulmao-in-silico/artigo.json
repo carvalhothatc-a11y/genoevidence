@@ -1,0 +1,146 @@
+{
+  "id": "tp53-pulmao-in-silico",
+  "tipo": "estudo",
+  "rotulo": "Estudo em andamento",
+  "arte": "helice",
+  "arte_legenda": "ilustração · a dupla hélice do DNA",
+  "tema": "Bioinformática",
+  "tema_id": "bioinformatica",
+  "titulo": "Análise in silico do gene TP53 no câncer de pulmão: expressão gênica, prognóstico e potenciais interações moleculares",
+  "titulo_curto": "O gene TP53 no câncer de pulmão, investigado em bancos de dados públicos",
+  "breadcrumb": "TP53 no câncer de pulmão",
+  "autores": [
+    {"nome": "Thaisa Carvalho", "destaque": true, "afiliacao": "Biomedicina · Universidade de Sorocaba (Uniso)"}
+  ],
+  "estudo": {
+    "tipo": "Estudo em andamento",
+    "programa": "Iniciação Científica",
+    "sigla": "IC",
+    "instituicao": "Universidade de Sorocaba (Uniso)",
+    "situacao": "Relatório final concluído · ainda não publicado",
+    "ano": "2026"
+  },
+  "palavras_chave": ["TP53", "Câncer de pulmão", "Análise in silico", "Bioinformática"],
+  "em_1_minuto": [
+    {"rotulo": "O problema", "titulo": "Um câncer descoberto tarde", "texto": "O câncer de pulmão é um dos que mais matam no mundo, muitas vezes porque é descoberto já avançado. O gene TP53, o “guardião do genoma”, costuma estar alterado nesses tumores."},
+    {"rotulo": "O que foi feito", "titulo": "Seis bancos de dados, nenhum tubo de ensaio", "texto": "Tudo foi feito no computador (in silico), com dados públicos de pacientes com adenocarcinoma de pulmão e seis ferramentas de bioinformática."},
+    {"rotulo": "O que apareceu", "titulo": "Mais TP53 no tumor", "texto": "O tumor tinha mais TP53 ativo que o pulmão normal. Em uma das análises, quem tinha mais TP53 viveu menos; em outra, não houve diferença."},
+    {"rotulo": "Por que importa", "titulo": "Pistas para testar no laboratório", "texto": "O TP53 aparece no centro de uma grande rede de proteínas e ligado a 452 fármacos e compostos. São hipóteses que ainda precisam ser confirmadas em experimentos."}
+  ],
+  "numeros": [
+    {"valor": "52,2 × 34,2", "texto": "TPM: atividade mediana do TP53 no tumor × no pulmão normal", "cor": "his"},
+    {"valor": "29%", "texto": "mais risco de morte com TP53 alto, no KM Plotter (HR 1,29)", "cor": "amber"},
+    {"valor": "62 × 79", "texto": "meses de sobrevida mediana: TP53 alto × TP53 baixo (KM Plotter)", "cor": "violet"},
+    {"valor": "452", "texto": "interações entre o TP53 e fármacos ou compostos (DGIdb)", "cor": "ok"}
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Contexto",
+      "eyebrow": "Contexto",
+      "titulo": "Por que olhar o TP53 no câncer de pulmão",
+      "lede": "Um câncer frequente e muitas vezes descoberto tarde, e um gene que costuma proteger o corpo contra tumores.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>O câncer de pulmão está entre os tumores mais comuns e é uma das principais causas de morte por câncer no mundo. No Brasil, o INCA estimou <strong>32.560 casos por ano</strong> entre 2023 e 2025 (18.020 em homens e 14.540 em mulheres). Como costuma não dar sintomas no começo, muitas vezes é descoberto já avançado: só <strong>16% a 20%</strong> das pessoas estão vivas 5 anos depois do diagnóstico.</p><p>O tipo mais comum é o <strong>câncer de pulmão de células não pequenas</strong>, responsável por cerca de 85% dos casos. Dentro dele, o subtipo mais frequente é o <strong>adenocarcinoma</strong>, o foco deste estudo. O cigarro é o principal fator de risco, mas os casos em pessoas que nunca fumaram vêm aumentando.</p>"},
+        {"tipo": "cartoes", "itens": [
+          {"titulo": "TP53 · o gene", "texto": "Gene que fabrica a proteína p53. É um supressor de tumor: ajuda a controlar a divisão das células, a consertar o DNA e a eliminar células muito danificadas.", "cor": "his"},
+          {"titulo": "In silico · o método", "texto": "Estudo feito no computador, com dados públicos de milhares de pacientes. Serve para levantar hipóteses que depois são testadas no laboratório.", "cor": "arg"}
+        ]},
+        {"tipo": "destaque", "html": "Este estudo segue a mesma linha do <a href='../../r337h/'>estudo sobre a variante R337H</a>: usar a <strong>bioinformática</strong> para entender o papel do TP53 no câncer."}
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Como foi feito",
+      "eyebrow": "Método",
+      "titulo": "Seis ferramentas, uma pergunta cada",
+      "lede": "Um estudo exploratório, feito só com dados públicos de adenocarcinoma de pulmão.",
+      "blocos": [
+        {"tipo": "passos", "itens": [
+          {"titulo": "UALCAN · quanto TP53 há no tumor", "texto": "Comparou a atividade do gene em 515 tumores e 59 amostras de pulmão normal do projeto TCGA, e separou os resultados por idade e por sexo."},
+          {"titulo": "KM Plotter · o TP53 muda a sobrevida?", "texto": "Separou os pacientes em dois grupos, com TP53 alto e baixo, e comparou quanto tempo cada grupo viveu (curvas de Kaplan-Meier)."},
+          {"titulo": "UCSC Xena · conferir em outra base", "texto": "Repetiu a análise de sobrevida com outro corte: 285 pacientes com TP53 alto e 282 com TP53 baixo."},
+          {"titulo": "STRING · com quem a p53 conversa", "texto": "Montou a rede de proteínas que interagem com a p53."},
+          {"titulo": "DGIdb · fármacos ligados ao TP53", "texto": "Listou fármacos e compostos com interação descrita com o gene. A ideia inicial era usar o CTD, que ficou fora do ar no Brasil durante o estudo."},
+          {"titulo": "Metascape · em que processos o TP53 atua", "texto": "Agrupou o TP53 e os genes ligados a ele pelos processos biológicos e vias de sinalização em comum."}
+        ]},
+        {"tipo": "nota", "html": "As diferenças de atividade do gene foram testadas com os métodos estatísticos de cada plataforma; a sobrevida, com o teste log-rank e o hazard ratio (HR), com intervalo de confiança de 95%."}
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "O que os bancos de dados mostraram",
+      "lede": "Escolha uma comparação para ver os números.",
+      "blocos": [
+        {"tipo": "grafico", "rotulo_chips": "Escolha a comparação",
+          "grupos": [{"nome": "Pulmão normal", "cor": "#7C9CFF"}, {"nome": "Tumor", "cor": "#FF5470"}],
+          "parametros": [
+            {"rotulo": "Tumor × normal", "unidade": " TPM", "eixo": "TPM (mediana)", "valores": [{"m": 34.2}, {"m": 52.2}], "leitura": "Nos 515 tumores, a atividade mediana do TP53 foi de 52,2 TPM, contra 34,2 TPM nas 59 amostras de pulmão normal."},
+            {"rotulo": "Por sexo", "unidade": " TPM", "eixo": "TPM (mediana)", "grupos": [{"nome": "Pulmão normal", "cor": "#7C9CFF"}, {"nome": "Homens com tumor", "cor": "#FFB23F"}, {"nome": "Mulheres com tumor", "cor": "#FF5470"}], "valores": [{"m": 34.2}, {"m": 50.2}, {"m": 54.2}], "leitura": "Homens e mulheres com o tumor tinham mais TP53 ativo que o pulmão normal; a mediana foi um pouco maior nas mulheres."},
+            {"rotulo": "Sobrevida (KM Plotter)", "unidade": " meses", "eixo": "meses (mediana)", "grupos": [{"nome": "TP53 baixo", "cor": "#5FD39A"}, {"nome": "TP53 alto", "cor": "#FF5470"}], "valores": [{"m": 79.3}, {"m": 62}], "leitura": "Com TP53 alto, a sobrevida mediana foi de 62 meses, contra 79,3 meses com TP53 baixo: risco de morte 29% maior (HR 1,29; IC 95%: 1,15 a 1,46; p = 0,000024)."}
+          ],
+          "nota": "Medianas informadas no relatório. TPM = transcritos por milhão, uma medida de quanto o gene está ativo."},
+        {"tipo": "figura", "src": "imagens/mini/figura1-expressao.webp", "full": "imagens/figura1-expressao.webp", "alt": "Gráfico de caixas: a caixa do tumor, em vermelho, fica acima da caixa do tecido normal, em azul, com uma tabela de valores embaixo", "legenda": "Figura 1 · Atividade do TP53 no tecido normal (azul, 59 amostras) e no adenocarcinoma de pulmão (vermelho, 515 amostras), em transcritos por milhão (TPM). Dados do TCGA.", "credito": "UALCAN, em Carvalho (2026), relatório de Iniciação Científica"},
+        {"tipo": "figura", "src": "imagens/mini/figura2-idade.webp", "full": "imagens/figura2-idade.webp", "alt": "Cinco caixas coloridas por faixa de idade, que sobem conforme a idade aumenta", "legenda": "Figura 2 · Atividade do TP53 por faixa de idade. A mediana sobe com a idade: 49,97 TPM a partir dos 41 anos e 62,53 TPM entre 81 e 100 anos, contra 34,24 TPM no tecido normal.", "credito": "UALCAN, em Carvalho (2026), relatório de Iniciação Científica"},
+        {"tipo": "figura", "src": "imagens/mini/figura4-sobrevida.webp", "full": "imagens/figura4-sobrevida.webp", "alt": "Duas curvas de sobrevida em degraus; a vermelha, de TP53 alto, cai mais rápido que a preta", "legenda": "Figura 3 · Sobrevida no KM Plotter: pacientes com TP53 alto (high, em vermelho) e baixo (low, em preto) ao longo do tempo em meses. Quanto mais a curva cai, mais pacientes morreram.", "credito": "KM Plotter, em Carvalho (2026), relatório de Iniciação Científica"},
+        {"tipo": "destaque", "html": "<strong>As duas análises de sobrevida não concordaram.</strong> No KM Plotter, TP53 alto esteve ligado a menos tempo de vida. No UCSC Xena, com outro corte e outro grupo de pacientes, <strong>não houve diferença</strong> entre TP53 alto e baixo (p = 0,89)."},
+        {"tipo": "cartoes", "titulo": "Redes, vias e fármacos", "itens": [
+          {"titulo": "Um nó central", "texto": "No STRING, a p53 apareceu no centro de uma rede com proteínas reguladoras importantes, como ATM, SIRT1, MDM2, EP300 e CREBBP.", "cor": "violet"},
+          {"titulo": "452 interações", "texto": "O DGIdb listou 452 interações entre o TP53 e fármacos ou compostos, mas a maioria ainda não tem mecanismo definido (se ativa ou se inibe).", "cor": "ok"},
+          {"titulo": "Ciclo celular e DNA", "texto": "O Metascape ligou os genes a processos de resposta a estímulos, controle do ciclo celular, checkpoints e resposta a danos no DNA.", "cor": "teal"}
+        ]},
+        {"tipo": "figura", "src": "imagens/mini/figura6-string.webp", "full": "imagens/figura6-string.webp", "alt": "Rede de bolinhas coloridas ligadas por linhas, com a TP53 no centro", "legenda": "Figura 4 · Rede de interações da p53 no STRING. Cada bolinha é uma proteína e cada linha, uma interação conhecida ou prevista.", "credito": "STRING, em Carvalho (2026), relatório de Iniciação Científica"},
+        {"tipo": "figura", "src": "imagens/mini/figura9-vias.webp", "full": "imagens/figura9-vias.webp", "alt": "Rede de pontos coloridos em tons de roxo, com a legenda das vias de ciclo celular e dano ao DNA", "legenda": "Figura 5 · Vias do ciclo celular e da resposta a danos no DNA no Metascape: checkpoints do ciclo celular, passagem de G1 para S, resposta a danos no DNA e checkpoint G2/M.", "credito": "Metascape, em Carvalho (2026), relatório de Iniciação Científica"}
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discussão",
+      "eyebrow": "Discussão",
+      "titulo": "O que os resultados permitem dizer, e o que ainda não",
+      "lede": "Resultados que combinam com a literatura, mas que ainda são hipóteses.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>O resultado do KM Plotter concorda com o estudo de <strong>El-Arabey e colegas (2023)</strong>, em que o TP53 alto também esteve ligado a pior prognóstico no adenocarcinoma de pulmão. Já o do UCSC Xena concorda com <strong>Li e colegas (2023)</strong>: nos dados do TCGA, a atividade do TP53 sozinha não mudou a sobrevida, mas a presença de <strong>mutação</strong> no gene sim.</p><p>Uma explicação é que medir a atividade do gene não diz se a proteína p53 funciona: no tumor, o TP53 muitas vezes está mutado. As diferenças entre os grupos de pacientes, os cortes usados para separar “alto” e “baixo” e os métodos estatísticos também pesam.</p>"},
+        {"tipo": "lista", "titulo": "Cuidados ao interpretar", "itens": [
+          "É um estudo exploratório, feito só com dados públicos: os achados precisam de validação em laboratório.",
+          "A atividade do gene não mostra, sozinha, se a proteína p53 está funcionando.",
+          "As duas ferramentas de sobrevida usaram grupos e cortes diferentes e chegaram a resultados diferentes.",
+          "A maior parte das 452 interações com fármacos ainda não tem mecanismo conhecido."
+        ]}
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusão",
+      "eyebrow": "Conclusão",
+      "titulo": "O que o estudo mostra até agora",
+      "lede": "Um gene central no adenocarcinoma de pulmão, com valor prognóstico que ainda precisa ser confirmado.",
+      "blocos": [
+        {"tipo": "texto", "html": "<p>O TP53 está <strong>mais ativo no adenocarcinoma de pulmão</strong> do que no pulmão normal, com tendência de aumento nas faixas de idade mais altas e em ambos os sexos. O efeito na sobrevida <strong>variou conforme a ferramenta</strong>, como já se vê na literatura. As redes de proteínas, as vias e as interações com fármacos reforçam o papel do TP53 no controle do ciclo celular e na proteção do DNA, e apontam caminhos para testar em laboratório.</p>"}
+      ]
+    }
+  ],
+  "glossario": [
+    {"termo": "In silico", "def": "Estudo feito no computador, com bancos de dados e programas, sem experimentos de laboratório."},
+    {"termo": "TP53 e p53", "def": "TP53 é o gene; p53 é a proteína que ele fabrica, chamada de “guardiã do genoma”."},
+    {"termo": "Supressor de tumor", "def": "Gene que ajuda a impedir que as células se multipliquem sem controle."},
+    {"termo": "Adenocarcinoma de pulmão", "def": "Subtipo mais comum do câncer de pulmão de células não pequenas."},
+    {"termo": "Expressão gênica", "def": "O quanto um gene está ativo, isto é, quantas cópias de trabalho (RNA) a célula faz dele."},
+    {"termo": "TPM", "def": "Transcritos por milhão: medida padronizada de quanto um gene está ativo numa amostra."},
+    {"termo": "TCGA", "def": "The Cancer Genome Atlas, grande banco público com dados genéticos de milhares de tumores."},
+    {"termo": "Curva de Kaplan-Meier", "def": "Gráfico em degraus que mostra a porcentagem de pacientes vivos ao longo do tempo."},
+    {"termo": "Hazard ratio (HR)", "def": "Compara o risco entre dois grupos. HR 1,29 quer dizer 29% mais risco no grupo com TP53 alto."},
+    {"termo": "Rede de interação proteína-proteína", "def": "Mapa de quais proteínas se ligam ou trabalham juntas dentro da célula."},
+    {"termo": "Checkpoint do ciclo celular", "def": "Ponto de controle em que a célula confere se está tudo certo antes de continuar a se dividir."},
+    {"termo": "UALCAN, KM Plotter, UCSC Xena, STRING, DGIdb e Metascape", "def": "Ferramentas gratuitas de bioinformática usadas no estudo, cada uma para uma pergunta."}
+  ],
+  "referencias": [
+    {"texto": "EL-ARABEY, A. A. et al. A bioinformatic analysis of the role of TP53 status on the infiltration of CD8+ T cells into the tumor microenvironment. Brazilian Journal of Medical and Biological Research, v. 56, e12970, 2023.", "doi": "10.1590/1414-431X2023e12970"},
+    {"texto": "LI, H. et al. Integrative analysis of TP53 mutations in lung adenocarcinoma for immunotherapies and prognosis. BMC Bioinformatics, v. 24, art. 155, 2023.", "doi": "10.1186/s12859-023-05268-2"},
+    {"texto": "BADE, B. C.; DELA CRUZ, C. S. Lung Cancer 2020: Epidemiology, Etiology, and Prevention. Clinics in Chest Medicine, v. 41, n. 1, p. 1-24, 2020.", "doi": "10.1016/j.ccm.2019.10.001"},
+    {"texto": "SMOLARZ, B. et al. Lung Cancer — Epidemiology, Pathogenesis, Treatment and Molecular Aspect (Review of Literature). International Journal of Molecular Sciences, v. 26, n. 5, 2049, 2025.", "doi": "10.3390/ijms26052049"},
+    {"texto": "INSTITUTO NACIONAL DE CÂNCER (INCA). Câncer de pulmão. 2023.", "url": "https://www.inca.gov.br/tipos-de-cancer/cancer-de-pulmao"}
+  ]
+}

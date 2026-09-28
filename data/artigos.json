@@ -226,6 +226,52 @@
       }
     },
     {
+      "id": "tp53-pulmao-in-silico",
+      "url": "artigos/tp53-pulmao-in-silico/",
+      "titulo_curto": "O gene TP53 no câncer de pulmão, investigado em bancos de dados públicos",
+      "titulo": "Análise in silico do gene TP53 no câncer de pulmão: expressão gênica, prognóstico e potenciais interações moleculares",
+      "autores_curto": "Thaisa Carvalho",
+      "selo": "Estudo em andamento",
+      "ano": 2026,
+      "data": "2026-09-28",
+      "resumo": "Iniciação Científica: o TP53 estava mais ativo no tumor que no pulmão normal, e seu efeito na sobrevida variou conforme a ferramenta. Seis bancos de dados públicos analisados.",
+      "tags": [
+        "Bioinformática",
+        "Câncer de pulmão"
+      ],
+      "capa": "artigos/tp53-pulmao-in-silico/imagens/mini/figura6-string.webp",
+      "capa_alt": "Rede de proteínas ligadas à p53",
+      "temas": [
+        "bioinformatica"
+      ],
+      "pesquisadoras": [],
+      "estudo_completo": true,
+      "i18n": {
+        "en": {
+          "titulo_curto": "The TP53 gene in lung cancer, investigated in public databases",
+          "titulo_pt": "In silico analysis of the TP53 gene in lung cancer: gene expression, prognosis and potential molecular interactions",
+          "selo": "Ongoing study",
+          "resumo": "Undergraduate research project: TP53 was more active in the tumor than in normal lung, and its effect on survival varied with the tool used. Six public databases analyzed.",
+          "tags": [
+            "Bioinformatics",
+            "Lung cancer"
+          ],
+          "capa_alt": "Network of proteins linked to p53"
+        },
+        "es": {
+          "titulo_curto": "El gen TP53 en el cáncer de pulmón, investigado en bases de datos públicas",
+          "titulo_pt": "Análisis in silico del gen TP53 en el cáncer de pulmón: expresión génica, pronóstico y posibles interacciones moleculares",
+          "selo": "Estudio en curso",
+          "resumo": "Iniciación Científica: el TP53 estaba más activo en el tumor que en el pulmón normal, y su efecto en la supervivencia varió según la herramienta. Seis bases de datos públicas analizadas.",
+          "tags": [
+            "Bioinformática",
+            "Cáncer de pulmón"
+          ],
+          "capa_alt": "Red de proteínas ligadas a la p53"
+        }
+      }
+    },
+    {
       "id": "micrurus-spixii",
       "url": "artigos/micrurus-spixii/",
       "titulo_curto": "O veneno da cobra coral amazônica no músculo, e quanto o soro protege",
