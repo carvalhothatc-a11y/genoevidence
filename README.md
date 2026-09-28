@@ -61,6 +61,7 @@ artigos/_modelo/            modelo para criar um artigo novo
 data/artigos.json           lista de artigos explicados (aba Artigos e destaque do Início)
 data/noticias.json          notícias e publicações do dia (gerado automaticamente às 7h)
 data/frases.json            frases de cientistas para a “frase do dia” do Início
+data/noticias-escolhidas.json   notícias escolhidas à mão: aparecem primeiro até a data em "ate"
 assets/css/shell.css        visual das abas
 assets/css/base.css, artigo.css   visual da página de leitura
 assets/js/i18n.js           idiomas (português, inglês e espanhol): seletor no topo e tradução dos textos fixos

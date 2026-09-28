@@ -30,6 +30,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "data" / "noticias.json"
+ESCOLHIDAS = RAIZ / "data" / "noticias-escolhidas.json"   # notícias que a Thaisa pediu para mostrar
 TRADUCOES = RAIZ / "data" / "traducoes.json"
 # O MyMemory gratuito permite cerca de 5.000 caracteres por dia; ficamos abaixo disso.
 ORCAMENTO_TRADUCAO = 4600
@@ -440,6 +441,28 @@ def foto_original(url):
     return url
 
 
+def escolhidas(agora_dt):
+    """Notícias escolhidas à mão (data/noticias-escolhidas.json): aparecem primeiro, até a data em "ate"."""
+    if not ESCOLHIDAS.exists():
+        return []
+    try:
+        lista = json.loads(ESCOLHIDAS.read_text(encoding="utf-8")).get("noticias", [])
+    except ValueError:
+        print("  Notícias escolhidas: ERRO no arquivo (JSON inválido)", file=sys.stderr)
+        return []
+    hoje = agora_dt.date().isoformat()
+    ativas = []
+    for n in lista:
+        if n.get("titulo") and n.get("url") and n.get("ate", "9999") >= hoje:
+            item = {k: v for k, v in n.items() if k != "ate"}
+            item.update({"tipo": "noticia", "escolhida": True})
+            item.setdefault("idioma", "pt")
+            item.setdefault("tema", classificar(n["titulo"] + " " + n.get("resumo", "")))
+            ativas.append(item)
+    print(f"  Notícias escolhidas: {len(ativas)} no ar")
+    return ativas
+
+
 def imagens(noticias, anterior):
     """Uma imagem para cada notícia escolhida: a que já estava guardada, a capa da matéria ou a do feed.
     Imagens repetidas em várias notícias da mesma fonte (logotipo, banner) são descartadas."""
@@ -447,6 +470,8 @@ def imagens(noticias, anterior):
     focos = {n["imagem"]: n["foco"] for n in anterior.get("noticias", []) if n.get("imagem") and n.get("foco")}
     for n in noticias:
         feed = n.pop("_img_feed", "")
+        if n.get("escolhida") and n.get("imagem"):   # a imagem da notícia escolhida já vem no arquivo
+            continue
         if n["url"] in guardadas:
             n["imagem"] = foto_original(guardadas[n["url"]])
             continue
@@ -462,6 +487,8 @@ def imagens(noticias, anterior):
             n["imagem"] = ""
     # onde cortar cada imagem sem cortar rostos (só calcula para imagens novas)
     for n in noticias:
+        if n.get("escolhida") and n.get("foco"):
+            continue
         n.pop("foco", None)
         if n["imagem"]:
             foco = focos.get(n["imagem"]) or foco_da_imagem(n["imagem"])
@@ -556,6 +583,10 @@ def main():
         mostradas.setdefault(chave_titulo(n), agora)
     limite = (agora_dt - timedelta(days=10)).isoformat()
     mostradas = {k: v for k, v in mostradas.items() if v >= limite}
+    # as escolhidas à mão vão na frente (e tiram a mesma notícia se ela vier de um feed)
+    fixas = escolhidas(agora_dt)
+    urls_fixas = {n["url"] for n in fixas}
+    unicas = fixas + [n for n in unicas if n["url"] not in urls_fixas]
     imagens(unicas, anterior)
     traduzir(unicas, artigos)
     # se nada do que o app mostra mudou desde a última vez, não grava (o robô roda de hora em hora)
