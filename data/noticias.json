@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-28T21:27:09.310216+00:00",
+ "atualizado_em": "2026-09-28T22:09:20.026960+00:00",
  "noticias": [
   {
    "titulo": "Anthropic quer usar IA para descobrir tratamentos para doenças raras",
@@ -183,26 +183,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Musculação faz células de gordura encolherem antes mesmo da perda de peso",
-   "resumo": "A matéria mais acessada entre 18 e 24/09 detalha estudo com camundongos feito na Unicamp que mostra que apenas sete dias de treinamento de força já ativaram mecanismos de quebra de lipídios",
-   "url": "https://agencia.fapesp.br/musculacao-faz-celulas-de-gordura-encolherem-antes-mesmo-da-perda-de-peso/59246",
+   "titulo": "Concurso aberto para professor assistente no ICTS-Unesp",
+   "resumo": "Docente vai trabalhar na área de “Sistemas de Computação”, no Departamento de Engenharia de Controle e Automação, em Sorocaba",
+   "url": "https://agencia.fapesp.br/concurso-aberto-para-professor-assistente-no-icts-unesp/59277",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-09-28T21:27:09.310216+00:00",
+   "data": "2026-09-28T22:09:20.026960+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59246.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59277.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Weight training causes fat cells to shrink even before weight loss",
-     "resumo": "The most accessed article between 09/18 and 09/24 details a study with mice done at Unicamp that shows that just seven days of strength training have already activated lipid breaking mechanisms"
+     "titulo": "Open competition for assistant professor at ICTS-Unesp",
+     "resumo": "Professor will work in the area of \"Computer Systems\", in the Department of Control and Automation Engineering, in Sorocaba"
     },
     "es": {
-     "titulo": "El entrenamiento con pesas hace que las células grasas se reduzcan incluso antes de perder peso"
+     "titulo": "Concurso abierto para profesor asistente en ICTS-Unesp",
+     "resumo": "Profesor en el área de “Sistemas Informáticos”, en el Departamento de Ingeniería de Control y Automatización, en Sorocaba"
     }
    }
   },
@@ -223,10 +224,12 @@
    },
    "i18n": {
     "en": {
-     "titulo": "Scale helps identify difficulties and potential of graduate students in scientific training"
+     "titulo": "Scale helps identify difficulties and potential of graduate students in scientific training",
+     "resumo": "An instrument developed at USP can be used by professors, advisors and graduate programs to assess the confidence of students in different stages of research"
     },
     "es": {
-     "titulo": "La escala ayuda a identificar las dificultades y el potencial de los estudiantes de posgrado en formación científica"
+     "titulo": "La escala ayuda a identificar las dificultades y el potencial de los estudiantes de posgrado en formación científica",
+     "resumo": "Un instrumento desarrollado en la USP puede ser utilizado por profesores, asesores y programas de posgrado para evaluar la confianza de los estudiantes en diferentes etapas de la investigación"
     }
    }
   },
@@ -418,7 +421,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Myocardial senescence as a mechanistic endpoint of arsenic cardiotoxicity: Cysteine-associated p53/p21 activation and reversal by quercetin.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Senescencia miocárdica como criterio de valoración mecanicista de la cardiotoxicidad por arsénico: activación de p53/p21 asociada a cisteína y reversión por quercetina."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -431,7 +439,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Association of high tumor mutational burden with brain metastases: Insights from a large-scale database analysis.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Asociación de alta carga mutacional tumoral con metástasis cerebrales: conocimientos de un análisis de base de datos a gran escala."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -444,40 +457,66 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Scorpion sting during pregnancy: a systematic review.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Picadura de escorpión durante el embarazo: una revisión sistemática."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Pathogenic germline variants in BRCA1/2 are associated with a decreased number of hypomethylated rDNA copies.",
+   "titulo": "Variantes patogênicas da linhagem germinativa em BRCA1/2 estão associadas a um número diminuído de cópias de rDNA hipometilado.",
    "autores": "Kießling S, Durackova J, Michler A, Geisen ABC, Santana Acevedo N, Haaf T.",
    "revista": "Breast Cancer Res",
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1186/s13058-026-02387-5",
    "url": "https://doi.org/10.1186/s13058-026-02387-5",
    "acesso_aberto": true,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Pathogenic germline variants in BRCA1/2 are associated with a decreased number of hypomethylated rDNA copies.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las variantes patógenas de la línea germinal en BRCA1/2 se asocian con una disminución del número de copias de ADNr hipometiladas."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Interdisciplinary management and genetic evaluation of pediatric cancer predisposition syndromes: a retrospective cohort study.",
+   "titulo": "Manejo interdisciplinar e avaliação genética de síndromes de predisposição ao câncer pediátrico: um estudo de coorte retrospectivo.",
    "autores": "Dikow N, Nitschke AL, Hirsch S, Roth E, Orec L, Fischer T, Choukair D, Grund K, Lüttich P, Sutter C, Hinderhofer K…",
    "revista": "Eur J Hum Genet",
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1038/s41431-026-02244-1",
    "url": "https://doi.org/10.1038/s41431-026-02244-1",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Interdisciplinary management and genetic evaluation of pediatric cancer predisposition syndromes: a retrospective cohort study.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Manejo interdisciplinario y evaluación genética de los síndromes de predisposición al cáncer pediátrico: un estudio de cohorte retrospectivo."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Grade 3 Lung Carcinoids/NETs: The IASLC Pathology Committee Study with Proposal of a New Diagnostic Category.",
+   "titulo": "Carcinoides/TNEs Pulmonares de Grau 3: O Estudo do Comitê de Patologia da IASLC com Proposta de uma Nova Categoria de Diagnóstico.",
    "autores": "Rekhtman N, Hanna MG, Hofman P, Mino-Kenudson M, Joubert P, Papotti M, Sholl LM, Shim HS, Han Y, Hofman V, Hung YP…",
    "revista": "J Thorac Oncol",
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1016/j.jtho.2026.106121",
    "url": "https://doi.org/10.1016/j.jtho.2026.106121",
    "acesso_aberto": false,
-   "tema": "Saúde"
+   "tema": "Saúde",
+   "titulo_original": "Grade 3 Lung Carcinoids/NETs: The IASLC Pathology Committee Study with Proposal of a New Diagnostic Category.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Carcinoides/Net pulmonares de grado 3: el estudio del Comité de Patología de IASLC con propuesta de una nueva categoría de diagnóstico."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -490,95 +529,146 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "PDLIM2 in lung adenocarcinoma metastasis.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "PDLIM2 en metástasis de adenocarcinoma de pulmón."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "<i>TRAF7</i> mutations stabilize K/NRAS and hyperactivate MAPK signaling to cause CAFDADD neurodevelopmental defects.",
+   "titulo": "Mutações <i>TRAF7</i> estabilizam K/NRAS e hiperativam a sinalização MAPK para causar defeitos de neurodesenvolvimento CAFDADD.",
    "autores": "Xiao M, Liu Y, Song X, Liu J, Tang X, Dou M, Yu W, Zhang H, Weng W, Han D, Lan X, Zhao T, Wang C, Ma L, Xu NJ, Wu S.",
    "revista": "Sci Adv",
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1126/sciadv.adw8672",
    "url": "https://doi.org/10.1126/sciadv.adw8672",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "<i>TRAF7</i> mutations stabilize K/NRAS and hyperactivate MAPK signaling to cause CAFDADD neurodevelopmental defects.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las mutaciones de <i>TRAF7</i> estabilizan K/NRAS e hiperactivan la señalización de MAPK para causar defectos del neurodesarrollo de CAFDADD."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Exploring the cytotoxic potential of Artemisia herba-alba crude extract and key phytoconstituents using in vitro assays and molecular docking insights.",
+   "titulo": "Explorando o potencial citotóxico do extrato bruto de Artemisia herba-alba e dos principais fitoconstituintes usando ensaios in vitro e insights de docagem molecular.",
    "autores": "Al-Halaseh LK, Al-Samydai AM, Moshawih S, Al-Qaraleh M, Al-Zregat DM, Amareen ZS, Al Soub MN, Abdelhadi NN, Qaraghuli S.",
    "revista": "PLoS One",
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1371/journal.pone.0359068",
    "url": "https://doi.org/10.1371/journal.pone.0359068",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Exploring the cytotoxic potential of Artemisia herba-alba crude extract and key phytoconstituents using in vitro assays and molecular docking insights.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Explorando el potencial citotóxico del extracto crudo de Artemisia herba-alba y los fitoconstituyentes clave utilizando ensayos in vitro y conocimientos de acoplamiento molecular."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "ATM mutations in myelodysplastic neoplasms, acute myeloid leukemia, and myeloproliferative neoplasms: a systematic review.",
+   "titulo": "Mutações de ATM em neoplasias mielodisplásicas, leucemia mieloide aguda e neoplasias mieloproliferativas: uma revisão sistemática.",
    "autores": "Laurindo LO, Parente MLB, Sasahara GL, Goes JVC, Sampaio LR, Pinheiro YV, Pinheiro RF.",
    "revista": "Med Oncol",
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1007/s12032-026-03378-4",
    "url": "https://doi.org/10.1007/s12032-026-03378-4",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "ATM mutations in myelodysplastic neoplasms, acute myeloid leukemia, and myeloproliferative neoplasms: a systematic review.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Mutaciones ATM en neoplasias mielodisplásicas, leucemia mieloide aguda y neoplasias mieloproliferativas: una revisión sistemática."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Randomized Prospective Comparison Between Neoadjuvant Mitomycin C Plus Cisplatin and Paclitaxel Plus Carboplatin in Patients With BRCA1-Associated Ovarian Cancer.",
+   "titulo": "Comparação prospectiva randomizada entre Cisplatina Neoadjuvante Mitomicina C Plus e Carboplatina Paclitaxel Plus em pacientes com câncer de ovário associado a BRCA1.",
    "autores": "Gorodnova TV, Sokolenko AP, Kotiv KB, Donskih RV, Yakovleva MG, Trifanov YN, Aleksakhina SN, Morozova NS, Kolesnikova…",
    "revista": "Int J Cancer",
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1002/ijc.70750",
    "url": "https://doi.org/10.1002/ijc.70750",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Randomized Prospective Comparison Between Neoadjuvant Mitomycin C Plus Cisplatin and Paclitaxel Plus Carboplatin in Patients With BRCA1-Associated Ovarian Cancer.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Comparación prospectiva aleatorizada entre mitomicina C más cisplatino neoadyuvante y paclitaxel más carboplatino en pacientes con cáncer de ovario asociado a BRCA1."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "In-frame variants in TP53 gene identified in adult leukemia samples are predominantly deleterious: a study of the TP53 Network of Education and Research Initiative on CLL.",
+   "titulo": "As variantes in-frame no gene TP53 identificadas em amostras de leucemia adulta são predominantemente deletérias: um estudo da TP53 Network of Education and Research Initiative on CLL.",
    "autores": "Pavlová Š, Gombíková J, Petrezsélyová S, Macůrek L, Ženatová M, Zádrapová M, Panovská A, Zapletalová E, Lores BF…",
    "revista": "J Pathol",
    "data": "2026-09-24T00:00:00+00:00",
    "doi": "10.1002/path.70124",
    "url": "https://doi.org/10.1002/path.70124",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "In-frame variants in TP53 gene identified in adult leukemia samples are predominantly deleterious: a study of the TP53 Network of Education and Research Initiative on CLL.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las variantes en marco en el gen TP53 identificadas en muestras de leucemia en adultos son predominantemente perjudiciales: un estudio de la Red TP53 de Iniciativa de Educación e Investigación sobre CLL."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Association of <i>ATM</i> Alterations with Outcomes After <sup>177</sup>Lu-PSMA-617 Treatment in Patients with Metastatic Castration-Resistant Prostate Cancer.",
+   "titulo": "Associação de Alterações de <i>ATM</i> com Resultados Após <sup>177</sup> Tratamento com Lu-PSMA-617 em Pacientes com Câncer de Próstata Resistente à Castração Metastático.",
    "autores": "Mahajan V, Yu L, Kollitz L, Boytim E, Zorko NA, Okazaki IJ, Cayci Z, Dehm SM, Hwang J, Arafa AT, Antonarakis ES.",
    "revista": "J Nucl Med",
    "data": "2026-09-24T00:00:00+00:00",
    "doi": "10.2967/jnumed.126.273055",
    "url": "https://doi.org/10.2967/jnumed.126.273055",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Association of <i>ATM</i> Alterations with Outcomes After <sup>177</sup>Lu-PSMA-617 Treatment in Patients with Metastatic Castration-Resistant Prostate Cancer.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Asociación de alteraciones de <i>ATM</i> con resultados después del tratamiento con <sup>177</sup>Lu-PSMA-617 en pacientes con cáncer de próstata metastásico resistente a la castración."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Long-term Endoscopic Surveillance in Hereditary Diffuse Gastric Cancer Syndrome.",
+   "titulo": "Vigilância Endoscópica de Longo Prazo na Síndrome de Câncer Gástrico Difuso Hereditário.",
    "autores": "Li M, Lynch D, Dewan T, Patel K, Patel D, Chung DC.",
    "revista": "Cancer Prev Res (Phila)",
    "data": "2026-09-24T00:00:00+00:00",
    "doi": "10.1158/1940-6207.capr-26-0102",
    "url": "https://doi.org/10.1158/1940-6207.capr-26-0102",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Long-term Endoscopic Surveillance in Hereditary Diffuse Gastric Cancer Syndrome.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationwide spatiotemporal analysis, 2010-2025.",
+   "titulo": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationalwide spatiotemporal analysis, 2010-2025.",
    "autores": "Grados Vásquez M, Guerra Blas JC, Salcedo-Prudencio A, Santos Siqueira T, Monteiro W, Amaya Parra J, Martinez-Espinosa…",
    "revista": "PLoS Negl Trop Dis",
    "data": "2026-09-24T00:00:00+00:00",
    "doi": "10.1371/journal.pntd.0014747",
    "url": "https://doi.org/10.1371/journal.pntd.0014747",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationwide spatiotemporal analysis, 2010-2025.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -589,40 +679,48 @@
    "doi": "10.1016/j.gim.2026.102733",
    "url": "https://doi.org/10.1016/j.gim.2026.102733",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Universal versus guideline-based germline multigene panel testing in solid tumors: Diagnostic yield, variant of uncertain significance burden, and clinical actionability - A systematic review with meta-analysis.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Bridging the BRCA1/2 variant previvor gap in health care.",
+   "titulo": "Preenchendo a lacuna do previvor da variante BRCA1/2 nos cuidados de saúde.",
    "autores": "Gopal S.",
    "revista": "JAAPA",
    "data": "2026-09-24T00:00:00+00:00",
    "doi": "10.1097/01.jaa.0000000000000423",
    "url": "https://doi.org/10.1097/01.jaa.0000000000000423",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Bridging the BRCA1/2 variant previvor gap in health care.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Puerarin attenuates binge ethanol-induced cortical neurotoxicity in association with AKT/mTOR signaling and autophagy-related responses.",
+   "titulo": "A puerarina atenua a neurotoxicidade cortical induzida por etanol em associação com a sinalização AKT/mTOR e respostas relacionadas à autofagia.",
    "autores": "Liu F, Huang S, Xiao H, Zhou Y, Lin L, Liu Z, Lan J, Chen X, Tian H.",
    "revista": "Toxicol Mech Methods",
    "data": "2026-09-24T00:00:00+00:00",
    "doi": "10.1080/15376516.2026.2733168",
    "url": "https://doi.org/10.1080/15376516.2026.2733168",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Puerarin attenuates binge ethanol-induced cortical neurotoxicity in association with AKT/mTOR signaling and autophagy-related responses.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "[Emotional impact of hereditary cancer risk on patients and their families].",
+   "titulo": "[Impacto emocional do risco hereditário de câncer nos pacientes e suas famílias].",
    "autores": "Buitrago Ramírez F.",
    "revista": "Aten Primaria",
    "data": "2026-09-23T00:00:00+00:00",
    "doi": "10.1016/j.aprim.2026.103612",
    "url": "https://doi.org/10.1016/j.aprim.2026.103612",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "[Emotional impact of hereditary cancer risk on patients and their families].",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -633,7 +731,9 @@
    "doi": "10.1007/s11033-026-12781-z",
    "url": "https://doi.org/10.1007/s11033-026-12781-z",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Targeting snake venom metalloproteinases: structural diversity, molecular pathogenesis and therapeutic interventions.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -662,18 +762,22 @@
    "doi": "10.1016/j.cancergen.2026.09.009",
    "url": "https://doi.org/10.1016/j.cancergen.2026.09.009",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Spectrum of germline variants in moderate to high penetrance non-BRCA breast cancer susceptibility genes in a Pakistani early-onset cohort.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "BRCA1/BRCA2 Double Heterozygosity Presenting as Intrahepatic Cholangiocarcinoma.",
+   "titulo": "Heterozigosidade Dupla BRCA1/BRCA2 Apresentando-se como Colangiocarcinoma Intra-hepático.",
    "autores": "Inagaki N, Yamauchi Y, Matsumoto S, Naito S, Bingo M, Cho H, Ueda Y, Dong J, Kiribayashi K, Yamamoto A, Sukeda A, Nagao…",
    "revista": "Intern Med",
    "data": "2026-09-22T00:00:00+00:00",
    "doi": "10.2169/internalmedicine.7739-26",
    "url": "https://doi.org/10.2169/internalmedicine.7739-26",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "BRCA1/BRCA2 Double Heterozygosity Presenting as Intrahepatic Cholangiocarcinoma.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -765,7 +869,7 @@
  "erros": [
   "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4",
-  "Europe PMC: HTTP Error 503: Service Temporarily Unavailable"
+  "Europe PMC: The read operation timed out"
  ],
  "mostradas": {
   "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-09-24T17:09:08.714347+00:00",
@@ -929,6 +1033,7 @@
   "our food system is vulnerable to el nino warns uk climate minister": "2026-09-28T21:27:09.310216+00:00",
   "nasa to attempt uncrewed and crewed missions with boeings troubled starliner spacecraft": "2026-09-28T21:27:09.310216+00:00",
   "tiktok influencers are promoting a home remedy to boost the immune system that could cause botulism": "2026-09-28T21:27:09.310216+00:00",
-  "scientists just discovered what coffee really does to your gut and brain": "2026-09-28T21:27:09.310216+00:00"
+  "scientists just discovered what coffee really does to your gut and brain": "2026-09-28T21:27:09.310216+00:00",
+  "anthropic quer usar ia para descobrir tratamentos para doencas raras": "2026-09-28T21:27:09.310216+00:00"
  }
 }
