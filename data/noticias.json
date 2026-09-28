@@ -1,6 +1,58 @@
 {
- "atualizado_em": "2026-09-28T15:39:15.825868+00:00",
+ "atualizado_em": "2026-09-28T21:27:09.310216+00:00",
  "noticias": [
+  {
+   "titulo": "Anthropic quer usar IA para descobrir tratamentos para doenças raras",
+   "resumo": "A empresa criadora do Claude montou um laboratório de biologia perto de São Francisco onde a IA comanda robôs em experimentos com células e proteínas. Por enquanto, o trabalho fica na fase pré-clínica, com supervisão humana e sem testes em pessoas.",
+   "url": "https://health.thenews.com.br/p/28-09-2026",
+   "fonte": "the news health",
+   "idioma": "pt",
+   "data": "2026-09-28T08:00:00-03:00",
+   "tema": "Saúde",
+   "imagem": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,width=1200,quality=80/uploads/asset/file/41733f45-dc44-4dc8-8393-4fccb3a5065f/e3758f1bc27af0786f4249cc1ab194fc2c6cce63-3840x2160.png",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "tipo": "noticia",
+   "escolhida": true,
+   "i18n": {
+    "en": {
+     "titulo": "Anthropic wants to use AI to discover treatments for rare diseases",
+     "resumo": "The company that created Claude set up a biology lab near San Francisco where AI runs robots in experiments with cells and proteins. For now, the work is in the pre-clinical phase, with human supervision and without tests on people."
+    },
+    "es": {
+     "titulo": "Anthropic quiere utilizar la IA para descubrir tratamientos para enfermedades raras",
+     "resumo": "La compañía que creó Claude estableció un laboratorio de biología cerca de San Francisco donde la IA ejecuta robots en experimentos con células y proteínas. Por ahora, el trabajo se encuentra en fase preclínica, con supervisión humana y sin pruebas en personas."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Plataforma testa em laboratório a resposta de tumores a diferentes tratamentos",
+   "resumo": "Startup ligada ao Supera Parque desenvolve, em parceria com a Faculdade de Ciências Farmacêuticas de Ribeirão Preto, tecnologia para personalizar terapias contra o câncer de cabeça e pescoço",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/plataforma-testa-em-laboratorio-a-resposta-de-tumores-a-diferentes-tratamentos/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-09-28T19:30:25+00:00",
+   "tema": "Câncer",
+   "relevancia": 12,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260928_00_laboratorio_pesquisa.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Platform tests in the laboratory the response of tumors to different treatments",
+     "resumo": "Startup linked to Supera Parque develops, in partnership with the Faculty of Pharmaceutical Sciences of Ribeirão Preto, technology to personalize therapies against head and neck cancer"
+    },
+    "es": {
+     "titulo": "Pruebas de plataforma en laboratorio de la respuesta de los tumores a diferentes tratamientos",
+     "resumo": "Startup vinculada a Supera Parque desarrolla, en alianza con la Facultad de Ciencias Farmacéuticas de Ribeirão Preto, tecnología para personalizar terapias contra el cáncer de cabeza y cuello"
+    }
+   }
+  },
   {
    "tipo": "noticia",
    "titulo": "Resposta global negligente ao ebola é marca da desigualdade geopolítica na saúde",
@@ -55,6 +107,32 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Um mapa do calcanhar de aquiles celeste",
+   "resumo": "Novos instrumentos devem ajudar a entender o ponto mais fraco no campo magnético da Terra, localizado acima do território do Brasil",
+   "url": "https://revistapesquisa.fapesp.br/um-mapa-do-calcanhar-de-aquiles-celeste/?utm_source=rss&utm_medium=rss&utm_campaign=um-mapa-do-calcanhar-de-aquiles-celeste",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-28T16:01:57+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/f839f34592030a9cd0a12fadf6bd4d2c029cfd28_1200-630.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "A map of the heavenly Achilles heel",
+     "resumo": "New instruments should help to understand the weakest point in the Earth's magnetic field, located above the territory of Brazil"
+    },
+    "es": {
+     "titulo": "Un mapa del talón de Aquiles celestial",
+     "resumo": "Los nuevos instrumentos deberían ayudar a comprender el punto más débil del campo magnético de la Tierra, ubicado sobre el territorio de Brasil"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Falha no reparo do DNA materno compromete desenvolvimento embrionário e gera mutações pós-fecundação",
    "resumo": "Pesquisa com camundongos revela que a falta da proteína RAD51 em óvulos provoca danos no genoma do embrião, reduz o número de filhotes e favorece o surgimento de alterações genéticas espontâneas. Achado abre caminho para novas abordagens…",
    "url": "https://agencia.fapesp.br/falha-no-reparo-do-dna-materno-compromete-desenvolvimento-embrionario-e-gera-mutacoes-pos-fecundacao/59280",
@@ -81,125 +159,126 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Concurso aberto para professor assistente no ICTS-Unesp",
-   "resumo": "Docente vai trabalhar na área de “Sistemas de Computação”, no Departamento de Engenharia de Controle e Automação, em Sorocaba",
-   "url": "https://agencia.fapesp.br/concurso-aberto-para-professor-assistente-no-icts-unesp/59277",
-   "fonte": "Agência FAPESP",
+   "titulo": "Protagonismo do Brasil na ciência global varia de acordo com o modelo de colaboração",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/protagonismo-do-brasil-na-ciencia-global-varia-de-acordo-com-o-modelo-de-colaboracao",
+   "fonte": "Agência Fiocruz",
    "idioma": "pt",
-   "data": "2026-09-28T15:39:15.825868+00:00",
+   "data": "2026-09-28T18:19:44+00:00",
    "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59277.jpg",
+   "relevancia": 8,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/metricas_m.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Open competition for assistant professor at ICTS-Unesp",
-     "resumo": "Professor will work in the area of \"Computer Systems\", in the Department of Control and Automation Engineering, in Sorocaba"
+     "titulo": "Brazil's role in global science varies according to the collaboration model"
     },
     "es": {
-     "titulo": "Concurso abierto para profesor asistente en ICTS-Unesp",
-     "resumo": "Profesor en el área de “Sistemas Informáticos”, en el Departamento de Ingeniería de Control y Automatización, en Sorocaba"
+     "titulo": "El papel de Brasil en la ciencia global varía según el modelo de colaboración"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "A IA encontra uma forma 3D que preenche todo o espaço com um padrão que nunca se repete",
-   "resumo": "Uma forma 3D que pode revestir o espaço 3D, sem deixar lacunas e nunca formando um padrão de repetição, foi descoberta usando um modelo de IA. O pesquisador por trás das descobertas, que não tem formação acadêmica na área, diz que seu trabalho irritou...",
-   "url": "https://www.newscientist.com/article/2589966-ai-finds-3d-shape-that-fills-all-space-with-a-never-repeating-pattern/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-09-28T13:00:00+00:00",
-   "tema": "Espaço",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_313987774.jpg",
+   "titulo": "Musculação faz células de gordura encolherem antes mesmo da perda de peso",
+   "resumo": "A matéria mais acessada entre 18 e 24/09 detalha estudo com camundongos feito na Unicamp que mostra que apenas sete dias de treinamento de força já ativaram mecanismos de quebra de lipídios",
+   "url": "https://agencia.fapesp.br/musculacao-faz-celulas-de-gordura-encolherem-antes-mesmo-da-perda-de-peso/59246",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-28T21:27:09.310216+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59246.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "AI finds 3D shape that fills all space with a never-repeating pattern",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "Weight training causes fat cells to shrink even before weight loss",
+     "resumo": "The most accessed article between 09/18 and 09/24 details a study with mice done at Unicamp that shows that just seven days of strength training have already activated lipid breaking mechanisms"
+    },
     "es": {
-     "titulo": "La IA encuentra una forma 3D que llena todo el espacio con un patrón que nunca se repite",
-     "resumo": "Se ha descubierto una forma 3D que puede embaldosar el espacio 3D, sin dejar huecos y sin formar nunca un patrón repetitivo, utilizando un modelo de IA. El investigador detrás de los hallazgos, que no tiene formación académica en el área, dice que su trabajo ha enfurecido..."
+     "titulo": "El entrenamiento con pesas hace que las células grasas se reduzcan incluso antes de perder peso"
     }
-   },
-   "resumo_original": "A 3D shape that can tile 3D space, leaving no gaps and never forming a repeating pattern, has been discovered using an AI model. The researcher behind the findings, who has no academic background in the area, says his work has angered…"
+   }
   },
   {
    "tipo": "noticia",
-   "titulo": "Por que esse monstro El Niño é tão forte?",
-   "resumo": "Embora o El Niño ainda esteja a meses de seu pico, ele já está quebrando muitos recordes. Dois fatores principais estão por trás de como se tornou tão poderoso",
-   "url": "https://www.newscientist.com/article/2590917-what-has-made-this-monster-el-nino-so-strong/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-09-28T11:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_314424523.jpg",
+   "titulo": "Escala ajuda a identificar dificuldades e potencialidades de pós-graduandos na formação científica",
+   "resumo": "Instrumento desenvolvido na USP pode ser utilizado por docentes, orientadores e programas de pós-graduação para avaliar a confiança dos estudantes em diferentes etapas da pesquisa",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/escala-ajuda-a-identificar-dificuldades-e-potencialidades-de-pos-graduandos-na-formacao-cientifica/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-09-28T17:54:01+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/10/20251020_00_cientista_pesquisa_grafico_publicacao.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Why is this monster El Niño so strong?",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "Scale helps identify difficulties and potential of graduate students in scientific training"
+    },
     "es": {
-     "titulo": "¿Por qué es tan fuerte este monstruo de El Niño?",
-     "resumo": "Aunque El Niño todavía está a meses de su punto máximo, ya está batiendo muchos récords. Dos factores principales están detrás de cómo se hizo tan poderoso"
+     "titulo": "La escala ayuda a identificar las dificultades y el potencial de los estudiantes de posgrado en formación científica"
     }
-   },
-   "resumo_original": "Though the El Niño is still months from its peak, it is already breaking many records. Two main factors are behind how it became so powerful"
+   }
   },
   {
    "tipo": "noticia",
-   "titulo": "Demandas crescentes de energia de IA, a busca por partículas subatômicas e a ameba mais quente",
-   "resumo": "Dos menores blocos de construção da vida ao vômito pré-histórico e uma ameba recém-descoberta que pode realmente aguentar o calor.",
-   "url": "https://www.scientificamerican.com/podcast/episode/growing-ai-energy-demands-the-search-for-subatomic-particles-and-the-hottest-amoeba/",
-   "fonte": "Scientific American",
+   "titulo": "Os cientistas não conseguem parar de usar a IA, mesmo quando proibidos de fazê-lo",
+   "resumo": "Quando os cientistas foram solicitados a revisar artigos para uma conferência sem usar ferramentas de IA, muitos deles ignoraram a solicitação e usaram a IA de qualquer maneira",
+   "url": "https://www.newscientist.com/article/2590949-scientists-cant-stop-using-ai-even-when-forbidden-from-doing-so/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-09-28T10:00:00+00:00",
+   "data": "2026-09-28T16:00:00+00:00",
    "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/52f503f7-7298-46a7-80ed-496662de6b12/2609_SQ_MON_SEPT_28.png?m=1790370215.297&w=1200",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_313973770.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Growing AI energy demands, the search for subatomic particles and the hottest amoeba",
+   "titulo_original": "Scientists can’t stop using AI, even when forbidden from doing so",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La creciente demanda de energía de la IA, la búsqueda de partículas subatómicas y la ameba más caliente",
-     "resumo": "Desde los bloques de construcción más pequeños de la vida hasta el vómito prehistórico y una ameba recién descubierta que realmente puede soportar el calor."
+     "titulo": "Los científicos no pueden dejar de usar la IA, incluso cuando se les prohíbe hacerlo",
+     "resumo": "Cuando se pidió a los científicos que revisaran los documentos para una conferencia sin usar herramientas de IA, muchos de ellos ignoraron la solicitud y usaron IA de todos modos"
     }
    },
-   "resumo_original": "From the smallest building blocks of life to prehistoric vomit and a newly discovered amoeba that can really take the heat."
+   "resumo_original": "When scientists were asked to review papers for a conference without using AI tools, many of them ignored the request and used AI anyway"
   },
   {
    "tipo": "noticia",
-   "titulo": "Maior que o CRISPR? Um guia para os editores de genoma mais recentes",
-   "resumo": "As técnicas de edição de genes podem em breve permitir que os pesquisadores substituam genes inteiros e criem circuitos celulares complexos — se os sistemas puderem ser entregues com segurança em...",
-   "url": "https://www.nature.com/articles/d41586-026-02964-w",
-   "fonte": "Nature",
+   "titulo": "Nosso sistema alimentar é vulnerável ao El Niño, alerta ministro do Clima do Reino Unido",
+   "resumo": "O clima extremo pode prejudicar as colheitas em todo o mundo, mas a resposta é mais produção local de alimentos, não estocagem, disse Katie White em entrevista à New Scientist",
+   "url": "https://www.newscientist.com/article/2590994-our-food-system-is-vulnerable-to-el-nino-warns-uk-climate-minister/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-09-28T00:00:00+00:00",
-   "tema": "Genética",
+   "data": "2026-09-28T15:52:17+00:00",
+   "tema": "Meio ambiente",
    "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "Bigger than CRISPR? A guide to the latest genome editors",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_314031889.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "titulo_original": "Our food system is vulnerable to El Niño, warns UK climate minister",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "¿Más grande que CRISPR? Una guía de los últimos editores genómicos",
-     "resumo": "Las técnicas de edición de genes pronto podrían permitir a los investigadores reemplazar genes enteros y diseñar circuitos celulares complejos, si los sistemas se pueden entregar de manera segura en..."
+     "titulo": "Nuestro sistema alimentario es vulnerable a El Niño, advierte la ministra del clima del Reino Unido",
+     "resumo": "El clima extremo podría dañar las cosechas en todo el mundo, pero la respuesta es más producción local de alimentos, no almacenamiento, dijo Katie White en una entrevista con New Scientist"
     }
    },
-   "resumo_original": "Gene-editing techniques could soon allow researchers to replace entire genes and engineer complex cellular circuits — if the systems can be delivered safely into…"
+   "resumo_original": "Extreme weather could damage harvests worldwide, but the answer is more local food production, not stockpiling, Katie White said in an interview with New Scientist"
   },
   {
    "tipo": "noticia",
@@ -253,50 +332,78 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Vaping na infância tem maiores riscos para a saúde do que pensávamos",
-   "resumo": "O uso de cigarros eletrônicos aumenta a probabilidade de jovens desenvolverem transtornos mentais e começarem a fumar. Os governos precisam agir.",
-   "url": "https://www.nature.com/articles/d41586-026-02962-y",
-   "fonte": "Nature",
+   "titulo": "NASA tentará missões não tripuladas e tripuladas com a nave espacial Starliner da Boeing",
+   "resumo": "Starliner não voa desde que sua missão fracassada em 2024 deixou dois astronautas a bordo da Estação Espacial Internacional por 286 dias",
+   "url": "https://www.scientificamerican.com/article/nasa-to-attempt-uncrewed-and-crewed-missions-with-boeings-troubled-starliner-spacecraft/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-09-28T00:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Vaping in childhood has bigger health risks than we’d thought",
+   "data": "2026-09-28T19:45:00+00:00",
+   "tema": "Espaço",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/m/436b552a43731690/original/SA_Boeing-Starliner-Approaching-ISS.jpg?m=1790626623.845&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "NASA to attempt uncrewed and crewed missions with Boeing’s troubled Starliner spacecraft",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El vapeo en la infancia tiene mayores riesgos para la salud de lo que pensábamos",
-     "resumo": "El uso de cigarrillos electrónicos hace que sea más probable que los jóvenes experimenten trastornos de salud mental y comiencen a fumar. Los gobiernos deben actuar."
+     "titulo": "La NASA intentará misiones sin tripulación y tripuladas con la nave espacial Starliner de Boeing",
+     "resumo": "Starliner no vuela desde que su fallida misión de 2024 dejó a dos astronautas a bordo de la Estación Espacial Internacional durante 286 días"
     }
    },
-   "resumo_original": "Use of e-cigarettes makes it more likely that young people will experience mental-health disorders and take up smoking. Governments must act."
+   "resumo_original": "Starliner hasn’t flown since its failed 2024 mission left two astronauts onboard the International Space Station for 286 days"
   },
   {
    "tipo": "noticia",
-   "titulo": "‘Para ganhar um Nobel, o Brasil precisa de mais gente fazendo pesquisa’",
-   "resumo": "Avaliação foi feita pelo hematologista Fernando Costa, ex-reitor da Unicamp, em entrevista ao Centro de Memória Fapesp",
-   "url": "https://agencia.fapesp.br/para-ganhar-um-nobel-o-brasil-precisa-de-mais-gente-fazendo-pesquisa/59264",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-09-24T15:25:50+00:00",
+   "titulo": "Os influenciadores do TikTok estão promovendo um remédio caseiro para estimular o sistema imunológico que pode causar botulismo",
+   "resumo": "Não, fermentar o alho no mel não é um substituto para medicamentos antibióticos ou antivirais",
+   "url": "https://www.scientificamerican.com/article/tiktok-influencers-are-promoting-a-home-remedy-to-boost-the-immune-system-that-could-cause-botulism/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-09-28T18:30:00+00:00",
    "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://agencia.fapesp.br/files/post/59264.jpg",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/ce1aeb19-ffaf-4b61-9361-d33ecbe214af/Honey-and-garlic.jpg?m=1790622797.146&w=1200",
    "foco": {
     "x": 50,
-    "y": 0
+    "y": 50
    },
+   "titulo_original": "TikTok influencers are promoting a home remedy to boost the immune system that could cause botulism",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "‘To win a Nobel, Brazil needs more people doing research’",
-     "resumo": "The evaluation was made by hematologist Fernando Costa, former dean of Unicamp, in an interview with the FAPESP Memory Center"
-    },
     "es": {
-     "titulo": "‘Para ganar un Nobel, Brasil necesita más gente investigando’",
-     "resumo": "La evaluación fue realizada por el hematólogo Fernando Costa, ex decano de la Unicamp, en entrevista con el Centro de Memoria de la FAPESP"
+     "titulo": "Los influencers de TikTok están promoviendo un remedio casero para estimular el sistema inmunológico que podría causar botulismo",
+     "resumo": "No, la fermentación del ajo en la miel no es un sustituto de los medicamentos antibióticos o antivirales"
     }
-   }
+   },
+   "resumo_original": "No, fermenting garlic in honey is not a replacement for antibiotic or antiviral meds"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Os cientistas acabaram de descobrir o que o café realmente faz ao seu intestino e cérebro",
+   "resumo": "Um novo estudo sugere que o café pode influenciar o humor e a função cerebral, alterando a atividade dos micróbios no intestino. Tanto o café com cafeína quanto o descafeinado estavam ligados a menor estresse, depressão e impulsividade, ao mesmo tempo em que produziam café mensurável...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260927034331.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-09-28T13:37:05+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/woman-enjoying-morning-coffee-and-sunshine.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists just discovered what coffee really does to your gut and brain",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos acaban de descubrir lo que el café realmente le hace a tu intestino y cerebro",
+     "resumo": "Un nuevo estudio sugiere que el café puede influir en el estado de ánimo y la función cerebral al cambiar la actividad de los microbios en el intestino. Tanto el café con cafeína como el descafeinado se relacionaron con un menor estrés, depresión e impulsividad, al tiempo que producían..."
+    }
+   },
+   "resumo_original": "A new study suggests coffee may influence mood and brain function by changing the activity of microbes in the gut. Both caffeinated and decaf coffee were linked to lower stress, depression, and impulsivity, while also producing measurable…"
   }
  ],
  "artigos": [
@@ -328,14 +435,16 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Scorpion sting during pregnancy: a systematic review.",
+   "titulo": "Picada de escorpião durante a gravidez: uma revisão sistemática.",
    "autores": "Balachandran DM, Nair JJ, Rajendran G.",
    "revista": "Eur J Obstet Gynecol Reprod Biol",
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1016/j.ejogrb.2026.115459",
    "url": "https://doi.org/10.1016/j.ejogrb.2026.115459",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Scorpion sting during pregnancy: a systematic review.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -372,14 +481,16 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "PDLIM2 in lung adenocarcinoma metastasis.",
+   "titulo": "PDLIM2 na metástase de adenocarcinoma de pulmão.",
    "autores": "Gao F, Xiao Y, Zhang H, Shapiro SD, Qu Z, Xiao G.",
    "revista": "Neoplasia",
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1016/j.neo.2026.101371",
    "url": "https://doi.org/10.1016/j.neo.2026.101371",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "PDLIM2 in lung adenocarcinoma metastasis.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -652,7 +763,9 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
+  "Nature: not well-formed (invalid token): line 14, column 4",
+  "Nature · Genética: not well-formed (invalid token): line 14, column 4",
+  "Europe PMC: HTTP Error 503: Service Temporarily Unavailable"
  ],
  "mostradas": {
   "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-09-24T17:09:08.714347+00:00",
@@ -807,6 +920,15 @@
   "bigger than crispr a guide to the latest genome editors": "2026-09-28T15:39:15.825868+00:00",
   "diabetes study finds keeping blood sugar too steady may come at a price": "2026-09-28T15:39:15.825868+00:00",
   "blood tests reveal why astronauts get constipated in space": "2026-09-28T15:39:15.825868+00:00",
-  "vaping in childhood has bigger health risks than wed thought": "2026-09-28T15:39:15.825868+00:00"
+  "vaping in childhood has bigger health risks than wed thought": "2026-09-28T15:39:15.825868+00:00",
+  "plataforma testa em laboratorio a resposta de tumores a diferentes tratamentos": "2026-09-28T21:27:09.310216+00:00",
+  "um mapa do calcanhar de aquiles celeste": "2026-09-28T21:27:09.310216+00:00",
+  "protagonismo do brasil na ciencia global varia de acordo com o modelo de colaboracao": "2026-09-28T21:27:09.310216+00:00",
+  "escala ajuda a identificar dificuldades e potencialidades de pos graduandos na formacao cientifica": "2026-09-28T21:27:09.310216+00:00",
+  "scientists cant stop using ai even when forbidden from doing so": "2026-09-28T21:27:09.310216+00:00",
+  "our food system is vulnerable to el nino warns uk climate minister": "2026-09-28T21:27:09.310216+00:00",
+  "nasa to attempt uncrewed and crewed missions with boeings troubled starliner spacecraft": "2026-09-28T21:27:09.310216+00:00",
+  "tiktok influencers are promoting a home remedy to boost the immune system that could cause botulism": "2026-09-28T21:27:09.310216+00:00",
+  "scientists just discovered what coffee really does to your gut and brain": "2026-09-28T21:27:09.310216+00:00"
  }
 }
