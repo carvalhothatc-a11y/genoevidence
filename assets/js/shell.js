@@ -78,21 +78,23 @@
       { nome: "Revistas", href: RAIZ + "revistas/", extra: "publicações" },
       { nome: "Sobre o app", href: RAIZ + "sobre/", extra: "instalar" }];
     // tema ou pesquisadora: ao tocar, abre uma ramificação com os estudos dela(e)
-    const ramos = (titulo, itens) => itens.length ? '<div class="gv-grupo"><p class="gv-titulo">' + esc(titulo) + "</p>" + itens.map(i =>
-      '<div class="gv-ramo" data-busca="' + esc((i.nome + " " + (i.extra || "")).toLowerCase()) + '" style="--c:' + esc(i.cor) + '">' +
+    const ramo = i => '<div class="gv-ramo" data-busca="' + esc((i.nome + " " + (i.extra || "")).toLowerCase()) + '" style="--c:' + esc(i.cor) + '">' +
       '<button type="button" class="gv-item gv-abre" aria-expanded="false"><i></i><span>' + esc(i.nome) + "</span><em>" + i.estudos.length + '</em><b class="gv-seta" aria-hidden="true">›</b></button>' +
       '<div class="gv-sub" hidden>' + i.estudos.map(a => '<a class="gv-item gv-estudo" href="' + esc(RAIZ + a.url) + '" data-busca="' +
         esc([a.titulo_curto, a.titulo, a.titulo_pt, a.resumo, (a.tags || []).join(" "), (a.revista || {}).nome, a.autores_curto, a.selo].join(" ").toLowerCase()) + '">' + esc(a.titulo_curto) + "</a>").join("") +
-      '<a class="gv-item gv-todos" href="' + esc(i.href) + '">' + esc(i.todos) + " →</a></div></div>").join("") + "</div>" : "";
+      '<a class="gv-item gv-todos" href="' + esc(i.href) + '">' + esc(i.todos) + " →</a></div></div>";
+    const ramos = (titulo, itens) => itens.length ? '<div class="gv-grupo"><p class="gv-titulo">' + esc(titulo) + "</p>" + itens.map(ramo).join("") + "</div>" : "";
     lista.innerHTML = grupo("Páginas", paginas);
     getJSON("data/artigos.json").then(d => {
       const arts = d.artigos || [];
       const temas = (d.temas || []).map(t => ({ nome: t.nome, href: RAIZ + "artigos/#" + t.id, cor: t.cor, extra: t.sobre, todos: "Abrir o tema", estudos: arts.filter(a => (a.temas || []).includes(t.id)) })).filter(t => t.estudos.length);
       const pesq = (d.pesquisadoras || []).map(p => ({ nome: p.nome, href: RAIZ + "artigos/?pesquisadora=" + p.id, cor: p.cor, extra: p.vinculo, todos: "Ver todos os estudos dela", estudos: arts.filter(a => (a.pesquisadoras || []).includes(p.id)).sort((x, y) => String(y.data).localeCompare(String(x.data))) }));
-      // estudos em andamento: os que ainda não têm revista (R337H, Iniciação Científica…)
-      const andamento = arts.filter(a => !a.revista && a.selo).map(a => ({ nome: a.titulo_curto, href: RAIZ + a.url,
-        extra: [a.titulo, a.titulo_pt, a.resumo, (a.tags || []).join(" "), a.autores_curto, a.selo, a.id].join(" ") }));
-      lista.innerHTML = grupo("Páginas", paginas) + grupo("Estudos em andamento", andamento) + ramos("Temas", temas) + ramos("Pesquisadoras", pesq);
+      // estudos em andamento (os que ainda não têm revista): um tópico que abre em ramificação, como os temas
+      const andamento = arts.filter(a => !a.revista && a.selo);
+      lista.innerHTML = grupo("Páginas", paginas) +
+        (andamento.length ? ramos("Estudos", [{ nome: "Estudos em andamento", href: RAIZ + "#andamento", cor: "#D98A0B",
+          extra: "andamento não publicado iniciação científica tcc", todos: "Ver no Início", estudos: andamento }]) : "") +
+        ramos("Temas", temas) + ramos("Pesquisadoras", pesq);
       filtrar();
     }).catch(() => {});
     const norm = t => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
