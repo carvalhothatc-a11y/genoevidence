@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-29T02:04:43.650086+00:00",
+ "atualizado_em": "2026-09-29T08:43:52.101313+00:00",
  "noticias": [
   {
    "titulo": "Anthropic quer usar IA para descobrir tratamentos para doenças raras",
@@ -76,6 +76,32 @@
     "es": {
      "titulo": "La respuesta global negligente al ébola es un sello distintivo de la desigualdad geopolítica en salud",
      "resumo": "La movilización internacional frente a las epidemias varía según el alcance geográfico del virus, lo que pone de manifiesto el abandono de las crisis de salud pública que afectan a las poblaciones vulnerables"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Vírus capaz de destruir a bactéria do cancro cítrico é identificado no interior de São Paulo",
+   "resumo": "Pesquisadores mapearam 72 variedades de bacteriófagos em pomares paulistas. O candidato mais promissor diminuiu em até 60% os danos em laranjeiras, indicando viabilidade para a criação de biopesticidas",
+   "url": "https://agencia.fapesp.br/virus-capaz-de-destruir-a-bacteria-do-cancro-citrico-e-identificado-no-interior-de-sao-paulo/59295",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-29T08:43:52.101313+00:00",
+   "tema": "Saúde",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59295.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Virus capable of destroying citrus canker bacteria is identified in the countryside of São Paulo",
+     "resumo": "Researchers mapped 72 varieties of bacteriophages in São Paulo orchards. The most promising candidate decreased damage in orange trees by up to 60%, indicating feasibility for the creation of biopesticides"
+    },
+    "es": {
+     "titulo": "Se identifica un virus capaz de destruir la bacteria del cancro de los cítricos en el campo de São Paulo",
+     "resumo": "Los investigadores mapearon 72 variedades de bacteriófagos en huertos de São Paulo. El candidato más prometedor disminuyó el daño en los naranjos hasta en un 60%, lo que indica la viabilidad de la creación de biopesticidas"
     }
    }
   },
@@ -182,71 +208,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Cidades, Biodiversidade e Serviços Ecossistêmicos",
-   "resumo": "Especialistas de diferentes áreas que participam da produção de relatório temático da BPBES estarão reunidos em apresentação aberta ao público hoje (28/09) na Unicamp",
-   "url": "https://agencia.fapesp.br/cidades-biodiversidade-e-servicos-ecossistemicos/59278",
+   "titulo": "Coliseu romano ganha ‘gêmeo digital’ para prever riscos estruturais e orientar conservação",
+   "resumo": "Apresentado na 7ª Conferência FAPESP 2026, projeto coordenado pelo arquiteto italiano Marcello Balzani cruza escaneamento 3D e dados históricos em uma base de dados capaz de monitorar continuamente o monumento de quase 2 mil anos",
+   "url": "https://agencia.fapesp.br/coliseu-romano-ganha-gemeo-digital-para-prever-riscos-estruturais-e-orientar-conservacao/59290",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-09-29T02:04:43.650086+00:00",
+   "data": "2026-09-29T08:43:52.101313+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59290.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Roman Colosseum gains‘ digital twin ’to predict structural risks and guide conservation",
+     "resumo": "Presented at the 7th FAPESP 2026 Conference, a project coordinated by Italian architect Marcello Balzani crosses 3D scanning and historical data in a database capable of continuously monitoring the nearly 2,000-year-old monument"
+    },
+    "es": {
+     "titulo": "El Coliseo Romano gana un ‘gemelo digital’ para predecir los riesgos estructurales y guiar la conservación",
+     "resumo": "Presentado en la 7ª Conferencia FAPESP 2026, un proyecto coordinado por el arquitecto italiano Marcello Balzani cruza el escaneo 3D y los datos históricos en una base de datos capaz de monitorear continuamente el monumento de casi 2.000 años"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Sapo do litoral do Espírito Santo entra para a ciência como criticamente ameaçado",
+   "resumo": "Restrita a um único fragmento de Mata Atlântica, que perdeu 30% da área desde 2011, a Dryadobates caissara é a menor espécie do gênero e a única que não emite cantos isolados",
+   "url": "https://agencia.fapesp.br/sapo-do-litoral-do-espirito-santo-entra-para-a-ciencia-como-criticamente-ameacado/59289",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-29T08:43:52.101313+00:00",
    "tema": "Meio ambiente",
    "relevancia": 7,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Cities, Biodiversity and Ecosystem Services",
-     "resumo": "Experts from different areas participating in the production of BPBES thematic report will be gathered in a presentation open to the public today (09/28) at Unicamp"
-    },
-    "es": {
-     "titulo": "Ciudades, biodiversidad y servicios ecosistémicos",
-     "resumo": "Expertos de diferentes áreas que participan en la producción del informe temático de BPBES se reunirán en una presentación abierta al público hoy (28/09) en la Unicamp"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Comunicação científica de combate à desinformação",
-   "resumo": "Formação on-line gratuita, destinada a jornalistas, pesquisadores e divulgadores científicos, está com inscrições abertas até a próxima segunda-feira (05/10)",
-   "url": "https://agencia.fapesp.br/comunicacao-cientifica-de-combate-a-desinformacao/59279",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-09-29T02:04:43.650086+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Scientific communication to combat disinformation",
-     "resumo": "Free online training, aimed at journalists, researchers and scientific disseminators, is open until next Monday (10/05)"
-    },
-    "es": {
-     "titulo": "Comunicación científica para combatir la desinformación",
-     "resumo": "La formación online gratuita, dirigida a periodistas, investigadores y divulgadores científicos, está abierta hasta el próximo lunes (10/05)"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Concurso aberto para professor assistente no ICTS-Unesp",
-   "resumo": "Docente vai trabalhar na área de “Sistemas de Computação”, no Departamento de Engenharia de Controle e Automação, em Sorocaba",
-   "url": "https://agencia.fapesp.br/concurso-aberto-para-professor-assistente-no-icts-unesp/59277",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-09-28T22:09:20.026960+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59277.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59289.jpeg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Open competition for assistant professor at ICTS-Unesp",
-     "resumo": "Professor will work in the area of \"Computer Systems\", in the Department of Control and Automation Engineering, in Sorocaba"
+     "titulo": "Frog from the coast of Espírito Santo enters science as critically endangered",
+     "resumo": "Restricted to a single fragment of the Atlantic Forest, which has lost 30% of the area since 2011, Dryadobates caissara is the smallest species of the genus and the only one that does not emit isolated corners"
     },
     "es": {
-     "titulo": "Concurso abierto para profesor asistente en ICTS-Unesp",
-     "resumo": "Profesor en el área de “Sistemas Informáticos”, en el Departamento de Ingeniería de Control y Automatización, en Sorocaba"
+     "titulo": "La rana de la costa de Espírito Santo entra en la ciencia como en peligro crítico",
+     "resumo": "Restringida a un solo fragmento de la Mata Atlántica, que ha perdido el 30% de la superficie desde 2011, Dryadobates caissara es la especie más pequeña del género y la única que no emite rincones aislados"
     }
    }
   },
@@ -400,6 +408,24 @@
  "artigos": [
   {
    "tipo": "artigo",
+   "titulo": "The Coding and Non-Coding Genomic Landscape of Hepatocellular Carcinoma: Etiological Risk Factors and their Current Clinical Implications.",
+   "autores": "Ciurdorean AM, Chiroi P, Cosma DG, Porojan MD, Rusu I, Strilciuc S, Berindan-Neagoe I, Al Hajjar N.",
+   "revista": "J Gastrointestin Liver Dis",
+   "data": "2026-09-26T00:00:00+00:00",
+   "doi": "10.15403/jgld-7552",
+   "url": "https://doi.org/10.15403/jgld-7552",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "The Coding and Non-Coding Genomic Landscape of Hepatocellular Carcinoma: Etiological Risk Factors and their Current Clinical Implications.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "The Coding and Non-Coding Genomic Landscape of Hepatocellular Carcinoma: Etiological Risk Factors and their Current Clinical Implications."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
    "titulo": "Senescência miocárdica como desfecho mecanicista de cardiotoxicidade por arsênio: ativação e reversão de p53/p21 associada à cisteína pela quercetina.",
    "autores": "Wang H, Wang Y, Huang S, Wang J, Xu E, Pang Y, Shen J, Luo C, Tan J.",
    "revista": "Toxicol Appl Pharmacol",
@@ -532,7 +558,7 @@
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1126/sciadv.adw8672",
    "url": "https://doi.org/10.1126/sciadv.adw8672",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Genética",
    "titulo_original": "<i>TRAF7</i> mutations stabilize K/NRAS and hyperactivate MAPK signaling to cause CAFDADD neurodevelopmental defects.",
    "traduzido": true,
@@ -550,7 +576,7 @@
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1371/journal.pone.0359068",
    "url": "https://doi.org/10.1371/journal.pone.0359068",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Ciência",
    "titulo_original": "Exploring the cytotoxic potential of Artemisia herba-alba crude extract and key phytoconstituents using in vitro assays and molecular docking insights.",
    "traduzido": true,
@@ -568,7 +594,7 @@
    "data": "2026-09-25T00:00:00+00:00",
    "doi": "10.1007/s12032-026-03378-4",
    "url": "https://doi.org/10.1007/s12032-026-03378-4",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "ATM mutations in myelodysplastic neoplasms, acute myeloid leukemia, and myeloproliferative neoplasms: a systematic review.",
    "traduzido": true,
@@ -847,42 +873,6 @@
      "titulo": "Un antiveneno F(ab')<sub>2</sub> bivalente equino desarrollado contra los venenos de dos especies de víboras desatendidas del noreste de la India, Trimeresurus erythrurus y T. popeiorum, se exhibe mejorado in vitro y preclínico..."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Modelagem de Características Moleculares e Histológicas do Câncer de Fígado por Edição CRISPR de Hepatócitos Suínos.",
-   "autores": "Elkhadragy L, David OG, Castillo CC, Redlon LN, Jordan LR, Khan N, Liu H, Rosa Lopes IA, Zhou Y, Kanzaki H, Hoshida Y…",
-   "revista": "JHEP Rep",
-   "data": "2026-09-22T00:00:00+00:00",
-   "doi": "10.1016/j.jhepr.2026.102042",
-   "url": "https://doi.org/10.1016/j.jhepr.2026.102042",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Modeling Liver Cancer Molecular and Histological Features by CRISPR Editing of Porcine Hepatocytes.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Modeling Liver Cancer Molecular and Histological Features by CRISPR Editing of Porcine Hepatocytes."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Elucidar os potenciais mecanismos anticâncer de fígado do alimento medicinal <i>Rosa roxburghii</i> Tratt. integrando HPLC-Q Exactive MS/MS, farmacologia de rede e validação <i>in vitro</i>.",
-   "autores": "Zeng M, Chai H, Shu Y, Liu M, Wang D, Lu T.",
-   "revista": "Nat Prod Res",
-   "data": "2026-09-22T00:00:00+00:00",
-   "doi": "10.1080/14786419.2026.2736642",
-   "url": "https://doi.org/10.1080/14786419.2026.2736642",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Elucidating the potential anti-liver cancer mechanisms of the medicinal food <i>Rosa roxburghii</i> Tratt. by integrating HPLC-Q Exactive MS/MS, network pharmacology, and <i>in vitro</i> validation.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Elucidar los posibles mecanismos contra el cáncer de hígado del alimento medicinal <i>Rosa roxburghii</i> Tratt. mediante la integración de HPLC-Q Exactive MS/MS, farmacología de red y validación <i>in vitro</i>."
-    }
-   }
   }
  ],
  "fontes": [
@@ -900,8 +890,7 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature · Genética: not well-formed (invalid token): line 14, column 4",
-  "Europe PMC: The read operation timed out"
+  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
   "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-09-24T17:09:08.714347+00:00",
@@ -1071,6 +1060,9 @@
   "a historia do projeto brasileiro argentino llama": "2026-09-29T02:04:43.650086+00:00",
   "one in eight new cancers are likely caused by infectionstheres an easy way to protect yourself": "2026-09-29T02:04:43.650086+00:00",
   "cidades biodiversidade e servicos ecossistemicos": "2026-09-29T02:04:43.650086+00:00",
-  "comunicacao cientifica de combate a desinformacao": "2026-09-29T02:04:43.650086+00:00"
+  "comunicacao cientifica de combate a desinformacao": "2026-09-29T02:04:43.650086+00:00",
+  "virus capaz de destruir a bacteria do cancro citrico e identificado no interior de sao paulo": "2026-09-29T08:43:52.101313+00:00",
+  "coliseu romano ganha gemeo digital para prever riscos estruturais e orientar conservacao": "2026-09-29T08:43:52.101313+00:00",
+  "sapo do litoral do espirito santo entra para a ciencia como criticamente ameacado": "2026-09-29T08:43:52.101313+00:00"
  }
 }
