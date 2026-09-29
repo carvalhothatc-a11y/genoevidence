@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-28T22:09:20.026960+00:00",
+ "atualizado_em": "2026-09-29T02:04:43.650086+00:00",
  "noticias": [
   {
    "titulo": "Anthropic quer usar IA para descobrir tratamentos para doenças raras",
@@ -29,7 +29,7 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Plataforma testa em laboratório a resposta de tumores a diferentes tratamentos",
+   "titulo": "Plataforma testa em laboratório resposta de tumores a diferentes tratamentos",
    "resumo": "Startup ligada ao Supera Parque desenvolve, em parceria com a Faculdade de Ciências Farmacêuticas de Ribeirão Preto, tecnologia para personalizar terapias contra o câncer de cabeça e pescoço",
    "url": "https://jornal.usp.br/campus-ribeirao-preto/plataforma-testa-em-laboratorio-a-resposta-de-tumores-a-diferentes-tratamentos/",
    "fonte": "Jornal da USP",
@@ -44,11 +44,11 @@
    },
    "i18n": {
     "en": {
-     "titulo": "Platform tests in the laboratory the response of tumors to different treatments",
+     "titulo": "Platform tests in the laboratory tumor response to different treatments",
      "resumo": "Startup linked to Supera Parque develops, in partnership with the Faculty of Pharmaceutical Sciences of Ribeirão Preto, technology to personalize therapies against head and neck cancer"
     },
     "es": {
-     "titulo": "Pruebas de plataforma en laboratorio de la respuesta de los tumores a diferentes tratamientos",
+     "titulo": "Pruebas de plataforma en el laboratorio respuesta tumoral a diferentes tratamientos",
      "resumo": "Startup vinculada a Supera Parque desarrolla, en alianza con la Facultad de Ciencias Farmacéuticas de Ribeirão Preto, tecnología para personalizar terapias contra el cáncer de cabeza y cuello"
     }
    }
@@ -81,27 +81,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Bactérias formam ‘escudo microbiológico’ e protegem o trigo contra fungo patogênico",
-   "resumo": "Aplicadas nas sementes, espécies bacterianas reduziram em cerca de 60% os sintomas de uma doença conhecida como podridão da raiz, que prejudica a absorção de nutrientes e gera prejuízo às lavouras",
-   "url": "https://agencia.fapesp.br/bacterias-formam-escudo-microbiologico-e-protegem-o-trigo-contra-fungo-patogenico/59281",
-   "fonte": "Agência FAPESP",
+   "titulo": "A história do projeto brasileiro-argentino LLAMA",
+   "resumo": "Por Jacques Lepine, professor do Instituto de Astronomia, Geofísica e Ciências Atmosféricas da USP",
+   "url": "https://jornal.usp.br/artigos/a-historia-do-projeto-brasileiro-argentino-llama/",
+   "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-09-28T07:04:12.734400+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://agencia.fapesp.br/files/post/59281.jpeg",
+   "data": "2026-09-28T20:24:36+00:00",
+   "tema": "Espaço",
+   "relevancia": 9,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260928_jacquesgrande.jpg",
    "foco": {
-    "x": 50,
+    "x": 0,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Bacteria form ‘microbiological shield’ and protect wheat against pathogenic fungus",
-     "resumo": "Applied to the seeds, bacterial species reduced by about 60% the symptoms of a disease known as root rot, which impairs nutrient absorption and damages crops"
+     "titulo": "The history of the Brazilian-Argentine LLAMA PROJECT",
+     "resumo": "By Jacques Lepine, professor at the Institute of Astronomy, Geophysics and Atmospheric Sciences at USP"
     },
     "es": {
-     "titulo": "Las bacterias forman un \"escudo microbiológico\" y protegen al trigo contra los hongos patógenos",
-     "resumo": "Aplicado a las semillas, las especies bacterianas redujeron en aproximadamente un 60% los síntomas de una enfermedad conocida como podredumbre de la raíz, que perjudica la absorción de nutrientes y daña los cultivos"
+     "titulo": "La historia del proyecto LLAMA BRASILEÑO-ARGENTINO",
+     "resumo": "Por Jacques Lepine, profesor del Instituto de Astronomía, Geofísica y Ciencias Atmosféricas de la USP"
     }
    }
   },
@@ -133,29 +133,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Falha no reparo do DNA materno compromete desenvolvimento embrionário e gera mutações pós-fecundação",
-   "resumo": "Pesquisa com camundongos revela que a falta da proteína RAD51 em óvulos provoca danos no genoma do embrião, reduz o número de filhotes e favorece o surgimento de alterações genéticas espontâneas. Achado abre caminho para novas abordagens…",
-   "url": "https://agencia.fapesp.br/falha-no-reparo-do-dna-materno-compromete-desenvolvimento-embrionario-e-gera-mutacoes-pos-fecundacao/59280",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-09-28T07:04:12.734400+00:00",
-   "tema": "Genética",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59280.jpeg",
+   "titulo": "Um em cada oito novos cânceres provavelmente é causado por infecções - há uma maneira fácil de se proteger",
+   "resumo": "Muitos cânceres associados à infecção são evitáveis",
+   "url": "https://www.scientificamerican.com/article/one-in-eight-new-cancers-are-likely-caused-by-infections-theres-an-easy-way-to-protect-yourself/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-09-29T01:30:00+00:00",
+   "tema": "Câncer",
+   "relevancia": 8,
+   "imagem": "https://static.scientificamerican.com/dam/asset/e56e6644-7807-429c-80d6-d075cae35e49/infections-cancer_graphic_leadImage.png?m=1790629757.656&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
+   "titulo_original": "One in eight new cancers are likely caused by infections—there’s an easy way to protect yourself",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "Failure to repair maternal DNA compromises embryonic development and generates post-fecundation mutations",
-     "resumo": "Research with mice reveals that the lack of RAD51 protein in eggs causes damage to the embryo genome, reduces the number of offspring and favors the emergence of spontaneous genetic changes. Findings pave the way for new approaches…"
-    },
     "es": {
-     "titulo": "La falta de reparación del ADN materno compromete el desarrollo embrionario y genera mutaciones posteriores a la fecundación",
-     "resumo": "La investigación con ratones revela que la falta de proteína RAD51 en los huevos provoca daños en el genoma embrionario, reduce el número de crías y favorece la aparición de cambios genéticos espontáneos. Los hallazgos allanan el camino para nuevos enfoques..."
+     "titulo": "Es probable que uno de cada ocho nuevos cánceres sea causado por infecciones; hay una manera fácil de protegerse",
+     "resumo": "Muchos cánceres asociados con la infección se pueden prevenir"
     }
-   }
+   },
+   "resumo_original": "Many cancers associated with infection are preventable"
   },
   {
    "tipo": "noticia",
@@ -183,6 +182,50 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Cidades, Biodiversidade e Serviços Ecossistêmicos",
+   "resumo": "Especialistas de diferentes áreas que participam da produção de relatório temático da BPBES estarão reunidos em apresentação aberta ao público hoje (28/09) na Unicamp",
+   "url": "https://agencia.fapesp.br/cidades-biodiversidade-e-servicos-ecossistemicos/59278",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-29T02:04:43.650086+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Cities, Biodiversity and Ecosystem Services",
+     "resumo": "Experts from different areas participating in the production of BPBES thematic report will be gathered in a presentation open to the public today (09/28) at Unicamp"
+    },
+    "es": {
+     "titulo": "Ciudades, biodiversidad y servicios ecosistémicos",
+     "resumo": "Expertos de diferentes áreas que participan en la producción del informe temático de BPBES se reunirán en una presentación abierta al público hoy (28/09) en la Unicamp"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Comunicação científica de combate à desinformação",
+   "resumo": "Formação on-line gratuita, destinada a jornalistas, pesquisadores e divulgadores científicos, está com inscrições abertas até a próxima segunda-feira (05/10)",
+   "url": "https://agencia.fapesp.br/comunicacao-cientifica-de-combate-a-desinformacao/59279",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-29T02:04:43.650086+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Scientific communication to combat disinformation",
+     "resumo": "Free online training, aimed at journalists, researchers and scientific disseminators, is open until next Monday (10/05)"
+    },
+    "es": {
+     "titulo": "Comunicación científica para combatir la desinformación",
+     "resumo": "La formación online gratuita, dirigida a periodistas, investigadores y divulgadores científicos, está abierta hasta el próximo lunes (10/05)"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Concurso aberto para professor assistente no ICTS-Unesp",
    "resumo": "Docente vai trabalhar na área de “Sistemas de Computação”, no Departamento de Engenharia de Controle e Automação, em Sorocaba",
    "url": "https://agencia.fapesp.br/concurso-aberto-para-professor-assistente-no-icts-unesp/59277",
@@ -204,32 +247,6 @@
     "es": {
      "titulo": "Concurso abierto para profesor asistente en ICTS-Unesp",
      "resumo": "Profesor en el área de “Sistemas Informáticos”, en el Departamento de Ingeniería de Control y Automatización, en Sorocaba"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Escala ajuda a identificar dificuldades e potencialidades de pós-graduandos na formação científica",
-   "resumo": "Instrumento desenvolvido na USP pode ser utilizado por docentes, orientadores e programas de pós-graduação para avaliar a confiança dos estudantes em diferentes etapas da pesquisa",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/escala-ajuda-a-identificar-dificuldades-e-potencialidades-de-pos-graduandos-na-formacao-cientifica/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-28T17:54:01+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/10/20251020_00_cientista_pesquisa_grafico_publicacao.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Scale helps identify difficulties and potential of graduate students in scientific training",
-     "resumo": "An instrument developed at USP can be used by professors, advisors and graduate programs to assess the confidence of students in different stages of research"
-    },
-    "es": {
-     "titulo": "La escala ayuda a identificar las dificultades y el potencial de los estudiantes de posgrado en formación científica",
-     "resumo": "Un instrumento desarrollado en la USP puede ser utilizado por profesores, asesores y programas de posgrado para evaluar la confianza de los estudiantes en diferentes etapas de la investigación"
     }
    }
   },
@@ -335,6 +352,27 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Maior que o CRISPR? Um guia para os editores de genoma mais recentes",
+   "resumo": "As técnicas de edição de genes podem em breve permitir que os pesquisadores substituam genes inteiros e criem circuitos celulares complexos — se os sistemas puderem ser entregues com segurança em...",
+   "url": "https://www.nature.com/articles/d41586-026-02964-w",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-09-28T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "Bigger than CRISPR? A guide to the latest genome editors",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Más grande que CRISPR? Una guía de los últimos editores genómicos",
+     "resumo": "Las técnicas de edición de genes pronto podrían permitir a los investigadores reemplazar genes enteros y diseñar circuitos celulares complejos, si los sistemas se pueden entregar de manera segura en..."
+    }
+   },
+   "resumo_original": "Gene-editing techniques could soon allow researchers to replace entire genes and engineer complex cellular circuits — if the systems can be delivered safely into…"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "NASA tentará missões não tripuladas e tripuladas com a nave espacial Starliner da Boeing",
    "resumo": "Starliner não voa desde que sua missão fracassada em 2024 deixou dois astronautas a bordo da Estação Espacial Internacional por 286 dias",
    "url": "https://www.scientificamerican.com/article/nasa-to-attempt-uncrewed-and-crewed-missions-with-boeings-troubled-starliner-spacecraft/",
@@ -357,56 +395,6 @@
     }
    },
    "resumo_original": "Starliner hasn’t flown since its failed 2024 mission left two astronauts onboard the International Space Station for 286 days"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Os influenciadores do TikTok estão promovendo um remédio caseiro para estimular o sistema imunológico que pode causar botulismo",
-   "resumo": "Não, fermentar o alho no mel não é um substituto para medicamentos antibióticos ou antivirais",
-   "url": "https://www.scientificamerican.com/article/tiktok-influencers-are-promoting-a-home-remedy-to-boost-the-immune-system-that-could-cause-botulism/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-09-28T18:30:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/ce1aeb19-ffaf-4b61-9361-d33ecbe214af/Honey-and-garlic.jpg?m=1790622797.146&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "TikTok influencers are promoting a home remedy to boost the immune system that could cause botulism",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los influencers de TikTok están promoviendo un remedio casero para estimular el sistema inmunológico que podría causar botulismo",
-     "resumo": "No, la fermentación del ajo en la miel no es un sustituto de los medicamentos antibióticos o antivirales"
-    }
-   },
-   "resumo_original": "No, fermenting garlic in honey is not a replacement for antibiotic or antiviral meds"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Os cientistas acabaram de descobrir o que o café realmente faz ao seu intestino e cérebro",
-   "resumo": "Um novo estudo sugere que o café pode influenciar o humor e a função cerebral, alterando a atividade dos micróbios no intestino. Tanto o café com cafeína quanto o descafeinado estavam ligados a menor estresse, depressão e impulsividade, ao mesmo tempo em que produziam café mensurável...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260927034331.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-09-28T13:37:05+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/woman-enjoying-morning-coffee-and-sunshine.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists just discovered what coffee really does to your gut and brain",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos acaban de descubrir lo que el café realmente le hace a tu intestino y cerebro",
-     "resumo": "Un nuevo estudio sugiere que el café puede influir en el estado de ánimo y la función cerebral al cambiar la actividad de los microbios en el intestino. Tanto el café con cafeína como el descafeinado se relacionaron con un menor estrés, depresión e impulsividad, al tiempo que producían..."
-    }
-   },
-   "resumo_original": "A new study suggests coffee may influence mood and brain function by changing the activity of microbes in the gut. Both caffeinated and decaf coffee were linked to lower stress, depression, and impulsivity, while also producing measurable…"
   }
  ],
  "artigos": [
@@ -655,7 +643,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Long-term Endoscopic Surveillance in Hereditary Diffuse Gastric Cancer Syndrome.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Vigilancia endoscópica a largo plazo en el síndrome de cáncer gástrico difuso hereditario."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -668,7 +661,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationwide spatiotemporal analysis, 2010-2025.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Puntos calientes espaciales persistentes y desigualdades socioeconómicas del envenenamiento por mordedura de serpiente en Perú: un análisis espaciotemporal a nivel nacional, 2010-2025."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -681,7 +679,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Universal versus guideline-based germline multigene panel testing in solid tumors: Diagnostic yield, variant of uncertain significance burden, and clinical actionability - A systematic review with meta-analysis.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Universal versus pruebas de panel multigénico de línea germinal basadas en pautas en tumores sólidos: rendimiento diagnóstico, variante de carga de significado incierto y capacidad de acción clínica: una revisión sistemática con metanálisis."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -694,7 +697,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Bridging the BRCA1/2 variant previvor gap in health care.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Cerrar la brecha previvor variante BRCA1/2 en la atención médica."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -707,7 +715,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Puerarin attenuates binge ethanol-induced cortical neurotoxicity in association with AKT/mTOR signaling and autophagy-related responses.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La puerarina atenúa la neurotoxicidad cortical inducida por etanol en exceso en asociación con la señalización de AKT/mTOR y las respuestas relacionadas con la autofagia."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -720,7 +733,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "[Emotional impact of hereditary cancer risk on patients and their families].",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "[Impacto emocional del riesgo de cáncer hereditario en los pacientes y sus familias]."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -733,7 +751,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Targeting snake venom metalloproteinases: structural diversity, molecular pathogenesis and therapeutic interventions.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Orientación a las metaloproteinasas de veneno de serpiente: diversidad estructural, patogénesis molecular e intervenciones terapéuticas."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -764,7 +787,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Spectrum of germline variants in moderate to high penetrance non-BRCA breast cancer susceptibility genes in a Pakistani early-onset cohort.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Espectro de variantes de la línea germinal en genes de susceptibilidad al cáncer de mama no BRCA de penetrancia moderada a alta en una cohorte paquistaní de inicio temprano."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -777,7 +805,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "BRCA1/BRCA2 Double Heterozygosity Presenting as Intrahepatic Cholangiocarcinoma.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Doble heterocigosis BRCA1/BRCA2 que se presenta como colangiocarcinoma intrahepático."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -867,7 +900,6 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4",
   "Europe PMC: The read operation timed out"
  ],
@@ -1034,6 +1066,11 @@
   "nasa to attempt uncrewed and crewed missions with boeings troubled starliner spacecraft": "2026-09-28T21:27:09.310216+00:00",
   "tiktok influencers are promoting a home remedy to boost the immune system that could cause botulism": "2026-09-28T21:27:09.310216+00:00",
   "scientists just discovered what coffee really does to your gut and brain": "2026-09-28T21:27:09.310216+00:00",
-  "anthropic quer usar ia para descobrir tratamentos para doencas raras": "2026-09-28T21:27:09.310216+00:00"
+  "anthropic quer usar ia para descobrir tratamentos para doencas raras": "2026-09-28T21:27:09.310216+00:00",
+  "plataforma testa em laboratorio resposta de tumores a diferentes tratamentos": "2026-09-29T02:04:43.650086+00:00",
+  "a historia do projeto brasileiro argentino llama": "2026-09-29T02:04:43.650086+00:00",
+  "one in eight new cancers are likely caused by infectionstheres an easy way to protect yourself": "2026-09-29T02:04:43.650086+00:00",
+  "cidades biodiversidade e servicos ecossistemicos": "2026-09-29T02:04:43.650086+00:00",
+  "comunicacao cientifica de combate a desinformacao": "2026-09-29T02:04:43.650086+00:00"
  }
 }
