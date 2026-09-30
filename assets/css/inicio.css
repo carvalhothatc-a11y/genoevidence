@@ -207,6 +207,8 @@ main.home > .wrap{position:relative;z-index:1}
 }
 
 /* ---------- explore a ciência: símbolos animados ---------- */
+/* 8 temas: 2 linhas de 4 no computador e no tablet (nenhum tema sozinho numa linha) */
+@media (min-width:761px){#temasInicio{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}#temasInicio .tema-tile{padding:18px 20px}}
 .tema-simbolo{gap:8px}
 .tema-simbolo .simb{display:block;width:48px;height:48px;color:var(--c);transition:transform .35s cubic-bezier(.3,1.4,.5,1)}
 .tema-simbolo:hover .simb{transform:scale(1.1) rotate(-4deg)}
@@ -255,7 +257,7 @@ main.home > .wrap{position:relative;z-index:1}
 .rd-filtros button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .rd-filtros button[aria-pressed="true"] i{box-shadow:0 0 0 2px var(--bg)}
 .rd-area{grid-area:area;position:relative;padding-bottom:50px}
-.rd-svg{display:block;width:100%;height:auto;touch-action:pan-y;cursor:grab;overflow:visible}
+.rd-svg{display:block;width:100%;height:auto;max-height:min(560px,72vh);touch-action:pan-y;cursor:grab;overflow:visible}
 /* botões de zoom numa fileira abaixo do desenho (em cima dele cobririam os nomes) */
 .rd-zoom{position:absolute;left:50%;bottom:4px;transform:translateX(-50%);display:flex;gap:8px}
 .rd-a{stroke:var(--c);stroke-width:2;opacity:.4;stroke-dasharray:6 9;transition:opacity .3s,stroke-width .3s}
@@ -276,6 +278,7 @@ main.home > .wrap{position:relative;z-index:1}
 .rd-no:focus-visible .rd-bola{stroke:var(--ink);stroke-width:4}
 .rd-rot{font:600 14px/1 var(--sans);fill:var(--ink);pointer-events:none}
 .rd-rot.fora{font-weight:500;fill:var(--ink2)}
+.rd-proteinas .rd-rot{font-size:12.5px}
 .rd-centro .rd-rot{fill:#fff;font:700 24px/1 var(--display)}
 .rd-no.some,.rd-a.some{opacity:.07;pointer-events:none}
 .rd-info{grid-area:info;align-self:center;background:var(--surface);border:1px solid color-mix(in srgb,var(--c) 30%,var(--line));border-radius:18px;padding:16px;box-shadow:var(--shadow);min-height:150px}
