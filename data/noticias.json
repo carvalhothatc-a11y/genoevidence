@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-30T19:30:24.464813+00:00",
+ "atualizado_em": "2026-09-30T23:58:50.808110+00:00",
  "noticias": [
   {
    "titulo": "Anthropic quer usar IA para descobrir tratamentos para doenças raras",
@@ -182,27 +182,26 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Teste de força para cadeirantes pode ser feito por videochamada com a mesma precisão do presencial",
-   "resumo": "Estudo feito na Unicamp valida método remoto em pessoas com lesão medular, possibilitando o acompanhamento da reabilitação sem necessidade de deslocamentos",
-   "url": "https://agencia.fapesp.br/teste-de-forca-para-cadeirantes-pode-ser-feito-por-videochamada-com-a-mesma-precisao-do-presencial/59304",
+   "titulo": "A primeira década da FAPESP registrada em uma publicação histórica",
+   "resumo": "Obra de 1973, idealizada por Oscar Sala e coordenada por Tamás Szmrecsányi, oferece uma visão ampla da experiência da Fundação em seus primeiros anos de atuação",
+   "url": "https://centrodememoria.fapesp.br/PeD",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-09-30T19:30:24.464813+00:00",
+   "data": "2026-09-30T23:58:50.808110+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59304.jpeg",
+   "imagem": "https://centrodememoria.fapesp.br/wp-content/uploads/2023/12/pesquisa-desenvolvimento.jpg",
    "foco": {
-    "x": 50,
-    "y": 0
+    "inteira": true
    },
    "i18n": {
     "en": {
-     "titulo": "Strength testing for wheelchair users can be done by video call with the same accuracy as in-person",
-     "resumo": "A study carried out at Unicamp validates a remote method in people with spinal cord injury, allowing rehabilitation to be monitored without the need for displacement"
+     "titulo": "FAPESP's first decade recorded in a historical publication",
+     "resumo": "The 1973 work, conceived by Oscar Sala and coordinated by Tamás Szmrecsányi, offers a broad view of the Foundation's experience in its first years of operation"
     },
     "es": {
-     "titulo": "Las pruebas de resistencia para usuarios de sillas de ruedas se pueden realizar por videollamada con la misma precisión que en persona",
-     "resumo": "Un estudio realizado en la Unicamp valida un método remoto en personas con lesión medular, permitiendo monitorizar la rehabilitación sin necesidad de desplazamiento"
+     "titulo": "Primera década de la FAPESP registrada en una publicación histórica",
+     "resumo": "La obra de 1973, concebida por Oscar Sala y coordinada por Tamás Szmrecsányi, ofrece una visión amplia de la experiencia de la Fundación en sus primeros años de funcionamiento"
     }
    }
   },
@@ -308,28 +307,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Por que uma abordagem moderna dos cuidados de saúde deve considerar mais do que a doença",
-   "resumo": "Comprimidos e outros medicamentos podem parecer a maneira mais rigorosa de tratar doenças, mas sabemos cada vez mais que nossa saúde deve girar em torno de toda a mente e do corpo",
-   "url": "https://www.newscientist.com/article/2591137-why-a-modern-approach-to-healthcare-must-consider-more-than-illness/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "Anglo-saxões receberam tratamento especial na Roma medieval",
+   "resumo": "Um pequeno tesouro de moedas inglesas medievais encontradas perto do Vaticano em Roma sugere que os primeiros residentes ingleses tinham um status privilegiado na cidade santa",
+   "url": "https://www.newscientist.com/article/2591306-anglo-saxons-got-special-treatment-in-medieval-rome/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-09-30T17:00:00+00:00",
+   "data": "2026-09-30T23:01:00+00:00",
    "tema": "Saúde",
    "relevancia": 5,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_314454007.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_314680170.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Why a modern approach to healthcare must consider more than illness",
+   "titulo_original": "Anglo-Saxons got special treatment in medieval Rome",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Por qué un enfoque moderno de la atención médica debe considerar más que la enfermedad",
-     "resumo": "Las píldoras y otros medicamentos pueden parecer la forma más rigurosa de tratar la enfermedad, pero cada vez sabemos más que nuestra salud debe girar en torno a toda la mente y el cuerpo"
+     "titulo": "Los anglosajones recibieron un trato especial en la Roma medieval",
+     "resumo": "Un pequeño tesoro de monedas inglesas medievales encontrado cerca del Vaticano en Roma sugiere que los primeros residentes ingleses tenían un estatus privilegiado en la ciudad santa"
     }
    },
-   "resumo_original": "Pills and other medications may seem like the most rigorous way to treat illness, but we increasingly know that our health must revolve around the whole mind and body"
+   "resumo_original": "A small hoard of medieval English coins found near the Vatican in Rome suggests that early English residents held a privileged status in the holy city"
   },
   {
    "tipo": "noticia",
@@ -509,7 +508,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Interdisciplinary management and genetic evaluation of pediatric cancer predisposition syndromes: a retrospective cohort study.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Manejo interdisciplinario y evaluación genética de los síndromes de predisposición al cáncer pediátrico: un estudio de cohorte retrospectivo."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -522,7 +526,12 @@
    "acesso_aberto": false,
    "tema": "Saúde",
    "titulo_original": "Grade 3 Lung Carcinoids/NETs: The IASLC Pathology Committee Study with Proposal of a New Diagnostic Category.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Carcinoides/Net pulmonares de grado 3: el estudio del Comité de Patología de IASLC con propuesta de una nueva categoría de diagnóstico."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -553,7 +562,12 @@
    "acesso_aberto": true,
    "tema": "Genética",
    "titulo_original": "<i>TRAF7</i> mutations stabilize K/NRAS and hyperactivate MAPK signaling to cause CAFDADD neurodevelopmental defects.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las mutaciones de <i>TRAF7</i> estabilizan K/NRAS e hiperactivan la señalización de MAPK para causar defectos del neurodesarrollo de CAFDADD."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -566,7 +580,12 @@
    "acesso_aberto": true,
    "tema": "Ciência",
    "titulo_original": "Exploring the cytotoxic potential of Artemisia herba-alba crude extract and key phytoconstituents using in vitro assays and molecular docking insights.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Explorando el potencial citotóxico del extracto crudo de Artemisia herba-alba y los fitoconstituyentes clave utilizando ensayos in vitro y conocimientos de acoplamiento molecular."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -579,7 +598,12 @@
    "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "ATM mutations in myelodysplastic neoplasms, acute myeloid leukemia, and myeloproliferative neoplasms: a systematic review.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Mutaciones ATM en neoplasias mielodisplásicas, leucemia mieloide aguda y neoplasias mieloproliferativas: una revisión sistemática."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -592,7 +616,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Randomized Prospective Comparison Between Neoadjuvant Mitomycin C Plus Cisplatin and Paclitaxel Plus Carboplatin in Patients With BRCA1-Associated Ovarian Cancer.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Comparación prospectiva aleatorizada entre mitomicina C más cisplatino neoadyuvante y paclitaxel más carboplatino en pacientes con cáncer de ovario asociado a BRCA1."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -605,7 +634,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "In-frame variants in TP53 gene identified in adult leukemia samples are predominantly deleterious: a study of the TP53 Network of Education and Research Initiative on CLL.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las variantes en marco en el gen TP53 identificadas en muestras de leucemia en adultos son predominantemente perjudiciales: un estudio de la Red TP53 de Iniciativa de Educación e Investigación sobre CLL."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -618,7 +652,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Association of <i>ATM</i> Alterations with Outcomes After <sup>177</sup>Lu-PSMA-617 Treatment in Patients with Metastatic Castration-Resistant Prostate Cancer.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Asociación de alteraciones de <i>ATM</i> con resultados después del tratamiento con <sup>177</sup>Lu-PSMA-617 en pacientes con cáncer de próstata metastásico resistente a la castración."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -631,18 +670,30 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Long-term Endoscopic Surveillance in Hereditary Diffuse Gastric Cancer Syndrome.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Vigilancia endoscópica a largo plazo en el síndrome de cáncer gástrico difuso hereditario."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationwide spatiotemporal analysis, 2010-2025.",
+   "titulo": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationalwide spatiotemporal analysis, 2010-2025.",
    "autores": "Grados Vásquez M, Guerra Blas JC, Salcedo-Prudencio A, Santos Siqueira T, Monteiro W, Amaya Parra JA, Martinez-Espinosa…",
    "revista": "PLoS Negl Trop Dis",
    "data": "2026-09-24T00:00:00+00:00",
    "doi": "10.1371/journal.pntd.0014747",
    "url": "https://doi.org/10.1371/journal.pntd.0014747",
    "acesso_aberto": true,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationwide spatiotemporal analysis, 2010-2025.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Puntos calientes espaciales persistentes y desigualdades socioeconómicas del envenenamiento por mordedura de serpiente en Perú: un análisis espaciotemporal a nivel nacional, 2010-2025."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -653,40 +704,68 @@
    "doi": "10.1016/j.gim.2026.102733",
    "url": "https://doi.org/10.1016/j.gim.2026.102733",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Universal versus guideline-based germline multigene panel testing in solid tumors: Diagnostic yield, variant of uncertain significance burden, and clinical actionability - A systematic review with meta-analysis.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Universal versus pruebas de panel multigénico de línea germinal basadas en pautas en tumores sólidos: rendimiento diagnóstico, variante de carga de significado incierto y capacidad de acción clínica: una revisión sistemática con metanálisis."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Bridging the BRCA1/2 variant previvor gap in health care.",
+   "titulo": "Preenchendo a lacuna do previvor da variante BRCA1/2 nos cuidados de saúde.",
    "autores": "Gopal S.",
    "revista": "JAAPA",
    "data": "2026-09-24T00:00:00+00:00",
    "doi": "10.1097/01.jaa.0000000000000423",
    "url": "https://doi.org/10.1097/01.jaa.0000000000000423",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Bridging the BRCA1/2 variant previvor gap in health care.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Cerrar la brecha previvor variante BRCA1/2 en la atención médica."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Puerarin attenuates binge ethanol-induced cortical neurotoxicity in association with AKT/mTOR signaling and autophagy-related responses.",
+   "titulo": "A puerarina atenua a neurotoxicidade cortical induzida por etanol em associação com a sinalização AKT/mTOR e respostas relacionadas à autofagia.",
    "autores": "Liu F, Huang S, Xiao H, Zhou Y, Lin L, Liu Z, Lan J, Chen X, Tian H.",
    "revista": "Toxicol Mech Methods",
    "data": "2026-09-24T00:00:00+00:00",
    "doi": "10.1080/15376516.2026.2733168",
    "url": "https://doi.org/10.1080/15376516.2026.2733168",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Puerarin attenuates binge ethanol-induced cortical neurotoxicity in association with AKT/mTOR signaling and autophagy-related responses.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La puerarina atenúa la neurotoxicidad cortical inducida por etanol en exceso en asociación con la señalización de AKT/mTOR y las respuestas relacionadas con la autofagia."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "[Emotional impact of hereditary cancer risk on patients and their families].",
+   "titulo": "[Impacto emocional do risco hereditário de câncer nos pacientes e suas famílias].",
    "autores": "Buitrago Ramírez F.",
    "revista": "Aten Primaria",
    "data": "2026-09-23T00:00:00+00:00",
    "doi": "10.1016/j.aprim.2026.103612",
    "url": "https://doi.org/10.1016/j.aprim.2026.103612",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "[Emotional impact of hereditary cancer risk on patients and their families].",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "[Impacto emocional del riesgo de cáncer hereditario en los pacientes y sus familias]."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -697,18 +776,32 @@
    "doi": "10.1007/s11033-026-12781-z",
    "url": "https://doi.org/10.1007/s11033-026-12781-z",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Targeting snake venom metalloproteinases: structural diversity, molecular pathogenesis and therapeutic interventions.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Orientación a las metaloproteinasas de veneno de serpiente: diversidad estructural, patogénesis molecular e intervenciones terapéuticas."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "A microbiota-substrate-metabolite-target network suggests AKT1-associated links between gut microbiota-derived metabolites and osteoporosis.",
+   "titulo": "Uma rede microbiota-substrato-metabólito-alvo sugere ligações associadas a AKT1 entre metabólitos derivados da microbiota intestinal e osteoporose.",
    "autores": "Zeng W, Gong Y, Liao Y, Xie X, Qin Z, Li C, Zhang X.",
    "revista": "Int Microbiol",
    "data": "2026-09-23T00:00:00+00:00",
    "doi": "10.1007/s10123-026-00899-w",
    "url": "https://doi.org/10.1007/s10123-026-00899-w",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "A microbiota-substrate-metabolite-target network suggests AKT1-associated links between gut microbiota-derived metabolites and osteoporosis.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Una red de microbiota-sustrato-metabolito-diana sugiere vínculos asociados a AKT1 entre los metabolitos derivados de la microbiota intestinal y la osteoporosis."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -719,40 +812,58 @@
    "doi": "10.1016/j.cancergen.2026.09.009",
    "url": "https://doi.org/10.1016/j.cancergen.2026.09.009",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Spectrum of germline variants in moderate to high penetrance non-BRCA breast cancer susceptibility genes in a Pakistani early-onset cohort.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Espectro de variantes de la línea germinal en genes de susceptibilidad al cáncer de mama no BRCA de penetrancia moderada a alta en una cohorte paquistaní de inicio temprano."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "BRCA1/BRCA2 Double Heterozygosity Presenting as Intrahepatic Cholangiocarcinoma.",
+   "titulo": "Heterozigosidade Dupla BRCA1/BRCA2 Apresentando-se como Colangiocarcinoma Intra-hepático.",
    "autores": "Inagaki N, Yamauchi Y, Matsumoto S, Naito S, Bingo M, Cho H, Ueda Y, Dong J, Kiribayashi K, Yamamoto A, Sukeda A, Nagao…",
    "revista": "Intern Med",
    "data": "2026-09-22T00:00:00+00:00",
    "doi": "10.2169/internalmedicine.7739-26",
    "url": "https://doi.org/10.2169/internalmedicine.7739-26",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "BRCA1/BRCA2 Double Heterozygosity Presenting as Intrahepatic Cholangiocarcinoma.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Doble heterocigosis BRCA1/BRCA2 que se presenta como colangiocarcinoma intrahepático."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "DNPH1 exerts context-dependent tumor-promoting and -repressing functions during melanoma development.",
+   "titulo": "O DNPH1 exerce funções promotoras e repressoras de tumores dependentes do contexto durante o desenvolvimento do melanoma.",
    "autores": "Sui Y, Oh S, Janknecht R.",
    "revista": "J Invest Dermatol",
    "data": "2026-09-22T00:00:00+00:00",
    "doi": "10.1016/j.jid.2026.09.843",
    "url": "https://doi.org/10.1016/j.jid.2026.09.843",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "DNPH1 exerts context-dependent tumor-promoting and -repressing functions during melanoma development.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "An equine bivalent F(ab')<sub>2</sub> antivenom developed against the venoms of two neglected pit viper species from Northeast India-Trimeresurus erythrurus and T. popeiorum-exhibits enhanced in vitro and preclinical…",
+   "titulo": "Um antiveneno bivalente equino F(ab')<sub>2</sub> desenvolvido contra os venenos de duas espécies de víboras negligenciadas do nordeste da Índia - Trimeresurus erythrurus e T. popeiorum - exibe melhorado in vitro e pré-clínico...",
    "autores": "Kumar R, Siddika S, Gogoi P, Salvi N, Khadilkar MV, Ahmed MF, Lalremsanga HT, Kalita B, Mukherjee AK.",
    "revista": "Int J Biol Macromol",
    "data": "2026-09-22T00:00:00+00:00",
    "doi": "10.1016/j.ijbiomac.2026.154578",
    "url": "https://doi.org/10.1016/j.ijbiomac.2026.154578",
    "acesso_aberto": false,
-   "tema": "Meio ambiente"
+   "tema": "Meio ambiente",
+   "titulo_original": "An equine bivalent F(ab')<sub>2</sub> antivenom developed against the venoms of two neglected pit viper species from Northeast India-Trimeresurus erythrurus and T. popeiorum-exhibits enhanced in vitro and preclinical…",
+   "traduzido": true
   }
  ],
  "fontes": [
@@ -984,6 +1095,7 @@
   "de volta para o futuro": "2026-09-30T19:30:24.464813+00:00",
   "the atlantic hurricane season has been so quiet its unprecedented": "2026-09-30T19:30:24.464813+00:00",
   "why a modern approach to healthcare must consider more than illness": "2026-09-30T19:30:24.464813+00:00",
-  "twisteddoodles on the discovery of a new cat species": "2026-09-30T19:30:24.464813+00:00"
+  "twisteddoodles on the discovery of a new cat species": "2026-09-30T19:30:24.464813+00:00",
+  "anglo saxons got special treatment in medieval rome": "2026-09-30T23:58:50.808110+00:00"
  }
 }
