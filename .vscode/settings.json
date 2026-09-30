@@ -6,5 +6,8 @@
   "files.associations": { "*.webmanifest": "json" },
   "files.exclude": { "**/.DS_Store": true },
   "cSpell.language": "pt-BR,en",
-  "livePreview.defaultPreviewPath": "/index.html"
+  "livePreview.defaultPreviewPath": "/index.html",
+  // baixa sozinho as novidades do GitHub (o robô grava notícias de hora em hora)
+  "task.allowAutomaticTasks": "on",
+  "git.autofetch": true
 }

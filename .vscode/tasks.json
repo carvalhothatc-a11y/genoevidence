@@ -7,7 +7,9 @@
       "type": "shell",
       "command": "git pull --rebase --autostash",
       "problemMatcher": [],
-      "detail": "Traz para o computador as notícias do dia e tudo o que foi publicado. Use antes de começar a editar."
+      "detail": "Traz para o computador as notícias do dia e tudo o que foi publicado. Roda sozinha quando a pasta é aberta no VS Code.",
+      "runOptions": { "runOn": "folderOpen" },
+      "presentation": { "reveal": "silent", "panel": "shared", "showReuseMessage": false }
     },
     {
       "label": "Abrir o site no navegador (servidor local)",
