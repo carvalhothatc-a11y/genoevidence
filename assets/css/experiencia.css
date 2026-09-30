@@ -36,9 +36,10 @@ a{color:inherit}
 /* ---------- capítulos ---------- */
 .xp-capitulos{position:fixed;right:clamp(10px,2vw,22px);top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;gap:14px}
 .xp-capitulos a{display:flex;align-items:center;justify-content:flex-end;gap:10px;text-decoration:none;font:500 11px/1 var(--mono);color:var(--xp-dim);letter-spacing:.04em;text-transform:uppercase}
-.xp-capitulos a span{opacity:0;transform:translateX(6px);transition:.25s}
+/* o nome do capítulo só aparece ao passar o mouse (ou com o teclado), com fundo, para não cobrir o gráfico */
+.xp-capitulos a span{opacity:0;transform:translateX(6px);transition:.25s;background:rgba(5,8,15,.92);border:1px solid var(--xp-line);border-radius:8px;padding:6px 8px;pointer-events:none}
 .xp-capitulos a i{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--xp-dim);transition:.3s}
-.xp-capitulos a:hover span,.xp-capitulos a:focus-visible span,.xp-capitulos a[aria-current="true"] span{opacity:1;transform:none}
+.xp-capitulos a:hover span,.xp-capitulos a:focus-visible span{opacity:1;transform:none}
 .xp-capitulos a[aria-current="true"]{color:var(--xp-ink)}
 .xp-capitulos a[aria-current="true"] i{background:var(--xp-acento);border-color:var(--xp-acento);transform:scale(1.35)}
 @media (max-width:900px){.xp-capitulos{display:none}}

@@ -72,11 +72,19 @@
         <a class="btn" href="#destaques">Ver os destaques</a>
         <a class="btn ghost" href="artigos/">Explorar por tema</a>
       </div>
+      <!-- números do app (contados de data/artigos.json), sobem quando aparecem -->
+      <div class="numeros-home" id="numerosHome"></div>
     </div>
     <div class="hero-3d" aria-hidden="true">
       <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
       <canvas id="dna3d"></canvas>
     </div>
+  </section>
+
+  <!-- experiências interativas: estudos com "experiencia" em data/artigos.json -->
+  <section class="sec" id="experiencias" style="--c:var(--violet)" hidden>
+    <div class="sec-head"><h2>Experiências interativas</h2></div>
+    <div id="experienciasInicio"></div>
   </section>
 
   <section class="sec" style="--c:var(--ok)">
@@ -113,7 +121,9 @@
 
   <section class="sec" style="--c:var(--teal)">
     <div class="sec-head"><h2>Explore por tema</h2><a class="link-more" href="artigos/">Ver todos →</a></div>
+    <!-- toque em um tema para ver os estudos dele aqui mesmo -->
     <div class="tema-grid" id="temasInicio"></div>
+    <div class="tema-painel" id="temaPainel" hidden></div>
   </section>
 
   <div class="card install-card">

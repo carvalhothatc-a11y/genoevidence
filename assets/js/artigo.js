@@ -267,9 +267,6 @@
     document.title = (d.titulo_curto || d.titulo) + " · GenoEvidence";
     const desc = $('meta[name="description"]'); if (desc) desc.content = d.titulo;
     const autores = d.autores || [];
-    // botão de voltar: leva ao tema do estudo
-    const volta = $(".back-btn");
-    if (volta && d.tema_id) { volta.href = "../#" + d.tema_id; volta.setAttribute("aria-label", "Voltar para o tema " + (d.tema || "")); }
 
     const hero = document.createElement("section");
     hero.className = "hero art-hero"; hero.id = "top";

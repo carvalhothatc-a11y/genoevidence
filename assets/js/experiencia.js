@@ -450,11 +450,6 @@
     document.title = R.titulo + " · GenoEvidence";
     if (R.acento) document.documentElement.style.setProperty("--xp-acento", R.acento);
     const sub = $("#xpSub"); if (sub) sub.textContent = R.subtitulo_topo || "";
-    const volta = $(".xp-voltar");
-    if (volta) volta.addEventListener("click", ev => {
-      let daqui = false; try { daqui = !!document.referrer && new URL(document.referrer).origin === location.origin; } catch (e) {}
-      if (daqui && history.length > 1) { ev.preventDefault(); history.back(); }
-    });
     if (RM) document.body.classList.add("xp-estatico");
     main.innerHTML = "";
     const cenas = R.cenas.map((c, i) => {
@@ -547,29 +542,74 @@
     el("p", { class: "rodape" }, d, esc(T("Conteúdo educativo: não substitui orientação médica.")) + " · " + esc(T("Desenvolvido por")) + " <strong>Thaisa Carvalho</strong>");
   }
 
-  /* ---- som ambiente opcional, gerado no navegador (começa desligado) ---- */
+  /* ---- som ambiente opcional, gerado no navegador (começa desligado) ----
+     Um acorde suave que "respira" devagar, com eco, sinos delicados de vez em quando e uma nota
+     ao trocar de passo. Tudo na escala pentatônica de ré maior, então as notas sempre combinam. */
   const som = (function () {
-    let ac = null, mestre = null, ligado = false;
-    function ligar() {
-      ac = ac || new (window.AudioContext || window.webkitAudioContext)();
-      mestre = ac.createGain(); mestre.gain.value = 0; mestre.connect(ac.destination);
-      const filtro = ac.createBiquadFilter(); filtro.type = "lowpass"; filtro.frequency.value = 700; filtro.connect(mestre);
-      [110, 164.81, 220.5].forEach((f, i) => { const o = ac.createOscillator(); o.type = i === 2 ? "triangle" : "sine"; o.frequency.value = f; o.detune.value = i * 4;
-        const g = ac.createGain(); g.gain.value = i === 2 ? .12 : .3; o.connect(g); g.connect(filtro); o.start(); });
-      mestre.gain.linearRampToValueAtTime(.05, ac.currentTime + 2.5);
+    const AC = window.AudioContext || window.webkitAudioContext;
+    const ESCALA = [293.66, 329.63, 369.99, 440, 493.88];      // ré, mi, fá#, lá, si
+    const ACORDE = [146.83, 220, 293.66, 329.63, 369.99];     // ré3, lá3, ré4, mi4, fá#4
+    let ac = null, mestre = null, seco = null, eco = null, fontes = [], relogio = 0, ligado = false, nota = 0;
+
+    function impulso(seg) {
+      const n = Math.round(ac.sampleRate * seg), b = ac.createBuffer(2, n, ac.sampleRate);
+      for (let c = 0; c < 2; c++) { const d = b.getChannelData(c); for (let i = 0; i < n; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / n, 3.2); }
+      return b;
     }
+    function lfo(freq, alvo, profundidade) {
+      const o = ac.createOscillator(), g = ac.createGain();
+      o.frequency.value = freq; g.gain.value = profundidade; o.connect(g); g.connect(alvo); o.start(); fontes.push(o);
+    }
+    function sino(freq, volume, pan) {
+      if (!ac) return;
+      const t = ac.currentTime, g = ac.createGain(), p = ac.createStereoPanner ? ac.createStereoPanner() : null;
+      if (p) { p.pan.value = pan || 0; g.connect(p); p.connect(seco); p.connect(eco); } else { g.connect(seco); g.connect(eco); }
+      [[1, 1, 3.2], [2.76, .18, 1.1]].forEach(([m, v, dur]) => {       // fundamental + um parcial de sino, que some antes
+        const o = ac.createOscillator(), e = ac.createGain();
+        o.type = "sine"; o.frequency.value = freq * m;
+        e.gain.setValueAtTime(0, t); e.gain.linearRampToValueAtTime(volume * v, t + .012); e.gain.exponentialRampToValueAtTime(.0001, t + dur);
+        o.connect(e); e.connect(g); o.start(t); o.stop(t + dur + .1);
+      });
+    }
+    function ligar() {
+      ac = ac || new AC();
+      if (ac.state === "suspended") ac.resume();
+      const comp = ac.createDynamicsCompressor(); comp.connect(ac.destination);
+      mestre = ac.createGain(); mestre.gain.value = 0; mestre.connect(comp);
+      seco = ac.createGain(); seco.gain.value = .55; seco.connect(mestre);
+      const conv = ac.createConvolver(); conv.buffer = impulso(3.5);
+      eco = ac.createGain(); eco.gain.value = .7; eco.connect(conv); conv.connect(mestre);
+      // o acorde: cada nota com volume que sobe e desce devagar, em tempos diferentes
+      const filtro = ac.createBiquadFilter(); filtro.type = "lowpass"; filtro.frequency.value = 850; filtro.Q.value = .4;
+      filtro.connect(seco); filtro.connect(eco);
+      lfo(.021, filtro.frequency, 300);
+      ACORDE.forEach((f, i) => {
+        const v = ac.createGain(); v.gain.value = .04; v.connect(filtro);
+        lfo(.035 + i * .013, v.gain, .03);
+        [["sine", 0, 1], ["triangle", 3 + i, .35]].forEach(([tipo, det, nivel]) => {
+          const o = ac.createOscillator(), g = ac.createGain();
+          o.type = tipo; o.frequency.value = f; o.detune.value = det; g.gain.value = nivel;
+          o.connect(g); g.connect(v); o.start(); fontes.push(o);
+        });
+      });
+      mestre.gain.setTargetAtTime(.8, ac.currentTime, 1.2);
+      // sinos esparsos, uma oitava acima
+      const tocar = () => { sino(ESCALA[Math.floor(Math.random() * 5)] * 2, .07, Math.random() - .5); relogio = setTimeout(tocar, 5000 + Math.random() * 7000); };
+      relogio = setTimeout(tocar, 2500);
+    }
+    function desligar() {
+      clearTimeout(relogio);
+      if (!ac || !mestre) return;
+      const m = mestre, fs = fontes; fontes = []; mestre = null;
+      m.gain.setTargetAtTime(0, ac.currentTime, .35);
+      setTimeout(() => { fs.forEach(o => { try { o.stop(); } catch (e) {} }); m.disconnect(); }, 2000);
+    }
+    // não toca com a página escondida (outra aba, tela bloqueada)
+    document.addEventListener("visibilitychange", () => { if (!ac) return; if (document.hidden) ac.suspend(); else if (ligado) ac.resume(); });
     return {
-      alternar() {
-        ligado = !ligado;
-        if (ligado) ligar(); else if (mestre) { const m = mestre; m.gain.linearRampToValueAtTime(0, ac.currentTime + .6); setTimeout(() => m.disconnect(), 800); }
-        return ligado;
-      },
-      toque() {
-        if (!ligado || !ac) return;
-        const o = ac.createOscillator(), g = ac.createGain(); o.frequency.value = 660; o.type = "sine";
-        g.gain.setValueAtTime(0, ac.currentTime); g.gain.linearRampToValueAtTime(.025, ac.currentTime + .02); g.gain.exponentialRampToValueAtTime(.0001, ac.currentTime + 1.2);
-        o.connect(g); g.connect(ac.destination); o.start(); o.stop(ac.currentTime + 1.3);
-      }
+      alternar() { ligado = !ligado; ligado ? ligar() : desligar(); return ligado; },
+      // ao trocar de passo: uma nota suave, subindo pela escala ao longo da história
+      toque() { if (ligado && mestre) { sino(ESCALA[nota % 5] * (nota % 10 < 5 ? 1 : 2), .09, 0); nota++; } }
     };
   })();
   const bSom = $("#xpSom");

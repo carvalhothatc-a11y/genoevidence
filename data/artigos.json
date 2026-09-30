@@ -500,7 +500,10 @@
     {
       "id": "cosmeticos-antienvelhecimento",
       "url": "artigos/cosmeticos-antienvelhecimento/experiencia/",
-      "experiencia": true,
+      "experiencia": {
+        "titulo": "Pequeno demais para ver",
+        "chamada": "Role a tela e veja o que 38 estudos mostram sobre nanotecnologia nos cosméticos antienvelhecimento, e o que ainda não mostram."
+      },
       "titulo_curto": "Nanotecnologia nos cosméticos antienvelhecimento: o que a ciência já testou",
       "titulo": "Unveiling New Horizons: Advancing Technologies in Cosmeceuticals for Anti-Aging Solutions",
       "titulo_pt": "Revelando novos horizontes: avanços tecnológicos em cosmecêuticos para soluções antienvelhecimento",
@@ -541,7 +544,11 @@
             "Cosmetics"
           ],
           "capa_alt": "Illustration of nanoparticles",
-          "titulo_pt": "Unveiling New Horizons: Advancing Technologies in Cosmeceuticals for Anti-Aging Solutions"
+          "titulo_pt": "Unveiling New Horizons: Advancing Technologies in Cosmeceuticals for Anti-Aging Solutions",
+          "experiencia": {
+            "titulo": "Too small to see",
+            "chamada": "Scroll through and see what 38 studies show about nanotechnology in anti-aging cosmetics, and what they don't show yet."
+          }
         },
         "es": {
           "titulo_curto": "Nanotecnología en cosméticos antienvejecimiento: lo que la ciencia ya probó",
@@ -551,7 +558,11 @@
             "Nanotecnología",
             "Cosméticos"
           ],
-          "capa_alt": "Ilustración de nanopartículas"
+          "capa_alt": "Ilustración de nanopartículas",
+          "experiencia": {
+            "titulo": "Demasiado pequeño para ver",
+            "chamada": "Desliza la pantalla y mira lo que muestran 38 estudios sobre nanotecnología en cosméticos antienvejecimiento, y lo que todavía no muestran."
+          }
         }
       }
     },

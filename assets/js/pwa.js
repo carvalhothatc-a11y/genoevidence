@@ -1,4 +1,33 @@
 /* aplicativo: registra o modo offline e mostra o botão "Instalar como app" com a ajuda certa para cada aparelho */
+
+/* voltar: em qualquer página, o botão de voltar leva para onde a pessoa estava (se ela veio de outra página
+   do app) ou para o Início. Cada página guarda a posição da rolagem, para a volta cair no mesmo ponto. */
+(function(){
+  var root=(document.querySelector('meta[name="ge-root"]')||{}).content||'./';
+  function veioDoApp(){try{return !!document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1;}catch(e){return false;}}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('.back-btn,.xp-voltar,.voltar-app');
+    if(!a||e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+    e.preventDefault();
+    if(veioDoApp())history.back();else location.href=root;
+  });
+  var chave='ge-rolagem:'+location.pathname+location.search;
+  addEventListener('pagehide',function(){try{sessionStorage.setItem(chave,String(Math.round(scrollY)));}catch(e){}});
+  var nav=(performance.getEntriesByType&&performance.getEntriesByType('navigation')[0])||{};
+  if(nav.type!=='back_forward')return;
+  var y=0;try{y=+sessionStorage.getItem(chave)||0;}catch(e){}
+  if(y<=0)return;
+  // o conteúdo das páginas é montado depois de carregar; espera a página ficar alta o bastante
+  var t0=Date.now(),mexeu=false;
+  addEventListener('touchstart',function(){mexeu=true;},{passive:true,once:true});
+  addEventListener('wheel',function(){mexeu=true;},{passive:true,once:true});
+  (function tenta(){
+    if(mexeu)return;
+    if(document.documentElement.scrollHeight-innerHeight>=y-2){if(Math.abs(scrollY-y)>4)scrollTo({top:y,behavior:'instant'});}
+    else if(Date.now()-t0<5000)setTimeout(tenta,120);
+  })();
+})();
+
 (function(){
   var root=(document.querySelector('meta[name="ge-root"]')||{}).content||'./';
   if('serviceWorker' in navigator && location.protocol==='https:'){addEventListener('load',function(){navigator.serviceWorker.register(root+'sw.js',{scope:root}).catch(function(){});});}

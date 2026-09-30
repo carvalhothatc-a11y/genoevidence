@@ -49,7 +49,16 @@
     let cur = -1;
     secs.forEach((s, i) => { if (s && s.getBoundingClientRect().top < innerHeight * .35) cur = i; });
     navLinks.forEach((a, i) => a.classList.toggle("on", i === cur));
+    // a faixa de seções desliza sozinha para mostrar a seção atual
+    if (cur !== ultimaSec) {
+      ultimaSec = cur; const a = navLinks[cur], nav = $("#nav");
+      if (a && nav && nav.scrollWidth > nav.clientWidth) {
+        const ra = a.getBoundingClientRect(), rn = nav.getBoundingClientRect();
+        nav.scrollTo({ left: nav.scrollLeft + ra.left - rn.left - (rn.width - ra.width) / 2, behavior: RM ? "auto" : "smooth" });
+      }
+    }
   }
+  let ultimaSec = -2;
   addEventListener("scroll", onScroll, { passive: true });
 
   /* ---------- efeito de toque ---------- */

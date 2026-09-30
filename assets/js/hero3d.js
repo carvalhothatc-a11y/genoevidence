@@ -72,11 +72,33 @@
     const mouse = e => { alvoX = (e.clientX / innerWidth - 0.5) * 0.5; alvoY = (e.clientY / innerHeight - 0.5) * 0.3; };
     if (op.seguirMouse) addEventListener("pointermove", mouse, { passive: true });
     const t0 = performance.now();
+    // girar com o dedo ou o mouse: arrastar gira, soltar deixa a hélice seguir no embalo; um toque dá um giro
+    let ang = 0, embalo = 0, arrastando = false, ultX = 0, ultT = 0, iniX = 0, antes = t0;
+    if (op.arrastar && !RM) {
+      cv.addEventListener("pointerdown", e => {
+        arrastando = true; ultX = iniX = e.clientX; ultT = performance.now(); embalo = 0;
+        try { cv.setPointerCapture(e.pointerId); } catch (_) {}
+        if (!raf && visivel) raf = requestAnimationFrame(quadro);
+      });
+      cv.addEventListener("pointermove", e => {
+        if (!arrastando) return;
+        const agora = performance.now(), dx = e.clientX - ultX;
+        ang += dx * 0.012; embalo = dx * 0.012 * 16 / Math.max(8, agora - ultT);
+        ultX = e.clientX; ultT = agora;
+      });
+      const soltar = e => {
+        if (!arrastando) return; arrastando = false;
+        if (Math.abs(e.clientX - iniX) < 6) embalo += 0.22;          // toque rápido: um giro
+        if (performance.now() - ultT > 120) embalo *= 0.2;            // parou antes de soltar: pouco embalo
+      };
+      cv.addEventListener("pointerup", soltar); cv.addEventListener("pointercancel", soltar);
+    }
     function quadro(agora) {
       raf = 0;
       if (!ativo) return;
-      const t = (agora - t0) / 1000;
-      helice.rotation.y = RM ? 0.6 : t * (op.velocidade || 0.35);
+      const t = (agora - t0) / 1000, dt = Math.min(.05, (agora - antes) / 1000); antes = agora;
+      if (!arrastando) { ang += dt * (op.velocidade || 0.35) + embalo; embalo *= 0.94; }
+      helice.rotation.y = RM ? 0.6 : ang;
       helice.rotation.x += ((RM ? 0 : alvoY) - helice.rotation.x) * 0.05;
       helice.position.x += ((RM ? 0 : alvoX) - helice.position.x) * 0.05;
       if (!RM) {
@@ -120,5 +142,5 @@
   }
 
   // ---------- DNA ao lado do título ----------
-  criarDNA(document.getElementById("dna3d"));
+  criarDNA(document.getElementById("dna3d"), { arrastar: true });
 })();
