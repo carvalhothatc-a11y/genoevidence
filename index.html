@@ -66,7 +66,7 @@
         <div class="busca-res" id="buscaRes" role="listbox" aria-label="Resultados da pesquisa" hidden></div>
       </div>
       <div class="hero-cta">
-        <a class="btn" href="#descobertas">Ver os destaques</a>
+        <a class="btn" href="#destaques">Ver os destaques</a>
         <a class="btn ghost" href="#ciencia">Explorar por tema</a>
       </div>
     </div>
@@ -99,6 +99,12 @@
           <li><button type="button" data-passo="3"><span class="n">4</span><span class="tx"><b>Comunicação científica</b><span>Explicamos em linguagem simples, em português, inglês e espanhol, sempre com o link para a fonte.</span></span></button></li>
         </ol>
       </div>
+    </section>
+
+    <!-- em destaque: o artigo mais recente de cada pesquisadora (data/artigos.json) -->
+    <section class="sec" id="destaques" aria-labelledby="destTitulo" style="--c:var(--accent)">
+      <div class="sec-head"><h2 id="destTitulo">Em destaque</h2><a class="link-more" href="artigos/">Todos os estudos →</a></div>
+      <div class="destaques" id="destaquesPesq"><p class="loading">Carregando…</p></div>
     </section>
 
     <!-- mapa do conhecimento: estudos ligados por temas, assuntos e pesquisadoras (data/artigos.json) -->
@@ -137,12 +143,6 @@
       <div class="sec-head"><h2 id="conectaTitulo">Explore como a ciência conecta informações</h2></div>
       <p class="sec-lede" id="conectaLede"></p>
       <div class="rede" id="redeP53"></div>
-    </section>
-
-    <!-- em destaque: o artigo mais recente de cada pesquisadora (data/artigos.json) -->
-    <section class="sec" id="destaques" aria-labelledby="destTitulo" style="--c:var(--accent)">
-      <div class="sec-head"><h2 id="destTitulo">Em destaque</h2><a class="link-more" href="artigos/">Todos os estudos →</a></div>
-      <div class="destaques" id="destaquesPesq"><p class="loading">Carregando…</p></div>
     </section>
 
     <section class="sec" id="andamento" aria-labelledby="andTitulo" style="--c:var(--amber)">
