@@ -26,9 +26,6 @@ a{color:inherit}
 .xp-marca b{font:600 14px/1 var(--display);white-space:nowrap}
 .xp-marca small{display:block;font:500 11px/1.2 var(--mono);color:var(--xp-muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:38vw}
 .xp-espaco{flex:1}
-.xp-botao{height:34px;padding:0 12px;border-radius:999px;border:1px solid var(--xp-line2);background:transparent;color:var(--xp-ink);font:600 12px/1 var(--mono);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
-.xp-botao[aria-pressed="true"]{background:var(--xp-ink);color:var(--xp-bg)}
-.xp-botao svg{width:15px;height:15px}
 .xp-barra{position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--xp-line)}
 .xp-barra i{display:block;height:100%;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--arg),var(--xp-acento))}
 .xp-topo .ge-idioma>button{border-color:var(--xp-line2)}
