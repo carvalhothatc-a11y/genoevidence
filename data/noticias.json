@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-30T00:35:01.685705+00:00",
+ "atualizado_em": "2026-09-30T06:51:39.903624+00:00",
  "noticias": [
   {
    "titulo": "Anthropic quer usar IA para descobrir tratamentos para doenças raras",
@@ -55,6 +55,58 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Programa FAPESP de Mudanças Climáticas amplia escopo para integrar saúde, sociedade e políticas públicas",
+   "resumo": "Aposta na interdisciplinaridade permitirá abordar, além dos aspectos físicos das mudanças do clima, as consequências ambientais, socioeconômicas e sanitárias",
+   "url": "https://agencia.fapesp.br/programa-fapesp-de-mudancas-climaticas-amplia-escopo-para-integrar-saude-sociedade-e-politicas-publicas/59303",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-30T06:51:39.903624+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://agencia.fapesp.br/files/post/59303.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "FAPESP Climate Change Program expands scope to integrate health, society and public policies",
+     "resumo": "A commitment to interdisciplinarity will allow us to address, in addition to the physical aspects of climate change, the environmental, socioeconomic and health consequences"
+    },
+    "es": {
+     "titulo": "El Programa de Cambio Climático de la FAPESP amplía el alcance para integrar salud, sociedad y políticas públicas",
+     "resumo": "Una apuesta por la interdisciplinariedad nos permitirá abordar, además de los aspectos físicos del cambio climático, las consecuencias ambientales, socioeconómicas y sanitarias"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Tabela Brasileira de Composição de Alimentos se transforma em ecossistema digital de pesquisa",
+   "resumo": "Mantida por centro apoiado pela FAPESP na USP, plataforma expande ferramentas computacionais, subsidia levantamentos nacionais de saúde pública e busca novas alternativas de financiamento",
+   "url": "https://agencia.fapesp.br/tabela-brasileira-de-composicao-de-alimentos-se-transforma-em-ecossistema-digital-de-pesquisa/59305",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-30T06:51:39.903624+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://agencia.fapesp.br/files/post/59305.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Brazilian Food Composition Table becomes a digital research ecosystem",
+     "resumo": "Maintained by a center supported by FAPESP at USP, the platform expands computational tools, subsidizes national public health surveys and seeks new financing alternatives"
+    },
+    "es": {
+     "titulo": "La Mesa Brasileña de Composición Alimentaria se convierte en un ecosistema digital de investigación",
+     "resumo": "Mantenida por un centro apoyado por la FAPESP en la USP, la plataforma amplía las herramientas computacionales, subvenciona encuestas nacionales de salud pública y busca nuevas alternativas de financiamiento"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Consu aprova títulos de professor emérito a Fernando Costa e Gastão Wagner",
    "resumo": "Ambos atuam na Faculdade de Ciências Médicas; Costa ocupou o cargo de reitor, Wagner é um dos idealizadores do SUS",
    "url": "https://jornal.unicamp.br/noticias/2026/09/29/consu-aprova-titulos-de-professor-emerito-a-fernando-costa-e-gastao-wagner/",
@@ -76,32 +128,6 @@
     "es": {
      "titulo": "Consu aprueba títulos de profesor emérito a Fernando Costa y Gastão Wagner",
      "resumo": "Ambos trabajan en la Facultad de Ciencias Médicas; Costa ocupó el cargo de decano, Wagner es uno de los creadores de sus"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Vírus capaz de destruir a bactéria do cancro cítrico é identificado no interior de São Paulo",
-   "resumo": "Pesquisadores mapearam 72 variedades de bacteriófagos em pomares paulistas. O candidato mais promissor diminuiu em até 60% os danos em laranjeiras, indicando viabilidade para a criação de biopesticidas",
-   "url": "https://agencia.fapesp.br/virus-capaz-de-destruir-a-bacteria-do-cancro-citrico-e-identificado-no-interior-de-sao-paulo/59295",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-09-29T08:43:52.101313+00:00",
-   "tema": "Saúde",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59295.jpeg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Virus capable of destroying citrus canker bacteria is identified in the countryside of São Paulo",
-     "resumo": "Researchers mapped 72 varieties of bacteriophages in São Paulo orchards. The most promising candidate decreased damage in orange trees by up to 60%, indicating feasibility for the creation of biopesticides"
-    },
-    "es": {
-     "titulo": "Se identifica un virus capaz de destruir la bacteria del cancro de los cítricos en el campo de São Paulo",
-     "resumo": "Los investigadores mapearon 72 variedades de bacteriófagos en huertos de São Paulo. El candidato más prometedor disminuyó el daño en los naranjos hasta en un 60%, lo que indica la viabilidad de la creación de biopesticidas"
     }
    }
   },
@@ -132,53 +158,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Extrato natural melhora o combate de ervas daninhas nas lavouras",
-   "resumo": "A startup paulista Dana Agro desenvolveu com financiamento da FAPESP um bio-herbicida à base de extratos vegetais e ativos orgânicos capaz de driblar a resistência das ervas daninhas aos defensivos sintéticos, reduzindo em até 50% sua…",
-   "url": "https://pesquisaparainovacao.fapesp.br/extrato_natural_melhora_o_combate_de_ervas_daninhas_nas_lavouras/4151",
+   "titulo": "Teste de força para cadeirantes pode ser feito por videochamada com a mesma precisão do presencial",
+   "resumo": "Estudo feito na Unicamp valida método remoto em pessoas com lesão medular, possibilitando o acompanhamento da reabilitação sem necessidade de deslocamentos",
+   "url": "https://agencia.fapesp.br/teste-de-forca-para-cadeirantes-pode-ser-feito-por-videochamada-com-a-mesma-precisao-do-presencial/59304",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-09-30T00:35:01.685705+00:00",
+   "data": "2026-09-30T06:51:39.903624+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://pesquisaparainovacao.fapesp.br/imagens/materia/4151.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59304.jpeg",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 0
    },
    "i18n": {
     "en": {
-     "titulo": "Natural extract improves weed fighting in crops",
-     "resumo": "The São Paulo startup Dana Agro has developed, with funding from FAPESP, a bioherbicide based on plant extracts and organic assets capable of circumventing the resistance of weeds to synthetic pesticides, reducing by up to 50% its…"
+     "titulo": "Strength testing for wheelchair users can be done by video call with the same accuracy as in-person",
+     "resumo": "A study carried out at Unicamp validates a remote method in people with spinal cord injury, allowing rehabilitation to be monitored without the need for displacement"
     },
     "es": {
-     "titulo": "El extracto natural mejora la lucha contra las malas hierbas en los cultivos",
-     "resumo": "La startup paulista Dana Agro ha desarrollado, con financiación de la FAPESP, un bioherbicida a base de extractos vegetales y activos orgánicos capaz de sortear la resistencia de las malas hierbas a los plaguicidas sintéticos, reduciendo hasta en un 50% su…"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "8º Prêmio Carolina Bori será dedicado às meninas na ciência",
-   "resumo": "Estudantes do ensino médio e da graduação podem concorrer a seis prêmios de até R$ 13 mil; vencedoras apresentarão seus trabalhos na 79ª Reunião Anual da SBPC",
-   "url": "https://agencia.fapesp.br/8o-premio-carolina-bori-sera-dedicado-as-meninas-na-ciencia/59284",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-09-30T00:35:01.685705+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59284.jpg",
-   "foco": {
-    "x": 100,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "8th Carolina Bori Award will be dedicated to girls in science",
-     "resumo": "High school and undergraduate students can compete for six prizes of up to $13,000; winners will present their work at the 79th SBPC Annual Meeting"
-    },
-    "es": {
-     "titulo": "El 8º Premio Carolina Bori estará dedicado a las niñas en la ciencia",
-     "resumo": "Los estudiantes de secundaria y pregrado pueden competir por seis premios de hasta $ 13,000; los ganadores presentarán su trabajo en la 79ª Reunión Anual de SBPC"
+     "titulo": "Las pruebas de resistencia para usuarios de sillas de ruedas se pueden realizar por videollamada con la misma precisión que en persona",
+     "resumo": "Un estudio realizado en la Unicamp valida un método remoto en personas con lesión medular, permitiendo monitorizar la rehabilitación sin necesidad de desplazamiento"
     }
    }
   },
@@ -286,31 +286,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas descobrem novo vírus por trás de doença misteriosa de carrapatos",
-   "resumo": "Os cientistas descobriram um novo vírus transmitido por carrapatos na China que causa doenças semelhantes às da gripe e pode ser responsável por casos anteriormente inexplicáveis de febre, fadiga, problemas digestivos e baixa contagem de plaquetas. A maioria dos pacientes com ALTNV sozinho...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260927225027.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-09-29T01:45:25+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/infected-female-deer-tick-human-skin.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists find new virus behind mysterious tick illness",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos encuentran un nuevo virus detrás de la misteriosa enfermedad de las garrap",
-     "resumo": "Los científicos han descubierto un nuevo virus transmitido por garrapatas en China que causa enfermedades similares a la gripe y puede explicar casos previamente inexplicables de fiebre, fatiga, problemas digestivos y bajo recuento de plaquetas. La mayoría de los pacientes con ALTNV solo..."
-    }
-   },
-   "resumo_original": "Scientists have discovered a new tick-borne virus in China that causes flu-like illness and may account for previously unexplained cases of fever, fatigue, digestive problems, and low platelet counts. Most patients with ALTNV alone…"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Ensaio de retatrútida blockbuster sinaliza uma ‘nova marca d' água ’para medicamentos para perda de peso",
    "resumo": "O medicamento experimental para perda de peso é um agonista triplo e o primeiro de seu tipo a chegar a um ensaio clínico de fase 3",
    "url": "https://www.scientificamerican.com/article/blockbuster-retatrutide-trial-signals-a-new-high-water-mark-for-weight-loss-drugs/",
@@ -333,6 +308,52 @@
     }
    },
    "resumo_original": "The experimental weight-loss drug is a triple agonist and the first of its kind to reach a phase 3 clinical trial"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas descobrem novo vírus por trás de doença misteriosa de carrapatos",
+   "resumo": "Os cientistas descobriram um novo vírus transmitido por carrapatos na China que causa doenças semelhantes às da gripe e pode ser responsável por casos anteriormente inexplicáveis de febre, fadiga, problemas digestivos e baixa contagem de plaquetas. A maioria dos pacientes com ALTNV sozinho...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260927225027.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-09-29T01:45:25+00:00",
+   "tema": "Saúde",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/infected-female-deer-tick-human-skin.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists find new virus behind mysterious tick illness",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos encuentran un nuevo virus detrás de la misteriosa enfermedad de las garrap",
+     "resumo": "Los científicos han descubierto un nuevo virus transmitido por garrapatas en China que causa enfermedades similares a la gripe y puede explicar casos previamente inexplicables de fiebre, fatiga, problemas digestivos y bajo recuento de plaquetas. La mayoría de los pacientes con ALTNV solo..."
+    }
+   },
+   "resumo_original": "Scientists have discovered a new tick-borne virus in China that causes flu-like illness and may account for previously unexplained cases of fever, fatigue, digestive problems, and low platelet counts. Most patients with ALTNV alone…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "As emissões após o acordo de Paris tornaram as ondas de calor da Europa mais severas",
+   "resumo": "Uma onda de calor em 2025 teria sido um terço de grau mais fria sem os gases de efeito estufa liberados desde 2015.",
+   "url": "https://www.nature.com/articles/d41586-026-03035-w",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-09-29T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "Emissions after the Paris accord made Europe’s heatwaves more severe",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las emisiones tras el acuerdo de París agravaron las olas de calor en Europa",
+     "resumo": "Una ola de calor en 2025 habría sido un tercio de grado más fría sin los gases de efecto invernadero liberados desde 2015."
+    }
+   },
+   "resumo_original": "A heatwave in 2025 would have been one-third of a degree cooler without the greenhouse gases released since 2015."
   },
   {
    "tipo": "noticia",
@@ -383,31 +404,6 @@
     }
    },
    "resumo_original": "Enceladus may naturally separate and concentrate chemicals from its hidden ocean as droplets slowly freeze and shatter on their way into space. The process could explain Cassini’s puzzling ice-grain chemistry while giving future spacecraft…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O dia da Terra não é exatamente 24 horas. O motivo pode estar nas profundezas do planeta",
-   "resumo": "Os cientistas podem ter resolvido por que a duração do dia da Terra muda em alguns milissegundos ao longo de décadas. Mudanças sutis no núcleo interno parecem puxar o manto, revelando um mundo surpreendentemente dinâmico a milhares de quilômetros abaixo do nosso...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260928100540.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-09-29T05:08:47+00:00",
-   "tema": "Espaço",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/earth-structure-layers-core.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Earth’s day isn’t exactly 24 hours. The reason may lie deep inside the planet",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El día de la Tierra no es exactamente de 24 horas. La razón puede estar en lo profundo del planeta",
-     "resumo": "Los científicos pueden haber resuelto por qué la duración del día de la Tierra cambia en unos pocos milisegundos durante décadas. Los sutiles cambios en el núcleo interno parecen tirar del manto, revelando un mundo sorprendentemente dinámico a miles de kilómetros debajo de nuestro..."
-    }
-   },
-   "resumo_original": "Scientists may have solved why the length of Earth’s day changes by a few milliseconds over decades. Subtle shifts in the inner core appear to tug on the mantle, revealing a surprisingly dynamic world thousands of kilometers beneath our…"
   }
  ],
  "artigos": [
@@ -895,7 +891,6 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
@@ -1089,6 +1084,10 @@
   "earths day isnt exactly 24 hours the reason may lie deep inside the planet": "2026-09-29T20:54:33.719086+00:00",
   "o pisa o capital humano e a engrenagem por tras da padronizacao educacional global": "2026-09-30T00:35:01.685705+00:00",
   "todo acervo vai se tornar obra rara o dilema das bibliotecas diante do digital": "2026-09-30T00:35:01.685705+00:00",
-  "blockbuster retatrutide trial signals a new high water mark for weight loss drugs": "2026-09-30T00:35:01.685705+00:00"
+  "blockbuster retatrutide trial signals a new high water mark for weight loss drugs": "2026-09-30T00:35:01.685705+00:00",
+  "programa fapesp de mudancas climaticas amplia escopo para integrar saude sociedade e politicas publicas": "2026-09-30T06:51:39.903624+00:00",
+  "tabela brasileira de composicao de alimentos se transforma em ecossistema digital de pesquisa": "2026-09-30T06:51:39.903624+00:00",
+  "teste de forca para cadeirantes pode ser feito por videochamada com a mesma precisao do presencial": "2026-09-30T06:51:39.903624+00:00",
+  "emissions after the paris accord made europes heatwaves more severe": "2026-09-30T06:51:39.903624+00:00"
  }
 }
