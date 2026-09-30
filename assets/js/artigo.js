@@ -282,7 +282,8 @@
       '<p class="sub art-full">' + esc(d.titulo_pt || d.titulo) + (d.titulo_pt ? '<span class="art-orig">' + esc(d.rotulo_original || "Título original em inglês:") + " " + esc(d.titulo) + "</span>" : "") + "</p>" +
       '<p class="authors art-authors">' + autores.map(a => "<span" + (a.destaque ? ' class="hl" title="Pesquisadora em destaque no GenoEvidence"' : "") + ">" + esc(a.nome || a) + "</span>").join("") + "</p>" +
       '<div class="cta-row">' +
-      (rv.url ? '<a class="cta journal-cta" href="' + esc(rv.url) + '" target="_blank" rel="noopener">Ler na revista <span aria-hidden="true">↗</span></a>' : "") +
+      (d.experiencia ? '<a class="cta journal-cta" href="' + esc(d.experiencia) + '">Ver a experiência interativa <span aria-hidden="true">→</span></a>' : "") +
+      (rv.url ? '<a class="cta ' + (d.experiencia ? "ghost" : "journal-cta") + '" href="' + esc(rv.url) + '" target="_blank" rel="noopener">Ler na revista <span aria-hidden="true">↗</span></a>' : "") +
       '<a class="cta ghost" href="#em-1-minuto">Resumo em 1 minuto</a>' +
       (rv.pdf ? '<a class="cta ghost" href="' + esc(rv.pdf) + '" target="_blank" rel="noopener">Baixar PDF <span aria-hidden="true">↗</span></a>' : "") +
       "</div></div>" +

@@ -1,0 +1,1202 @@
+{
+  "_como_usar": "Roteiro da experiência interativa. Cada cena tem um tipo de visual (ver assets/js/experiencia.js) e passos de texto. Números sempre do artigo; 'fonte' diz de onde.",
+  "titulo": "Too small to see",
+  "subtitulo_topo": "Nanotechnology in anti-aging cosmetics",
+  "acento": "#F2B8A2",
+  "pagina": "../",
+  "capitulos": [
+    {
+      "id": "abertura",
+      "nome": "Opening"
+    },
+    {
+      "id": "contexto",
+      "nome": "Context"
+    },
+    {
+      "id": "investigacao",
+      "nome": "Investigation"
+    },
+    {
+      "id": "resultados",
+      "nome": "Results"
+    },
+    {
+      "id": "significado",
+      "nome": "Meaning"
+    },
+    {
+      "id": "limites",
+      "nome": "Limits"
+    },
+    {
+      "id": "fim",
+      "nome": "Closing"
+    }
+  ],
+  "cenas": [
+    {
+      "id": "abertura",
+      "capitulo": "abertura",
+      "tipo": "particulas",
+      "cheia": true,
+      "visual": {
+        "cor": "#F2B8A2",
+        "zoom": 34
+      },
+      "alt": "Illustration: the skin surface seen up close, zooming in to nanoscale particles.",
+      "passos": [
+        {
+          "eyebrow": "GenoEvidence · interactive experience",
+          "capa": "Too small to see",
+          "texto": "Nanotechnology in anti-aging cosmetics: what 38 studies show, and what they don't show yet.",
+          "extra": "Systematic review by Alves, Nieri, Moreli, Constantino, Souza, Oshima-Franco and Grotto · Molecules, 2024",
+          "link": {
+            "rotulo": "Prefer to read it as text? Open the study page →",
+            "url": "../"
+          }
+        },
+        {
+          "texto": "Look closely at the skin of the face. Wrinkles, loss of elasticity and dark spots are among the most common signs of aging.",
+          "fonte": "Article introduction, 3rd paragraph"
+        },
+        {
+          "texto": "The industry uses the term <strong>cosmeceuticals</strong> for products that claim a real effect on the skin. Many carry their active ingredients inside particles measured in <strong>nanometers</strong>: millionths of a millimeter.",
+          "fonte": "Introduction, 2nd and 6th paragraphs"
+        },
+        {
+          "texto": "The question of this review: what does research published <strong>from 2018 to 2023</strong> show about these new ways of delivering anti-aging ingredients to the skin?",
+          "fonte": "Objective, at the end of the Introduction"
+        }
+      ]
+    },
+    {
+      "id": "pele",
+      "capitulo": "contexto",
+      "tipo": "pele",
+      "visual": {
+        "agressoresNoPasso": 1,
+        "danoNoPasso": 2,
+        "rugaNoPasso": 2,
+        "alt": "Cross-section diagram of the skin: epidermis on top and, below, collagen and elastin fibers.",
+        "rotulos": [
+          {
+            "texto": "Epidermis",
+            "x": 3,
+            "y": 22,
+            "desde": 0
+          },
+          {
+            "texto": "Dermis: collagen (thick fibers) and elastin (thin)",
+            "x": 3,
+            "y": 58,
+            "desde": 0
+          },
+          {
+            "texto": "Sun and pollution generate reactive oxygen species (free radicals)",
+            "x": 40,
+            "y": 4,
+            "desde": 1
+          },
+          {
+            "texto": "Degraded collagen: wrinkles and sagging",
+            "x": 56,
+            "y": 44,
+            "desde": 2
+          },
+          {
+            "texto": "In menopause, hormonal changes worsen the loss of elasticity",
+            "x": 3,
+            "y": 86,
+            "desde": 3
+          }
+        ]
+      },
+      "alt": "Diagram: sun and pollution generate free radicals in the skin, collagen breaks down and a wrinkle forms.",
+      "passos": [
+        {
+          "eyebrow": "Context",
+          "titulo": "Why skin ages",
+          "texto": "In the dermis, just below the surface, two proteins give the skin firmness and elasticity: <strong>collagen</strong> and <strong>elastin</strong>.",
+          "fonte": "Introduction, 3rd paragraph"
+        },
+        {
+          "texto": "Sun and pollution generate <strong>reactive oxygen species</strong>, the free radicals. They break down collagen and impair its production."
+        },
+        {
+          "texto": "With less collagen and elastin, the skin becomes more prone to <strong>wrinkles</strong>, sagging and loss of a youthful look."
+        },
+        {
+          "texto": "Hormonal changes, especially during menopause, worsen the loss of elasticity.",
+          "nota": "According to the article, no topical treatment completely halts sun-induced aging; retinoids, antioxidants and sunscreens can reduce and delay the signs.",
+          "fonte": "Introduction, 3rd and 4th paragraphs"
+        }
+      ]
+    },
+    {
+      "id": "escala",
+      "capitulo": "contexto",
+      "tipo": "escala",
+      "visual": {
+        "min": 0,
+        "max": 6,
+        "marcas": [
+          {
+            "em": 1,
+            "rotulo": "1 nm"
+          },
+          {
+            "em": 10,
+            "rotulo": "10 nm"
+          },
+          {
+            "em": 100,
+            "rotulo": "100 nm"
+          },
+          {
+            "em": 1000,
+            "rotulo": "1 µm"
+          },
+          {
+            "em": 10000,
+            "rotulo": "10 µm"
+          },
+          {
+            "em": 100000,
+            "rotulo": "100 µm"
+          },
+          {
+            "em": 1000000,
+            "rotulo": "1 mm"
+          }
+        ],
+        "faixas": [
+          {
+            "rotulo": "Nanoparticles: 1 to 100 nm",
+            "de": 1,
+            "ate": 100,
+            "cor": "#FF5470",
+            "desde": 1
+          },
+          {
+            "rotulo": "Nanoemulsions: 50 to 200 nm",
+            "de": 50,
+            "ate": 200,
+            "cor": "#3FC1C9",
+            "desde": 2
+          },
+          {
+            "rotulo": "Liposomes: from 20 nm to a few hundred µm",
+            "de": 20,
+            "ate": 200000,
+            "aberta": true,
+            "cor": "#A58CFF",
+            "desde": 2
+          }
+        ],
+        "linhas": [
+          {
+            "rotulo": "European Union: 1 to 100 nm",
+            "em": 100,
+            "cor": "#FFB23F",
+            "desde": 3,
+            "topo": 4
+          },
+          {
+            "rotulo": "FDA (2014): up to 1,000 nm",
+            "em": 1000,
+            "cor": "#5FD39A",
+            "desde": 3,
+            "topo": 22
+          }
+        ],
+        "legenda": "Logarithmic scale: each mark is 10 times larger than the previous one. 1 nm = one millionth of a millimeter. The dashed end of the liposome bar shows that the article does not give an exact maximum."
+      },
+      "alt": "Size ruler on a logarithmic scale: nanoparticles from 1 to 100 nm, nanoemulsions from 50 to 200 nm, liposomes from 20 nm to a few hundred micrometers; European definition of 1 to 100 nm and FDA criterion up to 1,000 nm.",
+      "passos": [
+        {
+          "eyebrow": "Context",
+          "titulo": "The vehicle matters",
+          "texto": "According to the article, how well a cosmetic works depends not only on the active ingredient, but also on the technology that carries it to the right place in the skin and keeps it there long enough.",
+          "fonte": "Introduction, 6th paragraph"
+        },
+        {
+          "texto": "Nanoparticles measure <strong>1 to 100 nanometers</strong>. Because they are so small, they have physical, chemical and biological properties that differ from the same material at ordinary size.",
+          "fonte": "Introduction, 6th paragraph"
+        },
+        {
+          "texto": "Nanoemulsions have droplets of 50 to 200 nm. Liposomes range from 20 nm to a few hundred micrometers.",
+          "fonte": "Discussion, 2nd and 4th paragraphs"
+        },
+        {
+          "texto": "There is no worldwide consensus on what counts as a nanomaterial in cosmetics. The European Union uses the range of 1 to 100 nm; the US FDA has no official definition, but in 2014 it began considering materials up to 1,000 nm.",
+          "fonte": "Introduction, 9th paragraph"
+        }
+      ]
+    },
+    {
+      "id": "veiculos",
+      "capitulo": "contexto",
+      "tipo": "veiculos",
+      "visual": {
+        "itens": [
+          {
+            "id": "lipossoma",
+            "nome": "Liposomes",
+            "tam": "phospholipid bilayer",
+            "cor": "#A58CFF"
+          },
+          {
+            "id": "niossoma",
+            "nome": "Niosomes",
+            "tam": "non-ionic surfactants",
+            "cor": "#3FC1C9"
+          },
+          {
+            "id": "nls",
+            "nome": "Solid lipid nanoparticles",
+            "tam": "solid fat core",
+            "cor": "#FFB23F"
+          },
+          {
+            "id": "nanoemulsao",
+            "nome": "Nanoemulsions",
+            "tam": "droplets of 50 to 200 nm",
+            "cor": "#FF5470"
+          },
+          {
+            "id": "metalica",
+            "nome": "Metallic nanoparticles",
+            "tam": "gold, silver, zinc oxide, titanium dioxide",
+            "cor": "#FFD27A"
+          }
+        ]
+      },
+      "alt": "Five schematic drawings: liposome, niosome, solid lipid nanoparticle, nanoemulsion and metallic nanoparticle.",
+      "passos": [
+        {
+          "eyebrow": "Context",
+          "titulo": "Nanoscale vehicles",
+          "texto": "These are the main delivery systems found in the review. Each one carries and releases the active ingredient in its own way.",
+          "fonte": "Results (Table 4) and Discussion, 2nd to 6th paragraphs"
+        },
+        {
+          "foco": [
+            "lipossoma",
+            "niossoma"
+          ],
+          "texto": "<strong>Liposomes</strong> are tiny bubbles with a double layer of phospholipids around a water compartment; they carry ingredients that dissolve in water or in oil. <strong>Niosomes</strong> are similar but made of non-ionic surfactants: cheaper, more stable and easier to store."
+        },
+        {
+          "foco": [
+            "nls",
+            "nanoemulsao"
+          ],
+          "texto": "<strong>Solid lipid nanoparticles</strong> have a solid fat core. <strong>Nanoemulsions</strong> are droplets of oil in water (or the reverse), well suited to carrying ingredients that dissolve in oil."
+        },
+        {
+          "foco": [
+            "metalica"
+          ],
+          "texto": "Among <strong>metallic nanoparticles</strong>, gold and silver ones act against bacteria and fungi; zinc oxide and titanium dioxide ones work as UV filters."
+        }
+      ]
+    },
+    {
+      "id": "funil",
+      "capitulo": "investigacao",
+      "tipo": "funil",
+      "visual": {
+        "total": 265,
+        "inicio": "papers found in PubMed and the grey literature",
+        "alt": "Selection funnel: 265 papers found; 135 excluded by title; 2 without free full text; 38 excluded by abstract; 52 excluded on full reading; 38 included.",
+        "cortes": [
+          {
+            "n": 135,
+            "rotulo": "by title: reviews or injectable/subcutaneous use",
+            "depois": "left after reading the titles"
+          },
+          {
+            "n": 2,
+            "rotulo": "no free full text",
+            "depois": "with full text available"
+          },
+          {
+            "n": 38,
+            "rotulo": "by abstract: off topic",
+            "depois": "read in full"
+          },
+          {
+            "n": 52,
+            "rotulo": "on full reading: not focused on anti-aging",
+            "depois": "included in the review"
+          }
+        ]
+      },
+      "passos": [
+        {
+          "eyebrow": "Investigation",
+          "titulo": "How 265 papers became 38",
+          "texto": "On August 24, 2023, the team searched PubMed and the grey literature for original papers in English, published from 2018 to 2023, using terms from the MeSH medical vocabulary.",
+          "fonte": "Materials and Methods; Figure 2 of the article"
+        },
+        {
+          "texto": "First filter, the title: <strong>135</strong> papers were removed because they were reviews or dealt with injectable or subcutaneous use.",
+          "fonte": "Results, “Review Methodology”; Figure 1"
+        },
+        {
+          "texto": "Another <strong>2</strong> were not freely available in full."
+        },
+        {
+          "texto": "Then the abstracts: <strong>38</strong> were off topic. The remaining <strong>90</strong> were read in full."
+        },
+        {
+          "texto": "On full reading, <strong>52</strong> did not focus on anti-aging solutions. <strong>38 papers</strong> remained.",
+          "nota": "Five reviewers took part in every step, and the papers were randomly redistributed among them at each phase."
+        }
+      ]
+    },
+    {
+      "id": "niveis",
+      "capitulo": "resultados",
+      "tipo": "niveis",
+      "visual": {
+        "niveis": [
+          {
+            "rotulo": "In cells and tissues",
+            "sub": "in vitro and ex vivo · Table 1",
+            "n": 17,
+            "cor": "#4D7CFF",
+            "desde": 1
+          },
+          {
+            "rotulo": "In animals",
+            "sub": "in vivo · Table 2",
+            "n": 11,
+            "cor": "#A58CFF",
+            "desde": 2
+          },
+          {
+            "rotulo": "In people",
+            "sub": "clinical trials · Table 3",
+            "n": 10,
+            "cor": "#FF5470",
+            "desde": 3,
+            "tipos": [
+              {
+                "n": 5,
+                "estilo": "cheio",
+                "legenda": "nanoparticles"
+              },
+              {
+                "n": 2,
+                "estilo": "oco",
+                "legenda": "microparticles"
+              },
+              {
+                "n": 3,
+                "estilo": "trac",
+                "legenda": "size not reported"
+              }
+            ]
+          }
+        ],
+        "nota": "17 + 11 + 10 = 38, from the rows of Tables 1 to 3. The article's text mentions 10 animal studies; Table 2 lists 11."
+      },
+      "alt": "Three rows of dots: 17 studies in cells and tissues, 11 in animals and 10 in people.",
+      "passos": [
+        {
+          "eyebrow": "Results",
+          "titulo": "From the lab to people",
+          "texto": "The 38 studies were grouped by type of test.",
+          "fonte": "Results; Tables 1 to 3"
+        },
+        {
+          "texto": "<strong>17</strong> were done in cells or tissues outside the body (in vitro and ex vivo). Most used nanoparticles, followed by niosomes and liposomes."
+        },
+        {
+          "texto": "<strong>11</strong> were done in animals, mostly rats and mice, with the formulation applied to the skin."
+        },
+        {
+          "texto": "<strong>10</strong> were done in people, the final testing phase. Five used nanoparticles, two used microparticles and three did not report particle size.",
+          "nota": "All studies in people reported anti-aging action; the most frequent results were fewer wrinkles and more skin hydration."
+        }
+      ]
+    },
+    {
+      "id": "veiculos-dados",
+      "capitulo": "resultados",
+      "tipo": "barras",
+      "visual": {
+        "titulo": "Studies that used each type of vehicle",
+        "alt": "Bars: liposomes in 7 studies, metallic nanoparticles in 4, niosomes in 3, nanoemulsions in 3, emulgel in 2, micelles in 2, microemulgel in 2 and 19 other types in 1 study each.",
+        "itens": [
+          {
+            "rotulo": "Liposomes",
+            "valor": 7,
+            "cor": "#A58CFF",
+            "grupo": "lipidico"
+          },
+          {
+            "rotulo": "Metallic nanoparticles",
+            "valor": 4,
+            "cor": "#FFD27A",
+            "grupo": "metalico"
+          },
+          {
+            "rotulo": "Niosomes",
+            "valor": 3,
+            "cor": "#A58CFF",
+            "grupo": "lipidico"
+          },
+          {
+            "rotulo": "Nanoemulsions",
+            "valor": 3,
+            "cor": "#A58CFF",
+            "grupo": "lipidico"
+          },
+          {
+            "rotulo": "Emulgel",
+            "valor": 2,
+            "cor": "#66728D",
+            "grupo": "outros"
+          },
+          {
+            "rotulo": "Micelles",
+            "valor": 2,
+            "cor": "#66728D",
+            "grupo": "outros"
+          },
+          {
+            "rotulo": "Microemulgel",
+            "valor": 2,
+            "cor": "#66728D",
+            "grupo": "outros"
+          },
+          {
+            "rotulo": "Each of the other 19 types",
+            "valor": 1,
+            "cor": "#3A4560",
+            "grupo": "varios"
+          }
+        ],
+        "eixo": "Purple: lipid-based systems · yellow: metallic · gray: additional systems · the last bar groups 19 types from various families, each used in 1 study. A single study may have used more than one vehicle (one tested four). Data from Table 4."
+      },
+      "passos": [
+        {
+          "eyebrow": "Results",
+          "titulo": "Nanotechnology dominates",
+          "texto": "Table 4 of the article lists 26 types of vehicle. The most frequent was the <strong>liposome</strong>, used in 7 studies.",
+          "fonte": "Table 4"
+        },
+        {
+          "foco": [
+            "lipidico"
+          ],
+          "texto": "Lipid-based systems, such as liposomes, niosomes and nanoemulsions, make up the largest group."
+        },
+        {
+          "foco": [
+            "metalico"
+          ],
+          "texto": "Next come metallic nanoparticles, in 4 studies."
+        },
+        {
+          "texto": "For the authors, this shows a clear trend: nanotechnology is becoming a central tool both in research and in the development of new cosmetics.",
+          "fonte": "Results, paragraph on Table 4"
+        }
+      ]
+    },
+    {
+      "id": "acoes",
+      "capitulo": "resultados",
+      "tipo": "pele",
+      "visual": {
+        "agressoresNoPasso": 0,
+        "protecaoNoPasso": 1,
+        "alt": "Diagram of the skin with free radicals; then antioxidants neutralize some of them.",
+        "rotulos": [
+          {
+            "texto": "Free radicals",
+            "x": 62,
+            "y": 36,
+            "desde": 0
+          },
+          {
+            "texto": "Antioxidants neutralize free radicals",
+            "x": 3,
+            "y": 86,
+            "desde": 1
+          },
+          {
+            "texto": "Less melanin: fewer dark spots",
+            "x": 40,
+            "y": 4,
+            "desde": 2
+          },
+          {
+            "texto": "Inhibition of enzymes involved in aging",
+            "x": 3,
+            "y": 22,
+            "desde": 3
+          }
+        ]
+      },
+      "alt": "Diagram: free radicals in the skin and antioxidants that neutralize them.",
+      "passos": [
+        {
+          "eyebrow": "Results",
+          "titulo": "What the active ingredients did",
+          "texto": "The ingredients tested were very varied and almost all of natural origin: gallic acid, lycopene, resveratrol, curcumin, bakuchiol, vitamin C, royal jelly and plant extracts, among others.",
+          "fonte": "Discussion, 7th paragraph"
+        },
+        {
+          "texto": "Most formulations showed <strong>antioxidant action</strong>: neutralizing free radicals, which the article identifies as an important mechanism of skin aging.",
+          "fonte": "Abstract; Discussion, 8th paragraph"
+        },
+        {
+          "texto": "Some studies also showed <strong>reduced melanin</strong>, the pigment that forms dark spots when in excess."
+        },
+        {
+          "texto": "Others showed <strong>inhibition of enzymes</strong> involved in skin aging and prevention of the changes in cell shape typical of aging.",
+          "fonte": "Abstract; Discussion, 8th paragraph"
+        }
+      ]
+    },
+    {
+      "id": "numeros",
+      "capitulo": "resultados",
+      "tipo": "destaques",
+      "visual": {
+        "itens": [
+          {
+            "valor": "203%",
+            "texto": "improvement in wrinkles with an adenosine delivery system, compared with plain adenosine (0.04%).",
+            "cuidado": "Ref. 53: the exact number of participants was not reported (more than 20 women, over 19 years old), and the study's conclusion is general.",
+            "cor": "#FF5470",
+            "desde": 0
+          },
+          {
+            "valor": "123% · 222%",
+            "texto": "reduction in skin-surface melanin with niacinamide and sulforaphane in gold-decorated zeolite nanocomposites, compared with the plain versions (2% and 0.01%).",
+            "cuidado": "Same study (ref. 53), with the same limitations. Percentages as reported by the original authors.",
+            "cor": "#FFB23F",
+            "desde": 1
+          },
+          {
+            "valor": "Melasma",
+            "texto": "Aspasomes with a vitamin C derivative treated melasma better than a conventional chemical peel, with no side effects.",
+            "cuidado": "Ref. 50: 20 Egyptian women aged 25 to 60; single-blind, single-center study.",
+            "cor": "#A58CFF",
+            "desde": 2
+          }
+        ]
+      },
+      "alt": "Three results from studies in people, each shown with its limitations.",
+      "passos": [
+        {
+          "eyebrow": "Results",
+          "titulo": "Numbers that catch the eye",
+          "texto": "Some studies in people reported large effects. But each number needs to be read together with the size and design of the study that produced it.",
+          "fonte": "Tables 3 and 7"
+        },
+        {
+          "texto": "The same study reported reduced melanin, the pigment linked to dark spots."
+        },
+        {
+          "texto": "Another study tested a vitamin C derivative in aspasomes, a type of vesicle, in women with melasma."
+        }
+      ]
+    },
+    {
+      "id": "zinco",
+      "capitulo": "resultados",
+      "tipo": "zno",
+      "visual": {
+        "alt": "Diagram of a cell surrounded by small and large zinc oxide particles.",
+        "rotulos": [
+          {
+            "texto": "Smaller zinc oxide particles",
+            "x": 18,
+            "y": 6,
+            "desde": 0
+          },
+          {
+            "texto": "Larger particles",
+            "x": 76,
+            "y": 6,
+            "desde": 0
+          },
+          {
+            "texto": "Accelerated aging in the cells (β-galactosidase test)",
+            "x": 2,
+            "y": 80,
+            "desde": 1
+          },
+          {
+            "texto": "Both sizes: NF-kB and p53 ↑ · Nanog ↓",
+            "x": 54,
+            "y": 80,
+            "desde": 2
+          }
+        ]
+      },
+      "alt": "Diagram: smaller zinc oxide particles accelerate signs of aging in cells.",
+      "passos": [
+        {
+          "eyebrow": "Results",
+          "titulo": "A warning about size",
+          "texto": "Not every result was positive. In a study with zinc oxide nanoparticles (ref. 47), particle size made a difference.",
+          "fonte": "Tables 2 and 6"
+        },
+        {
+          "texto": "Cells treated with the <strong>smaller particles</strong> showed an accelerated aging process."
+        },
+        {
+          "texto": "Both sizes increased the activity of aging-related genes (NF-kB and p53) and decreased that of an anti-aging gene (Nanog).",
+          "nota": "The review notes that the study showed size-dependent toxicity but did not investigate the mechanisms behind it."
+        }
+      ]
+    },
+    {
+      "id": "comparacao",
+      "capitulo": "significado",
+      "tipo": "comparacao",
+      "visual": {
+        "colunas": [
+          "With nanotechnology",
+          "Conventional"
+        ],
+        "linhas": [
+          {
+            "rotulo": "Where it acts",
+            "a": "Can carry the ingredient deeper into the skin, with controlled and targeted release.",
+            "b": "May face absorption limits, with effects concentrated in the surface layers.",
+            "desde": 1
+          },
+          {
+            "rotulo": "Stability",
+            "a": "Protects ingredients that degrade with air and light and extends shelf life.",
+            "b": "Ingredients such as retinoic acid are highly unstable in air and light.",
+            "desde": 1
+          },
+          {
+            "rotulo": "Release",
+            "a": "Sustained; may reduce the need to reapply.",
+            "b": "More immediate and superficial; concentration peaks raise the risk of irritation.",
+            "desde": 2
+          },
+          {
+            "rotulo": "Safety",
+            "a": "Concern about particles crossing body barriers and reaching the bloodstream.",
+            "b": "Long-term safety well documented, but retinoids can irritate and peel the skin.",
+            "desde": 2
+          },
+          {
+            "rotulo": "Cost",
+            "a": "Tends to be more expensive.",
+            "b": "More affordable and standardized.",
+            "desde": 3
+          }
+        ]
+      },
+      "alt": "Table comparing nanotechnology and conventional products on five aspects.",
+      "passos": [
+        {
+          "eyebrow": "Meaning",
+          "titulo": "Nano or conventional?",
+          "texto": "In the Discussion, the authors compared nanotechnology products with conventional ones.",
+          "fonte": "Discussion, 14th to 19th paragraphs"
+        },
+        {
+          "texto": "In favor of nanotechnology: it can carry the ingredient deeper and protect unstable ingredients."
+        },
+        {
+          "texto": "But the sustained release of nanoparticles raises concern: they could cross biological barriers and enter the bloodstream. The safety of conventional products, by contrast, is well known."
+        },
+        {
+          "texto": "For the authors, nanotechnology brings advances in efficacy, precise release and safety at lower doses, <strong>but</strong> concerns remain about long-term impact and higher cost.",
+          "nota": "They also see continuity: ingredients such as gallic acid, resveratrol, curcumin, propolis, niacinamide and adenosine appear both in lab tests and in tests in living organisms."
+        }
+      ]
+    },
+    {
+      "id": "estabilidade",
+      "capitulo": "limites",
+      "tipo": "colunas",
+      "visual": {
+        "titulo": "How long each formulation's stability was tested",
+        "max": 300,
+        "semInfo": "not reported (or test not done)",
+        "alt": "Columns showing how long each study tested stability: from 7 days to 10 months; 13 of the 38 studies without this information.",
+        "referencias": [
+          {
+            "valor": 30,
+            "rotulo": "1 month"
+          },
+          {
+            "valor": 180,
+            "rotulo": "6 months"
+          },
+          {
+            "valor": 300,
+            "rotulo": "10 months"
+          }
+        ],
+        "grupos": [
+          {
+            "rotulo": "Cells (17)",
+            "cor": "#4D7CFF",
+            "itens": [
+              {
+                "ref": 20,
+                "dias": 90,
+                "texto": "3 months"
+              },
+              {
+                "ref": 21,
+                "dias": 7,
+                "texto": "7 days"
+              },
+              {
+                "ref": 22,
+                "dias": null
+              },
+              {
+                "ref": 23,
+                "dias": 56,
+                "texto": "8 weeks"
+              },
+              {
+                "ref": 24,
+                "dias": 8,
+                "texto": "8 days"
+              },
+              {
+                "ref": 25,
+                "dias": 300,
+                "texto": "10 months at 5 °C"
+              },
+              {
+                "ref": 26,
+                "dias": 180,
+                "texto": "6 months at 6 °C"
+              },
+              {
+                "ref": 27,
+                "dias": 30,
+                "texto": "30 days"
+              },
+              {
+                "ref": 28,
+                "dias": null
+              },
+              {
+                "ref": 29,
+                "dias": null
+              },
+              {
+                "ref": 30,
+                "dias": 90,
+                "texto": "3 months at −4 °C"
+              },
+              {
+                "ref": 31,
+                "dias": null
+              },
+              {
+                "ref": 32,
+                "dias": null
+              },
+              {
+                "ref": 33,
+                "dias": 25,
+                "texto": "25 days"
+              },
+              {
+                "ref": 34,
+                "dias": 30,
+                "texto": "30 days"
+              },
+              {
+                "ref": 35,
+                "dias": null
+              },
+              {
+                "ref": 36,
+                "dias": 28,
+                "texto": "28 days"
+              }
+            ]
+          },
+          {
+            "rotulo": "Animals (11)",
+            "cor": "#A58CFF",
+            "itens": [
+              {
+                "ref": 37,
+                "dias": 28,
+                "texto": "28 days"
+              },
+              {
+                "ref": 38,
+                "dias": null
+              },
+              {
+                "ref": 39,
+                "dias": 45,
+                "texto": "45 days"
+              },
+              {
+                "ref": 40,
+                "dias": 90,
+                "texto": "3 months"
+              },
+              {
+                "ref": 41,
+                "dias": null
+              },
+              {
+                "ref": 42,
+                "dias": 60,
+                "texto": "2 months"
+              },
+              {
+                "ref": 43,
+                "dias": 28,
+                "texto": "28 days"
+              },
+              {
+                "ref": 44,
+                "dias": 9,
+                "texto": "9 days"
+              },
+              {
+                "ref": 45,
+                "dias": 90,
+                "texto": "3 months"
+              },
+              {
+                "ref": 46,
+                "dias": null
+              },
+              {
+                "ref": 47,
+                "dias": null
+              }
+            ]
+          },
+          {
+            "rotulo": "People (10)",
+            "cor": "#FF5470",
+            "itens": [
+              {
+                "ref": 48,
+                "dias": 90,
+                "texto": "90 days"
+              },
+              {
+                "ref": 49,
+                "dias": 90,
+                "texto": "90 days at 25 °C"
+              },
+              {
+                "ref": 50,
+                "dias": 90,
+                "texto": "3 months"
+              },
+              {
+                "ref": 51,
+                "dias": 180,
+                "texto": "6 months"
+              },
+              {
+                "ref": 52,
+                "dias": 30,
+                "texto": "1 month"
+              },
+              {
+                "ref": 53,
+                "dias": null
+              },
+              {
+                "ref": 54,
+                "dias": 90,
+                "texto": "90 days"
+              },
+              {
+                "ref": 55,
+                "dias": 180,
+                "texto": "6 months at 25 °C"
+              },
+              {
+                "ref": 56,
+                "dias": null
+              },
+              {
+                "ref": 57,
+                "dias": null
+              }
+            ]
+          }
+        ]
+      },
+      "passos": [
+        {
+          "eyebrow": "Limits",
+          "titulo": "How long does it last?",
+          "texto": "A cosmetic needs to keep its properties for months in storage. The article's limitation tables show how long each formulation's <strong>stability</strong> was tested.",
+          "fonte": "Tables 5, 6 and 7"
+        },
+        {
+          "foco": [
+            "22",
+            "28",
+            "29",
+            "31",
+            "32",
+            "35",
+            "38",
+            "41",
+            "46",
+            "47",
+            "53",
+            "56",
+            "57"
+          ],
+          "texto": "In <strong>13 of the 38 studies</strong>, this information was not reported, or the test was not done."
+        },
+        {
+          "foco": [
+            "21",
+            "24",
+            "44",
+            "25"
+          ],
+          "texto": "Among those that reported it, tests lasted from <strong>7 days to 10 months</strong>. None went beyond a year, and the review points to the lack of long-term data as a recurring problem.",
+          "fonte": "Tables 5 to 7; Results, paragraph on Table 5"
+        }
+      ]
+    },
+    {
+      "id": "amostras",
+      "capitulo": "limites",
+      "tipo": "amostras",
+      "visual": {
+        "titulo": "Participants in each study with people (each dot = 1 person)",
+        "itens": [
+          {
+            "ref": 48,
+            "n": 40
+          },
+          {
+            "ref": 49,
+            "n": 14,
+            "texto": "(the article's text says 13)"
+          },
+          {
+            "ref": 50,
+            "n": 20
+          },
+          {
+            "ref": 51,
+            "n": 6
+          },
+          {
+            "ref": 52,
+            "n": 12
+          },
+          {
+            "ref": 53,
+            "n": null,
+            "texto": "more than 20 women; exact number not reported"
+          },
+          {
+            "ref": 54,
+            "n": 10
+          },
+          {
+            "ref": 55,
+            "n": null,
+            "texto": "adequate number, according to the review; not stated",
+            "ok": true
+          },
+          {
+            "ref": 56,
+            "n": null,
+            "texto": "about 20 to 25 per type of mask"
+          },
+          {
+            "ref": 57,
+            "n": 13
+          }
+        ],
+        "nota": "Numbers from Table 7. “Ref.” follows the numbering of the article's references."
+      },
+      "alt": "Dots representing the participants of each study with people: 40, 14, 20, 6, 12, number not reported, 10, not stated, about 20 to 25 per mask and 13.",
+      "passos": [
+        {
+          "eyebrow": "Limits",
+          "titulo": "Few people tested",
+          "texto": "In the 10 studies with people, groups were small: from <strong>6 to 40 participants</strong>, when the number was reported.",
+          "fonte": "Table 7"
+        },
+        {
+          "foco": [
+            "51",
+            "49",
+            "57"
+          ],
+          "texto": "One study tested only 6 volunteers with normal skin. Others were limited to narrow age ranges, such as 25 to 40, which may not represent older people, precisely the audience for anti-aging products."
+        },
+        {
+          "foco": [
+            "48",
+            "52",
+            "57",
+            "49",
+            "50"
+          ],
+          "texto": "Three formulations contained parabens, ingredients the article considers potentially harmful. Three studies were single-blind and three were done at a single center."
+        },
+        {
+          "foco": [
+            "55"
+          ],
+          "texto": "Only <strong>one of the 10</strong> (ref. 55) had no major limitations, according to the review: double-blind, with an adequate number of volunteers and an appropriate age range."
+        }
+      ]
+    },
+    {
+      "id": "lacunas",
+      "capitulo": "limites",
+      "tipo": "limites",
+      "visual": {
+        "itens": [
+          {
+            "titulo": "Whether the effects last",
+            "texto": "Long-term data are missing: several tests lasted hours, days or a few weeks.",
+            "desde": 0
+          },
+          {
+            "titulo": "Whether nanoparticles are safe in the long term",
+            "texto": "There is concern about particles crossing body barriers, and long-term toxicology studies are lacking.",
+            "desde": 0
+          },
+          {
+            "titulo": "How the ingredients work",
+            "texto": "Several studies did not investigate the ingredients' mechanism of action.",
+            "desde": 1
+          },
+          {
+            "titulo": "Whether animal results apply to aging people",
+            "texto": "In several studies, the animals' age was not reported or was not suitable for studying aging.",
+            "desde": 1
+          },
+          {
+            "titulo": "Which rule applies",
+            "texto": "There is no worldwide consensus on what counts as a nanomaterial in cosmetics; each country adopts its own definition.",
+            "desde": 2
+          },
+          {
+            "titulo": "Information the article does not provide",
+            "texto": "The review does not describe using a standardized tool to assess the quality of the included studies. The search was limited to PubMed and the grey literature, in English.",
+            "ausente": true,
+            "desde": 2
+          }
+        ]
+      },
+      "alt": "List of questions still open about cosmetics with nanotechnology.",
+      "passos": [
+        {
+          "eyebrow": "Limits",
+          "titulo": "What we still cannot say",
+          "texto": "The review itself points out the gaps in the studies it analyzed.",
+          "fonte": "Results, paragraphs on Tables 5 to 7; Discussion"
+        },
+        {
+          "texto": "Answers are missing about mechanisms and about how the animal tests were designed."
+        },
+        {
+          "texto": "And there are questions beyond the studies: regulation and the review's own method.",
+          "ausente": "use of a standardized tool to assess the quality of the included studies."
+        }
+      ]
+    },
+    {
+      "id": "fim",
+      "capitulo": "fim",
+      "tipo": "particulas",
+      "cheia": true,
+      "visual": {
+        "cor": "#F2B8A2",
+        "zoom": 34,
+        "inverter": true
+      },
+      "alt": "Illustration: the view pulls back from nanoscale particles to the skin surface.",
+      "passos": [
+        {
+          "eyebrow": "Closing",
+          "titulo": "The vehicle matters",
+          "texto": "The 38 studies show why nanotechnology dominates anti-aging research: it can protect unstable ingredients, carry them deeper into the skin and release them gradually."
+        },
+        {
+          "texto": "But the question that decides what reaches your skin, <strong>whether it works for years and safely</strong>, still awaits larger, longer studies with people of different ages.",
+          "fonte": "Discussion, second-to-last paragraph"
+        },
+        {
+          "titulo": "The question that remains",
+          "texto": "Next time a label promises nanotechnology, it's worth asking: tested on whom, on how many people, and for how long?"
+        }
+      ]
+    }
+  ],
+  "creditos": {
+    "estudo": "Based on: <strong>Alves PLM, Nieri V, Moreli FC, Constantino E, Souza J, Oshima-Franco Y, Grotto D.</strong> Unveiling New Horizons: Advancing Technologies in Cosmeceuticals for Anti-Aging Solutions. <em>Molecules</em>, v. 29, n. 20, 4890, 2024. Open-access article, CC BY 4.0 license.",
+    "botoes": [
+      {
+        "rotulo": "Read the study explained on GenoEvidence",
+        "url": "../"
+      },
+      {
+        "rotulo": "Read the article in the journal ↗",
+        "url": "https://doi.org/10.3390/molecules29204890"
+      }
+    ],
+    "como": "Script, text and visualizations by GenoEvidence, based on the full text and the seven tables of the article (open-access version on Europe PMC, PMC11510423). All charts were redrawn from the published numbers; the original figures were not reproduced. No data were created. Where the article's text and tables give different numbers, this is noted in the scene. The drawings of skin, particles and cells are illustrative. References such as “ref. 47” and “ref. 53” follow the article's numbering.",
+    "referencias": [
+      {
+        "texto": "ALVES, P. L. M. et al. Unveiling New Horizons: Advancing Technologies in Cosmeceuticals for Anti-Aging Solutions. Molecules, v. 29, n. 20, 4890, 2024.",
+        "doi": "10.3390/molecules29204890"
+      },
+      {
+        "texto": "Ref. 21 in the article: BELLU, E. et al. Smart Nanofibers with Natural Extracts Prevent Senescence Patterning in a Dynamic Cell Culture Model of Human Skin. Cells, v. 9, 2530, 2020.",
+        "doi": "10.3390/cells9122530"
+      },
+      {
+        "texto": "Ref. 25 in the article: BÁO, S. N. et al. Potential Biological Properties of Lycopene in a Self-Emulsifying Drug Delivery System. Molecules, v. 28, 1219, 2023.",
+        "doi": "10.3390/molecules28031219"
+      },
+      {
+        "texto": "Ref. 47 in the article: DEYLAM, M. et al. Zinc oxide nanoparticles promote the aging process in a size-dependent manner. Journal of Materials Science: Materials in Medicine, v. 32, 128, 2021.",
+        "doi": "10.1007/s10856-021-06602-x"
+      },
+      {
+        "texto": "Ref. 50 in the article: ABOUL-EINIEN, M. H. et al. Ascorbic acid derivative-loaded modified aspasomes: formulation, in vitro, ex vivo and clinical evaluation for melasma treatment. Journal of Liposome Research, v. 30, p. 54-67, 2020.",
+        "doi": "10.1080/08982104.2019.1585448"
+      },
+      {
+        "texto": "Ref. 51 in the article: ELHABAK, M. et al. Topical delivery of L-ascorbic acid spanlastics for stability enhancement and treatment of UVB induced damaged skin. Drug Delivery, v. 28, p. 445-453, 2021.",
+        "doi": "10.1080/10717544.2021.1886377"
+      },
+      {
+        "texto": "Ref. 53 in the article: LEE, S. et al. Anti-Aging and Lightening Effects of Au-Decorated Zeolite-Based Biocompatible Nanocomposites in Epidermal Delivery Systems. Journal of Functional Biomaterials, v. 14, 66, 2023.",
+        "doi": "10.3390/jfb14020066"
+      },
+      {
+        "texto": "Ref. 55 in the article: AN, J. Y. et al. Clinical Anti-aging Efficacy of Propolis Polymeric Nanoparticles Prepared by a Temperature-induced Phase Transition Method. Journal of Cosmetic Dermatology, v. 21, p. 4060-4071, 2022.",
+        "doi": "10.1111/jocd.14740"
+      }
+    ]
+  }
+}

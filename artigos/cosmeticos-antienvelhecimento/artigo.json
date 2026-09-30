@@ -1,5 +1,6 @@
 {
   "id": "cosmeticos-antienvelhecimento",
+  "experiencia": "experiencia/",
   "tipo": "artigo",
   "rotulo": "Revisão sistemática",
   "arte": "particulas",
@@ -151,7 +152,7 @@
       "lede": "Um campo em plena expansão, que ainda precisa de estudos maiores e mais longos.",
       "blocos": [
         {"tipo": "texto", "html": "<p>As novas formas de levar ativos até a pele, principalmente com <strong>nanotecnologia</strong>, mostram resultados promissores: menos rugas, mais hidratação, mais elasticidade e menos manchas. Há uma continuidade animadora entre o que funciona em células e o que aparece em pessoas.</p><p>Para que esses avanços cheguem com segurança ao consumidor, os autores defendem estudos que acompanhem os efeitos por mais tempo, testem a estabilidade das fórmulas e incluam participantes de idades e perfis variados.</p>"},
-        {"tipo": "nota", "html": "Os países que mais publicaram sobre o tema no período foram Egito (6 artigos), Portugal, Itália e Irã (3 cada). O Brasil não aparece entre os estudos incluídos."}
+        {"tipo": "nota", "html": "Os países que mais publicaram sobre o tema no período foram Egito (6 artigos), Portugal, Itália e Irã (3 cada). Ao todo, o artigo cita pesquisadores de 18 países."}
       ]
     }
   ],

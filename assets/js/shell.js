@@ -179,7 +179,7 @@
       (a.tags || []).slice(0, 2).map(t => '<span class="tag">' + esc(t) + "</span>").join("") + "</div>" +
       "<h3>" + esc(a.titulo_curto || a.titulo) + '</h3><p class="res">' + esc(a.resumo) + "</p>" +
       quem.map(p => '<p class="pesq-tag" style="--c:' + esc(p.cor) + '"><span class="av-mini">' + esc(p.iniciais) + "</span>" + esc(p.nome) + "</p>").join("") +
-      '<div class="art-foot"><span class="jr">' + esc(a.autores_curto || "") + '</span><span class="read">Ler →</span></div></div></a>';
+      '<div class="art-foot"><span class="jr">' + esc(a.autores_curto || "") + '</span><span class="read">' + (a.experiencia ? "Ver a experiência →" : "Ler →") + "</span></div></div></a>';
   }
 
   /* ---------- Início ---------- */
@@ -302,7 +302,7 @@
           '<div class="dc-body"><div class="pesq-head"><span class="av" aria-hidden="true">' + esc(p.iniciais) + "</span><div><b>" + esc(p.nome) + "</b><span>" + esc(p.vinculo || "") + "</span></div></div>" +
           (a.primeira_autora === p.id ? '<span class="autora">Autora principal</span>' : "") +
           '<span class="pill j" style="--j:' + corDe(r.nome || "") + '">' + esc(I.t("Publicado em")) + " " + esc(r.nome || "") + (r.ano ? " · " + esc(r.ano) : "") + "</span>" +
-          "<h3>" + esc(a.titulo_curto) + "</h3><p>" + esc(a.resumo) + '</p><span class="go">Ler o estudo completo →</span></div></a>' +
+          "<h3>" + esc(a.titulo_curto) + "</h3><p>" + esc(a.resumo) + '</p><span class="go">' + (a.experiencia ? "Ver a experiência interativa →" : "Ler o estudo completo →") + "</span></div></a>' +
           '<a class="dc-todos" href="' + RAIZ + "artigos/?pesquisadora=" + esc(p.id) + '">Ver todos os ' + dela.length + " estudos de " + esc(nome1) + " →</a></article>";
       }).join("");
       entrar($$(".destaque-card"));

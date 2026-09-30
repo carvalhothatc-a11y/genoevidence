@@ -499,7 +499,8 @@
     },
     {
       "id": "cosmeticos-antienvelhecimento",
-      "url": "artigos/cosmeticos-antienvelhecimento/",
+      "url": "artigos/cosmeticos-antienvelhecimento/experiencia/",
+      "experiencia": true,
       "titulo_curto": "Nanotecnologia nos cosméticos antienvelhecimento: o que a ciência já testou",
       "titulo": "Unveiling New Horizons: Advancing Technologies in Cosmeceuticals for Anti-Aging Solutions",
       "titulo_pt": "Revelando novos horizontes: avanços tecnológicos em cosmecêuticos para soluções antienvelhecimento",

@@ -1,5 +1,6 @@
 {
   "id": "cosmeticos-antienvelhecimento",
+  "experiencia": "experiencia/",
   "tipo": "artigo",
   "rotulo": "Systematic review",
   "arte": "particulas",
@@ -400,7 +401,7 @@
         },
         {
           "tipo": "nota",
-          "html": "The countries that published most on the topic in this period were Egypt (6 papers), Portugal, Italy and Iran (3 each). Brazil does not appear among the included studies."
+          "html": "The countries that published most on the topic in this period were Egypt (6 papers), Portugal, Italy and Iran (3 each). In all, the article lists researchers from 18 countries."
         }
       ]
     }

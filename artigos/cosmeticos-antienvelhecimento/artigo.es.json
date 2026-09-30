@@ -1,5 +1,6 @@
 {
   "id": "cosmeticos-antienvelhecimento",
+  "experiencia": "experiencia/",
   "tipo": "artigo",
   "rotulo": "Revisión sistemática",
   "arte": "particulas",
@@ -401,7 +402,7 @@
         },
         {
           "tipo": "nota",
-          "html": "Los países que más publicaron sobre el tema en el período fueron Egipto (6 artículos), Portugal, Italia e Irán (3 cada uno). Brasil no aparece entre los estudios incluidos."
+          "html": "Los países que más publicaron sobre el tema en el período fueron Egipto (6 artículos), Portugal, Italia e Irán (3 cada uno). En total, el artículo cita investigadores de 18 países."
         }
       ]
     }
