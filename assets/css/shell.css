@@ -17,22 +17,10 @@
   --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
   --maxw:1040px; --gutter:clamp(16px,4vw,32px); --tabbar:64px;
 }
-@view-transition{navigation:auto}
-/* ---------- troca de aba: página virando ----------
+/* ---------- troca de página: a folha vira (assets/js/virar-pagina.js) ----------
    A barra do topo e a barra de abas ficam paradas; só o conteúdo vira, como a folha de um livro. */
 .appbar{view-transition-name:barra-topo}
 .tabbar{view-transition-name:barra-abas}
-::view-transition-old(root),::view-transition-new(root){animation-duration:.6s;animation-timing-function:cubic-bezier(.45,.05,.25,1);mix-blend-mode:normal;backface-visibility:hidden}
-/* avançar (padrão): a página atual vira para a esquerda e revela a próxima por baixo */
-::view-transition-old(root){z-index:2;transform-origin:left center;animation-name:folha-vai}
-::view-transition-new(root){z-index:1;animation-name:por-baixo}
-/* voltar: a folha anterior volta por cima */
-html:active-view-transition-type(voltar)::view-transition-new(root){z-index:2;transform-origin:left center;animation-name:folha-volta}
-html:active-view-transition-type(voltar)::view-transition-old(root){z-index:1;animation-name:por-baixo-sai}
-@keyframes folha-vai{from{transform:perspective(1800px) rotateY(0);filter:brightness(1)}to{transform:perspective(1800px) rotateY(-100deg);filter:brightness(.8)}}
-@keyframes folha-volta{from{transform:perspective(1800px) rotateY(-100deg);filter:brightness(.8)}to{transform:perspective(1800px) rotateY(0);filter:brightness(1)}}
-@keyframes por-baixo{from{filter:brightness(.8)}to{filter:brightness(1)}}
-@keyframes por-baixo-sai{from{filter:brightness(1)}to{filter:brightness(.8)}}
 
 *{box-sizing:border-box}
 html{background:var(--bg);-webkit-text-size-adjust:100%}
@@ -295,9 +283,9 @@ html.sem-rolagem{overflow:hidden}
 .btn.ghost:hover{border-color:var(--muted)}
 
 /* ---------- frase do dia e pesquisa do Início ---------- */
-.frase-dia{margin:0 0 10px;padding-left:10px;border-left:2px solid var(--line);max-width:52ch;opacity:.85}
-.frase-dia blockquote{margin:0;font:italic 400 13px/1.45 var(--sans);color:var(--muted)}
-.frase-dia figcaption{margin-top:3px;font:400 10.5px/1.3 var(--mono);color:#98A0B3}
+.frase-dia{margin:0 0 10px;padding-left:10px;border-left:2px solid color-mix(in srgb,var(--violet) 35%,var(--line));max-width:52ch}
+.frase-dia blockquote{margin:0;font:italic 400 13.5px/1.45 var(--sans);color:var(--ink2)}
+.frase-dia figcaption{margin-top:3px;font:400 10.5px/1.3 var(--mono);color:var(--muted)}
 .frase-dia .fonte{opacity:.8}
 .busca-home{position:relative;margin-top:18px;max-width:480px}
 .busca-home .search{margin:0;padding-left:42px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B7590' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.5-3.5'/%3E%3C/svg%3E") 14px center/18px no-repeat;box-shadow:0 4px 16px rgba(16,22,38,.06)}
@@ -382,7 +370,7 @@ html.sem-rolagem{overflow:hidden}
   .frase-dia .fonte{display:none}
   .busca-home{max-width:none}
 }
-@media (prefers-reduced-motion:reduce){main{animation:none}@view-transition{navigation:none}}
+@media (prefers-reduced-motion:reduce){main{animation:none}}
 
 /* ---------- cores por tema das notícias ---------- */
 .t{font:600 11.5px/1 var(--mono);padding:4px 7px;border-radius:5px}

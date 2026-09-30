@@ -9,7 +9,7 @@
     var a=e.target.closest&&e.target.closest('.back-btn,.xp-voltar,.voltar-app');
     if(!a||e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
     e.preventDefault();
-    if(veioDoApp())history.back();else location.href=root;
+    if(veioDoApp())history.back();else{try{sessionStorage.setItem('ge-virar','voltar');}catch(er){}location.href=root;}
   });
   var chave='ge-rolagem:'+location.pathname+location.search;
   addEventListener('pagehide',function(){try{sessionStorage.setItem(chave,String(Math.round(scrollY)));}catch(e){}});
