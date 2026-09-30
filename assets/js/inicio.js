@@ -76,7 +76,7 @@
       poeira = Array.from({ length: cel ? 36 : 80 }, () => ({ x: rnd(W), y: rnd(H), r: .6 + rnd(1.4), a: .1 + rnd(.14) }));
       nos = Array.from({ length: cel ? 20 : 36 }, (_, i) => ({ x: rnd(W), y: rnd(H), vx: (Math.random() - .5) * .16, vy: (Math.random() - .5) * .16, r: 1.6 + rnd(2.4), c: COR[i % 3] }));
       const N = cel ? 22 : 30;
-      geo = { cx: W * .76, cy: H * .47, alt: H * .74, raio: 64, N: N };
+      geo = { cx: W * .76, cy: H * .47, alt: H * .74, raio: clamp(W * .042, 56, 96), N: N };
       if (cel) {
         // no celular, o DNA fica no espaço livre ao lado do título, sem passar por cima do texto
         const h1 = $(".hero-titulo"), rc = cv.getBoundingClientRect();

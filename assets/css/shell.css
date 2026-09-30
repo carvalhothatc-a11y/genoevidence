@@ -17,6 +17,8 @@
   --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
   --maxw:1040px; --gutter:clamp(16px,4vw,32px); --tabbar:64px;
 }
+/* telas grandes: o conteúdo ocupa mais da largura (menos margem dos lados) */
+@media (min-width:1280px){:root{--maxw:min(1560px,88vw);--gutter:40px}}
 /* ---------- troca de página: a folha vira (assets/js/virar-pagina.js) ----------
    A barra do topo e a barra de abas ficam paradas; só o conteúdo vira, como a folha de um livro. */
 .appbar{view-transition-name:barra-topo}
@@ -142,6 +144,7 @@ main{padding-top:28px;padding-bottom:64px;animation:entra .45s cubic-bezier(.2,.
 
 /* ---------- Artigos ---------- */
 .art-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media (min-width:1280px){.art-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .art-card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;transition:transform .2s,box-shadow .2s}
 .art-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(16,22,38,.10)}
 .art-cover{aspect-ratio:16/8;background:#f3d7dd center/cover no-repeat}
