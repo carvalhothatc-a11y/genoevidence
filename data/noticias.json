@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-29T20:54:33.719086+00:00",
+ "atualizado_em": "2026-09-30T00:35:01.685705+00:00",
  "noticias": [
   {
    "titulo": "Anthropic quer usar IA para descobrir tratamentos para doenças raras",
@@ -107,32 +107,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Pressões sociais causam grande impacto à saúde mental de meninas adolescentes",
-   "resumo": "Dados da PeNSE 2024 mostram índices maiores de sofrimento emocional entre meninas e levantam questões sobre gênero, imagem corporal e redes sociais",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/pressoes-sociais-causam-grande-impacto-na-saude-mental-de-meninas-adolescentes/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-29T12:30:59+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260928_sofrimentoescola.jpg",
-   "foco": {
-    "x": 0,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Social pressures have a major impact on the mental health of adolescent girls",
-     "resumo": "PeNSE 2024 data show higher rates of emotional distress among girls and raise questions about gender, body image and social media"
-    },
-    "es": {
-     "titulo": "Las presiones sociales tienen un gran impacto en la salud mental de las adolescentes",
-     "resumo": "Los datos de PeNSE 2024 muestran tasas más altas de angustia emocional entre las niñas y plantean preguntas sobre el género, la imagen corporal y las redes sociales"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Jornalismo científico confiável é mais essencial do que nunca",
    "resumo": "Enquanto a New Scientist comemora seu 70º aniversário, as mudanças climáticas, a IA e a desinformação aumentaram a necessidade de relatórios rigorosos e céticos",
    "url": "https://www.newscientist.com/article/2591119-trustworthy-science-journalism-is-more-essential-than-ever/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -158,53 +132,104 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Coliseu romano ganha ‘gêmeo digital’ para prever riscos estruturais e orientar conservação",
-   "resumo": "Apresentado na 7ª Conferência FAPESP 2026, projeto coordenado pelo arquiteto italiano Marcello Balzani cruza escaneamento 3D e dados históricos em uma base de dados capaz de monitorar continuamente o monumento de quase 2 mil anos",
-   "url": "https://agencia.fapesp.br/coliseu-romano-ganha-gemeo-digital-para-prever-riscos-estruturais-e-orientar-conservacao/59290",
+   "titulo": "Extrato natural melhora o combate de ervas daninhas nas lavouras",
+   "resumo": "A startup paulista Dana Agro desenvolveu com financiamento da FAPESP um bio-herbicida à base de extratos vegetais e ativos orgânicos capaz de driblar a resistência das ervas daninhas aos defensivos sintéticos, reduzindo em até 50% sua…",
+   "url": "https://pesquisaparainovacao.fapesp.br/extrato_natural_melhora_o_combate_de_ervas_daninhas_nas_lavouras/4151",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-09-29T20:54:33.719086+00:00",
+   "data": "2026-09-30T00:35:01.685705+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59290.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Roman Colosseum gains‘ digital twin ’to predict structural risks and guide conservation",
-     "resumo": "Presented at the 7th FAPESP 2026 Conference, a project coordinated by Italian architect Marcello Balzani crosses 3D scanning and historical data in a database capable of continuously monitoring the nearly 2,000-year-old monument"
-    },
-    "es": {
-     "titulo": "El Coliseo Romano gana un ‘gemelo digital’ para predecir los riesgos estructurales y guiar la conservación",
-     "resumo": "Presentado en la 7ª Conferencia FAPESP 2026, un proyecto coordinado por el arquitecto italiano Marcello Balzani cruza el escaneo 3D y los datos históricos en una base de datos capaz de monitorear continuamente el monumento de casi 2.000 años"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Sapo do litoral do Espírito Santo entra para a ciência como criticamente ameaçado",
-   "resumo": "Restrita a um único fragmento de Mata Atlântica, que perdeu 30% da área desde 2011, a Dryadobates caissara é a menor espécie do gênero e a única que não emite cantos isolados",
-   "url": "https://agencia.fapesp.br/sapo-do-litoral-do-espirito-santo-entra-para-a-ciencia-como-criticamente-ameacado/59289",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-09-29T20:54:33.719086+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59289.jpeg",
+   "imagem": "https://pesquisaparainovacao.fapesp.br/imagens/materia/4151.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Frog from the coast of Espírito Santo enters science as critically endangered",
-     "resumo": "Restricted to a single fragment of the Atlantic Forest, which has lost 30% of the area since 2011, Dryadobates caissara is the smallest species of the genus and the only one that does not emit isolated corners"
+     "titulo": "Natural extract improves weed fighting in crops",
+     "resumo": "The São Paulo startup Dana Agro has developed, with funding from FAPESP, a bioherbicide based on plant extracts and organic assets capable of circumventing the resistance of weeds to synthetic pesticides, reducing by up to 50% its…"
     },
     "es": {
-     "titulo": "La rana de la costa de Espírito Santo entra en la ciencia como en peligro crítico",
-     "resumo": "Restringida a un solo fragmento de la Mata Atlántica, que ha perdido el 30% de la superficie desde 2011, Dryadobates caissara es la especie más pequeña del género y la única que no emite rincones aislados"
+     "titulo": "El extracto natural mejora la lucha contra las malas hierbas en los cultivos",
+     "resumo": "La startup paulista Dana Agro ha desarrollado, con financiación de la FAPESP, un bioherbicida a base de extractos vegetales y activos orgánicos capaz de sortear la resistencia de las malas hierbas a los plaguicidas sintéticos, reduciendo hasta en un 50% su…"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "8º Prêmio Carolina Bori será dedicado às meninas na ciência",
+   "resumo": "Estudantes do ensino médio e da graduação podem concorrer a seis prêmios de até R$ 13 mil; vencedoras apresentarão seus trabalhos na 79ª Reunião Anual da SBPC",
+   "url": "https://agencia.fapesp.br/8o-premio-carolina-bori-sera-dedicado-as-meninas-na-ciencia/59284",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-30T00:35:01.685705+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59284.jpg",
+   "foco": {
+    "x": 100,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "8th Carolina Bori Award will be dedicated to girls in science",
+     "resumo": "High school and undergraduate students can compete for six prizes of up to $13,000; winners will present their work at the 79th SBPC Annual Meeting"
+    },
+    "es": {
+     "titulo": "El 8º Premio Carolina Bori estará dedicado a las niñas en la ciencia",
+     "resumo": "Los estudiantes de secundaria y pregrado pueden competir por seis premios de hasta $ 13,000; los ganadores presentarán su trabajo en la 79ª Reunión Anual de SBPC"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O PISA, o capital humano e a engrenagem por trás da padronização educacional global",
+   "resumo": "Por Otaviano Helene , professor do Instituto de Física da USP",
+   "url": "https://jornal.usp.br/articulistas/otaviano-helene/o-pisa-o-capital-humano-e-a-engrenagem-por-tras-da-padronizacao-educacional-global/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-09-29T23:22:24+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/02/perfil_dest_otaviano-helene.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "PISA, human capital and the engine behind global educational standardization",
+     "resumo": "By Otaviano Helene , professor at USP's Physics Institute"
+    },
+    "es": {
+     "titulo": "PISA, el capital humano y el motor detrás de la estandarización educativa global",
+     "resumo": "Por Otaviano Helene , profesor del Instituto de Física de la USP"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Todo acervo vai se tornar obra rara: o dilema das bibliotecas diante do digital",
+   "resumo": "Por Leonardo de Assis, pesquisador do Laboratório de Cultura, Informação e Sociedade da Escola de Comunicações e Artes (ECA) da USP",
+   "url": "https://jornal.usp.br/artigos/todo-acervo-vai-se-tornar-obra-rara-o-dilema-das-bibliotecas-frente-ao-digital/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-09-29T20:17:17+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/06/20240606_Leonardo-Silva-Assis.jpg",
+   "foco": {
+    "x": 58,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Every collection will become a rare work: the dilemma of libraries in the face of digital",
+     "resumo": "By Leonardo de Assis, researcher at the Laboratory of Culture, Information and Society of the School of Communications and Arts (ECA) of USP"
+    },
+    "es": {
+     "titulo": "Cada colección se convertirá en una obra rara: el dilema de las bibliotecas frente a la",
+     "resumo": "Por Leonardo de Assis, investigador del Laboratorio de Cultura, Información y Sociedad de la Escuela de Comunicaciones y Artes (ECA) de la USP"
     }
    }
   },
@@ -229,31 +254,8 @@
      "resumo": "One-year project adds up to $1.1 million and wants to enable the production of biofuels"
     },
     "es": {
-     "titulo": "La Unicamp y Bionow firman un acuerdo para transformar el alquitrán en una fuente de energía renovable"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Comunidade universitária pode contribuir em pesquisa on-line sobre inclusão e pertencimento na USP",
-   "resumo": "Questionário PRIP 2026 pode ser respondido até 6 de novembro e leva cerca de 15 a 20 minutos; resultados serão comparados aos de 2022 e 2024 e subsidiarão políticas de inclusão e pertencimento na Universidade",
-   "url": "https://jornal.usp.br/universidade/comunidade-universitaria-pode-contribuir-em-pesquisa-on-line-sobre-inclusao-e-pertencimento-na-usp/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-29T17:47:42+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/06/20240617_estudantes-caminhando-no-campus-destaque.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "University community can contribute to online research on inclusion and belonging at USP"
-    },
-    "es": {
-     "titulo": "La comunidad universitaria puede contribuir a la investigación en línea sobre inclusión y pertenencia en la USP"
+     "titulo": "La Unicamp y Bionow firman un acuerdo para transformar el alquitrán en una fuente de energía renovable",
+     "resumo": "El proyecto de un año suma R$ 1,1 millones y quiere permitir la producción de biocombustibles"
     }
    }
   },
@@ -309,6 +311,31 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Ensaio de retatrútida blockbuster sinaliza uma ‘nova marca d' água ’para medicamentos para perda de peso",
+   "resumo": "O medicamento experimental para perda de peso é um agonista triplo e o primeiro de seu tipo a chegar a um ensaio clínico de fase 3",
+   "url": "https://www.scientificamerican.com/article/blockbuster-retatrutide-trial-signals-a-new-high-water-mark-for-weight-loss-drugs/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-09-29T22:01:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "https://static.scientificamerican.com/dam/asset/d3e7eea9-b92e-4424-ab2f-f7400d1d4c44/Lilly.jpg?m=1790716886.229&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Blockbuster retatrutide trial signals a ‘new high-water mark’ for weight-loss drugs",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El exitoso ensayo retatrutide señala una ‘nueva marca de agua alta’ para los medicamentos para perder peso",
+     "resumo": "El fármaco experimental para perder peso es un triple agonista y el primero de su tipo en llegar a un ensayo clínico de fase 3"
+    }
+   },
+   "resumo_original": "The experimental weight-loss drug is a triple agonist and the first of its kind to reach a phase 3 clinical trial"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Veja as fotos legais que esta espaçonave com destino a Júpiter tirou enquanto passava pela Terra",
    "resumo": "Juice está a caminho para estudar as luas de Júpiter, com uma pequena ajuda da gravidade da Terra",
    "url": "https://www.scientificamerican.com/article/see-the-cool-photos-this-jupiter-bound-spacecraft-took-while-swinging-by-earth/",
@@ -331,31 +358,6 @@
     }
    },
    "resumo_original": "Juice is on its way to study Jupiter’s moons, with a little assist from Earth’s gravity"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "As armas espaciais dos EUA provavelmente não são o que você pensa",
-   "resumo": "Nave espacial indescritível e perseguidora de satélites pode desencadear uma guerra espacial - ou ajudar a manter a paz orbital",
-   "url": "https://www.scientificamerican.com/article/u-s-space-weapons-probably-arent-what-you-think/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-09-29T14:15:00+00:00",
-   "tema": "Espaço",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/46293e48-d9e3-495e-8353-56d5972486c2/SSA-RPOs.jpg?m=1790689186.988&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "U.S. space weapons probably aren’t what you think",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las armas espaciales de EE. UU. probablemente no son lo que piensas",
-     "resumo": "Una nave espacial esquiva que acecha a los satélites podría desencadenar una guerra espacial o ayudar a mantener la paz orbital"
-    }
-   },
-   "resumo_original": "Elusive, satellite-stalking spacecraft could unleash space war—or help keep orbital peace"
   },
   {
    "tipo": "noticia",
@@ -682,7 +684,7 @@
   {
    "tipo": "artigo",
    "titulo": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationalwide spatiotemporal analysis, 2010-2025.",
-   "autores": "Grados Vásquez M, Guerra Blas JC, Salcedo-Prudencio A, Santos Siqueira T, Monteiro W, Amaya Parra J, Martinez-Espinosa…",
+   "autores": "Grados Vásquez M, Guerra Blas JC, Salcedo-Prudencio A, Santos Siqueira T, Monteiro W, Amaya Parra JA, Martinez-Espinosa…",
    "revista": "PLoS Negl Trop Dis",
    "data": "2026-09-24T00:00:00+00:00",
    "doi": "10.1371/journal.pntd.0014747",
@@ -1084,6 +1086,9 @@
   "urban trees in south east england cant cope with the changing climate": "2026-09-29T20:54:33.719086+00:00",
   "u s space weapons probably arent what you think": "2026-09-29T20:54:33.719086+00:00",
   "the ice blasting from saturn s moon enceladus is stranger than scientists realized": "2026-09-29T20:54:33.719086+00:00",
-  "earths day isnt exactly 24 hours the reason may lie deep inside the planet": "2026-09-29T20:54:33.719086+00:00"
+  "earths day isnt exactly 24 hours the reason may lie deep inside the planet": "2026-09-29T20:54:33.719086+00:00",
+  "o pisa o capital humano e a engrenagem por tras da padronizacao educacional global": "2026-09-30T00:35:01.685705+00:00",
+  "todo acervo vai se tornar obra rara o dilema das bibliotecas diante do digital": "2026-09-30T00:35:01.685705+00:00",
+  "blockbuster retatrutide trial signals a new high water mark for weight loss drugs": "2026-09-30T00:35:01.685705+00:00"
  }
 }
