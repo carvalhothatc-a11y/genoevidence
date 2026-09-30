@@ -1,7 +1,9 @@
 /* GenoEvidence · DNA 3D da abertura e fundo animado (usado no início e nos artigos) */
 (function(){
 "use strict";
-const RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+// movimento reduzido: do aparelho ou do painel de acessibilidade (pode mudar com a página aberta)
+let RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.classList.contains('ge-sem-animacao');
+document.addEventListener('ge-movimento', e => { RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches || !!e.detail; });
 const C = {arg:'#4D7CFF', his:'#FF5470', amber:'#FFB23F', text:'#E7ECF6', muted:'#8D9AB5', dim:'#5B6883', line:'#1B2742', line2:'#27365A', panel2:'#0F182B', ink:'#060A13'};
 const NS='http://www.w3.org/2000/svg';
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];

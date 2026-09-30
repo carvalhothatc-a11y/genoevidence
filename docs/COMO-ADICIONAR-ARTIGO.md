@@ -82,6 +82,12 @@ Com isso:
 
 O campo `capa` é a imagem do cartão (use a versão pequena, em `imagens/mini/`, ou um `capa.svg`).
 
+Para o estudo aparecer em **Descobertas recentes** no Início, copie também do `artigo.json`:
+- `descoberta`: o terceiro bloco de `em_1_minuto` (“O que acharam”), com `titulo` e `texto`;
+- `numero`: o primeiro item de `numeros`, com `valor` e `texto`.
+
+Faça o mesmo em `i18n.en` e `i18n.es`, a partir de `artigo.en.json` e `artigo.es.json`. O mapa do conhecimento do Início se monta sozinho a partir de `temas`, `tags` e `pesquisadoras`.
+
 ## Inglês e espanhol
 
 - Página do estudo: copie o `artigo.json` para `artigo.en.json` e `artigo.es.json` e traduza só os textos (deixe `id`, `tipo`, `cor`, imagens, números dos gráficos, `doi` e `url` iguais). Se o título original já estiver no idioma da página, apague `titulo_pt`; se não, coloque em `titulo_pt` a tradução e em `rotulo_original` algo como "Original title in Portuguese:". Sem esses arquivos, a página aparece em português.

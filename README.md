@@ -4,7 +4,7 @@
 
 | Aba | O que tem |
 |---|---|
-| **Início** | Frase do dia de um cientista (muda sozinha todo dia), barra de pesquisa, DNA em 3D, as 3 notícias mais relevantes, o estudo mais recente de cada pesquisadora em destaque (como autora principal), o estudo em andamento R337H e os temas. |
+| **Início** | Uma jornada “do conhecimento científico até a descoberta”: abertura com rede de conhecimento e partículas que formam um DNA, frase do dia e pesquisa; “Como funciona” em 4 etapas animadas; mapa do conhecimento (estudos, temas, assuntos e pesquisadoras); descobertas recentes; notícias; temas com símbolos animados; rede da p53 da Iniciação Científica; destaques das pesquisadoras e estudos em andamento. Tem painel de acessibilidade e não tem som. |
 | **Notícias** | As 15 notícias de ciência mais relevantes do dia (8 de fontes brasileiras e 7 internacionais, traduzidas para o português), atualizadas todo dia às 7h (horário de Brasília). |
 | **Temas** | Os estudos separados por tema (genética, bioinformática, oncologia, microbiologia…), com filtro por pesquisadora. Cada estudo fica em um só tema e abre a sua página completa. |
 | **Revistas** | As revistas dos artigos explicados e as publicações científicas mais recentes (Europe PMC), com filtro por revista. |
@@ -62,6 +62,7 @@ artigos/_modelo/            modelo para criar um artigo novo
 data/artigos.json           lista de artigos explicados (aba Artigos e destaque do Início)
 data/noticias.json          notícias e publicações do dia (gerado automaticamente às 7h)
 data/frases.json            frases de cientistas para a “frase do dia” do Início
+data/rede-p53.json          rede da p53 do Início (dados da Iniciação Científica)
 data/noticias-escolhidas.json   notícias escolhidas à mão: aparecem primeiro até a data em "ate"
 assets/css/shell.css        visual das abas
 assets/css/base.css, artigo.css   visual da página de leitura
@@ -70,7 +71,8 @@ assets/js/shell.js          barra do topo, barra de abas e conteúdo das abas
 assets/js/artigo.js         monta a página de leitura a partir do artigo.json
 assets/js/app.js, dna.js    menu lateral e animações da página de leitura
 assets/js/pwa.js            instalar como app e modo offline
-assets/js/hero3d.js         DNA em 3D da abertura do Início
+assets/js/inicio.js         animações e seções interativas do Início (com assets/css/inicio.css)
+assets/js/acessibilidade.js painel de acessibilidade de todas as páginas
 scripts/atualizar_noticias.py   robô que escolhe as notícias mais relevantes do dia, pega a imagem de cada uma (sem cortar rostos) e as traduz para os três idiomas
 scripts/modelos/            detector de rostos YuNet (OpenCV, licença MIT) usado pelo robô
 docs/COMO-ADICIONAR-ARTIGO.md   passo a passo para publicar um artigo novo

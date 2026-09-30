@@ -8,7 +8,7 @@
   const $$ = (s, r) => [...(r || document).querySelectorAll(s)];
   const RAIZ = (document.querySelector('meta[name="ge-root"]') || {}).content || "./";
   const PAGINA = document.body.dataset.pagina;
-  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("ge-sem-animacao");
   const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   // idiomas (assets/js/i18n.js): textos fixos são traduzidos sozinhos; aqui os dados já chegam no idioma escolhido
   const I = window.GE_I18N || { lang: "pt", locale: "pt-BR", t: s => s, montarSeletor: () => {} };
@@ -286,119 +286,16 @@
     marcar();
   }
 
-  /* ---------- Início interativo ---------- */
-  // quando um elemento aparece na tela (uma vez só)
-  function aoAparecer(el, fn) {
-    if (!("IntersectionObserver" in window)) return fn();
-    const io = new IntersectionObserver(es => { if (es[0].isIntersecting) { io.disconnect(); fn(); } }, { threshold: .35 });
-    io.observe(el);
-  }
-  // números do app: sobem de zero até o valor quando aparecem
-  function numerosInicio(d, arts) {
-    const box = $("#numerosHome"); if (!box) return;
-    const temas = (d.temas || []).filter(t => arts.some(a => (a.temas || []).includes(t.id))).length;
-    const xps = arts.filter(a => a.experiencia).length;
-    const itens = [[arts.length, arts.length === 1 ? "estudo" : "estudos", "artigos/"], [temas, temas === 1 ? "tema" : "temas", "artigos/"],
-      [(d.pesquisadoras || []).length, (d.pesquisadoras || []).length === 1 ? "pesquisadora" : "pesquisadoras", "#destaques"]];
-    if (xps) itens.push([xps, xps === 1 ? "experiência interativa" : "experiências interativas", "#experiencias"]);
-    box.innerHTML = itens.map(([n, rot, h]) => '<a class="num" href="' + (h[0] === "#" ? h : RAIZ + h) + '"><b data-n="' + n + '">' + (RM ? n : 0) + "</b><span>" + esc(rot) + "</span></a>").join("");
-    if (RM) return;
-    aoAparecer(box, () => $$("b[data-n]", box).forEach((b, i) => {
-      const alvo = +b.dataset.n, t0 = performance.now() + i * 120, dur = 900;
-      const passo = agora => { const k = Math.min(1, Math.max(0, (agora - t0) / dur)); b.textContent = Math.round(alvo * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(passo); };
-      requestAnimationFrame(passo);
-    }));
-  }
-  // chamada para cada experiência interativa, com partículas flutuando
-  function experienciasInicio(arts) {
-    const sec = $("#experiencias"), box = $("#experienciasInicio"); if (!sec || !box) return;
-    const xps = arts.filter(a => a.experiencia && a.experiencia.titulo); if (!xps.length) return;
-    sec.hidden = false;
-    box.innerHTML = xps.map(a => '<a class="xp-chamada" href="' + RAIZ + esc(a.url) + '"><canvas aria-hidden="true"></canvas><div class="xpc-txt">' +
-      '<span class="xpc-ey">' + esc(I.t("Novo · experiência interativa")) + "</span><b>" + esc(a.experiencia.titulo) + "</b><p>" + esc(a.experiencia.chamada || "") + "</p>" +
-      '<small>' + esc(a.titulo_curto) + '</small><span class="btn">' + esc(I.t("Começar a experiência")) + ' <span aria-hidden="true">→</span></span></div></a>').join("");
-    $$(".xp-chamada canvas", box).forEach(particulas);
-  }
-  function particulas(cv) {
-    const ctx = cv.getContext("2d"); if (!ctx) return;
-    const cores = ["#F2B8A2", "#A58CFF", "#5FD39A", "#FFB23F", "#7C9CFF"];
-    let W = 0, H = 0, pts = [], raf = 0, visivel = false, dedo = null;
-    const medir = () => {
-      const r = cv.getBoundingClientRect(), dpr = Math.min(devicePixelRatio || 1, 2);
-      W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const n = Math.round(Math.min(46, W * H / 5200));
-      pts = Array.from({ length: n }, (_, i) => ({ x: Math.random() * W, y: Math.random() * H, r: 3 + Math.random() * (i % 5 ? 7 : 16), vx: (Math.random() - .5) * .25, vy: (Math.random() - .5) * .25, c: cores[i % cores.length] }));
-      desenhar();
-    };
-    function desenhar() {
-      ctx.clearRect(0, 0, W, H);
-      pts.forEach(p => {
-        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = p.c + "33"; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = p.c + "AA"; ctx.stroke();
-        if (p.r > 9) { ctx.beginPath(); ctx.arc(p.x, p.y, p.r * .55, 0, Math.PI * 2); ctx.strokeStyle = p.c + "66"; ctx.stroke(); }
-      });
-    }
-    function quadro() {
-      raf = 0;
-      pts.forEach(p => {
-        // o dedo (ou o mouse) empurra as partículas de leve
-        if (dedo) { const dx = p.x - dedo.x, dy = p.y - dedo.y, d2 = dx * dx + dy * dy; if (d2 < 9000) { const f = (9000 - d2) / 9000 * .6; p.vx += dx / Math.sqrt(d2 + 1) * f; p.vy += dy / Math.sqrt(d2 + 1) * f; } }
-        p.vx *= .97; p.vy *= .97; p.vx += (Math.random() - .5) * .02; p.vy += (Math.random() - .5) * .02;
-        p.x += p.vx; p.y += p.vy;
-        if (p.x < -20) p.x = W + 20; if (p.x > W + 20) p.x = -20; if (p.y < -20) p.y = H + 20; if (p.y > H + 20) p.y = -20;
-      });
-      desenhar();
-      if (visivel) raf = requestAnimationFrame(quadro);
-    }
-    medir(); addEventListener("resize", medir);
-    if (RM) return;
-    const onde = e => { const r = cv.getBoundingClientRect(); dedo = { x: e.clientX - r.left, y: e.clientY - r.top }; };
-    const card = cv.parentNode;
-    card.addEventListener("pointermove", onde, { passive: true });
-    card.addEventListener("pointerdown", onde, { passive: true });
-    card.addEventListener("pointerleave", () => { dedo = null; });
-    card.addEventListener("pointerup", () => { setTimeout(() => { dedo = null; }, 300); });
-    new IntersectionObserver(es => { visivel = es[0].isIntersecting; if (visivel && !raf) raf = requestAnimationFrame(quadro); }).observe(cv);
-  }
-  // temas: tocar abre os estudos do tema ali mesmo, num trilho que desliza para o lado
-  function temasInterativos(d, arts) {
-    const grade = $("#temasInicio"), painel = $("#temaPainel"); if (!grade || !painel) return;
-    let aberto = null;
-    $$(".tema-tile", grade).forEach(tile => {
-      const id = decodeURIComponent(tile.getAttribute("href").split("#")[1] || "");
-      tile.setAttribute("role", "button"); tile.setAttribute("aria-expanded", "false"); tile.setAttribute("aria-controls", "temaPainel");
-      tile.addEventListener("click", e => {
-        e.preventDefault();
-        $$(".tema-tile", grade).forEach(t => t.setAttribute("aria-expanded", "false"));
-        if (aberto === id) { aberto = null; painel.hidden = true; return; }
-        aberto = id; tile.setAttribute("aria-expanded", "true");
-        const t = (d.temas || []).find(x => x.id === id) || {}, lista = arts.filter(a => (a.temas || []).includes(id));
-        painel.style.setProperty("--c", t.cor || "var(--accent)");
-        painel.innerHTML = '<div class="tp-topo"><div><b>' + esc(t.nome || "") + "</b><p>" + esc(t.sobre || "") + '</p></div><a class="link-more" href="' + RAIZ + "artigos/#" + esc(id) + '">' + esc(I.t("Abrir o tema")) + " →</a></div>" +
-          '<div class="tp-trilho">' + lista.map(a => '<a class="tp-card" href="' + RAIZ + esc(a.url) + '">' +
-            (a.capa ? '<span class="tp-img" style="background-image:url(\'' + RAIZ + esc(a.capa) + '\')"></span>' : "") +
-            (a.experiencia ? '<span class="tp-xp">' + esc(I.t("Experiência interativa")) + "</span>" : a.selo ? '<span class="tp-xp and">' + esc(a.selo) + "</span>" : "") +
-            "<b>" + esc(a.titulo_curto || a.titulo) + "</b><small>" + esc(a.autores_curto || "") + "</small></a>").join("") + "</div>";
-        painel.hidden = false;
-        entrar($$(".tp-card", painel));
-        const r = painel.getBoundingClientRect();
-        if (r.bottom > innerHeight) scrollBy({ top: Math.min(r.bottom - innerHeight + 24, r.top - 90), behavior: RM ? "auto" : "smooth" });
-      });
-    });
-  }
-  // as seções entram de leve quando chegam na tela
-  function revelarSecoes() {
-    if (RM || !("IntersectionObserver" in window)) return;
-    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visto"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
-    $$("main .sec, main .install-card").forEach(s => { if (s.getBoundingClientRect().top > innerHeight) { s.classList.add("revelar"); io.observe(s); } });
-  }
-
   function inicio() {
     fraseDoDia();
     buscaInicio();
     const h = new Date().getHours();
     $("#saudacao").textContent = I.t(h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite") + " · " + new Date().toLocaleDateString(I.locale, { weekday: "long", day: "numeric", month: "long" });
-    getJSON("data/artigos.json").then(d => {
+    // os dados dos estudos também servem para as seções animadas do Início (assets/js/inicio.js)
+    const artigos = getJSON("data/artigos.json");
+    window.GE_APP = { artigos: artigos, RAIZ: RAIZ, getJSON: getJSON };
+    document.dispatchEvent(new CustomEvent("ge-dados"));
+    artigos.then(d => {
       const arts = d.artigos || [];
       // em destaque: o artigo publicado mais recente de cada pesquisadora
       $("#destaquesPesq").innerHTML = (d.pesquisadoras || []).map(p => {
@@ -415,14 +312,7 @@
           '<a class="dc-todos" href="' + RAIZ + "artigos/?pesquisadora=" + esc(p.id) + '">Ver todos os ' + dela.length + " estudos de " + esc(nome1) + " →</a></article>";
       }).join("");
       entrar($$(".destaque-card"));
-      $("#temasInicio").innerHTML = (d.temas || []).map(t => { const n = arts.filter(x => (x.temas || []).includes(t.id)).length;
-        return n ? '<a class="tema-tile" href="' + RAIZ + "artigos/#" + esc(t.id) + '" style="--c:' + esc(t.cor) + '"><b>' + esc(t.nome) + "</b><span>" + n + (n > 1 ? " estudos" : " estudo") + "</span></a>" : ""; }).join("");
-      entrar($$(".tema-tile"));
-      numerosInicio(d, arts);
-      experienciasInicio(arts);
-      temasInterativos(d, arts);
     }).catch(() => { $("#destaquesPesq").innerHTML = '<p class="loading">Não foi possível carregar os destaques.</p>'; });
-    revelarSecoes();
     getJSON("data/noticias.json").then(d => {
       const ns = d.noticias || [];
       // as 8 mais relevantes do dia (o robô já as ordena), no máximo 2 da mesma fonte

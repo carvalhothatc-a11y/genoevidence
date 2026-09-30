@@ -1,0 +1,100 @@
+{
+  "_como_usar": "Rede da seção 'Explore como a ciência conecta informações' do Início. Os dados e as ligações vêm da Iniciação Científica de Thaisa Carvalho (artigos/tp53-pulmao-in-silico). As funções das proteínas vêm do UniProt. Não acrescentar ligações que o estudo não mostra.",
+  "estudo": "artigos/tp53-pulmao-in-silico/",
+  "textos": {
+    "pt": {
+      "lede": "A proteína p53 e as informações ligadas a ela na Iniciação Científica de Thaisa Carvalho (2026). Toque em um ponto para saber mais.",
+      "nota": "Rede simplificada: mostra 5 das proteínas citadas no estudo. A rede completa do STRING tem mais proteínas e ligações.",
+      "abrir": "Abrir o estudo",
+      "fonte": "Fonte",
+      "fechar": "Fechar",
+      "todos": "Tudo"
+    },
+    "en": {
+      "lede": "The p53 protein and the information linked to it in Thaisa Carvalho's undergraduate research project (2026). Tap a point to learn more.",
+      "nota": "Simplified network: it shows 5 of the proteins cited in the study. The full STRING network has more proteins and links.",
+      "abrir": "Open the study",
+      "fonte": "Source",
+      "fechar": "Close",
+      "todos": "All"
+    },
+    "es": {
+      "lede": "La proteína p53 y la información ligada a ella en la Iniciación Científica de Thaisa Carvalho (2026). Toca un punto para saber más.",
+      "nota": "Red simplificada: muestra 5 de las proteínas citadas en el estudio. La red completa de STRING tiene más proteínas y conexiones.",
+      "abrir": "Abrir el estudio",
+      "fonte": "Fuente",
+      "fechar": "Cerrar",
+      "todos": "Todo"
+    }
+  },
+  "grupos": [
+    {"id": "proteinas", "cor": "#7B4DE0", "pt": "Proteínas (STRING)", "en": "Proteins (STRING)", "es": "Proteínas (STRING)"},
+    {"id": "processos", "cor": "#0E9AA7", "pt": "Processos (Metascape)", "en": "Processes (Metascape)", "es": "Procesos (Metascape)"},
+    {"id": "dados", "cor": "#2F5BEA", "pt": "Dados de pacientes", "en": "Patient data", "es": "Datos de pacientes"},
+    {"id": "farmacos", "cor": "#D98A0B", "pt": "Fármacos (DGIdb)", "en": "Drugs (DGIdb)", "es": "Fármacos (DGIdb)"}
+  ],
+  "centro": {
+    "id": "p53",
+    "rotulo": "p53",
+    "pt": {"titulo": "p53 (gene TP53)", "texto": "Proteína feita a partir do gene TP53. Ela ajuda a controlar a divisão das células e a resposta a danos no DNA. Na Iniciação Científica, o TP53 foi analisado no câncer de pulmão com seis ferramentas de bioinformática.", "fonte": "Carvalho (2026), relatório de Iniciação Científica"},
+    "en": {"titulo": "p53 (TP53 gene)", "texto": "Protein made from the TP53 gene. It helps control cell division and the response to DNA damage. In the undergraduate research project, TP53 was analyzed in lung cancer with six bioinformatics tools.", "fonte": "Carvalho (2026), undergraduate research report"},
+    "es": {"titulo": "p53 (gen TP53)", "texto": "Proteína producida a partir del gen TP53. Ayuda a controlar la división de las células y la respuesta a daños en el ADN. En la Iniciación Científica, el TP53 se analizó en el cáncer de pulmón con seis herramientas de bioinformática.", "fonte": "Carvalho (2026), informe de Iniciación Científica"}
+  },
+  "nos": [
+    {"id": "atm", "grupo": "proteinas", "rotulo": "ATM",
+     "pt": {"titulo": "ATM", "texto": "Enzima que é ativada quando o DNA sofre quebras e, em resposta, ativa a p53.", "fonte": "Ligação: STRING, em Carvalho (2026). Função: UniProt (Q13315)"},
+     "en": {"titulo": "ATM", "texto": "Enzyme that is activated when DNA breaks and, in response, activates p53.", "fonte": "Link: STRING, in Carvalho (2026). Function: UniProt (Q13315)"},
+     "es": {"titulo": "ATM", "texto": "Enzima que se activa cuando el ADN sufre roturas y, en respuesta, activa la p53.", "fonte": "Conexión: STRING, en Carvalho (2026). Función: UniProt (Q13315)"}},
+    {"id": "mdm2", "grupo": "proteinas", "rotulo": "MDM2",
+     "pt": {"titulo": "MDM2", "texto": "O principal freio da p53: marca a proteína para ser destruída pela célula.", "fonte": "Ligação: STRING, em Carvalho (2026). Função: UniProt (Q00987)"},
+     "en": {"titulo": "MDM2", "texto": "The main brake on p53: it tags the protein to be destroyed by the cell.", "fonte": "Link: STRING, in Carvalho (2026). Function: UniProt (Q00987)"},
+     "es": {"titulo": "MDM2", "texto": "El principal freno de la p53: marca la proteína para que la célula la destruya.", "fonte": "Conexión: STRING, en Carvalho (2026). Función: UniProt (Q00987)"}},
+    {"id": "sirt1", "grupo": "proteinas", "rotulo": "SIRT1",
+     "pt": {"titulo": "SIRT1", "texto": "Tira da p53 pequenas marcas químicas (grupos acetil) e, assim, diminui a atividade dela.", "fonte": "Ligação: STRING, em Carvalho (2026). Função: UniProt (Q96EB6)"},
+     "en": {"titulo": "SIRT1", "texto": "Removes small chemical tags (acetyl groups) from p53 and, in this way, lowers its activity.", "fonte": "Link: STRING, in Carvalho (2026). Function: UniProt (Q96EB6)"},
+     "es": {"titulo": "SIRT1", "texto": "Quita de la p53 pequeñas marcas químicas (grupos acetilo) y, así, disminuye su actividad.", "fonte": "Conexión: STRING, en Carvalho (2026). Función: UniProt (Q96EB6)"}},
+    {"id": "ep300", "grupo": "proteinas", "rotulo": "EP300",
+     "pt": {"titulo": "EP300", "texto": "Coloca na p53 marcas químicas (grupos acetil) que aumentam a capacidade dela de ligar e desligar genes.", "fonte": "Ligação: STRING, em Carvalho (2026). Função: UniProt (Q09472)"},
+     "en": {"titulo": "EP300", "texto": "Adds chemical tags (acetyl groups) to p53 that increase its ability to switch genes on and off.", "fonte": "Link: STRING, in Carvalho (2026). Function: UniProt (Q09472)"},
+     "es": {"titulo": "EP300", "texto": "Coloca en la p53 marcas químicas (grupos acetilo) que aumentan su capacidad de encender y apagar genes.", "fonte": "Conexión: STRING, en Carvalho (2026). Función: UniProt (Q09472)"}},
+    {"id": "crebbp", "grupo": "proteinas", "rotulo": "CREBBP",
+     "pt": {"titulo": "CREBBP", "texto": "Parecida com a EP300: também coloca grupos acetil na p53 e ajuda a ligar genes.", "fonte": "Ligação: STRING, em Carvalho (2026). Função: UniProt (Q92793)"},
+     "en": {"titulo": "CREBBP", "texto": "Similar to EP300: it also adds acetyl groups to p53 and helps switch genes on.", "fonte": "Link: STRING, in Carvalho (2026). Function: UniProt (Q92793)"},
+     "es": {"titulo": "CREBBP", "texto": "Parecida a la EP300: también coloca grupos acetilo en la p53 y ayuda a encender genes.", "fonte": "Conexión: STRING, en Carvalho (2026). Función: UniProt (Q92793)"}},
+
+    {"id": "dano", "grupo": "processos", "rotulo": {"pt": "Danos no DNA", "en": "DNA damage", "es": "Daños en el ADN"},
+     "pt": {"titulo": "Resposta a danos no DNA", "texto": "Conjunto de reações da célula para perceber e consertar estragos no DNA. No Metascape, os genes analisados apareceram ligados a este processo.", "fonte": "Metascape, em Carvalho (2026)"},
+     "en": {"titulo": "DNA damage response", "texto": "Set of cell reactions that detect and repair damage to DNA. In Metascape, the genes analyzed were linked to this process.", "fonte": "Metascape, in Carvalho (2026)"},
+     "es": {"titulo": "Respuesta a daños en el ADN", "texto": "Conjunto de reacciones de la célula para detectar y reparar daños en el ADN. En Metascape, los genes analizados aparecieron ligados a este proceso.", "fonte": "Metascape, en Carvalho (2026)"}},
+    {"id": "ciclo", "grupo": "processos", "rotulo": {"pt": "Ciclo celular", "en": "Cell cycle", "es": "Ciclo celular"},
+     "pt": {"titulo": "Controle do ciclo celular", "texto": "Regras que decidem quando a célula cresce e se divide. No Metascape, os genes analisados apareceram ligados a este processo.", "fonte": "Metascape, em Carvalho (2026)"},
+     "en": {"titulo": "Cell cycle control", "texto": "Rules that decide when the cell grows and divides. In Metascape, the genes analyzed were linked to this process.", "fonte": "Metascape, in Carvalho (2026)"},
+     "es": {"titulo": "Control del ciclo celular", "texto": "Reglas que deciden cuándo la célula crece y se divide. En Metascape, los genes analizados aparecieron ligados a este proceso.", "fonte": "Metascape, en Carvalho (2026)"}},
+    {"id": "checkpoints", "grupo": "processos", "rotulo": {"pt": "Checkpoints", "en": "Checkpoints", "es": "Puntos de control"},
+     "pt": {"titulo": "Checkpoints do ciclo celular", "texto": "Pontos em que a célula confere se pode seguir para a próxima fase. O Metascape destacou a passagem de G1 para S e o checkpoint G2/M.", "fonte": "Metascape, em Carvalho (2026)"},
+     "en": {"titulo": "Cell cycle checkpoints", "texto": "Points where the cell checks whether it can move on to the next phase. Metascape highlighted the G1 to S transition and the G2/M checkpoint.", "fonte": "Metascape, in Carvalho (2026)"},
+     "es": {"titulo": "Puntos de control del ciclo celular", "texto": "Puntos en los que la célula verifica si puede pasar a la siguiente fase. Metascape destacó el paso de G1 a S y el punto de control G2/M.", "fonte": "Metascape, en Carvalho (2026)"}},
+    {"id": "estimulos", "grupo": "processos", "rotulo": {"pt": "Estímulos", "en": "Stimuli", "es": "Estímulos"},
+     "pt": {"titulo": "Resposta a estímulos", "texto": "Como a célula reage a sinais e agressões vindos de dentro ou de fora dela. No Metascape, os genes analisados apareceram ligados a este processo.", "fonte": "Metascape, em Carvalho (2026)"},
+     "en": {"titulo": "Response to stimuli", "texto": "How the cell reacts to signals and stresses from inside or outside it. In Metascape, the genes analyzed were linked to this process.", "fonte": "Metascape, in Carvalho (2026)"},
+     "es": {"titulo": "Respuesta a estímulos", "texto": "Cómo la célula reacciona a señales y agresiones que vienen de dentro o de fuera de ella. En Metascape, los genes analizados aparecieron ligados a este proceso.", "fonte": "Metascape, en Carvalho (2026)"}},
+
+    {"id": "pulmao", "grupo": "dados", "rotulo": {"pt": "Câncer de pulmão", "en": "Lung cancer", "es": "Cáncer de pulmón"},
+     "pt": {"titulo": "Câncer de pulmão", "texto": "A Iniciação Científica investigou o TP53 no câncer de pulmão, com dados públicos de pacientes.", "fonte": "Carvalho (2026)"},
+     "en": {"titulo": "Lung cancer", "texto": "The undergraduate research project investigated TP53 in lung cancer, using public patient data.", "fonte": "Carvalho (2026)"},
+     "es": {"titulo": "Cáncer de pulmón", "texto": "La Iniciación Científica investigó el TP53 en el cáncer de pulmón, con datos públicos de pacientes.", "fonte": "Carvalho (2026)"}},
+    {"id": "atividade", "grupo": "dados", "rotulo": {"pt": "Mais ativo no tumor", "en": "More active in tumor", "es": "Más activo en el tumor"},
+     "pt": {"titulo": "Mais ativo no tumor", "texto": "Atividade mediana do TP53: 52,2 TPM no tumor e 34,2 TPM no pulmão normal. TPM mede o quanto o gene está sendo usado pela célula.", "fonte": "UALCAN, em Carvalho (2026)"},
+     "en": {"titulo": "More active in the tumor", "texto": "Median TP53 activity: 52.2 TPM in the tumor and 34.2 TPM in normal lung. TPM measures how much the gene is being used by the cell.", "fonte": "UALCAN, in Carvalho (2026)"},
+     "es": {"titulo": "Más activo en el tumor", "texto": "Actividad mediana del TP53: 52,2 TPM en el tumor y 34,2 TPM en el pulmón normal. TPM mide cuánto está usando la célula el gen.", "fonte": "UALCAN, en Carvalho (2026)"}},
+    {"id": "sobrevida", "grupo": "dados", "rotulo": {"pt": "Sobrevida", "en": "Survival", "es": "Supervivencia"},
+     "pt": {"titulo": "Sobrevida", "texto": "Em uma das análises (KM Plotter), quem tinha mais TP53 ativo viveu menos; em outra (UCSC Xena), não houve diferença.", "fonte": "KM Plotter e UCSC Xena, em Carvalho (2026)"},
+     "en": {"titulo": "Survival", "texto": "In one analysis (KM Plotter), people with more active TP53 lived shorter; in another (UCSC Xena), there was no difference.", "fonte": "KM Plotter and UCSC Xena, in Carvalho (2026)"},
+     "es": {"titulo": "Supervivencia", "texto": "En uno de los análisis (KM Plotter), quienes tenían más TP53 activo vivieron menos; en otro (UCSC Xena), no hubo diferencia.", "fonte": "KM Plotter y UCSC Xena, en Carvalho (2026)"}},
+
+    {"id": "farmacos", "grupo": "farmacos", "rotulo": {"pt": "452 interações", "en": "452 interactions", "es": "452 interacciones"},
+     "pt": {"titulo": "452 interações com fármacos", "texto": "O DGIdb listou 452 interações entre o TP53 e fármacos ou compostos, mas a maioria ainda não tem mecanismo definido (se ativa ou se inibe).", "fonte": "DGIdb, em Carvalho (2026)"},
+     "en": {"titulo": "452 drug interactions", "texto": "DGIdb listed 452 interactions between TP53 and drugs or compounds, but most still have no defined mechanism (whether they activate or inhibit).", "fonte": "DGIdb, in Carvalho (2026)"},
+     "es": {"titulo": "452 interacciones con fármacos", "texto": "DGIdb enumeró 452 interacciones entre el TP53 y fármacos o compuestos, pero la mayoría todavía no tiene un mecanismo definido (si activa o si inhibe).", "fonte": "DGIdb, en Carvalho (2026)"}}
+  ]
+}

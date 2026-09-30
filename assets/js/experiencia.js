@@ -11,7 +11,7 @@
   const T = s => I.t(s);
   const $ = (s, r) => (r || document).querySelector(s);
   const $$ = (s, r) => [...(r || document).querySelectorAll(s)];
-  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("ge-sem-animacao");
   const NS = "http://www.w3.org/2000/svg";
   const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const num = (v, d) => Number(v).toLocaleString(I.locale, { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 });

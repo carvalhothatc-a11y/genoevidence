@@ -6,6 +6,7 @@
 <meta name="theme-color" content="#FFFFFF">
 <meta name="ge-root" content="./">
 <script src="./assets/js/i18n.js"></script>
+<script src="./assets/js/acessibilidade.js"></script>
 <script>
   /* troca de aba com efeito de página virando: indo para a direita (Início → Notícias → Temas → Revistas)
      a folha vira para a esquerda; voltando, a folha anterior volta por cima (navegadores com View Transitions) */
@@ -39,104 +40,136 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="./assets/css/shell.css">
+<link rel="stylesheet" href="./assets/css/inicio.css">
 </head>
 <body data-pagina="inicio">
-<!-- tela de abertura: o DNA do Início girando por 2 segundos, só na primeira entrada (assets/js/hero3d.js) -->
-<div class="splash" id="splash" aria-hidden="true">
-  <canvas id="dnaSplash"></canvas>
-  <p class="logo splash-marca"><i></i><b>GenoEvidence</b></p>
-</div>
-<script>
-  // mostra a abertura uma vez por visita; nas voltas ao Início ela não aparece de novo
-  try { if (sessionStorage.getItem("ge-abertura")) document.getElementById("splash").remove(); else sessionStorage.setItem("ge-abertura", "1"); } catch (e) {}
-  // segurança: se algo não carregar, a abertura some sozinha
-  setTimeout(function () { var s = document.getElementById("splash"); if (s) s.remove(); }, 5000);
-</script>
 <!-- barra do topo e barra de abas: montadas pelo assets/js/shell.js -->
 <header id="appbar"></header>
 
-<main class="wrap home">
-  <!-- abertura: pouco texto, DNA em 3D (assets/js/hero3d.js) -->
-  <section class="hero-home">
-    <div class="hero-txt">
+<!-- Início: uma jornada "do conhecimento científico até a descoberta" (animações em assets/js/inicio.js) -->
+<main class="home" id="conteudo">
+  <!-- abertura: rede de conhecimento em camadas e partículas que formam um DNA (desenho conceitual) -->
+  <section class="hero-cine" aria-labelledby="heroTitulo">
+    <canvas class="hero-cena" id="heroCena" aria-hidden="true"></canvas>
+    <div class="wrap hero-cine-in">
       <!-- frase do dia: muda sozinha a cada dia (data/frases.json) -->
       <figure class="frase-dia" id="fraseDia" hidden><blockquote id="fraseTexto"></blockquote><figcaption id="fraseAutor"></figcaption></figure>
       <p class="kicker" id="saudacao">&nbsp;</p>
-      <h1>A ciência de hoje, <em>explicada</em>.</h1>
+      <p class="hero-frases" id="heroFrases">
+        <span class="hf">Transformando pesquisas científicas em conhecimento acessível.</span>
+        <span class="hf">Conectando genes, dados e descobertas.</span>
+      </p>
+      <h1 id="heroTitulo" class="hero-titulo">A ciência de hoje, <em>explicada</em>.</h1>
       <p class="sub">Estudos completos, temas e notícias da ciência em linguagem simples, com o link direto para a fonte.</p>
       <div class="busca-home" role="search">
         <input class="search" id="buscaHome" type="search" placeholder="Pesquisar estudos, temas, pesquisadoras, notícias…" aria-label="Pesquisar no GenoEvidence" aria-controls="buscaRes" autocomplete="off">
         <div class="busca-res" id="buscaRes" role="listbox" aria-label="Resultados da pesquisa" hidden></div>
       </div>
       <div class="hero-cta">
-        <a class="btn" href="#destaques">Ver os destaques</a>
-        <a class="btn ghost" href="artigos/">Explorar por tema</a>
+        <a class="btn" href="#descobertas">Ver os destaques</a>
+        <a class="btn ghost" href="#ciencia">Explorar por tema</a>
       </div>
-      <!-- números do app (contados de data/artigos.json), sobem quando aparecem -->
-      <div class="numeros-home" id="numerosHome"></div>
-    </div>
-    <div class="hero-3d" aria-hidden="true">
-      <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-      <canvas id="dna3d"></canvas>
     </div>
   </section>
 
-  <!-- experiências interativas: estudos com "experiencia" em data/artigos.json -->
-  <section class="sec" id="experiencias" style="--c:var(--violet)" hidden>
-    <div class="sec-head"><h2>Experiências interativas</h2></div>
-    <div id="experienciasInicio"></div>
-  </section>
+  <div class="wrap">
+    <!-- notícias do dia: logo depois da abertura -->
+    <section class="sec" id="noticias-hoje" aria-labelledby="notTitulo" style="--c:var(--ok)">
+      <div class="sec-head"><h2 id="notTitulo">Notícias da ciência</h2><a class="link-more" href="noticias/">Ver todas →</a></div>
+      <!-- carrossel: passe o dedo (ou use as setas) para ver as notícias com imagem -->
+      <div class="carrossel" aria-roledescription="carrossel" aria-label="Notícias da ciência">
+        <div class="car-trilho" id="hojeNoticias" tabindex="0"></div>
+        <button class="car-seta ant" type="button" aria-label="Notícia anterior" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="car-seta prox" type="button" aria-label="Próxima notícia" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+      <div class="car-pontos" id="carPontos"></div>
+      <p class="note" id="atualizado"></p>
+    </section>
 
-  <section class="sec" style="--c:var(--ok)">
-    <div class="sec-head"><h2>Notícias da ciência</h2><a class="link-more" href="noticias/">Ver todas →</a></div>
-    <!-- carrossel: passe o dedo (ou use as setas) para ver as notícias com imagem -->
-    <div class="carrossel" aria-roledescription="carrossel" aria-label="Notícias da ciência">
-      <div class="car-trilho" id="hojeNoticias" tabindex="0"></div>
-      <button class="car-seta ant" type="button" aria-label="Notícia anterior" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
-      <button class="car-seta prox" type="button" aria-label="Próxima notícia" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+    <!-- como funciona: o caminho de cada conteúdo, com uma animação por etapa -->
+    <section class="sec sec-como" id="como" aria-labelledby="comoTitulo" style="--c:var(--blue)">
+      <div class="sec-head"><h2 id="comoTitulo">Como funciona</h2></div>
+      <p class="sec-lede">Do estudo publicado à explicação simples: o caminho de cada conteúdo do GenoEvidence.</p>
+      <div class="como">
+        <div class="como-palco" id="comoPalco" aria-hidden="true"></div>
+        <ol class="como-passos" id="comoPassos">
+          <li><button type="button" data-passo="0" aria-current="step"><span class="n">1</span><span class="tx"><b>Pesquisa científica</b><span>Partimos de estudos publicados em revistas científicas e de pesquisas ainda em andamento.</span></span></button></li>
+          <li><button type="button" data-passo="1"><span class="n">2</span><span class="tx"><b>Análise de dados</b><span>Lemos o método, as tabelas e os gráficos para entender o que foi medido, em quem e como.</span></span></button></li>
+          <li><button type="button" data-passo="2"><span class="n">3</span><span class="tx"><b>Descoberta</b><span>Destacamos o resultado principal e também o que o estudo ainda não consegue responder.</span></span></button></li>
+          <li><button type="button" data-passo="3"><span class="n">4</span><span class="tx"><b>Comunicação científica</b><span>Explicamos em linguagem simples, em português, inglês e espanhol, sempre com o link para a fonte.</span></span></button></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- mapa do conhecimento: estudos ligados por temas, assuntos e pesquisadoras (data/artigos.json) -->
+    <section class="sec sec-mapa" id="mapa" aria-labelledby="mapaTitulo" style="--c:var(--violet)">
+      <div class="sec-head"><h2 id="mapaTitulo">Mapa do conhecimento</h2></div>
+      <p class="sec-lede">Os estudos do GenoEvidence ligados pelos temas, assuntos e pesquisadoras que têm em comum. Toque em um ponto para ver do que se trata.</p>
+      <div class="mapa" id="mapaBox">
+        <canvas id="mapaCanvas" role="img" aria-label="Mapa em rede dos estudos, temas, assuntos e pesquisadoras do GenoEvidence. A mesma informação está na lista abaixo do mapa."></canvas>
+        <div class="mapa-legenda" id="mapaLegenda"></div>
+        <div class="mapa-ctrl">
+          <button type="button" id="mapaMais" aria-label="Aproximar o mapa">+</button>
+          <button type="button" id="mapaMenos" aria-label="Afastar o mapa">−</button>
+          <button type="button" id="mapaCentro" aria-label="Centralizar o mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></button>
+        </div>
+        <div class="mapa-info" id="mapaInfo" hidden></div>
+      </div>
+      <details class="mapa-lista"><summary>Ver o mapa em lista</summary><div id="mapaLista"></div></details>
+    </section>
+
+    <!-- descobertas recentes: a principal descoberta de cada estudo, tirada da própria página do estudo -->
+    <section class="sec" id="descobertas" aria-labelledby="descTitulo" style="--c:var(--accent)">
+      <div class="sec-head"><h2 id="descTitulo">Descobertas recentes</h2><a class="link-more" href="artigos/">Todos os estudos →</a></div>
+      <div class="descobertas" id="descobertasLista"><p class="loading">Carregando…</p></div>
+    </section>
+
+
+    <!-- explore a ciência: cada tema com um símbolo animado; tocar abre os estudos dele aqui mesmo -->
+    <section class="sec" id="ciencia" aria-labelledby="cienciaTitulo" style="--c:var(--teal)">
+      <div class="sec-head"><h2 id="cienciaTitulo">Explore a ciência</h2><a class="link-more" href="artigos/">Ver todos →</a></div>
+      <div class="tema-grid" id="temasInicio"></div>
+      <div class="tema-painel" id="temaPainel" hidden></div>
+    </section>
+
+    <!-- rede da p53: dados da Iniciação Científica de Thaisa Carvalho (data/rede-p53.json) -->
+    <section class="sec" id="conecta" aria-labelledby="conectaTitulo" style="--c:var(--blue)">
+      <div class="sec-head"><h2 id="conectaTitulo">Explore como a ciência conecta informações</h2></div>
+      <p class="sec-lede" id="conectaLede"></p>
+      <div class="rede" id="redeP53"></div>
+    </section>
+
+    <!-- em destaque: o artigo mais recente de cada pesquisadora (data/artigos.json) -->
+    <section class="sec" id="destaques" aria-labelledby="destTitulo" style="--c:var(--accent)">
+      <div class="sec-head"><h2 id="destTitulo">Em destaque</h2><a class="link-more" href="artigos/">Todos os estudos →</a></div>
+      <div class="destaques" id="destaquesPesq"><p class="loading">Carregando…</p></div>
+    </section>
+
+    <section class="sec" id="andamento" aria-labelledby="andTitulo" style="--c:var(--amber)">
+      <div class="sec-head"><h2 id="andTitulo">Estudos em andamento</h2></div>
+      <a class="study-banner" href="r337h/">
+        <span class="big" aria-hidden="true"><span class="r">R</span>337<span class="h">H</span></span>
+        <div><span class="andamento">Ainda não publicado</span><b>A variante R337H no gene TP53 e a Síndrome de Li-Fraumeni</b><p>Com modelo 3D, gráficos, mapa e todas as evidências reunidas até agora.</p></div>
+        <span class="go">Abrir estudo →</span>
+      </a>
+      <a class="study-banner" href="artigos/tp53-pulmao-in-silico/">
+        <span class="big" aria-hidden="true"><span class="r">TP</span><span class="h">53</span></span>
+        <div><span class="andamento">Ainda não publicado</span><b>O gene TP53 no câncer de pulmão, investigado em bancos de dados públicos</b><p>Iniciação Científica: atividade do gene, sobrevida, rede de proteínas e fármacos, em seis ferramentas de bioinformática.</p></div>
+        <span class="go">Abrir estudo →</span>
+      </a>
+    </section>
+
+    <div class="card install-card">
+      <div><b>Leve o GenoEvidence no celular</b><p>Instale como aplicativo e leia mesmo sem internet.</p></div>
+      <div data-instalar></div>
     </div>
-    <div class="car-pontos" id="carPontos"></div>
-    <p class="note" id="atualizado"></p>
-  </section>
-
-  <!-- em destaque: o artigo mais recente de cada pesquisadora (data/artigos.json) -->
-  <section class="sec" id="destaques" style="--c:var(--accent)">
-    <div class="sec-head"><h2>Em destaque</h2><a class="link-more" href="artigos/">Todos os estudos →</a></div>
-    <div class="destaques" id="destaquesPesq"><p class="loading">Carregando…</p></div>
-  </section>
-
-  <section class="sec" id="andamento" style="--c:var(--amber)">
-    <div class="sec-head"><h2>Estudos em andamento</h2></div>
-    <a class="study-banner" href="r337h/">
-      <span class="big"><span class="r">R</span>337<span class="h">H</span></span>
-      <div><span class="andamento">Ainda não publicado</span><b>A variante R337H no gene TP53 e a Síndrome de Li-Fraumeni</b><p>Com modelo 3D, gráficos, mapa e todas as evidências reunidas até agora.</p></div>
-      <span class="go">Abrir estudo →</span>
-    </a>
-    <a class="study-banner" href="artigos/tp53-pulmao-in-silico/">
-      <span class="big"><span class="r">TP</span><span class="h">53</span></span>
-      <div><span class="andamento">Ainda não publicado</span><b>O gene TP53 no câncer de pulmão, investigado em bancos de dados públicos</b><p>Iniciação Científica: atividade do gene, sobrevida, rede de proteínas e fármacos, em seis ferramentas de bioinformática.</p></div>
-      <span class="go">Abrir estudo →</span>
-    </a>
-  </section>
-
-  <section class="sec" style="--c:var(--teal)">
-    <div class="sec-head"><h2>Explore por tema</h2><a class="link-more" href="artigos/">Ver todos →</a></div>
-    <!-- toque em um tema para ver os estudos dele aqui mesmo -->
-    <div class="tema-grid" id="temasInicio"></div>
-    <div class="tema-painel" id="temaPainel" hidden></div>
-  </section>
-
-  <div class="card install-card">
-    <div><b>Leve o GenoEvidence no celular</b><p>Instale como aplicativo e leia mesmo sem internet.</p></div>
-    <div data-instalar></div>
   </div>
 </main>
 
 <footer class="foot"><div class="wrap"><p>GenoEvidence · a ciência por trás das evidências · <a href="./sobre/">Sobre o app</a></p><p class="credito">Desenvolvido por <strong>Thaisa Carvalho</strong></p></div></footer>
 <nav id="tabbar"></nav>
 <script src="./assets/js/shell.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
-<script src="./assets/js/hero3d.js" defer></script>
+<script src="./assets/js/inicio.js"></script>
 <script src="./assets/js/pwa.js"></script>
 </body>
 </html>

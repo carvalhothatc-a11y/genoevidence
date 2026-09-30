@@ -288,34 +288,13 @@ footer.foot .credito strong{color:var(--ink2);font-weight:600}
 .gaveta-vazio{color:var(--muted);font-size:14px;padding:6px}
 html.sem-rolagem{overflow:hidden}
 
-/* ---------- tela de abertura (Início) ---------- */
-.splash{position:fixed;inset:0;z-index:200;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;transition:opacity .35s ease,transform .35s ease}
-.splash::before{content:"";position:absolute;width:min(80vw,420px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#E6ECFF 0%,#F6E9FF 45%,rgba(255,255,255,0) 70%);z-index:-1}
-.splash canvas{width:min(64vw,300px);height:min(52vh,330px)}
-.splash-marca{animation:surge .5s ease both}
-.splash-marca b{font-size:18px}
-.splash.saindo{opacity:0;transform:scale(1.04);pointer-events:none}
-html:has(.splash:not(.saindo)){overflow:hidden}
 @keyframes surge{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 
-/* ---------- Início: abertura com DNA 3D ---------- */
-.hero-home{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:center;gap:12px;min-height:min(62vh,520px);padding-top:12px}
-.hero-txt h1{font:700 clamp(34px,5.6vw,58px)/1.04 var(--display);letter-spacing:-.03em;margin-top:10px}
-.hero-txt h1 em{font-style:normal;background:linear-gradient(90deg,#2F5BEA,#7B4DE0 55%,#E0385A);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-txt .sub{margin-top:14px;color:var(--ink2);font-size:17.5px;line-height:1.55;max-width:44ch}
 .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.hero-3d{position:relative;height:clamp(300px,52vh,460px)}
-.hero-3d canvas{position:absolute;inset:0;width:100%;height:100%}
-.blob{position:absolute;border-radius:50%;filter:blur(38px);opacity:.55;animation:flutua 14s ease-in-out infinite}
-.blob.b1{width:58%;height:58%;left:18%;top:10%;background:#C9D6FF}
-.blob.b2{width:40%;height:40%;left:48%;top:46%;background:#F7C8D4;animation-delay:-5s}
-.blob.b3{width:36%;height:36%;left:6%;top:52%;background:#CFEFF1;animation-delay:-9s}
-@keyframes flutua{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(4%,-5%) scale(1.06)}66%{transform:translate(-5%,4%) scale(.96)}}
 .btn.ghost{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
 .btn.ghost:hover{border-color:var(--muted)}
 
 /* ---------- frase do dia e pesquisa do Início ---------- */
-.hero-txt{position:relative;z-index:2}
 .frase-dia{margin:0 0 10px;padding-left:10px;border-left:2px solid var(--line);max-width:52ch;opacity:.85}
 .frase-dia blockquote{margin:0;font:italic 400 13px/1.45 var(--sans);color:var(--muted)}
 .frase-dia figcaption{margin-top:3px;font:400 10.5px/1.3 var(--mono);color:#98A0B3}
@@ -396,22 +375,13 @@ html:has(.splash:not(.saindo)){overflow:hidden}
 #mais[hidden]{display:none}
 
 @media (max-width:860px){
-  .hero-home{grid-template-columns:minmax(0,1fr) minmax(0,.72fr);min-height:0}
-  .hero-3d{height:340px}
   .destaques{grid-template-columns:1fr}
 }
 @media (max-width:600px){
-  /* no celular, o DNA fica à direita da frase, no espaço em branco */
-  .hero-home{display:block;position:relative;padding-top:4px}
-  .hero-3d{position:absolute;top:var(--dna-top,0px);right:calc(var(--gutter) * -1);width:42%;height:150px}
-  .hero-txt .kicker,.hero-txt h1{max-width:60%;position:relative}
   .frase-dia blockquote{font-size:12px}
   .frase-dia .fonte{display:none}
   .busca-home{max-width:none}
-  .hero-txt h1{font-size:clamp(28px,8.4vw,36px)}
-  .hero-txt .sub{margin-top:24px;font-size:16px;position:relative}
 }
-@media (prefers-reduced-motion:reduce){.blob{animation:none}}
 @media (prefers-reduced-motion:reduce){main{animation:none}@view-transition{navigation:none}}
 
 /* ---------- cores por tema das notícias ---------- */
@@ -452,36 +422,10 @@ html:has(.splash:not(.saindo)){overflow:hidden}
 .dc-body .autora{align-self:flex-start;font:600 11.5px/1 var(--mono);color:var(--c);background:color-mix(in srgb,var(--c) 10%,var(--surface));border:1px solid color-mix(in srgb,var(--c) 35%,var(--line));border-radius:999px;padding:5px 9px}
 
 /* ---------- Início interativo ---------- */
-/* números do app */
-.numeros-home{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;position:relative}
-.numeros-home .num{display:flex;align-items:baseline;gap:6px;padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:transform .15s,box-shadow .2s}
-.numeros-home .num b{font:700 18px/1 var(--display);letter-spacing:-.02em;min-width:1ch;font-variant-numeric:tabular-nums;color:var(--accent)}
-.numeros-home .num:nth-child(2) b{color:var(--blue)}
-.numeros-home .num:nth-child(3) b{color:var(--violet)}
-.numeros-home .num:nth-child(4) b{color:var(--teal)}
-.numeros-home .num span{font:500 12.5px/1.2 var(--sans);color:var(--ink2)}
-.numeros-home .num:hover{box-shadow:var(--shadow)}
-.numeros-home .num:active{transform:scale(.96)}
-
-/* DNA: dá para girar com o dedo */
-.hero-3d canvas{touch-action:pan-y;cursor:grab}
-.hero-3d canvas:active{cursor:grabbing}
-
-/* chamada da experiência interativa */
-.xp-chamada{position:relative;display:block;min-height:300px;border-radius:22px;overflow:hidden;text-decoration:none;color:#EEF2FF;background:radial-gradient(120% 90% at 80% 10%,#1B2A55 0%,#0B1022 55%,#05080F 100%);box-shadow:0 18px 40px rgba(15,23,48,.18);isolation:isolate}
-.xp-chamada canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
-.xp-chamada .xpc-txt{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:26px 24px;max-width:560px;background:linear-gradient(90deg,rgba(5,8,15,.75),rgba(5,8,15,.2) 85%,transparent)}
-.xpc-ey{font:600 11.5px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#F2B8A2}
-.xp-chamada b{font:800 clamp(26px,6vw,40px)/1.05 var(--display);letter-spacing:-.03em;color:#fff}
-.xp-chamada p{font:400 15.5px/1.5 var(--sans);color:#C9D2E6;max-width:44ch}
-.xp-chamada small{font:500 12px/1.4 var(--mono);color:#8D9AB5}
-.xp-chamada .btn{margin-top:6px;background:#F2B8A2;color:#05080F}
-.xp-chamada:active{transform:scale(.99)}
-.xp-chamada+.xp-chamada{margin-top:14px}
 
 /* temas: o tema tocado abre os estudos logo abaixo */
 .tema-tile[aria-expanded="true"]{box-shadow:inset 0 0 0 2px var(--c);transform:none}
-.tema-tile[aria-expanded="true"] span::after{content:" ▾"}
+.tema-tile[aria-expanded="true"] > span:last-child::after{content:" ▾"}
 .tema-painel{margin-top:12px;border-radius:18px;border:1px solid color-mix(in srgb,var(--c) 35%,var(--line));background:linear-gradient(135deg,color-mix(in srgb,var(--c) 7%,var(--surface)),var(--surface));padding:16px 0 14px;animation:painelAbre .35s cubic-bezier(.2,.8,.2,1)}
 @keyframes painelAbre{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 .tp-topo{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:0 16px 12px}
@@ -500,7 +444,4 @@ html:has(.splash:not(.saindo)){overflow:hidden}
 .tp-card small{font:400 12px/1.35 var(--mono);color:var(--muted)}
 @media (max-width:760px){.tp-topo{flex-direction:column;gap:8px}}
 
-/* seções entram de leve ao rolar */
-.revelar{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
-.revelar.visto{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.revelar{opacity:1;transform:none;transition:none}.tema-painel{animation:none}}
+@media (prefers-reduced-motion:reduce){.tema-painel{animation:none}}

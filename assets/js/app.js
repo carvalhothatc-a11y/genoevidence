@@ -6,7 +6,7 @@
    - efeito de toque nos botões e animação de abertura */
 (function () {
   "use strict";
-  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("ge-sem-animacao");
   const $ = (s, r) => (r || document).querySelector(s);
   const $$ = (s, r) => [...(r || document).querySelectorAll(s)];
   const norm = t => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();

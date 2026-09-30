@@ -3,7 +3,7 @@
    Para criar um artigo novo, veja docs/COMO-ADICIONAR-ARTIGO.md. */
 (function () {
   "use strict";
-  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("ge-sem-animacao");
   const $ = (s, r) => (r || document).querySelector(s);
   const $$ = (s, r) => [...(r || document).querySelectorAll(s)];
   const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));

@@ -256,7 +256,15 @@
             "Bioinformatics",
             "Lung cancer"
           ],
-          "capa_alt": "Network of proteins linked to p53"
+          "capa_alt": "Network of proteins linked to p53",
+          "descoberta": {
+            "titulo": "More TP53 in the tumor",
+            "texto": "The tumor had more active TP53 than normal lung. In one analysis, people with more TP53 lived shorter; in another, there was no difference."
+          },
+          "numero": {
+            "valor": "52.2 × 34.2",
+            "texto": "TPM: median TP53 activity in the tumor × in normal lung"
+          }
         },
         "es": {
           "titulo_curto": "El gen TP53 en el cáncer de pulmón, investigado en bases de datos públicas",
@@ -267,8 +275,24 @@
             "Bioinformática",
             "Cáncer de pulmón"
           ],
-          "capa_alt": "Red de proteínas ligadas a la p53"
+          "capa_alt": "Red de proteínas ligadas a la p53",
+          "descoberta": {
+            "titulo": "Más TP53 en el tumor",
+            "texto": "El tumor tenía más TP53 activo que el pulmón normal. En uno de los análisis, quienes tenían más TP53 vivieron menos; en otro, no hubo diferencia."
+          },
+          "numero": {
+            "valor": "52,2 × 34,2",
+            "texto": "TPM: actividad mediana del TP53 en el tumor × en el pulmón normal"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "Mais TP53 no tumor",
+        "texto": "O tumor tinha mais TP53 ativo que o pulmão normal. Em uma das análises, quem tinha mais TP53 viveu menos; em outra, não houve diferença."
+      },
+      "numero": {
+        "valor": "52,2 × 34,2",
+        "texto": "TPM: atividade mediana do TP53 no tumor × no pulmão normal"
       }
     },
     {
@@ -314,7 +338,15 @@
             "Histology",
             "Antivenom"
           ],
-          "capa_alt": "Pink-stained muscle section seen under the microscope"
+          "capa_alt": "Pink-stained muscle section seen under the microscope",
+          "descoberta": {
+            "titulo": "Almost no healthy cells",
+            "texto": "With the venom, healthy cells dropped from 66% to less than 1%. With the antivenom, they rose to about 5%."
+          },
+          "numero": {
+            "valor": "66.1% → 0.92%",
+            "texto": "healthy cells in the control × with the venom"
+          }
         },
         "es": {
           "titulo_curto": "El veneno de la serpiente coral amazónica en el músculo, y cuánto protege el suero",
@@ -325,8 +357,24 @@
             "Histología",
             "Suero antiofídico"
           ],
-          "capa_alt": "Corte de músculo teñido de rosa visto al microscopio"
+          "capa_alt": "Corte de músculo teñido de rosa visto al microscopio",
+          "descoberta": {
+            "titulo": "Casi ninguna célula sana",
+            "texto": "Con el veneno, las células sanas cayeron del 66% a menos del 1%. Con el suero, subieron a cerca del 5%."
+          },
+          "numero": {
+            "valor": "66,1% → 0,92%",
+            "texto": "células sanas en el control × con el veneno"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "Quase nenhuma célula saudável",
+        "texto": "Com o veneno, as células saudáveis caíram de 66% para menos de 1%. Com o soro, subiram para cerca de 5%."
+      },
+      "numero": {
+        "valor": "66,1% → 0,92%",
+        "texto": "células saudáveis no controle × com o veneno"
       }
     },
     {
@@ -371,7 +419,15 @@
             "Meta-analysis"
           ],
           "capa_alt": "Illustration of blood cells",
-          "titulo_pt": "Efficacy and safety analysis of the use of ibrutinib associated with rituximab for the first-line treatment of patients with chronic lymphocytic leukaemia"
+          "titulo_pt": "Efficacy and safety analysis of the use of ibrutinib associated with rituximab for the first-line treatment of patients with chronic lymphocytic leukaemia",
+          "descoberta": {
+            "titulo": "59% lower risk of the disease progressing",
+            "texto": "With IR, the risk of the disease progressing again fell by 59%. There was no clear difference in overall survival, and safety was similar to FCR."
+          },
+          "numero": {
+            "valor": "59%",
+            "texto": "lower risk of disease progression or death with IR (HR 0.41)"
+          }
         },
         "es": {
           "titulo_curto": "Ibrutinib con rituximab contra la leucemia linfocítica crónica: más tiempo sin que la enfermedad avance",
@@ -381,8 +437,24 @@
             "Leucemia",
             "Metaanálisis"
           ],
-          "capa_alt": "Ilustración de células de la sangre"
+          "capa_alt": "Ilustración de células de la sangre",
+          "descoberta": {
+            "titulo": "59% menos riesgo de que la enfermedad avance",
+            "texto": "Con IR, el riesgo de que la enfermedad volviera a avanzar cayó un 59%. En la supervivencia total no hubo una diferencia clara, y la seguridad fue parecida a la del FCR."
+          },
+          "numero": {
+            "valor": "59%",
+            "texto": "menos riesgo de que la enfermedad avance o de muerte con IR (HR 0,41)"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "59% menos risco de a doença avançar",
+        "texto": "Com IR, o risco de a doença voltar a avançar caiu 59%. Na sobrevida total não houve diferença clara, e a segurança foi parecida com a do FCR."
+      },
+      "numero": {
+        "valor": "59%",
+        "texto": "menos risco de a doença avançar ou de morte com IR (HR 0,41)"
       }
     },
     {
@@ -427,7 +499,15 @@
             "Bacterial resistance"
           ],
           "capa_alt": "Illustration of cellulose fibers",
-          "titulo_pt": "Development of a Drug Delivery System with Bacterial Cellulose and Gelatin: Physicochemical and Microbiological Evaluation"
+          "titulo_pt": "Development of a Drug Delivery System with Bacterial Cellulose and Gelatin: Physicochemical and Microbiological Evaluation",
+          "descoberta": {
+            "titulo": "It worked even against hospital bacteria",
+            "texto": "The film stopped the growth of all 7 bacteria tested, including 4 resistant ones from hospitals, and also showed antioxidant action."
+          },
+          "numero": {
+            "valor": "21.7 mm",
+            "texto": "largest bacteria-free zone around the film (against E. coli)"
+          }
         },
         "es": {
           "titulo_curto": "Un apósito de celulosa que combate bacterias resistentes",
@@ -437,8 +517,24 @@
             "Apósitos",
             "Resistencia bacteriana"
           ],
-          "capa_alt": "Ilustración de fibras de celulosa"
+          "capa_alt": "Ilustración de fibras de celulosa",
+          "descoberta": {
+            "titulo": "Funcionó incluso contra bacterias de hospital",
+            "texto": "La película impidió el crecimiento de las 7 bacterias probadas, incluidas 4 resistentes de hospital, y además tuvo acción antioxidante."
+          },
+          "numero": {
+            "valor": "21,7 mm",
+            "texto": "mayor área sin bacterias alrededor de la película (contra E. coli)"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "Funcionou até contra bactérias de hospital",
+        "texto": "O filme impediu o crescimento das 7 bactérias testadas, inclusive 4 resistentes vindas de hospital, e ainda teve ação antioxidante."
+      },
+      "numero": {
+        "valor": "21,7 mm",
+        "texto": "maior área sem bactérias em volta do filme (contra E. coli)"
       }
     },
     {
@@ -483,7 +579,15 @@
             "Qualitative research"
           ],
           "capa_alt": "Illustration of a network with speech bubbles",
-          "titulo_pt": "Mapping frameworks for synthesizing qualitative evidence in health technology assessment"
+          "titulo_pt": "Mapping frameworks for synthesizing qualitative evidence in health technology assessment",
+          "descoberta": {
+            "titulo": "31 documents, almost all European",
+            "texto": "Of 2,054 records, 31 documents were included. Most came from Europe, and almost half were guides. Few explain the whole process, from start to finish."
+          },
+          "numero": {
+            "valor": "2,054 → 31",
+            "texto": "records found × documents included"
+          }
         },
         "es": {
           "titulo_curto": "Escuchar a los pacientes en las decisiones de salud: cómo reunir la investigación cualitativa",
@@ -493,8 +597,24 @@
             "Evaluación de tecnologías",
             "Investigación cualitativa"
           ],
-          "capa_alt": "Ilustración de una red con globos de diálogo"
+          "capa_alt": "Ilustración de una red con globos de diálogo",
+          "descoberta": {
+            "titulo": "31 documentos, casi todos europeos",
+            "texto": "De 2.054 registros, entraron 31 documentos. La mayoría vino de Europa, y casi la mitad eran guías. Pocos explican el proceso completo, de principio a fin."
+          },
+          "numero": {
+            "valor": "2.054 → 31",
+            "texto": "registros encontrados × documentos incluidos"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "31 documentos, quase todos europeus",
+        "texto": "Dos 2.054 registros, 31 documentos entraram. A maioria veio da Europa, e quase metade eram guias. Poucos explicam o processo inteiro, do começo ao fim."
+      },
+      "numero": {
+        "valor": "2.054 → 31",
+        "texto": "registros encontrados × documentos incluídos"
       }
     },
     {
@@ -548,6 +668,14 @@
           "experiencia": {
             "titulo": "Too small to see",
             "chamada": "Scroll through and see what 38 studies show about nanotechnology in anti-aging cosmetics, and what they don't show yet."
+          },
+          "descoberta": {
+            "titulo": "Nanotechnology dominates",
+            "texto": "Most studies used nanoparticles, liposomes and niosomes. The most common effect was antioxidant, which protects the skin from free radicals."
+          },
+          "numero": {
+            "valor": "265 → 38",
+            "texto": "papers found × papers analyzed in the review"
           }
         },
         "es": {
@@ -562,8 +690,24 @@
           "experiencia": {
             "titulo": "Demasiado pequeño para ver",
             "chamada": "Desliza la pantalla y mira lo que muestran 38 estudios sobre nanotecnología en cosméticos antienvejecimiento, y lo que todavía no muestran."
+          },
+          "descoberta": {
+            "titulo": "La nanotecnología domina",
+            "texto": "La mayoría de los estudios usó nanopartículas, liposomas y niosomas. El efecto más común fue el antioxidante, que protege la piel de los radicales libres."
+          },
+          "numero": {
+            "valor": "265 → 38",
+            "texto": "artículos encontrados × artículos analizados en la revisión"
           }
         }
+      },
+      "descoberta": {
+        "titulo": "A nanotecnologia domina",
+        "texto": "A maioria dos estudos usou nanopartículas, lipossomas e niossomas. O efeito mais comum foi o antioxidante, que protege a pele dos radicais livres."
+      },
+      "numero": {
+        "valor": "265 → 38",
+        "texto": "artigos encontrados × artigos analisados na revisão"
       }
     },
     {
@@ -607,7 +751,15 @@
             "Lung cancer",
             "Real world"
           ],
-          "capa_alt": "Illustration of survival curves"
+          "capa_alt": "Illustration of survival curves",
+          "descoberta": {
+            "titulo": "More time without the disease progressing",
+            "texto": "The targeted drugs gave longer survival and more time without progression than chemotherapy, with few adverse effects and adherence above 85%."
+          },
+          "numero": {
+            "valor": "19.4 × 11.4",
+            "texto": "months of median survival with gefitinib × platinum chemotherapy (largest study)"
+          }
         },
         "es": {
           "titulo_curto": "¿Los fármacos dirigidos contra el cáncer de pulmón funcionan fuera de los ensayos? Lo que muestra el mundo real",
@@ -617,8 +769,24 @@
             "Cáncer de pulmón",
             "Mundo real"
           ],
-          "capa_alt": "Ilustración de curvas de supervivencia"
+          "capa_alt": "Ilustración de curvas de supervivencia",
+          "descoberta": {
+            "titulo": "Más tiempo sin que la enfermedad avance",
+            "texto": "Los fármacos dirigidos dieron más tiempo de vida y más tiempo sin progresión que la quimioterapia, con pocos efectos adversos y adherencia superior al 85%."
+          },
+          "numero": {
+            "valor": "19,4 × 11,4",
+            "texto": "meses de supervivencia mediana con gefitinib × quimioterapia con platino (estudio más grande)"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "Mais tempo sem a doença avançar",
+        "texto": "Os remédios-alvo deram mais tempo de vida e mais tempo sem progressão do que a quimioterapia, com poucos efeitos adversos e adesão acima de 85%."
+      },
+      "numero": {
+        "valor": "19,4 × 11,4",
+        "texto": "meses de sobrevida mediana com gefitinibe × quimioterapia com platina (maior estudo)"
       }
     },
     {
@@ -663,7 +831,15 @@
             "Heavy metals"
           ],
           "capa_alt": "Bacteria seen under the electron microscope",
-          "titulo_pt": "Bacillus subtilis as an effective tool for bioremediation of lead, copper and cadmium in water"
+          "titulo_pt": "Bacillus subtilis as an effective tool for bioremediation of lead, copper and cadmium in water",
+          "descoberta": {
+            "titulo": "Up to 100% of the lead removed",
+            "texto": "The bacterium removed all the lead, 92.3% of the cadmium and 89% of the copper from the water. With the three metals together, the copper was not removed."
+          },
+          "numero": {
+            "valor": "100%",
+            "texto": "of the lead removed from the water, in 96 hours"
+          }
         },
         "es": {
           "titulo_curto": "Una bacteria que limpia el agua contaminada con plomo, cobre y cadmio",
@@ -673,8 +849,24 @@
             "Biorremediación",
             "Metales pesados"
           ],
-          "capa_alt": "Bacterias vistas al microscopio electrónico"
+          "capa_alt": "Bacterias vistas al microscopio electrónico",
+          "descoberta": {
+            "titulo": "Hasta el 100% del plomo eliminado",
+            "texto": "La bacteria quitó del agua todo el plomo, el 92,3% del cadmio y el 89% del cobre. Con los tres metales juntos, el cobre no se eliminó."
+          },
+          "numero": {
+            "valor": "100%",
+            "texto": "del plomo eliminado del agua, en 96 horas"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "Até 100% do chumbo removido",
+        "texto": "A bactéria tirou da água todo o chumbo, 92,3% do cádmio e 89% do cobre. Com os três metais juntos, o cobre não foi removido."
+      },
+      "numero": {
+        "valor": "100%",
+        "texto": "do chumbo removido da água, em 96 horas"
       }
     },
     {
@@ -718,7 +910,15 @@
             "Bone"
           ],
           "capa_alt": "Illustration of scaffold layers",
-          "titulo_pt": "Enhanced bone matrix formation through a dense lamellar scaffold of chitosan, collagen type I, and hyaluronic acid"
+          "titulo_pt": "Enhanced bone matrix formation through a dense lamellar scaffold of chitosan, collagen type I, and hyaluronic acid",
+          "descoberta": {
+            "titulo": "More bone forming, and sooner",
+            "texto": "The cells thrived on the scaffold, deposited more mineral nodules in 14 days and switched on bone-forming genes earlier."
+          },
+          "numero": {
+            "valor": "3",
+            "texto": "natural materials combined: chitosan, type I collagen and hyaluronic acid"
+          }
         },
         "es": {
           "titulo_curto": "Un “andamio” de quitosano, colágeno y ácido hialurónico que ayuda a formar hueso",
@@ -728,8 +928,24 @@
             "Ingeniería de tejidos",
             "Hueso"
           ],
-          "capa_alt": "Ilustración de capas de un andamio"
+          "capa_alt": "Ilustración de capas de un andamio",
+          "descoberta": {
+            "titulo": "Más hueso en formación, y antes",
+            "texto": "Las células vivieron bien en el andamio, depositaron más nódulos minerales en 14 días y activaron antes los genes de formación de hueso."
+          },
+          "numero": {
+            "valor": "3",
+            "texto": "materiales naturales combinados: quitosano, colágeno tipo I y ácido hialurónico"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "Mais osso em formação, e mais cedo",
+        "texto": "As células viveram bem no arcabouço, depositaram mais nódulos minerais em 14 dias e ligaram mais cedo os genes de formação de osso."
+      },
+      "numero": {
+        "valor": "3",
+        "texto": "materiais naturais combinados: quitosana, colágeno tipo I e ácido hialurônico"
       }
     },
     {
@@ -774,7 +990,15 @@
             "Medicinal plants",
             "Wound dressings"
           ],
-          "capa_alt": "Lab plates with bacteria-free halos"
+          "capa_alt": "Lab plates with bacteria-free halos",
+          "descoberta": {
+            "titulo": "Release and action against 3 bacteria",
+            "texto": "The membrane released the extract for up to 40 hours, peaking at 30 hours, and every sample stopped the growth of the three bacteria tested."
+          },
+          "numero": {
+            "valor": "36 mm",
+            "texto": "average bacteria-free zone around the membrane, against S. aureus"
+          }
         },
         "es": {
           "titulo_curto": "El jucá dentro de la nanocelulosa: un apósito natural contra bacterias",
@@ -784,8 +1008,24 @@
             "Plantas medicinales",
             "Apósitos"
           ],
-          "capa_alt": "Placas de laboratorio con halos sin bacterias"
+          "capa_alt": "Placas de laboratorio con halos sin bacterias",
+          "descoberta": {
+            "titulo": "Liberación y acción contra 3 bacterias",
+            "texto": "La membrana liberó el extracto hasta por 40 horas, con un pico a las 30 horas, y todas las muestras impidieron el crecimiento de las tres bacterias probadas."
+          },
+          "numero": {
+            "valor": "36 mm",
+            "texto": "área media sin bacterias alrededor de la membrana, contra S. aureus"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "Liberação e ação contra 3 bactérias",
+        "texto": "A membrana liberou o extrato por até 40 horas, com pico em 30 horas, e todas as amostras impediram o crescimento das três bactérias testadas."
+      },
+      "numero": {
+        "valor": "36 mm",
+        "texto": "área média sem bactérias em volta da membrana, contra S. aureus"
       }
     },
     {
@@ -830,7 +1070,15 @@
             "Public health system"
           ],
           "capa_alt": "Illustration of a data network",
-          "titulo_pt": "Application of natural language processing to predict final recommendation of Brazilian health technology assessment reports"
+          "titulo_pt": "Application of natural language processing to predict final recommendation of Brazilian health technology assessment reports",
+          "descoberta": {
+            "titulo": "The neural network got 77% right",
+            "texto": "The best model got 76.9% of the decisions right. Requests made by the government tended to be approved; those made by industry were rejected more often."
+          },
+          "numero": {
+            "valor": "76.9%",
+            "texto": "accuracy of the neural network, the best of the 6 models"
+          }
         },
         "es": {
           "titulo_curto": "Una inteligencia artificial que lee los informes de la Conitec y predice la decisión",
@@ -840,8 +1088,24 @@
             "Inteligencia artificial",
             "Salud pública"
           ],
-          "capa_alt": "Ilustración de una red de datos"
+          "capa_alt": "Ilustración de una red de datos",
+          "descoberta": {
+            "titulo": "La red neuronal acertó el 77%",
+            "texto": "El mejor modelo acertó el 76,9% de las decisiones. Las solicitudes del gobierno tendían a ser aprobadas; las de la industria se rechazaban con más frecuencia."
+          },
+          "numero": {
+            "valor": "76,9%",
+            "texto": "de aciertos de la red neuronal, el mejor de los 6 modelos"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "A rede neural acertou 77%",
+        "texto": "O melhor modelo acertou 76,9% das decisões. Pedidos feitos pelo governo tendiam a ser aprovados; os feitos pela indústria eram recusados com mais frequência."
+      },
+      "numero": {
+        "valor": "76,9%",
+        "texto": "de acertos da rede neural, o melhor dos 6 modelos"
       }
     },
     {
@@ -886,7 +1150,15 @@
             "Bacterial cellulose"
           ],
           "capa_alt": "Illustration of molecules in water",
-          "titulo_pt": "Exploring Bacterial Cellulose and a Biosurfactant as Eco-Friendly Strategies for Addressing Pharmaceutical Contaminants"
+          "titulo_pt": "Exploring Bacterial Cellulose and a Biosurfactant as Eco-Friendly Strategies for Addressing Pharmaceutical Contaminants",
+          "descoberta": {
+            "titulo": "Great for the hormone",
+            "texto": "The cellulose captured up to 88% of the hormone and up to 31.8% of the paracetamol. The biosurfactant helped with paracetamol but hindered the hormone."
+          },
+          "numero": {
+            "valor": "88%",
+            "texto": "of the EE2 hormone captured by freeze-dried (lyophilized) cellulose"
+          }
         },
         "es": {
           "titulo_curto": "Celulosa de bacteria para quitar fármacos y hormonas del agua",
@@ -896,8 +1168,24 @@
             "Contaminación del agua",
             "Celulosa bacteriana"
           ],
-          "capa_alt": "Ilustración de moléculas en el agua"
+          "capa_alt": "Ilustración de moléculas en el agua",
+          "descoberta": {
+            "titulo": "Excelente para la hormona",
+            "texto": "La celulosa capturó hasta el 88% de la hormona y hasta el 31,8% del paracetamol. El biosurfactante ayudó con el paracetamol, pero perjudicó con la hormona."
+          },
+          "numero": {
+            "valor": "88%",
+            "texto": "de la hormona EE2 capturada por la celulosa secada en frío (liofilizada)"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "Ótima para o hormônio",
+        "texto": "A celulose capturou até 88% do hormônio e até 31,8% do paracetamol. O biossurfactante ajudou com o paracetamol, mas atrapalhou com o hormônio."
+      },
+      "numero": {
+        "valor": "88%",
+        "texto": "do hormônio EE2 capturado pela celulose seca a frio (liofilizada)"
       }
     },
     {
@@ -942,7 +1230,15 @@
             "Lung cancer"
           ],
           "capa_alt": "Illustration of a DNA double helix",
-          "titulo_pt": "Concomitant TP53 mutation in early-stage resected EGFR-mutated non-small cell lung cancer: a narrative approach in a genetically admixed Brazilian cohort"
+          "titulo_pt": "Concomitant TP53 mutation in early-stage resected EGFR-mutated non-small cell lung cancer: a narrative approach in a genetically admixed Brazilian cohort",
+          "descoberta": {
+            "titulo": "TP53 tends to make things worse",
+            "texto": "Almost half of the tumors with mutated EGFR also had mutated TP53. With mutated TP53, median survival was 59 months; without the mutation, 95 months."
+          },
+          "numero": {
+            "valor": "70",
+            "texto": "operated patients had their tumor sequenced"
+          }
         },
         "es": {
           "titulo_curto": "TP53 y EGFR juntos en el cáncer de pulmón: qué cambia para los pacientes brasileños",
@@ -952,8 +1248,24 @@
             "TP53",
             "Cáncer de pulmón"
           ],
-          "capa_alt": "Ilustración de una doble hélice de ADN"
+          "capa_alt": "Ilustración de una doble hélice de ADN",
+          "descoberta": {
+            "titulo": "El TP53 tiende a empeorar el cuadro",
+            "texto": "Casi la mitad de los tumores con EGFR mutado también tenía el TP53 mutado. Con el TP53 mutado, la supervivencia mediana fue de 59 meses; sin la mutación, de 95 meses."
+          },
+          "numero": {
+            "valor": "70",
+            "texto": "pacientes operados tuvieron su tumor secuenciado"
+          }
         }
+      },
+      "descoberta": {
+        "titulo": "O TP53 tende a piorar o quadro",
+        "texto": "Quase metade dos tumores com EGFR mutado também tinha o TP53 mutado. Com o TP53 mutado, a sobrevida mediana foi de 59 meses; sem a mutação, de 95 meses."
+      },
+      "numero": {
+        "valor": "70",
+        "texto": "pacientes operados tiveram o tumor sequenciado"
       }
     }
   ]
