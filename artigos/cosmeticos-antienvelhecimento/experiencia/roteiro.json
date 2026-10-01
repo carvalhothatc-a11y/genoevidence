@@ -57,7 +57,7 @@
           {"rotulo": "União Europeia: 1 a 100 nm", "em": 100, "cor": "#FFB23F", "desde": 3, "topo": 4},
           {"rotulo": "FDA (2014): até 1.000 nm", "em": 1000, "cor": "#5FD39A", "desde": 3, "topo": 22}
         ],
-        "legenda": "Escala logarítmica: cada marca é 10 vezes maior que a anterior. 1 nm = 1 milionésimo de milímetro. A ponta tracejada dos lipossomas indica que o artigo não dá o valor máximo exato."},
+        "legenda": "Cada marca é 10 vezes maior que a anterior. Ponta tracejada: o artigo não dá o tamanho máximo dos lipossomas."},
       "alt": "Régua de tamanhos em escala logarítmica: nanopartículas de 1 a 100 nm, nanoemulsões de 50 a 200 nm, lipossomas de 20 nm a algumas centenas de micrômetros; definição europeia de 1 a 100 nm e critério da FDA até 1.000 nm.",
       "passos": [
         {"eyebrow": "Contexto", "titulo": "O veículo importa", "texto": "Segundo o artigo, a eficácia de um cosmético não depende só do ativo, mas também da tecnologia que o leva ao lugar certo da pele e o mantém lá tempo suficiente.", "fonte": "Introdução, 6º parágrafo"},

@@ -210,7 +210,7 @@
             "topo": 22
           }
         ],
-        "legenda": "Escala logarítmica: cada marca es 10 veces mayor que la anterior. 1 nm = una millonésima de milímetro. La punta punteada de los liposomas indica que el artículo no da el valor máximo exacto."
+        "legenda": "Cada marca es 10 veces mayor que la anterior. Punta punteada: el artículo no da el tamaño máximo de los liposomas."
       },
       "alt": "Regla de tamaños en escala logarítmica: nanopartículas de 1 a 100 nm, nanoemulsiones de 50 a 200 nm, liposomas de 20 nm a algunos cientos de micrómetros; definición europea de 1 a 100 nm y criterio de la FDA hasta 1.000 nm.",
       "passos": [

@@ -141,14 +141,18 @@
       const a = pos(f.de), b = pos(f.ate);
       el("div", { class: "bar" + (f.aberta ? " aberta" : ""), style: "left:" + a + "%;width:" + (b - a) + "%" }, fx);
       // rótulo: dentro da barra (se ela for larga), antes dela (se chegar perto do fim) ou logo depois
-      const onde = b - a > 45 ? "left:" + a + "%" : b > 70 ? "right:" + (100 - a) + "%;padding-right:8px;padding-left:0" : "left:" + b + "%";
-      el("label", { style: onde }, fx, esc(f.rotulo));
+      const dentro = b - a > 45;
+      const onde = dentro ? "left:" + a + "%;max-width:" + (100 - a) + "%" : b > 70 ? "right:" + (100 - a) + "%;padding-right:8px;padding-left:0" : "left:" + b + "%";
+      el("label", { style: onde, class: dentro ? "dentro" : null }, fx, esc(f.rotulo));
     });
     (d.linhas || []).forEach(l => {
       const ln = el("div", { class: "linha", "data-desde": l.desde || 0, style: "left:" + pos(l.em) + "%;--c:" + l.cor + ";top:" + (l.topo || 0) + "px" }, box);
       el("span", {}, ln, esc(l.rotulo));
     });
     if (d.legenda) el("p", { class: "leg" }, box, esc(d.legenda));
+    // as linhas tracejadas param antes da legenda, para não riscar o texto
+    const ajustar = () => { const leg = $(".leg", box); if (leg) $$(".linha", box).forEach(l => { l.style.bottom = (leg.offsetHeight + 14) + "px"; }); };
+    requestAnimationFrame(ajustar); addEventListener("resize", ajustar);
     return { passo: k => revelar(box, k) };
   };
 
@@ -198,8 +202,8 @@
       const b = el("div", { class: "xp-foco", "data-id": it.id, style: "text-align:center" }, g);
       const ic = el("div", { class: "ic", style: "width:min(130px,26vw);margin:0 auto" }, b);
       ic.appendChild(iconeVeiculo(it.id, it.cor));
-      el("b", { style: "display:block;font:600 14px/1.25 var(--display);margin-top:6px" }, b, esc(it.nome));
-      if (it.tam) el("small", { style: "display:block;font:500 11.5px/1.35 var(--mono);color:var(--xp-muted);margin-top:4px" }, b, esc(it.tam));
+      el("b", { style: "display:block;font:600 15.5px/1.25 var(--display);margin-top:8px" }, b, esc(it.nome));
+      if (it.tam) el("small", { style: "display:block;font:500 13.5px/1.35 var(--mono);color:var(--xp-muted);margin-top:4px" }, b, esc(it.tam));
       return b;
     });
     return { passo: k => focar(itens, (c.passos[k] || {}).foco) };
@@ -223,8 +227,12 @@
       const w = box.clientWidth, h = box.clientHeight, t = w * .0135, g = w * .021;
       const cortesFeitos = Math.min(k, d.cortes.length);
       const ficam = pontos.filter((_, i) => saida[i] < 0 || saida[i] >= cortesFeitos);
+      // o contador primeiro: os pontos começam logo abaixo dele, sem passar por baixo do texto
+      const etapa = k === 0 ? d.inicio : d.cortes[cortesFeitos - 1].depois;
+      cont.innerHTML = num(ficam.length) + "<small>" + esc(etapa) + "</small>";
+      const y0 = Math.max(h * .2, cont.offsetTop + cont.offsetHeight + 10);
       const areaW = w * .56, cols = Math.max(8, Math.floor(areaW / g));
-      ficam.forEach((p, j) => { p.classList.remove("fora"); p.style.transform = "translate(" + ((j % cols) * g) + "px," + (h * .2 + Math.floor(j / cols) * g) + "px)"; });
+      ficam.forEach((p, j) => { p.classList.remove("fora"); p.style.transform = "translate(" + ((j % cols) * g) + "px," + (y0 + Math.floor(j / cols) * g) + "px)"; });
       let y = h * .02;
       d.cortes.forEach((ct, ci) => {
         const mostra = ci < cortesFeitos, pc = 16, gp = w * .0165;
@@ -238,8 +246,8 @@
         });
         if (mostra) y += lh + Math.ceil(ct.n / pc) * gp + 10;
       });
-      const etapa = k === 0 ? d.inicio : d.cortes[cortesFeitos - 1].depois;
-      cont.innerHTML = num(ficam.length) + "<small>" + esc(etapa) + "</small>";
+      // a altura do funil acompanha as pilhas da direita (assim o ajuste de tamanho sabe quanto ocupa)
+      box.style.minHeight = Math.ceil(y) + "px";
     }
     addEventListener("resize", () => arrumar(passoAtual));
     requestAnimationFrame(() => arrumar(0));

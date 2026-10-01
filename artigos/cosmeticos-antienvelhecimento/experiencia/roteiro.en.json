@@ -210,7 +210,7 @@
             "topo": 22
           }
         ],
-        "legenda": "Logarithmic scale: each mark is 10 times larger than the previous one. 1 nm = one millionth of a millimeter. The dashed end of the liposome bar shows that the article does not give an exact maximum."
+        "legenda": "Each mark is 10 times larger than the previous one. Dashed end: the article gives no maximum size for liposomes."
       },
       "alt": "Size ruler on a logarithmic scale: nanoparticles from 1 to 100 nm, nanoemulsions from 50 to 200 nm, liposomes from 20 nm to a few hundred micrometers; European definition of 1 to 100 nm and FDA criterion up to 1,000 nm.",
       "passos": [
