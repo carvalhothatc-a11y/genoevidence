@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-01T06:10:04.803724+00:00",
+ "atualizado_em": "2026-10-01T13:33:17.628504+00:00",
  "noticias": [
   {
    "titulo": "Anthropic quer usar IA para descobrir tratamentos para doenças raras",
@@ -24,6 +24,32 @@
     "es": {
      "titulo": "Anthropic quiere utilizar la IA para descubrir tratamientos para enfermedades raras",
      "resumo": "La compañía que creó Claude estableció un laboratorio de biología cerca de San Francisco donde la IA ejecuta robots en experimentos con células y proteínas. Por ahora, el trabajo se encuentra en fase preclínica, con supervisión humana y sin pruebas en personas."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Estilo de vida do futuro pai e fertilização sem tratamento prévio afetam desenvolvimento do bebê",
+   "resumo": "Saúde do genitor antes da concepção pode alterar marcas moleculares do espermatozoide, ativando ou silenciando genes sem alterar a sequência do DNA",
+   "url": "https://jornal.usp.br/ciencias/estilo-de-vida-do-futuro-pai-e-fertilizacao-sem-tratamento-previo-afetam-desenvolvimento-do-bebe/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-01T10:00:11+00:00",
+   "tema": "Genética",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20260930_bebidaecigarro.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Future father's lifestyle and untreated fertilization affect baby's development",
+     "resumo": "Health of the parent before conception can alter molecular marks of the sperm by activating or silencing genes without altering the DNA sequence"
+    },
+    "es": {
+     "titulo": "El estilo de vida del futuro padre y la fertilización no tratada afectan el desarrollo del bebé",
+     "resumo": "La salud del progenitor antes de la concepción puede alterar las marcas moleculares de los espermatozoides activando o silenciando genes sin alterar la secuencia de ADN"
     }
    }
   },
@@ -55,102 +81,101 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Pesquisa relaciona internações por diabetes à desigualdade em São Paulo",
-   "resumo": "Análise espacial identificou concentração de internações em áreas mais vulneráveis da capital paulista",
-   "url": "https://jornal.usp.br/radio-usp/pesquisa-relaciona-internacoes-por-diabetes-a-desigualdade-em-sao-paulo/",
+   "titulo": "Três pesquisas da Odontologia da USP em Ribeirão Preto são premiadas em encontro nacional",
+   "resumo": "Trabalhos investigam a relação entre saúde bucal e artrite reumatoide e diferentes aspectos da disfunção temporomandibular",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/tres-pesquisas-da-odontologia-da-usp-em-ribeirao-preto-sao-premiadas-em-encontro-nacional/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-09-30T18:30:58+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/20180417_00_diabete_sangue.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Research links hospitalizations for diabetes to inequality in São Paulo",
-     "resumo": "Spatial analysis identified a concentration of hospitalizations in the most vulnerable areas of the capital of São Paulo"
-    },
-    "es": {
-     "titulo": "La investigación vincula las hospitalizaciones por diabetes con la desigualdad en São Paulo",
-     "resumo": "El análisis espacial identificó una concentración de hospitalizaciones en las zonas más vulnerables de la capital paulista"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Rochas da Paraíba confirmam fraco campo magnético da Terra durante explosão da vida",
-   "resumo": "Estrutura geológica do Nordeste do Brasil permite uma “jornada ao centro da Terra” e revela enfraquecimento da camada de defesa do planeta por milhões de anos após o surgimento dos primeiros animais",
-   "url": "https://jornal.usp.br/ciencias/rochas-da-paraiba-confirmam-fraco-campo-magnetico-da-terra-durante-explosao-da-vida/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-30T11:00:25+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 9,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260929_zoom.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Rocks from Paraíba confirm Earth's weak magnetic field during explosion of life",
-     "resumo": "Geological structure of Northeast Brazil allows a “journey to the center of the Earth” and reveals the weakening of the planet's defense layer for millions of years after the appearance of the first animals"
-    },
-    "es": {
-     "titulo": "Las rocas de Paraíba confirman el débil campo magnético de la Tierra durante la explosión de la vida",
-     "resumo": "La estructura geológica del noreste de Brasil permite un \"viaje al centro de la Tierra\" y revela el debilitamiento de la capa de defensa del planeta durante millones de años después de la aparición de los primeros animales"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O impacto do Antropoceno sobre a saúde ocular",
-   "resumo": "Alterações ambientais e hábitos da vida moderna ampliam os desafios para a visão",
-   "url": "https://jornal.usp.br/radio-usp/o-impacto-do-antropoceno-sobre-a-saude-ocular/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-30T18:52:29+00:00",
+   "data": "2026-09-30T14:45:58+00:00",
    "tema": "Saúde",
    "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/03/20230313_eduardo-1-1.jpg",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2021/03/20210301_forp_usp.jpg",
    "foco": {
-    "inteira": true
+    "x": 50,
+    "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "The Impact of the Anthropocene on Eye Health",
-     "resumo": "Environmental changes and habits of modern life magnify the challenges for vision"
+     "titulo": "Three researches of USP Dentistry in Ribeirão Preto are awarded at a national meeting",
+     "resumo": "Studies investigate the relationship between oral health and rheumatoid arthritis and different aspects of temporomandibular disorders"
     },
     "es": {
-     "titulo": "El impacto del Antropoceno en la salud ocular",
-     "resumo": "Los cambios ambientales y los hábitos de la vida moderna magnifican los desafíos para la visión"
+     "titulo": "Tres investigaciones de Odontología de la USP en Ribeirão Preto son premiadas en un encuentro nacional",
+     "resumo": "Los estudios investigan la relación entre la salud bucal y la artritis reumatoide y los diferentes aspectos de los trastornos temporomandibulares"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "MS, Fiocruz, HU Brasil e instituições do Ceará firmam parceria para expansão de terapias avançadas no SUS",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/ms-fiocruz-hu-brasil-e-instituicoes-do-ceara-firmam-parceria-para-expansao-de-terapias-avancadas-no",
-   "fonte": "Agência Fiocruz",
+   "titulo": "Diálogos Avançados: Desafios Contemporâneos do Humano",
+   "resumo": "Evento gratuito, que será realizado entre os dias 6 e 8 de outubro, em São Carlos, propõe reflexões no campo da filosofia, psicologia, comunicação e ciências sociais",
+   "url": "https://agencia.fapesp.br/dialogos-avancados-desafios-contemporaneos-do-humano/59316",
+   "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-09-30T17:23:37+00:00",
+   "data": "2026-10-01T13:33:17.628504+00:00",
    "tema": "Ciência",
-   "relevancia": 8,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/eventonoCeara_d.jpg",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Advanced Dialogues: Contemporary Challenges of the Human",
+     "resumo": "A free event, which will be held between October 6 and 8, in São Carlos, proposes reflections in the field of philosophy, psychology, communication and social sciences"
+    },
+    "es": {
+     "titulo": "Diálogos avanzados: desafíos contemporáneos de lo humano",
+     "resumo": "Un evento gratuito, que se realizará entre el 6 y el 8 de octubre, en São Carlos, propone reflexiones en el campo de la filosofía, la psicología, la comunicación y las ciencias sociales"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Procrastinação duvidosa",
+   "resumo": "Experimento que avaliou se espaçar prazos de entrega reduz atrasos é retratado por manipulação de dados",
+   "url": "https://revistapesquisa.fapesp.br/procrastinacao-duvidosa/?utm_source=rss&utm_medium=rss&utm_campaign=procrastinacao-duvidosa",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-01T12:03:10+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/080f3b53e837dd71a3a9e48316ace7579f318b53_1200-630.jpg",
    "foco": {
     "x": 50,
-    "y": 8
+    "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "MS, Fiocruz, HU Brasil and institutions of Ceará sign partnership to expand advanced therapies in sus"
+     "titulo": "Doubtful procrastination",
+     "resumo": "Experiment that assessed whether spacing lead times reduces delays is portrayed by data manipulation"
     },
     "es": {
-     "titulo": "MS, Fiocruz, HU Brasil e instituciones de Ceará firman alianza para ampliar terapias avanzadas en sus"
+     "titulo": "Procrastinación dudosa",
+     "resumo": "El experimento que evaluó si el espaciamiento de los plazos de entrega reduce los retrasos se refleja en la manipulación de datos"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Pós-graduação em Controladoria e Contabilidade celebra 21 anos e debate desafios da pesquisa",
+   "resumo": "Programa da Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto será presencial e reunirá professores, ex-coordenadores e egressos para debater o futuro da pós-graduação",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/pos-graduacao-em-controladoria-e-contabilidade-celebra-21-anos-e-debate-desafios-da-pesquisa/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-01T11:58:33+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/04/20240412_fearp.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Postgraduate in Controllership and Accounting celebrates 21 years and debates research challenges",
+     "resumo": "Program of the Faculty of Economics, Administration and Accounting of Ribeirão Preto will be in person and will bring together professors, former coordinators and graduates to discuss the future of graduate studies"
+    },
+    "es": {
+     "titulo": "Postgrado en Contraloría y Contabilidad celebra 21 años y debate retos de investigación",
+     "resumo": "El programa de la Facultad de Economía, Administración y Contabilidad de Ribeirão Preto será presencial y reunirá a profesores, ex coordinadores y graduados para discutir el futuro de los estudios de posgrado"
     }
    }
   },
@@ -182,232 +207,156 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Expansão urbana causa colapso ecológico em riachos da Região Metropolitana de São Paulo",
-   "resumo": "Estudo revela que a perda de biodiversidade e interações ecológicas compromete a filtragem natural da água que abastece os mais de 22 milhões de habitantes da região",
-   "url": "https://agencia.fapesp.br/expansao-urbana-causa-colapso-ecologico-em-riachos-da-regiao-metropolitana-de-sao-paulo/59312",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-01T06:10:04.803724+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59312.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Urban sprawl causes ecological collapse in streams in the Metropolitan Region of São Paulo",
-     "resumo": "A study reveals that the loss of biodiversity and ecological interactions compromises the natural filtration of water that supplies the more than 22 million inhabitants of the region"
-    },
-    "es": {
-     "titulo": "La expansión urbana provoca el colapso ecológico de los arroyos en la Región Metropolitana de São Paulo",
-     "resumo": "Un estudio revela que la pérdida de biodiversidad y las interacciones ecológicas comprometen la filtración natural del agua que abastece a los más de 22 millones de habitantes de la región"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A temporada de furacões no Atlântico tem sido tão tranquila que não tem precedentes",
-   "resumo": "O El Niño impediu a formação de tempestades ainda mais do que os meteorologistas esperavam",
-   "url": "https://www.scientificamerican.com/article/for-the-first-time-no-hurricanes-have-formed-in-the-atlantic-this-season-so-far/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-09-30T16:40:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/c1d110e1-5111-44fa-9417-dd6b84cf71d9/1-Hurricane-Elena-16.jpg?m=1790789642.431&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "The Atlantic hurricane season has been so quiet it’s unprecedented",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La temporada de huracanes en el Atlántico ha sido tan tranquila que no tiene precedentes",
-     "resumo": "El Niño ha obstaculizado la formación de tormentas incluso más de lo que esperaban los pronosticadores"
-    }
-   },
-   "resumo_original": "El Niño has stymied storm formation even more than forecasters expected"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A IA resolve um problema do \"Santo Graal\" a partir da teoria da probabilidade",
-   "resumo": "Poucos dias depois que um Medalhista de Campos previu que uma IA resolveria o quebra-cabeça, Antrópico conseguiu",
-   "url": "https://www.scientificamerican.com/article/ai-solves-a-holy-grail-problem-from-probability-theory/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-09-30T13:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/032ce61a-5b32-4dc5-b26e-3f2cde513be9/robot-dice.jpg?m=1790716451.972&w=1200",
-   "foco": {
-    "inteira": true
-   },
-   "titulo_original": "AI solves a ‘holy grail’ problem from probability theory",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La IA resuelve un problema del \"santo grial\" de la teoría de la probabilidad",
-     "resumo": "Apenas unos días después de que un medallista de Fields predijera que una IA resolvería el rompecabezas, Anthropic tuvo éxito"
-    }
-   },
-   "resumo_original": "Just days after a Fields Medalist predicted that an AI would solve the puzzle, Anthropic succeeded"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A amora pode remodelar as bactérias intestinais e influenciar o metabolismo",
-   "resumo": "Os compostos de amoreira podem remodelar o microbioma intestinal de maneiras que apoiam a saúde intestinal e o metabolismo, com algumas combinações mostrando efeitos especialmente fortes em estudos com animais. No entanto, os resultados variam dependendo da parte da planta e...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260928100551.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-09-30T11:45:42+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/fresh-mulberry-fruit.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Mulberry may reshape gut bacteria and influence metabolism",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La morera puede remodelar las bacterias intestinales e influir en el metabolismo",
-     "resumo": "Los compuestos de morera pueden remodelar el microbioma intestinal de manera que apoyen la salud intestinal y el metabolismo, y algunas combinaciones muestran efectos especialmente fuertes en estudios con animales. Sin embargo, los resultados varían dependiendo de la parte de la planta y..."
-    }
-   },
-   "resumo_original": "Mulberry compounds may reshape the gut microbiome in ways that support intestinal health and metabolism, with some combinations showing especially strong effects in animal studies. However, the results vary depending on the plant part and…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Anglo-saxões receberam tratamento especial na Roma medieval",
-   "resumo": "Um pequeno tesouro de moedas inglesas medievais encontradas perto do Vaticano em Roma sugere que os primeiros residentes ingleses tinham um status privilegiado na cidade santa",
-   "url": "https://www.newscientist.com/article/2591306-anglo-saxons-got-special-treatment-in-medieval-rome/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "Os melhores livros de ciência popular de outubro de 2026",
+   "resumo": "Com um novo livro do falecido primatólogo Frans de Waal e um mergulho profundo na inteligência artificial do colunista de tecnologia do New York Times Kevin Roose, há alguma ciência popular contundente para esperar este mês – com mais...",
+   "url": "https://www.newscientist.com/article/2591705-the-best-popular-science-books-of-october-2026/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-09-30T23:01:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_314680170.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Anglo-Saxons got special treatment in medieval Rome",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los anglosajones recibieron un trato especial en la Roma medieval",
-     "resumo": "Un pequeño tesoro de monedas inglesas medievales encontrado cerca del Vaticano en Roma sugiere que los primeros residentes ingleses tenían un estatus privilegiado en la ciudad santa"
-    }
-   },
-   "resumo_original": "A small hoard of medieval English coins found near the Vatican in Rome suggests that early English residents held a privileged status in the holy city"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Varreduras cerebrais revelam quais distúrbios estão ligados ao envelhecimento cerebral mais rápido",
-   "resumo": "Um estudo massivo de ressonância magnética descobriu que a doença de Alzheimer, comprometimento cognitivo leve, distúrbios psiquiátricos e dependência estão associados a padrões distintos de envelhecimento cerebral acelerado. Os efeitos mais fortes apareceram na doença de Alzheimer e leve...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260927225038.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-09-29T11:01:18+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/brain-scan-disease-glitch.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Brain scans reveal which disorders are linked to faster brain aging",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los escáneres cerebrales revelan qué trastornos están relacionados con un envejecimiento cerebral más rápido",
-     "resumo": "Un estudio masivo de resonancia magnética encontró que la enfermedad de Alzheimer, el deterioro cognitivo leve, los trastornos psiquiátricos y la adicción se asocian con distintos patrones de envejecimiento cerebral acelerado. Los efectos más fuertes aparecieron en la enfermedad de Alzheimer y leve..."
-    }
-   },
-   "resumo_original": "A massive MRI study found that Alzheimer’s disease, mild cognitive impairment, psychiatric disorders, and addiction are associated with distinct patterns of accelerated brain aging. The strongest effects appeared in Alzheimer’s and mild…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Twisteddoodles sobre a descoberta de uma nova espécie de gato",
-   "resumo": "O desenho animado desta semana do Twisteddoodles",
-   "url": "https://www.newscientist.com/article/2591238-twisteddoodles-on-the-discovery-of-a-new-cat-species/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-09-30T17:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_313831061.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Twisteddoodles on the discovery of a new cat species",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Twisteddoodles en el descubrimiento de una nueva especie de gato",
-     "resumo": "La caricatura de esta semana de Twisteddoodles"
-    }
-   },
-   "resumo_original": "This week's cartoon from Twisteddoodles"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Usuários de cannabis eram duas vezes mais propensos a cometer violência, revela estudo",
-   "resumo": "Uma revisão de mais de 265.000 pessoas descobriu que o uso de cannabis estava associado a taxas mais altas de cometer violência e de se tornar uma vítima dela. Os pesquisadores dizem que a ligação é significativa, mas não prova que a cannabis em si é o…",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260930020255.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-09-30T12:49:01+00:00",
+   "data": "2026-10-01T13:15:00+00:00",
    "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/cannabis-effects-brain-mental-health.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Cannabis users were twice as likely to commit violence, review finds",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los consumidores de cannabis tenían el doble de probabilidades de cometer actos de violencia, según una revisión",
-     "resumo": "Una revisión de más de 265.000 personas encontró que el consumo de cannabis se asoció con tasas más altas tanto de cometer violencia como de convertirse en víctima de ella. Los investigadores dicen que el vínculo es significativo, pero no prueba que el cannabis en sí sea el..."
-    }
-   },
-   "resumo_original": "A review of more than 265,000 people found that cannabis use was associated with higher rates of both committing violence and becoming a victim of it. The researchers say the link is significant but does not prove cannabis itself is the…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "‘Para ganhar um Nobel, o Brasil precisa de mais gente fazendo pesquisa’",
-   "resumo": "Avaliação foi feita pelo hematologista Fernando Costa, ex-reitor da Unicamp, em entrevista ao Centro de Memória Fapesp",
-   "url": "https://agencia.fapesp.br/para-ganhar-um-nobel-o-brasil-precisa-de-mais-gente-fazendo-pesquisa/59264",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-09-24T15:25:50+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://agencia.fapesp.br/files/post/59264.jpg",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI314835332.jpg",
    "foco": {
     "x": 50,
     "y": 0
    },
+   "titulo_original": "The best popular-science books of October 2026",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los mejores libros de divulgación científica de octubre de 2026",
+     "resumo": "Con un nuevo libro del fallecido primatólogo Frans de Waal y una inmersión profunda en la inteligencia artificial del columnista de tecnología del New York Times Kevin Roose, hay algo de ciencia popular contundente que esperar este mes, con..."
+    }
+   },
+   "resumo_original": "With a new book from the late primatologist Frans de Waal and a deep dive into artificial intelligence from New York Times tech columnist Kevin Roose, there is some hard-hitting popular science to look forward to this month – with added…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "InfoGripe: SRAG aumenta em crianças no Rio de Janeiro e no Espírito Santo",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/infogripe-srag-aumenta-em-criancas-no-rio-de-janeiro-e-no-espirito-santo",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-01T12:56:11+00:00",
+   "tema": "Saúde",
+   "relevancia": 6,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infogripe_d_0.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
    "i18n": {
     "en": {
-     "titulo": "‘To win a Nobel, Brazil needs more people doing research’",
-     "resumo": "The evaluation was made by hematologist Fernando Costa, former dean of Unicamp, in an interview with the FAPESP Memory Center"
+     "titulo": "InfoGrip: SARS increases in children in Rio de Janeiro and Espírito Santo"
     },
     "es": {
-     "titulo": "‘Para ganar un Nobel, Brasil necesita más gente investigando’",
-     "resumo": "La evaluación fue realizada por el hematólogo Fernando Costa, ex decano de la Unicamp, en entrevista con el Centro de Memoria de la FAPESP"
+     "titulo": "InfoGrip: El SARS aumenta en los niños de Río de Janeiro y Espírito Santo"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Como as mudanças climáticas estão alterando o petricor, o cheiro glorioso depois que chove",
+   "resumo": "À medida que o planeta muda, esse perfume desencadeador de nostalgia também mudará",
+   "url": "https://www.scientificamerican.com/article/how-climate-change-is-altering-petrichor-the-glorious-smell-after-it-rains/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-01T10:30:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/8d332586-4549-49ce-92b3-f35d6bf7034a/GettyImages-2234436413_web.jpeg?m=1790631143.424&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "How climate change is altering petrichor, the glorious smell after it rains",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Cómo el cambio climático está alterando el petricor, el olor glorioso después de la lluvia",
+     "resumo": "A medida que el planeta cambia, también lo hará este aroma que desencadena la nostalgia"
+    }
+   },
+   "resumo_original": "As the planet changes, so will this nostalgia-triggering scent"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Os matemáticos ainda podem se recusar a usar IA neste momento?",
+   "resumo": "Não há dúvida de que a IA transformou o campo da matemática nos últimos meses. O colunista Jacob Aron se pergunta se em breve será impossível ser um refusenik de IA e continuar trabalhando no campo",
+   "url": "https://www.newscientist.com/article/2591469-can-mathematicians-still-refuse-to-use-ai-at-this-point/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-01T08:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_314713679.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Can mathematicians still refuse to use AI at this point?",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Pueden los matemáticos seguir negándose a usar la IA en este momento?",
+     "resumo": "No hay duda de que la IA ha transformado el campo de las matemáticas en los últimos meses. El columnista Jacob Aron se pregunta si pronto será imposible ser un AI refusenik y seguir trabajando en el campo"
+    }
+   },
+   "resumo_original": "There’s no question AI has transformed the field of mathematics in the past few months. Columnist Jacob Aron wonders if it will soon be impossible to be an AI refusenik and continue working in the field"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O candidato democrata ao Senado de Michigan, Abdul El-Sayed, explica como a ciência influencia sua política",
+   "resumo": "A Scientific American conversou com o candidato ao Senado de Michigan sobre como sua formação em medicina moldou sua visão",
+   "url": "https://www.scientificamerican.com/article/democratic-michigan-senate-hopeful-abdul-el-sayed-explains-how-science-influences-his-politics/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-01T11:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/401343dd-6294-4711-9a47-2fa3dc352c4b/Abdul-El-Sayed.jpg?m=1790805290.677&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "titulo_original": "Democratic Michigan Senate hopeful Abdul El-Sayed explains how science influences his politics",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El candidato demócrata al Senado de Michigan, Abdul El-Sayed, explica cómo la ciencia influye en su política",
+     "resumo": "Scientific American habló con el candidato al Senado de Michigan sobre cómo su experiencia en medicina ha dado forma a su perspectiva"
+    }
+   },
+   "resumo_original": "Scientific American spoke to the Michigan Senate candidate about how his background in medicine has shaped his outlook"
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Global implementation of hereditary cancer care in gynecologic oncology: Development and evaluation of the Hereditary Cancer Care Implementation Index.",
+   "autores": "Cuello MA, Ibañez C, Obando JS, Fletcher A, Fotopoulou C, Sehouli J, Olawaiye A, Iheme MN, Chalas E, Mutch D, Tse KY…",
+   "revista": "Int J Gynaecol Obstet",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1002/ijgo.71348",
+   "url": "https://doi.org/10.1002/ijgo.71348",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Global implementation of hereditary cancer care in gynecologic oncology: Development and evaluation of the Hereditary Cancer Care Implementation Index.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Mapeamento de mutações e interações de rede de sinalização para orientar a terapia de precisão no câncer de vesícula biliar.",
+   "autores": "Manav N, Kashyap A, Malhotra L, Rajegowda C, Prasad CP.",
+   "revista": "Cancer Rep (Hoboken)",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1002/cnr2.70699",
+   "url": "https://doi.org/10.1002/cnr2.70699",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Mapping Mutations and Signaling Network Interactions to Guide Precision Therapy in Gallbladder Cancer.",
+   "traduzido": true
+  },
   {
    "tipo": "artigo",
    "titulo": "Síndromes de predisposição ao câncer em crianças: quem, quando e como fazer a triagem?",
@@ -554,381 +503,227 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "The Coding and Non-Coding Genomic Landscape of Hepatocellular Carcinoma: Etiological Risk Factors and their Current Clinical Implications.",
-   "autores": "Ciurdorean AM, Chiroi P, Cosma DG, Porojan MD, Rusu I, Strilciuc S, Berindan-Neagoe I, Al Hajjar N.",
-   "revista": "J Gastrointestin Liver Dis",
-   "data": "2026-09-26T00:00:00+00:00",
-   "doi": "10.15403/jgld-7552",
-   "url": "https://doi.org/10.15403/jgld-7552",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "The Coding and Non-Coding Genomic Landscape of Hepatocellular Carcinoma: Etiological Risk Factors and their Current Clinical Implications.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "The Coding and Non-Coding Genomic Landscape of Hepatocellular Carcinoma: Etiological Risk Factors and their Current Clinical Implications."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Senescência miocárdica como desfecho mecanicista de cardiotoxicidade por arsênio: ativação e reversão de p53/p21 associada à cisteína pela quercetina.",
-   "autores": "Wang H, Wang Y, Huang S, Wang J, Xu E, Pang Y, Shen J, Luo C, Tan J.",
-   "revista": "Toxicol Appl Pharmacol",
-   "data": "2026-09-26T00:00:00+00:00",
-   "doi": "10.1016/j.taap.2026.118050",
-   "url": "https://doi.org/10.1016/j.taap.2026.118050",
+   "titulo": "A estratificação da paisagem da linhagem germinativa define grupos moleculares e prognósticos distintos em neoplasias mieloides relacionadas à terapia.",
+   "autores": "Calvete O, Mestre J, Chaparro-González L, Pérez-Hita LR, Mesa A, Xicoy B, Zamora L, Granada I, Mallo M, Cid E, Mancini…",
+   "revista": "Blood Adv",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1182/bloodadvances.2026020704",
+   "url": "https://doi.org/10.1182/bloodadvances.2026020704",
    "acesso_aberto": false,
    "tema": "Ciência",
-   "titulo_original": "Myocardial senescence as a mechanistic endpoint of arsenic cardiotoxicity: Cysteine-associated p53/p21 activation and reversal by quercetin.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Senescencia miocárdica como criterio de valoración mecanicista de la cardiotoxicidad por arsénico: activación de p53/p21 asociada a cisteína y reversión por quercetina."
-    }
-   }
+   "titulo_original": "Germ line landscape stratification defines distinct molecular and prognostic groups in therapy-related myeloid neoplasms.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Associação de alta carga mutacional tumoral com metástases cerebrais: insights de uma análise de banco de dados em larga escala.",
-   "autores": "Abboud M, Sisoudiya S, Kaplan B, Elisha T, Goodman L, Khair F, Sivakumar S, Sokol E, Wolf I, Rubinek T.",
-   "revista": "Neuro Oncol",
-   "data": "2026-09-26T00:00:00+00:00",
-   "doi": "10.1093/neuonc/noag222",
-   "url": "https://doi.org/10.1093/neuonc/noag222",
+   "titulo": "Ziyuglycoside I Attenuates Deinagkistrodon acutus Venom-Induced Injury in Renal Tubular Epithelial Cells by Modulating PAR1-NLRP3-IL-1β Signaling.",
+   "autores": "Shen Y, Jiang N, Tu M.",
+   "revista": "Toxicon",
+   "data": "2026-09-30T00:00:00+00:00",
+   "doi": "10.1016/j.toxicon.2026.109312",
+   "url": "https://doi.org/10.1016/j.toxicon.2026.109312",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Tradução farmacológica de mutações missense de câncer para direcionamento terapêutico com moléculas pequenas.",
+   "autores": "Fouad M.",
+   "revista": "Biochem Pharmacol",
+   "data": "2026-09-30T00:00:00+00:00",
+   "doi": "10.1016/j.bcp.2026.118508",
+   "url": "https://doi.org/10.1016/j.bcp.2026.118508",
    "acesso_aberto": false,
    "tema": "Câncer",
-   "titulo_original": "Association of high tumor mutational burden with brain metastases: Insights from a large-scale database analysis.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Asociación de alta carga mutacional tumoral con metástasis cerebrales: conocimientos de un análisis de base de datos a gran escala."
-    }
-   }
+   "titulo_original": "Pharmacological translation of cancer missense mutations for therapeutic targeting with small molecules.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Picada de escorpião durante a gravidez: uma revisão sistemática.",
-   "autores": "Balachandran DM, Nair JJ, Rajendran G.",
-   "revista": "Eur J Obstet Gynecol Reprod Biol",
-   "data": "2026-09-25T00:00:00+00:00",
-   "doi": "10.1016/j.ejogrb.2026.115459",
-   "url": "https://doi.org/10.1016/j.ejogrb.2026.115459",
+   "titulo": "Conversational AI in Hereditary Cancer Care: Sociotechnical Study of Responsible Design Requirements.",
+   "autores": "Lammert D, Lammert J, Hofenbitzer J, Radtke T, Sun Y, Haimerl M, Betz S, Scholl DH, Pfeffer J.",
+   "revista": "JMIR Hum Factors",
+   "data": "2026-09-30T00:00:00+00:00",
+   "doi": "10.2196/97869",
+   "url": "https://doi.org/10.2196/97869",
    "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Scorpion sting during pregnancy: a systematic review.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Picadura de escorpión durante el embarazo: una revisión sistemática."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "Variantes patogênicas da linhagem germinativa em BRCA1/2 estão associadas a um número diminuído de cópias de rDNA hipometilado.",
-   "autores": "Kießling S, Durackova J, Michler A, Geisen ABC, Santana Acevedo N, Haaf T.",
-   "revista": "Breast Cancer Res",
-   "data": "2026-09-25T00:00:00+00:00",
-   "doi": "10.1186/s13058-026-02387-5",
-   "url": "https://doi.org/10.1186/s13058-026-02387-5",
-   "acesso_aberto": true,
-   "tema": "Genética",
-   "titulo_original": "Pathogenic germline variants in BRCA1/2 are associated with a decreased number of hypomethylated rDNA copies.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las variantes patógenas de la línea germinal en BRCA1/2 se asocian con una disminución del número de copias de ADNr hipometiladas."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Manejo interdisciplinar e avaliação genética de síndromes de predisposição ao câncer pediátrico: um estudo de coorte retrospectivo.",
-   "autores": "Dikow N, Nitschke AL, Hirsch S, Roth E, Orec L, Fischer T, Choukair D, Grund K, Lüttich P, Sutter C, Hinderhofer K…",
-   "revista": "Eur J Hum Genet",
-   "data": "2026-09-25T00:00:00+00:00",
-   "doi": "10.1038/s41431-026-02244-1",
-   "url": "https://doi.org/10.1038/s41431-026-02244-1",
+   "titulo": "Interpreting TP53 pathogenic variants in germline testing and cancer genomics: pathogenicity, origin, and clinical actionability.",
+   "autores": "Imoto I, Takaiso N, Yoshimura A.",
+   "revista": "Jpn J Clin Oncol",
+   "data": "2026-09-30T00:00:00+00:00",
+   "doi": "10.1093/jjco/hyag158",
+   "url": "https://doi.org/10.1093/jjco/hyag158",
    "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Interdisciplinary management and genetic evaluation of pediatric cancer predisposition syndromes: a retrospective cohort study.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Manejo interdisciplinario y evaluación genética de los síndromes de predisposición al cáncer pediátrico: un estudio de cohorte retrospectivo."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "Carcinoides/TNEs Pulmonares de Grau 3: O Estudo do Comitê de Patologia da IASLC com Proposta de uma Nova Categoria de Diagnóstico.",
-   "autores": "Rekhtman N, Hanna MG, Hofman P, Mino-Kenudson M, Joubert P, Papotti M, Sholl LM, Shim HS, Han Y, Hofman V, Hung YP…",
-   "revista": "J Thorac Oncol",
-   "data": "2026-09-25T00:00:00+00:00",
-   "doi": "10.1016/j.jtho.2026.106121",
-   "url": "https://doi.org/10.1016/j.jtho.2026.106121",
+   "titulo": "Curcumin from Turmeric Alleviates Lipid Metabolism: Network Pharmacology and Cellular Validation.",
+   "autores": "Niu LS, Zhang YZ, Wu FY, Qi WH, Ren C, Xu YS, Yang YT, Zhang ZS.",
+   "revista": "Am J Chin Med",
+   "data": "2026-09-30T00:00:00+00:00",
+   "doi": "10.1142/s0192415x26500813",
+   "url": "https://doi.org/10.1142/s0192415x26500813",
    "acesso_aberto": false,
-   "tema": "Saúde",
-   "titulo_original": "Grade 3 Lung Carcinoids/NETs: The IASLC Pathology Committee Study with Proposal of a New Diagnostic Category.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Carcinoides/Net pulmonares de grado 3: el estudio del Comité de Patología de IASLC con propuesta de una nueva categoría de diagnóstico."
-    }
-   }
+   "tema": "Ciência"
   },
   {
    "tipo": "artigo",
-   "titulo": "PDLIM2 na metástase de adenocarcinoma de pulmão.",
-   "autores": "Gao F, Xiao Y, Zhang H, Shapiro SD, Qu Z, Xiao G.",
-   "revista": "Neoplasia",
-   "data": "2026-09-25T00:00:00+00:00",
-   "doi": "10.1016/j.neo.2026.101371",
-   "url": "https://doi.org/10.1016/j.neo.2026.101371",
+   "titulo": "Clinical and molecular characterization of non-PIK3CA-related vascular malformations with overgrowth in a pediatric cohort.",
+   "autores": "Reynolds G, Luca M, Coppo P, La Selva R, Leoni C, Bellani I, Ragusa S, Massuras S, Perrelli S, Martino S, Buonuomo PS…",
+   "revista": "World J Pediatr",
+   "data": "2026-09-30T00:00:00+00:00",
+   "doi": "10.1007/s12519-026-01098-3",
+   "url": "https://doi.org/10.1007/s12519-026-01098-3",
    "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "PDLIM2 in lung adenocarcinoma metastasis.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "PDLIM2 en metástasis de adenocarcinoma de pulmón."
-    }
-   }
+   "tema": "Ciência"
   },
   {
    "tipo": "artigo",
-   "titulo": "Mutações <i>TRAF7</i> estabilizam K/NRAS e hiperativam a sinalização MAPK para causar defeitos de neurodesenvolvimento CAFDADD.",
-   "autores": "Xiao M, Liu Y, Song X, Liu J, Tang X, Dou M, Yu W, Zhang H, Weng W, Han D, Lan X, Zhao T, Wang C, Ma L, Xu NJ, Wu S.",
-   "revista": "Sci Adv",
-   "data": "2026-09-25T00:00:00+00:00",
-   "doi": "10.1126/sciadv.adw8672",
-   "url": "https://doi.org/10.1126/sciadv.adw8672",
-   "acesso_aberto": true,
-   "tema": "Genética",
-   "titulo_original": "<i>TRAF7</i> mutations stabilize K/NRAS and hyperactivate MAPK signaling to cause CAFDADD neurodevelopmental defects.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las mutaciones de <i>TRAF7</i> estabilizan K/NRAS e hiperactivan la señalización de MAPK para causar defectos del neurodesarrollo de CAFDADD."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Explorando o potencial citotóxico do extrato bruto de Artemisia herba-alba e dos principais fitoconstituintes usando ensaios in vitro e insights de docagem molecular.",
-   "autores": "Al-Halaseh LK, Al-Samydai AM, Moshawih S, Al-Qaraleh M, Al-Zregat DM, Amareen ZS, Al Soub MN, Abdelhadi NN, Qaraghuli S.",
-   "revista": "PLoS One",
-   "data": "2026-09-25T00:00:00+00:00",
-   "doi": "10.1371/journal.pone.0359068",
-   "url": "https://doi.org/10.1371/journal.pone.0359068",
-   "acesso_aberto": true,
-   "tema": "Ciência",
-   "titulo_original": "Exploring the cytotoxic potential of Artemisia herba-alba crude extract and key phytoconstituents using in vitro assays and molecular docking insights.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Explorando el potencial citotóxico del extracto crudo de Artemisia herba-alba y los fitoconstituyentes clave utilizando ensayos in vitro y conocimientos de acoplamiento molecular."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Mutações de ATM em neoplasias mielodisplásicas, leucemia mieloide aguda e neoplasias mieloproliferativas: uma revisão sistemática.",
-   "autores": "Laurindo LO, Parente MLB, Sasahara GL, Goes JVC, Sampaio LR, Pinheiro YV, Pinheiro RF.",
-   "revista": "Med Oncol",
-   "data": "2026-09-25T00:00:00+00:00",
-   "doi": "10.1007/s12032-026-03378-4",
-   "url": "https://doi.org/10.1007/s12032-026-03378-4",
-   "acesso_aberto": true,
-   "tema": "Câncer",
-   "titulo_original": "ATM mutations in myelodysplastic neoplasms, acute myeloid leukemia, and myeloproliferative neoplasms: a systematic review.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Mutaciones ATM en neoplasias mielodisplásicas, leucemia mieloide aguda y neoplasias mieloproliferativas: una revisión sistemática."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Comparação prospectiva randomizada entre Cisplatina Neoadjuvante Mitomicina C Plus e Carboplatina Paclitaxel Plus em pacientes com câncer de ovário associado a BRCA1.",
-   "autores": "Gorodnova TV, Sokolenko AP, Kotiv KB, Donskih RV, Yakovleva MG, Trifanov YN, Aleksakhina SN, Morozova NS, Kolesnikova…",
-   "revista": "Int J Cancer",
-   "data": "2026-09-25T00:00:00+00:00",
-   "doi": "10.1002/ijc.70750",
-   "url": "https://doi.org/10.1002/ijc.70750",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Randomized Prospective Comparison Between Neoadjuvant Mitomycin C Plus Cisplatin and Paclitaxel Plus Carboplatin in Patients With BRCA1-Associated Ovarian Cancer.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Comparación prospectiva aleatorizada entre mitomicina C más cisplatino neoadyuvante y paclitaxel más carboplatino en pacientes con cáncer de ovario asociado a BRCA1."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "As variantes in-frame no gene TP53 identificadas em amostras de leucemia adulta são predominantemente deletérias: um estudo da TP53 Network of Education and Research Initiative on CLL.",
-   "autores": "Pavlová Š, Gombíková J, Petrezsélyová S, Macůrek L, Ženatová M, Zádrapová M, Panovská A, Zapletalová E, Lores BF…",
+   "titulo": "TP53 mutations orchestrate partial EMT states in oral squamous cell carcinoma: spatially resolved and in vitro preliminary insights into tumour plasticity.",
+   "autores": "Ibrahim RA, Wan H, Kumar R, Teh MT, Kang A, Bailey E, Cottom H, Biddle A, Sequeira I, Fortune F.",
    "revista": "J Pathol",
-   "data": "2026-09-24T00:00:00+00:00",
-   "doi": "10.1002/path.70124",
-   "url": "https://doi.org/10.1002/path.70124",
+   "data": "2026-09-30T00:00:00+00:00",
+   "doi": "10.1002/path.70123",
+   "url": "https://doi.org/10.1002/path.70123",
    "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "In-frame variants in TP53 gene identified in adult leukemia samples are predominantly deleterious: a study of the TP53 Network of Education and Research Initiative on CLL.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las variantes en marco en el gen TP53 identificadas en muestras de leucemia en adultos son predominantemente perjudiciales: un estudio de la Red TP53 de Iniciativa de Educación e Investigación sobre CLL."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "Associação de Alterações de <i>ATM</i> com Resultados Após <sup>177</sup> Tratamento com Lu-PSMA-617 em Pacientes com Câncer de Próstata Resistente à Castração Metastático.",
-   "autores": "Mahajan V, Yu L, Kollitz L, Boytim E, Zorko NA, Okazaki IJ, Cayci Z, Dehm SM, Hwang J, Arafa AT, Antonarakis ES.",
-   "revista": "J Nucl Med",
-   "data": "2026-09-24T00:00:00+00:00",
-   "doi": "10.2967/jnumed.126.273055",
-   "url": "https://doi.org/10.2967/jnumed.126.273055",
+   "titulo": "Dynamic Changes of ctDNA-Based MRD and Genomic Mutations Predict Prognosis in ESCC Treated With Definitive Radiotherapy.",
+   "autores": "Liu S, Wang Q, Han C, Li X, Cheng R, Liu L, Dong H, Ren X, Zhen S, Wang L.",
+   "revista": "Cancer Sci",
+   "data": "2026-09-30T00:00:00+00:00",
+   "doi": "10.1111/cas.70544",
+   "url": "https://doi.org/10.1111/cas.70544",
    "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Association of <i>ATM</i> Alterations with Outcomes After <sup>177</sup>Lu-PSMA-617 Treatment in Patients with Metastatic Castration-Resistant Prostate Cancer.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Asociación de alteraciones de <i>ATM</i> con resultados después del tratamiento con <sup>177</sup>Lu-PSMA-617 en pacientes con cáncer de próstata metastásico resistente a la castración."
-    }
-   }
+   "tema": "Genética"
   },
   {
    "tipo": "artigo",
-   "titulo": "Vigilância Endoscópica de Longo Prazo na Síndrome de Câncer Gástrico Difuso Hereditário.",
-   "autores": "Li M, Lynch D, Dewan T, Patel K, Patel D, Chung DC.",
-   "revista": "Cancer Prev Res (Phila)",
-   "data": "2026-09-24T00:00:00+00:00",
-   "doi": "10.1158/1940-6207.capr-26-0102",
-   "url": "https://doi.org/10.1158/1940-6207.capr-26-0102",
+   "titulo": "Gliomas with pleomorphic and pseudopapillary features (GPAP) are circumscribed tumors with targetable mutations, prolonged survival, and frequent tumor predisposition.",
+   "autores": "Picca A, Barresi V, Trinquet A, Bertero L, Nichelli L, Chotard G, Bernier M, Gareau T, Kacimi SEO, Bhalshankar J…",
+   "revista": "Brain Pathol",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1111/bpa.70153",
+   "url": "https://doi.org/10.1111/bpa.70153",
    "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Long-term Endoscopic Surveillance in Hereditary Diffuse Gastric Cancer Syndrome.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Vigilancia endoscópica a largo plazo en el síndrome de cáncer gástrico difuso hereditario."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationalwide spatiotemporal analysis, 2010-2025.",
-   "autores": "Grados Vásquez M, Guerra Blas JC, Salcedo-Prudencio A, Santos Siqueira T, Monteiro W, Amaya Parra JA, Martinez-Espinosa…",
-   "revista": "PLoS Negl Trop Dis",
-   "data": "2026-09-24T00:00:00+00:00",
-   "doi": "10.1371/journal.pntd.0014747",
-   "url": "https://doi.org/10.1371/journal.pntd.0014747",
-   "acesso_aberto": true,
-   "tema": "Ciência",
-   "titulo_original": "Persistent spatial hotspots and socioeconomic inequalities of snakebite envenoming in Peru: A nationwide spatiotemporal analysis, 2010-2025.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Puntos calientes espaciales persistentes y desigualdades socioeconómicas del envenenamiento por mordedura de serpiente en Perú: un análisis espaciotemporal a nivel nacional, 2010-2025."
-    }
-   }
+   "titulo": "Uptake of cascade testing and the factors affecting its implementation among patients in Japan with Lynch syndrome.",
+   "autores": "Kiyozumi Y, Matsubayashi H, Kado N, Nishimura S, Higashigawa S, Ishihara E, Harada R, Horiuchi Y.",
+   "revista": "J Hum Genet",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1038/s10038-026-01518-2",
+   "url": "https://doi.org/10.1038/s10038-026-01518-2",
+   "acesso_aberto": false,
+   "tema": "Saúde"
   },
   {
    "tipo": "artigo",
-   "titulo": "Universal versus guideline-based germline multigene panel testing in solid tumors: Diagnostic yield, variant of uncertain significance burden, and clinical actionability - A systematic review with meta-analysis.",
-   "autores": "Barjij I, Naciri S, Lkhoyaali S, Kharmoum S, Inrhaouen H, Elghissassi I, Boutayeb S, Mrabti H, Errihani H.",
-   "revista": "Genet Med",
-   "data": "2026-09-24T00:00:00+00:00",
-   "doi": "10.1016/j.gim.2026.102733",
-   "url": "https://doi.org/10.1016/j.gim.2026.102733",
+   "titulo": "Genomic Landscape of Primary and Secondary Cutaneous Angiosarcoma: A Single-Center Retrospective Cohort Analysis in Japan.",
+   "autores": "Liu WT, Seshimo H, Inoue T, Kurisaki M, Miyazaki R, Kase M, Kage Y, Nakano E, Namikawa K.",
+   "revista": "J Dermatol",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1111/1346-8138.70520",
+   "url": "https://doi.org/10.1111/1346-8138.70520",
    "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Universal versus guideline-based germline multigene panel testing in solid tumors: Diagnostic yield, variant of uncertain significance burden, and clinical actionability - A systematic review with meta-analysis.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Universal versus pruebas de panel multigénico de línea germinal basadas en pautas en tumores sólidos: rendimiento diagnóstico, variante de carga de significado incierto y capacidad de acción clínica: una revisión sistemática con metanálisis."
-    }
-   }
+   "tema": "Genética"
   },
   {
    "tipo": "artigo",
-   "titulo": "Preenchendo a lacuna do previvor da variante BRCA1/2 nos cuidados de saúde.",
-   "autores": "Gopal S.",
-   "revista": "JAAPA",
-   "data": "2026-09-24T00:00:00+00:00",
-   "doi": "10.1097/01.jaa.0000000000000423",
-   "url": "https://doi.org/10.1097/01.jaa.0000000000000423",
+   "titulo": "Rotational thromboelastometry guided transfusion in venom-induced consumptive coagulopathy following a haemotoxic snakebite.",
+   "autores": "Gaayathri M, Vt A, G M, Ayyan M.",
+   "revista": "BMJ Case Rep",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1136/bcr-2026-274731",
+   "url": "https://doi.org/10.1136/bcr-2026-274731",
    "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Bridging the BRCA1/2 variant previvor gap in health care.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Cerrar la brecha previvor variante BRCA1/2 en la atención médica."
-    }
-   }
+   "tema": "Ciência"
   },
   {
    "tipo": "artigo",
-   "titulo": "A puerarina atenua a neurotoxicidade cortical induzida por etanol em associação com a sinalização AKT/mTOR e respostas relacionadas à autofagia.",
-   "autores": "Liu F, Huang S, Xiao H, Zhou Y, Lin L, Liu Z, Lan J, Chen X, Tian H.",
-   "revista": "Toxicol Mech Methods",
-   "data": "2026-09-24T00:00:00+00:00",
-   "doi": "10.1080/15376516.2026.2733168",
-   "url": "https://doi.org/10.1080/15376516.2026.2733168",
+   "titulo": "Distinct genomic landscape of non-small cell lung cancer in Bangladeshi patients: Implications for precision oncology in a resource-limited setting.",
+   "autores": "Al Amin M, Das M, Nath PK, Noman ASM, Parial R.",
+   "revista": "Transl Oncol",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1016/j.tranon.2026.103051",
+   "url": "https://doi.org/10.1016/j.tranon.2026.103051",
    "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Puerarin attenuates binge ethanol-induced cortical neurotoxicity in association with AKT/mTOR signaling and autophagy-related responses.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La puerarina atenúa la neurotoxicidad cortical inducida por etanol en exceso en asociación con la señalización de AKT/mTOR y las respuestas relacionadas con la autofagia."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "[Impacto emocional do risco hereditário de câncer nos pacientes e suas famílias].",
-   "autores": "Buitrago Ramírez F.",
-   "revista": "Aten Primaria",
-   "data": "2026-09-23T00:00:00+00:00",
-   "doi": "10.1016/j.aprim.2026.103612",
-   "url": "https://doi.org/10.1016/j.aprim.2026.103612",
+   "titulo": "Clinical and Molecular Profiles of Treatment-Emergent Small Cell Neuroendocrine Prostate Cancers in the Era of Intensified Systemic Therapies.",
+   "autores": "Bilani N, Perez JM, Aparicio AM, Colli-Cruz C, Sternberg CN, Guevara D, Boytim E, Nelson PS, Sayar E, Haffner MC, Sharp…",
+   "revista": "Cancer Res Commun",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1158/2767-9764.crc-26-0370",
+   "url": "https://doi.org/10.1158/2767-9764.crc-26-0370",
    "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "[Emotional impact of hereditary cancer risk on patients and their families].",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "[Impacto emocional del riesgo de cáncer hereditario en los pacientes y sus familias]."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "Targeting snake venom metalloproteinases: structural diversity, molecular pathogenesis and therapeutic interventions.",
-   "autores": "Dodakallanavar J, Harish DR, Hiremath K, Sampat GH, Patil VS, Mahadevamurthy RK, Ugare S, Akula KK, Manjunathachar HV.",
-   "revista": "Mol Biol Rep",
-   "data": "2026-09-23T00:00:00+00:00",
-   "doi": "10.1007/s11033-026-12781-z",
-   "url": "https://doi.org/10.1007/s11033-026-12781-z",
+   "titulo": "Sex-dependent effects of neonatal hyperoxia on prefrontal cortex development.",
+   "autores": "Ke X, Yu W, Schreck CF, Varberg JM, Gener MA, Louiselle DA, Xia S, Mabry SM, Menden HL, Sampath V, Lane RH, Varberg KM.",
+   "revista": "JCI Insight",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1172/jci.insight.209805",
+   "url": "https://doi.org/10.1172/jci.insight.209805",
    "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Targeting snake venom metalloproteinases: structural diversity, molecular pathogenesis and therapeutic interventions.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Orientación a las metaloproteinasas de veneno de serpiente: diversidad estructural, patogénesis molecular e intervenciones terapéuticas."
-    }
-   }
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Intrinsic endonucleolytic activity of snake venom phosphodiesterase.",
+   "autores": "Aoki-Shioi N, Zaitsu Y, Shikasho R, Lin IJ, Wu WG, Kuraoka I.",
+   "revista": "J Biochem",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1093/jb/mvag067",
+   "url": "https://doi.org/10.1093/jb/mvag067",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Sequential lymphoid neoplasms mimicking relapse of mediastinal grey zone lymphoma in a patient with germline variants in EP300 and PTPRK.",
+   "autores": "Tapken MJ, Juskevicius D, Balestri I, Bollinger CR, Alborelli I, Kurscheid S, Cajacob L, Willi N, Häusermann P…",
+   "revista": "Virchows Arch",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1007/s00428-026-04733-6",
+   "url": "https://doi.org/10.1007/s00428-026-04733-6",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Rapid minigene workflow for functional reclassification of splicing variants in hereditary cancer diagnostics.",
+   "autores": "Calandra N, Mereu E, Ogliara P, Casalis Cavalchini G, Giachino DF, Parasiliti Caprino M, Gai G, Mussa A, Vallero S…",
+   "revista": "J Med Genet",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1136/jmg-2026-111675",
+   "url": "https://doi.org/10.1136/jmg-2026-111675",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Potential advantage of clinical exome sequencing in <i>BRCA1/2</i>-negative families: a retrospective study of a cohort of 500 patients at a high-risk for hereditary cancers.",
+   "autores": "Dell'Elice A, Palmarini C, Anaclerio F, Pilenzi L, Calabrese G, Palka C, Tinari N, Grassadonia A, Ballerini P, Grossi…",
+   "revista": "J Med Genet",
+   "data": "2026-09-29T00:00:00+00:00",
+   "doi": "10.1136/jmg-2026-111497",
+   "url": "https://doi.org/10.1136/jmg-2026-111497",
+   "acesso_aberto": false,
+   "tema": "Câncer"
   }
  ],
  "fontes": [
@@ -1164,6 +959,16 @@
   "anglo saxons got special treatment in medieval rome": "2026-09-30T23:58:50.808110+00:00",
   "nova ferramenta de ia preve rota e intensidade de tempestades em curtissimo prazo": "2026-10-01T06:10:04.803724+00:00",
   "agencia fapesp estreia novo layout": "2026-10-01T06:10:04.803724+00:00",
-  "expansao urbana causa colapso ecologico em riachos da regiao metropolitana de sao paulo": "2026-10-01T06:10:04.803724+00:00"
+  "expansao urbana causa colapso ecologico em riachos da regiao metropolitana de sao paulo": "2026-10-01T06:10:04.803724+00:00",
+  "estilo de vida do futuro pai e fertilizacao sem tratamento previo afetam desenvolvimento do bebe": "2026-10-01T13:33:17.628504+00:00",
+  "tres pesquisas da odontologia da usp em ribeirao preto sao premiadas em encontro nacional": "2026-10-01T13:33:17.628504+00:00",
+  "dialogos avancados desafios contemporaneos do humano": "2026-10-01T13:33:17.628504+00:00",
+  "procrastinacao duvidosa": "2026-10-01T13:33:17.628504+00:00",
+  "pos graduacao em controladoria e contabilidade celebra 21 anos e debate desafios da pesquisa": "2026-10-01T13:33:17.628504+00:00",
+  "the best popular science books of october 2026": "2026-10-01T13:33:17.628504+00:00",
+  "infogripe srag aumenta em criancas no rio de janeiro e no espirito santo": "2026-10-01T13:33:17.628504+00:00",
+  "how climate change is altering petrichor the glorious smell after it rains": "2026-10-01T13:33:17.628504+00:00",
+  "can mathematicians still refuse to use ai at this point": "2026-10-01T13:33:17.628504+00:00",
+  "democratic michigan senate hopeful abdul el sayed explains how science influences his politics": "2026-10-01T13:33:17.628504+00:00"
  }
 }
