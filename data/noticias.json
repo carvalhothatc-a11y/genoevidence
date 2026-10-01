@@ -1,32 +1,6 @@
 {
- "atualizado_em": "2026-10-01T19:38:03.422612+00:00",
+ "atualizado_em": "2026-10-01T23:57:53.529959+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "Estilo de vida do futuro pai e fertilização sem tratamento prévio afetam desenvolvimento do bebê",
-   "resumo": "Saúde do genitor antes da concepção pode alterar marcas moleculares do espermatozoide, ativando ou silenciando genes sem alterar a sequência do DNA",
-   "url": "https://jornal.usp.br/ciencias/estilo-de-vida-do-futuro-pai-e-fertilizacao-sem-tratamento-previo-afetam-desenvolvimento-do-bebe/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-01T10:00:11+00:00",
-   "tema": "Genética",
-   "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20260930_bebidaecigarro.jpg",
-   "foco": {
-    "x": 0,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Future father's lifestyle and untreated fertilization affect baby's development",
-     "resumo": "Health of the parent before conception can alter molecular marks of the sperm by activating or silencing genes without altering the DNA sequence"
-    },
-    "es": {
-     "titulo": "El estilo de vida del futuro padre y la fertilización no tratada afectan el desarrollo del bebé",
-     "resumo": "La salud del progenitor antes de la concepción puede alterar las marcas moleculares de los espermatozoides activando o silenciando genes sin alterar la secuencia de ADN"
-    }
-   }
-  },
   {
    "tipo": "noticia",
    "titulo": "Nova ferramenta de IA prevê rota e intensidade de tempestades em curtíssimo prazo",
@@ -55,6 +29,27 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "O câncer de pâncreas pode ser interrompido? A tática radical aumenta as esperanças",
+   "resumo": "Com as perspectivas de novos tratamentos em alta, os pesquisadores estão procurando maneiras de aumentar a sobrevida tratando a doença precocemente.",
+   "url": "https://www.nature.com/articles/d41586-026-03119-7",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-01T00:00:00+00:00",
+   "tema": "Câncer",
+   "relevancia": 9,
+   "imagem": "",
+   "titulo_original": "Can pancreatic cancer be stopped in its tracks? Radical tactic raises hopes",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Se puede detener el cáncer de páncreas? La táctica radical aumenta las esperanzas",
+     "resumo": "Con las perspectivas de nuevos tratamientos en su punto más alto, los investigadores están buscando formas de aumentar la supervivencia tratando la enfermedad a tiempo."
+    }
+   },
+   "resumo_original": "With prospects for new treatments at an all-time high, researchers are looking for ways to boost survival by treating the disease early."
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Envoltório de placenta acelera a recuperação da ereção após cirurgia de próstata",
    "resumo": "Membranas amnióticas secas de placentas doadas podem ser enroladas em torno de nervos delicados durante a cirurgia de câncer de próstata para acelerar o tempo para uma primeira ereção após o procedimento",
    "url": "https://www.newscientist.com/article/2591588-placenta-wrap-hastens-erection-recovery-after-prostate-surgery/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -77,6 +72,58 @@
     }
    },
    "resumo_original": "Dried amniotic membranes from donated placentas can be wrapped around delicate nerves during prostate cancer surgery to hasten the time to a first erection after the procedure"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Agência FAPESP estreia novo layout",
+   "resumo": "Com estética mais limpa, portal aprimora o conforto visual do leitor e confere mais protagonismo a fotos, infográficos e vídeos",
+   "url": "https://agencia.fapesp.br/agencia-fapesp-estreia-novo-layout/59317",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-01T23:57:53.529959+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59317.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Agência FAPESP debuts new layout",
+     "resumo": "With a cleaner aesthetic, portal improves the visual comfort of the reader and gives more prominence to photos, infographics and videos"
+    },
+    "es": {
+     "titulo": "Agência FAPESP estrena nueva maquetación",
+     "resumo": "Con una estética más limpia, portal mejora la comodidad visual del lector y da más protagonismo a las fotos, infografías y vídeos"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Livro resgata trajetória da Educação Física e do estudo do movimento humano na USP",
+   "resumo": "Em obra lançada pela Edusp, autores entrelaçam vivências pessoais à história institucional para analisar a evolução científica da área e os desafios contemporâneos",
+   "url": "https://jornal.usp.br/universidade/livro-resgata-trajetoria-da-educacao-fisica-e-do-estudo-do-movimento-humano-na-usp/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-01T20:58:15+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/10/20250930_00_homem_vitruviano.jpg",
+   "foco": {
+    "x": 44,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Book rescues the trajectory of Physical Education and the study of human movement at USP",
+     "resumo": "In a work launched by Edusp, authors intertwine personal experiences with institutional history to analyze the scientific evolution of the area and contemporary challenges"
+    },
+    "es": {
+     "titulo": "Libro rescata la trayectoria de la Educación Física y el estudio del movimiento humano en la USP",
+     "resumo": "En un trabajo lanzado por Edusp, los autores entrelazan experiencias personales con la historia institucional para analizar la evolución científica del área y los desafíos contemporáneos"
+    }
+   }
   },
   {
    "tipo": "noticia",
@@ -126,28 +173,6 @@
     "es": {
      "titulo": "Antiguos decanos destacan el papel de la universidad pública en el desarrollo del país",
      "resumo": "La autonomía y la libertad se consideran fundamentales para la producción de conocimiento que genere avances y beneficie a la sociedad"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Diálogos Avançados: Desafios Contemporâneos do Humano",
-   "resumo": "Evento gratuito, que será realizado entre os dias 6 e 8 de outubro, em São Carlos, propõe reflexões no campo da filosofia, psicologia, comunicação e ciências sociais",
-   "url": "https://agencia.fapesp.br/dialogos-avancados-desafios-contemporaneos-do-humano/59316",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-01T13:33:17.628504+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Advanced Dialogues: Contemporary Challenges of the Human",
-     "resumo": "A free event, which will be held between October 6 and 8, in São Carlos, proposes reflections in the field of philosophy, psychology, communication and social sciences"
-    },
-    "es": {
-     "titulo": "Diálogos avanzados: desafíos contemporáneos de lo humano",
-     "resumo": "Un evento gratuito, que se realizará entre el 6 y el 8 de octubre, en São Carlos, propone reflexiones en el campo de la filosofía, la psicología, la comunicación y las ciencias sociales"
     }
    }
   },
@@ -230,32 +255,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Empreendedorismo e impacto social mostram como conhecimento e inovação transformam vidas",
-   "resumo": "Por Maria Helena Palucci Marziale, pró-reitora de Pesquisa e Inovação da USP, Carlos Eduardo Pellegrino Cerri, pró-reitor adjunto de Pesquisa da USP, e Norberto Peporine Lopes, pró-reitor adjunto de Inovação da USP",
-   "url": "https://jornal.usp.br/artigos/empreendedorismo-e-impacto-social-mostram-como-conhecimento-e-inovacao-transformam-vidas/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-30T22:04:16+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260930_artigo-pro-reitores-.jpg",
-   "foco": {
-    "x": 57,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Entrepreneurship and social impact show how knowledge and innovation transform lives",
-     "resumo": "By Maria Helena Palucci Marziale, Pro-Rector of Research and Innovation at USP, Carlos Eduardo Pellegrino Cerri, Pro-Rector of Research at USP, and Norberto Peporine Lopes, Pro-Rector of Innovation at USP"
-    },
-    "es": {
-     "titulo": "El emprendimiento y el impacto social muestran cómo el conocimiento y la innovación transforman vidas",
-     "resumo": "Por Maria Helena Palucci Marziale, Pro-Rectora de Investigación e Innovación de la USP, Carlos Eduardo Pellegrino Cerri, Pro-Rector de Investigación de la USP, y Norberto Peporine Lopes, Pro-Rector de Innovación de la USP"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "O teste do centro de dados AI do Projeto Suncatcher do Google foi lançado oficialmente para o espaço a bordo do foguete SpaceX",
    "resumo": "O Projeto Suncatcher visa testar os chips de IA do Google no ambiente hostil do espaço",
    "url": "https://www.scientificamerican.com/article/googles-project-suncatcher-ai-data-center-test-has-officially-launched-to-space-aboard-spacex-rocket/",
@@ -306,78 +305,67 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Os cientistas descobrem que a crosta terrestre rolou repetidamente - e isso ainda está acontecendo",
-   "resumo": "Uma análise das antigas mudanças no nível do mar revela que toda a Terra sólida mudou várias vezes",
-   "url": "https://www.scientificamerican.com/article/scientists-discover-that-earths-crust-has-repeatedly-rolled-over-and-its-still-happening/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-01T18:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/m/715d4e0fdac3a670/original/planet-earth.jpg?m=1733515635.572&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists discover that Earth’s crust has repeatedly rolled over—and it’s still happening",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos descubren que la corteza terrestre se ha volcado repetidamente, y todavía está sucediendo",
-     "resumo": "Un análisis de los antiguos cambios en el nivel del mar revela que toda la Tierra sólida ha cambiado varias veces"
-    }
-   },
-   "resumo_original": "An analysis of ancient sea-level changes reveals that the whole solid Earth has shifted multiple times"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Parar de comer alimentos ultraprocessados pode melhorar sua saúde mental?",
-   "resumo": "Pessoas com depressão que cortaram drasticamente alimentos ultraprocessados experimentaram melhorias notáveis em seus sintomas em um pequeno estudo preliminar. Os pesquisadores suspeitam que uma alimentação mais saudável pode beneficiar o cérebro, em parte, reduzindo os danos intestinais e...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260930225448.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-01T06:34:01+00:00",
+   "titulo": "InfoGripe: SRAG aumenta em crianças no Rio de Janeiro e Sergipe",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/infogripe-srag-aumenta-em-criancas-no-rio-de-janeiro-e-sergipe",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-01T12:56:11+00:00",
    "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/unhealthy-ultraprocessed-junk-food.webp",
+   "relevancia": 6,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infogripe_d_0.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Could quitting ultra-processed food boost your mental health?",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "InfoGrip: SARS increases in children in Rio de Janeiro and Sergipe"
+    },
     "es": {
-     "titulo": "¿Podría dejar los alimentos ultraprocesados mejorar su salud mental?",
-     "resumo": "Las personas con depresión que recortaron drásticamente los alimentos ultraprocesados experimentaron mejoras notables en sus síntomas en un pequeño estudio preliminar. Los investigadores sospechan que una alimentación más saludable puede beneficiar al cerebro en parte al reducir el daño intestinal y..."
+     "titulo": "InfoGrip: El SARS aumenta en los niños de Río de Janeiro y Sergipe"
     }
-   },
-   "resumo_original": "People with depression who dramatically cut ultra-processed foods experienced notable improvements in their symptoms in a small preliminary study. Researchers suspect healthier eating may benefit the brain partly by reducing gut damage and…"
+   }
   },
   {
    "tipo": "noticia",
-   "titulo": "1 em cada 13 adultos com menos de 30 anos já tinha placa arterial escondida",
-   "resumo": "Mais da metade dos 16.000 adultos aparentemente saudáveis tinham sinais de aterosclerose, com placas arteriais já detectáveis em cerca de 1 em cada 13 pessoas com idades entre 18 e 29 anos. Pesquisadores dizem que imagens diretas das artérias podem revelar algo oculto...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260929053541.htm",
-   "fonte": "ScienceDaily · Saúde",
+   "titulo": "Sinal dos tempos: os músculos da linguagem da IA no estimado dicionário",
+   "resumo": "‘Agentic’, ‘prompt engineering’ e outros termos técnicos estão entre as 1.400 entradas adicionadas ao catálogo online do Merriam-Webster.",
+   "url": "https://www.nature.com/articles/d41586-026-03044-9",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-01T11:46:21+00:00",
+   "data": "2026-10-01T00:00:00+00:00",
    "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/cholesterol-plaque-buildup-narrowed-blood-vessel.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "1 in 13 adults under 30 already had hidden artery plaque",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "Sign of the times: AI lingo muscles into esteemed dictionary",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "1 de cada 13 adultos menores de 30 años ya tenía placa arterial oculta",
-     "resumo": "Más de la mitad de los 16.000 adultos aparentemente sanos tenían signos de aterosclerosis, con placas arteriales ya detectables en aproximadamente 1 de cada 13 personas de 18 a 29 años. Los investigadores dicen que las imágenes directas de las arterias podrían revelar..."
+     "titulo": "Signo de los tiempos: los músculos de la jerga de la IA en un estimado diccionario",
+     "resumo": "‘Agentic’, ‘prompt engineering’ y otros términos técnicos se encuentran entre las 1.400 entradas añadidas al catálogo en línea de Merriam-Webster."
     }
    },
-   "resumo_original": "More than half of 16,000 apparently healthy adults had signs of atherosclerosis, with arterial plaques already detectable in about 1 in 13 people ages 18 to 29. Researchers say directly imaging the arteries could reveal hidden…"
+   "resumo_original": "‘Agentic’, ‘prompt engineering’ and other technical terms are among the 1,400 entries added to Merriam-Webster’s online catalogue."
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Caracterização baseada na população da síndrome do tumor de hamartoma PTEN",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s43856-026-01941-8",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-10-01T00:00:00+00:00",
+   "tema": "Câncer",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "Population-based characterization of PTEN hamartoma tumor syndrome",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Caracterización basada en la población del síndrome tumoral de hamartoma PTEN"
+    }
+   }
   }
  ],
  "artigos": [
@@ -392,7 +380,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Global implementation of hereditary cancer care in gynecologic oncology: Development and evaluation of the Hereditary Cancer Care Implementation Index.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Implementación global de la atención oncológica hereditaria en oncología ginecológica: Desarrollo y evaluación del Índice de Implementación de la Atención Oncológica Hereditaria."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -405,7 +398,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Mapping Mutations and Signaling Network Interactions to Guide Precision Therapy in Gallbladder Cancer.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Mapeo de mutaciones e interacciones de la red de señalización para guiar la terapia de precisión en el cáncer de vesícula biliar."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -562,18 +560,30 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Germ line landscape stratification defines distinct molecular and prognostic groups in therapy-related myeloid neoplasms.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La estratificación del paisaje de la línea germinal define distintos grupos moleculares y pronósticos en las neoplasias mieloides relacionadas con la terapia."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Ziyuglycoside I Attenuates Deinagkistrodon acutus Venom-Induced Injury in Renal Tubular Epithelial Cells by Modulating PAR1-NLRP3-IL-1β Signaling.",
+   "titulo": "Ziyuglycoside I atenua a lesão induzida por veneno de Deinagkistrodon acutus em células epiteliais tubulares renais modulando a sinalização de PAR1-NLRP3-IL-1β.",
    "autores": "Shen Y, Jiang N, Tu M.",
    "revista": "Toxicon",
    "data": "2026-09-30T00:00:00+00:00",
    "doi": "10.1016/j.toxicon.2026.109312",
    "url": "https://doi.org/10.1016/j.toxicon.2026.109312",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Ziyuglycoside I Attenuates Deinagkistrodon acutus Venom-Induced Injury in Renal Tubular Epithelial Cells by Modulating PAR1-NLRP3-IL-1β Signaling.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El ziuglucósido I atenúa la lesión inducida por veneno de Deinagkistrodon acutus en las células epiteliales tubulares renales mediante la modulación de la señalización de PAR1-NLRP3-IL-1β."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -597,139 +607,165 @@
    "doi": "10.2196/97869",
    "url": "https://doi.org/10.2196/97869",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Conversational AI in Hereditary Cancer Care: Sociotechnical Study of Responsible Design Requirements.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Interpreting TP53 pathogenic variants in germline testing and cancer genomics: pathogenicity, origin, and clinical actionability.",
+   "titulo": "Interpretando variantes patogênicas TP53 em testes de linhagem germinativa e genômica do câncer: patogenicidade, origem e capacidade de ação clínica.",
    "autores": "Imoto I, Takaiso N, Yoshimura A.",
    "revista": "Jpn J Clin Oncol",
    "data": "2026-09-30T00:00:00+00:00",
    "doi": "10.1093/jjco/hyag158",
    "url": "https://doi.org/10.1093/jjco/hyag158",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Interpreting TP53 pathogenic variants in germline testing and cancer genomics: pathogenicity, origin, and clinical actionability.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Curcumin from Turmeric Alleviates Lipid Metabolism: Network Pharmacology and Cellular Validation.",
+   "titulo": "A curcumina da cúrcuma alivia o metabolismo lipídico: farmacologia de rede e validação celular.",
    "autores": "Niu LS, Zhang YZ, Wu FY, Qi WH, Ren C, Xu YS, Yang YT, Zhang ZS.",
    "revista": "Am J Chin Med",
    "data": "2026-09-30T00:00:00+00:00",
    "doi": "10.1142/s0192415x26500813",
    "url": "https://doi.org/10.1142/s0192415x26500813",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Curcumin from Turmeric Alleviates Lipid Metabolism: Network Pharmacology and Cellular Validation.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Clinical and molecular characterization of non-PIK3CA-related vascular malformations with overgrowth in a pediatric cohort.",
+   "titulo": "Caracterização clínica e molecular de malformações vasculares não relacionadas a PIK3CA com supercrescimento em uma coorte pediátrica.",
    "autores": "Reynolds G, Luca M, Coppo P, La Selva R, Leoni C, Bellani I, Ragusa S, Massuras S, Perrelli S, Martino S, Buonuomo PS…",
    "revista": "World J Pediatr",
    "data": "2026-09-30T00:00:00+00:00",
    "doi": "10.1007/s12519-026-01098-3",
    "url": "https://doi.org/10.1007/s12519-026-01098-3",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Clinical and molecular characterization of non-PIK3CA-related vascular malformations with overgrowth in a pediatric cohort.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "TP53 mutations orchestrate partial EMT states in oral squamous cell carcinoma: spatially resolved and in vitro preliminary insights into tumour plasticity.",
+   "titulo": "As mutações TP53 orquestram estados EMT parciais no carcinoma de células escamosas oral: insights preliminares espacialmente resolvidos e in vitro sobre a plasticidade tumoral.",
    "autores": "Ibrahim RA, Wan H, Kumar R, Teh MT, Kang A, Bailey E, Cottom H, Biddle A, Sequeira I, Fortune F.",
    "revista": "J Pathol",
    "data": "2026-09-30T00:00:00+00:00",
    "doi": "10.1002/path.70123",
    "url": "https://doi.org/10.1002/path.70123",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "TP53 mutations orchestrate partial EMT states in oral squamous cell carcinoma: spatially resolved and in vitro preliminary insights into tumour plasticity.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Dynamic Changes of ctDNA-Based MRD and Genomic Mutations Predict Prognosis in ESCC Treated With Definitive Radiotherapy.",
+   "titulo": "Alterações dinâmicas de MRD baseado em ctDNA e mutações genômicas predizem prognóstico em ESCC tratada com radioterapia definitiva.",
    "autores": "Liu S, Wang Q, Han C, Li X, Cheng R, Liu L, Dong H, Ren X, Zhen S, Wang L.",
    "revista": "Cancer Sci",
    "data": "2026-09-30T00:00:00+00:00",
    "doi": "10.1111/cas.70544",
    "url": "https://doi.org/10.1111/cas.70544",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Dynamic Changes of ctDNA-Based MRD and Genomic Mutations Predict Prognosis in ESCC Treated With Definitive Radiotherapy.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Gliomas with pleomorphic and pseudopapillary features (GPAP) are circumscribed tumors with targetable mutations, prolonged survival, and frequent tumor predisposition.",
+   "titulo": "Gliomas com características pleomórficas e pseudopapilares (GPAP) são tumores circunscritos com mutações direcionáveis, sobrevida prolongada e predisposição tumoral frequente.",
    "autores": "Picca A, Barresi V, Trinquet A, Bertero L, Nichelli L, Chotard G, Bernier M, Gareau T, Kacimi SEO, Bhalshankar J…",
    "revista": "Brain Pathol",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1111/bpa.70153",
    "url": "https://doi.org/10.1111/bpa.70153",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Gliomas with pleomorphic and pseudopapillary features (GPAP) are circumscribed tumors with targetable mutations, prolonged survival, and frequent tumor predisposition.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Uptake of cascade testing and the factors affecting its implementation among patients in Japan with Lynch syndrome.",
+   "titulo": "Captação de testes em cascata e os fatores que afetam sua implementação entre pacientes no Japão com síndrome de Lynch.",
    "autores": "Kiyozumi Y, Matsubayashi H, Kado N, Nishimura S, Higashigawa S, Ishihara E, Harada R, Horiuchi Y.",
    "revista": "J Hum Genet",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1038/s10038-026-01518-2",
    "url": "https://doi.org/10.1038/s10038-026-01518-2",
    "acesso_aberto": false,
-   "tema": "Saúde"
+   "tema": "Saúde",
+   "titulo_original": "Uptake of cascade testing and the factors affecting its implementation among patients in Japan with Lynch syndrome.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Genomic Landscape of Primary and Secondary Cutaneous Angiosarcoma: A Single-Center Retrospective Cohort Analysis in Japan.",
+   "titulo": "Paisagem genômica do angiossarcoma cutâneo primário e secundário: uma análise de coorte retrospectiva de centro único no Japão.",
    "autores": "Liu WT, Seshimo H, Inoue T, Kurisaki M, Miyazaki R, Kase M, Kage Y, Nakano E, Namikawa K.",
    "revista": "J Dermatol",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1111/1346-8138.70520",
    "url": "https://doi.org/10.1111/1346-8138.70520",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Genomic Landscape of Primary and Secondary Cutaneous Angiosarcoma: A Single-Center Retrospective Cohort Analysis in Japan.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Rotational thromboelastometry guided transfusion in venom-induced consumptive coagulopathy following a haemotoxic snakebite.",
+   "titulo": "A tromboelastometria rotacional guiou a transfusão na coagulopatia de consumo induzida por veneno após uma picada de cobra hemotóxica.",
    "autores": "Gaayathri M, Vt A, G M, Ayyan M.",
    "revista": "BMJ Case Rep",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1136/bcr-2026-274731",
    "url": "https://doi.org/10.1136/bcr-2026-274731",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Rotational thromboelastometry guided transfusion in venom-induced consumptive coagulopathy following a haemotoxic snakebite.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Distinct genomic landscape of non-small cell lung cancer in Bangladeshi patients: Implications for precision oncology in a resource-limited setting.",
+   "titulo": "Paisagem genômica distinta do câncer de pulmão de células não pequenas em pacientes de Bangladesh: implicações para a oncologia de precisão em um ambiente com recursos limitados.",
    "autores": "Al Amin M, Das M, Nath PK, Noman ASM, Parial R.",
    "revista": "Transl Oncol",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1016/j.tranon.2026.103051",
    "url": "https://doi.org/10.1016/j.tranon.2026.103051",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Distinct genomic landscape of non-small cell lung cancer in Bangladeshi patients: Implications for precision oncology in a resource-limited setting.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Clinical and Molecular Profiles of Treatment-Emergent Small Cell Neuroendocrine Prostate Cancers in the Era of Intensified Systemic Therapies.",
+   "titulo": "Perfis Clínicos e Moleculares de Cânceres de Próstata Neuroendócrino de Células Pequenas Emergentes de Tratamento na Era de Terapias Sistêmicas Intensificadas.",
    "autores": "Bilani N, Perez JM, Aparicio AM, Colli-Cruz C, Sternberg CN, Guevara D, Boytim E, Nelson PS, Sayar E, Haffner MC, Sharp…",
    "revista": "Cancer Res Commun",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1158/2767-9764.crc-26-0370",
    "url": "https://doi.org/10.1158/2767-9764.crc-26-0370",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Clinical and Molecular Profiles of Treatment-Emergent Small Cell Neuroendocrine Prostate Cancers in the Era of Intensified Systemic Therapies.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Sex-dependent effects of neonatal hyperoxia on prefrontal cortex development.",
+   "titulo": "Efeitos dependentes do sexo da hiperóxia neonatal no desenvolvimento do córtex pré-frontal.",
    "autores": "Ke X, Yu W, Schreck CF, Varberg JM, Gener MA, Louiselle DA, Xia S, Mabry SM, Menden HL, Sampath V, Lane RH, Varberg KM.",
    "revista": "JCI Insight",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1172/jci.insight.209805",
    "url": "https://doi.org/10.1172/jci.insight.209805",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Sex-dependent effects of neonatal hyperoxia on prefrontal cortex development.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -746,36 +782,42 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Sequential lymphoid neoplasms mimicking relapse of mediastinal grey zone lymphoma in a patient with germline variants in EP300 and PTPRK.",
+   "titulo": "Neoplasias linfoides sequenciais que mimetizam a recidiva do linfoma da zona cinzenta do mediastino em um paciente com variantes da linhagem germinativa em EP300 e PTPRK.",
    "autores": "Tapken MJ, Juskevicius D, Balestri I, Bollinger CR, Alborelli I, Kurscheid S, Cajacob L, Willi N, Häusermann P…",
    "revista": "Virchows Arch",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1007/s00428-026-04733-6",
    "url": "https://doi.org/10.1007/s00428-026-04733-6",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Sequential lymphoid neoplasms mimicking relapse of mediastinal grey zone lymphoma in a patient with germline variants in EP300 and PTPRK.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Rapid minigene workflow for functional reclassification of splicing variants in hereditary cancer diagnostics.",
+   "titulo": "Fluxo de trabalho rápido de minigene para reclassificação funcional de variantes de splicing em diagnósticos de câncer hereditário.",
    "autores": "Calandra N, Mereu E, Ogliara P, Casalis Cavalchini G, Giachino DF, Parasiliti Caprino M, Gai G, Mussa A, Vallero S…",
    "revista": "J Med Genet",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1136/jmg-2026-111675",
    "url": "https://doi.org/10.1136/jmg-2026-111675",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Rapid minigene workflow for functional reclassification of splicing variants in hereditary cancer diagnostics.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Potential advantage of clinical exome sequencing in <i>BRCA1/2</i>-negative families: a retrospective study of a cohort of 500 patients at a high-risk for hereditary cancers.",
+   "titulo": "Vantagem potencial do sequenciamento clínico do exoma em famílias negativas para <i>BRCA1/2</i>: um estudo retrospectivo de uma coorte de 500 pacientes com alto risco de câncer hereditário.",
    "autores": "Dell'Elice A, Palmarini C, Anaclerio F, Pilenzi L, Calabrese G, Palka C, Tinari N, Grassadonia A, Ballerini P, Grossi…",
    "revista": "J Med Genet",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1136/jmg-2026-111497",
    "url": "https://doi.org/10.1136/jmg-2026-111497",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Potential advantage of clinical exome sequencing in <i>BRCA1/2</i>-negative families: a retrospective study of a cohort of 500 patients at a high-risk for hereditary cancers.",
+   "traduzido": true
   }
  ],
  "fontes": [
@@ -792,10 +834,7 @@
   "ScienceDaily · Saúde",
   "Europe PMC"
  ],
- "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
-  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
- ],
+ "erros": [],
  "mostradas": {
   "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-09-24T17:09:08.714347+00:00",
   "para ganhar um nobel o brasil precisa de mais gente fazendo pesquisa": "2026-09-24T17:09:08.714347+00:00",
@@ -1029,6 +1068,11 @@
   "googles project suncatcher ai data center test has officially launched to space onboard spacex rocket": "2026-10-01T19:38:03.422612+00:00",
   "scientists discover that earths crust has repeatedly rolled overand its still happening": "2026-10-01T19:38:03.422612+00:00",
   "could quitting ultra processed food boost your mental health": "2026-10-01T19:38:03.422612+00:00",
-  "1 in 13 adults under 30 already had hidden artery plaque": "2026-10-01T19:38:03.422612+00:00"
+  "1 in 13 adults under 30 already had hidden artery plaque": "2026-10-01T19:38:03.422612+00:00",
+  "can pancreatic cancer be stopped in its tracks radical tactic raises hopes": "2026-10-01T23:57:53.529959+00:00",
+  "livro resgata trajetoria da educacao fisica e do estudo do movimento humano na usp": "2026-10-01T23:57:53.529959+00:00",
+  "infogripe srag aumenta em criancas no rio de janeiro e sergipe": "2026-10-01T23:57:53.529959+00:00",
+  "sign of the times ai lingo muscles into esteemed dictionary": "2026-10-01T23:57:53.529959+00:00",
+  "population based characterization of pten hamartoma tumor syndrome": "2026-10-01T23:57:53.529959+00:00"
  }
 }
