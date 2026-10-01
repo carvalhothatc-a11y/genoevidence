@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-30T23:58:50.808110+00:00",
+ "atualizado_em": "2026-10-01T06:10:04.803724+00:00",
  "noticias": [
   {
    "titulo": "Anthropic quer usar IA para descobrir tratamentos para doenças raras",
@@ -29,53 +29,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Programa FAPESP de Mudanças Climáticas amplia escopo para integrar saúde, sociedade e políticas públicas",
-   "resumo": "Aposta na interdisciplinaridade permitirá abordar, além dos aspectos físicos das mudanças do clima, as consequências ambientais, socioeconômicas e sanitárias",
-   "url": "https://agencia.fapesp.br/programa-fapesp-de-mudancas-climaticas-amplia-escopo-para-integrar-saude-sociedade-e-politicas-publicas/59303",
+   "titulo": "Nova ferramenta de IA prevê rota e intensidade de tempestades em curtíssimo prazo",
+   "resumo": "Sistema desenvolvido na USP cruza dados de radares com rede neural para rastrear precipitações a cada cinco minutos; software pode ser executado em notebooks convencionais",
+   "url": "https://agencia.fapesp.br/nova-ferramenta-de-ia-preve-rota-e-intensidade-de-tempestades-em-curtissimo-prazo/59311",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-09-30T06:51:39.903624+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://agencia.fapesp.br/files/post/59303.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "i18n": {
-    "en": {
-     "titulo": "FAPESP Climate Change Program expands scope to integrate health, society and public policies",
-     "resumo": "A commitment to interdisciplinarity will allow us to address, in addition to the physical aspects of climate change, the environmental, socioeconomic and health consequences"
-    },
-    "es": {
-     "titulo": "El Programa de Cambio Climático de la FAPESP amplía el alcance para integrar salud, sociedad y políticas públicas",
-     "resumo": "Una apuesta por la interdisciplinariedad nos permitirá abordar, además de los aspectos físicos del cambio climático, las consecuencias ambientales, socioeconómicas y sanitarias"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Tabela Brasileira de Composição de Alimentos se transforma em ecossistema digital de pesquisa",
-   "resumo": "Mantida por centro apoiado pela FAPESP na USP, plataforma expande ferramentas computacionais, subsidia levantamentos nacionais de saúde pública e busca novas alternativas de financiamento",
-   "url": "https://agencia.fapesp.br/tabela-brasileira-de-composicao-de-alimentos-se-transforma-em-ecossistema-digital-de-pesquisa/59305",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-09-30T06:51:39.903624+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://agencia.fapesp.br/files/post/59305.jpeg",
+   "data": "2026-10-01T06:10:04.803724+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59311.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Brazilian Food Composition Table becomes a digital research ecosystem",
-     "resumo": "Maintained by a center supported by FAPESP at USP, the platform expands computational tools, subsidizes national public health surveys and seeks new financing alternatives"
+     "titulo": "New AI tool predicts storm path and intensity in the very short term",
+     "resumo": "System developed at USP crosses radar data with neural network to track precipitation every five minutes; software can run on conventional notebooks"
     },
     "es": {
-     "titulo": "La Mesa Brasileña de Composición Alimentaria se convierte en un ecosistema digital de investigación",
-     "resumo": "Mantenida por un centro apoyado por la FAPESP en la USP, la plataforma amplía las herramientas computacionales, subvenciona encuestas nacionales de salud pública y busca nuevas alternativas de financiamiento"
+     "titulo": "Una nueva herramienta de IA predice la trayectoria y la intensidad de las tormentas a muy corto plazo",
+     "resumo": "El sistema desarrollado en la USP cruza los datos de radar con la red neuronal para rastrear la precipitación cada cinco minutos; el software puede ejecutarse en portátiles convencionales"
     }
    }
   },
@@ -182,52 +156,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "A primeira década da FAPESP registrada em uma publicação histórica",
-   "resumo": "Obra de 1973, idealizada por Oscar Sala e coordenada por Tamás Szmrecsányi, oferece uma visão ampla da experiência da Fundação em seus primeiros anos de atuação",
-   "url": "https://centrodememoria.fapesp.br/PeD",
+   "titulo": "Agência FAPESP estreia novo layout",
+   "resumo": "Com estética mais limpa, portal aprimora o conforto visual do leitor e confere mais protagonismo a fotos, infográficos e vídeos",
+   "url": "https://agencia.fapesp.br/agencia-fapesp-estreia-novo-layout/59317",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-09-30T23:58:50.808110+00:00",
+   "data": "2026-10-01T06:10:04.803724+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://centrodememoria.fapesp.br/wp-content/uploads/2023/12/pesquisa-desenvolvimento.jpg",
-   "foco": {
-    "inteira": true
-   },
-   "i18n": {
-    "en": {
-     "titulo": "FAPESP's first decade recorded in a historical publication",
-     "resumo": "The 1973 work, conceived by Oscar Sala and coordinated by Tamás Szmrecsányi, offers a broad view of the Foundation's experience in its first years of operation"
-    },
-    "es": {
-     "titulo": "Primera década de la FAPESP registrada en una publicación histórica",
-     "resumo": "La obra de 1973, concebida por Oscar Sala y coordinada por Tamás Szmrecsányi, ofrece una visión amplia de la experiencia de la Fundación en sus primeros años de funcionamiento"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "De volta para o futuro",
-   "resumo": "Criado para repatriar a flora coletada por naturalistas europeus entre os séculos 18 e 20, o projeto Reflora completa 16 anos com quase 5 milhões de imagens produzidas e servindo de inspiração para a digitalização completa de um dos…",
-   "url": "https://revistapesquisa.fapesp.br/de-volta-para-o-futuro/?utm_source=rss&utm_medium=rss&utm_campaign=de-volta-para-o-futuro",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-09-30T13:11:45+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/cbb48048c7f080e4259ef731ab25fafd865d8db5_1200-630.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59317.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Back to the Future",
-     "resumo": "Created to repatriate the flora collected by European naturalists between the 18th and 20th centuries, the Reflora project turns 16 with almost 5 million images produced and serving as inspiration for the complete digitization of one of the…"
+     "titulo": "Agência FAPESP debuts new layout",
+     "resumo": "With a cleaner aesthetic, portal improves the visual comfort of the reader and gives more prominence to photos, infographics and videos"
     },
     "es": {
-     "titulo": "Volver al futuro",
-     "resumo": "Creado para repatriar la flora recolectada por los naturalistas europeos entre los siglos XVIII y XX, el proyecto Reflora cumple 16 años con casi 5 millones de imágenes producidas y que sirven de inspiración para la digitalización completa de uno de los…"
+     "titulo": "Agência FAPESP estrena nueva maquetación",
+     "resumo": "Con una estética más limpia, portal mejora la comodidad visual del lector y da más protagonismo a las fotos, infografías y vídeos"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Expansão urbana causa colapso ecológico em riachos da Região Metropolitana de São Paulo",
+   "resumo": "Estudo revela que a perda de biodiversidade e interações ecológicas compromete a filtragem natural da água que abastece os mais de 22 milhões de habitantes da região",
+   "url": "https://agencia.fapesp.br/expansao-urbana-causa-colapso-ecologico-em-riachos-da-regiao-metropolitana-de-sao-paulo/59312",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-01T06:10:04.803724+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59312.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Urban sprawl causes ecological collapse in streams in the Metropolitan Region of São Paulo",
+     "resumo": "A study reveals that the loss of biodiversity and ecological interactions compromises the natural filtration of water that supplies the more than 22 million inhabitants of the region"
+    },
+    "es": {
+     "titulo": "La expansión urbana provoca el colapso ecológico de los arroyos en la Región Metropolitana de São Paulo",
+     "resumo": "Un estudio revela que la pérdida de biodiversidad y las interacciones ecológicas comprometen la filtración natural del agua que abastece a los más de 22 millones de habitantes de la región"
     }
    }
   },
@@ -404,9 +379,179 @@
     }
    },
    "resumo_original": "A review of more than 265,000 people found that cannabis use was associated with higher rates of both committing violence and becoming a victim of it. The researchers say the link is significant but does not prove cannabis itself is the…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "‘Para ganhar um Nobel, o Brasil precisa de mais gente fazendo pesquisa’",
+   "resumo": "Avaliação foi feita pelo hematologista Fernando Costa, ex-reitor da Unicamp, em entrevista ao Centro de Memória Fapesp",
+   "url": "https://agencia.fapesp.br/para-ganhar-um-nobel-o-brasil-precisa-de-mais-gente-fazendo-pesquisa/59264",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-09-24T15:25:50+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://agencia.fapesp.br/files/post/59264.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "‘To win a Nobel, Brazil needs more people doing research’",
+     "resumo": "The evaluation was made by hematologist Fernando Costa, former dean of Unicamp, in an interview with the FAPESP Memory Center"
+    },
+    "es": {
+     "titulo": "‘Para ganar un Nobel, Brasil necesita más gente investigando’",
+     "resumo": "La evaluación fue realizada por el hematólogo Fernando Costa, ex decano de la Unicamp, en entrevista con el Centro de Memoria de la FAPESP"
+    }
+   }
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Síndromes de predisposição ao câncer em crianças: quem, quando e como fazer a triagem?",
+   "autores": "Fung KFK, Rutten C, Villani A, Pai VB, Kan EY, Laughlin S, Chiu YT, Marie E, Ertl-Wagner B, Malkin D, Voss SD, States…",
+   "revista": "Radiographics",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1148/rg.260022",
+   "url": "https://doi.org/10.1148/rg.260022",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Cancer Predisposition Syndromes in Children: Who, When, and How to Screen?",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Síndromes de predisposición al cáncer en niños: ¿quién, cuándo y cómo detectarlos?"
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Análise Genômica e Transcriptômica Integrativa Revela Genes Candidatos Geradores de Hipóteses para Suscetibilidade à Nefrolitíase em Hiperoxalúria Primária.",
+   "autores": "Li Y, Li Y, Zhang J, Lin X, Lv J, Yang X, Han J, Lu W, Wang T.",
+   "revista": "Nephrology (Carlton)",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1111/nep.70279",
+   "url": "https://doi.org/10.1111/nep.70279",
+   "acesso_aberto": false,
+   "tema": "Genética",
+   "titulo_original": "Integrative Genomic and Transcriptomic Analysis Reveals Hypothesis-Generating Candidate Genes for Nephrolithiasis Susceptibility in Primary Hyperoxaluria.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El análisis genómico y transcriptómico integrativo revela genes candidatos generadores de hipótesis para la susceptibilidad a la nefrolitiasis en la hiperoxaluria primaria."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Desfechos de pacientes adultos com síndrome de Li-Fraumeni e neoplasias mieloides.",
+   "autores": "Senapati J, Abdel-Salam HM, Jdanov VD, Loghavi S, Woodson A, Corredor J, Borthakur G, Daver NG, Kadia TM, Takahashi K…",
+   "revista": "Cancer",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1002/cncr.70613",
+   "url": "https://doi.org/10.1002/cncr.70613",
+   "acesso_aberto": true,
+   "tema": "Saúde",
+   "titulo_original": "Outcomes of adult patients with Li-Fraumeni syndrome and myeloid neoplasms.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Resultados de pacientes adultos con síndrome de Li-Fraumeni y neoplasias mieloides."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Conscientização, Atitudes e Expectativas de Pacientes Indígenas com Câncer e Seus Cuidadores sobre Cânceres Hereditários e Testes Genéticos em um Centro Terciário de Câncer na Índia.",
+   "autores": "Pathak RS, Angre A, Talker J, Sarin R.",
+   "revista": "J Genet Couns",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1002/jgc4.70287",
+   "url": "https://doi.org/10.1002/jgc4.70287",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Awareness, Attitudes, and Expectations of Indian Cancer Patients and Their Caregivers on Hereditary Cancers and Genetic Testing at a Tertiary Cancer Centre in India.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Conciencia, actitudes y expectativas de los pacientes indios con cáncer y sus cuidadores sobre los cánceres hereditarios y las pruebas genéticas en un centro de cáncer terciario en la India."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Cost-Effectiveness and the Economics of Genomic Testing and Molecularly Matched Therapies.",
+   "autores": "Banerjee S.",
+   "revista": "Hematol Oncol Clin North Am",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1016/j.hoc.2026.05.024",
+   "url": "https://doi.org/10.1016/j.hoc.2026.05.024",
+   "acesso_aberto": false,
+   "tema": "Genética",
+   "titulo_original": "Cost-Effectiveness and the Economics of Genomic Testing and Molecularly Matched Therapies.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Cost-Effectiveness and the Economics of Genomic Testing and Molecularly Matched Therapies."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Abordagens para nódulos tireoidianos em síndromes de predisposição ao câncer pediátrico.",
+   "autores": "Kuhlen M, Naviglio S, Hirtz R, Virgone C, de Krijger RR, Theurer S, Waespe N, Redlich A, SIOPE Host Genome Working…",
+   "revista": "Eur Thyroid J",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1530/etj-26-0100",
+   "url": "https://doi.org/10.1530/etj-26-0100",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Approaches to thyroid nodules in paediatric cancer predisposition syndromes.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Abordajes de los nódulos tiroideos en síndromes de predisposición al cáncer pediátrico."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Resultados a longo prazo com venetoclax contínuo para leucemia linfocítica crônica recidivante.",
+   "autores": "McKeague S, Lew TE, Lowe A, Lau L, Thompson PA, Whitechurch A, Carney D, Wolf M, Reynolds G, Blombery P, Seymour JF…",
+   "revista": "Blood Adv",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1182/bloodadvances.2026020789",
+   "url": "https://doi.org/10.1182/bloodadvances.2026020789",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Long-term outcomes with continuous venetoclax for relapsed chronic lymphocytic leukemia.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Resultados a largo plazo con venetoclax continuo para la leucemia linfocítica crónica recidivante."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Biomarcadores moleculares como determinantes-chave do resultado no linfoma de células do manto: resultados do estudo FIL V-RBAC.",
+   "autores": "Moia R, Almasri M, Carazzolo ME, Cividini L, Tabanelli V, Melle F, Genuardi E, Cosentino C, Maher N, Bellia M, Mahmoud…",
+   "revista": "Blood Adv",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1182/bloodadvances.2026020780",
+   "url": "https://doi.org/10.1182/bloodadvances.2026020780",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Molecular biomarkers as key determinants of outcome in mantle cell lymphoma: results from the FIL V-RBAC trial.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Biomarcadores moleculares como determinantes clave del resultado en el linfoma de células del manto: resultados del ensayo Fil V-RBAC."
+    }
+   }
+  },
   {
    "tipo": "artigo",
    "titulo": "The Coding and Non-Coding Genomic Landscape of Hepatocellular Carcinoma: Etiological Risk Factors and their Current Clinical Implications.",
@@ -784,86 +929,6 @@
      "titulo": "Orientación a las metaloproteinasas de veneno de serpiente: diversidad estructural, patogénesis molecular e intervenciones terapéuticas."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Uma rede microbiota-substrato-metabólito-alvo sugere ligações associadas a AKT1 entre metabólitos derivados da microbiota intestinal e osteoporose.",
-   "autores": "Zeng W, Gong Y, Liao Y, Xie X, Qin Z, Li C, Zhang X.",
-   "revista": "Int Microbiol",
-   "data": "2026-09-23T00:00:00+00:00",
-   "doi": "10.1007/s10123-026-00899-w",
-   "url": "https://doi.org/10.1007/s10123-026-00899-w",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "A microbiota-substrate-metabolite-target network suggests AKT1-associated links between gut microbiota-derived metabolites and osteoporosis.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Una red de microbiota-sustrato-metabolito-diana sugiere vínculos asociados a AKT1 entre los metabolitos derivados de la microbiota intestinal y la osteoporosis."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Spectrum of germline variants in moderate to high penetrance non-BRCA breast cancer susceptibility genes in a Pakistani early-onset cohort.",
-   "autores": "Saleem H, Nasir M, Khan S, Irfan M, Shakeel M, Saleem L, Shafiq-Ur-Rehman, Khan IA.",
-   "revista": "Cancer Genet",
-   "data": "2026-09-22T00:00:00+00:00",
-   "doi": "10.1016/j.cancergen.2026.09.009",
-   "url": "https://doi.org/10.1016/j.cancergen.2026.09.009",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Spectrum of germline variants in moderate to high penetrance non-BRCA breast cancer susceptibility genes in a Pakistani early-onset cohort.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Espectro de variantes de la línea germinal en genes de susceptibilidad al cáncer de mama no BRCA de penetrancia moderada a alta en una cohorte paquistaní de inicio temprano."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Heterozigosidade Dupla BRCA1/BRCA2 Apresentando-se como Colangiocarcinoma Intra-hepático.",
-   "autores": "Inagaki N, Yamauchi Y, Matsumoto S, Naito S, Bingo M, Cho H, Ueda Y, Dong J, Kiribayashi K, Yamamoto A, Sukeda A, Nagao…",
-   "revista": "Intern Med",
-   "data": "2026-09-22T00:00:00+00:00",
-   "doi": "10.2169/internalmedicine.7739-26",
-   "url": "https://doi.org/10.2169/internalmedicine.7739-26",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "BRCA1/BRCA2 Double Heterozygosity Presenting as Intrahepatic Cholangiocarcinoma.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Doble heterocigosis BRCA1/BRCA2 que se presenta como colangiocarcinoma intrahepático."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "O DNPH1 exerce funções promotoras e repressoras de tumores dependentes do contexto durante o desenvolvimento do melanoma.",
-   "autores": "Sui Y, Oh S, Janknecht R.",
-   "revista": "J Invest Dermatol",
-   "data": "2026-09-22T00:00:00+00:00",
-   "doi": "10.1016/j.jid.2026.09.843",
-   "url": "https://doi.org/10.1016/j.jid.2026.09.843",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "DNPH1 exerts context-dependent tumor-promoting and -repressing functions during melanoma development.",
-   "traduzido": true
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Um antiveneno bivalente equino F(ab')<sub>2</sub> desenvolvido contra os venenos de duas espécies de víboras negligenciadas do nordeste da Índia - Trimeresurus erythrurus e T. popeiorum - exibe melhorado in vitro e pré-clínico...",
-   "autores": "Kumar R, Siddika S, Gogoi P, Salvi N, Khadilkar MV, Ahmed MF, Lalremsanga HT, Kalita B, Mukherjee AK.",
-   "revista": "Int J Biol Macromol",
-   "data": "2026-09-22T00:00:00+00:00",
-   "doi": "10.1016/j.ijbiomac.2026.154578",
-   "url": "https://doi.org/10.1016/j.ijbiomac.2026.154578",
-   "acesso_aberto": false,
-   "tema": "Meio ambiente",
-   "titulo_original": "An equine bivalent F(ab')<sub>2</sub> antivenom developed against the venoms of two neglected pit viper species from Northeast India-Trimeresurus erythrurus and T. popeiorum-exhibits enhanced in vitro and preclinical…",
-   "traduzido": true
   }
  ],
  "fontes": [
@@ -1096,6 +1161,9 @@
   "the atlantic hurricane season has been so quiet its unprecedented": "2026-09-30T19:30:24.464813+00:00",
   "why a modern approach to healthcare must consider more than illness": "2026-09-30T19:30:24.464813+00:00",
   "twisteddoodles on the discovery of a new cat species": "2026-09-30T19:30:24.464813+00:00",
-  "anglo saxons got special treatment in medieval rome": "2026-09-30T23:58:50.808110+00:00"
+  "anglo saxons got special treatment in medieval rome": "2026-09-30T23:58:50.808110+00:00",
+  "nova ferramenta de ia preve rota e intensidade de tempestades em curtissimo prazo": "2026-10-01T06:10:04.803724+00:00",
+  "agencia fapesp estreia novo layout": "2026-10-01T06:10:04.803724+00:00",
+  "expansao urbana causa colapso ecologico em riachos da regiao metropolitana de sao paulo": "2026-10-01T06:10:04.803724+00:00"
  }
 }
