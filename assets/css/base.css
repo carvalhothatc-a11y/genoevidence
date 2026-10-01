@@ -659,6 +659,7 @@ main,footer,.hero{position:relative;z-index:1}
 /* ---- aplicativo (instalar, grade de botões) ---- */
 .cta-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:460px}
 .cta-row .cta{width:100%;box-sizing:border-box;height:46px;padding:0 16px;justify-content:center;white-space:nowrap;margin:0}
+.cta-row .cta-xp{grid-column:1/-1}
 button.cta{border:0;cursor:pointer;-webkit-appearance:none;appearance:none;font:600 14px/1 var(--sans)}
 .install-btn{gap:8px}
 .install-btn svg{width:15px;height:15px;flex:none}
