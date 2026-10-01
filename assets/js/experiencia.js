@@ -406,19 +406,24 @@
     return { passo: k => { box.classList.add("on"); focar(cols, (c.passos[k] || {}).foco); }, final: () => box.classList.add("on") };
   };
 
-  /* ---- amostras: cada ponto é uma pessoa que participou ---- */
+  /* ---- amostras: cada ponto é uma pessoa que participou ----
+     Uma linha por estudo: etiqueta da referência, os pontos e o número alinhado à direita.
+     Quando o artigo não dá o número, aparece o que ele diz, num quadro tracejado. */
   VISUAIS.amostras = (vis, c) => {
     const d = c.visual, box = el("div", { class: "xp-amostras" }, vis);
-    if (d.titulo) el("p", { class: "xp-rotulo forte", style: "margin:0 0 6px" }, box, esc(d.titulo));
+    if (d.titulo) el("p", { class: "am-cab" }, box, "<b>" + esc(d.titulo) + "</b>" + (d.subtitulo ? "<span>" + esc(d.subtitulo) + "</span>" : ""));
     const linhas = d.itens.map(it => {
-      const l = el("div", { class: "lin xp-foco" + (it.ok ? " ok" : ""), "data-id": String(it.ref) }, box);
-      el("b", {}, l, "ref. " + esc(it.ref));
-      const p = el("div", { class: "pts", role: "img", "aria-label": "ref. " + it.ref + ": " + (it.n != null ? it.n : it.texto) }, l);
-      if (it.n != null) { for (let i = 0; i < it.n; i++) el("i", { style: "transition-delay:" + (i * 12) + "ms" }, p); el("span", { class: "n" }, p, num(it.n)); }
-      if (it.texto) el("em", {}, p, esc(it.texto));
+      const sem = it.n == null;
+      const l = el("div", { class: "lin xp-foco" + (it.ok ? " ok" : "") + (sem ? " sem" : ""), "data-id": String(it.ref) }, box);
+      el("b", { class: "am-ref" }, l, "ref. " + esc(it.ref));
+      const p = el("div", { class: "pts", role: "img", "aria-label": "ref. " + it.ref + ": " + (sem ? it.texto : it.n) }, l);
+      if (sem) el("span", { class: "am-sem" }, p, esc(it.texto || ""));
+      else for (let i = 0; i < it.n; i++) el("i", { style: "transition-delay:" + (i * 12) + "ms" }, p);
+      el("span", { class: "am-n", "aria-hidden": "true" }, l, sem ? esc(it.valor || "—") : num(it.n));
+      if (!sem && it.texto) el("em", { class: "am-obs" }, l, esc(it.texto));
       return l;
     });
-    if (d.nota) el("p", { class: "xp-rotulo", style: "margin:8px 0 0" }, box, esc(d.nota));
+    if (d.nota) el("p", { class: "xp-rotulo am-nota" }, box, esc(d.nota));
     return { passo: k => { box.classList.add("on"); focar(linhas, (c.passos[k] || {}).foco); }, final: () => box.classList.add("on") };
   };
 

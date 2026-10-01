@@ -983,7 +983,7 @@
       "capitulo": "limites",
       "tipo": "amostras",
       "visual": {
-        "titulo": "Participantes de cada estudio con personas (cada punto = 1 persona)",
+        "titulo": "Participantes de cada estudio con personas",
         "itens": [
           {
             "ref": 48,
@@ -992,7 +992,7 @@
           {
             "ref": 49,
             "n": 14,
-            "texto": "(el texto del artículo cita 13)"
+            "texto": "el texto del artículo cita 13"
           },
           {
             "ref": 50,
@@ -1009,7 +1009,8 @@
           {
             "ref": 53,
             "n": null,
-            "texto": "más de 20 mujeres; número exacto no informado"
+            "texto": "más de 20 mujeres · número exacto no informado",
+            "valor": ">20"
           },
           {
             "ref": 54,
@@ -1018,20 +1019,23 @@
           {
             "ref": 55,
             "n": null,
-            "texto": "número adecuado, según la revisión; no citado",
-            "ok": true
+            "texto": "no citado · adecuado, según la revisión",
+            "ok": true,
+            "valor": "—"
           },
           {
             "ref": 56,
             "n": null,
-            "texto": "cerca de 20 a 25 por tipo de mascarilla"
+            "texto": "cerca de 20 a 25 por tipo de mascarilla",
+            "valor": "20–25"
           },
           {
             "ref": 57,
             "n": 13
           }
         ],
-        "nota": "Números de la Tabla 7. “Ref.” sigue la numeración de las referencias del artículo."
+        "nota": "Números de la Tabla 7. “Ref.” sigue la numeración de las referencias del artículo.",
+        "subtitulo": "cada punto = 1 persona"
       },
       "alt": "Puntos que representan a los participantes de cada estudio con personas: 40, 14, 20, 6, 12, número no informado, 10, no citado, cerca de 20 a 25 por mascarilla y 13.",
       "passos": [

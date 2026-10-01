@@ -232,14 +232,7 @@
     },
     {
       "id": "amostras", "capitulo": "limites", "tipo": "amostras",
-      "visual": {"titulo": "Participantes de cada estudo com pessoas (cada ponto = 1 pessoa)",
-        "itens": [
-          {"ref": 48, "n": 40}, {"ref": 49, "n": 14, "texto": "(o texto do artigo cita 13)"}, {"ref": 50, "n": 20}, {"ref": 51, "n": 6}, {"ref": 52, "n": 12},
-          {"ref": 53, "n": null, "texto": "mais de 20 mulheres; número exato não informado"}, {"ref": 54, "n": 10},
-          {"ref": 55, "n": null, "texto": "número adequado, segundo a revisão; não citado", "ok": true},
-          {"ref": 56, "n": null, "texto": "cerca de 20 a 25 por tipo de máscara"}, {"ref": 57, "n": 13}
-        ],
-        "nota": "Números da Tabela 7. “Ref.” segue a numeração das referências do artigo."},
+      "visual": {"titulo": "Participantes de cada estudo com pessoas", "itens": [{"ref": 48, "n": 40}, {"ref": 49, "n": 14, "texto": "o texto do artigo cita 13"}, {"ref": 50, "n": 20}, {"ref": 51, "n": 6}, {"ref": 52, "n": 12}, {"ref": 53, "n": null, "texto": "mais de 20 mulheres · número exato não informado", "valor": ">20"}, {"ref": 54, "n": 10}, {"ref": 55, "n": null, "texto": "não citado · adequado, segundo a revisão", "ok": true, "valor": "—"}, {"ref": 56, "n": null, "texto": "cerca de 20 a 25 por tipo de máscara", "valor": "20–25"}, {"ref": 57, "n": 13}], "nota": "Números da Tabela 7. “Ref.” segue a numeração das referências do artigo.", "subtitulo": "cada ponto = 1 pessoa"},
       "alt": "Pontos representando os participantes de cada estudo com pessoas: 40, 14, 20, 6, 12, número não informado, 10, não citado, cerca de 20 a 25 por máscara e 13.",
       "passos": [
         {"eyebrow": "Limites", "titulo": "Poucas pessoas testadas", "texto": "Nos 10 estudos com pessoas, os grupos foram pequenos: de <strong>6 a 40 participantes</strong>, quando o número foi informado.", "fonte": "Tabela 7"},

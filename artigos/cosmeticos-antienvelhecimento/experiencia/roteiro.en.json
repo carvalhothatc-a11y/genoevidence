@@ -983,7 +983,7 @@
       "capitulo": "limites",
       "tipo": "amostras",
       "visual": {
-        "titulo": "Participants in each study with people (each dot = 1 person)",
+        "titulo": "Participants in each study with people",
         "itens": [
           {
             "ref": 48,
@@ -992,7 +992,7 @@
           {
             "ref": 49,
             "n": 14,
-            "texto": "(the article's text says 13)"
+            "texto": "the article's text says 13"
           },
           {
             "ref": 50,
@@ -1009,7 +1009,8 @@
           {
             "ref": 53,
             "n": null,
-            "texto": "more than 20 women; exact number not reported"
+            "texto": "more than 20 women · exact number not reported",
+            "valor": ">20"
           },
           {
             "ref": 54,
@@ -1018,20 +1019,23 @@
           {
             "ref": 55,
             "n": null,
-            "texto": "adequate number, according to the review; not stated",
-            "ok": true
+            "texto": "not stated · adequate, according to the review",
+            "ok": true,
+            "valor": "—"
           },
           {
             "ref": 56,
             "n": null,
-            "texto": "about 20 to 25 per type of mask"
+            "texto": "about 20 to 25 per type of mask",
+            "valor": "20–25"
           },
           {
             "ref": 57,
             "n": 13
           }
         ],
-        "nota": "Numbers from Table 7. “Ref.” follows the numbering of the article's references."
+        "nota": "Numbers from Table 7. “Ref.” follows the numbering of the article's references.",
+        "subtitulo": "each dot = 1 person"
       },
       "alt": "Dots representing the participants of each study with people: 40, 14, 20, 6, 12, number not reported, 10, not stated, about 20 to 25 per mask and 13.",
       "passos": [
