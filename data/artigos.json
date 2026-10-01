@@ -130,6 +130,22 @@
       }
     },
     {
+      "id": "fonoaudiologia",
+      "nome": "Fonoaudiologia",
+      "cor": "#EA580C",
+      "sobre": "Comunicação, linguagem, voz, audição e deglutição: o cuidado da Fonoaudiologia.",
+      "i18n": {
+        "en": {
+          "nome": "Speech-language pathology",
+          "sobre": "Communication, language, voice, hearing and swallowing: speech-language pathology care."
+        },
+        "es": {
+          "nome": "Fonoaudiología",
+          "sobre": "Comunicación, lenguaje, voz, audición y deglución: el cuidado de la Fonoaudiología."
+        }
+      }
+    },
+    {
       "id": "meio-ambiente",
       "nome": "Meio ambiente",
       "cor": "#5B8C12",
@@ -1266,6 +1282,95 @@
       "numero": {
         "valor": "70",
         "texto": "pacientes operados tiveram o tumor sequenciado"
+      }
+    },
+    {
+      "id": "lista-espera-fonoaudiologia",
+      "url": "artigos/lista-espera-fonoaudiologia/experiencia/",
+      "experiencia": {
+        "titulo": "Na fila para ser ouvido",
+        "chamada": "Role a tela e acompanhe 393 pessoas na fila do fonoaudiólogo no SUS: quem eram, do que precisavam e o que mudou depois de um telefonema."
+      },
+      "titulo_curto": "A fila para o fonoaudiólogo no SUS: quem espera e do que precisa",
+      "titulo": "Ação sobre lista de espera para a Fonoaudiologia no Sistema Único de Saúde (SUS) em um município brasileiro de médio porte",
+      "autores_curto": "Salles, Santos, Moraes, Alpes e Ferreira-Vasques",
+      "ano": 2026,
+      "data": "2026-01-01",
+      "resumo": "Telefonemas para 393 pessoas na fila do fonoaudiólogo no SUS mostraram que a maioria eram crianças com queixas de linguagem; 162 foram agendadas.",
+      "tags": [
+        "Lista de espera",
+        "SUS"
+      ],
+      "capa": "artigos/lista-espera-fonoaudiologia/imagens/capa.svg",
+      "capa_alt": "Ilustração de pessoas numa fila e um balão de fala",
+      "temas": [
+        "fonoaudiologia"
+      ],
+      "pesquisadoras": [],
+      "revista": {
+        "nome": "CoDAS",
+        "cidade": "São Paulo (Sociedade Brasileira de Fonoaudiologia)",
+        "issn": "2317-1782",
+        "ano": "2026",
+        "volume": "38",
+        "numero": "3",
+        "doi": "10.1590/2317-1782/e20250038pt",
+        "url": "https://doi.org/10.1590/2317-1782/e20250038pt",
+        "site": "https://www.scielo.br/j/codas/"
+      },
+      "i18n": {
+        "en": {
+          "titulo_curto": "The waiting list for speech therapy in Brazil's public health system: who waits and what they need",
+          "titulo_pt": "Action on the waiting list for speech-language pathology in the Unified Health System (SUS) in a medium-sized Brazilian municipality",
+          "resumo": "Phone calls to 393 people on the waiting list for speech therapy in Brazil's public health system showed that most were children with language complaints; 162 were scheduled.",
+          "tags": [
+            "Waiting list",
+            "SUS"
+          ],
+          "capa_alt": "Illustration of people in a line and a speech bubble",
+          "experiencia": {
+            "titulo": "Waiting to be heard",
+            "chamada": "Scroll through and follow 393 people on the waiting list for speech therapy in Brazil's public health system: who they were, what they needed and what changed after a phone call."
+          },
+          "descoberta": {
+            "titulo": "Children, boys and language",
+            "texto": "Of the 246 people who still needed care, 71.9% were children up to 11 years old and 64.2% were male. The biggest need was child language, and 162 were scheduled."
+          },
+          "numero": {
+            "valor": "393 → 246",
+            "texto": "people who agreed to take part × those who still needed care"
+          }
+        },
+        "es": {
+          "titulo_curto": "La fila para el fonoaudiólogo en el SUS: quién espera y qué necesita",
+          "titulo_pt": "Acción sobre la lista de espera de Fonoaudiología en el Sistema Único de Salud (SUS) en un municipio brasileño de tamaño medio",
+          "resumo": "Llamadas a 393 personas en la fila del fonoaudiólogo en el SUS mostraron que la mayoría eran niños con quejas de lenguaje; 162 recibieron turno.",
+          "tags": [
+            "Lista de espera",
+            "SUS"
+          ],
+          "capa_alt": "Ilustración de personas en una fila y un globo de diálogo",
+          "experiencia": {
+            "titulo": "En la fila para ser escuchado",
+            "chamada": "Desliza la pantalla y acompaña a 393 personas en la fila del fonoaudiólogo en el SUS: quiénes eran, qué necesitaban y qué cambió después de una llamada."
+          },
+          "descoberta": {
+            "titulo": "Niños, varones y lenguaje",
+            "texto": "De las 246 personas que todavía necesitaban atención, el 71,9% eran niños de hasta 11 años y el 64,2% de sexo masculino. La mayor necesidad era lenguaje infantil, y 162 recibieron turno."
+          },
+          "numero": {
+            "valor": "393 → 246",
+            "texto": "personas que aceptaron participar × las que todavía necesitaban atención"
+          }
+        }
+      },
+      "descoberta": {
+        "titulo": "Crianças, meninos e linguagem",
+        "texto": "Das 246 pessoas que ainda precisavam de atendimento, 71,9% eram crianças até 11 anos e 64,2% do sexo masculino. A maior necessidade era linguagem infantil, e 162 foram agendadas."
+      },
+      "numero": {
+        "valor": "393 → 246",
+        "texto": "pessoas que aceitaram participar × as que ainda precisavam de atendimento"
       }
     }
   ]

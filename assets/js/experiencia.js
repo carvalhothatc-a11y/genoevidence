@@ -4,7 +4,7 @@
    Cada cena tem um palco fixo (o visual) e passos de texto que passam por cima. O visual reage ao passo ativo
    (elementos com data-desde / data-ate, destaques) e, em algumas cenas, ao quanto a cena já foi rolada.
    Tipos de visual: particulas, escala, veiculos, funil, niveis, barras, destaques, pele, zno, comparacao,
-   colunas, amostras, limites. Quem prefere movimento reduzido vê tudo parado, sem rolagem presa. */
+   colunas, amostras, limites, fila, icones, tempo. Quem prefere movimento reduzido vê tudo parado, sem rolagem presa. */
 (function () {
   "use strict";
   const I = window.GE_I18N || { lang: "pt", locale: "pt-BR", t: s => s, montarSeletor: () => {} };
@@ -256,7 +256,9 @@
 
   /* ---- níveis: onde os estudos foram testados ---- */
   VISUAIS.niveis = (vis, c) => {
-    const box = el("div", { class: "xp-niveis" }, vis);
+    // com muitas pessoas numa fileira, os pontos ficam menores para tudo caber
+    const maior = Math.max(...c.visual.niveis.map(nv => nv.n));
+    const box = el("div", { class: "xp-niveis" + (maior > 120 ? " muitos" : maior > 60 ? " varios" : "") }, vis);
     c.visual.niveis.forEach(nv => {
       const l = el("div", { class: "nivel", "data-desde": nv.desde || 0, style: "--c:" + nv.cor }, box);
       el("div", {}, l, "<b>" + esc(nv.rotulo) + "</b><small>" + esc(nv.sub || "") + "</small>");
@@ -427,11 +429,84 @@
     return { passo: k => { box.classList.add("on"); focar(linhas, (c.passos[k] || {}).foco); }, final: () => box.classList.add("on") };
   };
 
-  /* ---- o que ainda não se sabe ---- */
+  /* ---- o que ainda não se sabe (ou, com "icone", uma lista de propostas ou etapas) ---- */
   VISUAIS.limites = (vis, c) => {
     const box = el("div", { class: "xp-limites" }, vis);
-    c.visual.itens.forEach(it => el("div", { class: "it" + (it.ausente ? " aus" : ""), "data-desde": it.desde || 0 }, box,
-      "<i>" + (it.ausente ? "∅" : "?") + "</i><div><b>" + esc(it.titulo) + "</b><span>" + esc(it.texto) + "</span></div>"));
+    c.visual.itens.forEach(it => el("div", { class: "it" + (it.ausente ? " aus" : "") + (it.icone ? " prop" : ""), "data-desde": it.desde || 0 }, box,
+      "<i>" + esc(it.icone || (it.ausente ? "∅" : "?")) + "</i><div><b>" + esc(it.titulo) + "</b><span>" + esc(it.texto) + "</span></div>"));
+    return { passo: k => revelar(box, k) };
+  };
+
+  /* ---- fila: cada ponto é uma pessoa, em serpentina, como numa fila de verdade ----
+     Os grupos (ex.: agendadas, aguardando, saíram) ganham cor a partir do passo "coresDesde". */
+  VISUAIS.fila = (vis, c) => {
+    const d = c.visual, N = d.total, grupos = d.grupos || [];
+    const box = el("div", { class: "xp-fila", role: "img", "aria-label": d.alt || "" }, vis);
+    if (d.titulo) el("p", { class: "fila-tit" }, box, "<b>" + esc(d.titulo) + "</b>" + (d.subtitulo ? "<span>" + esc(d.subtitulo) + "</span>" : ""));
+    const area = el("div", { class: "fila-area" }, box);
+    const linha = sv("svg", { class: "fila-linha", "aria-hidden": "true" }, area), caminho = sv("polyline", {}, linha);
+    const pts = []; for (let i = 0; i < N; i++) pts.push(el("i", { style: "--k:" + i }, area));
+    const dono = new Array(N).fill(-1); let k0 = 0;
+    grupos.forEach((g, gi) => { for (let j = 0; j < g.n && k0 < N; j++) dono[k0++] = gi; });
+    const leg = el("div", { class: "fila-leg" }, box, grupos.map(g => '<span style="--c:' + g.cor + '"' + (g.apagado ? ' class="apag"' : "") + "><i></i><b>" + num(g.n) + "</b> " + esc(g.rotulo) + "</span>").join(""));
+    function arrumar() {
+      const w = area.clientWidth, h = area.clientHeight; if (!w || !h) return;
+      let cols = Math.max(6, Math.round(Math.sqrt(N * w / h))), rows = Math.ceil(N / cols);
+      const gx = w / cols, gy = h / rows, t = Math.max(3, Math.min(gx, gy) * .58);
+      const xy = i => { const r = Math.floor(i / cols), ci = i % cols, cx = r % 2 ? cols - 1 - ci : ci; return [cx * gx + gx / 2, r * gy + gy / 2]; };
+      // posição com "translate" (e não "transform"), para a onda que aumenta o ponto não tirá-lo do lugar
+      pts.forEach((p, i) => { const [x, y] = xy(i); p.style.width = p.style.height = t + "px"; p.style.translate = (x - t / 2).toFixed(1) + "px " + (y - t / 2).toFixed(1) + "px"; });
+      linha.setAttribute("viewBox", "0 0 " + w + " " + h);
+      // a linha da fila passa pelo meio das fileiras e faz a curva nas pontas
+      const vert = []; for (let r = 0; r < rows; r++) { const ini = xy(r * cols), fim = xy(Math.min(N - 1, r * cols + cols - 1)); vert.push(ini, fim); }
+      caminho.setAttribute("points", vert.map(([x, y]) => x.toFixed(1) + "," + y.toFixed(1)).join(" "));
+    }
+    let atual = 0;
+    function passo(k) {
+      atual = k; box.classList.add("on");
+      const cor = grupos.length && k >= (d.coresDesde || 0);
+      pts.forEach((p, i) => { const g = cor && dono[i] >= 0 ? grupos[dono[i]] : null; p.style.background = g ? g.cor : ""; p.classList.toggle("apag", !!(g && g.apagado)); });
+      leg.classList.toggle("on", !!cor);
+    }
+    addEventListener("resize", arrumar);
+    requestAnimationFrame(() => { arrumar(); passo(atual); });
+    return { passo: passo, final: () => passo(99) };
+  };
+
+  /* ---- ícones: áreas de uma profissão, cada uma com um desenho simples (ilustração) ---- */
+  const ICONES = {
+    linguagem: '<path d="M10 14h44v26H30l-12 10V40h-8z"/><circle cx="23" cy="27" r="2.6" class="ch"/><circle cx="32" cy="27" r="2.6" class="ch"/><circle cx="41" cy="27" r="2.6" class="ch"/>',
+    voz: '<circle cx="22" cy="26" r="10"/><path d="M22 36v8M14 50h16"/><path d="M38 20q6 6 0 12M45 15q11 11 0 22M52 10q16 16 0 32" class="onda"/>',
+    audicao: '<path d="M22 44c0 6 4 10 9 10s8-4 8-8c0-6 10-8 10-20 0-9-7-16-16-16s-16 7-16 16"/><path d="M27 26a6 6 0 0 1 12 0c0 5-6 6-6 11"/><path d="M52 18q5 8 0 16" class="onda"/>',
+    disfagia: '<path d="M20 8c0 14 8 16 8 28v20M44 8c0 14-8 16-8 28v20"/><path d="M32 18c-3 4-4 6-4 8a4 4 0 0 0 8 0c0-2-1-4-4-8z" class="ch"/><path d="M32 34v12M27 41l5 5 5-5"/>',
+    motricidade: '<circle cx="32" cy="32" r="22"/><circle cx="24" cy="26" r="2.4" class="ch"/><circle cx="40" cy="26" r="2.4" class="ch"/><path d="M22 38q10 9 20 0"/><path d="M26 40q6 3 12 0"/>',
+    equilibrio: '<path d="M32 32m0-3a3 3 0 1 1 -3 3a7 7 0 1 1 7 7a12 12 0 1 1 -12 -12a17 17 0 1 1 17 17"/>'
+  };
+  VISUAIS.icones = (vis, c) => {
+    const g = el("div", { class: "xp-icones" }, vis);
+    const itens = c.visual.itens.map(it => {
+      const b = el("div", { class: "ico-item xp-foco", "data-id": it.id, style: "--c:" + (it.cor || "var(--xp-acento)") }, g);
+      el("div", { class: "ico", "aria-hidden": "true" }, b, '<svg viewBox="0 0 64 64">' + (ICONES[it.icone] || "") + "</svg>");
+      el("b", {}, b, esc(it.nome)); if (it.desc) el("small", {}, b, esc(it.desc));
+      return b;
+    });
+    return { passo: k => focar(itens, (c.passos[k] || {}).foco) };
+  };
+
+  /* ---- linha do tempo (anos), com faixas que aparecem passo a passo ---- */
+  VISUAIS.tempo = (vis, c) => {
+    const d = c.visual, a0 = d.de, a1 = d.ate;
+    const pos = (s, fim) => { const [y, m] = String(s).split("-").map(Number); return ((y + ((m || 1) - (fim ? 0 : 1)) / 12) - a0) / (a1 - a0) * 100; };
+    const box = el("div", { class: "xp-tempo" }, vis);
+    const eixo = el("div", { class: "tp-eixo" }, box);
+    for (let y = a0; y <= a1; y++) el("span", { style: "left:" + pos(y + "-1") + "%" }, eixo, "<b>" + y + "</b>");
+    d.faixas.forEach(f => {
+      const r = el("div", { class: "tp-faixa", "data-desde": f.desde || 0, style: "--c:" + f.cor }, box);
+      const ini = pos(f.de), fim = pos(f.ate, true);
+      el("div", { class: "tp-bar", style: "left:" + ini + "%;width:" + (fim - ini) + "%" }, r);
+      el("p", { class: "tp-rot", style: "padding-left:" + Math.min(ini, 60) + "%" }, r, "<b>" + esc(f.rotulo) + "</b><span>" + esc(f.periodo || "") + "</span>");
+    });
+    if (d.legenda) el("p", { class: "tp-leg" }, box, esc(d.legenda));
     return { passo: k => revelar(box, k) };
   };
 

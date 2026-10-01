@@ -1,0 +1,523 @@
+{
+  "id": "lista-espera-fonoaudiologia",
+  "experiencia": "experiencia/",
+  "tipo": "artigo",
+  "rotulo": "Descriptive study",
+  "arte": "rede",
+  "arte_legenda": "illustration · the health network linking those who wait to care",
+  "tema": "Speech-language pathology",
+  "tema_id": "fonoaudiologia",
+  "titulo": "Ação sobre lista de espera para a Fonoaudiologia no Sistema Único de Saúde (SUS) em um município brasileiro de médio porte",
+  "titulo_curto": "The waiting list for speech therapy in Brazil's public health system: who waits and what they need",
+  "breadcrumb": "Speech therapy waiting list in the SUS",
+  "autores": [
+    {
+      "nome": "Thamires Maria de Araújo Salles",
+      "afiliacao": "Fonoaudiologia · Uniso"
+    },
+    {
+      "nome": "Mayara Gabriela Pereira dos Santos",
+      "afiliacao": "Fonoaudiologia · Uniso"
+    },
+    {
+      "nome": "Rafaella de Góes Moraes",
+      "afiliacao": "Fonoaudiologia · Uniso"
+    },
+    {
+      "nome": "Matheus Francoy Alpes",
+      "afiliacao": "Instituto de Saúde de Nova Friburgo · UFF"
+    },
+    {
+      "nome": "Amanda Tragueta Ferreira-Vasques",
+      "afiliacao": "Fonoaudiologia · Uniso"
+    }
+  ],
+  "revista": {
+    "nome": "CoDAS",
+    "cidade": "São Paulo (Brazilian Society of Speech-Language Pathology)",
+    "issn": "2317-1782",
+    "volume": "38",
+    "numero": "3",
+    "paginas": "e20250038",
+    "ano": "2026",
+    "submetido": "2025-02-06",
+    "doi": "10.1590/2317-1782/e20250038pt",
+    "url": "https://doi.org/10.1590/2317-1782/e20250038pt",
+    "site": "https://www.scielo.br/j/codas/"
+  },
+  "palavras_chave": [
+    "Speech, language and hearing sciences",
+    "Primary care",
+    "Unified Health System",
+    "Health services",
+    "Waiting lists",
+    "Public health"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "The problem",
+      "titulo": "Years waiting for a speech therapist",
+      "texto": "People referred to a speech therapist in Brazil's public health system (SUS) can spend a long time on the waiting list. Meanwhile, the records get outdated and the complaint may change or get worse."
+    },
+    {
+      "rotulo": "What they did",
+      "titulo": "They called every person on the list",
+      "texto": "Speech therapy students, with their professors, phoned people who had been waiting since 2018 and updated each one's age, complaint and area of care."
+    },
+    {
+      "rotulo": "What they found",
+      "titulo": "Children, boys and language",
+      "texto": "Of the 246 people who still needed care, 71.9% were children up to 11 years old and 64.2% were male. The biggest need was child language, and 162 were scheduled."
+    },
+    {
+      "rotulo": "Why it matters",
+      "titulo": "An organized list, better-targeted appointments",
+      "texto": "Updating the list showed who needs what and made scheduling more precise. For the authors, speech therapists should also take part in allocating appointments."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "393 → 246",
+      "texto": "people who agreed to take part × those who still needed care",
+      "cor": "arg"
+    },
+    {
+      "valor": "162",
+      "texto": "people scheduled after the list was updated (65.9%)",
+      "cor": "ok"
+    },
+    {
+      "valor": "83,9%",
+      "texto": "of those waiting for a single area needed child language care",
+      "cor": "violet"
+    },
+    {
+      "valor": "26,8%",
+      "texto": "had a complaint different from the one on the referral",
+      "cor": "amber"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Context",
+      "eyebrow": "Context",
+      "titulo": "The waiting list for speech therapy, and why it matters",
+      "lede": "Referred by the health unit, a person joins a list and waits. The longer the wait, the further the list drifts from reality.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p><strong>Speech-language pathology</strong> deals with the prevention, assessment, diagnosis and treatment of human communication disorders: <strong>language, speech, voice, hearing and orofacial functions</strong>, such as chewing and swallowing. In the SUS, speech therapists work at different levels of care, from the primary health unit to the hospital.</p><p>To plan this care, it is necessary to know <strong>who the people</strong> waiting for care are and <strong>what they need</strong>. This information helps organize and regulate services, including waiting lists.</p>"
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>Staying on the list for a long time, with no care or guidance, can make the condition worse and lead people to <strong>give up on the care</strong> they need. Updating the lists reveals planning inaccuracies that increase waiting time.</p><p>The aim of the study was to <strong>describe the profile and the needs</strong> of the people on the waiting list for speech therapy in a medium-sized Brazilian municipality in the interior of São Paulo state. The article does not say which municipality.</p>"
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "How it was done",
+      "eyebrow": "Method",
+      "titulo": "A phone call to every person on the list",
+      "lede": "A descriptive study carried out from July 2023 to July 2024 as a final undergraduate project and a university outreach project of a speech therapy course.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Access to the list",
+              "texto": "The researchers met with the municipal Regulation Center and Evaluation and Control Division (CREDAC), which allocates the city's appointments. The staff in charge of the list were not speech therapists."
+            },
+            {
+              "titulo": "Who was on the list",
+              "texto": "The list gathered people referred by primary care between February 2018 and December 2022."
+            },
+            {
+              "titulo": "A spreadsheet to organize it",
+              "texto": "For each person: sex, age, initial complaint, current complaint, the speech therapy subarea able to help, and what to do: keep waiting, leave the list or schedule."
+            },
+            {
+              "titulo": "Phone calls",
+              "texto": "Trained students called from CREDAC, invited people to take part and sent the consent form. Only people who agreed were counted. For minors, the conversation was with a parent or guardian."
+            },
+            {
+              "titulo": "Age groups",
+              "texto": "Childhood: from birth to 11 years; adolescence: 11 to 20; young adults and middle age: 20 to 65; older people: 65 or over."
+            },
+            {
+              "titulo": "Analysis",
+              "texto": "Descriptive statistics, with totals and percentages, to understand the needs of this population without generalizing to others."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "People with no phone contact or who did not live in the municipality were left out. The study was approved by Uniso's Research Ethics Committee (approval 6.431.411), and the whole project was supervised by professors."
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Results",
+      "eyebrow": "Results",
+      "titulo": "Who was on the list, and what they needed",
+      "lede": "Of the 418 people contacted, 393 agreed to take part. After the phone calls, 246 still needed care.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Of the 393 people, <strong>147 left the list</strong>: 106 because they no longer had the need (36 had already been treated at another public or private service, and in 70 the complaint resolved on its own) and 41 because they had moved to another city, state or country.</p><p>The remaining <strong>246</strong> had their complaint analyzed and a subarea assigned. After that, <strong>162 were scheduled</strong> for care and <strong>84 kept waiting</strong>.</p>"
+        },
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura1-fluxograma.webp",
+          "full": "imagens/figura1-fluxograma.webp",
+          "alt": "Flowchart: of all participants, 37.4% were removed from the list and 62.6% kept; among those removed, 72.1% had no current complaint and 27.9% had moved; among those kept, scheduled and still waiting.",
+          "legenda": "Figure 1 · Flowchart of the study data. In the figure, the scheduled appear as 66.9% and those waiting as 33.1%; by the counts in the text (162 and 84 out of 246), they are 65.9% and 34.1%, as in the article's abstract.",
+          "credito": "Salles et al. (2026), CoDAS, CC BY 4.0 license"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "The profile of those waiting",
+          "itens": [
+            {
+              "titulo": "More boys and men",
+              "texto": "158 male (64.2%) and 88 female (35.8%).",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Mostly children",
+              "texto": "177 children (71.9%), 35 adolescents (14.2%), 20 young adults and middle-aged people (8%) and 14 older people (5.9%). Ages ranged from 1 year and 9 months to 81 years and 1 month.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "The complaint changed for 1 in 4",
+              "texto": "180 kept the complaint on the referral (73.2%) and 66 had a different complaint (26.8%).",
+              "cor": "amber"
+            },
+            {
+              "titulo": "One area or more",
+              "texto": "217 needed a single speech therapy subarea (88.2%) and 29 needed two or three (11.8%).",
+              "cor": "teal"
+            }
+          ]
+        },
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Choose the group",
+          "unidade": "%",
+          "parametros": [
+            {
+              "rotulo": "One area (217 people)",
+              "grupos": [
+                {
+                  "nome": "Child language",
+                  "cor": "#A58CFF"
+                },
+                {
+                  "nome": "Adult language",
+                  "cor": "#7C9CFF"
+                },
+                {
+                  "nome": "Adult dysphagia",
+                  "cor": "#3FC1C9"
+                },
+                {
+                  "nome": "Voice",
+                  "cor": "#5FD39A"
+                },
+                {
+                  "nome": "Audiology",
+                  "cor": "#FFB23F"
+                },
+                {
+                  "nome": "Child dysphagia",
+                  "cor": "#FF8A5C"
+                },
+                {
+                  "nome": "Orofacial myology",
+                  "cor": "#FF5470"
+                },
+                {
+                  "nome": "Otoneurology",
+                  "cor": "#C9B8FF"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 83.9
+                },
+                {
+                  "m": 4.2
+                },
+                {
+                  "m": 3.8
+                },
+                {
+                  "m": 2.1
+                },
+                {
+                  "m": 1.6
+                },
+                {
+                  "m": 1.6
+                },
+                {
+                  "m": 1.4
+                },
+                {
+                  "m": 1.4
+                }
+              ],
+              "leitura": "Child language dominates: 182 of the 217 people. Next come adult language (9), adult dysphagia (7), voice (5), audiology and child dysphagia (4 each), orofacial myology and otoneurology (3 each)."
+            },
+            {
+              "rotulo": "Two or three areas (29 people)",
+              "grupos": [
+                {
+                  "nome": "Audiology + child language",
+                  "cor": "#FFB23F"
+                },
+                {
+                  "nome": "Dysphagia + adult language",
+                  "cor": "#3FC1C9"
+                },
+                {
+                  "nome": "Dysphagia + child language",
+                  "cor": "#FF8A5C"
+                },
+                {
+                  "nome": "Child language + orofacial myology",
+                  "cor": "#A58CFF"
+                },
+                {
+                  "nome": "Audiology + adult language",
+                  "cor": "#7C9CFF"
+                },
+                {
+                  "nome": "Adult dysphagia + voice",
+                  "cor": "#5FD39A"
+                },
+                {
+                  "nome": "Audiology, dysphagia and adult language",
+                  "cor": "#C9B8FF"
+                },
+                {
+                  "nome": "Audiology, orofacial myology and child language",
+                  "cor": "#FF5470"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 55.2
+                },
+                {
+                  "m": 17.2
+                },
+                {
+                  "m": 7
+                },
+                {
+                  "m": 7
+                },
+                {
+                  "m": 3.4
+                },
+                {
+                  "m": 3.4
+                },
+                {
+                  "m": 3.4
+                },
+                {
+                  "m": 3.4
+                }
+              ],
+              "leitura": "Audiology with child language was the most common combination: 16 of the 29 people. One child needed three areas at once: orofacial myology, language and audiology."
+            },
+            {
+              "rotulo": "Age group (246 people)",
+              "grupos": [
+                {
+                  "nome": "Childhood (up to 11)",
+                  "cor": "#A58CFF"
+                },
+                {
+                  "nome": "Adolescence (11 to 20)",
+                  "cor": "#7C9CFF"
+                },
+                {
+                  "nome": "Young adults and middle age (20 to 65)",
+                  "cor": "#3FC1C9"
+                },
+                {
+                  "nome": "Older people (65 or over)",
+                  "cor": "#FFB23F"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 71.9
+                },
+                {
+                  "m": 14.2
+                },
+                {
+                  "m": 8
+                },
+                {
+                  "m": 5.9
+                }
+              ],
+              "leitura": "Almost three in every four people on the list were children up to 11 years old."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "Percentages as published in Table 1. Some differ slightly from the counts in the text: for example, 7 of 217 people with adult dysphagia gives 3.2% (the table shows 3.8%), and 14 older people out of 246 gives 5.7% (the table shows 5.9%)."
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discussion",
+      "eyebrow": "Discussion",
+      "titulo": "What the list reveals",
+      "lede": "For the authors, the waiting list should be seen as an indicator of access and equity, not just a working tool.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>There are few studies on waiting lists in speech therapy, and most come from university teaching clinics. In public services, professionals face the pent-up demand every day, but are overloaded and have little structure for research.</p><p>With a long wait, records become outdated and the complaint can change. Most kept the same complaint, but for <strong>a quarter of the list</strong> it was different, and some cases had gotten worse. The list had people waiting since 2018, that is, about five years.</p>"
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>Most referrals, made by primary care physicians, were for <strong>child language</strong>, as in other Brazilian studies. Referrals to a single subarea predominated, which, according to the authors, reveals limits in understanding what speech therapists do. The cases needing two or three areas show the importance of broad, generalist training.</p><p>The authors explain the predominance of males by the higher occurrence of neurodevelopmental delays and disorders in this group, according to the literature.</p>"
+        },
+        {
+          "tipo": "destaque",
+          "html": "After the action, the number of people waiting dropped considerably. For the authors, putting the <strong>speech therapist into the allocation of appointments</strong> too, or guiding those who do it, made scheduling more accurate and organized the service better."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Limitations pointed out by the authors",
+          "itens": [
+            "It was carried out in a single municipality, which limits generalization.",
+            "The registration data had incomplete and outdated information.",
+            "Contact was by phone only: people without a phone or with a disconnected number were left out.",
+            "The statistical analysis was descriptive only."
+          ]
+        },
+        {
+          "tipo": "lista",
+          "titulo": "What the authors propose",
+          "itens": [
+            "Train primary care professionals to make more detailed and complete referrals.",
+            "Have speech therapists in primary health units.",
+            "Create stimulation groups, which can reduce the effects of delays in diagnosis or intervention.",
+            "Continue the study with in-person reception and joint case discussions with health teams (matrix support)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusion",
+      "eyebrow": "Conclusion",
+      "titulo": "What the study allows us to say",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Updating a waiting list built up over five years made it possible to know who was waiting and what they needed. Of the 246 people, most were <strong>children up to 11 years old</strong>, <strong>male</strong>, with <strong>language</strong> complaints. <strong>162 were scheduled</strong>, and the supply of services was adjusted to reduce waiting time in the municipality.</p><p>For the authors, organizing health data is not only a task for municipal management: it is also a challenge for health professionals, especially speech therapists.</p>"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Speech-language pathology",
+      "def": "The health field that deals with human communication: language, speech, voice, hearing and functions of the mouth and face, such as chewing and swallowing."
+    },
+    {
+      "termo": "Waiting list",
+      "def": "The line of referred people waiting for an appointment."
+    },
+    {
+      "termo": "Primary care",
+      "def": "The entry point of the SUS, such as primary health units. Referrals come from there."
+    },
+    {
+      "termo": "Regulation",
+      "def": "The organization of access to services: who is seen, where and when."
+    },
+    {
+      "termo": "CREDAC",
+      "def": "The municipal Regulation Center and Evaluation and Control Division, which allocates appointments."
+    },
+    {
+      "termo": "Child language",
+      "def": "Language development in children: understanding, speaking, expressing themselves and, later, reading and writing."
+    },
+    {
+      "termo": "Dysphagia",
+      "def": "Difficulty swallowing."
+    },
+    {
+      "termo": "Orofacial myology",
+      "def": "The area that deals with the muscles and functions of the mouth and face, such as sucking, chewing, swallowing and breathing."
+    },
+    {
+      "termo": "Audiology",
+      "def": "The area that assesses and cares for hearing."
+    },
+    {
+      "termo": "Otoneurology",
+      "def": "The area that assesses dizziness and balance problems linked to the inner ear and the nervous system."
+    },
+    {
+      "termo": "Voice",
+      "def": "The area that deals with problems such as hoarseness and tiredness when speaking."
+    },
+    {
+      "termo": "Consent form",
+      "def": "A document in which the person agrees to take part in the research."
+    },
+    {
+      "termo": "Descriptive statistics",
+      "def": "Summarizes data in totals and percentages, without drawing conclusions about other populations."
+    },
+    {
+      "termo": "Matrix support",
+      "def": "Support from specialists to health teams, with joint discussion of cases."
+    }
+  ],
+  "citacao": "SALLES, T. M. A.; SANTOS, M. G. P.; MORAES, R. G.; ALPES, M. F.; FERREIRA-VASQUES, A. T. Ação sobre lista de espera para a Fonoaudiologia no Sistema Único de Saúde (SUS) em um município brasileiro de médio porte. CoDAS, São Paulo, v. 38, n. 3, e20250038, 2026. DOI: 10.1590/2317-1782/e20250038pt.",
+  "referencias": [
+    {
+      "texto": "RECH, R. S. et al. Acesso e uso de serviços de Fonoaudiologia em Porto Alegre, Brasil: estudo populacional. Ciência & Saúde Coletiva, v. 25, n. 3, p. 817-825, 2020.",
+      "doi": "10.1590/1413-81232020253.17212018"
+    },
+    {
+      "texto": "COSTA, R. G.; SOUZA, L. B. R. Perfil dos usuários e da demanda pelo serviço da clínica-escola de fonoaudiologia da UFBA. Revista de Ciências Médicas e Biológicas, v. 8, n. 1, p. 53, 2009.",
+      "doi": "10.9771/cmbio.v8i1.4376"
+    },
+    {
+      "texto": "CORRÊA, C. C.; ARAKAWA, A. M.; MAXIMINO, L. P. Clínica-escola de fonoaudiologia: manejo da lista de espera. Revista CEFAC, v. 18, n. 5, p. 1222-1229, 2016.",
+      "doi": "10.1590/1982-0216201618518215"
+    },
+    {
+      "texto": "FARIAS, I. K. M. S. et al. Characterization of care provided at a Speech Therapy School Clinic affiliated with the Brazilian public healthcare system. Revista CEFAC, v. 22, n. 1, 2020.",
+      "doi": "10.1590/1982-0216/202022110119"
+    },
+    {
+      "texto": "TAVONI, J. R.; VIANNA, N.; FERNANDES, A. C. Scenario of access to speech therapy based on the profile of children and adolescents referred to primary care. Revista CEFAC, v. 24, n. 2, 2022.",
+      "doi": "10.1590/1982-0216/202224211121"
+    },
+    {
+      "texto": "BARROS, P. M. L.; OLIVEIRA, P. N. Perfil dos pacientes atendidos no setor de fonoaudiologia de um serviço público de Recife - PE. Revista CEFAC, v. 12, n. 1, p. 128-133, 2009.",
+      "doi": "10.1590/S1516-18462009005000063"
+    }
+  ],
+  "titulo_pt": "Action on the waiting list for speech-language pathology in the Unified Health System (SUS) in a medium-sized Brazilian municipality",
+  "rotulo_original": "Original title in Portuguese:"
+}

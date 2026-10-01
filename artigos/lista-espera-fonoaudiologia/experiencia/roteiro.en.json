@@ -1,0 +1,766 @@
+{
+  "_como_usar": "Roteiro da experiência interativa. Cada cena tem um tipo de visual (ver assets/js/experiencia.js) e passos de texto. Números sempre do artigo; 'fonte' diz de onde.",
+  "titulo": "Waiting to be heard",
+  "subtitulo_topo": "The waiting list for speech therapy in Brazil's SUS",
+  "acento": "#FF8A5C",
+  "pagina": "../",
+  "capitulos": [
+    {
+      "id": "abertura",
+      "nome": "Opening"
+    },
+    {
+      "id": "contexto",
+      "nome": "Context"
+    },
+    {
+      "id": "investigacao",
+      "nome": "Investigation"
+    },
+    {
+      "id": "resultados",
+      "nome": "Results"
+    },
+    {
+      "id": "significado",
+      "nome": "Meaning"
+    },
+    {
+      "id": "limites",
+      "nome": "Limits"
+    },
+    {
+      "id": "fim",
+      "nome": "Closing"
+    }
+  ],
+  "cenas": [
+    {
+      "id": "abertura",
+      "capitulo": "abertura",
+      "tipo": "fila",
+      "visual": {
+        "total": 393,
+        "titulo": "393 people in line",
+        "subtitulo": "each dot is one person",
+        "alt": "Winding line of 393 dots, each one representing a person who was waiting for speech therapy and agreed to take part in the research."
+      },
+      "passos": [
+        {
+          "eyebrow": "GenoEvidence · interactive experience",
+          "capa": "Waiting to be heard",
+          "texto": "The waiting list for speech therapy in Brazil's public health system (SUS), in a municipality in the interior of São Paulo state: who was waiting, what they needed and what changed after a phone call.",
+          "extra": "Study by Salles, Santos, Moraes, Alpes and Ferreira-Vasques · CoDAS, 2026",
+          "link": {
+            "rotulo": "Prefer to read it as text? Open the study page →",
+            "url": "../"
+          }
+        },
+        {
+          "texto": "Each dot is one person. There are <strong>393</strong>: the people who answered the phone and agreed to take part in the research.",
+          "fonte": "Results, 1st paragraph"
+        },
+        {
+          "texto": "They were referred by primary health units between <strong>February 2018 and December 2022</strong>. Some had been waiting for about five years.",
+          "fonte": "Method; Discussion"
+        }
+      ]
+    },
+    {
+      "id": "areas",
+      "capitulo": "contexto",
+      "tipo": "icones",
+      "visual": {
+        "itens": [
+          {
+            "id": "linguagem",
+            "icone": "linguagem",
+            "nome": "Language",
+            "desc": "understanding and expressing oneself",
+            "cor": "#A58CFF"
+          },
+          {
+            "id": "voz",
+            "icone": "voz",
+            "nome": "Voice",
+            "desc": "hoarseness, tiredness when speaking",
+            "cor": "#5FD39A"
+          },
+          {
+            "id": "audiologia",
+            "icone": "audicao",
+            "nome": "Audiology",
+            "desc": "hearing",
+            "cor": "#FFB23F"
+          },
+          {
+            "id": "disfagia",
+            "icone": "disfagia",
+            "nome": "Dysphagia",
+            "desc": "difficulty swallowing",
+            "cor": "#3FC1C9"
+          },
+          {
+            "id": "motricidade",
+            "icone": "motricidade",
+            "nome": "Orofacial myology",
+            "desc": "muscles of the mouth and face",
+            "cor": "#FF5470"
+          },
+          {
+            "id": "otoneurologia",
+            "icone": "equilibrio",
+            "nome": "Otoneurology",
+            "desc": "dizziness and balance",
+            "cor": "#7C9CFF"
+          }
+        ]
+      },
+      "alt": "Six simple drawings of the areas of speech-language pathology: language, voice, audiology, dysphagia, orofacial myology and otoneurology.",
+      "passos": [
+        {
+          "eyebrow": "Context",
+          "titulo": "What speech-language pathology does",
+          "texto": "It deals with human communication: <strong>language, speech, voice, hearing</strong> and functions of the mouth and face, such as chewing and swallowing.",
+          "fonte": "Introduction, 1st paragraph"
+        },
+        {
+          "foco": [
+            "linguagem",
+            "disfagia"
+          ],
+          "texto": "In the study, each person on the list was assigned the <strong>subarea</strong> able to address their complaint. Language and dysphagia were split into child and adult.",
+          "fonte": "Method; Results"
+        },
+        {
+          "texto": "In the SUS, speech therapists work from the primary health unit to the hospital. To plan this care, it is necessary to know <strong>who is waiting and what they need</strong>.",
+          "fonte": "Introduction, 2nd and 3rd paragraphs"
+        }
+      ]
+    },
+    {
+      "id": "espera",
+      "capitulo": "contexto",
+      "tipo": "tempo",
+      "visual": {
+        "de": 2018,
+        "ate": 2025,
+        "faixas": [
+          {
+            "rotulo": "Referrals that made up the list",
+            "periodo": "February 2018 to December 2022",
+            "de": "2018-02",
+            "ate": "2022-12",
+            "cor": "#A58CFF",
+            "desde": 0
+          },
+          {
+            "rotulo": "Research phone calls",
+            "periodo": "July 2023 to July 2024",
+            "de": "2023-07",
+            "ate": "2024-07",
+            "cor": "#FF8A5C",
+            "desde": 1
+          }
+        ]
+      },
+      "alt": "Timeline: referrals from February 2018 to December 2022 and phone calls from July 2023 to July 2024.",
+      "passos": [
+        {
+          "eyebrow": "Context",
+          "titulo": "A long wait",
+          "texto": "The list gathered referrals made from <strong>February 2018 to December 2022</strong>.",
+          "fonte": "Method, 2nd paragraph"
+        },
+        {
+          "texto": "The research called these people from <strong>July 2023 to July 2024</strong>.",
+          "fonte": "Method, 1st paragraph"
+        },
+        {
+          "texto": "Staying on the list for a long time, with no care or guidance, can make the condition worse and lead people to <strong>give up</strong> on the care they need.",
+          "fonte": "Introduction, 4th paragraph"
+        }
+      ]
+    },
+    {
+      "id": "telefonemas",
+      "capitulo": "investigacao",
+      "tipo": "limites",
+      "visual": {
+        "itens": [
+          {
+            "icone": "1",
+            "titulo": "The list",
+            "texto": "It was held by CREDAC, the center that allocates the municipality's appointments. The staff in charge of it were not speech therapists.",
+            "desde": 0
+          },
+          {
+            "icone": "2",
+            "titulo": "The spreadsheet",
+            "texto": "Sex, age, initial complaint, current complaint and the subarea able to help.",
+            "desde": 1
+          },
+          {
+            "icone": "3",
+            "titulo": "The phone call",
+            "texto": "Trained students called, invited people and sent the consent form. For minors, they spoke with a parent or guardian.",
+            "desde": 1
+          },
+          {
+            "icone": "4",
+            "titulo": "The decision",
+            "texto": "Keep waiting, leave the list or schedule an appointment.",
+            "desde": 2
+          }
+        ]
+      },
+      "alt": "Four steps: the list at CREDAC, the spreadsheet, the phone call and the decision about each person.",
+      "passos": [
+        {
+          "eyebrow": "Investigation",
+          "titulo": "A phone call for each person",
+          "texto": "Speech therapy students, supervised by professors, carried out the research as a final undergraduate project and a university outreach project.",
+          "fonte": "Method, 1st paragraph"
+        },
+        {
+          "texto": "In each call, they updated the person's details and indicated the speech therapy subarea that matched the current complaint.",
+          "fonte": "Method, 3rd and 5th paragraphs"
+        },
+        {
+          "texto": "Finally, they decided what to do with each case. People with no phone or who did not live in the municipality were left out.",
+          "ausente": "how many people were on the list in total and how many could not be reached.",
+          "fonte": "Method, 4th paragraph"
+        }
+      ]
+    },
+    {
+      "id": "funil",
+      "capitulo": "investigacao",
+      "tipo": "funil",
+      "visual": {
+        "total": 418,
+        "inicio": "people contacted by phone",
+        "alt": "Funnel: 418 people contacted; 25 did not take part; 36 had already been treated at another service; in 70 the complaint had resolved; 41 had moved; 246 still needed care.",
+        "cortes": [
+          {
+            "n": 25,
+            "rotulo": "did not take part",
+            "depois": "agreed to take part"
+          },
+          {
+            "n": 36,
+            "rotulo": "had already been treated at another service",
+            "depois": "still on the list"
+          },
+          {
+            "n": 70,
+            "rotulo": "the complaint resolved on its own",
+            "depois": "still on the list"
+          },
+          {
+            "n": 41,
+            "rotulo": "moved to another city, state or country",
+            "depois": "still needed care"
+          }
+        ]
+      },
+      "passos": [
+        {
+          "eyebrow": "Investigation",
+          "titulo": "Who was still on the list",
+          "texto": "<strong>418</strong> people were contacted.",
+          "fonte": "Results, 1st paragraph"
+        },
+        {
+          "texto": "<strong>393</strong> agreed to take part; the other 25 did not."
+        },
+        {
+          "texto": "<strong>36</strong> had already been treated at another service, public or private."
+        },
+        {
+          "texto": "In <strong>70</strong>, the complaint had resolved on its own."
+        },
+        {
+          "texto": "<strong>41</strong> had moved to another city, state or country. That left <strong>246</strong> people who still needed care.",
+          "fonte": "Results, 1st and 2nd paragraphs; Figure 1"
+        }
+      ]
+    },
+    {
+      "id": "agenda",
+      "capitulo": "resultados",
+      "tipo": "niveis",
+      "visual": {
+        "niveis": [
+          {
+            "rotulo": "Scheduled",
+            "sub": "after the list was updated",
+            "n": 162,
+            "cor": "#5FD39A",
+            "desde": 0
+          },
+          {
+            "rotulo": "Kept waiting",
+            "sub": "for an appointment",
+            "n": 84,
+            "cor": "#FFB23F",
+            "desde": 1
+          }
+        ],
+        "nota": "In the article's flowchart (Figure 1), those scheduled appear as 66.9%; by the counts in the text, 162 out of 246 is 65.9%, as in the abstract."
+      },
+      "alt": "Two rows of dots: 162 people scheduled and 84 who kept waiting.",
+      "passos": [
+        {
+          "eyebrow": "Results",
+          "titulo": "What changed after the phone call",
+          "texto": "With the complaint analyzed and the subarea assigned, <strong>162</strong> of the 246 people were scheduled for care.",
+          "fonte": "Results, 2nd paragraph"
+        },
+        {
+          "texto": "<strong>84</strong> kept waiting for an appointment.",
+          "fonte": "Results, 2nd paragraph"
+        }
+      ]
+    },
+    {
+      "id": "idades",
+      "capitulo": "resultados",
+      "tipo": "niveis",
+      "visual": {
+        "niveis": [
+          {
+            "rotulo": "Childhood",
+            "sub": "up to 11 years",
+            "n": 177,
+            "cor": "#A58CFF",
+            "desde": 0
+          },
+          {
+            "rotulo": "Adolescence",
+            "sub": "11 to 20 years",
+            "n": 35,
+            "cor": "#7C9CFF",
+            "desde": 1
+          },
+          {
+            "rotulo": "Young adults and middle age",
+            "sub": "20 to 65 years",
+            "n": 20,
+            "cor": "#3FC1C9",
+            "desde": 1
+          },
+          {
+            "rotulo": "Older people",
+            "sub": "65 years or over",
+            "n": 14,
+            "cor": "#FFB23F",
+            "desde": 1
+          }
+        ],
+        "nota": "Ages from 1 year and 9 months to 81 years and 1 month."
+      },
+      "alt": "Four rows of dots: 177 children, 35 adolescents, 20 young adults and middle-aged people and 14 older people.",
+      "passos": [
+        {
+          "eyebrow": "Results",
+          "titulo": "Who was waiting",
+          "texto": "Of the 246 people, <strong>177 were children</strong> up to 11 years old: 71.9% of the list.",
+          "fonte": "Results, 3rd paragraph; Table 1"
+        },
+        {
+          "texto": "There were also 35 adolescents, 20 young adults and middle-aged people and 14 older people.",
+          "fonte": "Results, 3rd paragraph"
+        },
+        {
+          "texto": "<strong>158</strong> were male (64.2%). The authors link this to the higher occurrence of neurodevelopmental delays in this group, according to the literature.",
+          "fonte": "Results; Discussion, 3rd paragraph"
+        }
+      ]
+    },
+    {
+      "id": "queixa",
+      "capitulo": "resultados",
+      "tipo": "destaques",
+      "visual": {
+        "itens": [
+          {
+            "valor": "180",
+            "texto": "kept the complaint on the referral form (73.2%).",
+            "cor": "#7C9CFF",
+            "desde": 0
+          },
+          {
+            "valor": "66",
+            "texto": "had a complaint different from the referral (26.8%).",
+            "cuidado": "Some cases had gotten worse during the wait, according to the authors.",
+            "cor": "#FF8A5C",
+            "desde": 0
+          }
+        ]
+      },
+      "alt": "Two numbers: 180 people kept the complaint on the referral and 66 had a different complaint.",
+      "passos": [
+        {
+          "eyebrow": "Results",
+          "titulo": "The complaint changed",
+          "texto": "For <strong>1 in 4</strong> people, the current complaint was different from the one on the referral.",
+          "fonte": "Results, 4th paragraph; Table 1"
+        },
+        {
+          "texto": "With a long wait, records become outdated and needs can change.",
+          "fonte": "Discussion, 2nd paragraph"
+        }
+      ]
+    },
+    {
+      "id": "uma-area",
+      "capitulo": "resultados",
+      "tipo": "barras",
+      "visual": {
+        "titulo": "People who needed a single subarea (217)",
+        "itens": [
+          {
+            "rotulo": "Child language",
+            "valor": 182,
+            "cor": "#A58CFF"
+          },
+          {
+            "rotulo": "Adult language",
+            "valor": 9,
+            "cor": "#7C9CFF"
+          },
+          {
+            "rotulo": "Adult dysphagia",
+            "valor": 7,
+            "cor": "#3FC1C9"
+          },
+          {
+            "rotulo": "Voice",
+            "valor": 5,
+            "cor": "#5FD39A"
+          },
+          {
+            "rotulo": "Audiology",
+            "valor": 4,
+            "cor": "#FFB23F"
+          },
+          {
+            "rotulo": "Child dysphagia",
+            "valor": 4,
+            "cor": "#3FC1C9"
+          },
+          {
+            "rotulo": "Orofacial myology",
+            "valor": 3,
+            "cor": "#FF5470"
+          },
+          {
+            "rotulo": "Otoneurology",
+            "valor": 3,
+            "cor": "#7C9CFF"
+          }
+        ],
+        "eixo": "Number of people, according to the text of the Results.",
+        "alt": "Bars: child language 182, adult language 9, adult dysphagia 7, voice 5, audiology 4, child dysphagia 4, orofacial myology 3 and otoneurology 3."
+      },
+      "passos": [
+        {
+          "eyebrow": "Results",
+          "titulo": "What they needed",
+          "texto": "<strong>217</strong> people needed a single subarea. For <strong>182</strong> of them, it was child language.",
+          "fonte": "Results, 5th paragraph"
+        },
+        {
+          "texto": "Next came adult language, adult dysphagia and voice. Audiology, child dysphagia, orofacial myology and otoneurology had 3 or 4 people each.",
+          "fonte": "Results, 5th paragraph"
+        },
+        {
+          "texto": "Most referrals, made by primary care physicians, were for child language, as in other Brazilian studies.",
+          "fonte": "Discussion, 6th paragraph"
+        }
+      ]
+    },
+    {
+      "id": "mais-areas",
+      "capitulo": "resultados",
+      "tipo": "barras",
+      "visual": {
+        "titulo": "People who needed two or three subareas (29)",
+        "itens": [
+          {
+            "rotulo": "Audiology + child language",
+            "valor": 16,
+            "cor": "#FFB23F"
+          },
+          {
+            "rotulo": "Dysphagia + adult language",
+            "valor": 5,
+            "cor": "#3FC1C9"
+          },
+          {
+            "rotulo": "Dysphagia + child language",
+            "valor": 2,
+            "cor": "#3FC1C9"
+          },
+          {
+            "rotulo": "Child language + orofacial myology",
+            "valor": 2,
+            "cor": "#A58CFF"
+          },
+          {
+            "rotulo": "Each of the other 4 combinations",
+            "valor": 1,
+            "cor": "#66728D"
+          }
+        ],
+        "eixo": "Number of people, from Table 1 (percentages of 29).",
+        "alt": "Bars: audiology and child language 16, dysphagia and adult language 5, dysphagia and child language 2, child language and orofacial myology 2, and 4 other combinations with 1 person each."
+      },
+      "passos": [
+        {
+          "eyebrow": "Results",
+          "titulo": "More than one area",
+          "texto": "<strong>29</strong> people needed two or three subareas. The most common combination was audiology with child language: <strong>16</strong>.",
+          "fonte": "Results, 6th paragraph; Table 1"
+        },
+        {
+          "texto": "For the authors, these cases show the importance of <strong>broad, generalist training</strong> that looks at the whole person.",
+          "fonte": "Discussion, 7th paragraph"
+        },
+        {
+          "texto": "Even so, referrals to a single subarea predominated, which, according to the authors, reveals limits in understanding what speech therapists do.",
+          "fonte": "Discussion, 6th paragraph"
+        }
+      ]
+    },
+    {
+      "id": "antes-depois",
+      "capitulo": "significado",
+      "tipo": "comparacao",
+      "visual": {
+        "colunas": [
+          "Before the phone calls",
+          "After"
+        ],
+        "linhas": [
+          {
+            "rotulo": "On the list",
+            "a": "393 people who agreed to take part",
+            "b": "84 kept waiting",
+            "desde": 0
+          },
+          {
+            "rotulo": "Care",
+            "a": "All waiting for an appointment",
+            "b": "162 scheduled",
+            "desde": 0
+          },
+          {
+            "rotulo": "Records",
+            "a": "Incomplete and outdated records",
+            "b": "Age, complaint and subarea updated",
+            "desde": 1
+          },
+          {
+            "rotulo": "Left",
+            "a": "—",
+            "b": "147: no current need or moved",
+            "desde": 1
+          }
+        ]
+      },
+      "alt": "Table comparing the list before and after the phone calls.",
+      "passos": [
+        {
+          "eyebrow": "Meaning",
+          "titulo": "Before and after the action",
+          "texto": "Of the 393 people who took part, <strong>84</strong> were still waiting at the end of the action.",
+          "fonte": "Results; Discussion, 9th paragraph"
+        },
+        {
+          "texto": "For the authors, having the <strong>speech therapist involved in allocating</strong> appointments, or guiding those who do it, made scheduling more accurate.",
+          "fonte": "Discussion, 9th paragraph"
+        },
+        {
+          "texto": "They argue that the waiting list should be seen as an <strong>indicator of access and equity</strong>, not just as a working tool.",
+          "fonte": "Discussion, 1st paragraph"
+        }
+      ]
+    },
+    {
+      "id": "propostas",
+      "capitulo": "significado",
+      "tipo": "limites",
+      "visual": {
+        "itens": [
+          {
+            "icone": "→",
+            "titulo": "Better referrals",
+            "texto": "Train primary care professionals to make more detailed referrals.",
+            "desde": 0
+          },
+          {
+            "icone": "→",
+            "titulo": "Speech therapists in primary health units",
+            "texto": "Having a speech therapist in primary health units.",
+            "desde": 0
+          },
+          {
+            "icone": "→",
+            "titulo": "Stimulation groups",
+            "texto": "They can reduce the effects of delays in diagnosis or intervention.",
+            "desde": 1
+          },
+          {
+            "icone": "→",
+            "titulo": "Continue the study",
+            "texto": "With in-person reception and joint discussions with health teams (matrix support).",
+            "desde": 1
+          }
+        ]
+      },
+      "alt": "List of the authors' proposals.",
+      "passos": [
+        {
+          "eyebrow": "Meaning",
+          "titulo": "What the authors propose",
+          "texto": "To avoid such long lists, the authors suggest acting before the list grows.",
+          "fonte": "Discussion, 11th paragraph"
+        },
+        {
+          "texto": "And they call for the study to continue, to better understand who is waiting for care in the public sector.",
+          "fonte": "Discussion, last paragraph"
+        }
+      ]
+    },
+    {
+      "id": "limites",
+      "capitulo": "limites",
+      "tipo": "limites",
+      "visual": {
+        "itens": [
+          {
+            "titulo": "A single municipality",
+            "texto": "The results cannot be generalized to other cities.",
+            "desde": 0
+          },
+          {
+            "titulo": "Flawed records",
+            "texto": "The list's data had incomplete and outdated information.",
+            "desde": 0
+          },
+          {
+            "titulo": "Phone only",
+            "texto": "People without a phone or with a disconnected number were left out.",
+            "desde": 1
+          },
+          {
+            "titulo": "Description only",
+            "texto": "The analysis was descriptive only, with totals and percentages.",
+            "desde": 1
+          },
+          {
+            "titulo": "Information the article does not provide",
+            "texto": "How many people were on the list in total and how long, on average, each one waited.",
+            "ausente": true,
+            "desde": 2
+          }
+        ]
+      },
+      "alt": "List of the study's limitations and of information the article does not provide.",
+      "passos": [
+        {
+          "eyebrow": "Limits",
+          "titulo": "What the study does not show",
+          "texto": "The authors themselves point out the limits of the research.",
+          "fonte": "Discussion, 10th paragraph"
+        },
+        {
+          "texto": "Because it was done by phone only, the research did not reach people who had no contact."
+        },
+        {
+          "texto": "And there are numbers the article does not report."
+        }
+      ]
+    },
+    {
+      "id": "fim",
+      "capitulo": "fim",
+      "tipo": "fila",
+      "visual": {
+        "total": 393,
+        "coresDesde": 0,
+        "titulo": "The same 393 people, after the action",
+        "subtitulo": "each dot is one person",
+        "grupos": [
+          {
+            "n": 162,
+            "rotulo": "scheduled",
+            "cor": "#5FD39A"
+          },
+          {
+            "n": 84,
+            "rotulo": "kept waiting",
+            "cor": "#FFB23F"
+          },
+          {
+            "n": 147,
+            "rotulo": "left the list",
+            "cor": "#8D9AB5",
+            "apagado": true
+          }
+        ],
+        "alt": "The same line of 393 dots, now in color: 162 scheduled, 84 waiting and 147 who left the list."
+      },
+      "passos": [
+        {
+          "eyebrow": "Closing",
+          "titulo": "Waiting to be heard",
+          "texto": "A phone call turned an old list into information: who still needed care, what for, and who could be seen.",
+          "fonte": "Conclusion"
+        },
+        {
+          "texto": "Of the 393 people, <strong>162</strong> were scheduled, <strong>84</strong> kept waiting and <strong>147</strong> left the list."
+        },
+        {
+          "eyebrow": "The question that remains",
+          "texto": "For the authors, organizing the list is not only a task for management: it is also a challenge for health professionals, especially speech therapists.",
+          "fonte": "Conclusion"
+        }
+      ]
+    }
+  ],
+  "creditos": {
+    "estudo": "Based on: <strong>Salles TMA, Santos MGP, Moraes RG, Alpes MF, Ferreira-Vasques AT.</strong> Ação sobre lista de espera para a Fonoaudiologia no Sistema Único de Saúde (SUS) em um município brasileiro de médio porte. <em>CoDAS</em>, v. 38, n. 3, e20250038, 2026. Open-access article, CC BY 4.0 license.",
+    "botoes": [
+      {
+        "rotulo": "Read the study explained on GenoEvidence",
+        "url": "../"
+      },
+      {
+        "rotulo": "Read the article in the journal ↗",
+        "url": "https://doi.org/10.1590/2317-1782/e20250038pt"
+      }
+    ],
+    "como": "Script, text and visualizations by GenoEvidence, based on the full text, Table 1 and Figure 1 of the article. The charts were redrawn from the published numbers. No data were created. The dots represent people, in the article's numbers; the drawings of the speech therapy areas are illustrative. Where the figure or the table shows percentages different from the counts in the text, this is noted. The article does not identify the municipality studied.",
+    "referencias": [
+      {
+        "texto": "SALLES, T. M. A. et al. Ação sobre lista de espera para a Fonoaudiologia no Sistema Único de Saúde (SUS) em um município brasileiro de médio porte. CoDAS, v. 38, n. 3, e20250038, 2026.",
+        "doi": "10.1590/2317-1782/e20250038pt"
+      },
+      {
+        "texto": "Ref. 11 in the article: COSTA, R. G.; SOUZA, L. B. R. Perfil dos usuários e da demanda pelo serviço da clínica-escola de fonoaudiologia da UFBA. Revista de Ciências Médicas e Biológicas, v. 8, n. 1, p. 53, 2009.",
+        "doi": "10.9771/cmbio.v8i1.4376"
+      },
+      {
+        "texto": "Ref. 12 in the article: CORRÊA, C. C.; ARAKAWA, A. M.; MAXIMINO, L. P. Clínica-escola de fonoaudiologia: manejo da lista de espera. Revista CEFAC, v. 18, n. 5, p. 1222-1229, 2016.",
+        "doi": "10.1590/1982-0216201618518215"
+      },
+      {
+        "texto": "Ref. 21 in the article: TAVONI, J. R.; VIANNA, N.; FERNANDES, A. C. Scenario of access to speech therapy based on the profile of children and adolescents referred to primary care. Revista CEFAC, v. 24, n. 2, 2022.",
+        "doi": "10.1590/1982-0216/202224211121"
+      }
+    ]
+  }
+}

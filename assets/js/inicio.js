@@ -477,6 +477,7 @@
     biomateriais: '<svg viewBox="0 0 64 64"><path class="s-hex" d="M20 14l10-6 10 6v12l-10 6-10-6zM36 34l10-6 10 6v12l-10 6-10-6zM8 36l10-6 10 6v12l-10 6-10-6z"/><circle class="s-nano" cx="30" cy="32" r="3.5"/></svg>',
     toxinologia: '<svg viewBox="0 0 64 64"><path class="s-gota" d="M32 8c7 11 13 19 13 27a13 13 0 0 1-26 0c0-8 6-16 13-27z"/><ellipse class="s-onda" cx="32" cy="56" rx="10" ry="3"/></svg>',
     "saude-publica": '<svg viewBox="0 0 64 64"><path class="s-pulso" d="M6 34h12l5-12 8 24 6-16 4 4h17"/><path class="s-cruz" d="M44 10h6v6h6v6h-6v6h-6v-6h-6v-6h6z"/></svg>',
+    fonoaudiologia: '<svg viewBox="0 0 64 64"><path class="s-balao" d="M8 14h34v22H24l-9 8v-8H8z"/><path class="s-fala" d="M47 18q5 7 0 14"/><path class="s-fala b" d="M53 13q9 12 0 24"/></svg>',
     "meio-ambiente": '<svg viewBox="0 0 64 64"><path class="s-folha" d="M14 50C14 26 30 12 52 12c0 24-14 38-38 38zM14 50L36 28"/><path class="s-agua" d="M8 56c6-4 10 4 16 0s10 4 16 0 10 4 16 0"/></svg>'
   };
   function ciencia(d) {
@@ -487,6 +488,9 @@
       return '<a class="tema-tile tema-simbolo" href="' + esc(RAIZ + "artigos/#" + t.id) + '" data-tema="' + esc(t.id) + '" style="--c:' + esc(t.cor) + '" role="button" aria-expanded="false" aria-controls="temaPainel">' +
         '<span class="simb" aria-hidden="true">' + (SIMBOLO[t.id] || SIMBOLO["biologia-molecular"]) + "</span><b>" + esc(t.nome) + "</b><span>" + n + (n > 1 ? " estudos" : " estudo") + "</span></a>";
     }).join("");
+    // colunas que dividem os temas sem deixar um sozinho na última linha (8 → 4, 9 → 3...)
+    const nT = $$(".tema-tile", grade).length, cols = [4, 3, 5].find(c => nT % c === 0) || (nT % 4 >= 2 ? 4 : 3);
+    grade.style.setProperty("--cols", cols);
     naTela(grade, v => grade.classList.toggle("anima", v && !parado()));
     let aberto = null;
     $$(".tema-tile", grade).forEach(tile => {

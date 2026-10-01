@@ -1,0 +1,766 @@
+{
+  "_como_usar": "Roteiro da experiência interativa. Cada cena tem um tipo de visual (ver assets/js/experiencia.js) e passos de texto. Números sempre do artigo; 'fonte' diz de onde.",
+  "titulo": "En la fila para ser escuchado",
+  "subtitulo_topo": "La fila para el fonoaudiólogo en el SUS",
+  "acento": "#FF8A5C",
+  "pagina": "../",
+  "capitulos": [
+    {
+      "id": "abertura",
+      "nome": "Apertura"
+    },
+    {
+      "id": "contexto",
+      "nome": "Contexto"
+    },
+    {
+      "id": "investigacao",
+      "nome": "Investigación"
+    },
+    {
+      "id": "resultados",
+      "nome": "Resultados"
+    },
+    {
+      "id": "significado",
+      "nome": "Significado"
+    },
+    {
+      "id": "limites",
+      "nome": "Límites"
+    },
+    {
+      "id": "fim",
+      "nome": "Cierre"
+    }
+  ],
+  "cenas": [
+    {
+      "id": "abertura",
+      "capitulo": "abertura",
+      "tipo": "fila",
+      "visual": {
+        "total": 393,
+        "titulo": "393 personas en la fila",
+        "subtitulo": "cada punto es una persona",
+        "alt": "Fila en zigzag con 393 puntos, cada uno representa a una persona que esperaba atención fonoaudiológica y aceptó participar en la investigación."
+      },
+      "passos": [
+        {
+          "eyebrow": "GenoEvidence · experiencia interactiva",
+          "capa": "En la fila para ser escuchado",
+          "texto": "La fila para el fonoaudiólogo en el sistema público de salud de Brasil (SUS), en un municipio del interior de São Paulo: quién esperaba, qué necesitaba y qué cambió después de una llamada.",
+          "extra": "Estudio de Salles, Santos, Moraes, Alpes y Ferreira-Vasques · CoDAS, 2026",
+          "link": {
+            "rotulo": "¿Prefieres leerlo en texto? Abre la página del estudio →",
+            "url": "../"
+          }
+        },
+        {
+          "texto": "Cada punto es una persona. Son <strong>393</strong>: las que atendieron el teléfono y aceptaron participar en la investigación.",
+          "fonte": "Resultados, 1.er párrafo"
+        },
+        {
+          "texto": "Fueron derivadas por las unidades básicas de salud entre <strong>febrero de 2018 y diciembre de 2022</strong>. Algunas esperaban desde hacía unos cinco años.",
+          "fonte": "Método; Discusión"
+        }
+      ]
+    },
+    {
+      "id": "areas",
+      "capitulo": "contexto",
+      "tipo": "icones",
+      "visual": {
+        "itens": [
+          {
+            "id": "linguagem",
+            "icone": "linguagem",
+            "nome": "Lenguaje",
+            "desc": "entender y expresarse",
+            "cor": "#A58CFF"
+          },
+          {
+            "id": "voz",
+            "icone": "voz",
+            "nome": "Voz",
+            "desc": "ronquera, cansancio al hablar",
+            "cor": "#5FD39A"
+          },
+          {
+            "id": "audiologia",
+            "icone": "audicao",
+            "nome": "Audiología",
+            "desc": "la audición",
+            "cor": "#FFB23F"
+          },
+          {
+            "id": "disfagia",
+            "icone": "disfagia",
+            "nome": "Disfagia",
+            "desc": "dificultad para tragar",
+            "cor": "#3FC1C9"
+          },
+          {
+            "id": "motricidade",
+            "icone": "motricidade",
+            "nome": "Motricidad orofacial",
+            "desc": "músculos de la boca y la cara",
+            "cor": "#FF5470"
+          },
+          {
+            "id": "otoneurologia",
+            "icone": "equilibrio",
+            "nome": "Otoneurología",
+            "desc": "mareo y equilibrio",
+            "cor": "#7C9CFF"
+          }
+        ]
+      },
+      "alt": "Seis dibujos simples de las áreas de la Fonoaudiología: lenguaje, voz, audiología, disfagia, motricidad orofacial y otoneurología.",
+      "passos": [
+        {
+          "eyebrow": "Contexto",
+          "titulo": "Qué hace la Fonoaudiología",
+          "texto": "Se ocupa de la comunicación humana: <strong>lenguaje, habla, voz, audición</strong> y funciones de la boca y la cara, como masticar y tragar.",
+          "fonte": "Introducción, 1.er párrafo"
+        },
+        {
+          "foco": [
+            "linguagem",
+            "disfagia"
+          ],
+          "texto": "En el estudio, cada persona de la fila recibió la <strong>subárea</strong> capaz de atender su queja. Lenguaje y disfagia se dividieron en infantil y adulto.",
+          "fonte": "Método; Resultados"
+        },
+        {
+          "texto": "En el SUS, el fonoaudiólogo actúa desde la unidad básica de salud hasta el hospital. Para planificar esa atención, hay que saber <strong>quién espera y qué necesita</strong>.",
+          "fonte": "Introducción, 2.º y 3.er párrafos"
+        }
+      ]
+    },
+    {
+      "id": "espera",
+      "capitulo": "contexto",
+      "tipo": "tempo",
+      "visual": {
+        "de": 2018,
+        "ate": 2025,
+        "faixas": [
+          {
+            "rotulo": "Derivaciones que formaban la lista",
+            "periodo": "febrero de 2018 a diciembre de 2022",
+            "de": "2018-02",
+            "ate": "2022-12",
+            "cor": "#A58CFF",
+            "desde": 0
+          },
+          {
+            "rotulo": "Llamadas de la investigación",
+            "periodo": "julio de 2023 a julio de 2024",
+            "de": "2023-07",
+            "ate": "2024-07",
+            "cor": "#FF8A5C",
+            "desde": 1
+          }
+        ]
+      },
+      "alt": "Línea de tiempo: derivaciones de febrero de 2018 a diciembre de 2022 y llamadas de julio de 2023 a julio de 2024.",
+      "passos": [
+        {
+          "eyebrow": "Contexto",
+          "titulo": "Una espera larga",
+          "texto": "La lista reunía derivaciones hechas de <strong>febrero de 2018 a diciembre de 2022</strong>.",
+          "fonte": "Método, 2.º párrafo"
+        },
+        {
+          "texto": "La investigación llamó a estas personas de <strong>julio de 2023 a julio de 2024</strong>.",
+          "fonte": "Método, 1.er párrafo"
+        },
+        {
+          "texto": "Pasar mucho tiempo en la fila, sin atención ni orientación, puede empeorar el cuadro y llevar a la persona a <strong>abandonar</strong> la atención que necesita.",
+          "fonte": "Introducción, 4.º párrafo"
+        }
+      ]
+    },
+    {
+      "id": "telefonemas",
+      "capitulo": "investigacao",
+      "tipo": "limites",
+      "visual": {
+        "itens": [
+          {
+            "icone": "1",
+            "titulo": "La lista",
+            "texto": "Estaba en el CREDAC, el centro que distribuye las plazas del municipio. Quienes la manejaban no eran fonoaudiólogos.",
+            "desde": 0
+          },
+          {
+            "icone": "2",
+            "titulo": "La planilla",
+            "texto": "Sexo, edad, queja inicial, queja actual y la subárea capaz de atender.",
+            "desde": 1
+          },
+          {
+            "icone": "3",
+            "titulo": "La llamada",
+            "texto": "Estudiantes capacitados llamaron, invitaron y enviaron el consentimiento. Con menores de edad, hablaron con el responsable.",
+            "desde": 1
+          },
+          {
+            "icone": "4",
+            "titulo": "La decisión",
+            "texto": "Seguir esperando, salir de la lista o dar turno.",
+            "desde": 2
+          }
+        ]
+      },
+      "alt": "Cuatro etapas: la lista en el CREDAC, la planilla, la llamada y la decisión sobre cada persona.",
+      "passos": [
+        {
+          "eyebrow": "Investigación",
+          "titulo": "Una llamada para cada persona",
+          "texto": "Estudiantes de Fonoaudiología, supervisados por profesores, hicieron la investigación como trabajo de fin de carrera y proyecto de extensión.",
+          "fonte": "Método, 1.er párrafo"
+        },
+        {
+          "texto": "En cada llamada, actualizaron los datos de la persona e indicaron la subárea de la Fonoaudiología que respondía a la queja actual.",
+          "fonte": "Método, 3.er y 5.º párrafos"
+        },
+        {
+          "texto": "Por último, decidieron qué hacer con cada caso. Quedaron fuera las personas sin teléfono o que no vivían en el municipio.",
+          "ausente": "cuántas personas había en la lista en total y cuántas no pudieron ser contactadas.",
+          "fonte": "Método, 4.º párrafo"
+        }
+      ]
+    },
+    {
+      "id": "funil",
+      "capitulo": "investigacao",
+      "tipo": "funil",
+      "visual": {
+        "total": 418,
+        "inicio": "personas contactadas por teléfono",
+        "alt": "Embudo: 418 personas contactadas; 25 no participaron; 36 ya habían sido atendidas en otro servicio; en 70 la queja se resolvió; 41 se mudaron; 246 seguían necesitando atención.",
+        "cortes": [
+          {
+            "n": 25,
+            "rotulo": "no participaron",
+            "depois": "aceptaron participar"
+          },
+          {
+            "n": 36,
+            "rotulo": "ya habían sido atendidas en otro servicio",
+            "depois": "aún en la lista"
+          },
+          {
+            "n": 70,
+            "rotulo": "la queja se resolvió sola",
+            "depois": "aún en la lista"
+          },
+          {
+            "n": 41,
+            "rotulo": "se mudaron de ciudad, estado o país",
+            "depois": "todavía necesitaban atención"
+          }
+        ]
+      },
+      "passos": [
+        {
+          "eyebrow": "Investigación",
+          "titulo": "Quién seguía en la fila",
+          "texto": "Se contactó a <strong>418</strong> personas.",
+          "fonte": "Resultados, 1.er párrafo"
+        },
+        {
+          "texto": "<strong>393</strong> aceptaron participar; las otras 25, no."
+        },
+        {
+          "texto": "<strong>36</strong> ya habían sido atendidas en otro servicio, público o privado."
+        },
+        {
+          "texto": "En <strong>70</strong>, la queja se había resuelto sola."
+        },
+        {
+          "texto": "<strong>41</strong> se habían mudado de ciudad, estado o país. Quedaron <strong>246</strong> personas que todavía necesitaban atención.",
+          "fonte": "Resultados, 1.er y 2.º párrafos; Figura 1"
+        }
+      ]
+    },
+    {
+      "id": "agenda",
+      "capitulo": "resultados",
+      "tipo": "niveis",
+      "visual": {
+        "niveis": [
+          {
+            "rotulo": "Con turno",
+            "sub": "después de actualizar la fila",
+            "n": 162,
+            "cor": "#5FD39A",
+            "desde": 0
+          },
+          {
+            "rotulo": "Siguieron esperando",
+            "sub": "un turno",
+            "n": 84,
+            "cor": "#FFB23F",
+            "desde": 1
+          }
+        ],
+        "nota": "En el diagrama de flujo del artículo (Figura 1), los que recibieron turno aparecen como 66,9%; según los recuentos del texto, 162 de 246 son 65,9%, como en el resumen."
+      },
+      "alt": "Dos filas de puntos: 162 personas con turno y 84 que siguieron esperando.",
+      "passos": [
+        {
+          "eyebrow": "Resultados",
+          "titulo": "Qué cambió después de la llamada",
+          "texto": "Con la queja analizada y la subárea indicada, <strong>162</strong> de las 246 personas recibieron turno.",
+          "fonte": "Resultados, 2.º párrafo"
+        },
+        {
+          "texto": "<strong>84</strong> siguieron esperando un turno.",
+          "fonte": "Resultados, 2.º párrafo"
+        }
+      ]
+    },
+    {
+      "id": "idades",
+      "capitulo": "resultados",
+      "tipo": "niveis",
+      "visual": {
+        "niveis": [
+          {
+            "rotulo": "Infancia",
+            "sub": "hasta 11 años",
+            "n": 177,
+            "cor": "#A58CFF",
+            "desde": 0
+          },
+          {
+            "rotulo": "Adolescencia",
+            "sub": "11 a 20 años",
+            "n": 35,
+            "cor": "#7C9CFF",
+            "desde": 1
+          },
+          {
+            "rotulo": "Jóvenes adultos y mediana edad",
+            "sub": "20 a 65 años",
+            "n": 20,
+            "cor": "#3FC1C9",
+            "desde": 1
+          },
+          {
+            "rotulo": "Personas mayores",
+            "sub": "65 años o más",
+            "n": 14,
+            "cor": "#FFB23F",
+            "desde": 1
+          }
+        ],
+        "nota": "Edades de 1 año y 9 meses a 81 años y 1 mes."
+      },
+      "alt": "Cuatro filas de puntos: 177 niños, 35 adolescentes, 20 jóvenes adultos y personas de mediana edad y 14 personas mayores.",
+      "passos": [
+        {
+          "eyebrow": "Resultados",
+          "titulo": "Quién esperaba",
+          "texto": "De las 246 personas, <strong>177 eran niños</strong> de hasta 11 años: el 71,9% de la fila.",
+          "fonte": "Resultados, 3.er párrafo; Tabla 1"
+        },
+        {
+          "texto": "También había 35 adolescentes, 20 jóvenes adultos y personas de mediana edad y 14 personas mayores.",
+          "fonte": "Resultados, 3.er párrafo"
+        },
+        {
+          "texto": "<strong>158</strong> eran de sexo masculino (64,2%). Los autores lo relacionan con la mayor frecuencia de retrasos del neurodesarrollo en ese grupo, según la literatura.",
+          "fonte": "Resultados; Discusión, 3.er párrafo"
+        }
+      ]
+    },
+    {
+      "id": "queixa",
+      "capitulo": "resultados",
+      "tipo": "destaques",
+      "visual": {
+        "itens": [
+          {
+            "valor": "180",
+            "texto": "mantenían la queja que figuraba en la derivación (73,2%).",
+            "cor": "#7C9CFF",
+            "desde": 0
+          },
+          {
+            "valor": "66",
+            "texto": "tenían una queja distinta de la derivación (26,8%).",
+            "cuidado": "Algunos casos habían empeorado durante la espera, según los autores.",
+            "cor": "#FF8A5C",
+            "desde": 0
+          }
+        ]
+      },
+      "alt": "Dos números: 180 personas mantenían la queja de la derivación y 66 tenían una queja distinta.",
+      "passos": [
+        {
+          "eyebrow": "Resultados",
+          "titulo": "La queja cambió",
+          "texto": "Para <strong>1 de cada 4</strong> personas, la queja actual era distinta de la que figuraba en la derivación.",
+          "fonte": "Resultados, 4.º párrafo; Tabla 1"
+        },
+        {
+          "texto": "Con una espera larga, los datos quedan desactualizados y la necesidad puede cambiar.",
+          "fonte": "Discusión, 2.º párrafo"
+        }
+      ]
+    },
+    {
+      "id": "uma-area",
+      "capitulo": "resultados",
+      "tipo": "barras",
+      "visual": {
+        "titulo": "Personas que necesitaban una sola subárea (217)",
+        "itens": [
+          {
+            "rotulo": "Lenguaje infantil",
+            "valor": 182,
+            "cor": "#A58CFF"
+          },
+          {
+            "rotulo": "Lenguaje adulto",
+            "valor": 9,
+            "cor": "#7C9CFF"
+          },
+          {
+            "rotulo": "Disfagia adulto",
+            "valor": 7,
+            "cor": "#3FC1C9"
+          },
+          {
+            "rotulo": "Voz",
+            "valor": 5,
+            "cor": "#5FD39A"
+          },
+          {
+            "rotulo": "Audiología",
+            "valor": 4,
+            "cor": "#FFB23F"
+          },
+          {
+            "rotulo": "Disfagia infantil",
+            "valor": 4,
+            "cor": "#3FC1C9"
+          },
+          {
+            "rotulo": "Motricidad orofacial",
+            "valor": 3,
+            "cor": "#FF5470"
+          },
+          {
+            "rotulo": "Otoneurología",
+            "valor": 3,
+            "cor": "#7C9CFF"
+          }
+        ],
+        "eixo": "Número de personas, según el texto de los Resultados.",
+        "alt": "Barras: lenguaje infantil 182, lenguaje adulto 9, disfagia adulto 7, voz 5, audiología 4, disfagia infantil 4, motricidad orofacial 3 y otoneurología 3."
+      },
+      "passos": [
+        {
+          "eyebrow": "Resultados",
+          "titulo": "Qué necesitaban",
+          "texto": "<strong>217</strong> personas necesitaban una sola subárea. Para <strong>182</strong> de ellas, era lenguaje infantil.",
+          "fonte": "Resultados, 5.º párrafo"
+        },
+        {
+          "texto": "Luego venían lenguaje adulto, disfagia adulto y voz. Audiología, disfagia infantil, motricidad orofacial y otoneurología tenían 3 o 4 personas cada una.",
+          "fonte": "Resultados, 5.º párrafo"
+        },
+        {
+          "texto": "La mayoría de las derivaciones, hechas por médicos de la Atención Primaria, fue para lenguaje infantil, como en otros estudios brasileños.",
+          "fonte": "Discusión, 6.º párrafo"
+        }
+      ]
+    },
+    {
+      "id": "mais-areas",
+      "capitulo": "resultados",
+      "tipo": "barras",
+      "visual": {
+        "titulo": "Personas que necesitaban dos o tres subáreas (29)",
+        "itens": [
+          {
+            "rotulo": "Audiología + lenguaje infantil",
+            "valor": 16,
+            "cor": "#FFB23F"
+          },
+          {
+            "rotulo": "Disfagia + lenguaje adulto",
+            "valor": 5,
+            "cor": "#3FC1C9"
+          },
+          {
+            "rotulo": "Disfagia + lenguaje infantil",
+            "valor": 2,
+            "cor": "#3FC1C9"
+          },
+          {
+            "rotulo": "Lenguaje infantil + motricidad",
+            "valor": 2,
+            "cor": "#A58CFF"
+          },
+          {
+            "rotulo": "Cada una de las otras 4 combinaciones",
+            "valor": 1,
+            "cor": "#66728D"
+          }
+        ],
+        "eixo": "Número de personas, según la Tabla 1 (porcentajes de 29).",
+        "alt": "Barras: audiología y lenguaje infantil 16, disfagia y lenguaje adulto 5, disfagia y lenguaje infantil 2, lenguaje infantil y motricidad orofacial 2, y otras 4 combinaciones con 1 persona cada una."
+      },
+      "passos": [
+        {
+          "eyebrow": "Resultados",
+          "titulo": "Más de un área",
+          "texto": "<strong>29</strong> personas necesitaban dos o tres subáreas. La combinación más común fue audiología con lenguaje infantil: <strong>16</strong>.",
+          "fonte": "Resultados, 6.º párrafo; Tabla 1"
+        },
+        {
+          "texto": "Para los autores, estos casos muestran la importancia de una <strong>formación generalista</strong>, que mire a la persona en su totalidad.",
+          "fonte": "Discusión, 7.º párrafo"
+        },
+        {
+          "texto": "Aun así, predominaron las derivaciones a una sola subárea, lo que, según los autores, revela límites en la comprensión de lo que hace el fonoaudiólogo.",
+          "fonte": "Discusión, 6.º párrafo"
+        }
+      ]
+    },
+    {
+      "id": "antes-depois",
+      "capitulo": "significado",
+      "tipo": "comparacao",
+      "visual": {
+        "colunas": [
+          "Antes de las llamadas",
+          "Después"
+        ],
+        "linhas": [
+          {
+            "rotulo": "En la fila",
+            "a": "393 personas que aceptaron participar",
+            "b": "84 seguían esperando",
+            "desde": 0
+          },
+          {
+            "rotulo": "Atención",
+            "a": "Todas esperando una plaza",
+            "b": "162 con turno",
+            "desde": 0
+          },
+          {
+            "rotulo": "Datos",
+            "a": "Registros incompletos y desactualizados",
+            "b": "Edad, queja y subárea actualizadas",
+            "desde": 1
+          },
+          {
+            "rotulo": "Salieron",
+            "a": "—",
+            "b": "147: sin necesidad actual o se mudaron",
+            "desde": 1
+          }
+        ]
+      },
+      "alt": "Tabla que compara la fila antes y después de las llamadas.",
+      "passos": [
+        {
+          "eyebrow": "Significado",
+          "titulo": "Antes y después de la acción",
+          "texto": "De las 393 personas que participaron, al final de la acción <strong>84</strong> seguían esperando.",
+          "fonte": "Resultados; Discusión, 9.º párrafo"
+        },
+        {
+          "texto": "Para los autores, tener al <strong>fonoaudiólogo en la regulación</strong> de las plazas, u orientando a quien la hace, hizo que los turnos fueran más acertados.",
+          "fonte": "Discusión, 9.º párrafo"
+        },
+        {
+          "texto": "Defienden que la fila se vea como un <strong>indicador de acceso y de equidad</strong>, y no solo como una herramienta de trabajo.",
+          "fonte": "Discusión, 1.er párrafo"
+        }
+      ]
+    },
+    {
+      "id": "propostas",
+      "capitulo": "significado",
+      "tipo": "limites",
+      "visual": {
+        "itens": [
+          {
+            "icone": "→",
+            "titulo": "Mejores derivaciones",
+            "texto": "Capacitar a los profesionales de la Atención Primaria para derivar con más detalle.",
+            "desde": 0
+          },
+          {
+            "icone": "→",
+            "titulo": "Fonoaudiólogos en las unidades básicas",
+            "texto": "Presencia del fonoaudiólogo en las unidades básicas de salud.",
+            "desde": 0
+          },
+          {
+            "icone": "→",
+            "titulo": "Grupos de estimulación",
+            "texto": "Pueden reducir los efectos de los retrasos en el diagnóstico o la intervención.",
+            "desde": 1
+          },
+          {
+            "icone": "→",
+            "titulo": "Continuar el estudio",
+            "texto": "Con acogida presencial y discusiones con los equipos de salud (apoyo matricial).",
+            "desde": 1
+          }
+        ]
+      },
+      "alt": "Lista de las propuestas de los autores.",
+      "passos": [
+        {
+          "eyebrow": "Significado",
+          "titulo": "Qué proponen los autores",
+          "texto": "Para evitar filas tan grandes, los autores sugieren actuar antes de que la lista crezca.",
+          "fonte": "Discusión, 11.º párrafo"
+        },
+        {
+          "texto": "Y piden continuar el estudio, para conocer mejor a quienes esperan atención en el sector público.",
+          "fonte": "Discusión, último párrafo"
+        }
+      ]
+    },
+    {
+      "id": "limites",
+      "capitulo": "limites",
+      "tipo": "limites",
+      "visual": {
+        "itens": [
+          {
+            "titulo": "Un solo municipio",
+            "texto": "Los resultados no pueden generalizarse a otras ciudades.",
+            "desde": 0
+          },
+          {
+            "titulo": "Registros con fallas",
+            "texto": "Los datos de la lista tenían información incompleta y desactualizada.",
+            "desde": 0
+          },
+          {
+            "titulo": "Solo por teléfono",
+            "texto": "Quedaron fuera personas sin teléfono o con el número desactivado.",
+            "desde": 1
+          },
+          {
+            "titulo": "Solo descripción",
+            "texto": "El análisis fue solo descriptivo, con totales y porcentajes.",
+            "desde": 1
+          },
+          {
+            "titulo": "Información que el artículo no trae",
+            "texto": "Cuántas personas había en la lista en total y cuánto tiempo esperó, en promedio, cada una.",
+            "ausente": true,
+            "desde": 2
+          }
+        ]
+      },
+      "alt": "Lista de las limitaciones del estudio y de la información que el artículo no trae.",
+      "passos": [
+        {
+          "eyebrow": "Límites",
+          "titulo": "Lo que el estudio no muestra",
+          "texto": "Los propios autores señalan los límites de la investigación.",
+          "fonte": "Discusión, 10.º párrafo"
+        },
+        {
+          "texto": "Como se hizo solo por teléfono, la investigación no llegó a quienes no tenían contacto."
+        },
+        {
+          "texto": "Y hay números que el artículo no informa."
+        }
+      ]
+    },
+    {
+      "id": "fim",
+      "capitulo": "fim",
+      "tipo": "fila",
+      "visual": {
+        "total": 393,
+        "coresDesde": 0,
+        "titulo": "Las mismas 393 personas, después de la acción",
+        "subtitulo": "cada punto es una persona",
+        "grupos": [
+          {
+            "n": 162,
+            "rotulo": "con turno",
+            "cor": "#5FD39A"
+          },
+          {
+            "n": 84,
+            "rotulo": "siguieron esperando",
+            "cor": "#FFB23F"
+          },
+          {
+            "n": 147,
+            "rotulo": "salieron de la lista",
+            "cor": "#8D9AB5",
+            "apagado": true
+          }
+        ],
+        "alt": "La misma fila de 393 puntos, ahora en color: 162 con turno, 84 esperando y 147 que salieron de la lista."
+      },
+      "passos": [
+        {
+          "eyebrow": "Cierre",
+          "titulo": "En la fila para ser escuchado",
+          "texto": "Una llamada convirtió una lista vieja en información: quién todavía necesitaba atención, de qué, y quién podía ser atendido.",
+          "fonte": "Conclusión"
+        },
+        {
+          "texto": "De las 393 personas, <strong>162</strong> recibieron turno, <strong>84</strong> siguieron esperando y <strong>147</strong> salieron de la lista."
+        },
+        {
+          "eyebrow": "La pregunta que queda",
+          "texto": "Para los autores, organizar la fila no es solo tarea de la gestión: también es un desafío para los profesionales de la salud, especialmente el fonoaudiólogo.",
+          "fonte": "Conclusión"
+        }
+      ]
+    }
+  ],
+  "creditos": {
+    "estudo": "Basado en: <strong>Salles TMA, Santos MGP, Moraes RG, Alpes MF, Ferreira-Vasques AT.</strong> Ação sobre lista de espera para a Fonoaudiologia no Sistema Único de Saúde (SUS) em um município brasileiro de médio porte. <em>CoDAS</em>, v. 38, n. 3, e20250038, 2026. Artículo de acceso abierto, licencia CC BY 4.0.",
+    "botoes": [
+      {
+        "rotulo": "Leer el estudio explicado en GenoEvidence",
+        "url": "../"
+      },
+      {
+        "rotulo": "Leer el artículo en la revista ↗",
+        "url": "https://doi.org/10.1590/2317-1782/e20250038pt"
+      }
+    ],
+    "como": "Guion, textos y visualizaciones de GenoEvidence, hechos a partir del texto completo, la Tabla 1 y la Figura 1 del artículo. Los gráficos se redibujaron con los números publicados. No se creó ningún dato. Los puntos representan personas, en las cantidades del artículo; los dibujos de las áreas de la Fonoaudiología son ilustrativos. Donde la figura o la tabla traen porcentajes distintos de los recuentos del texto, se indica. El artículo no identifica el municipio estudiado.",
+    "referencias": [
+      {
+        "texto": "SALLES, T. M. A. et al. Ação sobre lista de espera para a Fonoaudiologia no Sistema Único de Saúde (SUS) em um município brasileiro de médio porte. CoDAS, v. 38, n. 3, e20250038, 2026.",
+        "doi": "10.1590/2317-1782/e20250038pt"
+      },
+      {
+        "texto": "Ref. 11 del artículo: COSTA, R. G.; SOUZA, L. B. R. Perfil dos usuários e da demanda pelo serviço da clínica-escola de fonoaudiologia da UFBA. Revista de Ciências Médicas e Biológicas, v. 8, n. 1, p. 53, 2009.",
+        "doi": "10.9771/cmbio.v8i1.4376"
+      },
+      {
+        "texto": "Ref. 12 del artículo: CORRÊA, C. C.; ARAKAWA, A. M.; MAXIMINO, L. P. Clínica-escola de fonoaudiologia: manejo da lista de espera. Revista CEFAC, v. 18, n. 5, p. 1222-1229, 2016.",
+        "doi": "10.1590/1982-0216201618518215"
+      },
+      {
+        "texto": "Ref. 21 del artículo: TAVONI, J. R.; VIANNA, N.; FERNANDES, A. C. Scenario of access to speech therapy based on the profile of children and adolescents referred to primary care. Revista CEFAC, v. 24, n. 2, 2022.",
+        "doi": "10.1590/1982-0216/202224211121"
+      }
+    ]
+  }
+}

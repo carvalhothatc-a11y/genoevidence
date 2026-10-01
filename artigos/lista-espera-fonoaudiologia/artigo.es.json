@@ -1,0 +1,523 @@
+{
+  "id": "lista-espera-fonoaudiologia",
+  "experiencia": "experiencia/",
+  "tipo": "artigo",
+  "rotulo": "Estudio descriptivo",
+  "arte": "rede",
+  "arte_legenda": "ilustración · la red de salud que conecta a quien espera con la atención",
+  "tema": "Fonoaudiología",
+  "tema_id": "fonoaudiologia",
+  "titulo": "Ação sobre lista de espera para a Fonoaudiologia no Sistema Único de Saúde (SUS) em um município brasileiro de médio porte",
+  "titulo_curto": "La fila para el fonoaudiólogo en el SUS: quién espera y qué necesita",
+  "breadcrumb": "Fila de Fonoaudiología en el SUS",
+  "autores": [
+    {
+      "nome": "Thamires Maria de Araújo Salles",
+      "afiliacao": "Fonoaudiologia · Uniso"
+    },
+    {
+      "nome": "Mayara Gabriela Pereira dos Santos",
+      "afiliacao": "Fonoaudiologia · Uniso"
+    },
+    {
+      "nome": "Rafaella de Góes Moraes",
+      "afiliacao": "Fonoaudiologia · Uniso"
+    },
+    {
+      "nome": "Matheus Francoy Alpes",
+      "afiliacao": "Instituto de Saúde de Nova Friburgo · UFF"
+    },
+    {
+      "nome": "Amanda Tragueta Ferreira-Vasques",
+      "afiliacao": "Fonoaudiologia · Uniso"
+    }
+  ],
+  "revista": {
+    "nome": "CoDAS",
+    "cidade": "São Paulo (Sociedad Brasileña de Fonoaudiología)",
+    "issn": "2317-1782",
+    "volume": "38",
+    "numero": "3",
+    "paginas": "e20250038",
+    "ano": "2026",
+    "submetido": "2025-02-06",
+    "doi": "10.1590/2317-1782/e20250038pt",
+    "url": "https://doi.org/10.1590/2317-1782/e20250038pt",
+    "site": "https://www.scielo.br/j/codas/"
+  },
+  "palavras_chave": [
+    "Fonoaudiología",
+    "Atención Primaria",
+    "Sistema Único de Salud",
+    "Servicios de salud",
+    "Listas de espera",
+    "Salud pública"
+  ],
+  "em_1_minuto": [
+    {
+      "rotulo": "El problema",
+      "titulo": "Años esperando a un fonoaudiólogo",
+      "texto": "Quien es derivado al fonoaudiólogo en el sistema público de salud de Brasil (SUS) puede pasar mucho tiempo en la fila. Mientras espera, los datos quedan desactualizados y la queja puede cambiar o empeorar."
+    },
+    {
+      "rotulo": "Qué hicieron",
+      "titulo": "Llamaron a cada persona de la fila",
+      "texto": "Estudiantes de Fonoaudiología, con sus profesores, telefonearon a quienes esperaban desde 2018 y actualizaron la edad, la queja y el área de atención de cada uno."
+    },
+    {
+      "rotulo": "Qué encontraron",
+      "titulo": "Niños, varones y lenguaje",
+      "texto": "De las 246 personas que todavía necesitaban atención, el 71,9% eran niños de hasta 11 años y el 64,2% de sexo masculino. La mayor necesidad era lenguaje infantil, y 162 recibieron turno."
+    },
+    {
+      "rotulo": "Por qué importa",
+      "titulo": "Fila ordenada, turnos más acertados",
+      "texto": "Actualizar la fila mostró quién necesita qué y permitió dar turnos con más precisión. Para los autores, el fonoaudiólogo también debe participar en la regulación de las plazas."
+    }
+  ],
+  "numeros": [
+    {
+      "valor": "393 → 246",
+      "texto": "personas que aceptaron participar × las que todavía necesitaban atención",
+      "cor": "arg"
+    },
+    {
+      "valor": "162",
+      "texto": "personas con turno después de actualizar la fila (65,9%)",
+      "cor": "ok"
+    },
+    {
+      "valor": "83,9%",
+      "texto": "de quienes esperaban por una sola área necesitaban lenguaje infantil",
+      "cor": "violet"
+    },
+    {
+      "valor": "26,8%",
+      "texto": "tenían una queja distinta de la que figuraba en la derivación",
+      "cor": "amber"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "contexto",
+      "menu": "Contexto",
+      "eyebrow": "Contexto",
+      "titulo": "La fila para el fonoaudiólogo, y por qué importa",
+      "lede": "Derivada por la unidad de salud, la persona entra en una lista y espera. Cuanto más larga la espera, más se aleja la lista de la realidad.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>La <strong>Fonoaudiología</strong> se ocupa de la prevención, la evaluación, el diagnóstico y el tratamiento de los trastornos de la comunicación humana: <strong>lenguaje, habla, voz, audición y funciones orofaciales</strong>, como masticar y tragar. En el SUS, el fonoaudiólogo actúa en los distintos niveles de atención, desde la unidad básica de salud hasta el hospital.</p><p>Para planificar esa atención, hay que saber <strong>quiénes son las personas</strong> que esperan y <strong>qué necesitan</strong>. Esa información ayuda a organizar y regular los servicios, incluidas las listas de espera.</p>"
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>Pasar mucho tiempo en la fila, sin atención ni orientación, puede empeorar el cuadro y llevar a la persona a <strong>abandonar la atención</strong> que necesita. Actualizar las listas revela imprecisiones de la planificación que aumentan el tiempo de espera.</p><p>El objetivo del estudio fue <strong>caracterizar el perfil y las necesidades</strong> de las personas en la lista de espera para fonoaudiología de un municipio brasileño de tamaño medio, en el interior del estado de São Paulo. El artículo no dice cuál es el municipio.</p>"
+        }
+      ]
+    },
+    {
+      "id": "metodo",
+      "menu": "Cómo se hizo",
+      "eyebrow": "Método",
+      "titulo": "Una llamada para cada persona de la fila",
+      "lede": "Estudio descriptivo realizado de julio de 2023 a julio de 2024, como trabajo de fin de carrera y proyecto de extensión de una carrera de Fonoaudiología.",
+      "blocos": [
+        {
+          "tipo": "passos",
+          "itens": [
+            {
+              "titulo": "Acceso a la lista",
+              "texto": "Los investigadores se reunieron con el Centro de Regulación y División de Evaluación y Control (CREDAC), que distribuye las plazas del municipio. Los funcionarios a cargo de la lista no eran fonoaudiólogos."
+            },
+            {
+              "titulo": "Quién estaba en la fila",
+              "texto": "La lista reunía a personas derivadas por la Atención Primaria entre febrero de 2018 y diciembre de 2022."
+            },
+            {
+              "titulo": "Una planilla para ordenar",
+              "texto": "Para cada persona: sexo, edad, queja inicial, queja actual, la subárea de la Fonoaudiología capaz de atenderla y qué hacer: seguir esperando, salir de la lista o dar turno."
+            },
+            {
+              "titulo": "Llamadas",
+              "texto": "Estudiantes capacitados llamaron desde el CREDAC, invitaron a participar y enviaron el consentimiento. Solo se contaron las personas que aceptaron. En el caso de menores, la conversación fue con el responsable."
+            },
+            {
+              "titulo": "Grupos de edad",
+              "texto": "Infancia: del nacimiento a los 11 años; adolescencia: de los 11 a los 20; jóvenes adultos y mediana edad: de los 20 a los 65; personas mayores: 65 años o más."
+            },
+            {
+              "titulo": "Análisis",
+              "texto": "Estadística descriptiva, con totales y porcentajes, para entender las necesidades de esta población sin generalizar a otras."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "Quedaron fuera quienes no tenían teléfono de contacto o no vivían en el municipio. El estudio fue aprobado por el Comité de Ética en Investigación de la Uniso (dictamen 6.431.411), y toda la investigación fue supervisada por profesores."
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "menu": "Resultados",
+      "eyebrow": "Resultados",
+      "titulo": "Quién estaba en la fila, y qué necesitaba",
+      "lede": "De las 418 personas contactadas, 393 aceptaron participar. Después de las llamadas, 246 seguían necesitando atención.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>De las 393 personas, <strong>147 salieron de la lista</strong>: 106 porque ya no tenían la necesidad (36 ya habían sido atendidas en otro servicio, público o privado, y en 70 la queja se resolvió sola) y 41 porque se mudaron de ciudad, estado o país.</p><p>Las <strong>246</strong> restantes tuvieron su queja analizada y la subárea indicada. Después de eso, <strong>162 recibieron turno</strong> y <strong>84 siguieron esperando</strong>.</p>"
+        },
+        {
+          "tipo": "figura",
+          "src": "imagens/mini/figura1-fluxograma.webp",
+          "full": "imagens/figura1-fluxograma.webp",
+          "alt": "Diagrama de flujo: del total de participantes, el 37,4% salió de la fila y el 62,6% se mantuvo; entre los que salieron, el 72,1% sin queja actual y el 27,9% por mudanza; entre los que se mantuvieron, con turno y esperando atención.",
+          "legenda": "Figura 1 · Diagrama de flujo de los datos de la investigación. En la figura, los que recibieron turno aparecen como 66,9% y los que esperan como 33,1%; según los recuentos del texto (162 y 84 de 246), son 65,9% y 34,1%, como en el resumen del artículo.",
+          "credito": "Salles et al. (2026), CoDAS, licencia CC BY 4.0"
+        },
+        {
+          "tipo": "cartoes",
+          "titulo": "El perfil de quienes esperaban",
+          "itens": [
+            {
+              "titulo": "Más varones",
+              "texto": "158 de sexo masculino (64,2%) y 88 de sexo femenino (35,8%).",
+              "cor": "arg"
+            },
+            {
+              "titulo": "Sobre todo niños",
+              "texto": "177 niños (71,9%), 35 adolescentes (14,2%), 20 jóvenes adultos y personas de mediana edad (8%) y 14 personas mayores (5,9%). Las edades iban de 1 año y 9 meses a 81 años y 1 mes.",
+              "cor": "violet"
+            },
+            {
+              "titulo": "La queja cambió para 1 de cada 4",
+              "texto": "180 mantenían la queja de la derivación (73,2%) y 66 tenían una queja distinta (26,8%).",
+              "cor": "amber"
+            },
+            {
+              "titulo": "Una área o más",
+              "texto": "217 necesitaban una sola subárea de la Fonoaudiología (88,2%) y 29, dos o tres (11,8%).",
+              "cor": "teal"
+            }
+          ]
+        },
+        {
+          "tipo": "grafico",
+          "rotulo_chips": "Elige el grupo",
+          "unidade": "%",
+          "parametros": [
+            {
+              "rotulo": "Una área (217 personas)",
+              "grupos": [
+                {
+                  "nome": "Lenguaje infantil",
+                  "cor": "#A58CFF"
+                },
+                {
+                  "nome": "Lenguaje adulto",
+                  "cor": "#7C9CFF"
+                },
+                {
+                  "nome": "Disfagia adulto",
+                  "cor": "#3FC1C9"
+                },
+                {
+                  "nome": "Voz",
+                  "cor": "#5FD39A"
+                },
+                {
+                  "nome": "Audiología",
+                  "cor": "#FFB23F"
+                },
+                {
+                  "nome": "Disfagia infantil",
+                  "cor": "#FF8A5C"
+                },
+                {
+                  "nome": "Motricidad orofacial",
+                  "cor": "#FF5470"
+                },
+                {
+                  "nome": "Otoneurología",
+                  "cor": "#C9B8FF"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 83.9
+                },
+                {
+                  "m": 4.2
+                },
+                {
+                  "m": 3.8
+                },
+                {
+                  "m": 2.1
+                },
+                {
+                  "m": 1.6
+                },
+                {
+                  "m": 1.6
+                },
+                {
+                  "m": 1.4
+                },
+                {
+                  "m": 1.4
+                }
+              ],
+              "leitura": "El lenguaje infantil domina: 182 de las 217 personas. Luego vienen lenguaje adulto (9), disfagia adulto (7), voz (5), audiología y disfagia infantil (4 cada una), motricidad orofacial y otoneurología (3 cada una)."
+            },
+            {
+              "rotulo": "Dos o tres áreas (29 personas)",
+              "grupos": [
+                {
+                  "nome": "Audiología + lenguaje infantil",
+                  "cor": "#FFB23F"
+                },
+                {
+                  "nome": "Disfagia + lenguaje adulto",
+                  "cor": "#3FC1C9"
+                },
+                {
+                  "nome": "Disfagia + lenguaje infantil",
+                  "cor": "#FF8A5C"
+                },
+                {
+                  "nome": "Lenguaje infantil + motricidad",
+                  "cor": "#A58CFF"
+                },
+                {
+                  "nome": "Audiología + lenguaje adulto",
+                  "cor": "#7C9CFF"
+                },
+                {
+                  "nome": "Disfagia adulto + voz",
+                  "cor": "#5FD39A"
+                },
+                {
+                  "nome": "Audiología, disfagia y lenguaje adulto",
+                  "cor": "#C9B8FF"
+                },
+                {
+                  "nome": "Audiología, motricidad y lenguaje infantil",
+                  "cor": "#FF5470"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 55.2
+                },
+                {
+                  "m": 17.2
+                },
+                {
+                  "m": 7
+                },
+                {
+                  "m": 7
+                },
+                {
+                  "m": 3.4
+                },
+                {
+                  "m": 3.4
+                },
+                {
+                  "m": 3.4
+                },
+                {
+                  "m": 3.4
+                }
+              ],
+              "leitura": "Audiología con lenguaje infantil fue la combinación más común: 16 de las 29 personas. Un niño necesitaba tres áreas a la vez: motricidad orofacial, lenguaje y audiología."
+            },
+            {
+              "rotulo": "Grupo de edad (246 personas)",
+              "grupos": [
+                {
+                  "nome": "Infancia (hasta 11 años)",
+                  "cor": "#A58CFF"
+                },
+                {
+                  "nome": "Adolescencia (11 a 20)",
+                  "cor": "#7C9CFF"
+                },
+                {
+                  "nome": "Jóvenes adultos y mediana edad (20 a 65)",
+                  "cor": "#3FC1C9"
+                },
+                {
+                  "nome": "Personas mayores (65 o más)",
+                  "cor": "#FFB23F"
+                }
+              ],
+              "valores": [
+                {
+                  "m": 71.9
+                },
+                {
+                  "m": 14.2
+                },
+                {
+                  "m": 8
+                },
+                {
+                  "m": 5.9
+                }
+              ],
+              "leitura": "Casi tres de cada cuatro personas en la fila eran niños de hasta 11 años."
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "html": "Porcentajes como se publicaron en la Tabla 1. Algunos difieren un poco de los recuentos del texto: por ejemplo, 7 de 217 personas con disfagia adulto dan 3,2% (la tabla trae 3,8%), y 14 personas mayores de 246 dan 5,7% (la tabla trae 5,9%)."
+        }
+      ]
+    },
+    {
+      "id": "discussao",
+      "menu": "Discusión",
+      "eyebrow": "Discusión",
+      "titulo": "Lo que revela la fila",
+      "lede": "Para los autores, la lista de espera debe verse como un indicador de acceso y equidad, no solo como una herramienta de trabajo.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Hay pocos estudios sobre listas de espera en Fonoaudiología, y la mayoría proviene de clínicas-escuela universitarias. En los servicios públicos, los profesionales viven la demanda reprimida a diario, pero están sobrecargados y con poca estructura para investigar.</p><p>Con una espera larga, los datos quedan desactualizados y la queja puede cambiar. La mayoría mantuvo la misma queja, pero para <strong>un cuarto de la lista</strong> era otra, y algunos casos habían empeorado. La lista tenía personas esperando desde 2018, es decir, unos cinco años.</p>"
+        },
+        {
+          "tipo": "texto",
+          "html": "<p>La mayor parte de las derivaciones, hechas por médicos de la Atención Primaria, fue para <strong>lenguaje infantil</strong>, como en otros estudios brasileños. Predominaron las derivaciones a una sola subárea, lo que, según los autores, revela límites en la comprensión de lo que hace el fonoaudiólogo. Los casos que necesitaban dos o tres áreas muestran la importancia de una formación generalista.</p><p>Los autores explican el predominio del sexo masculino por la mayor frecuencia de retrasos y alteraciones del neurodesarrollo en ese grupo, según la literatura.</p>"
+        },
+        {
+          "tipo": "destaque",
+          "html": "Después de la acción, el número de personas esperando bajó bastante. Para los autores, incluir al <strong>fonoaudiólogo también en la regulación</strong> de las plazas, u orientar a quien la hace, hizo que los turnos fueran más acertados y organizó mejor el servicio."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Limitaciones señaladas por los autores",
+          "itens": [
+            "Se hizo en un solo municipio, lo que limita la generalización.",
+            "Los datos de registro tenían información incompleta y desactualizada.",
+            "El contacto fue solo por teléfono: quedaron fuera personas sin teléfono o con el número desactivado.",
+            "El análisis estadístico fue solo descriptivo."
+          ]
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Qué proponen los autores",
+          "itens": [
+            "Capacitar a los profesionales de la Atención Primaria para hacer derivaciones más detalladas y completas.",
+            "Tener fonoaudiólogos en las unidades básicas de salud.",
+            "Crear grupos de estimulación, que pueden reducir los efectos de los retrasos en el diagnóstico o la intervención.",
+            "Continuar el estudio con acogida presencial y discusiones con los equipos de salud (apoyo matricial)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conclusao",
+      "menu": "Conclusión",
+      "eyebrow": "Conclusión",
+      "titulo": "Lo que el estudio permite afirmar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "html": "<p>Actualizar una lista de espera formada a lo largo de cinco años permitió conocer quién esperaba y qué necesitaba. De las 246 personas, predominaron <strong>niños de hasta 11 años</strong>, de <strong>sexo masculino</strong>, con quejas de <strong>lenguaje</strong>. <strong>162 recibieron turno</strong>, y la oferta de servicios se ajustó para reducir el tiempo de espera en el municipio.</p><p>Para los autores, organizar los datos de salud no es solo tarea de la gestión municipal: también es un desafío para los profesionales de la salud, especialmente el fonoaudiólogo.</p>"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Fonoaudiología",
+      "def": "Área de la salud que se ocupa de la comunicación humana: lenguaje, habla, voz, audición y funciones de la boca y la cara, como masticar y tragar."
+    },
+    {
+      "termo": "Lista de espera",
+      "def": "La fila de personas derivadas que esperan una plaza para ser atendidas."
+    },
+    {
+      "termo": "Atención Primaria",
+      "def": "La puerta de entrada del SUS, como las unidades básicas de salud. De allí vienen las derivaciones."
+    },
+    {
+      "termo": "Regulación",
+      "def": "Organización del acceso a los servicios: quién es atendido, dónde y cuándo."
+    },
+    {
+      "termo": "CREDAC",
+      "def": "Centro de Regulación y División de Evaluación y Control del municipio, que distribuye las plazas."
+    },
+    {
+      "termo": "Lenguaje infantil",
+      "def": "Desarrollo del lenguaje en los niños: entender, hablar, expresarse y, más adelante, leer y escribir."
+    },
+    {
+      "termo": "Disfagia",
+      "def": "Dificultad para tragar."
+    },
+    {
+      "termo": "Motricidad orofacial",
+      "def": "Área que se ocupa de los músculos y las funciones de la boca y la cara, como succionar, masticar, tragar y respirar."
+    },
+    {
+      "termo": "Audiología",
+      "def": "Área que evalúa y cuida la audición."
+    },
+    {
+      "termo": "Otoneurología",
+      "def": "Área que evalúa mareos y problemas de equilibrio relacionados con el oído interno y el sistema nervioso."
+    },
+    {
+      "termo": "Voz",
+      "def": "Área que se ocupa de problemas como la ronquera y el cansancio al hablar."
+    },
+    {
+      "termo": "Consentimiento informado",
+      "def": "Documento en el que la persona acepta participar en la investigación."
+    },
+    {
+      "termo": "Estadística descriptiva",
+      "def": "Resume los datos en totales y porcentajes, sin sacar conclusiones para otras poblaciones."
+    },
+    {
+      "termo": "Apoyo matricial",
+      "def": "Apoyo de especialistas a los equipos de salud, con discusión conjunta de los casos."
+    }
+  ],
+  "citacao": "SALLES, T. M. A.; SANTOS, M. G. P.; MORAES, R. G.; ALPES, M. F.; FERREIRA-VASQUES, A. T. Ação sobre lista de espera para a Fonoaudiologia no Sistema Único de Saúde (SUS) em um município brasileiro de médio porte. CoDAS, São Paulo, v. 38, n. 3, e20250038, 2026. DOI: 10.1590/2317-1782/e20250038pt.",
+  "referencias": [
+    {
+      "texto": "RECH, R. S. et al. Acesso e uso de serviços de Fonoaudiologia em Porto Alegre, Brasil: estudo populacional. Ciência & Saúde Coletiva, v. 25, n. 3, p. 817-825, 2020.",
+      "doi": "10.1590/1413-81232020253.17212018"
+    },
+    {
+      "texto": "COSTA, R. G.; SOUZA, L. B. R. Perfil dos usuários e da demanda pelo serviço da clínica-escola de fonoaudiologia da UFBA. Revista de Ciências Médicas e Biológicas, v. 8, n. 1, p. 53, 2009.",
+      "doi": "10.9771/cmbio.v8i1.4376"
+    },
+    {
+      "texto": "CORRÊA, C. C.; ARAKAWA, A. M.; MAXIMINO, L. P. Clínica-escola de fonoaudiologia: manejo da lista de espera. Revista CEFAC, v. 18, n. 5, p. 1222-1229, 2016.",
+      "doi": "10.1590/1982-0216201618518215"
+    },
+    {
+      "texto": "FARIAS, I. K. M. S. et al. Characterization of care provided at a Speech Therapy School Clinic affiliated with the Brazilian public healthcare system. Revista CEFAC, v. 22, n. 1, 2020.",
+      "doi": "10.1590/1982-0216/202022110119"
+    },
+    {
+      "texto": "TAVONI, J. R.; VIANNA, N.; FERNANDES, A. C. Scenario of access to speech therapy based on the profile of children and adolescents referred to primary care. Revista CEFAC, v. 24, n. 2, 2022.",
+      "doi": "10.1590/1982-0216/202224211121"
+    },
+    {
+      "texto": "BARROS, P. M. L.; OLIVEIRA, P. N. Perfil dos pacientes atendidos no setor de fonoaudiologia de um serviço público de Recife - PE. Revista CEFAC, v. 12, n. 1, p. 128-133, 2009.",
+      "doi": "10.1590/S1516-18462009005000063"
+    }
+  ],
+  "titulo_pt": "Acción sobre la lista de espera de Fonoaudiología en el Sistema Único de Salud (SUS) en un municipio brasileño de tamaño medio",
+  "rotulo_original": "Título original en portugués:"
+}

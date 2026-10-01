@@ -208,7 +208,9 @@ main.home > .wrap{position:relative;z-index:1}
 
 /* ---------- explore a ciência: símbolos animados ---------- */
 /* 8 temas: 2 linhas de 4 no computador e no tablet (nenhum tema sozinho numa linha) */
-@media (min-width:761px){#temasInicio{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}#temasInicio .tema-tile{padding:18px 20px}}
+@media (min-width:761px){#temasInicio{grid-template-columns:repeat(var(--cols,4),minmax(0,1fr));gap:14px}#temasInicio .tema-tile{padding:18px 20px}}
+/* celular (2 colunas): se sobrar um tema, ele ocupa a linha inteira */
+@media (max-width:760px){#temasInicio .tema-tile:last-child:nth-child(odd){grid-column:1/-1}}
 .tema-simbolo{gap:8px}
 .tema-simbolo .simb{display:block;width:48px;height:48px;color:var(--c);transition:transform .35s cubic-bezier(.3,1.4,.5,1)}
 .tema-simbolo:hover .simb{transform:scale(1.1) rotate(-4deg)}
@@ -247,6 +249,10 @@ main.home > .wrap{position:relative;z-index:1}
 .anima .s-agua{animation:agua 1.6s linear infinite}
 @keyframes agua{to{stroke-dashoffset:-26}}
 .anima .s-liga{animation:respira 4s ease-in-out infinite}
+.s-balao{fill:color-mix(in srgb,currentColor 16%,transparent)}
+.anima .s-fala{animation:fala 1.8s ease-in-out infinite}
+.anima .s-fala.b{animation-delay:.3s}
+@keyframes fala{0%,100%{opacity:.25}50%{opacity:1}}
 
 /* ---------- rede da p53 ---------- */
 .rede{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);grid-template-areas:"filtros filtros" "area info" "nota nota";gap:12px 18px;align-items:center;padding:14px;border-radius:24px;border:1px solid var(--line);background:radial-gradient(circle at 38% 50%,#FFFFFF,#F2F4FB);box-shadow:var(--shadow)}
