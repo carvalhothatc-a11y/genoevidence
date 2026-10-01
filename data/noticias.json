@@ -2,32 +2,6 @@
  "atualizado_em": "2026-10-01T13:33:17.628504+00:00",
  "noticias": [
   {
-   "titulo": "Anthropic quer usar IA para descobrir tratamentos para doenças raras",
-   "resumo": "A empresa criadora do Claude montou um laboratório de biologia perto de São Francisco onde a IA comanda robôs em experimentos com células e proteínas. Por enquanto, o trabalho fica na fase pré-clínica, com supervisão humana e sem testes em pessoas.",
-   "url": "https://health.thenews.com.br/p/28-09-2026",
-   "fonte": "the news health",
-   "idioma": "pt",
-   "data": "2026-09-28T08:00:00-03:00",
-   "tema": "Saúde",
-   "imagem": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,width=1200,quality=80/uploads/asset/file/41733f45-dc44-4dc8-8393-4fccb3a5065f/e3758f1bc27af0786f4249cc1ab194fc2c6cce63-3840x2160.png",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "tipo": "noticia",
-   "escolhida": true,
-   "i18n": {
-    "en": {
-     "titulo": "Anthropic wants to use AI to discover treatments for rare diseases",
-     "resumo": "The company that created Claude set up a biology lab near San Francisco where AI runs robots in experiments with cells and proteins. For now, the work is in the pre-clinical phase, with human supervision and without tests on people."
-    },
-    "es": {
-     "titulo": "Anthropic quiere utilizar la IA para descubrir tratamientos para enfermedades raras",
-     "resumo": "La compañía que creó Claude estableció un laboratorio de biología cerca de San Francisco donde la IA ejecuta robots en experimentos con células y proteínas. Por ahora, el trabajo se encuentra en fase preclínica, con supervisión humana y sin pruebas en personas."
-    }
-   }
-  },
-  {
    "tipo": "noticia",
    "titulo": "Estilo de vida do futuro pai e fertilização sem tratamento prévio afetam desenvolvimento do bebê",
    "resumo": "Saúde do genitor antes da concepção pode alterar marcas moleculares do espermatozoide, ativando ou silenciando genes sem alterar a sequência do DNA",
