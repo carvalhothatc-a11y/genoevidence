@@ -228,6 +228,9 @@ body:not(.xp-estatico) .xp-visual{container-type:size}
 .xp-pular i{width:1px;height:34px;background:linear-gradient(var(--xp-muted),transparent);animation:xpDesce 1.8s ease-in-out infinite}
 @keyframes xpDesce{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
+/* tablet e telas médias: a régua é mais estreita, os números dela ficam menores */
+@media (max-width:1100px){.xp-escala .tick span{font-size:12px;padding:1px 2px}}
+
 /* ---------- celular: imagem em cima, texto embaixo ---------- */
 @media (max-width:760px){
   body{font-size:17px}
