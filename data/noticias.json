@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-01T13:33:17.628504+00:00",
+ "atualizado_em": "2026-10-01T19:38:03.422612+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -55,27 +55,77 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Três pesquisas da Odontologia da USP em Ribeirão Preto são premiadas em encontro nacional",
-   "resumo": "Trabalhos investigam a relação entre saúde bucal e artrite reumatoide e diferentes aspectos da disfunção temporomandibular",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/tres-pesquisas-da-odontologia-da-usp-em-ribeirao-preto-sao-premiadas-em-encontro-nacional/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-09-30T14:45:58+00:00",
-   "tema": "Saúde",
+   "titulo": "Envoltório de placenta acelera a recuperação da ereção após cirurgia de próstata",
+   "resumo": "Membranas amnióticas secas de placentas doadas podem ser enroladas em torno de nervos delicados durante a cirurgia de câncer de próstata para acelerar o tempo para uma primeira ereção após o procedimento",
+   "url": "https://www.newscientist.com/article/2591588-placenta-wrap-hastens-erection-recovery-after-prostate-surgery/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-01T14:00:00+00:00",
+   "tema": "Câncer",
    "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2021/03/20210301_forp_usp.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_314824725.jpg",
+   "foco": {
+    "x": 50,
+    "y": 55
+   },
+   "titulo_original": "Placenta wrap hastens erection recovery after prostate surgery",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La envoltura de la placenta acelera la recuperación de la erección después de la cirugía de próstata",
+     "resumo": "Las membranas amnióticas secas de placentas donadas se pueden envolver alrededor de nervios delicados durante la cirugía de cáncer de próstata para acelerar el tiempo para una primera erección después del procedimiento"
+    }
+   },
+   "resumo_original": "Dried amniotic membranes from donated placentas can be wrapped around delicate nerves during prostate cancer surgery to hasten the time to a first erection after the procedure"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Expansão urbana causa colapso ecológico em riachos da Região Metropolitana de São Paulo",
+   "resumo": "Estudo revela que a perda de biodiversidade e interações ecológicas compromete a filtragem natural da água que abastece os mais de 22 milhões de habitantes da região",
+   "url": "https://agencia.fapesp.br/expansao-urbana-causa-colapso-ecologico-em-riachos-da-regiao-metropolitana-de-sao-paulo/59312",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-01T19:38:03.422612+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59312.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Three researches of USP Dentistry in Ribeirão Preto are awarded at a national meeting",
-     "resumo": "Studies investigate the relationship between oral health and rheumatoid arthritis and different aspects of temporomandibular disorders"
+     "titulo": "Urban sprawl causes ecological collapse in streams in the Metropolitan Region of São Paulo",
+     "resumo": "A study reveals that the loss of biodiversity and ecological interactions compromises the natural filtration of water that supplies the more than 22 million inhabitants of the region"
     },
     "es": {
-     "titulo": "Tres investigaciones de Odontología de la USP en Ribeirão Preto son premiadas en un encuentro nacional",
-     "resumo": "Los estudios investigan la relación entre la salud bucal y la artritis reumatoide y los diferentes aspectos de los trastornos temporomandibulares"
+     "titulo": "La expansión urbana provoca el colapso ecológico de los arroyos en la Región Metropolitana de São Paulo",
+     "resumo": "Un estudio revela que la pérdida de biodiversidad y las interacciones ecológicas comprometen la filtración natural del agua que abastece a los más de 22 millones de habitantes de la región"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Ex-reitores destacam papel da universidade pública no desenvolvimento do país",
+   "resumo": "Autonomia e liberdade são apontados como fundamentais para a produção de conhecimentos que gerem avanços e beneficiem a sociedade",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/01/ex-reitores-destacam-papel-da-universidade-publica-no-desenvolvimento-do-pais/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-01T18:40:29+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Man_20261001_Ex-Reitores-Unicamp-Capa.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Former deans highlight the role of the public university in the development of the country",
+     "resumo": "Autonomy and freedom are considered fundamental for the production of knowledge that generates advances and benefits society"
+    },
+    "es": {
+     "titulo": "Antiguos decanos destacan el papel de la universidad pública en el desarrollo del país",
+     "resumo": "La autonomía y la libertad se consideran fundamentales para la producción de conocimiento que genere avances y beneficie a la sociedad"
     }
    }
   },
@@ -155,29 +205,79 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Agência FAPESP estreia novo layout",
-   "resumo": "Com estética mais limpa, portal aprimora o conforto visual do leitor e confere mais protagonismo a fotos, infográficos e vídeos",
-   "url": "https://agencia.fapesp.br/agencia-fapesp-estreia-novo-layout/59317",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-01T06:10:04.803724+00:00",
-   "tema": "Ciência",
+   "titulo": "O gene de risco de Alzheimer APOE4 pode ter uma fraqueza reversível",
+   "resumo": "O gene de risco de Alzheimer APOE4 pode danificar ativamente os vasos sanguíneos cerebrais e sabotar os sistemas celulares que removem proteínas nocivas. Os pesquisadores foram capazes de reverter alguns desses efeitos em experimentos, revelando novos alvos promissores...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260930225450.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-01T04:45:26+00:00",
+   "tema": "Genética",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59317.jpg",
+   "imagem": "https://www.sciencedaily.com/images/1920/brain-stroke-x-ray.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
+   "titulo_original": "Alzheimer’s risk gene APOE4 may have a reversible weakness",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El gen de riesgo de Alzheimer APOE4 puede tener una debilidad reversible",
+     "resumo": "El gen de riesgo de Alzheimer APOE4 puede dañar activamente los vasos sanguíneos cerebrales y sabotear los sistemas celulares que eliminan las proteínas dañinas. Los investigadores pudieron revertir algunos de estos efectos en experimentos, revelando nuevos objetivos prometedores..."
+    }
+   },
+   "resumo_original": "The Alzheimer’s risk gene APOE4 may actively damage brain blood vessels and sabotage the cellular systems that remove harmful proteins. Researchers were able to reverse some of these effects in experiments, revealing promising new targets…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Empreendedorismo e impacto social mostram como conhecimento e inovação transformam vidas",
+   "resumo": "Por Maria Helena Palucci Marziale, pró-reitora de Pesquisa e Inovação da USP, Carlos Eduardo Pellegrino Cerri, pró-reitor adjunto de Pesquisa da USP, e Norberto Peporine Lopes, pró-reitor adjunto de Inovação da USP",
+   "url": "https://jornal.usp.br/artigos/empreendedorismo-e-impacto-social-mostram-como-conhecimento-e-inovacao-transformam-vidas/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-09-30T22:04:16+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260930_artigo-pro-reitores-.jpg",
+   "foco": {
+    "x": 57,
+    "y": 50
+   },
    "i18n": {
     "en": {
-     "titulo": "Agência FAPESP debuts new layout",
-     "resumo": "With a cleaner aesthetic, portal improves the visual comfort of the reader and gives more prominence to photos, infographics and videos"
+     "titulo": "Entrepreneurship and social impact show how knowledge and innovation transform lives",
+     "resumo": "By Maria Helena Palucci Marziale, Pro-Rector of Research and Innovation at USP, Carlos Eduardo Pellegrino Cerri, Pro-Rector of Research at USP, and Norberto Peporine Lopes, Pro-Rector of Innovation at USP"
     },
     "es": {
-     "titulo": "Agência FAPESP estrena nueva maquetación",
-     "resumo": "Con una estética más limpia, portal mejora la comodidad visual del lector y da más protagonismo a las fotos, infografías y vídeos"
+     "titulo": "El emprendimiento y el impacto social muestran cómo el conocimiento y la innovación transforman vidas",
+     "resumo": "Por Maria Helena Palucci Marziale, Pro-Rectora de Investigación e Innovación de la USP, Carlos Eduardo Pellegrino Cerri, Pro-Rector de Investigación de la USP, y Norberto Peporine Lopes, Pro-Rector de Innovación de la USP"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O teste do centro de dados AI do Projeto Suncatcher do Google foi lançado oficialmente para o espaço a bordo do foguete SpaceX",
+   "resumo": "O Projeto Suncatcher visa testar os chips de IA do Google no ambiente hostil do espaço",
+   "url": "https://www.scientificamerican.com/article/googles-project-suncatcher-ai-data-center-test-has-officially-launched-to-space-aboard-spacex-rocket/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-01T19:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/82bd28ed-88ca-4bcb-8a84-4ec4390581c6/Project-Suncatcher.jpg?m=1790882073.4&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Google’s Project Suncatcher AI data center test has officially launched to space onboard SpaceX rocket",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La prueba del centro de datos de IA del Proyecto Suncatcher de Google se ha lanzado oficialmente al espacio a bordo del cohete SpaceX",
+     "resumo": "Project Suncatcher tiene como objetivo probar los chips de IA de Google en el duro entorno del espacio"
+    }
+   },
+   "resumo_original": "Project Suncatcher is aimed at testing Google's AI chips in the harsh environment of space"
   },
   {
    "tipo": "noticia",
@@ -206,102 +306,78 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "InfoGripe: SRAG aumenta em crianças no Rio de Janeiro e no Espírito Santo",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/infogripe-srag-aumenta-em-criancas-no-rio-de-janeiro-e-no-espirito-santo",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-01T12:56:11+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infogripe_d_0.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "InfoGrip: SARS increases in children in Rio de Janeiro and Espírito Santo"
-    },
-    "es": {
-     "titulo": "InfoGrip: El SARS aumenta en los niños de Río de Janeiro y Espírito Santo"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Como as mudanças climáticas estão alterando o petricor, o cheiro glorioso depois que chove",
-   "resumo": "À medida que o planeta muda, esse perfume desencadeador de nostalgia também mudará",
-   "url": "https://www.scientificamerican.com/article/how-climate-change-is-altering-petrichor-the-glorious-smell-after-it-rains/",
+   "titulo": "Os cientistas descobrem que a crosta terrestre rolou repetidamente - e isso ainda está acontecendo",
+   "resumo": "Uma análise das antigas mudanças no nível do mar revela que toda a Terra sólida mudou várias vezes",
+   "url": "https://www.scientificamerican.com/article/scientists-discover-that-earths-crust-has-repeatedly-rolled-over-and-its-still-happening/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-01T10:30:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/8d332586-4549-49ce-92b3-f35d6bf7034a/GettyImages-2234436413_web.jpeg?m=1790631143.424&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "How climate change is altering petrichor, the glorious smell after it rains",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Cómo el cambio climático está alterando el petricor, el olor glorioso después de la lluvia",
-     "resumo": "A medida que el planeta cambia, también lo hará este aroma que desencadena la nostalgia"
-    }
-   },
-   "resumo_original": "As the planet changes, so will this nostalgia-triggering scent"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Os matemáticos ainda podem se recusar a usar IA neste momento?",
-   "resumo": "Não há dúvida de que a IA transformou o campo da matemática nos últimos meses. O colunista Jacob Aron se pergunta se em breve será impossível ser um refusenik de IA e continuar trabalhando no campo",
-   "url": "https://www.newscientist.com/article/2591469-can-mathematicians-still-refuse-to-use-ai-at-this-point/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-01T08:00:00+00:00",
+   "data": "2026-10-01T18:00:00+00:00",
    "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_314713679.jpg",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/m/715d4e0fdac3a670/original/planet-earth.jpg?m=1733515635.572&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Can mathematicians still refuse to use AI at this point?",
+   "titulo_original": "Scientists discover that Earth’s crust has repeatedly rolled over—and it’s still happening",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "¿Pueden los matemáticos seguir negándose a usar la IA en este momento?",
-     "resumo": "No hay duda de que la IA ha transformado el campo de las matemáticas en los últimos meses. El columnista Jacob Aron se pregunta si pronto será imposible ser un AI refusenik y seguir trabajando en el campo"
+     "titulo": "Los científicos descubren que la corteza terrestre se ha volcado repetidamente, y todavía está sucediendo",
+     "resumo": "Un análisis de los antiguos cambios en el nivel del mar revela que toda la Tierra sólida ha cambiado varias veces"
     }
    },
-   "resumo_original": "There’s no question AI has transformed the field of mathematics in the past few months. Columnist Jacob Aron wonders if it will soon be impossible to be an AI refusenik and continue working in the field"
+   "resumo_original": "An analysis of ancient sea-level changes reveals that the whole solid Earth has shifted multiple times"
   },
   {
    "tipo": "noticia",
-   "titulo": "O candidato democrata ao Senado de Michigan, Abdul El-Sayed, explica como a ciência influencia sua política",
-   "resumo": "A Scientific American conversou com o candidato ao Senado de Michigan sobre como sua formação em medicina moldou sua visão",
-   "url": "https://www.scientificamerican.com/article/democratic-michigan-senate-hopeful-abdul-el-sayed-explains-how-science-influences-his-politics/",
-   "fonte": "Scientific American",
+   "titulo": "Parar de comer alimentos ultraprocessados pode melhorar sua saúde mental?",
+   "resumo": "Pessoas com depressão que cortaram drasticamente alimentos ultraprocessados experimentaram melhorias notáveis em seus sintomas em um pequeno estudo preliminar. Os pesquisadores suspeitam que uma alimentação mais saudável pode beneficiar o cérebro, em parte, reduzindo os danos intestinais e...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260930225448.htm",
+   "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-01T11:00:00+00:00",
+   "data": "2026-10-01T06:34:01+00:00",
    "tema": "Saúde",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/401343dd-6294-4711-9a47-2fa3dc352c4b/Abdul-El-Sayed.jpg?m=1790805290.677&w=1200",
+   "imagem": "https://www.sciencedaily.com/images/1920/unhealthy-ultraprocessed-junk-food.webp",
    "foco": {
     "x": 50,
-    "y": 0
+    "y": 50
    },
-   "titulo_original": "Democratic Michigan Senate hopeful Abdul El-Sayed explains how science influences his politics",
+   "titulo_original": "Could quitting ultra-processed food boost your mental health?",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El candidato demócrata al Senado de Michigan, Abdul El-Sayed, explica cómo la ciencia influye en su política",
-     "resumo": "Scientific American habló con el candidato al Senado de Michigan sobre cómo su experiencia en medicina ha dado forma a su perspectiva"
+     "titulo": "¿Podría dejar los alimentos ultraprocesados mejorar su salud mental?",
+     "resumo": "Las personas con depresión que recortaron drásticamente los alimentos ultraprocesados experimentaron mejoras notables en sus síntomas en un pequeño estudio preliminar. Los investigadores sospechan que una alimentación más saludable puede beneficiar al cerebro en parte al reducir el daño intestinal y..."
     }
    },
-   "resumo_original": "Scientific American spoke to the Michigan Senate candidate about how his background in medicine has shaped his outlook"
+   "resumo_original": "People with depression who dramatically cut ultra-processed foods experienced notable improvements in their symptoms in a small preliminary study. Researchers suspect healthier eating may benefit the brain partly by reducing gut damage and…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "1 em cada 13 adultos com menos de 30 anos já tinha placa arterial escondida",
+   "resumo": "Mais da metade dos 16.000 adultos aparentemente saudáveis tinham sinais de aterosclerose, com placas arteriais já detectáveis em cerca de 1 em cada 13 pessoas com idades entre 18 e 29 anos. Pesquisadores dizem que imagens diretas das artérias podem revelar algo oculto...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260929053541.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-01T11:46:21+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/cholesterol-plaque-buildup-narrowed-blood-vessel.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "1 in 13 adults under 30 already had hidden artery plaque",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "1 de cada 13 adultos menores de 30 años ya tenía placa arterial oculta",
+     "resumo": "Más de la mitad de los 16.000 adultos aparentemente sanos tenían signos de aterosclerosis, con placas arteriales ya detectables en aproximadamente 1 de cada 13 personas de 18 a 29 años. Los investigadores dicen que las imágenes directas de las arterias podrían revelar..."
+    }
+   },
+   "resumo_original": "More than half of 16,000 apparently healthy adults had signs of atherosclerosis, with arterial plaques already detectable in about 1 in 13 people ages 18 to 29. Researchers say directly imaging the arteries could reveal hidden…"
   }
  ],
  "artigos": [
@@ -657,14 +733,16 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Intrinsic endonucleolytic activity of snake venom phosphodiesterase.",
+   "titulo": "Atividade endonucleolítica intrínseca da fosfodiesterase do veneno de cobra.",
    "autores": "Aoki-Shioi N, Zaitsu Y, Shikasho R, Lin IJ, Wu WG, Kuraoka I.",
    "revista": "J Biochem",
    "data": "2026-09-29T00:00:00+00:00",
    "doi": "10.1093/jb/mvag067",
    "url": "https://doi.org/10.1093/jb/mvag067",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Intrinsic endonucleolytic activity of snake venom phosphodiesterase.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -943,6 +1021,14 @@
   "infogripe srag aumenta em criancas no rio de janeiro e no espirito santo": "2026-10-01T13:33:17.628504+00:00",
   "how climate change is altering petrichor the glorious smell after it rains": "2026-10-01T13:33:17.628504+00:00",
   "can mathematicians still refuse to use ai at this point": "2026-10-01T13:33:17.628504+00:00",
-  "democratic michigan senate hopeful abdul el sayed explains how science influences his politics": "2026-10-01T13:33:17.628504+00:00"
+  "democratic michigan senate hopeful abdul el sayed explains how science influences his politics": "2026-10-01T13:33:17.628504+00:00",
+  "placenta wrap hastens erection recovery after prostate surgery": "2026-10-01T19:38:03.422612+00:00",
+  "ex reitores destacam papel da universidade publica no desenvolvimento do pais": "2026-10-01T19:38:03.422612+00:00",
+  "alzheimers risk gene apoe4 may have a reversible weakness": "2026-10-01T19:38:03.422612+00:00",
+  "empreendedorismo e impacto social mostram como conhecimento e inovacao transformam vidas": "2026-10-01T19:38:03.422612+00:00",
+  "googles project suncatcher ai data center test has officially launched to space onboard spacex rocket": "2026-10-01T19:38:03.422612+00:00",
+  "scientists discover that earths crust has repeatedly rolled overand its still happening": "2026-10-01T19:38:03.422612+00:00",
+  "could quitting ultra processed food boost your mental health": "2026-10-01T19:38:03.422612+00:00",
+  "1 in 13 adults under 30 already had hidden artery plaque": "2026-10-01T19:38:03.422612+00:00"
  }
 }
