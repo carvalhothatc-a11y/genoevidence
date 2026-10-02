@@ -70,7 +70,7 @@ export function LabStudio({
   project: ProjectLinks;
   gelImages: { id: string; name: string; role?: string }[];
   projetos: ProjetoOpcao[];
-  geninho: { configured: boolean };
+  geninho: { configured: boolean; motivo?: string };
 }) {
   const router = useRouter();
   const pathname = usePathname();
@@ -99,6 +99,15 @@ export function LabStudio({
   const temIdeia = s.cenarios.length > 0;
   const temVisual = roteiro.passos.length > 0;
   const visual = modo === "visual" && temVisual;
+
+  // na visualização, o laboratório fica ao fundo na altura da bancada (como na referência)
+  useEffect(() => {
+    const st = useLab.getState();
+    if (visual) {
+      st.select(null);
+      st.setView("palco");
+    } else if (st.view === "palco") st.setView("geral");
+  }, [visual]);
   const seq = useSequencia(temIdeia && !visual);
   const cen = seq.cen;
   const cenarioPcr = cen ?? (s.rascunho?.tecnica === "pcr" ? s.rascunho : null);
@@ -502,7 +511,7 @@ export function LabStudio({
       <div className="relative min-h-0 min-w-0 flex-1 overflow-hidden">
         {/* Cena 3D */}
         {show3d && (
-          <div className={`absolute inset-0 transition-[filter,transform] duration-700 ${visual ? "pointer-events-none scale-[1.04] blur-[5px] brightness-[0.42]" : ""}`} data-foco={lab.selected ?? ""} aria-hidden={visual || undefined}>
+          <div className={`absolute inset-0 transition-[filter,transform] duration-700 ${visual ? "pointer-events-none brightness-[0.62] saturate-[1.15]" : ""}`} data-foco={lab.selected ?? ""} aria-hidden={visual || undefined}>
             <CanvasBoundary onError={() => setCanvasFailed(true)}>
               <LabCanvas
                 ambiente="noite"
@@ -663,7 +672,7 @@ export function LabStudio({
           )}
         </Gaveta>
         <Gaveta aberta={gavetaLocal === "geninho"} titulo="Geninho" onFechar={() => setGavetaLocal(null)} id="gaveta-geninho">
-          <Geninho configured={geninho.configured} isAdmin={user.role === "admin"} />
+          <Geninho configured={geninho.configured} isAdmin={user.role === "admin"} motivo={geninho.motivo} />
         </Gaveta>
         <Gaveta aberta={gavetaLocal === "processo" && !larga} titulo="Processo e resultados" onFechar={() => setGavetaLocal(null)} id="gaveta-processo">
           {visual ? painelVisual : painel}

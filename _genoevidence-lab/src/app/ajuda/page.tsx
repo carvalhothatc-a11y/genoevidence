@@ -27,7 +27,7 @@ export default async function HelpPage() {
     <div className="mx-auto max-w-[900px] px-4 py-8">
       <PageHeader eyebrow="Ajuda" title="Dúvidas de pesquisa e de uso" description="Pergunte ao Geninho ou consulte o guia rápido do laboratório, dos projetos e das regras de acesso." />
       <div className="grid gap-4">
-        <Geninho configured={assistant.configured} isAdmin={user.role === "admin"} />
+        <Geninho configured={assistant.configured} isAdmin={user.role === "admin"} motivo={assistant.reason} />
         <h2 className="ge-display mt-4 text-2xl">Guia rápido</h2>
         <Section id="comecar" title="Por onde começar">
           <ol className="list-decimal space-y-1 pl-5">

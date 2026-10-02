@@ -32,7 +32,7 @@ export default async function LabPage(props: PageProps<"/laboratorio">) {
     <>
       <h1 className="sr-only">Laboratório virtual de biologia molecular</h1>
       <Suspense fallback={<p className="p-6 text-sm text-muted">Carregando o laboratório…</p>}>
-        <LabStudio user={{ name: user.name, email: user.email, role: user.role }} project={project} gelImages={gelImages} projetos={projetos} geninho={{ configured: assistantStatus().configured }} />
+        <LabStudio user={{ name: user.name, email: user.email, role: user.role }} project={project} gelImages={gelImages} projetos={projetos} geninho={{ configured: assistantStatus().configured, motivo: assistantStatus().reason }} />
       </Suspense>
     </>
   );

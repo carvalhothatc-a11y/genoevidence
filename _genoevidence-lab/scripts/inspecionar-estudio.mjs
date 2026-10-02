@@ -1,10 +1,10 @@
-// Capturas do estúdio imersivo (instância de demonstração; credencial lida de arquivo, não impressa).
+// Capturas do estúdio (instância de demonstração; credencial lida de arquivo, não impressa).
 import { chromium } from "@playwright/test";
 import { readFileSync } from "node:fs";
-const [base, credFile, shots] = process.argv.slice(2);
+const [base, credFile, shots, ...frases] = process.argv.slice(2);
 const pw = readFileSync(credFile, "utf8").trim();
 const browser = await chromium.launch({ args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] });
-const page = await (await browser.newContext({ viewport: { width: 1600, height: 940 } })).newPage();
+const page = await (await browser.newContext({ viewport: { width: 1600, height: 940 }, acceptDownloads: true })).newPage();
 const erros = [];
 page.on("pageerror", (e) => erros.push(e.message));
 page.on("console", (m) => m.type() === "error" && !/Failed to load resource/.test(m.text()) && erros.push(m.text()));
@@ -14,20 +14,20 @@ await page.getByLabel("Senha", { exact: true }).fill(pw);
 await page.getByRole("button", { name: "Entrar" }).click();
 await page.waitForURL((u) => !u.pathname.startsWith("/entrar"), { timeout: 30000 });
 await page.goto(`${base}/laboratorio`);
-await page.waitForTimeout(6000);
-await page.screenshot({ path: `${shots}/estudio-1-inicio.png` });
-await page.locator("#prompt-ideia").fill("Tirei o primer de um lado, acrescentei no DNA, foi no plasmídeo, e daí vou inserir no DNA da bactéria.");
+await page.waitForTimeout(5000);
+const texto = frases.join(" ") || "Tirei o primer de um lado, acrescentei no DNA, foi no plasmídeo, e daí vou inserir no DNA da bactéria.";
+await page.locator("#prompt-ideia").fill(texto);
 await page.getByRole("button", { name: "Interpretar" }).click();
-await page.waitForTimeout(2600);
-await page.screenshot({ path: `${shots}/estudio-2-visual.png` });
-await page.locator('[data-passo="inserir_vetor"]').click();
-await page.waitForTimeout(400);
-await page.getByRole("button", { name: /Continuar|Iniciar/ }).first().click();
-await page.waitForTimeout(2500);
-await page.screenshot({ path: `${shots}/estudio-3-plasmideo.png` });
-await page.locator('[data-passo="transformar"]').click();
-await page.getByRole("button", { name: /Continuar|Iniciar/ }).first().click();
-await page.waitForTimeout(3600);
-await page.screenshot({ path: `${shots}/estudio-4-bacteria.png` });
-console.log(erros.length ? "ERROS: " + erros.join(" | ") : "sem erros no console");
+await page.waitForTimeout(4000);
+const passos = await page.locator("[data-passo]").evaluateAll((els) => els.map((e) => e.getAttribute("data-passo")));
+for (let i = 0; i < passos.length; i++) {
+  await page.locator(`[data-passo="${passos[i]}"]`).first().click();
+  await page.getByRole("button", { name: /Continuar|Iniciar/ }).first().click().catch(() => {});
+  await page.waitForTimeout(3300);
+  await page.screenshot({ path: `${shots}/holo-${i + 1}-${passos[i]}.png` });
+}
+const [dl] = await Promise.all([page.waitForEvent("download", { timeout: 60000 }), page.getByRole("button", { name: "Baixar imagem" }).click()]);
+await dl.saveAs(`${shots}/holo-processo.png`);
+console.log(passos.join(" → "));
+console.log(erros.length ? "ERROS: " + erros.slice(0, 5).join(" | ") : "sem erros no console");
 await browser.close();

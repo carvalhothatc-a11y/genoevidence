@@ -6,6 +6,12 @@ import { useRoteiro } from "@/store/roteiro";
 import { useUi } from "@/store/ui";
 import type { PassoVisual } from "@/lib/visual/roteiro";
 import { Cena, Defs, H, W } from "./Cena";
+import dynamic from "next/dynamic";
+import { capturarHolo } from "@/components/holo/Holo3D";
+
+const Holo3D = dynamic(() => import("@/components/holo/Holo3D").then((m) => m.Holo3D), { ssr: false });
+
+const esperar = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 const DUR = 3800; // ms por etapa
 const PAUSA_FINAL = 900;
@@ -24,10 +30,21 @@ export function Palco() {
   const [t, setT] = useState(0);
   const [baixando, setBaixando] = useState(false);
   const raf = useRef<number | null>(null);
+  const exportando = useRef(false);
+  const [webgl, setWebgl] = useState<boolean | null>(null);
   const passo = passos[idx];
 
-  // reinicia a animação ao trocar de etapa
-  useEffect(() => setT(reduced ? 1 : 0), [idx, passos, reduced]);
+  useEffect(() => {
+    try {
+      const c = document.createElement("canvas");
+      setWebgl(Boolean(c.getContext("webgl2") || c.getContext("webgl")));
+    } catch {
+      setWebgl(false);
+    }
+  }, []);
+
+  // reinicia a animação ao trocar de etapa (na exportação, mostra o estado final)
+  useEffect(() => setT(reduced || exportando.current ? 1 : 0), [idx, passos, reduced]);
 
   // relógio da animação (requestAnimationFrame); com movimento reduzido mostra o estado final
   useEffect(() => {
@@ -51,16 +68,33 @@ export function Palco() {
 
   const baixar = useCallback(async () => {
     setBaixando(true);
+    const voltarPara = idx;
     try {
-      const url = await exportarRoteiro(passos, texto);
+      let url: string;
+      if (webgl) {
+        // percorre as etapas no estado final e captura o holograma 3D com os rótulos
+        exportando.current = true;
+        setTocando(false);
+        const quadros: { passo: PassoVisual; q: ReturnType<typeof capturarHolo> }[] = [];
+        for (let i = 0; i < passos.length; i++) {
+          setIdx(i);
+          setT(1);
+          await esperar(900);
+          quadros.push({ passo: passos[i], q: capturarHolo() });
+        }
+        exportando.current = false;
+        setIdx(voltarPara);
+        url = await comporImagem3D(quadros, texto);
+      } else url = await exportarRoteiro(passos, texto);
       const a = document.createElement("a");
       a.href = url;
       a.download = `genolab-processo-${new Date().toISOString().slice(0, 16).replace(/[:T]/g, "-")}.png`;
       a.click();
     } finally {
+      exportando.current = false;
       setBaixando(false);
     }
-  }, [passos, texto]);
+  }, [passos, texto, idx, webgl, setIdx, setTocando]);
 
   if (!passo) return null;
   const fim = idx === passos.length - 1 && t >= 1;
@@ -78,17 +112,22 @@ export function Palco() {
         </motion.div>
       </AnimatePresence>
 
-      {/* cena */}
-      <div className="relative min-h-0 flex-1">
-        <svg viewBox={`0 0 ${W} ${H}`} className="h-full w-full" role="img" aria-label={`Ilustração da etapa ${idx + 1}: ${passo.titulo}. ${passo.mostra}`} preserveAspectRatio="xMidYMid meet">
-          <Defs />
-          <Cena passo={passo} t={t} />
-        </svg>
+      {/* cena: procedimento em 3D (holograma); sem WebGL, ilustração 2D equivalente */}
+      <div className="relative min-h-0 flex-1" data-modo-cena={webgl ? "3d" : "2d"}>
+        {webgl ? (
+          <Holo3D passo={passo} t={t} pausado={!tocando || pausadoGlobal} reduzido={reduced} />
+        ) : webgl === false ? (
+          <svg viewBox={`0 0 ${W} ${H}`} className="h-full w-full" role="img" aria-label={`Ilustração da etapa ${idx + 1}: ${passo.titulo}. ${passo.mostra}`} preserveAspectRatio="xMidYMid meet">
+            <Defs />
+            <Cena passo={passo} t={t} />
+          </svg>
+        ) : null}
+        {webgl && <p className="pointer-events-none absolute bottom-1 right-2 text-[10.5px] text-[#7d8aa3]">arraste para girar · role para aproximar</p>}
       </div>
 
       <div className="mx-auto w-full max-w-[860px]">
         <p className="text-center text-[13px] text-[#c9d2e3] [text-shadow:0_1px_8px_rgba(0,0,0,0.9)]">{passo.mostra}</p>
-        <p className="mt-0.5 text-center text-[10.5px] text-[#b49cf5]">✎ Ilustração didática gerada da sua descrição · formas, escala e quantidades não são reais · não é resultado</p>
+        <p className="mt-0.5 text-center text-[10.5px] text-[#b49cf5]">✎ Ilustração didática em 3D gerada da sua descrição · formas, escala e quantidades não são reais · não é resultado</p>
 
         <div className="mt-2 flex flex-wrap items-center justify-center gap-1.5" role="toolbar" aria-label="Controles da visualização">
           <Botao onClick={() => (fim ? (setIdx(0), setT(0), setTocando(true)) : setTocando(!tocando))} destaque rotulo={tocando ? "Pausar" : fim ? "Repetir" : t > 0 || idx > 0 ? "Continuar" : "Iniciar"} icone={tocando ? "❚❚" : "▶"} />
@@ -192,5 +231,99 @@ export async function exportarRoteiro(passos: PassoVisual[], texto: string): Pro
   const ctx = c.getContext("2d")!;
   ctx.scale(1.5, 1.5);
   ctx.drawImage(img, 0, 0);
+  return c.toDataURL("image/png");
+}
+
+/** Compõe as capturas 3D (com rótulos e legendas) em uma única imagem PNG. */
+async function comporImagem3D(quadros: { passo: PassoVisual; q: ReturnType<typeof capturarHolo> }[], texto: string): Promise<string> {
+  const cols = quadros.length > 1 ? 2 : 1;
+  const cw = 720;
+  const aspecto = quadros[0]?.q.largura && quadros[0].q.altura ? quadros[0].q.altura / quadros[0].q.largura : 0.56;
+  const ih = Math.round(cw * aspecto);
+  const ch = ih + 64;
+  const gap = 24;
+  const topo = 110;
+  const largura = cols * cw + (cols + 1) * gap;
+  const linhas = Math.ceil(quadros.length / cols);
+  const altura = topo + linhas * (ch + gap) + 40;
+  const esc = 1.5;
+  const c = document.createElement("canvas");
+  c.width = largura * esc;
+  c.height = altura * esc;
+  const ctx = c.getContext("2d")!;
+  ctx.scale(esc, esc);
+  const fonte = getComputedStyle(document.body).fontFamily || "sans-serif";
+  ctx.fillStyle = "#0b1221";
+  ctx.fillRect(0, 0, largura, altura);
+  const g = ctx.createLinearGradient(0, 0, largura, 0);
+  g.addColorStop(0, "#2F5BEA");
+  g.addColorStop(0.55, "#7B4DE0");
+  g.addColorStop(1, "#E0385A");
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, largura, 5);
+  ctx.fillStyle = "#ffffff";
+  ctx.font = `700 24px ${fonte}`;
+  ctx.fillText("GenoLab · procedimento em 3D", gap, 44);
+  ctx.fillStyle = "#c9d2e3";
+  ctx.font = `400 13px ${fonte}`;
+  ctx.fillText(texto.length > 150 ? texto.slice(0, 147) + "…" : texto, gap, 70, largura - 2 * gap);
+  ctx.fillStyle = "#b49cf5";
+  ctx.font = `400 11px ${fonte}`;
+  ctx.fillText(`Ilustração didática gerada da descrição · não é resultado experimental nem previsão · ${new Date().toLocaleString("pt-BR")}`, gap, 92);
+  for (let i = 0; i < quadros.length; i++) {
+    const { passo, q } = quadros[i];
+    const x = gap + (i % cols) * (cw + gap);
+    const y = topo + Math.floor(i / cols) * (ch + gap);
+    ctx.fillStyle = "#0f182b";
+    ctx.strokeStyle = "rgba(123,77,224,0.45)";
+    ctx.beginPath();
+    ctx.roundRect(x, y, cw, ch, 18);
+    ctx.fill();
+    ctx.stroke();
+    const rg = ctx.createRadialGradient(x + cw / 2, y + ih / 2, 10, x + cw / 2, y + ih / 2, cw * 0.6);
+    rg.addColorStop(0, "rgba(123,77,224,0.18)");
+    rg.addColorStop(1, "rgba(15,24,43,0)");
+    ctx.fillStyle = rg;
+    ctx.fillRect(x, y, cw, ih);
+    if (q.imagem) {
+      const img = new Image();
+      img.src = q.imagem;
+      await img.decode().catch(() => undefined);
+      if (img.width) ctx.drawImage(img, x, y, cw, ih);
+    }
+    const s = q.largura ? cw / q.largura : 1;
+    for (const r of q.rotulos) {
+      const ax = x + r.ax * s;
+      const ay = y + r.ay * s;
+      const bx = x + r.bx * s;
+      const by = y + r.by * s;
+      ctx.strokeStyle = "rgba(201,210,227,0.75)";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(ax, ay);
+      ctx.lineTo(bx, by);
+      ctx.stroke();
+      ctx.fillStyle = "#e679b5";
+      ctx.beginPath();
+      ctx.arc(ax, ay, 3, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.textAlign = r.esquerda ? "right" : "left";
+      ctx.fillStyle = "#ffffff";
+      ctx.font = `600 13px ${fonte}`;
+      ctx.fillText(r.texto, bx + (r.esquerda ? -4 : 4), by + 4);
+      if (r.sub) {
+        ctx.fillStyle = "#c9d2e3";
+        ctx.font = `400 10.5px ${fonte}`;
+        ctx.fillText(r.sub, bx + (r.esquerda ? -4 : 4), by + 18);
+      }
+      ctx.textAlign = "left";
+    }
+    ctx.fillStyle = "#eef2f9";
+    ctx.font = `700 15px ${fonte}`;
+    ctx.fillText(`${i + 1}. ${passo.titulo}`, x + 18, y + ih + 26);
+    ctx.fillStyle = "#a7b2c8";
+    ctx.font = `400 12px ${fonte}`;
+    ctx.fillText(`“${passo.texto.length > 95 ? passo.texto.slice(0, 92) + "…" : passo.texto}”`, x + 18, y + ih + 47, cw - 36);
+  }
   return c.toDataURL("image/png");
 }

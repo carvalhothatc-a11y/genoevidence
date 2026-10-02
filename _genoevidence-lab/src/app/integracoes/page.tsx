@@ -57,7 +57,7 @@ export default async function IntegrationsPage() {
       state: assistant.configured ? "sob_demanda" : "nao_configurado",
       what: assistant.configured
         ? `Responde dúvidas de pesquisa na página Ajuda, pelo servidor (modelo ${assistant.model}). A chave fica só no servidor.`
-        : "Disponível na página Ajuda assim que a chave ANTHROPIC_API_KEY for definida no servidor. Sem a chave, nenhuma chamada é feita.",
+        : `Disponível na página Ajuda e no laboratório quando a configuração estiver completa. ${assistant.reason ?? ""} Sem isso, nenhuma chamada é feita.`,
       dataSent: "Somente as mensagens digitadas na conversa com o Geninho. Não são enviados projetos, arquivos, referências, nome ou e-mail; a conversa não é gravada no GenoLab.",
       verified: assistant.configured
         ? "Chave presente no servidor. A resposta real da API depende da chave e da conta da Anthropic."

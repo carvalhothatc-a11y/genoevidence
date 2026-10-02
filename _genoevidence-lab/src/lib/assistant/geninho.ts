@@ -48,9 +48,10 @@ Sobre o GenoLab (para dúvidas de uso): projetos privados com histórico; envio 
 let client: Anthropic | null = null;
 
 export function geninhoClient(): Anthropic | null {
-  if (!assistantStatus().configured) return null;
+  const st = assistantStatus();
+  if (!st.configured) return null;
   // A chave é lida de ANTHROPIC_API_KEY pelo próprio SDK, só no servidor.
-  client ??= new Anthropic({ maxRetries: 1, timeout: 120_000 });
+  client ??= new Anthropic({ maxRetries: 1, timeout: 120_000, defaultHeaders: st.workspace ? { "anthropic-workspace-id": st.workspace } : undefined });
   return client;
 }
 

@@ -67,6 +67,8 @@ export const VIEWS: Record<string, CameraView> = {
   amp: { position: [1.1, 1.75, -1.5], target: [1.1, 1.0, -3.6] },
   pos: { position: [3.8, 1.8, -0.9], target: [5.9, 0.98, -0.9] },
   analise: { position: [-3.95, 1.45, -0.5], target: [-6.0, 1.0, -0.5] },
+  /** Visualização do procedimento: altura dos olhos, de frente para a bancada de preparo (fundo do holograma). */
+  palco: { position: [-2.6, 1.62, -0.35], target: [-3.1, 1.05, -3.6] },
 };
 
 /** Enquadramentos predefinidos para telas em retrato (celular). */

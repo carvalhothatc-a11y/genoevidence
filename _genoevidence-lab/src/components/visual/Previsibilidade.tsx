@@ -169,9 +169,9 @@ export function DetalheVisual({ refsProjeto }: { refsProjeto: { id: string; titl
       {p.atencao.length > 0 && (
         <div className="grid gap-1.5">
           {p.atencao.map((a) => (
-            <p key={a.texto} className="rounded-lg border border-[#ffb23f]/35 bg-[#ffb23f]/10 p-2 text-xs text-[#ffd99a]">
+            <div key={a.texto} className="rounded-lg border border-[#ffb23f]/35 bg-[#ffb23f]/10 p-2 text-xs text-[#ffd99a]">
               ! {a.texto} {a.base === "geral" ? <span className="text-[#a7b2c8]">(orientação geral, sem fonte cadastrada)</span> : <SourceList refs={a.refs} compact />}
-            </p>
+            </div>
           ))}
         </div>
       )}

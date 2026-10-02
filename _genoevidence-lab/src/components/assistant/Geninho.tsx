@@ -20,7 +20,7 @@ const STOP_NOTES: Record<string, string> = {
   refusal: "O Geninho não pode ajudar com este pedido.",
 };
 
-export function Geninho({ configured, isAdmin }: { configured: boolean; isAdmin: boolean }) {
+export function Geninho({ configured, isAdmin, motivo }: { configured: boolean; isAdmin: boolean; motivo?: string }) {
   const [messages, setMessages] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
@@ -114,8 +114,9 @@ export function Geninho({ configured, isAdmin }: { configured: boolean; isAdmin:
           <p className="font-semibold">O Geninho ainda não está ligado neste servidor.</p>
           {isAdmin ? (
             <>
-              <p>Para ativar, defina a chave da API da Anthropic no arquivo <code className="rounded bg-surface-2 px-1">.env.local</code> do GenoLab (no servidor) e reinicie o servidor:</p>
-              <pre className="overflow-x-auto rounded-lg bg-surface-2 p-3 text-xs">ANTHROPIC_API_KEY=sua-chave-aqui</pre>
+              {motivo && <p className="text-warn">{motivo}</p>}
+              <p>Para ativar, defina no arquivo <code className="rounded bg-surface-2 px-1">.env.local</code> do GenoLab (no servidor):</p>
+              <pre className="overflow-x-auto rounded-lg bg-surface-2 p-3 text-xs">{"ANTHROPIC_API_KEY=sua-chave-aqui\nANTHROPIC_WORKSPACE_ID=id-do-workspace  # só para chaves que não pertencem a um workspace"}</pre>
               <p className="text-xs text-muted">A chave fica só no servidor e nunca é enviada ao navegador. Opcional: ANTHROPIC_MODEL para escolher outro modelo.</p>
             </>
           ) : (
