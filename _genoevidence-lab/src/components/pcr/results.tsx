@@ -296,7 +296,7 @@ export function ProjectGelImages({ projectId, images }: { projectId: string; ima
       {images.map((im) => (
         <ChartFrame key={im.id} id={`img-${im.id}`} title={im.role ?? im.name} kind="dados" description={`Arquivo original: ${im.name}. Exibido sem alterações.`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`/api/projects/${projectId}/files/${im.id}`} alt={`Imagem enviada pelo pesquisador: ${im.role ?? im.name}`} className="max-h-96 rounded-md border border-line" />
+          <img src={`/api/projects/${projectId}/files/${im.id}?modo=visualizar`} alt={`Imagem enviada pelo pesquisador: ${im.role ?? im.name}`} className="max-h-96 rounded-md border border-line" />
         </ChartFrame>
       ))}
     </div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getRepository } from "@/lib/repo";
-import { loadOwnProject, formatDate } from "@/lib/projects/server";
+import { loadProjectFor, formatDate } from "@/lib/projects/server";
 import type { StoredDataset } from "@/lib/expression/importService";
 import { parseCsv } from "@/lib/expression/csv";
 import { VALUE_TYPES } from "@/lib/expression/valueTypes";
@@ -20,16 +20,17 @@ const PAGE = 50;
 export default async function DatasetPage(props: PageProps<"/projetos/[id]/dados/[datasetId]">) {
   const { id, datasetId } = await props.params;
   const sp = await props.searchParams;
-  const { user, project } = await loadOwnProject(id);
+  const { project } = await loadProjectFor(id, "ler");
   const repo = getRepository();
-  const stored = await repo.getDerived<StoredDataset>(user.id, id, "datasets", datasetId);
+  if (!project.datasets.some((d) => d.id === datasetId)) notFound();
+  const stored = await repo.getDerived<StoredDataset>(id, "datasets", datasetId);
   if (!stored) notFound();
   const { meta, rows, issues } = stored;
   const info = VALUE_TYPES[meta.valueType];
   const file = project.files.find((f) => f.id === meta.fileId);
 
   // Tabela ORIGINAL: relida do arquivo preservado, paginada.
-  const original = await repo.readFile(user.id, id, meta.fileId);
+  const original = await repo.readFile(id, meta.fileId);
   const parsed = original ? parseCsv(original.bytes) : null;
   const totalPages = parsed ? Math.max(1, Math.ceil(parsed.rows.length / PAGE)) : 1;
   const page = Math.min(totalPages, Math.max(1, Number(sp.pagina) || 1));

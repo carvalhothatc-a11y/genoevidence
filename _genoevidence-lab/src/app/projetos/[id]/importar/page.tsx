@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { loadOwnProject } from "@/lib/projects/server";
+import { loadProjectFor } from "@/lib/projects/server";
 import { ImportWizard } from "@/components/expression/ImportWizard";
 import { Card, PageHeader } from "@/components/ui/Card";
 import { SyntheticBadge } from "@/components/ui/Badges";
@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: "Importar CSV" };
 
 export default async function ImportPage(props: PageProps<"/projetos/[id]/importar">) {
   const { id } = await props.params;
-  const { project } = await loadOwnProject(id);
+  const { project } = await loadProjectFor(id, "editar");
   return (
     <div className="mx-auto max-w-[1100px] px-4 py-8">
       <nav aria-label="Trilha" className="mb-3 text-sm text-muted">

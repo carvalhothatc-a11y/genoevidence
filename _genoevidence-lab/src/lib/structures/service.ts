@@ -4,6 +4,7 @@ import { StructureRecord } from "@/lib/domain/schemas";
 import { checkUpload } from "@/lib/files/validate";
 import { newId, nowIso } from "@/lib/ids";
 import type { Repository } from "@/lib/repo";
+import type { Actor } from "@/lib/repo/types";
 import { parseStructure, StructureParseError } from "./parse";
 
 const PDB_ID = /^[0-9][A-Za-z0-9]{3}$/;
@@ -25,8 +26,8 @@ export async function fetchFromRcsb(pdbId: string): Promise<{ bytes: Uint8Array;
 
 export async function addStructure(
   repo: Repository,
-  userId: string,
   projectId: string,
+  actor: Actor,
   input: { name: string; bytes: Uint8Array; source: StructureRecord["source"] },
 ) {
   const check = checkUpload(input.name, input.bytes, ["estrutura"]);
@@ -38,7 +39,7 @@ export async function addStructure(
     if (err instanceof StructureParseError) throw new ApiError(422, err.message);
     throw new ApiError(422, "Não foi possível ler o arquivo de estrutura.");
   }
-  const file = await repo.putFile(userId, projectId, {
+  const file = await repo.putFile(projectId, actor, {
     name: input.name,
     mimeType: check.mimeType,
     kind: "estrutura",
@@ -56,7 +57,7 @@ export async function addStructure(
     highlights: [],
     addedAt: nowIso(),
   });
-  await repo.mutateProject(userId, projectId, (draft) => {
+  await repo.mutateProject(projectId, actor, (draft) => {
     draft.structures.push(record);
     return [
       {

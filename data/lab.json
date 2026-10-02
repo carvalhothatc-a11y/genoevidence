@@ -1,4 +1,4 @@
 {
-  "nota": "Endereço do GenoEvidence Lab (app separado, com cadastro e login). Em desenvolvimento: npm run dev em _genoevidence-lab/. Ao publicar o servidor do Lab, troque a url pelo endereço público (https). Um endereço localhost só é usado quando o próprio site também está em localhost.",
+  "nota": "Endereço do GenoLab (app separado, com cadastro e login). Em desenvolvimento: npm run dev em _genoevidence-lab/. Ao publicar o servidor do Lab, troque a url pelo endereço público (https). Um endereço localhost só é usado quando o próprio site também está em localhost.",
   "url": "http://localhost:3000"
 }

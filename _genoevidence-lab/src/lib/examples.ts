@@ -2,6 +2,7 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import type { Repository } from "@/lib/repo";
+import type { Actor } from "@/lib/repo/types";
 import { confirmImport } from "@/lib/expression/importService";
 import { addStructure } from "@/lib/structures/service";
 
@@ -10,9 +11,9 @@ import { addStructure } from "@/lib/structures/service";
  * - CSV: valores fictícios (public/samples/expressao_exemplo_SINTETICO.csv).
  * - Estrutura: 1UBQ real, baixada do RCSB PDB (public/samples/1UBQ.cif, domínio público).
  */
-export async function createExampleProject(repo: Repository, userId: string) {
+export async function createExampleProject(repo: Repository, actor: Actor) {
   const project = await repo.createProject(
-    userId,
+    actor,
     {
       title: "Exemplo — expressão gênica e estrutura (dados sintéticos)",
       objective: "Demonstrar importação, validação e visualização. Os valores de expressão são FICTÍCIOS.",
@@ -31,9 +32,9 @@ export async function createExampleProject(repo: Repository, userId: string) {
   );
   const samples = path.join(process.cwd(), "public", "samples");
   const csv = new Uint8Array(await readFile(path.join(samples, "expressao_exemplo_SINTETICO.csv")));
-  const file = await repo.putFile(userId, project.id, { name: "expressao_exemplo_SINTETICO.csv", mimeType: "text/csv", kind: "csv", bytes: csv, role: "Tabela de expressão (SINTÉTICA)" });
+  const file = await repo.putFile(project.id, actor, { name: "expressao_exemplo_SINTETICO.csv", mimeType: "text/csv", kind: "csv", bytes: csv, role: "Tabela de expressão (SINTÉTICA)" });
   if (file)
-    await confirmImport(repo, userId, project.id, {
+    await confirmImport(repo, project.id, actor, {
       fileId: file.id,
       delimiter: ",",
       mapping: { gene: "gene", sample: "amostra", group: "grupo", value: "valor", unit: "unidade" },
@@ -43,6 +44,6 @@ export async function createExampleProject(repo: Repository, userId: string) {
       synthetic: true,
     });
   const cif = new Uint8Array(await readFile(path.join(samples, "1UBQ.cif")));
-  await addStructure(repo, userId, project.id, { name: "1UBQ.cif", bytes: cif, source: { type: "exemplo", pdbId: "1UBQ", url: "https://files.rcsb.org/download/1UBQ.cif" } });
-  return (await repo.getProject(userId, project.id))!;
+  await addStructure(repo, project.id, actor, { name: "1UBQ.cif", bytes: cif, source: { type: "exemplo", pdbId: "1UBQ", url: "https://files.rcsb.org/download/1UBQ.cif" } });
+  return (await repo.getProject(project.id))!;
 }

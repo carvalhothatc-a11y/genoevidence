@@ -68,7 +68,7 @@ export function StructureWorkbench({ projectId, structure }: { projectId: string
       <section aria-label="Visualizador molecular" className="grid gap-2">
         <div className="relative h-[62vh] min-h-[360px] overflow-hidden rounded-[var(--r-lg)] bg-panel shadow-[var(--shadow-3)]">
           <MolstarViewer
-            url={`/api/projects/${projectId}/files/${structure.fileId}`}
+            url={`/api/projects/${projectId}/files/${structure.fileId}?modo=visualizar`}
             format={structure.format}
             highlights={structure.highlights.map((h) => ({ chain: h.chain, residueNumber: h.residueNumber, insertionCode: h.insertionCode }))}
             command={cmd}

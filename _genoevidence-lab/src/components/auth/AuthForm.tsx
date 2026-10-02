@@ -24,6 +24,7 @@ export function AuthForm({ mode }: { mode: "entrar" | "cadastro" }) {
   const [busy, setBusy] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [message, setMessage] = useState("");
+  const [done, setDone] = useState("");
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -54,12 +55,28 @@ export function AuthForm({ mode }: { mode: "entrar" | "cadastro" }) {
       setMessage(data.error ?? "Não foi possível continuar.");
       return;
     }
-    const dest = mode === "cadastro" && data.migratedProjects ? `/projetos?associados=${data.migratedProjects}` : voltar;
-    router.replace(dest);
+    if (mode === "cadastro") {
+      setDone(data.message ?? "Cadastro recebido.");
+      setPassword("");
+      setConfirm("");
+      return;
+    }
+    router.replace(data.status === "autorizado" ? voltar : "/acesso/pendente");
     router.refresh();
   }
 
   const err = (k: string) => errors[k];
+  if (done)
+    return (
+      <div className="grid gap-4" role="status">
+        <Alert tone="ok" title={done}>
+          Assim que a administração do GenoLab aprovar seu acesso, seus projetos ficam disponíveis. Por segurança, esta mensagem é a mesma para qualquer e-mail informado.
+        </Alert>
+        <Link className="font-semibold text-accent-ink underline" href={`/entrar?voltar=${encodeURIComponent(voltar)}`}>
+          Ir para a tela de entrada
+        </Link>
+      </div>
+    );
   return (
     <form onSubmit={submit} noValidate className="grid gap-4" aria-describedby="auth-status">
       {mode === "cadastro" && (
@@ -99,7 +116,7 @@ export function AuthForm({ mode }: { mode: "entrar" | "cadastro" }) {
           <label className="flex items-start gap-2 text-sm">
             <input type="checkbox" className="mt-1" checked={accept} onChange={(e) => setAccept(e.target.checked)} aria-invalid={Boolean(err("acceptPrivacy"))} />
             <span>
-              Entendo que, nesta instalação, conta e projetos ficam armazenados localmente no servidor do laboratório, e que nada é enviado a serviços externos sem minha autorização.
+              Entendo que o acesso ao GenoLab depende de aprovação, que conta e projetos ficam armazenados no servidor do laboratório e que nada é enviado a serviços externos sem minha autorização.
               {err("acceptPrivacy") && <span className="block text-xs font-medium text-danger">{err("acceptPrivacy")}</span>}
             </span>
           </label>
@@ -109,7 +126,7 @@ export function AuthForm({ mode }: { mode: "entrar" | "cadastro" }) {
         {message && <Alert tone="danger" title={message} />}
       </div>
       <Button type="submit" size="lg" disabled={busy} className="w-full">
-        {busy ? "Aguarde…" : mode === "cadastro" ? "Criar conta e entrar" : "Entrar"}
+        {busy ? "Aguarde…" : mode === "cadastro" ? "Solicitar acesso" : "Entrar"}
       </Button>
       <p className="text-center text-sm text-body">
         {mode === "cadastro" ? (

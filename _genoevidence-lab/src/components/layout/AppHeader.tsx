@@ -14,7 +14,7 @@ const NAV = [
 ];
 
 /** Barra superior compacta (56 px). */
-export function AppHeader({ appName, user }: { appName: string; user: { name: string; email: string } | null }) {
+export function AppHeader({ appName, user }: { appName: string; user: { name: string; email: string; role: string; status: string } | null }) {
   const pathname = usePathname();
   const router = useRouter();
   const authPage = pathname.startsWith("/entrar") || pathname.startsWith("/cadastro");
@@ -30,6 +30,9 @@ export function AppHeader({ appName, user }: { appName: string; user: { name: st
     hydrateUiPrefs();
   }, []);
 
+  // O laboratório usa a própria barra lateral (tela imersiva).
+  if (pathname.startsWith("/laboratorio")) return null;
+
   return (
     <header className="sticky top-0 z-40 h-14 border-b border-line bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-full max-w-[1600px] items-center gap-6 px-4">
@@ -39,7 +42,7 @@ export function AppHeader({ appName, user }: { appName: string; user: { name: st
         <div className="sm:hidden">
           <BrandMark compact />
         </div>
-        {!authPage && user && (
+        {!authPage && user && user.status === "autorizado" && (
         <nav aria-label="Navegação principal" className="min-w-0 flex-1 overflow-x-auto">
           <ul className="flex gap-1">
             {NAV.map((item) => {
@@ -59,10 +62,17 @@ export function AppHeader({ appName, user }: { appName: string; user: { name: st
                 </li>
               );
             })}
+            {user.role === "admin" && (
+              <li>
+                <Link href="/admin" aria-current={pathname.startsWith("/admin") ? "page" : undefined} className={`ge-press block whitespace-nowrap rounded-full px-3 py-1.5 text-sm ${pathname.startsWith("/admin") ? "font-semibold text-ink" : "text-muted hover:bg-surface-2 hover:text-ink"}`}>
+                  Administração
+                </Link>
+              </li>
+            )}
           </ul>
         </nav>
         )}
-        {(authPage || !user) && <div className="flex-1" />}
+        {(authPage || !user || user.status !== "autorizado") && <div className="flex-1" />}
         {!authPage && user && (
         <button
           type="button"

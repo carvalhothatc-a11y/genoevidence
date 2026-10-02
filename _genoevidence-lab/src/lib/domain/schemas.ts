@@ -364,12 +364,43 @@ export const ExperimentPlan = z.object({
 });
 export type ExperimentPlan = z.infer<typeof ExperimentPlan>;
 
+// ---------------------------------------------------------------- Compartilhamento e notas
+
+export const ShareRole = z.enum(["leitor", "editor", "gestor"]);
+export type ShareRole = z.infer<typeof ShareRole>;
+
+export const ProjectShare = z.object({
+  id: id(),
+  principal: z.object({ type: z.enum(["usuario", "equipe"]), id: z.string().min(6).max(64) }),
+  role: ShareRole,
+  grantedBy: z.string().max(64),
+  grantedAt: isoDate(),
+});
+export type ProjectShare = z.infer<typeof ProjectShare>;
+
+export const ProjectNote = z.object({
+  id: id(),
+  text: z.string().trim().min(1).max(5000),
+  /** Vínculo opcional com etapa de módulo, objeto do laboratório ou referência. */
+  link: z
+    .object({ type: z.enum(["etapa", "objeto", "referencia", "dados", "estrutura"]), id: z.string().max(64), label: z.string().max(120) })
+    .optional(),
+  authorId: z.string().max(64),
+  authorName: z.string().max(120),
+  createdAt: isoDate(),
+  updatedAt: isoDate().optional(),
+});
+export type ProjectNote = z.infer<typeof ProjectNote>;
+
 // ---------------------------------------------------------------- Projeto
 
 export const HistoryEntry = z.object({
   id: id(),
   at: isoDate(),
   actor: z.enum(["pesquisador", "sistema", "assistente"]),
+  /** Quem fez a alteração (projetos compartilhados têm mais de uma pessoa). */
+  actorId: z.string().max(64).optional(),
+  actorName: z.string().max(120).optional(),
   action: z.string().max(120),
   detail: z.string().max(4000),
   entity: z.object({ type: z.string(), id: z.string() }).optional(),
@@ -406,6 +437,8 @@ export const Project = ProjectFields.extend({
   structures: z.array(StructureRecord),
   sessions: z.array(ModuleSession),
   experiments: z.array(ExperimentPlan).default([]),
+  shares: z.array(ProjectShare).default([]),
+  notes: z.array(ProjectNote).default([]),
   history: z.array(HistoryEntry),
   createdAt: isoDate(),
   updatedAt: isoDate(),
@@ -415,4 +448,8 @@ export type Project = z.infer<typeof Project>;
 export type ProjectSummary = Pick<
   Project,
   "id" | "title" | "technique" | "organism" | "synthetic" | "createdAt" | "updatedAt"
-> & { counts: { files: number; references: number; datasets: number; structures: number; sessions: number } };
+> & {
+  counts: { files: number; references: number; datasets: number; structures: number; sessions: number };
+  /** Papel efetivo de quem lista (dono ou via compartilhamento). */
+  role: "dono" | ShareRole;
+};

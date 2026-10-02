@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getRepository } from "@/lib/repo";
+import { listVisibleProjects } from "@/lib/authz";
 import { requirePageUser } from "@/lib/projects/server";
 import { formatDate } from "@/lib/projects/server";
 import { ButtonLink } from "@/components/ui/Button";
@@ -44,7 +44,7 @@ export default async function ProjectsPage(props: PageProps<"/projetos">) {
   const sp = await props.searchParams;
   const migrated = Number(sp.associados) || 0;
   const user = await requirePageUser("/projetos");
-  const projects = await getRepository().listProjects(user.id);
+  const projects = await listVisibleProjects(user);
   const real = projects.filter((p) => !p.synthetic);
   const examples = projects.filter((p) => p.synthetic);
   return (

@@ -1,4 +1,4 @@
-import type { FileKind, FileRecord, HistoryEntry, Project, ProjectFields, ProjectSummary } from "@/lib/domain/schemas";
+import type { FileKind, FileRecord, HistoryEntry, Project, ProjectFields } from "@/lib/domain/schemas";
 
 export type NewFileInput = {
   name: string;
@@ -9,40 +9,36 @@ export type NewFileInput = {
   externalSource?: FileRecord["externalSource"];
 };
 
-export type DerivedKind = "datasets" | "references";
+export type DerivedKind = "datasets" | "references" | "ideias" | "evidencias";
+
+/** Quem executa a alteração (registrado no histórico). */
+export type Actor = { id: string; name: string };
 
 /** Entrada de histórico sem id/data (preenchidos pelo repositório). */
-export type HistoryDraft = Omit<HistoryEntry, "id" | "at">;
+export type HistoryDraft = Omit<HistoryEntry, "id" | "at" | "actorId" | "actorName">;
+
+export type Principal = { type: "usuario" | "equipe"; id: string };
 
 /**
- * Interface de persistência. Implementações: LocalRepository (arquivos JSON em disco) e,
- * futuramente, SupabaseRepository (Postgres + RLS + Storage). Toda operação recebe o userId
- * e DEVE recusar acesso a projetos de outro dono, retornando null (sem revelar existência).
+ * Persistência SEM decisão de acesso. Toda chamada deve ser precedida por
+ * authorizeProject() (src/lib/authz.ts), que verifica sessão, estado da conta,
+ * papel no projeto e a ação pedida.
  */
 export interface Repository {
   readonly backend: "local" | "supabase";
-  listProjects(userId: string): Promise<ProjectSummary[]>;
-  createProject(userId: string, fields: ProjectFields, opts?: { synthetic?: boolean }): Promise<Project>;
-  getProject(userId: string, projectId: string): Promise<Project | null>;
-  /**
-   * Altera o projeto de forma atômica. `fn` recebe uma cópia, pode alterá-la e devolve
-   * as entradas de histórico que descrevem a alteração. O resultado é validado antes de gravar.
-   */
-  mutateProject(
-    userId: string,
-    projectId: string,
-    fn: (draft: Project) => HistoryDraft[] | Promise<HistoryDraft[]>,
-  ): Promise<Project | null>;
-  deleteProject(userId: string, projectId: string): Promise<boolean>;
-  /** Transfere todos os projetos de um usuário para outro (migração da sessão anônima para a conta). */
-  transferProjects(fromUserId: string, toUserId: string): Promise<number>;
+  createProject(owner: Actor, fields: ProjectFields, opts?: { synthetic?: boolean }): Promise<Project>;
+  getProject(projectId: string): Promise<Project | null>;
+  mutateProject(projectId: string, actor: Actor, fn: (draft: Project) => HistoryDraft[] | Promise<HistoryDraft[]>): Promise<Project | null>;
+  deleteProject(projectId: string): Promise<boolean>;
+  listOwnedIds(userId: string): Promise<string[]>;
+  listSharedIds(principal: Principal): Promise<string[]>;
+  setShareIndex(principal: Principal, projectId: string, present: boolean): Promise<void>;
 
-  putFile(userId: string, projectId: string, input: NewFileInput): Promise<FileRecord | null>;
-  readFile(userId: string, projectId: string, fileId: string): Promise<{ record: FileRecord; bytes: Uint8Array } | null>;
-  /** Remove o arquivo original. Não remove dependentes — quem chama decide (ver API). */
-  deleteFile(userId: string, projectId: string, fileId: string): Promise<boolean>;
+  putFile(projectId: string, actor: Actor, input: NewFileInput): Promise<FileRecord | null>;
+  readFile(projectId: string, fileId: string): Promise<{ record: FileRecord; bytes: Uint8Array } | null>;
+  deleteFile(projectId: string, actor: Actor, fileId: string): Promise<boolean>;
 
-  putDerived(userId: string, projectId: string, kind: DerivedKind, id: string, data: unknown): Promise<boolean>;
-  getDerived<T>(userId: string, projectId: string, kind: DerivedKind, id: string): Promise<T | null>;
-  deleteDerived(userId: string, projectId: string, kind: DerivedKind, id: string): Promise<void>;
+  putDerived(projectId: string, kind: DerivedKind, id: string, data: unknown): Promise<boolean>;
+  getDerived<T>(projectId: string, kind: DerivedKind, id: string): Promise<T | null>;
+  deleteDerived(projectId: string, kind: DerivedKind, id: string): Promise<void>;
 }

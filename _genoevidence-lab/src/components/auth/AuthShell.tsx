@@ -20,7 +20,7 @@ export function AuthShell({ children, title, accent, lead }: { children: ReactNo
         <div className="relative flex h-full flex-col justify-between p-12">
           <div className="flex items-center gap-3">
             <Image src="/brand/geno-evidence-simbolo-192.png" alt="" width={44} height={44} />
-            <span className="ge-mono text-sm text-panel-muted">GenoEvidence Lab</span>
+            <span className="ge-mono text-sm text-panel-muted">GenoLab</span>
           </div>
           <div className="max-w-md">
             <p className="ge-mono mb-4 text-xs text-[#ff8aa4]">▪ a ciência por trás das evidências</p>

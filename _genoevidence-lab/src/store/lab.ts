@@ -40,6 +40,7 @@ type LabState = {
   setProgramRunning: (v: boolean) => void;
   setCentrifugeOpen: (v: boolean) => void;
   toggleRotorSlot: (i: number) => void;
+  setRotorSlots: (slots: number[]) => void;
   setSpinning: (v: boolean) => void;
   setHighlightReagent: (id: string | null) => void;
 };
@@ -70,6 +71,7 @@ export const useLab = create<LabState>((set) => ({
   setProgramRunning: (programRunning) => set({ programRunning }),
   setCentrifugeOpen: (centrifugeOpen) => set({ centrifugeOpen }),
   toggleRotorSlot: (i) => set((s) => ({ rotorSlots: s.rotorSlots.includes(i) ? s.rotorSlots.filter((x) => x !== i) : [...s.rotorSlots, i].sort() })),
+  setRotorSlots: (rotorSlots) => set({ rotorSlots: [...rotorSlots].sort() }),
   setSpinning: (spinning) => set({ spinning }),
   setHighlightReagent: (highlightReagent) => set({ highlightReagent }),
 }));

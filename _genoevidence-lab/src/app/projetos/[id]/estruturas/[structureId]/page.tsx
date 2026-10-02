@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { loadOwnProject } from "@/lib/projects/server";
+import { loadProjectFor } from "@/lib/projects/server";
 import { StructureWorkbench } from "@/components/structures/StructureWorkbench";
 import { SyntheticBadge } from "@/components/ui/Badges";
 import { SourceList } from "@/components/sources/SourceList";
@@ -10,7 +10,7 @@ export const metadata: Metadata = { title: "Estrutura molecular" };
 
 export default async function StructurePage(props: PageProps<"/projetos/[id]/estruturas/[structureId]">) {
   const { id, structureId } = await props.params;
-  const { project } = await loadOwnProject(id);
+  const { project } = await loadProjectFor(id, "ler");
   const structure = project.structures.find((s) => s.id === structureId);
   if (!structure) notFound();
   return (

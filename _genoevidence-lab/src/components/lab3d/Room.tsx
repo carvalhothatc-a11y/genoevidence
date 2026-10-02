@@ -1,12 +1,12 @@
 "use client";
 import { BENCHES, BENCH_TOP, DESK_TOP } from "@/lib/lab/layout";
-import { floorTexture, M } from "./materials";
+import { floorTexture, M, NOITE } from "./materials";
 import { useMemo } from "react";
 import * as THREE from "three";
 import { Box, Cyl, Label } from "./primitives";
 
 /** Bancada com armários, tampo de resina epóxi escura, puxadores e prateleira superior opcional. */
-export function Bench({ length, depth, height = BENCH_TOP, shelf = true, desk = false }: { length: number; depth: number; height?: number; shelf?: boolean; desk?: boolean }) {
+export function Bench({ length, depth, height = BENCH_TOP, shelf = true, desk = false, noite = false }: { length: number; depth: number; height?: number; shelf?: boolean; desk?: boolean; noite?: boolean }) {
   const topT = 0.03;
   const cabH = height - topT - 0.1;
   const doors = Math.max(2, Math.round(length / 0.6));
@@ -14,7 +14,7 @@ export function Bench({ length, depth, height = BENCH_TOP, shelf = true, desk = 
   return (
     <group>
       {/* tampo */}
-      <Box size={[length + 0.02, topT, depth + 0.02]} position={[0, height - topT / 2, 0]} material={desk ? M.shelf : M.benchTop} shadow />
+      <Box size={[length + 0.02, topT, depth + 0.02]} position={[0, height - topT / 2, 0]} material={desk ? M.shelf : noite ? NOITE.benchTop : M.benchTop} shadow />
       {desk ? (
         <>
           {[-1, 1].map((s) => (
@@ -25,7 +25,7 @@ export function Bench({ length, depth, height = BENCH_TOP, shelf = true, desk = 
       ) : (
         <>
           {/* corpo do armário e rodapé recuado */}
-          <Box size={[length, cabH, depth - 0.06]} position={[0, 0.1 + cabH / 2, -0.03]} material={M.cabinet} shadow />
+          <Box size={[length, cabH, depth - 0.06]} position={[0, 0.1 + cabH / 2, -0.03]} material={noite ? NOITE.cabinet : M.cabinet} shadow />
           <Box size={[length - 0.04, 0.1, depth - 0.12]} position={[0, 0.05, -0.06]} material={M.kick} />
           {Array.from({ length: doors }, (_, i) => {
             const x = -length / 2 + 0.02 + doorW * (i + 0.5);
@@ -35,13 +35,13 @@ export function Bench({ length, depth, height = BENCH_TOP, shelf = true, desk = 
                 {drawer ? (
                   [0, 1, 2].map((k) => (
                     <group key={k}>
-                      <Box size={[doorW - 0.008, cabH / 3 - 0.008, 0.018]} position={[0, 0.1 + (cabH / 3) * (k + 0.5), 0]} material={M.cabinetDoor} />
+                      <Box size={[doorW - 0.008, cabH / 3 - 0.008, 0.018]} position={[0, 0.1 + (cabH / 3) * (k + 0.5), 0]} material={noite ? NOITE.cabinetDoor : M.cabinetDoor} />
                       <Box size={[doorW * 0.45, 0.012, 0.02]} position={[0, 0.1 + (cabH / 3) * (k + 0.5) + cabH / 6 - 0.04, 0.018]} material={M.steel} />
                     </group>
                   ))
                 ) : (
                   <>
-                    <Box size={[doorW - 0.008, cabH - 0.008, 0.018]} position={[0, 0.1 + cabH / 2, 0]} material={M.cabinetDoor} />
+                    <Box size={[doorW - 0.008, cabH - 0.008, 0.018]} position={[0, 0.1 + cabH / 2, 0]} material={noite ? NOITE.cabinetDoor : M.cabinetDoor} />
                     <Box size={[0.012, 0.14, 0.02]} position={[i % 2 ? -doorW / 2 + 0.05 : doorW / 2 - 0.05, 0.1 + cabH - 0.12, 0.018]} material={M.steel} />
                   </>
                 )}
@@ -56,6 +56,7 @@ export function Bench({ length, depth, height = BENCH_TOP, shelf = true, desk = 
             <Box key={s} size={[0.035, 0.85, 0.035]} position={[(s * (length - 0.12)) / 2, height + 0.425, -depth / 2 + 0.06]} material={M.steel} />
           ))}
           <Box size={[length - 0.05, 0.022, 0.3]} position={[0, height + 0.62, -depth / 2 + 0.17]} material={M.shelf} shadow />
+          {noite && <Box size={[length - 0.12, 0.012, 0.02]} position={[0, height + 0.605, -depth / 2 + 0.31]} material={NOITE.stripViolet} />}
           {/* régua de tomadas sob a prateleira */}
           <Box size={[length * 0.6, 0.05, 0.04]} position={[0, height + 0.2, -depth / 2 + 0.03]} material={M.whitePlastic} />
           {Array.from({ length: 6 }, (_, i) => (
@@ -94,8 +95,8 @@ function ShelfContents({ x0, label }: { x0: number; label: string }) {
   );
 }
 
-function Floor({ W, D }: { W: number; D: number }) {
-  const mat = useMemo(() => new THREE.MeshStandardMaterial({ map: floorTexture(), roughness: 0.8 }), []);
+function Floor({ W, D, noite = false }: { W: number; D: number; noite?: boolean }) {
+  const mat = useMemo(() => new THREE.MeshStandardMaterial({ map: floorTexture(), roughness: noite ? 0.55 : 0.8, color: noite ? NOITE.floorTint : "#ffffff", metalness: noite ? 0.15 : 0 }), [noite]);
   return (
     <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0.5]} receiveShadow material={mat}>
       <planeGeometry args={[W, D]} />
@@ -103,37 +104,53 @@ function Floor({ W, D }: { W: number; D: number }) {
   );
 }
 
-export function Room({ projectName }: { projectName?: string }) {
+export function Room({ projectName, noite = false }: { projectName?: string; noite?: boolean }) {
   const W = 12.6;
   const D = 9;
   return (
     <group>
       {/* piso e paredes */}
-      <Floor W={W} D={D} />
-      <mesh position={[0, 1.6, -4]} material={M.wall} receiveShadow>
+      <Floor W={W} D={D} noite={noite} />
+      <mesh position={[0, 1.6, -4]} material={noite ? NOITE.wall : M.wall} receiveShadow>
         <planeGeometry args={[W, 3.2]} />
       </mesh>
-      <mesh position={[-W / 2, 1.6, 0.5]} rotation={[0, Math.PI / 2, 0]} material={M.wall} receiveShadow>
+      <mesh position={[-W / 2, 1.6, 0.5]} rotation={[0, Math.PI / 2, 0]} material={noite ? NOITE.wall : M.wall} receiveShadow>
         <planeGeometry args={[D, 3.2]} />
       </mesh>
-      <mesh position={[W / 2, 1.6, 0.5]} rotation={[0, -Math.PI / 2, 0]} material={M.wall} receiveShadow>
+      <mesh position={[W / 2, 1.6, 0.5]} rotation={[0, -Math.PI / 2, 0]} material={noite ? NOITE.wall : M.wall} receiveShadow>
         <planeGeometry args={[D, 3.2]} />
       </mesh>
       <Box size={[W, 0.08, 0.015]} position={[0, 0.04, -3.99]} material={M.baseboard} />
       <Box size={[0.015, 0.08, D]} position={[-W / 2 + 0.008, 0.04, 0.5]} material={M.baseboard} />
       <Box size={[0.015, 0.08, D]} position={[W / 2 - 0.008, 0.04, 0.5]} material={M.baseboard} />
+      {noite && (
+        <group>
+          {/* faixas de luz nas cores da marca (topo das paredes e rodapé) */}
+          <Box size={[W, 0.03, 0.02]} position={[0, 3.1, -3.98]} material={NOITE.stripBlue} />
+          <Box size={[0.02, 0.03, D]} position={[-W / 2 + 0.01, 3.1, 0.5]} material={NOITE.stripViolet} />
+          <Box size={[0.02, 0.03, D]} position={[W / 2 - 0.01, 3.1, 0.5]} material={NOITE.stripPink} />
+          <Box size={[W, 0.02, 0.02]} position={[0, 0.1, -3.97]} material={NOITE.stripViolet} />
+          {/* painéis luminosos verticais entre as zonas */}
+          {[-5.7, -0.95, 3.0].map((x) => (
+            <Box key={x} size={[0.06, 2.2, 0.02]} position={[x, 1.75, -3.97]} material={NOITE.stripViolet} />
+          ))}
+          <mesh position={[0, 2.2, -3.95]} material={NOITE.glow}>
+            <planeGeometry args={[W, 1.8]} />
+          </mesh>
+        </group>
+      )}
       {/* divisória baixa entre preparo e amplificação (separação visual das zonas) */}
       <Box size={[0.04, 1.8, 0.9]} position={[-0.95, 0.9, -3.55]} material={M.shelf} shadow />
 
       {/* bancadas */}
       <group position={BENCHES.pre.center}>
-        <Bench length={BENCHES.pre.length} depth={BENCHES.pre.depth} />
+        <Bench length={BENCHES.pre.length} depth={BENCHES.pre.depth} noite={noite} />
       </group>
       <group position={BENCHES.amp.center}>
-        <Bench length={BENCHES.amp.length} depth={BENCHES.amp.depth} />
+        <Bench length={BENCHES.amp.length} depth={BENCHES.amp.depth} noite={noite} />
       </group>
       <group position={BENCHES.pos.center} rotation={[0, BENCHES.pos.rotationY, 0]}>
-        <Bench length={BENCHES.pos.length} depth={BENCHES.pos.depth} />
+        <Bench length={BENCHES.pos.length} depth={BENCHES.pos.depth} noite={noite} />
       </group>
       <group position={BENCHES.analise.center} rotation={[0, BENCHES.analise.rotationY, 0]}>
         <Bench length={BENCHES.analise.length} depth={BENCHES.analise.depth} height={DESK_TOP} desk shelf={false} />

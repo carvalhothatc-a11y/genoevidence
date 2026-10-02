@@ -10,6 +10,7 @@ import { useLab } from "@/store/lab";
 import type { Quality } from "@/store/ui";
 import { G } from "./geometry";
 import { projectHotspots, setHotspotInvalidator } from "./hotspots";
+import { setLabCapture } from "./capture";
 import { M } from "./materials";
 import { Room } from "./Room";
 import {
@@ -37,6 +38,8 @@ export type LabCanvasProps = {
   computerLines: string[];
   thermoDisplay: ThermoDisplay;
   onSelect: (id: string, part?: string | null) => void;
+  /** "noite": estúdio imersivo escuro (cores da marca); padrão: laboratório claro. */
+  ambiente?: "dia" | "noite";
 };
 
 // ---------------------------------------------------------------- ambiente e câmera
@@ -192,6 +195,21 @@ function HotspotProjector() {
   return null;
 }
 
+/** Registra a função de captura do quadro atual (usada para gerar a imagem da cena descrita). */
+function CaptureRegistrar() {
+  const gl = useThree((st) => st.gl);
+  const scene = useThree((st) => st.scene);
+  const camera = useThree((st) => st.camera);
+  useEffect(() => {
+    setLabCapture(() => {
+      gl.render(scene, camera);
+      return gl.domElement.toDataURL("image/png");
+    });
+    return () => setLabCapture(null);
+  }, [gl, scene, camera]);
+  return null;
+}
+
 // ---------------------------------------------------------------- cena
 
 /** Nível de luz animado na entrada (0,35 → 1). Renderiza só enquanto muda. */
@@ -207,6 +225,43 @@ function useLightLevel() {
     }
   });
   return level;
+}
+
+function LightsNoite({ shadows, quality }: { shadows: boolean; quality: Quality }) {
+  const level = useLightLevel();
+  const hemi = useRef<THREE.HemisphereLight>(null);
+  const key = useRef<THREE.DirectionalLight>(null);
+  useFrame(() => {
+    const l = level.current;
+    if (hemi.current) hemi.current.intensity = 0.5 * l;
+    if (key.current) key.current.intensity = 1.25 * l;
+  });
+  return (
+    <>
+      <hemisphereLight ref={hemi} args={["#a9b8ff", "#1b2742", 0.5]} />
+      <ambientLight intensity={0.16} color="#c9d2ff" />
+      <directionalLight
+        ref={key}
+        position={[2.5, 6.5, 3.5]}
+        intensity={1.25}
+        color="#f1f3ff"
+        castShadow={shadows}
+        shadow-mapSize={[quality === "alta" ? 2048 : 1024, quality === "alta" ? 2048 : 1024]}
+        shadow-camera-left={-7}
+        shadow-camera-right={7}
+        shadow-camera-top={6}
+        shadow-camera-bottom={-6}
+        shadow-bias={-0.0004}
+        shadow-normalBias={0.02}
+        shadow-radius={4}
+      />
+      <directionalLight position={[-5, 3, 2]} intensity={0.45} color="#7b4de0" />
+      <pointLight position={[-3.4, 2.6, -3.2]} intensity={5} distance={6} decay={2} color="#7b4de0" />
+      <pointLight position={[1.1, 2.6, -3.2]} intensity={4} distance={5} decay={2} color="#4d7cff" />
+      <pointLight position={[5.4, 2.4, -0.9]} intensity={3.5} distance={5} decay={2} color="#e679b5" />
+      <pointLight position={[-5.4, 2.2, -0.5]} intensity={3} distance={5} decay={2} color="#4d7cff" />
+    </>
+  );
 }
 
 function Lights({ shadows, quality }: { shadows: boolean; quality: Quality }) {
@@ -258,12 +313,13 @@ function Scene(props: LabCanvasProps) {
 
   return (
     <>
-      <color attach="background" args={["#d9dde4"]} />
-      <Lights shadows={shadows} quality={props.quality} />
+      <color attach="background" args={[props.ambiente === "noite" ? "#0b1221" : "#d9dde4"]} />
+      {props.ambiente === "noite" && <fog attach="fog" args={["#0b1221", 10, 24]} />}
+      {props.ambiente === "noite" ? <LightsNoite shadows={shadows} quality={props.quality} /> : <Lights shadows={shadows} quality={props.quality} />}
       <RoomEnv enabled={props.quality !== "baixa"} />
       <CameraRig instant={props.reducedMotion} />
 
-      <Room projectName={props.projectName} />
+      <Room projectName={props.projectName} noite={props.ambiente === "noite"} />
 
       {/* Zona 1 — preparo (pré-PCR) */}
       <Selectable id="micropipetas" ring={0.2} onSelect={props.onSelect}>
@@ -314,6 +370,7 @@ function Scene(props: LabCanvasProps) {
       </Selectable>
 
       <HotspotProjector />
+      <CaptureRegistrar />
 
       <OrbitControls
         makeDefault

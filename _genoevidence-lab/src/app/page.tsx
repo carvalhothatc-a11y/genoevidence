@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { APP_NAME } from "@/lib/config";
-import { getRepository } from "@/lib/repo";
+import { listVisibleProjects } from "@/lib/authz";
 import { requirePageUser } from "@/lib/projects/server";
 import { TECHNIQUES, STATUS_LABEL } from "@/lib/modules/registry";
 import { ButtonLink } from "@/components/ui/Button";
@@ -8,7 +8,7 @@ import { assistantStatus } from "@/lib/assistant/status";
 
 export default async function Home() {
   const user = await requirePageUser("/");
-  const projects = user ? await getRepository().listProjects(user.id) : [];
+  const projects = await listVisibleProjects(user);
   const recent = projects.filter((p) => !p.synthetic).slice(0, 3);
   const assistant = assistantStatus();
 
@@ -24,6 +24,9 @@ export default async function Home() {
           <div className="mt-6 flex flex-wrap gap-3">
             <ButtonLink href="/laboratorio" className="px-5 py-3 text-base">
               Entrar no laboratório
+            </ButtonLink>
+            <ButtonLink href="/laboratorio/explorar" variant="accent" className="px-5 py-3 text-base">
+              Explorar uma ideia
             </ButtonLink>
             <ButtonLink href="/projetos/novo" variant="secondary" className="px-5 py-3 text-base">
               Criar projeto

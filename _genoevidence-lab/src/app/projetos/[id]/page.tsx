@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { loadOwnProject, formatBytes, formatDate } from "@/lib/projects/server";
+import { loadProjectFor, formatBytes, formatDate } from "@/lib/projects/server";
 import { ProjectForm } from "@/components/projects/ProjectForm";
 import { DeleteButton } from "@/components/projects/DeleteButton";
 import { FileUploadForm } from "@/components/projects/FileUploadForm";
@@ -15,7 +15,7 @@ import { VALUE_TYPES } from "@/lib/expression/valueTypes";
 
 export async function generateMetadata(props: PageProps<"/projetos/[id]">): Promise<Metadata> {
   const { id } = await props.params;
-  const { project } = await loadOwnProject(id);
+  const { project } = await loadProjectFor(id, "ler");
   return { title: project.title };
 }
 
@@ -41,7 +41,7 @@ function FieldView({ label, value }: { label: string; value: string }) {
 
 export default async function ProjectPage(props: PageProps<"/projetos/[id]">) {
   const { id } = await props.params;
-  const { project } = await loadOwnProject(id);
+  const { project, role } = await loadProjectFor(id, "ler");
   const fileById = new Map(project.files.map((f) => [f.id, f]));
   const usedFileIds = new Set([
     ...project.datasets.map((d) => d.fileId),

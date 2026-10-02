@@ -52,8 +52,8 @@
     topo.innerHTML = '<div class="appbar-in' + (voltar ? " com-voltar" : "") + '">' + voltar + '<button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir o menu" aria-expanded="false" aria-controls="gaveta"><span></span><span></span><span></span></button>' +
       '<a class="logo" href="' + RAIZ + '" aria-label="GenoEvidence, início"><i></i><b>GenoEvidence</b></a>' +
       '<nav class="tabs-top" aria-label="Seções do app">' + ABAS.map(([n, l, h]) => '<a class="tab-' + n + '" href="' + RAIZ + h + '"' + atual(n) + ">" + l + "</a>").join("") + "</nav>" +
-      // GenoEvidence Lab: entrada para o app à parte (acesso restrito); a página lab/ abre o Lab em outra aba
-      '<a class="lab-link" href="' + RAIZ + 'lab/"' + atual("lab") + ' aria-label="GenoEvidence Lab, acesso restrito">' + svg("cadeado") + '<span class="lab-txt"><b>Lab</b></span></a>' +
+      // GenoLab: entrada para o app à parte (acesso restrito); a página lab/ abre o Lab em outra aba
+      '<a class="lab-link" href="' + RAIZ + 'lab/"' + atual("lab") + ' aria-label="GenoLab, acesso restrito">' + svg("cadeado") + '<span class="lab-txt"><b>Lab</b></span></a>' +
       '<a class="icon-btn" href="' + RAIZ + 'sobre/" aria-label="Sobre o GenoEvidence"' + atual("sobre") + ">" + svg("sobre") + "</a></div>";
     I.montarSeletor($(".appbar-in", topo), $(".icon-btn", topo));
   }
@@ -82,7 +82,7 @@
       { nome: "Notícias da ciência", href: RAIZ + "noticias/", extra: "hoje" }, { nome: "Temas", href: RAIZ + "artigos/", extra: "artigos estudos" },
       { nome: "Revistas", href: RAIZ + "revistas/", extra: "publicações" },
       { nome: "Sobre o app", href: RAIZ + "sobre/", extra: "instalar" },
-      { nome: "GenoEvidence Lab (acesso restrito)", href: RAIZ + "lab/", extra: "laboratório virtual experimento pcr bancada" }];
+      { nome: "GenoLab (acesso restrito)", href: RAIZ + "lab/", extra: "laboratório virtual experimento pcr bancada" }];
     // tema ou pesquisadora: ao tocar, abre uma ramificação com os estudos dela(e)
     const ramo = i => '<div class="gv-ramo" data-busca="' + esc((i.nome + " " + (i.extra || "")).toLowerCase()) + '" style="--c:' + esc(i.cor) + '">' +
       '<button type="button" class="gv-item gv-abre" aria-expanded="false"><i></i><span>' + esc(i.nome) + "</span><em>" + i.estudos.length + '</em><b class="gv-seta" aria-hidden="true">›</b></button>' +

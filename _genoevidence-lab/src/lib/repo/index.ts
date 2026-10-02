@@ -11,7 +11,7 @@ export function dataRoot(): string {
 
 /**
  * Seleciona o backend de persistência. Nesta versão somente o backend local está implementado;
- * o esquema do Supabase (com RLS) está em supabase/migrations e o adaptador é o próximo passo.
+ * não há esquema nem adaptador do Supabase.
  */
 export function getRepository(): Repository {
   if (!instance) instance = new LocalRepository(dataRoot());

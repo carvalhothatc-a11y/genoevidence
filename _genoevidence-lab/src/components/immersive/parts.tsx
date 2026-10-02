@@ -189,7 +189,7 @@ export function IntroOverlay({ visible, onEnter, onSkip, resume }: { visible: bo
             className="ge-float w-full max-w-lg p-7 text-center sm:p-9"
           >
             <Image src="/brand/geno-evidence-simbolo-192.png" alt="" width={72} height={72} className="mx-auto mb-4 drop-shadow-[0_12px_24px_rgba(115,78,225,0.35)]" priority />
-            <p className="ge-eyebrow mb-2 justify-center">GenoEvidence Lab</p>
+            <p className="ge-eyebrow mb-2 justify-center">GenoLab</p>
             <h2 id="intro-titulo" className="ge-display text-3xl sm:text-4xl">
               Entre no <span className="ge-gradient-text">laboratório</span>.
             </h2>

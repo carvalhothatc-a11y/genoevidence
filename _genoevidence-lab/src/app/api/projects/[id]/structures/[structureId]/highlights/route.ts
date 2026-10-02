@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { ApiError, handle, json, notFound, readJsonBody, requireUser } from "@/lib/api";
+import { actorOf, authorizeProject } from "@/lib/authz";
 import { newId, nowIso } from "@/lib/ids";
 import { getRepository } from "@/lib/repo";
 import { checkResidue } from "@/lib/structures/parse";
@@ -13,14 +14,13 @@ const Body = z.object({
   dryRun: z.boolean().optional(),
 });
 
-/** Confere e registra um destaque de resíduo. Divergências não são salvas sem confirmação explícita. */
+/** Confere (leitor) e registra (editor) um destaque de resíduo. */
 export const POST = handle(async (req: Request, ctx: RouteContext<"/api/projects/[id]/structures/[structureId]/highlights">) => {
   const user = await requireUser();
   const { id, structureId } = await ctx.params;
-  const body = Body.parse(await readJsonBody(req));
-  const repo = getRepository();
-  const project = await repo.getProject(user.id, id);
-  const s = project?.structures.find((x) => x.id === structureId);
+  const body = Body.parse(await readJsonBody(req, 10_000));
+  const { project } = await authorizeProject(user, id, body.dryRun ? "ler" : "editar");
+  const s = project.structures.find((x) => x.id === structureId);
   if (!s) notFound("Estrutura");
   const result = checkResidue(s.summary, body.chain, body.residueNumber, body.insertionCode ?? "", body.expectedResidue);
   if (body.dryRun) return json({ result });
@@ -36,8 +36,9 @@ export const POST = handle(async (req: Request, ctx: RouteContext<"/api/projects
     label: body.label,
     createdAt: nowIso(),
   };
-  await repo.mutateProject(user.id, id, (draft) => {
-    const target = draft.structures.find((x) => x.id === structureId)!;
+  await getRepository().mutateProject(id, actorOf(user), (draft) => {
+    const target = draft.structures.find((x) => x.id === structureId);
+    if (!target) return [];
     target.highlights.push(highlight);
     return [{ actor: "pesquisador", action: "residuo_destacado", detail: `${s.summary.idCode ?? "estrutura"} · ${result.message} (destaque visual; não calcula estrutura mutante).` }];
   });
@@ -47,13 +48,13 @@ export const POST = handle(async (req: Request, ctx: RouteContext<"/api/projects
 export const DELETE = handle(async (req: Request, ctx: RouteContext<"/api/projects/[id]/structures/[structureId]/highlights">) => {
   const user = await requireUser();
   const { id, structureId } = await ctx.params;
-  const hid = new URL(req.url).searchParams.get("h");
-  const updated = await getRepository().mutateProject(user.id, id, (draft) => {
+  await authorizeProject(user, id, "editar");
+  const hid = new URL(req.url).searchParams.get("h") ?? "";
+  await getRepository().mutateProject(id, actorOf(user), (draft) => {
     const target = draft.structures.find((x) => x.id === structureId);
-    if (!target) return [];
+    if (!target || !target.highlights.some((h) => h.id === hid)) return [];
     target.highlights = target.highlights.filter((h) => h.id !== hid);
     return [{ actor: "pesquisador", action: "destaque_removido", detail: "Destaque de resíduo removido." }];
   });
-  if (!updated) notFound();
   return json({ deleted: true });
 });

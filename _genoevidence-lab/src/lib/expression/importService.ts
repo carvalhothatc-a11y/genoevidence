@@ -4,6 +4,7 @@ import { ColumnMapping, DatasetMeta, ExpressionValueType, type ExpressionRow } f
 import { ApiError } from "@/lib/api";
 import { newId, nowIso } from "@/lib/ids";
 import type { Repository } from "@/lib/repo";
+import type { Actor } from "@/lib/repo/types";
 import { CsvError, parseCsv, suggestMapping } from "./csv";
 import { interpretExpression } from "./validate";
 import { VALUE_TYPES } from "./valueTypes";
@@ -19,8 +20,8 @@ export const ImportOptions = z.object({
 });
 export type ImportOptions = z.infer<typeof ImportOptions>;
 
-export async function loadCsv(repo: Repository, userId: string, projectId: string, fileId: string, delimiter?: string) {
-  const found = await repo.readFile(userId, projectId, fileId);
+export async function loadCsv(repo: Repository, projectId: string, fileId: string, delimiter?: string) {
+  const found = await repo.readFile(projectId, fileId);
   if (!found) throw new ApiError(404, "Arquivo não encontrado (ou sem permissão de acesso).");
   if (found.record.kind !== "csv") throw new ApiError(422, "O arquivo selecionado não é um CSV.");
   try {
@@ -31,8 +32,8 @@ export async function loadCsv(repo: Repository, userId: string, projectId: strin
   }
 }
 
-export async function previewCsv(repo: Repository, userId: string, projectId: string, fileId: string, delimiter?: string) {
-  const { record, parsed } = await loadCsv(repo, userId, projectId, fileId, delimiter);
+export async function previewCsv(repo: Repository, projectId: string, fileId: string, delimiter?: string) {
+  const { record, parsed } = await loadCsv(repo, projectId, fileId, delimiter);
   return {
     file: record,
     header: parsed.header,
@@ -47,8 +48,8 @@ export async function previewCsv(repo: Repository, userId: string, projectId: st
   };
 }
 
-export async function validateImport(repo: Repository, userId: string, projectId: string, opts: ImportOptions) {
-  const { parsed } = await loadCsv(repo, userId, projectId, opts.fileId, opts.delimiter);
+export async function validateImport(repo: Repository, projectId: string, opts: ImportOptions) {
+  const { parsed } = await loadCsv(repo, projectId, opts.fileId, opts.delimiter);
   const result = interpretExpression(parsed.header, parsed.rows, opts);
   if (parsed.malformedRows.length)
     result.issues.unshift({
@@ -70,11 +71,11 @@ export async function validateImport(repo: Repository, userId: string, projectId
 
 export async function confirmImport(
   repo: Repository,
-  userId: string,
   projectId: string,
+  actor: Actor,
   opts: ImportOptions & { name: string; synthetic?: boolean },
 ) {
-  const { parsed, result } = await validateImport(repo, userId, projectId, opts);
+  const { parsed, result } = await validateImport(repo, projectId, opts);
   if (!result.canConfirm) throw new ApiError(422, "A importação tem erros bloqueantes. Corrija antes de confirmar.", result.issues.filter((i) => i.blocking));
   const at = nowIso();
   const datasetId = newId("d_");
@@ -126,8 +127,8 @@ export async function confirmImport(
     confirmedAt: at,
     synthetic: Boolean(opts.synthetic),
   });
-  await repo.putDerived(userId, projectId, "datasets", datasetId, { meta, rows: result.rows, issues: result.issues, replicates: result.replicates });
-  const updated = await repo.mutateProject(userId, projectId, (draft) => {
+  await repo.putDerived(projectId, "datasets", datasetId, { meta, rows: result.rows, issues: result.issues, replicates: result.replicates });
+  const updated = await repo.mutateProject(projectId, actor, (draft) => {
     draft.datasets.push(meta);
     return [
       {

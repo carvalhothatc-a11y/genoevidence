@@ -1,5 +1,5 @@
 /** Configuração da plataforma. O nome é provisório e configurável por variável de ambiente. */
-export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "GenoEvidence Lab";
+export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "GenoLab";
 export const APP_VERSION = "0.1.0";
 
 export const LIMITS = {

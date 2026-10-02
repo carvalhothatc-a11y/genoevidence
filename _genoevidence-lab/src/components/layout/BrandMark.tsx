@@ -2,18 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 /**
- * Lockup do GenoEvidence (recortado dos arquivos da marca, sem redesenho) seguido do rótulo “Lab”.
- * Nome do produto: “GenoEvidence Lab”.
+ * Marca do GenoLab no mesmo padrão do .logo do site GenoEvidence (símbolo + nome em Unbounded).
+ * O símbolo é o arquivo original da marca, sem alterações.
  */
 export function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
-    <Link href="/" className="flex items-center gap-2" aria-label="GenoEvidence Lab, início">
-      {compact ? (
-        <Image src="/brand/geno-evidence-simbolo-64.png" alt="" width={30} height={30} priority />
-      ) : (
-        <Image src="/brand/geno-evidence-lockup.png" alt="" width={138} height={30} priority className="h-[30px] w-auto" />
+    <Link href="/" className="flex items-center gap-2.5" aria-label="GenoLab, início">
+      <Image src="/brand/geno-evidence-simbolo-64.png" alt="" width={30} height={30} priority />
+      {!compact && (
+        <span className="flex flex-col leading-none">
+          <span className="text-[17px] font-semibold tracking-[-0.03em] text-ink [font-family:var(--font-display)]">GenoLab</span>
+          <span className="ge-mono mt-1 text-[10px] text-muted">por GenoEvidence</span>
+        </span>
       )}
-      <span className="ge-mono rounded-md bg-ink px-1.5 py-0.5 text-[12px] font-semibold leading-none text-white">Lab</span>
     </Link>
   );
 }

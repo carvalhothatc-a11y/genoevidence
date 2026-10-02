@@ -1,6 +1,6 @@
-# Identidade visual — GenoEvidence Lab
+# Identidade visual — GenoLab
 
-O produto se chama **GenoEvidence Lab** (nome definido pela responsável em 02/10/2026) e reutiliza a identidade do GenoEvidence. No cabeçalho, o lockup original “GenoEvidence” é seguido do rótulo “Lab”, sem alterar o logotipo.
+O produto se chama **GenoLab** (nome definido pela responsável em 02/10/2026) e reutiliza a identidade do GenoEvidence. No cabeçalho, o lockup original “GenoEvidence” é seguido do rótulo “Lab”, sem alterar o logotipo.
 
 ## Fontes da identidade (analisadas em 02/10/2026)
 

@@ -14,7 +14,7 @@ const plexMono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500", "600
 
 export const metadata: Metadata = {
   title: { default: APP_NAME, template: `%s · ${APP_NAME}` },
-  description: "GenoEvidence Lab: laboratório virtual de biologia molecular — projetos, experimentos, referências, dados e bancada 3D.",
+  description: "GenoLab: laboratório virtual de biologia molecular — projetos, experimentos, referências, dados e bancada 3D.",
 };
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#ffffff" };
@@ -27,7 +27,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <a href="#conteudo" className="skip-link">
           Pular para o conteúdo
         </a>
-        <AppHeader appName={APP_NAME} user={user ? { name: user.name, email: user.email } : null} />
+        <AppHeader appName={APP_NAME} user={user ? { name: user.name, email: user.email, role: user.role, status: user.status } : null} />
         <MotionProvider>
           <main id="conteudo" tabIndex={-1} className="outline-none">
             {children}

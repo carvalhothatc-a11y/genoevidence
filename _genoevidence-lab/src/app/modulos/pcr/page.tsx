@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getRepository } from "@/lib/repo";
+import { authorizeProject, listVisibleProjects } from "@/lib/authz";
 import { requirePageUser } from "@/lib/projects/server";
 import { PCR_MODULE } from "@/lib/modules/pcr/content";
 import { PcrModule, type PcrProjectContext } from "@/components/pcr/PcrModule";
@@ -11,12 +11,11 @@ const STEP_ORDER = PCR_MODULE.steps.map((s) => s.id);
 export default async function PcrPage(props: PageProps<"/modulos/pcr">) {
   const sp = await props.searchParams;
   const user = await requirePageUser("/modulos/pcr");
-  const repo = getRepository();
-  const projectId = typeof sp.projeto === "string" ? sp.projeto : undefined;
+    const projectId = typeof sp.projeto === "string" ? sp.projeto : undefined;
   const sessionId = typeof sp.sessao === "string" ? sp.sessao : undefined;
   const stepParam = typeof sp.etapa === "string" && STEP_ORDER.includes(sp.etapa) ? sp.etapa : undefined;
 
-  const p = user && projectId ? await repo.getProject(user.id, projectId) : null;
+  const p = projectId ? await authorizeProject(user, projectId, "ler").then((r) => r.project).catch(() => null) : null;
   const project: PcrProjectContext = p
     ? {
         links: {
@@ -30,7 +29,7 @@ export default async function PcrPage(props: PageProps<"/modulos/pcr">) {
         gelImages: p.files.filter((f) => f.kind === "imagem").map((f) => ({ id: f.id, name: f.name, role: f.role })),
       }
     : null;
-  const projects = user && !p ? (await repo.listProjects(user.id)).filter((x) => !x.synthetic).slice(0, 5).map((x) => ({ id: x.id, title: x.title })) : [];
+  const projects = !p ? (await listVisibleProjects(user)).filter((x) => !x.synthetic && x.role !== "leitor").slice(0, 5).map((x) => ({ id: x.id, title: x.title })) : [];
 
   const saved = p && sessionId ? p.sessions.find((s) => s.id === sessionId) : undefined;
   const st = (saved?.state ?? {}) as Record<string, unknown>;

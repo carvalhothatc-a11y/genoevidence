@@ -59,6 +59,22 @@ export const CAP_COLORS: Record<string, string> = {
 };
 
 const capCache = new Map<string, THREE.MeshStandardMaterial>();
+/**
+ * Ambiente noturno do estúdio imersivo: paredes em azul-marinho (painel do site), tampo claro para
+ * destacar os equipamentos e faixas de luz nas cores da marca (azul, violeta e rosa do símbolo).
+ */
+export const NOITE = {
+  wall: std("#141c38", 0.92),
+  floorTint: "#3b4566",
+  benchTop: std("#e9edf4", 0.28, 0.05),
+  cabinet: std("#c3cad8", 0.55),
+  cabinetDoor: std("#d0d6e2", 0.48),
+  stripViolet: new THREE.MeshBasicMaterial({ color: "#8f68ff", toneMapped: false }),
+  stripBlue: new THREE.MeshBasicMaterial({ color: "#5c86ff", toneMapped: false }),
+  stripPink: new THREE.MeshBasicMaterial({ color: "#e679b5", toneMapped: false }),
+  glow: new THREE.MeshBasicMaterial({ color: "#b49cf5", transparent: true, opacity: 0.16, depthWrite: false, toneMapped: false }),
+};
+
 export function capMaterial(color: string) {
   if (!capCache.has(color)) capCache.set(color, std(color, 0.45));
   return capCache.get(color)!;
