@@ -1,6 +1,58 @@
 {
- "atualizado_em": "2026-10-02T12:51:48.832062+00:00",
+ "atualizado_em": "2026-10-02T18:32:15.018849+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "SUS passa a oferecer três novos medicamentos de alta tecnologia para o tratamento de câncer pulmonar",
+   "resumo": "Brigatinibe, gefitinibe e durvalumabe são novos fármacos indicados para diferentes etapas do tratamento da doença",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/sus-passa-a-oferecer-tres-novos-medicamentos-de-alta-tecnologia-para-o-tratamento-de-cancer-pulmonar/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-02T12:30:03+00:00",
+   "tema": "Câncer",
+   "relevancia": 14,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261001_remedios.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Sus now offers three new high-tech drugs for the treatment of lung cancer",
+     "resumo": "Brigatinib, gefitinib and durvalumab are new drugs indicated for different stages of disease treatment"
+    },
+    "es": {
+     "titulo": "Sus ahora ofrece tres nuevos medicamentos de alta tecnología para el tratamiento del cáncer de pulmón",
+     "resumo": "Brigatinib, gefitinib y durvalumab son nuevos fármacos indicados para diferentes etapas del tratamiento de la enfermedad"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "USP seleciona voluntários pós-AVC para estudo sobre reabilitação motora em casa",
+   "resumo": "Estudo do Programa de Pós-Graduação em Neurologia avalia o uso da telereabilitação para recuperar a função dos membros superiores em pacientes de Ribeirão Preto e região",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/usp-seleciona-voluntarios-pos-avc-para-estudo-sobre-reabilitacao-motora-em-casa/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-02T12:45:31+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/10/20241024_fisio.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "USP selects post-stroke volunteers to study motor rehabilitation at home",
+     "resumo": "Study of the Graduate Program in Neurology evaluates the use of telerehabilitation to recover the function of the upper limbs in patients from Ribeirão Preto and region"
+    },
+    "es": {
+     "titulo": "La USP selecciona voluntarios después del accidente cerebrovascular para estudiar la rehabilitación motora en el hogar",
+     "resumo": "Estudio del Programa de Posgrado en Neurología evalúa el uso de la telerehabilitación para recuperar la función de las extremidades superiores en pacientes de Ribeirão Preto y región"
+    }
+   }
+  },
   {
    "tipo": "noticia",
    "titulo": "Projeto usa dados do SUS para estimar risco de violência contra a mulher",
@@ -29,6 +81,101 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Webinários regionais do Global Research Council",
+   "resumo": "Desafios relacionados à produção de conhecimento e ao financiamento da ciência estarão em debate em dois seminários que reunirão pesquisadores e agências de fomento",
+   "url": "https://agencia.fapesp.br/webinarios-regionais-do-global-research-council/59323",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-02T18:32:15.018849+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Global Research Council Regional Webinars",
+     "resumo": "Challenges related to the production of knowledge and the financing of science will be discussed in two seminars that will bring together researchers and funding agencies"
+    },
+    "es": {
+     "titulo": "Seminarios web regionales del Consejo Mundial de Investigación",
+     "resumo": "Los desafíos relacionados con la producción de conocimiento y el financiamiento de la ciencia se discutirán en dos seminarios que reunirán a investigadores y agencias de financiamiento"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Canal Saúde estreia nova temporada do 'Ligado em Saúde'",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/canal-saude-estreia-nova-temporada-do-ligado-em-saude",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-02T17:57:18+00:00",
+   "tema": "Saúde",
+   "relevancia": 7,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/bouer.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Health Channel premieres new season of 'Ligado em Saúde'"
+    },
+    "es": {
+     "titulo": "Health Channel estrena nueva temporada de 'Ligado em Saúde'"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Pronta para a quarta onda",
+   "resumo": "Em seis décadas de existência, universidade experimentou três fases de desenvolvimento e está às portas de mais uma",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/02/pronta-para-a-quarta-onda/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-02T15:12:36+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Man_202610025_Aniversario-Unicamp-60-anos_Capa.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Ready for the fourth wave",
+     "resumo": "In six decades of existence, the university has experienced three phases of development and is on the doorstep of another"
+    },
+    "es": {
+     "titulo": "Listo para la cuarta ola",
+     "resumo": "En seis décadas de existencia, la universidad ha experimentado tres fases de desarrollo y está a las puertas de otra"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Medicamento para esquistossomose em crianças recebe aprovação da Anvisa",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/medicamento-para-esquistossomose-em-criancas-recebe-aprovacao-da-anvisa",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-02T14:41:55+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/medicamento_d.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Drug for schistosomiasis in children receives approval from Anvisa"
+    },
+    "es": {
+     "titulo": "El medicamento para la esquistosomiasis en niños recibe la aprobación de Anvisa"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Lançamento do livro A ciência do Universo",
    "resumo": "Obra do físico Rogério Rosenfeld aborda desde os primeiros modelos cosmológicos até os experimentos mais recentes",
    "url": "https://agencia.fapesp.br/lancamento-do-livro-a-ciencia-do-universo/59324",
@@ -51,251 +198,143 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Novo instrumento no acelerador Sirius permite observar células solares em funcionamento",
-   "resumo": "Desenvolvida no CNPEM com apoio da FAPESP, a plataforma utiliza microscopia de raios X para investigar materiais fotovoltaicos sob condições reais de temperatura, luz e umidade",
-   "url": "https://agencia.fapesp.br/novo-instrumento-no-acelerador-sirius-permite-observar-celulas-solares-em-funcionamento/59318",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-02T05:53:38.561080+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59318.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "New instrument on Sirius accelerator allows to observe solar cells in operation",
-     "resumo": "Developed at CNPEM with support from FAPESP, the platform uses X-ray microscopy to investigate photovoltaic materials under real conditions of temperature, light and humidity"
-    },
-    "es": {
-     "titulo": "El nuevo instrumento en el acelerador Sirius permite observar las células solares en funcionamiento",
-     "resumo": "Desarrollada en CNPEM con el apoyo de la FAPESP, la plataforma utiliza microscopía de rayos X para investigar materiales fotovoltaicos en condiciones reales de temperatura, luz y humedad"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "VÍDEO | Dieta rica em açúcar agrava a asma",
-   "resumo": "Pesquisa financiada pela FAPESP e conduzida por cientistas da Unifesp e da UFABC observou rápida exacerbação da inflamação pulmonar e aumento do muco nas vias respiratórias em camundongos que consumiram leite condensado por duas semanas, o…",
-   "url": "https://www.youtube.com/watch?v=6wJasLuj-Fc",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-02T05:53:38.561080+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "VIDEO | Diet rich in acid aggravates asthma",
-     "resumo": "Research funded by FAPESP and conducted by scientists from Unifesp and UFABC observed a rapid exacerbation of lung inflammation and increased mucus in the airways in mice that consumed condensed milk for two weeks, the…"
-    },
-    "es": {
-     "titulo": "VIDEO | Una dieta rica en ácidos agrava el asma",
-     "resumo": "La investigación financiada por la FAPESP y realizada por científicos de la Unifesp y la UFABC observó una rápida exacerbación de la inflamación pulmonar y un aumento de la mucosidad en las vías respiratorias en ratones que consumieron leche condensada durante dos semanas, el..."
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Livro resgata trajetória da Educação Física e do estudo do movimento humano na USP",
-   "resumo": "Em obra lançada pela Edusp, autores entrelaçam vivências pessoais à história institucional para analisar a evolução científica da área e os desafios contemporâneos",
-   "url": "https://jornal.usp.br/universidade/livro-resgata-trajetoria-da-educacao-fisica-e-do-estudo-do-movimento-humano-na-usp/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-01T20:58:15+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/10/20250930_00_homem_vitruviano.jpg",
-   "foco": {
-    "x": 44,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Book rescues the trajectory of Physical Education and the study of human movement at USP",
-     "resumo": "In a work launched by Edusp, authors intertwine personal experiences with institutional history to analyze the scientific evolution of the area and contemporary challenges"
-    },
-    "es": {
-     "titulo": "Libro rescata la trayectoria de la Educación Física y el estudio del movimiento humano en la USP",
-     "resumo": "En un trabajo lanzado por Edusp, los autores entrelazan experiencias personales con la historia institucional para analizar la evolución científica del área y los desafíos contemporáneos"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Ex-reitores destacam papel da universidade pública no desenvolvimento do país",
-   "resumo": "Autonomia e liberdade são apontados como fundamentais para a produção de conhecimentos que gerem avanços e beneficiem a sociedade",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/01/ex-reitores-destacam-papel-da-universidade-publica-no-desenvolvimento-do-pais/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-01T18:40:29+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Man_20261001_Ex-Reitores-Unicamp-Capa.jpg",
-   "foco": {
-    "inteira": true
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Former deans highlight the role of the public university in the development of the country",
-     "resumo": "Autonomy and freedom are considered fundamental for the production of knowledge that generates advances and benefits society"
-    },
-    "es": {
-     "titulo": "Antiguos decanos destacan el papel de la universidad pública en el desarrollo del país",
-     "resumo": "La autonomía y la libertad se consideran fundamentales para la producción de conocimiento que genere avances y beneficie a la sociedad"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A reação contra os data centers de IA também atingirá a computação quântica?",
-   "resumo": "Para ter sucesso em escala, a computação quântica deve se diferenciar da IA, diz a colunista Karmela Padavic-Callaghan. Mas as duas tecnologias já estão misturadas aos olhos do público",
-   "url": "https://www.newscientist.com/article/2591564-will-the-backlash-against-ai-data-centres-hit-quantum-computing-too/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-02T08:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/SEI_314544952.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Will the backlash against AI data centres hit quantum computing too?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿La reacción contra los centros de datos de IA también afectará a la computación cuántica?",
-     "resumo": "Para tener éxito a escala, la computación cuántica debe diferenciarse de la IA, dice la columnista Karmela Padavic-Callaghan. Pero las dos tecnologías ya están mezcladas a los ojos del público"
-    }
-   },
-   "resumo_original": "To succeed at scale, quantum computing must differentiate itself from AI, says columnist Karmela Padavic-Callaghan. But the two technologies are already mixed up in the eyes of the public"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O teste do centro de dados AI do Projeto Suncatcher do Google foi lançado oficialmente para o espaço a bordo do foguete SpaceX",
-   "resumo": "O Projeto Suncatcher visa testar os chips de IA do Google no ambiente hostil do espaço",
-   "url": "https://www.scientificamerican.com/article/googles-project-suncatcher-ai-data-center-test-has-officially-launched-to-space-aboard-spacex-rocket/",
+   "titulo": "Bactérias de bioengenharia podem ajudar a terraformar Marte?",
+   "resumo": "A startup sem fins lucrativos Pioneer Labs afirma ter feito o primeiro “micróbio para Marte”. \"Outros especialistas não têm tanta certeza",
+   "url": "https://www.scientificamerican.com/article/can-bioengineered-bacteria-help-terraform-mars/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-01T19:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/82bd28ed-88ca-4bcb-8a84-4ec4390581c6/Project-Suncatcher.jpg?m=1790882073.4&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Google’s Project Suncatcher AI data center test has officially launched to space onboard SpaceX rocket",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La prueba del centro de datos de IA del Proyecto Suncatcher de Google se ha lanzado oficialmente al espacio a bordo del cohete SpaceX",
-     "resumo": "Project Suncatcher tiene como objetivo probar los chips de IA de Google en el duro entorno del espacio"
-    }
-   },
-   "resumo_original": "Project Suncatcher is aimed at testing Google's AI chips in the harsh environment of space"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "InfoGripe: SRAG aumenta em crianças no Rio de Janeiro e Sergipe",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/infogripe-srag-aumenta-em-criancas-no-rio-de-janeiro-e-sergipe",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-01T12:56:11+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infogripe_d_0.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "InfoGrip: SARS increases in children in Rio de Janeiro and Sergipe"
-    },
-    "es": {
-     "titulo": "InfoGrip: El SARS aumenta en los niños de Río de Janeiro y Sergipe"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O gene de risco de Alzheimer APOE4 pode ter uma fraqueza reversível",
-   "resumo": "O gene de risco de Alzheimer APOE4 pode danificar ativamente os vasos sanguíneos cerebrais e sabotar os sistemas celulares que removem proteínas nocivas. Os pesquisadores foram capazes de reverter alguns desses efeitos em experimentos, revelando novos alvos promissores...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260930225450.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-01T04:45:26+00:00",
-   "tema": "Genética",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/brain-stroke-x-ray.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Alzheimer’s risk gene APOE4 may have a reversible weakness",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El gen de riesgo de Alzheimer APOE4 puede tener una debilidad reversible",
-     "resumo": "El gen de riesgo de Alzheimer APOE4 puede dañar activamente los vasos sanguíneos cerebrales y sabotear los sistemas celulares que eliminan las proteínas dañinas. Los investigadores pudieron revertir algunos de estos efectos en experimentos, revelando nuevos objetivos prometedores..."
-    }
-   },
-   "resumo_original": "The Alzheimer’s risk gene APOE4 may actively damage brain blood vessels and sabotage the cellular systems that remove harmful proteins. Researchers were able to reverse some of these effects in experiments, revealing promising new targets…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A primeira semana de vida parece crucial para o risco futuro de alergia e eczema",
-   "resumo": "A visão dominante é que não há fases particularmente críticas no desenvolvimento do sistema imunológico, mas um estudo de centenas de bebês sugere o contrário",
-   "url": "https://www.newscientist.com/article/2591816-first-week-of-life-seems-critical-for-future-allergy-and-eczema-risk/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-02T12:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_314823189.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "First week of life seems crucial for future allergy and eczema risk",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La primera semana de vida parece crucial para el riesgo futuro de alergia y eccema",
-     "resumo": "La opinión general es que no hay fases particularmente críticas en el desarrollo del sistema inmunitario, pero un estudio de cientos de bebés sugiere lo contrario"
-    }
-   },
-   "resumo_original": "The mainstream view is that there are no particularly critical phases in the development of the immune system, but a study of hundreds of infants suggests otherwise"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Como ver arco-íris em exoplanetas",
-   "resumo": "Um futuro telescópio da NASA poderia detectar fenômenos atmosféricos em planetas que orbitam outras estrelas",
-   "url": "https://www.scientificamerican.com/article/how-to-see-rainbows-on-exoplanets/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-02T10:45:00+00:00",
+   "data": "2026-10-02T15:30:00+00:00",
    "tema": "Espaço",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/c1e3700a-5f23-41d0-9949-1901fe16e91b/GettyImages-2267244542-WEB.jpg?m=1790906803.553&w=1200",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/a339a8ed-42fb-4017-aabf-4d5cc958bbb8/GettyImages-1168451194-WEB.jpg?m=1790955017.862&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "How to see rainbows on exoplanets",
+   "titulo_original": "Can bioengineered bacteria help terraform Mars?",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Cómo ver arcoíris en exoplanetas",
-     "resumo": "Un futuro telescopio de la NASA podría detectar fenómenos atmosféricos en planetas que orbitan otras estrellas"
+     "titulo": "¿Pueden las bacterias de bioingeniería ayudar a terraformar Marte?",
+     "resumo": "La start-up sin ánimo de lucro Pioneer Labs afirma haber creado el primer «microbio para Marte». \"Otros expertos no están tan seguros"
     }
    },
-   "resumo_original": "A future NASA telescope could spot atmospheric phenomena on planets orbiting other stars"
+   "resumo_original": "The nonprofit start-up Pioneer Labs claims to have made the first-ever “microbe for Mars.” Other experts aren’t so sure"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Matemáticos e IA em batalha nos bastidores sobre o que é verdade",
+   "resumo": "Os modelos de IA estão resolvendo problemas de matemática com ritmo crescente, e uma técnica chamada formalização é fundamental para demonstrar que suas soluções reivindicadas estão realmente corretas. Mas podemos confiar no processo de formalização?",
+   "url": "https://www.newscientist.com/article/2591256-mathematicians-and-ai-are-in-a-behind-the-scenes-battle-over-whats-true/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-02T14:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_314586106.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Mathematicians and AI in behind-the-scenes battle over what’s true",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los matemáticos y la IA en la batalla entre bastidores sobre lo que es verdad",
+     "resumo": "Los modelos de IA están resolviendo problemas matemáticos a un ritmo cada vez mayor, y una técnica llamada formalización es clave para demostrar que sus soluciones son correctas. Pero, ¿podemos confiar en el proceso de formalización?"
+    }
+   },
+   "resumo_original": "AI models are solving mathematics problems with increasing pace, and a technique called formalisation is key to demonstrating that their claimed solutions are indeed correct. But can we trust the formalisation process?"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Risco de doença neurodegenerativa associado à expressão gênica em monócitos periféricos através de ancestrais",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s42003-026-10865-x",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-10-02T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "Neurodegenerative disease risk associated with gene expression in peripheral monocytes across ancestries",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Riesgo de enfermedad neurodegenerativa asociado con la expresión génica en monocitos periféricos de todas las ascendencias"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "2026 foi um ano quente recorde para os EUA - só pode piorar",
+   "resumo": "Até agora, este ano tem sido ridiculamente quente. Se continuar assim, 2026 pode estabelecer um novo recorde preocupante",
+   "url": "https://www.scientificamerican.com/article/2026-has-been-a-record-hot-year-for-the-u-s-it-can-only-get-worse/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-02T18:14:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/m/6d19f55df9235c32/original/Sun_red_sky_global_warming.jpg?m=1740507049.4&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "2026 has been a record hot year for the U.S.—it can only get worse",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "2026 ha sido un año caluroso récord para los EE. UU., solo puede empeorar",
+     "resumo": "Hasta ahora, este año ha sido ridículamente caluroso. Si se mantiene así, 2026 podría establecer un nuevo récord aleccionador"
+    }
+   },
+   "resumo_original": "So far, this year has been ridiculously hot. If it stays that way, 2026 could set a sobering new record"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Mamífero fóssil com dentes semelhantes a répteis muda a imagem da nossa evolução",
+   "resumo": "Ao contrário da maioria dos mamíferos modernos, que recebem apenas dois conjuntos de dentes em sua vida, uma espécie antiga do Cretáceo, encontrada na China, parece ter tido a capacidade de substituir seus dentes ao longo de sua vida",
+   "url": "https://www.newscientist.com/article/2591803-fossil-mammal-with-reptile-like-teeth-changes-picture-of-our-evolution/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-02T16:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 4,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_314972990.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Fossil mammal with reptile-like teeth changes picture of our evolution",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Un mamífero fósil con dientes de reptil cambia el panorama de nuestra evolución",
+     "resumo": "A diferencia de la mayoría de los mamíferos modernos, que obtienen solo dos juegos de dientes en su vida, una especie antigua del Cretácico, que se encuentra en China, parece haber tenido la capacidad de reemplazar sus dientes a lo largo de su vida"
+    }
+   },
+   "resumo_original": "Unlike most modern mammals, which get just two sets of teeth in their lifetime, an ancient species from the Cretaceous, found in China, appears to have had the ability to replace its teeth throughout its life"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "‘Aprender sobre física mudou minha vida’: o autor Hernan Diaz em seu novo romance Ply",
+   "resumo": "O autor vencedor do Prêmio Pulitzer se junta a nós para falar sobre seu tempo visitando o CERN e comunicando a física quântica na ficção.",
+   "url": "https://www.nature.com/articles/d41586-026-03057-4",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-02T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "",
+   "titulo_original": "‘Learning about physics changed my life’: author Hernan Diaz on his new novel Ply",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "‘Aprender sobre física me cambió la vida’: el autor Hernán Díaz en su nueva novela Ply",
+     "resumo": "El autor ganador del Premio Pulitzer se une a nosotros para hablar sobre su tiempo visitando el CERN y comunicando la física cuántica en la ficción."
+    }
+   },
+   "resumo_original": "The Pulitzer-Prize-winning author joins us to talk about his time visiting CERN and communicating quantum physics in fiction."
   },
   {
    "tipo": "noticia",
@@ -317,27 +356,6 @@
     }
    },
    "resumo_original": "Psychologist Mirta Galesic discusses an increase in hateful comments online, and the science-backed way to react."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Fóssil impressionante mostra o caminho distinto dos dinossauros para o voo",
-   "resumo": "Um fóssil de uma espécie anteriormente desconhecida com membros emplumados, descoberto na China, acrescenta evidências de que dinossauros e pássaros evoluíram para voar mais de uma vez.",
-   "url": "https://www.nature.com/articles/d41586-026-03126-8",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-02T00:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 4,
-   "imagem": "",
-   "titulo_original": "Stunning fossil shows dinosaurs' distinctive path to flight",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Impresionante fósil muestra el camino distintivo de los dinosaurios hacia el vuelo",
-     "resumo": "Un fósil de una especie previamente desconocida con extremidades plumosas, desenterrado en China, se suma a la evidencia de que los dinosaurios y las aves evolucionaron volando más de una vez."
-    }
-   },
-   "resumo_original": "A fossil from a previously undiscovered species with feathery limbs, unearthed in China, adds to evidence that dinosaurs and birds evolved flight more than once."
   }
  ],
  "artigos": [
@@ -391,7 +409,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Toxin-induced coagulopathy following a MacMahon viper bite.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Coagulopatía inducida por toxinas después de una mordedura de víbora de MacMahon."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -512,14 +535,16 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Telomere length analysis using qPCR in aplastic anemia: prevalence and predictive value for germline mutation status.",
+   "titulo": "Análise do comprimento dos telômeros usando qPCR na anemia aplástica: prevalência e valor preditivo para o status de mutação da linhagem germinativa.",
    "autores": "Raina S, Jain A, Thakur V, Balakrishnan A, Jamwal M, Bhatia P, Bansal D, Malhotra P, Das R, Sreedharanunni S.",
    "revista": "Blood Res",
    "data": "2026-10-01T00:00:00+00:00",
    "doi": "10.1007/s44313-026-00182-x",
    "url": "https://doi.org/10.1007/s44313-026-00182-x",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Telomere length analysis using qPCR in aplastic anemia: prevalence and predictive value for germline mutation status.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -536,14 +561,16 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Point-of-care models for genetic testing among patients at risk of hereditary cancer: A systematic review.",
+   "titulo": "Modelos de ponto de atendimento para testes genéticos entre pacientes em risco de câncer hereditário: uma revisão sistemática.",
    "autores": "Heald B, LaDuca H, Hartzfeld D, Cuyun Carter G, White KL, Johnson HA.",
    "revista": "Cancer Epidemiol Biomarkers Prev",
    "data": "2026-10-01T00:00:00+00:00",
    "doi": "10.1158/1055-9965.epi-26-0615",
    "url": "https://doi.org/10.1158/1055-9965.epi-26-0615",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Point-of-care models for genetic testing among patients at risk of hereditary cancer: A systematic review.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -805,9 +832,7 @@
   "ScienceDaily · Saúde",
   "Europe PMC"
  ],
- "erros": [
-  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
- ],
+ "erros": [],
  "mostradas": {
   "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-09-24T17:09:08.714347+00:00",
   "para ganhar um nobel o brasil precisa de mais gente fazendo pesquisa": "2026-09-24T17:09:08.714347+00:00",
@@ -1056,6 +1081,17 @@
   "first week of life seems crucial for future allergy and eczema risk": "2026-10-02T12:51:48.832062+00:00",
   "how to see rainbows on exoplanets": "2026-10-02T12:51:48.832062+00:00",
   "how to respond to hate speech without fuelling it further": "2026-10-02T12:51:48.832062+00:00",
-  "stunning fossil shows dinosaurs distinctive path to flight": "2026-10-02T12:51:48.832062+00:00"
+  "stunning fossil shows dinosaurs distinctive path to flight": "2026-10-02T12:51:48.832062+00:00",
+  "sus passa a oferecer tres novos medicamentos de alta tecnologia para o tratamento de cancer pulmonar": "2026-10-02T18:32:15.018849+00:00",
+  "usp seleciona voluntarios pos avc para estudo sobre reabilitacao motora em casa": "2026-10-02T18:32:15.018849+00:00",
+  "canal saude estreia nova temporada do ligado em saude": "2026-10-02T18:32:15.018849+00:00",
+  "pronta para a quarta onda": "2026-10-02T18:32:15.018849+00:00",
+  "medicamento para esquistossomose em criancas recebe aprovacao da anvisa": "2026-10-02T18:32:15.018849+00:00",
+  "can bioengineered bacteria help terraform mars": "2026-10-02T18:32:15.018849+00:00",
+  "mathematicians and ai in behind the scenes battle over whats true": "2026-10-02T18:32:15.018849+00:00",
+  "neurodegenerative disease risk associated with gene expression in peripheral monocytes across ancestries": "2026-10-02T18:32:15.018849+00:00",
+  "2026 has been a record hot year for the u s it can only get worse": "2026-10-02T18:32:15.018849+00:00",
+  "fossil mammal with reptile like teeth changes picture of our evolution": "2026-10-02T18:32:15.018849+00:00",
+  "learning about physics changed my life author hernan diaz on his new novel ply": "2026-10-02T18:32:15.018849+00:00"
  }
 }
