@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-02T18:32:15.018849+00:00",
+ "atualizado_em": "2026-10-02T23:04:48.572333+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -24,6 +24,32 @@
     "es": {
      "titulo": "Sus ahora ofrece tres nuevos medicamentos de alta tecnología para el tratamiento del cáncer de pulmón",
      "resumo": "Brigatinib, gefitinib y durvalumab son nuevos fármacos indicados para diferentes etapas del tratamiento de la enfermedad"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Protocolo da USP orienta análise de variantes genéticas para diagnóstico de doenças raras",
+   "resumo": "Material de acesso aberto pretende auxiliar profissionais na interpretação de variantes genéticas diante da ampliação do sequenciamento pelo SUS",
+   "url": "https://jornal.usp.br/radio-usp/protocolo-da-usp-orienta-analise-de-variantes-geneticas-para-diagnostico-de-doencas-raras/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-02T18:59:23+00:00",
+   "tema": "Genética",
+   "relevancia": 12,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/02/20200324_genes1.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "USP protocol guides analysis of genetic variants for diagnosis of rare diseases",
+     "resumo": "Open access material intends to assist professionals in the interpretation of genetic variants in view of the expansion of sequencing by sus"
+    },
+    "es": {
+     "titulo": "El protocolo de la USP guía el análisis de variantes genéticas para el diagnóstico de enfermedades raras",
+     "resumo": "El material de acceso abierto tiene la intención de ayudar a los profesionales en la interpretación de variantes genéticas en vista de la expansión de la secuenciación por sus"
     }
    }
   },
@@ -55,27 +81,101 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Projeto usa dados do SUS para estimar risco de violência contra a mulher",
-   "resumo": "Trabalho premiado internacionalmente mapeou as áreas do Brasil com maior índice de violência física, sexual e psicológica; escolaridade, rede de apoio e acesso a serviços de saúde estiveram associados a maior risco",
-   "url": "https://jornal.usp.br/ciencias/projeto-usa-dados-do-sus-para-estimar-risco-de-violencia-contra-a-mulher/",
-   "fonte": "Jornal da USP",
+   "titulo": "Em visita à Suécia, Centro de Estudos em Biogás e Bioprodutos fortalece cooperação internacional",
+   "resumo": "Estrutura do BSRC da Universidade Linköping representa uma inspiração para o desenvolvimento da iniciativa brasileira",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/02/em-visita-a-suecia-centro-de-estudos-em-biogas-e-bioprodutos-fortalece-cooperacao-internacional/",
+   "fonte": "Jornal da Unicamp",
    "idioma": "pt",
-   "data": "2026-10-02T11:21:33+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20260930_mulhercodigos.jpg",
+   "data": "2026-10-02T19:30:07+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261002_Biogas_Capa.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Project uses sus data to estimate risk of violence against women",
-     "resumo": "Internationally awarded work mapped the areas of Brazil with the highest rate of physical, sexual and psychological violence; education, support network and access to health services were associated with higher risk"
+     "titulo": "On a visit to Sweden, the Center for Studies in Biogas and Bioproducts strengthens international cooperation",
+     "resumo": "Structure of the BSRC of Linköping University represents an inspiration for the development of the Brazilian initiative"
     },
     "es": {
-     "titulo": "El proyecto utiliza datos del sus para estimar el riesgo de violencia contra las mujeres",
-     "resumo": "El trabajo premiado internacionalmente mapeó las áreas de Brasil con la mayor tasa de violencia física, sexual y psicológica; la educación, la red de apoyo y el acceso a los servicios de salud se asociaron con un mayor riesgo"
+     "titulo": "En una visita a Suecia, el Centro de Estudios en Biogás y Bioproductos refuerza la cooperación internacional",
+     "resumo": "La estructura del BSRC de la Universidad de Linköping representa una inspiración para el desarrollo de la iniciativa brasileña"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Novo instrumento no acelerador Sirius permite observar células solares em funcionamento",
+   "resumo": "Desenvolvida no CNPEM com apoio da FAPESP, a plataforma utiliza microscopia de raios X para investigar materiais fotovoltaicos sob condições reais de temperatura, luz e umidade",
+   "url": "https://agencia.fapesp.br/novo-instrumento-no-acelerador-sirius-permite-observar-celulas-solares-em-funcionamento/59318",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-02T23:04:48.572333+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59318.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "New instrument on Sirius accelerator allows to observe solar cells in operation",
+     "resumo": "Developed at CNPEM with support from FAPESP, the platform uses X-ray microscopy to investigate photovoltaic materials under real conditions of temperature, light and humidity"
+    },
+    "es": {
+     "titulo": "El nuevo instrumento en el acelerador Sirius permite observar las células solares en funcionamiento",
+     "resumo": "Desarrollada en CNPEM con el apoyo de la FAPESP, la plataforma utiliza microscopía de rayos X para investigar materiales fotovoltaicos en condiciones reales de temperatura, luz y humedad"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "VÍDEO | Dieta rica em açúcar agrava a asma",
+   "resumo": "Pesquisa financiada pela FAPESP e conduzida por cientistas da Unifesp e da UFABC observou rápida exacerbação da inflamação pulmonar e aumento do muco nas vias respiratórias em camundongos que consumiram leite condensado por duas semanas, o…",
+   "url": "https://www.youtube.com/watch?v=6wJasLuj-Fc",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-02T23:04:48.572333+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "VIDEO | Diet rich in acid aggravates asthma",
+     "resumo": "Research funded by FAPESP and conducted by scientists from Unifesp and UFABC observed a rapid exacerbation of lung inflammation and increased mucus in the airways in mice that consumed condensed milk for two weeks, the…"
+    },
+    "es": {
+     "titulo": "VIDEO | Una dieta rica en ácidos agrava el asma",
+     "resumo": "La investigación financiada por la FAPESP y realizada por científicos de la Unifesp y la UFABC observó una rápida exacerbación de la inflamación pulmonar y un aumento de la mucosidad en las vías respiratorias en ratones que consumieron leche condensada durante dos semanas, el..."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Conheça o laboratório que transforma plantas em tecnologia",
+   "resumo": "Inovalab visita o Centro Pluridisciplinar de Pesquisas Químicas, Biológicas e Agrícolas da Unicamp",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/02/conheca-o-laboratorio-que-transforma-plantas-em-tecnologia/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-02T20:34:36+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261002_Laboratorio_CPQBA_div_Capa.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Meet the lab that turns plants into technology",
+     "resumo": "Inovalab visits the Pluridisciplinary Center for Chemical, Biological and Agricultural Research at Unicamp"
+    },
+    "es": {
+     "titulo": "Conoce el laboratorio que convierte las plantas en tecnología",
+     "resumo": "Inovalab visita el Centro Pluridisciplinario de Investigación Química, Biológica y Agrícola de la Unicamp"
     }
    }
   },
@@ -98,101 +198,6 @@
     "es": {
      "titulo": "Seminarios web regionales del Consejo Mundial de Investigación",
      "resumo": "Los desafíos relacionados con la producción de conocimiento y el financiamiento de la ciencia se discutirán en dos seminarios que reunirán a investigadores y agencias de financiamiento"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Canal Saúde estreia nova temporada do 'Ligado em Saúde'",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/canal-saude-estreia-nova-temporada-do-ligado-em-saude",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-02T17:57:18+00:00",
-   "tema": "Saúde",
-   "relevancia": 7,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/bouer.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Health Channel premieres new season of 'Ligado em Saúde'"
-    },
-    "es": {
-     "titulo": "Health Channel estrena nueva temporada de 'Ligado em Saúde'"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Pronta para a quarta onda",
-   "resumo": "Em seis décadas de existência, universidade experimentou três fases de desenvolvimento e está às portas de mais uma",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/02/pronta-para-a-quarta-onda/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-02T15:12:36+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Man_202610025_Aniversario-Unicamp-60-anos_Capa.jpg",
-   "foco": {
-    "inteira": true
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Ready for the fourth wave",
-     "resumo": "In six decades of existence, the university has experienced three phases of development and is on the doorstep of another"
-    },
-    "es": {
-     "titulo": "Listo para la cuarta ola",
-     "resumo": "En seis décadas de existencia, la universidad ha experimentado tres fases de desarrollo y está a las puertas de otra"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Medicamento para esquistossomose em crianças recebe aprovação da Anvisa",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/medicamento-para-esquistossomose-em-criancas-recebe-aprovacao-da-anvisa",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-02T14:41:55+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/medicamento_d.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Drug for schistosomiasis in children receives approval from Anvisa"
-    },
-    "es": {
-     "titulo": "El medicamento para la esquistosomiasis en niños recibe la aprobación de Anvisa"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Lançamento do livro A ciência do Universo",
-   "resumo": "Obra do físico Rogério Rosenfeld aborda desde os primeiros modelos cosmológicos até os experimentos mais recentes",
-   "url": "https://agencia.fapesp.br/lancamento-do-livro-a-ciencia-do-universo/59324",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-02T12:51:48.832062+00:00",
-   "tema": "Espaço",
-   "relevancia": 7,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Launch of the book The Science of the Universe",
-     "resumo": "Physicist Rogério Rosenfeld's work covers from the first cosmological models to the most recent experiments"
-    },
-    "es": {
-     "titulo": "Lanzamiento del libro La Ciencia del Universo",
-     "resumo": "El trabajo del físico Rogério Rosenfeld abarca desde los primeros modelos cosmológicos hasta los experimentos más recientes"
     }
    }
   },
@@ -248,47 +253,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Risco de doença neurodegenerativa associado à expressão gênica em monócitos periféricos através de ancestrais",
-   "resumo": "",
-   "url": "https://www.nature.com/articles/s42003-026-10865-x",
-   "fonte": "Nature · Genética",
-   "idioma": "en",
-   "data": "2026-10-02T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Neurodegenerative disease risk associated with gene expression in peripheral monocytes across ancestries",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Riesgo de enfermedad neurodegenerativa asociado con la expresión génica en monocitos periféricos de todas las ascendencias"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "2026 foi um ano quente recorde para os EUA - só pode piorar",
-   "resumo": "Até agora, este ano tem sido ridiculamente quente. Se continuar assim, 2026 pode estabelecer um novo recorde preocupante",
-   "url": "https://www.scientificamerican.com/article/2026-has-been-a-record-hot-year-for-the-u-s-it-can-only-get-worse/",
+   "titulo": "Um iceberg gigante poderia realmente quebrar a Groenlândia? Cientistas verificam o novo filme de Tom Cruise, Digger",
+   "resumo": "No filme, um iceberg gigante da Groenlândia flutua no mar, colocando milhões em perigo - mas isso é possível?",
+   "url": "https://www.scientificamerican.com/article/could-a-giant-iceberg-really-break-off-greenland-scientists-check-tom-cruises-new-movie-digger/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-02T18:14:00+00:00",
+   "data": "2026-10-02T19:00:00+00:00",
    "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/m/6d19f55df9235c32/original/Sun_red_sky_global_warming.jpg?m=1740507049.4&w=1200",
+   "imagem": "https://static.scientificamerican.com/dam/asset/f280e664-564e-4557-aa89-d73b7b92e22f/DIGGER-1.jpeg?m=1790964388.436&w=1200",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 0
    },
-   "titulo_original": "2026 has been a record hot year for the U.S.—it can only get worse",
+   "titulo_original": "Could a giant iceberg really break off Greenland? Scientists check Tom Cruise’s new movie Digger",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "2026 ha sido un año caluroso récord para los EE. UU., solo puede empeorar",
-     "resumo": "Hasta ahora, este año ha sido ridículamente caluroso. Si se mantiene así, 2026 podría establecer un nuevo récord aleccionador"
+     "titulo": "¿Podría un iceberg gigante realmente desprenderse de Groenlandia? Los científicos comprueban la nueva película de Tom Cruise, Digger",
+     "resumo": "En la película, un iceberg gigante de Groenlandia flota en el mar, poniendo en peligro a millones, pero ¿es eso posible?"
     }
    },
-   "resumo_original": "So far, this year has been ridiculously hot. If it stays that way, 2026 could set a sobering new record"
+   "resumo_original": "In the movie, a giant iceberg from Greenland floats into the sea, imperiling millions—but is that even possible?"
   },
   {
    "tipo": "noticia",
@@ -314,48 +300,6 @@
     }
    },
    "resumo_original": "Unlike most modern mammals, which get just two sets of teeth in their lifetime, an ancient species from the Cretaceous, found in China, appears to have had the ability to replace its teeth throughout its life"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "‘Aprender sobre física mudou minha vida’: o autor Hernan Diaz em seu novo romance Ply",
-   "resumo": "O autor vencedor do Prêmio Pulitzer se junta a nós para falar sobre seu tempo visitando o CERN e comunicando a física quântica na ficção.",
-   "url": "https://www.nature.com/articles/d41586-026-03057-4",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-02T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "",
-   "titulo_original": "‘Learning about physics changed my life’: author Hernan Diaz on his new novel Ply",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "‘Aprender sobre física me cambió la vida’: el autor Hernán Díaz en su nueva novela Ply",
-     "resumo": "El autor ganador del Premio Pulitzer se une a nosotros para hablar sobre su tiempo visitando el CERN y comunicando la física cuántica en la ficción."
-    }
-   },
-   "resumo_original": "The Pulitzer-Prize-winning author joins us to talk about his time visiting CERN and communicating quantum physics in fiction."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Como responder ao discurso de ódio sem alimentá-lo ainda mais",
-   "resumo": "A psicóloga Mirta Galesic discute um aumento nos comentários de ódio online e a maneira apoiada pela ciência de reagir.",
-   "url": "https://www.nature.com/articles/d41586-026-03058-3",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-02T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "",
-   "titulo_original": "How to respond to hate speech without fuelling it further",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Cómo responder al discurso de odio sin alimentarlo aún más",
-     "resumo": "La psicóloga Mirta Galesic analiza el aumento de los comentarios de odio en línea y la forma de reaccionar respaldada por la ciencia."
-    }
-   },
-   "resumo_original": "Psychologist Mirta Galesic discusses an increase in hateful comments online, and the science-backed way to react."
   }
  ],
  "artigos": [
@@ -370,7 +314,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Paired tumor-normal targeted sequencing supports clonal independence of multiple primary malignancies in patients with gastrointestinal stromal tumors.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La secuenciación dirigida tumoral normal emparejada apoya la independencia clonal de múltiples neoplasias malignas primarias en pacientes con tumores del estroma gastrointestinal."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -383,7 +332,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Triptolide as a Chemosensitizer in Human Papillomavirus Head and Neck Squamous Cell Carcinoma Through TP53.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Triptolide as a Chemosensitizer in Human Papillomavirus Head and Neck Squamous Cell Carcinoma Through TP53."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -396,7 +350,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Alpha-catenin Mutation-associated Synchronous Follicular Thyroid Carcinoma and Papillary Thyroid Carcinoma With Numerous Adenomatoid Nodules.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Carcinoma de tiroides folicular síncrono asociado a la mutación de alfa-catenina y carcinoma de tiroides papilar con numerosos nódulos adenomatoides."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -427,7 +386,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Venetoclax consolidation deepens response and enables measurable residual disease-guided finite therapy in BTK inhibitor-treated chronic lymphocytic leukemia.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La consolidación de Venetoclax profundiza la respuesta y permite una terapia finita guiada por la enfermedad residual medible en la leucemia linfocítica crónica tratada con inhibidores de BTK."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -440,7 +404,12 @@
    "acesso_aberto": false,
    "tema": "Saúde",
    "titulo_original": "Envenomation by a Razi's Viper, Macrovipera razii (Serpentes: Viperidae) in Iran: A Neglected Public Health Threat, Report of Two Cases, and Clinical Implications.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Envenenamiento por una víbora de Razi, Macrovipera razii (Serpentes: Viperidae) en Irán: una amenaza para la salud pública desatendida, informe de dos casos e implicaciones clínicas."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -453,7 +422,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "At the heart of unmet need: TP53 myeloid neoplasms.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "En el corazón de la necesidad insatisfecha: neoplasias mieloides TP53."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -466,7 +440,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Primary Breast Sarcoma in Pediatric, Adolescent, and Young Adult Patients: A Single-Institution Review.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Sarcoma de mama primario en pacientes pediátricas, adolescentes y adultas jóvenes: una revisión de una sola institución."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -479,7 +458,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "A membrane-penetrating modified ascites-derived peptide, TAT-CPAP1, sensitizes TP53 wild-type ovarian cancer cells to platinum-based therapy through targeting the NOLC1-MDM2/MDM4 axis.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Un péptido derivado de ascitis modificado que penetra en la membrana, TAT-CPAP1, sensibiliza las células de cáncer de ovario de tipo salvaje TP53 a la terapia basada en platino al dirigirse al eje NOLC1-MDM2/MDM4."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -492,7 +476,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Prevalence of pathogenic germline variants and indications for testing in a diverse community-based endometrial cancer cohort.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Prevalencia de variantes patógenas de la línea germinal e indicaciones para las pruebas en una cohorte diversa de cáncer de endometrio basada en la comunidad."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -505,7 +494,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Functional Classification of Monoallelic TP53 Mutations Refines Prognostic Stratification in Myelodysplastic Neoplasms.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La clasificación funcional de las mutaciones monoalélicas de TP53 refina la estratificación pronóstica en las neoplasias mielodisplásicas."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -518,7 +512,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Loss of the tumor suppressor p53 generates a signaling gradient that drives epithelial clonal expansion.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La pérdida del supresor tumoral p53 genera un gradiente de señalización que impulsa la expansión clonal epitelial."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -531,7 +530,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Genomic and clinical determinants of response to Azacitidine plus venetoclax in acute myeloid leukemia: Results from the HM-SCREEN-Japan 02 study.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Determinantes genómicos y clínicos de la respuesta a la azacitidina más venetoclax en la leucemia mieloide aguda: resultados del estudio HM-SCREEN-Japan 02."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -544,7 +548,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Telomere length analysis using qPCR in aplastic anemia: prevalence and predictive value for germline mutation status.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Análisis de la longitud de los telómeros utilizando qPCR en la anemia aplásica: prevalencia y valor predictivo para el estado de mutación de la línea germinal."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -557,7 +566,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Genomic alterations and treatment define spatiotemporal patterns of glioblastoma recurrence.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las alteraciones genómicas y el tratamiento definen los patrones espaciotemporales de recurrencia del glioblastoma."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -574,14 +588,16 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Association of TP53 Mutational Status and Survival in Anaplastic Thyroid Cancer Treated with Dabrafenib Plus Trametinib.",
+   "titulo": "Associação do Status Mutacional TP53 e Sobrevivência no Câncer Anaplásico de Tireoide Tratado com Dabrafenibe Mais Trametinibe.",
    "autores": "Rodrigues R, Nunes da Silva T, Saramago A, Cavaco D, André S, Dias R, Rito M, Leite V, Cavaco BM.",
    "revista": "Eur Thyroid J",
    "data": "2026-10-01T00:00:00+00:00",
    "doi": "10.1530/etj-26-0135",
    "url": "https://doi.org/10.1530/etj-26-0135",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Association of TP53 Mutational Status and Survival in Anaplastic Thyroid Cancer Treated with Dabrafenib Plus Trametinib.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -832,7 +848,10 @@
   "ScienceDaily · Saúde",
   "Europe PMC"
  ],
- "erros": [],
+ "erros": [
+  "Nature: not well-formed (invalid token): line 14, column 4",
+  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
+ ],
  "mostradas": {
   "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-09-24T17:09:08.714347+00:00",
   "para ganhar um nobel o brasil precisa de mais gente fazendo pesquisa": "2026-09-24T17:09:08.714347+00:00",
@@ -1092,6 +1111,10 @@
   "neurodegenerative disease risk associated with gene expression in peripheral monocytes across ancestries": "2026-10-02T18:32:15.018849+00:00",
   "2026 has been a record hot year for the u s it can only get worse": "2026-10-02T18:32:15.018849+00:00",
   "fossil mammal with reptile like teeth changes picture of our evolution": "2026-10-02T18:32:15.018849+00:00",
-  "learning about physics changed my life author hernan diaz on his new novel ply": "2026-10-02T18:32:15.018849+00:00"
+  "learning about physics changed my life author hernan diaz on his new novel ply": "2026-10-02T18:32:15.018849+00:00",
+  "protocolo da usp orienta analise de variantes geneticas para diagnostico de doencas raras": "2026-10-02T23:04:48.572333+00:00",
+  "em visita a suecia centro de estudos em biogas e bioprodutos fortalece cooperacao internacional": "2026-10-02T23:04:48.572333+00:00",
+  "conheca o laboratorio que transforma plantas em tecnologia": "2026-10-02T23:04:48.572333+00:00",
+  "could a giant iceberg really break off greenland scientists check tom cruises new movie digger": "2026-10-02T23:04:48.572333+00:00"
  }
 }
