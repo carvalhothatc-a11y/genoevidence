@@ -60,7 +60,7 @@ export default async function IntegrationsPage() {
         : `Disponível na página Ajuda e no laboratório quando a configuração estiver completa. ${assistant.reason ?? ""} Sem isso, nenhuma chamada é feita.`,
       dataSent: "Somente as mensagens digitadas na conversa com o Geninho. Não são enviados projetos, arquivos, referências, nome ou e-mail; a conversa não é gravada no GenoLab.",
       verified: assistant.configured
-        ? "Chave presente no servidor. A resposta real da API depende da chave e da conta da Anthropic."
+        ? "Chamada real testada em 02/10/2026: pergunta enviada pela página Ajuda e resposta recebida em fluxo. Uso limitado a 20 perguntas a cada 10 min e 150 por dia por pessoa."
         : "Estado “não configurado” verificado. Chamadas reais à API ainda não foram testadas neste servidor.",
     },
     {
