@@ -38,7 +38,8 @@
     noticias: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/>',
     artigos: '<rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><circle cx="17.25" cy="17.25" r="3.75"/>',
     revistas: '<path d="M5 4v16M10 4v16"/><path d="M14.5 5.5l4.2 14"/><path d="M3 20h18"/>',
-    sobre: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5h.01"/>'
+    sobre: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5h.01"/>',
+    cadeado: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>'
   };
   const svg = n => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONES[n] + "</svg>";
   const ABAS = [["inicio", "Início", ""], ["noticias", "Notícias", "noticias/"], ["artigos", "Temas", "artigos/"], ["revistas", "Revistas", "revistas/"]];
@@ -51,6 +52,8 @@
     topo.innerHTML = '<div class="appbar-in' + (voltar ? " com-voltar" : "") + '">' + voltar + '<button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir o menu" aria-expanded="false" aria-controls="gaveta"><span></span><span></span><span></span></button>' +
       '<a class="logo" href="' + RAIZ + '" aria-label="GenoEvidence, início"><i></i><b>GenoEvidence</b></a>' +
       '<nav class="tabs-top" aria-label="Seções do app">' + ABAS.map(([n, l, h]) => '<a class="tab-' + n + '" href="' + RAIZ + h + '"' + atual(n) + ">" + l + "</a>").join("") + "</nav>" +
+      // GenoEvidence Lab: entrada para o app à parte (acesso restrito); a página lab/ abre o Lab em outra aba
+      '<a class="lab-link" href="' + RAIZ + 'lab/"' + atual("lab") + ' aria-label="GenoEvidence Lab, acesso restrito">' + svg("cadeado") + '<span class="lab-txt"><b>Lab</b></span></a>' +
       '<a class="icon-btn" href="' + RAIZ + 'sobre/" aria-label="Sobre o GenoEvidence"' + atual("sobre") + ">" + svg("sobre") + "</a></div>";
     I.montarSeletor($(".appbar-in", topo), $(".icon-btn", topo));
   }
@@ -78,7 +81,8 @@
       { nome: "Início", href: RAIZ }, { nome: "Em destaque", href: RAIZ + "#destaques", extra: "pesquisadoras" },
       { nome: "Notícias da ciência", href: RAIZ + "noticias/", extra: "hoje" }, { nome: "Temas", href: RAIZ + "artigos/", extra: "artigos estudos" },
       { nome: "Revistas", href: RAIZ + "revistas/", extra: "publicações" },
-      { nome: "Sobre o app", href: RAIZ + "sobre/", extra: "instalar" }];
+      { nome: "Sobre o app", href: RAIZ + "sobre/", extra: "instalar" },
+      { nome: "GenoEvidence Lab (acesso restrito)", href: RAIZ + "lab/", extra: "laboratório virtual experimento pcr bancada" }];
     // tema ou pesquisadora: ao tocar, abre uma ramificação com os estudos dela(e)
     const ramo = i => '<div class="gv-ramo" data-busca="' + esc((i.nome + " " + (i.extra || "")).toLowerCase()) + '" style="--c:' + esc(i.cor) + '">' +
       '<button type="button" class="gv-item gv-abre" aria-expanded="false"><i></i><span>' + esc(i.nome) + "</span><em>" + i.estudos.length + '</em><b class="gv-seta" aria-hidden="true">›</b></button>' +
