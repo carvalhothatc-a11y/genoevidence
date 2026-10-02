@@ -1,53 +1,6 @@
 {
- "atualizado_em": "2026-10-01T23:57:53.529959+00:00",
+ "atualizado_em": "2026-10-02T05:53:38.561080+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "Nova ferramenta de IA prevê rota e intensidade de tempestades em curtíssimo prazo",
-   "resumo": "Sistema desenvolvido na USP cruza dados de radares com rede neural para rastrear precipitações a cada cinco minutos; software pode ser executado em notebooks convencionais",
-   "url": "https://agencia.fapesp.br/nova-ferramenta-de-ia-preve-rota-e-intensidade-de-tempestades-em-curtissimo-prazo/59311",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-01T06:10:04.803724+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59311.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "New AI tool predicts storm path and intensity in the very short term",
-     "resumo": "System developed at USP crosses radar data with neural network to track precipitation every five minutes; software can run on conventional notebooks"
-    },
-    "es": {
-     "titulo": "Una nueva herramienta de IA predice la trayectoria y la intensidad de las tormentas a muy corto plazo",
-     "resumo": "El sistema desarrollado en la USP cruza los datos de radar con la red neuronal para rastrear la precipitación cada cinco minutos; el software puede ejecutarse en portátiles convencionales"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O câncer de pâncreas pode ser interrompido? A tática radical aumenta as esperanças",
-   "resumo": "Com as perspectivas de novos tratamentos em alta, os pesquisadores estão procurando maneiras de aumentar a sobrevida tratando a doença precocemente.",
-   "url": "https://www.nature.com/articles/d41586-026-03119-7",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-01T00:00:00+00:00",
-   "tema": "Câncer",
-   "relevancia": 9,
-   "imagem": "",
-   "titulo_original": "Can pancreatic cancer be stopped in its tracks? Radical tactic raises hopes",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿Se puede detener el cáncer de páncreas? La táctica radical aumenta las esperanzas",
-     "resumo": "Con las perspectivas de nuevos tratamientos en su punto más alto, los investigadores están buscando formas de aumentar la supervivencia tratando la enfermedad a tiempo."
-    }
-   },
-   "resumo_original": "With prospects for new treatments at an all-time high, researchers are looking for ways to boost survival by treating the disease early."
-  },
   {
    "tipo": "noticia",
    "titulo": "Envoltório de placenta acelera a recuperação da ereção após cirurgia de próstata",
@@ -75,27 +28,92 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Agência FAPESP estreia novo layout",
-   "resumo": "Com estética mais limpa, portal aprimora o conforto visual do leitor e confere mais protagonismo a fotos, infográficos e vídeos",
-   "url": "https://agencia.fapesp.br/agencia-fapesp-estreia-novo-layout/59317",
+   "titulo": "O câncer de pâncreas pode ser interrompido? A tática radical aumenta as esperanças",
+   "resumo": "Com as perspectivas de novos tratamentos em alta, os pesquisadores estão procurando maneiras de aumentar a sobrevida tratando a doença precocemente.",
+   "url": "https://www.nature.com/articles/d41586-026-03119-7",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-01T00:00:00+00:00",
+   "tema": "Câncer",
+   "relevancia": 8,
+   "imagem": "",
+   "titulo_original": "Can pancreatic cancer be stopped in its tracks? Radical tactic raises hopes",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Se puede detener el cáncer de páncreas? La táctica radical aumenta las esperanzas",
+     "resumo": "Con las perspectivas de nuevos tratamientos en su punto más alto, los investigadores están buscando formas de aumentar la supervivencia tratando la enfermedad a tiempo."
+    }
+   },
+   "resumo_original": "With prospects for new treatments at an all-time high, researchers are looking for ways to boost survival by treating the disease early."
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Novo instrumento no acelerador Sirius permite observar células solares em funcionamento",
+   "resumo": "Desenvolvida no CNPEM com apoio da FAPESP, a plataforma utiliza microscopia de raios X para investigar materiais fotovoltaicos sob condições reais de temperatura, luz e umidade",
+   "url": "https://agencia.fapesp.br/novo-instrumento-no-acelerador-sirius-permite-observar-celulas-solares-em-funcionamento/59318",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-01T23:57:53.529959+00:00",
+   "data": "2026-10-02T05:53:38.561080+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59317.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59318.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Agência FAPESP debuts new layout",
-     "resumo": "With a cleaner aesthetic, portal improves the visual comfort of the reader and gives more prominence to photos, infographics and videos"
+     "titulo": "New instrument on Sirius accelerator allows to observe solar cells in operation",
+     "resumo": "Developed at CNPEM with support from FAPESP, the platform uses X-ray microscopy to investigate photovoltaic materials under real conditions of temperature, light and humidity"
     },
     "es": {
-     "titulo": "Agência FAPESP estrena nueva maquetación",
-     "resumo": "Con una estética más limpia, portal mejora la comodidad visual del lector y da más protagonismo a las fotos, infografías y vídeos"
+     "titulo": "El nuevo instrumento en el acelerador Sirius permite observar las células solares en funcionamiento",
+     "resumo": "Desarrollada en CNPEM con el apoyo de la FAPESP, la plataforma utiliza microscopía de rayos X para investigar materiales fotovoltaicos en condiciones reales de temperatura, luz y humedad"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "VÍDEO | Dieta rica em açúcar agrava a asma",
+   "resumo": "Pesquisa financiada pela FAPESP e conduzida por cientistas da Unifesp e da UFABC observou rápida exacerbação da inflamação pulmonar e aumento do muco nas vias respiratórias em camundongos que consumiram leite condensado por duas semanas, o…",
+   "url": "https://www.youtube.com/watch?v=6wJasLuj-Fc",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-02T05:53:38.561080+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "VIDEO | Diet rich in acid aggravates asthma",
+     "resumo": "Research funded by FAPESP and conducted by scientists from Unifesp and UFABC observed a rapid exacerbation of lung inflammation and increased mucus in the airways in mice that consumed condensed milk for two weeks, the…"
+    },
+    "es": {
+     "titulo": "VIDEO | Una dieta rica en ácidos agrava el asma",
+     "resumo": "La investigación financiada por la FAPESP y realizada por científicos de la Unifesp y la UFABC observó una rápida exacerbación de la inflamación pulmonar y un aumento de la mucosidad en las vías respiratorias en ratones que consumieron leche condensada durante dos semanas, el..."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Webinários regionais do Global Research Council",
+   "resumo": "Desafios relacionados à produção de conhecimento e ao financiamento da ciência estarão em debate em dois seminários que reunirão pesquisadores e agências de fomento",
+   "url": "https://agencia.fapesp.br/webinarios-regionais-do-global-research-council/59323",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-02T05:53:38.561080+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Global Research Council Regional Webinars",
+     "resumo": "Challenges related to the production of knowledge and the financing of science will be discussed in two seminars that will bring together researchers and funding agencies"
+    },
+    "es": {
+     "titulo": "Seminarios web regionales del Consejo Mundial de Investigación",
+     "resumo": "Los desafíos relacionados con la producción de conocimiento y el financiamiento de la ciencia se discutirán en dos seminarios que reunirán a investigadores y agencias de financiamiento"
     }
    }
   },
@@ -122,32 +140,6 @@
     "es": {
      "titulo": "Libro rescata la trayectoria de la Educación Física y el estudio del movimiento humano en la USP",
      "resumo": "En un trabajo lanzado por Edusp, los autores entrelazan experiencias personales con la historia institucional para analizar la evolución científica del área y los desafíos contemporáneos"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Expansão urbana causa colapso ecológico em riachos da Região Metropolitana de São Paulo",
-   "resumo": "Estudo revela que a perda de biodiversidade e interações ecológicas compromete a filtragem natural da água que abastece os mais de 22 milhões de habitantes da região",
-   "url": "https://agencia.fapesp.br/expansao-urbana-causa-colapso-ecologico-em-riachos-da-regiao-metropolitana-de-sao-paulo/59312",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-01T19:38:03.422612+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59312.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Urban sprawl causes ecological collapse in streams in the Metropolitan Region of São Paulo",
-     "resumo": "A study reveals that the loss of biodiversity and ecological interactions compromises the natural filtration of water that supplies the more than 22 million inhabitants of the region"
-    },
-    "es": {
-     "titulo": "La expansión urbana provoca el colapso ecológico de los arroyos en la Región Metropolitana de São Paulo",
-     "resumo": "Un estudio revela que la pérdida de biodiversidad y las interacciones ecológicas comprometen la filtración natural del agua que abastece a los más de 22 millones de habitantes de la región"
     }
    }
   },
@@ -230,31 +222,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O gene de risco de Alzheimer APOE4 pode ter uma fraqueza reversível",
-   "resumo": "O gene de risco de Alzheimer APOE4 pode danificar ativamente os vasos sanguíneos cerebrais e sabotar os sistemas celulares que removem proteínas nocivas. Os pesquisadores foram capazes de reverter alguns desses efeitos em experimentos, revelando novos alvos promissores...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260930225450.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-01T04:45:26+00:00",
-   "tema": "Genética",
-   "relevancia": 7,
-   "imagem": "https://www.sciencedaily.com/images/1920/brain-stroke-x-ray.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Alzheimer’s risk gene APOE4 may have a reversible weakness",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El gen de riesgo de Alzheimer APOE4 puede tener una debilidad reversible",
-     "resumo": "El gen de riesgo de Alzheimer APOE4 puede dañar activamente los vasos sanguíneos cerebrales y sabotear los sistemas celulares que eliminan las proteínas dañinas. Los investigadores pudieron revertir algunos de estos efectos en experimentos, revelando nuevos objetivos prometedores..."
-    }
-   },
-   "resumo_original": "The Alzheimer’s risk gene APOE4 may actively damage brain blood vessels and sabotage the cellular systems that remove harmful proteins. Researchers were able to reverse some of these effects in experiments, revealing promising new targets…"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "O teste do centro de dados AI do Projeto Suncatcher do Google foi lançado oficialmente para o espaço a bordo do foguete SpaceX",
    "resumo": "O Projeto Suncatcher visa testar os chips de IA do Google no ambiente hostil do espaço",
    "url": "https://www.scientificamerican.com/article/googles-project-suncatcher-ai-data-center-test-has-officially-launched-to-space-aboard-spacex-rocket/",
@@ -329,6 +296,31 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "O gene de risco de Alzheimer APOE4 pode ter uma fraqueza reversível",
+   "resumo": "O gene de risco de Alzheimer APOE4 pode danificar ativamente os vasos sanguíneos cerebrais e sabotar os sistemas celulares que removem proteínas nocivas. Os pesquisadores foram capazes de reverter alguns desses efeitos em experimentos, revelando novos alvos promissores...",
+   "url": "https://www.sciencedaily.com/releases/2026/09/260930225450.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-01T04:45:26+00:00",
+   "tema": "Genética",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/brain-stroke-x-ray.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Alzheimer’s risk gene APOE4 may have a reversible weakness",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El gen de riesgo de Alzheimer APOE4 puede tener una debilidad reversible",
+     "resumo": "El gen de riesgo de Alzheimer APOE4 puede dañar activamente los vasos sanguíneos cerebrales y sabotear los sistemas celulares que eliminan las proteínas dañinas. Los investigadores pudieron revertir algunos de estos efectos en experimentos, revelando nuevos objetivos prometedores..."
+    }
+   },
+   "resumo_original": "The Alzheimer’s risk gene APOE4 may actively damage brain blood vessels and sabotage the cellular systems that remove harmful proteins. Researchers were able to reverse some of these effects in experiments, revealing promising new targets…"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Sinal dos tempos: os músculos da linguagem da IA no estimado dicionário",
    "resumo": "‘Agentic’, ‘prompt engineering’ e outros termos técnicos estão entre as 1.400 entradas adicionadas ao catálogo online do Merriam-Webster.",
    "url": "https://www.nature.com/articles/d41586-026-03044-9",
@@ -336,7 +328,7 @@
    "idioma": "en",
    "data": "2026-10-01T00:00:00+00:00",
    "tema": "Ciência",
-   "relevancia": 6,
+   "relevancia": 5,
    "imagem": "",
    "titulo_original": "Sign of the times: AI lingo muscles into esteemed dictionary",
    "traduzido": true,
@@ -350,22 +342,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Caracterização baseada na população da síndrome do tumor de hamartoma PTEN",
-   "resumo": "",
-   "url": "https://www.nature.com/articles/s43856-026-01941-8",
-   "fonte": "Nature · Genética",
+   "titulo": "Os cientistas descobrem que a crosta terrestre rolou repetidamente - e isso ainda está acontecendo",
+   "resumo": "Uma análise das antigas mudanças no nível do mar revela que toda a Terra sólida mudou várias vezes",
+   "url": "https://www.scientificamerican.com/article/scientists-discover-that-earths-crust-has-repeatedly-rolled-over-and-its-still-happening/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-01T00:00:00+00:00",
-   "tema": "Câncer",
-   "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "Population-based characterization of PTEN hamartoma tumor syndrome",
+   "data": "2026-10-01T18:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/m/715d4e0fdac3a670/original/planet-earth.jpg?m=1733515635.572&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists discover that Earth’s crust has repeatedly rolled over—and it’s still happening",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Caracterización basada en la población del síndrome tumoral de hamartoma PTEN"
+     "titulo": "Los científicos descubren que la corteza terrestre se ha volcado repetidamente, y todavía está sucediendo",
+     "resumo": "Un análisis de los antiguos cambios en el nivel del mar revela que toda la Tierra sólida ha cambiado varias veces"
     }
-   }
+   },
+   "resumo_original": "An analysis of ancient sea-level changes reveals that the whole solid Earth has shifted multiple times"
   }
  ],
  "artigos": [
@@ -596,7 +594,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Pharmacological translation of cancer missense mutations for therapeutic targeting with small molecules.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Traducción farmacológica de mutaciones de sentido erróneo del cáncer para el direccionamiento terapéutico con moléculas pequeñas."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -609,7 +612,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Conversational AI in Hereditary Cancer Care: Sociotechnical Study of Responsible Design Requirements.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Conversational AI in Hereditary Cancer Care: Sociotechnical Study of Responsible Design Requirements."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -622,7 +630,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Interpreting TP53 pathogenic variants in germline testing and cancer genomics: pathogenicity, origin, and clinical actionability.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Interpretación de las variantes patógenas de TP53 en las pruebas de línea germinal y la genómica del cáncer: patogenicidad, origen y capacidad de acción clínica."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -635,7 +648,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Curcumin from Turmeric Alleviates Lipid Metabolism: Network Pharmacology and Cellular Validation.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La curcumina de la cúrcuma alivia el metabolismo lipídico: farmacología de red y validación celular."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -648,7 +666,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Clinical and molecular characterization of non-PIK3CA-related vascular malformations with overgrowth in a pediatric cohort.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Caracterización clínica y molecular de malformaciones vasculares no relacionadas con PIK3CA con sobrecrecimiento en una cohorte pediátrica."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -661,7 +684,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "TP53 mutations orchestrate partial EMT states in oral squamous cell carcinoma: spatially resolved and in vitro preliminary insights into tumour plasticity.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las mutaciones de TP53 orquestan los estados parciales de EMT en el carcinoma oral de células escamosas: conocimientos preliminares resueltos espacialmente e in vitro sobre la plasticidad tumoral."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -674,7 +702,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Dynamic Changes of ctDNA-Based MRD and Genomic Mutations Predict Prognosis in ESCC Treated With Definitive Radiotherapy.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los cambios dinámicos de la EMR basada en ADNtc y las mutaciones genómicas predicen el pronóstico en la ESCC tratada con radioterapia definitiva."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -687,7 +720,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Gliomas with pleomorphic and pseudopapillary features (GPAP) are circumscribed tumors with targetable mutations, prolonged survival, and frequent tumor predisposition.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los gliomas con características pleomórficas y pseudopapilares (GPAP) son tumores circunscritos con mutaciones dirigibles, supervivencia prolongada y predisposición tumoral frecuente."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -700,7 +738,12 @@
    "acesso_aberto": false,
    "tema": "Saúde",
    "titulo_original": "Uptake of cascade testing and the factors affecting its implementation among patients in Japan with Lynch syndrome.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Absorción de las pruebas en cascada y los factores que afectan su implementación entre los pacientes en Japón con síndrome de Lynch."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -713,7 +756,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Genomic Landscape of Primary and Secondary Cutaneous Angiosarcoma: A Single-Center Retrospective Cohort Analysis in Japan.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Genomic Landscape of Primary and Secondary Cutaneous Angiosarcoma: A Single-Center Retrospective Cohort Analysis in Japan."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -726,7 +774,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Rotational thromboelastometry guided transfusion in venom-induced consumptive coagulopathy following a haemotoxic snakebite.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La tromboelastometría rotacional guió la transfusión en la coagulopatía consuntiva inducida por veneno después de una mordedura de serpiente hemotóxica."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -739,7 +792,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Distinct genomic landscape of non-small cell lung cancer in Bangladeshi patients: Implications for precision oncology in a resource-limited setting.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Paisaje genómico distintivo del cáncer de pulmón de células no pequeñas en pacientes de Bangladesh: implicaciones para la oncología de precisión en un entorno de recursos limitados."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -752,7 +810,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Clinical and Molecular Profiles of Treatment-Emergent Small Cell Neuroendocrine Prostate Cancers in the Era of Intensified Systemic Therapies.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Perfiles clínicos y moleculares de los cánceres de próstata neuroendocrinos de células pequeñas emergentes del tratamiento en la era de las terapias sistémicas intensificadas."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -765,7 +828,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Sex-dependent effects of neonatal hyperoxia on prefrontal cortex development.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Efectos dependientes del sexo de la hiperoxia neonatal en el desarrollo de la corteza prefrontal."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -778,7 +846,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Intrinsic endonucleolytic activity of snake venom phosphodiesterase.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Actividad endonucleolítica intrínseca de la fosfodiesterasa de veneno de serpiente."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -791,7 +864,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Sequential lymphoid neoplasms mimicking relapse of mediastinal grey zone lymphoma in a patient with germline variants in EP300 and PTPRK.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Neoplasias linfoides secuenciales que imitan la recaída del linfoma mediastínico de la zona gris en un paciente con variantes de la línea germinal en EP300 y PTPRK."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -804,7 +882,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Rapid minigene workflow for functional reclassification of splicing variants in hereditary cancer diagnostics.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Flujo de trabajo rápido de minigenes para la reclasificación funcional de variantes de empalme en diagnósticos de cáncer hereditario."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -817,7 +900,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Potential advantage of clinical exome sequencing in <i>BRCA1/2</i>-negative families: a retrospective study of a cohort of 500 patients at a high-risk for hereditary cancers.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Ventaja potencial de la secuenciación clínica del exoma en familias <i>BRCA1/2</i>negativas: un estudio retrospectivo de una cohorte de 500 pacientes con alto riesgo de cánceres hereditarios."
+    }
+   }
   }
  ],
  "fontes": [
@@ -1073,6 +1161,9 @@
   "livro resgata trajetoria da educacao fisica e do estudo do movimento humano na usp": "2026-10-01T23:57:53.529959+00:00",
   "infogripe srag aumenta em criancas no rio de janeiro e sergipe": "2026-10-01T23:57:53.529959+00:00",
   "sign of the times ai lingo muscles into esteemed dictionary": "2026-10-01T23:57:53.529959+00:00",
-  "population based characterization of pten hamartoma tumor syndrome": "2026-10-01T23:57:53.529959+00:00"
+  "population based characterization of pten hamartoma tumor syndrome": "2026-10-01T23:57:53.529959+00:00",
+  "novo instrumento no acelerador sirius permite observar celulas solares em funcionamento": "2026-10-02T05:53:38.561080+00:00",
+  "video dieta rica em acucar agrava a asma": "2026-10-02T05:53:38.561080+00:00",
+  "webinarios regionais do global research council": "2026-10-02T05:53:38.561080+00:00"
  }
 }
