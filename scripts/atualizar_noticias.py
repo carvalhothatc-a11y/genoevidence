@@ -34,7 +34,7 @@ ESCOLHIDAS = RAIZ / "data" / "noticias-escolhidas.json"   # notícias que a Thai
 TRADUCOES = RAIZ / "data" / "traducoes.json"
 # O MyMemory gratuito permite cerca de 5.000 caracteres por dia; ficamos abaixo disso.
 ORCAMENTO_TRADUCAO = 4600
-AGENTE = "Mozilla/5.0 (GenoEvidence; +https://carvalhothatc-a11y.github.io/genoevidence/)"
+AGENTE = "Mozilla/5.0 (GenoEvidence; +https://genoevidence.com/)"
 
 # Fontes de notícias. "filtro" = só entram itens com alguma dessas palavras.
 FONTES = [
