@@ -1,7 +1,9 @@
 import { z } from "zod";
 import { ApiError, handle, json, notFound, readJsonBody, requireAdmin } from "@/lib/api";
-import { getAccount, listAccounts, revokeAllSessions, saveAccount } from "@/lib/auth/store";
+import { deleteAccountRecords, getAccount, listAccounts, revokeAllSessions, saveAccount } from "@/lib/auth/store";
 import { audit } from "@/lib/audit";
+import { getRepository } from "@/lib/repo";
+import { deleteTeam, saveTeam, teamsOf } from "@/lib/teams/store";
 
 const Body = z.object({ status: z.enum(["autorizado", "suspenso", "pendente"]).optional(), role: z.enum(["admin", "pesquisador"]).optional() });
 
@@ -30,4 +32,33 @@ export const PATCH = handle(async (req: Request, ctx: RouteContext<"/api/admin/c
   if (body.status) await audit("conta_status", { userId: admin.id, target: target.id, result: "ok", detail: `${target.status} → ${next.status}` });
   if (body.role) await audit("conta_papel", { userId: admin.id, target: target.id, result: "ok", detail: `${target.role} → ${next.role}` });
   return json({ ok: true });
+});
+
+/**
+ * Exclusão de conta (LGPD, art. 18): apaga a conta, as sessões, os projetos de que a pessoa é dona
+ * (com arquivos e derivados) e a participação em equipes. O registro de segurança guarda só o
+ * identificador interno e o número de projetos apagados. Backups antigos expiram em 14 dias.
+ */
+export const DELETE = handle(async (_req: Request, ctx: RouteContext<"/api/admin/contas/[contaId]">) => {
+  const admin = await requireAdmin();
+  const { contaId } = await ctx.params;
+  if (contaId === admin.id) throw new ApiError(409, "Não é possível excluir a própria conta por aqui.");
+  const target = await getAccount(contaId);
+  if (!target) notFound("Conta");
+  if (target.role === "admin" && target.status === "autorizado") {
+    const admins = (await listAccounts()).filter((a) => a.role === "admin" && a.status === "autorizado");
+    if (admins.length <= 1) throw new ApiError(409, "É preciso manter ao menos um administrador autorizado.");
+  }
+  await revokeAllSessions(target.id);
+  const repo = getRepository();
+  const owned = await repo.listOwnedIds(target.id);
+  for (const id of owned) await repo.deleteProject(id);
+  for (const t of await teamsOf(target.id)) {
+    const members = t.members.filter((m) => m.userId !== target.id);
+    if (members.length === 0) await deleteTeam(t.id);
+    else await saveTeam({ ...t, members: members.some((m) => m.role === "gestor") ? members : [{ ...members[0], role: "gestor" }, ...members.slice(1)] });
+  }
+  await deleteAccountRecords(target.id);
+  await audit("conta_excluida", { userId: admin.id, target: target.id, result: "ok", detail: `${owned.length} projeto(s) apagado(s)` });
+  return json({ ok: true, projetosApagados: owned.length });
 });

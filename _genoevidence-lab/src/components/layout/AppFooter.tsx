@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 /** Rodapé discreto; oculto nas telas imersivas (laboratório e módulo), onde o espaço é do ambiente. */
@@ -11,7 +12,12 @@ export function AppFooter({ appName, version }: { appName: string; version: stri
         <span className="ge-mono">
           {appName} · v{version}
         </span>
-        <span className="ge-mono">Conteúdo educativo; não substitui a validação experimental. Projetos privados por padrão.</span>
+        <span className="ge-mono">
+          Conteúdo educativo; não substitui a validação experimental. Projetos privados por padrão. ·{" "}
+          <Link className="underline" href="/privacidade">
+            Privacidade
+          </Link>
+        </span>
       </div>
     </footer>
   );

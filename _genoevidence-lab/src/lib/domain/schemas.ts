@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "@/lib/zod";
 
 /**
  * Contratos centrais do domínio. Toda informação persistida passa por estes esquemas.

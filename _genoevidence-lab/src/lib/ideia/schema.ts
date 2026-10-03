@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "@/lib/zod";
 
 /**
  * Plano estruturado de uma ideia experimental (cenário). É a ÚNICA estrutura que controla a
