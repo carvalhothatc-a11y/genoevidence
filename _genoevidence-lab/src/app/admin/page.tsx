@@ -13,7 +13,7 @@ export default async function AdminPage() {
   const events = await recentAudit(60);
   return (
     <div className="mx-auto max-w-[1200px] px-4 py-8">
-      <PageHeader eyebrow="administração" title="Acessos ao GenoLab" description="Aprove pesquisadores, suspenda acessos e acompanhe eventos de segurança. Contas novas começam pendentes e não veem nenhum dado." />
+      <PageHeader eyebrow="administração" title="Acessos ao GenoLab" description="Aprove pesquisadores, suspenda ou exclua acessos e acompanhe eventos de segurança. Contas novas começam pendentes e não veem nenhum dado. Pedidos de exclusão de dados (LGPD) devem ser atendidos em até 15 dias." />
       <div className="grid gap-6">
         <Card title="Contas">
           <AccountsTable rows={accounts} selfId={admin.id} />

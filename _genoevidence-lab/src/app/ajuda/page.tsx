@@ -80,6 +80,13 @@ export default async function HelpPage() {
             <li>Cada projeto é privado. Só o dono e quem recebeu compartilhamento explícito conseguem abri-lo.</li>
             <li>Papéis no projeto: leitor (ver), editor (ver, enviar, editar e baixar), gestor (também compartilhar e exportar) e dono (também excluir o projeto).</li>
             <li>As sessões expiram após 12 horas sem uso ou 14 dias no total. Use “Sair” em computadores compartilhados.</li>
+            <li>
+              O que é coletado, onde fica guardado e como pedir cópia ou exclusão dos seus dados: veja a{" "}
+              <Link className="underline" href="/privacidade">
+                Política de privacidade
+              </Link>
+              .
+            </li>
           </ul>
         </Section>
 

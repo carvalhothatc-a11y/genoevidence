@@ -16,6 +16,16 @@ export function AccountsTable({ rows, selfId }: { rows: Row[]; selfId: string })
   const router = useRouter();
   const [msg, setMsg] = useState<{ tone: "ok" | "danger"; text: string } | null>(null);
   const [filter, setFilter] = useState<"todos" | Row["status"]>("pendente");
+  const [confirmar, setConfirmar] = useState<string | null>(null);
+  async function excluir(r: Row) {
+    setMsg(null);
+    setConfirmar(null);
+    const res = await fetch(`/api/admin/contas/${r.id}`, { method: "DELETE" });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) return setMsg({ tone: "danger", text: data.error ?? "Não foi possível excluir." });
+    setMsg({ tone: "ok", text: `Conta de ${r.name} excluída, com ${data.projetosApagados ?? 0} projeto(s) de que era dona.` });
+    router.refresh();
+  }
   async function patch(id: string, body: object, ok: string) {
     setMsg(null);
     const res = await fetch(`/api/admin/contas/${id}`, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
@@ -93,6 +103,21 @@ export function AccountsTable({ rows, selfId }: { rows: Row[]; selfId: string })
                             onClick={() => patch(r.id, { role: r.role === "admin" ? "pesquisador" : "admin" }, "Papel alterado.")}
                           >
                             {r.role === "admin" ? "Tornar pesquisador" : "Tornar administração"}
+                          </button>
+                        )}
+                        {confirmar === r.id ? (
+                          <span className="flex flex-wrap items-center gap-1.5" role="group" aria-label={`Confirmar exclusão da conta de ${r.name}`}>
+                            <span className="text-xs text-danger">Apagar conta e projetos?</span>
+                            <button type="button" className="ge-press rounded-full bg-danger px-3 py-1 text-xs font-semibold text-white" onClick={() => excluir(r)}>
+                              Confirmar exclusão
+                            </button>
+                            <button type="button" className="ge-press rounded-full px-3 py-1 text-xs shadow-[inset_0_0_0_1px_var(--line)] hover:bg-surface-2" onClick={() => setConfirmar(null)}>
+                              Cancelar
+                            </button>
+                          </span>
+                        ) : (
+                          <button type="button" className="ge-press rounded-full px-3 py-1 text-xs text-danger shadow-[inset_0_0_0_1px_var(--line)] hover:bg-danger-soft" onClick={() => setConfirmar(r.id)}>
+                            Excluir conta
                           </button>
                         )}
                       </div>

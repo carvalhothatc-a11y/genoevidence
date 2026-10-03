@@ -4,6 +4,7 @@ import { ApiError, handle, json, readJsonBody } from "@/lib/api";
 import { AuthError, rateLimit, registerAccount } from "@/lib/auth/store";
 import { audit, hashEmail } from "@/lib/audit";
 import { clientKey } from "@/lib/security";
+import { POLITICA_VERSAO } from "@/lib/privacidade";
 
 const Body = z.object({
   name: z.string().trim().min(2, "Informe seu nome.").max(120),
@@ -25,7 +26,7 @@ export const POST = handle(async (req: Request) => {
     throw e;
   }
   const body = Body.parse(await readJsonBody(req, 10_000));
-  const r = await registerAccount(body);
+  const r = await registerAccount({ ...body, privacyVersion: POLITICA_VERSAO });
   await audit("cadastro", { userId: r.account?.id, emailHash: hashEmail(body.email), result: r.created ? "ok" : "falha", detail: r.created ? (r.account?.status ?? "") : "e-mail já cadastrado" });
   return json({ message: "Cadastro recebido. Entre com seu e-mail e senha para acompanhar a autorização do acesso." }, 202);
 });

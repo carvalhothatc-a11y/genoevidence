@@ -29,6 +29,9 @@ export type Account = {
   statusChangedAt?: string;
   statusChangedBy?: string;
   passwordChangedAt?: string;
+  /** Versão da política de privacidade aceita no cadastro e quando (LGPD: registro do consentimento). */
+  privacyVersion?: string;
+  privacyAcceptedAt?: string;
 };
 export type PublicAccount = Pick<Account, "id" | "name" | "email" | "institution" | "createdAt" | "status" | "role" | "statusChangedAt">;
 
@@ -100,7 +103,7 @@ function withDefaults(a: Account): Account {
  * Cadastro. Não revela se o e-mail já existe: o resultado visível é sempre o mesmo e o custo
  * de cálculo do hash é executado nos dois casos.
  */
-export async function registerAccount(input: { name: string; email: string; password: string; institution?: string }): Promise<{ created: boolean; account?: Account }> {
+export async function registerAccount(input: { name: string; email: string; password: string; institution?: string; privacyVersion: string }): Promise<{ created: boolean; account?: Account }> {
   const email = normalizeEmail(input.email);
   const salt = randomBytes(16);
   const passwordHash = await hashPassword(input.password, salt);
@@ -119,6 +122,8 @@ export async function registerAccount(input: { name: string; email: string; pass
     role: admin ? "admin" : "pesquisador",
     statusChangedAt: admin ? now : undefined,
     statusChangedBy: admin ? "configuracao" : undefined,
+    privacyVersion: input.privacyVersion,
+    privacyAcceptedAt: now,
   };
   try {
     await writeJson(emailFile(email), { userId: account.id }, true);

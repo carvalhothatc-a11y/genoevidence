@@ -116,7 +116,11 @@ export function AuthForm({ mode }: { mode: "entrar" | "cadastro" }) {
           <label className="flex items-start gap-2 text-sm">
             <input type="checkbox" className="mt-1" checked={accept} onChange={(e) => setAccept(e.target.checked)} aria-invalid={Boolean(err("acceptPrivacy"))} />
             <span>
-              Entendo que o acesso ao GenoLab depende de aprovação, que conta e projetos ficam armazenados no servidor do laboratório e que nada é enviado a serviços externos sem minha autorização.
+              Li e concordo com a{" "}
+              <Link className="font-semibold text-accent-ink underline" href="/privacidade" target="_blank" rel="noopener">
+                Política de privacidade
+              </Link>
+              , inclusive com o armazenamento da conta e dos projetos no servidor do laboratório, nos Estados Unidos. Entendo que o acesso depende de aprovação.
               {err("acceptPrivacy") && <span className="block text-xs font-medium text-danger">{err("acceptPrivacy")}</span>}
             </span>
           </label>
@@ -144,6 +148,11 @@ export function AuthForm({ mode }: { mode: "entrar" | "cadastro" }) {
             </Link>
           </>
         )}
+      </p>
+      <p className="text-center text-xs text-muted">
+        <Link className="underline" href="/privacidade">
+          Política de privacidade
+        </Link>
       </p>
     </form>
   );

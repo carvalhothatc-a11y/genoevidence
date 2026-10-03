@@ -3,9 +3,9 @@
 Roteiro para colocar o GenoLab no ar com **Docker + Caddy (HTTPS automático)** numa VPS.
 Os dados (contas, projetos, arquivos originais, auditoria) ficam num volume Docker no disco da VPS.
 
-> Nada aqui foi executado: a publicação depende de você contratar a VPS e o domínio.
-> A imagem foi preparada e a versão de produção foi compilada e testada localmente
-> (`next build` + servidor autocontido); o Docker em si só poderá ser testado na VPS.
+> Instalação em uso: VPS Hostinger (Ubuntu 24.04, Docker oficial já incluído na imagem),
+> código em `/opt/genolab` (branch `main`), endereço `https://lab.genoevidence.com`.
+> O backup diário roda pelo cron do root às 06:15 UTC (03:15 de Brasília).
 
 ## 1. O que contratar
 
@@ -35,8 +35,7 @@ sudo usermod -aG docker $USER   # saia e entre de novo no SSH
 ```bash
 sudo mkdir -p /opt/genolab && sudo chown $USER /opt/genolab
 git clone https://github.com/carvalhothatc-a11y/genoevidence.git /opt/genolab
-cd /opt/genolab && git checkout genoevidence-lab   # até o PR ser mesclado no main
-cd _genoevidence-lab
+cd /opt/genolab/_genoevidence-lab
 ```
 
 ## 5. Configurar (segredos só na VPS)
@@ -69,8 +68,8 @@ No repositório do site, edite `data/lab.json` e troque `"url"` para `https://la
 
 ```bash
 sudo crontab -e
-# adicionar a linha (todo dia às 3h15):
-15 3 * * * /opt/genolab/_genoevidence-lab/deploy/backup.sh
+# adicionar a linha (o relógio da VPS fica em UTC: 06:15 UTC = 03:15 de Brasília):
+15 6 * * * /bin/sh /opt/genolab/_genoevidence-lab/deploy/backup.sh >> /var/log/genolab-backup.log 2>&1
 ```
 
 - Os arquivos ficam em `/opt/genolab-backups` por 14 dias.
@@ -89,8 +88,11 @@ docker compose logs -f app        # registros do app (sem conteúdo de pesquisa)
 - [ ] HTTPS ativo e redirecionamento de http para https (o Caddy faz sozinho).
 - [ ] Só e-mails de confiança em `GENO_LAB_ADMIN_EMAILS`.
 - [ ] Backups agendados e restauração testada.
-- [ ] Política de privacidade e termos de uso (LGPD) publicados.
-- [ ] Pendências de segurança conhecidas: política de conteúdo (CSP) com nonce ainda não aplicada;
-      arquivos enviados não passam por antivírus; limites de requisição ficam em memória
-      (valem para uma única instância do app).
+- [x] Política de privacidade (LGPD) publicada em `/privacidade`, com aceite registrado no cadastro.
+      Defina `LAB_CONTATO_PRIVACIDADE` para exibir um e-mail de contato; ao mudar a região da VPS,
+      atualize `LOCAL_DOS_DADOS` em `src/lib/privacidade.ts`.
+- [x] Política de conteúdo (CSP) com nonce por requisição (`src/proxy.ts`).
+- [x] Exclusão de conta pela administração (apaga conta, sessões e projetos de que a pessoa é dona).
+- [ ] Pendências de segurança conhecidas: arquivos enviados não passam por antivírus; limites de
+      requisição ficam em memória (valem para uma única instância do app).
 - [ ] Geninho: a chave fica só no `.env.production`; usar uma chave de workspace ou informar `ANTHROPIC_WORKSPACE_ID`.
