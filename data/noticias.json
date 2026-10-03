@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-03T02:06:42.713551+00:00",
+ "atualizado_em": "2026-10-03T08:18:21.599466+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -107,28 +107,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Lançamento do livro A ciência do Universo",
-   "resumo": "Obra do físico Rogério Rosenfeld aborda desde os primeiros modelos cosmológicos até os experimentos mais recentes",
-   "url": "https://agencia.fapesp.br/lancamento-do-livro-a-ciencia-do-universo/59324",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-03T02:06:42.713551+00:00",
-   "tema": "Espaço",
-   "relevancia": 7,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Launch of the book The Science of the Universe",
-     "resumo": "Physicist Rogério Rosenfeld's work covers from the first cosmological models to the most recent experiments"
-    },
-    "es": {
-     "titulo": "Lanzamiento del libro La Ciencia del Universo",
-     "resumo": "El trabajo del físico Rogério Rosenfeld abarca desde los primeros modelos cosmológicos hasta los experimentos más recientes"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Conheça o laboratório que transforma plantas em tecnologia",
    "resumo": "Inovalab visita o Centro Pluridisciplinar de Pesquisas Químicas, Biológicas e Agrícolas da Unicamp",
    "url": "https://jornal.unicamp.br/noticias/2026/10/02/conheca-o-laboratorio-que-transforma-plantas-em-tecnologia/",
@@ -199,6 +177,30 @@
     "es": {
      "titulo": "Listo para la cuarta ola",
      "resumo": "En seis décadas de existencia, la universidad ha experimentado tres fases de desarrollo y está a las puertas de otra"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Medicamento para esquistossomose em crianças recebe aprovação da Anvisa",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/medicamento-para-esquistossomose-em-criancas-recebe-aprovacao-da-anvisa",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-02T14:41:55+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/medicamento_d.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Drug for schistosomiasis in children receives approval from Anvisa"
+    },
+    "es": {
+     "titulo": "El medicamento para la esquistosomiasis en niños recibe la aprobación de Anvisa"
     }
    }
   },
@@ -301,44 +303,6 @@
     }
    },
    "resumo_original": "Unlike most modern mammals, which get just two sets of teeth in their lifetime, an ancient species from the Cretaceous, found in China, appears to have had the ability to replace its teeth throughout its life"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Risco de doença neurodegenerativa associado à expressão gênica em monócitos periféricos através de ancestrais",
-   "resumo": "",
-   "url": "https://www.nature.com/articles/s42003-026-10865-x",
-   "fonte": "Nature · Genética",
-   "idioma": "en",
-   "data": "2026-10-02T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 4,
-   "imagem": "",
-   "titulo_original": "Neurodegenerative disease risk associated with gene expression in peripheral monocytes across ancestries",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Riesgo de enfermedad neurodegenerativa asociado con la expresión génica en monocitos periféricos de todas las ascendencias"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Correção do Autor: Um mecanismo mutuamente antagônico mediado pela modificação de RNA m6A nas interações planta-vírus",
-   "resumo": "",
-   "url": "https://www.nature.com/articles/s41467-026-78523-8",
-   "fonte": "Nature · Genética",
-   "idioma": "en",
-   "data": "2026-10-02T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 3,
-   "imagem": "",
-   "titulo_original": "Author Correction: A mutually antagonistic mechanism mediated by RNA m6A modification in plant-virus interactions",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Corrección del autor: Un mecanismo mutuamente antagonista mediado por la modificación del ARN m6A en las interacciones planta-virus"
-    }
-   }
   }
  ],
  "artigos": [
@@ -898,7 +862,8 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4"
+  "Nature: not well-formed (invalid token): line 14, column 4",
+  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
   "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-09-24T17:09:08.714347+00:00",
