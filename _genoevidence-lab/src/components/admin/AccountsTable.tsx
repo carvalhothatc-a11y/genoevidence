@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Alert } from "@/components/ui/Alert";
+import { dataCurta } from "@/lib/datas";
 
 type Row = { id: string; name: string; email: string; institution?: string; createdAt: string; status: "pendente" | "autorizado" | "suspenso"; role: "admin" | "pesquisador"; statusChangedAt?: string };
 
@@ -65,7 +66,7 @@ export function AccountsTable({ rows, selfId }: { rows: Row[]; selfId: string })
                     <span className="ge-mono text-xs text-muted">{r.email}</span>
                   </th>
                   <td className="py-2.5 pr-3">{r.institution || <span className="text-muted">—</span>}</td>
-                  <td className="ge-mono py-2.5 pr-3 text-xs">{new Date(r.createdAt).toLocaleDateString("pt-BR")}</td>
+                  <td className="ge-mono py-2.5 pr-3 text-xs">{dataCurta(r.createdAt)}</td>
                   <td className="py-2.5 pr-3">
                     <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${STATUS[r.status].cls}`}>{STATUS[r.status].label}</span>
                   </td>

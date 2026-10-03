@@ -1,5 +1,6 @@
 "use client";
 import type { LabScene } from "@/lib/lab/scenes";
+import { dataHora } from "@/lib/datas";
 
 /**
  * Captura do quadro atual do laboratório 3D. O canvas usa preserveDrawingBuffer=false (desempenho),
@@ -53,7 +54,7 @@ export async function composeImage(frame: string, scene: LabScene, text: string,
   ctx.fillStyle = "#6b7590";
   ctx.font = `400 ${Math.round(base * 0.82)}px ${family}`;
   ctx.fillText(
-    `Ilustração didática gerada a partir do modelo 3D do GenoLab · não é foto do experimento · ${at.toLocaleString("pt-BR")}`,
+    `Ilustração didática gerada a partir do modelo 3D do GenoLab · não é foto do experimento · ${dataHora(at)}`,
     pad,
     img.height + base * 5.4,
     c.width - pad * 2,
