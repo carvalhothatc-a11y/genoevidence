@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="ge-root" content="../">
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/acessibilidade.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="../icons/ge-app-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/ge-favicon-192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/ge-favicon-32.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<title>GenoLab · acesso restrito</title>
+<meta name="description" content="GenoLab: laboratório virtual de biologia molecular para pesquisadores cadastrados. Acesso restrito, em página à parte.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/shell.css">
+</head>
+<body data-pagina="lab">
+<!-- barra do topo e barra de abas: montadas pelo assets/js/shell.js -->
+<header id="appbar"></header>
+
+<main class="wrap lab-entrada">
+  <header class="page-head">
+    <p class="kicker">Acesso restrito · página à parte</p>
+    <h1>Geno <span class="lab-grad">Lab</span></h1>
+    <p class="sub">Um laboratório virtual de biologia molecular para planejar, executar e registrar experimentos antes da bancada real.</p>
+  </header>
+
+  <section class="card lab-card">
+    <ul class="lab-lista">
+      <li><span class="lab-n">01</span><span><b>Formulário de experimento</b> — amostras, primers, reação, programa do termociclador e gel, com validação campo a campo.</span></li>
+      <li><span class="lab-n">02</span><span><b>Bancada 3D</b> — termociclador, micropipetas, eletroforese e o processo molecular sincronizado com cada etapa.</span></li>
+      <li><span class="lab-n">03</span><span><b>Dados e fontes</b> — tabelas de expressão, estruturas no Mol* e referências com a seção de onde veio cada informação.</span></li>
+    </ul>
+    <div class="lab-acoes">
+      <a class="btn" id="abrirLab" href="#" target="_blank" rel="noopener" aria-describedby="labAviso">Abrir o GenoLab
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      <span class="lab-cadeado"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Requer cadastro e login</span>
+    </div>
+    <p class="lab-aviso" id="labAviso">O Lab abre em outra aba, fora do site. Os projetos ficam privados na conta de cada pesquisador.</p>
+    <p class="lab-aviso lab-indisponivel" id="labIndisponivel" hidden>O GenoLab ainda não está publicado. Em breve neste endereço.</p>
+  </section>
+
+  <p class="lab-nota">Conteúdo educativo: ilustrações e simulações do Lab são identificadas como tais e não substituem a validação experimental.</p>
+</main>
+
+<footer class="foot"><div class="wrap"><p>GenoEvidence · a ciência por trás das evidências · <a href="../sobre/">Sobre o app</a></p><p class="credito">Desenvolvido por <strong>Thaisa Carvalho</strong></p></div></footer>
+<nav id="tabbar"></nav>
+<script src="../assets/js/shell.js"></script>
+<script src="../assets/js/pwa.js"></script>
+<script>
+  /* Endereço do Lab em data/lab.json. Um endereço localhost só vale quando o site também está em localhost. */
+  (function () {
+    var link = document.getElementById("abrirLab"), aviso = document.getElementById("labIndisponivel");
+    function indisponivel() { link.setAttribute("aria-disabled", "true"); link.classList.add("lab-off"); link.removeAttribute("href"); aviso.hidden = false; }
+    fetch("../data/lab.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (d) {
+      var url = (d && d.url) || "";
+      var local = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+      var alvoLocal = /^https?:\/\/(localhost|127\.0\.0\.1|\[::1\])(:\d+)?/.test(url);
+      if (!url || (alvoLocal && !local) || (!alvoLocal && !/^https:\/\//.test(url))) return indisponivel();
+      link.href = url.replace(/\/$/, "") + "/entrar";
+    }).catch(indisponivel);
+  })();
+</script>
+</body>
+</html>

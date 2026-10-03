@@ -1,0 +1,13 @@
+# HTTPS automático para o domínio do GenoLab (defina GENOLAB_DOMINIO no arquivo .env ao lado do docker-compose.yml).
+{$GENOLAB_DOMINIO} {
+	encode zstd gzip
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		-Server
+	}
+	# limite de tamanho do corpo (uploads até 20 MB + margem)
+	request_body {
+		max_size 25MB
+	}
+	reverse_proxy app:3000
+}

@@ -1,0 +1,38 @@
+# GenoLab em uma VPS: app (Next.js) + Caddy (HTTPS automático com Let's Encrypt).
+# Uso: copie .env.production.example para .env.production, preencha e rode `docker compose up -d --build`.
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    env_file: .env.production
+    volumes:
+      - genolab-dados:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    expose:
+      - "3000"
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - GENOLAB_DOMINIO=${GENOLAB_DOMINIO}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-dados:/data
+      - caddy-config:/config
+
+volumes:
+  genolab-dados:
+  caddy-dados:
+  caddy-config:

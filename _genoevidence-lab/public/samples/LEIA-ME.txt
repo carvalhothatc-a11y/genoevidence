@@ -1,0 +1,10 @@
+Arquivos de exemplo do Laboratório Virtual
+
+expressao_exemplo_SINTETICO.csv
+  DADOS SINTÉTICOS gerados deterministicamente para demonstração (gerador em scripts/gerar-exemplo.py).
+  Nomes de genes fictícios (GENE_SINT_xx). Não representam medições nem organismos reais.
+  Colunas: gene, amostra, grupo, valor, unidade (TPM). Contém um valor ausente (NA) de propósito.
+
+1UBQ.cif
+  Estrutura REAL da ubiquitina (PDB 1UBQ; X-RAY DIFFRACTION; 1,8 Å), baixada em 02/10/2026 de
+  https://files.rcsb.org/download/1UBQ.cif. Dados do PDB são de domínio público (CC0).

@@ -1,0 +1,13 @@
+node_modules
+.next
+.lab-data
+.lab-data-test
+.env
+.env.local
+.env.*.local
+.env.production
+test-results
+playwright-report
+coverage
+*.tsbuildinfo
+.git

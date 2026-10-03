@@ -1,0 +1,23 @@
+// Conversa real com o Geninho pela interface (instância de demonstração; credencial lida de arquivo).
+import { chromium } from "@playwright/test";
+import { readFileSync } from "node:fs";
+const [base, credFile, shots] = process.argv.slice(2);
+const pw = readFileSync(credFile, "utf8").trim();
+const browser = await chromium.launch();
+const page = await (await browser.newContext({ viewport: { width: 1280, height: 900 } })).newPage();
+await page.goto(`${base}/entrar`);
+await page.getByLabel("E-mail").fill("demo@exemplo.test");
+await page.getByLabel("Senha", { exact: true }).fill(pw);
+await page.getByRole("button", { name: "Entrar" }).click();
+await page.waitForURL((u) => !u.pathname.startsWith("/entrar"), { timeout: 30000 });
+await page.goto(`${base}/ajuda`);
+const ligado = await page.getByText("Ligado", { exact: true }).isVisible();
+console.log(ligado ? "✔ Geninho aparece como Ligado" : "✖ Geninho não aparece como Ligado");
+await page.getByLabel("Sua pergunta para o Geninho").fill("Em uma frase: por que incluir um controle negativo numa PCR?");
+await page.getByRole("button", { name: "Perguntar" }).click();
+await page.getByText("Resposta gerada por IA").waitFor({ timeout: 120000 });
+const resposta = await page.locator('[role="log"]').innerText();
+console.log("✔ resposta recebida (" + resposta.length + " caracteres)");
+console.log(resposta.split("\n").filter(Boolean).slice(-4).join("\n").slice(0, 600));
+await page.screenshot({ path: `${shots}/geninho.png` });
+await browser.close();

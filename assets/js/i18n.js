@@ -44,7 +44,7 @@
   var D = {
     en: {
       // barra do topo, abas e menu
-      "Início": "Home", "Notícias": "News", "Temas": "Topics", "Revistas": "Journals", "Sobre o app": "About the app",
+      "Início": "Home", "Notícias": "News", "Temas": "Topics", "Revistas": "Journals", "Sobre o app": "About the app", "Acesso restrito · página à parte": "Restricted access · separate page", "Abrir o GenoLab": "Open GenoLab", "Requer cadastro e login": "Sign-up and login required", "GenoLab (acesso restrito)": "GenoLab (restricted access)", "O Lab abre em outra aba, fora do site. Os projetos ficam privados na conta de cada pesquisador.": "The Lab opens in another tab, outside the site. Projects stay private in each researcher’s account.", "O GenoLab ainda não está publicado. Em breve neste endereço.": "GenoLab is not published yet. Coming soon at this address.",
       "Seções do app": "App sections", "Sobre o GenoEvidence": "About GenoEvidence", "Abrir o menu": "Open the menu",
       "Ir para": "Go to", "Fechar o menu": "Close the menu", "Filtrar: câncer, Patrícia, DNA…": "Filter: cancer, Patrícia, DNA…",
       "Filtrar o menu": "Filter the menu", "Nada encontrado.": "Nothing found.", "Páginas": "Pages", "Pesquisadoras": "Researchers",
@@ -141,7 +141,7 @@
       "Instalar como app": "Install as app", "Como instalar o GenoEvidence": "How to install GenoEvidence", "Link copiado": "Link copied"
     },
     es: {
-      "Início": "Inicio", "Notícias": "Noticias", "Temas": "Temas", "Revistas": "Revistas", "Sobre o app": "Sobre la app",
+      "Início": "Inicio", "Notícias": "Noticias", "Temas": "Temas", "Revistas": "Revistas", "Sobre o app": "Sobre la app", "Acesso restrito · página à parte": "Acceso restringido · página aparte", "Abrir o GenoLab": "Abrir GenoLab", "Requer cadastro e login": "Requiere registro e inicio de sesión", "GenoLab (acesso restrito)": "GenoLab (acceso restringido)", "O Lab abre em outra aba, fora do site. Os projetos ficam privados na conta de cada pesquisador.": "El Lab se abre en otra pestaña, fuera del sitio. Los proyectos son privados en la cuenta de cada investigador.", "O GenoLab ainda não está publicado. Em breve neste endereço.": "GenoLab aún no está publicado. Próximamente en esta dirección.",
       "Seções do app": "Secciones de la app", "Sobre o GenoEvidence": "Sobre GenoEvidence", "Abrir o menu": "Abrir el menú",
       "Ir para": "Ir a", "Fechar o menu": "Cerrar el menú", "Filtrar: câncer, Patrícia, DNA…": "Filtrar: cáncer, Patrícia, ADN…",
       "Filtrar o menu": "Filtrar el menú", "Nada encontrado.": "No se encontró nada.", "Páginas": "Páginas", "Pesquisadoras": "Investigadoras",

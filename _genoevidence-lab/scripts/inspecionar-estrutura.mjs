@@ -1,0 +1,25 @@
+// Cria um projeto de exemplo e captura a página da estrutura (1UBQ) com conferência de resíduo.
+import { chromium } from "@playwright/test";
+const base = process.argv[2] ?? "http://localhost:3000";
+const browser = await chromium.launch({ args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] });
+const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+const page = await ctx.newPage();
+const errors = [];
+page.on("pageerror", (e) => errors.push(e.message));
+await page.goto(`${base}/projetos`);
+await page.getByRole("button", { name: /Criar projeto de exemplo/ }).click();
+await page.waitForURL(/\/projetos\/p_/);
+await page.getByRole("link", { name: /1UBQ/ }).click();
+await page.waitForURL(/estruturas/);
+await page.waitForTimeout(6000);
+await page.getByLabel("Número").fill("48");
+await page.getByLabel("Esperado").fill("K");
+await page.getByRole("button", { name: "Conferir" }).click();
+await page.waitForTimeout(2500);
+await page.screenshot({ path: "test-results/inspecao/estrutura-1-confere.png" });
+await page.getByLabel("Esperado").fill("R");
+await page.getByRole("button", { name: "Conferir" }).click();
+await page.waitForTimeout(1200);
+await page.screenshot({ path: "test-results/inspecao/estrutura-2-diverge.png" });
+console.log(errors.length ? `erros: ${errors.join(" | ")}` : "sem erros de página");
+await browser.close();
