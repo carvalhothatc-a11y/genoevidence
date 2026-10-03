@@ -26,6 +26,7 @@ import { GelLanes, ProgramEditor, ReagentOrder, TubeAssignment } from "./interac
 import { ExpectedGel, IdealizedModel, ProjectGelImages, StrandTable, ThermalProfile } from "./results";
 import { STEP_ORDER, usePcr, type Scale } from "./store";
 import type { Reference } from "@/lib/domain/schemas";
+import { dataCurta } from "@/lib/datas";
 
 const LabCanvas = dynamic(() => import("@/components/lab3d/LabCanvas"), {
   ssr: false,
@@ -164,7 +165,7 @@ export function PcrModule({ project, projects, initial }: { project: PcrProjectC
       body: JSON.stringify({
         moduleId: "pcr",
         mode: s.mode,
-        title: `PCR — ${s.mode === "guiado" ? "modo guiado" : "modo exploratório"} (${new Date().toLocaleDateString("pt-BR")})`,
+        title: `PCR — ${s.mode === "guiado" ? "modo guiado" : "modo exploratório"} (${dataCurta(new Date())})`,
         startedAt: s.startedAt,
         stepsVisited: s.visited,
         choices: s.choices,

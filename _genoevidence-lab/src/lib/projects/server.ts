@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { getSessionUser, type SessionUser } from "@/lib/session";
 import { ApiError } from "@/lib/api";
 import { authorizeProject, type ProjectAction } from "@/lib/authz";
+import { dataHora } from "@/lib/datas";
 
 /**
  * Páginas: exige sessão E conta autorizada. Sem sessão → login; pendente/suspensa → página de estado.
@@ -35,7 +36,7 @@ export async function loadProjectFor(id: string, action: ProjectAction = "ler") 
 }
 
 export function formatDate(iso: string) {
-  return new Date(iso).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" });
+  return dataHora(iso);
 }
 
 export function formatBytes(n: number) {

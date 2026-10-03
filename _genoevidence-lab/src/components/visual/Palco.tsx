@@ -6,6 +6,7 @@ import { useRoteiro } from "@/store/roteiro";
 import { useUi } from "@/store/ui";
 import type { PassoVisual } from "@/lib/visual/roteiro";
 import { Cena, Defs, H, W } from "./Cena";
+import { dataHora } from "@/lib/datas";
 import dynamic from "next/dynamic";
 import { capturarHolo } from "@/components/holo/Holo3D";
 
@@ -202,7 +203,7 @@ export async function exportarRoteiro(passos: PassoVisual[], texto: string): Pro
         {titulo}
       </text>
       <text x={24} y={94} fontSize={11} fill="#b49cf5">
-        {`Ilustração didática gerada da descrição · não é resultado experimental nem previsão · ${new Date().toLocaleString("pt-BR")}`}
+        {`Ilustração didática gerada da descrição · não é resultado experimental nem previsão · ${dataHora(new Date())}`}
       </text>
       {passos.map((p, i) => {
         const x = 24 + (i % cols) * (cw + 24);
@@ -269,7 +270,7 @@ async function comporImagem3D(quadros: { passo: PassoVisual; q: ReturnType<typeo
   ctx.fillText(texto.length > 150 ? texto.slice(0, 147) + "…" : texto, gap, 70, largura - 2 * gap);
   ctx.fillStyle = "#b49cf5";
   ctx.font = `400 11px ${fonte}`;
-  ctx.fillText(`Ilustração didática gerada da descrição · não é resultado experimental nem previsão · ${new Date().toLocaleString("pt-BR")}`, gap, 92);
+  ctx.fillText(`Ilustração didática gerada da descrição · não é resultado experimental nem previsão · ${dataHora(new Date())}`, gap, 92);
   for (let i = 0; i < quadros.length; i++) {
     const { passo, q } = quadros[i];
     const x = gap + (i % cols) * (cw + gap);

@@ -13,7 +13,7 @@ RUN npm run build
 
 FROM node:24-alpine AS run
 WORKDIR /app
-ENV NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 HOSTNAME=0.0.0.0 PORT=3000 LAB_DATA_DIR=/data
+ENV NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 HOSTNAME=0.0.0.0 PORT=3000 LAB_DATA_DIR=/data TZ=America/Sao_Paulo
 # usuário sem privilégios; só /data é gravável
 RUN addgroup -S genolab && adduser -S genolab -G genolab && mkdir -p /data && chown genolab:genolab /data
 COPY --from=build --chown=genolab:genolab /app/.next/standalone ./
