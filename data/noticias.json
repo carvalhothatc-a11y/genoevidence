@@ -1,90 +1,12 @@
 {
- "atualizado_em": "2026-10-03T13:31:28.517659+00:00",
+ "atualizado_em": "2026-10-03T18:01:43.064750+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "Protocolo da USP orienta análise de variantes genéticas para diagnóstico de doenças raras",
-   "resumo": "Material de acesso aberto pretende auxiliar profissionais na interpretação de variantes genéticas diante da ampliação do sequenciamento pelo SUS",
-   "url": "https://jornal.usp.br/radio-usp/protocolo-da-usp-orienta-analise-de-variantes-geneticas-para-diagnostico-de-doencas-raras/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-02T18:59:23+00:00",
-   "tema": "Genética",
-   "relevancia": 12,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/02/20200324_genes1.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "USP protocol guides analysis of genetic variants for diagnosis of rare diseases",
-     "resumo": "Open access material intends to assist professionals in the interpretation of genetic variants in view of the expansion of sequencing by sus"
-    },
-    "es": {
-     "titulo": "El protocolo de la USP guía el análisis de variantes genéticas para el diagnóstico de enfermedades raras",
-     "resumo": "El material de acceso abierto tiene la intención de ayudar a los profesionales en la interpretación de variantes genéticas en vista de la expansión de la secuenciación por sus"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Em visita à Suécia, Centro de Estudos em Biogás e Bioprodutos fortalece cooperação internacional",
-   "resumo": "Estrutura do BSRC da Universidade Linköping representa uma inspiração para o desenvolvimento da iniciativa brasileira",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/02/em-visita-a-suecia-centro-de-estudos-em-biogas-e-bioprodutos-fortalece-cooperacao-internacional/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-02T19:30:07+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261002_Biogas_Capa.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "On a visit to Sweden, the Center for Studies in Biogas and Bioproducts strengthens international cooperation",
-     "resumo": "Structure of the BSRC of Linköping University represents an inspiration for the development of the Brazilian initiative"
-    },
-    "es": {
-     "titulo": "En una visita a Suecia, el Centro de Estudios en Biogás y Bioproductos refuerza la cooperación internacional",
-     "resumo": "La estructura del BSRC de la Universidad de Linköping representa una inspiración para el desarrollo de la iniciativa brasileña"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Pesquisadoras da USP criam treinamento para prevenção do suicídio em idosos",
-   "resumo": "Conteúdos gratuitos da Escola de Enfermagem de Ribeirão Preto apoiam a formação de estudantes e profissionais de saúde e orientam cuidadores sobre a saúde mental da população idosa",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/pesquisadoras-da-usp-criam-treinamento-para-prevencao-do-suicidio-em-idosos/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-02T15:30:15+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/07/20240716_casal-de-idosos.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Researchers at USP create training for suicide prevention in the elderly",
-     "resumo": "Free content from the Ribeirão Preto School of Nursing supports the training of students and health professionals and guides caregivers on the mental health of the elderly population"
-    },
-    "es": {
-     "titulo": "Investigadores de la USP crean formación para la prevención del suicidio en personas mayores",
-     "resumo": "El contenido gratuito de la Escuela de Enfermería de Ribeirão Preto apoya la capacitación de estudiantes y profesionales de la salud y guía a los cuidadores sobre la salud mental de la población mayor"
-    }
-   }
-  },
   {
    "tipo": "noticia",
    "titulo": "Seu intestino pode estar produzindo uma molécula que aumenta o risco de Alzheimer",
    "resumo": "Os cientistas ligaram um composto bacteriano intestinal chamado ImP a um maior risco de Alzheimer, acúmulo prejudicial de proteínas cerebrais e declínio cognitivo mais rápido. A descoberta levanta a possibilidade de que a redução da ImP no sangue possa um dia ajudar a desacelerar...",
    "url": "https://www.sciencedaily.com/releases/2026/09/260930225459.htm",
-   "fonte": "ScienceDaily",
+   "fonte": "ScienceDaily · Saúde",
    "idioma": "en",
    "data": "2026-10-03T12:13:21+00:00",
    "tema": "Ciência",
@@ -131,32 +53,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Conheça o laboratório que transforma plantas em tecnologia",
-   "resumo": "Inovalab visita o Centro Pluridisciplinar de Pesquisas Químicas, Biológicas e Agrícolas da Unicamp",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/02/conheca-o-laboratorio-que-transforma-plantas-em-tecnologia/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-02T20:34:36+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261002_Laboratorio_CPQBA_div_Capa.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Meet the lab that turns plants into technology",
-     "resumo": "Inovalab visits the Pluridisciplinary Center for Chemical, Biological and Agricultural Research at Unicamp"
-    },
-    "es": {
-     "titulo": "Conoce el laboratorio que convierte las plantas en tecnología",
-     "resumo": "Inovalab visita el Centro Pluridisciplinario de Investigación Química, Biológica y Agrícola de la Unicamp"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "José Goldemberg ganha biografia do Projeto Notáveis da Fecomercio",
    "resumo": "Reitor da USP de 1986 a 1990 e ex-ministro da Educação, o físico José Goldemberg tem uma trajetória marcada pela atuação acadêmica, no setor público e nos debates sobre energia e meio ambiente",
    "url": "https://jornal.usp.br/institucional/jose-goldemberg-ganha-biografia-do-projeto-notaveis-da-fecomercio/",
@@ -178,6 +74,58 @@
     "es": {
      "titulo": "José Goldemberg gana biografía del Proyecto Notables de Fecomercio",
      "resumo": "Rector de la USP de 1986 a 1990 y exministro de Educación, el físico José Goldemberg tiene una trayectoria marcada por el rendimiento académico, en el sector público y en los debates sobre energía y medio ambiente"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "No rastro dos átomos: o desenvolvimento e a aplicação de técnicas analíticas em um instituto especializado da USP",
+   "resumo": "As contribuições do Centro de Energia Nuclear na Agricultura se estendem a áreas tão diversas quanto o rastreamento de elementos radioativos, a nutrição animal e a química analítica",
+   "url": "https://jornal.usp.br/universidade/no-rastro-dos-atomos-o-desenvolvimento-e-a-aplicacao-de-tecnicas-analiticas-em-um-instituto-especializado-da-usp/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-02T19:04:26+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261002_aquarelas_Klaus_1996_campo_girassois.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "In the wake of atoms: the development and application of analytical techniques in a specialized USP institute",
+     "resumo": "The Center for Nuclear Energy in Agriculture's contributions extend to areas as diverse as radioactive element tracking, animal nutrition, and analytical chemistry"
+    },
+    "es": {
+     "titulo": "A raíz de los átomos: el desarrollo y la aplicación de técnicas analíticas en un instituto especializado de la USP",
+     "resumo": "Las contribuciones del Centro para la Energía Nuclear en la Agricultura se extienden a áreas tan diversas como el seguimiento de elementos radiactivos, la nutrición animal y la química analítica"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Plataforma criada na USP reúne experiências para ajudar a pensar o futuro do futebol feminino",
+   "resumo": "Aberto ao público, o PermeÖ Copa 2027 convida atletas, profissionais, pesquisadores, torcedores e outras pessoas interessadas a compartilhar o que sabem sobre a modalidade",
+   "url": "https://jornal.usp.br/diversidade/plataforma-criada-na-usp-reune-experiencias-para-ajudar-a-pensar-o-futuro-do-futebol-feminino/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-02T18:54:49+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261002_futebol.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Platform created at USP brings together experiences to help think about the future of women's football",
+     "resumo": "Open to the public, the PermeÖ Copa 2027 invites athletes, professionals, researchers, fans and other interested people to share what they know about the sport"
+    },
+    "es": {
+     "titulo": "Plataforma creada en la USP que reúne experiencias para ayudar a pensar en el futuro del fútbol femenino",
+     "resumo": "Abierta al público, la PermeÖ Copa 2027 invita a atletas, profesionales, investigadores, aficionados y otras personas interesadas a compartir lo que saben sobre el deporte"
     }
    }
   },
@@ -229,6 +177,31 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Esta enzima protetora pode ajudar a impedir que a doença hepática gordurosa piore",
+   "resumo": "Os cientistas identificaram uma enzima que pode atuar como uma defesa natural contra o agravamento da doença hepática gordurosa, que afeta cerca de 100 milhões de americanos. A enzima, chamada UBE2N, ajuda as células do fígado a eliminar os danos...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261002080020.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-03T13:46:11+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/diseased-liver-illustration.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "This protective enzyme could help stop fatty liver disease from getting worse",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Esta enzima protectora podría ayudar a evitar que la enfermedad del hígado graso empeore",
+     "resumo": "Los científicos han identificado una enzima que puede actuar como una defensa natural contra el empeoramiento de la enfermedad del hígado graso, que afecta a unos 100 millones de estadounidenses. La enzima, llamada UBE2N, ayuda a eliminar las células hepáticas dañadas..."
+    }
+   },
+   "resumo_original": "Scientists have identified an enzyme that may act as a natural defense against the worsening of fatty liver disease, which affects an estimated 100 million Americans. The enzyme, called UBE2N, helps liver cells clear away damaged…"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Como o cérebro usa a memória para imaginar o que poderia ter sido",
    "resumo": "Filósofo e ganhador do MacArthur “Genius Grant” de 2026, Felipe De Brigard explica como nossos cérebros usam a imaginação para reconstruir o passado",
    "url": "https://www.scientificamerican.com/article/how-the-brain-uses-memory-to-imagine-what-might-have-been/",
@@ -254,53 +227,54 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "A leucina faz mais do que construir músculos. Ele alimenta suas células",
-   "resumo": "O aminoácido essencial leucina pode aumentar a produção de energia celular, protegendo as proteínas-chave nas mitocôndrias de serem destruídas. A descoberta revela uma nova conexão entre nutrição e metabolismo que pode levar a...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261001095319.htm",
+   "titulo": "O Juice da ESA acabou de usar a Terra como um estilingue para Júpiter",
+   "resumo": "A nave espacial Juice da ESA passou pela Terra a 28 de setembro, usando a gravidade do nosso planeta para remodelar drasticamente o seu caminho em direção a Júpiter sem queimar muito combustível. O sobrevoo mudou sua direção em 20 graus e aumentou sua velocidade em 3,5...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261001214102.htm",
    "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-03T12:33:15+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-03T13:34:11+00:00",
+   "tema": "Espaço",
    "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/glowing-mitochondria-cell-biology.webp",
+   "imagem": "https://www.sciencedaily.com/images/1920/juice-images-earth-during-flyby.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Leucine does more than build muscle. It powers up your cells",
+   "titulo_original": "ESA’s Juice just used Earth as a slingshot to Jupiter",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La leucina hace más que construir músculo. Alimenta tus células",
-     "resumo": "El aminoácido esencial leucina puede aumentar la producción de energía celular al proteger las proteínas clave de las mitocondrias para que no se destruyan. El descubrimiento revela una nueva conexión entre la nutrición y el metabolismo que eventualmente podría conducir a..."
+     "titulo": "Juice de la esa acaba de usar la Tierra como honda para Júpiter",
+     "resumo": "La nave espacial Juice de la esa pasó por delante de la Tierra el 28 de septiembre, utilizando la gravedad de nuestro planeta para remodelar drásticamente su camino hacia Júpiter sin quemar mucho combustible. El sobrevuelo cambió su dirección en 20 grados y aumentó su velocidad en 3,5..."
     }
    },
-   "resumo_original": "The essential amino acid leucine can boost cellular energy production by protecting key proteins on mitochondria from being destroyed. The discovery reveals a new connection between nutrition and metabolism that could eventually lead to…"
+   "resumo_original": "ESA’s Juice spacecraft raced past Earth on September 28, using our planet’s gravity to dramatically reshape its path toward Jupiter without burning much fuel. The flyby changed its direction by 20 degrees and increased its speed by 3.5…"
   },
   {
    "tipo": "noticia",
-   "titulo": "Área do cérebro descoberta que pode ser crítica para gravidezes viáveis",
-   "resumo": "Uma parte recém-descoberta do cérebro é essencial para a implantação bem-sucedida de embriões em camundongos. Pode ajudar a explicar por que algumas gestações e tentativas de fertilização in vitro falham",
-   "url": "https://www.newscientist.com/article/2591599-brain-area-discovered-that-may-be-critical-for-viable-pregnancies/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-02T10:00:00+00:00",
+   "titulo": "Em visita à Suécia, Centro de Estudos em Biogás e Bioprodutos fortalece cooperação internacional",
+   "resumo": "Estrutura do BSRC da Universidade Linköping representa uma inspiração para o desenvolvimento da iniciativa brasileira",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/02/em-visita-a-suecia-centro-de-estudos-em-biogas-e-bioprodutos-fortalece-cooperacao-internacional/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-02T19:30:07+00:00",
    "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_314837110.jpg",
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261002_Biogas_Capa.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Brain area discovered that may be critical for viable pregnancies",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "On a visit to Sweden, the Center for Studies in Biogas and Bioproducts strengthens international cooperation",
+     "resumo": "Structure of the BSRC of Linköping University represents an inspiration for the development of the Brazilian initiative"
+    },
     "es": {
-     "titulo": "Área del cerebro descubierta que puede ser crítica para embarazos viables",
-     "resumo": "Una parte del cerebro recién descubierta es esencial para la implantación exitosa de embriones en ratones. Puede ayudar a explicar por qué algunos embarazos e intentos de FIV fallan"
+     "titulo": "En una visita a Suecia, el Centro de Estudios en Biogás y Bioproductos refuerza la cooperación internacional",
+     "resumo": "La estructura del BSRC de la Universidad de Linköping representa una inspiración para el desarrollo de la iniciativa brasileña"
     }
-   },
-   "resumo_original": "A newly discovered part of the brain is essential for successful embryo implantation in mice. It may help to explain why some pregnancies and IVF attempts fail"
+   }
   }
  ],
  "artigos": [
@@ -315,7 +289,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "An epigenetic program dictates MYC amplification dynamics that promote transient, extrachromosomal, and inherited genomic events.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Un programa epigenético dicta la dinámica de amplificación de MYC que promueve eventos genómicos transitorios, extracromosómicos y hereditarios."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -328,18 +307,30 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "TESERA: morphologic subtyping and prognostic stratification of hepatocellular carcinoma from H&E whole-slide images.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "TESERA: Morphologic subtyping and prognostic stratification of hepatocellular carcinoma from H&E whole-slide images."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Mechanistic insights into gallic acid-induced autophagy in triple negative breast cancer through network pharmacology, molecular docking, and in vitro validation.",
+   "titulo": "Insights mecanicistas sobre autofagia induzida por ácido gálico em câncer de mama triplo negativo através de farmacologia de rede, docking molecular e validação in vitro.",
    "autores": "Chatterjee E, Dey B, Bansode A, Basak S, Sharma A, Guru SK.",
    "revista": "Funct Integr Genomics",
    "data": "2026-10-02T00:00:00+00:00",
    "doi": "10.1007/s10142-026-02058-w",
    "url": "https://doi.org/10.1007/s10142-026-02058-w",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Mechanistic insights into gallic acid-induced autophagy in triple negative breast cancer through network pharmacology, molecular docking, and in vitro validation.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Conocimientos mecanicistas sobre la autofagia inducida por ácido gálico en el cáncer de mama triple negativo a través de la farmacología de red, el acoplamiento molecular y la validación in vitro."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -565,7 +556,7 @@
    "data": "2026-10-01T00:00:00+00:00",
    "doi": "10.1371/journal.pone.0357898",
    "url": "https://doi.org/10.1371/journal.pone.0357898",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "Genomic and clinical determinants of response to Azacitidine plus venetoclax in acute myeloid leukemia: Results from the HM-SCREEN-Japan 02 study.",
    "traduzido": true,
@@ -673,7 +664,7 @@
    "data": "2026-10-01T00:00:00+00:00",
    "doi": "10.1002/cnr2.70699",
    "url": "https://doi.org/10.1002/cnr2.70699",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "Mapping Mutations and Signaling Network Interactions to Guide Precision Therapy in Gallbladder Cancer.",
    "traduzido": true,
@@ -1118,6 +1109,10 @@
   "location location location how to edit genes only in the cells you want": "2026-10-03T13:31:28.517659+00:00",
   "how the brain uses memory to imagine what might have been": "2026-10-03T13:31:28.517659+00:00",
   "leucine does more than build muscle it powers up your cells": "2026-10-03T13:31:28.517659+00:00",
-  "brain area discovered that may be critical for viable pregnancies": "2026-10-03T13:31:28.517659+00:00"
+  "brain area discovered that may be critical for viable pregnancies": "2026-10-03T13:31:28.517659+00:00",
+  "no rastro dos atomos o desenvolvimento e a aplicacao de tecnicas analiticas em um instituto especializado da usp": "2026-10-03T18:01:43.064750+00:00",
+  "plataforma criada na usp reune experiencias para ajudar a pensar o futuro do futebol feminino": "2026-10-03T18:01:43.064750+00:00",
+  "this protective enzyme could help stop fatty liver disease from getting worse": "2026-10-03T18:01:43.064750+00:00",
+  "esas juice just used earth as a slingshot to jupiter": "2026-10-03T18:01:43.064750+00:00"
  }
 }
