@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-02T23:04:48.572333+00:00",
+ "atualizado_em": "2026-10-03T02:06:42.713551+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -107,49 +107,23 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Novo instrumento no acelerador Sirius permite observar células solares em funcionamento",
-   "resumo": "Desenvolvida no CNPEM com apoio da FAPESP, a plataforma utiliza microscopia de raios X para investigar materiais fotovoltaicos sob condições reais de temperatura, luz e umidade",
-   "url": "https://agencia.fapesp.br/novo-instrumento-no-acelerador-sirius-permite-observar-celulas-solares-em-funcionamento/59318",
+   "titulo": "Lançamento do livro A ciência do Universo",
+   "resumo": "Obra do físico Rogério Rosenfeld aborda desde os primeiros modelos cosmológicos até os experimentos mais recentes",
+   "url": "https://agencia.fapesp.br/lancamento-do-livro-a-ciencia-do-universo/59324",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-02T23:04:48.572333+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59318.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "New instrument on Sirius accelerator allows to observe solar cells in operation",
-     "resumo": "Developed at CNPEM with support from FAPESP, the platform uses X-ray microscopy to investigate photovoltaic materials under real conditions of temperature, light and humidity"
-    },
-    "es": {
-     "titulo": "El nuevo instrumento en el acelerador Sirius permite observar las células solares en funcionamiento",
-     "resumo": "Desarrollada en CNPEM con el apoyo de la FAPESP, la plataforma utiliza microscopía de rayos X para investigar materiales fotovoltaicos en condiciones reales de temperatura, luz y humedad"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "VÍDEO | Dieta rica em açúcar agrava a asma",
-   "resumo": "Pesquisa financiada pela FAPESP e conduzida por cientistas da Unifesp e da UFABC observou rápida exacerbação da inflamação pulmonar e aumento do muco nas vias respiratórias em camundongos que consumiram leite condensado por duas semanas, o…",
-   "url": "https://www.youtube.com/watch?v=6wJasLuj-Fc",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-02T23:04:48.572333+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-03T02:06:42.713551+00:00",
+   "tema": "Espaço",
    "relevancia": 7,
    "imagem": "",
    "i18n": {
     "en": {
-     "titulo": "VIDEO | Diet rich in acid aggravates asthma",
-     "resumo": "Research funded by FAPESP and conducted by scientists from Unifesp and UFABC observed a rapid exacerbation of lung inflammation and increased mucus in the airways in mice that consumed condensed milk for two weeks, the…"
+     "titulo": "Launch of the book The Science of the Universe",
+     "resumo": "Physicist Rogério Rosenfeld's work covers from the first cosmological models to the most recent experiments"
     },
     "es": {
-     "titulo": "VIDEO | Una dieta rica en ácidos agrava el asma",
-     "resumo": "La investigación financiada por la FAPESP y realizada por científicos de la Unifesp y la UFABC observó una rápida exacerbación de la inflamación pulmonar y un aumento de la mucosidad en las vías respiratorias en ratones que consumieron leche condensada durante dos semanas, el..."
+     "titulo": "Lanzamiento del libro La Ciencia del Universo",
+     "resumo": "El trabajo del físico Rogério Rosenfeld abarca desde los primeros modelos cosmológicos hasta los experimentos más recientes"
     }
    }
   },
@@ -181,23 +155,50 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Webinários regionais do Global Research Council",
-   "resumo": "Desafios relacionados à produção de conhecimento e ao financiamento da ciência estarão em debate em dois seminários que reunirão pesquisadores e agências de fomento",
-   "url": "https://agencia.fapesp.br/webinarios-regionais-do-global-research-council/59323",
-   "fonte": "Agência FAPESP",
+   "titulo": "Canal Saúde estreia nova temporada do 'Ligado em Saúde'",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/canal-saude-estreia-nova-temporada-do-ligado-em-saude",
+   "fonte": "Agência Fiocruz",
    "idioma": "pt",
-   "data": "2026-10-02T18:32:15.018849+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-02T17:57:18+00:00",
+   "tema": "Saúde",
    "relevancia": 7,
-   "imagem": "",
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/bouer.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
    "i18n": {
     "en": {
-     "titulo": "Global Research Council Regional Webinars",
-     "resumo": "Challenges related to the production of knowledge and the financing of science will be discussed in two seminars that will bring together researchers and funding agencies"
+     "titulo": "Health Channel premieres new season of 'Ligado em Saúde'"
     },
     "es": {
-     "titulo": "Seminarios web regionales del Consejo Mundial de Investigación",
-     "resumo": "Los desafíos relacionados con la producción de conocimiento y el financiamiento de la ciencia se discutirán en dos seminarios que reunirán a investigadores y agencias de financiamiento"
+     "titulo": "Health Channel estrena nueva temporada de 'Ligado em Saúde'"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Pronta para a quarta onda",
+   "resumo": "Em seis décadas de existência, universidade experimentou três fases de desenvolvimento e está às portas de mais uma",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/02/pronta-para-a-quarta-onda/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-02T15:12:36+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Man_202610025_Aniversario-Unicamp-60-anos_Capa.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Ready for the fourth wave",
+     "resumo": "In six decades of existence, the university has experienced three phases of development and is on the doorstep of another"
+    },
+    "es": {
+     "titulo": "Listo para la cuarta ola",
+     "resumo": "En seis décadas de existencia, la universidad ha experimentado tres fases de desarrollo y está a las puertas de otra"
     }
    }
   },
@@ -300,6 +301,44 @@
     }
    },
    "resumo_original": "Unlike most modern mammals, which get just two sets of teeth in their lifetime, an ancient species from the Cretaceous, found in China, appears to have had the ability to replace its teeth throughout its life"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Risco de doença neurodegenerativa associado à expressão gênica em monócitos periféricos através de ancestrais",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s42003-026-10865-x",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-10-02T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 4,
+   "imagem": "",
+   "titulo_original": "Neurodegenerative disease risk associated with gene expression in peripheral monocytes across ancestries",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Riesgo de enfermedad neurodegenerativa asociado con la expresión génica en monocitos periféricos de todas las ascendencias"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Correção do Autor: Um mecanismo mutuamente antagônico mediado pela modificação de RNA m6A nas interações planta-vírus",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41467-026-78523-8",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-10-02T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 3,
+   "imagem": "",
+   "titulo_original": "Author Correction: A mutually antagonistic mechanism mediated by RNA m6A modification in plant-virus interactions",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Corrección del autor: Un mecanismo mutuamente antagonista mediado por la modificación del ARN m6A en las interacciones planta-virus"
+    }
+   }
   }
  ],
  "artigos": [
@@ -584,7 +623,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Point-of-care models for genetic testing among patients at risk of hereditary cancer: A systematic review.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Modelos de punto de atención para pruebas genéticas en pacientes con riesgo de cáncer hereditario: una revisión sistemática."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -597,7 +641,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Association of TP53 Mutational Status and Survival in Anaplastic Thyroid Cancer Treated with Dabrafenib Plus Trametinib.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Asociación del estado mutacional de TP53 y la supervivencia en el cáncer de tiroides anaplásico tratado con dabrafenib más trametinib."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -781,6 +830,24 @@
   },
   {
    "tipo": "artigo",
+   "titulo": "Impacto Clínico e Dinâmica da Hematopoiese Clonal com <sup>177</sup> Terapia Lu-PSMA-617 no Câncer de Próstata Avançado.",
+   "autores": "Ravi P, Zhong C, Perez KJ, Xie W, Volpe V, Lee GM, Boardman J, Pittard EG, Stoltenberg H, Jacene H, Weeks LD, Sperling…",
+   "revista": "J Nucl Med",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.2967/jnumed.126.272125",
+   "url": "https://doi.org/10.2967/jnumed.126.272125",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Clinical Impact and Dynamics of Clonal Hematopoiesis with <sup>177</sup>Lu-PSMA-617 Therapy in Advanced Prostate Cancer.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Clinical Impact and Dynamics of Clonal Hematopoiesis with <sup>177</sup>Lu-PSMA-617 Therapy in Advanced Prostate Cancer."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
    "titulo": "A estratificação da paisagem da linhagem germinativa define grupos moleculares e prognósticos distintos em neoplasias mieloides relacionadas à terapia.",
    "autores": "Calvete O, Mestre J, Chaparro-González L, Pérez-Hita LR, Mesa A, Xicoy B, Zamora L, Granada I, Mallo M, Cid E, Mancini…",
    "revista": "Blood Adv",
@@ -799,37 +866,19 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Ziyuglycoside I atenua a lesão induzida por veneno de Deinagkistrodon acutus em células epiteliais tubulares renais modulando a sinalização de PAR1-NLRP3-IL-1β.",
-   "autores": "Shen Y, Jiang N, Tu M.",
-   "revista": "Toxicon",
-   "data": "2026-09-30T00:00:00+00:00",
-   "doi": "10.1016/j.toxicon.2026.109312",
-   "url": "https://doi.org/10.1016/j.toxicon.2026.109312",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Ziyuglycoside I Attenuates Deinagkistrodon acutus Venom-Induced Injury in Renal Tubular Epithelial Cells by Modulating PAR1-NLRP3-IL-1β Signaling.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El ziuglucósido I atenúa la lesión inducida por veneno de Deinagkistrodon acutus en las células epiteliales tubulares renales mediante la modulación de la señalización de PAR1-NLRP3-IL-1β."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Tradução farmacológica de mutações missense de câncer para direcionamento terapêutico com moléculas pequenas.",
-   "autores": "Fouad M.",
-   "revista": "Biochem Pharmacol",
-   "data": "2026-09-30T00:00:00+00:00",
-   "doi": "10.1016/j.bcp.2026.118508",
-   "url": "https://doi.org/10.1016/j.bcp.2026.118508",
+   "titulo": "CDK2 Inhibition Exerts RB-Independent Antitumor Activity in CDK4/6 Inhibitor-Resistant HR+/HER2- Breast Cancer.",
+   "autores": "Juric D, Islam KN, Gkotinakou IM, Zheng A, Lee H, Saxena S, Kreuzer J, Morris R, McGrath CG, Sakhtemani R, Chevalier…",
+   "revista": "Cancer Res",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1158/0008-5472.can-25-1859",
+   "url": "https://doi.org/10.1158/0008-5472.can-25-1859",
    "acesso_aberto": false,
    "tema": "Câncer",
-   "titulo_original": "Pharmacological translation of cancer missense mutations for therapeutic targeting with small molecules.",
+   "titulo_original": "CDK2 Inhibition Exerts RB-Independent Antitumor Activity in CDK4/6 Inhibitor-Resistant HR+/HER2- Breast Cancer.",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Traducción farmacológica de mutaciones de sentido erróneo del cáncer para el direccionamiento terapéutico con moléculas pequeñas."
+     "titulo": "La inhibición de CDK2 ejerce actividad antitumoral independiente de RB en el cáncer de mama HR+/HER2- resistente a inhibidores de CDK4/6."
     }
    }
   }
@@ -849,8 +898,7 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
-  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
+  "Nature: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
   "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-09-24T17:09:08.714347+00:00",
@@ -1115,6 +1163,7 @@
   "protocolo da usp orienta analise de variantes geneticas para diagnostico de doencas raras": "2026-10-02T23:04:48.572333+00:00",
   "em visita a suecia centro de estudos em biogas e bioprodutos fortalece cooperacao internacional": "2026-10-02T23:04:48.572333+00:00",
   "conheca o laboratorio que transforma plantas em tecnologia": "2026-10-02T23:04:48.572333+00:00",
-  "could a giant iceberg really break off greenland scientists check tom cruises new movie digger": "2026-10-02T23:04:48.572333+00:00"
+  "could a giant iceberg really break off greenland scientists check tom cruises new movie digger": "2026-10-02T23:04:48.572333+00:00",
+  "author correction a mutually antagonistic mechanism mediated by rna m6a modification in plant virus interactions": "2026-10-03T02:06:42.713551+00:00"
  }
 }
