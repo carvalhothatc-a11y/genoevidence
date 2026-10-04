@@ -31,7 +31,7 @@ export default async function Home() {
             <ButtonLink href="/projetos/novo" variant="secondary" className="px-5 py-3 text-base">
               Criar projeto
             </ButtonLink>
-            <ButtonLink href="/laboratorio?modo=2d" variant="ghost" className="px-5 py-3 text-base">
+            <ButtonLink href="/laboratorio/bancada?modo=2d" variant="ghost" className="px-5 py-3 text-base">
               Versão em painéis 2D
             </ButtonLink>
           </div>

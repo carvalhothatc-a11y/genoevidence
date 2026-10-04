@@ -20,9 +20,18 @@ const STOP_NOTES: Record<string, string> = {
   refusal: "O Geninho não pode ajudar com este pedido.",
 };
 
-export function Geninho({ configured, isAdmin, motivo }: { configured: boolean; isAdmin: boolean; motivo?: string }) {
+/**
+ * contexto: síntese do experimento na área de trabalho. Só é enviada se a pessoa marcar a opção,
+ * e vai como DADO (o servidor a separa da pergunta). sugestoes: perguntas rápidas do contexto.
+ * pergunta: texto inicial do campo (ex.: “qual é o papel deste elemento?”).
+ */
+export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, pergunta }: { configured: boolean; isAdmin: boolean; motivo?: string; contexto?: string; sugestoes?: string[]; pergunta?: string }) {
   const [messages, setMessages] = useState<Msg[]>([]);
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(pergunta ?? "");
+  const [incluir, setIncluir] = useState(false);
+  useEffect(() => {
+    if (pergunta) setInput(pergunta);
+  }, [pergunta]);
   const [busy, setBusy] = useState(false);
   const [status, setStatus] = useState("");
   const abortRef = useRef<AbortController | null>(null);
@@ -56,7 +65,7 @@ export function Geninho({ configured, isAdmin, motivo }: { configured: boolean; 
       const res = await fetch("/api/geninho", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: payload.map(({ role, content }) => ({ role, content: content.slice(0, MAX_CHARS) })) }),
+        body: JSON.stringify({ messages: payload.map(({ role, content }) => ({ role, content: content.slice(0, MAX_CHARS) })), ...(contexto && incluir ? { contexto: contexto.slice(0, 6000) } : {}) }),
         signal: ctrl.signal,
       });
       if (!res.ok || !res.body) {
@@ -202,9 +211,24 @@ export function Geninho({ configured, isAdmin, motivo }: { configured: boolean; 
                 </button>
               )}
             </div>
+            {contexto && (
+              <label className="flex items-start gap-2 text-[12px] text-body">
+                <input type="checkbox" className="mt-0.5" checked={incluir} onChange={(e) => setIncluir(e.target.checked)} data-testid="geninho-contexto" />
+                <span>Incluir a síntese do experimento atual (etapas, elementos, parâmetros e fontes) nesta conversa. Ela será enviada à Anthropic; arquivos e imagens não são enviados.</span>
+              </label>
+            )}
+            {sugestoes && sugestoes.length > 0 && messages.length === 0 && (
+              <div className="flex flex-wrap gap-1.5">
+                {sugestoes.map((q) => (
+                  <button key={q} type="button" onClick={() => setInput(q)} className="rounded-full border border-line px-2.5 py-1 text-xs hover:bg-surface-2">
+                    {q}
+                  </button>
+                ))}
+              </div>
+            )}
             <div className="flex flex-wrap items-center justify-between gap-2">
               <p className="text-[11px] leading-snug text-muted">
-                Enviado à API da Anthropic (Claude): apenas as mensagens desta conversa. Não são enviados seus projetos, arquivos, nome ou e-mail, e a conversa não é salva no GenoLab. Não cole dados pessoais, de pacientes ou resultados confidenciais.
+                Enviado à API da Anthropic (Claude): {contexto && incluir ? "as mensagens desta conversa e a síntese do experimento" : "apenas as mensagens desta conversa"}. Não são enviados seus arquivos, nome ou e-mail, e a conversa não é salva no GenoLab. O Geninho não altera dados nem parâmetros. Não cole dados pessoais, de pacientes ou resultados confidenciais.
               </p>
               {messages.length > 0 && !busy && (
                 <button type="button" onClick={() => (setMessages([]), setStatus(""))} className="text-xs font-semibold underline">

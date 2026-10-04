@@ -122,7 +122,7 @@ const ENTIDADES: { e: Entidade; re: RegExp }[] = [
   { e: "proteina", re: /proteina\w*|enzima recombinante|peptide\w*/ },
   { e: "celula", re: /celula\w*|linhagem|\bhek\b|\bhela\b|levedura\w*|tecido\w*/ },
   { e: "antibiotico", re: /ampicilina|canamicina|cloranfenicol|tetraciclina|antibiotico\w*|\bamp\b|\bkan\b/ },
-  { e: "placa", re: /\bplaca\w*|agar|meio solido|petri/ },
+  { e: "placa", re: /\bplaca\w*|\bagar\b|meio solido|petri/ },
   { e: "gel", re: /\bgel\b|agarose|banda\w*/ },
   { e: "dna", re: /\bdna\b|genoma|genomic\w*|cromossom\w*|\bmolde\b|template|\bgene\b|sequencia alvo/ },
   { e: "tubo", re: /\btubo\w*|eppendorf|microtubo\w*|master mix|mistura|reacao/ },
@@ -186,7 +186,7 @@ export type PassoVisual = {
   origem: Entidade | null;
   destino: Entidade | null;
   /** Rótulos do texto: gene, organismo, enzima, antibiótico, temperatura… */
-  rotulos: { gene?: string; organismo?: string; enzima?: string; antibiotico?: string; temperatura?: string };
+  rotulos: { gene?: string; organismo?: string; enzima?: string; antibiotico?: string; temperatura?: string; volume?: string; ciclos?: string };
   /** Integração no cromossomo citada (“no DNA da bactéria”). */
   integracao: boolean;
   confianca: "alta" | "conferir";
@@ -267,14 +267,23 @@ export function fragmentar(texto: string): string[] {
   const out: string[] = [];
   const sep = /(,\s+(?:e\s+)?(?:depois\s+|daí\s+|dai\s+|então\s+|entao\s+|em seguida\s+|por fim\s+|aí\s+)?|\s+e\s+(?:depois\s+|daí\s+|dai\s+|então\s+|entao\s+|em seguida\s+)?|\s+(?:depois|daí|então|em seguida|por fim|finalmente)\s+)/i;
   const temAcao = (x: string) => ACOES.some((a) => a.re.test(normalizar(x)));
+  // conectivos sozinhos (“Por fim”, “Depois”) não são etapas: vão para o começo da peça seguinte
+  const conectivo = (x: string) => /^(?:e\s+)?(?:por fim|depois|entao|em seguida|finalmente|ai|dai|logo|primeiro|antes|enfim|apos isso|em seguida a isso)$/.test(normalizar(x).trim());
   for (const f of frases) {
     const bruto = f.split(sep);
     const pecas: string[] = [];
+    let prefixo = "";
     for (let i = 0; i < bruto.length; i += 2) {
       const p = bruto[i].replace(/^[,;\s]+|[,;.\s]+$/g, "");
       if (!p) continue;
-      if (pecas.length && !temAcao(p)) pecas[pecas.length - 1] += (bruto[i - 1] ?? " ") + p;
-      else pecas.push(p);
+      if (conectivo(p)) {
+        prefixo = `${prefixo}${p}, `;
+        continue;
+      }
+      const peca = prefixo + p;
+      prefixo = "";
+      if (pecas.length && !temAcao(peca)) pecas[pecas.length - 1] += (bruto[i - 1] ?? " ") + peca;
+      else pecas.push(peca);
     }
     out.push(...(pecas.length ? pecas : [f]));
   }

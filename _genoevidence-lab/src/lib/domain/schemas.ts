@@ -18,7 +18,7 @@ export type ConsequenceBasis = z.infer<typeof ConsequenceBasis>;
 
 // ---------------------------------------------------------------- Arquivos
 
-export const FileKind = z.enum(["csv", "pdf", "estrutura", "imagem", "texto", "outro"]);
+export const FileKind = z.enum(["csv", "pdf", "estrutura", "imagem", "texto", "planilha", "documento", "outro"]);
 export type FileKind = z.infer<typeof FileKind>;
 
 export const FileRecord = z.object({

@@ -13,7 +13,7 @@ await page.getByLabel("E-mail").fill("demo@exemplo.test");
 await page.getByLabel("Senha", { exact: true }).fill(pw);
 await page.getByRole("button", { name: "Entrar" }).click();
 await page.waitForURL((u) => !u.pathname.startsWith("/entrar"), { timeout: 30000 });
-await page.goto(`${base}/laboratorio`);
+await page.goto(`${base}/laboratorio/bancada`);
 await page.waitForTimeout(5000);
 const texto = frases.join(" ") || "Tirei o primer de um lado, acrescentei no DNA, foi no plasmídeo, e daí vou inserir no DNA da bactéria.";
 await page.locator("#prompt-ideia").fill(texto);

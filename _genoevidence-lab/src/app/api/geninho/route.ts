@@ -2,7 +2,7 @@ import { ApiError, handle, json, readJsonBody, requireUser } from "@/lib/api";
 import { audit } from "@/lib/audit";
 import { AuthError, rateLimit } from "@/lib/auth/store";
 import { assistantStatus } from "@/lib/assistant/status";
-import { GENINHO_LIMITS, GENINHO_SYSTEM, GeninhoRequest, geninhoClient, geninhoErrorMessage } from "@/lib/assistant/geninho";
+import { GENINHO_LIMITS, GENINHO_SYSTEM, GeninhoRequest, comContexto, geninhoClient, geninhoErrorMessage } from "@/lib/assistant/geninho";
 import { contentLengthOk } from "@/lib/security";
 
 export const dynamic = "force-dynamic";
@@ -39,7 +39,7 @@ export const POST = handle(async (req: Request) => {
   if (!client) throw new ApiError(503, "O Geninho ainda não está configurado neste servidor.");
   const { model } = assistantStatus();
 
-  await audit("geninho", { userId: user.id, action: "pergunta", detail: `${body.messages.length} mensagens` });
+  await audit("geninho", { userId: user.id, action: "pergunta", detail: `${body.messages.length} mensagens${body.contexto ? " · com síntese do experimento" : ""}` });
 
   const encoder = new TextEncoder();
   const line = (o: unknown) => encoder.encode(JSON.stringify(o) + "\n");
@@ -54,7 +54,7 @@ export const POST = handle(async (req: Request) => {
             thinking: { type: "adaptive" },
             output_config: { effort: "medium" },
             system: GENINHO_SYSTEM,
-            messages: body.messages,
+            messages: comContexto(body.messages, body.contexto),
           },
           { signal: req.signal },
         );

@@ -12,6 +12,7 @@ import { Card } from "@/components/ui/Card";
 import { ReferenceStatusBadge, SyntheticBadge, Tag } from "@/components/ui/Badges";
 import { Alert } from "@/components/ui/Alert";
 import { VALUE_TYPES } from "@/lib/expression/valueTypes";
+import { lerExperimentos } from "@/lib/experimento/store";
 
 export async function generateMetadata(props: PageProps<"/projetos/[id]">): Promise<Metadata> {
   const { id } = await props.params;
@@ -49,6 +50,7 @@ export default async function ProjectPage(props: PageProps<"/projetos/[id]">) {
     ...project.references.flatMap((r) => (r.fileId ? [r.fileId] : [])),
   ]);
   const gelImages = project.files.filter((f) => f.kind === "imagem");
+  const experimentos = await lerExperimentos(project.id);
 
   return (
     <div className="mx-auto max-w-[1200px] px-4 py-8">
@@ -70,7 +72,7 @@ export default async function ProjectPage(props: PageProps<"/projetos/[id]">) {
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <ButtonLink href={`/laboratorio?projeto=${project.id}`}>Abrir no laboratório</ButtonLink>
+          <ButtonLink href={`/laboratorio?projeto=${project.id}`}>Abrir na área de trabalho</ButtonLink>
           <ButtonLink href={`/modulos/pcr?projeto=${project.id}`} variant="secondary">
             Módulo de PCR
           </ButtonLink>
@@ -211,6 +213,28 @@ export default async function ProjectPage(props: PageProps<"/projetos/[id]">) {
               <StructureAddForm projectId={project.id} />
             </div>
           </details>
+        </Card>
+
+        <Card title={<span id="experimentos">Experimentos da área de trabalho</span>} actions={<ButtonLink href={`/laboratorio?projeto=${project.id}`} variant="secondary">Novo experimento</ButtonLink>}>
+          {experimentos.length === 0 ? (
+            <p className="text-sm text-muted">Nenhum experimento salvo. Na área de trabalho, descreva o procedimento, crie a visualização e use “Salvar”.</p>
+          ) : (
+            <ul className="grid gap-2">
+              {experimentos.map((e) => (
+                <li key={e.id} className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-line p-3 text-sm">
+                  <span className="min-w-0">
+                    <span className="block font-semibold">{e.titulo}</span>
+                    <span className="text-xs text-muted">
+                      {e.versoes.length} versão(ões) · {e.versoes.at(-1)?.acoes.length ?? 0} etapa(s) · {e.entrada.materiais.length} material(is) · atualizado em {formatDate(e.atualizadoEm)}
+                    </span>
+                  </span>
+                  <ButtonLink href={`/laboratorio?projeto=${project.id}&experimento=${e.id}`} variant="secondary">
+                    Reabrir
+                  </ButtonLink>
+                </li>
+              ))}
+            </ul>
+          )}
         </Card>
 
         <Card title={<span id="experiencias">Experiências salvas</span>} actions={<ButtonLink href={`/modulos/pcr?projeto=${project.id}`} variant="secondary">Nova experiência de PCR</ButtonLink>}>

@@ -1,7 +1,8 @@
 "use client";
-import { ENTIDADE_NOME, type PassoVisual } from "@/lib/visual/roteiro";
+import { ENTIDADE_NOME, type Entidade, type PassoVisual } from "@/lib/visual/roteiro";
+import { OBJETO_DA_ENTIDADE, type ObjetoId } from "@/lib/cena/biblioteca";
 import { COR } from "./materiais";
-import { Ancora, Bacteria, Brilho, Cas9, CelulaEuc, Enzima, Faisca, Fita, Fluxo, Gel, Helice, Pipeta, Placa, Plasmideo, Plataforma, Proteina, Ribossomo, Rotor, Tubo } from "./primitivas";
+import { Ancora, Bacteria, Brilho, Cas9, CelulaEuc, Enzima, Faisca, Fita, Fluxo, Gel, Helice, Pipeta, Placa, Plasmideo, Plataforma, Proteina, Ribossomo, Rotor, Termociclador, Tubo } from "./primitivas";
 
 /**
  * Procedimento em 3D (holográfico) para cada ação do roteiro. t ∈ [0,1] é o progresso da etapa.
@@ -15,6 +16,8 @@ const seg = (t: number, a: number, b: number) => {
 };
 const lerp = (a: number, b: number, k: number) => a + (b - a) * k;
 const lerp3 = (a: V3, b: V3, k: number): V3 => [lerp(a[0], b[0], k), lerp(a[1], b[1], k), lerp(a[2], b[2], k)];
+/** Objeto da biblioteca que o rótulo representa (para mostrar nome, função e fonte ao clicar). */
+const alvoDe = (e: Entidade | null, padrao?: ObjetoId): ObjetoId | undefined => (e ? OBJETO_DA_ENTIDADE[e] : padrao);
 
 export function Cena3D({ passo, t }: { passo: PassoVisual; t: number }) {
   return (
@@ -47,10 +50,11 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
           <group position={[px, py, 0]}>
             <Pipeta position={[0, 0, 0]} />
             {t > 0.3 && t < 0.92 && <Faisca position={[0, -0.05, 0]} intensidade={0.8} />}
+            <Ancora alvo="micropipeta" id={`${k}-pip`} texto="Micropipeta" sub={r.volume ? `volume: ${r.volume}` : "volume não informado"} position={[0, 1.1, 0]} dx={-40} dy={-70} />
           </group>
           {passo.origem === "primer" && <Fita comp={0.7} cor={COR.teal} position={[-1.6, -1.05, 0.05]} />}
-          <Ancora id={`${k}-o`} texto={`${nomeOrigem} (estoque)`} sub="retirado com a micropipeta" position={[-1.6, -0.2, 0]} dx={-150} dy={-30} />
-          <Ancora id={`${k}-d`} texto={passo.destino ? ENTIDADE_NOME[passo.destino] : "Mistura de reação"} sub="recebe o volume pipetado" position={[1.6, -0.2, 0]} dx={140} dy={20} />
+          <Ancora alvo={alvoDe(passo.origem, "amostra")} id={`${k}-o`} texto={`${nomeOrigem} (estoque)`} sub="retirado com a micropipeta" position={[-1.6, -0.2, 0]} dx={-150} dy={-30} />
+          <Ancora alvo={alvoDe(passo.destino, "master_mix")} id={`${k}-d`} texto={passo.destino ? ENTIDADE_NOME[passo.destino] : "Mistura de reação"} sub="recebe o volume pipetado" position={[1.6, -0.2, 0]} dx={140} dy={20} />
         </group>
       );
     }
@@ -75,10 +79,10 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
               <Enzima position={[lerp(-1.3, 2.4, ek), -0.95, 0.35]} cor={COR.ambar} abre={(Math.sin(t * 30 + 1) + 1) / 2} escala={0.7} />
             </>
           )}
-          <Ancora id={`${k}-m`} texto="Fita molde" sub={gene} position={[-2.4, sep * 0.75, 0]} dx={-130} dy={-50} />
-          {pk > 0.5 && <Ancora id={`${k}-p`} texto="Primers" sub="pareiam com a sequência complementar" position={[1.3, 0.75, 0.15]} dx={140} dy={-60} />}
-          {ek > 0.3 && <Ancora id={`${k}-e`} texto="Polimerase" sub="sintetiza a nova fita" position={[lerp(-1.3, 2.4, ek), -0.95, 0.35]} dx={130} dy={60} />}
-          {passo.acao === "desnaturar" && <Ancora id={`${k}-t`} texto={r.temperatura ? `Aquecimento a ${r.temperatura}` : "Aquecimento"} sub="as fitas se separam" position={[2.4, 0, 0]} dx={120} dy={40} />}
+          <Ancora alvo="dna" id={`${k}-m`} texto="Fita molde" sub={gene} position={[-2.4, sep * 0.75, 0]} dx={-130} dy={-50} />
+          {pk > 0.5 && <Ancora alvo="primer" id={`${k}-p`} texto="Primers" sub="pareiam com a sequência complementar" position={[1.3, 0.75, 0.15]} dx={140} dy={-60} />}
+          {ek > 0.3 && <Ancora alvo="polimerase" id={`${k}-e`} texto="Polimerase" sub="sintetiza a nova fita" position={[lerp(-1.3, 2.4, ek), -0.95, 0.35]} dx={130} dy={60} />}
+          {passo.acao === "desnaturar" && <Ancora alvo="termociclador" id={`${k}-t`} texto={r.temperatura ? `Aquecimento a ${r.temperatura}` : "Aquecimento"} sub="as fitas se separam" position={[2.4, 0, 0]} dx={120} dy={40} />}
         </group>
       );
     }
@@ -96,7 +100,9 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
           {pos.map((p, i) => (
             <Helice key={i} comp={n > 4 ? 2.4 : 3} raio={n > 4 ? 0.2 : 0.26} voltas={3} position={p} girar={0.4 + i * 0.03} espessura={n > 4 ? 0.04 : 0.05} />
           ))}
-          <Ancora id={`${k}-c`} texto={`${[1, 2, 4, 8].slice(0, [1, 2, 4, 8].indexOf(n) + 1).join(" → ")} cópias`} sub={`${gene ?? "região-alvo"} · ilustração; quantidades reais não são calculadas`} position={pos[0]} dx={-170} dy={-90} />
+          <Termociclador position={[-3.1, -1.25, 0.3]} escala={0.62} tampa={0.15} quente={(Math.sin(t * Math.PI * 8) + 1) / 2} />
+          <Ancora alvo="termociclador" id={`${k}-tc`} texto="Termociclador" sub={r.ciclos ? `${r.ciclos}${r.temperatura ? ` · ${r.temperatura}` : ""}` : "programa não informado"} position={[-3.1, -0.9, 0.3]} dx={-30} dy={90} />
+          <Ancora alvo="produto_pcr" id={`${k}-c`} texto={`${[1, 2, 4, 8].slice(0, [1, 2, 4, 8].indexOf(n) + 1).join(" → ")} cópias`} sub={`${gene ?? "região-alvo"} · ilustração; quantidades reais não são calculadas`} position={pos[0]} dx={-170} dy={-90} />
         </group>
       );
     }
@@ -108,8 +114,8 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
         <group>
           <Plasmideo abertura={ck} />
           <Enzima position={lerp3([-3, 2, 0.5], [0, 1.45, 0.3], ek)} abre={(Math.sin(t * 25) + 1) / 2} />
-          <Ancora id={`${k}-e`} texto={r.enzima ?? "Enzima de restrição"} sub="reconhece o sítio e corta" position={[0, 1.45, 0.3]} dx={140} dy={-50} />
-          <Ancora id={`${k}-p`} texto={ck > 0.5 ? "Plasmídeo aberto" : "Plasmídeo"} position={[-1.2, -0.3, 0]} dx={-140} dy={40} />
+          <Ancora alvo="enzima_corte" id={`${k}-e`} texto={r.enzima ?? "Enzima de restrição"} sub="reconhece o sítio e corta" position={[0, 1.45, 0.3]} dx={140} dy={-50} />
+          <Ancora alvo="plasmideo" id={`${k}-p`} texto={ck > 0.5 ? "Plasmídeo aberto" : "Plasmídeo"} position={[-1.2, -0.3, 0]} dx={-140} dy={40} />
         </group>
       ) : (
         <group>
@@ -117,9 +123,9 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
           <Helice comp={2.6} voltas={2} position={[1.35 + 0.5 * ck, 0, 0]} girar={0.15} />
           <Enzima position={lerp3([-3, 1.8, 0.6], [0, 0.65, 0.4], ek)} abre={(Math.sin(t * 25) + 1) / 2} />
           {ck > 0.2 && <Faisca position={[0, 0, 0.2]} intensidade={ck} />}
-          <Ancora id={`${k}-e`} texto={r.enzima ?? "Enzima de restrição"} sub="corta no sítio de reconhecimento" position={[0, 0.65, 0.4]} dx={140} dy={-60} />
-          {ck > 0.5 && <Ancora id={`${k}-x`} texto="Extremidades geradas pelo corte" position={[-0.6, -0.3, 0]} dx={-160} dy={70} />}
-          <Ancora id={`${k}-d`} texto={nomeOrigem} sub={gene} position={[2.4, 0, 0]} dx={120} dy={50} />
+          <Ancora alvo="enzima_corte" id={`${k}-e`} texto={r.enzima ?? "Enzima de restrição"} sub="corta no sítio de reconhecimento" position={[0, 0.65, 0.4]} dx={140} dy={-60} />
+          {ck > 0.5 && <Ancora alvo="dna" id={`${k}-x`} texto="Extremidades geradas pelo corte" position={[-0.6, -0.3, 0]} dx={-160} dy={70} />}
+          <Ancora alvo={alvoDe(passo.origem, "dna")} id={`${k}-d`} texto={nomeOrigem} sub={gene} position={[2.4, 0, 0]} dx={120} dy={50} />
         </group>
       );
     }
@@ -136,10 +142,10 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
               <Faisca position={[0.7, 1.0, 0]} intensidade={fk} />
             </>
           )}
-          <Ancora id={`${k}-i`} texto={passo.origem ? ENTIDADE_NOME[passo.origem] : "Inserto"} sub={gene ?? "fragmento de DNA"} position={lerp3([3.4, 2.1, 0.5], [0, 1.25, 0], mk)} dx={130} dy={-50} />
-          <Ancora id={`${k}-p`} texto={fk > 0.6 ? "Plasmídeo recombinante" : "Plasmídeo (vetor) aberto"} position={[-1.2, -0.2, 0]} dx={-150} dy={30} />
-          {fk > 0.5 && <Ancora id={`${k}-l`} texto="Ligação" sub="extremidades unidas (ligase)" position={[0.7, 1.0, 0]} dx={150} dy={10} />}
-          <Ancora id={`${k}-r`} texto="Gene de resistência" sub="usado na seleção" position={[-0.4, -1.15, 0]} dx={140} dy={70} />
+          <Ancora alvo={alvoDe(passo.origem, "produto_pcr")} id={`${k}-i`} texto={passo.origem ? ENTIDADE_NOME[passo.origem] : "Inserto"} sub={gene ?? "fragmento de DNA"} position={lerp3([3.4, 2.1, 0.5], [0, 1.25, 0], mk)} dx={130} dy={-50} />
+          <Ancora alvo="plasmideo" id={`${k}-p`} texto={fk > 0.6 ? "Plasmídeo recombinante" : "Plasmídeo (vetor) aberto"} position={[-1.2, -0.2, 0]} dx={-150} dy={30} />
+          {fk > 0.5 && <Ancora alvo="ligase" id={`${k}-l`} texto="Ligação" sub="extremidades unidas (ligase)" position={[0.7, 1.0, 0]} dx={150} dy={10} />}
+          <Ancora alvo="plasmideo" id={`${k}-r`} texto="Gene de resistência" sub="usado na seleção" position={[-0.4, -1.15, 0]} dx={140} dy={70} />
         </group>
       );
     }
@@ -158,12 +164,12 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
           {passo.integracao && ik > 0 && (
             <>
               <Fita comp={0.6} cor={COR.rosa} onda={0} position={lerp3([-0.6, 0.2, 0.1], [0.6, -0.3, 0.2], ik)} />
-              <Ancora id={`${k}-g`} texto="Integração no cromossomo?" sub="só com estratégia específica — confira" position={[0.6, -0.3, 0.2]} dx={150} dy={80} />
+              <Ancora alvo="bacteria" id={`${k}-g`} texto="Integração no cromossomo?" sub="só com estratégia específica — confira" position={[0.6, -0.3, 0.2]} dx={150} dy={80} />
             </>
           )}
-          <Ancora id={`${k}-p`} texto={passo.origem === "virus" ? "Vetor viral" : "Plasmídeo recombinante"} position={pPos} dx={-150} dy={-60} />
-          <Ancora id={`${k}-c`} texto={euc ? `Célula${r.organismo ? ` ${r.organismo}` : ""}` : `Bactéria${r.organismo ? ` (${r.organismo})` : ""}`} sub={euc ? "membrana e núcleo" : "membrana e parede"} position={[1.4, 0.9, 0]} dx={140} dy={-70} />
-          {!euc && <Ancora id={`${k}-k`} texto="Cromossomo bacteriano" position={[0.9, 0.1, 0.2]} dx={150} dy={20} />}
+          <Ancora alvo={passo.origem === "virus" ? "virus" : "plasmideo"} id={`${k}-p`} texto={passo.origem === "virus" ? "Vetor viral" : "Plasmídeo recombinante"} position={pPos} dx={-150} dy={-60} />
+          <Ancora alvo={euc ? "celula" : "bacteria"} id={`${k}-c`} texto={euc ? `Célula${r.organismo ? ` ${r.organismo}` : ""}` : `Bactéria${r.organismo ? ` (${r.organismo})` : ""}`} sub={euc ? "membrana e núcleo" : "membrana e parede"} position={[1.4, 0.9, 0]} dx={140} dy={-70} />
+          {!euc && <Ancora alvo="bacteria" id={`${k}-k`} texto="Cromossomo bacteriano" position={[0.9, 0.1, 0.2]} dx={150} dy={20} />}
         </group>
       );
     }
@@ -175,8 +181,8 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
         <group rotation={[0.55, 0, 0]}>
           <Placa colonias={n} destaque={sel} />
           {sel !== undefined && <Tubo position={[2.6, 0.9, -0.4]} escala={0.6} nivel={0.5} cor={COR.teal} />}
-          <Ancora id={`${k}-p`} texto={`Placa${r.antibiotico ? ` com ${r.antibiotico}` : ""}`} sub={r.antibiotico ? "só cresce quem tem o gene de resistência" : "antibiótico não informado"} position={[-1.4, 0.1, 0]} dx={-140} dy={-60} />
-          <Ancora id={`${k}-c`} texto={passo.acao === "selecionar" ? "Colônia escolhida" : "Colônias"} sub="cada colônia vem de uma célula" position={[0.6, 0.15, 0.4]} dx={150} dy={60} />
+          <Ancora alvo="placa_petri" id={`${k}-p`} texto={`Placa${r.antibiotico ? ` com ${r.antibiotico}` : ""}`} sub={r.antibiotico ? "só cresce quem tem o gene de resistência" : "antibiótico não informado"} position={[-1.4, 0.1, 0]} dx={-140} dy={-60} />
+          <Ancora alvo="bacteria" id={`${k}-c`} texto={passo.acao === "selecionar" ? "Colônia escolhida" : "Colônias"} sub="cada colônia vem de uma célula" position={[0.6, 0.15, 0.4]} dx={150} dy={60} />
         </group>
       );
     }
@@ -192,9 +198,9 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
           {Array.from({ length: Math.round(8 * pk) }, (_, i) => (
             <Proteina key={i} position={[0.4 + (i % 4) * 0.35 + (i > 3 ? 0.9 * pk : 0), -0.3 + Math.floor(i / 4) * 0.45 + (i > 3 ? 0.9 * pk : 0), 0.3]} escala={0.8} />
           ))}
-          <Ancora id={`${k}-g`} texto="Gene no plasmídeo" sub={gene} position={[-0.8, 0.5, 0.1]} dx={-150} dy={-70} />
-          <Ancora id={`${k}-r`} texto="RNA mensageiro" position={[0.15, 0.45, 0.2]} dx={60} dy={-110} />
-          {pk > 0.3 && <Ancora id={`${k}-p`} texto="Proteínas" sub={r.temperatura ? `indução a ${r.temperatura}` : "quantidade não prevista"} position={[1.1, -0.1, 0.3]} dx={150} dy={60} />}
+          <Ancora alvo="plasmideo" id={`${k}-g`} texto="Gene no plasmídeo" sub={gene} position={[-0.8, 0.5, 0.1]} dx={-150} dy={-70} />
+          <Ancora alvo="rna" id={`${k}-r`} texto="RNA mensageiro" position={[0.15, 0.45, 0.2]} dx={60} dy={-110} />
+          {pk > 0.3 && <Ancora alvo="proteina" id={`${k}-p`} texto="Proteínas" sub={r.temperatura ? `indução a ${r.temperatura}` : "quantidade não prevista"} position={[1.1, -0.1, 0.3]} dx={150} dy={60} />}
         </group>
       );
     }
@@ -204,8 +210,8 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
         <group>
           <Helice comp={5} sep={0.45 * seg(t, 0, 0.2)} girar={0.12} />
           <Fita comp={3.4} cor={COR.rosa} onda={0.08} position={[-0.3, -1.4, 0.4]} progresso={tk} />
-          <Ancora id={`${k}-g`} texto="Gene (DNA)" sub={gene} position={[-2.3, 0.4, 0]} dx={-130} dy={-50} />
-          {tk > 0.3 && <Ancora id={`${k}-r`} texto="RNA mensageiro" sub="cópia de uma das fitas" position={[lerp(-2, 1.4, tk), -1.4, 0.4]} dx={140} dy={50} />}
+          <Ancora alvo="dna" id={`${k}-g`} texto="Gene (DNA)" sub={gene} position={[-2.3, 0.4, 0]} dx={-130} dy={-50} />
+          {tk > 0.3 && <Ancora alvo="rna" id={`${k}-r`} texto="RNA mensageiro" sub="cópia de uma das fitas" position={[lerp(-2, 1.4, tk), -1.4, 0.4]} dx={140} dy={50} />}
         </group>
       );
     }
@@ -219,9 +225,9 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
           {Array.from({ length: Math.round(10 * kk) }, (_, i) => (
             <Brilho key={i} cor={i % 2 ? COR.teal : COR.ambar} escala={0.45} opacidade={0.95} position={[x - 0.25 - i * 0.28, 0.2 + Math.sin(i / 1.4) * 0.3, 0.1]} />
           ))}
-          <Ancora id={`${k}-m`} texto="RNA mensageiro" position={[-2.4, -0.9, 0]} dx={-130} dy={60} />
-          <Ancora id={`${k}-r`} texto="Ribossomo" sub="lê o RNA" position={[x, -0.1, 0.1]} dx={140} dy={-60} />
-          {kk > 0.2 && <Ancora id={`${k}-a`} texto="Cadeia de aminoácidos" position={[x - 0.8, 0.3, 0.1]} dx={-150} dy={-70} />}
+          <Ancora alvo="rna" id={`${k}-m`} texto="RNA mensageiro" position={[-2.4, -0.9, 0]} dx={-130} dy={60} />
+          <Ancora alvo="ribossomo" id={`${k}-r`} texto="Ribossomo" sub="lê o RNA" position={[x, -0.1, 0.1]} dx={140} dy={-60} />
+          {kk > 0.2 && <Ancora alvo="proteina" id={`${k}-a`} texto="Cadeia de aminoácidos" position={[x - 0.8, 0.3, 0.1]} dx={-150} dy={-70} />}
         </group>
       );
     }
@@ -260,12 +266,12 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
           ))}
           {sk > 0.4 && (
             <>
-              <Ancora id={`${k}-p`} texto="Proteínas" position={protPos[1]} dx={120} dy={-20} />
-              <Ancora id={`${k}-d`} texto={passo.origem === "rna" ? "RNA" : "DNA"} sub="separado dos demais componentes" position={dnaPos} dx={130} dy={0} />
+              <Ancora alvo="proteina" id={`${k}-p`} texto="Proteínas" position={protPos[1]} dx={120} dy={-20} />
+              <Ancora alvo={passo.origem === "rna" ? "rna" : "dna"} id={`${k}-d`} texto={passo.origem === "rna" ? "RNA" : "DNA"} sub="separado dos demais componentes" position={dnaPos} dx={130} dy={0} />
               <Ancora id={`${k}-o`} texto="Outros componentes" position={outros[2]} dx={120} dy={20} />
             </>
           )}
-          <Ancora id={`${k}-t`} texto={passo.acao === "extrair" ? "Células rompidas (lise)" : "Mistura a purificar"} position={[-1.8, -0.3, 0]} dx={-140} dy={60} />
+          <Ancora alvo={passo.acao === "extrair" ? "amostra" : "coluna"} id={`${k}-t`} texto={passo.acao === "extrair" ? "Células rompidas (lise)" : "Mistura a purificar"} position={[-1.8, -0.3, 0]} dx={-140} dy={60} />
         </group>
       );
     }
@@ -273,16 +279,16 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
       return (
         <group>
           <Gel progresso={seg(t, 0.1, 0.95)} />
-          <Ancora id={`${k}-l`} texto="Marcador" sub="referência de tamanho" position={[-1.15, 0.6, 0.6]} dx={-130} dy={-60} />
-          <Ancora id={`${k}-a`} texto="Amostras" sub="posições ilustrativas · não é resultado" position={[0.6, 0.1, 0.1]} dx={150} dy={50} />
-          <Ancora id={`${k}-p`} texto="Polo positivo (+)" sub="o DNA migra para cá" position={[0, -0.6, -0.8]} dx={150} dy={40} />
+          <Ancora alvo="gel_agarose" id={`${k}-l`} texto="Marcador" sub="referência de tamanho" position={[-1.15, 0.6, 0.6]} dx={-130} dy={-60} />
+          <Ancora alvo="gel_agarose" id={`${k}-a`} texto="Amostras" sub="posições ilustrativas · não é resultado" position={[0.6, 0.1, 0.1]} dx={150} dy={50} />
+          <Ancora alvo="cuba_eletroforese" id={`${k}-p`} texto="Polo positivo (+)" sub="o DNA migra para cá" position={[0, -0.6, -0.8]} dx={150} dy={40} />
         </group>
       );
     case "centrifugar":
       return (
         <group>
           <Rotor giro={t * 14} />
-          <Ancora id={`${k}-r`} texto="Tubos em posições opostas" sub="rotor balanceado" position={[1.05, 0.3, 0]} dx={140} dy={-50} />
+          <Ancora alvo="centrifuga" id={`${k}-r`} texto="Tubos em posições opostas" sub="rotor balanceado" position={[1.05, 0.3, 0]} dx={140} dy={-50} />
         </group>
       );
     case "incubar":
@@ -290,7 +296,7 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
         <group>
           <Tubo nivel={0.45} cor={COR.violeta} escala={1.2} />
           <Brilho cor={COR.ambar} escala={3.2} opacidade={0.18 + 0.12 * Math.sin(t * 12)} position={[0, -0.5, -0.3]} />
-          <Ancora id={`${k}-t`} texto={r.temperatura ?? "Temperatura não informada"} sub="reação mantida aquecida" position={[0.4, 0.4, 0]} dx={140} dy={-40} />
+          <Ancora alvo="banho_maria" id={`${k}-t`} texto={r.temperatura ?? "Temperatura não informada"} sub="reação mantida aquecida" position={[0.4, 0.4, 0]} dx={140} dy={-40} />
         </group>
       );
     case "sequenciar": {
@@ -299,7 +305,7 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
       return (
         <group>
           <Helice comp={5} girar={0.3} />
-          <Ancora id={`${k}-s`} texto={seq.slice(0, Math.max(1, n))} sub="sequência ilustrativa — não é a do seu material" position={[0, -0.5, 0]} dx={-120} dy={110} />
+          <Ancora alvo="dna" id={`${k}-s`} texto={seq.slice(0, Math.max(1, n))} sub="sequência ilustrativa — não é a do seu material" position={[0, -0.5, 0]} dx={-120} dy={110} />
         </group>
       );
     }
@@ -315,8 +321,8 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
           <Helice comp={2.8} voltas={2} position={[1.45 + 0.3 * abre, 0, 0]} girar={0.12} />
           <Cas9 position={cpos} />
           {rk > 0 && <Faisca position={[0, 0, 0.2]} intensidade={rk} />}
-          <Ancora id={`${k}-c`} texto="Cas9 + RNA guia" sub={gene ? `alvo: ${r.gene}` : "alvo definido pelo guia"} position={cpos} dx={150} dy={-60} />
-          <Ancora id={`${k}-g`} texto={rk > 0.5 ? "Corte reparado pela célula" : "Genoma"} position={[-2.2, -0.2, 0]} dx={-140} dy={60} />
+          <Ancora alvo="cas9" id={`${k}-c`} texto="Cas9 + RNA guia" sub={gene ? `alvo: ${r.gene}` : "alvo definido pelo guia"} position={cpos} dx={150} dy={-60} />
+          <Ancora alvo="dna" id={`${k}-g`} texto={rk > 0.5 ? "Corte reparado pela célula" : "Genoma"} position={[-2.2, -0.2, 0]} dx={-140} dy={60} />
         </group>
       );
     }
@@ -331,7 +337,7 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
               <Brilho cor={i % 2 ? COR.teal : COR.rosa} escala={1.1} opacidade={kk * (0.3 + 0.12 * i)} position={[-2.4 + i * 1.2, -0.9, 0.1]} />
             </group>
           ))}
-          <Ancora id={`${k}-s`} texto={passo.acao === "quantificar" ? "Medição no equipamento" : "Sinal nas amostras"} sub="valores não são previstos" position={[0, -0.2, 0]} dx={-150} dy={-100} />
+          <Ancora alvo={passo.acao === "quantificar" ? "espectrofotometro" : "amostra"} id={`${k}-s`} texto={passo.acao === "quantificar" ? "Medição no equipamento" : "Sinal nas amostras"} sub="valores não são previstos" position={[0, -0.2, 0]} dx={-150} dy={-100} />
         </group>
       );
     }
@@ -345,7 +351,7 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
             return (
               <group key={e}>
                 <Brilho cor={i % 2 ? COR.teal : COR.rosa} escala={0.8} opacidade={0.8} position={p} />
-                <Ancora id={`${k}-${e}`} texto={ENTIDADE_NOME[e]} position={p} dx={Math.cos(a) < 0 ? -110 : 110} dy={-20} />
+                <Ancora alvo={alvoDe(e)} id={`${k}-${e}`} texto={ENTIDADE_NOME[e]} position={p} dx={Math.cos(a) < 0 ? -110 : 110} dy={-20} />
               </group>
             );
           })}

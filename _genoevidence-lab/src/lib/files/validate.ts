@@ -17,6 +17,8 @@ const EXT_KIND: Record<string, FileKind> = {
   ".jpg": "imagem",
   ".jpeg": "imagem",
   ".webp": "imagem",
+  ".xlsx": "planilha",
+  ".docx": "documento",
 };
 
 const MIME: Record<string, string> = {
@@ -33,6 +35,8 @@ const MIME: Record<string, string> = {
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".webp": "image/webp",
+  ".xlsx": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  ".docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
 };
 
 export function extensionOf(name: string): string {
@@ -42,6 +46,21 @@ export function extensionOf(name: string): string {
 
 function startsWith(bytes: Uint8Array, sig: number[]) {
   return sig.every((b, i) => bytes[i] === b);
+}
+
+/** Pacote do Office: ZIP que contém a parte principal esperada (nomes ficam sem compressão no ZIP). */
+function officePackage(bytes: Uint8Array, entry: string) {
+  if (!startsWith(bytes, [0x50, 0x4b, 0x03, 0x04])) return false;
+  // o diretório central (com todos os nomes) fica no fim do arquivo
+  const alvo = new TextEncoder().encode(entry);
+  const busca = (trecho: Uint8Array) => {
+    outer: for (let i = 0; i <= trecho.length - alvo.length; i++) {
+      for (let j = 0; j < alvo.length; j++) if (trecho[i + j] !== alvo[j]) continue outer;
+      return true;
+    }
+    return false;
+  };
+  return busca(bytes.subarray(Math.max(0, bytes.length - 262_144))) || busca(bytes.subarray(0, 65_536));
 }
 
 function looksLikeText(bytes: Uint8Array) {
@@ -78,6 +97,12 @@ export function checkUpload(name: string, bytes: Uint8Array, expected?: FileKind
     case "texto":
     case "estrutura":
       if (!looksLikeText(bytes)) return { ok: false, error: "O arquivo parece binário; esperava-se texto." };
+      break;
+    case "planilha":
+      if (!officePackage(bytes, "xl/workbook.xml")) return { ok: false, error: "O conteúdo não é uma planilha XLSX válida." };
+      break;
+    case "documento":
+      if (!officePackage(bytes, "word/document.xml")) return { ok: false, error: "O conteúdo não é um documento DOCX válido." };
       break;
   }
   if (kind === "estrutura" && bytes.byteLength > LIMITS.maxStructureBytes) return { ok: false, error: "Estrutura acima do limite de tamanho." };

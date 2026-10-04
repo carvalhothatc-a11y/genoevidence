@@ -40,7 +40,7 @@ export default function PrivacidadePage() {
       />
       <div className="grid gap-4">
         <Alert tone="info" title="Resumo">
-          Guardamos só o necessário para sua conta e seus projetos funcionarem. Não há publicidade, rastreadores nem venda de dados. Os dados ficam num servidor nos {LOCAL_DOS_DADOS}. Nada do seu conteúdo sai do servidor, a não ser quando você usa o Geninho ou o ditado por voz.
+          Guardamos só o necessário para sua conta e seus projetos funcionarem. Não há publicidade, rastreadores nem venda de dados. Os dados ficam num servidor nos {LOCAL_DOS_DADOS}. Nada do seu conteúdo sai do servidor, a não ser quando você usa o Geninho, a identificação de fotos (com autorização a cada envio) ou o ditado por voz.
         </Alert>
 
         <Secao id="controlador" n={1} titulo="Quem é responsável">
@@ -67,7 +67,7 @@ export default function PrivacidadePage() {
               <strong>Cadastro:</strong> nome, e-mail e, se você informar, instituição. A senha nunca é guardada: fica só um resumo criptográfico (scrypt) que não permite recuperá-la.
             </li>
             <li>
-              <strong>Conteúdo que você cria:</strong> projetos, arquivos enviados, dados de expressão, estruturas, ideias e cenários, referências e o histórico de alterações de cada projeto.
+              <strong>Conteúdo que você cria:</strong> projetos, arquivos enviados, dados de expressão, estruturas, ideias e cenários, experimentos da área de trabalho (descrição, materiais e versões), referências e o histórico de alterações de cada projeto. Relatórios e tabelas são lidos pelo servidor do GenoLab para a interpretação; os originais só ficam guardados quando você salva num projeto. Antes disso, o rascunho (sem os arquivos) fica no armazenamento local do seu navegador.
             </li>
             <li>
               <strong>Sessão:</strong> um cookie essencial (<span className="ge-mono">lv_conta</span>) mantém você conectado. No servidor fica apenas um resumo do token. A sessão termina em até 14 dias, ou depois de 12 horas sem uso.
@@ -94,7 +94,7 @@ export default function PrivacidadePage() {
               <strong>Proteger contas e o laboratório (registro de segurança, limite de tentativas, backups):</strong> legítimo interesse (art. 7º, IX), limitado ao mínimo necessário.
             </li>
             <li>
-              <strong>Geninho e ditado por voz:</strong> seu consentimento, dado a cada uso. Esses recursos só funcionam quando você os aciona.
+              <strong>Geninho, identificação de fotos e ditado por voz:</strong> seu consentimento, dado a cada uso. Esses recursos só funcionam quando você os aciona.
             </li>
           </ul>
           <p>Não usamos seus dados para publicidade, perfilamento ou decisões automatizadas sobre você.</p>
@@ -106,8 +106,10 @@ export default function PrivacidadePage() {
               <strong>Hostinger (hospedagem):</strong> o servidor que guarda contas, projetos e backups fica num datacenter da Hostinger nos {LOCAL_DOS_DADOS}.
             </li>
             <li>
-              <strong>Anthropic (Geninho), nos Estados Unidos:</strong> recebe somente as mensagens da conversa com o Geninho, quando você pergunta. Seu nome, e-mail e projetos não são enviados. O
-              tratamento segue os termos comerciais da Anthropic para a API.
+              <strong>Anthropic (Geninho), nos Estados Unidos:</strong> recebe as mensagens da conversa com o Geninho, quando você pergunta, e a síntese do experimento só se você marcar essa opção na conversa. Seu nome, e-mail e arquivos não são enviados. O tratamento segue os termos comerciais da Anthropic para a API.
+            </li>
+            <li>
+              <strong>Anthropic (identificação de fotos), nos Estados Unidos:</strong> recebe uma foto, reduzida no navegador, somente quando você marca a autorização daquele envio e pede a identificação dos elementos visíveis. A foto não é guardada nesse envio.
             </li>
             <li>
               <strong>NCBI/PubMed, nos Estados Unidos:</strong> a busca opcional de artigos envia apenas termos técnicos fixos em inglês e, quando houver, um nome de gene. Nunca envia o seu texto nem dados

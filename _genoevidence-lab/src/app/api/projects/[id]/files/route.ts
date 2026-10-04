@@ -5,7 +5,7 @@ import { checkUpload } from "@/lib/files/validate";
 import { getRepository } from "@/lib/repo";
 import { contentLengthOk } from "@/lib/security";
 
-/** Envio de arquivo original (imagens de resultado, CSV, texto). */
+/** Envio de arquivo original (imagens, CSV, XLSX, PDF, DOCX, texto). */
 export const POST = handle(async (req: Request, ctx: RouteContext<"/api/projects/[id]/files">) => {
   const user = await requireUser();
   const { id } = await ctx.params;
@@ -21,7 +21,7 @@ export const POST = handle(async (req: Request, ctx: RouteContext<"/api/projects
   if (!(file instanceof File)) throw new ApiError(400, "Nenhum arquivo enviado.");
   const role = (form.get("role") as string | null)?.slice(0, 120) || undefined;
   const bytes = new Uint8Array(await file.arrayBuffer());
-  const check = checkUpload(file.name, bytes, ["csv", "imagem", "texto", "pdf"]);
+  const check = checkUpload(file.name, bytes, ["csv", "imagem", "texto", "pdf", "planilha", "documento"]);
   if (!check.ok) throw new ApiError(422, check.error);
   const record = await getRepository().putFile(id, actorOf(user), { name: file.name, mimeType: check.mimeType, kind: check.kind, bytes, role });
   if (!record) throw new ApiError(404, "Projeto não encontrado (ou sem permissão de acesso).");

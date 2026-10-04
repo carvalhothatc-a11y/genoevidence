@@ -132,6 +132,80 @@ function CameraRig({ instant }: { instant: boolean }) {
   return null;
 }
 
+// ---------------------------------------------------------------- olhar com o cursor
+
+/**
+ * Ao passar o mouse, o ambiente gira levemente na direção do cursor (ângulos pequenos, amortecidos).
+ * Não interfere no arrastar (controle orbital) nem nas transições de câmera; desligado com movimento reduzido.
+ */
+function OlharCursor({ ativo }: { ativo: boolean }) {
+  const camera = useThree((s) => s.camera);
+  const controls = useThree((s) => s.controls) as OrbitControlsImpl | null;
+  const gl = useThree((s) => s.gl);
+  const invalidate = useThree((s) => s.invalidate);
+  const view = useLab((s) => s.view);
+  const st = useRef({ x: 0, y: 0, dentro: false, arrastando: false, yaw: 0, pitch: 0 });
+  useEffect(() => {
+    st.current.yaw = 0;
+    st.current.pitch = 0;
+  }, [view]);
+  useEffect(() => {
+    if (!ativo) return;
+    const el = gl.domElement;
+    const mover = (e: PointerEvent) => {
+      if (e.buttons) return;
+      const r = el.getBoundingClientRect();
+      st.current.x = Math.max(-1, Math.min(1, ((e.clientX - r.left) / r.width) * 2 - 1));
+      st.current.y = Math.max(-1, Math.min(1, ((e.clientY - r.top) / r.height) * 2 - 1));
+      st.current.dentro = true;
+      invalidate();
+    };
+    const sair = () => {
+      st.current.dentro = false;
+      invalidate();
+    };
+    el.addEventListener("pointermove", mover);
+    el.addEventListener("pointerleave", sair);
+    const ini = () => (st.current.arrastando = true);
+    const fim = () => {
+      st.current.arrastando = false;
+      st.current.yaw = 0;
+      st.current.pitch = 0;
+    };
+    const c = controls as unknown as { addEventListener?: (t: string, f: () => void) => void; removeEventListener?: (t: string, f: () => void) => void } | null;
+    c?.addEventListener?.("start", ini);
+    c?.addEventListener?.("end", fim);
+    return () => {
+      el.removeEventListener("pointermove", mover);
+      el.removeEventListener("pointerleave", sair);
+      c?.removeEventListener?.("start", ini);
+      c?.removeEventListener?.("end", fim);
+    };
+  }, [ativo, gl, controls, invalidate]);
+  const eixo = useMemo(() => new THREE.Vector3(), []);
+  const rel = useMemo(() => new THREE.Vector3(), []);
+  useFrame((_, dt) => {
+    const s = st.current;
+    if (!ativo || !controls || s.arrastando) return;
+    const alvoYaw = s.dentro ? -s.x * 0.1 : 0;
+    const alvoPitch = s.dentro ? -s.y * 0.04 : 0;
+    const k = 1 - Math.exp(-dt * 3.5);
+    const dYaw = (alvoYaw - s.yaw) * k;
+    const dPitch = (alvoPitch - s.pitch) * k;
+    if (Math.abs(dYaw) < 1e-5 && Math.abs(dPitch) < 1e-5) return;
+    rel.subVectors(camera.position, controls.target);
+    rel.applyAxisAngle(eixo.set(0, 1, 0), dYaw);
+    eixo.crossVectors(rel, camera.up).normalize();
+    rel.applyAxisAngle(eixo, dPitch);
+    camera.position.copy(controls.target).add(rel);
+    controls.update();
+    s.yaw += dYaw;
+    s.pitch += dPitch;
+    invalidate();
+  });
+  return null;
+}
+
 // ---------------------------------------------------------------- seleção
 
 /** Anel de seleção: pulso curto (~180 ms) ao selecionar; sem animação contínua. */
@@ -372,6 +446,7 @@ function Scene(props: LabCanvasProps) {
       <HotspotProjector />
       <CaptureRegistrar />
 
+      <OlharCursor ativo={props.orbit && !props.reducedMotion} />
       <OrbitControls
         makeDefault
         enabled={props.orbit}

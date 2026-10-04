@@ -58,15 +58,36 @@ export default async function IntegrationsPage() {
       what: assistant.configured
         ? `Responde dúvidas de pesquisa na página Ajuda, pelo servidor (modelo ${assistant.model}). A chave fica só no servidor.`
         : `Disponível na página Ajuda e no laboratório quando a configuração estiver completa. ${assistant.reason ?? ""} Sem isso, nenhuma chamada é feita.`,
-      dataSent: "Somente as mensagens digitadas na conversa com o Geninho. Não são enviados projetos, arquivos, referências, nome ou e-mail; a conversa não é gravada no GenoLab.",
+      dataSent: "As mensagens digitadas na conversa e, só se você marcar a opção na área de trabalho, a síntese do experimento (etapas, elementos, parâmetros e fontes). Não são enviados arquivos, imagens, nome ou e-mail; a conversa não é gravada no GenoLab. O Geninho não altera dados nem parâmetros.",
       verified: assistant.configured
         ? "Chamada real testada em 02/10/2026: pergunta enviada pela página Ajuda e resposta recebida em fluxo. Uso limitado a 20 perguntas a cada 10 min e 150 por dia por pessoa."
         : "Estado “não configurado” verificado. Chamadas reais à API ainda não foram testadas neste servidor.",
     },
     {
+      name: "Extração de relatórios e tabelas (PDF, DOCX, TXT, CSV, XLSX)",
+      state: "ativo",
+      what: "Na área de trabalho, o servidor do GenoLab lê o texto de relatórios e as colunas de tabelas para a interpretação. Fórmulas de planilha não são recalculadas (vale o último valor salvo); PDFs digitalizados sem camada de texto aparecem como “conteúdo não obtido”.",
+      dataSent: "Nenhum envio externo. O arquivo não é guardado na extração; só fica no projeto se você salvar.",
+      verified: "Testado em 03/10/2026 com PDF, DOCX, CSV (vírgula decimal e ausentes) e XLSX com duas abas.",
+    },
+    {
+      name: "Identificação de elementos em fotos (API do Claude, Anthropic)",
+      state: assistant.configured ? "sob_demanda" : "nao_configurado",
+      what: "Opcional, por foto: sugere os equipamentos, recipientes e materiais visíveis, só dentro do vocabulário da biblioteca da cena. As sugestões entram na cena apenas depois de confirmadas por você.",
+      dataSent: "Somente a foto escolhida, reduzida no navegador (lado maior até 1568 px), e a legenda, quando houver; e só depois de você marcar a autorização daquele envio. A foto não é guardada nesse envio.",
+      verified: assistant.configured ? "Chamada real testada em 03/10/2026 com uma imagem de teste; resposta validada no formato estruturado." : "Sem configuração neste servidor: nenhuma chamada é feita.",
+    },
+    {
+      name: "Blender e modelos 3D externos",
+      state: "indisponivel",
+      what: "As formas 3D da cena são geradas no próprio código (React Three Fiber). Nenhum modelo foi produzido no Blender nesta versão.",
+      dataSent: "Nenhum.",
+      verified: "Não se aplica.",
+    },
+    {
       name: "Visualização gerada da descrição (texto ou voz)",
       state: "local",
-      what: "A descrição de qualquer procedimento é convertida no navegador, por regras fixas, em etapas ilustradas (DNA, primers, plasmídeo, bactéria, enzimas, células, gel…) que podem ser baixadas como imagem.",
+      what: "A descrição e os materiais são convertidos, por regras fixas, numa descrição estruturada (ações, elementos, parâmetros, fontes, ausências e conflitos) e numa cena 3D animada composta a partir da biblioteca do GenoLab. Nenhum código é gerado a partir do texto, da fala ou dos arquivos.",
       dataSent: "Texto: nenhum envio. Voz: a transcrição é feita pelo navegador; no Chrome e no Edge o áudio vai para o serviço de reconhecimento do fabricante do navegador. O GenoLab não recebe o áudio.",
       verified: "Interpretação e geração de imagem testadas com descrições de PCR, clonagem, extração e CRISPR.",
     },
