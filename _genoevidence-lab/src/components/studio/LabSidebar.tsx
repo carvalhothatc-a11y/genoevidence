@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
 import { hydrateUiPrefs, useUi } from "@/store/ui";
+import { esquecerPagina } from "@/lib/navegacao";
+import { InstalarApp } from "@/components/layout/InstalarApp";
 
 const I = {
   lab: (
@@ -52,6 +54,7 @@ export function LabSidebar({ user }: { user: User }) {
     hydrateUiPrefs();
   }, []);
   const sair = async () => {
+    esquecerPagina();
     await fetch("/api/auth/sair", { method: "POST" });
     router.replace("/entrar");
     router.refresh();
@@ -88,6 +91,7 @@ export function LabSidebar({ user }: { user: User }) {
         </ul>
       </nav>
       <div className="mt-auto grid gap-3">
+        <InstalarApp />
         <button type="button" onClick={togglePaused} aria-pressed={paused} className="ge-press flex items-center gap-3 rounded-xl px-4 py-2.5 text-sm text-[#c9d2e3] hover:bg-white/5">
           <Icon d={paused ? I.play : I.pausa} />
           {paused ? "Retomar animações" : "Pausar animações"}

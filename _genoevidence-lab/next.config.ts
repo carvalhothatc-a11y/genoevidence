@@ -15,7 +15,11 @@ const nextConfig: NextConfig = {
   // unpdf traz uma build do pdf.js para servidor; mantê-la fora do bundle evita reprocessamento.
   serverExternalPackages: ["unpdf"],
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    return [
+      { source: "/:path*", headers: securityHeaders },
+      // service worker sempre revalidado (atualizações chegam na próxima visita)
+      { source: "/sw.js", headers: [{ key: "Cache-Control", value: "no-cache" }, { key: "Content-Type", value: "application/javascript; charset=utf-8" }] },
+    ];
   },
 };
 

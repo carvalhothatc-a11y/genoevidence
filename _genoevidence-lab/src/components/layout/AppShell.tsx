@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, type ReactNode } from "react";
 import { hydrateUiPrefs } from "@/store/ui";
+import { esquecerPagina, lembrarPagina } from "@/lib/navegacao";
+import { registrarServiceWorker } from "./InstalarApp";
 import { LabSidebar } from "@/components/studio/LabSidebar";
 import { AppFooter } from "./AppFooter";
 
@@ -20,7 +22,13 @@ export function AppShell({ user, appName, version, children }: { user: Usuario; 
   const router = useRouter();
   useEffect(() => {
     hydrateUiPrefs();
+    registrarServiceWorker();
   }, []);
+  // última página visitada (só o caminho), para voltar a ela ao abrir o GenoLab de novo
+  const autorizadoAqui = user?.status === "autorizado";
+  useEffect(() => {
+    if (autorizadoAqui) lembrarPagina(window.location.pathname + window.location.search);
+  }, [pathname, autorizadoAqui]);
 
   if (pathname.startsWith("/laboratorio")) return <>{children}</>;
 
@@ -38,6 +46,7 @@ export function AppShell({ user, appName, version, children }: { user: Usuario; 
 
   // visitante, conta pendente ou suspensa: sem navegação interna
   const sair = async () => {
+    esquecerPagina();
     await fetch("/api/auth/sair", { method: "POST" });
     router.replace("/entrar");
     router.refresh();

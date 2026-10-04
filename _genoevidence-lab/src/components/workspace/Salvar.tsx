@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useExperimento, entradaDe } from "@/store/experimento";
+import { lembrarPagina } from "@/lib/navegacao";
 
 export type ProjetoOpcao = { id: string; title: string; role: string };
 const PODE = ["dono", "gestor", "editor"];
@@ -68,6 +69,7 @@ export function Salvar({ projetos, onFeito }: { projetos: ProjetoOpcao[]; onFeit
       st.setTitulo(titulo.trim());
       st.marcarSalvo(pid, arquivos, new Date().toISOString());
       router.replace(`/laboratorio?projeto=${pid}&experimento=${st.rascunhoId}`, { scroll: false });
+      lembrarPagina(`/laboratorio?projeto=${pid}&experimento=${st.rascunhoId}`);
       onFeito(`Salvo no projeto${modo === "novo" ? ` “${nomeProjeto.trim()}”` : ""}. Reabra pelo projeto ou por este endereço.`);
     } catch (e) {
       setErro(e instanceof Error ? e.message : "Falha ao salvar.");
