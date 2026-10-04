@@ -1,6 +1,82 @@
 {
- "atualizado_em": "2026-10-04T08:32:44.371939+00:00",
+ "atualizado_em": "2026-10-04T14:52:46.461152+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "Esta vitamina comum pode ajudar a combater um dos cânceres cerebrais mais mortais",
+   "resumo": "A vitamina B3 em altas doses está mostrando uma promessa inicial intrigante como um complemento ao tratamento padrão do glioblastoma, com 82% dos pacientes em um pequeno estudo permanecendo livre de progressão após seis meses. Pesquisadores acreditam que a niacina pode ajudar a reviver...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261001095423.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-04T10:09:00+00:00",
+   "tema": "Câncer",
+   "relevancia": 8,
+   "imagem": "https://www.sciencedaily.com/images/1920/biological-lymphocytes-and-cancer-cell.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "This common vitamin could help fight one of the deadliest brain cancers",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Esta vitamina común podría ayudar a combatir uno de los cánceres cerebrales más mortales",
+     "resumo": "Las dosis altas de vitamina B3 muestran una promesa temprana intrigante como una adición al tratamiento estándar del glioblastoma, con el 82% de los pacientes en un pequeño ensayo que permanece libre de progresión después de seis meses. Los investigadores creen que la niacina puede ayudar a revivir..."
+    }
+   },
+   "resumo_original": "High-dose vitamin B3 is showing intriguing early promise as an addition to standard glioblastoma treatment, with 82% of patients in a small trial remaining progression-free after six months. Researchers believe niacin may help revive…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Como a teoria do apego pode nos ajudar a entender os relacionamentos da IA",
+   "resumo": "Apego é o termo que os psicólogos usam para os relacionamentos mais significativos que mantêm a vida das pessoas unida",
+   "url": "https://www.scientificamerican.com/article/how-attachment-theory-can-help-us-understand-ai-relationships/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-04T10:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/6dca58bf-c5ee-4b1d-b994-6064159d0b48/pp-math-AI-more-human.jpg?m=1785858312.019&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "How attachment theory can help us understand AI relationships",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Cómo la teoría del apego puede ayudarnos a comprender las relaciones de IA",
+     "resumo": "El apego es el término que usan los psicólogos para las relaciones más importantes que mantienen unida la vida de las personas"
+    }
+   },
+   "resumo_original": "Attachment is the term psychologists use for the most significant relationships that hold people’s lives together"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Livro propõe metodologia integrada para estudos de público em museus",
+   "resumo": "Obra de pesquisadores do Museu de Arqueologia e Etnologia integra monitoramento espacial e perfis de público, com download gratuito pelo Portal de Livros Abertos da USP",
+   "url": "https://jornal.usp.br/universidade/livro-propoe-metodologia-integrada-para-estudos-de-publico-em-museus/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-02T16:46:56+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/09/20250918_00_museu_do_ipiranga_visitas_monitoradas.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Book proposes integrated methodology for public studies in museums",
+     "resumo": "The work of researchers from the Museum of Archaeology and Ethnology integrates spatial monitoring and public profiles, with free download through USP's Open Book Portal"
+    },
+    "es": {
+     "titulo": "Libro propone metodología integrada para estudios públicos en museos",
+     "resumo": "El trabajo de los investigadores del Museo de Arqueología y Etnología integra la monitorización espacial y los perfiles públicos, con descarga gratuita a través del Portal del Libro Abierto de la USP"
+    }
+   }
+  },
   {
    "tipo": "noticia",
    "titulo": "SUS passa a oferecer três novos medicamentos de alta tecnologia para o tratamento de câncer pulmonar",
@@ -10,7 +86,7 @@
    "idioma": "pt",
    "data": "2026-10-02T12:30:03+00:00",
    "tema": "Câncer",
-   "relevancia": 7,
+   "relevancia": 6,
    "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261001_remedios.jpg",
    "foco": {
     "x": 50,
@@ -29,133 +105,198 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "No rastro dos átomos: o desenvolvimento e a aplicação de técnicas analíticas em um instituto especializado da USP",
-   "resumo": "As contribuições do Centro de Energia Nuclear na Agricultura se estendem a áreas tão diversas quanto o rastreamento de elementos radioativos, a nutrição animal e a química analítica",
-   "url": "https://jornal.usp.br/universidade/no-rastro-dos-atomos-o-desenvolvimento-e-a-aplicacao-de-tecnicas-analiticas-em-um-instituto-especializado-da-usp/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-02T19:04:26+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261002_aquarelas_Klaus_1996_campo_girassois.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "In the wake of atoms: the development and application of analytical techniques in a specialized USP institute",
-     "resumo": "The Center for Nuclear Energy in Agriculture's contributions extend to areas as diverse as radioactive element tracking, animal nutrition, and analytical chemistry"
-    },
-    "es": {
-     "titulo": "A raíz de los átomos: el desarrollo y la aplicación de técnicas analíticas en un instituto especializado de la USP",
-     "resumo": "Las contribuciones del Centro para la Energía Nuclear en la Agricultura se extienden a áreas tan diversas como el seguimiento de elementos radiactivos, la nutrición animal y la química analítica"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Plataforma criada na USP reúne experiências para ajudar a pensar o futuro do futebol feminino",
-   "resumo": "Aberto ao público, o PermeÖ Copa 2027 convida atletas, profissionais, pesquisadores, torcedores e outras pessoas interessadas a compartilhar o que sabem sobre a modalidade",
-   "url": "https://jornal.usp.br/diversidade/plataforma-criada-na-usp-reune-experiencias-para-ajudar-a-pensar-o-futuro-do-futebol-feminino/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-02T18:54:49+00:00",
+   "titulo": "Suas bactérias intestinais podem revelar a rapidez com que seu cérebro está envelhecendo",
+   "resumo": "Um estudo da UCLA liga o envelhecimento cerebral mais rápido a bactérias intestinais específicas e subprodutos químicos, com cérebros de aparência mais velha também associados a memória, foco e humor mais pobres. Os resultados sugerem que sinais biológicos de envelhecimento cerebral podem aparecer...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261001214106.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-04T11:28:03+00:00",
    "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261002_futebol.jpg",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/gut-microbiome-interaction-within-brain.webp",
    "foco": {
-    "x": 0,
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Your gut bacteria may reveal how fast your brain is aging",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Sus bacterias intestinales pueden revelar qué tan rápido está envejeciendo su cerebro",
+     "resumo": "Un estudio de la UCLA vincula el envejecimiento cerebral más rápido con bacterias intestinales específicas y subproductos químicos, y los cerebros de aspecto más antiguo también se asocian con una peor memoria, concentración y estado de ánimo. Los hallazgos sugieren que pueden aparecer signos biológicos de envejecimiento cerebral..."
+    }
+   },
+   "resumo_original": "A UCLA study links faster brain aging to specific gut bacteria and chemical byproducts, with older-looking brains also associated with poorer memory, focus, and mood. The findings suggest that biological signs of brain aging may appear…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Bebidas dietéticas funcionam tão bem quanto água para perda de peso, segundo um grande estudo",
+   "resumo": "Um ensaio clínico randomizado de dois anos envolvendo 493 adultos com sobrepeso ou obesidade descobriu que os refrigerantes dietéticos eram essencialmente tão eficazes quanto a água para perda e manutenção de peso a longo prazo. Os participantes bebem bebidas...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261002080017.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-04T02:10:59+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/woman-smiling-holding-diet-cola.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Diet drinks work as well as water for weight loss, major trial finds",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las bebidas dietéticas funcionan tan bien como el agua para perder peso, según un importante ensayo",
+     "resumo": "Un ensayo clínico aleatorizado de dos años en el que participaron 493 adultos con sobrepeso u obesidad descubrió que los refrescos dietéticos eran esencialmente tan efectivos como el agua para la pérdida de peso a largo plazo y el mantenimiento del peso. Participantes bebiendo bebidas..."
+    }
+   },
+   "resumo_original": "A two-year randomized clinical trial involving 493 adults with overweight or obesity found that diet soft drinks were essentially as effective as water for long-term weight loss and weight maintenance. Participants drinking beverages…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Protocolo da USP orienta análise de variantes genéticas para diagnóstico de doenças raras",
+   "resumo": "Material de acesso aberto pretende auxiliar profissionais na interpretação de variantes genéticas diante da ampliação do sequenciamento pelo SUS",
+   "url": "https://jornal.usp.br/radio-usp/protocolo-da-usp-orienta-analise-de-variantes-geneticas-para-diagnostico-de-doencas-raras/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-02T18:59:23+00:00",
+   "tema": "Genética",
+   "relevancia": 5,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/02/20200324_genes1.jpg",
+   "foco": {
+    "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Platform created at USP brings together experiences to help think about the future of women's football",
-     "resumo": "Open to the public, the PermeÖ Copa 2027 invites athletes, professionals, researchers, fans and other interested people to share what they know about the sport"
+     "titulo": "USP protocol guides analysis of genetic variants for diagnosis of rare diseases",
+     "resumo": "Open access material intends to assist professionals in the interpretation of genetic variants in view of the expansion of sequencing by sus"
     },
     "es": {
-     "titulo": "Plataforma creada en la USP que reúne experiencias para ayudar a pensar en el futuro del fútbol femenino",
-     "resumo": "Abierta al público, la PermeÖ Copa 2027 invita a atletas, profesionales, investigadores, aficionados y otras personas interesadas a compartir lo que saben sobre el deporte"
+     "titulo": "El protocolo de la USP guía el análisis de variantes genéticas para el diagnóstico de enfermedades raras",
+     "resumo": "El material de acceso abierto tiene la intención de ayudar a los profesionales en la interpretación de variantes genéticas en vista de la expansión de la secuenciación por sus"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Esta enzima protetora pode ajudar a impedir que a doença hepática gordurosa piore",
-   "resumo": "Os cientistas identificaram uma enzima que pode atuar como uma defesa natural contra o agravamento da doença hepática gordurosa, que afeta cerca de 100 milhões de americanos. A enzima, chamada UBE2N, ajuda as células do fígado a eliminar os danos...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261002080020.htm",
+   "titulo": "Um meteoro atingiu Oklahoma 100 milhões de anos depois do que os cientistas pensavam",
+   "resumo": "Uma cratera de meteoro enterrada sob Oklahoma acabou por ser quase 100 milhões de anos mais jovem do que os cientistas pensavam. Cristais de zircão mostram que o impacto de Ames ocorreu há cerca de 370 milhões de anos, o que significa que não fazia parte do misterioso...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261002080012.htm",
    "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-03T13:46:11+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/diseased-liver-illustration.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "This protective enzyme could help stop fatty liver disease from getting worse",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Esta enzima protectora podría ayudar a evitar que la enfermedad del hígado graso empeore",
-     "resumo": "Los científicos han identificado una enzima que puede actuar como una defensa natural contra el empeoramiento de la enfermedad del hígado graso, que afecta a unos 100 millones de estadounidenses. La enzima, llamada UBE2N, ayuda a eliminar las células hepáticas dañadas..."
-    }
-   },
-   "resumo_original": "Scientists have identified an enzyme that may act as a natural defense against the worsening of fatty liver disease, which affects an estimated 100 million Americans. The enzyme, called UBE2N, helps liver cells clear away damaged…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O Juice da ESA acabou de usar a Terra como um estilingue para Júpiter",
-   "resumo": "A nave espacial Juice da ESA passou pela Terra a 28 de setembro, usando a gravidade do nosso planeta para remodelar drasticamente o seu caminho em direção a Júpiter sem queimar muito combustível. O sobrevoo mudou sua direção em 20 graus e aumentou sua velocidade em 3,5...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261001214102.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-03T13:34:11+00:00",
-   "tema": "Espaço",
+   "data": "2026-10-04T12:41:43+00:00",
+   "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/juice-images-earth-during-flyby.webp",
+   "imagem": "https://www.sciencedaily.com/images/1920/huge-asteroid-meteor-slams-into-earth.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "ESA’s Juice just used Earth as a slingshot to Jupiter",
+   "titulo_original": "A meteor hit Oklahoma 100 million years later than scientists thought",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Juice de la esa acaba de usar la Tierra como honda para Júpiter",
-     "resumo": "La nave espacial Juice de la esa pasó por delante de la Tierra el 28 de septiembre, utilizando la gravedad de nuestro planeta para remodelar drásticamente su camino hacia Júpiter sin quemar mucho combustible. El sobrevuelo cambió su dirección en 20 grados y aumentó su velocidad en 3,5..."
+     "titulo": "Un meteorito golpeó Oklahoma 100 millones de años después de lo que pensaban los científicos",
+     "resumo": "Un cráter de meteorito enterrado debajo de Oklahoma ha resultado ser casi 100 millones de años más joven de lo que los científicos pensaban. Los cristales de circón muestran que el impacto de Ames ocurrió hace unos 370 millones de años, lo que significa que no era parte del misterioso..."
     }
    },
-   "resumo_original": "ESA’s Juice spacecraft raced past Earth on September 28, using our planet’s gravity to dramatically reshape its path toward Jupiter without burning much fuel. The flyby changed its direction by 20 degrees and increased its speed by 3.5…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Essa partícula estranha pode ter vindo de um buraco negro explodindo em outra dimensão",
-   "resumo": "Um neutrino de alta energia inexplicável detectado há três anos pode estar ligado a um buraco negro primordial, talvez mais um ainda incomum do que se pensava anteriormente",
-   "url": "https://www.scientificamerican.com/article/this-weird-particle-may-have-come-from-a-black-hole-exploding-in-another-dimension/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-02T16:30:00+00:00",
-   "tema": "Espaço",
-   "relevancia": 3,
-   "imagem": "https://static.scientificamerican.com/dam/asset/7293e6f9-7fcc-46a2-9f25-cc09749f644c/GettyImages-1296009955-1.jpg?m=1790958481.566&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "This weird particle may have come from a black hole exploding in another dimension",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Esta extraña partícula puede haber venido de un agujero negro que explotó en otra dimensión",
-     "resumo": "Un inexplicable neutrino de alta energía detectado hace tres años podría estar relacionado con un agujero negro primordial, tal vez uno más inusual de lo que se pensaba"
-    }
-   },
-   "resumo_original": "An unexplained high-energy neutrino detected three years ago could be linked to a primordial black hole, perhaps one more even unusual than previously thought"
+   "resumo_original": "A meteor crater buried beneath Oklahoma has turned out to be nearly 100 million years younger than scientists thought. Zircon crystals show the Ames impact occurred about 370 million years ago, meaning it was not part of the mysterious…"
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Os pós-bióticos aumentam a competência imunológica em peixes-pedra-pretos (Sebastes schlegelii): ligando imunidade inata, apoptose e resistência à infecção bacteriana.",
+   "autores": "Lee SJ, Lee YS, Kim YR, Hwang SB, Jeon MH, Jeong SM, Bae J, Kim MG, Min B, Lee EW, Jang WJ.",
+   "revista": "J Anim Sci Biotechnol",
+   "data": "2026-10-04T00:00:00+00:00",
+   "doi": "10.1186/s40104-026-01502-y",
+   "url": "https://doi.org/10.1186/s40104-026-01502-y",
+   "acesso_aberto": false,
+   "tema": "Saúde",
+   "titulo_original": "Postbiotics enhance immune competence in black rockfish (Sebastes schlegelii): linking innate immunity, apoptosis, and resistance to bacterial infection.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "EGFR exon 20-altered NSCLC in China: molecular heterogeneity and real-world outcomes with sunvozertinib.",
+   "autores": "Zhang J, Cui Y, Ren Q, Wu X, Li J, Liu X, Zhang B, Yue D.",
+   "revista": "Clin Transl Oncol",
+   "data": "2026-10-03T00:00:00+00:00",
+   "doi": "10.1007/s12094-026-04583-3",
+   "url": "https://doi.org/10.1007/s12094-026-04583-3",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "EGFR exon 20-altered NSCLC in China: molecular heterogeneity and real-world outcomes with sunvozertinib.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Avaliação de novas terapêuticas de pequenas moléculas direcionadas em células desmoplásicas de tumor de pequenas células redondas (DSRCT).",
+   "autores": "Hahn A, Hentschel J, Saleem S, Becker S, Liehr T, Schober A, Krämer OH, Sonnemann J, Marx C.",
+   "revista": "J Cancer Res Clin Oncol",
+   "data": "2026-10-03T00:00:00+00:00",
+   "doi": "10.1007/s00432-026-06630-6",
+   "url": "https://doi.org/10.1007/s00432-026-06630-6",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Evaluation of novel targeted small-molecule therapeutics in desmoplastic small round cell tumor (DSRCT) cells.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Association of Mixed Metal Exposures with Cardiovascular Disease: Insights from a Population-Based Study.",
+   "autores": "Jin X, Wu H, Zhang H, Jin Y, Feng Y, Liu Y, Li J, Wei L, Qi Z, Qi X.",
+   "revista": "Cardiovasc Toxicol",
+   "data": "2026-10-03T00:00:00+00:00",
+   "doi": "10.1007/s12012-026-10195-8",
+   "url": "https://doi.org/10.1007/s12012-026-10195-8",
+   "acesso_aberto": false,
+   "tema": "Saúde",
+   "titulo_original": "Association of Mixed Metal Exposures with Cardiovascular Disease: Insights from a Population-Based Study.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Carcinomas de alto grau semelhantes a Pilomatrix envolvendo bexiga urinária: uma nova diferenciação divergente no carcinoma urotelial.",
+   "autores": "Hu E, Lammert SM, Davids T, Bennett JA, Paner GP, Wang P, Tjota MY, Antic T, Hartmann A, Agaimy A, Kwon JW.",
+   "revista": "Virchows Arch",
+   "data": "2026-10-03T00:00:00+00:00",
+   "doi": "10.1007/s00428-026-04735-4",
+   "url": "https://doi.org/10.1007/s00428-026-04735-4",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Pilomatrix-like high grade carcinomas involving urinary bladder: a novel divergent differentiation in urothelial carcinoma.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Identificação de uma Nova Assinatura Prognóstica Derivada de Subtipo Baseada na Classificação Molecular Relacionada ao Metabolismo de Nucleotídeos para Prever o Prognóstico de Adenocarcinoma de Pulmão.",
+   "autores": "Shi Y, Li S, Zhao L, Li Y, Cai F, Wang K, Xu N, Liu B, Zhou F, Cui Y, Shi C, Bai X, Zhang J.",
+   "revista": "Int J Genomics",
+   "data": "2026-10-02T00:00:00+00:00",
+   "doi": "10.1155/ijog/4944325",
+   "url": "https://doi.org/10.1155/ijog/4944325",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Identification of a Novel Subtype-Derived Prognostic Signature Based on Nucleotide Metabolism-Related Molecular Classification for Predicting Lung Adenocarcinoma Prognosis.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Heterogeneidade genética no carcinoma de células renais: um caso de carcinomas renais concomitantes de células claras e papilares.",
+   "autores": "Kerckhofs A, Dautricourt S, van Kempen L, De Wachter S, Ramadhan A.",
+   "revista": "Case Rep Urol",
+   "data": "2026-10-02T00:00:00+00:00",
+   "doi": "10.1155/criu/5538985",
+   "url": "https://doi.org/10.1155/criu/5538985",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Genetic Heterogeneity in Renal Cell Carcinoma: A Case of Concurrent Clear Cell and Papillary Renal Carcinomas.",
+   "traduzido": true
+  },
   {
    "tipo": "artigo",
    "titulo": "Um programa epigenético dita a dinâmica de amplificação de MYC que promove eventos genômicos transitórios, extracromossômicos e herdados.",
@@ -569,132 +710,6 @@
      "titulo": "Síndromes de predisposición al cáncer en niños: ¿quién, cuándo y cómo detectarlos?"
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Análise Genômica e Transcriptômica Integrativa Revela Genes Candidatos Geradores de Hipóteses para Suscetibilidade à Nefrolitíase em Hiperoxalúria Primária.",
-   "autores": "Li Y, Li Y, Zhang J, Lin X, Lv J, Yang X, Han J, Lu W, Wang T.",
-   "revista": "Nephrology (Carlton)",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1111/nep.70279",
-   "url": "https://doi.org/10.1111/nep.70279",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Integrative Genomic and Transcriptomic Analysis Reveals Hypothesis-Generating Candidate Genes for Nephrolithiasis Susceptibility in Primary Hyperoxaluria.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El análisis genómico y transcriptómico integrativo revela genes candidatos generadores de hipótesis para la susceptibilidad a la nefrolitiasis en la hiperoxaluria primaria."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Desfechos de pacientes adultos com síndrome de Li-Fraumeni e neoplasias mieloides.",
-   "autores": "Senapati J, Abdel-Salam HM, Jdanov VD, Loghavi S, Woodson A, Corredor J, Borthakur G, Daver NG, Kadia TM, Takahashi K…",
-   "revista": "Cancer",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1002/cncr.70613",
-   "url": "https://doi.org/10.1002/cncr.70613",
-   "acesso_aberto": true,
-   "tema": "Saúde",
-   "titulo_original": "Outcomes of adult patients with Li-Fraumeni syndrome and myeloid neoplasms.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Resultados de pacientes adultos con síndrome de Li-Fraumeni y neoplasias mieloides."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Conscientização, Atitudes e Expectativas de Pacientes Indígenas com Câncer e Seus Cuidadores sobre Cânceres Hereditários e Testes Genéticos em um Centro Terciário de Câncer na Índia.",
-   "autores": "Pathak RS, Angre A, Talker J, Sarin R.",
-   "revista": "J Genet Couns",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1002/jgc4.70287",
-   "url": "https://doi.org/10.1002/jgc4.70287",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Awareness, Attitudes, and Expectations of Indian Cancer Patients and Their Caregivers on Hereditary Cancers and Genetic Testing at a Tertiary Cancer Centre in India.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Conciencia, actitudes y expectativas de los pacientes indios con cáncer y sus cuidadores sobre los cánceres hereditarios y las pruebas genéticas en un centro de cáncer terciario en la India."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Cost-Effectiveness and the Economics of Genomic Testing and Molecularly Matched Therapies.",
-   "autores": "Banerjee S.",
-   "revista": "Hematol Oncol Clin North Am",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1016/j.hoc.2026.05.024",
-   "url": "https://doi.org/10.1016/j.hoc.2026.05.024",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Cost-Effectiveness and the Economics of Genomic Testing and Molecularly Matched Therapies.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Cost-Effectiveness and the Economics of Genomic Testing and Molecularly Matched Therapies."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Abordagens para nódulos tireoidianos em síndromes de predisposição ao câncer pediátrico.",
-   "autores": "Kuhlen M, Naviglio S, Hirtz R, Virgone C, de Krijger RR, Theurer S, Waespe N, Redlich A, SIOPE Host Genome Working…",
-   "revista": "Eur Thyroid J",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1530/etj-26-0100",
-   "url": "https://doi.org/10.1530/etj-26-0100",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Approaches to thyroid nodules in paediatric cancer predisposition syndromes.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Abordajes de los nódulos tiroideos en síndromes de predisposición al cáncer pediátrico."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Resultados a longo prazo com venetoclax contínuo para leucemia linfocítica crônica recidivante.",
-   "autores": "McKeague S, Lew TE, Lowe A, Lau L, Thompson PA, Whitechurch A, Carney D, Wolf M, Reynolds G, Blombery P, Seymour JF…",
-   "revista": "Blood Adv",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1182/bloodadvances.2026020789",
-   "url": "https://doi.org/10.1182/bloodadvances.2026020789",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Long-term outcomes with continuous venetoclax for relapsed chronic lymphocytic leukemia.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Resultados a largo plazo con venetoclax continuo para la leucemia linfocítica crónica recidivante."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Biomarcadores moleculares como determinantes-chave do resultado no linfoma de células do manto: resultados do estudo FIL V-RBAC.",
-   "autores": "Moia R, Almasri M, Carazzolo ME, Cividini L, Tabanelli V, Melle F, Genuardi E, Cosentino C, Maher N, Bellia M, Mahmoud…",
-   "revista": "Blood Adv",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1182/bloodadvances.2026020780",
-   "url": "https://doi.org/10.1182/bloodadvances.2026020780",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Molecular biomarkers as key determinants of outcome in mantle cell lymphoma: results from the FIL V-RBAC trial.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Biomarcadores moleculares como determinantes clave del resultado en el linfoma de células del manto: resultados del ensayo Fil V-RBAC."
-    }
-   }
   }
  ],
  "fontes": [
@@ -712,6 +727,7 @@
   "Europe PMC"
  ],
  "erros": [
+  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
@@ -993,6 +1009,12 @@
   "this protective enzyme could help stop fatty liver disease from getting worse": "2026-10-03T18:01:43.064750+00:00",
   "esas juice just used earth as a slingshot to jupiter": "2026-10-03T18:01:43.064750+00:00",
   "p300 cbp inhibition promotes apoptosis in mouse embryos by impairing h1k75ac associated dna repair during the 4 cell to blastocyst transition": "2026-10-03T21:28:59.920877+00:00",
-  "this weird particle may have come from a black hole exploding in another dimension": "2026-10-04T08:32:44.371939+00:00"
+  "this weird particle may have come from a black hole exploding in another dimension": "2026-10-04T08:32:44.371939+00:00",
+  "this common vitamin could help fight one of the deadliest brain cancers": "2026-10-04T14:52:46.461152+00:00",
+  "how attachment theory can help us understand ai relationships": "2026-10-04T14:52:46.461152+00:00",
+  "livro propoe metodologia integrada para estudos de publico em museus": "2026-10-04T14:52:46.461152+00:00",
+  "your gut bacteria may reveal how fast your brain is aging": "2026-10-04T14:52:46.461152+00:00",
+  "diet drinks work as well as water for weight loss major trial finds": "2026-10-04T14:52:46.461152+00:00",
+  "a meteor hit oklahoma 100 million years later than scientists thought": "2026-10-04T14:52:46.461152+00:00"
  }
 }
