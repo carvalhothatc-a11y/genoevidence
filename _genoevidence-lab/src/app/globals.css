@@ -278,6 +278,13 @@ h1 {
   background-clip: text;
   color: transparent;
 }
+/* mesmo gradiente da marca, clareado para texto grande sobre fundo escuro */
+.ge-gradient-text-claro {
+  background: linear-gradient(90deg, #8fb0ff, #c3a6ff 55%, #ff8aa4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 /* .kicker do site: mono 600 12,5px em carmim (aqui na variação acessível para texto pequeno) */
 .ge-eyebrow {
   display: inline-flex;
@@ -397,9 +404,21 @@ h1 {
   background-color: rgba(123, 77, 224, 0.42);
 }
 .ge-dark .ge-card {
-  background: rgba(15, 24, 43, 0.62);
-  border-color: var(--line);
-  box-shadow: none;
+  background: linear-gradient(180deg, rgba(20, 27, 56, 0.7), rgba(11, 18, 33, 0.78));
+  border-color: rgba(123, 77, 224, 0.22);
+  box-shadow:
+    0 20px 60px -30px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+/* Fundo das páginas: mesmo clima do laboratório (gradientes discretos da marca, sem foto) */
+.ge-fundo {
+  background:
+    radial-gradient(60% 45% at 90% -10%, rgba(123, 77, 224, 0.16), transparent 60%),
+    radial-gradient(45% 40% at -5% 105%, rgba(47, 91, 234, 0.12), transparent 60%),
+    #060a13;
+  background-attachment: fixed;
 }
 .ge-dark .ge-float {
   background: rgba(11, 18, 33, 0.8);

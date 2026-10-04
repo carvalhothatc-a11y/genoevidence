@@ -176,7 +176,7 @@ export function IntroOverlay({ visible, onEnter, onSkip, resume }: { visible: bo
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.3 } }}
-          className="pointer-events-auto absolute inset-0 z-30 grid place-items-center bg-gradient-to-b from-white/70 via-white/40 to-white/10 p-4"
+          className="pointer-events-auto absolute inset-0 z-30 grid place-items-center bg-gradient-to-b from-[#060a13]/80 via-[#060a13]/50 to-[#060a13]/20 p-4"
           role="dialog"
           aria-modal="false"
           aria-labelledby="intro-titulo"

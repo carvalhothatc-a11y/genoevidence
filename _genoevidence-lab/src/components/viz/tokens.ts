@@ -1,15 +1,16 @@
 /**
- * Tokens de gráfico (paleta de referência validada com scripts/validate_palette.js da skill dataviz:
- * slots 1–3 passam todos os pares em modo claro; o slot 3 (aqua) fica abaixo de 3:1 de contraste,
- * por isso todo gráfico tem tabela equivalente).
+ * Tokens de gráfico para o fundo escuro do GenoLab (todas as páginas usam a identidade escura).
+ * Passos escuros da paleta de referência da skill dataviz, validados com scripts/validate_palette.js
+ * --mode dark --surface "#0f182b": faixa de luminosidade, croma, separação para daltonismo
+ * (pior ΔE 9,4) e contraste ≥ 3:1. Todo gráfico mantém tabela equivalente.
  */
 export const VIZ = {
-  surface: "#ffffff",
-  grid: "#e6e8e3",
-  axis: "#4a5650",
-  ink: "#17201c",
-  muted: "#4a5650",
-  series1: "#2a78d6",
-  series2: "#eb6834",
-  series3: "#1baf7a",
+  surface: "#0f182b",
+  grid: "rgba(167, 178, 200, 0.14)",
+  axis: "#a7b2c8",
+  ink: "#eef2f9",
+  muted: "#a7b2c8",
+  series1: "#3987e5",
+  series2: "#d95926",
+  series3: "#199e70",
 } as const;
