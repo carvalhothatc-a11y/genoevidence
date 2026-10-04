@@ -108,14 +108,16 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
       <header className="flex flex-wrap items-center gap-3 border-b border-line bg-[linear-gradient(90deg,rgba(47,91,234,0.07),rgba(123,77,224,0.07)_55%,rgba(224,56,90,0.07))] p-4 sm:px-6">
         <GeninhoAvatar size={48} />
         <div className="min-w-0 flex-1">
-          <h2 id="geninho-titulo" className="ge-display text-xl">
-            Geninho
-          </h2>
+          <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
+            <h2 id="geninho-titulo" className="ge-display text-xl">
+              Geninho
+            </h2>
+            <span className={`rounded-full border px-2.5 py-0.5 text-xs font-semibold ${configured ? "border-ok/30 bg-ok-soft text-ok" : "border-warn/30 bg-warn-soft text-warn"}`}>
+              {configured ? "Ligado" : "Não configurado"}
+            </span>
+          </div>
           <p className="text-sm text-muted">Assistente de IA para dúvidas de pesquisa em biologia molecular.</p>
         </div>
-        <span className={`rounded-full border px-2.5 py-0.5 text-xs font-semibold ${configured ? "border-ok/30 bg-ok-soft text-ok" : "border-warn/30 bg-warn-soft text-warn"}`}>
-          {configured ? "Ligado" : "Não configurado"}
-        </span>
       </header>
 
       {!configured ? (
@@ -134,7 +136,7 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
         </div>
       ) : (
         <div className="grid">
-          <div ref={logRef} role="log" aria-label="Conversa com o Geninho" className="grid max-h-[60vh] min-h-48 gap-4 overflow-y-auto p-4 sm:px-6">
+          <div ref={logRef} role="log" aria-label="Conversa com o Geninho" className="grid max-h-[55dvh] min-h-48 gap-4 overflow-y-auto p-4 sm:px-6">
             {messages.length === 0 && (
               <div className="grid gap-3">
                 <p className="text-sm">

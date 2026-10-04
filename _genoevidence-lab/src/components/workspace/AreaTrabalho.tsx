@@ -204,8 +204,9 @@ export function AreaTrabalho({
             </div>
 
             {/* visualização */}
-            <div className="grid min-h-0 content-start gap-3 lg:overflow-y-auto lg:pl-1" aria-label="Visualização do experimento">
-              <div className={gerado ? "h-[min(72vh,640px)] min-h-[420px]" : "min-h-[320px] lg:h-full"}>
+            {/* no celular, antes de criar a cena, o Geninho e as instruções vêm primeiro */}
+            <div className={`grid min-h-0 content-start gap-3 lg:overflow-y-auto lg:pl-1 ${gerado ? "" : "order-first lg:order-none"}`} aria-label="Visualização do experimento">
+              <div className={gerado ? "h-[min(72vh,640px)] min-h-[420px]" : "lg:h-full"}>
                 <Visualizacao onPerguntar={perguntar} />
               </div>
               {gerado && <ResultadosExp onAvaliarPcr={avaliarPcr} />}

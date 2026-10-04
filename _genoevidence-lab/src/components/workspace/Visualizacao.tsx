@@ -335,8 +335,8 @@ function BoasVindasGeninho() {
     }
   };
   return (
-    <div className="relative flex min-h-[320px] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-[radial-gradient(80%_70%_at_50%_45%,rgba(123,77,224,0.18),transparent_70%)] p-4 pb-16 sm:p-6 sm:pb-20 lg:h-full" data-testid="visual-vazio">
-      <svg aria-hidden="true" viewBox="0 0 400 220" className="pointer-events-none absolute inset-x-0 bottom-4 mx-auto w-[min(520px,90%)] opacity-50">
+    <div className="relative flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-[radial-gradient(80%_70%_at_50%_45%,rgba(123,77,224,0.18),transparent_70%)] p-3 sm:min-h-[320px] sm:p-6 sm:pb-20 lg:h-full" data-testid="visual-vazio">
+      <svg aria-hidden="true" viewBox="0 0 400 220" className="pointer-events-none absolute inset-x-0 bottom-4 mx-auto hidden w-[min(520px,90%)] opacity-50 sm:block">
         <defs>
           <radialGradient id="plat" cx="50%" cy="50%" r="50%">
             <stop offset="0" stopColor="#7b4de0" stopOpacity="0.55" />
@@ -347,14 +347,20 @@ function BoasVindasGeninho() {
         <ellipse cx="200" cy="170" rx="150" ry="28" fill="none" stroke="#9db4ff" strokeOpacity="0.5" />
         <ellipse cx="200" cy="170" rx="110" ry="20" fill="none" stroke="#e679b5" strokeOpacity="0.4" strokeDasharray="4 6" />
       </svg>
-      <section aria-labelledby="geninho-boas-vindas" className="relative flex w-full max-w-[640px] flex-col items-center gap-4 sm:flex-row sm:items-start" data-testid="geninho-boas-vindas">
-        <div className="shrink-0 rounded-[28px] p-[3px] shadow-[0_10px_40px_-12px_rgba(123,77,224,0.8)]" style={{ background: "var(--ge-gradient)" }}>
-          <GeninhoCorpo className={`rounded-[25px] bg-white object-cover ${recolhida ? "h-20 w-20" : "h-32 w-32 sm:h-40 sm:w-40"}`} />
+      <section aria-labelledby="geninho-boas-vindas" className="relative flex w-full max-w-[640px] flex-row items-start gap-4" data-testid="geninho-boas-vindas">
+        <div className="hidden shrink-0 rounded-[28px] p-[3px] shadow-[0_10px_40px_-12px_rgba(123,77,224,0.8)] sm:block" style={{ background: "var(--ge-gradient)" }}>
+          <GeninhoCorpo className={`rounded-[25px] bg-white object-cover ${recolhida ? "h-20 w-20" : "h-40 w-40"}`} />
         </div>
-        <div className="relative min-w-0 flex-1 rounded-2xl rounded-tl-md border border-white/12 bg-[#0f182b]/90 p-4 text-[14px] leading-relaxed text-[#c9d2e3] backdrop-blur">
-          <h2 id="geninho-boas-vindas" className="text-[17px] font-semibold text-white">
-            Olá! Eu sou o Geninho.
-          </h2>
+        <div className="relative min-w-0 flex-1 rounded-2xl border border-white/12 bg-[#0f182b]/90 p-3 text-[14px] leading-relaxed text-[#c9d2e3] backdrop-blur sm:rounded-tl-md sm:p-4">
+          <div className="flex items-center gap-3">
+            {/* no celular a imagem fica pequena, ao lado do título, e o texto usa a largura toda */}
+            <div className="shrink-0 rounded-[16px] p-[2px] shadow-[0_8px_28px_-10px_rgba(123,77,224,0.8)] sm:hidden" style={{ background: "var(--ge-gradient)" }}>
+              <GeninhoCorpo className="h-14 w-14 rounded-[14px] bg-white object-cover" />
+            </div>
+            <h2 id="geninho-boas-vindas" className="text-[17px] font-semibold text-white">
+              Olá! Eu sou o Geninho.
+            </h2>
+          </div>
           {recolhida ? (
             <p className="mt-1">
               Descreva no campo de descrição o que você quer fazer e clique em <strong className="text-white">Criar visualização</strong>.{" "}
