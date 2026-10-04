@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-04T18:40:41.669939+00:00",
+ "atualizado_em": "2026-10-04T22:22:32.195438+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -129,32 +129,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Protocolo da USP orienta análise de variantes genéticas para diagnóstico de doenças raras",
-   "resumo": "Material de acesso aberto pretende auxiliar profissionais na interpretação de variantes genéticas diante da ampliação do sequenciamento pelo SUS",
-   "url": "https://jornal.usp.br/radio-usp/protocolo-da-usp-orienta-analise-de-variantes-geneticas-para-diagnostico-de-doencas-raras/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-02T18:59:23+00:00",
-   "tema": "Genética",
-   "relevancia": 5,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/02/20200324_genes1.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "USP protocol guides analysis of genetic variants for diagnosis of rare diseases",
-     "resumo": "Open access material intends to assist professionals in the interpretation of genetic variants in view of the expansion of sequencing by sus"
-    },
-    "es": {
-     "titulo": "El protocolo de la USP guía el análisis de variantes genéticas para el diagnóstico de enfermedades raras",
-     "resumo": "El material de acceso abierto tiene la intención de ayudar a los profesionales en la interpretación de variantes genéticas en vista de la expansión de la secuenciación por sus"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Livro propõe metodologia integrada para estudos de público em museus",
    "resumo": "Obra de pesquisadores do Museu de Arqueologia e Etnologia integra monitoramento espacial e perfis de público, com download gratuito pelo Portal de Livros Abertos da USP",
    "url": "https://jornal.usp.br/universidade/livro-propoe-metodologia-integrada-para-estudos-de-publico-em-museus/",
@@ -176,6 +150,58 @@
     "es": {
      "titulo": "Libro propone metodología integrada para estudios públicos en museos",
      "resumo": "El trabajo de los investigadores del Museo de Arqueología y Etnología integra la monitorización espacial y los perfiles públicos, con descarga gratuita a través del Portal del Libro Abierto de la USP"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Ameaça de um ‘super El Niño’ desafia cidades brasileiras a se preparar para eventos extremos",
+   "resumo": "Chegada do fenômeno e sua intensificação pelo aquecimento global poderão produzir secas e chuvas intensas em diversas regiões do país",
+   "url": "https://revistapesquisa.fapesp.br/ameaca-de-um-super-el-nino-desafia-cidades-brasileiras-a-se-preparar-para-eventos-extremos/?utm_source=rss&utm_medium=rss&utm_campaign=ameaca-de-um-super-el-nino-desafia-cidades-brasileiras-a-se-preparar-para-eventos-extremos",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-21T11:57:58+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 5,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/652bfbb214633821e2d2bf8740b11e87cd4477e8_1200-630.png",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Threat of a ‘super El Niño’ challenges Brazilian cities to prepare for extreme events",
+     "resumo": "The arrival of the phenomenon and its intensification by global warming could produce droughts and intense rains in several regions of the country"
+    },
+    "es": {
+     "titulo": "La amenaza de un ‘super El Niño’ desafía a las ciudades brasileñas a prepararse para eventos extremos",
+     "resumo": "La llegada del fenómeno y su intensificación por el calentamiento global podría producir sequías e intensas lluvias en varias regiones del país"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Protocolo da USP orienta análise de variantes genéticas para diagnóstico de doenças raras",
+   "resumo": "Material de acesso aberto pretende auxiliar profissionais na interpretação de variantes genéticas diante da ampliação do sequenciamento pelo SUS",
+   "url": "https://jornal.usp.br/radio-usp/protocolo-da-usp-orienta-analise-de-variantes-geneticas-para-diagnostico-de-doencas-raras/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-02T18:59:23+00:00",
+   "tema": "Genética",
+   "relevancia": 4,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/02/20200324_genes1.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "USP protocol guides analysis of genetic variants for diagnosis of rare diseases",
+     "resumo": "Open access material intends to assist professionals in the interpretation of genetic variants in view of the expansion of sequencing by sus"
+    },
+    "es": {
+     "titulo": "El protocolo de la USP guía el análisis de variantes genéticas para el diagnóstico de enfermedades raras",
+     "resumo": "El material de acceso abierto tiene la intención de ayudar a los profesionales en la interpretación de variantes genéticas en vista de la expansión de la secuenciación por sus"
     }
    }
   },
@@ -765,10 +791,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "trumps fda nominee heidi overton affirms mmr vaccine and mifepristone are safe at crucial senate hearing": "2026-09-24T22:22:22.490448+00:00",
-  "pesquisadores comparam evolucao do relevo no brasil e na espanha": "2026-09-24T22:22:22.490448+00:00",
-  "manual gratuito oferece guia pratico sobre telenfermagem para enfermeiros e profissionais de saude": "2026-09-24T22:22:22.490448+00:00",
-  "glp 1 drugs fail to help some people lose weight scientists are on a quest for answers": "2026-09-24T22:22:22.490448+00:00",
   "anthropics discovery will at best be just another gene editing tool": "2026-09-25T14:57:03.714836+00:00",
   "crispr could help doctors attack blood cancer without destroying healthy cells": "2026-09-25T14:57:03.714836+00:00",
   "econometric modeling and forecasting in high dimensional models": "2026-09-25T14:57:03.714836+00:00",
@@ -955,6 +977,7 @@
   "livro propoe metodologia integrada para estudos de publico em museus": "2026-10-04T14:52:46.461152+00:00",
   "your gut bacteria may reveal how fast your brain is aging": "2026-10-04T14:52:46.461152+00:00",
   "diet drinks work as well as water for weight loss major trial finds": "2026-10-04T14:52:46.461152+00:00",
-  "a meteor hit oklahoma 100 million years later than scientists thought": "2026-10-04T14:52:46.461152+00:00"
+  "a meteor hit oklahoma 100 million years later than scientists thought": "2026-10-04T14:52:46.461152+00:00",
+  "ameaca de um super el nino desafia cidades brasileiras a se preparar para eventos extremos": "2026-10-04T22:22:32.195438+00:00"
  }
 }
