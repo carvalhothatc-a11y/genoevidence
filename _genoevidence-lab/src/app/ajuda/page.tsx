@@ -6,6 +6,7 @@ import { VisualKindBadge } from "@/components/ui/Badges";
 import { requirePageUser } from "@/lib/projects/server";
 import { assistantStatus } from "@/lib/assistant/status";
 import { Geninho } from "@/components/assistant/Geninho";
+import { InstalarApp } from "@/components/layout/InstalarApp";
 
 export const metadata: Metadata = { title: "Ajuda" };
 
@@ -74,6 +75,10 @@ export default async function HelpPage() {
           <p>Dados fictícios recebem o selo “sintético” e nunca são misturados aos seus dados.</p>
         </Section>
 
+        <Section id="instalar" title="Instalar o GenoLab no computador ou no celular">
+          <p>O GenoLab pode ser instalado como um aplicativo: ganha ícone próprio, abre numa janela só dele e fica no Dock, no menu Iniciar ou na tela inicial. Ele continua usando o servidor, então seus projetos ficam protegidos e sincronizados entre os dispositivos; sem internet, aparece um aviso.</p>
+          <InstalarApp variante="pagina" />
+        </Section>
         <Section id="acesso" title="Contas e acesso">
           <ul className="list-disc space-y-1 pl-5">
             <li>Novas contas ficam pendentes até a administração aprovar. Contas pendentes ou suspensas não veem nenhum dado.</li>

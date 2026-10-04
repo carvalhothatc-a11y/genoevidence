@@ -335,7 +335,7 @@ function BoasVindasGeninho() {
     }
   };
   return (
-    <div className="relative flex h-full min-h-[320px] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-[radial-gradient(80%_70%_at_50%_45%,rgba(123,77,224,0.18),transparent_70%)] p-4 sm:p-6" data-testid="visual-vazio">
+    <div className="relative flex min-h-[320px] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-[radial-gradient(80%_70%_at_50%_45%,rgba(123,77,224,0.18),transparent_70%)] p-4 pb-16 sm:p-6 sm:pb-20 lg:h-full" data-testid="visual-vazio">
       <svg aria-hidden="true" viewBox="0 0 400 220" className="pointer-events-none absolute inset-x-0 bottom-4 mx-auto w-[min(520px,90%)] opacity-50">
         <defs>
           <radialGradient id="plat" cx="50%" cy="50%" r="50%">
@@ -357,7 +357,7 @@ function BoasVindasGeninho() {
           </h2>
           {recolhida ? (
             <p className="mt-1">
-              Descreva à esquerda o que você quer fazer e clique em <strong className="text-white">Criar visualização</strong>.{" "}
+              Descreva no campo de descrição o que você quer fazer e clique em <strong className="text-white">Criar visualização</strong>.{" "}
               <button type="button" onClick={() => recolher(false)} className="text-[#9db4ff] underline">
                 Ver as instruções
               </button>
@@ -367,7 +367,7 @@ function BoasVindasGeninho() {
               <p className="mt-1">Vou ajudar você a transformar o seu trabalho numa visualização. Para começar:</p>
               <ol className="mt-2 grid list-decimal gap-1.5 pl-5 marker:font-semibold marker:text-[#e679b5]">
                 <li>
-                  <strong className="text-white">Explique</strong>, no campo à esquerda, o que você quer fazer — escrevendo ou gravando um áudio. Pode ser um procedimento inteiro ou uma única ação.
+                  <strong className="text-white">Explique</strong>, no campo de descrição, o que você quer fazer — escrevendo ou gravando um áudio. Pode ser um procedimento inteiro ou uma única ação.
                 </li>
                 <li>
                   Se quiser, <strong className="text-white">adicione materiais</strong>: fotos, tabelas, relatórios ou referências.

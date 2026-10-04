@@ -1,19 +1,36 @@
 "use client";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { destinoSeguro, ultimaPagina } from "@/lib/navegacao";
 import { Alert } from "@/components/ui/Alert";
 import { Button } from "@/components/ui/Button";
 import { Field, TextInput } from "@/components/ui/Field";
 
-function safeReturn(v: string | null) {
-  return v && v.startsWith("/") && !v.startsWith("//") && !v.startsWith("/entrar") && !v.startsWith("/cadastro") ? v : "/laboratorio";
+/** Para onde ir depois de entrar: o pedido explícito, senão a última página visitada. */
+function destino(v: string | null) {
+  return destinoSeguro(v) ?? ultimaPagina() ?? "/laboratorio";
 }
 
 export function AuthForm({ mode }: { mode: "entrar" | "cadastro" }) {
   const router = useRouter();
   const search = useSearchParams();
-  const voltar = safeReturn(search.get("voltar"));
+  const voltarParam = search.get("voltar");
+  const voltar = destinoSeguro(voltarParam) ?? "/laboratorio";
+  // voltar pelo navegador até esta tela (cache do navegador) não mostra o login a quem já entrou
+  useEffect(() => {
+    const conferir = () =>
+      fetch("/api/auth/sessao", { cache: "no-store" })
+        .then((r) => (r.ok ? r.json() : null))
+        .then((d: { autenticado: boolean; status: string | null } | null) => {
+          if (d?.autenticado && d.status === "autorizado") router.replace(destino(voltarParam));
+        })
+        .catch(() => undefined);
+    void conferir();
+    const aoMostrar = (e: PageTransitionEvent) => e.persisted && void conferir();
+    window.addEventListener("pageshow", aoMostrar);
+    return () => window.removeEventListener("pageshow", aoMostrar);
+  }, [router, voltarParam]);
   const [name, setName] = useState("");
   const [institution, setInstitution] = useState("");
   const [email, setEmail] = useState("");
@@ -61,7 +78,7 @@ export function AuthForm({ mode }: { mode: "entrar" | "cadastro" }) {
       setConfirm("");
       return;
     }
-    router.replace(data.status === "autorizado" ? voltar : "/acesso/pendente");
+    router.replace(data.status === "autorizado" ? destino(voltarParam) : "/acesso/pendente");
     router.refresh();
   }
 

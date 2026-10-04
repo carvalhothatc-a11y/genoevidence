@@ -205,7 +205,7 @@ export function AreaTrabalho({
 
             {/* visualização */}
             <div className="grid min-h-0 content-start gap-3 lg:overflow-y-auto lg:pl-1" aria-label="Visualização do experimento">
-              <div className={gerado ? "h-[min(72vh,640px)] min-h-[420px]" : "h-[min(60vh,520px)] min-h-[320px] lg:h-full"}>
+              <div className={gerado ? "h-[min(72vh,640px)] min-h-[420px]" : "min-h-[320px] lg:h-full"}>
                 <Visualizacao onPerguntar={perguntar} />
               </div>
               {gerado && <ResultadosExp onAvaliarPcr={avaliarPcr} />}

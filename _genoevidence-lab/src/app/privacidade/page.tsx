@@ -80,7 +80,7 @@ export default function PrivacidadePage() {
               <strong>Endereço IP:</strong> usado apenas na memória do servidor, já transformado em resumo, para limitar tentativas repetidas de entrada e cadastro. Não é gravado.
             </li>
             <li>
-              <strong>Preferências no navegador:</strong> algumas escolhas de exibição (pausar animações, qualidade do 3D, dicas) ficam no armazenamento local do seu navegador e não são enviadas ao servidor.
+              <strong>Preferências no navegador:</strong> algumas escolhas de exibição (pausar animações, qualidade do 3D, dicas) e o endereço da última página visitada no GenoLab (para voltar a ela, apagado ao sair da conta) ficam no armazenamento local do seu navegador e não são enviadas ao servidor.
             </li>
           </ul>
         </Secao>
