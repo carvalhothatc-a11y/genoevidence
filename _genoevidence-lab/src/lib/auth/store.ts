@@ -86,6 +86,23 @@ export function bootstrapAdmins(): Set<string> {
   );
 }
 
+/** Comparação de e-mails sem diferença de acentos (“patrícia” = “patricia”). */
+export const emailComparavel = (e: string) => normalizeEmail(e).normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+/**
+ * E-mails pré-autorizados pela administração (LAB_EMAILS_AUTORIZADOS, separados por vírgula):
+ * a conta criada com um deles já nasce autorizada como pesquisador (sem papel de administração).
+ * Atenção: sem confirmação de e-mail, vale para quem se cadastrar primeiro com o endereço.
+ */
+export function emailsPreAutorizados(): Set<string> {
+  return new Set(
+    (process.env.LAB_EMAILS_AUTORIZADOS ?? "")
+      .split(",")
+      .map((e) => emailComparavel(e))
+      .filter(Boolean),
+  );
+}
+
 async function hashPassword(password: string, salt: Buffer) {
   return (await scrypt(password, salt, 64, SCRYPT)).toString("base64");
 }
@@ -109,6 +126,7 @@ export async function registerAccount(input: { name: string; email: string; pass
   const passwordHash = await hashPassword(input.password, salt);
   if (await readJson(emailFile(email))) return { created: false };
   const admin = bootstrapAdmins().has(email);
+  const pre = !admin && emailsPreAutorizados().has(emailComparavel(email));
   const now = new Date().toISOString();
   const account: Account = {
     id: "u_" + randomBytes(16).toString("base64url"),
@@ -118,10 +136,10 @@ export async function registerAccount(input: { name: string; email: string; pass
     passwordHash,
     salt: salt.toString("base64"),
     createdAt: now,
-    status: admin ? "autorizado" : "pendente",
+    status: admin || pre ? "autorizado" : "pendente",
     role: admin ? "admin" : "pesquisador",
-    statusChangedAt: admin ? now : undefined,
-    statusChangedBy: admin ? "configuracao" : undefined,
+    statusChangedAt: admin || pre ? now : undefined,
+    statusChangedBy: admin ? "configuracao" : pre ? "pre-autorizacao" : undefined,
     privacyVersion: input.privacyVersion,
     privacyAcceptedAt: now,
   };
@@ -178,6 +196,12 @@ export async function verifyCredentials(emailRaw: string, password: string): Pro
 
 /** Promove a administração inicial configurada (útil quando a variável é definida depois do cadastro). */
 export async function applyBootstrap(a: Account): Promise<Account> {
+  // pré-autorização: conta pendente criada antes de o e-mail entrar na lista (nunca reativa suspensa)
+  if (!bootstrapAdmins().has(a.email) && a.status === "pendente" && emailsPreAutorizados().has(emailComparavel(a.email))) {
+    const next = { ...a, status: "autorizado" as const, statusChangedAt: new Date().toISOString(), statusChangedBy: "pre-autorizacao" };
+    await saveAccount(next);
+    return next;
+  }
   if (!bootstrapAdmins().has(a.email) || (a.role === "admin" && a.status === "autorizado")) return a;
   const next = { ...a, role: "admin" as const, status: "autorizado" as const, statusChangedAt: new Date().toISOString(), statusChangedBy: "configuracao" };
   await saveAccount(next);
