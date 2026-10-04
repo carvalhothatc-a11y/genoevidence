@@ -9,7 +9,7 @@ export type NewFileInput = {
   externalSource?: FileRecord["externalSource"];
 };
 
-export type DerivedKind = "datasets" | "references" | "ideias" | "evidencias";
+export type DerivedKind = "datasets" | "references" | "ideias" | "evidencias" | "experimentos";
 
 /** Quem executa a alteração (registrado no histórico). */
 export type Actor = { id: string; name: string };

@@ -27,7 +27,7 @@ if (!(await page.getByRole("link", { name: /exemplo/i }).count())) {
   await page.waitForURL(/\/projetos\/p_/, { timeout: 60000 });
 }
 
-await page.goto(`${base}/laboratorio`);
+await page.goto(`${base}/laboratorio/bancada`);
 await page.getByRole("paragraph").filter({ hasText: "Descreva o que você quer fazer." }).waitFor();
 ok(await page.getByPlaceholder("Descreva sua ideia ou procedimento").isVisible(), "barra “Descreva sua ideia ou procedimento” com microfone e anexo");
 

@@ -44,21 +44,21 @@ export default async function HelpPage() {
           </ol>
         </Section>
 
-        <Section id="laboratorio" title="Usar o laboratório">
-          <ul className="list-disc space-y-1 pl-5">
+        <Section id="laboratorio" title="Usar a área de trabalho">
+          <ol className="list-decimal space-y-1 pl-5">
             <li>
-              Na barra <strong>“Descreva sua ideia ou procedimento”</strong>, escreva ou fale (microfone com início e fim) o que você está fazendo ou planeja fazer, de qualquer técnica.
+              Em <Link className="underline" href="/laboratorio">Área de trabalho</Link>, explique o que você quer fazer: escreva ou grave um áudio (o microfone só liga quando você clica; revise a transcrição antes de usar). Pode ser um procedimento inteiro ou uma única ação.
             </li>
-            <li>A <strong>Visualização</strong> mostra cada etapa ilustrada, com as suas palavras; use Iniciar, Pausar, Voltar, Avançar e Repetir, e “Baixar imagem” para salvar o processo inteiro.</li>
+            <li>Se quiser, adicione fotos, tabelas (CSV, XLSX), relatórios (PDF, DOCX, TXT) e referências (DOI, link ou citação). Na tabela, confira o papel de cada coluna; na foto, marque ou confirme os elementos visíveis.</li>
+            <li>Confira os valores e unidades reconhecidos e clique em “Criar visualização”. A cena mostra só as ações descritas: nenhum protocolo é acrescentado.</li>
+            <li>Na cena, clique nos rótulos para ver nome, função, relação com a ação, parâmetros e de onde veio cada informação. Use reproduzir, pausar, reiniciar, velocidade, aproximar e reiniciar visão.</li>
+            <li>Em “Como entendemos”, corrija ações, nomes, valores e conflitos; nada muda até você clicar em “Atualizar visualização”. Cada atualização vira uma versão nova, e a anterior é preservada.</li>
+            <li>Os resultados ficam separados em processo ilustrado, resultado observado (seus dados), esperado (com fonte) e previsto (só com modelo aplicável). Sem modelo validado, nenhuma porcentagem é mostrada.</li>
+            <li>Use “Salvar” para guardar descrição, materiais, arquivos originais e versões num projeto (novo ou existente); reabra pelo projeto quando quiser.</li>
             <li>
-              Ao lado, a <strong>tabela de previsibilidade</strong> mostra, por etapa, o que pode acontecer, o que dá para mudar e a previsibilidade. Porcentagens só aparecem quando há frequência publicada registrada (com fonte e trecho) ou modelo validado.
+              A <Link className="underline" href="/laboratorio/bancada">Bancada 3D</Link> e as <Link className="underline" href="/modulos">técnicas educativas</Link> continuam disponíveis para explorar uma técnica completa. Na bancada: arraste para girar, role para aproximar; Tab percorre os rótulos e Enter seleciona.
             </li>
-            <li>Se a interpretação de uma etapa estiver errada, corrija em “Interpretado como”.</li>
-            <li>
-              Com parâmetros de PCR, use “Conferir parâmetros” para ver a avaliação por regras, a <strong>Bancada 3D</strong> sincronizada, versões e comparação de cenários.
-            </li>
-            <li>Na Bancada 3D: arraste para girar, role para aproximar; Tab percorre os rótulos e Enter seleciona. Se ficar lento, reduza a qualidade 3D ou use a versão 2D.</li>
-          </ul>
+          </ol>
         </Section>
 
         <Section id="selos" title="O que cada selo significa">

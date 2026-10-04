@@ -81,8 +81,15 @@ const violacoes = (page) => page.evaluate(() => window.__csp ?? []);
   ok((await page.getByRole("row").filter({ hasText: globalThis.contaTeste.email }).count()) === 0, "conta some da lista");
 
   const todas = [];
-  await page.goto(`${base}/laboratorio`);
+  await page.goto(`${base}/laboratorio/bancada`);
   await page.locator("canvas").first().waitFor({ timeout: 30000 });
+  await page.waitForTimeout(2500);
+  todas.push(...(await violacoes(page)));
+  // área de trabalho: cena 3D gerada a partir da descrição
+  await page.goto(`${base}/laboratorio`);
+  await page.getByLabel("Descreva sua ideia ou procedimento").fill("Centrifuguei as amostras a 12.000 x g por 5 min.");
+  await page.getByRole("button", { name: /Criar visualização|Atualizar visualização/ }).first().click();
+  await page.locator('[data-modo-cena="3d"] canvas').first().waitFor({ timeout: 30000 });
   await page.waitForTimeout(2500);
   todas.push(...(await violacoes(page)));
   await page.goto(`${base}/projetos`);

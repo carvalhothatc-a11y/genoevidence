@@ -32,7 +32,8 @@ function Icon({ d }: { d: ReactNode }) {
 type User = { name: string; email: string; role: string };
 
 const NAV = [
-  { href: "/laboratorio", rotulo: "Laboratório", icone: I.lab },
+  { href: "/laboratorio", rotulo: "Área de trabalho", icone: I.lab },
+  { href: "/laboratorio/bancada", rotulo: "Bancada 3D", icone: I.tecnicas },
   { href: "/projetos", rotulo: "Projetos", icone: I.pasta },
   { href: "/referencias", rotulo: "Referências", icone: I.livro },
   { href: "/modulos", rotulo: "Técnicas", icone: I.tecnicas },
@@ -69,7 +70,7 @@ export function LabSidebar({ user }: { user: User }) {
       <nav aria-label="Navegação principal">
         <ul className="grid gap-1.5">
           {itens.map((it) => {
-            const ativo = pathname === it.href || pathname.startsWith(it.href + "/");
+            const ativo = it.href === "/laboratorio" ? pathname === it.href : pathname === it.href || pathname.startsWith(it.href + "/");
             return (
               <li key={it.href}>
                 <Link

@@ -5,12 +5,14 @@ import * as THREE from "three";
 import { create } from "zustand";
 import { brilho, COR, halo, holograma, luz } from "./materiais";
 import { registrarAncora, removerRotulo } from "./rotulos";
+import type { ObjetoId } from "@/lib/cena/biblioteca";
 
 type V3 = [number, number, number];
 
 // ---------------------------------------------------------------- rótulos (âncora 3D + caixa DOM)
 
-export type RotuloSpec = { texto: string; sub?: string; dx: number };
+/** alvo: objeto da biblioteca representado (o rótulo vira botão que mostra nome, função e fonte). */
+export type RotuloSpec = { texto: string; sub?: string; dx: number; alvo?: ObjetoId };
 export const useRotulos = create<{ itens: Record<string, RotuloSpec>; set: (id: string, r: RotuloSpec) => void; del: (id: string) => void }>((set) => ({
   itens: {},
   set: (id, r) => set((s) => ({ itens: { ...s.itens, [id]: r } })),
@@ -22,16 +24,16 @@ export const useRotulos = create<{ itens: Record<string, RotuloSpec>; set: (id: 
     }),
 }));
 
-export function Ancora({ id, texto, sub, dx = 120, dy = -40, position = [0, 0, 0] }: { id: string; texto: string; sub?: string; dx?: number; dy?: number; position?: V3 }) {
+export function Ancora({ id, texto, sub, dx = 120, dy = -40, position = [0, 0, 0], alvo }: { id: string; texto: string; sub?: string; dx?: number; dy?: number; position?: V3; alvo?: ObjetoId }) {
   const ref = useRef<THREE.Group>(null);
   useEffect(() => {
     registrarAncora(id, ref.current, dx, dy);
-    useRotulos.getState().set(id, { texto, sub, dx });
+    useRotulos.getState().set(id, { texto, sub, dx, alvo });
     return () => {
       useRotulos.getState().del(id);
       removerRotulo(id);
     };
-  }, [id, texto, sub, dx, dy]);
+  }, [id, texto, sub, dx, dy, alvo]);
   return <group ref={ref} position={position} />;
 }
 
@@ -509,6 +511,37 @@ export function Plataforma({ r = 3.2, y = -1.9 }: { r?: number; y?: number }) {
       <mesh rotation={[-Math.PI / 2, 0, 0]} material={m1}>
         <ringGeometry args={[r * 0.55, r * 0.565, 96, 1, 0, Math.PI * 1.4]} />
       </mesh>
+    </group>
+  );
+}
+
+/** Termociclador: bloco com poços, tampa e visor de temperatura (forma reconhecível, sem escala real). */
+export function Termociclador({ tampa = 0.2, quente = 0, position = [0, 0, 0], escala = 1 }: { tampa?: number; quente?: number; position?: V3; escala?: number }) {
+  const m = useHolo(COR.azul, COR.branco, 0.85);
+  const mBloco = useHolo(COR.violeta, COR.branco, 0.9);
+  const mVisor = useMemo(() => luz(COR.teal, 0.9), []);
+  return (
+    <group position={position} scale={escala}>
+      <mesh material={m} position={[0, -0.35, 0]}>
+        <boxGeometry args={[2.2, 0.7, 1.6]} />
+      </mesh>
+      <mesh material={mBloco} position={[0, 0.03, 0]}>
+        <boxGeometry args={[1.5, 0.06, 1.0]} />
+      </mesh>
+      {Array.from({ length: 12 }, (_, i) => (
+        <mesh key={i} material={mBloco} position={[-0.6 + (i % 6) * 0.24, 0.12, -0.25 + Math.floor(i / 6) * 0.5]}>
+          <cylinderGeometry args={[0.07, 0.05, 0.16, 12]} />
+        </mesh>
+      ))}
+      <group position={[0, 0.05, -0.8]} rotation={[-tampa * 1.6, 0, 0]}>
+        <mesh material={m} position={[0, 0.06, 0.8]}>
+          <boxGeometry args={[2.2, 0.12, 1.6]} />
+        </mesh>
+      </group>
+      <mesh material={mVisor} position={[0.55, -0.32, 0.81]}>
+        <planeGeometry args={[0.7, 0.28]} />
+      </mesh>
+      <Brilho cor={quente > 0.5 ? COR.rosa : COR.teal} escala={2.2} opacidade={0.12 + 0.25 * quente} position={[0, 0.1, 0]} />
     </group>
   );
 }

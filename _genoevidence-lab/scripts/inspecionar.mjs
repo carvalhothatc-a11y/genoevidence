@@ -19,7 +19,7 @@ for (const s of sizes) {
     await page.waitForTimeout(1400);
     await page.screenshot({ path: `${out}/${s.name}-${n}.png` });
   };
-  await page.goto(`${base}/laboratorio`, { waitUntil: "networkidle" });
+  await page.goto(`${base}/laboratorio/bancada`, { waitUntil: "networkidle" });
   await page.waitForSelector("canvas", { timeout: 30000 });
   await shot("1-entrada");
   await page.getByRole("button", { name: "Entrar no laboratório" }).click();
