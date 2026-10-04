@@ -1,82 +1,6 @@
 {
- "atualizado_em": "2026-10-04T01:41:26.810399+00:00",
+ "atualizado_em": "2026-10-04T08:32:44.371939+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "Seu intestino pode estar produzindo uma molécula que aumenta o risco de Alzheimer",
-   "resumo": "Os cientistas ligaram um composto bacteriano intestinal chamado ImP a um maior risco de Alzheimer, acúmulo prejudicial de proteínas cerebrais e declínio cognitivo mais rápido. A descoberta levanta a possibilidade de que a redução da ImP no sangue possa um dia ajudar a desacelerar...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260930225459.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-03T12:13:21+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://www.sciencedaily.com/images/1920/brain-gut-connection.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Your gut may be making a molecule that raises Alzheimer’s risk",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Tu intestino puede estar produciendo una molécula que aumenta el riesgo de Alzheimer",
-     "resumo": "Los científicos han relacionado un compuesto bacteriano intestinal llamado ImP con un mayor riesgo de Alzheimer, una acumulación dañina de proteínas cerebrales y un deterioro cognitivo más rápido. El hallazgo plantea la posibilidad de que reducir la ImP en la sangre podría algún día ayudar a ralentizar..."
-    }
-   },
-   "resumo_original": "Scientists have linked a gut bacterial compound called ImP to greater Alzheimer’s risk, harmful brain protein buildup, and faster cognitive decline. The finding raises the possibility that reducing ImP in the blood could one day help slow…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Vitamina C ligada a menos mortes em testes de distúrbios sanguíneos",
-   "resumo": "A vitamina C pode fazer mais do que apoiar o sistema imunológico. Em um estudo de fase 2 de pessoas com câncer de sangue pré-canceroso ou de baixo risco, a vitamina C diária não retardou o crescimento celular anormal, mas foi associada a mudanças favoráveis na inflamação e...",
-   "url": "https://www.sciencedaily.com/releases/2026/09/260930225454.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-03T11:17:37+00:00",
-   "tema": "Câncer",
-   "relevancia": 7,
-   "imagem": "https://www.sciencedaily.com/images/1920/vitamin-c-water-soluble-tablets-and-fresh-oranges.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Vitamin C linked to fewer deaths in blood disorder trial",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La vitamina C se relaciona con menos muertes en el ensayo de trastornos sanguíneos",
-     "resumo": "La vitamina C puede hacer más que apoyar el sistema inmunológico. En un ensayo de fase 2 de personas con cánceres de sangre precancerosos o de bajo riesgo, la vitamina C diaria no ralentizó el crecimiento celular anormal, pero se relacionó con cambios favorables en la inflamación y..."
-    }
-   },
-   "resumo_original": "Vitamin C may do more than support the immune system. In a phase 2 trial of people with precancerous or low risk blood cancers, daily vitamin C did not slow abnormal cell growth, but it was linked to favorable changes in inflammation and…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Pesquisadoras da USP criam treinamento para prevenção do suicídio em idosos",
-   "resumo": "Conteúdos gratuitos da Escola de Enfermagem de Ribeirão Preto apoiam a formação de estudantes e profissionais de saúde e orientam cuidadores sobre a saúde mental da população idosa",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/pesquisadoras-da-usp-criam-treinamento-para-prevencao-do-suicidio-em-idosos/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-02T15:30:15+00:00",
-   "tema": "Saúde",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/07/20240716_casal-de-idosos.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Researchers at USP create training for suicide prevention in the elderly",
-     "resumo": "Free content from the Ribeirão Preto School of Nursing supports the training of students and health professionals and guides caregivers on the mental health of the elderly population"
-    },
-    "es": {
-     "titulo": "Investigadores de la USP crean formación para la prevención del suicidio en personas mayores",
-     "resumo": "El contenido gratuito de la Escuela de Enfermería de Ribeirão Preto apoya la capacitación de estudiantes y profesionales de la salud y guía a los cuidadores sobre la salud mental de la población mayor"
-    }
-   }
-  },
   {
    "tipo": "noticia",
    "titulo": "SUS passa a oferecer três novos medicamentos de alta tecnologia para o tratamento de câncer pulmonar",
@@ -105,52 +29,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Como a IA ajudou a trazer de volta à vida um túmulo antigo que data de antes do Império Romano",
-   "resumo": "Combinar inteligência artificial com tecnologia acústica ajudou a revelar uma tumba erturiana sob nova luz",
-   "url": "https://www.scientificamerican.com/article/how-ai-helped-bring-an-ancient-tomb-dating-to-before-the-roman-empire-back-to-life/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-03T10:00:00+00:00",
-   "tema": "Ciência",
+   "titulo": "No rastro dos átomos: o desenvolvimento e a aplicação de técnicas analíticas em um instituto especializado da USP",
+   "resumo": "As contribuições do Centro de Energia Nuclear na Agricultura se estendem a áreas tão diversas quanto o rastreamento de elementos radioativos, a nutrição animal e a química analítica",
+   "url": "https://jornal.usp.br/universidade/no-rastro-dos-atomos-o-desenvolvimento-e-a-aplicacao-de-tecnicas-analiticas-em-um-instituto-especializado-da-usp/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-02T19:04:26+00:00",
+   "tema": "Meio ambiente",
    "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/197741e6-e7f2-432f-bd94-e10be39de8ab/Tomba-dei-demoni-azzurri.jpg?m=1790962243.971&w=1200",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261002_aquarelas_Klaus_1996_campo_girassois.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "How AI helped bring an ancient tomb dating to before the Roman empire back to life",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "In the wake of atoms: the development and application of analytical techniques in a specialized USP institute",
+     "resumo": "The Center for Nuclear Energy in Agriculture's contributions extend to areas as diverse as radioactive element tracking, animal nutrition, and analytical chemistry"
+    },
     "es": {
-     "titulo": "Cómo la IA ayudó a revivir una antigua tumba que data de antes del imperio romano",
-     "resumo": "El emparejamiento de la inteligencia artificial con la tecnología acústica ayudó a revelar una tumba erturiana con nueva luz"
+     "titulo": "A raíz de los átomos: el desarrollo y la aplicación de técnicas analíticas en un instituto especializado de la USP",
+     "resumo": "Las contribuciones del Centro para la Energía Nuclear en la Agricultura se extienden a áreas tan diversas como el seguimiento de elementos radiactivos, la nutrición animal y la química analítica"
     }
-   },
-   "resumo_original": "Pairing artificial intelligence with acoustic technology helped reveal an Erturian tomb in new light"
+   }
   },
   {
    "tipo": "noticia",
-   "titulo": "José Goldemberg ganha biografia do Projeto Notáveis da Fecomercio",
-   "resumo": "Reitor da USP de 1986 a 1990 e ex-ministro da Educação, o físico José Goldemberg tem uma trajetória marcada pela atuação acadêmica, no setor público e nos debates sobre energia e meio ambiente",
-   "url": "https://jornal.usp.br/institucional/jose-goldemberg-ganha-biografia-do-projeto-notaveis-da-fecomercio/",
+   "titulo": "Plataforma criada na USP reúne experiências para ajudar a pensar o futuro do futebol feminino",
+   "resumo": "Aberto ao público, o PermeÖ Copa 2027 convida atletas, profissionais, pesquisadores, torcedores e outras pessoas interessadas a compartilhar o que sabem sobre a modalidade",
+   "url": "https://jornal.usp.br/diversidade/plataforma-criada-na-usp-reune-experiencias-para-ajudar-a-pensar-o-futuro-do-futebol-feminino/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-02T20:18:19+00:00",
-   "tema": "Meio ambiente",
+   "data": "2026-10-02T18:54:49+00:00",
+   "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261002_livro_goldemberg.jpg",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261002_futebol.jpg",
    "foco": {
-    "x": 100,
+    "x": 0,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "José Goldemberg wins biography of Fecomercio's Notables Project",
-     "resumo": "Rector of USP from 1986 to 1990 and former Minister of Education, physicist José Goldemberg has a trajectory marked by academic performance, in the public sector and in debates on energy and the environment"
+     "titulo": "Platform created at USP brings together experiences to help think about the future of women's football",
+     "resumo": "Open to the public, the PermeÖ Copa 2027 invites athletes, professionals, researchers, fans and other interested people to share what they know about the sport"
     },
     "es": {
-     "titulo": "José Goldemberg gana biografía del Proyecto Notables de Fecomercio",
-     "resumo": "Rector de la USP de 1986 a 1990 y exministro de Educación, el físico José Goldemberg tiene una trayectoria marcada por el rendimiento académico, en el sector público y en los debates sobre energía y medio ambiente"
+     "titulo": "Plataforma creada en la USP que reúne experiencias para ayudar a pensar en el futuro del fútbol femenino",
+     "resumo": "Abierta al público, la PermeÖ Copa 2027 invita a atletas, profesionales, investigadores, aficionados y otras personas interesadas a compartir lo que saben sobre el deporte"
     }
    }
   },
@@ -181,52 +106,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Como o cérebro usa a memória para imaginar o que poderia ter sido",
-   "resumo": "Filósofo e ganhador do MacArthur “Genius Grant” de 2026, Felipe De Brigard explica como nossos cérebros usam a imaginação para reconstruir o passado",
-   "url": "https://www.scientificamerican.com/article/how-the-brain-uses-memory-to-imagine-what-might-have-been/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-03T11:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/m/551f2933ee3652a1/original/GettyImages-1485146798-resized.jpg?m=1768601709.327&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "How the brain uses memory to imagine what might have been",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Cómo el cerebro usa la memoria para imaginar lo que podría haber sido",
-     "resumo": "El filósofo y ganador de la \"beca del genio\" de MacArthur 2026, Felipe De Brigard, explica cómo nuestros cerebros usan la imaginación para reconstruir el pasado"
-    }
-   },
-   "resumo_original": "Philosopher and 2026 MacArthur “genius grant” recipient Felipe De Brigard explains how our brains use imagination to reconstruct the past"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Localização, localização, localização: como editar genes apenas nas células que você deseja",
-   "resumo": "Enzimas CRISPR de edição de genes controladas por tecidos alvo de luz e som de interesse.",
-   "url": "https://www.nature.com/articles/d41586-026-03037-8",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-02T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 4,
-   "imagem": "",
-   "titulo_original": "Location, location, location: how to edit genes only in the cells you want",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Ubicación, ubicación, ubicación: cómo editar genes solo en las células que desea",
-     "resumo": "Enzimas CRISPR de edición de genes controladas por tejidos diana de luz y sonido de interés."
-    }
-   },
-   "resumo_original": "Gene-editing CRISPR enzymes controlled by light and sound target tissues of interest."
-  },
-  {
-   "tipo": "noticia",
    "titulo": "O Juice da ESA acabou de usar a Terra como um estilingue para Júpiter",
    "resumo": "A nave espacial Juice da ESA passou pela Terra a 28 de setembro, usando a gravidade do nosso planeta para remodelar drasticamente o seu caminho em direção a Júpiter sem queimar muito combustível. O sobrevoo mudou sua direção em 20 graus e aumentou sua velocidade em 3,5...",
    "url": "https://www.sciencedaily.com/releases/2026/10/261001214102.htm",
@@ -249,6 +128,31 @@
     }
    },
    "resumo_original": "ESA’s Juice spacecraft raced past Earth on September 28, using our planet’s gravity to dramatically reshape its path toward Jupiter without burning much fuel. The flyby changed its direction by 20 degrees and increased its speed by 3.5…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Essa partícula estranha pode ter vindo de um buraco negro explodindo em outra dimensão",
+   "resumo": "Um neutrino de alta energia inexplicável detectado há três anos pode estar ligado a um buraco negro primordial, talvez mais um ainda incomum do que se pensava anteriormente",
+   "url": "https://www.scientificamerican.com/article/this-weird-particle-may-have-come-from-a-black-hole-exploding-in-another-dimension/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-02T16:30:00+00:00",
+   "tema": "Espaço",
+   "relevancia": 3,
+   "imagem": "https://static.scientificamerican.com/dam/asset/7293e6f9-7fcc-46a2-9f25-cc09749f644c/GettyImages-1296009955-1.jpg?m=1790958481.566&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "This weird particle may have come from a black hole exploding in another dimension",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Esta extraña partícula puede haber venido de un agujero negro que explotó en otra dimensión",
+     "resumo": "Un inexplicable neutrino de alta energía detectado hace tres años podría estar relacionado con un agujero negro primordial, tal vez uno más inusual de lo que se pensaba"
+    }
+   },
+   "resumo_original": "An unexplained high-energy neutrino detected three years ago could be linked to a primordial black hole, perhaps one more even unusual than previously thought"
   }
  ],
  "artigos": [
@@ -398,7 +302,7 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Envenenation by a Razi's Viper, Macrovipera razii (Serpentes: Viperidae) in Iran: A Neglected Public Health Threat, Report of Two Cases, and Clinical Implications.",
+   "titulo": "Envenenamento por uma víbora Razi, Macrovipera razii (Serpentes: Viperidae) no Irã: uma ameaça à saúde pública negligenciada, relato de dois casos e implicações clínicas.",
    "autores": "Kazemi SM, Salabi F.",
    "revista": "Toxicon",
    "data": "2026-10-01T00:00:00+00:00",
@@ -406,11 +310,11 @@
    "url": "https://doi.org/10.1016/j.toxicon.2026.109315",
    "acesso_aberto": false,
    "tema": "Saúde",
-   "titulo_original": "Envenomation by a Razi's Viper, Macrovipera razii (Serpentes: Viperidae) in Iran: A Neglected Public Health Threat, Report of Two Cases, and Clinical Implications.",
+   "titulo_original": "Envenomation by a Razi's viper, Macrovipera razii (Serpentes: Viperidae) in Iran: A neglected public health threat, report of two cases, and clinical implications.",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Envenenamiento por una víbora de Razi, Macrovipera razii (Serpentes: Viperidae) en Irán: una amenaza para la salud pública desatendida, informe de dos casos e implicaciones clínicas."
+     "titulo": "Envenenamiento por una víbora de Razi, Macrovipera razii (Serpentes: Viperidae) en Irán: una amenaza descuidada para la salud pública, informe de dos casos e implicaciones clínicas."
     }
    }
   },
@@ -1088,6 +992,7 @@
   "plataforma criada na usp reune experiencias para ajudar a pensar o futuro do futebol feminino": "2026-10-03T18:01:43.064750+00:00",
   "this protective enzyme could help stop fatty liver disease from getting worse": "2026-10-03T18:01:43.064750+00:00",
   "esas juice just used earth as a slingshot to jupiter": "2026-10-03T18:01:43.064750+00:00",
-  "p300 cbp inhibition promotes apoptosis in mouse embryos by impairing h1k75ac associated dna repair during the 4 cell to blastocyst transition": "2026-10-03T21:28:59.920877+00:00"
+  "p300 cbp inhibition promotes apoptosis in mouse embryos by impairing h1k75ac associated dna repair during the 4 cell to blastocyst transition": "2026-10-03T21:28:59.920877+00:00",
+  "this weird particle may have come from a black hole exploding in another dimension": "2026-10-04T08:32:44.371939+00:00"
  }
 }
