@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-04T14:52:46.461152+00:00",
+ "atualizado_em": "2026-10-04T18:40:41.669939+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -50,32 +50,6 @@
     }
    },
    "resumo_original": "Attachment is the term psychologists use for the most significant relationships that hold people’s lives together"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Livro propõe metodologia integrada para estudos de público em museus",
-   "resumo": "Obra de pesquisadores do Museu de Arqueologia e Etnologia integra monitoramento espacial e perfis de público, com download gratuito pelo Portal de Livros Abertos da USP",
-   "url": "https://jornal.usp.br/universidade/livro-propoe-metodologia-integrada-para-estudos-de-publico-em-museus/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-02T16:46:56+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/09/20250918_00_museu_do_ipiranga_visitas_monitoradas.jpg",
-   "foco": {
-    "x": 0,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Book proposes integrated methodology for public studies in museums",
-     "resumo": "The work of researchers from the Museum of Archaeology and Ethnology integrates spatial monitoring and public profiles, with free download through USP's Open Book Portal"
-    },
-    "es": {
-     "titulo": "Libro propone metodología integrada para estudios públicos en museos",
-     "resumo": "El trabajo de los investigadores del Museo de Arqueología y Etnología integra la monitorización espacial y los perfiles públicos, con descarga gratuita a través del Portal del Libro Abierto de la USP"
-    }
-   }
   },
   {
    "tipo": "noticia",
@@ -181,6 +155,32 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Livro propõe metodologia integrada para estudos de público em museus",
+   "resumo": "Obra de pesquisadores do Museu de Arqueologia e Etnologia integra monitoramento espacial e perfis de público, com download gratuito pelo Portal de Livros Abertos da USP",
+   "url": "https://jornal.usp.br/universidade/livro-propoe-metodologia-integrada-para-estudos-de-publico-em-museus/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-02T16:46:56+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/09/20250918_00_museu_do_ipiranga_visitas_monitoradas.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Book proposes integrated methodology for public studies in museums",
+     "resumo": "The work of researchers from the Museum of Archaeology and Ethnology integrates spatial monitoring and public profiles, with free download through USP's Open Book Portal"
+    },
+    "es": {
+     "titulo": "Libro propone metodología integrada para estudios públicos en museos",
+     "resumo": "El trabajo de los investigadores del Museo de Arqueología y Etnología integra la monitorización espacial y los perfiles públicos, con descarga gratuita a través del Portal del Libro Abierto de la USP"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Um meteoro atingiu Oklahoma 100 milhões de anos depois do que os cientistas pensavam",
    "resumo": "Uma cratera de meteoro enterrada sob Oklahoma acabou por ser quase 100 milhões de anos mais jovem do que os cientistas pensavam. Cristais de zircão mostram que o impacto de Ames ocorreu há cerca de 370 milhões de anos, o que significa que não fazia parte do misterioso...",
    "url": "https://www.sciencedaily.com/releases/2026/10/261002080012.htm",
@@ -217,7 +217,12 @@
    "acesso_aberto": false,
    "tema": "Saúde",
    "titulo_original": "Postbiotics enhance immune competence in black rockfish (Sebastes schlegelii): linking innate immunity, apoptosis, and resistance to bacterial infection.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los postbióticos mejoran la competencia inmune en el pez roca negro (Sebastes schlegelii): vinculan la inmunidad innata, la apoptosis y la resistencia a la infección bacteriana."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -230,7 +235,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "EGFR exon 20-altered NSCLC in China: molecular heterogeneity and real-world outcomes with sunvozertinib.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "NSCLC alterado por el exón 20 del EGFR en China: heterogeneidad molecular y resultados del mundo real con sunvozertinib."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -243,7 +253,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Evaluation of novel targeted small-molecule therapeutics in desmoplastic small round cell tumor (DSRCT) cells.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Evaluación de nuevas terapias dirigidas de moléculas pequeñas en células tumorales desmoplásicas de células redondas pequeñas (DSRCT)."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -256,7 +271,12 @@
    "acesso_aberto": false,
    "tema": "Saúde",
    "titulo_original": "Association of Mixed Metal Exposures with Cardiovascular Disease: Insights from a Population-Based Study.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Association of Mixed Metal Exposures with Cardiovascular Disease: Insights from a Population-Based Study."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -269,7 +289,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Pilomatrix-like high grade carcinomas involving urinary bladder: a novel divergent differentiation in urothelial carcinoma.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Carcinomas de alto grado tipo pilomatriz que involucran la vejiga urinaria: una nueva diferenciación divergente en el carcinoma urotelial."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -282,7 +307,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Identification of a Novel Subtype-Derived Prognostic Signature Based on Nucleotide Metabolism-Related Molecular Classification for Predicting Lung Adenocarcinoma Prognosis.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Identificación de una nueva firma pronóstica derivada de un subtipo basada en la clasificación molecular relacionada con el metabolismo de los nucleótidos para predecir el pronóstico del adenocarcinoma de pulmón."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -295,7 +325,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Genetic Heterogeneity in Renal Cell Carcinoma: A Case of Concurrent Clear Cell and Papillary Renal Carcinomas.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Heterogeneidad genética en el carcinoma de células renales: un caso de carcinoma renal de células claras y papilar concurrente."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -727,104 +762,9 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-09-24T17:09:08.714347+00:00",
-  "para ganhar um nobel o brasil precisa de mais gente fazendo pesquisa": "2026-09-24T17:09:08.714347+00:00",
-  "vinhedos irrigados resistem a seca no vale do sao francisco": "2026-09-24T17:09:08.714347+00:00",
-  "ameaca de um super el nino desafia cidades brasileiras a se preparar para eventos extremos": "2026-09-24T17:09:08.714347+00:00",
-  "fundo govtech lanca chamada para startups": "2026-09-24T17:09:08.714347+00:00",
-  "1 conferencia internacional sobre o sistema de justica": "2026-09-24T17:09:08.714347+00:00",
-  "a importancia dos insetos no cotidiano": "2026-09-24T17:09:08.714347+00:00",
-  "celulas de defesa raras podem ajudar a explicar a longevidade de supercentenarios": "2026-09-24T17:09:08.714347+00:00",
-  "novos compostos eliminam a resistencia do parasita da malaria": "2026-09-24T17:09:08.714347+00:00",
-  "divergent medulloblastoma chromatin states disclose kdm2b as a selective dependency": "2026-09-24T17:09:08.714347+00:00",
-  "human facial development atlas illuminates enhancer based control of facial individuality": "2026-09-24T17:09:08.714347+00:00",
-  "genomic background and subinhibitory azithromycin exposure shape ceftriaxone resistance evolution in neisseria gonorrhoeae": "2026-09-24T17:09:08.714347+00:00",
-  "integrative analysis and external validation identify a novel seven gene signature for preeclampsia risk stratification": "2026-09-24T17:09:08.714347+00:00",
-  "gamma ray induced phenotypic variability and mid density snp based mutation characterization in forage sorghum sorghum bicolor l moench genotype is 33 871": "2026-09-24T17:09:08.714347+00:00",
-  "dr gem enables self supervised machine learning for single cell embeddings and annotations": "2026-09-24T17:09:08.714347+00:00",
-  "atlas of cell types and regulatory elements underlying human facial diversity": "2026-09-24T17:09:08.714347+00:00",
-  "resolvi addressing noise and bias in spatial transcriptomics": "2026-09-24T17:09:08.714347+00:00",
-  "the analysis of minor taxa highlights the role of the environment and phylogeny in the distribution of the ltr retrotransposon copia clades": "2026-09-24T17:09:08.714347+00:00",
-  "a cross species single cell kidney epigenome atlas reveals epithelial dominant aging like states in disease": "2026-09-24T17:09:08.714347+00:00",
-  "dual northward overseas radiation from japanese islands shaped the phylogeography of north east asian tree frog": "2026-09-24T17:09:08.714347+00:00",
-  "estudo da usp aponta desafios na elaboracao de politica de saude para migrantes e refugiados": "2026-09-24T17:09:08.714347+00:00",
-  "breakthrough drug reverses skin aging and dramatically speeds healing": "2026-09-24T17:09:08.714347+00:00",
-  "this new drug could break cancers resistance to treatment": "2026-09-24T17:09:08.714347+00:00",
-  "the gene regulatory evolution of the human skeleton": "2026-09-24T17:09:08.714347+00:00",
-  "stem cells reverse stroke damage and restore movement in mice": "2026-09-24T17:09:08.714347+00:00",
-  "actionable genetic landscape and dynamics in circulating dna from 12 827 patients with metastatic breast cancer": "2026-09-24T17:09:08.714347+00:00",
-  "patient derived separation of function mutations reveal specific role for brca1 coiled coil domain in genome stability": "2026-09-24T17:09:08.714347+00:00",
-  "performance and safety of a multi cancer early detection test the pathfinder 2 study": "2026-09-24T17:09:08.714347+00:00",
-  "replication stress in cancer origins consequences and therapeutic opportunities": "2026-09-24T17:09:08.714347+00:00",
-  "chronic stress may be quietly reshaping your heart": "2026-09-24T17:09:08.714347+00:00",
-  "millions take calcium and vitamin d for bone health a major review finds little benefit": "2026-09-24T17:09:08.714347+00:00",
-  "methodological considerations in defining cbl as a prognostic biomarker in stage ii melanoma": "2026-09-24T17:09:08.714347+00:00",
-  "hidden gut defect that may explain why ibd keeps coming back": "2026-09-24T17:09:08.714347+00:00",
-  "a deadly ebola relative is surging after years in the shadows": "2026-09-24T17:09:08.714347+00:00",
-  "scientists solve a 50 year mystery and discover a new human blood group": "2026-09-24T17:09:08.714347+00:00",
-  "genomic and transcriptomic landscape of spread through air spaces in stage 1 lung adenocarcinoma": "2026-09-24T17:09:08.714347+00:00",
-  "scientists discover cells that cheat death and rebuild damaged tissue": "2026-09-24T17:09:08.714347+00:00",
-  "scientists restore a brain protein and reverse signs of aging in mice": "2026-09-24T17:09:08.714347+00:00",
-  "a canonical role of smad4 in safeguarding 3d genome architecture to suppress lung tumorigenesis": "2026-09-24T17:09:08.714347+00:00",
-  "chromosomal instability in cancer sources consequences and new therapeutic opportunities": "2026-09-24T17:09:08.714347+00:00",
-  "scientists find a natural gut compound that helps heal the intestine": "2026-09-24T17:36:27.630671+00:00",
-  "textbooks may have misdrawn this basic brain structure for 100 years": "2026-09-24T17:36:27.630671+00:00",
-  "new mesothelioma drug turns cancers own defenses against it": "2026-09-24T17:36:27.630671+00:00",
-  "scientists find an immune false alarm that may drive rapid aging": "2026-09-24T18:23:01.223242+00:00",
-  "scientists discover a major brain shift between ages 50 and 75": "2026-09-24T18:23:01.223242+00:00",
-  "cancer is rising in younger adults faster biological aging may help explain why": "2026-09-24T18:23:01.223242+00:00",
-  "scientists discover strange link between low vitamin d and pain": "2026-09-24T18:23:01.223242+00:00",
-  "scientists find a way to break pancreatic cancers protective shield": "2026-09-24T18:23:01.223242+00:00",
-  "ucla scientists turn cord blood into powerful cancer fighting t cells": "2026-09-24T18:23:01.223242+00:00",
-  "dna treatment cuts bad cholesterol by nearly 50 without statins": "2026-09-24T18:23:01.223242+00:00",
-  "scientists find a bone building switch that could fight osteoporosis": "2026-09-24T18:23:01.223242+00:00",
-  "ozempic and wegovy linked to nearly 40 fewer asthma attacks": "2026-09-24T18:23:01.223242+00:00",
-  "copying others can help young orangutans build a broad diet": "2026-09-24T18:35:48.777942+00:00",
-  "dogs pay more attention to consonants than vowels when we speak": "2026-09-24T18:35:48.777942+00:00",
-  "usp procura idosos para pesquisas sobre prevencao de quedas": "2026-09-24T18:35:48.777942+00:00",
-  "backpack massages muscles when it detects theyre fatigued": "2026-09-24T18:35:48.777942+00:00",
-  "openais agent hacking australia is a warning for governments everywhere": "2026-09-24T18:35:48.777942+00:00",
-  "diesel fuel prices are risingchemistry can help explain why": "2026-09-24T18:35:48.777942+00:00",
-  "conferencia internacional sobre direito e tecnologia abre inscricoes para apresentacao de trabalhos": "2026-09-24T18:35:48.777942+00:00",
-  "taking hrt in perimenopause may ward off cardiovascular disease": "2026-09-24T18:35:48.777942+00:00",
-  "adhd and autism diagnoses have surged a massive study may help explain why": "2026-09-24T18:35:48.777942+00:00",
-  "infogripe quatro estados apresentam incidencia de srag com tendencia de aumento": "2026-09-24T18:35:48.777942+00:00",
-  "when what you see doesnt make sense your brain does something remarkable": "2026-09-24T18:35:48.777942+00:00",
-  "distant time crystals can somehow fall into the same rhythm": "2026-09-24T18:35:48.777942+00:00",
-  "skin patch that collects sweat could predict ovulation": "2026-09-24T18:35:48.777942+00:00",
-  "benedict cumberbatchs nature show is stunning if a little cloying": "2026-09-24T18:35:48.777942+00:00",
-  "ai solves 79 year old math mystery of six dimensional spheres": "2026-09-24T18:35:48.777942+00:00",
-  "scientists thought they knew how this 70 year old leukemia drug worked": "2026-09-24T18:35:48.777942+00:00",
-  "aging muscles may be losing strength for a reason scientists missed": "2026-09-24T18:35:48.777942+00:00",
-  "scientists find two tiny new snails with shells that close like doors": "2026-09-24T18:35:48.777942+00:00",
-  "onu preve que tecnologias limpas estao perto da virada contra o aquecimento global": "2026-09-24T18:35:48.777942+00:00",
-  "we just need to go back uranus moon ariel may have hidden a 100 mile deep ocean": "2026-09-24T18:35:48.777942+00:00",
-  "chinas open ai models are testing americas approach to ai safety": "2026-09-24T18:35:48.777942+00:00",
-  "these massive stars could explain webbs strangest galaxies": "2026-09-24T18:35:48.777942+00:00",
-  "openai agent hacked an australian government healthcare website": "2026-09-24T18:35:48.777942+00:00",
-  "more rem sleep linked to lower risk of 83 diseases": "2026-09-24T18:35:48.777942+00:00",
-  "glp 1 weight loss and diabetes drugs linked to nutritional deficiencies in nearly 1 in 6 children": "2026-09-24T18:35:48.777942+00:00",
-  "bumblebees dont mind a little plastic in their honeypots": "2026-09-24T18:35:48.777942+00:00",
-  "youthful fans of youtube sports videos stick to the sofa": "2026-09-24T18:35:48.777942+00:00",
-  "ai system helps lab devices talk with each other streamlining research": "2026-09-24T18:35:48.777942+00:00",
-  "ai agent hacks government website for first time why this breach matters": "2026-09-24T18:35:48.777942+00:00",
-  "alphafold goes viral database adds protein complexes of common viruses": "2026-09-24T18:35:48.777942+00:00",
-  "blood test for multiple cancers clears crucial hurdle on track to fda approval": "2026-09-24T18:35:48.777942+00:00",
-  "fiocruz participa do 10 congresso brasileiro de ciencias sociais e humanas em saude": "2026-09-24T18:35:48.777942+00:00",
-  "see the taurids light up the fall sky with brilliant shooting stars": "2026-09-24T18:35:48.777942+00:00",
-  "da mosca da fruta ao genoma humano 100 anos da teoria do gene sao celebrados no museu exploratorio": "2026-09-24T18:35:48.777942+00:00",
-  "forum de inovacao agricola destaca avancos tecnologicos e participacao das mulheres": "2026-09-24T18:35:48.777942+00:00",
-  "nav ed pt carta aberta eleicoes 2026 compromisso 3": "2026-09-24T18:35:48.777942+00:00",
-  "future of amazon rainforest may hinge on brazil presidential election": "2026-09-24T18:35:48.777942+00:00",
-  "contribuicoes da fiocruz para as eleicoes 2026 compromisso 3 produzir saude": "2026-09-24T18:35:48.777942+00:00",
-  "escritorio da fiocruz em portugal sedia primeira reuniao presencial do comite consultivo da coalizao global": "2026-09-24T18:35:48.777942+00:00",
-  "watch a robot dog run a marathon faster than the average human": "2026-09-24T18:35:48.777942+00:00",
-  "brasil e mexico avancam na cooperacao em saude": "2026-09-24T18:35:48.777942+00:00",
-  "as origens e a logica do grupo controle": "2026-09-24T18:35:48.777942+00:00",
   "trumps fda nominee heidi overton affirms mmr vaccine and mifepristone are safe at crucial senate hearing": "2026-09-24T22:22:22.490448+00:00",
   "pesquisadores comparam evolucao do relevo no brasil e na espanha": "2026-09-24T22:22:22.490448+00:00",
   "manual gratuito oferece guia pratico sobre telenfermagem para enfermeiros e profissionais de saude": "2026-09-24T22:22:22.490448+00:00",
