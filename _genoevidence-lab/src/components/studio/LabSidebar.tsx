@@ -111,9 +111,9 @@ export function LabSidebar({ user }: { user: User }) {
 
   return (
     <>
-      <aside className="ge-sidebar hidden h-dvh w-[268px] shrink-0 lg:block">{conteudo}</aside>
+      <aside className="ge-sidebar sticky top-0 hidden h-dvh w-[268px] shrink-0 self-start lg:block">{conteudo}</aside>
       {/* Celular/tablet: barra superior com menu */}
-      <div className="ge-sidebar flex h-14 items-center justify-between px-3 lg:hidden">
+      <div className="ge-sidebar sticky top-0 z-40 flex h-14 items-center justify-between px-3 lg:hidden">
         <Link href="/" className="flex items-center gap-2" aria-label="GenoLab, início">
           <Image src="/brand/geno-evidence-simbolo-64.png" alt="" width={30} height={30} />
           <span className="text-[17px] font-semibold text-white [font-family:var(--font-display)]">GenoLab</span>
