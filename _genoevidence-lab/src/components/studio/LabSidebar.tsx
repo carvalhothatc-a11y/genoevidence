@@ -38,9 +38,9 @@ const NAV = [
   { href: "/laboratorio/bancada", rotulo: "Bancada 3D", icone: I.tecnicas },
   { href: "/projetos", rotulo: "Projetos", icone: I.pasta },
   { href: "/referencias", rotulo: "Referências", icone: I.livro },
+  { href: "/ajuda", rotulo: "Ajuda e Geninho", icone: I.ajuda },
   { href: "/modulos", rotulo: "Técnicas", icone: I.tecnicas },
   { href: "/integracoes", rotulo: "Integrações", icone: I.integracoes },
-  { href: "/ajuda", rotulo: "Ajuda e Geninho", icone: I.ajuda },
 ];
 
 /** Barra lateral do estúdio imersivo (substitui o cabeçalho no laboratório). */
