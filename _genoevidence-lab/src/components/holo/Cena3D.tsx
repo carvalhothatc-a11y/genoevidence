@@ -2,7 +2,7 @@
 import { ENTIDADE_NOME, type Entidade, type PassoVisual } from "@/lib/visual/roteiro";
 import { OBJETO_DA_ENTIDADE, type ObjetoId } from "@/lib/cena/biblioteca";
 import { COR } from "./materiais";
-import { Ancora, Bacteria, Brilho, Cas9, CelulaEuc, Enzima, Faisca, Fita, Fluxo, Gel, Helice, Pipeta, Placa, Plasmideo, Plataforma, Proteina, Ribossomo, Rotor, Termociclador, Tubo } from "./primitivas";
+import { Ancora, Bacteria, Balanca, Bequer, Brilho, Cas9, CelulaEuc, Enzima, Faisca, Fita, Fluxo, Gel, Gotejamento, Helice, Particulas, Pipeta, Placa, Plasmideo, Plataforma, Po, Proteina, Ribossomo, Rotor, Termociclador, Tubo } from "./primitivas";
 
 /**
  * Procedimento em 3D (holográfico) para cada ação do roteiro. t ∈ [0,1] é o progresso da etapa.
@@ -27,6 +27,8 @@ export function Cena3D({ passo, t }: { passo: PassoVisual; t: number }) {
     </group>
   );
 }
+
+const k2 = (p: PassoVisual) => p.id;
 
 function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
   const r = passo.rotulos;
@@ -338,6 +340,103 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
             </group>
           ))}
           <Ancora alvo={passo.acao === "quantificar" ? "espectrofotometro" : "amostra"} id={`${k}-s`} texto={passo.acao === "quantificar" ? "Medição no equipamento" : "Sinal nas amostras"} sub="valores não são previstos" position={[0, -0.2, 0]} dx={-150} dy={-100} />
+        </group>
+      );
+    }
+    // ---------------------------------------------------------------- síntese química
+    case "pesar": {
+      const k = seg(t, 0.1, 0.9);
+      return (
+        <group>
+          <Balanca massa={k} position={[0, -0.6, 0]} />
+          <Ancora alvo="balanca" id={`${k2(passo)}-b`} texto="Balança" sub={r.massa ? `massa: ${r.massa}` : "massa não informada"} position={[0, -0.3, 0]} dx={150} dy={-50} />
+          <Ancora alvo="sal_precursor" id={`${k2(passo)}-s`} texto={r.sal ?? "Sal precursor"} sub="sólido a pesar" position={[0, 0.1, 0]} dx={-150} dy={-30} />
+        </group>
+      );
+    }
+    case "dissolver": {
+      const k = seg(t, 0.05, 0.9);
+      return (
+        <group>
+          <Bequer nivel={0.55} turvo={0} agita={0} cor={COR.teal} escala={1.3} />
+          <Particulas n={40} raio={0.75} altura={1.1} sedimenta={1 - k} cor={COR.ambar} tamanho={0.05 * (1 - k * 0.8)} position={[0, -0.2, 0]} />
+          <Ancora alvo="sal_precursor" id={`${k2(passo)}-s`} texto={k > 0.8 ? "Sal dissolvido" : "Sal sendo dissolvido"} sub={r.volume ? `em ${r.volume}` : undefined} position={[0, -0.3, 0]} dx={150} dy={-40} />
+          <Ancora alvo="extrato_vegetal" id={`${k2(passo)}-e`} texto="Líquido da reação" position={[-0.9, 0.2, 0.4]} dx={-150} dy={20} />
+        </group>
+      );
+    }
+    case "agitar": {
+      return (
+        <group>
+          <Bequer nivel={0.55} agita={1} cor={COR.teal} escala={1.3} />
+          <Ancora alvo="agitador_magnetico" id={`${k2(passo)}-a`} texto="Agitação" sub={r.tempo ?? "tempo não informado"} position={[0, -0.75, 0]} dx={150} dy={30} />
+        </group>
+      );
+    }
+    case "acidificar": {
+      const k = seg(t, 0.15, 0.95);
+      return (
+        <group>
+          <Bequer nivel={0.55} agita={1} turvo={k} cor={COR.teal} escala={1.3} />
+          <Gotejamento progresso={t} de={[0, 2.1, 0]} ate={[0, 0.35, 0]} cor={COR.rosa} />
+          {k > 0.3 && <Particulas n={50} raio={0.7} altura={1} sedimenta={0} cor={COR.branco} tamanho={0.03 * k} position={[0, -0.2, 0]} />}
+          <Ancora alvo="acido" id={`${k2(passo)}-h`} texto="Ácido, gota a gota" sub="a agitação continua" position={[0, 1.8, 0]} dx={150} dy={-30} />
+          <Ancora alvo="precipitado" id={`${k2(passo)}-p`} texto={k > 0.5 ? "A solução fica turva" : "Aguardando a turvação"} sub="ilustração: quantidade não é prevista" position={[0, -0.4, 0]} dx={-160} dy={40} />
+        </group>
+      );
+    }
+    case "precipitar": {
+      const k = seg(t, 0.05, 0.95);
+      return (
+        <group>
+          <Bequer nivel={0.55} turvo={k} agita={0} cor={COR.teal} escala={1.3} />
+          <Particulas n={70} raio={0.75} altura={1.1} sedimenta={k * 0.5} cor={COR.branco} tamanho={0.035} position={[0, -0.2, 0]} />
+          <Ancora alvo="precipitado" id={`${k2(passo)}-p`} texto="Sólido em suspensão" sub="tamanho e quantidade não são previstos" position={[0, -0.1, 0]} dx={160} dy={-30} />
+        </group>
+      );
+    }
+    case "lavar":
+    case "ressuspender": {
+      const lavando = passo.acao === "lavar";
+      const k = seg(t, 0.1, 0.9);
+      const sed = lavando ? k : 1 - k;
+      return (
+        <group>
+          <Tubo nivel={0.5} cor={COR.teal} escala={1.3} />
+          <Particulas n={55} raio={0.26} altura={0.9} sedimenta={sed} cor={COR.ambar} tamanho={0.03} position={[0, -0.35, 0]} />
+          <Ancora alvo="precipitado" id={`${k2(passo)}-s`} texto={lavando ? "Sólido lavado" : "Sólido disperso de novo"} sub={lavando ? "o líquido de cima é descartado" : "voltou para a suspensão"} position={[0, -0.6, 0]} dx={155} dy={30} />
+          {lavando && <Ancora alvo="solvente" id={`${k2(passo)}-l`} texto="Solvente de lavagem" position={[-0.6, 0.6, 0.3]} dx={-150} dy={-30} />}
+        </group>
+      );
+    }
+    case "secar": {
+      const k = seg(t, 0.1, 0.95);
+      return (
+        <group>
+          <Po quantidade={0.3 + 0.7 * k} cor={COR.ambar} position={[0, -0.9, 0]} />
+          <Brilho cor={COR.ambar} escala={2.6} opacidade={0.12 + 0.1 * Math.sin(t * 10)} position={[0, -0.7, 0]} />
+          <Ancora alvo="estufa" id={`${k2(passo)}-e`} texto="Secagem" sub={[r.temperatura, r.tempo].filter(Boolean).join(" · ") || "condições não informadas"} position={[0, 0.2, 0]} dx={155} dy={-40} />
+          <Ancora alvo="nanoparticula" id={`${k2(passo)}-n`} texto="Pó seco" sub="tamanho e pureza exigem caracterização" position={[0, -0.85, 0]} dx={-160} dy={40} />
+        </group>
+      );
+    }
+    case "filtrar": {
+      const k = seg(t, 0.1, 0.9);
+      return (
+        <group>
+          <Bequer nivel={0.25 + 0.3 * k} cor={COR.teal} escala={1.1} position={[0, -0.9, 0]} />
+          <Tubo nivel={0.5 * (1 - k)} cor={COR.ambar} escala={1} position={[0, 1.1, 0]} />
+          <Fluxo de={[0, 0.3, 0]} para={[[0, -0.6, 0]]} n={28} cor={COR.teal} progresso={k} tamanho={0.07} />
+          <Ancora alvo="extrato_vegetal" id={`${k2(passo)}-f`} texto="Líquido filtrado" sub="o material retido fica para trás" position={[0, -0.9, 0]} dx={150} dy={30} />
+        </group>
+      );
+    }
+    case "medir_ph": {
+      return (
+        <group>
+          <Bequer nivel={0.55} cor={COR.teal} escala={1.3} />
+          <Brilho cor={COR.branco} escala={0.5} opacidade={0.75} position={[0.35, 0.3, 0]} />
+          <Ancora alvo="ph_metro" id={`${k2(passo)}-p`} texto="Medida de pH" sub="valor não é previsto" position={[0.35, 0.9, 0]} dx={150} dy={-40} />
         </group>
       );
     }

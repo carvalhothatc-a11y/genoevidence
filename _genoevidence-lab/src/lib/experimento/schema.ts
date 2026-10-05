@@ -11,7 +11,9 @@ const Id = z.string().regex(/^[A-Za-z0-9_-]{2,64}$/);
 export const ACAO_IDS = [
   "pipetar", "misturar", "anelar", "desnaturar", "estender", "amplificar", "cortar", "inserir_vetor", "transformar", "transfectar",
   "cultivar", "selecionar", "expressar", "transcrever", "traduzir", "extrair", "purificar", "eletroforese", "centrifugar", "incubar",
-  "sequenciar", "editar_crispr", "detectar", "quantificar", "generica",
+  "sequenciar", "editar_crispr", "detectar", "quantificar",
+  "pesar", "dissolver", "agitar", "acidificar", "precipitar", "lavar", "ressuspender", "secar", "filtrar", "medir_ph",
+  "generica",
 ] as const;
 
 export const TipoOrigem = z.enum(["texto", "voz", "imagem", "relatorio", "tabela", "referencia", "biblioteca", "ia", "usuario"]);
