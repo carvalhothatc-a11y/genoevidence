@@ -1,30 +1,83 @@
 {
- "atualizado_em": "2026-10-04T22:22:32.195438+00:00",
+ "atualizado_em": "2026-10-05T07:12:36.987129+00:00",
  "noticias": [
   {
    "tipo": "noticia",
-   "titulo": "Esta vitamina comum pode ajudar a combater um dos cânceres cerebrais mais mortais",
-   "resumo": "A vitamina B3 em altas doses está mostrando uma promessa inicial intrigante como um complemento ao tratamento padrão do glioblastoma, com 82% dos pacientes em um pequeno estudo permanecendo livre de progressão após seis meses. Pesquisadores acreditam que a niacina pode ajudar a reviver...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261001095423.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-04T10:09:00+00:00",
+   "titulo": "Compostos associados ao câncer são detectados em resíduos de espumas, plásticos e artigos infantis",
+   "resumo": "A reportagem mais acessada entre 25/09 e 01/10 detalha pesquisa que encontrou em locais de descarte materiais contendo substâncias tóxicas antigamente usadas como plastificantes e retardantes de chama. Sem triagem rigorosa, reciclagem pode…",
+   "url": "https://agencia.fapesp.br/compostos-associados-ao-cancer-sao-detectados-em-residuos-de-espumas-plasticos-e-artigos-infantis/59263",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-05T07:12:36.987129+00:00",
    "tema": "Câncer",
-   "relevancia": 8,
-   "imagem": "https://www.sciencedaily.com/images/1920/biological-lymphocytes-and-cancer-cell.webp",
+   "relevancia": 11,
+   "imagem": "https://agencia.fapesp.br/files/post/59263.jpeg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "This common vitamin could help fight one of the deadliest brain cancers",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "Cancer-associated compounds are detected in foam waste, plastics, and children's articles",
+     "resumo": "The most accessed report between 09/25 and 10/01 details research that found in disposal sites materials containing toxic substances formerly used as plasticizers and flame retardants. Without rigorous screening, recycling can…"
+    },
     "es": {
-     "titulo": "Esta vitamina común podría ayudar a combatir uno de los cánceres cerebrales más mortales",
-     "resumo": "Las dosis altas de vitamina B3 muestran una promesa temprana intrigante como una adición al tratamiento estándar del glioblastoma, con el 82% de los pacientes en un pequeño ensayo que permanece libre de progresión después de seis meses. Los investigadores creen que la niacina puede ayudar a revivir..."
+     "titulo": "Los compuestos asociados al cáncer se detectan en residuos de espuma, plásticos y artículos infantiles",
+     "resumo": "El informe más consultado entre el 25/09 y el 01/10 detalla la investigación que se encontró en los sitios de eliminación de materiales que contienen sustancias tóxicas utilizadas anteriormente como plastificantes y retardantes de llama. Sin una revisión rigurosa, el reciclaje puede..."
     }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Inteligência artificial prevê risco de complicação após cirurgia de tireoide",
+   "resumo": "Modelo desenvolvido no A.C.Camargo com dados de mais de 7 mil pacientes identifica quem tem maior risco de queda dos níveis de cálcio no sangue e ajuda a personalizar o tratamento",
+   "url": "https://agencia.fapesp.br/inteligencia-artificial-preve-risco-de-complicacao-apos-cirurgia-de-tireoide/59327",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-05T07:12:36.987129+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://agencia.fapesp.br/files/post/59327.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
    },
-   "resumo_original": "High-dose vitamin B3 is showing intriguing early promise as an addition to standard glioblastoma treatment, with 82% of patients in a small trial remaining progression-free after six months. Researchers believe niacin may help revive…"
+   "i18n": {
+    "en": {
+     "titulo": "Artificial intelligence predicts risk of complication after thyroid surgery",
+     "resumo": "Model developed at A.C.Camargo with data from more than 7,000 patients identifies who is most at risk of falling blood calcium levels and helps personalize treatment"
+    },
+    "es": {
+     "titulo": "La inteligencia artificial predice el riesgo de complicaciones después de la cirugía de tiroides",
+     "resumo": "El modelo desarrollado en A.C.Camargo con datos de más de 7.000 pacientes identifica quién está en mayor riesgo de disminuir los niveles de calcio en la sangre y ayuda a personalizar el tratamiento"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Arquitetura molecular define resistência do tomateiro contra sua principal praga",
+   "resumo": "Estudo revela que a substituição de apenas quatro aminoácidos altera a forma tridimensional de uma molécula de defesa da planta. Achado abre caminho para criar cultivares comerciais mais resistentes",
+   "url": "https://agencia.fapesp.br/arquitetura-molecular-define-resistencia-do-tomateiro-contra-sua-principal-praga/59328",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-05T07:12:36.987129+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59328.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Molecular architecture defines tomato resistance against its main pest",
+     "resumo": "A study reveals that the substitution of only four amino acids alters the three-dimensional shape of a plant defense molecule. Findings pave the way to create more resilient commercial cultivars"
+    },
+    "es": {
+     "titulo": "La arquitectura molecular define la resistencia del tomate frente a su principal plaga",
+     "resumo": "Un estudio revela que la sustitución de solo cuatro aminoácidos altera la forma tridimensional de una molécula de defensa de la planta. Los hallazgos allanan el camino para crear cultivares comerciales más resistentes"
+    }
+   }
   },
   {
    "tipo": "noticia",
@@ -104,31 +157,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Bebidas dietéticas funcionam tão bem quanto água para perda de peso, segundo um grande estudo",
-   "resumo": "Um ensaio clínico randomizado de dois anos envolvendo 493 adultos com sobrepeso ou obesidade descobriu que os refrigerantes dietéticos eram essencialmente tão eficazes quanto a água para perda e manutenção de peso a longo prazo. Os participantes bebem bebidas...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261002080017.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-04T02:10:59+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/woman-smiling-holding-diet-cola.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Diet drinks work as well as water for weight loss, major trial finds",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las bebidas dietéticas funcionan tan bien como el agua para perder peso, según un importante ensayo",
-     "resumo": "Un ensayo clínico aleatorizado de dos años en el que participaron 493 adultos con sobrepeso u obesidad descubrió que los refrescos dietéticos eran esencialmente tan efectivos como el agua para la pérdida de peso a largo plazo y el mantenimiento del peso. Participantes bebiendo bebidas..."
-    }
-   },
-   "resumo_original": "A two-year randomized clinical trial involving 493 adults with overweight or obesity found that diet soft drinks were essentially as effective as water for long-term weight loss and weight maintenance. Participants drinking beverages…"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Livro propõe metodologia integrada para estudos de público em museus",
    "resumo": "Obra de pesquisadores do Museu de Arqueologia e Etnologia integra monitoramento espacial e perfis de público, com download gratuito pelo Portal de Livros Abertos da USP",
    "url": "https://jornal.usp.br/universidade/livro-propoe-metodologia-integrada-para-estudos-de-publico-em-museus/",
@@ -181,6 +209,31 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Bebidas dietéticas funcionam tão bem quanto água para perda de peso, segundo um grande estudo",
+   "resumo": "Um ensaio clínico randomizado de dois anos envolvendo 493 adultos com sobrepeso ou obesidade descobriu que os refrigerantes dietéticos eram essencialmente tão eficazes quanto a água para perda e manutenção de peso a longo prazo. Os participantes bebem bebidas...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261002080017.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-04T02:10:59+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/woman-smiling-holding-diet-cola.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Diet drinks work as well as water for weight loss, major trial finds",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las bebidas dietéticas funcionan tan bien como el agua para perder peso, según un importante ensayo",
+     "resumo": "Un ensayo clínico aleatorizado de dos años en el que participaron 493 adultos con sobrepeso u obesidad descubrió que los refrescos dietéticos eran esencialmente tan efectivos como el agua para la pérdida de peso a largo plazo y el mantenimiento del peso. Participantes bebiendo bebidas..."
+    }
+   },
+   "resumo_original": "A two-year randomized clinical trial involving 493 adults with overweight or obesity found that diet soft drinks were essentially as effective as water for long-term weight loss and weight maintenance. Participants drinking beverages…"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Protocolo da USP orienta análise de variantes genéticas para diagnóstico de doenças raras",
    "resumo": "Material de acesso aberto pretende auxiliar profissionais na interpretação de variantes genéticas diante da ampliação do sequenciamento pelo SUS",
    "url": "https://jornal.usp.br/radio-usp/protocolo-da-usp-orienta-analise-de-variantes-geneticas-para-diagnostico-de-doencas-raras/",
@@ -207,28 +260,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Um meteoro atingiu Oklahoma 100 milhões de anos depois do que os cientistas pensavam",
-   "resumo": "Uma cratera de meteoro enterrada sob Oklahoma acabou por ser quase 100 milhões de anos mais jovem do que os cientistas pensavam. Cristais de zircão mostram que o impacto de Ames ocorreu há cerca de 370 milhões de anos, o que significa que não fazia parte do misterioso...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261002080012.htm",
+   "titulo": "A “cola” que mantém suas células unidas tem um surpreendente segundo emprego",
+   "resumo": "Os cientistas descobriram que a E-caderina, uma proteína mais conhecida como a \"cola\" que mantém células e tecidos juntos, tem um segundo trabalho surpreendente: ajudar as células epiteliais a engolir células mortas próximas. Usando peixes-zebra vivos e embriões de ratos...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261002080023.htm",
    "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-04T12:41:43+00:00",
+   "data": "2026-10-05T03:12:55+00:00",
    "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/huge-asteroid-meteor-slams-into-earth.webp",
+   "imagem": "https://www.sciencedaily.com/images/1920/living-zebrafish-embryo-with-actin.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "A meteor hit Oklahoma 100 million years later than scientists thought",
+   "titulo_original": "The “glue” holding your cells together has a surprising second job",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Un meteorito golpeó Oklahoma 100 millones de años después de lo que pensaban los científicos",
-     "resumo": "Un cráter de meteorito enterrado debajo de Oklahoma ha resultado ser casi 100 millones de años más joven de lo que los científicos pensaban. Los cristales de circón muestran que el impacto de Ames ocurrió hace unos 370 millones de años, lo que significa que no era parte del misterioso..."
+     "titulo": "El \"pegamento\" que mantiene tus células juntas tiene un segundo trabajo sorprendente",
+     "resumo": "Los científicos han descubierto que la E-cadherina, una proteína mejor conocida como el \"pegamento\" que mantiene unidas las células y los tejidos, tiene un segundo trabajo sorprendente: ayudar a las células epiteliales a tragar las células muertas cercanas. Usando embriones vivos de pez cebra y ratón..."
     }
    },
-   "resumo_original": "A meteor crater buried beneath Oklahoma has turned out to be nearly 100 million years younger than scientists thought. Zircon crystals show the Ames impact occurred about 370 million years ago, meaning it was not part of the mysterious…"
+   "resumo_original": "Scientists have discovered that E-cadherin, a protein best known as the “glue” holding cells and tissues together, has a surprising second job: helping epithelial cells swallow nearby dead cells. Using live zebrafish and mouse embryos…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Aliviar a constipação: uma caminhada de 20 minutos pode fazer com que seu intestino se mova quase imediatamente",
+   "resumo": "Os pesquisadores descobriram que apenas 20 minutos de caminhada confortável podem estimular rapidamente o intestino. Dentro de um a dois minutos após o exercício, os sons intestinais se tornaram mais fortes, mais frequentes e duraram mais tempo, sugerindo aumento do intestino...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261001214117.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-05T01:58:03+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/man-with-athletic-shoes-walking-up-stairs.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Easing constipation: A 20-minute walk can get your gut moving almost immediately",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Aliviar el estreñimiento: una caminata de 20 minutos puede hacer que tu intestino se mueva casi de inmediato",
+     "resumo": "Los investigadores descubrieron que solo 20 minutos de caminata cómoda pueden estimular rápidamente el intestino. Dentro de uno o dos minutos después del ejercicio, los ruidos intestinales se hicieron más fuertes, más frecuentes y duraron más tiempo, lo que sugiere un aumento intestinal..."
+    }
+   },
+   "resumo_original": "Researchers found that just 20 minutes of comfortable walking can rapidly stimulate the gut. Within one to two minutes after exercise, bowel sounds became stronger, more frequent, and lasted longer, suggesting increased intestinal…"
   }
  ],
  "artigos": [
@@ -978,6 +1056,11 @@
   "your gut bacteria may reveal how fast your brain is aging": "2026-10-04T14:52:46.461152+00:00",
   "diet drinks work as well as water for weight loss major trial finds": "2026-10-04T14:52:46.461152+00:00",
   "a meteor hit oklahoma 100 million years later than scientists thought": "2026-10-04T14:52:46.461152+00:00",
-  "ameaca de um super el nino desafia cidades brasileiras a se preparar para eventos extremos": "2026-10-04T22:22:32.195438+00:00"
+  "ameaca de um super el nino desafia cidades brasileiras a se preparar para eventos extremos": "2026-10-04T22:22:32.195438+00:00",
+  "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-10-05T07:12:36.987129+00:00",
+  "inteligencia artificial preve risco de complicacao apos cirurgia de tireoide": "2026-10-05T07:12:36.987129+00:00",
+  "arquitetura molecular define resistencia do tomateiro contra sua principal praga": "2026-10-05T07:12:36.987129+00:00",
+  "the glue holding your cells together has a surprising second job": "2026-10-05T07:12:36.987129+00:00",
+  "easing constipation a 20 minute walk can get your gut moving almost immediately": "2026-10-05T07:12:36.987129+00:00"
  }
 }
