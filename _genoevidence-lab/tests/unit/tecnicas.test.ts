@@ -3,6 +3,7 @@ import { ddct, razaoCorrigida, formatarRazao, validarCt, validarEficiencia } fro
 import { tpm, EXEMPLO_FICTICIO } from "@/lib/models/rnaseq";
 import { volumeParaMassa } from "@/lib/models/proteina";
 import { bandPosition, ILLUSTRATIVE_LADDER_BP } from "@/lib/models/pcr";
+import { frequenciaEdicao, VERSOES_RECOMENDADAS } from "@/lib/models/edicao";
 import { TECNICAS, obterTecnica } from "@/lib/modules/tecnicas";
 import { passoDaEtapa } from "@/lib/modules/tecnicas/cena";
 import { SOURCES } from "@/lib/sources/catalog";
@@ -114,6 +115,49 @@ describe("Eletroforese: posição ilustrativa da banda", () => {
   });
 });
 
+describe("CRISPR: frequência observada de edição", () => {
+  it("é a proporção simples das versões analisadas", () => {
+    const r = frequenciaEdicao(15, 30);
+    expect(r.proporcao).toBe(0.5);
+    expect(r.poucasVersoes).toBe(false);
+  });
+
+  it("o intervalo exato contém a proporção observada e fica dentro de 0 e 1", () => {
+    const r = frequenciaEdicao(7, 30);
+    expect(r.ic95[0]).toBeLessThanOrEqual(r.proporcao);
+    expect(r.ic95[1]).toBeGreaterThanOrEqual(r.proporcao);
+    expect(r.ic95[0]).toBeGreaterThanOrEqual(0);
+    expect(r.ic95[1]).toBeLessThanOrEqual(1);
+  });
+
+  it("menos observações dão intervalo mais largo, mesmo com a mesma proporção", () => {
+    const poucas = frequenciaEdicao(2, 8);
+    const muitas = frequenciaEdicao(20, 80);
+    expect(poucas.proporcao).toBeCloseTo(muitas.proporcao, 10);
+    const larg = (x: ReturnType<typeof frequenciaEdicao>) => x.ic95[1] - x.ic95[0];
+    expect(larg(poucas)).toBeGreaterThan(larg(muitas));
+  });
+
+  it("zero modificadas não vira certeza de zero: o limite superior é maior que zero", () => {
+    const r = frequenciaEdicao(0, 10);
+    expect(r.proporcao).toBe(0);
+    expect(r.ic95[0]).toBe(0);
+    expect(r.ic95[1]).toBeGreaterThan(0);
+  });
+
+  it("avisa quando há menos versões que o recomendado pela referência", () => {
+    expect(frequenciaEdicao(5, VERSOES_RECOMENDADAS).poucasVersoes).toBe(true);
+    expect(frequenciaEdicao(5, VERSOES_RECOMENDADAS + 1).poucasVersoes).toBe(false);
+  });
+
+  it("recusa contagens impossíveis", () => {
+    expect(() => frequenciaEdicao(5, 0)).toThrow(RangeError);
+    expect(() => frequenciaEdicao(11, 10)).toThrow(RangeError);
+    expect(() => frequenciaEdicao(-1, 10)).toThrow(RangeError);
+    expect(() => frequenciaEdicao(1.5, 10)).toThrow(RangeError);
+  });
+});
+
 describe("conteúdo dos módulos de técnica", () => {
   it("todo módulo tem etapas, fontes, limitações e autoria", () => {
     for (const t of TECNICAS) {
@@ -154,6 +198,18 @@ describe("conteúdo dos módulos de técnica", () => {
         }
       }
     }
+  });
+
+  it("o módulo de CRISPR é conceitual: não vira protocolo de bancada", () => {
+    const t = obterTecnica("crispr")!;
+    const textos = [
+      ...t.limitacoes,
+      ...t.naoFaz,
+      ...t.etapas.flatMap((e) => [...e.acontece, ...e.porque, ...e.observar, ...e.controles].map((c) => c.text)),
+    ].join(" ");
+    expect(t.status).toBe("parcial");
+    expect(textos).toMatch(/não é um protocolo|não traz reagentes/i);
+    expect(t.naoFaz.join(" ")).toMatch(/Prever se a edição vai funcionar/);
   });
 
   it("nenhuma afirmação promete porcentagem de sucesso", () => {

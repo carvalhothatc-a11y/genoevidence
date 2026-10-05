@@ -55,7 +55,7 @@ export type EtapaTecnica = {
 
 export type Problema = { sintoma: string; causas: Claim[] };
 
-export type CalculadoraId = "ddct" | "volume_proteina" | "tpm" | "posicao_banda";
+export type CalculadoraId = "ddct" | "volume_proteina" | "tpm" | "posicao_banda" | "frequencia_edicao";
 
 export type TecnicaConteudo = {
   id: string;

@@ -12,15 +12,17 @@ Nenhum código de simulação é gerado a partir de documentos, da fala ou de ar
 | qPCR e RT-qPCR (`qpcr`) | implementado | ΔCt, ΔΔCt e razão corrigida pela eficiência |
 | Western blot (`western`) | implementado | volume de extrato por poço |
 | Clonagem molecular (`clonagem`) | parcial | — |
+| CRISPR-Cas9, conceitual (`crispr`) | parcial | frequência observada de edição, com intervalo exato |
 | Sequenciamento de Sanger (`sequenciamento`) | parcial | — |
 | RNA-seq, conceitual (`rnaseq`) | parcial | TPM |
 
 O estado de cada técnica também aparece em `src/lib/modules/registry.ts`, que é a fonte de verdade
 mostrada na página `/modulos`. Um teste garante que os dois concordam.
 
-**CRISPR continua sem módulo.** Houve uma tentativa de escrever o conteúdo e ela foi interrompida
-por um filtro de segurança do assistente que redigiu este material; o texto não foi reescrito. A
-técnica segue marcada como `nao_implementado` no registro.
+**O módulo de CRISPR é conceitual por escolha.** Ele cobre o mecanismo, as duas vias de reparo, a
+questão da especificidade e a leitura honesta de uma frequência observada. Não é protocolo de
+bancada: não traz reagentes, condições, quantidades nem passos de execução, e não desenha nem
+avalia guias. Um teste de unidade garante que ele continue assim.
 
 ## Estrutura de um módulo
 
@@ -73,6 +75,9 @@ devolver um número silenciosamente, e cada uma mostra o cartão do modelo na pr
   Mahmood & Yang (2012, texto completo).
 - **Posição da banda** (`src/lib/models/pcr.ts → bandPosition`): já existia no módulo de PCR;
   marcador genérico ilustrativo.
+- **Frequência observada de edição** (`src/lib/models/edicao.ts`): proporção de versões modificadas
+  entre as analisadas, com intervalo exato de Clopper–Pearson. Descreve a amostra analisada; não é
+  previsão de uma nova tentativa. Avisa quando há menos versões que o recomendado pela referência.
 
 ## Fontes
 
@@ -88,6 +93,6 @@ node scripts/e2e-tecnicas.mjs http://127.0.0.1:3100 <arquivo-senha-demo> <pasta-
 ```
 
 O script de ponta a ponta percorre todos os módulos e todas as etapas, confere as legendas das
-cenas, exercita as quatro calculadoras (inclusive a recusa de valores inválidos), o painel
+cenas, exercita as cinco calculadoras (inclusive a recusa de valores inválidos), o painel
 “Explorar”, o 404 de técnica inexistente, o redirecionamento sem sessão e a ausência de rolagem
 horizontal no celular.

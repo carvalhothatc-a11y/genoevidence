@@ -95,7 +95,15 @@ export const TECHNIQUES: TechniqueEntry[] = [
     description: "Etapas da análise, o que é TPM e por que comparar TPM entre amostras ou protocolos diferentes pode enganar.",
     notes: "Não processa dados brutos (FASTQ/BAM) nem calcula expressão diferencial.",
   },
-  { id: "crispr", name: "Edição genômica (CRISPR)", status: "nao_implementado", modes: [], description: "Sem módulo." },
+  {
+    id: "crispr",
+    name: "Edição genômica (CRISPR-Cas9)",
+    status: "parcial",
+    href: "/modulos/crispr",
+    modes: ["Conceitual", "Cena 3D por etapa", "Calculadora de frequência observada"],
+    description: "Mecanismo da Cas9, as duas vias de reparo, a questão da especificidade e como relatar uma frequência observada com o intervalo de incerteza.",
+    notes: "Conceitual: não é protocolo de bancada, não desenha guias e não estima efeitos fora do alvo.",
+  },
 ];
 
 export const STATUS_LABEL: Record<ModuleStatus, string> = {

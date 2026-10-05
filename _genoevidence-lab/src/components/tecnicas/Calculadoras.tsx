@@ -4,6 +4,8 @@ import { ddct, formatarRazao, razaoCorrigida, validarCt, validarEficiencia, type
 import { EXEMPLO_FICTICIO, tpm, type GeneContagem } from "@/lib/models/rnaseq";
 import { volumeParaMassa, MASSA_PADRAO_UG, TAMPAO_UL, TOTAL_SUGERIDO_UL } from "@/lib/models/proteina";
 import { bandPosition, ILLUSTRATIVE_LADDER_BP } from "@/lib/models/pcr";
+import { frequenciaEdicao, VERSOES_RECOMENDADAS } from "@/lib/models/edicao";
+import { pct } from "@/lib/ideia/evidencia";
 import type { CalculadoraId } from "@/lib/modules/tecnicas/tipos";
 import type { ModelCard } from "@/lib/modules/contract";
 import { SourceList } from "@/components/sources/SourceList";
@@ -310,11 +312,52 @@ function PosicaoBanda() {
   );
 }
 
+// ---------------------------------------------------------------- frequência observada de edição
+
+function FrequenciaEdicao() {
+  const [modificadas, setModificadas] = useState(7);
+  const [analisadas, setAnalisadas] = useState(30);
+  let r: ReturnType<typeof frequenciaEdicao> | null = null;
+  let erro: string | null = null;
+  try {
+    r = frequenciaEdicao(modificadas, analisadas);
+  } catch (e) {
+    erro = e instanceof Error ? e.message : "Confira os valores.";
+  }
+  return (
+    <div className="grid gap-3" data-testid="calc-edicao">
+      <div className="grid gap-3 sm:grid-cols-2">
+        <label className={rotulo}>
+          <span>Versões modificadas</span>
+          <input type="number" min={0} step={1} value={modificadas} onChange={(e) => setModificadas(Number(e.target.value))} className={campo} />
+        </label>
+        <label className={rotulo}>
+          <span>Versões analisadas no total</span>
+          <input type="number" min={1} step={1} value={analisadas} onChange={(e) => setAnalisadas(Number(e.target.value))} className={campo} />
+        </label>
+      </div>
+      {erro && <p className="text-[13px] text-[#ff8aa4]" role="alert">{erro}</p>}
+      {r && (
+        <Resultado aviso={r.poucasVersoes ? `Com ${r.analisadas} versões analisadas, o intervalo é largo demais para concluir: a referência recomenda analisar mais de ${VERSOES_RECOMENDADAS}.` : null}>
+          <p className="text-[15px] text-white" data-testid="resultado-edicao">
+            Observado: <strong>{r.modificadas} de {r.analisadas}</strong> ({pct(r.proporcao)}) · compatível com <strong>{pct(r.ic95[0])} a {pct(r.ic95[1])}</strong>{" "}
+            <span className="text-[13px] text-[#a7b2c8]">(intervalo exato de 95%)</span>
+          </p>
+          <p className="text-[12px] text-[#a7b2c8]">
+            É a leitura do que foi observado nesta amostra. Não é previsão para uma nova tentativa, com outro guia, outra célula ou outra região.
+          </p>
+        </Resultado>
+      )}
+    </div>
+  );
+}
+
 const TITULO: Record<CalculadoraId, string> = {
   ddct: "Calcular ΔCt, ΔΔCt e a razão",
   volume_proteina: "Calcular o volume de extrato por poço",
   tpm: "Calcular TPM a partir de contagens",
   posicao_banda: "Estimar a posição da banda no gel",
+  frequencia_edicao: "Ler a frequência observada de edição",
 };
 
 export function Calculadora({ id, modelos }: { id: CalculadoraId; modelos: ModelCard[] }) {
@@ -326,6 +369,7 @@ export function Calculadora({ id, modelos }: { id: CalculadoraId; modelos: Model
       {id === "volume_proteina" && <VolumeProteina />}
       {id === "tpm" && <Tpm />}
       {id === "posicao_banda" && <PosicaoBanda />}
+      {id === "frequencia_edicao" && <FrequenciaEdicao />}
       <div className="grid gap-2">
         {modelos
           .filter((x) => (id === "ddct" ? x.id === "ddct" || x.id === "razao_corrigida" : x.id === id))

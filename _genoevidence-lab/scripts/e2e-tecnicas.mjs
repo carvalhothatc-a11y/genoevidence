@@ -10,7 +10,7 @@ const browser = await chromium.launch({ args: ["--use-angle=swiftshader", "--ena
 const falhas = [];
 const ok = (c, m) => (console.log(`${c ? "✔" : "✖"} ${m}`), !c && falhas.push(m));
 
-const MODULOS = ["eletroforese", "qpcr", "western", "clonagem", "sequenciamento", "rnaseq"];
+const MODULOS = ["eletroforese", "qpcr", "western", "clonagem", "crispr", "sequenciamento", "rnaseq"];
 
 async function entrar(ctx) {
   const p = await ctx.newPage();
@@ -134,6 +134,30 @@ for (const id of MODULOS) {
   await c.fill("9000");
   await p.waitForTimeout(300);
   ok(/fora da faixa/.test((await p.getByTestId("resultado-banda").textContent()) ?? ""), "eletroforese: fora da faixa não inventa posição");
+}
+
+// 7b. CRISPR: frequência observada com intervalo, aviso de poucas versões e recusa de contagem impossível
+{
+  await p.goto(base + "/modulos/crispr");
+  await p.getByRole("button", { name: /Medir a edição/ }).click();
+  await p.getByTestId("calc-edicao").waitFor();
+  const c = p.getByTestId("calc-edicao").locator('input[type="number"]');
+  await c.nth(0).fill("15");
+  await c.nth(1).fill("30");
+  await p.waitForTimeout(300);
+  let t = (await p.getByTestId("resultado-edicao").textContent()) ?? "";
+  ok(/15 de 30/.test(t) && /50%/.test(t), `CRISPR: frequência observada na tela (${t.replace(/\s+/g, " ").trim().slice(0, 60)})`);
+  ok(/compatível com/.test(t), "CRISPR: mostra o intervalo de incerteza junto do número");
+  ok(/Não é previsão/.test((await p.getByTestId("calc-edicao").textContent()) ?? ""), "CRISPR: diz que não é previsão de uma nova tentativa");
+  await c.nth(1).fill("8");
+  await c.nth(0).fill("4");
+  await p.waitForTimeout(300);
+  ok(/recomenda analisar mais de 24/.test((await p.getByTestId("calc-edicao").textContent()) ?? ""), "CRISPR: avisa quando há poucas versões analisadas");
+  await c.nth(0).fill("99");
+  await p.waitForTimeout(300);
+  ok((await p.locator('[data-testid="calc-edicao"] [role="alert"]').count()) > 0, "CRISPR: contagem impossível vira aviso");
+  const conceitual = (await p.locator('section[aria-labelledby="limites"]').textContent()) ?? "";
+  ok(/não é um protocolo/i.test(conceitual), "CRISPR: a página diz que o módulo não é um protocolo de bancada");
 }
 
 // 8. Técnica inexistente não abre (o 404 é proposital: não conta como erro de console)
