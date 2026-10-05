@@ -16,6 +16,8 @@ export type ModelCard = {
   limitations: string[];
   implementation: string;
   doesNotPredict: string[];
+  /** Fontes que sustentam a equação, os pressupostos ou os limites. */
+  refs?: SourceRef[];
 };
 
 export type ModuleOutput = {

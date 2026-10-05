@@ -266,8 +266,8 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
           ))}
           {sk > 0.4 && (
             <>
-              <Ancora alvo="proteina" id={`${k}-p`} texto="Proteínas" position={protPos[1]} dx={120} dy={-20} />
-              <Ancora alvo={passo.origem === "rna" ? "rna" : "dna"} id={`${k}-d`} texto={passo.origem === "rna" ? "RNA" : "DNA"} sub="separado dos demais componentes" position={dnaPos} dx={130} dy={0} />
+              <Ancora alvo="proteina" id={`${k}-p`} texto="Proteínas" sub={passo.origem === "proteina" ? "recolhidas no extrato" : undefined} position={protPos[1]} dx={120} dy={-20} />
+              <Ancora alvo={passo.origem === "rna" ? "rna" : "dna"} id={`${k}-d`} texto={passo.origem === "rna" ? "RNA" : "DNA"} sub={passo.origem === "proteina" ? undefined : "separado dos demais componentes"} position={dnaPos} dx={130} dy={0} />
               <Ancora id={`${k}-o`} texto="Outros componentes" position={outros[2]} dx={120} dy={20} />
             </>
           )}
@@ -279,9 +279,9 @@ function Acao({ passo, t }: { passo: PassoVisual; t: number }) {
       return (
         <group>
           <Gel progresso={seg(t, 0.1, 0.95)} />
-          <Ancora alvo="gel_agarose" id={`${k}-l`} texto="Marcador" sub="referência de tamanho" position={[-1.15, 0.6, 0.6]} dx={-130} dy={-60} />
-          <Ancora alvo="gel_agarose" id={`${k}-a`} texto="Amostras" sub="posições ilustrativas · não é resultado" position={[0.6, 0.1, 0.1]} dx={150} dy={50} />
-          <Ancora alvo="cuba_eletroforese" id={`${k}-p`} texto="Polo positivo (+)" sub="o DNA migra para cá" position={[0, -0.6, -0.8]} dx={150} dy={40} />
+          <Ancora alvo={r.material ? undefined : "gel_agarose"} id={`${k}-l`} texto="Marcador" sub="referência de tamanho" position={[-1.15, 0.6, 0.6]} dx={-130} dy={-60} />
+          <Ancora alvo={r.material ? undefined : "gel_agarose"} id={`${k}-a`} texto="Amostras" sub="posições ilustrativas · não é resultado" position={[0.6, 0.1, 0.1]} dx={150} dy={50} />
+          <Ancora alvo="cuba_eletroforese" id={`${k}-p`} texto="Polo positivo (+)" sub={`${r.material ?? "o DNA"} ${r.material ? "migram" : "migra"} para cá`} position={[0, -0.6, -0.8]} dx={150} dy={40} />
         </group>
       );
     case "centrifugar":
