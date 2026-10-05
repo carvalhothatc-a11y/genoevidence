@@ -3,7 +3,19 @@ import { useEffect, useRef, useState } from "react";
 import { GeninhoAvatar } from "./GeninhoAvatar";
 import { RichText } from "./RichText";
 
-type Msg = { role: "user" | "assistant"; content: string; error?: boolean; note?: string };
+type Passo = { nome: string; rotulo: string; estado: "iniciou" | "ok" | "vazio" | "falhou"; detalhe?: string };
+type Molecula =
+  | { tipo: "estrutura"; pdbId: string; titulo: string; metodo?: string; resolucao?: number; url: string; arquivo: string }
+  | { tipo: "composto"; cid: number; nome: string; formula?: string; massa?: string; imagem2d: string; sdf3d: string; url: string }
+  | { tipo: "proteina"; acesso: string; nome: string; genes: string[]; organismo: string; url: string };
+type Fonte = { titulo: string; url: string; origem: string; leitura: "encontrada" | "resumo" | "lida" };
+type Msg = { role: "user" | "assistant"; content: string; error?: boolean; note?: string; passos?: Passo[]; moleculas?: Molecula[]; fontes?: Fonte[] };
+
+const LEITURA: Record<Fonte["leitura"], string> = {
+  lida: "conteúdo lido",
+  resumo: "só o resumo foi lido",
+  encontrada: "referência localizada; conteúdo não lido",
+};
 
 const SUGGESTIONS = [
   "Como escolho a temperatura de anelamento dos meus primers?",
@@ -29,6 +41,7 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
   const [messages, setMessages] = useState<Msg[]>([]);
   const [input, setInput] = useState(pergunta ?? "");
   const [incluir, setIncluir] = useState(false);
+  const [web, setWeb] = useState(false);
   useEffect(() => {
     if (pergunta) setInput(pergunta);
   }, [pergunta]);
@@ -65,7 +78,7 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
       const res = await fetch("/api/geninho", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: payload.map(({ role, content }) => ({ role, content: content.slice(0, MAX_CHARS) })), ...(contexto && incluir ? { contexto: contexto.slice(0, 6000) } : {}) }),
+        body: JSON.stringify({ messages: payload.map(({ role, content }) => ({ role, content: content.slice(0, MAX_CHARS) })), ...(contexto && incluir ? { contexto: contexto.slice(0, 6000) } : {}), ...(web ? { web: true } : {}) }),
         signal: ctrl.signal,
       });
       if (!res.ok || !res.body) {
@@ -85,10 +98,35 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
           const raw = buf.slice(0, nl);
           buf = buf.slice(nl + 1);
           if (!raw.trim()) continue;
-          const ev = JSON.parse(raw) as { t: "texto" | "fim" | "erro"; v?: string; motivo?: string };
+          const ev = JSON.parse(raw) as {
+            t: "texto" | "fim" | "erro" | "ferramenta" | "molecula" | "fontes";
+            v?: string;
+            motivo?: string;
+            nome?: string;
+            rotulo?: string;
+            estado?: Passo["estado"];
+            detalhe?: string;
+            payload?: Molecula;
+            itens?: Fonte[];
+          };
           if (ev.t === "texto" && ev.v) {
             setStatus("O Geninho está respondendo…");
             update((m) => ({ ...m, content: m.content + ev.v }));
+          } else if (ev.t === "ferramenta" && ev.nome && ev.rotulo && ev.estado) {
+            const passo: Passo = { nome: ev.nome, rotulo: ev.rotulo, estado: ev.estado, detalhe: ev.detalhe };
+            setStatus(ev.estado === "iniciou" ? `${ev.rotulo}…` : "O Geninho está trabalhando…");
+            update((m) => {
+              const passos = [...(m.passos ?? [])];
+              const i = passos.findIndex((p) => p.nome === passo.nome && p.estado === "iniciou");
+              if (i >= 0 && passo.estado !== "iniciou") passos[i] = passo;
+              else passos.push(passo);
+              return { ...m, passos };
+            });
+          } else if (ev.t === "molecula" && ev.payload) {
+            const mol = ev.payload;
+            update((m) => ({ ...m, moleculas: [...(m.moleculas ?? []).filter((x) => JSON.stringify(x) !== JSON.stringify(mol)), mol] }));
+          } else if (ev.t === "fontes" && ev.itens) {
+            update((m) => ({ ...m, fontes: ev.itens }));
           } else if (ev.t === "erro") update((m) => ({ ...m, content: m.content || ev.v || "", error: !m.content, note: m.content ? ev.v : undefined }));
           else if (ev.t === "fim" && ev.motivo && STOP_NOTES[ev.motivo]) update((m) => ({ ...m, note: STOP_NOTES[ev.motivo!] }));
         }
@@ -164,7 +202,10 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
                   <GeninhoAvatar size={28} className="mt-0.5 shrink-0" />
                   <div className={`min-w-0 rounded-2xl rounded-tl-md border px-3.5 py-2.5 text-sm ${m.error ? "border-danger/40 bg-danger-soft" : "border-line bg-white"}`}>
                     <span className="sr-only">Geninho: </span>
-                    {m.content ? <RichText text={m.content} /> : <p className="ge-mono text-xs text-muted">pensando…</p>}
+                    {m.passos && m.passos.length > 0 && <Passos passos={m.passos} />}
+                    {m.content ? <RichText text={m.content} /> : !m.passos?.length ? <p className="ge-mono text-xs text-muted">pensando…</p> : null}
+                    {m.moleculas?.map((mol, k) => <CartaoMolecula key={k} m={mol} />)}
+                    {m.fontes && m.fontes.length > 0 && <Fontes itens={m.fontes} />}
                     {m.note && <p className="mt-2 text-xs text-muted">{m.note}</p>}
                     {m.content && !m.error && (busy ? i < messages.length - 1 : true) && (
                       <p className="mt-2 border-t border-line pt-1.5 text-[11px] text-muted">Resposta gerada por IA. Confira em fontes primárias e com o protocolo do seu laboratório.</p>
@@ -213,6 +254,12 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
                 </button>
               )}
             </div>
+            <label className="flex items-start gap-2 text-[12px] text-body">
+              <input type="checkbox" className="mt-0.5" checked={web} onChange={(e) => setWeb(e.target.checked)} data-testid="geninho-web" />
+              <span>
+                Pesquisar na internet nesta pergunta. Sem isso, o Geninho consulta apenas PubMed, UniProt, RCSB PDB e PubChem — que já cobrem artigos, proteínas, estruturas e compostos.
+              </span>
+            </label>
             {contexto && (
               <label className="flex items-start gap-2 text-[12px] text-body">
                 <input type="checkbox" className="mt-0.5" checked={incluir} onChange={(e) => setIncluir(e.target.checked)} data-testid="geninho-contexto" />
@@ -242,5 +289,100 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
         </div>
       )}
     </section>
+  );
+}
+
+// ---------------------------------------------------------------- passos, moléculas e fontes
+
+const ICONE: Record<Passo["estado"], string> = { iniciou: "◌", ok: "✓", vazio: "∅", falhou: "✕" };
+const COR: Record<Passo["estado"], string> = { iniciou: "text-muted", ok: "text-ok", vazio: "text-warn", falhou: "text-danger" };
+
+/** O que o Geninho fez, com o estado REAL de cada ferramenta. */
+function Passos({ passos }: { passos: Passo[] }) {
+  return (
+    <ul className="mb-2 grid gap-0.5 border-l-2 border-line pl-2.5 text-[12px]" aria-label="O que o Geninho fez">
+      {passos.map((p, i) => (
+        <li key={i} className={COR[p.estado]}>
+          <span aria-hidden="true" className={p.estado === "iniciou" ? "inline-block animate-pulse" : ""}>
+            {ICONE[p.estado]}
+          </span>{" "}
+          {p.rotulo}
+          {p.detalhe ? <span className="text-muted"> · {p.detalhe}</span> : p.estado === "vazio" ? <span className="text-muted"> · nada encontrado</span> : null}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/** Molécula de verdade, com identificador e origem. Nunca uma parecida no lugar da pedida. */
+function CartaoMolecula({ m }: { m: Molecula }) {
+  if (m.tipo === "composto")
+    return (
+      <figure className="mt-2 grid gap-2 rounded-xl border border-line bg-surface-2 p-3 sm:grid-cols-[120px_1fr]">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={m.imagem2d} alt={`Estrutura plana de ${m.nome}`} width={120} height={120} className="rounded-lg bg-white" loading="lazy" />
+        <figcaption className="grid content-start gap-0.5 text-[12px]">
+          <strong className="text-[13px]">{m.nome}</strong>
+          <span className="text-muted">
+            PubChem CID {m.cid}
+            {m.formula ? ` · ${m.formula}` : ""}
+            {m.massa ? ` · ${m.massa} g/mol` : ""}
+          </span>
+          <a href={m.url} target="_blank" rel="noreferrer noopener" className="underline">
+            Ver no PubChem
+          </a>
+          <span className="text-muted">Desenho 2D do PubChem, servido pelo GenoLab.</span>
+        </figcaption>
+      </figure>
+    );
+  if (m.tipo === "estrutura")
+    return (
+      <div className="mt-2 grid gap-0.5 rounded-xl border border-line bg-surface-2 p-3 text-[12px]">
+        <strong className="text-[13px]">
+          {m.pdbId} — {m.titulo}
+        </strong>
+        <span className="text-muted">
+          {m.metodo ?? "método não informado"}
+          {m.resolucao ? ` · ${m.resolucao} Å` : ""}
+        </span>
+        <a href={m.url} target="_blank" rel="noreferrer noopener" className="underline">
+          Ver no RCSB PDB
+        </a>
+        <span className="text-muted">Para abrir no visualizador Mol*, importe este código num projeto.</span>
+      </div>
+    );
+  return (
+    <div className="mt-2 grid gap-0.5 rounded-xl border border-line bg-surface-2 p-3 text-[12px]">
+      <strong className="text-[13px]">{m.nome}</strong>
+      <span className="text-muted">
+        UniProt {m.acesso}
+        {m.genes.length ? ` · gene ${m.genes.join(", ")}` : ""} · {m.organismo}
+      </span>
+      <a href={m.url} target="_blank" rel="noreferrer noopener" className="underline">
+        Ver no UniProt
+      </a>
+    </div>
+  );
+}
+
+/** Fontes com o nível real de leitura. */
+function Fontes({ itens }: { itens: Fonte[] }) {
+  return (
+    <details className="mt-2 rounded-lg border border-line bg-surface-2 p-2 text-[12px]">
+      <summary className="cursor-pointer font-semibold">Fontes consultadas ({itens.length})</summary>
+      <ul className="mt-1.5 grid gap-1">
+        {itens.map((f, i) => (
+          <li key={i}>
+            <a href={f.url} target="_blank" rel="noreferrer noopener" className="underline">
+              {f.titulo}
+            </a>
+            <span className="text-muted">
+              {" "}
+              · {f.origem} · {LEITURA[f.leitura]}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </details>
   );
 }
