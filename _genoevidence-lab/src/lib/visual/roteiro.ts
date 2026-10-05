@@ -186,7 +186,7 @@ export type PassoVisual = {
   origem: Entidade | null;
   destino: Entidade | null;
   /** Rótulos do texto: gene, organismo, enzima, antibiótico, temperatura… */
-  rotulos: { gene?: string; organismo?: string; enzima?: string; antibiotico?: string; temperatura?: string; volume?: string; ciclos?: string };
+  rotulos: { gene?: string; organismo?: string; enzima?: string; antibiotico?: string; temperatura?: string; volume?: string; ciclos?: string; /** O que migra no gel, quando não é DNA (ex.: “as proteínas”). */ material?: string };
   /** Integração no cromossomo citada (“no DNA da bactéria”). */
   integracao: boolean;
   confianca: "alta" | "conferir";
