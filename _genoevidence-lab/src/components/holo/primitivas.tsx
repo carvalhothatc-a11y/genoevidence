@@ -545,3 +545,126 @@ export function Termociclador({ tampa = 0.2, quente = 0, position = [0, 0, 0], e
     </group>
   );
 }
+
+// ---------------------------------------------------------------- síntese química / nanopartículas
+
+/** Béquer com líquido e, opcionalmente, a barra magnética girando no fundo. */
+export function Bequer({ altura = 1.8, nivel = 0.55, cor = COR.teal, turvo = 0, agita = 0, position = [0, 0, 0], escala = 1 }: { altura?: number; nivel?: number; cor?: THREE.Color; turvo?: number; agita?: number; position?: V3; escala?: number }) {
+  const r = altura * 0.42;
+  const mVidro = useHolo(COR.branco, COR.azul, 0.55);
+  const mBarra = useHolo(COR.branco, COR.violeta, 0.95);
+  const mLiq = useMemo(() => halo(cor, 0.4 + 0.3 * turvo), [cor, turvo]);
+  const barra = useRef<THREE.Mesh>(null);
+  useFrame((_, dt) => {
+    if (barra.current && agita > 0) barra.current.rotation.y += dt * 14 * agita;
+  });
+  const hLiq = Math.max(0.08, nivel) * altura;
+  return (
+    <group position={position} scale={escala}>
+      <mesh material={mVidro}>
+        <cylinderGeometry args={[r, r * 0.96, altura, 44, 1, true]} />
+      </mesh>
+      <mesh material={mVidro} position={[0, -altura / 2, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+        <circleGeometry args={[r * 0.96, 44]} />
+      </mesh>
+      <mesh material={mLiq} position={[0, -altura / 2 + hLiq / 2, 0]}>
+        <cylinderGeometry args={[r * 0.93, r * 0.9, hLiq, 40]} />
+      </mesh>
+      {agita > 0 && (
+        <mesh ref={barra} material={mBarra} position={[0, -altura / 2 + 0.08, 0]}>
+          <capsuleGeometry args={[0.05, r * 0.9, 4, 10]} />
+        </mesh>
+      )}
+      {turvo > 0 && <Brilho cor={COR.branco} escala={r * 2.1} opacidade={0.1 + 0.3 * turvo} position={[0, -altura / 2 + hLiq / 2, 0]} />}
+    </group>
+  );
+}
+
+/** Nuvem de partículas sólidas em suspensão ou sedimentadas (ilustração: não é tamanho real). */
+export function Particulas({ n = 60, raio = 0.8, altura = 1, sedimenta = 0, cor = COR.ambar, tamanho = 0.045, position = [0, 0, 0] }: { n?: number; raio?: number; altura?: number; sedimenta?: number; cor?: THREE.Color; tamanho?: number; position?: V3 }) {
+  const m = useMemo(() => luz(cor, 0.95), [cor]);
+  const pontos = useMemo(
+    () =>
+      Array.from({ length: n }, (_, i) => {
+        const a = (i * 2.399) % (Math.PI * 2);
+        const rr = raio * Math.sqrt(((i * 0.618) % 1));
+        return { a, rr, y: ((i * 0.37) % 1) - 0.5 };
+      }),
+    [n, raio],
+  );
+  return (
+    <group position={position}>
+      {pontos.map((p, i) => {
+        const y = p.y * altura * (1 - sedimenta) - sedimenta * altura * 0.42;
+        const rr = p.rr * (1 - sedimenta * 0.45);
+        return (
+          <mesh key={i} material={m} position={[Math.cos(p.a) * rr, y, Math.sin(p.a) * rr]}>
+            <sphereGeometry args={[tamanho * (0.7 + ((i * 0.13) % 0.6)), 8, 8]} />
+          </mesh>
+        );
+      })}
+    </group>
+  );
+}
+
+/** Gotas caindo de um conta-gotas (acidificação gota a gota). */
+export function Gotejamento({ progresso = 0, de = [0, 1.6, 0], ate = [0, 0.2, 0], cor = COR.rosa, n = 5 }: { progresso?: number; de?: V3; ate?: V3; cor?: THREE.Color; n?: number }) {
+  const m = useMemo(() => luz(cor, 0.95), [cor]);
+  const mv = useHolo(COR.branco, COR.rosa, 0.8);
+  return (
+    <group>
+      <mesh material={mv} position={[de[0], de[1] + 0.45, de[2]]}>
+        <cylinderGeometry args={[0.1, 0.07, 0.8, 20]} />
+      </mesh>
+      <mesh material={mv} position={[de[0], de[1] - 0.05, de[2]]}>
+        <coneGeometry args={[0.06, 0.3, 16]} />
+      </mesh>
+      {Array.from({ length: n }, (_, i) => {
+        const f = (progresso * 2 + i / n) % 1;
+        const y = de[1] - 0.2 - f * (de[1] - 0.2 - ate[1]);
+        return (
+          <mesh key={i} material={m} position={[de[0], y, de[2]]} scale={[1, 1.5, 1]}>
+            <sphereGeometry args={[0.055, 10, 10]} />
+          </mesh>
+        );
+      })}
+    </group>
+  );
+}
+
+/** Balança com o prato e o sólido pesado. */
+export function Balanca({ massa = 1, position = [0, 0, 0] }: { massa?: number; position?: V3 }) {
+  const m = useHolo(COR.azul, COR.branco, 0.8);
+  const mp = useMemo(() => luz(COR.ambar, 0.95), []);
+  return (
+    <group position={position}>
+      <mesh material={m} position={[0, -0.35, 0]}>
+        <boxGeometry args={[2.2, 0.35, 1.5]} />
+      </mesh>
+      <mesh material={m} position={[0, -0.12, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+        <circleGeometry args={[0.78, 44]} />
+      </mesh>
+      <mesh material={m} position={[0, -0.2, 0.92]} rotation={[-0.5, 0, 0]}>
+        <boxGeometry args={[1.1, 0.4, 0.06]} />
+      </mesh>
+      {massa > 0 && (
+        <mesh material={mp} position={[0, -0.04, 0]} scale={[1, 0.45 * Math.min(1, massa), 1]}>
+          <sphereGeometry args={[0.34, 18, 14]} />
+        </mesh>
+      )}
+    </group>
+  );
+}
+
+/** Pó seco acumulado (produto final da secagem). */
+export function Po({ quantidade = 1, cor = COR.ambar, position = [0, 0, 0] }: { quantidade?: number; cor?: THREE.Color; position?: V3 }) {
+  const m = useMemo(() => luz(cor, 0.9), [cor]);
+  return (
+    <group position={position}>
+      <mesh material={m} scale={[1, 0.4 * quantidade, 1]}>
+        <sphereGeometry args={[0.6, 24, 16, 0, Math.PI * 2, 0, Math.PI / 2]} />
+      </mesh>
+      <Particulas n={26} raio={0.52} altura={0.16} sedimenta={0.75} cor={cor} tamanho={0.035} position={[0, 0.02, 0]} />
+    </group>
+  );
+}

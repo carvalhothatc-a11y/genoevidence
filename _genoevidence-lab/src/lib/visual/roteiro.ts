@@ -26,7 +26,14 @@ export type Entidade =
   | "virus"
   | "antibiotico"
   | "nucleotideos"
-  | "produto_pcr";
+  | "produto_pcr"
+  // síntese química / nanopartículas
+  | "sal_precursor"
+  | "extrato_vegetal"
+  | "acido"
+  | "solvente"
+  | "precipitado"
+  | "nanoparticula";
 
 export type Acao =
   | "pipetar"
@@ -53,6 +60,17 @@ export type Acao =
   | "editar_crispr"
   | "detectar"
   | "quantificar"
+  // síntese química / nanopartículas
+  | "pesar"
+  | "dissolver"
+  | "agitar"
+  | "acidificar"
+  | "precipitar"
+  | "lavar"
+  | "ressuspender"
+  | "secar"
+  | "filtrar"
+  | "medir_ph"
   | "generica";
 
 export const ENTIDADE_NOME: Record<Entidade, string> = {
@@ -75,6 +93,12 @@ export const ENTIDADE_NOME: Record<Entidade, string> = {
   antibiotico: "Antibiótico de seleção",
   nucleotideos: "Nucleotídeos",
   produto_pcr: "Produto de PCR (inserto)",
+  sal_precursor: "Sal precursor",
+  extrato_vegetal: "Extrato ou filtrado",
+  acido: "Ácido",
+  solvente: "Solvente",
+  precipitado: "Precipitado",
+  nanoparticula: "Nanopartículas",
 };
 
 export const ACAO_TITULO: Record<Acao, string> = {
@@ -102,11 +126,28 @@ export const ACAO_TITULO: Record<Acao, string> = {
   editar_crispr: "Edição por CRISPR-Cas9",
   detectar: "Detecção do sinal",
   quantificar: "Quantificação",
+  pesar: "Pesagem",
+  dissolver: "Dissolução",
+  agitar: "Agitação",
+  acidificar: "Acidificação (gota a gota)",
+  precipitar: "Precipitação",
+  lavar: "Lavagem",
+  ressuspender: "Ressuspensão",
+  secar: "Secagem",
+  filtrar: "Filtração",
+  medir_ph: "Medida de pH",
   generica: "Etapa descrita",
 };
 
 /** Entidades reconhecidas (texto normalizado, sem acentos). Ordem: mais específicas primeiro. */
 const ENTIDADES: { e: Entidade; re: RegExp }[] = [
+  // síntese química: antes das biológicas, para “extrato” não virar “extrair DNA”
+  { e: "nanoparticula", re: /nanoparticula\w*|nanoparticle\w*|\bsnps?\b|\bnps?\b|nanomaterial\w*/ },
+  { e: "sal_precursor", re: /tiossulfato\w*|thiosulfate|na2s2o3|\bcacl2\b|cloreto de calcio|\(nh4\)2so4|sulfato de amonio|\bcaso4\b|sulfato de calcio|gipsita|\bsal\b|\bsais\b|precursor\w*/ },
+  { e: "acido", re: /\bhcl\b|acido clorid\w*|acido citrico|\bacido\b|\bacidos\b/ },
+  { e: "extrato_vegetal", re: /extrato\w*|filtrado\w*|hidrolato\w*|metabolito\w*|sobrenadante\w*/ },
+  { e: "precipitado", re: /precipitado\w*|\bpellet\w*|turvacao|turbidez|solucao turva/ },
+  { e: "solvente", re: /agua deionizada|agua destilada|agua ultrapura|\betanol\b|\balcool\b/ },
   { e: "produto_pcr", re: /produto (?:de|da) pcr|amplicon\w*|inserto|fragmento amplificado/ },
   { e: "plasmideo", re: /plasmide\w*|plasmidi\w*|\bvetor\b|\bpuc\d*|\bpet-?\d*|\bpgem\w*/ },
   { e: "bacteria", re: /bacteria\w*|e\.? ?coli|escherichia|colonia\w*|celulas competentes|competentes|\bdh5|\bbl21/ },
@@ -130,6 +171,17 @@ const ENTIDADES: { e: Entidade; re: RegExp }[] = [
 
 /** Ações por verbos e termos de técnica. Ordem: mais específicas primeiro. */
 const ACOES: { a: Acao; re: RegExp }[] = [
+  // síntese química: vêm antes para não serem capturadas por regras da biologia molecular
+  { a: "acidificar", re: /acidifica\w*|gota a gota|gotej\w*|adicion\w*[^,.;]{0,30}(?:hcl|acido)[^,.;]{0,30}(?:gota|lentamente)|\bph\s?\d/ },
+  { a: "medir_ph", re: /(?:meca|medir|medida|afer\w*|ajust\w*|verific\w*)[^,.;]{0,20}\bph\b|\bph\b (?:dos|das|do|da) /, },
+  { a: "precipitar", re: /precipita\w*|turvacao|turbidez|formacao de precipitado|solucao turva|nuclea\w*/ },
+  { a: "lavar", re: /lavagem\w*|lav(?:e|ar|ando|adas?|ados?)\b|repita (?:esse|este) processo/ },
+  { a: "ressuspender", re: /ressuspend\w*|ressuspens\w*|resuspend\w*/ },
+  { a: "secar", re: /secagem|\bseque\b|\bsecar\b|\bsecado\w*|estufa\w*|dessecador|liofiliz\w*/ },
+  { a: "pesar", re: /\bpese\b|\bpesar\b|pesagem|pesad\w*|\bmassa de\b|balanca analitica/ },
+  { a: "dissolver", re: /dissolv\w*|solubiliz\w*|\bdiluir\b|\bdilua\b|dissolucao/ },
+  { a: "agitar", re: /agitacao|agit(?:e|ar|ando|ada|ado)\b|\bturrax\b|mistura vigorosa|sob agitacao/ },
+  { a: "filtrar", re: /filtr(?:e|ar|ou|ando|acao|acoes)\b|(?:foi|sera|seja|ser) filtrad\w*|membrana de 0,?\d|\b0,2 ?[uµ]m\b/ },
   { a: "editar_crispr", re: /crispr|cas ?9|editar o genoma|edicao genica|nocaute|knock ?out/ },
   { a: "transfectar", re: /transfect\w*|lipofect\w*|transduz\w*|transducao/ },
   { a: "transformar", re: /transform\w*|choque termico|eletropora\w*|(?:inserir|colocar|introduzir|por|inseri|coloquei|vou inserir|vou colocar)[^,.;]{0,40}(?:bacteria|e\.? ?coli|competentes|celulas competentes)/ },
@@ -144,10 +196,10 @@ const ACOES: { a: Acao; re: RegExp }[] = [
   { a: "expressar", re: /express\w*|induz\w*|iptg|produzir (?:a )?proteina|superexpress\w*/ },
   { a: "selecionar", re: /selecion\w*|triag\w*|azul.?branc\w*|screening|escolher (?:as )?colonias/ },
   { a: "cultivar", re: /cultiv\w*|plaque\w*|semear|crescer|crescimento|incubar a placa|espalhar na placa/ },
-  { a: "extrair", re: /extra\w*|isolar|lis\w*|romper as celulas|miniprep|midiprep|maxiprep/ },
+  { a: "extrair", re: /extra(?:ir|i|ia|iu|ido|ida|idos|idas|cao|coes)\b|\bisolar\b|\blise\b|\blisar\b|\blisad\w*|romper as celulas|miniprep|midiprep|maxiprep/ },
   { a: "purificar", re: /purific\w*|coluna|limpar o produto/ },
   { a: "eletroforese", re: /eletrofor\w*|correr (?:o )?gel|corrida|\bgel\b|banda\w*/ },
-  { a: "centrifugar", re: /centrifug\w*|\bspin\b|precipit\w*/ },
+  { a: "centrifugar", re: /centrifug\w*|\bspin\b/ },
   { a: "sequenciar", re: /sequenci\w*|sanger|\bngs\b/ },
   { a: "detectar", re: /qpcr|tempo real|sybr|taqman|western|elisa|fluoresc\w*|detect\w*|revelar|sinal/ },
   { a: "quantificar", re: /quantific\w*|nanodrop|espectrofot\w*|absorbancia|\ba260\b|concentracao do dna/ },
@@ -158,6 +210,13 @@ const ACOES: { a: Acao; re: RegExp }[] = [
 
 /** Entidade “produzida” por cada ação (carregada como sujeito implícito da próxima frase). */
 const PRODUZ: Partial<Record<Acao, Entidade>> = {
+  dissolver: "sal_precursor",
+  acidificar: "precipitado",
+  precipitar: "precipitado",
+  lavar: "precipitado",
+  ressuspender: "precipitado",
+  secar: "nanoparticula",
+  filtrar: "extrato_vegetal",
   amplificar: "produto_pcr",
   inserir_vetor: "plasmideo",
   transformar: "bacteria",
@@ -186,7 +245,7 @@ export type PassoVisual = {
   origem: Entidade | null;
   destino: Entidade | null;
   /** Rótulos do texto: gene, organismo, enzima, antibiótico, temperatura… */
-  rotulos: { gene?: string; organismo?: string; enzima?: string; antibiotico?: string; temperatura?: string; volume?: string; ciclos?: string; /** O que migra no gel, quando não é DNA (ex.: “as proteínas”). */ material?: string };
+  rotulos: { gene?: string; organismo?: string; enzima?: string; antibiotico?: string; temperatura?: string; volume?: string; ciclos?: string; /** O que migra no gel, quando não é DNA (ex.: “as proteínas”). */ material?: string; massa?: string; tempo?: string; vezes?: string; sal?: string };
   /** Integração no cromossomo citada (“no DNA da bactéria”). */
   integracao: boolean;
   confianca: "alta" | "conferir";
@@ -258,6 +317,9 @@ function slug(n: number) {
  * Divide em frases e, dentro delas, em ações encadeadas: separa por vírgulas, “e”, “depois”,
  * “então”, “daí”… e junta de volta os pedaços que não têm verbo de ação (ex.: “EcoRI e BamHI”).
  */
+/** Trechos considerados num texto. Acima disso, o excedente é avisado em vez de sumir em silêncio. */
+export const MAX_TRECHOS = 28;
+
 export function fragmentar(texto: string): string[] {
   const protegido = texto.replace(/\s+/g, " ").replace(/\bE\. ?coli\b/gi, "E.coli");
   const frases = protegido
@@ -287,7 +349,7 @@ export function fragmentar(texto: string): string[] {
     }
     out.push(...(pecas.length ? pecas : [f]));
   }
-  return out.map((x) => x.replace(/E\.coli/g, "E. coli")).slice(0, 16);
+  return out.map((x) => x.replace(/E\.coli/g, "E. coli")).slice(0, MAX_TRECHOS);
 }
 
 const PREP_DESTINO = /\b(?:no|na|nos|nas|em|ao|a|para o|para a|dentro do|dentro da|pro|pra)\s+(?:(?:o|a|um|uma|meu|minha|esse|essa)\s+)?([a-z.\s]{2,40})/g;
@@ -361,6 +423,15 @@ export function interpretarRoteiro(texto: string): PassoVisual[] {
     if (ab) rotulos.antibiotico = ab[1];
     const temp = /(\d{1,3}(?:[.,]\d)?)\s?(?:°|º)\s?c|(\d{1,3})\s?graus/i.exec(parte);
     if (temp) rotulos.temperatura = `${temp[1] ?? temp[2]} °C`;
+    // síntese química: massa pesada, tempo, repetições e nome do sal
+    const massa = /(\d+(?:[.,]\d+)?)\s?(mg|g|kg)\b/i.exec(parte);
+    if (massa) rotulos.massa = `${massa[1]} ${massa[2].toLowerCase()}`;
+    const tempo = /(\d+(?:[.,]\d+)?)\s?(minutos?|min|horas?|\bh\b|segundos?|\bs\b)\b/i.exec(parte);
+    if (tempo) rotulos.tempo = `${tempo[1]} ${/^h|^hora/i.test(tempo[2]) ? "h" : /^s|^seg/i.test(tempo[2]) ? "s" : "min"}`;
+    const vezes = /(\d{1,2})\s?vezes\b/i.exec(parte);
+    if (vezes) rotulos.vezes = `${vezes[1]} vezes`;
+    const sal = /\b(tiossulfato(?: de sodio)?|Na2S2O3[\w·.]*|CaCl2[\w·.]*|\(NH4\)2SO4|CaSO4[\w·.]*|sulfato de amonio|sulfato de calcio|cloreto de calcio|gipsita)\b/i.exec(parte);
+    if (sal) rotulos.sal = sal[1];
 
     const entidades = [...new Set([origem, destino, ...lista].filter(Boolean) as Entidade[])].slice(0, 5);
     const atencao: Atencao[] = [];
@@ -461,6 +532,26 @@ export function descreverCena(acao: Acao, origem: Entidade | null, destino: Enti
       return "O sinal da detecção aparece (ilustração; intensidade e valores não são previstos).";
     case "quantificar":
       return "A concentração do material é medida.";
+    case "pesar":
+      return `O ${nome(origem === null ? "sal_precursor" : origem)} é pesado na balança${r.massa ? ` (${r.massa})` : ""}.`;
+    case "dissolver":
+      return `O ${nome(origem === null ? "sal_precursor" : origem)} é dissolvido${destino ? ` no ${nome(destino)}` : " no líquido"}${r.volume ? ` (${r.volume})` : ""}.`;
+    case "agitar":
+      return `A mistura é mantida sob agitação${r.tempo ? ` por ${r.tempo}` : ""} para ficar homogênea.`;
+    case "acidificar":
+      return "O ácido é adicionado gota a gota, enquanto a mistura continua agitando.";
+    case "precipitar":
+      return "A solução fica turva: partículas sólidas se formam e ficam em suspensão (ilustração; tamanho e quantidade não são previstos).";
+    case "lavar":
+      return `O sólido é lavado${origem === "solvente" || destino === "solvente" ? " com o solvente" : ""} e o líquido de cima é descartado${r.vezes ? ` (${r.vezes})` : ""}.`;
+    case "ressuspender":
+      return "O sólido do fundo é disperso de novo no líquido.";
+    case "secar":
+      return `O sólido é seco${r.temperatura ? ` a ${r.temperatura}` : ""}${r.tempo ? ` por ${r.tempo}` : ""}, restando o pó.`;
+    case "filtrar":
+      return "O líquido passa pelo filtro e o material retido fica para trás.";
+    case "medir_ph":
+      return "O pH da solução é medido.";
     default:
       return "Os materiais citados nesta etapa, com o texto original.";
   }
@@ -472,6 +563,17 @@ export type Possibilidade = { texto: string; base: "referencia" | "geral"; refs:
 
 /** Desfechos possíveis de cada ação. Com fonte quando há; “geral” = orientação sem fonte cadastrada. */
 export const POSSIBILIDADES: Partial<Record<Acao, Possibilidade[]>> = {
+  acidificar: [
+    { texto: "A turvação pode aparecer antes ou depois do previsto: a velocidade do gotejamento e a agitação mudam o momento em que o sólido começa a se formar.", base: "geral", refs: [] },
+    { texto: "Sem controle sem extrato, não dá para saber se o sólido veio da reação química ou da participação do material biológico.", base: "geral", refs: [] },
+  ],
+  precipitar: [
+    { texto: "Pode não haver turvação visível: o sólido pode ser pouco, muito fino ou permanecer disperso.", base: "geral", refs: [] },
+    { texto: "O tamanho e a forma das partículas não são determinados pela observação a olho nu; exigem caracterização (por exemplo, por microscopia ou espalhamento de luz).", base: "geral", refs: [] },
+  ],
+  lavar: [{ texto: "Parte do material pode se perder a cada lavagem, junto com o líquido descartado.", base: "geral", refs: [] }],
+  secar: [{ texto: "A secagem pode deixar o material agregado; isso muda o que a caracterização vai mostrar.", base: "geral", refs: [] }],
+  dissolver: [{ texto: "O sólido pode não dissolver por completo; o que sobra em suspensão não é a mesma coisa que o dissolvido.", base: "geral", refs: [] }],
   amplificar: [
     { texto: "Produto do tamanho esperado.", base: "referencia", refs: [LEE("Discussão")] },
     { texto: "Produtos inespecíficos (bandas extras, escada ou arraste).", base: "referencia", refs: [L("§7 Troubleshooting")] },
@@ -550,6 +652,16 @@ export const TERMOS_PUBMED: Record<Acao, string> = {
   editar_crispr: "CRISPR Cas9 genome editing guide RNA",
   detectar: "quantitative PCR detection",
   quantificar: "nucleic acid quantification spectrophotometry",
+  pesar: "nanoparticle synthesis precursor salt weighing",
+  dissolver: "precursor salt dissolution aqueous extract",
+  agitar: "magnetic stirring nanoparticle synthesis",
+  acidificar: "acidification dropwise acid nanoparticle precipitation",
+  precipitar: "nanoparticle precipitation nucleation turbidity",
+  lavar: "nanoparticle washing centrifugation pellet",
+  ressuspender: "nanoparticle resuspension pellet",
+  secar: "nanoparticle drying vacuum oven",
+  filtrar: "filtration plant extract cell free filtrate",
+  medir_ph: "pH measurement synthesis medium",
   generica: "molecular biology laboratory protocol",
 };
 

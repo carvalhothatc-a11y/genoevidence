@@ -28,13 +28,35 @@ function etapasDoTexto(texto: string, via: "texto" | "voz"): EtapaBruta[] {
   return interpretarRoteiro(texto).map((passo) => ({ passo, origem: { tipo: via, trecho: passo.texto.slice(0, 400) } }));
 }
 
+/** Limite de etapas vindas de um documento. Acima disso, avisamos em vez de cortar em silêncio. */
+export const MAX_ETAPAS_RELATORIO = 24;
+
+/**
+ * Documento que parece um levantamento/revisão (muitas citações e “não informado”) e não um
+ * procedimento. Nesse caso as frases descrevem o que OUTROS fizeram, não o que será feito.
+ */
+export function pareceLevantamento(texto: string): boolean {
+  const t = texto.slice(0, 20_000);
+  const citacoes = (t.match(/\(\s?[A-ZÀ-Ú][\p{L}'’-]+(?:\s+et al\.?|\s+(?:e|&|and)\s+[\p{L}'’-]+)?,?\s*(?:19|20)\d{2}\s?\)/gu) ?? []).length;
+  const naoInformado = (t.match(/nao informad\w*|não informad\w*/gi) ?? []).length;
+  const imperativos = (t.match(/\b(?:adicione|pese|dissolva|transfira|centrifugue|incube|misture|prepare|lave|seque|repita|colete|meça|meca|filtre|complete|descarte|ajuste)\b/gi) ?? []).length;
+  return citacoes + naoInformado >= 6 && citacoes + naoInformado > imperativos;
+}
+
 function etapasDoRelatorio(r: MaterialRelatorio): EtapaBruta[] {
   if (r.estado !== "extraido" || !r.texto.trim()) return [];
   // só trechos com ação reconhecida (relatórios trazem muito texto que não é etapa)
-  return interpretarRoteiro(r.texto.slice(0, 20_000))
-    .filter((p) => p.acao !== "generica")
-    .slice(0, 16)
+  const todas = interpretarRoteiro(r.texto.slice(0, 20_000)).filter((p) => p.acao !== "generica");
+  return todas
+    .slice(0, MAX_ETAPAS_RELATORIO)
     .map((passo) => ({ passo, origem: { tipo: "relatorio", materialId: r.id, trecho: passo.texto.slice(0, 400) } }));
+}
+
+/** Quantas etapas reconhecidas ficaram de fora pelo limite (0 quando coube tudo). */
+export function etapasCortadas(r: MaterialRelatorio): number {
+  if (r.estado !== "extraido" || !r.texto.trim()) return 0;
+  const n = interpretarRoteiro(r.texto.slice(0, 20_000)).filter((p) => p.acao !== "generica").length;
+  return Math.max(0, n - MAX_ETAPAS_RELATORIO);
 }
 
 function rotuloPara(objeto: ObjetoId, r: PassoVisual["rotulos"]): string {
@@ -329,6 +351,29 @@ export function interpretarExperimento(entrada: EntradaExperimento, opts: { id: 
   // 7. pendências: só viram pergunta as que mudam a representação
   const ausentes: Pendencia[] = [];
   let nn = 0;
+
+  // avisos sobre os próprios documentos enviados
+  for (const m of entrada.materiais) {
+    if (m.tipo !== "relatorio" || m.estado !== "extraido") continue;
+    const cortadas = etapasCortadas(m);
+    if (cortadas > 0)
+      ausentes.push({
+        id: `n${++nn}`,
+        texto: `“${m.nome}”: o documento traz mais etapas do que a cena mostra. ${cortadas} etapa(s) reconhecida(s) ficaram de fora do limite de ${MAX_ETAPAS_RELATORIO}. Divida o documento ou descreva o trecho que interessa.`,
+        impacto: "representacao",
+        acaoId: null,
+        base: "geral",
+      });
+    if (pareceLevantamento(m.texto))
+      ausentes.push({
+        id: `n${++nn}`,
+        texto: `“${m.nome}” parece um levantamento de artigos, não um procedimento: as frases descrevem o que outros autores fizeram. A cena foi montada a partir delas mesmo assim — confira etapa por etapa, ou envie o protocolo que você vai executar.`,
+        impacto: "representacao",
+        acaoId: null,
+        base: "geral",
+      });
+  }
+
   for (const [i, e] of brutas.slice(0, 40).entries()) {
     const acaoId = `a${i + 1}`;
     for (const at of e.passo.atencao) {

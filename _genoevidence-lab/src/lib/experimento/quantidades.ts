@@ -45,6 +45,7 @@ const UNIDADES: Unidade[] = [
   { re: /^(?:ng\b|nanogramas?)/, grandeza: "massa", unidade: "ng", canonica: "ng", fator: 1 },
   { re: /^(?:[uµμ]g\b|microgramas?)/, grandeza: "massa", unidade: "µg", canonica: "ng", fator: 1e3 },
   { re: /^(?:mg\b|miligramas?)/, grandeza: "massa", unidade: "mg", canonica: "ng", fator: 1e6 },
+  { re: /^(?:gramas?\b|g\b)(?!\s?\/)/, grandeza: "massa", unidade: "g", canonica: "ng", fator: 1e9 },
   { re: /^(?:kb\b|kpb\b|kbp\b)/, grandeza: "tamanho", unidade: "kb", canonica: "pb", fator: 1000 },
   { re: /^(?:pb\b|bp\b|pares de bases?)/, grandeza: "tamanho", unidade: "pb", canonica: "pb", fator: 1 },
   { re: /^(?:u\b|unidades?\b)/, grandeza: "unidades", unidade: "U", canonica: "U", fator: 1 },
@@ -73,6 +74,17 @@ const CONTEXTOS: { re: RegExp; chave: string; rotulo: string; grandezas?: Grande
   { re: /amplicon\w*|produto|fragmento|inserto/, chave: "fragmento", rotulo: "fragmento", grandezas: ["tamanho"] },
   { re: /reacao|volume final|volume total|mix/, chave: "reacao", rotulo: "reação", grandezas: ["volume"] },
   { re: /antibiotico|ampicilina|canamicina|cloranfenicol|tetraciclina/, chave: "antibiotico", rotulo: "antibiótico", grandezas: ["concentracao"] },
+  { re: /tiossulfato\w*|na2s2o3/, chave: "tiossulfato", rotulo: "tiossulfato", grandezas: ["massa", "concentracao", "volume"] },
+  { re: /\bcacl2\b|cloreto de calcio/, chave: "cacl2", rotulo: "CaCl₂", grandezas: ["massa", "concentracao", "volume"] },
+  { re: /\(nh4\)2so4|sulfato de amonio/, chave: "sulfato_amonio", rotulo: "(NH₄)₂SO₄", grandezas: ["massa", "concentracao", "volume"] },
+  { re: /\bcaso4\b|sulfato de calcio|gipsita/, chave: "caso4", rotulo: "CaSO₄", grandezas: ["massa", "concentracao", "volume"] },
+  { re: /\bhcl\b|acido clorid\w*/, chave: "hcl", rotulo: "HCl", grandezas: ["porcentagem", "volume", "concentracao"] },
+  { re: /acido citrico/, chave: "acido_citrico", rotulo: "ácido cítrico", grandezas: ["porcentagem", "volume", "concentracao"] },
+  { re: /\betanol\b|\balcool\b/, chave: "etanol", rotulo: "etanol", grandezas: ["volume", "porcentagem"] },
+  { re: /secagem|estufa\w*|\bseque\b|\bsecar\b/, chave: "secagem", rotulo: "secagem", grandezas: ["temperatura", "tempo"] },
+  { re: /agitacao|agit(?:e|ar|ando)\b/, chave: "agitacao", rotulo: "agitação", grandezas: ["tempo", "temperatura"] },
+  { re: /lavagem|lav(?:e|ar|ando)\b/, chave: "lavagem", rotulo: "lavagem", grandezas: ["volume", "rotacao", "tempo"] },
+  { re: /nanoparticula\w*|\bsnps?\b/, chave: "nanoparticula", rotulo: "nanopartículas", grandezas: ["tamanho", "concentracao"] },
 ];
 
 const NOME_GRANDEZA: Record<Grandeza, string> = {

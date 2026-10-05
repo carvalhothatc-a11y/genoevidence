@@ -362,7 +362,7 @@ export default async function ProjectPage(props: PageProps<"/projetos/[id]">) {
             </div>
           )}
           <details className="mt-4 rounded-lg border border-line p-3">
-            <summary className="cursor-pointer text-sm font-medium">Enviar imagem de resultado (ex.: foto do gel)</summary>
+            <summary className="cursor-pointer text-sm font-medium">Enviar um arquivo para o projeto (imagem, documento, planilha ou PDF)</summary>
             <div className="mt-3">
               <FileUploadForm projectId={project.id} />
             </div>
