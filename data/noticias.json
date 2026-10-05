@@ -1,6 +1,55 @@
 {
- "atualizado_em": "2026-10-05T07:12:36.987129+00:00",
+ "atualizado_em": "2026-10-05T16:11:53.790254+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "Uma onda oceânica alimentada pelo El Niño pode aumentar os riscos de inundação na Califórnia, à medida que o debate sobre vacinas na Flórida desperta preocupações com surtos",
+   "resumo": "Uma onda oceânica causada pelo El Niño ameaça inundações costeiras, pesquisadores alertam que um plano para afrouxar os requisitos de vacina aumentará os riscos de sarampo na Flórida e especialistas desmascaram um remédio viral para o resfriado do TikTok",
+   "url": "https://www.scientificamerican.com/podcast/episode/an-el-nino-fueled-ocean-wave-could-raise-california-flood-risks-as-floridas-vaccine-debate-sparks-outbreak-concerns/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-05T10:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 12,
+   "imagem": "https://static.scientificamerican.com/dam/asset/b8aef920-41ee-444f-9a04-4058a5713c07/2610_SQ_MON_OCT_05.png?m=1790959112.336&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "An El Niño–fueled ocean wave could raise California flood risks as Florida’s vaccine debate sparks outbreak concerns",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Una ola oceánica alimentada por El Niño podría aumentar los riesgos de inundaciones en California, ya que el debate sobre las vacunas en Florida genera preocupación por el brote",
+     "resumo": "Una oleada oceánica provocada por El Niño amenaza las inundaciones costeras, los investigadores advierten que un plan para reducir los requisitos de vacunas aumentará los riesgos de sarampión en Florida, y los expertos desacreditan un remedio viral para el resfriado TikTok"
+    }
+   },
+   "resumo_original": "An El Niño–driven ocean surge threatens coastal flooding, researchers warn that a plan to loosen vaccine requirements will increase measles risks in Florida, and experts debunk a viral TikTok cold remedy"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Consumir bebidas muito quentes e com frequência aumenta risco de câncer de esôfago",
+   "resumo": "Estudo com quase 1 milhão de pessoas aponta risco três vezes maior de carcinoma de células escamosas entre quem consome bebidas em temperaturas mais elevadas",
+   "url": "https://jornal.usp.br/radio-usp/consumir-bebidas-muito-quentes-e-com-frequencia-aumenta-risco-de-cancer-de-esofago/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-05T14:20:01+00:00",
+   "tema": "Câncer",
+   "relevancia": 11,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260925_cafe.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Drinking beverages that are too hot and often increase the risk of esophageal cancer"
+    },
+    "es": {
+     "titulo": "Beber bebidas demasiado calientes y que a menudo aumentan el riesgo de cáncer de esófago"
+    }
+   }
+  },
   {
    "tipo": "noticia",
    "titulo": "Compostos associados ao câncer são detectados em resíduos de espumas, plásticos e artigos infantis",
@@ -24,6 +73,30 @@
     "es": {
      "titulo": "Los compuestos asociados al cáncer se detectan en residuos de espuma, plásticos y artículos infantiles",
      "resumo": "El informe más consultado entre el 25/09 y el 01/10 detalla la investigación que se encontró en los sitios de eliminación de materiales que contienen sustancias tóxicas utilizadas anteriormente como plastificantes y retardantes de llama. Sin una revisión rigurosa, el reciclaje puede..."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Pesquisa identifica estratégia molecular contra a leishmaniose cutânea",
+   "resumo": "Estudo descreve os primeiros inibidores de uma enzima essencial do parasita Leishmania braziliensis e abre caminho para tratamentos mais criteriosos e duradouros contra a doença",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/pesquisa-identifica-estrategia-molecular-contra-a-leishmaniose-cutanea/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-05T14:34:16+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260915_leishmaniose.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Research identifies molecular strategy against cutaneous leishmaniasis"
+    },
+    "es": {
+     "titulo": "La investigación identifica la estrategia molecular contra la leishmaniasis cutánea"
     }
    }
   },
@@ -55,261 +128,260 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Arquitetura molecular define resistência do tomateiro contra sua principal praga",
-   "resumo": "Estudo revela que a substituição de apenas quatro aminoácidos altera a forma tridimensional de uma molécula de defesa da planta. Achado abre caminho para criar cultivares comerciais mais resistentes",
-   "url": "https://agencia.fapesp.br/arquitetura-molecular-define-resistencia-do-tomateiro-contra-sua-principal-praga/59328",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-05T07:12:36.987129+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59328.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Molecular architecture defines tomato resistance against its main pest",
-     "resumo": "A study reveals that the substitution of only four amino acids alters the three-dimensional shape of a plant defense molecule. Findings pave the way to create more resilient commercial cultivars"
-    },
-    "es": {
-     "titulo": "La arquitectura molecular define la resistencia del tomate frente a su principal plaga",
-     "resumo": "Un estudio revela que la sustitución de solo cuatro aminoácidos altera la forma tridimensional de una molécula de defensa de la planta. Los hallazgos allanan el camino para crear cultivares comerciales más resistentes"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Como a teoria do apego pode nos ajudar a entender os relacionamentos da IA",
-   "resumo": "Apego é o termo que os psicólogos usam para os relacionamentos mais significativos que mantêm a vida das pessoas unida",
-   "url": "https://www.scientificamerican.com/article/how-attachment-theory-can-help-us-understand-ai-relationships/",
+   "titulo": "2026 Prêmio Nobel de Fisiologia ou Medicina concedido a Karl Deisseroth, Georg Nagel e Peter Hegemann pelo trabalho em optogenética",
+   "resumo": "Karl Deisseroth, Georg Nagel e Peter Hegemann desenvolveram a optogenética, que usa luz e genética para controlar células individuais",
+   "url": "https://www.scientificamerican.com/article/2026-nobel-prize-in-physiology-or-medicine-awarded-to-karl-deisseroth-george-nagel-and-peter-hegemann-for-work-on-optogenetics/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-04T10:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/6dca58bf-c5ee-4b1d-b994-6064159d0b48/pp-math-AI-more-human.jpg?m=1785858312.019&w=1200",
+   "data": "2026-10-05T09:30:00+00:00",
+   "tema": "Genética",
+   "relevancia": 9,
+   "imagem": "https://static.scientificamerican.com/dam/asset/8ff38da9-0730-4a28-9181-8cf46bad88ef/nobel-medicine-2026.jpg?m=1791209515.93&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "How attachment theory can help us understand AI relationships",
+   "titulo_original": "2026 Nobel Prize in Physiology or Medicine awarded to Karl Deisseroth, Georg Nagel and Peter Hegemann for work on optogenetics",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Cómo la teoría del apego puede ayudarnos a comprender las relaciones de IA",
-     "resumo": "El apego es el término que usan los psicólogos para las relaciones más importantes que mantienen unida la vida de las personas"
+     "titulo": "2026 Premio Nobel de Fisiología o Medicina otorgado a Karl Deisseroth, Georg Nagel y Peter Hegemann por su trabajo en optogenética",
+     "resumo": "Karl Deisseroth, Georg Nagel y Peter Hegemann desarrollaron la optogenética, que utiliza la luz y la genética para controlar las células individuales"
     }
    },
-   "resumo_original": "Attachment is the term psychologists use for the most significant relationships that hold people’s lives together"
+   "resumo_original": "Karl Deisseroth, Georg Nagel and Peter Hegemann developed optogenetics, which uses light and genetics to control individual cells"
   },
   {
    "tipo": "noticia",
-   "titulo": "SUS passa a oferecer três novos medicamentos de alta tecnologia para o tratamento de câncer pulmonar",
-   "resumo": "Brigatinibe, gefitinibe e durvalumabe são novos fármacos indicados para diferentes etapas do tratamento da doença",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/sus-passa-a-oferecer-tres-novos-medicamentos-de-alta-tecnologia-para-o-tratamento-de-cancer-pulmonar/",
+   "titulo": "Pesquisadores precisam de voluntários saudáveis para pesquisa sobre anemia aplástica",
+   "resumo": "Pessoas de 20 a 60 anos podem participar do estudo, que prevê coleta de medula óssea para investigar alterações associadas à doença",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/pesquisadores-precisam-de-voluntarios-saudaveis-para-pesquisa-sobre-anemia-aplastica/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-02T12:30:03+00:00",
-   "tema": "Câncer",
-   "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261001_remedios.jpg",
+   "data": "2026-10-05T14:31:47+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2022/01/20220118_anemia.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Sus now offers three new high-tech drugs for the treatment of lung cancer",
-     "resumo": "Brigatinib, gefitinib and durvalumab are new drugs indicated for different stages of disease treatment"
+     "titulo": "Researchers need healthy volunteers for aplastic anemia research"
     },
     "es": {
-     "titulo": "Sus ahora ofrece tres nuevos medicamentos de alta tecnología para el tratamiento del cáncer de pulmón",
-     "resumo": "Brigatinib, gefitinib y durvalumab son nuevos fármacos indicados para diferentes etapas del tratamiento de la enfermedad"
+     "titulo": "Los investigadores necesitan voluntarios sanos para la investigación de la anemia aplásica"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Suas bactérias intestinais podem revelar a rapidez com que seu cérebro está envelhecendo",
-   "resumo": "Um estudo da UCLA liga o envelhecimento cerebral mais rápido a bactérias intestinais específicas e subprodutos químicos, com cérebros de aparência mais velha também associados a memória, foco e humor mais pobres. Os resultados sugerem que sinais biológicos de envelhecimento cerebral podem aparecer...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261001214106.htm",
-   "fonte": "ScienceDaily · Saúde",
+   "titulo": "CeMEAI encerra trajetória com legado de aplicação da matemática a problemas concretos",
+   "resumo": "Parte da história de 13 anos do Centro de Pesquisa, Inovação e Difusão apoiado pela FAPESP e sediado na USP de São Carlos é contada em depoimentos de pesquisadores e gestores disponíveis no YouTube",
+   "url": "https://agencia.fapesp.br/cemeai-encerra-trajetoria-com-legado-de-aplicacao-da-matematica-a-problemas-concretos/59329",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-05T16:11:53.790254+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59329.jpg",
+   "foco": {
+    "x": 100,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "CeMEAI ends trajectory with legacy of application of mathematics to concrete problems"
+    },
+    "es": {
+     "titulo": "CeMEAI finaliza trayectoria con legado de aplicación de matemáticas a problemas concretos"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Podemos aproveitar o sistema de limpeza profunda do cérebro para prevenir a doença de Alzheimer?",
+   "resumo": "O sistema glifático é a rede recém-descoberta do cérebro para eliminar toxinas. Agora, estamos descobrindo maneiras surpreendentes de impulsioná-lo para proteger a saúde do cérebro",
+   "url": "https://www.newscientist.com/article/2590514-can-we-harness-the-brains-deep-cleaning-system-to-prevent-alzheimers/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-04T11:28:03+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/gut-microbiome-interaction-within-brain.webp",
+   "data": "2026-10-05T15:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 7,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315004969.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Your gut bacteria may reveal how fast your brain is aging",
+   "titulo_original": "Can we harness the brain’s deep-cleaning system to prevent Alzheimer’s?",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Sus bacterias intestinales pueden revelar qué tan rápido está envejeciendo su cerebro",
-     "resumo": "Un estudio de la UCLA vincula el envejecimiento cerebral más rápido con bacterias intestinales específicas y subproductos químicos, y los cerebros de aspecto más antiguo también se asocian con una peor memoria, concentración y estado de ánimo. Los hallazgos sugieren que pueden aparecer signos biológicos de envejecimiento cerebral..."
+     "titulo": "¿Podemos aprovechar el sistema de limpieza profunda del cerebro para prevenir el Alzheimer?",
+     "resumo": "El sistema glinfático es la red recientemente descubierta del cerebro para eliminar las toxinas. Ahora, estamos descubriendo formas sorprendentes de potenciarlo para proteger la salud cerebral"
     }
    },
-   "resumo_original": "A UCLA study links faster brain aging to specific gut bacteria and chemical byproducts, with older-looking brains also associated with poorer memory, focus, and mood. The findings suggest that biological signs of brain aging may appear…"
+   "resumo_original": "The glymphatic system is the brain's recently discovered network for flushing out toxins. Now, we're uncovering surprising ways to boost it to protect brain health"
   },
   {
    "tipo": "noticia",
-   "titulo": "Livro propõe metodologia integrada para estudos de público em museus",
-   "resumo": "Obra de pesquisadores do Museu de Arqueologia e Etnologia integra monitoramento espacial e perfis de público, com download gratuito pelo Portal de Livros Abertos da USP",
-   "url": "https://jornal.usp.br/universidade/livro-propoe-metodologia-integrada-para-estudos-de-publico-em-museus/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-02T16:46:56+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/09/20250918_00_museu_do_ipiranga_visitas_monitoradas.jpg",
-   "foco": {
-    "x": 0,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Book proposes integrated methodology for public studies in museums",
-     "resumo": "The work of researchers from the Museum of Archaeology and Ethnology integrates spatial monitoring and public profiles, with free download through USP's Open Book Portal"
-    },
-    "es": {
-     "titulo": "Libro propone metodología integrada para estudios públicos en museos",
-     "resumo": "El trabajo de los investigadores del Museo de Arqueología y Etnología integra la monitorización espacial y los perfiles públicos, con descarga gratuita a través del Portal del Libro Abierto de la USP"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Ameaça de um ‘super El Niño’ desafia cidades brasileiras a se preparar para eventos extremos",
-   "resumo": "Chegada do fenômeno e sua intensificação pelo aquecimento global poderão produzir secas e chuvas intensas em diversas regiões do país",
-   "url": "https://revistapesquisa.fapesp.br/ameaca-de-um-super-el-nino-desafia-cidades-brasileiras-a-se-preparar-para-eventos-extremos/?utm_source=rss&utm_medium=rss&utm_campaign=ameaca-de-um-super-el-nino-desafia-cidades-brasileiras-a-se-preparar-para-eventos-extremos",
+   "titulo": "Expedição revela 31 espécies potencialmente novas no Atlântico Sul",
+   "resumo": "Missão Designing the Future 3 mergulhou fundo ao largo do litoral nordestino em busca de formas de vida pouco — ou nada — conhecidas",
+   "url": "https://revistapesquisa.fapesp.br/expedicao-revela-31-especies-potencialmente-novas-no-atlantico-sul/?utm_source=rss&utm_medium=rss&utm_campaign=expedicao-revela-31-especies-potencialmente-novas-no-atlantico-sul",
    "fonte": "Revista Pesquisa FAPESP",
    "idioma": "pt",
-   "data": "2026-09-21T11:57:58+00:00",
+   "data": "2026-10-05T12:07:11+00:00",
    "tema": "Meio ambiente",
-   "relevancia": 5,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/652bfbb214633821e2d2bf8740b11e87cd4477e8_1200-630.png",
+   "relevancia": 7,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/8647e91e314e37be3d0005c87ffe16cfd08156af_1200-630.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Threat of a ‘super El Niño’ challenges Brazilian cities to prepare for extreme events",
-     "resumo": "The arrival of the phenomenon and its intensification by global warming could produce droughts and intense rains in several regions of the country"
+     "titulo": "Expedition reveals 31 potentially new species in the South Atlantic"
     },
     "es": {
-     "titulo": "La amenaza de un ‘super El Niño’ desafía a las ciudades brasileñas a prepararse para eventos extremos",
-     "resumo": "La llegada del fenómeno y su intensificación por el calentamiento global podría producir sequías e intensas lluvias en varias regiones del país"
+     "titulo": "Expedición revela 31 especies potencialmente nuevas en el Atlántico Sur"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Bebidas dietéticas funcionam tão bem quanto água para perda de peso, segundo um grande estudo",
-   "resumo": "Um ensaio clínico randomizado de dois anos envolvendo 493 adultos com sobrepeso ou obesidade descobriu que os refrigerantes dietéticos eram essencialmente tão eficazes quanto a água para perda e manutenção de peso a longo prazo. Os participantes bebem bebidas...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261002080017.htm",
-   "fonte": "ScienceDaily",
+   "titulo": "Parente extinto do iaque descoberto a partir de DNA na caverna de Denisova",
+   "resumo": "A análise genética de centenas de minúsculos fragmentos ósseos encontrados na mesma caverna que produziu os primeiros restos fósseis dos Denisovanos revelou que a região já foi também o lar de uma espécie até então desconhecida de iaque",
+   "url": "https://www.newscientist.com/article/2591962-2591962/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-04T02:10:59+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/woman-smiling-holding-diet-cola.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Diet drinks work as well as water for weight loss, major trial finds",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las bebidas dietéticas funcionan tan bien como el agua para perder peso, según un importante ensayo",
-     "resumo": "Un ensayo clínico aleatorizado de dos años en el que participaron 493 adultos con sobrepeso u obesidad descubrió que los refrescos dietéticos eran esencialmente tan efectivos como el agua para la pérdida de peso a largo plazo y el mantenimiento del peso. Participantes bebiendo bebidas..."
-    }
-   },
-   "resumo_original": "A two-year randomized clinical trial involving 493 adults with overweight or obesity found that diet soft drinks were essentially as effective as water for long-term weight loss and weight maintenance. Participants drinking beverages…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Protocolo da USP orienta análise de variantes genéticas para diagnóstico de doenças raras",
-   "resumo": "Material de acesso aberto pretende auxiliar profissionais na interpretação de variantes genéticas diante da ampliação do sequenciamento pelo SUS",
-   "url": "https://jornal.usp.br/radio-usp/protocolo-da-usp-orienta-analise-de-variantes-geneticas-para-diagnostico-de-doencas-raras/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-02T18:59:23+00:00",
+   "data": "2026-10-05T15:00:00+00:00",
    "tema": "Genética",
-   "relevancia": 4,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/02/20200324_genes1.jpg",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315388092.jpg",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 0
    },
-   "i18n": {
-    "en": {
-     "titulo": "USP protocol guides analysis of genetic variants for diagnosis of rare diseases",
-     "resumo": "Open access material intends to assist professionals in the interpretation of genetic variants in view of the expansion of sequencing by sus"
-    },
-    "es": {
-     "titulo": "El protocolo de la USP guía el análisis de variantes genéticas para el diagnóstico de enfermedades raras",
-     "resumo": "El material de acceso abierto tiene la intención de ayudar a los profesionales en la interpretación de variantes genéticas en vista de la expansión de la secuenciación por sus"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A “cola” que mantém suas células unidas tem um surpreendente segundo emprego",
-   "resumo": "Os cientistas descobriram que a E-caderina, uma proteína mais conhecida como a \"cola\" que mantém células e tecidos juntos, tem um segundo trabalho surpreendente: ajudar as células epiteliais a engolir células mortas próximas. Usando peixes-zebra vivos e embriões de ratos...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261002080023.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-05T03:12:55+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/living-zebrafish-embryo-with-actin.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "The “glue” holding your cells together has a surprising second job",
+   "titulo_original": "Extinct yak relative discovered from DNA in Denisova cave",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El \"pegamento\" que mantiene tus células juntas tiene un segundo trabajo sorprendente",
-     "resumo": "Los científicos han descubierto que la E-cadherina, una proteína mejor conocida como el \"pegamento\" que mantiene unidas las células y los tejidos, tiene un segundo trabajo sorprendente: ayudar a las células epiteliales a tragar las células muertas cercanas. Usando embriones vivos de pez cebra y ratón..."
+     "titulo": "Pariente extinto de yak descubierto a partir de ADN en la cueva de Denisova",
+     "resumo": "El análisis genético de cientos de pequeños fragmentos óseos encontrados en la misma cueva que arrojó los primeros restos fósiles de los denisovanos ha revelado que la región también fue el hogar de una especie de yak hasta ahora desconocida"
     }
    },
-   "resumo_original": "Scientists have discovered that E-cadherin, a protein best known as the “glue” holding cells and tissues together, has a surprising second job: helping epithelial cells swallow nearby dead cells. Using live zebrafish and mouse embryos…"
+   "resumo_original": "Genetic analysis of hundreds of tiny bone fragments found in the same cave that yielded the first fossil remains of the Denisovans has revealed that the region was once also home to a previously unknown species of yak"
   },
   {
    "tipo": "noticia",
-   "titulo": "Aliviar a constipação: uma caminhada de 20 minutos pode fazer com que seu intestino se mova quase imediatamente",
-   "resumo": "Os pesquisadores descobriram que apenas 20 minutos de caminhada confortável podem estimular rapidamente o intestino. Dentro de um a dois minutos após o exercício, os sons intestinais se tornaram mais fortes, mais frequentes e duraram mais tempo, sugerindo aumento do intestino...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261001214117.htm",
+   "titulo": "Cientistas revelam o que sete dias de jejum fazem ao corpo humano",
+   "resumo": "Os cientistas descobriram que o jejum prolongado desencadeia grandes mudanças em todo o corpo, mas muitos dos efeitos mais interessantes só apareceram após cerca de três dias sem comida. Os resultados sugerem que o jejum pode influenciar a saúde de maneiras que...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261005012444.htm",
    "fonte": "ScienceDaily · Saúde",
    "idioma": "en",
-   "data": "2026-10-05T01:58:03+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/man-with-athletic-shoes-walking-up-stairs.webp",
+   "data": "2026-10-05T12:26:03+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/body-rejuvenation-longevity-strength-boost-biochemistry-technology.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Easing constipation: A 20-minute walk can get your gut moving almost immediately",
+   "titulo_original": "Scientists reveal what seven days of fasting does to the human body",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Aliviar el estreñimiento: una caminata de 20 minutos puede hacer que tu intestino se mueva casi de inmediato",
-     "resumo": "Los investigadores descubrieron que solo 20 minutos de caminata cómoda pueden estimular rápidamente el intestino. Dentro de uno o dos minutos después del ejercicio, los ruidos intestinales se hicieron más fuertes, más frecuentes y duraron más tiempo, lo que sugiere un aumento intestinal..."
+     "titulo": "Los científicos revelan lo que siete días de ayuno hacen al cuerpo humano",
+     "resumo": "Los científicos descubrieron que el ayuno prolongado desencadena cambios importantes en todo el cuerpo, pero muchos de los efectos más interesantes solo aparecieron después de unos tres días sin comer. Los resultados sugieren que el ayuno puede influir en la salud de maneras que..."
     }
    },
-   "resumo_original": "Researchers found that just 20 minutes of comfortable walking can rapidly stimulate the gut. Within one to two minutes after exercise, bowel sounds became stronger, more frequent, and lasted longer, suggesting increased intestinal…"
+   "resumo_original": "Scientists found that prolonged fasting triggers major changes throughout the body, but many of the most interesting effects only appeared after about three days without food. The results suggest fasting may influence health in ways that…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A estimulação do nervo vago pode ajudar a manter novas habilidades",
+   "resumo": "Estimular o nervo vago após a prática ajudou os camundongos a desenvolver uma aprendizagem motora mais forte a longo prazo, revelando uma janela potencialmente importante quando o cérebro ainda está travando uma nova habilidade. O efeito estava ligado a mudanças rítmicas no cérebro...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261002080034.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-05T12:13:07+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/brain-vagus-nerve-stimulation.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Vagus Nerve Stimulation Could Help New Skills Stick",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La estimulación del nervio vago podría ayudar a que las nuevas habilidades se mantengan",
+     "resumo": "Estimular el nervio vago después de la práctica ayudó a los ratones a desarrollar un aprendizaje motor más fuerte a largo plazo, revelando una ventana potencialmente importante cuando el cerebro todavía está bloqueando una nueva habilidad. El efecto se relacionó con cambios rítmicos en el cerebro..."
+    }
+   },
+   "resumo_original": "Stimulating the vagus nerve after practice helped mice develop stronger long-term motor learning, revealing a potentially important window when the brain is still locking in a new skill. The effect was linked to rhythmic changes in brain…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Não perca: veja Saturno brilhar e os destroços do cometa Halley cruzarem o céu",
+   "resumo": "Os observadores do céu de outubro podem ver Saturno em oposição, pegar meteoros do Cometa Halley durante o pico das Orionidas e observar a Lua passar pelo famoso aglomerado estelar das Plêiades. O luar pode obscurecer algumas Orionidas, mas a melhor visualização deve...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261005071523.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-05T11:59:17+00:00",
+   "tema": "Espaço",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/perseids-meteor-shower-and-milky-way.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Don't miss: Watch Saturn shine and Halley’s Comet debris streak across the sky",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "No te pierdas: observa el brillo de Saturno y los escombros del cometa Halley en el cielo"
+    }
+   },
+   "resumo_original": "October skywatchers can see Saturn at opposition, catch meteors from Halley’s Comet during the Orionid peak, and watch the Moon sweep past the famous Pleiades star cluster. Moonlight may obscure some Orionids, but the best viewing should…"
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Cancer-associated fibroblast heterogeneity across solid and haematological malignancies: Lessons from colorectal cancer and multiple myeloma.",
+   "autores": "Mo H, Han H, O'Dwyer M, Reidy E, Ryan AE.",
+   "revista": "J Physiol",
+   "data": "2026-10-05T00:00:00+00:00",
+   "doi": "10.1113/jp291166",
+   "url": "https://doi.org/10.1113/jp291166",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "KMT2A amplification marks TP53-altered, complex-karyotype malignant clones in haematological malignancies.",
+   "autores": "Liu J, Xiao Y, Wu X, Liu S, Lu L, Lai X, Zou J, Qin S, Mou Y, Gong J.",
+   "revista": "Br J Haematol",
+   "data": "2026-10-05T00:00:00+00:00",
+   "doi": "10.1111/bjh.70844",
+   "url": "https://doi.org/10.1111/bjh.70844",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Envonalkib Versus Crizotinib in Treatment-Naive ALK -Positive Non-Small Cell Lung Cancer: Final Efficacy and Biomarker Analyses of the Randomized Phase III Study.",
+   "autores": "Huang J, Wang Y, Sun H, Min J, Yang N, Yu Q, Cheng Y, Zhao Y, Li M, Chen H, Ren S, Zhou J, Zhuang W, Qin X, Cao L, Yu…",
+   "revista": "MedComm (2020)",
+   "data": "2026-10-04T00:00:00+00:00",
+   "doi": "10.1002/mco2.70998",
+   "url": "https://doi.org/10.1002/mco2.70998",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
   {
    "tipo": "artigo",
    "titulo": "Os pós-bióticos aumentam a competência imunológica em peixes-pedra-pretos (Sebastes schlegelii): ligando imunidade inata, apoptose e resistência à infecção bacteriana.",
@@ -408,7 +480,7 @@
    "data": "2026-10-02T00:00:00+00:00",
    "doi": "10.1155/ijog/4944325",
    "url": "https://doi.org/10.1155/ijog/4944325",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Ciência",
    "titulo_original": "Identification of a Novel Subtype-Derived Prognostic Signature Based on Nucleotide Metabolism-Related Molecular Classification for Predicting Lung Adenocarcinoma Prognosis.",
    "traduzido": true,
@@ -426,7 +498,7 @@
    "data": "2026-10-02T00:00:00+00:00",
    "doi": "10.1155/criu/5538985",
    "url": "https://doi.org/10.1155/criu/5538985",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "Genetic Heterogeneity in Renal Cell Carcinoma: A Case of Concurrent Clear Cell and Papillary Renal Carcinomas.",
    "traduzido": true,
@@ -489,6 +561,28 @@
      "titulo": "Conocimientos mecanicistas sobre la autofagia inducida por ácido gálico en el cáncer de mama triple negativo a través de la farmacología de red, el acoplamiento molecular y la validación in vitro."
     }
    }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Mosaicism for Cohen-Gibson Syndrome in a Female Individual With Overgrowth and Neurodevelopmental Delay.",
+   "autores": "Song F, Michels M, Betz B, Vorhoff W, Neuhann T, Senninger L, Wieczorek D.",
+   "revista": "Mol Genet Genomic Med",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1002/mgg3.70286",
+   "url": "https://doi.org/10.1002/mgg3.70286",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Phase 1 dose escalation and expansion trial of the bispecific CD47 inhibitor and CD40 agonist Fc-fusion protein SL-172154 (SIRPα-Fc-CD40L) in patients with higher-risk myelodysplastic syndrome or acute myeloid leukemia.",
+   "autores": "Daver NG, Zeidan AM, Stein AS, Zeidner JF, Maher K, Curran E, Bixby D, Chai-Ho W, Stahl M, Yee KWL, Stevens D, Ito S…",
+   "revista": "Cancer",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": "10.1002/cncr.70626",
+   "url": "https://doi.org/10.1002/cncr.70626",
+   "acesso_aberto": false,
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
@@ -732,7 +826,7 @@
    "data": "2026-10-01T00:00:00+00:00",
    "doi": "10.1007/s44313-026-00182-x",
    "url": "https://doi.org/10.1007/s44313-026-00182-x",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Genética",
    "titulo_original": "Telomere length analysis using qPCR in aplastic anemia: prevalence and predictive value for germline mutation status.",
    "traduzido": true,
@@ -759,96 +853,6 @@
      "titulo": "Las alteraciones genómicas y el tratamiento definen los patrones espaciotemporales de recurrencia del glioblastoma."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Modelos de ponto de atendimento para testes genéticos entre pacientes em risco de câncer hereditário: uma revisão sistemática.",
-   "autores": "Heald B, LaDuca H, Hartzfeld D, Cuyun Carter G, White KL, Johnson HA.",
-   "revista": "Cancer Epidemiol Biomarkers Prev",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1158/1055-9965.epi-26-0615",
-   "url": "https://doi.org/10.1158/1055-9965.epi-26-0615",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Point-of-care models for genetic testing among patients at risk of hereditary cancer: A systematic review.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Modelos de punto de atención para pruebas genéticas en pacientes con riesgo de cáncer hereditario: una revisión sistemática."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Associação do Status Mutacional TP53 e Sobrevivência no Câncer Anaplásico de Tireoide Tratado com Dabrafenibe Mais Trametinibe.",
-   "autores": "Rodrigues R, Nunes da Silva T, Saramago A, Cavaco D, André S, Dias R, Rito M, Leite V, Cavaco BM.",
-   "revista": "Eur Thyroid J",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1530/etj-26-0135",
-   "url": "https://doi.org/10.1530/etj-26-0135",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Association of TP53 Mutational Status and Survival in Anaplastic Thyroid Cancer Treated with Dabrafenib Plus Trametinib.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Asociación del estado mutacional de TP53 y la supervivencia en el cáncer de tiroides anaplásico tratado con dabrafenib más trametinib."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Global implementation of hereditary cancer care in gynecologic oncology: Development and evaluation of the Hereditary Cancer Care Implementation Index.",
-   "autores": "Cuello MA, Ibañez C, Obando JS, Fletcher A, Fotopoulou C, Sehouli J, Olawaiye A, Iheme MN, Chalas E, Mutch D, Tse KY…",
-   "revista": "Int J Gynaecol Obstet",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1002/ijgo.71348",
-   "url": "https://doi.org/10.1002/ijgo.71348",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Global implementation of hereditary cancer care in gynecologic oncology: Development and evaluation of the Hereditary Cancer Care Implementation Index.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Implementación global de la atención oncológica hereditaria en oncología ginecológica: Desarrollo y evaluación del Índice de Implementación de la Atención Oncológica Hereditaria."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Mapeamento de mutações e interações de rede de sinalização para orientar a terapia de precisão no câncer de vesícula biliar.",
-   "autores": "Manav N, Kashyap A, Malhotra L, Rajegowda C, Prasad CP.",
-   "revista": "Cancer Rep (Hoboken)",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1002/cnr2.70699",
-   "url": "https://doi.org/10.1002/cnr2.70699",
-   "acesso_aberto": true,
-   "tema": "Câncer",
-   "titulo_original": "Mapping Mutations and Signaling Network Interactions to Guide Precision Therapy in Gallbladder Cancer.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Mapeo de mutaciones e interacciones de la red de señalización para guiar la terapia de precisión en el cáncer de vesícula biliar."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Síndromes de predisposição ao câncer em crianças: quem, quando e como fazer a triagem?",
-   "autores": "Fung KFK, Rutten C, Villani A, Pai VB, Kan EY, Laughlin S, Chiu YT, Marie E, Ertl-Wagner B, Malkin D, Voss SD, States…",
-   "revista": "Radiographics",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1148/rg.260022",
-   "url": "https://doi.org/10.1148/rg.260022",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Cancer Predisposition Syndromes in Children: Who, When, and How to Screen?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Síndromes de predisposición al cáncer en niños: ¿quién, cuándo y cómo detectarlos?"
-    }
-   }
   }
  ],
  "fontes": [
@@ -866,20 +870,10 @@
   "Europe PMC"
  ],
  "erros": [
+  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "anthropics discovery will at best be just another gene editing tool": "2026-09-25T14:57:03.714836+00:00",
-  "crispr could help doctors attack blood cancer without destroying healthy cells": "2026-09-25T14:57:03.714836+00:00",
-  "econometric modeling and forecasting in high dimensional models": "2026-09-25T14:57:03.714836+00:00",
-  "nav ed pt carta aberta eleicoes 2026 compromisso 4": "2026-09-25T14:57:03.714836+00:00",
-  "projeto da fiocruz esta entre os mais emblematicos do bndes": "2026-09-25T14:57:03.714836+00:00",
-  "o ensino de ciencias que o pisa revela": "2026-09-25T14:57:03.714836+00:00",
-  "edicao impressa de pesquisa fapesp esta de volta com super el nino belo monte e ia na ciencia": "2026-09-25T14:57:03.714836+00:00",
-  "this rare autism linked genetic disorder may be far more common than scientists thought": "2026-09-25T14:57:03.714836+00:00",
-  "scientists discover an impossible cellular survival pathway that could help fight cancer": "2026-09-25T14:57:03.714836+00:00",
-  "why hawaii is facing an unprecedented hurricane season": "2026-09-25T14:57:03.714836+00:00",
-  "is china catching up to the us and spacex on reusable rockets": "2026-09-25T14:57:03.714836+00:00",
   "o mundo da matematica mudou com a ia": "2026-09-25T23:26:13.269731+00:00",
   "usp esta entre as 50 melhores do mundo em cinco areas de concentracao": "2026-09-25T23:26:13.269731+00:00",
   "anthropics ai biolab finds crispr like dna in viruses whats next": "2026-09-25T23:26:13.269731+00:00",
@@ -1061,6 +1055,18 @@
   "inteligencia artificial preve risco de complicacao apos cirurgia de tireoide": "2026-10-05T07:12:36.987129+00:00",
   "arquitetura molecular define resistencia do tomateiro contra sua principal praga": "2026-10-05T07:12:36.987129+00:00",
   "the glue holding your cells together has a surprising second job": "2026-10-05T07:12:36.987129+00:00",
-  "easing constipation a 20 minute walk can get your gut moving almost immediately": "2026-10-05T07:12:36.987129+00:00"
+  "easing constipation a 20 minute walk can get your gut moving almost immediately": "2026-10-05T07:12:36.987129+00:00",
+  "an el ninofueled ocean wave could raise california flood risks as floridas vaccine debate sparks outbreak concerns": "2026-10-05T16:11:53.790254+00:00",
+  "consumir bebidas muito quentes e com frequencia aumenta risco de cancer de esofago": "2026-10-05T16:11:53.790254+00:00",
+  "pesquisa identifica estrategia molecular contra a leishmaniose cutanea": "2026-10-05T16:11:53.790254+00:00",
+  "2026 nobel prize in physiology or medicine awarded to karl deisseroth georg nagel and peter hegemann for work on optogenetics": "2026-10-05T16:11:53.790254+00:00",
+  "pesquisadores precisam de voluntarios saudaveis para pesquisa sobre anemia aplastica": "2026-10-05T16:11:53.790254+00:00",
+  "cemeai encerra trajetoria com legado de aplicacao da matematica a problemas concretos": "2026-10-05T16:11:53.790254+00:00",
+  "can we harness the brains deep cleaning system to prevent alzheimers": "2026-10-05T16:11:53.790254+00:00",
+  "expedicao revela 31 especies potencialmente novas no atlantico sul": "2026-10-05T16:11:53.790254+00:00",
+  "extinct yak relative discovered from dna in denisova cave": "2026-10-05T16:11:53.790254+00:00",
+  "scientists reveal what seven days of fasting does to the human body": "2026-10-05T16:11:53.790254+00:00",
+  "vagus nerve stimulation could help new skills stick": "2026-10-05T16:11:53.790254+00:00",
+  "don t miss watch saturn shine and halleys comet debris streak across the sky": "2026-10-05T16:11:53.790254+00:00"
  }
 }
