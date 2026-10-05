@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-05T16:11:53.790254+00:00",
+ "atualizado_em": "2026-10-05T22:46:24.974255+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -25,30 +25,6 @@
     }
    },
    "resumo_original": "An El Niño–driven ocean surge threatens coastal flooding, researchers warn that a plan to loosen vaccine requirements will increase measles risks in Florida, and experts debunk a viral TikTok cold remedy"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Consumir bebidas muito quentes e com frequência aumenta risco de câncer de esôfago",
-   "resumo": "Estudo com quase 1 milhão de pessoas aponta risco três vezes maior de carcinoma de células escamosas entre quem consome bebidas em temperaturas mais elevadas",
-   "url": "https://jornal.usp.br/radio-usp/consumir-bebidas-muito-quentes-e-com-frequencia-aumenta-risco-de-cancer-de-esofago/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-05T14:20:01+00:00",
-   "tema": "Câncer",
-   "relevancia": 11,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260925_cafe.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Drinking beverages that are too hot and often increase the risk of esophageal cancer"
-    },
-    "es": {
-     "titulo": "Beber bebidas demasiado calientes y que a menudo aumentan el riesgo de cáncer de esófago"
-    }
-   }
   },
   {
    "tipo": "noticia",
@@ -78,6 +54,31 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Programa aproxima Brasil e Índia para levar pesquisas em saúde ao mercado",
+   "resumo": "Com etapas de seis meses em cada país, iniciativa poderá envolver pesquisadores e estudantes da Universidade de São Paulo, o Inova e o Supera Parque",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/programa-aproxima-brasil-e-india-para-levar-pesquisas-em-saude-ao-mercado/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-05T18:56:51+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261005_00_programa_brics_biodesign.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Program brings Brazil and India closer together to bring health research to the market",
+     "resumo": "With six-month stages in each country, the initiative may involve researchers and students from the University of São Paulo, Inova and Supera Parque"
+    },
+    "es": {
+     "titulo": "Programa acerca a Brasil e India para llevar la investigación en salud al mercado",
+     "resumo": "Con etapas de seis meses en cada país, la iniciativa puede involucrar a investigadores y estudiantes de la Universidad de São Paulo, Inova y Supera Parque"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Pesquisa identifica estratégia molecular contra a leishmaniose cutânea",
    "resumo": "Estudo descreve os primeiros inibidores de uma enzima essencial do parasita Leishmania braziliensis e abre caminho para tratamentos mais criteriosos e duradouros contra a doença",
    "url": "https://jornal.usp.br/campus-ribeirao-preto/pesquisa-identifica-estrategia-molecular-contra-a-leishmaniose-cutanea/",
@@ -93,10 +94,12 @@
    },
    "i18n": {
     "en": {
-     "titulo": "Research identifies molecular strategy against cutaneous leishmaniasis"
+     "titulo": "Research identifies molecular strategy against cutaneous leishmaniasis",
+     "resumo": "Study describes the first inhibitors of an essential enzyme of the parasite Leishmania braziliensis and paves the way for more judicious and long-lasting treatments against the disease"
     },
     "es": {
-     "titulo": "La investigación identifica la estrategia molecular contra la leishmaniasis cutánea"
+     "titulo": "La investigación identifica la estrategia molecular contra la leishmaniasis cutánea",
+     "resumo": "El estudio describe los primeros inhibidores de una enzima esencial del parásito Leishmania braziliensis y allana el camino para tratamientos más juiciosos y duraderos contra la enfermedad"
     }
    }
   },
@@ -128,50 +131,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "2026 Prêmio Nobel de Fisiologia ou Medicina concedido a Karl Deisseroth, Georg Nagel e Peter Hegemann pelo trabalho em optogenética",
-   "resumo": "Karl Deisseroth, Georg Nagel e Peter Hegemann desenvolveram a optogenética, que usa luz e genética para controlar células individuais",
-   "url": "https://www.scientificamerican.com/article/2026-nobel-prize-in-physiology-or-medicine-awarded-to-karl-deisseroth-george-nagel-and-peter-hegemann-for-work-on-optogenetics/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-05T09:30:00+00:00",
-   "tema": "Genética",
+   "titulo": "Alessandro Batezelli, do IG, integra o projeto Amazônia +10, do CNPq e Fapesp",
+   "resumo": "Docente participou de expedição aos rios Iaco e Macauã, no Acre",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/05/alessandro-batezelli-do-ig-integra-o-projeto-amazonia-10-do-cnpq-e-fapesp/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-05T18:57:04+00:00",
+   "tema": "Ciência",
    "relevancia": 9,
-   "imagem": "https://static.scientificamerican.com/dam/asset/8ff38da9-0730-4a28-9181-8cf46bad88ef/nobel-medicine-2026.jpg?m=1791209515.93&w=1200",
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261002_Achado-fosseis_Capa.jpg",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 100
    },
-   "titulo_original": "2026 Nobel Prize in Physiology or Medicine awarded to Karl Deisseroth, Georg Nagel and Peter Hegemann for work on optogenetics",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "Alessandro Batezelli, from IG, is part of the Amazônia +10 project, from CNPq and FAPESP",
+     "resumo": "Professor participated in an expedition to the Iaco and Macauã rivers, in Acre"
+    },
     "es": {
-     "titulo": "2026 Premio Nobel de Fisiología o Medicina otorgado a Karl Deisseroth, Georg Nagel y Peter Hegemann por su trabajo en optogenética",
-     "resumo": "Karl Deisseroth, Georg Nagel y Peter Hegemann desarrollaron la optogenética, que utiliza la luz y la genética para controlar las células individuales"
+     "titulo": "Alessandro Batezelli, del IG, forma parte del proyecto Amazonia +10, del CNPq y la FAPESP",
+     "resumo": "El profesor participó en una expedición a los ríos Iaco y Macauã, en Acre"
     }
-   },
-   "resumo_original": "Karl Deisseroth, Georg Nagel and Peter Hegemann developed optogenetics, which uses light and genetics to control individual cells"
+   }
   },
   {
    "tipo": "noticia",
-   "titulo": "Pesquisadores precisam de voluntários saudáveis para pesquisa sobre anemia aplástica",
-   "resumo": "Pessoas de 20 a 60 anos podem participar do estudo, que prevê coleta de medula óssea para investigar alterações associadas à doença",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/pesquisadores-precisam-de-voluntarios-saudaveis-para-pesquisa-sobre-anemia-aplastica/",
+   "titulo": "“Falta de Deus?” Estudo desmistifica crenças sobre a religiosidade da população em situação de rua que usa drogas",
+   "resumo": "Conduzida no Brasil e em Portugal, pesquisa traz novas interpretações sobre a relação de pessoas com dependência de drogas e em situação de rua com a dimensão religiosa",
+   "url": "https://jornal.usp.br/ciencias/falta-de-deus-estudo-desmistifica-crencas-sobre-a-religiosidade-da-populacao-em-situacao-de-rua-que-usa-drogas/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-05T14:31:47+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2022/01/20220118_anemia.jpg",
+   "data": "2026-10-05T16:14:06+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261005_moradoresderua.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Researchers need healthy volunteers for aplastic anemia research"
+     "titulo": "\"Lack of God?\" Study demystifies beliefs about the religiosity of the homeless population that uses drugs",
+     "resumo": "Conducted in Brazil and Portugal, the research brings new interpretations about the relationship of people with drug dependence and homelessness with the religious dimension"
     },
     "es": {
-     "titulo": "Los investigadores necesitan voluntarios sanos para la investigación de la anemia aplásica"
+     "titulo": "Estudio “¿Falta de Dios?” desmitifica creencias sobre la religiosidad de la población sin hogar que consume drogas",
+     "resumo": "Realizada en Brasil y Portugal, la investigación aporta nuevas interpretaciones sobre la relación de las personas con drogodependencia y sin techo con la dimensión religiosa"
     }
    }
   },
@@ -192,10 +198,12 @@
    },
    "i18n": {
     "en": {
-     "titulo": "CeMEAI ends trajectory with legacy of application of mathematics to concrete problems"
+     "titulo": "CeMEAI ends trajectory with legacy of application of mathematics to concrete problems",
+     "resumo": "Part of the 13-year history of the Research, Innovation and Dissemination Center supported by FAPESP and headquartered at USP in São Carlos is told in testimonies from researchers and managers available on YouTube"
     },
     "es": {
-     "titulo": "CeMEAI finaliza trayectoria con legado de aplicación de matemáticas a problemas concretos"
+     "titulo": "CeMEAI finaliza trayectoria con legado de aplicación de matemáticas a problemas concretos",
+     "resumo": "Parte de los 13 años de historia del Centro de Investigación, Innovación y Difusión apoyado por la FAPESP y con sede en la USP en São Carlos se cuenta en testimonios de investigadores y gerentes disponibles en YouTube"
     }
    }
   },
@@ -241,10 +249,12 @@
    },
    "i18n": {
     "en": {
-     "titulo": "Expedition reveals 31 potentially new species in the South Atlantic"
+     "titulo": "Expedition reveals 31 potentially new species in the South Atlantic",
+     "resumo": "Designing the Future 3 mission dived deep off the northeastern coast in search of little — or no — known life forms"
     },
     "es": {
-     "titulo": "Expedición revela 31 especies potencialmente nuevas en el Atlántico Sur"
+     "titulo": "Expedición revela 31 especies potencialmente nuevas en el Atlántico Sur",
+     "resumo": "La misión Designing the Future 3 se zambulló en las profundidades de la costa noreste en busca de pocas o ninguna forma de vida conocida"
     }
    }
   },
@@ -252,7 +262,7 @@
    "tipo": "noticia",
    "titulo": "Parente extinto do iaque descoberto a partir de DNA na caverna de Denisova",
    "resumo": "A análise genética de centenas de minúsculos fragmentos ósseos encontrados na mesma caverna que produziu os primeiros restos fósseis dos Denisovanos revelou que a região já foi também o lar de uma espécie até então desconhecida de iaque",
-   "url": "https://www.newscientist.com/article/2591962-2591962/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "url": "https://www.newscientist.com/article/2591962-extinct-yak-relative-discovered-from-dna-in-denisova-cave/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
    "data": "2026-10-05T15:00:00+00:00",
@@ -272,6 +282,31 @@
     }
    },
    "resumo_original": "Genetic analysis of hundreds of tiny bone fragments found in the same cave that yielded the first fossil remains of the Denisovans has revealed that the region was once also home to a previously unknown species of yak"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Você deve ser \"maxxing de cocô\" ou \"maxxing de fibra\"? Especialistas explicam o que é saudável",
+   "resumo": "Suas fezes podem dizer muito sobre sua saúde",
+   "url": "https://www.scientificamerican.com/article/should-you-be-poop-maxxing-or-fiber-maxxing-experts-explain-whats-healthy/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-05T11:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 5,
+   "imagem": "https://static.scientificamerican.com/dam/asset/64b5af83-da98-4f8b-b828-09131f23473b/poopmaxxing-still.jpg?m=1790954372.341&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Should you be ‘poop maxxing,’ or ‘fiber maxxing’? Experts explain what’s healthy",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Deberías hacer ‘pop maxxing’ o ‘fiber maxxing’? Los expertos explican lo que es saludable",
+     "resumo": "Tus heces pueden decirte mucho sobre tu salud"
+    }
+   },
+   "resumo_original": "Your feces can tell you a lot about your health"
   },
   {
    "tipo": "noticia",
@@ -342,7 +377,8 @@
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "No te pierdas: observa el brillo de Saturno y los escombros del cometa Halley en el cielo"
+     "titulo": "No te pierdas: observa el brillo de Saturno y los escombros del cometa Halley en el cielo",
+     "resumo": "Los observadores del cielo de octubre pueden ver a Saturno en oposición, captar meteoros del cometa Halley durante el pico de las Oriónidas y observar cómo la Luna barre el famoso cúmulo estelar de las Pléyades. La luz de la luna puede oscurecer algunas Oriónidas, pero la mejor vista debería..."
     }
    },
    "resumo_original": "October skywatchers can see Saturn at opposition, catch meteors from Halley’s Comet during the Orionid peak, and watch the Moon sweep past the famous Pleiades star cluster. Moonlight may obscure some Orionids, but the best viewing should…"
@@ -351,36 +387,57 @@
  "artigos": [
   {
    "tipo": "artigo",
-   "titulo": "Cancer-associated fibroblast heterogeneity across solid and haematological malignancies: Lessons from colorectal cancer and multiple myeloma.",
+   "titulo": "Heterogeneidade de fibroblastos associada ao câncer em malignidades sólidas e hematológicas: Lições de câncer colorretal e mieloma múltiplo.",
    "autores": "Mo H, Han H, O'Dwyer M, Reidy E, Ryan AE.",
    "revista": "J Physiol",
    "data": "2026-10-05T00:00:00+00:00",
    "doi": "10.1113/jp291166",
    "url": "https://doi.org/10.1113/jp291166",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Cancer-associated fibroblast heterogeneity across solid and haematological malignancies: Lessons from colorectal cancer and multiple myeloma.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Heterogeneidad de fibroblastos asociada al cáncer en neoplasias sólidas y hematológicas: lecciones del cáncer colorrectal y el mieloma múltiple."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "KMT2A amplification marks TP53-altered, complex-karyotype malignant clones in haematological malignancies.",
+   "titulo": "A amplificação de KMT2A marca clones malignos de cariótipo complexo alterados por TP53 em malignidades hematológicas.",
    "autores": "Liu J, Xiao Y, Wu X, Liu S, Lu L, Lai X, Zou J, Qin S, Mou Y, Gong J.",
    "revista": "Br J Haematol",
    "data": "2026-10-05T00:00:00+00:00",
    "doi": "10.1111/bjh.70844",
    "url": "https://doi.org/10.1111/bjh.70844",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "KMT2A amplification marks TP53-altered, complex-karyotype malignant clones in haematological malignancies.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La amplificación de KMT2A marca clones malignos de cariotipo complejo alterados por TP53 en neoplasias hematológicas."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Envonalkib Versus Crizotinib in Treatment-Naive ALK -Positive Non-Small Cell Lung Cancer: Final Efficacy and Biomarker Analyses of the Randomized Phase III Study.",
+   "titulo": "Envonalcibe Versus Crizotinibe em Câncer de Pulmão de Não Pequenas Células Positivo para ALK Naïve: Eficácia Final e Análises de Biomarcadores do Estudo Randomizado de Fase III.",
    "autores": "Huang J, Wang Y, Sun H, Min J, Yang N, Yu Q, Cheng Y, Zhao Y, Li M, Chen H, Ren S, Zhou J, Zhuang W, Qin X, Cao L, Yu…",
    "revista": "MedComm (2020)",
    "data": "2026-10-04T00:00:00+00:00",
    "doi": "10.1002/mco2.70998",
    "url": "https://doi.org/10.1002/mco2.70998",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Envonalkib Versus Crizotinib in Treatment-Naive ALK -Positive Non-Small Cell Lung Cancer: Final Efficacy and Biomarker Analyses of the Randomized Phase III Study.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Envonalkib versus crizotinib en cáncer de pulmón de células no pequeñas positivo para ALK no tratado: eficacia final y análisis de biomarcadores del estudio aleatorizado de fase III."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -571,18 +628,32 @@
    "doi": "10.1002/mgg3.70286",
    "url": "https://doi.org/10.1002/mgg3.70286",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Mosaicism for Cohen-Gibson Syndrome in a Female Individual With Overgrowth and Neurodevelopmental Delay.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Mosaicismo para el síndrome de Cohen-Gibson en una mujer con crecimiento excesivo y retraso en el desarrollo neurológico."
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "Phase 1 dose escalation and expansion trial of the bispecific CD47 inhibitor and CD40 agonist Fc-fusion protein SL-172154 (SIRPα-Fc-CD40L) in patients with higher-risk myelodysplastic syndrome or acute myeloid leukemia.",
+   "titulo": "Ensaio de escalonamento e expansão de dose de fase 1 do inibidor de CD47 biespecífico e proteína de fusão Fc agonista de CD40 SL-172154 (SIRPα-Fc-CD40L) em pacientes com síndrome mielodisplásica de maior risco ou leucemia mieloide aguda.",
    "autores": "Daver NG, Zeidan AM, Stein AS, Zeidner JF, Maher K, Curran E, Bixby D, Chai-Ho W, Stahl M, Yee KWL, Stevens D, Ito S…",
    "revista": "Cancer",
    "data": "2026-10-01T00:00:00+00:00",
    "doi": "10.1002/cncr.70626",
    "url": "https://doi.org/10.1002/cncr.70626",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Phase 1 dose escalation and expansion trial of the bispecific CD47 inhibitor and CD40 agonist Fc-fusion protein SL-172154 (SIRPα-Fc-CD40L) in patients with higher-risk myelodysplastic syndrome or acute myeloid leukemia.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Ensayo de fase 1 de aumento y expansión de la dosis del inhibidor biespecífico de CD47 y la proteína de fusión Fc agonista de CD40 SL-172154 (SIRPα-Fc-CD40L) en pacientes con síndrome mielodisplásico de mayor riesgo o leucemia mieloide aguda."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -1067,6 +1138,10 @@
   "extinct yak relative discovered from dna in denisova cave": "2026-10-05T16:11:53.790254+00:00",
   "scientists reveal what seven days of fasting does to the human body": "2026-10-05T16:11:53.790254+00:00",
   "vagus nerve stimulation could help new skills stick": "2026-10-05T16:11:53.790254+00:00",
-  "don t miss watch saturn shine and halleys comet debris streak across the sky": "2026-10-05T16:11:53.790254+00:00"
+  "don t miss watch saturn shine and halleys comet debris streak across the sky": "2026-10-05T16:11:53.790254+00:00",
+  "programa aproxima brasil e india para levar pesquisas em saude ao mercado": "2026-10-05T22:46:24.974255+00:00",
+  "alessandro batezelli do ig integra o projeto amazonia 10 do cnpq e fapesp": "2026-10-05T22:46:24.974255+00:00",
+  "falta de deus estudo desmistifica crencas sobre a religiosidade da populacao em situacao de rua que usa drogas": "2026-10-05T22:46:24.974255+00:00",
+  "should you be poop maxxing or fiber maxxing experts explain whats healthy": "2026-10-05T22:46:24.974255+00:00"
  }
 }
