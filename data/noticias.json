@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-05T22:46:24.974255+00:00",
+ "atualizado_em": "2026-10-06T03:08:31.331255+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -28,27 +28,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Compostos associados ao câncer são detectados em resíduos de espumas, plásticos e artigos infantis",
-   "resumo": "A reportagem mais acessada entre 25/09 e 01/10 detalha pesquisa que encontrou em locais de descarte materiais contendo substâncias tóxicas antigamente usadas como plastificantes e retardantes de chama. Sem triagem rigorosa, reciclagem pode…",
-   "url": "https://agencia.fapesp.br/compostos-associados-ao-cancer-sao-detectados-em-residuos-de-espumas-plasticos-e-artigos-infantis/59263",
+   "titulo": "Gotas de sangue podem antecipar o sinal de alerta contra o câncer",
+   "resumo": "Método analisa fluidos biológicos em busca de moléculas específicas produzidas por células tumorais ou pelo próprio organismo em resposta ao tumor",
+   "url": "https://pesquisaparainovacao.fapesp.br/gotas_de_sangue_podem_antecipar_o_sinal_de_alerta_contra_o_cancer/4158",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-05T07:12:36.987129+00:00",
+   "data": "2026-10-06T03:08:31.331255+00:00",
    "tema": "Câncer",
    "relevancia": 11,
-   "imagem": "https://agencia.fapesp.br/files/post/59263.jpeg",
+   "imagem": "https://pesquisaparainovacao.fapesp.br/imagens/materia/4158.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Cancer-associated compounds are detected in foam waste, plastics, and children's articles",
-     "resumo": "The most accessed report between 09/25 and 10/01 details research that found in disposal sites materials containing toxic substances formerly used as plasticizers and flame retardants. Without rigorous screening, recycling can…"
+     "titulo": "Blood drops can anticipate the cancer warning sign",
+     "resumo": "Method analyzes biological fluids for specific molecules produced by tumor cells or the organism itself in response to the tumor"
     },
     "es": {
-     "titulo": "Los compuestos asociados al cáncer se detectan en residuos de espuma, plásticos y artículos infantiles",
-     "resumo": "El informe más consultado entre el 25/09 y el 01/10 detalla la investigación que se encontró en los sitios de eliminación de materiales que contienen sustancias tóxicas utilizadas anteriormente como plastificantes y retardantes de llama. Sin una revisión rigurosa, el reciclaje puede..."
+     "titulo": "Las gotas de sangre pueden anticipar la señal de advertencia del cáncer",
+     "resumo": "El método analiza los fluidos biológicos en busca de moléculas específicas producidas por las células tumorales o el propio organismo en respuesta al tumor"
     }
    }
   },
@@ -105,27 +105,23 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Inteligência artificial prevê risco de complicação após cirurgia de tireoide",
-   "resumo": "Modelo desenvolvido no A.C.Camargo com dados de mais de 7 mil pacientes identifica quem tem maior risco de queda dos níveis de cálcio no sangue e ajuda a personalizar o tratamento",
-   "url": "https://agencia.fapesp.br/inteligencia-artificial-preve-risco-de-complicacao-apos-cirurgia-de-tireoide/59327",
+   "titulo": "Museus de história universitários na contemporaneidade",
+   "resumo": "Fórum gratuito na Unicamp vai abordar gestão de coleções, digitalização de acervos, inteligência artificial, acessibilidade e inovação em práticas curatoriais, entre outros temas",
+   "url": "https://agencia.fapesp.br/museus-de-historia-universitarios-na-contemporaneidade/59336",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-05T07:12:36.987129+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://agencia.fapesp.br/files/post/59327.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
+   "data": "2026-10-06T03:08:31.331255+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "",
    "i18n": {
     "en": {
-     "titulo": "Artificial intelligence predicts risk of complication after thyroid surgery",
-     "resumo": "Model developed at A.C.Camargo with data from more than 7,000 patients identifies who is most at risk of falling blood calcium levels and helps personalize treatment"
+     "titulo": "University history museums in contemporary times",
+     "resumo": "A free forum at Unicamp will address collection management, digitization of collections, artificial intelligence, accessibility and innovation in curatorial practices, among other topics"
     },
     "es": {
-     "titulo": "La inteligencia artificial predice el riesgo de complicaciones después de la cirugía de tiroides",
-     "resumo": "El modelo desarrollado en A.C.Camargo con datos de más de 7.000 pacientes identifica quién está en mayor riesgo de disminuir los niveles de calcio en la sangre y ayuda a personalizar el tratamiento"
+     "titulo": "Museos de historia universitaria en la época contemporánea",
+     "resumo": "Un foro gratuito en la Unicamp abordará la gestión de colecciones, la digitalización de colecciones, la inteligencia artificial, la accesibilidad y la innovación en las prácticas curatoriales, entre otros temas"
     }
    }
   },
@@ -183,27 +179,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "CeMEAI encerra trajetória com legado de aplicação da matemática a problemas concretos",
-   "resumo": "Parte da história de 13 anos do Centro de Pesquisa, Inovação e Difusão apoiado pela FAPESP e sediado na USP de São Carlos é contada em depoimentos de pesquisadores e gestores disponíveis no YouTube",
-   "url": "https://agencia.fapesp.br/cemeai-encerra-trajetoria-com-legado-de-aplicacao-da-matematica-a-problemas-concretos/59329",
+   "titulo": "Pós-graduação em estatística seleciona candidatos",
+   "resumo": "Programa interinstitucional da UFSCar e da USP oferece mestrado, doutorado e doutorado direto",
+   "url": "https://agencia.fapesp.br/pos-graduacao-em-estatistica-seleciona-candidatos/59341",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-05T16:11:53.790254+00:00",
+   "data": "2026-10-06T03:08:31.331255+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59329.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59341.jpg",
    "foco": {
-    "x": 100,
-    "y": 50
+    "x": 50,
+    "y": 0
    },
    "i18n": {
     "en": {
-     "titulo": "CeMEAI ends trajectory with legacy of application of mathematics to concrete problems",
-     "resumo": "Part of the 13-year history of the Research, Innovation and Dissemination Center supported by FAPESP and headquartered at USP in São Carlos is told in testimonies from researchers and managers available on YouTube"
+     "titulo": "Graduate degree in statistics selects candidates",
+     "resumo": "Interinstitutional program of UFSCar and USP offers master's, doctorate and direct doctorate"
     },
     "es": {
-     "titulo": "CeMEAI finaliza trayectoria con legado de aplicación de matemáticas a problemas concretos",
-     "resumo": "Parte de los 13 años de historia del Centro de Investigación, Innovación y Difusión apoyado por la FAPESP y con sede en la USP en São Carlos se cuenta en testimonios de investigadores y gerentes disponibles en YouTube"
+     "titulo": "El título de posgrado en estadística selecciona candidatos",
+     "resumo": "Programa interinstitucional de UFSCar y USP ofrece maestría, doctorado y doctorado directo"
     }
    }
   },
@@ -945,16 +941,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "o mundo da matematica mudou com a ia": "2026-09-25T23:26:13.269731+00:00",
-  "usp esta entre as 50 melhores do mundo em cinco areas de concentracao": "2026-09-25T23:26:13.269731+00:00",
-  "anthropics ai biolab finds crispr like dna in viruses whats next": "2026-09-25T23:26:13.269731+00:00",
-  "derivado da curcuma mostra potencial para combater fungo causador de micose": "2026-09-25T23:26:13.269731+00:00",
-  "video biocarvao otimiza o cultivo do agave": "2026-09-25T23:26:13.269731+00:00",
-  "2026 could be the turning point on climate action al gore says": "2026-09-25T23:26:13.269731+00:00",
-  "nepals floods expose issues with climate disaster funding firmer policies are needed fast": "2026-09-25T23:26:13.269731+00:00",
-  "supercorrente permite ler informacao quantica sem destrui la": "2026-09-25T23:28:26.807822+00:00",
-  "usp de bauru seleciona estudantes para pos graduacao em ciencias da reabilitacao": "2026-09-25T23:28:26.807822+00:00",
-  "as marcas de um instituto especializado da usp registradas em uma linha do tempo 60 anos em cena": "2026-09-25T23:28:26.807822+00:00",
   "estudo comprova efetividade e viabilidade da prep de longa duracao": "2026-09-26T13:24:34.474796+00:00",
   "2 feira intercocen mostra que ciencia e antidoto para desinformacao": "2026-09-26T13:24:34.474796+00:00",
   "o menino cresceu": "2026-09-26T13:24:34.474796+00:00",
@@ -1142,6 +1128,9 @@
   "programa aproxima brasil e india para levar pesquisas em saude ao mercado": "2026-10-05T22:46:24.974255+00:00",
   "alessandro batezelli do ig integra o projeto amazonia 10 do cnpq e fapesp": "2026-10-05T22:46:24.974255+00:00",
   "falta de deus estudo desmistifica crencas sobre a religiosidade da populacao em situacao de rua que usa drogas": "2026-10-05T22:46:24.974255+00:00",
-  "should you be poop maxxing or fiber maxxing experts explain whats healthy": "2026-10-05T22:46:24.974255+00:00"
+  "should you be poop maxxing or fiber maxxing experts explain whats healthy": "2026-10-05T22:46:24.974255+00:00",
+  "gotas de sangue podem antecipar o sinal de alerta contra o cancer": "2026-10-06T03:08:31.331255+00:00",
+  "museus de historia universitarios na contemporaneidade": "2026-10-06T03:08:31.331255+00:00",
+  "pos graduacao em estatistica seleciona candidatos": "2026-10-06T03:08:31.331255+00:00"
  }
 }
