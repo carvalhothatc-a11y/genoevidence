@@ -1,106 +1,55 @@
 {
- "atualizado_em": "2026-10-06T17:17:41.278668+00:00",
+ "atualizado_em": "2026-10-06T21:44:28.800200+00:00",
  "noticias": [
   {
    "tipo": "noticia",
-   "titulo": "Muito além de evitar infecções: como as vacinas podem proteger o cérebro e o coração dos idosos",
-   "resumo": "Egídio Dorea afirma que há vacinas que não podem faltar no calendário do idoso, como, por exemplo, a da influenza, que, ao contrário do que se pensa, não causa gripe",
-   "url": "https://jornal.usp.br/atualidades/envelhecimento-saudavel-combina-com-vacinacao/",
+   "titulo": "Outubro Rosa: detecção precoce é fundamental para reduzir risco de morte por câncer de mama",
+   "resumo": "Protocolo desenvolvido por pesquisadores do Instituto de Radiologia do Hospital das Clínicas da USP orienta profissionais da saúde sobre como conduzir conversas difíceis com pacientes",
+   "url": "https://jornal.usp.br/radio-usp/outubro-rosa-deteccao-precoce-e-fundamental-para-reduzir-risco-de-morte-por-cancer-de-mama/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-06T12:00:57+00:00",
-   "tema": "Saúde",
-   "relevancia": 13,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/08/20230807_vacinacao.jpg",
-   "foco": {
-    "x": 0,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Beyond Preventing Infections: How Vaccines Can Protect the Brain and Heart of the Elderly",
-     "resumo": "Egídio Dorea states that there are vaccines that cannot be missed in the elderly's calendar, such as, for example, influenza, which, contrary to what is thought, does not cause flu"
-    },
-    "es": {
-     "titulo": "Más allá de la prevención de infecciones: cómo las vacunas pueden proteger el cerebro y el corazón de las personas mayores",
-     "resumo": "Egídio Dorea afirma que hay vacunas que no pueden faltar en el calendario de las personas mayores, como, por ejemplo, la gripe, que, contrariamente a lo que se piensa, no provoca gripe"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "“Boletim Climatológico”: El Niño influencia primavera com chuvas e temperaturas contrastantes no Brasil",
-   "resumo": "A pesquisadora Ana Carolina Nóbile Tomaziello explica os efeitos do fenômeno e as tendências para a nova estação",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/boletim-climatologico-el-nino-influencia-primavera-com-chuvas-e-temperaturas-contrastantes-no-brasil/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-06T13:52:56+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 11,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/10/20251001_primavera.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "\"Climatological Bulletin\": El Niño influences spring with rainfall and contrasting temperatures in Brazil",
-     "resumo": "Researcher Ana Carolina Nóbile Tomaziello explains the effects of the phenomenon and the trends for the new season"
-    },
-    "es": {
-     "titulo": "\"Boletín Climatológico\": El Niño influye en la primavera con lluvias y temperaturas contrastantes en Brasil",
-     "resumo": "La investigadora Ana Carolina Nóbile Tomaziello explica los efectos del fenómeno y las tendencias para la nueva temporada"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Consumir bebidas muito quentes e com frequência pode aumentar risco de câncer de esôfago",
-   "resumo": "Estudo com quase 1 milhão de pessoas aponta risco três vezes maior de carcinoma de células escamosas entre quem consome bebidas em temperaturas mais elevadas",
-   "url": "https://jornal.usp.br/atualidades/consumir-bebidas-muito-quentes-e-com-frequencia-aumenta-risco-de-cancer-de-esofago/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-06T11:20:01+00:00",
+   "data": "2026-10-06T17:58:39+00:00",
    "tema": "Câncer",
-   "relevancia": 11,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260925_cafe.jpg",
+   "relevancia": 12,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/05/20260505_mulhermastectomizada.jpeg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Drinking beverages that are too hot and too often can increase the risk of esophageal cancer",
-     "resumo": "A study of almost 1 million people shows a three times higher risk of squamous cell carcinoma among those who consume beverages at higher temperatures"
+     "titulo": "Pink October: Early detection is key to reducing risk of death from breast cancer",
+     "resumo": "Protocol developed by researchers at the Institute of Radiology of the Hospital das Clínicas of USP guides health professionals on how to conduct difficult conversations with patients"
     },
     "es": {
-     "titulo": "Beber bebidas demasiado calientes y con demasiada frecuencia puede aumentar el riesgo de cáncer de esófago"
+     "titulo": "Octubre rosa: la detección temprana es clave para reducir el riesgo de muerte por cáncer de mama",
+     "resumo": "El protocolo desarrollado por investigadores del Instituto de Radiología del Hospital das Clínicas de la USP guía a los profesionales de la salud sobre cómo mantener conversaciones difíciles con los pacientes"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Gotas de sangue podem antecipar o sinal de alerta contra o câncer",
-   "resumo": "Método analisa fluidos biológicos em busca de moléculas específicas produzidas por células tumorais ou pelo próprio organismo em resposta ao tumor",
-   "url": "https://pesquisaparainovacao.fapesp.br/gotas_de_sangue_podem_antecipar_o_sinal_de_alerta_contra_o_cancer/4158",
-   "fonte": "Agência FAPESP",
+   "titulo": "Colóquio apresenta a história da participação brasileira no Centro Europeu de Pesquisa Nuclear",
+   "resumo": "Dia 8 de outubro, às 16h, será lançado o livro \"Cruzando Fronteiras: Uma História do Brasil no CERN\", no Instituto de Física da USP",
+   "url": "https://jornal.usp.br/universidade/coloquio-apresenta-a-historia-da-participacao-brasileira-no-centro-europeu-de-pesquisa-nuclear/",
+   "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-06T03:08:31.331255+00:00",
-   "tema": "Câncer",
-   "relevancia": 11,
-   "imagem": "https://pesquisaparainovacao.fapesp.br/imagens/materia/4158.jpg",
+   "data": "2026-10-06T16:32:13+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2020/07/20200702_00_cern.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Blood drops can anticipate the cancer warning sign",
-     "resumo": "Method analyzes biological fluids for specific molecules produced by tumor cells or the organism itself in response to the tumor"
+     "titulo": "Colloquium presents the history of Brazilian participation in the European Center for Nuclear Research",
+     "resumo": "On October 8, at 4:00 p.m., the book \"Crossing Borders: A History of Brazil at CERN\" will be released at the Institute of Physics of USP"
     },
     "es": {
-     "titulo": "Las gotas de sangre pueden anticipar la señal de advertencia del cáncer",
-     "resumo": "El método analiza los fluidos biológicos en busca de moléculas específicas producidas por las células tumorales o el propio organismo en respuesta al tumor"
+     "titulo": "Coloquio presenta la historia de la participación brasileña en el Centro Europeo de Investigación Nuclear",
+     "resumo": "El 8 de octubre, a las 16:00 horas, se dará a conocer en el Instituto de Física de la USP el libro “Cruzando Fronteras: Una Historia de Brasil en el CERN”"
     }
    }
   },
@@ -121,32 +70,34 @@
    },
    "i18n": {
     "en": {
-     "titulo": "Researchers redraw map of El Niño effects on agriculture"
+     "titulo": "Researchers redraw map of El Niño effects on agriculture",
+     "resumo": "While some crops may benefit from rainfall in the South, others are exposed to drought in the North and Northeast"
     },
     "es": {
-     "titulo": "Los investigadores redibujan el mapa de los efectos de El Niño en la agricultura"
+     "titulo": "Los investigadores redibujan el mapa de los efectos de El Niño en la agricultura",
+     "resumo": "Si bien algunos cultivos pueden beneficiarse de las lluvias en el sur, otros están expuestos a la sequía en el norte y noreste"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Museus de história universitários na contemporaneidade",
-   "resumo": "Fórum gratuito na Unicamp vai abordar gestão de coleções, digitalização de acervos, inteligência artificial, acessibilidade e inovação em práticas curatoriais, entre outros temas",
-   "url": "https://agencia.fapesp.br/museus-de-historia-universitarios-na-contemporaneidade/59336",
-   "fonte": "Agência FAPESP",
+   "titulo": "Simpósio em aborda nutrição materno infantil e saúde reprodutiva",
+   "resumo": "O evento será realizado no Anfiteatro da Bioquímica, Prédio Central da Faculdade de Medicina de Ribeirão Preto",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/simposio-em-aborda-nutricao-materno-infantil-e-saude-reprodutiva/",
+   "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-06T03:08:31.331255+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "",
+   "data": "2026-10-06T15:08:31+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/20161201_00_Ribeirão-Preto.jpg",
    "i18n": {
     "en": {
-     "titulo": "University history museums in contemporary times",
-     "resumo": "A free forum at Unicamp will address collection management, digitization of collections, artificial intelligence, accessibility and innovation in curatorial practices, among other topics"
+     "titulo": "Symposium on maternal and child nutrition and reproductive health",
+     "resumo": "The event will be held at the Amphitheater of Biochemistry, Central Building of the Faculty of Medicine of Ribeirão Preto"
     },
     "es": {
-     "titulo": "Museos de historia universitaria en la época contemporánea",
-     "resumo": "Un foro gratuito en la Unicamp abordará la gestión de colecciones, la digitalización de colecciones, la inteligencia artificial, la accesibilidad y la innovación en las prácticas curatoriales, entre otros temas"
+     "titulo": "Simposio sobre nutrición maternoinfantil y salud reproductiva",
+     "resumo": "El evento se llevará a cabo en el Anfiteatro de Bioquímica, Edificio Central de la Facultad de Medicina de Ribeirão Preto"
     }
    }
   },
@@ -203,6 +154,28 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Clube Sci-SAIFR discute os mistérios do mundo das partículas",
+   "resumo": "Alberto Reis, autor de livro sobre o tema, vai apresentar desde descobertas que levaram ao conhecimento atual sobre a estrutura da matéria até problemas que permanecem em aberto",
+   "url": "https://agencia.fapesp.br/clube-sci-saifr-discute-os-misterios-do-mundo-das-particulas/59335",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-06T21:44:28.800200+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Sci-SAIFR Club discusses the mysteries of the particle world",
+     "resumo": "Alberto Reis, author of a book on the subject, will present from discoveries that led to current knowledge about the structure of matter to problems that remain open"
+    },
+    "es": {
+     "titulo": "El Club Sci-SAIFR discute los misterios del mundo de las partículas",
+     "resumo": "Alberto Reis, autor de un libro sobre el tema, presentará desde descubrimientos que llevaron al conocimiento actual sobre la estructura de la materia hasta problemas que permanecen abiertos"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Prêmio Nobel de Física pela descoberta de neutrinos de alta energia",
    "resumo": "O Prêmio Nobel de Física de 2026 foi ganho por Francis Halzen por seu trabalho sobre neutrinos, que servem como \"mensageiros fantasmagóricos do cosmos\"",
    "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -225,6 +198,30 @@
     }
    },
    "resumo_original": "The 2026 Nobel prize in physics has been won by Francis Halzen for his work on neutrinos, which serve as 'ghost-like messengers from the cosmos'"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Pesquisa detecta cocaína em rios do Rio de Janeiro",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/pesquisa-detecta-cocaina-em-rios-do-rio-de-janeiro",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-06T19:29:50+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/ioc_agua.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Research detects cocaine in Rio de Janeiro rivers"
+    },
+    "es": {
+     "titulo": "Una investigación detecta cocaína en los ríos de Río de Janeiro"
+    }
+   }
   },
   {
    "tipo": "noticia",
@@ -278,6 +275,74 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
+   "resumo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
+   "url": "https://www.nature.com/articles/d41586-026-03174-0",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-06T00:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "The Great Barrier Reef requires special attention in the developing super El Niño",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño",
+     "resumo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño"
+    }
+   },
+   "resumo_original": "The Great Barrier Reef requires special attention in the developing super El Niño"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas pegam um radiômetro para dar uma volta em um balão de ar quente",
+   "resumo": "Uma congruência satisfatória entre os achados genéticos e de biologia celular e experimentos em altitude com um dispositivo rotativo que mede a energia radiante, no...",
+   "url": "https://www.nature.com/articles/d41586-026-02973-9",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-06T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "Scientists take a radiometer for a spin in a hot-air balloon",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos toman un radiómetro para dar una vuelta en un globo de aire caliente",
+     "resumo": "Una congruencia satisfactoria entre los hallazgos de genética y biología celular, y los experimentos en altitud con un dispositivo giratorio que mide la energía radiante, en el..."
+    }
+   },
+   "resumo_original": "A satisfying congruence between genetics and cell-biology findings, and experiments at altitude with a rotating device that measures radiant energy, in this week’s…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Gotas de sangue podem antecipar o sinal de alerta contra o câncer",
+   "resumo": "Método analisa fluidos biológicos em busca de moléculas específicas produzidas por células tumorais ou pelo próprio organismo em resposta ao tumor",
+   "url": "https://pesquisaparainovacao.fapesp.br/gotas_de_sangue_podem_antecipar_o_sinal_de_alerta_contra_o_cancer/4158",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-06T03:08:31.331255+00:00",
+   "tema": "Câncer",
+   "relevancia": 5,
+   "imagem": "https://pesquisaparainovacao.fapesp.br/imagens/materia/4158.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Blood drops can anticipate the cancer warning sign",
+     "resumo": "Method analyzes biological fluids for specific molecules produced by tumor cells or the organism itself in response to the tumor"
+    },
+    "es": {
+     "titulo": "Las gotas de sangre pueden anticipar la señal de advertencia del cáncer",
+     "resumo": "El método analiza los fluidos biológicos en busca de moléculas específicas producidas por las células tumorales o el propio organismo en respuesta al tumor"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Duas chuvas de meteoros estão iluminando o céu de outubro - veja como vê-las",
    "resumo": "Os Draconídeos e Orionídeos atingem o pico este mês",
    "url": "https://www.scientificamerican.com/article/two-meteor-showers-are-lighting-up-the-october-sky-heres-how-to-see-them/",
@@ -300,82 +365,6 @@
     }
    },
    "resumo_original": "The Draconids and Orionids both peak this month"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Adeus substituições de articulações? Os cientistas de Stanford encontraram uma maneira de regenerar a cartilagem e parar a artrite",
-   "resumo": "Os cientistas descobriram uma maneira surpreendente de regenerar a cartilagem do joelho danificada, bloqueando uma proteína que se torna mais abundante com a idade. Em camundongos velhos, o tratamento restaurou a cartilagem naturalmente perdida e também ajudou a prevenir a osteoartrite após...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261005011249.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-06T13:03:47+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/knee-joint-arthritis-cartilage-injury.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Goodbye joint replacements? Stanford scientists found a way to regrow cartilage and stop arthritis",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿Adiós a los reemplazos de articulaciones? Los científicos de Stanford encontraron una manera de regenerar el cartílago y detener la artritis",
-     "resumo": "Los científicos han encontrado una forma sorprendente de regenerar el cartílago dañado de la rodilla mediante el bloqueo de una proteína que se vuelve más abundante con la edad. En ratones viejos, el tratamiento restauró el cartílago perdido naturalmente y también ayudó a prevenir la osteoartritis después de..."
-    }
-   },
-   "resumo_original": "Scientists have found a surprising way to regrow damaged knee cartilage by blocking a protein that becomes more abundant with age. In old mice, the treatment restored naturally lost cartilage and also helped prevent osteoarthritis after…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Uma simples adição aos cuidados pós-parto fez uma grande diferença",
-   "resumo": "Novas mães emparelhadas com navegadores de pacientes eram muito mais propensas a receber cuidados pós-parto, triagem de depressão, testes preventivos e cuidados primários contínuos. Ajudando com barreiras como transporte, creche, agendamento e...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261003234017.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-06T11:25:14+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/pediatrician-newborn-baby-with-mother.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "One simple addition to postpartum care made a major difference",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Una simple adición a la atención posparto marcó una gran diferencia",
-     "resumo": "Las nuevas madres emparejadas con navegadores de pacientes tenían muchas más probabilidades de recibir atención posparto, detección de depresión, pruebas preventivas y atención primaria continua. Al ayudar con barreras como el transporte, el cuidado de niños, la programación y..."
-    }
-   },
-   "resumo_original": "New mothers paired with patient navigators were much more likely to receive postpartum care, depression screening, preventive testing, and ongoing primary care. By helping with barriers such as transportation, childcare, scheduling, and…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Alessandro Batezelli, do IG, integra o projeto Amazônia +10, do CNPq e Fapesp",
-   "resumo": "Docente participou de expedição aos rios Iaco e Macauã, no Acre",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/05/alessandro-batezelli-do-ig-integra-o-projeto-amazonia-10-do-cnpq-e-fapesp/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-05T18:57:04+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261002_Achado-fosseis_Capa.jpg",
-   "foco": {
-    "x": 50,
-    "y": 100
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Alessandro Batezelli, from IG, is part of the Amazônia +10 project, from CNPq and FAPESP",
-     "resumo": "Professor participated in an expedition to the Iaco and Macauã rivers, in Acre"
-    },
-    "es": {
-     "titulo": "Alessandro Batezelli, del IG, forma parte del proyecto Amazonia +10, del CNPq y la FAPESP",
-     "resumo": "El profesor participó en una expedición a los ríos Iaco y Macauã, en Acre"
-    }
-   }
   }
  ],
  "artigos": [
@@ -615,25 +604,39 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Correction to “Combined inhibition of de novo pyrimidine synthesis and ATR promotes ATF4‐mediated cell death in TP53‐deficient ALL”",
+   "titulo": "Correção para “Combined inhibition of de novo pyrimidine synthesis and ATR promotes ATF4‐mediated cell death in TP53‐deficient ALL”",
    "autores": "",
    "revista": "Hemasphere",
    "data": "2026-10-01T00:00:00+00:00",
    "doi": null,
    "url": "https://europepmc.org/article/PMC/PMC13636654",
    "acesso_aberto": true,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Correction to “Combined inhibition of de novo pyrimidine synthesis and ATR promotes ATF4‐mediated cell death in TP53‐deficient ALL”",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Corrección a \"La inhibición combinada de la síntesis de pirimidina de novo y ATR promueve la muerte celular mediadapor ATF4 en ALL deficiente en TP53\""
+    }
+   }
   },
   {
    "tipo": "artigo",
-   "titulo": "TP53 Mutation Heterogeneity Refines Prognostic Stratification in IDH‐Wildtype Glioma",
+   "titulo": "A heterogeneidade da mutação TP53 refina a estratificação prognóstica no glioma detipo selvagem IDH",
    "autores": "Liao K, Ye Z, Qi S, Xu C, Huang Y, Li Z, Yi G, Qin Y, Pan Q, Liu G, Chen C, Chen Z, Li H, Wang J, Zhang X, Huang G, Qu…",
    "revista": "MedComm (2020)",
    "data": "2026-10-01T00:00:00+00:00",
    "doi": null,
    "url": "https://europepmc.org/article/PMC/PMC13635792",
    "acesso_aberto": true,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "TP53 Mutation Heterogeneity Refines Prognostic Stratification in IDH‐Wildtype Glioma",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La heterogeneidad de la mutación TP53 refina la estratificación pronóstica en el glioma detipo silvestre IDH"
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -921,14 +924,9 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "rem sleep paradox dreaming may drain the brains energy even as fuel supply rises": "2026-09-26T19:57:41.157426+00:00",
-  "how a horse flu crisis fueled animals rights advocacy in the u s": "2026-09-26T19:57:41.157426+00:00",
-  "zepbound and mounjaro may turn on the bodys calorie burning brown fat": "2026-09-26T19:57:41.157426+00:00",
-  "that fresh cleaning smell could be filling your home with nanoparticles": "2026-09-26T19:57:41.157426+00:00",
   "blood test could gauge if a baby has a dangerous infection in 15 minutes": "2026-09-26T22:59:16.003076+00:00",
   "scientists just found a bizarre cosmic object hiding in plain sight": "2026-09-27T08:21:31.290160+00:00",
   "glucosamine a popular joint supplement linked to faster alzheimers progression": "2026-09-27T14:09:38.653722+00:00",
@@ -1120,6 +1118,12 @@
   "the most ambitious ideas to save the world from el nino": "2026-10-06T17:17:41.278668+00:00",
   "two meteor showers are lighting up the october skyheres how to see them": "2026-10-06T17:17:41.278668+00:00",
   "goodbye joint replacements stanford scientists found a way to regrow cartilage and stop arthritis": "2026-10-06T17:17:41.278668+00:00",
-  "one simple addition to postpartum care made a major difference": "2026-10-06T17:17:41.278668+00:00"
+  "one simple addition to postpartum care made a major difference": "2026-10-06T17:17:41.278668+00:00",
+  "outubro rosa deteccao precoce e fundamental para reduzir risco de morte por cancer de mama": "2026-10-06T21:44:28.800200+00:00",
+  "coloquio apresenta a historia da participacao brasileira no centro europeu de pesquisa nuclear": "2026-10-06T21:44:28.800200+00:00",
+  "simposio em aborda nutricao materno infantil e saude reprodutiva": "2026-10-06T21:44:28.800200+00:00",
+  "clube sci saifr discute os misterios do mundo das particulas": "2026-10-06T21:44:28.800200+00:00",
+  "pesquisa detecta cocaina em rios do rio de janeiro": "2026-10-06T21:44:28.800200+00:00",
+  "scientists take a radiometer for a spin in a hot air balloon": "2026-10-06T21:44:28.800200+00:00"
  }
 }
