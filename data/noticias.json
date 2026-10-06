@@ -1,6 +1,83 @@
 {
- "atualizado_em": "2026-10-06T10:32:56.757612+00:00",
+ "atualizado_em": "2026-10-06T17:17:41.278668+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "Muito além de evitar infecções: como as vacinas podem proteger o cérebro e o coração dos idosos",
+   "resumo": "Egídio Dorea afirma que há vacinas que não podem faltar no calendário do idoso, como, por exemplo, a da influenza, que, ao contrário do que se pensa, não causa gripe",
+   "url": "https://jornal.usp.br/atualidades/envelhecimento-saudavel-combina-com-vacinacao/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-06T12:00:57+00:00",
+   "tema": "Saúde",
+   "relevancia": 13,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/08/20230807_vacinacao.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Beyond Preventing Infections: How Vaccines Can Protect the Brain and Heart of the Elderly",
+     "resumo": "Egídio Dorea states that there are vaccines that cannot be missed in the elderly's calendar, such as, for example, influenza, which, contrary to what is thought, does not cause flu"
+    },
+    "es": {
+     "titulo": "Más allá de la prevención de infecciones: cómo las vacunas pueden proteger el cerebro y el corazón de las personas mayores",
+     "resumo": "Egídio Dorea afirma que hay vacunas que no pueden faltar en el calendario de las personas mayores, como, por ejemplo, la gripe, que, contrariamente a lo que se piensa, no provoca gripe"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "“Boletim Climatológico”: El Niño influencia primavera com chuvas e temperaturas contrastantes no Brasil",
+   "resumo": "A pesquisadora Ana Carolina Nóbile Tomaziello explica os efeitos do fenômeno e as tendências para a nova estação",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/boletim-climatologico-el-nino-influencia-primavera-com-chuvas-e-temperaturas-contrastantes-no-brasil/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-06T13:52:56+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 11,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/10/20251001_primavera.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "\"Climatological Bulletin\": El Niño influences spring with rainfall and contrasting temperatures in Brazil",
+     "resumo": "Researcher Ana Carolina Nóbile Tomaziello explains the effects of the phenomenon and the trends for the new season"
+    },
+    "es": {
+     "titulo": "\"Boletín Climatológico\": El Niño influye en la primavera con lluvias y temperaturas contrastantes en Brasil",
+     "resumo": "La investigadora Ana Carolina Nóbile Tomaziello explica los efectos del fenómeno y las tendencias para la nueva temporada"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Consumir bebidas muito quentes e com frequência pode aumentar risco de câncer de esôfago",
+   "resumo": "Estudo com quase 1 milhão de pessoas aponta risco três vezes maior de carcinoma de células escamosas entre quem consome bebidas em temperaturas mais elevadas",
+   "url": "https://jornal.usp.br/atualidades/consumir-bebidas-muito-quentes-e-com-frequencia-aumenta-risco-de-cancer-de-esofago/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-06T11:20:01+00:00",
+   "tema": "Câncer",
+   "relevancia": 11,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260925_cafe.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Drinking beverages that are too hot and too often can increase the risk of esophageal cancer",
+     "resumo": "A study of almost 1 million people shows a three times higher risk of squamous cell carcinoma among those who consume beverages at higher temperatures"
+    },
+    "es": {
+     "titulo": "Beber bebidas demasiado calientes y con demasiada frecuencia puede aumentar el riesgo de cáncer de esófago"
+    }
+   }
+  },
   {
    "tipo": "noticia",
    "titulo": "Gotas de sangue podem antecipar o sinal de alerta contra o câncer",
@@ -29,26 +106,25 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Programa aproxima Brasil e Índia para levar pesquisas em saúde ao mercado",
-   "resumo": "Com etapas de seis meses em cada país, iniciativa poderá envolver pesquisadores e estudantes da Universidade de São Paulo, o Inova e o Supera Parque",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/programa-aproxima-brasil-e-india-para-levar-pesquisas-em-saude-ao-mercado/",
-   "fonte": "Jornal da USP",
+   "titulo": "Pesquisadores redesenham o mapa dos efeitos do El Niño na agricultura",
+   "resumo": "Enquanto algumas culturas podem se beneficiar das chuvas no Sul, outras ficam expostas à seca no Norte e no Nordeste",
+   "url": "https://revistapesquisa.fapesp.br/pesquisadores-redesenham-o-mapa-dos-efeitos-do-el-nino-na-agricultura/?utm_source=rss&utm_medium=rss&utm_campaign=pesquisadores-redesenham-o-mapa-dos-efeitos-do-el-nino-na-agricultura",
+   "fonte": "Revista Pesquisa FAPESP",
    "idioma": "pt",
-   "data": "2026-10-05T18:56:51+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261005_00_programa_brics_biodesign.jpg",
+   "data": "2026-10-06T14:13:47+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 9,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/4c89ccb9f8a6c0547518bb89c469ea4786e52d0b_1200-630.jpg",
    "foco": {
-    "inteira": true
+    "x": 50,
+    "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Program brings Brazil and India closer together to bring health research to the market",
-     "resumo": "With six-month stages in each country, the initiative may involve researchers and students from the University of São Paulo, Inova and Supera Parque"
+     "titulo": "Researchers redraw map of El Niño effects on agriculture"
     },
     "es": {
-     "titulo": "Programa acerca a Brasil e India para llevar la investigación en salud al mercado",
-     "resumo": "Con etapas de seis meses en cada país, la iniciativa puede involucrar a investigadores y estudiantes de la Universidad de São Paulo, Inova y Supera Parque"
+     "titulo": "Los investigadores redibujan el mapa de los efectos de El Niño en la agricultura"
     }
    }
   },
@@ -76,55 +152,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Alessandro Batezelli, do IG, integra o projeto Amazônia +10, do CNPq e Fapesp",
-   "resumo": "Docente participou de expedição aos rios Iaco e Macauã, no Acre",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/05/alessandro-batezelli-do-ig-integra-o-projeto-amazonia-10-do-cnpq-e-fapesp/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-05T18:57:04+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261002_Achado-fosseis_Capa.jpg",
-   "foco": {
-    "x": 50,
-    "y": 100
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Alessandro Batezelli, from IG, is part of the Amazônia +10 project, from CNPq and FAPESP",
-     "resumo": "Professor participated in an expedition to the Iaco and Macauã rivers, in Acre"
-    },
-    "es": {
-     "titulo": "Alessandro Batezelli, del IG, forma parte del proyecto Amazonia +10, del CNPq y la FAPESP",
-     "resumo": "El profesor participó en una expedición a los ríos Iaco y Macauã, en Acre"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "“Falta de Deus?” Estudo desmistifica crenças sobre a religiosidade da população em situação de rua que usa drogas",
-   "resumo": "Conduzida no Brasil e em Portugal, pesquisa traz novas interpretações sobre a relação de pessoas com dependência de drogas e em situação de rua com a dimensão religiosa",
-   "url": "https://jornal.usp.br/ciencias/falta-de-deus-estudo-desmistifica-crencas-sobre-a-religiosidade-da-populacao-em-situacao-de-rua-que-usa-drogas/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-05T16:14:06+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261005_moradoresderua.jpg",
+   "titulo": "O câncer colorretal está aumentando em jovens e muitas vezes encontrado tarde demais",
+   "resumo": "O câncer colorretal em jovens é frequentemente diagnosticado em um estágio avançado, com os pesquisadores descobrindo que a maioria dos pacientes com 21 anos ou menos já tinha doença em estágio III ou IV. Porque sintomas como sangramento retal, perda de peso, dor abdominal...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261003234019.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-06T13:20:15+00:00",
+   "tema": "Câncer",
+   "relevancia": 8,
+   "imagem": "https://www.sciencedaily.com/images/1920/colon-colorectal-cancer.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
+   "titulo_original": "Colorectal cancer is rising in young people and often found too late",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "\"Lack of God?\" Study demystifies beliefs about the religiosity of the homeless population that uses drugs",
-     "resumo": "Conducted in Brazil and Portugal, the research brings new interpretations about the relationship of people with drug dependence and homelessness with the religious dimension"
-    },
     "es": {
-     "titulo": "Estudio “¿Falta de Dios?” desmitifica creencias sobre la religiosidad de la población sin hogar que consume drogas",
-     "resumo": "Realizada en Brasil y Portugal, la investigación aporta nuevas interpretaciones sobre la relación de las personas con drogodependencia y sin techo con la dimensión religiosa"
+     "titulo": "El cáncer colorrectal está aumentando en los jóvenes y a menudo se detecta demasiado tarde",
+     "resumo": "El cáncer colorrectal en los jóvenes a menudo se diagnostica en una etapa avanzada, y los investigadores encuentran que la mayoría de los pacientes de 21 años o menos ya tenían la enfermedad en etapa III o IV. Porque síntomas como sangrado rectal, pérdida de peso, dolor abdominal..."
     }
-   }
+   },
+   "resumo_original": "Colorectal cancer in young people is often diagnosed at an advanced stage, with researchers finding most patients age 21 or younger already had Stage III or IV disease. Because symptoms like rectal bleeding, weight loss, abdominal pain…"
   },
   {
    "tipo": "noticia",
@@ -155,7 +204,7 @@
   {
    "tipo": "noticia",
    "titulo": "Prêmio Nobel de Física pela descoberta de neutrinos de alta energia",
-   "resumo": "O Prêmio Nobel de Física de 2026 foi ganho por Francis Halzen por seu trabalho sobre neutrinos, que agem como \"mensageiros fantasmagóricos do cosmos\"",
+   "resumo": "O Prêmio Nobel de Física de 2026 foi ganho por Francis Halzen por seu trabalho sobre neutrinos, que servem como \"mensageiros fantasmagóricos do cosmos\"",
    "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
@@ -172,177 +221,159 @@
    "i18n": {
     "es": {
      "titulo": "Premio Nobel de Física por el descubrimiento de neutrinos de alta energía",
-     "resumo": "El premio Nobel de física de 2026 ha sido ganado por Francis Halzen por su trabajo sobre los neutrinos, que actúan como \"mensajeros fantasmales del cosmos\""
+     "resumo": "El premio Nobel de física de 2026 ha sido ganado por Francis Halzen por su trabajo sobre los neutrinos, que sirven como \"mensajeros fantasmales del cosmos\""
     }
    },
-   "resumo_original": "The 2026 Nobel prize in physics has been won by Francis Halzen for his work on neutrinos, which act like 'ghostly messengers from the cosmos'"
+   "resumo_original": "The 2026 Nobel prize in physics has been won by Francis Halzen for his work on neutrinos, which serve as 'ghost-like messengers from the cosmos'"
   },
   {
    "tipo": "noticia",
-   "titulo": "A internacionalização da ciência paulista",
-   "resumo": "Por Marco Antonio Zago, professor da Faculdade de Medicina de Ribeirão Preto da USP e presidente da Fapesp",
-   "url": "https://jornal.usp.br/artigos/a-internacionalizacao-da-ciencia-paulista/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-05T21:20:47+00:00",
-   "tema": "Saúde",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2018/08/marco_zago.jpg",
-   "foco": {
-    "x": 46,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "The internationalization of São Paulo science",
-     "resumo": "Marco Antonio Zago, professor at USP's Ribeirão Preto Medical School and president of FAPESP"
-    },
-    "es": {
-     "titulo": "La internacionalización de la ciencia paulista",
-     "resumo": "Marco Antonio Zago, profesor de la Facultad de Medicina Ribeirão Preto de la USP y presidente de la FAPESP"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
-   "resumo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
-   "url": "https://www.nature.com/articles/d41586-026-03174-0",
-   "fonte": "Nature",
+   "titulo": "O que faz um bom teste de segurança de IA? Especialistas explicam por que mesmo as melhores técnicas podem não ser poderosas o suficiente",
+   "resumo": "\"Com a ciência de hoje, geralmente não podemos mostrar com alta confiança que o comportamento perigoso não existe\"",
+   "url": "https://www.scientificamerican.com/article/what-makes-a-good-ai-safety-test-experts-explain-why-even-the-best-techniques-may-not-be-powerful-enough/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-06T00:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "The Great Barrier Reef requires special attention in the developing super El Niño",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño",
-     "resumo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño"
-    }
-   },
-   "resumo_original": "The Great Barrier Reef requires special attention in the developing super El Niño"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A IA pode minar a independência científica de maneiras sutis",
-   "resumo": "A IA pode minar a independência científica de maneiras sutis",
-   "url": "https://www.nature.com/articles/d41586-026-03175-z",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-06T00:00:00+00:00",
+   "data": "2026-10-06T14:30:00+00:00",
    "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "AI could undermine scientific independence in subtle ways",
+   "imagem": "https://static.scientificamerican.com/dam/m/43f87d68eb21cf30/original/Robot_stepping_on_banana_peel.jpg?m=1727190943.601&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "What makes a good AI safety test? Experts explain why even the best techniques may not be powerful enough",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La IA podría socavar la independencia científica de maneras sutiles",
-     "resumo": "La IA podría socavar la independencia científica de maneras sutiles"
+     "titulo": "¿Qué hace que una prueba de seguridad de IA sea buena? Los expertos explican por qué incluso las mejores técnicas pueden no ser lo suficientemente potentes",
+     "resumo": "\"Con la ciencia actual, por lo general no podemos demostrar con alta confianza que no existe un comportamiento peligroso\""
     }
    },
-   "resumo_original": "AI could undermine scientific independence in subtle ways"
+   "resumo_original": "“With today’s science we usually can’t show with high confidence that dangerous behavior isn’t there”"
   },
   {
    "tipo": "noticia",
-   "titulo": "A IA encontra um diagrama de Venn desconcertantemente complexo, mas bonito e simétrico",
-   "resumo": "Criar diagramas de Venn rotacionalmente simétricos de tamanho crescente é um desafio matemático de longa data - agora um amador usou IA para gerar os maiores até agora",
-   "url": "https://www.newscientist.com/article/2591415-ai-finds-bafflingly-complex-but-beautiful-symmetrical-venn-diagram/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "As ideias mais ambiciosas para salvar o mundo do El Niño",
+   "resumo": "Um El Niño monstruoso está se formando no Oceano Pacífico – mas pode haver maneiras de impedir que os piores impactos ocorram",
+   "url": "https://www.newscientist.com/article/2592044-the-most-ambitious-ideas-to-save-the-world-from-el-nino/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-05T14:40:13+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-06T13:00:00+00:00",
+   "tema": "Meio ambiente",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315416853.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315420680.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "AI finds bafflingly complex but beautiful symmetrical Venn diagram",
+   "titulo_original": "The most ambitious ideas to save the world from El Niño",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La IA encuentra un diagrama de Venn desconcertantemente complejo pero hermoso y simétrico",
-     "resumo": "Crear diagramas de Venn rotacionalmente simétricos de tamaño creciente es un desafío matemático de larga data: ahora un aficionado ha utilizado la IA para generar los más grandes hasta ahora"
+     "titulo": "Las ideas más ambiciosas para salvar al mundo de El Niño",
+     "resumo": "Se está gestando un monstruoso El Niño en el Océano Pacífico, pero puede haber formas de evitar que ocurran los peores impactos"
     }
    },
-   "resumo_original": "Creating rotationally symmetrical Venn diagrams of increasing size is a long-standing mathematical challenge - now an amateur has used AI to generate the largest ones yet"
+   "resumo_original": "A monster El Niño is brewing in the Pacific Ocean – but there may be ways we can stop the worst impacts from occurring"
   },
   {
    "tipo": "noticia",
-   "titulo": "Você deve ser \"maxxing de cocô\" ou \"maxxing de fibra\"? Especialistas explicam o que é saudável",
-   "resumo": "Suas fezes podem dizer muito sobre sua saúde",
-   "url": "https://www.scientificamerican.com/article/should-you-be-poop-maxxing-or-fiber-maxxing-experts-explain-whats-healthy/",
+   "titulo": "Duas chuvas de meteoros estão iluminando o céu de outubro - veja como vê-las",
+   "resumo": "Os Draconídeos e Orionídeos atingem o pico este mês",
+   "url": "https://www.scientificamerican.com/article/two-meteor-showers-are-lighting-up-the-october-sky-heres-how-to-see-them/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-05T11:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "https://static.scientificamerican.com/dam/asset/64b5af83-da98-4f8b-b828-09131f23473b/poopmaxxing-still.jpg?m=1790954372.341&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Should you be ‘poop maxxing,’ or ‘fiber maxxing’? Experts explain what’s healthy",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿Deberías hacer ‘pop maxxing’ o ‘fiber maxxing’? Los expertos explican lo que es saludable",
-     "resumo": "Tus heces pueden decirte mucho sobre tu salud"
-    }
-   },
-   "resumo_original": "Your feces can tell you a lot about your health"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Emirados Árabes Unidos lançarão espaçonave para sondar sete asteroides em 2028",
-   "resumo": "O programa espacial do país é novo e ambicioso, já tendo enviado uma missão para a órbita de Marte",
-   "url": "https://www.scientificamerican.com/article/united-arab-emirates-to-launch-spacecraft-to-probe-seven-asteroids-in-2028/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-05T16:30:00+00:00",
-   "tema": "Espaço",
+   "data": "2026-10-06T17:00:00+00:00",
+   "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/dad4e7ba-46cf-42f5-ac23-1778e20bb8cb/MBR-Explorder.jpg?m=1791220118.262&w=1200",
+   "imagem": "https://static.scientificamerican.com/dam/asset/5ade388b-bd78-4c9d-9091-9bbd34b2d8b4/Orionid.jpg?m=1791306085.3&w=1200",
    "foco": {
     "x": 50,
-    "y": 0
+    "y": 50
    },
-   "titulo_original": "United Arab Emirates to launch spacecraft to probe seven asteroids in 2028",
+   "titulo_original": "Two meteor showers are lighting up the October sky—here’s how to see them",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Emiratos Árabes Unidos lanzará una nave espacial para sondear siete asteroides en 2028",
-     "resumo": "El programa espacial del país es nuevo y ambicioso, ya que ha enviado una misión a la órbita de Marte"
+     "titulo": "Dos lluvias de meteoritos iluminan el cielo de octubre: aquí te mostramos cómo verlas",
+     "resumo": "Las Dracónidas y las Oriónidas alcanzan su punto máximo este mes"
     }
    },
-   "resumo_original": "The country’s space program is new and ambitious, having already sent a mission into Mars orbit"
+   "resumo_original": "The Draconids and Orionids both peak this month"
   },
   {
    "tipo": "noticia",
-   "titulo": "O ensino de ciências que o Pisa revela",
-   "resumo": "Números mostram que o Brasil avançou pouco no ensino de ciências nos últimos 20 anos",
-   "url": "https://revistapesquisa.fapesp.br/o-ensino-de-ciencias-que-o-pisa-revela/?utm_source=rss&utm_medium=rss&utm_campaign=o-ensino-de-ciencias-que-o-pisa-revela",
-   "fonte": "Revista Pesquisa FAPESP",
+   "titulo": "Adeus substituições de articulações? Os cientistas de Stanford encontraram uma maneira de regenerar a cartilagem e parar a artrite",
+   "resumo": "Os cientistas descobriram uma maneira surpreendente de regenerar a cartilagem do joelho danificada, bloqueando uma proteína que se torna mais abundante com a idade. Em camundongos velhos, o tratamento restaurou a cartilagem naturalmente perdida e também ajudou a prevenir a osteoartrite após...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261005011249.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-06T13:03:47+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/knee-joint-arthritis-cartilage-injury.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Goodbye joint replacements? Stanford scientists found a way to regrow cartilage and stop arthritis",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Adiós a los reemplazos de articulaciones? Los científicos de Stanford encontraron una manera de regenerar el cartílago y detener la artritis",
+     "resumo": "Los científicos han encontrado una forma sorprendente de regenerar el cartílago dañado de la rodilla mediante el bloqueo de una proteína que se vuelve más abundante con la edad. En ratones viejos, el tratamiento restauró el cartílago perdido naturalmente y también ayudó a prevenir la osteoartritis después de..."
+    }
+   },
+   "resumo_original": "Scientists have found a surprising way to regrow damaged knee cartilage by blocking a protein that becomes more abundant with age. In old mice, the treatment restored naturally lost cartilage and also helped prevent osteoarthritis after…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Uma simples adição aos cuidados pós-parto fez uma grande diferença",
+   "resumo": "Novas mães emparelhadas com navegadores de pacientes eram muito mais propensas a receber cuidados pós-parto, triagem de depressão, testes preventivos e cuidados primários contínuos. Ajudando com barreiras como transporte, creche, agendamento e...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261003234017.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-06T11:25:14+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/pediatrician-newborn-baby-with-mother.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "One simple addition to postpartum care made a major difference",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Una simple adición a la atención posparto marcó una gran diferencia",
+     "resumo": "Las nuevas madres emparejadas con navegadores de pacientes tenían muchas más probabilidades de recibir atención posparto, detección de depresión, pruebas preventivas y atención primaria continua. Al ayudar con barreras como el transporte, el cuidado de niños, la programación y..."
+    }
+   },
+   "resumo_original": "New mothers paired with patient navigators were much more likely to receive postpartum care, depression screening, preventive testing, and ongoing primary care. By helping with barriers such as transportation, childcare, scheduling, and…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Alessandro Batezelli, do IG, integra o projeto Amazônia +10, do CNPq e Fapesp",
+   "resumo": "Docente participou de expedição aos rios Iaco e Macauã, no Acre",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/05/alessandro-batezelli-do-ig-integra-o-projeto-amazonia-10-do-cnpq-e-fapesp/",
+   "fonte": "Jornal da Unicamp",
    "idioma": "pt",
-   "data": "2026-09-25T11:58:14+00:00",
+   "data": "2026-10-05T18:57:04+00:00",
    "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/cc1fc4b2e1056527f8acd33c82bed025d45802e0_1200-630.jpg",
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261002_Achado-fosseis_Capa.jpg",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 100
    },
    "i18n": {
     "en": {
-     "titulo": "The science education that Pisa reveals",
-     "resumo": "Figures show that Brazil has made little progress in science education in the last 20 years"
+     "titulo": "Alessandro Batezelli, from IG, is part of the Amazônia +10 project, from CNPq and FAPESP",
+     "resumo": "Professor participated in an expedition to the Iaco and Macauã rivers, in Acre"
     },
     "es": {
-     "titulo": "La educación científica que revela Pisa",
-     "resumo": "Las cifras muestran que Brasil ha avanzado poco en la educación científica en los últimos 20 años"
+     "titulo": "Alessandro Batezelli, del IG, forma parte del proyecto Amazonia +10, del CNPq y la FAPESP",
+     "resumo": "El profesor participó en una expedición a los ríos Iaco y Macauã, en Acre"
     }
    }
   }
@@ -392,7 +423,7 @@
    "data": "2026-10-04T00:00:00+00:00",
    "doi": "10.1002/mco2.70998",
    "url": "https://doi.org/10.1002/mco2.70998",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "Envonalkib Versus Crizotinib in Treatment-Naive ALK -Positive Non-Small Cell Lung Cancer: Final Efficacy and Biomarker Analyses of the Randomized Phase III Study.",
    "traduzido": true,
@@ -410,7 +441,7 @@
    "data": "2026-10-04T00:00:00+00:00",
    "doi": "10.1186/s40104-026-01502-y",
    "url": "https://doi.org/10.1186/s40104-026-01502-y",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Saúde",
    "titulo_original": "Postbiotics enhance immune competence in black rockfish (Sebastes schlegelii): linking innate immunity, apoptosis, and resistance to bacterial infection.",
    "traduzido": true,
@@ -446,7 +477,7 @@
    "data": "2026-10-03T00:00:00+00:00",
    "doi": "10.1007/s00432-026-06630-6",
    "url": "https://doi.org/10.1007/s00432-026-06630-6",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "Evaluation of novel targeted small-molecule therapeutics in desmoplastic small round cell tumor (DSRCT) cells.",
    "traduzido": true,
@@ -584,13 +615,35 @@
   },
   {
    "tipo": "artigo",
+   "titulo": "Correction to “Combined inhibition of de novo pyrimidine synthesis and ATR promotes ATF4‐mediated cell death in TP53‐deficient ALL”",
+   "autores": "",
+   "revista": "Hemasphere",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": null,
+   "url": "https://europepmc.org/article/PMC/PMC13636654",
+   "acesso_aberto": true,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "TP53 Mutation Heterogeneity Refines Prognostic Stratification in IDH‐Wildtype Glioma",
+   "autores": "Liao K, Ye Z, Qi S, Xu C, Huang Y, Li Z, Yi G, Qin Y, Pan Q, Liu G, Chen C, Chen Z, Li H, Wang J, Zhang X, Huang G, Qu…",
+   "revista": "MedComm (2020)",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": null,
+   "url": "https://europepmc.org/article/PMC/PMC13635792",
+   "acesso_aberto": true,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
    "titulo": "Mosaicism for Cohen-Gibson Syndrome in a Female Individual With Overgrowth and Neurodevelopmental Delay.",
    "autores": "Song F, Michels M, Betz B, Vorhoff W, Neuhann T, Senninger L, Wieczorek D.",
    "revista": "Mol Genet Genomic Med",
    "data": "2026-10-01T00:00:00+00:00",
    "doi": "10.1002/mgg3.70286",
    "url": "https://doi.org/10.1002/mgg3.70286",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Ciência",
    "titulo_original": "Mosaicism for Cohen-Gibson Syndrome in a Female Individual With Overgrowth and Neurodevelopmental Delay.",
    "traduzido": true,
@@ -608,7 +661,7 @@
    "data": "2026-10-01T00:00:00+00:00",
    "doi": "10.1002/cncr.70626",
    "url": "https://doi.org/10.1002/cncr.70626",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "Phase 1 dose escalation and expansion trial of the bispecific CD47 inhibitor and CD40 agonist Fc-fusion protein SL-172154 (SIRPα-Fc-CD40L) in patients with higher-risk myelodysplastic syndrome or acute myeloid leukemia.",
    "traduzido": true,
@@ -851,42 +904,6 @@
      "titulo": "Determinantes genómicos y clínicos de la respuesta a la azacitidina más venetoclax en la leucemia mieloide aguda: resultados del estudio HM-SCREEN-Japan 02."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Análise do comprimento dos telômeros usando qPCR na anemia aplástica: prevalência e valor preditivo para o status de mutação da linhagem germinativa.",
-   "autores": "Raina S, Jain A, Thakur V, Balakrishnan A, Jamwal M, Bhatia P, Bansal D, Malhotra P, Das R, Sreedharanunni S.",
-   "revista": "Blood Res",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1007/s44313-026-00182-x",
-   "url": "https://doi.org/10.1007/s44313-026-00182-x",
-   "acesso_aberto": true,
-   "tema": "Genética",
-   "titulo_original": "Telomere length analysis using qPCR in aplastic anemia: prevalence and predictive value for germline mutation status.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Análisis de la longitud de los telómeros utilizando qPCR en la anemia aplásica: prevalencia y valor predictivo para el estado de mutación de la línea germinal."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Alterações genômicas e tratamento definem padrões espaço-temporais de recorrência do glioblastoma.",
-   "autores": "Artzi SB, Harwood DSL, Locallo A, Anand A, Lund CC, Klausen MN, Righetti M, Madsen SB, Jacobsen J, Hammouda NM, Lü MJS…",
-   "revista": "Cancer Discov",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1158/2159-8290.cd-25-2302",
-   "url": "https://doi.org/10.1158/2159-8290.cd-25-2302",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Genomic alterations and treatment define spatiotemporal patterns of glioblastoma recurrence.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las alteraciones genómicas y el tratamiento definen los patrones espaciotemporales de recurrencia del glioblastoma."
-    }
-   }
   }
  ],
  "fontes": [
@@ -904,22 +921,10 @@
   "Europe PMC"
  ],
  "erros": [
+  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "estudo comprova efetividade e viabilidade da prep de longa duracao": "2026-09-26T13:24:34.474796+00:00",
-  "2 feira intercocen mostra que ciencia e antidoto para desinformacao": "2026-09-26T13:24:34.474796+00:00",
-  "o menino cresceu": "2026-09-26T13:24:34.474796+00:00",
-  "how the bodys own immune system can attack the brain": "2026-09-26T13:24:34.474796+00:00",
-  "contribuicoes da fiocruz para as eleicoes 2026 compromisso 4 proteger quem precisa": "2026-09-26T13:24:34.474796+00:00",
-  "scientists gave worms magnetic bacteria they lived 43 longer": "2026-09-26T13:24:34.474796+00:00",
-  "fiocruz participa de painel sobre reforma da arquitetura e governanca da saude global": "2026-09-26T13:24:34.474796+00:00",
-  "virtual green spaces and classical music reduce blood pressure in hospital": "2026-09-26T13:24:34.474796+00:00",
-  "functional pathway phenotyping reveals increased lrrk2 activity beyond recognised genetic causes of parkinsons disease": "2026-09-26T13:25:14.985563+00:00",
-  "inscricoes abertas para o curso de verao em fisiologia": "2026-09-26T13:25:14.985563+00:00",
-  "ivan vilela abre residencia artistica no idea com aula espetaculo sobre a historia da viola": "2026-09-26T13:25:14.985563+00:00",
-  "crispr based gene drive systems alter the transcriptome in anopheles gambiae mosquitoes": "2026-09-26T13:25:14.985563+00:00",
-  "folheie ou baixe a edicao 365": "2026-09-26T13:25:40.144337+00:00",
   "rem sleep paradox dreaming may drain the brains energy even as fuel supply rises": "2026-09-26T19:57:41.157426+00:00",
   "how a horse flu crisis fueled animals rights advocacy in the u s": "2026-09-26T19:57:41.157426+00:00",
   "zepbound and mounjaro may turn on the bodys calorie burning brown fat": "2026-09-26T19:57:41.157426+00:00",
@@ -1105,6 +1110,16 @@
   "ai could undermine scientific independence in subtle ways": "2026-10-06T10:32:56.757612+00:00",
   "ai finds bafflingly complex but beautiful symmetrical venn diagram": "2026-10-06T10:32:56.757612+00:00",
   "united arab emirates to launch spacecraft to probe seven asteroids in 2028": "2026-10-06T10:32:56.757612+00:00",
-  "o ensino de ciencias que o pisa revela": "2026-10-06T10:32:56.757612+00:00"
+  "o ensino de ciencias que o pisa revela": "2026-10-06T10:32:56.757612+00:00",
+  "muito alem de evitar infeccoes como as vacinas podem proteger o cerebro e o coracao dos idosos": "2026-10-06T17:17:41.278668+00:00",
+  "boletim climatologico el nino influencia primavera com chuvas e temperaturas contrastantes no brasil": "2026-10-06T17:17:41.278668+00:00",
+  "consumir bebidas muito quentes e com frequencia pode aumentar risco de cancer de esofago": "2026-10-06T17:17:41.278668+00:00",
+  "pesquisadores redesenham o mapa dos efeitos do el nino na agricultura": "2026-10-06T17:17:41.278668+00:00",
+  "colorectal cancer is rising in young people and often found too late": "2026-10-06T17:17:41.278668+00:00",
+  "what makes a good ai safety test experts explain why even the best techniques may not be powerful enough": "2026-10-06T17:17:41.278668+00:00",
+  "the most ambitious ideas to save the world from el nino": "2026-10-06T17:17:41.278668+00:00",
+  "two meteor showers are lighting up the october skyheres how to see them": "2026-10-06T17:17:41.278668+00:00",
+  "goodbye joint replacements stanford scientists found a way to regrow cartilage and stop arthritis": "2026-10-06T17:17:41.278668+00:00",
+  "one simple addition to postpartum care made a major difference": "2026-10-06T17:17:41.278668+00:00"
  }
 }
