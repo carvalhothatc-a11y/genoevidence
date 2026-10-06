@@ -1,31 +1,6 @@
 {
- "atualizado_em": "2026-10-06T03:08:31.331255+00:00",
+ "atualizado_em": "2026-10-06T10:32:56.757612+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "Uma onda oceânica alimentada pelo El Niño pode aumentar os riscos de inundação na Califórnia, à medida que o debate sobre vacinas na Flórida desperta preocupações com surtos",
-   "resumo": "Uma onda oceânica causada pelo El Niño ameaça inundações costeiras, pesquisadores alertam que um plano para afrouxar os requisitos de vacina aumentará os riscos de sarampo na Flórida e especialistas desmascaram um remédio viral para o resfriado do TikTok",
-   "url": "https://www.scientificamerican.com/podcast/episode/an-el-nino-fueled-ocean-wave-could-raise-california-flood-risks-as-floridas-vaccine-debate-sparks-outbreak-concerns/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-05T10:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 12,
-   "imagem": "https://static.scientificamerican.com/dam/asset/b8aef920-41ee-444f-9a04-4058a5713c07/2610_SQ_MON_OCT_05.png?m=1790959112.336&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "An El Niño–fueled ocean wave could raise California flood risks as Florida’s vaccine debate sparks outbreak concerns",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Una ola oceánica alimentada por El Niño podría aumentar los riesgos de inundaciones en California, ya que el debate sobre las vacunas en Florida genera preocupación por el brote",
-     "resumo": "Una oleada oceánica provocada por El Niño amenaza las inundaciones costeras, los investigadores advierten que un plan para reducir los requisitos de vacunas aumentará los riesgos de sarampión en Florida, y los expertos desacreditan un remedio viral para el resfriado TikTok"
-    }
-   },
-   "resumo_original": "An El Niño–driven ocean surge threatens coastal flooding, researchers warn that a plan to loosen vaccine requirements will increase measles risks in Florida, and experts debunk a viral TikTok cold remedy"
-  },
   {
    "tipo": "noticia",
    "titulo": "Gotas de sangue podem antecipar o sinal de alerta contra o câncer",
@@ -74,32 +49,6 @@
     "es": {
      "titulo": "Programa acerca a Brasil e India para llevar la investigación en salud al mercado",
      "resumo": "Con etapas de seis meses en cada país, la iniciativa puede involucrar a investigadores y estudiantes de la Universidad de São Paulo, Inova y Supera Parque"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Pesquisa identifica estratégia molecular contra a leishmaniose cutânea",
-   "resumo": "Estudo descreve os primeiros inibidores de uma enzima essencial do parasita Leishmania braziliensis e abre caminho para tratamentos mais criteriosos e duradouros contra a doença",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/pesquisa-identifica-estrategia-molecular-contra-a-leishmaniose-cutanea/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-05T14:34:16+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260915_leishmaniose.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Research identifies molecular strategy against cutaneous leishmaniasis",
-     "resumo": "Study describes the first inhibitors of an essential enzyme of the parasite Leishmania braziliensis and paves the way for more judicious and long-lasting treatments against the disease"
-    },
-    "es": {
-     "titulo": "La investigación identifica la estrategia molecular contra la leishmaniasis cutánea",
-     "resumo": "El estudio describe los primeros inhibidores de una enzima esencial del parásito Leishmania braziliensis y allana el camino para tratamientos más juiciosos y duraderos contra la enfermedad"
     }
    }
   },
@@ -179,105 +128,147 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Pós-graduação em estatística seleciona candidatos",
-   "resumo": "Programa interinstitucional da UFSCar e da USP oferece mestrado, doutorado e doutorado direto",
-   "url": "https://agencia.fapesp.br/pos-graduacao-em-estatistica-seleciona-candidatos/59341",
+   "titulo": "Proteína pouco conhecida é potencial alvo contra a doença de Chagas",
+   "resumo": "Em testes de laboratório, a redução da enzima IP6K impediu o parasita Trypanosoma cruzi de se diferenciar e de manter o ciclo de infecção em células cardíacas humanas",
+   "url": "https://agencia.fapesp.br/proteina-pouco-conhecida-e-potencial-alvo-contra-a-doenca-de-chagas/59340",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-06T03:08:31.331255+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59341.jpg",
+   "data": "2026-10-06T10:32:56.757612+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://agencia.fapesp.br/files/post/59340.jpg",
    "foco": {
     "x": 50,
-    "y": 0
+    "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Graduate degree in statistics selects candidates",
-     "resumo": "Interinstitutional program of UFSCar and USP offers master's, doctorate and direct doctorate"
+     "titulo": "Little-known protein is potential target against Chagas disease",
+     "resumo": "In laboratory tests, the reduction of the IP6K enzyme prevented the parasite Trypanosoma cruzi from differentiating and maintaining the cycle of infection in human cardiac cells"
     },
     "es": {
-     "titulo": "El título de posgrado en estadística selecciona candidatos",
-     "resumo": "Programa interinstitucional de UFSCar y USP ofrece maestría, doctorado y doctorado directo"
+     "titulo": "La proteína poco conocida es un objetivo potencial contra la enfermedad de Chagas",
+     "resumo": "En las pruebas de laboratorio, la reducción de la enzima IP6K impidió que el parásito Trypanosoma cruzi se diferenciara y mantuviera el ciclo de infección en las células cardíacas humanas"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Podemos aproveitar o sistema de limpeza profunda do cérebro para prevenir a doença de Alzheimer?",
-   "resumo": "O sistema glifático é a rede recém-descoberta do cérebro para eliminar toxinas. Agora, estamos descobrindo maneiras surpreendentes de impulsioná-lo para proteger a saúde do cérebro",
-   "url": "https://www.newscientist.com/article/2590514-can-we-harness-the-brains-deep-cleaning-system-to-prevent-alzheimers/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "Prêmio Nobel de Física pela descoberta de neutrinos de alta energia",
+   "resumo": "O Prêmio Nobel de Física de 2026 foi ganho por Francis Halzen por seu trabalho sobre neutrinos, que agem como \"mensageiros fantasmagóricos do cosmos\"",
+   "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-05T15:00:00+00:00",
+   "data": "2026-10-06T10:26:02+00:00",
+   "tema": "Espaço",
+   "relevancia": 7,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315508364.jpg",
+   "foco": {
+    "x": 50,
+    "y": 54
+   },
+   "titulo_original": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Premio Nobel de Física por el descubrimiento de neutrinos de alta energía",
+     "resumo": "El premio Nobel de física de 2026 ha sido ganado por Francis Halzen por su trabajo sobre los neutrinos, que actúan como \"mensajeros fantasmales del cosmos\""
+    }
+   },
+   "resumo_original": "The 2026 Nobel prize in physics has been won by Francis Halzen for his work on neutrinos, which act like 'ghostly messengers from the cosmos'"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A internacionalização da ciência paulista",
+   "resumo": "Por Marco Antonio Zago, professor da Faculdade de Medicina de Ribeirão Preto da USP e presidente da Fapesp",
+   "url": "https://jornal.usp.br/artigos/a-internacionalizacao-da-ciencia-paulista/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-05T21:20:47+00:00",
    "tema": "Saúde",
    "relevancia": 7,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315004969.jpg",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2018/08/marco_zago.jpg",
    "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Can we harness the brain’s deep-cleaning system to prevent Alzheimer’s?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿Podemos aprovechar el sistema de limpieza profunda del cerebro para prevenir el Alzheimer?",
-     "resumo": "El sistema glinfático es la red recientemente descubierta del cerebro para eliminar las toxinas. Ahora, estamos descubriendo formas sorprendentes de potenciarlo para proteger la salud cerebral"
-    }
-   },
-   "resumo_original": "The glymphatic system is the brain's recently discovered network for flushing out toxins. Now, we're uncovering surprising ways to boost it to protect brain health"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Expedição revela 31 espécies potencialmente novas no Atlântico Sul",
-   "resumo": "Missão Designing the Future 3 mergulhou fundo ao largo do litoral nordestino em busca de formas de vida pouco — ou nada — conhecidas",
-   "url": "https://revistapesquisa.fapesp.br/expedicao-revela-31-especies-potencialmente-novas-no-atlantico-sul/?utm_source=rss&utm_medium=rss&utm_campaign=expedicao-revela-31-especies-potencialmente-novas-no-atlantico-sul",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-05T12:07:11+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/8647e91e314e37be3d0005c87ffe16cfd08156af_1200-630.jpg",
-   "foco": {
-    "x": 50,
+    "x": 46,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Expedition reveals 31 potentially new species in the South Atlantic",
-     "resumo": "Designing the Future 3 mission dived deep off the northeastern coast in search of little — or no — known life forms"
+     "titulo": "The internationalization of São Paulo science",
+     "resumo": "Marco Antonio Zago, professor at USP's Ribeirão Preto Medical School and president of FAPESP"
     },
     "es": {
-     "titulo": "Expedición revela 31 especies potencialmente nuevas en el Atlántico Sur",
-     "resumo": "La misión Designing the Future 3 se zambulló en las profundidades de la costa noreste en busca de pocas o ninguna forma de vida conocida"
+     "titulo": "La internacionalización de la ciencia paulista",
+     "resumo": "Marco Antonio Zago, profesor de la Facultad de Medicina Ribeirão Preto de la USP y presidente de la FAPESP"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Parente extinto do iaque descoberto a partir de DNA na caverna de Denisova",
-   "resumo": "A análise genética de centenas de minúsculos fragmentos ósseos encontrados na mesma caverna que produziu os primeiros restos fósseis dos Denisovanos revelou que a região já foi também o lar de uma espécie até então desconhecida de iaque",
-   "url": "https://www.newscientist.com/article/2591962-extinct-yak-relative-discovered-from-dna-in-denisova-cave/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
+   "resumo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
+   "url": "https://www.nature.com/articles/d41586-026-03174-0",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-05T15:00:00+00:00",
-   "tema": "Genética",
+   "data": "2026-10-06T00:00:00+00:00",
+   "tema": "Meio ambiente",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315388092.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "titulo_original": "Extinct yak relative discovered from DNA in Denisova cave",
+   "imagem": "",
+   "titulo_original": "The Great Barrier Reef requires special attention in the developing super El Niño",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Pariente extinto de yak descubierto a partir de ADN en la cueva de Denisova",
-     "resumo": "El análisis genético de cientos de pequeños fragmentos óseos encontrados en la misma cueva que arrojó los primeros restos fósiles de los denisovanos ha revelado que la región también fue el hogar de una especie de yak hasta ahora desconocida"
+     "titulo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño",
+     "resumo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño"
     }
    },
-   "resumo_original": "Genetic analysis of hundreds of tiny bone fragments found in the same cave that yielded the first fossil remains of the Denisovans has revealed that the region was once also home to a previously unknown species of yak"
+   "resumo_original": "The Great Barrier Reef requires special attention in the developing super El Niño"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A IA pode minar a independência científica de maneiras sutis",
+   "resumo": "A IA pode minar a independência científica de maneiras sutis",
+   "url": "https://www.nature.com/articles/d41586-026-03175-z",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-06T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "AI could undermine scientific independence in subtle ways",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La IA podría socavar la independencia científica de maneras sutiles",
+     "resumo": "La IA podría socavar la independencia científica de maneras sutiles"
+    }
+   },
+   "resumo_original": "AI could undermine scientific independence in subtle ways"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A IA encontra um diagrama de Venn desconcertantemente complexo, mas bonito e simétrico",
+   "resumo": "Criar diagramas de Venn rotacionalmente simétricos de tamanho crescente é um desafio matemático de longa data - agora um amador usou IA para gerar os maiores até agora",
+   "url": "https://www.newscientist.com/article/2591415-ai-finds-bafflingly-complex-but-beautiful-symmetrical-venn-diagram/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-05T14:40:13+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315416853.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "AI finds bafflingly complex but beautiful symmetrical Venn diagram",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La IA encuentra un diagrama de Venn desconcertantemente complejo pero hermoso y simétrico",
+     "resumo": "Crear diagramas de Venn rotacionalmente simétricos de tamaño creciente es un desafío matemático de larga data: ahora un aficionado ha utilizado la IA para generar los más grandes hasta ahora"
+    }
+   },
+   "resumo_original": "Creating rotationally symmetrical Venn diagrams of increasing size is a long-standing mathematical challenge - now an amateur has used AI to generate the largest ones yet"
   },
   {
    "tipo": "noticia",
@@ -306,78 +297,54 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas revelam o que sete dias de jejum fazem ao corpo humano",
-   "resumo": "Os cientistas descobriram que o jejum prolongado desencadeia grandes mudanças em todo o corpo, mas muitos dos efeitos mais interessantes só apareceram após cerca de três dias sem comida. Os resultados sugerem que o jejum pode influenciar a saúde de maneiras que...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261005012444.htm",
-   "fonte": "ScienceDaily · Saúde",
+   "titulo": "Emirados Árabes Unidos lançarão espaçonave para sondar sete asteroides em 2028",
+   "resumo": "O programa espacial do país é novo e ambicioso, já tendo enviado uma missão para a órbita de Marte",
+   "url": "https://www.scientificamerican.com/article/united-arab-emirates-to-launch-spacecraft-to-probe-seven-asteroids-in-2028/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-05T12:26:03+00:00",
-   "tema": "Saúde",
+   "data": "2026-10-05T16:30:00+00:00",
+   "tema": "Espaço",
    "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/body-rejuvenation-longevity-strength-boost-biochemistry-technology.webp",
+   "imagem": "https://static.scientificamerican.com/dam/asset/dad4e7ba-46cf-42f5-ac23-1778e20bb8cb/MBR-Explorder.jpg?m=1791220118.262&w=1200",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 0
    },
-   "titulo_original": "Scientists reveal what seven days of fasting does to the human body",
+   "titulo_original": "United Arab Emirates to launch spacecraft to probe seven asteroids in 2028",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los científicos revelan lo que siete días de ayuno hacen al cuerpo humano",
-     "resumo": "Los científicos descubrieron que el ayuno prolongado desencadena cambios importantes en todo el cuerpo, pero muchos de los efectos más interesantes solo aparecieron después de unos tres días sin comer. Los resultados sugieren que el ayuno puede influir en la salud de maneras que..."
+     "titulo": "Emiratos Árabes Unidos lanzará una nave espacial para sondear siete asteroides en 2028",
+     "resumo": "El programa espacial del país es nuevo y ambicioso, ya que ha enviado una misión a la órbita de Marte"
     }
    },
-   "resumo_original": "Scientists found that prolonged fasting triggers major changes throughout the body, but many of the most interesting effects only appeared after about three days without food. The results suggest fasting may influence health in ways that…"
+   "resumo_original": "The country’s space program is new and ambitious, having already sent a mission into Mars orbit"
   },
   {
    "tipo": "noticia",
-   "titulo": "A estimulação do nervo vago pode ajudar a manter novas habilidades",
-   "resumo": "Estimular o nervo vago após a prática ajudou os camundongos a desenvolver uma aprendizagem motora mais forte a longo prazo, revelando uma janela potencialmente importante quando o cérebro ainda está travando uma nova habilidade. O efeito estava ligado a mudanças rítmicas no cérebro...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261002080034.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-05T12:13:07+00:00",
+   "titulo": "O ensino de ciências que o Pisa revela",
+   "resumo": "Números mostram que o Brasil avançou pouco no ensino de ciências nos últimos 20 anos",
+   "url": "https://revistapesquisa.fapesp.br/o-ensino-de-ciencias-que-o-pisa-revela/?utm_source=rss&utm_medium=rss&utm_campaign=o-ensino-de-ciencias-que-o-pisa-revela",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-09-25T11:58:14+00:00",
    "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/brain-vagus-nerve-stimulation.webp",
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/cc1fc4b2e1056527f8acd33c82bed025d45802e0_1200-630.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Vagus Nerve Stimulation Could Help New Skills Stick",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "The science education that Pisa reveals",
+     "resumo": "Figures show that Brazil has made little progress in science education in the last 20 years"
+    },
     "es": {
-     "titulo": "La estimulación del nervio vago podría ayudar a que las nuevas habilidades se mantengan",
-     "resumo": "Estimular el nervio vago después de la práctica ayudó a los ratones a desarrollar un aprendizaje motor más fuerte a largo plazo, revelando una ventana potencialmente importante cuando el cerebro todavía está bloqueando una nueva habilidad. El efecto se relacionó con cambios rítmicos en el cerebro..."
+     "titulo": "La educación científica que revela Pisa",
+     "resumo": "Las cifras muestran que Brasil ha avanzado poco en la educación científica en los últimos 20 años"
     }
-   },
-   "resumo_original": "Stimulating the vagus nerve after practice helped mice develop stronger long-term motor learning, revealing a potentially important window when the brain is still locking in a new skill. The effect was linked to rhythmic changes in brain…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Não perca: veja Saturno brilhar e os destroços do cometa Halley cruzarem o céu",
-   "resumo": "Os observadores do céu de outubro podem ver Saturno em oposição, pegar meteoros do Cometa Halley durante o pico das Orionidas e observar a Lua passar pelo famoso aglomerado estelar das Plêiades. O luar pode obscurecer algumas Orionidas, mas a melhor visualização deve...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261005071523.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-05T11:59:17+00:00",
-   "tema": "Espaço",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/perseids-meteor-shower-and-milky-way.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Don't miss: Watch Saturn shine and Halley’s Comet debris streak across the sky",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "No te pierdas: observa el brillo de Saturno y los escombros del cometa Halley en el cielo",
-     "resumo": "Los observadores del cielo de octubre pueden ver a Saturno en oposición, captar meteoros del cometa Halley durante el pico de las Oriónidas y observar cómo la Luna barre el famoso cúmulo estelar de las Pléyades. La luz de la luna puede oscurecer algunas Oriónidas, pero la mejor vista debería..."
-    }
-   },
-   "resumo_original": "October skywatchers can see Saturn at opposition, catch meteors from Halley’s Comet during the Orionid peak, and watch the Moon sweep past the famous Pleiades star cluster. Moonlight may obscure some Orionids, but the best viewing should…"
+   }
   }
  ],
  "artigos": [
@@ -937,7 +904,6 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
@@ -1131,6 +1097,14 @@
   "should you be poop maxxing or fiber maxxing experts explain whats healthy": "2026-10-05T22:46:24.974255+00:00",
   "gotas de sangue podem antecipar o sinal de alerta contra o cancer": "2026-10-06T03:08:31.331255+00:00",
   "museus de historia universitarios na contemporaneidade": "2026-10-06T03:08:31.331255+00:00",
-  "pos graduacao em estatistica seleciona candidatos": "2026-10-06T03:08:31.331255+00:00"
+  "pos graduacao em estatistica seleciona candidatos": "2026-10-06T03:08:31.331255+00:00",
+  "proteina pouco conhecida e potencial alvo contra a doenca de chagas": "2026-10-06T10:32:56.757612+00:00",
+  "nobel prize in physics awarded for discovery of high energy neutrinos": "2026-10-06T10:32:56.757612+00:00",
+  "a internacionalizacao da ciencia paulista": "2026-10-06T10:32:56.757612+00:00",
+  "the great barrier reef requires special attention in the developing super el nino": "2026-10-06T10:32:56.757612+00:00",
+  "ai could undermine scientific independence in subtle ways": "2026-10-06T10:32:56.757612+00:00",
+  "ai finds bafflingly complex but beautiful symmetrical venn diagram": "2026-10-06T10:32:56.757612+00:00",
+  "united arab emirates to launch spacecraft to probe seven asteroids in 2028": "2026-10-06T10:32:56.757612+00:00",
+  "o ensino de ciencias que o pisa revela": "2026-10-06T10:32:56.757612+00:00"
  }
 }
