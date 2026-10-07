@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-07T01:39:55.016805+00:00",
+ "atualizado_em": "2026-10-07T08:53:39.271241+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -81,6 +81,32 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Pesquisa detalha mecanismo que dá energia rápida a células de defesa no início de infecções",
+   "resumo": "Ao compreender como os macrófagos reprogramam seu metabolismo logo após detectar um patógeno, pesquisadores da Unicamp e da USP abrem caminho para tratamentos que fortaleçam a imunidade sem causar danos ao organismo",
+   "url": "https://agencia.fapesp.br/pesquisa-detalha-mecanismo-que-da-energia-rapida-a-celulas-de-defesa-no-inicio-de-infeccoes/59349",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-07T08:53:39.271241+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://agencia.fapesp.br/files/post/59349.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Research details mechanism that gives rapid energy to defense cells at the onset of infections",
+     "resumo": "By understanding how macrophages reprogram their metabolism soon after detecting a pathogen, researchers at Unicamp and USP pave the way for treatments that strengthen immunity without causing harm to the body"
+    },
+    "es": {
+     "titulo": "La investigación detalla el mecanismo que proporciona energía rápida a las células de defensa al inicio de las infecciones",
+     "resumo": "Al comprender cómo los macrófagos reprograman su metabolismo poco después de detectar un patógeno, los investigadores de la Unicamp y la USP allanan el camino para tratamientos que fortalecen la inmunidad sin causar daño al cuerpo"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Simpósio em aborda nutrição materno infantil e saúde reprodutiva",
    "resumo": "O evento será realizado no Anfiteatro da Bioquímica, Prédio Central da Faculdade de Medicina de Ribeirão Preto",
    "url": "https://jornal.usp.br/campus-ribeirao-preto/simposio-em-aborda-nutricao-materno-infantil-e-saude-reprodutiva/",
@@ -103,101 +129,105 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O câncer colorretal está aumentando em jovens e muitas vezes encontrado tarde demais",
-   "resumo": "O câncer colorretal em jovens é frequentemente diagnosticado em um estágio avançado, com os pesquisadores descobrindo que a maioria dos pacientes com 21 anos ou menos já tinha doença em estágio III ou IV. Porque sintomas como sangramento retal, perda de peso, dor abdominal...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261003234019.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-06T13:20:15+00:00",
-   "tema": "Câncer",
-   "relevancia": 8,
-   "imagem": "https://www.sciencedaily.com/images/1920/colon-colorectal-cancer.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Colorectal cancer is rising in young people and often found too late",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El cáncer colorrectal está aumentando en los jóvenes y a menudo se detecta demasiado tarde",
-     "resumo": "El cáncer colorrectal en los jóvenes a menudo se diagnostica en una etapa avanzada, y los investigadores encuentran que la mayoría de los pacientes de 21 años o menos ya tenían la enfermedad en etapa III o IV. Porque síntomas como sangrado rectal, pérdida de peso, dolor abdominal..."
-    }
-   },
-   "resumo_original": "Colorectal cancer in young people is often diagnosed at an advanced stage, with researchers finding most patients age 21 or younger already had Stage III or IV disease. Because symptoms like rectal bleeding, weight loss, abdominal pain…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Proteína pouco conhecida é potencial alvo contra a doença de Chagas",
-   "resumo": "Em testes de laboratório, a redução da enzima IP6K impediu o parasita Trypanosoma cruzi de se diferenciar e de manter o ciclo de infecção em células cardíacas humanas",
-   "url": "https://agencia.fapesp.br/proteina-pouco-conhecida-e-potencial-alvo-contra-a-doenca-de-chagas/59340",
+   "titulo": "Enzima encontrada na raiz da cana aumenta em seis vezes a produção de açúcar a partir do bagaço",
+   "resumo": "Cientistas da USP isolaram a molécula ao estudar os aerênquimas – estruturas que a própria planta cria para formar canais de ar em suas raízes. O achado pode impulsionar a produção de etanol de segunda geração",
+   "url": "https://agencia.fapesp.br/enzima-encontrada-na-raiz-da-cana-aumenta-em-seis-vezes-a-producao-de-acucar-a-partir-do-bagaco/59348",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-06T10:32:56.757612+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://agencia.fapesp.br/files/post/59340.jpg",
+   "data": "2026-10-07T08:53:39.271241+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59348.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Little-known protein is potential target against Chagas disease",
-     "resumo": "In laboratory tests, the reduction of the IP6K enzyme prevented the parasite Trypanosoma cruzi from differentiating and maintaining the cycle of infection in human cardiac cells"
+     "titulo": "Enzyme found in sugarcane root increases sugar production from bagasse by six times",
+     "resumo": "Scientists at USP isolated the molecule by studying aerenchymas – structures that the plant itself creates to form air channels in its roots. The finding could boost the production of second-generation ethanol"
     },
     "es": {
-     "titulo": "La proteína poco conocida es un objetivo potencial contra la enfermedad de Chagas",
-     "resumo": "En las pruebas de laboratorio, la reducción de la enzima IP6K impidió que el parásito Trypanosoma cruzi se diferenciara y mantuviera el ciclo de infección en las células cardíacas humanas"
+     "titulo": "La enzima que se encuentra en la raíz de caña de azúcar aumenta la producción de azúcar del bagazo en seis veces",
+     "resumo": "Los científicos de la USP aislaron la molécula mediante el estudio de los aerénquimas, estructuras que la propia planta crea para formar canales de aire en sus raíces. El hallazgo podría impulsar la producción de etanol de segunda generación"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Clube Sci-SAIFR discute os mistérios do mundo das partículas",
-   "resumo": "Alberto Reis, autor de livro sobre o tema, vai apresentar desde descobertas que levaram ao conhecimento atual sobre a estrutura da matéria até problemas que permanecem em aberto",
-   "url": "https://agencia.fapesp.br/clube-sci-saifr-discute-os-misterios-do-mundo-das-particulas/59335",
+   "titulo": "Estudo aponta como controlar falhas que prejudicam o desempenho das baterias de sódio",
+   "resumo": "Simulações computacionais em escala atômica indicam que ajustar a formulação dos fluidos do dispositivo protege suas áreas mais sensíveis, evitando desgastes e prolongando a vida útil",
+   "url": "https://agencia.fapesp.br/estudo-aponta-como-controlar-falhas-que-prejudicam-o-desempenho-das-baterias-de-sodio/59355",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-06T21:44:28.800200+00:00",
+   "data": "2026-10-07T08:53:39.271241+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "",
+   "imagem": "https://agencia.fapesp.br/files/post/59355.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
    "i18n": {
     "en": {
-     "titulo": "Sci-SAIFR Club discusses the mysteries of the particle world",
-     "resumo": "Alberto Reis, author of a book on the subject, will present from discoveries that led to current knowledge about the structure of matter to problems that remain open"
+     "titulo": "Study points out how to control failures that impair the performance of sodium batteries",
+     "resumo": "Atomic-scale computer simulations indicate that adjusting the formulation of the device fluids protects its most sensitive areas, preventing wear and prolonging service life"
     },
     "es": {
-     "titulo": "El Club Sci-SAIFR discute los misterios del mundo de las partículas",
-     "resumo": "Alberto Reis, autor de un libro sobre el tema, presentará desde descubrimientos que llevaron al conocimiento actual sobre la estructura de la materia hasta problemas que permanecen abiertos"
+     "titulo": "El estudio señala cómo controlar las fallas que perjudican el rendimiento de las baterías de sodio",
+     "resumo": "Las simulaciones por ordenador a escala atómica indican que ajustar la formulación de los fluidos del dispositivo protege sus áreas más sensibles, previniendo el desgaste y prolongando la vida útil"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Prêmio Nobel de Física pela descoberta de neutrinos de alta energia",
-   "resumo": "O Prêmio Nobel de Física de 2026 foi ganho por Francis Halzen por seu trabalho sobre neutrinos, que servem como \"mensageiros fantasmagóricos do cosmos\"",
-   "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "Prêmio Nobel de Física de 2026 concedido a Francis Halzen pela descoberta de neutrinos de alta energia",
+   "resumo": "Francis Halzen é líder no estudo de neutrinos, partículas fantasmagóricas de todo o universo que sugerem uma nova e empolgante física",
+   "url": "https://www.scientificamerican.com/article/2026-nobel-prize-in-physics-awarded-to-francis-halzen-for-discovery-of-high-energy-neutrinos/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-06T10:26:02+00:00",
+   "data": "2026-10-06T09:45:00+00:00",
    "tema": "Espaço",
    "relevancia": 7,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315508364.jpg",
+   "imagem": "https://static.scientificamerican.com/dam/asset/37c118a2-f8aa-4366-b997-85f03240086d/Nobel-physics.jpg?m=1791297106.878&w=1200",
    "foco": {
     "x": 50,
-    "y": 54
+    "y": 50
    },
-   "titulo_original": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
+   "titulo_original": "2026 Nobel Prize in Physics awarded to Francis Halzen for discovery of high-energy neutrinos",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Premio Nobel de Física por el descubrimiento de neutrinos de alta energía",
-     "resumo": "El premio Nobel de física de 2026 ha sido ganado por Francis Halzen por su trabajo sobre los neutrinos, que sirven como \"mensajeros fantasmales del cosmos\""
+     "titulo": "2026 Premio Nobel de Física otorgado a Francis Halzen por el descubrimiento de neutrinos de alta energía",
+     "resumo": "Francis Halzen es un líder en el estudio de los neutrinos, partículas fantasmales de todo el universo que insinúan una nueva y emocionante física"
     }
    },
-   "resumo_original": "The 2026 Nobel prize in physics has been won by Francis Halzen for his work on neutrinos, which serve as 'ghost-like messengers from the cosmos'"
+   "resumo_original": "Francis Halzen is a leader in the study of neutrinos, ghostly particles from across the universe that hint at exciting new physics"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Uma nova maneira de combater a doença das gengivas sem eliminar boas bactérias",
+   "resumo": "Os cientistas descobriram que interromper as mensagens químicas que as bactérias usam para se comunicar pode empurrar a placa dentária em direção a um equilíbrio microbiano mais saudável. A abordagem pode levar a novos tratamentos para doenças das gengivas que controlam bactérias nocivas...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261005012230.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-07T03:55:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/bacteria-on-tooth-surface.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "A new way to fight gum disease without wiping out good bacteria",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Una nueva forma de combatir la enfermedad de las encías sin eliminar las bacterias buenas",
+     "resumo": "Los científicos descubrieron que interrumpir los mensajes químicos que las bacterias usan para comunicarse puede empujar la placa dental hacia un equilibrio microbiano más saludable. El enfoque podría conducir a nuevos tratamientos para la enfermedad de las encías que controlen las bacterias dañinas..."
+    }
+   },
+   "resumo_original": "Scientists discovered that disrupting the chemical messages bacteria use to communicate can push dental plaque toward a healthier microbial balance. The approach could lead to new treatments for gum disease that control harmful bacteria…"
   },
   {
    "tipo": "noticia",
@@ -250,31 +280,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O que faz um bom teste de segurança de IA? Especialistas explicam por que mesmo as melhores técnicas podem não ser poderosas o suficiente",
-   "resumo": "\"Com a ciência de hoje, geralmente não podemos mostrar com alta confiança que o comportamento perigoso não existe\"",
-   "url": "https://www.scientificamerican.com/article/what-makes-a-good-ai-safety-test-experts-explain-why-even-the-best-techniques-may-not-be-powerful-enough/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-06T14:30:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/m/43f87d68eb21cf30/original/Robot_stepping_on_banana_peel.jpg?m=1727190943.601&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "What makes a good AI safety test? Experts explain why even the best techniques may not be powerful enough",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿Qué hace que una prueba de seguridad de IA sea buena? Los expertos explican por qué incluso las mejores técnicas pueden no ser lo suficientemente potentes",
-     "resumo": "\"Con la ciencia actual, por lo general no podemos demostrar con alta confianza que no existe un comportamiento peligroso\""
-    }
-   },
-   "resumo_original": "“With today’s science we usually can’t show with high confidence that dangerous behavior isn’t there”"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "As ideias mais ambiciosas para salvar o mundo do El Niño",
    "resumo": "Um El Niño monstruoso está se formando no Oceano Pacífico – mas pode haver maneiras de impedir que os piores impactos ocorram",
    "url": "https://www.newscientist.com/article/2592044-the-most-ambitious-ideas-to-save-the-world-from-el-nino/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -300,53 +305,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Gotas de sangue podem antecipar o sinal de alerta contra o câncer",
-   "resumo": "Método analisa fluidos biológicos em busca de moléculas específicas produzidas por células tumorais ou pelo próprio organismo em resposta ao tumor",
-   "url": "https://pesquisaparainovacao.fapesp.br/gotas_de_sangue_podem_antecipar_o_sinal_de_alerta_contra_o_cancer/4158",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-06T03:08:31.331255+00:00",
-   "tema": "Câncer",
-   "relevancia": 5,
-   "imagem": "https://pesquisaparainovacao.fapesp.br/imagens/materia/4158.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Blood drops can anticipate the cancer warning sign",
-     "resumo": "Method analyzes biological fluids for specific molecules produced by tumor cells or the organism itself in response to the tumor"
-    },
-    "es": {
-     "titulo": "Las gotas de sangre pueden anticipar la señal de advertencia del cáncer",
-     "resumo": "El método analiza los fluidos biológicos en busca de moléculas específicas producidas por las células tumorales o el propio organismo en respuesta al tumor"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
-   "resumo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
-   "url": "https://www.nature.com/articles/d41586-026-03174-0",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-06T00:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "The Great Barrier Reef requires special attention in the developing super El Niño",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño",
-     "resumo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño"
-    }
-   },
-   "resumo_original": "The Great Barrier Reef requires special attention in the developing super El Niño"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Cientistas pegam um radiômetro para dar uma volta em um balão de ar quente",
    "resumo": "Uma congruência satisfatória entre os achados genéticos e de biologia celular e experimentos em altitude com um dispositivo rotativo que mede a energia radiante, no...",
    "url": "https://www.nature.com/articles/d41586-026-02973-9",
@@ -365,6 +323,56 @@
     }
    },
    "resumo_original": "A satisfying congruence between genetics and cell-biology findings, and experiments at altitude with a rotating device that measures radiant energy, in this week’s…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Os sapatos podem mudar a estrutura dos ossos do tornozelo",
+   "resumo": "O uso de sapatos parece afetar o volume de uma rede esponjosa dentro de um osso em nossos tornozelos, o que pode afetar a validade de pesquisas anteriores sobre a evolução da marcha",
+   "url": "https://www.newscientist.com/article/2592375-shoes-may-change-the-shape-of-our-ankle-bones/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-06T17:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315505706.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Shoes may change the structure of our ankle bones",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los zapatos pueden cambiar la estructura de nuestros huesos del tobillo",
+     "resumo": "El uso de zapatos parece afectar el volumen de una red esponjosa dentro de un hueso en nuestros tobillos, lo que podría afectar la validez de investigaciones previas sobre la evolución de caminar"
+    }
+   },
+   "resumo_original": "Wearing shoes seems to affect the volume of a spongy network within a bone in our ankles, which could affect the validity of previous research into the evolution of walking"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Adeus substituições de articulações? Os cientistas de Stanford encontraram uma maneira de regenerar a cartilagem e parar a artrite",
+   "resumo": "Os cientistas descobriram uma maneira surpreendente de regenerar a cartilagem do joelho danificada, bloqueando uma proteína que se torna mais abundante com a idade. Em camundongos velhos, o tratamento restaurou a cartilagem naturalmente perdida e também ajudou a prevenir a osteoartrite após...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261005011249.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-06T13:03:47+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/knee-joint-arthritis-cartilage-injury.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Goodbye joint replacements? Stanford scientists found a way to regrow cartilage and stop arthritis",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Adiós a los reemplazos de articulaciones? Los científicos de Stanford encontraron una manera de regenerar el cartílago y detener la artritis",
+     "resumo": "Los científicos han encontrado una forma sorprendente de regenerar el cartílago dañado de la rodilla mediante el bloqueo de una proteína que se vuelve más abundante con la edad. En ratones viejos, el tratamiento restauró el cartílago perdido naturalmente y también ayudó a prevenir la osteoartritis después de..."
+    }
+   },
+   "resumo_original": "Scientists have found a surprising way to regrow damaged knee cartilage by blocking a protein that becomes more abundant with age. In old mice, the treatment restored naturally lost cartilage and also helped prevent osteoarthritis after…"
   }
  ],
  "artigos": [
@@ -927,7 +935,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "scientists just found a bizarre cosmic object hiding in plain sight": "2026-09-27T08:21:31.290160+00:00",
   "glucosamine a popular joint supplement linked to faster alzheimers progression": "2026-09-27T14:09:38.653722+00:00",
   "why rheumatoid arthritis pain may persist even when inflammation is under control": "2026-09-27T14:09:38.653722+00:00",
   "the secret cold war history of tetris": "2026-09-27T14:09:38.653722+00:00",
@@ -1124,6 +1131,12 @@
   "clube sci saifr discute os misterios do mundo das particulas": "2026-10-06T21:44:28.800200+00:00",
   "pesquisa detecta cocaina em rios do rio de janeiro": "2026-10-06T21:44:28.800200+00:00",
   "scientists take a radiometer for a spin in a hot air balloon": "2026-10-06T21:44:28.800200+00:00",
-  "openai unleashes hundreds more math results upon a field already in shock": "2026-10-07T01:39:55.016805+00:00"
+  "openai unleashes hundreds more math results upon a field already in shock": "2026-10-07T01:39:55.016805+00:00",
+  "pesquisa detalha mecanismo que da energia rapida a celulas de defesa no inicio de infeccoes": "2026-10-07T08:53:39.271241+00:00",
+  "enzima encontrada na raiz da cana aumenta em seis vezes a producao de acucar a partir do bagaco": "2026-10-07T08:53:39.271241+00:00",
+  "estudo aponta como controlar falhas que prejudicam o desempenho das baterias de sodio": "2026-10-07T08:53:39.271241+00:00",
+  "2026 nobel prize in physics awarded to francis halzen for discovery of high energy neutrinos": "2026-10-07T08:53:39.271241+00:00",
+  "a new way to fight gum disease without wiping out good bacteria": "2026-10-07T08:53:39.271241+00:00",
+  "shoes may change the structure of our ankle bones": "2026-10-07T08:53:39.271241+00:00"
  }
 }
