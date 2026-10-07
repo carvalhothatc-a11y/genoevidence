@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-07T16:40:28.340133+00:00",
+ "atualizado_em": "2026-10-07T22:05:39.384056+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -18,34 +18,38 @@
    },
    "i18n": {
     "en": {
-     "titulo": "Brazilian biologist who stressed snakes until they struck wins Ig Nobel"
+     "titulo": "Brazilian biologist who stressed snakes until they struck wins Ig Nobel",
+     "resumo": "Satirical version of the Nobel Prize honors work by João Miguel Alves-Nunes, who provoked Brazil's most dangerous snakes around 40,000 times to understand what triggers a strike"
     },
     "es": {
-     "titulo": "Biólogo brasileño que hizo hincapié en las serpientes hasta que atacaron gana el Ig Nobel"
+     "titulo": "Biólogo brasileño que hizo hincapié en las serpientes hasta que atacaron gana el Ig Nobel",
+     "resumo": "La versión satírica del Premio Nobel honra el trabajo de João Miguel Alves-Nunes, quien provocó a las serpientes más peligrosas de Brasil alrededor de 40.000 veces para entender qué desencadena un ataque"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "El Niño influencia primavera com chuvas e temperaturas contrastantes no Brasil",
-   "resumo": "A pesquisadora Ana Carolina Nóbile Tomaziello explica os efeitos do fenômeno e as tendências para a nova estação no boletim climatológico transmitido pela Rádio USP em Ribeirão Preto",
-   "url": "https://jornal.usp.br/atualidades/boletim-climatologico-el-nino-influencia-primavera-com-chuvas-e-temperaturas-contrastantes-no-brasil/",
+   "titulo": "Superação e esperança: como a Ginástica para Todos transformou a vida de mulheres com câncer",
+   "resumo": "Muito além da recuperação física, a Ginástica para Todos ressignifica o corpo adoecido e promove acolhimento, bem-estar e qualidade de vida",
+   "url": "https://jornal.usp.br/diversidade/superacao-e-esperanca-como-a-ginastica-para-todos-transformou-a-vida-de-mulheres-com-cancer/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-07T10:52:56+00:00",
-   "tema": "Meio ambiente",
+   "data": "2026-10-07T18:05:55+00:00",
+   "tema": "Câncer",
    "relevancia": 11,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/10/20251001_primavera.jpg",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261007_ginastica.jpg",
    "foco": {
-    "x": 50,
+    "x": 80,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "El Niño influences spring with rainfall and contrasting temperatures in Brazil"
+     "titulo": "Overcoming and Hope: How Gymnastics for All Transformed the Lives of Women with Cancer",
+     "resumo": "Far beyond physical recovery, Gymnastics for All gives new meaning to the sick body and promotes welcoming, well-being and quality of life"
     },
     "es": {
-     "titulo": "El Niño influye en la primavera con lluvias y temperaturas contrastantes en Brasil"
+     "titulo": "Superación y esperanza: cómo la gimnasia para todos transformó la vida de las mujeres con cáncer",
+     "resumo": "Mucho más allá de la recuperación física, Gimnasia para Todos da un nuevo significado al cuerpo enfermo y promueve la acogida, el bienestar y la calidad de vida"
     }
    }
   },
@@ -66,10 +70,12 @@
    },
    "i18n": {
     "en": {
-     "titulo": "Cannabis and mental health: promises and gaps in evidence"
+     "titulo": "Cannabis and mental health: promises and gaps in evidence",
+     "resumo": "Largest review ever done on the topic sees promising signs but calls for broader, more rigorous studies"
     },
     "es": {
-     "titulo": "El cannabis y la salud mental: promesas y lagunas en la evidencia"
+     "titulo": "El cannabis y la salud mental: promesas y lagunas en la evidencia",
+     "resumo": "La revisión más grande jamás realizada sobre el tema ve signos prometedores, pero exige estudios más amplios y rigurosos"
     }
    }
   },
@@ -90,10 +96,12 @@
    },
    "i18n": {
     "en": {
-     "titulo": "Cannabidiol accelerates effects of escitalopram in mice subjected to chronic stress"
+     "titulo": "Cannabidiol accelerates effects of escitalopram in mice subjected to chronic stress",
+     "resumo": "USP study shows reduced treatment response by associating low dose CBD with antidepressant, identifying endocannabinoid system enzyme action in prefrontal cortex"
     },
     "es": {
-     "titulo": "El cannabidiol acelera los efectos del escitalopram en ratones sometidos a estrés crónico"
+     "titulo": "El cannabidiol acelera los efectos del escitalopram en ratones sometidos a estrés crónico",
+     "resumo": "El estudio de la USP muestra una respuesta reducida al tratamiento al asociar dosis bajas de CBD con antidepresivos, identificando la acción enzimática del sistema endocannabinoide en la corteza prefrontal"
     }
    }
   },
@@ -150,122 +158,151 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "A primeira iniciativa de divulgação científica da FAPESP",
-   "resumo": "Desenvolvidos em parceria com a TV Cultura, A poluição das águas (1970) e Ferrugem do café (1971) são episódios da pioneira iniciativa Ciência Viva , série criada para aproximar a pesquisa científica da sociedade. Assista aos vídeos no…",
-   "url": "https://centrodememoria.fapesp.br/cienciaviva",
+   "titulo": "Enzima encontrada na raiz da cana aumenta em seis vezes a produção de açúcar a partir do bagaço",
+   "resumo": "Cientistas da USP isolaram a molécula ao estudar os aerênquimas – estruturas que a própria planta cria para formar canais de ar em suas raízes. O achado pode impulsionar a produção de etanol de segunda geração",
+   "url": "https://agencia.fapesp.br/enzima-encontrada-na-raiz-da-cana-aumenta-em-seis-vezes-a-producao-de-acucar-a-partir-do-bagaco/59348",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-07T16:40:28.340133+00:00",
+   "data": "2026-10-07T22:05:39.384056+00:00",
    "tema": "Meio ambiente",
    "relevancia": 7,
-   "imagem": "https://centrodememoria.fapesp.br/wp-content/uploads/2025/10/imagem-de-compartilhamento.png",
+   "imagem": "https://agencia.fapesp.br/files/post/59348.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "FAPESP's first scientific dissemination initiative"
+     "titulo": "Enzyme found in sugarcane root increases sugar production from bagasse by six times",
+     "resumo": "Scientists at USP isolated the molecule by studying aerenchymas – structures that the plant itself creates to form air channels in its roots. The finding could boost the production of second-generation ethanol"
     },
     "es": {
-     "titulo": "Primera iniciativa de divulgación científica de la FAPESP"
+     "titulo": "La enzima que se encuentra en la raíz de caña de azúcar aumenta la producción de azúcar del bagazo en seis veces",
+     "resumo": "Los científicos de la USP aislaron la molécula mediante el estudio de los aerénquimas, estructuras que la propia planta crea para formar canales de aire en sus raíces. El hallazgo podría impulsar la producción de etanol de segunda generación"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Instituto de Física da Unicamp seleciona professor doutor",
-   "resumo": "Concurso na área de Física Geral é destinado exclusivamente para candidatos pretos e pardos",
-   "url": "https://agencia.fapesp.br/instituto-de-fisica-da-unicamp-seleciona-professor-doutor/59353",
+   "titulo": "Estudo aponta como controlar falhas que prejudicam o desempenho das baterias de sódio",
+   "resumo": "Simulações computacionais em escala atômica indicam que ajustar a formulação dos fluidos do dispositivo protege suas áreas mais sensíveis, evitando desgastes e prolongando a vida útil",
+   "url": "https://agencia.fapesp.br/estudo-aponta-como-controlar-falhas-que-prejudicam-o-desempenho-das-baterias-de-sodio/59355",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-07T16:40:28.340133+00:00",
+   "data": "2026-10-07T22:05:39.384056+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59353.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59355.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Unicamp Physics Institute selects PhD professor"
+     "titulo": "Study points out how to control failures that impair the performance of sodium batteries",
+     "resumo": "Atomic-scale computer simulations indicate that adjusting the formulation of the device fluids protects its most sensitive areas, preventing wear and prolonging service life"
     },
     "es": {
-     "titulo": "El Instituto de Física de la Unicamp selecciona al profesor de doctorado"
+     "titulo": "El estudio señala cómo controlar las fallas que perjudican el rendimiento de las baterías de sodio",
+     "resumo": "Las simulaciones por ordenador a escala atómica indican que ajustar la formulación de los fluidos del dispositivo protege sus áreas más sensibles, previniendo el desgaste y prolongando la vida útil"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "O Prêmio Nobel de Química de 2026 é concedido a Henri Kagan e Kenso Soai por seu trabalho em química \"espelho\"",
-   "resumo": "O prêmio reconhece a descoberta de Henri Kagan e Kenso Soai de efeitos não lineares e autocatálise em síntese orgânica assimétrica",
-   "url": "https://www.scientificamerican.com/article/2026-nobel-prize-in-chemistry-is-award-to-henri-kagan-and-kenso-soai-for-their-work-in-mirror-chemistry/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-07T09:45:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://static.scientificamerican.com/dam/asset/edf07e61-2ba5-41c1-a1d2-b9dde594fddc/Nobel-Chemistry.jpg?m=1791386669.202&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "2026 Nobel Prize in Chemistry is awarded to Henri Kagan and Kenso Soai for their work in ‘mirror’ chemistry",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "2026 El Premio Nobel de Química se otorga a Henri Kagan y Kenso Soai por su trabajo en química \"espejo\"",
-     "resumo": "El premio reconoce el descubrimiento de Henri Kagan y Kenso Soai de los efectos no lineales y la autocatálisis en la síntesis orgánica asimétrica"
-    }
-   },
-   "resumo_original": "The prize recognizes Henri Kagan and Kenso Soai’s discovery of nonlinear effects and autocatalysis in asymmetric organic synthesis"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A acessibilidade do genoma revela o risco de doença que a expressão gênica perde",
-   "resumo": "A maioria das alterações genéticas associadas a doenças não afeta os genes em si, mas altera a intensidade com que eles são expressos, muitas vezes modificando o genoma...",
-   "url": "https://www.nature.com/articles/d41586-026-03072-5",
+   "titulo": "Prêmios Nobel 2026: interruptores cerebrais, caçador de partículas ‘fantasma' e 'a química da vida'",
+   "resumo": "A natureza reúne os Prêmios Nobel para a ciência — além de dicas do microbioma intestinal humano ancestral.",
+   "url": "https://www.nature.com/articles/d41586-026-03208-7",
    "fonte": "Nature",
    "idioma": "en",
    "data": "2026-10-07T00:00:00+00:00",
-   "tema": "Genética",
+   "tema": "Ciência",
    "relevancia": 7,
    "imagem": "",
-   "titulo_original": "Genome accessibility reveals disease risk that gene expression misses",
+   "titulo_original": "Nobel Prizes 2026: brain switches, ‘ghost’ particle hunter, and 'the chemistry of life'",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La accesibilidad del genoma revela el riesgo de enfermedad que la expresión génica pierde",
-     "resumo": "La mayoría de las alteraciones genéticas asociadas a enfermedades no afectan a los genes en sí, sino que cambian la intensidad con la que se expresan, a menudo modificando el genoma..."
+     "titulo": "Premios Nobel 2026: interruptores cerebrales, cazador de partículas \"fantasma\" y \"la química de la vida\"",
+     "resumo": "La naturaleza redondea los Premios Nobel de ciencia, además de indicios del microbioma intestinal humano ancestral."
     }
    },
-   "resumo_original": "Most disease-associated genetic alterations do not affect the genes themselves, but instead change how strongly they are expressed, often by modifying genome…"
+   "resumo_original": "Nature rounds up the Nobel Prizes for science — plus, hints of the ancestral human gut microbiome."
   },
   {
    "tipo": "noticia",
-   "titulo": "OpenAI despejou 722 trabalhos de matemática – agora deve limpar a bagunça",
-   "resumo": "A OpenAI está usando a matemática como um local de teste para seus modelos de IA mais capazes, e isso significa que ela tem a responsabilidade de lidar com as consequências, em vez de apenas deixá-la para os matemáticos, diz Jacob Aron",
-   "url": "https://www.newscientist.com/article/2592684-openai-has-dumped-722-maths-papers-now-it-must-clean-up-the-mess/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "Tartaruga de 194 anos tem sistemas excepcionais de reparo de DNA que combatem o envelhecimento",
+   "resumo": "O genoma de Jonathan, a tartaruga gigante, um morador de 194 anos da ilha de Santa Helena, foi sondado para entender como ele está vivo há mais do que o dobro da expectativa de vida média de sua espécie",
+   "url": "https://www.newscientist.com/article/2592213-secrets-of-longevity-of-jonathan-the-nearly-200-year-old-tortoise/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-07T16:22:38+00:00",
+   "data": "2026-10-07T18:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315501016_8ca075.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "194-year-old tortoise has exceptional DNA repair systems that fight off ageing",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La tortuga de 194 años tiene sistemas excepcionales de reparación del ADN que combaten el envejecimiento",
+     "resumo": "Se ha investigado el genoma de Jonathan la tortuga gigante, un residente de 194 años de la isla de Santa Elena, para comprender cómo ha estado vivo durante más del doble de la esperanza de vida promedio de su especie"
+    }
+   },
+   "resumo_original": "The genome of Jonathan the giant tortoise, a 194-year-old resident of St Helena island, has been probed to understand how he has been alive for more than double his species’ average life expectancy"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas desvendam os segredos da longevidade de Jonathan, a tartaruga gigante, de 194 anos",
+   "resumo": "O segredo para a extrema longevidade de Jonathan, a tartaruga, pode estar em manter os genes arrumados",
+   "url": "https://www.scientificamerican.com/article/scientists-unlock-the-longevity-secrets-of-194-year-old-jonathan-the-giant-tortoise/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-07T18:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/98be0e89-a892-4509-9c8d-feff970a31f4/Jonathan-the-Tortoise.jpg?m=1791379722.657&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists unlock the longevity secrets of 194-year-old Jonathan the giant tortoise",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos desvelan los secretos de la longevidad de la tortuga gigante Jonathan, de 194 años",
+     "resumo": "El secreto de la extrema longevidad de Jonathan la tortuga puede estar en mantener los genes ordenados"
+    }
+   },
+   "resumo_original": "The secret to Jonathan the tortoise’s extreme longevity may be in keeping genes tidy"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Twisteddoodles: ‘Eu fiz uma versão de IA de você’",
+   "resumo": "O desenho animado desta semana do Twisteddoodles",
+   "url": "https://www.newscientist.com/article/2592476-twisteddoodles-i-made-an-ai-version-of-you/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-07T17:00:00+00:00",
    "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315667974.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315396882.jpg",
    "foco": {
     "x": 50,
     "y": 100
    },
-   "titulo_original": "OpenAI has dumped 722 maths papers – now it must clean up the mess",
+   "titulo_original": "Twisteddoodles: ‘I made an AI version of you’",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "OpenAI ha volcado 722 documentos de matemáticas, ahora debe limpiar el desorden",
-     "resumo": "OpenAI está utilizando las matemáticas como un sitio de prueba para sus modelos de IA más capaces, y eso significa que tiene la responsabilidad de lidiar con las consecuencias, en lugar de dejarlo solo a los matemáticos, dice Jacob Aron"
+     "titulo": "Twisteddoodles: ‘Hice una versión de IA de ti’",
+     "resumo": "La caricatura de esta semana de Twisteddoodles"
     }
    },
-   "resumo_original": "OpenAI is using mathematics as a test site for its most capable AI models, and that means it has a responsibility to deal with the fallout, rather than just leaving it to mathematicians, says Jacob Aron"
+   "resumo_original": "This week's cartoon from Twisteddoodles"
   },
   {
    "tipo": "noticia",
@@ -316,31 +353,6 @@
     }
    },
    "resumo_original": "Anthropic and OpenAI accused Chinese AI developers of mining their models’ answers to train cheaper copycats. Here’s how distillation works and why it’s so hard to stop"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Fóssil de mamífero primitivo deslumbrante lança luz sobre a evolução do aleitamento",
-   "resumo": "Um antecessor dos mamíferos modernos que viveu no Jurássico foi encontrado na China com sua anatomia da garganta preservada, permitindo que os pesquisadores examinassem as primeiras evidências da evolução da amamentação",
-   "url": "https://www.newscientist.com/article/2592252-stunning-early-mammal-fossil-sheds-light-on-the-evolution-of-suckling/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-07T15:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315508551.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Stunning early mammal fossil sheds light on the evolution of suckling",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Un asombroso fósil de mamífero temprano arroja luz sobre la evolución de la lactancia materna",
-     "resumo": "Un predecesor de los mamíferos modernos que vivieron en el Jurásico se ha encontrado en China con su anatomía de la garganta preservada, lo que permite a los investigadores examinar la evidencia más temprana de la evolución de la lactancia materna"
-    }
-   },
-   "resumo_original": "A predecessor of modern mammals that lived in the Jurassic has been found in China with its throat anatomy preserved, allowing researchers to examine the earliest evidence for the evolution of suckling"
   }
  ],
  "artigos": [
@@ -900,7 +912,6 @@
   "Europe PMC"
  ],
  "erros": [
-  "Agência Fiocruz: <urlopen error timed out>",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
@@ -1116,6 +1127,11 @@
   "openai has dumped 722 maths papers now it must clean up the mess": "2026-10-07T16:40:28.340133+00:00",
   "drug target could block brain inflammation linked to alzheimers and parkinsons": "2026-10-07T16:40:28.340133+00:00",
   "what is ai model distillation and why is it so hard to stop": "2026-10-07T16:40:28.340133+00:00",
-  "stunning early mammal fossil sheds light on the evolution of suckling": "2026-10-07T16:40:28.340133+00:00"
+  "stunning early mammal fossil sheds light on the evolution of suckling": "2026-10-07T16:40:28.340133+00:00",
+  "superacao e esperanca como a ginastica para todos transformou a vida de mulheres com cancer": "2026-10-07T22:05:39.384056+00:00",
+  "nobel prizes 2026 brain switches ghost particle hunter and the chemistry of life": "2026-10-07T22:05:39.384056+00:00",
+  "194 year old tortoise has exceptional dna repair systems that fight off ageing": "2026-10-07T22:05:39.384056+00:00",
+  "scientists unlock the longevity secrets of 194 year old jonathan the giant tortoise": "2026-10-07T22:05:39.384056+00:00",
+  "twisteddoodles i made an ai version of you": "2026-10-07T22:05:39.384056+00:00"
  }
 }
