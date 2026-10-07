@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-06T21:44:28.800200+00:00",
+ "atualizado_em": "2026-10-07T01:39:55.016805+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -201,6 +201,31 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "O OpenAI libera centenas de resultados matemáticos em um campo já em estado de choque",
+   "resumo": "Um mês depois de resolver um dos seis maiores problemas em aberto em matemática, a empresa diz que seu novo modelo interno derrubou mais - desta vez sem o preço multimilionário",
+   "url": "https://www.scientificamerican.com/article/openai-unleashes-hundreds-more-math-results-upon-a-field-already-in-shock/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-06T22:19:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/17b9a99a-4ff3-4784-90f4-3bf3c5dd49f7/GettyImages-1388879870.jpg?m=1791307024.645&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "OpenAI unleashes hundreds more math results upon a field already in shock",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "OpenAI libera cientos de resultados matemáticos más en un campo que ya está en estado de shock",
+     "resumo": "Un mes después de resolver uno de los seis mayores problemas abiertos en matemáticas, la compañía dice que su nuevo modelo interno ha derribado montones más, esta vez sin el precio multimillonario"
+    }
+   },
+   "resumo_original": "A month after resolving one of the six biggest open problems in mathematics, the company says its new internal model has toppled heaps more—this time without the multimillion-dollar price tag"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Pesquisa detecta cocaína em rios do Rio de Janeiro",
    "resumo": "",
    "url": "https://agencia.fiocruz.br/pesquisa-detecta-cocaina-em-rios-do-rio-de-janeiro",
@@ -275,48 +300,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
-   "resumo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
-   "url": "https://www.nature.com/articles/d41586-026-03174-0",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-06T00:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "The Great Barrier Reef requires special attention in the developing super El Niño",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño",
-     "resumo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño"
-    }
-   },
-   "resumo_original": "The Great Barrier Reef requires special attention in the developing super El Niño"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas pegam um radiômetro para dar uma volta em um balão de ar quente",
-   "resumo": "Uma congruência satisfatória entre os achados genéticos e de biologia celular e experimentos em altitude com um dispositivo rotativo que mede a energia radiante, no...",
-   "url": "https://www.nature.com/articles/d41586-026-02973-9",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-06T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "Scientists take a radiometer for a spin in a hot-air balloon",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos toman un radiómetro para dar una vuelta en un globo de aire caliente",
-     "resumo": "Una congruencia satisfactoria entre los hallazgos de genética y biología celular, y los experimentos en altitud con un dispositivo giratorio que mide la energía radiante, en el..."
-    }
-   },
-   "resumo_original": "A satisfying congruence between genetics and cell-biology findings, and experiments at altitude with a rotating device that measures radiant energy, in this week’s…"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Gotas de sangue podem antecipar o sinal de alerta contra o câncer",
    "resumo": "Método analisa fluidos biológicos em busca de moléculas específicas produzidas por células tumorais ou pelo próprio organismo em resposta ao tumor",
    "url": "https://pesquisaparainovacao.fapesp.br/gotas_de_sangue_podem_antecipar_o_sinal_de_alerta_contra_o_cancer/4158",
@@ -343,28 +326,45 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Duas chuvas de meteoros estão iluminando o céu de outubro - veja como vê-las",
-   "resumo": "Os Draconídeos e Orionídeos atingem o pico este mês",
-   "url": "https://www.scientificamerican.com/article/two-meteor-showers-are-lighting-up-the-october-sky-heres-how-to-see-them/",
-   "fonte": "Scientific American",
+   "titulo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
+   "resumo": "A Grande Barreira de Corais requer atenção especial no super El Niño em desenvolvimento",
+   "url": "https://www.nature.com/articles/d41586-026-03174-0",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-06T17:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/5ade388b-bd78-4c9d-9091-9bbd34b2d8b4/Orionid.jpg?m=1791306085.3&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Two meteor showers are lighting up the October sky—here’s how to see them",
+   "data": "2026-10-06T00:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "The Great Barrier Reef requires special attention in the developing super El Niño",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Dos lluvias de meteoritos iluminan el cielo de octubre: aquí te mostramos cómo verlas",
-     "resumo": "Las Dracónidas y las Oriónidas alcanzan su punto máximo este mes"
+     "titulo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño",
+     "resumo": "La Gran Barrera de Coral requiere una atención especial en el desarrollo de super El Niño"
     }
    },
-   "resumo_original": "The Draconids and Orionids both peak this month"
+   "resumo_original": "The Great Barrier Reef requires special attention in the developing super El Niño"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas pegam um radiômetro para dar uma volta em um balão de ar quente",
+   "resumo": "Uma congruência satisfatória entre os achados genéticos e de biologia celular e experimentos em altitude com um dispositivo rotativo que mede a energia radiante, no...",
+   "url": "https://www.nature.com/articles/d41586-026-02973-9",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-06T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "Scientists take a radiometer for a spin in a hot-air balloon",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos toman un radiómetro para dar una vuelta en un globo de aire caliente",
+     "resumo": "Una congruencia satisfactoria entre los hallazgos de genética y biología celular, y los experimentos en altitud con un dispositivo giratorio que mide la energía radiante, en el..."
+    }
+   },
+   "resumo_original": "A satisfying congruence between genetics and cell-biology findings, and experiments at altitude with a rotating device that measures radiant energy, in this week’s…"
   }
  ],
  "artigos": [
@@ -927,7 +927,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "blood test could gauge if a baby has a dangerous infection in 15 minutes": "2026-09-26T22:59:16.003076+00:00",
   "scientists just found a bizarre cosmic object hiding in plain sight": "2026-09-27T08:21:31.290160+00:00",
   "glucosamine a popular joint supplement linked to faster alzheimers progression": "2026-09-27T14:09:38.653722+00:00",
   "why rheumatoid arthritis pain may persist even when inflammation is under control": "2026-09-27T14:09:38.653722+00:00",
@@ -1124,6 +1123,7 @@
   "simposio em aborda nutricao materno infantil e saude reprodutiva": "2026-10-06T21:44:28.800200+00:00",
   "clube sci saifr discute os misterios do mundo das particulas": "2026-10-06T21:44:28.800200+00:00",
   "pesquisa detecta cocaina em rios do rio de janeiro": "2026-10-06T21:44:28.800200+00:00",
-  "scientists take a radiometer for a spin in a hot air balloon": "2026-10-06T21:44:28.800200+00:00"
+  "scientists take a radiometer for a spin in a hot air balloon": "2026-10-06T21:44:28.800200+00:00",
+  "openai unleashes hundreds more math results upon a field already in shock": "2026-10-07T01:39:55.016805+00:00"
  }
 }
