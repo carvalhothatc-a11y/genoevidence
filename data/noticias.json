@@ -1,83 +1,126 @@
 {
- "atualizado_em": "2026-10-07T08:53:39.271241+00:00",
+ "atualizado_em": "2026-10-07T16:40:28.340133+00:00",
  "noticias": [
   {
    "tipo": "noticia",
-   "titulo": "Outubro Rosa: detecção precoce é fundamental para reduzir risco de morte por câncer de mama",
-   "resumo": "Protocolo desenvolvido por pesquisadores do Instituto de Radiologia do Hospital das Clínicas da USP orienta profissionais da saúde sobre como conduzir conversas difíceis com pacientes",
-   "url": "https://jornal.usp.br/radio-usp/outubro-rosa-deteccao-precoce-e-fundamental-para-reduzir-risco-de-morte-por-cancer-de-mama/",
+   "titulo": "Brazilian biologist who stressed snakes until they struck wins Ig Nobel",
+   "resumo": "Satirical version of the Nobel Prize honors work by João Miguel Alves-Nunes, who provoked Brazil’s most dangerous snakes around 40,000 times to understand what triggers a strike",
+   "url": "https://jornal.usp.br/uspnews/brazilian-biologist-who-stressed-snakes-until-they-struck-wins-ig-nobel/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-06T17:58:39+00:00",
-   "tema": "Câncer",
-   "relevancia": 12,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/05/20260505_mulhermastectomizada.jpeg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Pink October: Early detection is key to reducing risk of death from breast cancer",
-     "resumo": "Protocol developed by researchers at the Institute of Radiology of the Hospital das Clínicas of USP guides health professionals on how to conduct difficult conversations with patients"
-    },
-    "es": {
-     "titulo": "Octubre rosa: la detección temprana es clave para reducir el riesgo de muerte por cáncer de mama",
-     "resumo": "El protocolo desarrollado por investigadores del Instituto de Radiología del Hospital das Clínicas de la USP guía a los profesionales de la salud sobre cómo mantener conversaciones difíciles con los pacientes"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Colóquio apresenta a história da participação brasileira no Centro Europeu de Pesquisa Nuclear",
-   "resumo": "Dia 8 de outubro, às 16h, será lançado o livro \"Cruzando Fronteiras: Uma História do Brasil no CERN\", no Instituto de Física da USP",
-   "url": "https://jornal.usp.br/universidade/coloquio-apresenta-a-historia-da-participacao-brasileira-no-centro-europeu-de-pesquisa-nuclear/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-06T16:32:13+00:00",
+   "data": "2026-10-07T12:31:21+00:00",
    "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2020/07/20200702_00_cern.jpg",
+   "relevancia": 12,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/09/20260921_nobel.jpg",
+   "foco": {
+    "x": 31,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Brazilian biologist who stressed snakes until they struck wins Ig Nobel"
+    },
+    "es": {
+     "titulo": "Biólogo brasileño que hizo hincapié en las serpientes hasta que atacaron gana el Ig Nobel"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "El Niño influencia primavera com chuvas e temperaturas contrastantes no Brasil",
+   "resumo": "A pesquisadora Ana Carolina Nóbile Tomaziello explica os efeitos do fenômeno e as tendências para a nova estação no boletim climatológico transmitido pela Rádio USP em Ribeirão Preto",
+   "url": "https://jornal.usp.br/atualidades/boletim-climatologico-el-nino-influencia-primavera-com-chuvas-e-temperaturas-contrastantes-no-brasil/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-07T10:52:56+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 11,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/10/20251001_primavera.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Colloquium presents the history of Brazilian participation in the European Center for Nuclear Research",
-     "resumo": "On October 8, at 4:00 p.m., the book \"Crossing Borders: A History of Brazil at CERN\" will be released at the Institute of Physics of USP"
+     "titulo": "El Niño influences spring with rainfall and contrasting temperatures in Brazil"
     },
     "es": {
-     "titulo": "Coloquio presenta la historia de la participación brasileña en el Centro Europeo de Investigación Nuclear",
-     "resumo": "El 8 de octubre, a las 16:00 horas, se dará a conocer en el Instituto de Física de la USP el libro “Cruzando Fronteras: Una Historia de Brasil en el CERN”"
+     "titulo": "El Niño influye en la primavera con lluvias y temperaturas contrastantes en Brasil"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Pesquisadores redesenham o mapa dos efeitos do El Niño na agricultura",
-   "resumo": "Enquanto algumas culturas podem se beneficiar das chuvas no Sul, outras ficam expostas à seca no Norte e no Nordeste",
-   "url": "https://revistapesquisa.fapesp.br/pesquisadores-redesenham-o-mapa-dos-efeitos-do-el-nino-na-agricultura/?utm_source=rss&utm_medium=rss&utm_campaign=pesquisadores-redesenham-o-mapa-dos-efeitos-do-el-nino-na-agricultura",
+   "titulo": "Cannabis e saúde mental: promessas e lacunas nas evidências",
+   "resumo": "Maior revisão já feita sobre o tema vê sinais promissores, mas pede estudos mais amplos e rigorosos",
+   "url": "https://revistapesquisa.fapesp.br/cannabis-medicinal-promessas-e-lacunas-nas-evidencias/?utm_source=rss&utm_medium=rss&utm_campaign=cannabis-medicinal-promessas-e-lacunas-nas-evidencias",
    "fonte": "Revista Pesquisa FAPESP",
    "idioma": "pt",
-   "data": "2026-10-06T14:13:47+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 9,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/4c89ccb9f8a6c0547518bb89c469ea4786e52d0b_1200-630.jpg",
+   "data": "2026-10-07T12:55:11+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/56ae5fe0fb1ef883527ac4bd6fbf955362dd0f62_1200-630.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Researchers redraw map of El Niño effects on agriculture",
-     "resumo": "While some crops may benefit from rainfall in the South, others are exposed to drought in the North and Northeast"
+     "titulo": "Cannabis and mental health: promises and gaps in evidence"
     },
     "es": {
-     "titulo": "Los investigadores redibujan el mapa de los efectos de El Niño en la agricultura",
-     "resumo": "Si bien algunos cultivos pueden beneficiarse de las lluvias en el sur, otros están expuestos a la sequía en el norte y noreste"
+     "titulo": "El cannabis y la salud mental: promesas y lagunas en la evidencia"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Canabidiol acelera efeitos do escitalopram em camundongos submetidos a estresse crônico",
+   "resumo": "Estudo da USP mostra redução de resposta do tratamento associando baixa dose de CBD ao antidepressivo, identificando ação de enzima do sistema endocanabinoide no córtex pré-frontal",
+   "url": "https://jornal.usp.br/ciencias/canabidiol-acelera-efeitos-do-escitalopram-em-camundongos-submetidos-a-estresse-cronico/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-07T11:00:17+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261005_canabidiol.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Cannabidiol accelerates effects of escitalopram in mice subjected to chronic stress"
+    },
+    "es": {
+     "titulo": "El cannabidiol acelera los efectos del escitalopram en ratones sometidos a estrés crónico"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas reprogramam células imunológicas dentro do corpo para combater o câncer",
+   "resumo": "Cientistas da UC San Francisco desenvolveram uma maneira de criar células CAR-T que combatem o câncer diretamente dentro do corpo, evitando potencialmente o processo lento e extremamente caro de remover, manipular e reinfundir o sistema imunológico de um paciente...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261005071532.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-07T09:50:16+00:00",
+   "tema": "Câncer",
+   "relevancia": 8,
+   "imagem": "https://www.sciencedaily.com/images/1920/t-cell-immunotherapy-fights-cancer.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists reprogram immune cells inside the body to fight cancer",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos reprograman las células inmunitarias dentro del cuerpo para combatir el cáncer",
+     "resumo": "Los científicos de la Universidad de California en San Francisco han desarrollado una forma de crear células CAR-T que combaten el cáncer directamente dentro del cuerpo, evitando potencialmente el proceso lento y extremadamente costoso de eliminar, diseñar y reinfundir el sistema inmunológico de un paciente..."
+    }
+   },
+   "resumo_original": "Scientists at UC San Francisco have developed a way to create cancer-fighting CAR-T cells directly inside the body, potentially avoiding the slow and extremely expensive process of removing, engineering, and reinfusing a patient’s immune…"
   },
   {
    "tipo": "noticia",
@@ -107,272 +150,197 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Simpósio em aborda nutrição materno infantil e saúde reprodutiva",
-   "resumo": "O evento será realizado no Anfiteatro da Bioquímica, Prédio Central da Faculdade de Medicina de Ribeirão Preto",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/simposio-em-aborda-nutricao-materno-infantil-e-saude-reprodutiva/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-06T15:08:31+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/20161201_00_Ribeirão-Preto.jpg",
-   "i18n": {
-    "en": {
-     "titulo": "Symposium on maternal and child nutrition and reproductive health",
-     "resumo": "The event will be held at the Amphitheater of Biochemistry, Central Building of the Faculty of Medicine of Ribeirão Preto"
-    },
-    "es": {
-     "titulo": "Simposio sobre nutrición maternoinfantil y salud reproductiva",
-     "resumo": "El evento se llevará a cabo en el Anfiteatro de Bioquímica, Edificio Central de la Facultad de Medicina de Ribeirão Preto"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Enzima encontrada na raiz da cana aumenta em seis vezes a produção de açúcar a partir do bagaço",
-   "resumo": "Cientistas da USP isolaram a molécula ao estudar os aerênquimas – estruturas que a própria planta cria para formar canais de ar em suas raízes. O achado pode impulsionar a produção de etanol de segunda geração",
-   "url": "https://agencia.fapesp.br/enzima-encontrada-na-raiz-da-cana-aumenta-em-seis-vezes-a-producao-de-acucar-a-partir-do-bagaco/59348",
+   "titulo": "A primeira iniciativa de divulgação científica da FAPESP",
+   "resumo": "Desenvolvidos em parceria com a TV Cultura, A poluição das águas (1970) e Ferrugem do café (1971) são episódios da pioneira iniciativa Ciência Viva , série criada para aproximar a pesquisa científica da sociedade. Assista aos vídeos no…",
+   "url": "https://centrodememoria.fapesp.br/cienciaviva",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-07T08:53:39.271241+00:00",
+   "data": "2026-10-07T16:40:28.340133+00:00",
    "tema": "Meio ambiente",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59348.jpg",
+   "imagem": "https://centrodememoria.fapesp.br/wp-content/uploads/2025/10/imagem-de-compartilhamento.png",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Enzyme found in sugarcane root increases sugar production from bagasse by six times",
-     "resumo": "Scientists at USP isolated the molecule by studying aerenchymas – structures that the plant itself creates to form air channels in its roots. The finding could boost the production of second-generation ethanol"
+     "titulo": "FAPESP's first scientific dissemination initiative"
     },
     "es": {
-     "titulo": "La enzima que se encuentra en la raíz de caña de azúcar aumenta la producción de azúcar del bagazo en seis veces",
-     "resumo": "Los científicos de la USP aislaron la molécula mediante el estudio de los aerénquimas, estructuras que la propia planta crea para formar canales de aire en sus raíces. El hallazgo podría impulsar la producción de etanol de segunda generación"
+     "titulo": "Primera iniciativa de divulgación científica de la FAPESP"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Estudo aponta como controlar falhas que prejudicam o desempenho das baterias de sódio",
-   "resumo": "Simulações computacionais em escala atômica indicam que ajustar a formulação dos fluidos do dispositivo protege suas áreas mais sensíveis, evitando desgastes e prolongando a vida útil",
-   "url": "https://agencia.fapesp.br/estudo-aponta-como-controlar-falhas-que-prejudicam-o-desempenho-das-baterias-de-sodio/59355",
+   "titulo": "Instituto de Física da Unicamp seleciona professor doutor",
+   "resumo": "Concurso na área de Física Geral é destinado exclusivamente para candidatos pretos e pardos",
+   "url": "https://agencia.fapesp.br/instituto-de-fisica-da-unicamp-seleciona-professor-doutor/59353",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-07T08:53:39.271241+00:00",
+   "data": "2026-10-07T16:40:28.340133+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59355.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59353.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Study points out how to control failures that impair the performance of sodium batteries",
-     "resumo": "Atomic-scale computer simulations indicate that adjusting the formulation of the device fluids protects its most sensitive areas, preventing wear and prolonging service life"
+     "titulo": "Unicamp Physics Institute selects PhD professor"
     },
     "es": {
-     "titulo": "El estudio señala cómo controlar las fallas que perjudican el rendimiento de las baterías de sodio",
-     "resumo": "Las simulaciones por ordenador a escala atómica indican que ajustar la formulación de los fluidos del dispositivo protege sus áreas más sensibles, previniendo el desgaste y prolongando la vida útil"
+     "titulo": "El Instituto de Física de la Unicamp selecciona al profesor de doctorado"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Prêmio Nobel de Física de 2026 concedido a Francis Halzen pela descoberta de neutrinos de alta energia",
-   "resumo": "Francis Halzen é líder no estudo de neutrinos, partículas fantasmagóricas de todo o universo que sugerem uma nova e empolgante física",
-   "url": "https://www.scientificamerican.com/article/2026-nobel-prize-in-physics-awarded-to-francis-halzen-for-discovery-of-high-energy-neutrinos/",
+   "titulo": "O Prêmio Nobel de Química de 2026 é concedido a Henri Kagan e Kenso Soai por seu trabalho em química \"espelho\"",
+   "resumo": "O prêmio reconhece a descoberta de Henri Kagan e Kenso Soai de efeitos não lineares e autocatálise em síntese orgânica assimétrica",
+   "url": "https://www.scientificamerican.com/article/2026-nobel-prize-in-chemistry-is-award-to-henri-kagan-and-kenso-soai-for-their-work-in-mirror-chemistry/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-06T09:45:00+00:00",
-   "tema": "Espaço",
+   "data": "2026-10-07T09:45:00+00:00",
+   "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://static.scientificamerican.com/dam/asset/37c118a2-f8aa-4366-b997-85f03240086d/Nobel-physics.jpg?m=1791297106.878&w=1200",
+   "imagem": "https://static.scientificamerican.com/dam/asset/edf07e61-2ba5-41c1-a1d2-b9dde594fddc/Nobel-Chemistry.jpg?m=1791386669.202&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "2026 Nobel Prize in Physics awarded to Francis Halzen for discovery of high-energy neutrinos",
+   "titulo_original": "2026 Nobel Prize in Chemistry is awarded to Henri Kagan and Kenso Soai for their work in ‘mirror’ chemistry",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "2026 Premio Nobel de Física otorgado a Francis Halzen por el descubrimiento de neutrinos de alta energía",
-     "resumo": "Francis Halzen es un líder en el estudio de los neutrinos, partículas fantasmales de todo el universo que insinúan una nueva y emocionante física"
+     "titulo": "2026 El Premio Nobel de Química se otorga a Henri Kagan y Kenso Soai por su trabajo en química \"espejo\"",
+     "resumo": "El premio reconoce el descubrimiento de Henri Kagan y Kenso Soai de los efectos no lineales y la autocatálisis en la síntesis orgánica asimétrica"
     }
    },
-   "resumo_original": "Francis Halzen is a leader in the study of neutrinos, ghostly particles from across the universe that hint at exciting new physics"
+   "resumo_original": "The prize recognizes Henri Kagan and Kenso Soai’s discovery of nonlinear effects and autocatalysis in asymmetric organic synthesis"
   },
   {
    "tipo": "noticia",
-   "titulo": "Uma nova maneira de combater a doença das gengivas sem eliminar boas bactérias",
-   "resumo": "Os cientistas descobriram que interromper as mensagens químicas que as bactérias usam para se comunicar pode empurrar a placa dentária em direção a um equilíbrio microbiano mais saudável. A abordagem pode levar a novos tratamentos para doenças das gengivas que controlam bactérias nocivas...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261005012230.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-07T03:55:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/bacteria-on-tooth-surface.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "A new way to fight gum disease without wiping out good bacteria",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Una nueva forma de combatir la enfermedad de las encías sin eliminar las bacterias buenas",
-     "resumo": "Los científicos descubrieron que interrumpir los mensajes químicos que las bacterias usan para comunicarse puede empujar la placa dental hacia un equilibrio microbiano más saludable. El enfoque podría conducir a nuevos tratamientos para la enfermedad de las encías que controlen las bacterias dañinas..."
-    }
-   },
-   "resumo_original": "Scientists discovered that disrupting the chemical messages bacteria use to communicate can push dental plaque toward a healthier microbial balance. The approach could lead to new treatments for gum disease that control harmful bacteria…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O OpenAI libera centenas de resultados matemáticos em um campo já em estado de choque",
-   "resumo": "Um mês depois de resolver um dos seis maiores problemas em aberto em matemática, a empresa diz que seu novo modelo interno derrubou mais - desta vez sem o preço multimilionário",
-   "url": "https://www.scientificamerican.com/article/openai-unleashes-hundreds-more-math-results-upon-a-field-already-in-shock/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-06T22:19:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/17b9a99a-4ff3-4784-90f4-3bf3c5dd49f7/GettyImages-1388879870.jpg?m=1791307024.645&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "OpenAI unleashes hundreds more math results upon a field already in shock",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "OpenAI libera cientos de resultados matemáticos más en un campo que ya está en estado de shock",
-     "resumo": "Un mes después de resolver uno de los seis mayores problemas abiertos en matemáticas, la compañía dice que su nuevo modelo interno ha derribado montones más, esta vez sin el precio multimillonario"
-    }
-   },
-   "resumo_original": "A month after resolving one of the six biggest open problems in mathematics, the company says its new internal model has toppled heaps more—this time without the multimillion-dollar price tag"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Pesquisa detecta cocaína em rios do Rio de Janeiro",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/pesquisa-detecta-cocaina-em-rios-do-rio-de-janeiro",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-06T19:29:50+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/ioc_agua.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Research detects cocaine in Rio de Janeiro rivers"
-    },
-    "es": {
-     "titulo": "Una investigación detecta cocaína en los ríos de Río de Janeiro"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "As ideias mais ambiciosas para salvar o mundo do El Niño",
-   "resumo": "Um El Niño monstruoso está se formando no Oceano Pacífico – mas pode haver maneiras de impedir que os piores impactos ocorram",
-   "url": "https://www.newscientist.com/article/2592044-the-most-ambitious-ideas-to-save-the-world-from-el-nino/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-06T13:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315420680.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "The most ambitious ideas to save the world from El Niño",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las ideas más ambiciosas para salvar al mundo de El Niño",
-     "resumo": "Se está gestando un monstruoso El Niño en el Océano Pacífico, pero puede haber formas de evitar que ocurran los peores impactos"
-    }
-   },
-   "resumo_original": "A monster El Niño is brewing in the Pacific Ocean – but there may be ways we can stop the worst impacts from occurring"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas pegam um radiômetro para dar uma volta em um balão de ar quente",
-   "resumo": "Uma congruência satisfatória entre os achados genéticos e de biologia celular e experimentos em altitude com um dispositivo rotativo que mede a energia radiante, no...",
-   "url": "https://www.nature.com/articles/d41586-026-02973-9",
+   "titulo": "A acessibilidade do genoma revela o risco de doença que a expressão gênica perde",
+   "resumo": "A maioria das alterações genéticas associadas a doenças não afeta os genes em si, mas altera a intensidade com que eles são expressos, muitas vezes modificando o genoma...",
+   "url": "https://www.nature.com/articles/d41586-026-03072-5",
    "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-06T00:00:00+00:00",
+   "data": "2026-10-07T00:00:00+00:00",
    "tema": "Genética",
-   "relevancia": 5,
+   "relevancia": 7,
    "imagem": "",
-   "titulo_original": "Scientists take a radiometer for a spin in a hot-air balloon",
+   "titulo_original": "Genome accessibility reveals disease risk that gene expression misses",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los científicos toman un radiómetro para dar una vuelta en un globo de aire caliente",
-     "resumo": "Una congruencia satisfactoria entre los hallazgos de genética y biología celular, y los experimentos en altitud con un dispositivo giratorio que mide la energía radiante, en el..."
+     "titulo": "La accesibilidad del genoma revela el riesgo de enfermedad que la expresión génica pierde",
+     "resumo": "La mayoría de las alteraciones genéticas asociadas a enfermedades no afectan a los genes en sí, sino que cambian la intensidad con la que se expresan, a menudo modificando el genoma..."
     }
    },
-   "resumo_original": "A satisfying congruence between genetics and cell-biology findings, and experiments at altitude with a rotating device that measures radiant energy, in this week’s…"
+   "resumo_original": "Most disease-associated genetic alterations do not affect the genes themselves, but instead change how strongly they are expressed, often by modifying genome…"
   },
   {
    "tipo": "noticia",
-   "titulo": "Os sapatos podem mudar a estrutura dos ossos do tornozelo",
-   "resumo": "O uso de sapatos parece afetar o volume de uma rede esponjosa dentro de um osso em nossos tornozelos, o que pode afetar a validade de pesquisas anteriores sobre a evolução da marcha",
-   "url": "https://www.newscientist.com/article/2592375-shoes-may-change-the-shape-of-our-ankle-bones/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "OpenAI despejou 722 trabalhos de matemática – agora deve limpar a bagunça",
+   "resumo": "A OpenAI está usando a matemática como um local de teste para seus modelos de IA mais capazes, e isso significa que ela tem a responsabilidade de lidar com as consequências, em vez de apenas deixá-la para os matemáticos, diz Jacob Aron",
+   "url": "https://www.newscientist.com/article/2592684-openai-has-dumped-722-maths-papers-now-it-must-clean-up-the-mess/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-06T17:00:00+00:00",
+   "data": "2026-10-07T16:22:38+00:00",
    "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315505706.jpg",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315667974.jpg",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 100
    },
-   "titulo_original": "Shoes may change the structure of our ankle bones",
+   "titulo_original": "OpenAI has dumped 722 maths papers – now it must clean up the mess",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los zapatos pueden cambiar la estructura de nuestros huesos del tobillo",
-     "resumo": "El uso de zapatos parece afectar el volumen de una red esponjosa dentro de un hueso en nuestros tobillos, lo que podría afectar la validez de investigaciones previas sobre la evolución de caminar"
+     "titulo": "OpenAI ha volcado 722 documentos de matemáticas, ahora debe limpiar el desorden",
+     "resumo": "OpenAI está utilizando las matemáticas como un sitio de prueba para sus modelos de IA más capaces, y eso significa que tiene la responsabilidad de lidiar con las consecuencias, en lugar de dejarlo solo a los matemáticos, dice Jacob Aron"
     }
    },
-   "resumo_original": "Wearing shoes seems to affect the volume of a spongy network within a bone in our ankles, which could affect the validity of previous research into the evolution of walking"
+   "resumo_original": "OpenAI is using mathematics as a test site for its most capable AI models, and that means it has a responsibility to deal with the fallout, rather than just leaving it to mathematicians, says Jacob Aron"
   },
   {
    "tipo": "noticia",
-   "titulo": "Adeus substituições de articulações? Os cientistas de Stanford encontraram uma maneira de regenerar a cartilagem e parar a artrite",
-   "resumo": "Os cientistas descobriram uma maneira surpreendente de regenerar a cartilagem do joelho danificada, bloqueando uma proteína que se torna mais abundante com a idade. Em camundongos velhos, o tratamento restaurou a cartilagem naturalmente perdida e também ajudou a prevenir a osteoartrite após...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261005011249.htm",
-   "fonte": "ScienceDaily",
+   "titulo": "Alvo de drogas pode bloquear a inflamação cerebral ligada à doença de Alzheimer e Parkinson",
+   "resumo": "O bloqueio de um receptor chamado P2X7 reduziu significativamente a inflamação no tecido cerebral humano, revelando uma potencial nova estratégia de tratamento para distúrbios neurológicos e psiquiátricos. A descoberta pode ajudar os pesquisadores a reaproveitar os recursos existentes...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261005071515.htm",
+   "fonte": "ScienceDaily · Saúde",
    "idioma": "en",
-   "data": "2026-10-06T13:03:47+00:00",
+   "data": "2026-10-07T12:13:35+00:00",
    "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/knee-joint-arthritis-cartilage-injury.webp",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/brain-fire-inflammation-dementia-alzheimers.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Goodbye joint replacements? Stanford scientists found a way to regrow cartilage and stop arthritis",
+   "titulo_original": "Drug target could block brain inflammation linked to Alzheimer’s and Parkinson’s",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "¿Adiós a los reemplazos de articulaciones? Los científicos de Stanford encontraron una manera de regenerar el cartílago y detener la artritis",
-     "resumo": "Los científicos han encontrado una forma sorprendente de regenerar el cartílago dañado de la rodilla mediante el bloqueo de una proteína que se vuelve más abundante con la edad. En ratones viejos, el tratamiento restauró el cartílago perdido naturalmente y también ayudó a prevenir la osteoartritis después de..."
+     "titulo": "El objetivo farmacológico podría bloquear la inflamación cerebral relacionada con el Alzheimer y el Parkinson",
+     "resumo": "El bloqueo de un receptor llamado P2X7 redujo significativamente la inflamación en el tejido cerebral humano, revelando una posible nueva estrategia de tratamiento para los trastornos neurológicos y psiquiátricos. El descubrimiento podría ayudar a los investigadores a reutilizar los existentes..."
     }
    },
-   "resumo_original": "Scientists have found a surprising way to regrow damaged knee cartilage by blocking a protein that becomes more abundant with age. In old mice, the treatment restored naturally lost cartilage and also helped prevent osteoarthritis after…"
+   "resumo_original": "Blocking a receptor called P2X7 significantly reduced inflammation in human brain tissue, revealing a potential new treatment strategy for neurological and psychiatric disorders. The discovery could help researchers repurpose existing…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O que é destilação modelo de IA e por que é tão difícil parar?",
+   "resumo": "A Anthropic e a OpenAI acusaram os desenvolvedores chineses de IA de minerar as respostas de seus modelos para treinar imitadores mais baratos. Veja como funciona a destilação e por que é tão difícil parar",
+   "url": "https://www.scientificamerican.com/article/what-is-ai-model-distillation-and-why-is-it-so-hard-to-stop/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-07T11:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/61cc77fc-dd5c-4112-ba5b-3f059cbedacc/distillery-graphic.jpg?m=1791315830.311&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "What is AI model distillation, and why is it so hard to stop?",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Qué es la destilación del modelo de IA y por qué es tan difícil detenerla?",
+     "resumo": "Anthropic y OpenAI acusaron a los desarrolladores chinos de IA de minar las respuestas de sus modelos para entrenar imitadores más baratos. Así es como funciona la destilación y por qué es tan difícil detenerla"
+    }
+   },
+   "resumo_original": "Anthropic and OpenAI accused Chinese AI developers of mining their models’ answers to train cheaper copycats. Here’s how distillation works and why it’s so hard to stop"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Fóssil de mamífero primitivo deslumbrante lança luz sobre a evolução do aleitamento",
+   "resumo": "Um antecessor dos mamíferos modernos que viveu no Jurássico foi encontrado na China com sua anatomia da garganta preservada, permitindo que os pesquisadores examinassem as primeiras evidências da evolução da amamentação",
+   "url": "https://www.newscientist.com/article/2592252-stunning-early-mammal-fossil-sheds-light-on-the-evolution-of-suckling/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-07T15:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315508551.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Stunning early mammal fossil sheds light on the evolution of suckling",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Un asombroso fósil de mamífero temprano arroja luz sobre la evolución de la lactancia materna",
+     "resumo": "Un predecesor de los mamíferos modernos que vivieron en el Jurásico se ha encontrado en China con su anatomía de la garganta preservada, lo que permite a los investigadores examinar la evidencia más temprana de la evolución de la lactancia materna"
+    }
+   },
+   "resumo_original": "A predecessor of modern mammals that lived in the Jurassic has been found in China with its throat anatomy preserved, allowing researchers to examine the earliest evidence for the evolution of suckling"
   }
  ],
  "artigos": [
@@ -932,12 +900,10 @@
   "Europe PMC"
  ],
  "erros": [
+  "Agência Fiocruz: <urlopen error timed out>",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "glucosamine a popular joint supplement linked to faster alzheimers progression": "2026-09-27T14:09:38.653722+00:00",
-  "why rheumatoid arthritis pain may persist even when inflammation is under control": "2026-09-27T14:09:38.653722+00:00",
-  "the secret cold war history of tetris": "2026-09-27T14:09:38.653722+00:00",
   "bacterias formam escudo microbiologico e protegem o trigo contra fungo patogenico": "2026-09-28T07:04:12.734400+00:00",
   "falha no reparo do dna materno compromete desenvolvimento embrionario e gera mutacoes pos fecundacao": "2026-09-28T07:04:12.734400+00:00",
   "musculacao faz celulas de gordura encolherem antes mesmo da perda de peso": "2026-09-28T07:04:12.734400+00:00",
@@ -1137,6 +1103,19 @@
   "estudo aponta como controlar falhas que prejudicam o desempenho das baterias de sodio": "2026-10-07T08:53:39.271241+00:00",
   "2026 nobel prize in physics awarded to francis halzen for discovery of high energy neutrinos": "2026-10-07T08:53:39.271241+00:00",
   "a new way to fight gum disease without wiping out good bacteria": "2026-10-07T08:53:39.271241+00:00",
-  "shoes may change the structure of our ankle bones": "2026-10-07T08:53:39.271241+00:00"
+  "shoes may change the structure of our ankle bones": "2026-10-07T08:53:39.271241+00:00",
+  "brazilian biologist who stressed snakes until they struck wins ig nobel": "2026-10-07T16:40:28.340133+00:00",
+  "el nino influencia primavera com chuvas e temperaturas contrastantes no brasil": "2026-10-07T16:40:28.340133+00:00",
+  "cannabis e saude mental promessas e lacunas nas evidencias": "2026-10-07T16:40:28.340133+00:00",
+  "canabidiol acelera efeitos do escitalopram em camundongos submetidos a estresse cronico": "2026-10-07T16:40:28.340133+00:00",
+  "scientists reprogram immune cells inside the body to fight cancer": "2026-10-07T16:40:28.340133+00:00",
+  "a primeira iniciativa de divulgacao cientifica da fapesp": "2026-10-07T16:40:28.340133+00:00",
+  "instituto de fisica da unicamp seleciona professor doutor": "2026-10-07T16:40:28.340133+00:00",
+  "2026 nobel prize in chemistry is awarded to henri kagan and kenso soai for their work in mirror chemistry": "2026-10-07T16:40:28.340133+00:00",
+  "genome accessibility reveals disease risk that gene expression misses": "2026-10-07T16:40:28.340133+00:00",
+  "openai has dumped 722 maths papers now it must clean up the mess": "2026-10-07T16:40:28.340133+00:00",
+  "drug target could block brain inflammation linked to alzheimers and parkinsons": "2026-10-07T16:40:28.340133+00:00",
+  "what is ai model distillation and why is it so hard to stop": "2026-10-07T16:40:28.340133+00:00",
+  "stunning early mammal fossil sheds light on the evolution of suckling": "2026-10-07T16:40:28.340133+00:00"
  }
 }
