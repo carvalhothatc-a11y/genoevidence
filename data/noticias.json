@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-07T22:05:39.384056+00:00",
+ "atualizado_em": "2026-10-08T02:04:32.593155+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -158,76 +158,55 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Enzima encontrada na raiz da cana aumenta em seis vezes a produção de açúcar a partir do bagaço",
-   "resumo": "Cientistas da USP isolaram a molécula ao estudar os aerênquimas – estruturas que a própria planta cria para formar canais de ar em suas raízes. O achado pode impulsionar a produção de etanol de segunda geração",
-   "url": "https://agencia.fapesp.br/enzima-encontrada-na-raiz-da-cana-aumenta-em-seis-vezes-a-producao-de-acucar-a-partir-do-bagaco/59348",
+   "titulo": "A primeira iniciativa de divulgação científica da FAPESP",
+   "resumo": "Desenvolvidos em parceria com a TV Cultura, A poluição das águas (1970) e Ferrugem do café (1971) são episódios da pioneira iniciativa Ciência Viva , série criada para aproximar a pesquisa científica da sociedade. Assista aos vídeos no…",
+   "url": "https://centrodememoria.fapesp.br/cienciaviva",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-07T22:05:39.384056+00:00",
+   "data": "2026-10-08T02:04:32.593155+00:00",
    "tema": "Meio ambiente",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59348.jpg",
+   "imagem": "https://centrodememoria.fapesp.br/wp-content/uploads/2025/10/imagem-de-compartilhamento.png",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Enzyme found in sugarcane root increases sugar production from bagasse by six times",
-     "resumo": "Scientists at USP isolated the molecule by studying aerenchymas – structures that the plant itself creates to form air channels in its roots. The finding could boost the production of second-generation ethanol"
+     "titulo": "FAPESP's first scientific dissemination initiative",
+     "resumo": "Developed in partnership with TV Cultura, Water Pollution (1970) and Coffee Rust (1971) are episodes of the pioneering Ciência Viva initiative, a series created to bring scientific research closer to society. Watch the videos on…"
     },
     "es": {
-     "titulo": "La enzima que se encuentra en la raíz de caña de azúcar aumenta la producción de azúcar del bagazo en seis veces",
-     "resumo": "Los científicos de la USP aislaron la molécula mediante el estudio de los aerénquimas, estructuras que la propia planta crea para formar canales de aire en sus raíces. El hallazgo podría impulsar la producción de etanol de segunda generación"
+     "titulo": "Primera iniciativa de divulgación científica de la FAPESP",
+     "resumo": "Desarrollado en colaboración con TV Cultura, Water Pollution (1970) y Coffee Rust (1971) son episodios de la iniciativa pionera Ciência Viva , una serie creada para acercar la investigación científica a la sociedad. Mira los vídeos en..."
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Estudo aponta como controlar falhas que prejudicam o desempenho das baterias de sódio",
-   "resumo": "Simulações computacionais em escala atômica indicam que ajustar a formulação dos fluidos do dispositivo protege suas áreas mais sensíveis, evitando desgastes e prolongando a vida útil",
-   "url": "https://agencia.fapesp.br/estudo-aponta-como-controlar-falhas-que-prejudicam-o-desempenho-das-baterias-de-sodio/59355",
+   "titulo": "Instituto de Física da Unicamp seleciona professor doutor",
+   "resumo": "Concurso na área de Física Geral é destinado exclusivamente para candidatos pretos e pardos",
+   "url": "https://agencia.fapesp.br/instituto-de-fisica-da-unicamp-seleciona-professor-doutor/59353",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-07T22:05:39.384056+00:00",
+   "data": "2026-10-08T02:04:32.593155+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59355.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59353.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Study points out how to control failures that impair the performance of sodium batteries",
-     "resumo": "Atomic-scale computer simulations indicate that adjusting the formulation of the device fluids protects its most sensitive areas, preventing wear and prolonging service life"
+     "titulo": "Unicamp Physics Institute selects PhD professor",
+     "resumo": "Competition in the area of General Physics is intended exclusively for black and brown candidates"
     },
     "es": {
-     "titulo": "El estudio señala cómo controlar las fallas que perjudican el rendimiento de las baterías de sodio",
-     "resumo": "Las simulaciones por ordenador a escala atómica indican que ajustar la formulación de los fluidos del dispositivo protege sus áreas más sensibles, previniendo el desgaste y prolongando la vida útil"
+     "titulo": "El Instituto de Física de la Unicamp selecciona al profesor de doctorado",
+     "resumo": "La competencia en el área de Física General está destinada exclusivamente a candidatos negros y marrones"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Prêmios Nobel 2026: interruptores cerebrais, caçador de partículas ‘fantasma' e 'a química da vida'",
-   "resumo": "A natureza reúne os Prêmios Nobel para a ciência — além de dicas do microbioma intestinal humano ancestral.",
-   "url": "https://www.nature.com/articles/d41586-026-03208-7",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-07T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "",
-   "titulo_original": "Nobel Prizes 2026: brain switches, ‘ghost’ particle hunter, and 'the chemistry of life'",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Premios Nobel 2026: interruptores cerebrales, cazador de partículas \"fantasma\" y \"la química de la vida\"",
-     "resumo": "La naturaleza redondea los Premios Nobel de ciencia, además de indicios del microbioma intestinal humano ancestral."
-    }
-   },
-   "resumo_original": "Nature rounds up the Nobel Prizes for science — plus, hints of the ancestral human gut microbiome."
   },
   {
    "tipo": "noticia",
@@ -353,6 +332,31 @@
     }
    },
    "resumo_original": "Anthropic and OpenAI accused Chinese AI developers of mining their models’ answers to train cheaper copycats. Here’s how distillation works and why it’s so hard to stop"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Webb da NASA encontra sinais de mundos do tamanho de Marte se esmagando",
+   "resumo": "O Telescópio Espacial James Webb da NASA está dando aos astrônomos um vislumbre dos tipos de colisões violentas que podem ter moldado nosso próprio sistema solar, incluindo o impacto gigante que se acredita ter criado a Lua. Ao estudar 21 raros \"extremos...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261007042108.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-07T13:09:15+00:00",
+   "tema": "Espaço",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/extreme-debris-disk.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "NASA’s Webb finds signs of Mars-sized worlds smashing together",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Webb de la NASA encuentra signos de mundos del tamaño de Marte estrellándose",
+     "resumo": "El Telescopio Espacial James Webb de la NASA está dando a los astrónomos una idea de los tipos de colisiones violentas que pueden haber dado forma a nuestro propio sistema solar, incluido el impacto gigante que se cree que creó la Luna. Al estudiar 21 raros \"extremos..."
+    }
+   },
+   "resumo_original": "NASA’s James Webb Space Telescope is giving astronomers a glimpse of the kinds of violent collisions that may have shaped our own solar system, including the giant impact thought to have created the Moon. By studying 21 rare “extreme…"
   }
  ],
  "artigos": [
@@ -859,42 +863,6 @@
      "titulo": "La clasificación funcional de las mutaciones monoalélicas de TP53 refina la estratificación pronóstica en las neoplasias mielodisplásicas."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "A perda do supressor tumoral p53 gera um gradiente de sinalização que impulsiona a expansão clonal epitelial.",
-   "autores": "Gan Q, Li W, Lex RK, Ying Z, Beronja S.",
-   "revista": "Science",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1126/science.aed3065",
-   "url": "https://doi.org/10.1126/science.aed3065",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Loss of the tumor suppressor p53 generates a signaling gradient that drives epithelial clonal expansion.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La pérdida del supresor tumoral p53 genera un gradiente de señalización que impulsa la expansión clonal epitelial."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Determinantes genômicos e clínicos da resposta à Azacitidina mais venetoclax na leucemia mieloide aguda: Resultados do estudo HM-SCREEN-Japan 02.",
-   "autores": "Ueda T, Fukushima K, Chi S, Haeno H, Yoshimoto G, Arai H, Ikeda D, Ichikawa M, Takahashi N, Hosono N, Yamauchi T, Kondo…",
-   "revista": "PLoS One",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1371/journal.pone.0357898",
-   "url": "https://doi.org/10.1371/journal.pone.0357898",
-   "acesso_aberto": true,
-   "tema": "Câncer",
-   "titulo_original": "Genomic and clinical determinants of response to Azacitidine plus venetoclax in acute myeloid leukemia: Results from the HM-SCREEN-Japan 02 study.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Determinantes genómicos y clínicos de la respuesta a la azacitidina más venetoclax en la leucemia mieloide aguda: resultados del estudio HM-SCREEN-Japan 02."
-    }
-   }
   }
  ],
  "fontes": [
@@ -912,6 +880,7 @@
   "Europe PMC"
  ],
  "erros": [
+  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
@@ -1132,6 +1101,7 @@
   "nobel prizes 2026 brain switches ghost particle hunter and the chemistry of life": "2026-10-07T22:05:39.384056+00:00",
   "194 year old tortoise has exceptional dna repair systems that fight off ageing": "2026-10-07T22:05:39.384056+00:00",
   "scientists unlock the longevity secrets of 194 year old jonathan the giant tortoise": "2026-10-07T22:05:39.384056+00:00",
-  "twisteddoodles i made an ai version of you": "2026-10-07T22:05:39.384056+00:00"
+  "twisteddoodles i made an ai version of you": "2026-10-07T22:05:39.384056+00:00",
+  "nasas webb finds signs of mars sized worlds smashing together": "2026-10-08T02:04:32.593155+00:00"
  }
 }
