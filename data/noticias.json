@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-08T02:04:32.593155+00:00",
+ "atualizado_em": "2026-10-08T09:09:52.985540+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -24,6 +24,32 @@
     "es": {
      "titulo": "Biólogo brasileño que hizo hincapié en las serpientes hasta que atacaron gana el Ig Nobel",
      "resumo": "La versión satírica del Premio Nobel honra el trabajo de João Miguel Alves-Nunes, quien provocó a las serpientes más peligrosas de Brasil alrededor de 40.000 veces para entender qué desencadena un ataque"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Seca e calor extremos do último El Niño antecipam ‘novo normal’ nas florestas tropicais",
+   "resumo": "Estudo internacional revela que estresse térmico sem precedentes de 2023-2024 deve se repetir nas próximas décadas se não houver corte das emissões. Amazônia é a região mais vulnerável",
+   "url": "https://agencia.fapesp.br/seca-e-calor-extremos-do-ultimo-el-nino-antecipam-novo-normal-nas-florestas-tropicais/59326",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-08T09:09:52.985540+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 11,
+   "imagem": "https://agencia.fapesp.br/files/post/59326.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Extreme drought and heat from the last El Niño anticipate ‘new normal’ in tropical forests",
+     "resumo": "An international study reveals that unprecedented heat stress from 2023-2024 should be repeated in the coming decades if there is no cut in emissions. Amazon is the most vulnerable region"
+    },
+    "es": {
+     "titulo": "La sequía extrema y el calor del último El Niño anticipan una ‘nueva normalidad’ en los bosques tropicales",
+     "resumo": "Un estudio internacional revela que el estrés por calor sin precedentes de 2023-2024 debería repetirse en las próximas décadas si no se reducen las emisiones. Amazon es la región más vulnerable"
     }
    }
   },
@@ -55,29 +81,80 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Cannabis e saúde mental: promessas e lacunas nas evidências",
-   "resumo": "Maior revisão já feita sobre o tema vê sinais promissores, mas pede estudos mais amplos e rigorosos",
-   "url": "https://revistapesquisa.fapesp.br/cannabis-medicinal-promessas-e-lacunas-nas-evidencias/?utm_source=rss&utm_medium=rss&utm_campaign=cannabis-medicinal-promessas-e-lacunas-nas-evidencias",
-   "fonte": "Revista Pesquisa FAPESP",
+   "titulo": "Estudo propõe integrar inteligência artificial e processos naturais para restaurar florestas",
+   "resumo": "Pesquisadores do Centro de Estudos de Carbono em Agricultura Tropical destacam que ecossistemas não podem ser “reconstruídos” como obras de engenharia, e defendem o uso ético da tecnologia para aliar a ação humana à regeneração ecológica",
+   "url": "https://agencia.fapesp.br/estudo-propoe-integrar-inteligencia-artificial-e-processos-naturais-para-restaurar-florestas/59362",
+   "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-07T12:55:11+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/56ae5fe0fb1ef883527ac4bd6fbf955362dd0f62_1200-630.jpg",
+   "data": "2026-10-08T09:09:52.985540+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59362.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Cannabis and mental health: promises and gaps in evidence",
-     "resumo": "Largest review ever done on the topic sees promising signs but calls for broader, more rigorous studies"
+     "titulo": "Study proposes to integrate artificial intelligence and natural processes to restore forests",
+     "resumo": "Researchers at the Center for Carbon Studies in Tropical Agriculture point out that ecosystems cannot be “rebuilt” as engineering works, and advocate the ethical use of technology to combine human action with ecological regeneration"
     },
     "es": {
-     "titulo": "El cannabis y la salud mental: promesas y lagunas en la evidencia",
-     "resumo": "La revisión más grande jamás realizada sobre el tema ve signos prometedores, pero exige estudios más amplios y rigurosos"
+     "titulo": "Estudio propone integrar inteligencia artificial y procesos naturales para restaurar bosques",
+     "resumo": "Los investigadores del Centro de Estudios de Carbono en Agricultura Tropical señalan que los ecosistemas no pueden \"reconstruirse\" a medida que la ingeniería trabaja, y abogan por el uso ético de la tecnología para combinar la acción humana con la regeneración ecológica"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "‘Precisamos desconstruir a ideia de que os desastres são naturais’, afirma pesquisadora",
+   "resumo": "Professora da UFABC e vencedora do Prêmio Capes de Tese, Patrícia Mie Matsuo analisa o papel da educação na prevenção de riscos socioambientais e detalha as lições das enchentes no Rio Grande do Sul",
+   "url": "https://agencia.fapesp.br/precisamos-desconstruir-a-ideia-de-que-os-desastres-sao-naturais-afirma-pesquisadora/59361",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-08T09:09:52.985540+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59361.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "‘We need to deconstruct the idea that disasters are natural’, says researcher",
+     "resumo": "Professor at UFABC and winner of the Capes Thesis Award, Patrícia Mie Matsuo analyzes the role of education in preventing socio-environmental risks and details the lessons of the floods in Rio Grande do Sul"
+    },
+    "es": {
+     "titulo": "\"Tenemos que deconstruir la idea de que los desastres son naturales\", dice el investigador",
+     "resumo": "La profesora de la UFABC y ganadora del Premio Tesis Capes, Patrícia Mie Matsuo analiza el papel de la educación en la prevención de riesgos socioambientales y detalla las lecciones de las inundaciones en Rio Grande do Sul"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas de Stanford transformam um motorista de câncer em um kill switch",
+   "resumo": "Uma molécula projetada por Stanford transforma uma importante proteína promotora de linfoma contra células cancerígenas, ativando sua própria maquinaria de autodestruição em vez de simplesmente bloquear o crescimento do tumor. Em camundongos, o tratamento eliminou completamente a agressividade humana...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261005071533.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-08T00:52:42+00:00",
+   "tema": "Câncer",
+   "relevancia": 8,
+   "imagem": "https://www.sciencedaily.com/images/1920/cell-explosion-cancer-destruction.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Stanford scientists turn a cancer driver into a kill switch",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Científicos de Stanford convierten a un conductor de cáncer en un interruptor de apagado",
+     "resumo": "Una molécula diseñada por Stanford convierte una importante proteína promotora de linfoma contra las células cancerosas, activando su propia maquinaria de autodestrucción en lugar de simplemente bloquear el crecimiento tumoral. En ratones, el tratamiento eliminó por completo la agresividad humana..."
+    }
+   },
+   "resumo_original": "A Stanford-designed molecule turns a major lymphoma-promoting protein against cancer cells, activating their own self-destruct machinery instead of simply blocking tumor growth. In mice, the treatment completely eliminated aggressive human…"
   },
   {
    "tipo": "noticia",
@@ -107,106 +184,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas reprogramam células imunológicas dentro do corpo para combater o câncer",
-   "resumo": "Cientistas da UC San Francisco desenvolveram uma maneira de criar células CAR-T que combatem o câncer diretamente dentro do corpo, evitando potencialmente o processo lento e extremamente caro de remover, manipular e reinfundir o sistema imunológico de um paciente...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261005071532.htm",
-   "fonte": "ScienceDaily · Saúde",
+   "titulo": "As descobertas matemáticas mais interessantes nos 722 novos artigos da OpenAI",
+   "resumo": "A OpenAI lançou centenas de artigos afirmando progredir nos maiores problemas em aberto da matemática – aqui estão alguns com o maior potencial",
+   "url": "https://www.newscientist.com/article/2592703-the-most-interesting-mathematical-discoveries-in-openais-722-new-papers/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-07T09:50:16+00:00",
-   "tema": "Câncer",
-   "relevancia": 8,
-   "imagem": "https://www.sciencedaily.com/images/1920/t-cell-immunotherapy-fights-cancer.webp",
+   "data": "2026-10-08T08:38:11+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315747551.jpg",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 100
    },
-   "titulo_original": "Scientists reprogram immune cells inside the body to fight cancer",
+   "titulo_original": "The most interesting mathematical discoveries in OpenAI’s 722 new papers",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los científicos reprograman las células inmunitarias dentro del cuerpo para combatir el cáncer",
-     "resumo": "Los científicos de la Universidad de California en San Francisco han desarrollado una forma de crear células CAR-T que combaten el cáncer directamente dentro del cuerpo, evitando potencialmente el proceso lento y extremadamente costoso de eliminar, diseñar y reinfundir el sistema inmunológico de un paciente..."
+     "titulo": "Los descubrimientos matemáticos más interesantes en los 722 nuevos artículos de OpenAI",
+     "resumo": "OpenAI ha publicado cientos de artículos que afirman progresar en los mayores problemas abiertos en matemáticas: aquí hay algunos con el mayor potencial"
     }
    },
-   "resumo_original": "Scientists at UC San Francisco have developed a way to create cancer-fighting CAR-T cells directly inside the body, potentially avoiding the slow and extremely expensive process of removing, engineering, and reinfusing a patient’s immune…"
+   "resumo_original": "OpenAI has released hundreds of papers claiming to make progress on the biggest open problems in mathematics – here are some with the most potential"
   },
   {
    "tipo": "noticia",
-   "titulo": "Pesquisa detalha mecanismo que dá energia rápida a células de defesa no início de infecções",
-   "resumo": "Ao compreender como os macrófagos reprogramam seu metabolismo logo após detectar um patógeno, pesquisadores da Unicamp e da USP abrem caminho para tratamentos que fortaleçam a imunidade sem causar danos ao organismo",
-   "url": "https://agencia.fapesp.br/pesquisa-detalha-mecanismo-que-da-energia-rapida-a-celulas-de-defesa-no-inicio-de-infeccoes/59349",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-07T08:53:39.271241+00:00",
+   "titulo": "Nem todas as gorduras trans são ruins, segundo uma revisão importante",
+   "resumo": "Uma grande análise de 22 estudos descobriu que as gorduras trans naturalmente presentes em alimentos lácteos, como leite, manteiga, iogurte e queijo, não parecem aumentar o risco de doenças cardíacas ou diabetes tipo 2. Ao contrário das gorduras trans industriais de...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261006234505.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-08T03:00:54+00:00",
    "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://agencia.fapesp.br/files/post/59349.jpg",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/cheese-milk-dairy-cows.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
+   "titulo_original": "Not all trans fats are bad, major review finds",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "Research details mechanism that gives rapid energy to defense cells at the onset of infections",
-     "resumo": "By understanding how macrophages reprogram their metabolism soon after detecting a pathogen, researchers at Unicamp and USP pave the way for treatments that strengthen immunity without causing harm to the body"
-    },
     "es": {
-     "titulo": "La investigación detalla el mecanismo que proporciona energía rápida a las células de defensa al inicio de las infecciones",
-     "resumo": "Al comprender cómo los macrófagos reprograman su metabolismo poco después de detectar un patógeno, los investigadores de la Unicamp y la USP allanan el camino para tratamientos que fortalecen la inmunidad sin causar daño al cuerpo"
+     "titulo": "No todas las grasas trans son malas, encuentra una revisión importante",
+     "resumo": "Un gran análisis de 22 estudios encontró que las grasas trans presentes naturalmente en los productos lácteos como la leche, la mantequilla, el yogur y el queso no parecen aumentar el riesgo de enfermedades cardíacas o diabetes tipo 2. A diferencia de las grasas trans industriales de..."
     }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A primeira iniciativa de divulgação científica da FAPESP",
-   "resumo": "Desenvolvidos em parceria com a TV Cultura, A poluição das águas (1970) e Ferrugem do café (1971) são episódios da pioneira iniciativa Ciência Viva , série criada para aproximar a pesquisa científica da sociedade. Assista aos vídeos no…",
-   "url": "https://centrodememoria.fapesp.br/cienciaviva",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-08T02:04:32.593155+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://centrodememoria.fapesp.br/wp-content/uploads/2025/10/imagem-de-compartilhamento.png",
-   "foco": {
-    "x": 50,
-    "y": 50
    },
-   "i18n": {
-    "en": {
-     "titulo": "FAPESP's first scientific dissemination initiative",
-     "resumo": "Developed in partnership with TV Cultura, Water Pollution (1970) and Coffee Rust (1971) are episodes of the pioneering Ciência Viva initiative, a series created to bring scientific research closer to society. Watch the videos on…"
-    },
-    "es": {
-     "titulo": "Primera iniciativa de divulgación científica de la FAPESP",
-     "resumo": "Desarrollado en colaboración con TV Cultura, Water Pollution (1970) y Coffee Rust (1971) son episodios de la iniciativa pionera Ciência Viva , una serie creada para acercar la investigación científica a la sociedad. Mira los vídeos en..."
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Instituto de Física da Unicamp seleciona professor doutor",
-   "resumo": "Concurso na área de Física Geral é destinado exclusivamente para candidatos pretos e pardos",
-   "url": "https://agencia.fapesp.br/instituto-de-fisica-da-unicamp-seleciona-professor-doutor/59353",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-08T02:04:32.593155+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59353.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Unicamp Physics Institute selects PhD professor",
-     "resumo": "Competition in the area of General Physics is intended exclusively for black and brown candidates"
-    },
-    "es": {
-     "titulo": "El Instituto de Física de la Unicamp selecciona al profesor de doctorado",
-     "resumo": "La competencia en el área de Física General está destinada exclusivamente a candidatos negros y marrones"
-    }
-   }
+   "resumo_original": "A large analysis of 22 studies found that the trans fats naturally present in dairy foods such as milk, butter, yogurt, and cheese do not appear to raise the risk of heart disease or type 2 diabetes. Unlike industrial trans fats from…"
   },
   {
    "tipo": "noticia",
@@ -260,56 +284,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Twisteddoodles: ‘Eu fiz uma versão de IA de você’",
-   "resumo": "O desenho animado desta semana do Twisteddoodles",
-   "url": "https://www.newscientist.com/article/2592476-twisteddoodles-i-made-an-ai-version-of-you/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-07T17:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315396882.jpg",
-   "foco": {
-    "x": 50,
-    "y": 100
-   },
-   "titulo_original": "Twisteddoodles: ‘I made an AI version of you’",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Twisteddoodles: ‘Hice una versión de IA de ti’",
-     "resumo": "La caricatura de esta semana de Twisteddoodles"
-    }
-   },
-   "resumo_original": "This week's cartoon from Twisteddoodles"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Alvo de drogas pode bloquear a inflamação cerebral ligada à doença de Alzheimer e Parkinson",
-   "resumo": "O bloqueio de um receptor chamado P2X7 reduziu significativamente a inflamação no tecido cerebral humano, revelando uma potencial nova estratégia de tratamento para distúrbios neurológicos e psiquiátricos. A descoberta pode ajudar os pesquisadores a reaproveitar os recursos existentes...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261005071515.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-07T12:13:35+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/brain-fire-inflammation-dementia-alzheimers.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Drug target could block brain inflammation linked to Alzheimer’s and Parkinson’s",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El objetivo farmacológico podría bloquear la inflamación cerebral relacionada con el Alzheimer y el Parkinson",
-     "resumo": "El bloqueo de un receptor llamado P2X7 redujo significativamente la inflamación en el tejido cerebral humano, revelando una posible nueva estrategia de tratamiento para los trastornos neurológicos y psiquiátricos. El descubrimiento podría ayudar a los investigadores a reutilizar los existentes..."
-    }
-   },
-   "resumo_original": "Blocking a receptor called P2X7 significantly reduced inflammation in human brain tissue, revealing a potential new treatment strategy for neurological and psychiatric disorders. The discovery could help researchers repurpose existing…"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "O que é destilação modelo de IA e por que é tão difícil parar?",
    "resumo": "A Anthropic e a OpenAI acusaram os desenvolvedores chineses de IA de minerar as respostas de seus modelos para treinar imitadores mais baratos. Veja como funciona a destilação e por que é tão difícil parar",
    "url": "https://www.scientificamerican.com/article/what-is-ai-model-distillation-and-why-is-it-so-hard-to-stop/",
@@ -335,28 +309,24 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Webb da NASA encontra sinais de mundos do tamanho de Marte se esmagando",
-   "resumo": "O Telescópio Espacial James Webb da NASA está dando aos astrônomos um vislumbre dos tipos de colisões violentas que podem ter moldado nosso próprio sistema solar, incluindo o impacto gigante que se acredita ter criado a Lua. Ao estudar 21 raros \"extremos...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261007042108.htm",
-   "fonte": "ScienceDaily",
+   "titulo": "Prêmios Nobel 2026: interruptores cerebrais, caçador de partículas ‘fantasma‘ e ‘a química da vida’",
+   "resumo": "A natureza reúne os prêmios Nobel de ciência — além de dicas do microbioma intestinal humano ancestral.",
+   "url": "https://www.nature.com/articles/d41586-026-03208-7",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-07T13:09:15+00:00",
-   "tema": "Espaço",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/extreme-debris-disk.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "NASA’s Webb finds signs of Mars-sized worlds smashing together",
+   "data": "2026-10-07T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "Nobel prizes 2026: brain switches, ‘ghost’ particle hunter, and ‘the chemistry of life’",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Webb de la NASA encuentra signos de mundos del tamaño de Marte estrellándose",
-     "resumo": "El Telescopio Espacial James Webb de la NASA está dando a los astrónomos una idea de los tipos de colisiones violentas que pueden haber dado forma a nuestro propio sistema solar, incluido el impacto gigante que se cree que creó la Luna. Al estudiar 21 raros \"extremos..."
+     "titulo": "Premios Nobel 2026: interruptores cerebrales, cazador de partículas \"fantasma\" y \"la química de la vida\"",
+     "resumo": "La naturaleza redondea los premios Nobel de ciencia, además de indicios del microbioma intestinal humano ancestral."
     }
    },
-   "resumo_original": "NASA’s James Webb Space Telescope is giving astronomers a glimpse of the kinds of violent collisions that may have shaped our own solar system, including the giant impact thought to have created the Moon. By studying 21 rare “extreme…"
+   "resumo_original": "Nature rounds up the Nobel prizes for science — plus, hints of the ancestral human gut microbiome."
   }
  ],
  "artigos": [
@@ -880,13 +850,9 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "bacterias formam escudo microbiologico e protegem o trigo contra fungo patogenico": "2026-09-28T07:04:12.734400+00:00",
-  "falha no reparo do dna materno compromete desenvolvimento embrionario e gera mutacoes pos fecundacao": "2026-09-28T07:04:12.734400+00:00",
-  "musculacao faz celulas de gordura encolherem antes mesmo da perda de peso": "2026-09-28T07:04:12.734400+00:00",
   "resposta global negligente ao ebola e marca da desigualdade geopolitica na saude": "2026-09-28T15:39:15.825868+00:00",
   "concurso aberto para professor assistente no icts unesp": "2026-09-28T15:39:15.825868+00:00",
   "ai finds 3d shape that fills all space with a never repeating pattern": "2026-09-28T15:39:15.825868+00:00",
@@ -1102,6 +1068,12 @@
   "194 year old tortoise has exceptional dna repair systems that fight off ageing": "2026-10-07T22:05:39.384056+00:00",
   "scientists unlock the longevity secrets of 194 year old jonathan the giant tortoise": "2026-10-07T22:05:39.384056+00:00",
   "twisteddoodles i made an ai version of you": "2026-10-07T22:05:39.384056+00:00",
-  "nasas webb finds signs of mars sized worlds smashing together": "2026-10-08T02:04:32.593155+00:00"
+  "nasas webb finds signs of mars sized worlds smashing together": "2026-10-08T02:04:32.593155+00:00",
+  "seca e calor extremos do ultimo el nino antecipam novo normal nas florestas tropicais": "2026-10-08T09:09:52.985540+00:00",
+  "estudo propoe integrar inteligencia artificial e processos naturais para restaurar florestas": "2026-10-08T09:09:52.985540+00:00",
+  "precisamos desconstruir a ideia de que os desastres sao naturais afirma pesquisadora": "2026-10-08T09:09:52.985540+00:00",
+  "stanford scientists turn a cancer driver into a kill switch": "2026-10-08T09:09:52.985540+00:00",
+  "the most interesting mathematical discoveries in openais 722 new papers": "2026-10-08T09:09:52.985540+00:00",
+  "not all trans fats are bad major review finds": "2026-10-08T09:09:52.985540+00:00"
  }
 }
