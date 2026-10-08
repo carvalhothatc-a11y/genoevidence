@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-08T16:38:13.734907+00:00",
+ "atualizado_em": "2026-10-08T22:12:53.560323+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -27,6 +27,32 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Nobel de Medicina reconhece descobertas que levam a testes para recuperar a visão",
+   "resumo": "Pesquisa iniciada em uma alga microscópica deu origem à optogenética, hoje investigada no tratamento experimental da retinose pigmentar",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/nobel-de-medicina-reconhece-descobertas-que-levam-a-testes-para-recuperar-a-visao/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-08T17:40:52+00:00",
+   "tema": "Saúde",
+   "relevancia": 11,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261008_olho.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Nobel Prize in Medicine recognizes discoveries that lead to tests to regain vision",
+     "resumo": "Research initiated in a microscopic algae gave rise to optogenetics, now investigated in the experimental treatment of retinitis pigmentosa"
+    },
+    "es": {
+     "titulo": "El Premio Nobel de Medicina reconoce los descubrimientos que conducen a pruebas para recuperar la visión",
+     "resumo": "La investigación iniciada en un alga microscópica dio lugar a la optogenética, ahora investigada en el tratamiento experimental de la retinosis pigmentaria"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Seca e calor extremos do último El Niño antecipam ‘novo normal’ nas florestas tropicais",
    "resumo": "Estudo internacional revela que estresse térmico sem precedentes de 2023-2024 deve se repetir nas próximas décadas se não houver corte das emissões. Amazônia é a região mais vulnerável",
    "url": "https://agencia.fapesp.br/seca-e-calor-extremos-do-ultimo-el-nino-antecipam-novo-normal-nas-florestas-tropicais/59326",
@@ -48,6 +74,58 @@
     "es": {
      "titulo": "La sequía extrema y el calor del último El Niño anticipan una ‘nueva normalidad’ en los bosques tropicales",
      "resumo": "Un estudio internacional revela que el estrés por calor sin precedentes de 2023-2024 debería repetirse en las próximas décadas si no se reducen las emisiones. Amazon es la región más vulnerable"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Imigração angolana para o Brasil mantém semelhança com exploração iniciada no período colonial",
+   "resumo": "Pesquisa da USP mostra que a imigração é motivada por melhores condições de saúde e educação, mas angolanos ainda sofrem com racismo e precarização do trabalho",
+   "url": "https://jornal.usp.br/diversidade/imigracao-angolana-para-o-brasil-mantem-semelhanca-com-exploracao-iniciada-no-periodo-colonial/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-08T19:56:04+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261007_feiraartes.jpg",
+   "foco": {
+    "x": 23,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Angolan immigration to Brazil bears a resemblance to exploration started in the colonial period",
+     "resumo": "Research from USP shows that immigration is motivated by better health and education conditions, but Angolans still suffer from racism and job insecurity"
+    },
+    "es": {
+     "titulo": "La inmigración angoleña a Brasil se asemeja a la exploración iniciada en la época colonial",
+     "resumo": "La investigación de la USP muestra que la inmigración está motivada por mejores condiciones de salud y educación, pero los angoleños todavía sufren de racismo e inseguridad laboral"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Do controle dos neurônios à Grécia reimaginada",
+   "resumo": "Nobel de 2026 premia optogenética, detecção de neutrinos, moléculas assimétricas e uma autora que se inspira em Homero",
+   "url": "https://revistapesquisa.fapesp.br/do-controle-dos-neuronios-a-grecia-reimaginada/?utm_source=rss&utm_medium=rss&utm_campaign=do-controle-dos-neuronios-a-grecia-reimaginada",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-08T17:46:35+00:00",
+   "tema": "Ciência",
+   "relevancia": 10,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/abba1e76ede807a6629e5d4e98a2ff713ffb63ab_1200-630.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "From neuron control to reimagined Greece",
+     "resumo": "2026 Nobel laureate awards optogenetics, neutrino detection, asymmetric molecules and an author inspired by Homer"
+    },
+    "es": {
+     "titulo": "Del control neuronal a una Grecia reinventada",
+     "resumo": "2026 Premio Nobel de optogenética, detección de neutrinos, moléculas asimétricas y un autor inspirado en Homero"
     }
    }
   },
@@ -105,105 +183,79 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Da proteção física ao bem-estar psicológico: entenda o novo papel da CIPA+A nas empresas",
-   "resumo": "Além de prevenir riscos de acidentes, a CIPA passa a ter o dever de atuar na prevenção e no combate ao assédio sexual, moral e a outras formas de violência no trabalho",
-   "url": "https://jornal.usp.br/atualidades/da-protecao-fisica-ao-bem-estar-psicologico-entenda-o-novo-papel-da-cipaa-nas-empresas/",
+   "titulo": "Oficina reúne estudantes para discutir o ensino jurídico",
+   "resumo": "O objetivo é levantar demandas dos estudantes e elaborar propostas para tornar o ambiente acadêmico mais inclusivo e acessível",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/oficina-reune-estudantes-para-discutir-o-ensino-juridico/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-08T14:53:34+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-08T19:32:26+00:00",
+   "tema": "Meio ambiente",
    "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/20170707_00_SegurancaTrabalho.jpg",
-   "foco": {
-    "x": 100,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "From physical protection to psychological well-being: understand CIPA+A's new role in business",
-     "resumo": "In addition to preventing risks of accidents, CIPA now has the duty to act to prevent and combat sexual and moral harassment and other forms of violence at work"
-    },
-    "es": {
-     "titulo": "De la protección física al bienestar psicológico: comprender el nuevo papel de CIPA+A en los negocios",
-     "resumo": "Además de prevenir los riesgos de accidentes, CIPA ahora tiene el deber de actuar para prevenir y combatir el acoso sexual y moral y otras formas de violencia en el trabajo"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A encruzilhada depois do doutorado",
-   "resumo": "O dilema dos jovens pesquisadores, muitas vezes, fica entre caminhos instáveis e a fuga das universidades",
-   "url": "https://revistapesquisa.fapesp.br/a-encruzilhada-depois-do-doutorado/?utm_source=rss&utm_medium=rss&utm_campaign=a-encruzilhada-depois-do-doutorado",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-08T12:03:05+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/3870e36aaf7d29aa4bc1679d5b24e0929f41e3f6_1200-630.jpg",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/02/20240209_fdrp.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "The crossroads after the doctorate",
-     "resumo": "The dilemma of young researchers often lies between unstable paths and the escape from universities"
+     "titulo": "Workshop brings together students to discuss legal education",
+     "resumo": "The goal is to raise student demands and develop proposals to make the academic environment more inclusive and accessible"
     },
     "es": {
-     "titulo": "La encrucijada tras el doctorado",
-     "resumo": "El dilema de los jóvenes investigadores a menudo se encuentra entre los caminos inestables y el escape de las universidades"
+     "titulo": "El taller reúne a los estudiantes para discutir la educación legal",
+     "resumo": "El objetivo es elevar las demandas de los estudiantes y desarrollar propuestas para hacer que el entorno académico sea más inclusivo y accesible"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Células cerebrais humanas transplantadas em camundongos estabelecem conexões nervosas",
-   "resumo": "Cientista da Universidade de Stanford, nos Estados Unidos, pretendem usar esse modelo para testar novas terapias",
-   "url": "https://jornal.usp.br/radio-usp/celulas-cerebrais-humanas-transplantadas-em-camundongos-estabelecem-conexoes-nervosas/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-08T11:43:00+00:00",
+   "titulo": "As afirmações mais empolgantes da pilha de novas provas da OpenAI",
+   "resumo": "Os cientistas apontaram vários resultados de matemática e ciência da computação como os mais significativos no novo e avassalador dilúvio de conquistas da empresa",
+   "url": "https://www.scientificamerican.com/article/the-most-exciting-claims-from-openais-heap-of-new-proofs/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-08T19:30:00+00:00",
    "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/03/pasta-dos-20230313_mayana-.jpg",
-   "foco": {
-    "inteira": true
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Human brain cells transplanted into mice establish nerve connections",
-     "resumo": "A scientist at Stanford University in the United States intends to use this model to test new therapies"
-    },
-    "es": {
-     "titulo": "Las células cerebrales humanas trasplantadas a ratones establecen conexiones nerviosas",
-     "resumo": "Un científico de la Universidad de Stanford en los Estados Unidos tiene la intención de utilizar este modelo para probar nuevas terapias"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Ecossistema de inovação e integridade na pesquisa são temas de conferência na USP",
-   "resumo": "Promovida pela Pró-Reitoria de Pesquisa e Inovação, a conferência reuniu representantes da academia, do governo e do setor produtivo para discutir o ecossistema de inovação da Universidade",
-   "url": "https://jornal.usp.br/institucional/ecossistema-de-inovacao-e-integridade-na-pesquisa-sao-temas-de-conferencia-na-usp/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-07T21:47:02+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/Inovacao_Formacao_Seguranca_Integridade__162-26_Foto-Marcos-Santos_Usp-Imagens-37.jpg",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/beebd885-990e-44e5-b388-d36bbcb5c747/Math-dots-neural-network.jpeg?m=1791487919.769&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
+   "titulo_original": "The most exciting claims from OpenAI’s heap of new proofs",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "Innovation ecosystem and integrity in research are conference topics at USP",
-     "resumo": "Promoted by the Dean of Research and Innovation, the conference brought together representatives of academia, government and the productive sector to discuss the University's innovation ecosystem"
-    },
     "es": {
-     "titulo": "El ecosistema de innovación y la integridad en la investigación son temas de la conferencia en la USP"
+     "titulo": "Las afirmaciones más emocionantes del montón de nuevas pruebas de OpenAI",
+     "resumo": "Los científicos han calificado varios resultados de matemáticas e informática como los más significativos en el abrumador nuevo diluvio de logros de la compañía"
     }
-   }
+   },
+   "resumo_original": "Scientists have called out several math and computer science results as the most significant in the company’s overwhelming new deluge of achievements"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Os matemáticos se maravilham e resmungam com os novos resultados da OpenAI",
+   "resumo": "A \"queda de resíduos\" contém uma série de provas inovadoras, mas a forma como foi gerada permanece incerta e controversa",
+   "url": "https://www.scientificamerican.com/article/mathematicians-marvel-and-grumble-at-openais-trove-of-new-results/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-08T19:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/c14911ed-1a94-444d-8acb-e8ec3ef8bcb0/Brain-and-math.jpeg?m=1791485742.566&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Mathematicians marvel, and grumble, at OpenAI’s trove of new results",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los matemáticos se maravillan y se quejan de los nuevos resultados de OpenAI",
+     "resumo": "El \"slop drop\" contiene una serie de pruebas innovadoras, pero la forma en que se generó sigue siendo poco clara y polémica"
+    }
+   },
+   "resumo_original": "The “slop drop” contains a number of groundbreaking proofs, but how it was generated remains unclear and contentious"
   },
   {
    "tipo": "noticia",
@@ -303,78 +355,24 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas descobrem acidentalmente um código genético que quebra as regras da vida",
-   "resumo": "Os cientistas descobriram acidentalmente um organismo microscópico com um código genético que quebra uma regra que os pesquisadores pensavam ser quase universal. Ao testar uma nova técnica de sequenciamento de DNA, eles examinaram um protista previamente desconhecido coletado...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261007233136.htm",
-   "fonte": "ScienceDaily",
+   "titulo": "Como construir um camundongo: desenvolvimento embrionário capturado em detalhes impressionantes",
+   "resumo": "As tecnologias de edição de genes permitiram aos pesquisadores rastrear o desenvolvimento célula por célula de um único óvulo de camundongo fertilizado até um embrião em estágio avançado.",
+   "url": "https://www.nature.com/articles/d41586-026-03193-x",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-08T13:31:39+00:00",
+   "data": "2026-10-08T00:00:00+00:00",
    "tema": "Genética",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/disintegrating-plastic-dna.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists accidentally discover a genetic code that breaks the rules of life",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "How to build a mouse: embryo development captured in stunning detail",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Científicos descubren accidentalmente un código genético que rompe las reglas de la vida",
-     "resumo": "Los científicos descubrieron accidentalmente un organismo microscópico con un código genético que rompe una regla que los investigadores pensaban que era casi universal. Mientras probaban una nueva técnica de secuenciación de ADN, examinaron un protista previamente desconocido recogido..."
+     "titulo": "Cómo construir un ratón: desarrollo embrionario capturado con asombroso detalle",
+     "resumo": "Las tecnologías de edición de genes permitieron a los investigadores rastrear el desarrollo célula por célula de un solo óvulo de ratón fertilizado hasta un embrión en etapa tardía."
     }
    },
-   "resumo_original": "Scientists accidentally discovered a microscopic organism with a genetic code that breaks a rule researchers thought was nearly universal. While testing a new DNA sequencing technique, they examined a previously unknown protist collected…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Um caso suspeito de peste pneumônica está aumentando os temores de um surto. Você deveria se preocupar?",
-   "resumo": "As autoridades russas relataram no início desta semana que um funcionário de um laboratório na Sibéria que estuda peste e outras doenças infecciosas morreu de pneumonia de causa \"desconhecida\"",
-   "url": "https://www.scientificamerican.com/article/a-suspected-case-of-pneumonic-plague-is-raising-fears-of-an-outbreak-should-you-be-worried/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-07T19:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "https://static.scientificamerican.com/dam/asset/037b2e29-0a23-4e80-8fb1-78522de72083/plague-bacterium.jpg?m=1791399645.332&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "A suspected case of pneumonic plague is raising fears of an outbreak. Should you be worried?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Un caso sospechoso de peste neumónica está aumentando los temores de un brote. ¿Deberías preocuparte?",
-     "resumo": "Las autoridades rusas informaron a principios de esta semana que un empleado de un laboratorio en Siberia que estudia la peste y otras enfermedades infecciosas había muerto de neumonía de causa \"desconocida\""
-    }
-   },
-   "resumo_original": "Russian authorities reported earlier this week that an employee at a lab in Siberia that studies plague and other infectious diseases had died of pneumonia of “unknown” cause"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Imagens Artemis II impulsionam planos de base lunar da NASA",
-   "resumo": "A primeira missão lunar tripulada em mais de meio século trouxe de volta mais de 800 gigabytes de dados sobre crateras coloridas, meteoróides intermitentes e muito mais",
-   "url": "https://www.scientificamerican.com/article/artemis-ii-images-boost-nasas-moon-base-plans/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-08T15:00:00+00:00",
-   "tema": "Espaço",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/ff0f2458-108c-48d7-80a5-d14108830385/art002e025880-large.jpg?m=1791474830.265&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 100
-   },
-   "titulo_original": "Artemis II images boost NASA’s moon base plans",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las imágenes de Artemisa II impulsan los planes de la base lunar de la NASA",
-     "resumo": "La primera misión lunar tripulada en más de medio siglo trajo más de 800 gigabytes de datos sobre cráteres coloridos, meteoroides intermitentes y mucho más"
-    }
-   },
-   "resumo_original": "The first crewed lunar mission in more than a half-century brought back more than 800 gigabytes of data on colorful craters, flashing meteoroids, and much more"
+   "resumo_original": "Gene-editing technologies enabled researchers to trace the cell-by-cell development of a single fertilised mouse egg to a late-stage embryo."
   }
  ],
  "artigos": [
@@ -901,16 +899,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "plataforma testa em laboratorio a resposta de tumores a diferentes tratamentos": "2026-09-28T21:27:09.310216+00:00",
-  "um mapa do calcanhar de aquiles celeste": "2026-09-28T21:27:09.310216+00:00",
-  "protagonismo do brasil na ciencia global varia de acordo com o modelo de colaboracao": "2026-09-28T21:27:09.310216+00:00",
-  "escala ajuda a identificar dificuldades e potencialidades de pos graduandos na formacao cientifica": "2026-09-28T21:27:09.310216+00:00",
-  "scientists cant stop using ai even when forbidden from doing so": "2026-09-28T21:27:09.310216+00:00",
-  "our food system is vulnerable to el nino warns uk climate minister": "2026-09-28T21:27:09.310216+00:00",
-  "nasa to attempt uncrewed and crewed missions with boeings troubled starliner spacecraft": "2026-09-28T21:27:09.310216+00:00",
-  "tiktok influencers are promoting a home remedy to boost the immune system that could cause botulism": "2026-09-28T21:27:09.310216+00:00",
-  "scientists just discovered what coffee really does to your gut and brain": "2026-09-28T21:27:09.310216+00:00",
-  "anthropic quer usar ia para descobrir tratamentos para doencas raras": "2026-09-28T21:27:09.310216+00:00",
   "plataforma testa em laboratorio resposta de tumores a diferentes tratamentos": "2026-09-29T02:04:43.650086+00:00",
   "a historia do projeto brasileiro argentino llama": "2026-09-29T02:04:43.650086+00:00",
   "one in eight new cancers are likely caused by infectionstheres an easy way to protect yourself": "2026-09-29T02:04:43.650086+00:00",
@@ -1124,6 +1112,13 @@
   "editorial expression of concern maternal gut bacteria promote neurodevelopmental abnormalities in mouse offspring": "2026-10-08T16:38:13.734907+00:00",
   "scientists accidentally discover a genetic code that breaks the rules of life": "2026-10-08T16:38:13.734907+00:00",
   "a suspected case of pneumonic plague is raising fears of an outbreak should you be worried": "2026-10-08T16:38:13.734907+00:00",
-  "artemis ii images boost nasas moon base plans": "2026-10-08T16:38:13.734907+00:00"
+  "artemis ii images boost nasas moon base plans": "2026-10-08T16:38:13.734907+00:00",
+  "nobel de medicina reconhece descobertas que levam a testes para recuperar a visao": "2026-10-08T22:12:53.560323+00:00",
+  "imigracao angolana para o brasil mantem semelhanca com exploracao iniciada no periodo colonial": "2026-10-08T22:12:53.560323+00:00",
+  "do controle dos neuronios a grecia reimaginada": "2026-10-08T22:12:53.560323+00:00",
+  "oficina reune estudantes para discutir o ensino juridico": "2026-10-08T22:12:53.560323+00:00",
+  "the most exciting claims from openais heap of new proofs": "2026-10-08T22:12:53.560323+00:00",
+  "mathematicians marvel and grumble at openais trove of new results": "2026-10-08T22:12:53.560323+00:00",
+  "how to build a mouse embryo development captured in stunning detail": "2026-10-08T22:12:53.560323+00:00"
  }
 }
