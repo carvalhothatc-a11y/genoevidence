@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-09T16:22:11.570881+00:00",
+ "atualizado_em": "2026-10-09T21:04:36.830010+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -29,54 +29,81 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Programa USP 60+ reúne especialistas em simpósio sobre envelhecimento ativo",
-   "resumo": "Encontro de dois dias no Espaço Brasiliana aborda diversos temas, do bem-estar psicológico à vacinação",
-   "url": "https://jornal.usp.br/cadernodecultura/programa-usp-60-reune-especialistas-em-simposio-sobre-envelhecimento-ativo/",
+   "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
+   "resumo": "Campanha segue até o fim do mês e destina as mechas as pacientes do Hospital do Câncer de Ribeirão Preto",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/estudantes-da-usp-arrecadam-cabelo-no-outubro-rosa/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-09T13:51:21+00:00",
-   "tema": "Espaço",
-   "relevancia": 13,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20180510_0949252.jpg",
+   "data": "2026-10-09T19:21:35+00:00",
+   "tema": "Câncer",
+   "relevancia": 12,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261009_mechasdecabelo.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "USP students collect hair in Pink October",
+     "resumo": "Campaign continues until the end of the month and destines the wicks to the patients of the Ribeirão Preto Cancer Hospital"
+    },
+    "es": {
+     "titulo": "Los estudiantes de la USP recogen el cabello en octubre rosa",
+     "resumo": "La campaña continúa hasta fin de mes y destina las mechas a los pacientes del Hospital Oncológico de Ribeirão Preto"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Novo medicamento amplia opções de tratamento para câncer de pâncreas metastático",
+   "resumo": "Daraxonrasib, aprovado pela agência reguladora dos Estados Unidos, apresentou resultados superiores aos da quimioterapia em pacientes que já haviam recebido tratamento",
+   "url": "https://jornal.usp.br/radio-usp/novo-medicamento-amplia-opcoes-de-tratamento-para-cancer-de-pancreas-metastatico/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-09T17:18:53+00:00",
+   "tema": "Câncer",
+   "relevancia": 12,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/20170529_00_Pancreas.png",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "New drug expands treatment options for metastatic pancreatic cancer",
+     "resumo": "Daraxonrasib, approved by the United States regulatory agency, showed superior results to chemotherapy in patients who had already received treatment"
+    },
+    "es": {
+     "titulo": "Un nuevo fármaco amplía las opciones de tratamiento para el cáncer de páncreas metastásico",
+     "resumo": "Daraxonrasib, aprobado por la agencia reguladora de los Estados Unidos, mostró resultados superiores a la quimioterapia en pacientes que ya habían recibido tratamiento"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O Prêmio Nobel de Física 2026: mais um para o neutrino!",
+   "resumo": "Por Renata Zukanovich Funchal, professora do Instituto de Física da USP",
+   "url": "https://jornal.usp.br/artigos/o-premio-nobel-de-fisica-2026-mais-um-para-o-neutrino/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-09T17:56:19+00:00",
+   "tema": "Ciência",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261009_renatazukanovichfunchal-destaque.jpg",
    "foco": {
     "x": 100,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "USP 60+ Program brings together experts in symposium on active aging",
-     "resumo": "A two-day meeting at Espaço Brasiliana addresses several topics, from psychological well-being to vaccination"
+     "titulo": "The Nobel Prize in Physics 2026: one more for the neutrino!",
+     "resumo": "By Renata Zukanovich Funchal, professor at USP's Physics Institute"
     },
     "es": {
-     "titulo": "El Programa USP 60+ reúne a expertos en simposio sobre envejecimiento activo",
-     "resumo": "Una reunión de dos días en Espaço Brasiliana aborda varios temas, desde el bienestar psicológico hasta la vacunación"
+     "titulo": "El Premio Nobel de Física 2026: ¡uno más para el neutrino!",
+     "resumo": "Por Renata Zukanovich Funchal, profesora del Instituto de Física de la USP"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Febre após uma vacina? O motivo pode ser o seu microbioma intestinal",
-   "resumo": "Em um novo estudo, as pessoas que tiveram febres piores após uma vacina COVID tenderam a ter características intestinais semelhantes",
-   "url": "https://www.scientificamerican.com/article/feverish-after-a-vaccine-the-reason-could-be-your-gut-microbiome/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-09T10:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://static.scientificamerican.com/dam/m/3b5e8c8df7220672/original/flu-season-WHO.jpg?m=1791493458.062&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Feverish after a vaccine? The reason could be your gut microbiome",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿Tiene fiebre después de una vacuna? La razón podría ser su microbioma intestinal",
-     "resumo": "En un nuevo estudio, las personas que tenían peores fiebres después de una inyección de COVID tendían a tener características intestinales similares"
-    }
-   },
-   "resumo_original": "In a new study, people who had worse fevers after a COVID shot tended to have similar gut characteristics"
   },
   {
    "tipo": "noticia",
@@ -106,47 +133,51 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Science Communication in Transition: Strategies, Responsibilities and Emerging Challenges in Germany and Brazil",
-   "resumo": "Evento vai reunir especialistas, pesquisadores, comunicadores e jornalistas da Alemanha e do Brasil para debater desafios e responsabilidades da divulgação da ciência em ambos os países",
-   "url": "https://agencia.fapesp.br/science-communication-in-transition-strategies-responsibilities-and-emerging-challenges-in-germany-and-brazil/59369",
+   "titulo": "Instituto Weizmann de Ciências oferece bolsa de pós-doutorado",
+   "resumo": "Oportunidade tem a duração de dois anos e é destinada a cidadãos brasileiros ou com residência no Brasil",
+   "url": "https://agencia.fapesp.br/instituto-weizmann-de-ciencias-oferece-bolsa-de-pos-doutorado/59371",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-09T16:22:11.570881+00:00",
+   "data": "2026-10-09T21:04:36.830010+00:00",
    "tema": "Ciência",
    "relevancia": 9,
-   "imagem": "",
+   "imagem": "https://agencia.fapesp.br/files/post/59371.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
    "i18n": {
     "en": {
-     "titulo": "Science Communication in Transition: Strategies, Responsibilities and Emerging Challenges in Germany and Brazil",
-     "resumo": "The event will bring together experts, researchers, communicators and journalists from Germany and Brazil to discuss the challenges and responsibilities of disseminating science in both countries"
+     "titulo": "Weizmann Institute of Science offers postdoctoral fellowship",
+     "resumo": "The Opportunity lasts for two years and is intended for Brazilian citizens or those residing in Brazil"
     },
     "es": {
-     "titulo": "Comunicación científica en transición: estrategias, responsabilidades y desafíos emergentes en Alemania y Brasil",
-     "resumo": "El evento reunirá a expertos, investigadores, comunicadores y periodistas de Alemania y Brasil para discutir los desafíos y responsabilidades de la difusión de la ciencia en ambos países"
+     "titulo": "El Instituto de Ciencias Weizmann ofrece becas postdoctorales",
+     "resumo": "La Oportunidad tiene una duración de dos años y está destinada a ciudadanos brasileños o residentes en Brasil"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Parceria entre USP e Yale, nos EUA, possibilitou a reconstrução de uma música em tupi antigo",
-   "resumo": "Com base em documentos históricos, pesquisadores de filologia, história e musicologia criaram três versões para a melodia de \"Chorus Brasilicus\", apresentada em Lisboa no ano de 1619",
-   "url": "https://jornal.usp.br/diversidade/parceria-entre-usp-e-yale-nos-eua-possibilitou-a-reconstrucao-de-uma-musica-em-tupi-antigo/",
-   "fonte": "Jornal da USP",
+   "titulo": "Fiocruz assina Declaração de Barcelona e Iniciativa de Helsinki",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/fiocruz-assina-declaracao-de-barcelona-e-iniciativa-de-helsinki",
+   "fonte": "Agência Fiocruz",
    "idioma": "pt",
-   "data": "2026-10-09T15:48:19+00:00",
+   "data": "2026-10-09T17:35:08+00:00",
    "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261008_yale.jpg",
+   "relevancia": 8,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/aberta.jpg",
    "foco": {
-    "x": 0,
+    "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "A partnership between USP and Yale, in the USA, made it possible to reconstruct an old Tupi song"
+     "titulo": "Fiocruz signs Barcelona Declaration and Helsinki Initiative"
     },
     "es": {
-     "titulo": "Una asociación entre USP y Yale, en los EE. UU., Hizo posible reconstruir una antigua canción tupí"
+     "titulo": "Fiocruz firma la Declaración de Barcelona y la Iniciativa de Helsinki"
     }
    }
   },
@@ -159,59 +190,16 @@
    "idioma": "pt",
    "data": "2026-10-08T19:43:08+00:00",
    "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Fiocruz expresses solidarity with UFPE after fires"
-    },
-    "es": {
-     "titulo": "La Fiocruz se solidariza con la UFPE tras los incendios"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Um experimento para vislumbrar a futura Amazônia — em fotos",
-   "resumo": "David Lapola está testando uma grande ciência climática desconhecida: como a floresta lidará com o aumento do dióxido de carbono atmosférico?",
-   "url": "https://www.nature.com/articles/d41586-026-02909-3",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-09T00:00:00+00:00",
-   "tema": "Meio ambiente",
    "relevancia": 8,
    "imagem": "",
-   "titulo_original": "An experiment to glimpse the future Amazon — in pictures",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Un experimento para vislumbrar el futuro de Amazon — en imágenes",
-     "resumo": "David Lapola está probando una gran incógnita de la ciencia climática: ¿cómo hará frente el bosque a medida que el dióxido de carbono atmosférico continúe aumentando?"
-    }
-   },
-   "resumo_original": "David Lapola is testing a big climate-science unknown: how will the forest cope as atmospheric carbon dioxide continues to rise?"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O milagre da multiplicação de referências bibliográficas (fantasmas)",
-   "resumo": "As inteligências artificiais por trás do milagre da multiplicação de referências bibliográficas",
-   "url": "https://revistapesquisa.fapesp.br/o-milagre-da-multiplicacao-de-referencias-bibliograficas-fantasmas/?utm_source=rss&utm_medium=rss&utm_campaign=o-milagre-da-multiplicacao-de-referencias-bibliograficas-fantasmas",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-09T11:57:05+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/235a27527afc61a01aec0cdfbc3651a8cda9d99f_1200-630.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
    "i18n": {
     "en": {
-     "titulo": "The miracle of the multiplication of bibliographic references (ghosts)"
+     "titulo": "Fiocruz expresses solidarity with UFPE after fires",
+     "resumo": "Fiocruz expresses solidarity with the entire community of the Federal University of Pernambuco (UFPE) in the face of the recent fires that occurred in the institution's buildings, with relevant material damage. The losses go beyond the walls of UFPE and…"
     },
     "es": {
-     "titulo": "El milagro de la multiplicación de referencias bibliográficas (fantasmas)"
+     "titulo": "La Fiocruz se solidariza con la UFPE tras los incendios",
+     "resumo": "La Fiocruz expresa su solidaridad con toda la comunidad de la Universidad Federal de Pernambuco (UFPE) ante los recientes incendios ocurridos en los edificios de la institución, con daños materiales relevantes. Las pérdidas van más allá de los muros de la UFPE y..."
     }
    }
   },
@@ -242,27 +230,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Série animada traz conteúdos científicos sobre astronomia para crianças",
-   "resumo": "Projeto especial com participação do Instituto de Astronomia, Geofísica e Ciências Atmosféricas da USP traz conteúdos científicos no YouTube para todas as idades ao longo do mês",
-   "url": "https://jornal.usp.br/universidade/serie-animada-traz-conteudos-cientificos-sobre-astronomia-para-criancas/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-08T18:54:21+00:00",
-   "tema": "Espaço",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261007_00_serie_historias_sob_estrelas_gmt_iag_usp.jpg",
+   "titulo": "Cada nova variante da covid-19 representa uma ameaça significativa?",
+   "resumo": "A maioria dos casos de covid-19 é causada por um tipo específico de variante, mas precisamos nos preocupar toda vez que surge um novo?",
+   "url": "https://www.newscientist.com/article/2593098-does-each-new-covid-19-variant-pose-a-significant-threat/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-09T16:39:31+00:00",
+   "tema": "Genética",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315912545.jpg",
    "foco": {
-    "x": 0,
+    "x": 50,
     "y": 50
    },
+   "titulo_original": "Does each new covid-19 variant pose a significant threat?",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "Animated series brings scientific content on astronomy to children"
-    },
     "es": {
-     "titulo": "Las series animadas acercan el contenido científico sobre astronomía a los niños"
+     "titulo": "¿Cada nueva variante de covid-19 representa una amenaza significativa?",
+     "resumo": "La mayoría de los casos de covid-19 son causados por un tipo particular de variante, pero ¿debemos preocuparnos cada vez que surge una nueva?"
     }
-   }
+   },
+   "resumo_original": "Most covid-19 cases are caused by a particular type of variant, but do we need to worry every time a new one emerges?"
   },
   {
    "tipo": "noticia",
@@ -316,53 +305,74 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "As tatuagens podem ser ligadas e desligadas com luz",
-   "resumo": "Um novo tipo de tinta poderia superar uma das principais desvantagens das tatuagens: a incapacidade de torná-las invisíveis",
-   "url": "https://www.newscientist.com/article/2592938-tattoos-could-be-turned-on-and-off-with-light/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "Quebrar o andaime das células nervosas alivia a dor crônica em camundongos",
+   "resumo": "Os resultados podem ajudar os pesquisadores a desenvolver analgésicos mais seguros e eficazes do que os tratamentos existentes.",
+   "url": "https://www.nature.com/articles/d41586-026-03159-z",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-09T15:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315879829.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Tattoos could be turned on and off with light",
+   "data": "2026-10-09T00:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "Breaking down nerve-cell scaffold relieves chronic pain in mice",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los tatuajes se pueden encender y apagar con luz",
-     "resumo": "Un nuevo tipo de tinta podría superar uno de los principales inconvenientes de los tatuajes: la incapacidad de hacerlos invisibles"
+     "titulo": "Romper el andamio de células nerviosas alivia el dolor crónico en ratones",
+     "resumo": "Los resultados podrían ayudar a los investigadores a desarrollar analgésicos que sean más seguros y efectivos que los tratamientos existentes."
     }
    },
-   "resumo_original": "A new type of ink could overcome one of the main downsides of tattoos: the inability to make them invisible"
+   "resumo_original": "Results could help researchers to develop painkillers that are safer and more effective than existing treatments."
   },
   {
    "tipo": "noticia",
-   "titulo": "Quase 1 em cada 10 adultos jovens pode ter artérias gordurosas e estreitas",
-   "resumo": "A aterosclerose, o acúmulo de placa de gordura nas artérias, geralmente afeta pessoas com mais de 50 anos, mas uma proporção \"significativa\" de adultos mais jovens também tem a condição",
-   "url": "https://www.newscientist.com/article/2592977-nearly-1-in-10-young-adults-could-have-fatty-narrow-arteries/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "Grandes terremotos no Panamá - danos e ferimentos são esperados",
+   "resumo": "O terremoto foi um evento de deslizamento, e fortes tremores secundários poderiam se seguir",
+   "url": "https://www.scientificamerican.com/article/major-earthquake-strikes-panama-damage-and-injuries-are-expected/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-09T13:21:55+00:00",
+   "data": "2026-10-09T20:45:00+00:00",
    "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315872431.jpg",
+   "imagem": "https://static.scientificamerican.com/dam/asset/a379c728-3fd5-4d62-aa33-04aa4f2804cb/GettyImages-2298795559_web.jpeg?m=1791578666.178&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 22
+   },
+   "titulo_original": "Major earthquake strikes Panama—damage and injuries are expected",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Gran terremoto golpea Panamá: se esperan daños y lesiones",
+     "resumo": "El terremoto fue un evento de deslizamiento de la huelga, y fuertes réplicas podrían seguir"
+    }
+   },
+   "resumo_original": "The quake was a strike-slip event, and strong aftershocks could follow"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Dois grandes asteroides encontrados girando tão rápido quanto um passeio de parque de diversões",
+   "resumo": "Rochas no cinturão de asteroides girando a velocidades ultrarrápidas sugerem que nossa compreensão da estrutura do asteroide pode estar errada",
+   "url": "https://www.newscientist.com/article/2593044-two-large-asteroids-found-spinning-as-fast-as-fairground-ride/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-09T17:00:00+00:00",
+   "tema": "Espaço",
+   "relevancia": 4,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315887083.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Nearly 1 in 10 young adults could have fatty, narrow arteries",
+   "titulo_original": "Two large asteroids found spinning as fast as a fairground ride",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Casi 1 de cada 10 adultos jóvenes podría tener arterias grasas y estrechas",
-     "resumo": "La aterosclerosis, la acumulación de placa grasa en las arterias, generalmente afecta a personas mayores de 50 años, pero una proporción \"significativa\" de adultos más jóvenes también tiene la afección"
+     "titulo": "Dos grandes asteroides encontrados girando tan rápido como un paseo en feria",
+     "resumo": "Las rocas en el cinturón de asteroides que giran a velocidades ultrarrápidas sugieren que nuestra comprensión de la estructura de los asteroides podría estar equivocada"
     }
    },
-   "resumo_original": "Atherosclerosis, the build-up of fatty plaque in arteries, usually affects people older than 50, but a \"meaningful\" proportion of younger adults also have the condition"
+   "resumo_original": "Rocks in the asteroid belt rotating at ultra-fast speeds suggest our understanding of asteroid structure might be wrong"
   }
  ],
  "artigos": [
@@ -602,14 +612,21 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Chatbot Intervention and Cancer Risk Knowledge in Adolescents and Young Adults With Cancer Predisposition : A Randomized Clinical Trial",
+   "titulo": "Intervenção de Chatbot e Conhecimento de Risco de Câncer em Adolescentes e Jovens Adultos com Predisposição ao Câncer: Um Ensaio Clínico Randomizado",
    "autores": "Kamihara J, Cronin A, Uno H, Horiguchi M, Fisher L, Schienda J, Vanderwall R, Snir M, Snir G, Simmons E, Khalaj A…",
    "revista": "JAMA Netw Open",
    "data": "2026-10-01T00:00:00+00:00",
    "doi": null,
    "url": "https://europepmc.org/article/PMC/PMC13647142",
    "acesso_aberto": true,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Chatbot Intervention and Cancer Risk Knowledge in Adolescents and Young Adults With Cancer Predisposition : A Randomized Clinical Trial",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Intervención de chatbots y conocimiento del riesgo de cáncer en adolescentes y adultos jóvenes con predisposición al cáncer: un ensayo clínico aleatorizado"
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -882,14 +899,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "carlos nobre recebe premio internacional por carreira dedicada a conservacao da amazonia": "2026-09-29T20:54:33.719086+00:00",
-  "consu aprova titulos de professor emerito a fernando costa e gastao wagner": "2026-09-29T20:54:33.719086+00:00",
-  "unicamp e bionow assinam parceria para transformar alcatrao em fonte de energia renovavel": "2026-09-29T20:54:33.719086+00:00",
-  "comunidade universitaria pode contribuir em pesquisa on line sobre inclusao e pertencimento na usp": "2026-09-29T20:54:33.719086+00:00",
-  "urban trees in south east england cant cope with the changing climate": "2026-09-29T20:54:33.719086+00:00",
-  "u s space weapons probably arent what you think": "2026-09-29T20:54:33.719086+00:00",
-  "the ice blasting from saturn s moon enceladus is stranger than scientists realized": "2026-09-29T20:54:33.719086+00:00",
-  "earths day isnt exactly 24 hours the reason may lie deep inside the planet": "2026-09-29T20:54:33.719086+00:00",
   "o pisa o capital humano e a engrenagem por tras da padronizacao educacional global": "2026-09-30T00:35:01.685705+00:00",
   "todo acervo vai se tornar obra rara o dilema das bibliotecas diante do digital": "2026-09-30T00:35:01.685705+00:00",
   "blockbuster retatrutide trial signals a new high water mark for weight loss drugs": "2026-09-30T00:35:01.685705+00:00",
@@ -1102,6 +1111,14 @@
   "i gave metas muse and openais dots my passwords for a week": "2026-10-09T16:22:11.570881+00:00",
   "bacteria turn a virus own weapon against it": "2026-10-09T16:22:11.570881+00:00",
   "tattoos could be turned on and off with light": "2026-10-09T16:22:11.570881+00:00",
-  "nearly 1 in 10 young adults could have fatty narrow arteries": "2026-10-09T16:22:11.570881+00:00"
+  "nearly 1 in 10 young adults could have fatty narrow arteries": "2026-10-09T16:22:11.570881+00:00",
+  "estudantes da usp arrecadam cabelo no outubro rosa": "2026-10-09T21:04:36.830010+00:00",
+  "novo medicamento amplia opcoes de tratamento para cancer de pancreas metastatico": "2026-10-09T21:04:36.830010+00:00",
+  "o premio nobel de fisica 2026 mais um para o neutrino": "2026-10-09T21:04:36.830010+00:00",
+  "fiocruz assina declaracao de barcelona e iniciativa de helsinki": "2026-10-09T21:04:36.830010+00:00",
+  "does each new covid 19 variant pose a significant threat": "2026-10-09T21:04:36.830010+00:00",
+  "breaking down nerve cell scaffold relieves chronic pain in mice": "2026-10-09T21:04:36.830010+00:00",
+  "major earthquake strikes panamadamage and injuries are expected": "2026-10-09T21:04:36.830010+00:00",
+  "two large asteroids found spinning as fast as a fairground ride": "2026-10-09T21:04:36.830010+00:00"
  }
 }
