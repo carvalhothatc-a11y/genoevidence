@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-09T09:18:03.324627+00:00",
+ "atualizado_em": "2026-10-09T16:22:11.570881+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -29,53 +29,54 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "InfoGripe alerta para a importância da vacinação contra Covid-19 e VSR",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/infogripe-alerta-para-importancia-da-vacinacao-contra-covid-19-e-vsr",
-   "fonte": "Agência Fiocruz",
+   "titulo": "Programa USP 60+ reúne especialistas em simpósio sobre envelhecimento ativo",
+   "resumo": "Encontro de dois dias no Espaço Brasiliana aborda diversos temas, do bem-estar psicológico à vacinação",
+   "url": "https://jornal.usp.br/cadernodecultura/programa-usp-60-reune-especialistas-em-simposio-sobre-envelhecimento-ativo/",
+   "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-08T13:58:04+00:00",
-   "tema": "Ciência",
-   "relevancia": 12,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infocapa_12.jpg",
+   "data": "2026-10-09T13:51:21+00:00",
+   "tema": "Espaço",
+   "relevancia": 13,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20180510_0949252.jpg",
    "foco": {
-    "x": 50,
+    "x": 100,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "InfoGripe warns of the importance of vaccination against Covid-19 and RSV"
+     "titulo": "USP 60+ Program brings together experts in symposium on active aging",
+     "resumo": "A two-day meeting at Espaço Brasiliana addresses several topics, from psychological well-being to vaccination"
     },
     "es": {
-     "titulo": "InfoGripe alerta de la importancia de la vacunación contra el Covid-19 y el VSR"
+     "titulo": "El Programa USP 60+ reúne a expertos en simposio sobre envejecimiento activo",
+     "resumo": "Una reunión de dos días en Espaço Brasiliana aborda varios temas, desde el bienestar psicológico hasta la vacunación"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Nobel de Medicina reconhece descobertas que levam a testes para recuperar a visão",
-   "resumo": "Pesquisa iniciada em uma alga microscópica deu origem à optogenética, hoje investigada no tratamento experimental da retinose pigmentar",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/nobel-de-medicina-reconhece-descobertas-que-levam-a-testes-para-recuperar-a-visao/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-08T17:40:52+00:00",
+   "titulo": "Febre após uma vacina? O motivo pode ser o seu microbioma intestinal",
+   "resumo": "Em um novo estudo, as pessoas que tiveram febres piores após uma vacina COVID tenderam a ter características intestinais semelhantes",
+   "url": "https://www.scientificamerican.com/article/feverish-after-a-vaccine-the-reason-could-be-your-gut-microbiome/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-09T10:00:00+00:00",
    "tema": "Saúde",
-   "relevancia": 11,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261008_olho.jpg",
+   "relevancia": 10,
+   "imagem": "https://static.scientificamerican.com/dam/m/3b5e8c8df7220672/original/flu-season-WHO.jpg?m=1791493458.062&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
+   "titulo_original": "Feverish after a vaccine? The reason could be your gut microbiome",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "Nobel Prize in Medicine recognizes discoveries that lead to tests to regain vision",
-     "resumo": "Research initiated in a microscopic algae gave rise to optogenetics, now investigated in the experimental treatment of retinitis pigmentosa"
-    },
     "es": {
-     "titulo": "El Premio Nobel de Medicina reconoce los descubrimientos que conducen a pruebas para recuperar la visión",
-     "resumo": "La investigación iniciada en un alga microscópica dio lugar a la optogenética, ahora investigada en el tratamiento experimental de la retinosis pigmentaria"
+     "titulo": "¿Tiene fiebre después de una vacuna? La razón podría ser su microbioma intestinal",
+     "resumo": "En un nuevo estudio, las personas que tenían peores fiebres después de una inyección de COVID tendían a tener características intestinales similares"
     }
-   }
+   },
+   "resumo_original": "In a new study, people who had worse fevers after a COVID shot tended to have similar gut characteristics"
   },
   {
    "tipo": "noticia",
@@ -105,274 +106,263 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Imigração angolana para o Brasil mantém semelhança com exploração iniciada no período colonial",
-   "resumo": "Pesquisa da USP mostra que a imigração é motivada por melhores condições de saúde e educação, mas angolanos ainda sofrem com racismo e precarização do trabalho",
-   "url": "https://jornal.usp.br/diversidade/imigracao-angolana-para-o-brasil-mantem-semelhanca-com-exploracao-iniciada-no-periodo-colonial/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-08T19:56:04+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261007_feiraartes.jpg",
-   "foco": {
-    "x": 23,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Angolan immigration to Brazil bears a resemblance to exploration started in the colonial period",
-     "resumo": "Research from USP shows that immigration is motivated by better health and education conditions, but Angolans still suffer from racism and job insecurity"
-    },
-    "es": {
-     "titulo": "La inmigración angoleña a Brasil se asemeja a la exploración iniciada en la época colonial",
-     "resumo": "La investigación de la USP muestra que la inmigración está motivada por mejores condiciones de salud y educación, pero los angoleños todavía sufren de racismo e inseguridad laboral"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Do controle dos neurônios à Grécia reimaginada",
-   "resumo": "Nobel de 2026 premia optogenética, detecção de neutrinos, moléculas assimétricas e uma autora que se inspira em Homero",
-   "url": "https://revistapesquisa.fapesp.br/do-controle-dos-neuronios-a-grecia-reimaginada/?utm_source=rss&utm_medium=rss&utm_campaign=do-controle-dos-neuronios-a-grecia-reimaginada",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-08T17:46:35+00:00",
-   "tema": "Ciência",
-   "relevancia": 10,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/abba1e76ede807a6629e5d4e98a2ff713ffb63ab_1200-630.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "From neuron control to reimagined Greece",
-     "resumo": "2026 Nobel laureate awards optogenetics, neutrino detection, asymmetric molecules and an author inspired by Homer"
-    },
-    "es": {
-     "titulo": "Del control neuronal a una Grecia reinventada",
-     "resumo": "2026 Premio Nobel de optogenética, detección de neutrinos, moléculas asimétricas y un autor inspirado en Homero"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Instituto Weizmann de Ciências oferece bolsa de pós-doutorado",
-   "resumo": "Oportunidade tem a duração de dois anos e é destinada a cidadãos brasileiros ou com residência no Brasil",
-   "url": "https://agencia.fapesp.br/instituto-weizmann-de-ciencias-oferece-bolsa-de-pos-doutorado/59371",
+   "titulo": "Science Communication in Transition: Strategies, Responsibilities and Emerging Challenges in Germany and Brazil",
+   "resumo": "Evento vai reunir especialistas, pesquisadores, comunicadores e jornalistas da Alemanha e do Brasil para debater desafios e responsabilidades da divulgação da ciência em ambos os países",
+   "url": "https://agencia.fapesp.br/science-communication-in-transition-strategies-responsibilities-and-emerging-challenges-in-germany-and-brazil/59369",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-09T09:18:03.324627+00:00",
+   "data": "2026-10-09T16:22:11.570881+00:00",
    "tema": "Ciência",
    "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59371.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
+   "imagem": "",
    "i18n": {
     "en": {
-     "titulo": "Weizmann Institute of Science offers postdoctoral fellowship",
-     "resumo": "The Opportunity lasts for two years and is intended for Brazilian citizens or those residing in Brazil"
+     "titulo": "Science Communication in Transition: Strategies, Responsibilities and Emerging Challenges in Germany and Brazil",
+     "resumo": "The event will bring together experts, researchers, communicators and journalists from Germany and Brazil to discuss the challenges and responsibilities of disseminating science in both countries"
     },
     "es": {
-     "titulo": "El Instituto de Ciencias Weizmann ofrece becas postdoctorales",
-     "resumo": "La Oportunidad tiene una duración de dos años y está destinada a ciudadanos brasileños o residentes en Brasil"
+     "titulo": "Comunicación científica en transición: estrategias, responsabilidades y desafíos emergentes en Alemania y Brasil",
+     "resumo": "El evento reunirá a expertos, investigadores, comunicadores y periodistas de Alemania y Brasil para discutir los desafíos y responsabilidades de la difusión de la ciencia en ambos países"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Oficina reúne estudantes para discutir o ensino jurídico",
-   "resumo": "O objetivo é levantar demandas dos estudantes e elaborar propostas para tornar o ambiente acadêmico mais inclusivo e acessível",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/oficina-reune-estudantes-para-discutir-o-ensino-juridico/",
+   "titulo": "Parceria entre USP e Yale, nos EUA, possibilitou a reconstrução de uma música em tupi antigo",
+   "resumo": "Com base em documentos históricos, pesquisadores de filologia, história e musicologia criaram três versões para a melodia de \"Chorus Brasilicus\", apresentada em Lisboa no ano de 1619",
+   "url": "https://jornal.usp.br/diversidade/parceria-entre-usp-e-yale-nos-eua-possibilitou-a-reconstrucao-de-uma-musica-em-tupi-antigo/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-08T19:32:26+00:00",
+   "data": "2026-10-09T15:48:19+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261008_yale.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "A partnership between USP and Yale, in the USA, made it possible to reconstruct an old Tupi song"
+    },
+    "es": {
+     "titulo": "Una asociación entre USP y Yale, en los EE. UU., Hizo posible reconstruir una antigua canción tupí"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Fiocruz expressa solidariedade à UFPE após incêndios",
+   "resumo": "A Fiocruz expressa solidariedade a toda a comunidade da Universidade Federal de Pernambuco (UFPE) diante dos recentes incêndios ocorridos em prédios da instituição, com danos materiais relevantes. As perdas ultrapassam os muros da UFPE e…",
+   "url": "https://agencia.fiocruz.br/fiocruz-expressa-solidariedade-ufpe-apos-incendios",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-08T19:43:08+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Fiocruz expresses solidarity with UFPE after fires"
+    },
+    "es": {
+     "titulo": "La Fiocruz se solidariza con la UFPE tras los incendios"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Um experimento para vislumbrar a futura Amazônia — em fotos",
+   "resumo": "David Lapola está testando uma grande ciência climática desconhecida: como a floresta lidará com o aumento do dióxido de carbono atmosférico?",
+   "url": "https://www.nature.com/articles/d41586-026-02909-3",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-09T00:00:00+00:00",
    "tema": "Meio ambiente",
+   "relevancia": 8,
+   "imagem": "",
+   "titulo_original": "An experiment to glimpse the future Amazon — in pictures",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Un experimento para vislumbrar el futuro de Amazon — en imágenes",
+     "resumo": "David Lapola está probando una gran incógnita de la ciencia climática: ¿cómo hará frente el bosque a medida que el dióxido de carbono atmosférico continúe aumentando?"
+    }
+   },
+   "resumo_original": "David Lapola is testing a big climate-science unknown: how will the forest cope as atmospheric carbon dioxide continues to rise?"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O milagre da multiplicação de referências bibliográficas (fantasmas)",
+   "resumo": "As inteligências artificiais por trás do milagre da multiplicação de referências bibliográficas",
+   "url": "https://revistapesquisa.fapesp.br/o-milagre-da-multiplicacao-de-referencias-bibliograficas-fantasmas/?utm_source=rss&utm_medium=rss&utm_campaign=o-milagre-da-multiplicacao-de-referencias-bibliograficas-fantasmas",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-09T11:57:05+00:00",
+   "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/02/20240209_fdrp.jpg",
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/235a27527afc61a01aec0cdfbc3651a8cda9d99f_1200-630.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Workshop brings together students to discuss legal education",
-     "resumo": "The goal is to raise student demands and develop proposals to make the academic environment more inclusive and accessible"
+     "titulo": "The miracle of the multiplication of bibliographic references (ghosts)"
     },
     "es": {
-     "titulo": "El taller reúne a los estudiantes para discutir la educación legal",
-     "resumo": "El objetivo es elevar las demandas de los estudiantes y desarrollar propuestas para hacer que el entorno académico sea más inclusivo y accesible"
+     "titulo": "El milagro de la multiplicación de referencias bibliográficas (fantasmas)"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "As afirmações mais empolgantes da pilha de novas provas da OpenAI",
-   "resumo": "Os cientistas apontaram vários resultados de matemática e ciência da computação como os mais significativos no novo e avassalador dilúvio de conquistas da empresa",
-   "url": "https://www.scientificamerican.com/article/the-most-exciting-claims-from-openais-heap-of-new-proofs/",
+   "titulo": "Cientistas testaram 5 compostos naturais em células cancerígenas. Um se destacou",
+   "resumo": "Cinco compostos naturais, incluindo curcumina e berberina, foram testados quanto aos seus efeitos em células cancerígenas e células musculares saudáveis. Todos interromperam a produção de energia das células cancerígenas e empurraram muitas das células para um estado de não divisão, com...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261006234531.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-09T01:15:59+00:00",
+   "tema": "Câncer",
+   "relevancia": 7,
+   "imagem": "https://www.sciencedaily.com/images/1920/turmeric-curcumin-powder-wooden-spoon.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists tested 5 natural compounds on cancer cells. One stood out",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos probaron 5 compuestos naturales en células cancerosas, destacando uno",
+     "resumo": "Se probaron cinco compuestos naturales, incluyendo la curcumina y la berberina, por sus efectos sobre las células cancerosas y las células musculares sanas. Todo interrumpió la producción de energía de las células cancerosas y empujó a muchas de las células a un estado de no división, con..."
+    }
+   },
+   "resumo_original": "Five natural compounds, including curcumin and berberine, were tested for their effects on cancer cells and healthy muscle cells. All disrupted cancer cell energy production and pushed many of the cells into a non-dividing state, with…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Série animada traz conteúdos científicos sobre astronomia para crianças",
+   "resumo": "Projeto especial com participação do Instituto de Astronomia, Geofísica e Ciências Atmosféricas da USP traz conteúdos científicos no YouTube para todas as idades ao longo do mês",
+   "url": "https://jornal.usp.br/universidade/serie-animada-traz-conteudos-cientificos-sobre-astronomia-para-criancas/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-08T18:54:21+00:00",
+   "tema": "Espaço",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261007_00_serie_historias_sob_estrelas_gmt_iag_usp.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Animated series brings scientific content on astronomy to children"
+    },
+    "es": {
+     "titulo": "Las series animadas acercan el contenido científico sobre astronomía a los niños"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Dei minhas senhas ao Muse da Meta e ao Dots da OpenAI por uma semana",
+   "resumo": "Os novos agentes da Meta e da OpenAI podem agilizar sua vida. Pesquisadores de inteligência artificial me ajudaram a testar até que ponto confiar neles",
+   "url": "https://www.scientificamerican.com/article/i-gave-metas-muse-and-openais-dots-my-passwords-for-a-week/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-08T19:30:00+00:00",
+   "data": "2026-10-09T12:00:00+00:00",
    "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/beebd885-990e-44e5-b388-d36bbcb5c747/Math-dots-neural-network.jpeg?m=1791487919.769&w=1200",
+   "imagem": "https://static.scientificamerican.com/dam/asset/5b55acfd-af11-408b-bf1e-ef092a6ad162/meta-muse.jpg?m=1791493005.196&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "The most exciting claims from OpenAI’s heap of new proofs",
+   "titulo_original": "I gave Meta’s Muse and OpenAI’s Dots my passwords for a week",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Las afirmaciones más emocionantes del montón de nuevas pruebas de OpenAI",
-     "resumo": "Los científicos han calificado varios resultados de matemáticas e informática como los más significativos en el abrumador nuevo diluvio de logros de la compañía"
+     "titulo": "Le di a Meta's Muse y OpenAI's Dots mis contraseñas durante una semana",
+     "resumo": "Los nuevos agentes de Meta y OpenAI pueden agilizar tu vida. Los investigadores de inteligencia artificial me ayudaron a probar hasta qué punto confiar en ellos"
     }
    },
-   "resumo_original": "Scientists have called out several math and computer science results as the most significant in the company’s overwhelming new deluge of achievements"
+   "resumo_original": "Meta’s and OpenAI’s new agents can streamline your life. Artificial intelligence researchers helped me test how far to trust them"
   },
   {
    "tipo": "noticia",
-   "titulo": "Os matemáticos se maravilham e resmungam com os novos resultados da OpenAI",
-   "resumo": "A \"queda de resíduos\" contém uma série de provas inovadoras, mas a forma como foi gerada permanece incerta e controversa",
-   "url": "https://www.scientificamerican.com/article/mathematicians-marvel-and-grumble-at-openais-trove-of-new-results/",
-   "fonte": "Scientific American",
+   "titulo": "As bactérias transformam a própria arma de um vírus contra ele",
+   "resumo": "Pesquisadores descobriram uma nova maneira pela qual as bactérias detectam ataques virais: uma enzima produzida por vírus corta uma proteína de sensor bacteriano, desencadeando uma resposta imune autodestrutiva. A descoberta pode levar a terapias fágicas mais eficazes contra...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261007042100.htm",
+   "fonte": "ScienceDaily · Saúde",
    "idioma": "en",
-   "data": "2026-10-08T19:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/c14911ed-1a94-444d-8acb-e8ec3ef8bcb0/Brain-and-math.jpeg?m=1791485742.566&w=1200",
+   "data": "2026-10-09T09:51:19+00:00",
+   "tema": "Saúde",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/bacteriophage-infection.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Mathematicians marvel, and grumble, at OpenAI’s trove of new results",
+   "titulo_original": "Bacteria turn a virus’ own weapon against it",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los matemáticos se maravillan y se quejan de los nuevos resultados de OpenAI",
-     "resumo": "El \"slop drop\" contiene una serie de pruebas innovadoras, pero la forma en que se generó sigue siendo poco clara y polémica"
+     "titulo": "Las bacterias vuelven la propia arma de un virus en su contra",
+     "resumo": "Los investigadores han descubierto una nueva forma en que las bacterias detectan los ataques virales: una enzima producida por virus corta una proteína del sensor bacteriano, desencadenando una respuesta inmune autodestructiva. El descubrimiento podría conducir a terapias de fagos más efectivas contra..."
     }
    },
-   "resumo_original": "The “slop drop” contains a number of groundbreaking proofs, but how it was generated remains unclear and contentious"
+   "resumo_original": "Researchers have uncovered a new way bacteria detect viral attacks: a virus-produced enzyme cuts a bacterial sensor protein, triggering a self-destructing immune response. The discovery could lead to more effective phage therapies against…"
   },
   {
    "tipo": "noticia",
-   "titulo": "IA ou ‘superinteligência’? Trump não é o único que está confuso",
-   "resumo": "O presidente dos EUA, Donald Trump, declarou que a inteligência artificial agora deve ser chamada de \"superinteligência\". O colunista Jacob Aron explica de onde veio esse termo e explora se seus muitos significados históricos se aplicam hoje",
-   "url": "https://www.newscientist.com/article/2592404-ai-or-super-intelligence-trump-isnt-the-only-one-who-is-confused/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "As tatuagens podem ser ligadas e desligadas com luz",
+   "resumo": "Um novo tipo de tinta poderia superar uma das principais desvantagens das tatuagens: a incapacidade de torná-las invisíveis",
+   "url": "https://www.newscientist.com/article/2592938-tattoos-could-be-turned-on-and-off-with-light/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-08T16:07:59+00:00",
+   "data": "2026-10-09T15:00:00+00:00",
    "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315533241.jpg",
+   "relevancia": 4,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315879829.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "AI or ‘super intelligence’? Trump isn’t the only one who is confused",
+   "titulo_original": "Tattoos could be turned on and off with light",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "¿IA o ‘superinteligencia’? Trump no es el único que está confundido",
-     "resumo": "El presidente de los Estados Unidos, Donald Trump, ha declarado que la inteligencia artificial ahora debería llamarse \"superinteligencia\". El columnista Jacob Aron explica de dónde vino ese término y explora si sus muchos significados históricos se aplican hoy"
+     "titulo": "Los tatuajes se pueden encender y apagar con luz",
+     "resumo": "Un nuevo tipo de tinta podría superar uno de los principales inconvenientes de los tatuajes: la incapacidad de hacerlos invisibles"
     }
    },
-   "resumo_original": "US President Donald Trump has declared that artificial intelligence should now be called “super intelligence”. Columnist Jacob Aron explains where that term came from and explores whether its many historical meanings apply today"
+   "resumo_original": "A new type of ink could overcome one of the main downsides of tattoos: the inability to make them invisible"
   },
   {
    "tipo": "noticia",
-   "titulo": "OpenAI traduziu mal a matemática em código para sua prova de Navier-Stokes",
-   "resumo": "Quando a OpenAI anunciou sua solução surpresa para o problema de Navier-Stokes, produziu uma prova para humanos e outra para computadores – no entanto, elas não correspondem",
-   "url": "https://www.newscientist.com/article/2592824-openai-mistranslated-mathematics-into-code-for-its-navier-stokes-proof/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "Quase 1 em cada 10 adultos jovens pode ter artérias gordurosas e estreitas",
+   "resumo": "A aterosclerose, o acúmulo de placa de gordura nas artérias, geralmente afeta pessoas com mais de 50 anos, mas uma proporção \"significativa\" de adultos mais jovens também tem a condição",
+   "url": "https://www.newscientist.com/article/2592977-nearly-1-in-10-young-adults-could-have-fatty-narrow-arteries/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-08T16:03:20+00:00",
+   "data": "2026-10-09T13:21:55+00:00",
    "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315777268.jpg",
+   "relevancia": 4,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315872431.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "OpenAI mistranslated mathematics into code for its Navier-Stokes proof",
+   "titulo_original": "Nearly 1 in 10 young adults could have fatty, narrow arteries",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "OpenAI tradujo mal las matemáticas en código para su prueba de Navier-Stokes",
-     "resumo": "Cuando OpenAI anunció su solución sorpresa al problema de Navier-Stokes, produjo una prueba para humanos y otra para ordenadores; sin embargo, no coinciden"
+     "titulo": "Casi 1 de cada 10 adultos jóvenes podría tener arterias grasas y estrechas",
+     "resumo": "La aterosclerosis, la acumulación de placa grasa en las arterias, generalmente afecta a personas mayores de 50 años, pero una proporción \"significativa\" de adultos más jóvenes también tiene la afección"
     }
    },
-   "resumo_original": "When OpenAI announced its surprise solution to the Navier-Stokes problem, it produced one proof for humans and one for computers – however, they don't match"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas descobrem acidentalmente um código genético que quebra as regras da vida",
-   "resumo": "Os cientistas descobriram acidentalmente um organismo microscópico com um código genético que quebra uma regra que os pesquisadores pensavam ser quase universal. Ao testar uma nova técnica de sequenciamento de DNA, eles examinaram um protista previamente desconhecido coletado...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261007233136.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-08T13:31:39+00:00",
-   "tema": "Genética",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/disintegrating-plastic-dna.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists accidentally discover a genetic code that breaks the rules of life",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Científicos descubren accidentalmente un código genético que rompe las reglas de la vida",
-     "resumo": "Los científicos descubrieron accidentalmente un organismo microscópico con un código genético que rompe una regla que los investigadores pensaban que era casi universal. Mientras probaban una nueva técnica de secuenciación de ADN, examinaron un protista previamente desconocido recogido..."
-    }
-   },
-   "resumo_original": "Scientists accidentally discovered a microscopic organism with a genetic code that breaks a rule researchers thought was nearly universal. While testing a new DNA sequencing technique, they examined a previously unknown protist collected…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Expressão Editorial de Preocupação: Bactérias intestinais maternas promovem anormalidades do neurodesenvolvimento na prole de camundongos",
-   "resumo": "Expressão Editorial de Preocupação: Bactérias intestinais maternas promovem anormalidades do neurodesenvolvimento na prole de camundongos",
-   "url": "https://www.nature.com/articles/s41586-026-11070-w",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-08T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Editorial Expression of Concern: Maternal gut bacteria promote neurodevelopmental abnormalities in mouse offspring",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Expresión editorial de preocupación: las bacterias intestinales maternas promueven anomalías del desarrollo neurológico en la descendencia de ratones",
-     "resumo": "Expresión editorial de preocupación: las bacterias intestinales maternas promueven anomalías del desarrollo neurológico en la descendencia de ratones"
-    }
-   },
-   "resumo_original": "Editorial Expression of Concern: Maternal gut bacteria promote neurodevelopmental abnormalities in mouse offspring"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Como construir um camundongo: desenvolvimento embrionário capturado em detalhes impressionantes",
-   "resumo": "As tecnologias de edição de genes permitiram aos pesquisadores rastrear o desenvolvimento célula por célula de um único óvulo de camundongo fertilizado até um embrião em estágio avançado.",
-   "url": "https://www.nature.com/articles/d41586-026-03193-x",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-08T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "How to build a mouse: embryo development captured in stunning detail",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Cómo construir un ratón: desarrollo embrionario capturado con asombroso detalle",
-     "resumo": "Las tecnologías de edición de genes permitieron a los investigadores rastrear el desarrollo célula por célula de un solo óvulo de ratón fertilizado hasta un embrión en etapa tardía."
-    }
-   },
-   "resumo_original": "Gene-editing technologies enabled researchers to trace the cell-by-cell development of a single fertilised mouse egg to a late-stage embryo."
+   "resumo_original": "Atherosclerosis, the build-up of fatty plaque in arteries, usually affects people older than 50, but a \"meaningful\" proportion of younger adults also have the condition"
   }
  ],
  "artigos": [
@@ -609,6 +599,17 @@
      "titulo": "Conocimientos mecanicistas sobre la autofagia inducida por ácido gálico en el cáncer de mama triple negativo a través de la farmacología de red, el acoplamiento molecular y la validación in vitro."
     }
    }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Chatbot Intervention and Cancer Risk Knowledge in Adolescents and Young Adults With Cancer Predisposition : A Randomized Clinical Trial",
+   "autores": "Kamihara J, Cronin A, Uno H, Horiguchi M, Fisher L, Schienda J, Vanderwall R, Snir M, Snir G, Simmons E, Khalaj A…",
+   "revista": "JAMA Netw Open",
+   "data": "2026-10-01T00:00:00+00:00",
+   "doi": null,
+   "url": "https://europepmc.org/article/PMC/PMC13647142",
+   "acesso_aberto": true,
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
@@ -861,24 +862,6 @@
      "titulo": "Prevalencia de variantes patógenas de la línea germinal e indicaciones para las pruebas en una cohorte diversa de cáncer de endometrio basada en la comunidad."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "A classificação funcional das mutações monoalélicas TP53 refina a estratificação prognóstica em neoplasias mielodisplásicas.",
-   "autores": "Streuer A, Ochi Y, Hutter S, Riabov V, Nannya Y, Steiner L, Abba M, Metzgeroth G, Altrock E, Rapp F, Nowak V, Hepgülüm…",
-   "revista": "Blood",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1182/blood.2026034224",
-   "url": "https://doi.org/10.1182/blood.2026034224",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Functional Classification of Monoallelic TP53 Mutations Refines Prognostic Stratification in Myelodysplastic Neoplasms.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La clasificación funcional de las mutaciones monoalélicas de TP53 refina la estratificación pronóstica en las neoplasias mielodisplásicas."
-    }
-   }
   }
  ],
  "fontes": [
@@ -899,15 +882,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "pressoes sociais causam grande impacto a saude mental de meninas adolescentes": "2026-09-29T15:59:42.789151+00:00",
-  "trustworthy science journalism is more essential than ever": "2026-09-29T15:59:42.789151+00:00",
-  "extrato natural melhora o combate de ervas daninhas nas lavouras": "2026-09-29T15:59:42.789151+00:00",
-  "8 premio carolina bori sera dedicado as meninas na ciencia": "2026-09-29T15:59:42.789151+00:00",
-  "why are so many animals moving to hotter places as the world warms": "2026-09-29T15:59:42.789151+00:00",
-  "scientists find new virus behind mysterious tick illness": "2026-09-29T15:59:42.789151+00:00",
-  "the cost of lost labour on a warming planet": "2026-09-29T15:59:42.789151+00:00",
-  "see the cool photos this jupiter bound spacecraft took while swinging by earth": "2026-09-29T15:59:42.789151+00:00",
-  "strange and beautiful creatures spotted on the challenger expedition": "2026-09-29T15:59:42.789151+00:00",
   "carlos nobre recebe premio internacional por carreira dedicada a conservacao da amazonia": "2026-09-29T20:54:33.719086+00:00",
   "consu aprova titulos de professor emerito a fernando costa e gastao wagner": "2026-09-29T20:54:33.719086+00:00",
   "unicamp e bionow assinam parceria para transformar alcatrao em fonte de energia renovavel": "2026-09-29T20:54:33.719086+00:00",
@@ -1115,6 +1089,19 @@
   "pesquisadores debatem sobre savanas com foco na cop31": "2026-10-09T02:18:17.561387+00:00",
   "biorrepositorio brasileiro pode ajudar a personalizar a prevencao do cancer no sus": "2026-10-09T09:18:03.324627+00:00",
   "estudo sobre imunidade metabolismo e saude hormonal busca voluntarios": "2026-10-09T09:18:03.324627+00:00",
-  "instituto weizmann de ciencias oferece bolsa de pos doutorado": "2026-10-09T09:18:03.324627+00:00"
+  "instituto weizmann de ciencias oferece bolsa de pos doutorado": "2026-10-09T09:18:03.324627+00:00",
+  "programa usp 60 reune especialistas em simposio sobre envelhecimento ativo": "2026-10-09T16:22:11.570881+00:00",
+  "feverish after a vaccine the reason could be your gut microbiome": "2026-10-09T16:22:11.570881+00:00",
+  "science communication in transition strategies responsibilities and emerging challenges in germany and brazil": "2026-10-09T16:22:11.570881+00:00",
+  "parceria entre usp e yale nos eua possibilitou a reconstrucao de uma musica em tupi antigo": "2026-10-09T16:22:11.570881+00:00",
+  "fiocruz expressa solidariedade a ufpe apos incendios": "2026-10-09T16:22:11.570881+00:00",
+  "an experiment to glimpse the future amazon in pictures": "2026-10-09T16:22:11.570881+00:00",
+  "o milagre da multiplicacao de referencias bibliograficas fantasmas": "2026-10-09T16:22:11.570881+00:00",
+  "scientists tested 5 natural compounds on cancer cells one stood out": "2026-10-09T16:22:11.570881+00:00",
+  "serie animada traz conteudos cientificos sobre astronomia para criancas": "2026-10-09T16:22:11.570881+00:00",
+  "i gave metas muse and openais dots my passwords for a week": "2026-10-09T16:22:11.570881+00:00",
+  "bacteria turn a virus own weapon against it": "2026-10-09T16:22:11.570881+00:00",
+  "tattoos could be turned on and off with light": "2026-10-09T16:22:11.570881+00:00",
+  "nearly 1 in 10 young adults could have fatty narrow arteries": "2026-10-09T16:22:11.570881+00:00"
  }
 }
