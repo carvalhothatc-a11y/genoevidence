@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-09T21:04:36.830010+00:00",
+ "atualizado_em": "2026-10-10T01:01:01.499352+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -133,27 +133,23 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Instituto Weizmann de Ciências oferece bolsa de pós-doutorado",
-   "resumo": "Oportunidade tem a duração de dois anos e é destinada a cidadãos brasileiros ou com residência no Brasil",
-   "url": "https://agencia.fapesp.br/instituto-weizmann-de-ciencias-oferece-bolsa-de-pos-doutorado/59371",
+   "titulo": "Science Communication in Transition: Strategies, Responsibilities and Emerging Challenges in Germany and Brazil",
+   "resumo": "Evento vai reunir especialistas, pesquisadores, comunicadores e jornalistas da Alemanha e do Brasil para debater desafios e responsabilidades da divulgação da ciência em ambos os países",
+   "url": "https://agencia.fapesp.br/science-communication-in-transition-strategies-responsibilities-and-emerging-challenges-in-germany-and-brazil/59369",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-09T21:04:36.830010+00:00",
+   "data": "2026-10-10T01:01:01.499352+00:00",
    "tema": "Ciência",
    "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59371.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
+   "imagem": "",
    "i18n": {
     "en": {
-     "titulo": "Weizmann Institute of Science offers postdoctoral fellowship",
-     "resumo": "The Opportunity lasts for two years and is intended for Brazilian citizens or those residing in Brazil"
+     "titulo": "Science Communication in Transition: Strategies, Responsibilities and Emerging Challenges in Germany and Brazil",
+     "resumo": "The event will bring together experts, researchers, communicators and journalists from Germany and Brazil to discuss the challenges and responsibilities of disseminating science in both countries"
     },
     "es": {
-     "titulo": "El Instituto de Ciencias Weizmann ofrece becas postdoctorales",
-     "resumo": "La Oportunidad tiene una duración de dos años y está destinada a ciudadanos brasileños o residentes en Brasil"
+     "titulo": "Comunicación científica en transición: estrategias, responsabilidades y desafíos emergentes en Alemania y Brasil",
+     "resumo": "El evento reunirá a expertos, investigadores, comunicadores y periodistas de Alemania y Brasil para discutir los desafíos y responsabilidades de la difusión de la ciencia en ambos países"
     }
    }
   },
@@ -305,27 +301,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Quebrar o andaime das células nervosas alivia a dor crônica em camundongos",
-   "resumo": "Os resultados podem ajudar os pesquisadores a desenvolver analgésicos mais seguros e eficazes do que os tratamentos existentes.",
-   "url": "https://www.nature.com/articles/d41586-026-03159-z",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-09T00:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Breaking down nerve-cell scaffold relieves chronic pain in mice",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Romper el andamio de células nerviosas alivia el dolor crónico en ratones",
-     "resumo": "Los resultados podrían ayudar a los investigadores a desarrollar analgésicos que sean más seguros y efectivos que los tratamientos existentes."
-    }
-   },
-   "resumo_original": "Results could help researchers to develop painkillers that are safer and more effective than existing treatments."
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Grandes terremotos no Panamá - danos e ferimentos são esperados",
    "resumo": "O terremoto foi um evento de deslizamento, e fortes tremores secundários poderiam se seguir",
    "url": "https://www.scientificamerican.com/article/major-earthquake-strikes-panama-damage-and-injuries-are-expected/",
@@ -373,6 +348,27 @@
     }
    },
    "resumo_original": "Rocks in the asteroid belt rotating at ultra-fast speeds suggest our understanding of asteroid structure might be wrong"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Quebrar o andaime das células nervosas alivia a dor crônica em camundongos",
+   "resumo": "Os resultados podem ajudar os pesquisadores a desenvolver analgésicos mais seguros e eficazes do que os tratamentos existentes.",
+   "url": "https://www.nature.com/articles/d41586-026-03159-z",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-09T00:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "",
+   "titulo_original": "Breaking down nerve-cell scaffold relieves chronic pain in mice",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Romper el andamio de células nerviosas alivia el dolor crónico en ratones",
+     "resumo": "Los resultados podrían ayudar a los investigadores a desarrollar analgésicos que sean más seguros y efectivos que los tratamientos existentes."
+    }
+   },
+   "resumo_original": "Results could help researchers to develop painkillers that are safer and more effective than existing treatments."
   }
  ],
  "artigos": [
@@ -899,9 +895,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "o pisa o capital humano e a engrenagem por tras da padronizacao educacional global": "2026-09-30T00:35:01.685705+00:00",
-  "todo acervo vai se tornar obra rara o dilema das bibliotecas diante do digital": "2026-09-30T00:35:01.685705+00:00",
-  "blockbuster retatrutide trial signals a new high water mark for weight loss drugs": "2026-09-30T00:35:01.685705+00:00",
   "programa fapesp de mudancas climaticas amplia escopo para integrar saude sociedade e politicas publicas": "2026-09-30T06:51:39.903624+00:00",
   "tabela brasileira de composicao de alimentos se transforma em ecossistema digital de pesquisa": "2026-09-30T06:51:39.903624+00:00",
   "teste de forca para cadeirantes pode ser feito por videochamada com a mesma precisao do presencial": "2026-09-30T06:51:39.903624+00:00",
