@@ -1,108 +1,6 @@
 {
- "atualizado_em": "2026-10-10T13:52:04.145003+00:00",
+ "atualizado_em": "2026-10-10T18:42:45.309887+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
-   "resumo": "Campanha segue até o fim do mês e destina as mechas as pacientes do Hospital do Câncer de Ribeirão Preto",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/estudantes-da-usp-arrecadam-cabelo-no-outubro-rosa/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-09T19:21:35+00:00",
-   "tema": "Câncer",
-   "relevancia": 12,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261009_mechasdecabelo.jpeg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "USP students collect hair in Pink October",
-     "resumo": "Campaign continues until the end of the month and destines the wicks to the patients of the Ribeirão Preto Cancer Hospital"
-    },
-    "es": {
-     "titulo": "Los estudiantes de la USP recogen el cabello en octubre rosa",
-     "resumo": "La campaña continúa hasta fin de mes y destina las mechas a los pacientes del Hospital Oncológico de Ribeirão Preto"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Novo medicamento amplia opções de tratamento para câncer de pâncreas metastático",
-   "resumo": "Daraxonrasib, aprovado pela agência reguladora dos Estados Unidos, apresentou resultados superiores aos da quimioterapia em pacientes que já haviam recebido tratamento",
-   "url": "https://jornal.usp.br/radio-usp/novo-medicamento-amplia-opcoes-de-tratamento-para-cancer-de-pancreas-metastatico/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-09T17:18:53+00:00",
-   "tema": "Câncer",
-   "relevancia": 12,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/20170529_00_Pancreas.png",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "New drug expands treatment options for metastatic pancreatic cancer",
-     "resumo": "Daraxonrasib, approved by the United States regulatory agency, showed superior results to chemotherapy in patients who had already received treatment"
-    },
-    "es": {
-     "titulo": "Un nuevo fármaco amplía las opciones de tratamiento para el cáncer de páncreas metastásico",
-     "resumo": "Daraxonrasib, aprobado por la agencia reguladora de los Estados Unidos, mostró resultados superiores a la quimioterapia en pacientes que ya habían recibido tratamiento"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O Prêmio Nobel de Física 2026: mais um para o neutrino!",
-   "resumo": "Por Renata Zukanovich Funchal, professora do Instituto de Física da USP",
-   "url": "https://jornal.usp.br/artigos/o-premio-nobel-de-fisica-2026-mais-um-para-o-neutrino/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-09T17:56:19+00:00",
-   "tema": "Ciência",
-   "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261009_renatazukanovichfunchal-destaque.jpg",
-   "foco": {
-    "x": 100,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "The Nobel Prize in Physics 2026: one more for the neutrino!",
-     "resumo": "By Renata Zukanovich Funchal, professor at USP's Physics Institute"
-    },
-    "es": {
-     "titulo": "El Premio Nobel de Física 2026: ¡uno más para el neutrino!",
-     "resumo": "Por Renata Zukanovich Funchal, profesora del Instituto de Física de la USP"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Fiocruz assina Declaração de Barcelona e Iniciativa de Helsinki",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/fiocruz-assina-declaracao-de-barcelona-e-iniciativa-de-helsinki",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-09T17:35:08+00:00",
-   "tema": "Ciência",
-   "relevancia": 8,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/aberta.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Fiocruz signs Barcelona Declaration and Helsinki Initiative"
-    },
-    "es": {
-     "titulo": "Fiocruz firma la Declaración de Barcelona y la Iniciativa de Helsinki"
-    }
-   }
-  },
   {
    "tipo": "noticia",
    "titulo": "Editora da Unicamp tem três obras entre as finalistas do Prêmio Abeu",
@@ -155,6 +53,84 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Litigância climática qualificada começa na ciência",
+   "resumo": "Por Patrícia Iglecias, superintendente de Gestão Ambiental da USP e coordenadora do USPproClima",
+   "url": "https://jornal.usp.br/artigos/litigancia-climatica-qualificada-comeca-na-ciencia/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-09T18:55:07+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/06/20260608_patricia2.jpg",
+   "foco": {
+    "x": 51,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Qualified climate litigation starts in science",
+     "resumo": "By Patrícia Iglecias, USP Environmental Management Superintendent and USPproClima Coordinator"
+    },
+    "es": {
+     "titulo": "El litigio climático calificado comienza en la ciencia",
+     "resumo": "Por Patrícia Iglecias, Superintendente de Gestión Ambiental de la USP y Coordinadora de USPproClima"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
+   "resumo": "Campanha segue até o fim do mês e destina as mechas as pacientes do Hospital do Câncer de Ribeirão Preto",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/estudantes-da-usp-arrecadam-cabelo-no-outubro-rosa/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-09T19:21:35+00:00",
+   "tema": "Câncer",
+   "relevancia": 6,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261009_mechasdecabelo.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "USP students collect hair in Pink October",
+     "resumo": "Campaign continues until the end of the month and destines the wicks to the patients of the Ribeirão Preto Cancer Hospital"
+    },
+    "es": {
+     "titulo": "Los estudiantes de la USP recogen el cabello en octubre rosa",
+     "resumo": "La campaña continúa hasta fin de mes y destina las mechas a los pacientes del Hospital Oncológico de Ribeirão Preto"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Guia gratuito orienta pais sobre uso de telas por crianças de até seis anos",
+   "resumo": "Publicação desenvolvida por pesquisadora do Departamento de Psicologia da Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto da USP busca apoiar famílias que têm dificuldade em estabelecer limites e monitorar o uso de telas",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/guia-gratuito-orienta-pais-sobre-uso-de-telas-por-criancas-de-ate-6-anos/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-09T18:25:50+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/12/20231211_criancas_celular.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Free guide guides parents on screen use for children up to six years old",
+     "resumo": "Publication developed by a researcher from the Department of Psychology of the Faculty of Philosophy, Sciences and Letters of Ribeirão Preto of USP seeks to support families who have difficulty setting limits and monitoring screen use"
+    },
+    "es": {
+     "titulo": "Guía gratuita que guía a los padres sobre el uso de la pantalla para niños de hasta seis años",
+     "resumo": "La publicación desarrollada por un investigador del Departamento de Psicología de la Facultad de Filosofía, Ciencias y Letras de Ribeirão Preto de la USP busca apoyar a las familias que tienen dificultades para establecer límites y monitorear el uso de la pantalla"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Unicamp sediará seis novos centros de pesquisa da Fapesp",
    "resumo": "Centro de Pesquisa, Inovação e Difusão (CEPID) do Instituto de Biologia, que estuda o envelhecimento, receberá financiamento anual de R$ 10 milhões",
    "url": "https://jornal.unicamp.br/noticias/2026/10/09/unicamp-sediara-seis-novos-centros-de-pesquisa-da-fapesp/",
@@ -162,7 +138,7 @@
    "idioma": "pt",
    "data": "2026-10-09T16:59:27+00:00",
    "tema": "Ciência",
-   "relevancia": 7,
+   "relevancia": 6,
    "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261009_Cepids_CCDs-scarpa_DSC_9749-Capa.jpg",
    "foco": {
     "x": 50,
@@ -176,55 +152,6 @@
     "es": {
      "titulo": "La Unicamp acogerá seis nuevos centros de investigación de la FAPESP",
      "resumo": "El Centro de Investigación, Innovación y Difusión (RIDC) del Instituto de Biología, que estudia el envejecimiento, recibirá una financiación anual de R$ 10 millones"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cada nova variante da covid-19 representa uma ameaça significativa?",
-   "resumo": "A maioria dos casos de covid-19 é causada por um tipo específico de variante, mas precisamos nos preocupar toda vez que surge um novo?",
-   "url": "https://www.newscientist.com/article/2593098-does-each-new-covid-19-variant-pose-a-significant-threat/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-09T16:39:31+00:00",
-   "tema": "Genética",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315912545.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Does each new covid-19 variant pose a significant threat?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿Cada nueva variante de covid-19 representa una amenaza significativa?",
-     "resumo": "La mayoría de los casos de covid-19 son causados por un tipo particular de variante, pero ¿debemos preocuparnos cada vez que surge una nueva?"
-    }
-   },
-   "resumo_original": "Most covid-19 cases are caused by a particular type of variant, but do we need to worry every time a new one emerges?"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "InfoGripe alerta para a importância da vacinação contra Covid-19 e VSR",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/infogripe-alerta-para-importancia-da-vacinacao-contra-covid-19-e-vsr",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-08T13:58:04+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infocapa_12.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "InfoGripe warns of the importance of vaccination against Covid-19 and RSV"
-    },
-    "es": {
-     "titulo": "InfoGripe alerta de la importancia de la vacunación contra el Covid-19 y el VSR"
     }
    }
   },
@@ -280,49 +207,52 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Dois grandes asteroides encontrados girando tão rápido quanto um passeio de parque de diversões",
-   "resumo": "Rochas no cinturão de asteroides girando a velocidades ultrarrápidas sugerem que nossa compreensão da estrutura do asteroide pode estar errada",
-   "url": "https://www.newscientist.com/article/2593044-two-large-asteroids-found-spinning-as-fast-as-fairground-ride/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-09T17:00:00+00:00",
-   "tema": "Espaço",
+   "titulo": "InfoGripe alerta para a importância da vacinação contra Covid-19 e VSR",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/infogripe-alerta-para-importancia-da-vacinacao-contra-covid-19-e-vsr",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-08T13:58:04+00:00",
+   "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315887083.jpg",
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infocapa_12.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Two large asteroids found spinning as fast as a fairground ride",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "InfoGripe warns of the importance of vaccination against Covid-19 and RSV"
+    },
     "es": {
-     "titulo": "Dos grandes asteroides encontrados girando tan rápido como un paseo en feria",
-     "resumo": "Las rocas en el cinturón de asteroides que giran a velocidades ultrarrápidas sugieren que nuestra comprensión de la estructura de los asteroides podría estar equivocada"
+     "titulo": "InfoGripe alerta de la importancia de la vacunación contra el Covid-19 y el VSR"
     }
-   },
-   "resumo_original": "Rocks in the asteroid belt rotating at ultra-fast speeds suggest our understanding of asteroid structure might be wrong"
+   }
   },
   {
    "tipo": "noticia",
-   "titulo": "Quebrar o andaime das células nervosas alivia a dor crônica em camundongos",
-   "resumo": "Os resultados podem ajudar os pesquisadores a desenvolver analgésicos mais seguros e eficazes do que os tratamentos existentes.",
-   "url": "https://www.nature.com/articles/d41586-026-03159-z",
-   "fonte": "Nature",
+   "titulo": "O aumento da água está criando florestas fantasmas no interior dos EUA",
+   "resumo": "Florestas cheias de árvores mortas não são encontradas apenas nas costas dos EUA – elas também estão aparecendo longe do mar em torno de lagos de água doce",
+   "url": "https://www.newscientist.com/article/2593032-rising-water-is-creating-inland-ghost-forests-in-the-us/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-09T00:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "",
-   "titulo_original": "Breaking down nerve-cell scaffold relieves chronic pain in mice",
+   "data": "2026-10-09T13:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 3,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315879901.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Rising water is creating inland ghost forests in the US",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Romper el andamio de células nerviosas alivia el dolor crónico en ratones",
-     "resumo": "Los resultados podrían ayudar a los investigadores a desarrollar analgésicos que sean más seguros y efectivos que los tratamientos existentes."
+     "titulo": "El aumento del agua está creando bosques fantasmas en el interior de EE. UU.",
+     "resumo": "Los bosques llenos de árboles muertos no solo se encuentran en las costas de EE. UU., sino que también aparecen lejos del mar alrededor de lagos de agua dulce"
     }
    },
-   "resumo_original": "Results could help researchers to develop painkillers that are safer and more effective than existing treatments."
+   "resumo_original": "Forests full of dead trees aren’t just found by the US coasts – they are also appearing far from the sea around freshwater lakes"
   },
   {
    "tipo": "noticia",
@@ -344,9 +274,48 @@
     }
    },
    "resumo_original": "Nature staff discuss a network of organizations that have been building their ranks through deceptive practices."
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Os cérebros de chimpanzés e gorilas resistem à perda de peso com a idade — ao contrário dos",
+   "resumo": "A expectativa de vida relativamente curta dos grandes símios não humanos pode explicar por que sua massa cerebral é mantida mais tarde na vida",
+   "url": "https://www.nature.com/articles/d41586-026-03158-0",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-09T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "",
+   "titulo_original": "Chimp and gorilla brains resist weight loss with age — unlike human brains",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los cerebros de chimpancés y gorilas resisten la pérdida de peso con la edad, a diferencia de los cere",
+     "resumo": "La esperanza de vida relativamente corta de los grandes simios no humanos podría explicar por qué su masa cerebral se mantiene en la edad adulta"
+    }
+   },
+   "resumo_original": "The relatively short lifespans of non-human great apes might explain why their brain mass is maintained in later life"
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Fortalecimento dos programas de saúde pública e do ecossistema antiveneno: prioridades políticas estratégicas para combater o envenenamento por mordidas e picadas de animais na América Latina e no Caribe",
+   "autores": "Peichoto M, Gutiérrez J, Fan H, Damasceno C, Vigilato M.",
+   "revista": "Journal of Global Health",
+   "data": "2026-10-10T00:00:00+00:00",
+   "doi": null,
+   "url": "https://europepmc.org/article/PMC/PMC13650973",
+   "acesso_aberto": true,
+   "tema": "Saúde",
+   "titulo_original": "Strengthening public health programmes and the antivenom ecosystem: strategic policy priorities to combat envenomation by animal bites and stings in Latin America and the Caribbean",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Fortalecimiento de los programas de salud pública y el ecosistema antiveneno: prioridades de política estratégica para combatir el envenenamiento por mordeduras y picaduras de animales en América Latina y el Caribe"
+    }
+   }
+  },
   {
    "tipo": "artigo",
    "titulo": "Heterogeneidade de fibroblastos associada ao câncer em malignidades sólidas e hematológicas: Lições de câncer colorretal e mieloma múltiplo.",
@@ -832,24 +801,6 @@
      "titulo": "Un péptido derivado de ascitis modificado que penetra en la membrana, TAT-CPAP1, sensibiliza las células de cáncer de ovario de tipo salvaje TP53 a la terapia basada en platino al dirigirse al eje NOLC1-MDM2/MDM4."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Prevalência de variantes patogênicas da linhagem germinativa e indicações para testes em uma coorte diversificada de câncer de endométrio baseada na comunidade.",
-   "autores": "Suh-Burgmann E, Finertie H, Hung YY, Hoodfar E, Carwana H, Zhong H, Nau C, Schmittdiel J.",
-   "revista": "Gynecol Oncol",
-   "data": "2026-10-01T00:00:00+00:00",
-   "doi": "10.1016/j.ygyno.2026.09.013",
-   "url": "https://doi.org/10.1016/j.ygyno.2026.09.013",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Prevalence of pathogenic germline variants and indications for testing in a diverse community-based endometrial cancer cohort.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Prevalencia de variantes patógenas de la línea germinal e indicaciones para las pruebas en una cohorte diversa de cáncer de endometrio basada en la comunidad."
-    }
-   }
   }
  ],
  "fontes": [
@@ -870,14 +821,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "a primeira decada da fapesp registrada em uma publicacao historica": "2026-09-30T13:55:31.369349+00:00",
-  "dangerous ozone threatened half of worlds population this year": "2026-09-30T13:55:31.369349+00:00",
-  "ai solves a holy grail problem from probability theory": "2026-09-30T13:55:31.369349+00:00",
-  "mulberry may reshape gut bacteria and influence metabolism": "2026-09-30T13:55:31.369349+00:00",
-  "the best new science fiction books of october 2026": "2026-09-30T13:55:31.369349+00:00",
-  "explainer what is el nino": "2026-09-30T13:55:31.369349+00:00",
-  "brain scans reveal which disorders are linked to faster brain aging": "2026-09-30T13:55:31.369349+00:00",
-  "cannabis users were twice as likely to commit violence review finds": "2026-09-30T13:55:31.369349+00:00",
   "pesquisa relaciona internacoes por diabetes a desigualdade em sao paulo": "2026-09-30T19:30:24.464813+00:00",
   "rochas da paraiba confirmam fraco campo magnetico da terra durante explosao da vida": "2026-09-30T19:30:24.464813+00:00",
   "o impacto do antropoceno sobre a saude ocular": "2026-09-30T19:30:24.464813+00:00",
@@ -1089,6 +1032,10 @@
   "unicamp sediara seis novos centros de pesquisa da fapesp": "2026-10-10T07:17:35.907240+00:00",
   "this beer making waste may offer a new stream for cleaner water": "2026-10-10T13:52:04.145003+00:00",
   "why taking a break from exercise might not mean you need to start from scratch": "2026-10-10T13:52:04.145003+00:00",
-  "briefing chat top researchers are being misled by sham academic societies": "2026-10-10T13:52:04.145003+00:00"
+  "briefing chat top researchers are being misled by sham academic societies": "2026-10-10T13:52:04.145003+00:00",
+  "litigancia climatica qualificada comeca na ciencia": "2026-10-10T18:42:45.309887+00:00",
+  "guia gratuito orienta pais sobre uso de telas por criancas de ate seis anos": "2026-10-10T18:42:45.309887+00:00",
+  "rising water is creating inland ghost forests in the us": "2026-10-10T18:42:45.309887+00:00",
+  "chimp and gorilla brains resist weight loss with age unlike human brains": "2026-10-10T18:42:45.309887+00:00"
  }
 }
