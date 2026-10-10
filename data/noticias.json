@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-10T07:17:35.907240+00:00",
+ "atualizado_em": "2026-10-10T13:52:04.145003+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -100,28 +100,6 @@
     },
     "es": {
      "titulo": "Fiocruz firma la Declaración de Barcelona y la Iniciativa de Helsinki"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Fiocruz expressa solidariedade à UFPE após incêndios",
-   "resumo": "A Fiocruz expressa solidariedade a toda a comunidade da Universidade Federal de Pernambuco (UFPE) diante dos recentes incêndios ocorridos em prédios da instituição, com danos materiais relevantes. As perdas ultrapassam os muros da UFPE e…",
-   "url": "https://agencia.fiocruz.br/fiocruz-expressa-solidariedade-ufpe-apos-incendios",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-08T19:43:08+00:00",
-   "tema": "Ciência",
-   "relevancia": 8,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Fiocruz expresses solidarity with UFPE after fires",
-     "resumo": "Fiocruz expresses solidarity with the entire community of the Federal University of Pernambuco (UFPE) in the face of the recent fires that occurred in the institution's buildings, with relevant material damage. The losses go beyond the walls of UFPE and…"
-    },
-    "es": {
-     "titulo": "La Fiocruz se solidariza con la UFPE tras los incendios",
-     "resumo": "La Fiocruz expresa su solidaridad con toda la comunidad de la Universidad Federal de Pernambuco (UFPE) ante los recientes incendios ocurridos en los edificios de la institución, con daños materiales relevantes. Las pérdidas van más allá de los muros de la UFPE y..."
     }
    }
   },
@@ -228,103 +206,77 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Dei minhas senhas ao Muse da Meta e ao Dots da OpenAI por uma semana",
-   "resumo": "Os novos agentes da Meta e da OpenAI podem agilizar sua vida. Pesquisadores de inteligência artificial me ajudaram a testar até que ponto confiar neles",
-   "url": "https://www.scientificamerican.com/article/i-gave-metas-muse-and-openais-dots-my-passwords-for-a-week/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-09T12:00:00+00:00",
+   "titulo": "InfoGripe alerta para a importância da vacinação contra Covid-19 e VSR",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/infogripe-alerta-para-importancia-da-vacinacao-contra-covid-19-e-vsr",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-08T13:58:04+00:00",
    "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/5b55acfd-af11-408b-bf1e-ef092a6ad162/meta-muse.jpg?m=1791493005.196&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "I gave Meta’s Muse and OpenAI’s Dots my passwords for a week",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Le di a Meta's Muse y OpenAI's Dots mis contraseñas durante una semana",
-     "resumo": "Los nuevos agentes de Meta y OpenAI pueden agilizar tu vida. Los investigadores de inteligencia artificial me ayudaron a probar hasta qué punto confiar en ellos"
-    }
-   },
-   "resumo_original": "Meta’s and OpenAI’s new agents can streamline your life. Artificial intelligence researchers helped me test how far to trust them"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas testaram 5 compostos naturais em células cancerígenas. Um se destacou",
-   "resumo": "Cinco compostos naturais, incluindo curcumina e berberina, foram testados quanto aos seus efeitos em células cancerígenas e células musculares saudáveis. Todos interromperam a produção de energia das células cancerígenas e empurraram muitas das células para um estado de não divisão, com...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261006234531.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-09T01:15:59+00:00",
-   "tema": "Câncer",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/turmeric-curcumin-powder-wooden-spoon.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists tested 5 natural compounds on cancer cells. One stood out",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos probaron 5 compuestos naturales en células cancerosas, destacando uno",
-     "resumo": "Se probaron cinco compuestos naturales, incluyendo la curcumina y la berberina, por sus efectos sobre las células cancerosas y las células musculares sanas. Todo interrumpió la producción de energía de las células cancerosas y empujó a muchas de las células a un estado de no división, con..."
-    }
-   },
-   "resumo_original": "Five natural compounds, including curcumin and berberine, were tested for their effects on cancer cells and healthy muscle cells. All disrupted cancer cell energy production and pushed many of the cells into a non-dividing state, with…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "As bactérias transformam a própria arma de um vírus contra ele",
-   "resumo": "Pesquisadores descobriram uma nova maneira pela qual as bactérias detectam ataques virais: uma enzima produzida por vírus corta uma proteína de sensor bacteriano, desencadeando uma resposta imune autodestrutiva. A descoberta pode levar a terapias fágicas mais eficazes contra...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261007042100.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-09T09:51:19+00:00",
-   "tema": "Saúde",
    "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/bacteriophage-infection.webp",
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infocapa_12.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Bacteria turn a virus’ own weapon against it",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "InfoGripe warns of the importance of vaccination against Covid-19 and RSV"
+    },
     "es": {
-     "titulo": "Las bacterias vuelven la propia arma de un virus en su contra",
-     "resumo": "Los investigadores han descubierto una nueva forma en que las bacterias detectan los ataques virales: una enzima producida por virus corta una proteína del sensor bacteriano, desencadenando una respuesta inmune autodestructiva. El descubrimiento podría conducir a terapias de fagos más efectivas contra..."
+     "titulo": "InfoGripe alerta de la importancia de la vacunación contra el Covid-19 y el VSR"
     }
-   },
-   "resumo_original": "Researchers have uncovered a new way bacteria detect viral attacks: a virus-produced enzyme cuts a bacterial sensor protein, triggering a self-destructing immune response. The discovery could lead to more effective phage therapies against…"
+   }
   },
   {
    "tipo": "noticia",
-   "titulo": "Grandes terremotos no Panamá - danos e ferimentos são esperados",
-   "resumo": "O terremoto foi um evento de deslizamento, e fortes tremores secundários poderiam se seguir",
-   "url": "https://www.scientificamerican.com/article/major-earthquake-strikes-panama-damage-and-injuries-are-expected/",
+   "titulo": "Este resíduo de fabricação de cerveja pode oferecer um novo fluxo para água mais limpa",
+   "resumo": "A pesquisa oferece mais uma maneira pela qual a indústria cervejeira pode redirecionar seus inúmeros subprodutos",
+   "url": "https://www.scientificamerican.com/article/this-beer-making-waste-may-offer-a-new-stream-for-cleaner-water/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-09T20:45:00+00:00",
+   "data": "2026-10-10T11:00:00+00:00",
    "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/a379c728-3fd5-4d62-aa33-04aa4f2804cb/GettyImages-2298795559_web.jpeg?m=1791578666.178&w=1200",
+   "imagem": "https://static.scientificamerican.com/dam/asset/3df6c7e0-d47c-40ec-99d7-e8cc9ce9ebb4/saw1126Adva07.jpg?m=1790615788.531&w=1200",
    "foco": {
     "x": 50,
-    "y": 22
+    "y": 50
    },
-   "titulo_original": "Major earthquake strikes Panama—damage and injuries are expected",
+   "titulo_original": "This beer-making waste may offer a new stream for cleaner water",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Gran terremoto golpea Panamá: se esperan daños y lesiones",
-     "resumo": "El terremoto fue un evento de deslizamiento de la huelga, y fuertes réplicas podrían seguir"
+     "titulo": "Este residuo de fabricación de cerveza puede ofrecer un nuevo arroyo para obtener agua más limpia",
+     "resumo": "La investigación ofrece otra forma en que la industria cervecera podría reutilizar sus innumerables subproductos"
     }
    },
-   "resumo_original": "The quake was a strike-slip event, and strong aftershocks could follow"
+   "resumo_original": "The research offers yet another way the brewery industry might repurpose its myriad by-products"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Por que fazer uma pausa no exercício pode não significar que você precisa começar do zero",
+   "resumo": "Por que fazer uma pausa no exercício não significa que você precisa começar do zero",
+   "url": "https://www.scientificamerican.com/article/why-taking-a-break-from-exercise-might-not-mean-you-need-to-start-from-scratch/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-10T10:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/m/17a37f41a81a406e/original/GettyImages-469107046_WEB.jpg?m=1718985077.166&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Why taking a break from exercise might not mean you need to start from scratch",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Por qué tomarse un descanso del ejercicio podría no significar que tengas que empezar de cero",
+     "resumo": "Por qué tomarse un descanso del ejercicio no significa que tengas que empezar de cero"
+    }
+   },
+   "resumo_original": "Why taking a break from exercise doesn't may not mean you need to start from scratch"
   },
   {
    "tipo": "noticia",
@@ -371,6 +323,27 @@
     }
    },
    "resumo_original": "Results could help researchers to develop painkillers that are safer and more effective than existing treatments."
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Briefing Chat: Os principais pesquisadores estão sendo enganados por sociedades acadêmicas simuladas",
+   "resumo": "A equipe da Nature discute uma rede de organizações que vêm construindo suas fileiras por meio de práticas enganosas.",
+   "url": "https://www.nature.com/articles/d41586-026-03216-7",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-09T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "",
+   "titulo_original": "Briefing Chat: Top researchers are being misled by sham academic societies",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Charla informativa: Los principales investigadores están siendo engañados por sociedades académicas falsas",
+     "resumo": "El personal de Nature discute una red de organizaciones que han estado construyendo sus filas a través de prácticas engañosas."
+    }
+   },
+   "resumo_original": "Nature staff discuss a network of organizations that have been building their ranks through deceptive practices."
   }
  ],
  "artigos": [
@@ -1113,6 +1086,9 @@
   "two large asteroids found spinning as fast as a fairground ride": "2026-10-09T21:04:36.830010+00:00",
   "editora da unicamp tem tres obras entre as finalistas do premio abeu": "2026-10-10T07:17:35.907240+00:00",
   "novo observatorio amplia o conhecimento sobre os sistemas de saude do brics": "2026-10-10T07:17:35.907240+00:00",
-  "unicamp sediara seis novos centros de pesquisa da fapesp": "2026-10-10T07:17:35.907240+00:00"
+  "unicamp sediara seis novos centros de pesquisa da fapesp": "2026-10-10T07:17:35.907240+00:00",
+  "this beer making waste may offer a new stream for cleaner water": "2026-10-10T13:52:04.145003+00:00",
+  "why taking a break from exercise might not mean you need to start from scratch": "2026-10-10T13:52:04.145003+00:00",
+  "briefing chat top researchers are being misled by sham academic societies": "2026-10-10T13:52:04.145003+00:00"
  }
 }
