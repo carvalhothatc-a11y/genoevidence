@@ -1,6 +1,31 @@
 {
- "atualizado_em": "2026-10-10T18:42:45.309887+00:00",
+ "atualizado_em": "2026-10-10T22:41:49.839387+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "O câncer de intestino \"derreteu\" após a imunoterapia e, em seguida, ficou longe",
+   "resumo": "Um curto período de imunoterapia antes da cirurgia pode oferecer proteção notavelmente durável para alguns pacientes com câncer de intestino em estágio dois ou três. No estudo NEOPRISM-CRC, 32 pacientes com uma forma genética específica de câncer de intestino receberam...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261007042115.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-10T18:42:35+00:00",
+   "tema": "Câncer",
+   "relevancia": 10,
+   "imagem": "https://www.sciencedaily.com/images/1920/tumor-cancer-cell-destruction.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Bowel cancer “melted away” after immunotherapy, then stayed away",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El cáncer de intestino \"desapareció\" después de la inmunoterapia, luego se mantuvo alejado",
+     "resumo": "Un curso corto de inmunoterapia antes de la cirugía puede ofrecer una protección notablemente duradera para algunos pacientes con cáncer de intestino en estadio dos o tres. En el ensayo NEOPRISM-CRC, 32 pacientes con una forma genética específica de cáncer de intestino recibieron..."
+    }
+   },
+   "resumo_original": "A short course of immunotherapy before surgery may offer remarkably durable protection for some patients with stage two or three bowel cancer. In the NEOPRISM-CRC trial, 32 patients with a specific genetic form of bowel cancer received…"
+  },
   {
    "tipo": "noticia",
    "titulo": "Editora da Unicamp tem três obras entre as finalistas do Prêmio Abeu",
@@ -10,7 +35,7 @@
    "idioma": "pt",
    "data": "2026-10-09T20:13:44+00:00",
    "tema": "Ciência",
-   "relevancia": 7,
+   "relevancia": 6,
    "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/01/Age_2026012_Editora_Capa.jpg",
    "foco": {
     "x": 50,
@@ -36,7 +61,7 @@
    "idioma": "pt",
    "data": "2026-10-09T19:33:25+00:00",
    "tema": "Saúde",
-   "relevancia": 7,
+   "relevancia": 6,
    "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/brics.jpg",
    "foco": {
     "x": 50,
@@ -60,7 +85,7 @@
    "idioma": "pt",
    "data": "2026-10-09T18:55:07+00:00",
    "tema": "Meio ambiente",
-   "relevancia": 7,
+   "relevancia": 6,
    "imagem": "https://jornal.usp.br/wp-content/uploads/2026/06/20260608_patricia2.jpg",
    "foco": {
     "x": 51,
@@ -74,32 +99,6 @@
     "es": {
      "titulo": "El litigio climático calificado comienza en la ciencia",
      "resumo": "Por Patrícia Iglecias, Superintendente de Gestión Ambiental de la USP y Coordinadora de USPproClima"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
-   "resumo": "Campanha segue até o fim do mês e destina as mechas as pacientes do Hospital do Câncer de Ribeirão Preto",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/estudantes-da-usp-arrecadam-cabelo-no-outubro-rosa/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-09T19:21:35+00:00",
-   "tema": "Câncer",
-   "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261009_mechasdecabelo.jpeg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "USP students collect hair in Pink October",
-     "resumo": "Campaign continues until the end of the month and destines the wicks to the patients of the Ribeirão Preto Cancer Hospital"
-    },
-    "es": {
-     "titulo": "Los estudiantes de la USP recogen el cabello en octubre rosa",
-     "resumo": "La campaña continúa hasta fin de mes y destina las mechas a los pacientes del Hospital Oncológico de Ribeirão Preto"
     }
    }
   },
@@ -126,6 +125,32 @@
     "es": {
      "titulo": "Guía gratuita que guía a los padres sobre el uso de la pantalla para niños de hasta seis años",
      "resumo": "La publicación desarrollada por un investigador del Departamento de Psicología de la Facultad de Filosofía, Ciencias y Letras de Ribeirão Preto de la USP busca apoyar a las familias que tienen dificultades para establecer límites y monitorear el uso de la pantalla"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Nova abordagem para a educação física escolar valoriza autonomia e inclusão",
+   "resumo": "Desenvolvida por pesquisadores da Escola de Educação Física e Esporte, metodologia busca tornar as atividades mais inclusivas e incentivar a prática de exercícios desde a infância",
+   "url": "https://jornal.usp.br/radio-usp/nova-abordagem-para-a-educacao-fisica-escolar-valoriza-autonomia-e-inclusao/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-09T17:04:50+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/05/20230528_00_ebook_educacao_fisica_cultural.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "New approach to school physical education values autonomy and inclusion",
+     "resumo": "Developed by researchers from the School of Physical Education and Sport, the methodology seeks to make activities more inclusive and encourage the practice of exercises since childhood"
+    },
+    "es": {
+     "titulo": "Un nuevo enfoque de la educación física escolar valora la autonomía y la inclusión",
+     "resumo": "Desarrollada por investigadores de la Escuela de Educación Física y Deporte, la metodología busca hacer más inclusivas las actividades y fomentar la práctica de ejercicios desde la infancia"
     }
    }
   },
@@ -231,6 +256,56 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Cientistas podem ter encontrado um atalho para a energia de fusão",
+   "resumo": "O Laboratório de Física de Plasma de Princeton pode ter encontrado uma rota dramaticamente mais eficiente para a energia de fusão, invertendo a abordagem tradicional: aquecer o plasma primeiro e depois aumentar sua densidade. Seus cálculos podem ajudar futuros reatores...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261008005242.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-10T18:57:27+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/nuclear-fusion-reactor-tokamak-heated-plasma.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists may have found a shortcut to fusion energy",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos pueden haber encontrado un atajo para la energía de fusión",
+     "resumo": "El Laboratorio de Física del Plasma de Princeton puede haber encontrado una ruta dramáticamente más eficiente hacia la energía de fusión al invertir el enfoque tradicional: calentar primero el plasma y luego aumentar su densidad. Sus cálculos podrían ayudar a futuros reactores..."
+    }
+   },
+   "resumo_original": "Princeton Plasma Physics Laboratory may have found a dramatically more efficient route to fusion energy by reversing the traditional approach: heating plasma first, then increasing its density. Their calculations could help future reactors…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Astrônomos do MIT pegam uma estrela em um banquete que pode durar bilhões de anos",
+   "resumo": "Os astrônomos descobriram um sistema estelar bizarro a cerca de 300 anos-luz da Terra, onde uma pequena estrela está devorando lentamente uma anã marrom próxima, um objeto muito massivo para ser um planeta, mas muito pequeno para ser uma estrela verdadeira. Ao contrário das estrelas que rapidamente...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261008005240.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-10T18:56:25+00:00",
+   "tema": "Espaço",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/ztf-j0440-2325-brown-dwarf-white-dwarf.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "MIT astronomers catch a star in a feast that could last billions of years",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Astrónomos del MIT atrapan una estrella en un festín que podría durar miles de millones de años",
+     "resumo": "Los astrónomos han descubierto un extraño sistema estelar a unos 300 años luz de la Tierra donde una pequeña estrella está devorando lentamente a una enana marrón cercana, un objeto demasiado masivo para ser un planeta pero demasiado pequeño para ser una verdadera estrella. A diferencia de las estrellas que rápidamente..."
+    }
+   },
+   "resumo_original": "Astronomers have discovered a bizarre star system about 300 light-years from Earth where a small star is slowly devouring a nearby brown dwarf, an object too massive to be a planet but too small to be a true star. Unlike stars that rapidly…"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "O aumento da água está criando florestas fantasmas no interior dos EUA",
    "resumo": "Florestas cheias de árvores mortas não são encontradas apenas nas costas dos EUA – elas também estão aparecendo longe do mar em torno de lagos de água doce",
    "url": "https://www.newscientist.com/article/2593032-rising-water-is-creating-inland-ghost-forests-in-the-us/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -274,27 +349,6 @@
     }
    },
    "resumo_original": "Nature staff discuss a network of organizations that have been building their ranks through deceptive practices."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Os cérebros de chimpanzés e gorilas resistem à perda de peso com a idade — ao contrário dos",
-   "resumo": "A expectativa de vida relativamente curta dos grandes símios não humanos pode explicar por que sua massa cerebral é mantida mais tarde na vida",
-   "url": "https://www.nature.com/articles/d41586-026-03158-0",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-09T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "",
-   "titulo_original": "Chimp and gorilla brains resist weight loss with age — unlike human brains",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los cerebros de chimpancés y gorilas resisten la pérdida de peso con la edad, a diferencia de los cere",
-     "resumo": "La esperanza de vida relativamente corta de los grandes simios no humanos podría explicar por qué su masa cerebral se mantiene en la edad adulta"
-    }
-   },
-   "resumo_original": "The relatively short lifespans of non-human great apes might explain why their brain mass is maintained in later life"
   }
  ],
  "artigos": [
@@ -821,14 +875,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "pesquisa relaciona internacoes por diabetes a desigualdade em sao paulo": "2026-09-30T19:30:24.464813+00:00",
-  "rochas da paraiba confirmam fraco campo magnetico da terra durante explosao da vida": "2026-09-30T19:30:24.464813+00:00",
-  "o impacto do antropoceno sobre a saude ocular": "2026-09-30T19:30:24.464813+00:00",
-  "ms fiocruz hu brasil e instituicoes do ceara firmam parceria para expansao de terapias avancadas no sus": "2026-09-30T19:30:24.464813+00:00",
-  "de volta para o futuro": "2026-09-30T19:30:24.464813+00:00",
-  "the atlantic hurricane season has been so quiet its unprecedented": "2026-09-30T19:30:24.464813+00:00",
-  "why a modern approach to healthcare must consider more than illness": "2026-09-30T19:30:24.464813+00:00",
-  "twisteddoodles on the discovery of a new cat species": "2026-09-30T19:30:24.464813+00:00",
   "anglo saxons got special treatment in medieval rome": "2026-09-30T23:58:50.808110+00:00",
   "nova ferramenta de ia preve rota e intensidade de tempestades em curtissimo prazo": "2026-10-01T06:10:04.803724+00:00",
   "agencia fapesp estreia novo layout": "2026-10-01T06:10:04.803724+00:00",
@@ -1036,6 +1082,10 @@
   "litigancia climatica qualificada comeca na ciencia": "2026-10-10T18:42:45.309887+00:00",
   "guia gratuito orienta pais sobre uso de telas por criancas de ate seis anos": "2026-10-10T18:42:45.309887+00:00",
   "rising water is creating inland ghost forests in the us": "2026-10-10T18:42:45.309887+00:00",
-  "chimp and gorilla brains resist weight loss with age unlike human brains": "2026-10-10T18:42:45.309887+00:00"
+  "chimp and gorilla brains resist weight loss with age unlike human brains": "2026-10-10T18:42:45.309887+00:00",
+  "bowel cancer melted away after immunotherapy then stayed away": "2026-10-10T22:41:49.839387+00:00",
+  "nova abordagem para a educacao fisica escolar valoriza autonomia e inclusao": "2026-10-10T22:41:49.839387+00:00",
+  "scientists may have found a shortcut to fusion energy": "2026-10-10T22:41:49.839387+00:00",
+  "mit astronomers catch a star in a feast that could last billions of years": "2026-10-10T22:41:49.839387+00:00"
  }
 }
