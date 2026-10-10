@@ -1,32 +1,6 @@
 {
- "atualizado_em": "2026-10-10T01:01:01.499352+00:00",
+ "atualizado_em": "2026-10-10T07:17:35.907240+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "Biorrepositório brasileiro pode ajudar a personalizar a prevenção do câncer no SUS",
-   "resumo": "Iniciativa desenvolvida no Hospital de Amor cruza dados genéticos e epidemiológicos para criar ferramentas de avaliação de risco adequadas à diversidade da população brasileira",
-   "url": "https://agencia.fapesp.br/biorrepositorio-brasileiro-pode-ajudar-a-personalizar-a-prevencao-do-cancer-no-sus/59372",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-09T09:18:03.324627+00:00",
-   "tema": "Câncer",
-   "relevancia": 17,
-   "imagem": "https://agencia.fapesp.br/files/post/59372.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Brazilian biorepository can help personalize cancer prevention in sus",
-     "resumo": "Initiative developed at Hospital de Amor crosses genetic and epidemiological data to create risk assessment tools appropriate to the diversity of the Brazilian population"
-    },
-    "es": {
-     "titulo": "El biorrepositorio brasileño puede ayudar a personalizar la prevención del cáncer en sus",
-     "resumo": "Iniciativa desarrollada en el Hospital de Amor cruza datos genéticos y epidemiológicos para crear herramientas de evaluación de riesgos apropiadas para la diversidad de la población brasileña"
-    }
-   }
-  },
   {
    "tipo": "noticia",
    "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
@@ -107,54 +81,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Estudo sobre imunidade, metabolismo e saúde hormonal busca voluntários",
-   "resumo": "Centro de Pesquisa em Obesidade e Comorbidades da Unicamp recruta homens e mulheres entre 20 e 40 anos, com ou sem obesidade, para participar de avaliações",
-   "url": "https://agencia.fapesp.br/estudo-sobre-imunidade-metabolismo-e-saude-hormonal-busca-voluntarios/59375",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-09T09:18:03.324627+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://agencia.fapesp.br/files/post/59375.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Study on immunity, metabolism and hormonal health seeks volunteers",
-     "resumo": "Unicamp's Obesity and Comorbidities Research Center recruits men and women between 20 and 40 years old, with or without obesity, to participate in evaluations"
-    },
-    "es": {
-     "titulo": "Estudio sobre inmunidad, metabolismo y salud hormonal busca voluntarios",
-     "resumo": "El Centro de Investigación de Obesidad y Comorbilidades de la Unicamp recluta a hombres y mujeres entre 20 y 40 años, con o sin obesidad, para participar en las evaluaciones"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Science Communication in Transition: Strategies, Responsibilities and Emerging Challenges in Germany and Brazil",
-   "resumo": "Evento vai reunir especialistas, pesquisadores, comunicadores e jornalistas da Alemanha e do Brasil para debater desafios e responsabilidades da divulgação da ciência em ambos os países",
-   "url": "https://agencia.fapesp.br/science-communication-in-transition-strategies-responsibilities-and-emerging-challenges-in-germany-and-brazil/59369",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-10T01:01:01.499352+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Science Communication in Transition: Strategies, Responsibilities and Emerging Challenges in Germany and Brazil",
-     "resumo": "The event will bring together experts, researchers, communicators and journalists from Germany and Brazil to discuss the challenges and responsibilities of disseminating science in both countries"
-    },
-    "es": {
-     "titulo": "Comunicación científica en transición: estrategias, responsabilidades y desafíos emergentes en Alemania y Brasil",
-     "resumo": "El evento reunirá a expertos, investigadores, comunicadores y periodistas de Alemania y Brasil para discutir los desafíos y responsabilidades de la difusión de la ciencia en ambos países"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Fiocruz assina Declaração de Barcelona e Iniciativa de Helsinki",
    "resumo": "",
    "url": "https://agencia.fiocruz.br/fiocruz-assina-declaracao-de-barcelona-e-iniciativa-de-helsinki",
@@ -201,28 +127,79 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas testaram 5 compostos naturais em células cancerígenas. Um se destacou",
-   "resumo": "Cinco compostos naturais, incluindo curcumina e berberina, foram testados quanto aos seus efeitos em células cancerígenas e células musculares saudáveis. Todos interromperam a produção de energia das células cancerígenas e empurraram muitas das células para um estado de não divisão, com...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261006234531.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-09T01:15:59+00:00",
-   "tema": "Câncer",
+   "titulo": "Editora da Unicamp tem três obras entre as finalistas do Prêmio Abeu",
+   "resumo": "Livros concorrem nas categorias Ciências Sociais, Ciências Sociais Aplicadas e Ciências da Vida",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/09/editora-da-unicamp-tem-tres-obras-entre-as-finalistas-do-premio-abeu/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-09T20:13:44+00:00",
+   "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://www.sciencedaily.com/images/1920/turmeric-curcumin-powder-wooden-spoon.webp",
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/01/Age_2026012_Editora_Capa.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Scientists tested 5 natural compounds on cancer cells. One stood out",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "Unicamp's publisher has three works among the finalists of the Abeu Award",
+     "resumo": "Books compete in the Social Sciences, Applied Social Sciences and Life Sciences categories"
+    },
     "es": {
-     "titulo": "Los científicos probaron 5 compuestos naturales en células cancerosas, destacando uno",
-     "resumo": "Se probaron cinco compuestos naturales, incluyendo la curcumina y la berberina, por sus efectos sobre las células cancerosas y las células musculares sanas. Todo interrumpió la producción de energía de las células cancerosas y empujó a muchas de las células a un estado de no división, con..."
+     "titulo": "La editorial de la Unicamp cuenta con tres obras entre los finalistas del Premio Abeu",
+     "resumo": "Los libros compiten en las categorías de Ciencias Sociales, Ciencias Sociales Aplicadas y Ciencias de la Vida"
     }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Novo observatório amplia o conhecimento sobre os sistemas de saúde do Brics",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/novo-observatorio-amplia-o-conhecimento-sobre-os-sistemas-de-saude-do-brics",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-09T19:33:25+00:00",
+   "tema": "Saúde",
+   "relevancia": 7,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/brics.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
    },
-   "resumo_original": "Five natural compounds, including curcumin and berberine, were tested for their effects on cancer cells and healthy muscle cells. All disrupted cancer cell energy production and pushed many of the cells into a non-dividing state, with…"
+   "i18n": {
+    "en": {
+     "titulo": "New observatory expands knowledge of BRICS health systems"
+    },
+    "es": {
+     "titulo": "Un nuevo observatorio amplía el conocimiento de los sistemas de salud de los BRICS"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Unicamp sediará seis novos centros de pesquisa da Fapesp",
+   "resumo": "Centro de Pesquisa, Inovação e Difusão (CEPID) do Instituto de Biologia, que estuda o envelhecimento, receberá financiamento anual de R$ 10 milhões",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/09/unicamp-sediara-seis-novos-centros-de-pesquisa-da-fapesp/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-09T16:59:27+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261009_Cepids_CCDs-scarpa_DSC_9749-Capa.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Unicamp will host six new FAPESP research centers",
+     "resumo": "The Institute of Biology's Research, Innovation and Dissemination Center (RIDC), which studies aging, will receive annual funding of $10 million"
+    },
+    "es": {
+     "titulo": "La Unicamp acogerá seis nuevos centros de investigación de la FAPESP",
+     "resumo": "El Centro de Investigación, Innovación y Difusión (RIDC) del Instituto de Biología, que estudia el envejecimiento, recibirá una financiación anual de R$ 10 millones"
+    }
+   }
   },
   {
    "tipo": "noticia",
@@ -273,6 +250,31 @@
     }
    },
    "resumo_original": "Meta’s and OpenAI’s new agents can streamline your life. Artificial intelligence researchers helped me test how far to trust them"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas testaram 5 compostos naturais em células cancerígenas. Um se destacou",
+   "resumo": "Cinco compostos naturais, incluindo curcumina e berberina, foram testados quanto aos seus efeitos em células cancerígenas e células musculares saudáveis. Todos interromperam a produção de energia das células cancerígenas e empurraram muitas das células para um estado de não divisão, com...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261006234531.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-09T01:15:59+00:00",
+   "tema": "Câncer",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/turmeric-curcumin-powder-wooden-spoon.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists tested 5 natural compounds on cancer cells. One stood out",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos probaron 5 compuestos naturales en células cancerosas, destacando uno",
+     "resumo": "Se probaron cinco compuestos naturales, incluyendo la curcumina y la berberina, por sus efectos sobre las células cancerosas y las células musculares sanas. Todo interrumpió la producción de energía de las células cancerosas y empujó a muchas de las células a un estado de no división, con..."
+    }
+   },
+   "resumo_original": "Five natural compounds, including curcumin and berberine, were tested for their effects on cancer cells and healthy muscle cells. All disrupted cancer cell energy production and pushed many of the cells into a non-dividing state, with…"
   },
   {
    "tipo": "noticia",
@@ -895,10 +897,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "programa fapesp de mudancas climaticas amplia escopo para integrar saude sociedade e politicas publicas": "2026-09-30T06:51:39.903624+00:00",
-  "tabela brasileira de composicao de alimentos se transforma em ecossistema digital de pesquisa": "2026-09-30T06:51:39.903624+00:00",
-  "teste de forca para cadeirantes pode ser feito por videochamada com a mesma precisao do presencial": "2026-09-30T06:51:39.903624+00:00",
-  "emissions after the paris accord made europes heatwaves more severe": "2026-09-30T06:51:39.903624+00:00",
   "a primeira decada da fapesp registrada em uma publicacao historica": "2026-09-30T13:55:31.369349+00:00",
   "dangerous ozone threatened half of worlds population this year": "2026-09-30T13:55:31.369349+00:00",
   "ai solves a holy grail problem from probability theory": "2026-09-30T13:55:31.369349+00:00",
@@ -1112,6 +1110,9 @@
   "does each new covid 19 variant pose a significant threat": "2026-10-09T21:04:36.830010+00:00",
   "breaking down nerve cell scaffold relieves chronic pain in mice": "2026-10-09T21:04:36.830010+00:00",
   "major earthquake strikes panamadamage and injuries are expected": "2026-10-09T21:04:36.830010+00:00",
-  "two large asteroids found spinning as fast as a fairground ride": "2026-10-09T21:04:36.830010+00:00"
+  "two large asteroids found spinning as fast as a fairground ride": "2026-10-09T21:04:36.830010+00:00",
+  "editora da unicamp tem tres obras entre as finalistas do premio abeu": "2026-10-10T07:17:35.907240+00:00",
+  "novo observatorio amplia o conhecimento sobre os sistemas de saude do brics": "2026-10-10T07:17:35.907240+00:00",
+  "unicamp sediara seis novos centros de pesquisa da fapesp": "2026-10-10T07:17:35.907240+00:00"
  }
 }
