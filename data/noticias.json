@@ -1,31 +1,6 @@
 {
- "atualizado_em": "2026-10-11T01:59:57.865542+00:00",
+ "atualizado_em": "2026-10-11T09:04:09.353021+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "O câncer de intestino \"derreteu\" após a imunoterapia e, em seguida, ficou longe",
-   "resumo": "Um curto período de imunoterapia antes da cirurgia pode oferecer proteção notavelmente durável para alguns pacientes com câncer de intestino em estágio dois ou três. No estudo NEOPRISM-CRC, 32 pacientes com uma forma genética específica de câncer de intestino receberam...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261007042115.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-10T18:42:35+00:00",
-   "tema": "Câncer",
-   "relevancia": 10,
-   "imagem": "https://www.sciencedaily.com/images/1920/tumor-cancer-cell-destruction.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Bowel cancer “melted away” after immunotherapy, then stayed away",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El cáncer de intestino \"desapareció\" después de la inmunoterapia, luego se mantuvo alejado",
-     "resumo": "Un curso corto de inmunoterapia antes de la cirugía puede ofrecer una protección notablemente duradera para algunos pacientes con cáncer de intestino en estadio dos o tres. En el ensayo NEOPRISM-CRC, 32 pacientes con una forma genética específica de cáncer de intestino recibieron..."
-    }
-   },
-   "resumo_original": "A short course of immunotherapy before surgery may offer remarkably durable protection for some patients with stage two or three bowel cancer. In the NEOPRISM-CRC trial, 32 patients with a specific genetic form of bowel cancer received…"
-  },
   {
    "tipo": "noticia",
    "titulo": "Litigância climática qualificada começa na ciência",
@@ -106,53 +81,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Este resíduo de fabricação de cerveja pode oferecer um novo fluxo para água mais limpa",
-   "resumo": "A pesquisa oferece mais uma maneira pela qual a indústria cervejeira pode redirecionar seus inúmeros subprodutos",
-   "url": "https://www.scientificamerican.com/article/this-beer-making-waste-may-offer-a-new-stream-for-cleaner-water/",
-   "fonte": "Scientific American",
+   "titulo": "O olho tem um sistema de limpeza oculto que os cientistas nunca souberam que existia",
+   "resumo": "Os cientistas descobriram um sistema de limpeza oculto na parte de trás do olho que drena fluidos e resíduos através de uma via anteriormente desconhecida. A descoberta surpreendente, demonstrada em camundongos, pode abrir as portas para novos tratamentos para o glaucoma...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261008005254.htm",
+   "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-10T11:00:00+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-11T06:01:54+00:00",
+   "tema": "Saúde",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/3df6c7e0-d47c-40ec-99d7-e8cc9ce9ebb4/saw1126Adva07.jpg?m=1790615788.531&w=1200",
+   "imagem": "https://www.sciencedaily.com/images/1920/eye-iris-close-up.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "This beer-making waste may offer a new stream for cleaner water",
+   "titulo_original": "The eye has a hidden cleanup system scientists never knew existed",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Este residuo de fabricación de cerveza puede ofrecer un nuevo arroyo para obtener agua más limpia",
-     "resumo": "La investigación ofrece otra forma en que la industria cervecera podría reutilizar sus innumerables subproductos"
+     "titulo": "El ojo tiene un sistema de limpieza oculto que los científicos nunca supieron que existía",
+     "resumo": "Los científicos han descubierto un sistema de limpieza oculto en la parte posterior del ojo que drena el líquido y los desechos a través de una vía previamente desconocida. El sorprendente hallazgo, demostrado en ratones, podría abrir la puerta a nuevos tratamientos para el glaucoma..."
     }
    },
-   "resumo_original": "The research offers yet another way the brewery industry might repurpose its myriad by-products"
+   "resumo_original": "Scientists have discovered a hidden cleanup system at the back of the eye that drains fluid and waste through a previously unknown pathway. The surprising finding, demonstrated in mice, could open the door to new treatments for glaucoma…"
   },
   {
    "tipo": "noticia",
-   "titulo": "Por que fazer uma pausa no exercício pode não significar que você precisa começar do zero",
-   "resumo": "Por que fazer uma pausa no exercício não significa que você precisa começar do zero",
-   "url": "https://www.scientificamerican.com/article/why-taking-a-break-from-exercise-might-not-mean-you-need-to-start-from-scratch/",
-   "fonte": "Scientific American",
+   "titulo": "Um plástico outrora considerado inofensivo pode estar a alimentar a doença hepática gordurosa",
+   "resumo": "Um dos plásticos mais comuns do mundo pode representar uma ameaça oculta à saúde do fígado. Os pesquisadores da Texas A&M descobriram que os microplásticos de polietileno podem contribuir para a doença hepática gordurosa, com efeitos potencialmente piores quando combinados com um...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261008102718.htm",
+   "fonte": "ScienceDaily · Saúde",
    "idioma": "en",
-   "data": "2026-10-10T10:00:00+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-11T00:47:05+00:00",
+   "tema": "Saúde",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/m/17a37f41a81a406e/original/GettyImages-469107046_WEB.jpg?m=1718985077.166&w=1200",
+   "imagem": "https://www.sciencedaily.com/images/1920/human-liver-organ-damage.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Why taking a break from exercise might not mean you need to start from scratch",
+   "titulo_original": "A plastic once thought harmless may be fueling fatty liver disease",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Por qué tomarse un descanso del ejercicio podría no significar que tengas que empezar de cero",
-     "resumo": "Por qué tomarse un descanso del ejercicio no significa que tengas que empezar de cero"
+     "titulo": "Un plástico que alguna vez se pensó inofensivo puede estar alimentando la enfermedad del hígado graso",
+     "resumo": "Uno de los plásticos más comunes del mundo puede representar una amenaza oculta para la salud del hígado. Los investigadores de Texas A&M descubrieron que los microplásticos de polietileno pueden contribuir a la enfermedad del hígado graso, con efectos potencialmente peores cuando se combinan con un..."
     }
    },
-   "resumo_original": "Why taking a break from exercise doesn't may not mean you need to start from scratch"
+   "resumo_original": "One of the world's most common plastics may pose a hidden threat to liver health. Texas A&M researchers discovered that polyethylene microplastics can contribute to fatty liver disease, with potentially worse effects when combined with an…"
   },
   {
    "tipo": "noticia",
@@ -180,53 +155,102 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas podem ter encontrado um atalho para a energia de fusão",
-   "resumo": "O Laboratório de Física de Plasma de Princeton pode ter encontrado uma rota dramaticamente mais eficiente para a energia de fusão, invertendo a abordagem tradicional: aquecer o plasma primeiro e depois aumentar sua densidade. Seus cálculos podem ajudar futuros reatores...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261008005242.htm",
+   "titulo": "Cientistas constroem um relógio nuclear que pode tornar os relógios atômicos obsoletos",
+   "resumo": "Cientistas em Viena conseguiram um grande avanço na cronometragem ao criar o primeiro relógio nuclear autoestabilizante do mundo, uma tecnologia que poderia eventualmente superar até mesmo os relógios atômicos mais precisos. Em vez de confiar em...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261008102701.htm",
    "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-10T18:57:27+00:00",
+   "data": "2026-10-11T03:06:35+00:00",
    "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/nuclear-fusion-reactor-tokamak-heated-plasma.webp",
+   "imagem": "https://www.sciencedaily.com/images/1920/nuclear-clock-concept.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Scientists may have found a shortcut to fusion energy",
+   "titulo_original": "Scientists build a nuclear clock that could make atomic clocks obsolete",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los científicos pueden haber encontrado un atajo para la energía de fusión",
-     "resumo": "El Laboratorio de Física del Plasma de Princeton puede haber encontrado una ruta dramáticamente más eficiente hacia la energía de fusión al invertir el enfoque tradicional: calentar primero el plasma y luego aumentar su densidad. Sus cálculos podrían ayudar a futuros reactores..."
+     "titulo": "Los científicos construyen un reloj nuclear que podría hacer obsoletos los relojes atómicos",
+     "resumo": "Científicos en Viena han logrado un gran avance en el cronometraje al crear el primer reloj nuclear autoestabilizador del mundo, una tecnología que eventualmente podría superar incluso a los relojes atómicos más precisos. En lugar de confiar en..."
     }
    },
-   "resumo_original": "Princeton Plasma Physics Laboratory may have found a dramatically more efficient route to fusion energy by reversing the traditional approach: heating plasma first, then increasing its density. Their calculations could help future reactors…"
+   "resumo_original": "Scientists in Vienna have achieved a major breakthrough in timekeeping by creating the world’s first self-stabilizing nuclear clock, a technology that could eventually surpass even the most precise atomic clocks. Instead of relying on…"
   },
   {
    "tipo": "noticia",
-   "titulo": "Astrônomos do MIT pegam uma estrela em um banquete que pode durar bilhões de anos",
-   "resumo": "Os astrônomos descobriram um sistema estelar bizarro a cerca de 300 anos-luz da Terra, onde uma pequena estrela está devorando lentamente uma anã marrom próxima, um objeto muito massivo para ser um planeta, mas muito pequeno para ser uma estrela verdadeira. Ao contrário das estrelas que rapidamente...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261008005240.htm",
-   "fonte": "ScienceDaily",
+   "titulo": "Uma maneira surpreendentemente simples de aliviar a dor da artrite do joelho sem pílulas ou cirurgia",
+   "resumo": "Uma mudança surpreendentemente simples na forma como você anda pode ajudar a aliviar a dor da artrite no joelho e até mesmo diminuir os danos nas articulações. Em um ensaio clínico de um ano, os pesquisadores descobriram que ajustar o ângulo do pé de uma pessoa ao caminhar reduziu...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261009025434.htm",
+   "fonte": "ScienceDaily · Saúde",
    "idioma": "en",
-   "data": "2026-10-10T18:56:25+00:00",
-   "tema": "Espaço",
+   "data": "2026-10-11T00:00:24+00:00",
+   "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/ztf-j0440-2325-brown-dwarf-white-dwarf.webp",
+   "imagem": "https://www.sciencedaily.com/images/1920/hands-holding-knee-pain-arthritis.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "MIT astronomers catch a star in a feast that could last billions of years",
+   "titulo_original": "A surprisingly simple way to relieve knee arthritis pain without pills or surgery",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Astrónomos del MIT atrapan una estrella en un festín que podría durar miles de millones de años",
-     "resumo": "Los astrónomos han descubierto un extraño sistema estelar a unos 300 años luz de la Tierra donde una pequeña estrella está devorando lentamente a una enana marrón cercana, un objeto demasiado masivo para ser un planeta pero demasiado pequeño para ser una verdadera estrella. A diferencia de las estrellas que rápidamente..."
+     "titulo": "Una forma sorprendentemente sencilla de aliviar el dolor de artritis de rodilla sin pastillas ni cirugía",
+     "resumo": "Un cambio sorprendentemente simple en la forma de caminar podría ayudar a aliviar el dolor de la artritis de rodilla e incluso a retrasar el daño articular. En un ensayo clínico de un año de duración, los investigadores descubrieron que ajustar el ángulo del pie al caminar reducía…"
     }
    },
-   "resumo_original": "Astronomers have discovered a bizarre star system about 300 light-years from Earth where a small star is slowly devouring a nearby brown dwarf, an object too massive to be a planet but too small to be a true star. Unlike stars that rapidly…"
+   "resumo_original": "A surprisingly simple change in how you walk could help relieve knee arthritis pain and even slow joint damage. In a year-long clinical trial, researchers found that adjusting the angle of a person's foot while walking reduced…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Como o furacão Isaias ficou tão perigosamente forte tão rápido",
+   "resumo": "A tempestade de categoria 3 se intensificou durante a noite - e está se dirigindo para a Costa do Golfo dos EUA. Aqui está o que você precisa saber",
+   "url": "https://www.scientificamerican.com/article/how-hurricane-isaias-got-so-dangerously-strong-so-fast/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-09T20:05:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://static.scientificamerican.com/dam/asset/02dfbdd6-264a-43a5-a4fa-3d57439c8765/20262821210-20262821740-ABI-AL092026-GEOCOLOR-1000x1000.gif?m=1791578195.992&w=1200",
+   "foco": {
+    "inteira": true
+   },
+   "titulo_original": "How Hurricane Isaias got so dangerously strong so fast",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Cómo el huracán Isaías se hizo tan peligrosamente fuerte tan rápido",
+     "resumo": "La tormenta de categoría 3 se intensificó de la noche a la mañana y se dirige hacia la costa del Golfo de Estados Unidos. Esto es lo que debes saber"
+    }
+   },
+   "resumo_original": "The Category 3 storm intensified overnight—and is headed toward the U.S. Gulf Coast. Here’s what to know"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O acerto de contas social é um retrato \"surreal\" dos danos das mídias sociais, diz cientista",
+   "resumo": "O filme é baseado na história real de como a funcionária do Facebook Frances Haugen denunciou as práticas de segurança da empresa",
+   "url": "https://www.scientificamerican.com/article/the-social-reckoning-is-a-surreal-portrait-of-social-medias-harms-scientist-says/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-09T15:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://static.scientificamerican.com/dam/asset/42d217d2-0655-4306-a50a-bd278e00f8b5/social-reckoning-image.jpeg?m=1791557280.905&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "The Social Reckoning is a ‘surreal’ portrait of social media’s harms, scientist says",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "The Social Reckoning es un retrato \"surrealista\" de los daños de las redes sociales, dice un científico",
+     "resumo": "La película se basa en la historia real de cómo la empleada de Facebook Frances Haugen denunció las prácticas de seguridad de la empresa"
+    }
+   },
+   "resumo_original": "The movie is based on the true story of how Facebook employee Frances Haugen blew the whistle on the company’s safety practices"
   },
   {
    "tipo": "noticia",
@@ -778,9 +802,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "nova ferramenta de ia preve rota e intensidade de tempestades em curtissimo prazo": "2026-10-01T06:10:04.803724+00:00",
-  "agencia fapesp estreia novo layout": "2026-10-01T06:10:04.803724+00:00",
-  "expansao urbana causa colapso ecologico em riachos da regiao metropolitana de sao paulo": "2026-10-01T06:10:04.803724+00:00",
   "estilo de vida do futuro pai e fertilizacao sem tratamento previo afetam desenvolvimento do bebe": "2026-10-01T13:33:17.628504+00:00",
   "tres pesquisas da odontologia da usp em ribeirao preto sao premiadas em encontro nacional": "2026-10-01T13:33:17.628504+00:00",
   "dialogos avancados desafios contemporaneos do humano": "2026-10-01T13:33:17.628504+00:00",
@@ -988,6 +1009,12 @@
   "bowel cancer melted away after immunotherapy then stayed away": "2026-10-10T22:41:49.839387+00:00",
   "nova abordagem para a educacao fisica escolar valoriza autonomia e inclusao": "2026-10-10T22:41:49.839387+00:00",
   "scientists may have found a shortcut to fusion energy": "2026-10-10T22:41:49.839387+00:00",
-  "mit astronomers catch a star in a feast that could last billions of years": "2026-10-10T22:41:49.839387+00:00"
+  "mit astronomers catch a star in a feast that could last billions of years": "2026-10-10T22:41:49.839387+00:00",
+  "the eye has a hidden cleanup system scientists never knew existed": "2026-10-11T09:04:09.353021+00:00",
+  "a plastic once thought harmless may be fueling fatty liver disease": "2026-10-11T09:04:09.353021+00:00",
+  "scientists build a nuclear clock that could make atomic clocks obsolete": "2026-10-11T09:04:09.353021+00:00",
+  "a surprisingly simple way to relieve knee arthritis pain without pills or surgery": "2026-10-11T09:04:09.353021+00:00",
+  "how hurricane isaias got so dangerously strong so fast": "2026-10-11T09:04:09.353021+00:00",
+  "the social reckoning is a surreal portrait of social medias harms scientist says": "2026-10-11T09:04:09.353021+00:00"
  }
 }
