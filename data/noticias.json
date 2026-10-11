@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-10T22:41:49.839387+00:00",
+ "atualizado_em": "2026-10-11T01:59:57.865542+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -25,56 +25,6 @@
     }
    },
    "resumo_original": "A short course of immunotherapy before surgery may offer remarkably durable protection for some patients with stage two or three bowel cancer. In the NEOPRISM-CRC trial, 32 patients with a specific genetic form of bowel cancer received…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Editora da Unicamp tem três obras entre as finalistas do Prêmio Abeu",
-   "resumo": "Livros concorrem nas categorias Ciências Sociais, Ciências Sociais Aplicadas e Ciências da Vida",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/09/editora-da-unicamp-tem-tres-obras-entre-as-finalistas-do-premio-abeu/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-09T20:13:44+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/01/Age_2026012_Editora_Capa.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Unicamp's publisher has three works among the finalists of the Abeu Award",
-     "resumo": "Books compete in the Social Sciences, Applied Social Sciences and Life Sciences categories"
-    },
-    "es": {
-     "titulo": "La editorial de la Unicamp cuenta con tres obras entre los finalistas del Premio Abeu",
-     "resumo": "Los libros compiten en las categorías de Ciencias Sociales, Ciencias Sociales Aplicadas y Ciencias de la Vida"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Novo observatório amplia o conhecimento sobre os sistemas de saúde do Brics",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/novo-observatorio-amplia-o-conhecimento-sobre-os-sistemas-de-saude-do-brics",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-09T19:33:25+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/brics.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "New observatory expands knowledge of BRICS health systems"
-    },
-    "es": {
-     "titulo": "Un nuevo observatorio amplía el conocimiento de los sistemas de salud de los BRICS"
-    }
-   }
   },
   {
    "tipo": "noticia",
@@ -151,32 +101,6 @@
     "es": {
      "titulo": "Un nuevo enfoque de la educación física escolar valora la autonomía y la inclusión",
      "resumo": "Desarrollada por investigadores de la Escuela de Educación Física y Deporte, la metodología busca hacer más inclusivas las actividades y fomentar la práctica de ejercicios desde la infancia"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Unicamp sediará seis novos centros de pesquisa da Fapesp",
-   "resumo": "Centro de Pesquisa, Inovação e Difusão (CEPID) do Instituto de Biologia, que estuda o envelhecimento, receberá financiamento anual de R$ 10 milhões",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/09/unicamp-sediara-seis-novos-centros-de-pesquisa-da-fapesp/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-09T16:59:27+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261009_Cepids_CCDs-scarpa_DSC_9749-Capa.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Unicamp will host six new FAPESP research centers",
-     "resumo": "The Institute of Biology's Research, Innovation and Dissemination Center (RIDC), which studies aging, will receive annual funding of $10 million"
-    },
-    "es": {
-     "titulo": "La Unicamp acogerá seis nuevos centros de investigación de la FAPESP",
-     "resumo": "El Centro de Investigación, Innovación y Difusión (RIDC) del Instituto de Biología, que estudia el envejecimiento, recibirá una financiación anual de R$ 10 millones"
     }
    }
   },
@@ -328,27 +252,6 @@
     }
    },
    "resumo_original": "Forests full of dead trees aren’t just found by the US coasts – they are also appearing far from the sea around freshwater lakes"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Briefing Chat: Os principais pesquisadores estão sendo enganados por sociedades acadêmicas simuladas",
-   "resumo": "A equipe da Nature discute uma rede de organizações que vêm construindo suas fileiras por meio de práticas enganosas.",
-   "url": "https://www.nature.com/articles/d41586-026-03216-7",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-09T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "",
-   "titulo_original": "Briefing Chat: Top researchers are being misled by sham academic societies",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Charla informativa: Los principales investigadores están siendo engañados por sociedades académicas falsas",
-     "resumo": "El personal de Nature discute una red de organizaciones que han estado construyendo sus filas a través de prácticas engañosas."
-    }
-   },
-   "resumo_original": "Nature staff discuss a network of organizations that have been building their ranks through deceptive practices."
   }
  ],
  "artigos": [
@@ -875,7 +778,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "anglo saxons got special treatment in medieval rome": "2026-09-30T23:58:50.808110+00:00",
   "nova ferramenta de ia preve rota e intensidade de tempestades em curtissimo prazo": "2026-10-01T06:10:04.803724+00:00",
   "agencia fapesp estreia novo layout": "2026-10-01T06:10:04.803724+00:00",
   "expansao urbana causa colapso ecologico em riachos da regiao metropolitana de sao paulo": "2026-10-01T06:10:04.803724+00:00",
