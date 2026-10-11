@@ -1,55 +1,29 @@
 {
- "atualizado_em": "2026-10-11T09:04:09.353021+00:00",
+ "atualizado_em": "2026-10-11T15:49:04.454598+00:00",
  "noticias": [
   {
    "tipo": "noticia",
-   "titulo": "Litigância climática qualificada começa na ciência",
-   "resumo": "Por Patrícia Iglecias, superintendente de Gestão Ambiental da USP e coordenadora do USPproClima",
-   "url": "https://jornal.usp.br/artigos/litigancia-climatica-qualificada-comeca-na-ciencia/",
+   "titulo": "Músculo e exercício físico não saudável são temas de oficina na USP de Ribeirão",
+   "resumo": "Encontro será no Auditório João Samuel, do Departamento de Patologia da Faculdade de Medicina de Ribeirão Preto",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/musculo-e-exercicio-fisico-nao-saudavel-sao-temas-de-oficina-na-usp-de-ribeirao/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-09T18:55:07+00:00",
-   "tema": "Meio ambiente",
+   "data": "2026-10-09T18:09:46+00:00",
+   "tema": "Saúde",
    "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/06/20260608_patricia2.jpg",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/04/20260427_exerciciofisico.jpg",
    "foco": {
-    "x": 51,
+    "x": 100,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Qualified climate litigation starts in science",
-     "resumo": "By Patrícia Iglecias, USP Environmental Management Superintendent and USPproClima Coordinator"
+     "titulo": "Muscle and unhealthy physical exercise are themes of the workshop at USP in Ribeirão",
+     "resumo": "Meeting will be at the João Samuel Auditorium, of the Department of Pathology of the Faculty of Medicine of Ribeirão Preto"
     },
     "es": {
-     "titulo": "El litigio climático calificado comienza en la ciencia",
-     "resumo": "Por Patrícia Iglecias, Superintendente de Gestión Ambiental de la USP y Coordinadora de USPproClima"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Guia gratuito orienta pais sobre uso de telas por crianças de até seis anos",
-   "resumo": "Publicação desenvolvida por pesquisadora do Departamento de Psicologia da Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto da USP busca apoiar famílias que têm dificuldade em estabelecer limites e monitorar o uso de telas",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/guia-gratuito-orienta-pais-sobre-uso-de-telas-por-criancas-de-ate-6-anos/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-09T18:25:50+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/12/20231211_criancas_celular.jpg",
-   "foco": {
-    "x": 0,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Free guide guides parents on screen use for children up to six years old",
-     "resumo": "Publication developed by a researcher from the Department of Psychology of the Faculty of Philosophy, Sciences and Letters of Ribeirão Preto of USP seeks to support families who have difficulty setting limits and monitoring screen use"
-    },
-    "es": {
-     "titulo": "Guía gratuita que guía a los padres sobre el uso de la pantalla para niños de hasta seis años",
-     "resumo": "La publicación desarrollada por un investigador del Departamento de Psicología de la Facultad de Filosofía, Ciencias y Letras de Ribeirão Preto de la USP busca apoyar a las familias que tienen dificultades para establecer límites y monitorear el uso de la pantalla"
+     "titulo": "El músculo y el ejercicio físico no saludable son temas del taller en la USP en Ribeirão",
+     "resumo": "La reunión será en el Auditorio João Samuel, del Departamento de Patología de la Facultad de Medicina de Ribeirão Preto"
     }
    }
   },
@@ -78,6 +52,56 @@
      "resumo": "Desarrollada por investigadores de la Escuela de Educación Física y Deporte, la metodología busca hacer más inclusivas las actividades y fomentar la práctica de ejercicios desde la infancia"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
+   "resumo": "Campanha segue até o fim do mês e destina as mechas as pacientes do Hospital do Câncer de Ribeirão Preto",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/estudantes-da-usp-arrecadam-cabelo-no-outubro-rosa/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-09T19:21:35+00:00",
+   "tema": "Câncer",
+   "relevancia": 5,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261009_mechasdecabelo.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "USP students collect hair in Pink October",
+     "resumo": "Campaign continues until the end of the month and destines the wicks to the patients of the Ribeirão Preto Cancer Hospital"
+    },
+    "es": {
+     "titulo": "Los estudiantes de la USP recogen el cabello en octubre rosa",
+     "resumo": "La campaña continúa hasta fin de mes y destina las mechas a los pacientes del Hospital Oncológico de Ribeirão Preto"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O túmulo de Tutancâmon poderia conter pistas sobre uma misteriosa rainha egípcia?",
+   "resumo": "Sinais de câmaras escondidas nas paredes do túmulo do famoso rei menino aumentaram as esperanças entre os pesquisadores de encontrar indícios do local de sepultamento de Nefertiti - a madrasta e a sogra de Tutancâmon",
+   "url": "https://www.scientificamerican.com/article/could-tutankhamuns-tomb-hold-clues-to-a-mysterious-egyptian-queen/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-11T10:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/e458faa3-e39a-4879-ad2f-c64242b3aee6/tutankhamun-mask.jpg?m=1791483834.707&w=1200",
+   "foco": {
+    "inteira": true
+   },
+   "titulo_original": "Could Tutankhamun's tomb hold clues to a mysterious Egyptian queen?",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Podría la tumba de Tutankamón contener pistas sobre una misteriosa reina egipcia?",
+     "resumo": "Las señales de cámaras ocultas en las paredes de la tumba del famoso rey niño han despertado esperanzas entre los investigadores de encontrar indicios del lugar de entierro de Nefertiti: la madrastra y la suegra de Tutankamón"
+    }
+   },
+   "resumo_original": "Signs of hidden chambers in the walls of the famous boy king's tomb have raised hopes among researchers of finding hints of Nefertiti's burial place—Tutankhamun's stepmother and mother-in-law"
   },
   {
    "tipo": "noticia",
@@ -128,30 +152,6 @@
     }
    },
    "resumo_original": "One of the world's most common plastics may pose a hidden threat to liver health. Texas A&M researchers discovered that polyethylene microplastics can contribute to fatty liver disease, with potentially worse effects when combined with an…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "InfoGripe alerta para a importância da vacinação contra Covid-19 e VSR",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/infogripe-alerta-para-importancia-da-vacinacao-contra-covid-19-e-vsr",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-08T13:58:04+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infocapa_12.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "InfoGripe warns of the importance of vaccination against Covid-19 and RSV"
-    },
-    "es": {
-     "titulo": "InfoGripe alerta de la importancia de la vacunación contra el Covid-19 y el VSR"
-    }
-   }
   },
   {
    "tipo": "noticia",
@@ -229,53 +229,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O acerto de contas social é um retrato \"surreal\" dos danos das mídias sociais, diz cientista",
-   "resumo": "O filme é baseado na história real de como a funcionária do Facebook Frances Haugen denunciou as práticas de segurança da empresa",
-   "url": "https://www.scientificamerican.com/article/the-social-reckoning-is-a-surreal-portrait-of-social-medias-harms-scientist-says/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-09T15:00:00+00:00",
+   "titulo": "InfoGripe alerta para a importância da vacinação contra Covid-19 e VSR",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/infogripe-alerta-para-importancia-da-vacinacao-contra-covid-19-e-vsr",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-08T13:58:04+00:00",
    "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://static.scientificamerican.com/dam/asset/42d217d2-0655-4306-a50a-bd278e00f8b5/social-reckoning-image.jpeg?m=1791557280.905&w=1200",
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infocapa_12.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "The Social Reckoning is a ‘surreal’ portrait of social media’s harms, scientist says",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "InfoGripe warns of the importance of vaccination against Covid-19 and RSV"
+    },
     "es": {
-     "titulo": "The Social Reckoning es un retrato \"surrealista\" de los daños de las redes sociales, dice un científico",
-     "resumo": "La película se basa en la historia real de cómo la empleada de Facebook Frances Haugen denunció las prácticas de seguridad de la empresa"
+     "titulo": "InfoGripe alerta de la importancia de la vacunación contra el Covid-19 y el VSR"
     }
-   },
-   "resumo_original": "The movie is based on the true story of how Facebook employee Frances Haugen blew the whistle on the company’s safety practices"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O aumento da água está criando florestas fantasmas no interior dos EUA",
-   "resumo": "Florestas cheias de árvores mortas não são encontradas apenas nas costas dos EUA – elas também estão aparecendo longe do mar em torno de lagos de água doce",
-   "url": "https://www.newscientist.com/article/2593032-rising-water-is-creating-inland-ghost-forests-in-the-us/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-09T13:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 3,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315879901.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Rising water is creating inland ghost forests in the US",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El aumento del agua está creando bosques fantasmas en el interior de EE. UU.",
-     "resumo": "Los bosques llenos de árboles muertos no solo se encuentran en las costas de EE. UU., sino que también aparecen lejos del mar alrededor de lagos de agua dulce"
-    }
-   },
-   "resumo_original": "Forests full of dead trees aren’t just found by the US coasts – they are also appearing far from the sea around freshwater lakes"
+   }
   }
  ],
  "artigos": [
@@ -802,16 +776,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "estilo de vida do futuro pai e fertilizacao sem tratamento previo afetam desenvolvimento do bebe": "2026-10-01T13:33:17.628504+00:00",
-  "tres pesquisas da odontologia da usp em ribeirao preto sao premiadas em encontro nacional": "2026-10-01T13:33:17.628504+00:00",
-  "dialogos avancados desafios contemporaneos do humano": "2026-10-01T13:33:17.628504+00:00",
-  "procrastinacao duvidosa": "2026-10-01T13:33:17.628504+00:00",
-  "pos graduacao em controladoria e contabilidade celebra 21 anos e debate desafios da pesquisa": "2026-10-01T13:33:17.628504+00:00",
-  "the best popular science books of october 2026": "2026-10-01T13:33:17.628504+00:00",
-  "infogripe srag aumenta em criancas no rio de janeiro e no espirito santo": "2026-10-01T13:33:17.628504+00:00",
-  "how climate change is altering petrichor the glorious smell after it rains": "2026-10-01T13:33:17.628504+00:00",
-  "can mathematicians still refuse to use ai at this point": "2026-10-01T13:33:17.628504+00:00",
-  "democratic michigan senate hopeful abdul el sayed explains how science influences his politics": "2026-10-01T13:33:17.628504+00:00",
   "placenta wrap hastens erection recovery after prostate surgery": "2026-10-01T19:38:03.422612+00:00",
   "ex reitores destacam papel da universidade publica no desenvolvimento do pais": "2026-10-01T19:38:03.422612+00:00",
   "alzheimers risk gene apoe4 may have a reversible weakness": "2026-10-01T19:38:03.422612+00:00",
@@ -1015,6 +979,8 @@
   "scientists build a nuclear clock that could make atomic clocks obsolete": "2026-10-11T09:04:09.353021+00:00",
   "a surprisingly simple way to relieve knee arthritis pain without pills or surgery": "2026-10-11T09:04:09.353021+00:00",
   "how hurricane isaias got so dangerously strong so fast": "2026-10-11T09:04:09.353021+00:00",
-  "the social reckoning is a surreal portrait of social medias harms scientist says": "2026-10-11T09:04:09.353021+00:00"
+  "the social reckoning is a surreal portrait of social medias harms scientist says": "2026-10-11T09:04:09.353021+00:00",
+  "musculo e exercicio fisico nao saudavel sao temas de oficina na usp de ribeirao": "2026-10-11T15:49:04.454598+00:00",
+  "could tutankhamun s tomb hold clues to a mysterious egyptian queen": "2026-10-11T15:49:04.454598+00:00"
  }
 }
