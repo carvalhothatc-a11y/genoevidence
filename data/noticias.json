@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-11T15:49:04.454598+00:00",
+ "atualizado_em": "2026-10-11T20:23:56.484372+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -10,7 +10,7 @@
    "idioma": "pt",
    "data": "2026-10-09T18:09:46+00:00",
    "tema": "Saúde",
-   "relevancia": 6,
+   "relevancia": 5,
    "imagem": "https://jornal.usp.br/wp-content/uploads/2026/04/20260427_exerciciofisico.jpg",
    "foco": {
     "x": 100,
@@ -24,58 +24,6 @@
     "es": {
      "titulo": "El músculo y el ejercicio físico no saludable son temas del taller en la USP en Ribeirão",
      "resumo": "La reunión será en el Auditorio João Samuel, del Departamento de Patología de la Facultad de Medicina de Ribeirão Preto"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Nova abordagem para a educação física escolar valoriza autonomia e inclusão",
-   "resumo": "Desenvolvida por pesquisadores da Escola de Educação Física e Esporte, metodologia busca tornar as atividades mais inclusivas e incentivar a prática de exercícios desde a infância",
-   "url": "https://jornal.usp.br/radio-usp/nova-abordagem-para-a-educacao-fisica-escolar-valoriza-autonomia-e-inclusao/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-09T17:04:50+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/05/20230528_00_ebook_educacao_fisica_cultural.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "New approach to school physical education values autonomy and inclusion",
-     "resumo": "Developed by researchers from the School of Physical Education and Sport, the methodology seeks to make activities more inclusive and encourage the practice of exercises since childhood"
-    },
-    "es": {
-     "titulo": "Un nuevo enfoque de la educación física escolar valora la autonomía y la inclusión",
-     "resumo": "Desarrollada por investigadores de la Escuela de Educación Física y Deporte, la metodología busca hacer más inclusivas las actividades y fomentar la práctica de ejercicios desde la infancia"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
-   "resumo": "Campanha segue até o fim do mês e destina as mechas as pacientes do Hospital do Câncer de Ribeirão Preto",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/estudantes-da-usp-arrecadam-cabelo-no-outubro-rosa/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-09T19:21:35+00:00",
-   "tema": "Câncer",
-   "relevancia": 5,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261009_mechasdecabelo.jpeg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "USP students collect hair in Pink October",
-     "resumo": "Campaign continues until the end of the month and destines the wicks to the patients of the Ribeirão Preto Cancer Hospital"
-    },
-    "es": {
-     "titulo": "Los estudiantes de la USP recogen el cabello en octubre rosa",
-     "resumo": "La campaña continúa hasta fin de mes y destina las mechas a los pacientes del Hospital Oncológico de Ribeirão Preto"
     }
    }
   },
@@ -155,6 +103,58 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
+   "resumo": "Campanha segue até o fim do mês e destina as mechas as pacientes do Hospital do Câncer de Ribeirão Preto",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/estudantes-da-usp-arrecadam-cabelo-no-outubro-rosa/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-09T19:21:35+00:00",
+   "tema": "Câncer",
+   "relevancia": 4,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261009_mechasdecabelo.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "USP students collect hair in Pink October",
+     "resumo": "Campaign continues until the end of the month and destines the wicks to the patients of the Ribeirão Preto Cancer Hospital"
+    },
+    "es": {
+     "titulo": "Los estudiantes de la USP recogen el cabello en octubre rosa",
+     "resumo": "La campaña continúa hasta fin de mes y destina las mechas a los pacientes del Hospital Oncológico de Ribeirão Preto"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Novo medicamento amplia opções de tratamento para câncer de pâncreas metastático",
+   "resumo": "Daraxonrasib, aprovado pela agência reguladora dos Estados Unidos, apresentou resultados superiores aos da quimioterapia em pacientes que já haviam recebido tratamento",
+   "url": "https://jornal.usp.br/radio-usp/novo-medicamento-amplia-opcoes-de-tratamento-para-cancer-de-pancreas-metastatico/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-09T17:18:53+00:00",
+   "tema": "Câncer",
+   "relevancia": 4,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/20170529_00_Pancreas.png",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "New drug expands treatment options for metastatic pancreatic cancer",
+     "resumo": "Daraxonrasib, approved by the United States regulatory agency, showed superior results to chemotherapy in patients who had already received treatment"
+    },
+    "es": {
+     "titulo": "Un nuevo fármaco amplía las opciones de tratamiento para el cáncer de páncreas metastásico",
+     "resumo": "Daraxonrasib, aprobado por la agencia reguladora de los Estados Unidos, mostró resultados superiores a la quimioterapia en pacientes que ya habían recibido tratamiento"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Cientistas constroem um relógio nuclear que pode tornar os relógios atômicos obsoletos",
    "resumo": "Cientistas em Viena conseguiram um grande avanço na cronometragem ao criar o primeiro relógio nuclear autoestabilizante do mundo, uma tecnologia que poderia eventualmente superar até mesmo os relógios atômicos mais precisos. Em vez de confiar em...",
    "url": "https://www.sciencedaily.com/releases/2026/10/261008102701.htm",
@@ -202,30 +202,6 @@
     }
    },
    "resumo_original": "A surprisingly simple change in how you walk could help relieve knee arthritis pain and even slow joint damage. In a year-long clinical trial, researchers found that adjusting the angle of a person's foot while walking reduced…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Como o furacão Isaias ficou tão perigosamente forte tão rápido",
-   "resumo": "A tempestade de categoria 3 se intensificou durante a noite - e está se dirigindo para a Costa do Golfo dos EUA. Aqui está o que você precisa saber",
-   "url": "https://www.scientificamerican.com/article/how-hurricane-isaias-got-so-dangerously-strong-so-fast/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-09T20:05:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://static.scientificamerican.com/dam/asset/02dfbdd6-264a-43a5-a4fa-3d57439c8765/20262821210-20262821740-ABI-AL092026-GEOCOLOR-1000x1000.gif?m=1791578195.992&w=1200",
-   "foco": {
-    "inteira": true
-   },
-   "titulo_original": "How Hurricane Isaias got so dangerously strong so fast",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Cómo el huracán Isaías se hizo tan peligrosamente fuerte tan rápido",
-     "resumo": "La tormenta de categoría 3 se intensificó de la noche a la mañana y se dirige hacia la costa del Golfo de Estados Unidos. Esto es lo que debes saber"
-    }
-   },
-   "resumo_original": "The Category 3 storm intensified overnight—and is headed toward the U.S. Gulf Coast. Here’s what to know"
   },
   {
    "tipo": "noticia",
@@ -776,14 +752,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "placenta wrap hastens erection recovery after prostate surgery": "2026-10-01T19:38:03.422612+00:00",
-  "ex reitores destacam papel da universidade publica no desenvolvimento do pais": "2026-10-01T19:38:03.422612+00:00",
-  "alzheimers risk gene apoe4 may have a reversible weakness": "2026-10-01T19:38:03.422612+00:00",
-  "empreendedorismo e impacto social mostram como conhecimento e inovacao transformam vidas": "2026-10-01T19:38:03.422612+00:00",
-  "googles project suncatcher ai data center test has officially launched to space onboard spacex rocket": "2026-10-01T19:38:03.422612+00:00",
-  "scientists discover that earths crust has repeatedly rolled overand its still happening": "2026-10-01T19:38:03.422612+00:00",
-  "could quitting ultra processed food boost your mental health": "2026-10-01T19:38:03.422612+00:00",
-  "1 in 13 adults under 30 already had hidden artery plaque": "2026-10-01T19:38:03.422612+00:00",
   "can pancreatic cancer be stopped in its tracks radical tactic raises hopes": "2026-10-01T23:57:53.529959+00:00",
   "livro resgata trajetoria da educacao fisica e do estudo do movimento humano na usp": "2026-10-01T23:57:53.529959+00:00",
   "infogripe srag aumenta em criancas no rio de janeiro e sergipe": "2026-10-01T23:57:53.529959+00:00",
