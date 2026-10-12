@@ -1,4 +1,18 @@
 {
   "_como_usar": "Notícias escolhidas pela Thaisa. Aparecem primeiro no Início e na aba Notícias até a data em \"ate\" (ano-mês-dia). O robô de notícias traduz para inglês e espanhol sozinho. Para tirar antes, apague o item ou mude a data.",
-  "noticias": []
+  "noticias": [
+    {
+      "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
+      "resumo": "Karl Deisseroth, Peter Hegemann e Georg Nagel foram premiados “pelas descobertas sobre canais iônicos ativados por luz e optogenética”. Hegemann e Nagel acharam a canalrodopsina numa alga: sob luz azul, a proteína abre um canal, íons entram e geram um impulso elétrico em qualquer célula. Deisseroth pôs esse gene em neurônios e os acendeu com luz, primeiro em cultura, depois no cérebro de camundongos vivos. Hoje o método revela circuitos de memória e emoção, e é testado para devolver a visão. Ilustração: © The Nobel Committee for Physiology or Medicine. Ill. Mattias Karlén.",
+      "url": "https://www.nobelprize.org/prizes/medicine/2026/press-release/",
+      "fonte": "Assembleia Nobel do Instituto Karolinska",
+      "idioma": "pt",
+      "tema": "Genética",
+      "data": "2026-10-05T09:30:00+00:00",
+      "relevancia": 30,
+      "imagem": "https://www.nobelprize.org/uploads/2026/10/NP_POM_2026_3-2_01.jpg",
+      "foco": { "x": 50, "y": 50 },
+      "ate": "2026-10-19"
+    }
+  ]
 }
