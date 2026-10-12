@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { FERRAMENTAS_APP, LIMITES_AGENTE } from "@/lib/assistant/agente";
+import { IMAGEM_LIMITES, QUALIDADES, TAMANHOS, imagensStatus } from "@/lib/assistant/imagens/openai";
 import { precisaEsclarecer } from "@/lib/assistant/ferramentas/moleculas";
 import { GENINHO_SYSTEM, GeninhoRequest } from "@/lib/assistant/geninho";
 
@@ -89,5 +90,38 @@ describe("desambiguação de nomes moleculares", () => {
   it("palavra comum não é tratada como símbolo de gene", () => {
     expect(precisaEsclarecer("proteina", "qualquer coisa")).toBeNull();
     expect(precisaEsclarecer("DNA extraído", "qualquer coisa")).toBeNull();
+  });
+});
+
+describe("geração de ilustrações", () => {
+  it("diz honestamente que não está configurada quando falta a chave", () => {
+    const st = imagensStatus();
+    if (!process.env.OPENAI_API_KEY) {
+      expect(st.configured).toBe(false);
+      expect(st.reason).toMatch(/OPENAI_API_KEY/);
+    } else {
+      expect(st.configured).toBe(true);
+      expect(st.reason).toBeUndefined();
+    }
+  });
+
+  it("tem um modelo padrão e aceita troca por variável de ambiente", () => {
+    expect(imagensStatus().model).toMatch(/^gpt-image/);
+  });
+
+  it("os tamanhos e qualidades são os aceitos pela API", () => {
+    expect(TAMANHOS).toContain("1024x1024");
+    expect(TAMANHOS.every((t) => /^\d+x\d+$/.test(t))).toBe(true);
+    expect(QUALIDADES).toEqual(["low", "medium", "high"]);
+  });
+
+  it("há teto diário por pessoa, porque cada imagem é cobrada", () => {
+    expect(IMAGEM_LIMITES.porDia).toBeGreaterThan(0);
+    expect(IMAGEM_LIMITES.porDia).toBeLessThanOrEqual(50);
+  });
+
+  it("as instruções separam ilustração de estrutura real", () => {
+    expect(GENINHO_SYSTEM).toMatch(/NUNCA use como prova de estrutura/i);
+    expect(GENINHO_SYSTEM).toMatch(/busque a real primeiro/i);
   });
 });

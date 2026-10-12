@@ -9,7 +9,8 @@ type Molecula =
   | { tipo: "composto"; cid: number; nome: string; formula?: string; massa?: string; imagem2d: string; sdf3d: string; url: string }
   | { tipo: "proteina"; acesso: string; nome: string; genes: string[]; organismo: string; url: string };
 type Fonte = { titulo: string; url: string; origem: string; leitura: "encontrada" | "resumo" | "lida" };
-type Msg = { role: "user" | "assistant"; content: string; error?: boolean; note?: string; passos?: Passo[]; moleculas?: Molecula[]; fontes?: Fonte[] };
+type Ilustracao = { b64: string; descricao: string; modelo: string; promptUsado?: string };
+type Msg = { role: "user" | "assistant"; content: string; error?: boolean; note?: string; passos?: Passo[]; moleculas?: Molecula[]; fontes?: Fonte[]; ilustracoes?: Ilustracao[] };
 
 const LEITURA: Record<Fonte["leitura"], string> = {
   lida: "conteúdo lido",
@@ -99,14 +100,14 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
           buf = buf.slice(nl + 1);
           if (!raw.trim()) continue;
           const ev = JSON.parse(raw) as {
-            t: "texto" | "fim" | "erro" | "ferramenta" | "molecula" | "fontes";
+            t: "texto" | "fim" | "erro" | "ferramenta" | "molecula" | "ilustracao" | "fontes";
             v?: string;
             motivo?: string;
             nome?: string;
             rotulo?: string;
             estado?: Passo["estado"];
             detalhe?: string;
-            payload?: Molecula;
+            payload?: Molecula | Ilustracao;
             itens?: Fonte[];
           };
           if (ev.t === "texto" && ev.v) {
@@ -122,8 +123,11 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
               else passos.push(passo);
               return { ...m, passos };
             });
+          } else if (ev.t === "ilustracao" && ev.payload) {
+            const il = ev.payload as Ilustracao;
+            update((m) => ({ ...m, ilustracoes: [...(m.ilustracoes ?? []), il] }));
           } else if (ev.t === "molecula" && ev.payload) {
-            const mol = ev.payload;
+            const mol = ev.payload as Molecula;
             update((m) => ({ ...m, moleculas: [...(m.moleculas ?? []).filter((x) => JSON.stringify(x) !== JSON.stringify(mol)), mol] }));
           } else if (ev.t === "fontes" && ev.itens) {
             update((m) => ({ ...m, fontes: ev.itens }));
@@ -205,6 +209,7 @@ export function Geninho({ configured, isAdmin, motivo, contexto, sugestoes, perg
                     {m.passos && m.passos.length > 0 && <Passos passos={m.passos} />}
                     {m.content ? <RichText text={m.content} /> : !m.passos?.length ? <p className="ge-mono text-xs text-muted">pensando…</p> : null}
                     {m.moleculas?.map((mol, k) => <CartaoMolecula key={k} m={mol} />)}
+                    {m.ilustracoes?.map((il, k) => <CartaoIlustracao key={k} i={il} />)}
                     {m.fontes && m.fontes.length > 0 && <Fontes itens={m.fontes} />}
                     {m.note && <p className="mt-2 text-xs text-muted">{m.note}</p>}
                     {m.content && !m.error && (busy ? i < messages.length - 1 : true) && (
@@ -384,5 +389,31 @@ function Fontes({ itens }: { itens: Fonte[] }) {
         ))}
       </ul>
     </details>
+  );
+}
+
+/** Imagem criada por IA. O selo diz o que ela é — e o que ela não prova. */
+function CartaoIlustracao({ i }: { i: Ilustracao }) {
+  return (
+    <figure className="mt-2 grid gap-2 rounded-xl border border-[var(--kind-ilustracao)]/40 bg-[var(--kind-ilustracao-soft)]/40 p-3">
+      <span className="inline-flex w-fit items-center gap-1 rounded px-1.5 py-0.5 text-[11px] font-semibold text-[var(--kind-ilustracao)]">
+        <span aria-hidden="true">✎</span> Ilustração gerada por IA
+      </span>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={`data:image/png;base64,${i.b64}`} alt={i.descricao} className="w-full max-w-md rounded-lg" />
+      <figcaption className="grid gap-1 text-[12px]">
+        <span>{i.descricao}</span>
+        <span className="text-muted">
+          Criada por {i.modelo} a partir de uma descrição. É um desenho explicativo: não comprova estrutura química, forma nem comportamento de nenhuma molécula. Para isso,
+          peça a estrutura real.
+        </span>
+        {i.promptUsado && (
+          <details>
+            <summary className="cursor-pointer text-muted">Ver a descrição usada</summary>
+            <p className="mt-1 text-muted">{i.promptUsado}</p>
+          </details>
+        )}
+      </figcaption>
+    </figure>
   );
 }
