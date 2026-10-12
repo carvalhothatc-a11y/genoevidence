@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-12T07:28:57.375444+00:00",
+ "atualizado_em": "2026-10-12T18:02:44.731694+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -30,53 +30,200 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Músculo e exercício físico não saudável são temas de oficina na USP de Ribeirão",
-   "resumo": "Encontro será no Auditório João Samuel, do Departamento de Patologia da Faculdade de Medicina de Ribeirão Preto",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/musculo-e-exercicio-fisico-nao-saudavel-sao-temas-de-oficina-na-usp-de-ribeirao/",
-   "fonte": "Jornal da USP",
+   "titulo": "Novas fronteiras amazônicas",
+   "resumo": "Conheça o pequeno sapo-foguete, uma das possíveis novas espécies descobertas na serra do Aracá (AM)",
+   "url": "https://revistapesquisa.fapesp.br/novas-fronteiras-amazonicas/?utm_source=rss&utm_medium=rss&utm_campaign=novas-fronteiras-amazonicas",
+   "fonte": "Revista Pesquisa FAPESP",
    "idioma": "pt",
-   "data": "2026-10-09T18:09:46+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/04/20260427_exerciciofisico.jpg",
+   "data": "2026-10-12T12:03:31+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 9,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/f2f0ea8af67e567b436dc9a4ecd73c3ddadaeffd_1200-630.jpg",
    "foco": {
-    "x": 100,
+    "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Muscle and unhealthy physical exercise are themes of the workshop at USP in Ribeirão",
-     "resumo": "Meeting will be at the João Samuel Auditorium, of the Department of Pathology of the Faculty of Medicine of Ribeirão Preto"
+     "titulo": "New Amazonian frontiers",
+     "resumo": "Meet the small rocket frog, one of the possible new species discovered in the Aracá mountain range (AM)"
     },
     "es": {
-     "titulo": "El músculo y el ejercicio físico no saludable son temas del taller en la USP en Ribeirão",
-     "resumo": "La reunión será en el Auditorio João Samuel, del Departamento de Patología de la Facultad de Medicina de Ribeirão Preto"
+     "titulo": "Nuevas fronteras amazónicas",
+     "resumo": "Conoce a la pequeña rana cohete, una de las posibles nuevas especies descubiertas en la cordillera de Aracá (AM)"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "O túmulo de Tutancâmon poderia conter pistas sobre uma misteriosa rainha egípcia?",
-   "resumo": "Sinais de câmaras escondidas nas paredes do túmulo do famoso rei menino aumentaram as esperanças entre os pesquisadores de encontrar indícios do local de sepultamento de Nefertiti - a madrasta e a sogra de Tutancâmon",
-   "url": "https://www.scientificamerican.com/article/could-tutankhamuns-tomb-hold-clues-to-a-mysterious-egyptian-queen/",
+   "titulo": "Semana Nobel: cérebros controlados pela luz, partículas do espaço sideral e moléculas espelhadas",
+   "resumo": "Quebrando a ciência ganhadora do Prêmio Nobel deste ano, desde ligar e desligar células cerebrais com luz até capturar neutrinos cósmicos no gelo da Antártida e construir moléculas de imagem espelhada. Além disso, o DNA de uma tartaruga de 194 anos pode conter o...",
+   "url": "https://www.scientificamerican.com/podcast/episode/nobel-week-light-controlled-brains-particles-from-outer-space-and-mirror-molecules/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-11T10:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/e458faa3-e39a-4879-ad2f-c64242b3aee6/tutankhamun-mask.jpg?m=1791483834.707&w=1200",
+   "data": "2026-10-12T04:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 9,
+   "imagem": "https://static.scientificamerican.com/dam/asset/d6ef9d50-c92f-44b5-a584-23704d5f0ef6/2610_SQ_MON_OCT_12.png?m=1791575926.243&w=1200",
    "foco": {
-    "inteira": true
+    "x": 50,
+    "y": 50
    },
-   "titulo_original": "Could Tutankhamun's tomb hold clues to a mysterious Egyptian queen?",
+   "titulo_original": "Nobel week: light-controlled brains, particles from outer space and mirror molecules",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "¿Podría la tumba de Tutankamón contener pistas sobre una misteriosa reina egipcia?",
-     "resumo": "Las señales de cámaras ocultas en las paredes de la tumba del famoso rey niño han despertado esperanzas entre los investigadores de encontrar indicios del lugar de entierro de Nefertiti: la madrastra y la suegra de Tutankamón"
+     "titulo": "Semana Nobel: cerebros controlados por la luz, partículas del espacio exterior y moléculas espejo",
+     "resumo": "Desglosando la ciencia ganadora del Premio Nobel de este año, desde encender y apagar las células cerebrales con luz hasta capturar neutrinos cósmicos en el hielo antártico y construir moléculas de imagen especular. Además, el ADN de una tortuga de 194 años podría contener el..."
     }
    },
-   "resumo_original": "Signs of hidden chambers in the walls of the famous boy king's tomb have raised hopes among researchers of finding hints of Nefertiti's burial place—Tutankhamun's stepmother and mother-in-law"
+   "resumo_original": "Breaking down this year’s Nobel Prize–winning science, from switching brain cells on and off with light to catching cosmic neutrinos in Antarctic ice to building mirror-image molecules. Plus, a 194-year-old tortoise’s DNA might hold the…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Uma forma única, um ladrilho de einstein 3D, foi descoberto",
+   "resumo": "A IA ajudou a descobrir um objeto especial que pode preencher o espaço sem repetir padrões",
+   "url": "https://www.scientificamerican.com/article/a-unique-shape-a-3d-einstein-tile-has-been-discovered/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-12T10:00:00+00:00",
+   "tema": "Espaço",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/e2264ede-ffd2-40f0-96e0-11fd037635f3/chair44_graphic_leadImage.png?m=1791581085.38&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "A unique shape, a 3D einstein tile, has been discovered",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Se ha descubierto una forma única, un azulejo de Einstein 3D",
+     "resumo": "La IA ayudó a descubrir un objeto especial que puede llenar el espacio sin repetir patrones"
+    }
+   },
+   "resumo_original": "AI helped uncover a special object that can fill space without repeating patterns"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Medicamentos populares para perda de peso ligados a um problema surpreendente de unhas",
+   "resumo": "Os medicamentos populares para perda de peso GLP-1, como Ozempic e Wegovy, têm sido associados a taxas inesperadamente altas de descolamento de unhas, perda de cabelo e inflamação do couro cabeludo, com alguns problemas ocorrendo várias vezes mais frequentemente entre os usuários...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261011211604.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-12T09:34:48+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/fingernail-detachment.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Popular weight loss drugs linked to a surprising fingernail problem",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Fármacos populares para perder peso relacionados con un sorprendente problema en las uñas",
+     "resumo": "Los medicamentos populares para la pérdida de peso GLP-1, como Ozempic y Wegovy, se han relacionado con tasas inesperadamente altas de desprendimiento de uñas, pérdida de cabello e inflamación del cuero cabelludo, con algunos problemas que ocurren varias veces más frecuentemente entre los usuarios..."
+    }
+   },
+   "resumo_original": "Popular GLP-1 weight loss drugs, such as Ozempic and Wegovy, have been linked to unexpectedly high rates of nail detachment, hair loss, and scalp inflammation, with some problems occurring several times more frequently among users…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Por que o pior El Niño matou milhões – e como podemos evitar uma repetição",
+   "resumo": "O mundo não experimentava um El Niño tão forte desde a década de 1870, quando provocou uma terrível fome global. Estamos melhor preparados desta vez?",
+   "url": "https://www.newscientist.com/article/2592513-why-the-worst-el-nino-killed-millions-and-how-we-can-avoid-a-repeat/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-12T09:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315671720.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "titulo_original": "Why the worst El Niño killed millions – and how we can avoid a repeat",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Por qué el peor El Niño mató a millones y cómo podemos evitar que se repita",
+     "resumo": "El mundo no ha experimentado un El Niño tan fuerte desde la década de 1870, cuando provocó una terrible hambruna mundial. ¿Estamos mejor preparados esta vez?"
+    }
+   },
+   "resumo_original": "The world hasn't experienced an El Niño this strong since the 1870s, when it sparked a terrible global famine. Are we better prepared this time?"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Imagem de microscopia premiada desqualificada pelo uso de IA",
+   "resumo": "O incidente provocou discussões sobre o uso de inteligência artificial em imagens científicas.",
+   "url": "https://www.nature.com/articles/d41586-026-03240-7",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-12T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "Award-winning microscopy image disqualified over AI use",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Imagen de microscopía galardonada descalificada por el uso de IA",
+     "resumo": "El incidente ha provocado discusiones sobre el uso de la inteligencia artificial en las imágenes científicas."
+    }
+   },
+   "resumo_original": "The incident has prompted discussions about the use of artificial intelligence in scientific imagery."
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas descobrem por que uma doença de cogumelos de 100 anos não desaparece",
+   "resumo": "Os cientistas descobriram um segredo surpreendente por trás de uma doença causada por cogumelos que frustra os produtores há mais de um século: ela envolve mais de 17 espécies de bactérias nocivas, não apenas uma. A descoberta pode explicar por que os tratamentos...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261008102716.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-11T20:01:25+00:00",
+   "tema": "Saúde",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/mushroom-farm.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists discover why a 100-year-old mushroom disease won't go away",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos descubren por qué una enfermedad causada por hongos hace 100 años no desaparecerá",
+     "resumo": "Los científicos han descubierto un sorprendente secreto detrás de una enfermedad de hongos que ha frustrado a los productores durante más de un siglo: involucra a más de 17 especies de bacterias dañinas, no solo a una. El descubrimiento podría explicar por qué los tratamientos..."
+    }
+   },
+   "resumo_original": "Scientists have uncovered a surprising secret behind a mushroom disease that has frustrated growers for more than a century: It involves more than 17 species of harmful bacteria, not just one. The discovery could explain why treatments…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Apenas 10 minutos de exercício diário podem desbloquear um sono mais profundo",
+   "resumo": "Dormir melhor pode ser tão simples quanto se movimentar um pouco mais a cada dia. Pesquisadores da Universidade do Texas em Austin descobriram que as pessoas que se exercitavam com mais frequência experimentavam um sono mais profundo e restaurador, o que é essencial para...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261008102721.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-12T00:51:31+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/happy-young-woman-waking-up-rested.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Just 10 minutes of daily exercise could unlock deeper sleep",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Solo 10 minutos de ejercicio diario podrían desbloquear un sueño más profundo",
+     "resumo": "Dormir mejor puede ser tan simple como moverse un poco más cada día. Investigadores de la Universidad de Texas en Austin descubrieron que las personas que hacían ejercicio con más frecuencia experimentaban un sueño más profundo y reparador, que es esencial para..."
+    }
+   },
+   "resumo_original": "Getting better sleep might be as simple as moving a little more every day. Researchers at The University of Texas at Austin found that people who exercised more frequently experienced more deep, restorative sleep, which is essential for…"
   },
   {
    "tipo": "noticia",
@@ -113,7 +260,7 @@
    "idioma": "pt",
    "data": "2026-10-09T17:18:53+00:00",
    "tema": "Câncer",
-   "relevancia": 4,
+   "relevancia": 3,
    "imagem": "https://jornal.usp.br/wp-content/uploads/20170529_00_Pancreas.png",
    "foco": {
     "x": 50,
@@ -639,17 +786,8 @@
   "ScienceDaily · Saúde",
   "Europe PMC"
  ],
- "erros": [
-  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
- ],
+ "erros": [],
  "mostradas": {
-  "projeto usa dados do sus para estimar risco de violencia contra a mulher": "2026-10-02T12:51:48.832062+00:00",
-  "lancamento do livro a ciencia do universo": "2026-10-02T12:51:48.832062+00:00",
-  "will the backlash against ai data centres hit quantum computing too": "2026-10-02T12:51:48.832062+00:00",
-  "first week of life seems crucial for future allergy and eczema risk": "2026-10-02T12:51:48.832062+00:00",
-  "how to see rainbows on exoplanets": "2026-10-02T12:51:48.832062+00:00",
-  "how to respond to hate speech without fuelling it further": "2026-10-02T12:51:48.832062+00:00",
-  "stunning fossil shows dinosaurs distinctive path to flight": "2026-10-02T12:51:48.832062+00:00",
   "sus passa a oferecer tres novos medicamentos de alta tecnologia para o tratamento de cancer pulmonar": "2026-10-02T18:32:15.018849+00:00",
   "usp seleciona voluntarios pos avc para estudo sobre reabilitacao motora em casa": "2026-10-02T18:32:15.018849+00:00",
   "canal saude estreia nova temporada do ligado em saude": "2026-10-02T18:32:15.018849+00:00",
@@ -835,6 +973,14 @@
   "could tutankhamun s tomb hold clues to a mysterious egyptian queen": "2026-10-11T15:49:04.454598+00:00",
   "cellular and spatial context of genetic convergence between insomnia liability and dti alps perivascular diffusivity": "2026-10-12T00:22:42.302403+00:00",
   "hoxa5 silencing via dna methylation reveals the critical role of hox gene deregulation in oral carcinogenesis": "2026-10-12T00:22:42.302403+00:00",
-  "nobel de medicina 2026 vai para a optogenetica controlar neuronios com luz": "2026-10-12T00:22:42.302403+00:00"
+  "nobel de medicina 2026 vai para a optogenetica controlar neuronios com luz": "2026-10-12T00:22:42.302403+00:00",
+  "novas fronteiras amazonicas": "2026-10-12T18:02:44.731694+00:00",
+  "nobel week light controlled brains particles from outer space and mirror molecules": "2026-10-12T18:02:44.731694+00:00",
+  "a unique shape a 3d einstein tile has been discovered": "2026-10-12T18:02:44.731694+00:00",
+  "popular weight loss drugs linked to a surprising fingernail problem": "2026-10-12T18:02:44.731694+00:00",
+  "why the worst el nino killed millions and how we can avoid a repeat": "2026-10-12T18:02:44.731694+00:00",
+  "award winning microscopy image disqualified over ai use": "2026-10-12T18:02:44.731694+00:00",
+  "scientists discover why a 100 year old mushroom disease won t go away": "2026-10-12T18:02:44.731694+00:00",
+  "just 10 minutes of daily exercise could unlock deeper sleep": "2026-10-12T18:02:44.731694+00:00"
  }
 }
