@@ -2,7 +2,7 @@ import "server-only";
 import type Anthropic from "@anthropic-ai/sdk";
 import { buscarPubmed } from "./ferramentas/pubmed";
 import { buscarComposto, buscarEstruturas, buscarProteina, detalharEstrutura } from "./ferramentas/moleculas";
-import { gerarImagem, imagensStatus, QUALIDADES, TAMANHOS, type Qualidade, type Tamanho } from "./imagens/openai";
+import { gerarImagem, imagensDisponiveis, QUALIDADES, TAMANHOS, type Qualidade, type Tamanho } from "./imagens/openai";
 
 /**
  * Ciclo de execução do Geninho: compreender → escolher ferramentas → executar → conferir os
@@ -269,7 +269,7 @@ export async function rodarAgente(o: OpcoesAgente): Promise<void> {
   const ferramentas = [
     ...FERRAMENTAS_APP,
     // Só oferecemos a ferramenta quando ela existe de verdade neste servidor.
-    ...(o.ilustracoes && imagensStatus().configured ? [FERRAMENTA_ILUSTRACAO] : []),
+    ...(o.ilustracoes && imagensDisponiveis().ok ? [FERRAMENTA_ILUSTRACAO] : []),
     ...(o.web
       ? [
           { type: "web_search_20260209" as const, name: "web_search" as const, max_uses: LIMITES_AGENTE.buscasWeb },

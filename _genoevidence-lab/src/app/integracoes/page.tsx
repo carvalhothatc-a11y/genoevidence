@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/ui/Card";
 import { Alert } from "@/components/ui/Alert";
 import { assistantStatus } from "@/lib/assistant/status";
-import { imagensStatus } from "@/lib/assistant/imagens/openai";
+import { imagensDisponiveis, imagensStatus } from "@/lib/assistant/imagens/openai";
 import { requirePageUser } from "@/lib/projects/server";
 
 export const metadata: Metadata = { title: "Integrações" };
@@ -24,6 +24,7 @@ export default async function IntegrationsPage() {
   await requirePageUser("/integracoes");
   const assistant = assistantStatus();
   const imagens = imagensStatus();
+  const imagensOk = imagensDisponiveis();
 
   const items: Integration[] = [
     {
@@ -116,14 +117,17 @@ export default async function IntegrationsPage() {
     },
     {
       name: "Geração de ilustrações por IA (OpenAI)",
-      state: imagens.configured ? "sob_demanda" : "nao_configurado",
-      what: imagens.configured
-        ? `O Geninho pode criar uma ilustração educativa por pergunta, pelo modelo ${imagens.model}. A imagem aparece sempre com o selo “ilustração gerada por IA”: ela explica um processo, não comprova estrutura química nem comportamento de molécula. Para estrutura real, o Geninho usa RCSB PDB e PubChem.`
-        : "Não há serviço de geração de imagens configurado. A Anthropic não gera imagens; falta a chave da OpenAI neste servidor. Enquanto isso o Geninho não oferece a ferramenta e nenhuma imagem é inventada no lugar.",
+      state: imagensOk.ok ? "sob_demanda" : imagens.configured ? "indisponivel" : "nao_configurado",
+      what: !imagens.configured
+        ? "Não há serviço de geração de imagens configurado. A Anthropic não gera imagens; falta a chave da OpenAI neste servidor. Enquanto isso o Geninho não oferece a ferramenta e nenhuma imagem é inventada no lugar."
+        : !imagensOk.ok
+          ? `A chave da OpenAI está configurada, mas a geração está indisponível agora: ${imagensOk.motivo} Enquanto isso o Geninho não oferece a ferramenta.`
+          : `O Geninho pode criar uma ilustração educativa por pergunta, pelo modelo ${imagens.model}. A imagem aparece sempre com o selo “ilustração gerada por IA”: ela explica um processo, não comprova estrutura química nem comportamento de molécula. Para estrutura real, o Geninho usa RCSB PDB e PubChem.`
+        ,
       dataSent: imagens.configured
         ? "Só a descrição da imagem que o Geninho escreve. Seus arquivos, projetos, nome e e-mail não são enviados. A imagem volta no fluxo da resposta e não é guardada no servidor."
         : "Nada é enviado enquanto não houver integração configurada.",
-      verified: imagens.configured ? "Chave presente no servidor." : "Sem integração para verificar.",
+      verified: imagens.configured ? "Chave conferida em 13/10/2026: aceita pela OpenAI (a geração em si depende de crédito na conta)." : "Sem integração para verificar.",
     },
     {
       name: "Busca de referências no PubMed (NCBI E-utilities)",

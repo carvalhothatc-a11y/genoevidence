@@ -54,6 +54,21 @@ export type ImagemGerada = {
 
 export type ResultadoImagem = { ok: true; imagem: ImagemGerada } | { ok: false; motivo: string };
 
+/**
+ * Quando a OpenAI responde que a conta está sem crédito, guardamos isso por um tempo: não adianta
+ * oferecer a ferramenta e falhar em toda pergunta. Some sozinho, para voltar a funcionar assim que
+ * o crédito entrar, sem precisar reiniciar o servidor.
+ */
+const PAUSA_SEM_CREDITO_MS = 30 * 60_000;
+let semCreditoAte = 0;
+
+/** A geração está disponível agora? Falso também quando a conta ficou sem crédito há pouco. */
+export function imagensDisponiveis(): { ok: boolean; motivo?: string } {
+  if (!imagensStatus().configured) return { ok: false, motivo: "Chave da OpenAI não configurada neste servidor." };
+  if (Date.now() < semCreditoAte) return { ok: false, motivo: "A conta da OpenAI ficou sem crédito. A geração volta sozinha assim que houver saldo." };
+  return { ok: true };
+}
+
 type RespostaOpenAI = {
   data?: { b64_json?: string; revised_prompt?: string }[];
   error?: { message?: string; type?: string; code?: string };
@@ -93,7 +108,11 @@ export async function gerarImagem(prompt: string, opcoes?: { tamanho?: Tamanho; 
     return { ok: false, motivo: `A OpenAI devolveu uma resposta inesperada (${res.status}).` };
   }
 
-  if (!res.ok) return { ok: false, motivo: mensagemDeErro(res.status, corpo.error) };
+  if (!res.ok) {
+    if (res.status === 429 && /quota|billing|credit/i.test(corpo.error?.message ?? "")) semCreditoAte = Date.now() + PAUSA_SEM_CREDITO_MS;
+    return { ok: false, motivo: mensagemDeErro(res.status, corpo.error) };
+  }
+  semCreditoAte = 0;
 
   const b64 = corpo.data?.[0]?.b64_json;
   if (!b64) return { ok: false, motivo: "A OpenAI respondeu, mas não veio imagem nenhuma." };

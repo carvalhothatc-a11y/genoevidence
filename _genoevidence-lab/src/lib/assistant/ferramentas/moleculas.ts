@@ -17,19 +17,49 @@ import "server-only";
 const TEMPO_LIMITE = 15_000;
 const AGENTE = "GenoLab/0.1 (https://genoevidence.com; laboratorio virtual educativo)";
 
-async function pegarJson<T>(url: string, init?: RequestInit): Promise<T | null> {
-  try {
-    const r = await fetch(url, {
-      ...init,
-      headers: { Accept: "application/json", "User-Agent": AGENTE, ...(init?.headers ?? {}) },
-      signal: AbortSignal.timeout(TEMPO_LIMITE),
-      cache: "no-store",
-    });
-    if (!r.ok) return null;
-    return (await r.json()) as T;
-  } catch {
-    return null;
+/**
+ * Resultado de uma consulta a uma base pública. "vazio" (404/sem itens) é DIFERENTE de "ocupado"
+ * ou "falhou": dizer "não encontrei" quando o serviço recusou o pedido seria mentir sobre a causa.
+ */
+type Resposta<T> = { estado: "ok"; dados: T } | { estado: "vazio" } | { estado: "ocupado" } | { estado: "falhou"; status?: number };
+
+const ESPERA_MS = 400;
+const dormir = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+async function pegarJson<T>(url: string, init?: RequestInit, tentativas = 2): Promise<Resposta<T>> {
+  for (let i = 0; i < tentativas; i++) {
+    try {
+      const r = await fetch(url, {
+        ...init,
+        headers: { Accept: "application/json", "User-Agent": AGENTE, ...(init?.headers ?? {}) },
+        signal: AbortSignal.timeout(TEMPO_LIMITE),
+        cache: "no-store",
+      });
+      if (r.ok) return { estado: "ok", dados: (await r.json()) as T };
+      if (r.status === 404) return { estado: "vazio" };
+      // PubChem e outros devolvem 503/429 quando estão sobrecarregados: esperamos e tentamos de novo
+      if ((r.status === 503 || r.status === 429) && i + 1 < tentativas) {
+        await dormir(ESPERA_MS * (i + 1));
+        continue;
+      }
+      if (r.status === 503 || r.status === 429) return { estado: "ocupado" };
+      return { estado: "falhou", status: r.status };
+    } catch {
+      if (i + 1 < tentativas) {
+        await dormir(ESPERA_MS * (i + 1));
+        continue;
+      }
+      return { estado: "falhou" };
+    }
   }
+  return { estado: "falhou" };
+}
+
+/** Motivo honesto, de acordo com o que a base respondeu. */
+function motivoDe(r: Resposta<unknown>, base: string, termo: string): string {
+  if (r.estado === "ocupado") return `O ${base} está recusando pedidos agora (muitas consultas). Tente de novo em alguns instantes.`;
+  if (r.estado === "falhou") return `O ${base} não respondeu agora${r.status ? ` (erro ${r.status})` : ""}.`;
+  return `Nada encontrado no ${base} para “${termo}”.`;
 }
 
 // ---------------------------------------------------------------- tipos
@@ -95,8 +125,9 @@ export async function buscarProteina(nome: string, organismoId?: number, limite 
   if (organismoId) partes.push(`organism_id:${organismoId}`);
   const q = encodeURIComponent(partes.join(" AND "));
   const url = `https://rest.uniprot.org/uniprotkb/search?query=${q}&fields=accession,id,protein_name,gene_names,organism_name&format=json&size=${limite}`;
-  const d = await pegarJson<UniProtResp>(url);
-  if (!d) return { encontrado: false, motivo: "O UniProt não respondeu agora.", consulta: termo };
+  const r0 = await pegarJson<UniProtResp>(url);
+  if (r0.estado !== "ok") return { encontrado: false, motivo: motivoDe(r0, "UniProt", termo), consulta: termo };
+  const d = r0.dados;
   const itens = (d.results ?? []).map((r) => ({
     tipo: "proteina" as const,
     acesso: r.primaryAccession,
@@ -127,24 +158,67 @@ export async function buscarEstruturas(texto: string, limite = 5): Promise<Resul
     return_type: "entry",
     request_options: { paginate: { start: 0, rows: Math.min(limite, 10) }, results_verbosity: "compact" },
   };
-  const d = await pegarJson<RcsbBusca>("https://search.rcsb.org/rcsbsearch/v2/query", {
+  const r0 = await pegarJson<RcsbBusca>("https://search.rcsb.org/rcsbsearch/v2/query", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(corpo),
   });
-  if (!d) return { encontrado: false, motivo: "O RCSB PDB não respondeu agora.", consulta: termo };
-  const ids = (d.result_set ?? []).filter((x) => /^[0-9][A-Za-z0-9]{3}$/.test(x));
+  if (r0.estado === "vazio") return { encontrado: false, motivo: `Nenhuma estrutura no RCSB PDB para “${termo}”.`, consulta: termo };
+  if (r0.estado !== "ok") return { encontrado: false, motivo: motivoDe(r0, "RCSB PDB", termo), consulta: termo };
+  const ids = (r0.dados.result_set ?? []).filter((x) => /^[0-9][A-Za-z0-9]{3}$/.test(x));
   if (!ids.length) return { encontrado: false, motivo: `Nenhuma estrutura no RCSB PDB para “${termo}”.`, consulta: termo };
   const itens = await Promise.all(ids.map(detalharEstrutura));
   return { encontrado: true, itens: itens.filter((x): x is EstruturaPdb => Boolean(x)), consulta: termo };
+}
+
+/**
+ * Estruturas que REALMENTE contêm a proteína, procuradas pelo acesso UniProt.
+ *
+ * Isto substitui a busca por texto quando já sabemos a proteína: procurar "p53" em texto livre traz
+ * estruturas que só mencionam p53 no título (por exemplo a ASPP2, que não é p53). Aqui o critério é
+ * a identidade da sequência depositada, então não há troca silenciosa por algo parecido.
+ */
+export async function estruturasDaProteina(acessoUniProt: string, limite = 5): Promise<ResultadoBusca<EstruturaPdb>> {
+  const acesso = acessoUniProt.trim().toUpperCase();
+  if (!/^[A-Z0-9]{6,10}$/.test(acesso)) return { encontrado: false, motivo: "Acesso UniProt inválido.", consulta: acesso };
+  const corpo = {
+    query: {
+      type: "terminal",
+      service: "text",
+      parameters: {
+        attribute: "rcsb_polymer_entity_container_identifiers.reference_sequence_identifiers.database_accession",
+        operator: "exact_match",
+        value: acesso,
+      },
+    },
+    return_type: "entry",
+    request_options: {
+      paginate: { start: 0, rows: Math.min(limite, 10) },
+      results_verbosity: "compact",
+      // melhor resolução primeiro: a estrutura mais bem resolvida costuma ser a mais útil
+      sort: [{ sort_by: "rcsb_entry_info.resolution_combined", direction: "asc" }],
+    },
+  };
+  const r0 = await pegarJson<RcsbBusca>("https://search.rcsb.org/rcsbsearch/v2/query", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(corpo),
+  });
+  if (r0.estado === "vazio") return { encontrado: false, motivo: `Nenhuma estrutura no RCSB PDB contém a proteína ${acesso}.`, consulta: acesso };
+  if (r0.estado !== "ok") return { encontrado: false, motivo: motivoDe(r0, "RCSB PDB", acesso), consulta: acesso };
+  const ids = (r0.dados.result_set ?? []).filter((x) => /^[0-9][A-Za-z0-9]{3}$/.test(x));
+  if (!ids.length) return { encontrado: false, motivo: `Nenhuma estrutura no RCSB PDB contém a proteína ${acesso}.`, consulta: acesso };
+  const itens = (await Promise.all(ids.map(detalharEstrutura))).filter((x): x is EstruturaPdb => Boolean(x));
+  return { encontrado: true, itens, consulta: acesso };
 }
 
 /** Metadados de um código PDB. Devolve null quando o código não existe. */
 export async function detalharEstrutura(pdbId: string): Promise<EstruturaPdb | null> {
   const id = pdbId.trim().toUpperCase();
   if (!/^[0-9][A-Za-z0-9]{3}$/.test(id)) return null;
-  const d = await pegarJson<RcsbEntrada>(`https://data.rcsb.org/rest/v1/core/entry/${id}`);
-  if (!d) return null;
+  const r0 = await pegarJson<RcsbEntrada>(`https://data.rcsb.org/rest/v1/core/entry/${id}`);
+  if (r0.estado !== "ok") return null;
+  const d = r0.dados;
   return {
     pdbId: id,
     titulo: d.struct?.title ?? id,
@@ -171,12 +245,14 @@ const PUG = "https://pubchem.ncbi.nlm.nih.gov/rest/pug";
 export async function buscarComposto(nome: string, limite = 1): Promise<ResultadoBusca<Composto>> {
   const termo = nome.trim().slice(0, 120);
   if (!termo) return { encontrado: false, motivo: "Nome vazio.", consulta: termo };
-  const cids = await pegarJson<PubChemCids>(`${PUG}/compound/name/${encodeURIComponent(termo)}/cids/JSON`);
-  const lista = (cids?.IdentifierList?.CID ?? []).slice(0, Math.min(limite, 5));
+  const r0 = await pegarJson<PubChemCids>(`${PUG}/compound/name/${encodeURIComponent(termo)}/cids/JSON`, undefined, 3);
+  if (r0.estado === "vazio") return { encontrado: false, motivo: `Nenhum composto no PubChem com o nome “${termo}”.`, consulta: termo };
+  if (r0.estado !== "ok") return { encontrado: false, motivo: motivoDe(r0, "PubChem", termo), consulta: termo };
+  const lista = (r0.dados.IdentifierList?.CID ?? []).slice(0, Math.min(limite, 5));
   if (!lista.length) return { encontrado: false, motivo: `Nenhum composto no PubChem com o nome “${termo}”.`, consulta: termo };
   // O PubChem renomeou CanonicalSMILES para ConnectivitySMILES; pedimos os dois nomes.
-  const props = await pegarJson<PubChemProps>(`${PUG}/compound/cid/${lista.join(",")}/property/MolecularFormula,MolecularWeight,IUPACName,SMILES,ConnectivitySMILES/JSON`);
-  const porCid = new Map((props?.PropertyTable?.Properties ?? []).map((p) => [p.CID, p]));
+  const props = await pegarJson<PubChemProps>(`${PUG}/compound/cid/${lista.join(",")}/property/MolecularFormula,MolecularWeight,IUPACName,SMILES,ConnectivitySMILES/JSON`, undefined, 3);
+  const porCid = new Map((props.estado === "ok" ? (props.dados.PropertyTable?.Properties ?? []) : []).map((p) => [p.CID, p]));
   const itens: Composto[] = lista.map((cid) => {
     const p = porCid.get(cid);
     return {

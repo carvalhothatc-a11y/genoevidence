@@ -18,6 +18,7 @@ import { Materiais } from "./Materiais";
 import { Sintese } from "./Sintese";
 import { Visualizacao } from "./Visualizacao";
 import { ResultadosExp } from "./ResultadosExp";
+import { Moleculas } from "./Moleculas";
 import { Salvar, type ProjetoOpcao } from "./Salvar";
 import { Versoes } from "./Versoes";
 import { IC, Icone } from "./ui";
@@ -209,6 +210,7 @@ export function AreaTrabalho({
               <div className={gerado ? "h-[min(72vh,640px)] min-h-[420px]" : "lg:h-full"}>
                 <Visualizacao onPerguntar={perguntar} />
               </div>
+              {gerado && s.cena && <Moleculas texto={s.cena.etapas.map((e) => e.texto).join(" ")} />}
               {gerado && <ResultadosExp onAvaliarPcr={avaliarPcr} />}
               {gerado && ideia.cenarios.length > 0 && (
                 <div className="flex flex-wrap gap-2">

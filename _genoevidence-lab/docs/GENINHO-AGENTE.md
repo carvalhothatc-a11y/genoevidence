@@ -92,11 +92,11 @@ Unidade: `tests/unit/agente.test.ts` (contratos das ferramentas, limites e instr
 Pela ordem de prioridade combinada:
 
 1. ~~Busca científica com fontes~~ — **pronto**.
-2. Identificação de moléculas — **pronta**. Falta **ligar à cena do procedimento**: hoje o cartão
-   aparece na conversa, não dentro da cena 3D da área de trabalho. O visualizador Mol* ainda exige
-   importar a estrutura num projeto.
-3. **Geração de imagens** — não configurada. A Anthropic não gera imagens; a escolha foi OpenAI
-   (gpt-image) e falta a conta e a chave. Enquanto não houver, a Integrações deve declarar
-   “não configurada” — nunca apresentar saída simulada como geração real.
+2. ~~Identificação de moléculas, ligada à cena do procedimento~~ — **pronto**. O painel
+   “Moléculas citadas” fica abaixo da cena na área de trabalho, e o Mol\* abre ali mesmo, sem
+   precisar importar a estrutura num projeto. Ver `docs/MOLECULAS-NA-CENA.md`.
+3. **Geração de imagens** — chave da OpenAI configurada e conferida (aceita pela API), mas a conta
+   está **sem crédito**: nenhuma imagem é gerada. Enquanto for assim, o Geninho **não oferece** a
+   ferramenta e a Integrações mostra “indisponível” com a causa. Nada simulado entra no lugar.
 4. Composição de processos animados com moléculas reais.
 5. Memória por projeto e avaliações com casos revisados.

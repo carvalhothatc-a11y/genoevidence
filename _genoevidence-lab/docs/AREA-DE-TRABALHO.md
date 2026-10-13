@@ -15,6 +15,7 @@ A entrada é `/laboratorio`; a bancada 3D antiga continua em `/laboratorio/banca
 | Animações | `src/components/holo/*` | R3F: rótulos clicáveis ligados ao objeto da biblioteca, zoom, reiniciar visão, giro suave com o cursor, termociclador. Sem WebGL: ilustração 2D. |
 | Cálculos e previsões | `src/lib/ideia/*`, `src/lib/models/pcr.ts` | Perfil do programa da PCR (cálculo), posição esperada de banda (ilustração), avaliação por regras com fonte. Probabilidade de sucesso suspensa sem modelo validado. |
 | Persistência | `src/lib/experimento/store.ts`, `/api/projects/[id]/experimentos` | Rascunho no navegador (sem arquivos); ao salvar, arquivos originais vão para o projeto e todas as versões são preservadas. |
+| Moléculas reais | `src/lib/cena/moleculas.ts`, `src/components/workspace/Moleculas.tsx`, `/api/moleculas/*` | Painel abaixo da cena: nomes citados no experimento viram dado real (UniProt, RCSB PDB, PubChem) e estrutura no Mol\*. Gene, proteína e composto não se substituem; termo ambíguo pergunta antes. A busca só acontece ao clicar. Ver `docs/MOLECULAS-NA-CENA.md`. |
 | Interface | `src/components/workspace/*`, `src/store/experimento.ts` | Computador: materiais à esquerda, visualização à direita; celular: empilhado. Geninho dá as instruções iniciais e, sob demanda, recebe a síntese (com autorização). |
 
 ## Resultados (sempre identificados)
@@ -32,6 +33,7 @@ node scripts/e2e-area.mjs <base> <senha-demo> <capturas>     # fluxo completo da
 node scripts/e2e-area.mjs <base> <senha-demo> <capturas> --ia  # + identificação de foto e Geninho com contexto (API real)
 node scripts/teste-privacidade.mjs <base> <senha-demo> <dados> # CSP sem violações, privacidade, exclusão de conta
 node scripts/e2e-estudio.mjs <base> <senha-demo> <capturas>  # bancada 3D (PCR)
+node scripts/e2e-moleculas.mjs <base> <senha-demo> <capturas> # moléculas citadas: dado real, desambiguação e Mol*
 ```
 
 ## Limitações conhecidas
@@ -41,4 +43,5 @@ node scripts/e2e-estudio.mjs <base> <senha-demo> <capturas>  # bancada 3D (PCR)
 - Equipamentos sem forma 3D (banho-maria, incubadora, transiluminador, placa de poços…) aparecem como rótulo.
 - Reconhecimento de voz depende do navegador (Chrome/Edge); no Chrome o áudio é processado pelo Google.
 - Comparação de versões usa ilustração 2D sincronizada.
+- A cena 3D é **ilustração**, com objetos genéricos; a molécula real fica no painel “Moléculas citadas”, separado e identificado.
 - Não há leitura automática do conteúdo de referências por DOI (ficam “cadastradas”); anexe o PDF como relatório para análise.
