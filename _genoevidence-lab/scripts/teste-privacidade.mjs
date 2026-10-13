@@ -2,7 +2,7 @@
 // Uso: node scripts/teste-privacidade.mjs <base> <arquivo-senha-admin-demo> <diretório-de-dados>
 // Instância de demonstração apenas (contas fictícias). Não imprime credenciais.
 import { chromium } from "@playwright/test";
-import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { randomBytes } from "node:crypto";
 import path from "node:path";
 
@@ -72,13 +72,36 @@ const violacoes = (page) => page.evaluate(() => window.__csp ?? []);
   await page.getByRole("button", { name: "Entrar" }).click();
   await page.waitForURL((u) => !u.pathname.startsWith("/entrar"), { timeout: 30000 });
 
+  // O caderno é da pessoa e fica fora dos projetos: plantamos um registro para conferir que a
+  // exclusão da conta leva o caderno junto, em vez de deixá-lo órfão no disco.
+  const cadernoDaConta = path.join(dataDir, "caderno", globalThis.contaTeste.id);
+  mkdirSync(path.join(cadernoDaConta, "registros"), { recursive: true });
+  writeFileSync(
+    path.join(cadernoDaConta, "registros", "r_teste12345678.json"),
+    JSON.stringify({
+      id: "r_teste12345678",
+      dia: "2026-10-09",
+      texto: "registro fictício de teste",
+      criadoEm: new Date().toISOString(),
+      atualizadoEm: new Date().toISOString(),
+      arquivos: [],
+      versoes: [],
+    }),
+  );
+
   await page.goto(`${base}/admin`);
   const linha = page.getByRole("row").filter({ hasText: globalThis.contaTeste.email });
   await linha.getByRole("button", { name: "Excluir conta" }).click();
   await linha.getByRole("button", { name: "Confirmar exclusão" }).click();
   await page.getByText(/Conta de Pessoa Fictícia de Teste excluída/).waitFor();
   ok(!existsSync(path.join(dataDir, "auth", "users", `${globalThis.contaTeste.id}.json`)), "conta excluída pela administração (arquivo removido)");
-  ok((await page.getByRole("row").filter({ hasText: globalThis.contaTeste.email }).count()) === 0, "conta some da lista");
+  // A lista recarrega depois da resposta; esperamos a linha sumir em vez de conferir no mesmo instante.
+  const linhaSumiu = await linha
+    .waitFor({ state: "detached", timeout: 15000 })
+    .then(() => true)
+    .catch(() => false);
+  ok(linhaSumiu && (await page.getByRole("row").filter({ hasText: globalThis.contaTeste.email }).count()) === 0, "conta some da lista");
+  ok(!existsSync(cadernoDaConta), "o caderno da conta é apagado junto (não fica órfão no disco)");
 
   const todas = [];
   await page.goto(`${base}/laboratorio/bancada`);

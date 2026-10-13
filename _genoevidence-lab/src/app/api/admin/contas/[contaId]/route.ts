@@ -3,6 +3,7 @@ import { ApiError, handle, json, notFound, readJsonBody, requireAdmin } from "@/
 import { deleteAccountRecords, getAccount, listAccounts, revokeAllSessions, saveAccount } from "@/lib/auth/store";
 import { audit } from "@/lib/audit";
 import { getRepository } from "@/lib/repo";
+import { apagarCadernoDaConta } from "@/lib/caderno/store";
 import { deleteTeam, saveTeam, teamsOf } from "@/lib/teams/store";
 
 const Body = z.object({ status: z.enum(["autorizado", "suspenso", "pendente"]).optional(), role: z.enum(["admin", "pesquisador"]).optional() });
@@ -58,6 +59,8 @@ export const DELETE = handle(async (_req: Request, ctx: RouteContext<"/api/admin
     if (members.length === 0) await deleteTeam(t.id);
     else await saveTeam({ ...t, members: members.some((m) => m.role === "gestor") ? members : [{ ...members[0], role: "gestor" }, ...members.slice(1)] });
   }
+  // O caderno é da pessoa, não de um projeto: precisa sair junto, senão sobreviveria à exclusão da conta.
+  await apagarCadernoDaConta(target.id);
   await deleteAccountRecords(target.id);
   await audit("conta_excluida", { userId: admin.id, target: target.id, result: "ok", detail: `${owned.length} projeto(s) apagado(s)` });
   return json({ ok: true, projetosApagados: owned.length });
