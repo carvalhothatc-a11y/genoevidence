@@ -46,9 +46,9 @@ function ParametroEditavel({ p }: { p: Experimento["parametros"][number] }) {
         <label className="sr-only" htmlFor={`par-${p.id}`}>
           Valor de {p.nome}
         </label>
-        <input id={`par-${p.id}`} value={valor} onChange={(e) => setValor(e.target.value)} onBlur={() => Number(valor.replace(",", ".")) !== p.valor && aplicar(p.conferido)} inputMode="decimal" className="ge-mono w-20 rounded border border-white/12 bg-[#060a13]/60 px-1.5 py-0.5 text-right text-[12px] text-white" />
-        <span className="ge-mono text-[12px] text-[#a7b2c8]">{p.unidade}</span>
-        <label className="flex items-center gap-1 text-[11px] text-[#a7b2c8]" title="Marque depois de conferir valor e unidade">
+        <input id={`par-${p.id}`} value={valor} onChange={(e) => setValor(e.target.value)} onBlur={() => Number(valor.replace(",", ".")) !== p.valor && aplicar(p.conferido)} inputMode="decimal" className="ge-mono w-20 rounded border border-white/12 bg-paper/60 px-1.5 py-0.5 text-right text-[12px] text-white" />
+        <span className="ge-mono text-[12px] text-muted">{p.unidade}</span>
+        <label className="flex items-center gap-1 text-[11px] text-muted" title="Marque depois de conferir valor e unidade">
           <input type="checkbox" checked={p.conferido} onChange={(e) => aplicar(e.target.checked)} />
           conferido
         </label>
@@ -75,9 +75,9 @@ export function Sintese() {
     <section aria-labelledby="titulo-sintese" className="ge-glass grid gap-2 p-4" data-testid="sintese">
       <div className="flex items-center justify-between gap-2">
         <h2 id="titulo-sintese" className="text-[15px] font-semibold text-white">
-          Como entendemos <span className="ge-mono text-[11px] font-normal text-[#a7b2c8]">versão {exp.versao}</span>
+          Como entendemos <span className="ge-mono text-[11px] font-normal text-muted">versão {exp.versao}</span>
         </h2>
-        {s.atual !== s.versoes.length - 1 && <span className="rounded-full border border-[#ffb23f]/50 px-2 py-0.5 text-[11px] text-[#ffd08a]">vendo versão anterior</span>}
+        {s.atual !== s.versoes.length - 1 && <span className="rounded-full border border-warn/50 px-2 py-0.5 text-[11px] text-[#ffd08a]">vendo versão anterior</span>}
       </div>
 
       {exp.mudancas.length > 0 && (
@@ -92,7 +92,7 @@ export function Sintese() {
       )}
 
       {(abertos.length > 0 || perguntas.length > 0) && (
-        <div className="grid gap-2 rounded-lg border border-[#ffb23f]/40 bg-[#ffb23f]/[0.07] p-2.5" data-testid="perguntas">
+        <div className="grid gap-2 rounded-lg border border-warn/40 bg-warn/[0.07] p-2.5" data-testid="perguntas">
           <p className="text-[12px] font-semibold text-[#ffd08a]">Precisamos da sua confirmação</p>
           {abertos.map((c) => (
             <fieldset key={c.id} className="grid gap-1 text-[12px]" data-conflito={c.nome}>
@@ -100,17 +100,17 @@ export function Sintese() {
                 {c.nome}: os materiais trazem valores diferentes. Qual vale?
               </legend>
               {c.valores.map((v, i) => (
-                <label key={i} className="flex flex-wrap items-center gap-2 text-[#c9d2e3]">
+                <label key={i} className="flex flex-wrap items-center gap-2 text-body">
                   <input type="radio" name={`conf-${c.id}`} onChange={() => corrigir((x) => ({ ...x, conflitos: { ...x.conflitos, [c.chave]: i } }))} />
                   <span className="ge-mono text-white">{formatarValor(v.valor, v.unidade)}</span>
                   <Origens os={[v.origem]} />
-                  {v.origem.trecho && <span className="truncate text-[11px] italic text-[#a7b2c8]" title={v.origem.trecho}>“{v.origem.trecho.slice(0, 70)}”</span>}
+                  {v.origem.trecho && <span className="truncate text-[11px] italic text-muted" title={v.origem.trecho}>“{v.origem.trecho.slice(0, 70)}”</span>}
                 </label>
               ))}
             </fieldset>
           ))}
           {perguntas.map((p) => (
-            <p key={p.id} className="text-[12px] text-[#c9d2e3]">
+            <p key={p.id} className="text-[12px] text-body">
               {p.texto}
             </p>
           ))}
@@ -120,20 +120,20 @@ export function Sintese() {
       <Secao id="objetivo" titulo="Objetivo">
         {editObj ? (
           <div className="grid gap-1.5">
-            <textarea value={objetivo} onChange={(e) => setObjetivo(e.target.value)} rows={2} className="rounded-lg border border-white/12 bg-[#060a13]/60 px-2 py-1.5 text-[13px] text-white" aria-label="Objetivo" />
+            <textarea value={objetivo} onChange={(e) => setObjetivo(e.target.value)} rows={2} className="rounded-lg border border-white/12 bg-paper/60 px-2 py-1.5 text-[13px] text-white" aria-label="Objetivo" />
             <div className="flex gap-2">
               <button type="button" onClick={() => (corrigir((c) => ({ ...c, objetivo: objetivo.trim() || null })), setEditObj(false))} className="ge-press rounded-full bg-[#7b4de0] px-3 py-1 text-[12px] font-semibold text-white">
                 Guardar
               </button>
-              <button type="button" onClick={() => setEditObj(false)} className="ge-press rounded-full px-3 py-1 text-[12px] text-[#c9d2e3] hover:bg-white/10">
+              <button type="button" onClick={() => setEditObj(false)} className="ge-press rounded-full px-3 py-1 text-[12px] text-body hover:bg-white/10">
                 Cancelar
               </button>
             </div>
           </div>
         ) : (
           <div className="flex items-start justify-between gap-2">
-            <p className={exp.objetivo ? "text-white" : "text-[#a7b2c8]"}>{exp.objetivo?.texto ?? "Não descrito."}</p>
-            <button type="button" onClick={() => (setObjetivo(exp.objetivo?.texto ?? ""), setEditObj(true))} className="shrink-0 text-[12px] text-[#9db4ff] underline">
+            <p className={exp.objetivo ? "text-white" : "text-muted"}>{exp.objetivo?.texto ?? "Não descrito."}</p>
+            <button type="button" onClick={() => (setObjetivo(exp.objetivo?.texto ?? ""), setEditObj(true))} className="shrink-0 text-[12px] text-accent-ink underline">
               editar
             </button>
           </div>
@@ -142,7 +142,7 @@ export function Sintese() {
       </Secao>
 
       <Secao id="etapas" titulo="Ações e ordem" contagem={exp.acoes.length}>
-        {exp.acoes.length === 0 && <p className="text-[#a7b2c8]">Nenhuma ação reconhecida. Descreva o que é feito (ex.: pipetar, centrifugar, correr o gel).</p>}
+        {exp.acoes.length === 0 && <p className="text-muted">Nenhuma ação reconhecida. Descreva o que é feito (ex.: pipetar, centrifugar, correr o gel).</p>}
         <ol className="grid gap-1.5">
           {exp.acoes.map((a) => (
             <li key={a.id} className={`grid gap-1 rounded-lg border px-2 py-1.5 ${s.idx === a.ordem - 1 ? "border-[#e679b5]/50 bg-[#7b4de0]/10" : "border-white/10 bg-black/15"}`} data-acao={a.tipo}>
@@ -153,25 +153,25 @@ export function Sintese() {
                 <label className="sr-only" htmlFor={`acao-${a.id}`}>
                   Ação da etapa {a.ordem}
                 </label>
-                <select id={`acao-${a.id}`} value={a.tipo} onChange={(e) => corrigir((c) => ({ ...c, acoes: { ...c.acoes, [chaveTrecho(a.texto)]: e.target.value as Acao } }))} className="min-w-0 flex-1 rounded border border-white/12 bg-[#0b1221] px-1.5 py-0.5 text-[12px] font-semibold text-white">
+                <select id={`acao-${a.id}`} value={a.tipo} onChange={(e) => corrigir((c) => ({ ...c, acoes: { ...c.acoes, [chaveTrecho(a.texto)]: e.target.value as Acao } }))} className="min-w-0 flex-1 rounded border border-white/12 bg-panel px-1.5 py-0.5 text-[12px] font-semibold text-white">
                   {ACOES_DISPONIVEIS.map((x) => (
                     <option key={x} value={x}>
                       {ACAO_TITULO[x]}
                     </option>
                   ))}
                 </select>
-                {a.confianca === "conferir" && <span className="shrink-0 rounded-full border border-[#ffb23f]/50 px-1.5 text-[10px] text-[#ffd08a]">conferir</span>}
-                <button type="button" onClick={() => corrigir((c) => ({ ...c, removidas: [...c.removidas, chaveTrecho(a.texto)] }))} className="shrink-0 rounded p-0.5 text-[#a7b2c8] hover:text-white" aria-label={`Remover a etapa ${a.ordem}`} title="Tirar esta etapa da cena">
+                {a.confianca === "conferir" && <span className="shrink-0 rounded-full border border-warn/50 px-1.5 text-[10px] text-[#ffd08a]">conferir</span>}
+                <button type="button" onClick={() => corrigir((c) => ({ ...c, removidas: [...c.removidas, chaveTrecho(a.texto)] }))} className="shrink-0 rounded p-0.5 text-muted hover:text-white" aria-label={`Remover a etapa ${a.ordem}`} title="Tirar esta etapa da cena">
                   <Icone d={IC.fechar} size={14} />
                 </button>
               </div>
-              <p className="text-[11px] italic text-[#a7b2c8]">“{a.texto}”</p>
+              <p className="text-[11px] italic text-muted">“{a.texto}”</p>
               <Origens os={a.origens} />
             </li>
           ))}
         </ol>
         {s.correcoes.removidas.length > 0 && (
-          <button type="button" onClick={() => corrigir((c) => ({ ...c, removidas: [] }))} className="justify-self-start text-[12px] text-[#9db4ff] underline">
+          <button type="button" onClick={() => corrigir((c) => ({ ...c, removidas: [] }))} className="justify-self-start text-[12px] text-accent-ink underline">
             Restaurar {s.correcoes.removidas.length} etapa(s) removida(s)
           </button>
         )}
@@ -184,17 +184,17 @@ export function Sintese() {
               <label className="sr-only" htmlFor={`part-${p.id}`}>
                 Nome de {OBJETOS[p.objeto].nome}
               </label>
-              <input id={`part-${p.id}`} defaultValue={p.rotulo} onBlur={(e) => e.target.value.trim() && e.target.value.trim() !== p.rotulo && corrigir((c) => ({ ...c, participantes: { ...c.participantes, [p.objeto]: e.target.value.trim().slice(0, 80) } }))} className="min-w-0 flex-1 rounded border border-transparent bg-transparent px-1 text-[12px] font-semibold text-white hover:border-white/15 focus:border-[#b49cf5]" />
-              <span className="text-[11px] text-[#a7b2c8]">{OBJETOS[p.objeto].nome}</span>
+              <input id={`part-${p.id}`} defaultValue={p.rotulo} onBlur={(e) => e.target.value.trim() && e.target.value.trim() !== p.rotulo && corrigir((c) => ({ ...c, participantes: { ...c.participantes, [p.objeto]: e.target.value.trim().slice(0, 80) } }))} className="min-w-0 flex-1 rounded border border-transparent bg-transparent px-1 text-[12px] font-semibold text-white hover:border-white/15 focus:border-violet" />
+              <span className="text-[11px] text-muted">{OBJETOS[p.objeto].nome}</span>
               <Origens os={p.origens} />
             </li>
           ))}
         </ul>
-        {inferidos.length > 0 && <p className="text-[11px] text-[#a7b2c8]">Representação padrão (não citada nos materiais): {inferidos.map((p) => p.rotulo).join(", ")}.</p>}
+        {inferidos.length > 0 && <p className="text-[11px] text-muted">Representação padrão (não citada nos materiais): {inferidos.map((p) => p.rotulo).join(", ")}.</p>}
       </Secao>
 
       <Secao id="parametros" titulo="Parâmetros e unidades" contagem={exp.parametros.length}>
-        {exp.parametros.length === 0 ? <p className="text-[#a7b2c8]">Nenhum valor com unidade reconhecido.</p> : <ul className="grid gap-1">{exp.parametros.map((p) => <ParametroEditavel key={`${p.id}-${p.valor}`} p={p} />)}</ul>}
+        {exp.parametros.length === 0 ? <p className="text-muted">Nenhum valor com unidade reconhecido.</p> : <ul className="grid gap-1">{exp.parametros.map((p) => <ParametroEditavel key={`${p.id}-${p.valor}`} p={p} />)}</ul>}
       </Secao>
 
       {exp.dados.length > 0 && (
@@ -203,8 +203,8 @@ export function Sintese() {
             {exp.dados.map((d) => (
               <li key={d.id} className="rounded-lg border border-white/10 bg-black/15 px-2 py-1.5 text-[12px]">
                 <span className="font-semibold text-white">{d.variavel}</span>
-                {d.unidade && <span className="text-[#a7b2c8]"> ({d.unidade})</span>}
-                <span className="text-[#a7b2c8]"> · {d.grupos.length} grupo(s) · {d.linhas} linha(s){d.ausentes ? ` · ${d.ausentes} ausente(s)` : ""}</span>
+                {d.unidade && <span className="text-muted"> ({d.unidade})</span>}
+                <span className="text-muted"> · {d.grupos.length} grupo(s) · {d.linhas} linha(s){d.ausentes ? ` · ${d.ausentes} ausente(s)` : ""}</span>
               </li>
             ))}
           </ul>
@@ -213,7 +213,7 @@ export function Sintese() {
 
       <Secao id="fontes" titulo="Fontes" contagem={exp.fontes.length} aberta={false}>
         {exp.fontes.length === 0 ? (
-          <p className="text-[#a7b2c8]">Nenhuma fonte ainda.</p>
+          <p className="text-muted">Nenhuma fonte ainda.</p>
         ) : (
           <ul className="grid gap-1">
             {exp.fontes.map((f) => (
@@ -222,7 +222,7 @@ export function Sintese() {
                   <EstadoFonteBadge estado={f.estado} />
                   <span className="text-white">{f.titulo}</span>
                 </span>
-                {f.observacao && <span className="text-[11px] text-[#a7b2c8]">{f.observacao}</span>}
+                {f.observacao && <span className="text-[11px] text-muted">{f.observacao}</span>}
               </li>
             ))}
           </ul>
@@ -231,7 +231,7 @@ export function Sintese() {
 
       {limites.length > 0 && (
         <Secao id="ausentes" titulo="Informações ausentes" contagem={limites.length} aberta={false}>
-          <p className="text-[11px] text-[#a7b2c8]">Não impedem a ilustração; limitam a avaliação.</p>
+          <p className="text-[11px] text-muted">Não impedem a ilustração; limitam a avaliação.</p>
           <ul className="list-disc space-y-1 pl-4">
             {limites.map((a) => (
               <li key={a.id}>{a.texto}</li>

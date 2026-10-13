@@ -193,7 +193,7 @@ export function ProcessoEtapas({ seq }: { seq: Sequencia }) {
               onClick={() => seq.irPara(i)}
               aria-current={estado === "atual" ? "step" : undefined}
               data-etapa={e.id}
-              className={`ge-press relative flex w-full items-center gap-3 rounded-xl px-1.5 py-1.5 text-left text-[14px] ${estado === "atual" ? "bg-white/[0.06] font-semibold text-white" : estado === "feita" ? "text-[#c9d2e3] hover:bg-white/5" : "text-[#a7b2c8] hover:bg-white/5"}`}
+              className={`ge-press relative flex w-full items-center gap-3 rounded-xl px-1.5 py-1.5 text-left text-[14px] ${estado === "atual" ? "bg-white/[0.06] font-semibold text-white" : estado === "feita" ? "text-body hover:bg-white/5" : "text-muted hover:bg-white/5"}`}
             >
               <span aria-hidden="true" className="relative grid h-[22px] w-[22px] shrink-0 place-items-center">
                 {estado === "feita" ? (
@@ -209,9 +209,9 @@ export function ProcessoEtapas({ seq }: { seq: Sequencia }) {
                 )}
               </span>
               <span className="min-w-0 flex-1">{e.titulo}</span>
-              {afetadas.has(e.id) && <span className="rounded-full bg-[#4d7cff]/25 px-1.5 py-0.5 text-[10px] font-semibold text-[#9db4ff]">alterada</span>}
+              {afetadas.has(e.id) && <span className="rounded-full bg-[#4d7cff]/25 px-1.5 py-0.5 text-[10px] font-semibold text-accent-ink">alterada</span>}
               {problema && (
-                <span className="text-[12px] font-bold text-[#ff5470]" title="Possível problema identificado nesta etapa" aria-label="possível problema">
+                <span className="text-[12px] font-bold text-danger" title="Possível problema identificado nesta etapa" aria-label="possível problema">
                   !
                 </span>
               )}
@@ -234,7 +234,7 @@ export function MudancaVersao({ seq }: { seq: Sequencia }) {
       <ul className="mt-1 grid gap-0.5 text-[13px]">
         {seq.diff.alterados.map((d) => (
           <li key={d.campo}>
-            <span className="font-semibold">{d.rotulo}:</span> {d.antes} → <span className="font-semibold text-[#9db4ff]">{d.depois}</span>
+            <span className="font-semibold">{d.rotulo}:</span> {d.antes} → <span className="font-semibold text-accent-ink">{d.depois}</span>
           </li>
         ))}
       </ul>
@@ -312,7 +312,7 @@ export function DetalheEtapa({ seq }: { seq: Sequencia }) {
           </dl>
         )}
         {etapa.calculo && (
-          <div className="rounded-lg border border-[#ffb23f]/30 bg-[#ffb23f]/10 p-2.5 text-xs">
+          <div className="rounded-lg border border-warn/30 bg-warn/10 p-2.5 text-xs">
             <p className="font-semibold text-white">
               {etapa.calculo.titulo}: <span className="text-sm">{etapa.calculo.valor}</span>
             </p>

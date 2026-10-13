@@ -37,7 +37,7 @@ const LabCanvas = dynamic(() => import("@/components/lab3d/LabCanvas"), {
   ssr: false,
   loading: () => (
     <div className="grid h-full place-items-center" role="status">
-      <p className="ge-mono text-sm text-[#a7b2c8]">carregando o laboratório 3D…</p>
+      <p className="ge-mono text-sm text-muted">carregando o laboratório 3D…</p>
     </div>
   ),
 });
@@ -262,7 +262,7 @@ export function LabStudio({
         <div className="flex items-start justify-between gap-2">
           <h2 className="text-[22px] font-semibold tracking-[-0.01em] text-white">Processo</h2>
           {temIdeia && (
-            <span className="mt-1.5 rounded-full border border-white/15 px-2 py-0.5 text-[11px] text-[#c9d2e3]">
+            <span className="mt-1.5 rounded-full border border-white/15 px-2 py-0.5 text-[11px] text-body">
               {cen?.nome}
               {seq.cv && seq.cv.versoes.length > 1 ? ` · v${cen?.versao}` : ""}
             </span>
@@ -272,7 +272,7 @@ export function LabStudio({
         {temIdeia && cen ? (
           cen.tecnica !== "pcr" ? (
             <div className="mt-3 grid gap-2 text-[13px]">
-              <p className="text-[#ffb23f]">Animação específica e simulação ainda não disponíveis para esta técnica. O laboratório de PCR não é mostrado como equivalente.</p>
+              <p className="text-warn">Animação específica e simulação ainda não disponíveis para esta técnica. O laboratório de PCR não é mostrado como equivalente.</p>
               <ol className="grid gap-1.5">
                 {cen.roteiro.map((r, i) => (
                   <li key={i} className="flex gap-2 rounded-lg border border-white/10 bg-white/[0.03] p-2">
@@ -306,7 +306,7 @@ export function LabStudio({
                     type="button"
                     onClick={() => irZona(z)}
                     aria-current={estado === "atual" ? "location" : undefined}
-                    className={`ge-press relative flex w-full items-center gap-3 rounded-xl px-1.5 py-2 text-left text-[15px] ${estado === "atual" ? "bg-white/[0.06] font-semibold text-white" : "text-[#c9d2e3] hover:bg-white/5"}`}
+                    className={`ge-press relative flex w-full items-center gap-3 rounded-xl px-1.5 py-2 text-left text-[15px] ${estado === "atual" ? "bg-white/[0.06] font-semibold text-white" : "text-body hover:bg-white/5"}`}
                   >
                     <span aria-hidden="true" className="grid h-[22px] w-[22px] shrink-0 place-items-center">
                       {estado === "feita" ? (
@@ -336,7 +336,7 @@ export function LabStudio({
                 lab.selected === "termociclador" ? (
                   <div className="flex flex-wrap gap-1.5" role="group" aria-label="Escala molecular">
                     {(["desnaturacao", "anelamento", "extensao"] as MolecularPhase[]).map((f) => (
-                      <button key={f} type="button" aria-pressed={faseManual === f} onClick={() => setFaseManual(faseManual === f ? null : f)} className={`ge-press rounded-full px-2.5 py-1 text-xs font-semibold ${faseManual === f ? "bg-[#7b4de0] text-white" : "bg-white/5 text-[#c9d2e3] hover:bg-white/10"}`}>
+                      <button key={f} type="button" aria-pressed={faseManual === f} onClick={() => setFaseManual(faseManual === f ? null : f)} className={`ge-press rounded-full px-2.5 py-1 text-xs font-semibold ${faseManual === f ? "bg-[#7b4de0] text-white" : "bg-white/5 text-body hover:bg-white/10"}`}>
                         {f === "desnaturacao" ? "Desnaturação" : f === "anelamento" ? "Anelamento" : "Extensão"}
                       </button>
                     ))}
@@ -351,9 +351,9 @@ export function LabStudio({
           <ul className="mt-4 grid gap-1.5">
             {LAB_OBJECTS.filter((o) => o.zone === zonaAtual && !o.id.startsWith("placa-") && o.id !== "bancada-pre-pcr").map((o) => (
               <li key={o.id}>
-                <button type="button" onClick={() => selecionar(o.id)} className="ge-press w-full rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2 text-left hover:border-[#b49cf5]/60">
+                <button type="button" onClick={() => selecionar(o.id)} className="ge-press w-full rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2 text-left hover:border-violet/60">
                   <span className="block text-[13px] font-semibold text-white">{o.name}</span>
-                  <span className="block text-xs text-[#a7b2c8]">{o.function}</span>
+                  <span className="block text-xs text-muted">{o.function}</span>
                 </button>
               </li>
             ))}
@@ -380,7 +380,7 @@ export function LabStudio({
             </section>
           )}
           {!temIdeia && !(project && gelImages.length) && (
-            <p className="text-[13px] text-[#a7b2c8]">Descreva uma ideia ou procedimento na barra abaixo. Aqui aparecem só saídas com fundamento: cálculos de modelos identificados, ilustrações marcadas e dados do seu projeto.</p>
+            <p className="text-[13px] text-muted">Descreva uma ideia ou procedimento na barra abaixo. Aqui aparecem só saídas com fundamento: cálculos de modelos identificados, ilustrações marcadas e dados do seu projeto.</p>
           )}
         </div>
       </div>
@@ -397,16 +397,16 @@ export function LabStudio({
             <button type="button" onClick={() => setGavetaLocal("editar")} className="ge-press rounded-full bg-white/5 px-3 py-2 text-[13px] font-semibold text-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.15)] hover:bg-white/10">
               Editar condição
             </button>
-            <button type="button" onClick={() => (s.reiniciar(), useRoteiro.getState().limpar(), visaoGeral())} className="ge-press rounded-full px-3 py-2 text-[13px] font-semibold text-[#c9d2e3] hover:bg-white/10">
+            <button type="button" onClick={() => (s.reiniciar(), useRoteiro.getState().limpar(), visaoGeral())} className="ge-press rounded-full px-3 py-2 text-[13px] font-semibold text-body hover:bg-white/10">
               Nova ideia
             </button>
           </div>
-          <p className="flex flex-wrap items-center justify-between gap-2 text-[11px] text-[#a7b2c8]">
+          <p className="flex flex-wrap items-center justify-between gap-2 text-[11px] text-muted">
             {projetoSel ? (
               podeEditarProjeto ? (
                 <>
                   <span>{s.salvoEm ? `Salvo em “${projetoSel.title}”` : "Alterações não salvas"}</span>
-                  <button type="button" onClick={() => void salvar()} disabled={salvando} className="font-semibold text-[#9db4ff] underline disabled:opacity-50">
+                  <button type="button" onClick={() => void salvar()} disabled={salvando} className="font-semibold text-accent-ink underline disabled:opacity-50">
                     {salvando ? "Salvando…" : "Salvar no projeto"}
                   </button>
                 </>
@@ -419,7 +419,7 @@ export function LabStudio({
           </p>
         </div>
       )}
-      <p className="px-5 pb-3 text-right text-[11px] text-[#7d8aa3]">Ilustrações e simulações marcadas · não são resultados experimentais</p>
+      <p className="px-5 pb-3 text-right text-[11px] text-panel-dim">Ilustrações e simulações marcadas · não são resultados experimentais</p>
     </div>
   );
 
@@ -438,7 +438,7 @@ export function LabStudio({
                   onClick={() => (roteiro.setTocando(false), roteiro.setIdx(i))}
                   aria-current={estado === "atual" ? "step" : undefined}
                   data-passo={p.acao}
-                  className={`ge-press relative flex w-full items-center gap-3 rounded-xl px-1.5 py-1.5 text-left text-[14px] ${estado === "atual" ? "bg-white/[0.06] font-semibold text-white" : estado === "feita" ? "text-[#c9d2e3] hover:bg-white/5" : "text-[#a7b2c8] hover:bg-white/5"}`}
+                  className={`ge-press relative flex w-full items-center gap-3 rounded-xl px-1.5 py-1.5 text-left text-[14px] ${estado === "atual" ? "bg-white/[0.06] font-semibold text-white" : estado === "feita" ? "text-body hover:bg-white/5" : "text-muted hover:bg-white/5"}`}
                 >
                   <span aria-hidden="true" className="grid h-[22px] w-[22px] shrink-0 place-items-center">
                     {estado === "feita" ? (
@@ -450,7 +450,7 @@ export function LabStudio({
                     )}
                   </span>
                   <span className="min-w-0 flex-1">{p.titulo}</span>
-                  {p.atencao.length > 0 && <span className="text-[12px] font-bold text-[#ffb23f]" aria-label="pontos de atenção">!</span>}
+                  {p.atencao.length > 0 && <span className="text-[12px] font-bold text-warn" aria-label="pontos de atenção">!</span>}
                 </button>
               </li>
             );
@@ -496,17 +496,17 @@ export function LabStudio({
               </button>
             </>
           )}
-          <button type="button" onClick={() => (useRoteiro.getState().limpar(), s.reiniciar(), setModo("bancada"), visaoGeral())} className="ge-press rounded-full px-3 py-2 text-[13px] font-semibold text-[#c9d2e3] hover:bg-white/10">
+          <button type="button" onClick={() => (useRoteiro.getState().limpar(), s.reiniciar(), setModo("bancada"), visaoGeral())} className="ge-press rounded-full px-3 py-2 text-[13px] font-semibold text-body hover:bg-white/10">
             Nova descrição
           </button>
         </div>
       </div>
-      <p className="px-5 pb-3 text-right text-[11px] text-[#7d8aa3]">Visualização gerada da sua descrição · ilustração, não resultado</p>
+      <p className="px-5 pb-3 text-right text-[11px] text-panel-dim">Visualização gerada da sua descrição · ilustração, não resultado</p>
     </div>
   );
 
   return (
-    <div className="ge-dark fixed inset-0 z-30 flex flex-col bg-[#060a13] lg:flex-row">
+    <div className="ge-dark fixed inset-0 z-30 flex flex-col bg-paper lg:flex-row">
       <LabSidebar user={user} />
       <div className="relative min-h-0 min-w-0 flex-1 overflow-hidden">
         {/* Cena 3D */}
@@ -533,7 +533,7 @@ export function LabStudio({
         )}
         {!show3d && webgl !== null && (
           <div className="absolute inset-0 overflow-y-auto p-4 pb-40 pt-16 lg:pr-[420px]" data-foco={lab.selected ?? ""}>
-            {(webgl === false || canvasFailed) && <p className="mb-3 rounded-xl border border-[#ffb23f]/40 bg-[#ffb23f]/10 p-3 text-sm text-[#ffb23f]">O ambiente 3D não está disponível neste navegador. As mesmas informações estão nos painéis.</p>}
+            {(webgl === false || canvasFailed) && <p className="mb-3 rounded-xl border border-warn/40 bg-warn/10 p-3 text-sm text-warn">O ambiente 3D não está disponível neste navegador. As mesmas informações estão nos painéis.</p>}
             <div className="grid gap-3 md:grid-cols-2">
               {ZONE_IDS.map((z, i) => (
                 <section key={z} className="ge-card p-4" aria-labelledby={`z2d-${z}`}>
@@ -546,7 +546,7 @@ export function LabStudio({
                       <li key={o.id}>
                         <button type="button" onClick={() => selecionar(o.id)} className="ge-press w-full rounded-lg px-2 py-1.5 text-left text-sm hover:bg-white/5">
                           <span className="font-semibold text-white">{o.name}</span>
-                          <span className="block text-xs text-[#a7b2c8]">{o.function}</span>
+                          <span className="block text-xs text-muted">{o.function}</span>
                         </button>
                       </li>
                     ))}
@@ -568,29 +568,29 @@ export function LabStudio({
         <div className={`pointer-events-none absolute inset-x-0 top-0 z-20 flex flex-wrap items-start justify-between gap-2 p-3 ${visual ? "lg:pr-[560px]" : "lg:pr-[420px]"}`}>
           <div className="pointer-events-auto flex flex-wrap items-center gap-2">
           <div role="radiogroup" aria-label="Modo" className="ge-glass flex items-center gap-0.5 rounded-full p-1 text-[13px]">
-            <button type="button" role="radio" aria-checked={visual} disabled={!temVisual} onClick={() => setModo("visual")} className={`rounded-full px-3 py-1 font-semibold disabled:opacity-40 ${visual ? "bg-[#7b4de0] text-white" : "text-[#c9d2e3] hover:bg-white/10"}`}>
+            <button type="button" role="radio" aria-checked={visual} disabled={!temVisual} onClick={() => setModo("visual")} className={`rounded-full px-3 py-1 font-semibold disabled:opacity-40 ${visual ? "bg-[#7b4de0] text-white" : "text-body hover:bg-white/10"}`}>
               Visualização
             </button>
-            <button type="button" role="radio" aria-checked={!visual} onClick={() => setModo("bancada")} className={`rounded-full px-3 py-1 font-semibold ${!visual ? "bg-[#7b4de0] text-white" : "text-[#c9d2e3] hover:bg-white/10"}`}>
+            <button type="button" role="radio" aria-checked={!visual} onClick={() => setModo("bancada")} className={`rounded-full px-3 py-1 font-semibold ${!visual ? "bg-[#7b4de0] text-white" : "text-body hover:bg-white/10"}`}>
               Bancada 3D
             </button>
           </div>
           {!visual && (
           <nav aria-label="Você está em" className="ge-glass flex items-center gap-1 rounded-full px-2 py-1 text-[13px]">
-            <button type="button" onClick={visaoGeral} className="rounded-full px-2.5 py-1 text-[#c9d2e3] hover:bg-white/10 hover:text-white">
+            <button type="button" onClick={visaoGeral} className="rounded-full px-2.5 py-1 text-body hover:bg-white/10 hover:text-white">
               Laboratório
             </button>
             {zonaAtual && (
               <>
-                <span aria-hidden="true" className="text-[#7d8aa3]">›</span>
-                <button type="button" onClick={() => irZona(zonaAtual)} className="rounded-full px-2.5 py-1 text-[#c9d2e3] hover:bg-white/10 hover:text-white">
+                <span aria-hidden="true" className="text-panel-dim">›</span>
+                <button type="button" onClick={() => irZona(zonaAtual)} className="rounded-full px-2.5 py-1 text-body hover:bg-white/10 hover:text-white">
                   {ZONES[zonaAtual].short}
                 </button>
               </>
             )}
             {lab.selected && (
               <>
-                <span aria-hidden="true" className="text-[#7d8aa3]">›</span>
+                <span aria-hidden="true" className="text-panel-dim">›</span>
                 <span className="px-2.5 py-1 font-semibold text-white">{getLabObject(lab.selected)?.name.split(" (")[0]}</span>
               </>
             )}
@@ -639,7 +639,7 @@ export function LabStudio({
           <div className="w-full max-w-[860px]">
             <AnimatePresence>
               {!temIdeia && !temVisual && !s.texto && (
-                <motion.p initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="mb-2 text-center text-[13px] text-[#c9d2e3] [text-shadow:0_1px_8px_rgba(0,0,0,0.8)]">
+                <motion.p initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="mb-2 text-center text-[13px] text-body [text-shadow:0_1px_8px_rgba(0,0,0,0.8)]">
                   Descreva o que você quer fazer. <span className="ge-gradient-text font-semibold">Vamos explorar no laboratório.</span>
                 </motion.p>
               )}
@@ -690,7 +690,7 @@ function Ferramenta({ onClick, rotulo, icone, pressed, disabled }: { onClick: ()
       disabled={disabled}
       aria-pressed={pressed}
       title={rotulo}
-      className={`ge-press inline-flex h-8 min-w-8 items-center justify-center rounded-full px-2 text-sm disabled:opacity-40 ${pressed ? "bg-[#7b4de0] text-white" : "text-[#c9d2e3] hover:bg-white/10 hover:text-white"}`}
+      className={`ge-press inline-flex h-8 min-w-8 items-center justify-center rounded-full px-2 text-sm disabled:opacity-40 ${pressed ? "bg-[#7b4de0] text-white" : "text-body hover:bg-white/10 hover:text-white"}`}
     >
       <span aria-hidden="true">{icone}</span>
       <span className="sr-only">{rotulo}</span>
@@ -731,7 +731,7 @@ function AssociarProjeto({ projetos }: { projetos: ProjetoOpcao[] }) {
           ))}
         </select>
       </div>
-      {proj && !["dono", "gestor", "editor"].includes(proj.role) && <p className="text-xs text-[#ffb23f]">Seu papel neste projeto é {proj.role}: você pode ver, mas não salvar.</p>}
+      {proj && !["dono", "gestor", "editor"].includes(proj.role) && <p className="text-xs text-warn">Seu papel neste projeto é {proj.role}: você pode ver, mas não salvar.</p>}
       {refs.length > 0 && (
         <fieldset>
           <legend className="text-xs font-semibold text-white">Referências do projeto para associar</legend>
@@ -747,7 +747,7 @@ function AssociarProjeto({ projetos }: { projetos: ProjetoOpcao[] }) {
               </li>
             ))}
           </ul>
-          <p className="mt-1 text-[11px] text-[#a7b2c8]">Referências apenas cadastradas não tiveram o conteúdo lido e não sustentam a avaliação automática.</p>
+          <p className="mt-1 text-[11px] text-muted">Referências apenas cadastradas não tiveram o conteúdo lido e não sustentam a avaliação automática.</p>
         </fieldset>
       )}
     </section>

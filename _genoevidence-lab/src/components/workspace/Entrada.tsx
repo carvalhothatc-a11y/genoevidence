@@ -24,15 +24,15 @@ function TermosReconhecidos({ texto }: { texto: string }) {
   if (!qs.length && !nomes.length) return null;
   return (
     <div className="grid gap-1.5" aria-live="polite" data-testid="termos-reconhecidos">
-      <p className="text-[11px] font-semibold uppercase tracking-wide text-[#7d8aa3]">Confira antes de usar</p>
+      <p className="text-[11px] font-semibold uppercase tracking-wide text-panel-dim">Confira antes de usar</p>
       <ul className="flex flex-wrap gap-1.5">
         {qs.map((q, i) => (
           <li key={`q${i}`} className="rounded-lg border border-white/10 bg-white/[0.04] px-2 py-1 text-[12px]" data-termo="grandeza">
             <span className="ge-mono text-[#ffd08a]">{q.original}</span>
-            <span className="text-[#7d8aa3]"> → </span>
+            <span className="text-panel-dim"> → </span>
             <span className="text-white">{formatarValor(q.valor, q.unidade)}</span>
-            <span className="text-[#a7b2c8]"> · {q.nome.toLowerCase()}</span>
-            {q.unidade !== q.unidadeCanonica && <span className="text-[#a7b2c8]"> ({formatarValor(q.valorCanonico, q.unidadeCanonica)})</span>}
+            <span className="text-muted"> · {q.nome.toLowerCase()}</span>
+            {q.unidade !== q.unidadeCanonica && <span className="text-muted"> ({formatarValor(q.valorCanonico, q.unidadeCanonica)})</span>}
           </li>
         ))}
         {nomes.map((n) => (
@@ -41,7 +41,7 @@ function TermosReconhecidos({ texto }: { texto: string }) {
           </li>
         ))}
       </ul>
-      <p className="text-[11px] text-[#7d8aa3]">Se algo estiver errado, corrija no texto: nada é usado sem passar por aqui.</p>
+      <p className="text-[11px] text-panel-dim">Se algo estiver errado, corrija no texto: nada é usado sem passar por aqui.</p>
     </div>
   );
 }
@@ -87,7 +87,7 @@ export function Entrada({ compacta, onCriar, onAviso }: { compacta: boolean; onC
         <h2 id="titulo-entrada" className={`font-semibold tracking-[-0.01em] text-white ${compacta ? "text-[15px]" : "text-[20px]"}`}>
           {compacta ? "Sua descrição" : "Explique o que você quer fazer"}
         </h2>
-        {!compacta && <span className="text-[11px] text-[#7d8aa3]">objetivo, procedimento, uma ação, condições ou dúvida</span>}
+        {!compacta && <span className="text-[11px] text-panel-dim">objetivo, procedimento, uma ação, condições ou dúvida</span>}
       </div>
       <label htmlFor="descricao" className="sr-only">
         Descreva sua ideia ou procedimento
@@ -99,7 +99,7 @@ export function Entrada({ compacta, onCriar, onAviso }: { compacta: boolean; onC
         placeholder="Descreva sua ideia ou procedimento. Ex.: “Pipetei 2 µL do DNA molde no master mix e levei ao termociclador.”"
         rows={compacta ? 3 : 7}
         maxLength={8000}
-        className="w-full resize-y rounded-xl border border-white/12 bg-[#060a13]/60 px-3.5 py-3 text-[15px] leading-relaxed text-white placeholder:text-[#7d8aa3] focus:border-[#b49cf5] focus:outline-none focus:ring-2 focus:ring-[#7b4de0]/40"
+        className="w-full resize-y rounded-xl border border-white/12 bg-paper/60 px-3.5 py-3 text-[15px] leading-relaxed text-white placeholder:text-panel-dim focus:border-violet focus:outline-none focus:ring-2 focus:ring-[#7b4de0]/40"
       />
 
       {/* Gravação: início, encerramento e transcrição editável */}
@@ -107,11 +107,11 @@ export function Entrada({ compacta, onCriar, onAviso }: { compacta: boolean; onC
         <div className="grid gap-2 rounded-xl border border-[#e679b5]/30 bg-[#e0385a]/[0.06] p-3" data-testid="transcricao">
           <div className="flex items-center justify-between gap-2 text-[12px]">
             <span className="flex items-center gap-2 font-semibold text-white">
-              {voz.gravando && <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#ff5470]" aria-hidden="true" />}
+              {voz.gravando && <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-danger" aria-hidden="true" />}
               {voz.gravando ? `Gravando… ${Math.floor(voz.segundos / 60)}:${String(voz.segundos % 60).padStart(2, "0")} (máx. 2:00)` : "Transcrição — revise antes de usar"}
             </span>
             {voz.gravando && (
-              <button type="button" onClick={voz.parar} className="ge-press rounded-full bg-[#ff5470] px-3 py-1 text-[12px] font-semibold text-white">
+              <button type="button" onClick={voz.parar} className="ge-press rounded-full bg-danger px-3 py-1 text-[12px] font-semibold text-white">
                 Encerrar gravação
               </button>
             )}
@@ -119,20 +119,20 @@ export function Entrada({ compacta, onCriar, onAviso }: { compacta: boolean; onC
           <label htmlFor="transcricao-texto" className="sr-only">
             Transcrição editável
           </label>
-          <textarea id="transcricao-texto" value={voz.transcricao + (voz.parcial ? ` ${voz.parcial}` : "")} onChange={(e) => voz.setTranscricao(e.target.value)} rows={3} readOnly={voz.gravando} className="w-full rounded-lg border border-white/12 bg-[#060a13]/60 px-3 py-2 text-[14px] text-white" />
+          <textarea id="transcricao-texto" value={voz.transcricao + (voz.parcial ? ` ${voz.parcial}` : "")} onChange={(e) => voz.setTranscricao(e.target.value)} rows={3} readOnly={voz.gravando} className="w-full rounded-lg border border-white/12 bg-paper/60 px-3 py-2 text-[14px] text-white" />
           {!voz.gravando && (
             <div className="flex flex-wrap gap-2">
               <button type="button" onClick={usarTranscricao} className="ge-press rounded-full bg-[#7b4de0] px-3 py-1.5 text-[12px] font-semibold text-white">
                 Usar na descrição
               </button>
-              <button type="button" onClick={voz.limpar} className="ge-press rounded-full px-3 py-1.5 text-[12px] text-[#c9d2e3] hover:bg-white/10">
+              <button type="button" onClick={voz.limpar} className="ge-press rounded-full px-3 py-1.5 text-[12px] text-body hover:bg-white/10">
                 Descartar
               </button>
             </div>
           )}
         </div>
       )}
-      {voz.erro && <p className="text-[12px] text-[#ffb23f]" role="alert">{voz.erro}</p>}
+      {voz.erro && <p className="text-[12px] text-warn" role="alert">{voz.erro}</p>}
 
       <TermosReconhecidos texto={s.texto} />
 
@@ -153,8 +153,8 @@ export function Entrada({ compacta, onCriar, onAviso }: { compacta: boolean; onC
           <label htmlFor="ref-texto" className="text-[12px] font-semibold text-white">
             Referências (uma por linha): DOI, link ou citação
           </label>
-          <textarea id="ref-texto" value={refTexto} onChange={(e) => setRefTexto(e.target.value)} rows={3} placeholder="10.3791/3998&#10;https://…&#10;Autor A. Título. Revista. 2024." className="w-full rounded-lg border border-white/12 bg-[#060a13]/60 px-3 py-2 text-[13px] text-white placeholder:text-[#7d8aa3]" />
-          <p className="text-[11px] text-[#7d8aa3]">Referências ficam “cadastradas”: o conteúdo não é lido automaticamente. Para que um documento seja analisado, anexe-o como relatório.</p>
+          <textarea id="ref-texto" value={refTexto} onChange={(e) => setRefTexto(e.target.value)} rows={3} placeholder="10.3791/3998&#10;https://…&#10;Autor A. Título. Revista. 2024." className="w-full rounded-lg border border-white/12 bg-paper/60 px-3 py-2 text-[13px] text-white placeholder:text-panel-dim" />
+          <p className="text-[11px] text-panel-dim">Referências ficam “cadastradas”: o conteúdo não é lido automaticamente. Para que um documento seja analisado, anexe-o como relatório.</p>
           <div className="flex gap-2">
             <button
               type="button"
@@ -170,7 +170,7 @@ export function Entrada({ compacta, onCriar, onAviso }: { compacta: boolean; onC
             >
               Adicionar
             </button>
-            <button type="button" onClick={() => setRefAberta(false)} className="ge-press rounded-full px-3 py-1.5 text-[12px] text-[#c9d2e3] hover:bg-white/10">
+            <button type="button" onClick={() => setRefAberta(false)} className="ge-press rounded-full px-3 py-1.5 text-[12px] text-body hover:bg-white/10">
               Cancelar
             </button>
           </div>
@@ -179,9 +179,9 @@ export function Entrada({ compacta, onCriar, onAviso }: { compacta: boolean; onC
 
       {!compacta && !s.texto && (
         <div className="flex flex-wrap items-center gap-1.5 text-[12px]">
-          <span className="text-[#7d8aa3]">Exemplos:</span>
+          <span className="text-panel-dim">Exemplos:</span>
           {EXEMPLOS_AREA.map((x) => (
-            <button key={x.rotulo} type="button" onClick={() => s.setTexto(x.texto, "texto")} className="ge-press rounded-full border border-white/12 px-2.5 py-1 text-[#c9d2e3] hover:border-[#b49cf5]/60 hover:text-white">
+            <button key={x.rotulo} type="button" onClick={() => s.setTexto(x.texto, "texto")} className="ge-press rounded-full border border-white/12 px-2.5 py-1 text-body hover:border-violet/60 hover:text-white">
               {x.rotulo}
             </button>
           ))}
@@ -197,7 +197,7 @@ export function Entrada({ compacta, onCriar, onAviso }: { compacta: boolean; onC
       >
         {s.versoes.length ? "Atualizar visualização" : "Criar visualização"}
       </button>
-      {!pode && <p className="-mt-1 text-center text-[11px] text-[#7d8aa3]">Escreva, grave, ou adicione um material com conteúdo para começar. Não é preciso criar um projeto antes.</p>}
+      {!pode && <p className="-mt-1 text-center text-[11px] text-panel-dim">Escreva, grave, ou adicione um material com conteúdo para começar. Não é preciso criar um projeto antes.</p>}
     </section>
   );
 }
@@ -210,7 +210,7 @@ function BotaoEntrada({ icone, rotulo, onClick, disabled, ativo, dica }: { icone
       disabled={disabled}
       title={dica}
       aria-pressed={ativo}
-      className={`ge-press inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[13px] font-medium disabled:opacity-40 ${ativo ? "border-[#e679b5]/70 bg-[#e0385a]/15 text-white" : "border-white/12 text-[#c9d2e3] hover:border-[#b49cf5]/60 hover:bg-white/5 hover:text-white"}`}
+      className={`ge-press inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[13px] font-medium disabled:opacity-40 ${ativo ? "border-[#e679b5]/70 bg-[#e0385a]/15 text-white" : "border-white/12 text-body hover:border-violet/60 hover:bg-white/5 hover:text-white"}`}
     >
       <Icone d={icone} size={16} />
       {rotulo}

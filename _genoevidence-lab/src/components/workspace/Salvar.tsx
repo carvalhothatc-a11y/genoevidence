@@ -80,10 +80,10 @@ export function Salvar({ projetos, onFeito }: { projetos: ProjetoOpcao[]; onFeit
   };
 
   return (
-    <div className="grid max-w-xl gap-4 text-[14px] text-[#c9d2e3]" data-testid="salvar">
+    <div className="grid max-w-xl gap-4 text-[14px] text-body" data-testid="salvar">
       <label className="grid gap-1">
         <span className="font-semibold text-white">Nome do experimento</span>
-        <input value={titulo} onChange={(e) => setTitulo(e.target.value)} maxLength={160} className="rounded-lg border border-white/15 bg-[#060a13]/60 px-3 py-2 text-white" />
+        <input value={titulo} onChange={(e) => setTitulo(e.target.value)} maxLength={160} className="rounded-lg border border-white/15 bg-paper/60 px-3 py-2 text-white" />
       </label>
       <fieldset className="grid gap-2">
         <legend className="font-semibold text-white">Onde salvar</legend>
@@ -92,7 +92,7 @@ export function Salvar({ projetos, onFeito }: { projetos: ProjetoOpcao[]; onFeit
             <input type="radio" name="onde" className="mt-1" checked={modo === "existente"} onChange={() => setModo("existente")} />
             <span className="grid flex-1 gap-1">
               Projeto existente
-              <select value={projetoId} onChange={(e) => (setProjetoId(e.target.value), setModo("existente"))} className="rounded-lg border border-white/15 bg-[#0b1221] px-2 py-1.5 text-white" aria-label="Projeto">
+              <select value={projetoId} onChange={(e) => (setProjetoId(e.target.value), setModo("existente"))} className="rounded-lg border border-white/15 bg-panel px-2 py-1.5 text-white" aria-label="Projeto">
                 {editaveis.map((p) => (
                   <option key={p.id} value={p.id}>
                     {p.title}
@@ -106,7 +106,7 @@ export function Salvar({ projetos, onFeito }: { projetos: ProjetoOpcao[]; onFeit
           <input type="radio" name="onde" className="mt-1" checked={modo === "novo"} onChange={() => setModo("novo")} />
           <span className="grid flex-1 gap-1">
             Novo projeto
-            <input value={nomeProjeto} onChange={(e) => (setNomeProjeto(e.target.value), setModo("novo"))} minLength={3} maxLength={200} className="rounded-lg border border-white/15 bg-[#060a13]/60 px-2 py-1.5 text-white" aria-label="Nome do novo projeto" />
+            <input value={nomeProjeto} onChange={(e) => (setNomeProjeto(e.target.value), setModo("novo"))} minLength={3} maxLength={200} className="rounded-lg border border-white/15 bg-paper/60 px-2 py-1.5 text-white" aria-label="Nome do novo projeto" />
           </span>
         </label>
       </fieldset>
@@ -114,7 +114,7 @@ export function Salvar({ projetos, onFeito }: { projetos: ProjetoOpcao[]; onFeit
         <p>
           Serão guardados: a descrição, {s.materiais.length} material(is), {s.versoes.length} versão(ões) e as suas correções. {pendentes.length ? `${pendentes.length} arquivo(s) original(is) será(ão) enviado(s) ao projeto.` : ""}
         </p>
-        <p className="mt-1 text-[#a7b2c8]">Projetos são privados: só você e quem receber acesso ao projeto veem os arquivos. Nada é enviado a serviços externos ao salvar.</p>
+        <p className="mt-1 text-muted">Projetos são privados: só você e quem receber acesso ao projeto veem os arquivos. Nada é enviado a serviços externos ao salvar.</p>
         {semOriginal.length > 0 && <p className="mt-1 text-[#ffd08a]">{semOriginal.length} material(is) sem o arquivo original neste navegador (a página foi recarregada): o conteúdo extraído é salvo, mas o original não. Reenvie se quiser guardá-lo.</p>}
       </div>
       {estado && <p role="status" className="text-[13px] text-white">{estado}</p>}

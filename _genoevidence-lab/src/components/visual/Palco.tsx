@@ -107,7 +107,7 @@ export function Palco() {
         <motion.div key={passo.id} initial={reduced ? false : { opacity: 0, y: -6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="mx-auto max-w-[760px] text-center">
           <p className="ge-mono text-[12px] text-[#e679b5]">
             etapa {idx + 1} de {passos.length} · {passo.titulo}
-            {passo.confianca === "conferir" && <span className="ml-2 rounded-full border border-[#ffb23f]/50 px-1.5 text-[10px] text-[#ffb23f]">interpretação a conferir</span>}
+            {passo.confianca === "conferir" && <span className="ml-2 rounded-full border border-warn/50 px-1.5 text-[10px] text-warn">interpretação a conferir</span>}
           </p>
           <p className="mt-1 text-[17px] font-semibold text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.8)]">“{passo.texto}”</p>
         </motion.div>
@@ -123,12 +123,12 @@ export function Palco() {
             <Cena passo={passo} t={t} />
           </svg>
         ) : null}
-        {webgl && <p className="pointer-events-none absolute bottom-1 right-2 text-[10.5px] text-[#7d8aa3]">arraste para girar · role para aproximar</p>}
+        {webgl && <p className="pointer-events-none absolute bottom-1 right-2 text-[10.5px] text-panel-dim">arraste para girar · role para aproximar</p>}
       </div>
 
       <div className="mx-auto w-full max-w-[860px]">
-        <p className="text-center text-[13px] text-[#c9d2e3] [text-shadow:0_1px_8px_rgba(0,0,0,0.9)]">{passo.mostra}</p>
-        <p className="mt-0.5 text-center text-[10.5px] text-[#b49cf5]">✎ Ilustração didática em 3D gerada da sua descrição · formas, escala e quantidades não são reais · não é resultado</p>
+        <p className="text-center text-[13px] text-body [text-shadow:0_1px_8px_rgba(0,0,0,0.9)]">{passo.mostra}</p>
+        <p className="mt-0.5 text-center text-[10.5px] text-violet">✎ Ilustração didática em 3D gerada da sua descrição · formas, escala e quantidades não são reais · não é resultado</p>
 
         <div className="mt-2 flex flex-wrap items-center justify-center gap-1.5" role="toolbar" aria-label="Controles da visualização">
           <Botao onClick={() => (fim ? (setIdx(0), setT(0), setTocando(true)) : setTocando(!tocando))} destaque rotulo={tocando ? "Pausar" : fim ? "Repetir" : t > 0 || idx > 0 ? "Continuar" : "Iniciar"} icone={tocando ? "❚❚" : "▶"} />
@@ -152,7 +152,7 @@ export function Palco() {
                   <Defs />
                   <Cena passo={p} t={1} />
                 </svg>
-                <span className="block truncate px-1 text-[11px] text-[#c9d2e3]">
+                <span className="block truncate px-1 text-[11px] text-body">
                   {i + 1}. {p.titulo}
                 </span>
               </button>

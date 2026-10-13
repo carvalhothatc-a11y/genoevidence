@@ -30,7 +30,7 @@ export function AuthShell({ children, title, accent, lead }: { children: ReactNo
             <h2 className="text-[44px] font-extrabold leading-[1.04] tracking-tight [text-shadow:0_2px_24px_rgba(6,10,19,0.9)] xl:text-[52px]" style={{ color: "#ffffff" }}>
               Planeje, execute e registre experimentos <span className="ge-gradient-text-claro [text-shadow:none]">antes da bancada real</span>.
             </h2>
-            <ul className="mt-8 grid gap-3 text-[15px] text-[#c9d2e3]" aria-hidden="true">
+            <ul className="mt-8 grid gap-3 text-[15px] text-body" aria-hidden="true">
               <li className="flex gap-3">
                 <span className="ge-mono text-[#8fa6ff]">01</span> Formulário de experimento com validação por campo
               </li>

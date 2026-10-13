@@ -15,7 +15,7 @@ import { PerfilTermicoMini, GelIlustrativo } from "@/components/studio/Resultado
 type Aba = "ilustrado" | "observado" | "esperado" | "previsto";
 const ABAS: { id: Aba; rotulo: string; selo: string; cor: string }[] = [
   { id: "ilustrado", rotulo: "Processo ilustrado", selo: "✎", cor: "text-[#cdbcff]" },
-  { id: "observado", rotulo: "Resultado observado", selo: "▦", cor: "text-[#9db4ff]" },
+  { id: "observado", rotulo: "Resultado observado", selo: "▦", cor: "text-accent-ink" },
   { id: "esperado", rotulo: "Resultado esperado", selo: "◇", cor: "text-[#8de8bf]" },
   { id: "previsto", rotulo: "Resultado previsto", selo: "ƒ", cor: "text-[#ffd08a]" },
 ];
@@ -27,7 +27,7 @@ function PontosPorGrupo({ d }: { d: DadoObservado }) {
   const [tabela, setTabela] = useState(false);
   const [foco, setFoco] = useState<string | null>(null);
   const valores = d.grupos.flatMap((g) => g.valores.filter((v): v is number => v !== null));
-  if (!valores.length) return <p className="text-[12px] text-[#a7b2c8]">Sem valores numéricos nesta coluna.</p>;
+  if (!valores.length) return <p className="text-[12px] text-muted">Sem valores numéricos nesta coluna.</p>;
   const min = Math.min(...valores);
   const max = Math.max(...valores);
   const pad = (max - min || Math.abs(max) || 1) * 0.12;
@@ -47,9 +47,9 @@ function PontosPorGrupo({ d }: { d: DadoObservado }) {
       <figcaption className="flex flex-wrap items-baseline justify-between gap-2">
         <span className="text-[13px] font-semibold text-white">
           {d.variavel}
-          {d.unidade ? <span className="font-normal text-[#a7b2c8]"> ({d.unidade})</span> : null}
+          {d.unidade ? <span className="font-normal text-muted"> ({d.unidade})</span> : null}
         </span>
-        <button type="button" onClick={() => setTabela((v) => !v)} aria-pressed={tabela} className="text-[12px] text-[#9db4ff] underline">
+        <button type="button" onClick={() => setTabela((v) => !v)} aria-pressed={tabela} className="text-[12px] text-accent-ink underline">
           {tabela ? "Ver gráfico" : "Ver tabela"}
         </button>
       </figcaption>
@@ -57,7 +57,7 @@ function PontosPorGrupo({ d }: { d: DadoObservado }) {
         <div className="max-h-56 overflow-auto rounded-lg border border-white/10">
           <table className="w-full text-left text-[12px]">
             <caption className="sr-only">Valores enviados de {d.variavel}</caption>
-            <thead className="bg-white/[0.04] text-[#a7b2c8]">
+            <thead className="bg-white/[0.04] text-muted">
               <tr>
                 <th scope="col" className="px-2 py-1">Grupo</th>
                 <th scope="col" className="px-2 py-1">Réplica</th>
@@ -69,8 +69,8 @@ function PontosPorGrupo({ d }: { d: DadoObservado }) {
                 g.valores.map((v, i) => (
                   <tr key={`${g.nome}-${i}`} className="border-t border-white/5">
                     <td className="px-2 py-1 text-white">{g.nome}</td>
-                    <td className="px-2 py-1 text-[#a7b2c8]">{g.replicas?.[i] || "—"}</td>
-                    <td className="ge-mono px-2 py-1 text-right text-white">{v === null ? <span className="text-[#7d8aa3]">ausente</span> : fmt(v)}</td>
+                    <td className="px-2 py-1 text-muted">{g.replicas?.[i] || "—"}</td>
+                    <td className="ge-mono px-2 py-1 text-right text-white">{v === null ? <span className="text-panel-dim">ausente</span> : fmt(v)}</td>
                   </tr>
                 )),
               )}
@@ -120,7 +120,7 @@ function PontosPorGrupo({ d }: { d: DadoObservado }) {
           })}
         </svg>
       )}
-      <p className="text-[11px] text-[#7d8aa3]">
+      <p className="text-[11px] text-panel-dim">
         Pontos: valores enviados (como estão na tabela) · traço: média do grupo · {d.ausentes ? `${d.ausentes} ausente(s) mantido(s) como ausentes · ` : ""}
         {d.temTempo ? "há coluna de tempo, mas a comparação aqui é por grupo." : "comparação entre grupos, não uma evolução no tempo."}
       </p>
@@ -149,7 +149,7 @@ export function ResultadosExp({ onAvaliarPcr }: { onAvaliarPcr: (texto: string) 
       </h2>
       <div role="tablist" aria-label="Tipos de resultado" className="flex flex-wrap gap-1">
         {ABAS.map((a) => (
-          <button key={a.id} type="button" role="tab" id={`aba-${a.id}`} aria-selected={aba === a.id} aria-controls={`painel-${a.id}`} onClick={() => setAba(a.id)} className={`ge-press rounded-full px-3 py-1.5 text-[12px] font-semibold ${aba === a.id ? "bg-white/10 text-white ring-1 ring-white/20" : "text-[#a7b2c8] hover:bg-white/5 hover:text-white"}`}>
+          <button key={a.id} type="button" role="tab" id={`aba-${a.id}`} aria-selected={aba === a.id} aria-controls={`painel-${a.id}`} onClick={() => setAba(a.id)} className={`ge-press rounded-full px-3 py-1.5 text-[12px] font-semibold ${aba === a.id ? "bg-white/10 text-white ring-1 ring-white/20" : "text-muted hover:bg-white/5 hover:text-white"}`}>
             <span className={`mr-1 ${a.cor}`} aria-hidden="true">
               {a.selo}
             </span>
@@ -158,13 +158,13 @@ export function ResultadosExp({ onAvaliarPcr }: { onAvaliarPcr: (texto: string) 
         ))}
       </div>
 
-      <div role="tabpanel" id={`painel-${aba}`} aria-labelledby={`aba-${aba}`} className="grid gap-3 text-[13px] text-[#c9d2e3]">
+      <div role="tabpanel" id={`painel-${aba}`} aria-labelledby={`aba-${aba}`} className="grid gap-3 text-[13px] text-body">
         {aba === "ilustrado" && (
           <>
             <p className="text-white">{etapa.mostra}</p>
-            <p className="text-[12px] text-[#a7b2c8]">Representação didática da ação descrita: formas, escalas, cores e quantidades não são reais e não indicam que algo foi observado ou calculado.</p>
+            <p className="text-[12px] text-muted">Representação didática da ação descrita: formas, escalas, cores e quantidades não são reais e não indicam que algo foi observado ou calculado.</p>
             {etapa.passo.refs.length > 0 && (
-              <p className="text-[12px] text-[#a7b2c8]">
+              <p className="text-[12px] text-muted">
                 Explicação apoiada em:{" "}
                 {etapa.passo.refs.map((r) => (
                   <span key={r.id + r.locator} className="mr-1">
@@ -180,31 +180,31 @@ export function ResultadosExp({ onAvaliarPcr }: { onAvaliarPcr: (texto: string) 
           (exp.dados.length ? (
             exp.dados.map((d) => <PontosPorGrupo key={d.id} d={d} />)
           ) : (
-            <p className="text-[#a7b2c8]">Nenhum dado observado. Adicione uma tabela (CSV ou XLSX) e marque a coluna de valores; os valores serão mostrados exatamente como enviados.</p>
+            <p className="text-muted">Nenhum dado observado. Adicione uma tabela (CSV ou XLSX) e marque a coluna de valores; os valores serão mostrados exatamente como enviados.</p>
           ))}
 
         {aba === "esperado" &&
           (etapa.possibilidades.length ? (
             <>
-              <p className="text-[12px] text-[#a7b2c8]">Desfechos qualitativos possíveis para “{etapa.titulo}”. Não são probabilidades nem previsões para o seu experimento.</p>
+              <p className="text-[12px] text-muted">Desfechos qualitativos possíveis para “{etapa.titulo}”. Não são probabilidades nem previsões para o seu experimento.</p>
               <ul className="grid gap-1.5">
                 {etapa.possibilidades.map((p) => (
                   <li key={p.texto} className="rounded-lg border border-white/10 bg-black/15 px-2.5 py-1.5">
                     <span className="text-white">{p.texto}</span>
-                    <span className="block text-[11px] text-[#a7b2c8]">{p.base === "referencia" ? `Fonte: ${p.refs.map((r) => `${SOURCES[r.id]?.shortCitation ?? r.id} (${r.locator})`).join("; ")}` : "Orientação geral, sem fonte cadastrada."}</span>
+                    <span className="block text-[11px] text-muted">{p.base === "referencia" ? `Fonte: ${p.refs.map((r) => `${SOURCES[r.id]?.shortCitation ?? r.id} (${r.locator})`).join("; ")}` : "Orientação geral, sem fonte cadastrada."}</span>
                   </li>
                 ))}
               </ul>
             </>
           ) : (
-            <p className="text-[#a7b2c8]">Sem desfechos cadastrados para esta ação.</p>
+            <p className="text-muted">Sem desfechos cadastrados para esta ação.</p>
           ))}
 
         {aba === "previsto" && (
           <>
             <div className="rounded-lg border border-white/10 bg-black/15 p-3">
               <p className="font-semibold text-white">Probabilidade de sucesso: não estimada</p>
-              <p className="mt-1 text-[12px] text-[#a7b2c8]">Não há modelo validado para este cenário. Concordância entre artigos não vira porcentagem, e nenhuma porcentagem é inventada para preencher a tela.</p>
+              <p className="mt-1 text-[12px] text-muted">Não há modelo validado para este cenário. Concordância entre artigos não vira porcentagem, e nenhuma porcentagem é inventada para preencher a tela.</p>
             </div>
             {pcr && programaCompleto(pcr) ? (
               <>
@@ -212,7 +212,7 @@ export function ResultadosExp({ onAvaliarPcr }: { onAvaliarPcr: (texto: string) 
                 <GelIlustrativo ampliconPb={pcr.alvo.ampliconPb} />
               </>
             ) : pcr ? (
-              <p className="text-[12px] text-[#a7b2c8]">Para calcular o perfil do programa da PCR (duração total), informe temperaturas, tempos e número de ciclos.</p>
+              <p className="text-[12px] text-muted">Para calcular o perfil do programa da PCR (duração total), informe temperaturas, tempos e número de ciclos.</p>
             ) : null}
             {pcr && (
               <button type="button" onClick={() => onAvaliarPcr(textoPcr)} className="ge-press justify-self-start rounded-full bg-[#7b4de0] px-3 py-1.5 text-[12px] font-semibold text-white">

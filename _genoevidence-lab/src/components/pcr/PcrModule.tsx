@@ -386,7 +386,7 @@ export function PcrModule({ project, projects, initial }: { project: PcrProjectC
     ) : null;
 
   return (
-    <div className="relative h-[calc(100dvh-56px)] min-h-[560px] overflow-hidden bg-[#0b1221] lg:h-dvh">
+    <div className="relative h-[calc(100dvh-56px)] min-h-[560px] overflow-hidden bg-panel lg:h-dvh">
       {/* Palco: bancada 3D sempre presente ao fundo (continuidade entre escalas) */}
       <div className={`absolute inset-0 transition-[filter,opacity] duration-[400ms] ${s.scale !== "bancada" ? "opacity-60 [filter:saturate(0.6)]" : ""}`}>
         {webgl ? (

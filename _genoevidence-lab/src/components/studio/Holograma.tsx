@@ -111,7 +111,7 @@ export function Holograma({ fase, ancora, pausado, temperatura }: { fase: Molecu
               <span className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-black/40 px-2 py-0.5 font-mono text-[11px] text-white">{temperatura} °C</span>
             )}
           </div>
-          <div className="rounded-xl bg-black/45 px-3 py-2 text-[12px] leading-snug text-[#c9d2e3] backdrop-blur">
+          <div className="rounded-xl bg-black/45 px-3 py-2 text-[12px] leading-snug text-body backdrop-blur">
             <p className="font-semibold text-white">{leg.titulo}</p>
             <p>{leg.texto}</p>
             <p className="mt-1 flex flex-wrap gap-1">
@@ -121,7 +121,7 @@ export function Holograma({ fase, ancora, pausado, temperatura }: { fase: Molecu
                 </span>
               ))}
             </p>
-            <p className="mt-1 text-[10px] text-[#b49cf5]">✎ Ilustração didática · escala e número de moléculas não são reais</p>
+            <p className="mt-1 text-[10px] text-violet">✎ Ilustração didática · escala e número de moléculas não são reais</p>
           </div>
         </figure>
       </div>

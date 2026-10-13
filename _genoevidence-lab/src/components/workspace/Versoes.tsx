@@ -45,29 +45,29 @@ export function Versoes({ onVer }: { onVer: () => void }) {
     };
   }, [tocando, idx, total]);
 
-  if (n === 0) return <p className="text-[14px] text-[#a7b2c8]">Nenhuma versão ainda.</p>;
+  if (n === 0) return <p className="text-[14px] text-muted">Nenhuma versão ainda.</p>;
 
   const Lado = ({ titulo, c, v }: { titulo: string; c: typeof ca; v: typeof va }) => {
     const e = c?.etapas[idx];
     return (
       <figure className="grid gap-1.5 rounded-xl border border-white/10 bg-black/20 p-2">
-        <figcaption className="text-[12px] text-[#a7b2c8]">
+        <figcaption className="text-[12px] text-muted">
           <span className="font-semibold text-white">{titulo}</span> · versão {v?.versao}
         </figcaption>
-        <div className="aspect-[16/9] rounded-lg bg-[#060a13]">
+        <div className="aspect-[16/9] rounded-lg bg-paper">
           {e ? (
             <svg viewBox={`0 0 ${W} ${H}`} className="h-full w-full" role="img" aria-label={`${titulo}, etapa ${idx + 1}: ${e.titulo}`}>
               <Defs />
               <Cena passo={e.passo} t={t} />
             </svg>
           ) : (
-            <p className="grid h-full place-items-center text-[12px] text-[#7d8aa3]">sem etapa {idx + 1}</p>
+            <p className="grid h-full place-items-center text-[12px] text-panel-dim">sem etapa {idx + 1}</p>
           )}
         </div>
         {e && (
           <div className="text-[12px]">
             <p className="font-semibold text-white">{e.titulo}</p>
-            <ul className="text-[#a7b2c8]">
+            <ul className="text-muted">
               {e.parametros.map((p) => (
                 <li key={p.id}>
                   {p.nome}: <span className="ge-mono text-white">{formatarValor(p.valor, p.unidade)}</span>
@@ -81,7 +81,7 @@ export function Versoes({ onVer }: { onVer: () => void }) {
   };
 
   return (
-    <div className="grid gap-5 text-[14px] text-[#c9d2e3]" data-testid="versoes">
+    <div className="grid gap-5 text-[14px] text-body" data-testid="versoes">
       <section aria-labelledby="lista-versoes" className="grid gap-2">
         <h3 id="lista-versoes" className="font-semibold text-white">
           Versões preservadas
@@ -90,9 +90,9 @@ export function Versoes({ onVer }: { onVer: () => void }) {
           {s.versoes.map((v, i) => (
             <li key={v.versao} className={`flex flex-wrap items-center gap-2 rounded-lg border px-3 py-2 ${i === s.atual ? "border-[#e679b5]/50 bg-[#7b4de0]/10" : "border-white/10"}`}>
               <span className="ge-mono text-[#e679b5]">v{v.versao}</span>
-              <span className="text-[12px] text-[#a7b2c8]">{dataHora(v.criadoEm)}</span>
+              <span className="text-[12px] text-muted">{dataHora(v.criadoEm)}</span>
               <span className="text-[12px]">{v.acoes.length} etapa(s){v.mudancas.length ? ` · ${v.mudancas.length} mudança(s)` : ""}</span>
-              <button type="button" onClick={() => (s.irVersao(i), onVer())} className="ml-auto text-[12px] text-[#9db4ff] underline">
+              <button type="button" onClick={() => (s.irVersao(i), onVer())} className="ml-auto text-[12px] text-accent-ink underline">
                 {i === s.atual ? "em exibição" : "ver esta versão"}
               </button>
             </li>
@@ -108,7 +108,7 @@ export function Versoes({ onVer }: { onVer: () => void }) {
           <div className="flex flex-wrap items-center gap-2 text-[13px]">
             <label className="flex items-center gap-1">
               A
-              <select value={a} onChange={(e) => (setA(Number(e.target.value)), setIdx(0))} className="rounded border border-white/15 bg-[#0b1221] px-2 py-1 text-white">
+              <select value={a} onChange={(e) => (setA(Number(e.target.value)), setIdx(0))} className="rounded border border-white/15 bg-panel px-2 py-1 text-white">
                 {s.versoes.map((v, i) => (
                   <option key={v.versao} value={i}>
                     versão {v.versao}
@@ -118,7 +118,7 @@ export function Versoes({ onVer }: { onVer: () => void }) {
             </label>
             <label className="flex items-center gap-1">
               B
-              <select value={b} onChange={(e) => (setB(Number(e.target.value)), setIdx(0))} className="rounded border border-white/15 bg-[#0b1221] px-2 py-1 text-white">
+              <select value={b} onChange={(e) => (setB(Number(e.target.value)), setIdx(0))} className="rounded border border-white/15 bg-panel px-2 py-1 text-white">
                 {s.versoes.map((v, i) => (
                   <option key={v.versao} value={i}>
                     versão {v.versao}
@@ -129,7 +129,7 @@ export function Versoes({ onVer }: { onVer: () => void }) {
             <button type="button" onClick={() => (idx >= total - 1 && t >= 1 ? (setIdx(0), setT(0), setTocando(true)) : setTocando(!tocando))} className="ge-press rounded-full bg-[#7b4de0] px-3 py-1.5 text-[12px] font-semibold text-white">
               {tocando ? "Pausar as duas" : "Reproduzir as duas"}
             </button>
-            <span className="text-[12px] text-[#a7b2c8]">
+            <span className="text-[12px] text-muted">
               etapa {Math.min(idx + 1, total)} de {total}
             </span>
             <button type="button" disabled={idx === 0} onClick={() => (setTocando(false), setIdx(idx - 1), setT(1))} className="rounded-full border border-white/15 px-2 py-1 text-[12px] disabled:opacity-40">
@@ -148,14 +148,14 @@ export function Versoes({ onVer }: { onVer: () => void }) {
                 ))}
               </ul>
             ) : (
-              <p className="text-[#a7b2c8]">Nenhuma diferença na descrição estruturada.</p>
+              <p className="text-muted">Nenhuma diferença na descrição estruturada.</p>
             )}
           </div>
           <div className="grid gap-3 md:grid-cols-2">
             <Lado titulo="A" c={ca} v={va} />
             <Lado titulo="B" c={cb} v={vb} />
           </div>
-          <p className="text-[11px] text-[#7d8aa3]">Ilustrações 2D sincronizadas por etapa. Diferenças de parâmetros não mudam a animação para “parecer” um resultado: os valores aparecem ao lado.</p>
+          <p className="text-[11px] text-panel-dim">Ilustrações 2D sincronizadas por etapa. Diferenças de parâmetros não mudam a animação para “parecer” um resultado: os valores aparecem ao lado.</p>
         </section>
       )}
     </div>

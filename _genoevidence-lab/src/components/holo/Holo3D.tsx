@@ -167,8 +167,8 @@ function Rotulos({ onSelecionar, selecionado, origemDe }: { onSelecionar?: (o: O
         const conteudo = (
           <>
             <span className="block text-[14px] font-semibold leading-tight text-white">{it.texto}</span>
-            {it.sub && <span className="block text-[11px] leading-snug text-[#c9d2e3]">{it.sub}</span>}
-            {origem && <span className="mt-0.5 inline-block rounded-full border border-white/20 bg-black/40 px-1.5 text-[10px] font-semibold text-[#c9d2e3] [text-shadow:none]">{origem}</span>}
+            {it.sub && <span className="block text-[11px] leading-snug text-body">{it.sub}</span>}
+            {origem && <span className="mt-0.5 inline-block rounded-full border border-white/20 bg-black/40 px-1.5 text-[10px] font-semibold text-body [text-shadow:none]">{origem}</span>}
           </>
         );
         return alvo && onSelecionar ? (

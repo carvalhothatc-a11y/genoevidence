@@ -128,7 +128,7 @@ export function AreaTrabalho({
   }, [s.salvoEm, s.alterado, projetoAtual, gerado, s.texto, s.materiais.length]);
 
   return (
-    <div className="ge-dark fixed inset-0 z-30 flex flex-col bg-[#060a13] lg:flex-row">
+    <div className="ge-dark fixed inset-0 z-30 flex flex-col bg-paper lg:flex-row">
       <LabSidebar user={user} />
       <div className="flex min-h-0 min-w-0 flex-1 flex-col">
         {/* barra superior */}
@@ -137,16 +137,16 @@ export function AreaTrabalho({
             <label htmlFor="titulo-exp" className="sr-only">
               Nome do experimento
             </label>
-            <input id="titulo-exp" value={s.titulo} onChange={(e) => s.setTitulo(e.target.value)} placeholder={gerado ? "Experimento sem nome" : "Novo experimento"} className="min-w-0 max-w-[420px] flex-1 rounded-lg border border-transparent bg-transparent px-2 py-1 text-[17px] font-semibold text-white placeholder:text-[#7d8aa3] hover:border-white/10 focus:border-[#b49cf5] focus:outline-none" />
+            <input id="titulo-exp" value={s.titulo} onChange={(e) => s.setTitulo(e.target.value)} placeholder={gerado ? "Experimento sem nome" : "Novo experimento"} className="min-w-0 max-w-[420px] flex-1 rounded-lg border border-transparent bg-transparent px-2 py-1 text-[17px] font-semibold text-white placeholder:text-panel-dim hover:border-white/10 focus:border-violet focus:outline-none" />
             {estadoSalvo && (
-              <span className="hidden truncate text-[12px] text-[#a7b2c8] md:inline" data-testid="estado-salvo">
+              <span className="hidden truncate text-[12px] text-muted md:inline" data-testid="estado-salvo">
                 {estadoSalvo}
               </span>
             )}
           </div>
           <div className="flex flex-wrap items-center gap-1.5">
             {gerado && (
-              <button type="button" onClick={() => setGaveta("versoes")} className="ge-press inline-flex items-center gap-1.5 rounded-full border border-white/15 px-3 py-1.5 text-[13px] text-[#c9d2e3] hover:bg-white/10 hover:text-white">
+              <button type="button" onClick={() => setGaveta("versoes")} className="ge-press inline-flex items-center gap-1.5 rounded-full border border-white/15 px-3 py-1.5 text-[13px] text-body hover:bg-white/10 hover:text-white">
                 <Icone d={IC.versoes} size={15} />
                 Versões <span className="ge-mono text-[11px]">{s.versoes.length}</span>
               </button>
@@ -168,7 +168,7 @@ export function AreaTrabalho({
                   setAviso(null);
                   window.history.replaceState(null, "", "/laboratorio");
                 }}
-                className="ge-press rounded-full px-3 py-1.5 text-[13px] text-[#c9d2e3] hover:bg-white/10"
+                className="ge-press rounded-full px-3 py-1.5 text-[13px] text-body hover:bg-white/10"
               >
                 Novo
               </button>
@@ -181,11 +181,11 @@ export function AreaTrabalho({
             {/* informações e arquivos */}
             <div className="grid min-h-0 content-start gap-3 lg:overflow-y-auto lg:pr-1" aria-label="Descrição e materiais">
               {aviso && (
-                <p role={aviso.tom === "erro" ? "alert" : "status"} className={`rounded-xl border px-3 py-2 text-[13px] ${aviso.tom === "erro" ? "border-[#ff5470]/50 bg-[#ff5470]/10 text-[#ffb3c0]" : aviso.tom === "aviso" ? "border-[#ffb23f]/50 bg-[#ffb23f]/10 text-[#ffd08a]" : "border-[#3ccf8e]/40 bg-[#3ccf8e]/10 text-[#8de8bf]"}`}>
+                <p role={aviso.tom === "erro" ? "alert" : "status"} className={`rounded-xl border px-3 py-2 text-[13px] ${aviso.tom === "erro" ? "border-danger/50 bg-danger/10 text-[#ffb3c0]" : aviso.tom === "aviso" ? "border-warn/50 bg-warn/10 text-[#ffd08a]" : "border-[#3ccf8e]/40 bg-[#3ccf8e]/10 text-[#8de8bf]"}`}>
                   {aviso.texto}
                 </p>
               )}
-              {carregando && <p role="status" className="text-[13px] text-[#a7b2c8]">Abrindo o experimento salvo…</p>}
+              {carregando && <p role="status" className="text-[13px] text-muted">Abrindo o experimento salvo…</p>}
               <Entrada compacta={gerado} onCriar={criar} onAviso={setAviso} />
               <Materiais />
               {s.pendente && gerado && (
@@ -198,7 +198,7 @@ export function AreaTrabalho({
               )}
               <Sintese />
               {!gerado && (
-                <p className="px-1 text-[12px] text-[#7d8aa3]">
+                <p className="px-1 text-[12px] text-panel-dim">
                   Prefere explorar uma técnica completa? Veja as <Link href="/modulos" className="underline">técnicas educativas</Link> ou a <Link href="/laboratorio/bancada" className="underline">bancada 3D</Link>.
                 </p>
               )}

@@ -10,12 +10,12 @@ import type { CalculadoraId } from "@/lib/modules/tecnicas/tipos";
 import type { ModelCard } from "@/lib/modules/contract";
 import { SourceList } from "@/components/sources/SourceList";
 
-const campo = "w-full rounded-lg border border-white/15 bg-[#060a13]/60 px-3 py-2 text-white";
-const rotulo = "grid gap-1 text-[13px] text-[#c9d2e3]";
+const campo = "w-full rounded-lg border border-white/15 bg-paper/60 px-3 py-2 text-white";
+const rotulo = "grid gap-1 text-[13px] text-body";
 
 function Resultado({ children, aviso }: { children: React.ReactNode; aviso?: string | null }) {
   return (
-    <div className="mt-3 grid gap-1 rounded-xl border border-[#b49cf5]/40 bg-[#7b4de0]/10 p-3" role="status">
+    <div className="mt-3 grid gap-1 rounded-xl border border-violet/40 bg-[#7b4de0]/10 p-3" role="status">
       {children}
       {aviso && <p className="text-[12px] text-[#ffd08a]">{aviso}</p>}
     </div>
@@ -25,7 +25,7 @@ function Resultado({ children, aviso }: { children: React.ReactNode; aviso?: str
 /** Cartão do modelo: equação, parâmetros, pressupostos, limites e o que NÃO prevê. */
 export function CartaoModelo({ m }: { m: ModelCard }) {
   return (
-    <details className="rounded-xl border border-[#b49cf5]/30 bg-[#7b4de0]/[0.07] p-3 text-[13px] text-[#c9d2e3]">
+    <details className="rounded-xl border border-violet/30 bg-[#7b4de0]/[0.07] p-3 text-[13px] text-body">
       <summary className="cursor-pointer font-semibold text-white">Cartão do modelo: {m.name}</summary>
       <dl className="mt-2 grid gap-2">
         <div>
@@ -115,7 +115,7 @@ function Ddct() {
           {num(r.referencia, (n) => setR({ ...r, referencia: n }), "Ct do gene de referência")}
         </fieldset>
       </div>
-      <label className="flex items-start gap-2 text-[13px] text-[#c9d2e3]">
+      <label className="flex items-start gap-2 text-[13px] text-body">
         <input type="checkbox" className="mt-1" checked={corrigir} onChange={(e) => setCorrigir(e.target.checked)} data-testid="usar-eficiencia" />
         <span>Também calcular a razão corrigida pelas eficiências que eu medi</span>
       </label>
@@ -129,19 +129,19 @@ function Ddct() {
       {errosEf.length > 0 && <p className="text-[13px] text-[#ff8aa4]" role="alert">{errosEf[0]}</p>}
       {res && (
         <Resultado aviso={corrigir && razao !== null ? "Os dois números vêm de pressupostos diferentes. Se eles divergem muito, a hipótese de eficiência de 100% não se sustenta para os seus dados." : null}>
-          <p className="text-[13px] text-[#c9d2e3]">
+          <p className="text-[13px] text-body">
             ΔCt da amostra-alvo: <strong className="text-white">{formatarRazao(res.dctAmostra)}</strong> · ΔCt da amostra de referência: <strong className="text-white">{formatarRazao(res.dctReferencia)}</strong> · ΔΔCt:{" "}
             <strong className="text-white">{formatarRazao(res.ddct)}</strong>
           </p>
           <p className="text-[15px] text-white" data-testid="resultado-ddct">
-            2^−ΔΔCt = <strong>{formatarRazao(res.mudanca)}</strong> <span className="text-[13px] text-[#a7b2c8]">(eficiência de 100% em todas as reações)</span>
+            2^−ΔΔCt = <strong>{formatarRazao(res.mudanca)}</strong> <span className="text-[13px] text-muted">(eficiência de 100% em todas as reações)</span>
           </p>
           {razao !== null && (
             <p className="text-[15px] text-white" data-testid="resultado-razao">
-              Razão corrigida = <strong>{formatarRazao(razao)}</strong> <span className="text-[13px] text-[#a7b2c8]">(com as eficiências informadas)</span>
+              Razão corrigida = <strong>{formatarRazao(razao)}</strong> <span className="text-[13px] text-muted">(com as eficiências informadas)</span>
             </p>
           )}
-          <p className="text-[12px] text-[#a7b2c8]">É uma mudança relativa, sem unidade. Não é porcentagem de sucesso, nem significância estatística.</p>
+          <p className="text-[12px] text-muted">É uma mudança relativa, sem unidade. Não é porcentagem de sucesso, nem significância estatística.</p>
         </Resultado>
       )}
     </div>
@@ -183,7 +183,7 @@ function VolumeProteina() {
               </>
             )}
           </p>
-          <p className="text-[12px] text-[#a7b2c8]">Conta de proporção. Não prevê a intensidade do sinal nem corrige erro na medida da concentração.</p>
+          <p className="text-[12px] text-muted">Conta de proporção. Não prevê a intensidade do sinal nem corrige erro na medida da concentração.</p>
         </Resultado>
       )}
     </div>
@@ -222,13 +222,13 @@ function Tpm() {
             </label>
           </div>
         ))}
-        <p className="text-[12px] text-[#a7b2c8]">Colunas: nome · leituras mapeadas · comprimento (pb). Os valores iniciais são fictícios, só para ensino.</p>
+        <p className="text-[12px] text-muted">Colunas: nome · leituras mapeadas · comprimento (pb). Os valores iniciais são fictícios, só para ensino.</p>
         <div className="flex flex-wrap gap-2">
-          <button type="button" onClick={() => setGenes([...genes, { id: `GENE_${genes.length + 1} (fictício)`, leituras: 100, comprimentoPb: 1000 }])} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-[#c9d2e3] hover:bg-white/10">
+          <button type="button" onClick={() => setGenes([...genes, { id: `GENE_${genes.length + 1} (fictício)`, leituras: 100, comprimentoPb: 1000 }])} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-body hover:bg-white/10">
             Acrescentar gene
           </button>
           {genes.length > 1 && (
-            <button type="button" onClick={() => setGenes(genes.slice(0, -1))} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-[#c9d2e3] hover:bg-white/10">
+            <button type="button" onClick={() => setGenes(genes.slice(0, -1))} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-body hover:bg-white/10">
               Remover o último
             </button>
           )}
@@ -237,9 +237,9 @@ function Tpm() {
       {erro && <p className="text-[13px] text-[#ff8aa4]" role="alert">{erro}</p>}
       {linhas && (
         <Resultado aviso="Estes TPM valem dentro deste conjunto de genes. Numa amostra real o cálculo usa todos os genes anotados, e valores de amostras diferentes não são comparáveis só por serem TPM.">
-          <table className="w-full text-left text-[13px] text-[#c9d2e3]">
+          <table className="w-full text-left text-[13px] text-body">
             <thead>
-              <tr className="text-[12px] text-[#a7b2c8]">
+              <tr className="text-[12px] text-muted">
                 <th scope="col" className="py-1">Gene</th>
                 <th scope="col">Leituras por kb</th>
                 <th scope="col">TPM</th>
@@ -304,7 +304,7 @@ function PosicaoBanda() {
             <p className="text-[15px] text-white" data-testid="resultado-banda">
               Uma banda de <strong>{bp} pb</strong> apareceria a cerca de <strong>{Math.round(pos * 100)}%</strong> do caminho entre o poço e o fim do gel.
             </p>
-            <p className="text-[12px] text-[#a7b2c8]">Contorno tracejado: onde a banda estaria SE o fragmento estivesse presente. Presença e intensidade não são previstas.</p>
+            <p className="text-[12px] text-muted">Contorno tracejado: onde a banda estaria SE o fragmento estivesse presente. Presença e intensidade não são previstas.</p>
           </Resultado>
         )}
       </div>
@@ -341,9 +341,9 @@ function FrequenciaEdicao() {
         <Resultado aviso={r.poucasVersoes ? `Com ${r.analisadas} versões analisadas, o intervalo é largo demais para concluir: a referência recomenda analisar mais de ${VERSOES_RECOMENDADAS}.` : null}>
           <p className="text-[15px] text-white" data-testid="resultado-edicao">
             Observado: <strong>{r.modificadas} de {r.analisadas}</strong> ({pct(r.proporcao)}) · compatível com <strong>{pct(r.ic95[0])} a {pct(r.ic95[1])}</strong>{" "}
-            <span className="text-[13px] text-[#a7b2c8]">(intervalo exato de 95%)</span>
+            <span className="text-[13px] text-muted">(intervalo exato de 95%)</span>
           </p>
-          <p className="text-[12px] text-[#a7b2c8]">
+          <p className="text-[12px] text-muted">
             É a leitura do que foi observado nesta amostra. Não é previsão para uma nova tentativa, com outro guia, outra célula ou outra região.
           </p>
         </Resultado>
@@ -376,7 +376,7 @@ export function Calculadora({ id, modelos }: { id: CalculadoraId; modelos: Model
           .map((x) => (
             <CartaoModelo key={x.id} m={x} />
           ))}
-        {!m && <p className="text-[12px] text-[#a7b2c8]">Sem cartão de modelo cadastrado para esta conta.</p>}
+        {!m && <p className="text-[12px] text-muted">Sem cartão de modelo cadastrado para esta conta.</p>}
       </div>
     </section>
   );

@@ -22,7 +22,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const user = await getSessionUser();
   return (
     <html lang="pt-BR" className={`${unbounded.variable} ${plexSans.variable} ${plexMono.variable}`}>
-      <body className="min-h-dvh bg-[#060a13]">
+      {/* O fundo de html/body vem de --app-bg (globals.css). Classe de fundo aqui não adianta:
+          a regra body{background} do globals.css vence o utilitário do Tailwind, que é em camada. */}
+      <body className="min-h-dvh">
         <a href="#conteudo" className="skip-link">
           Pular para o conteúdo
         </a>

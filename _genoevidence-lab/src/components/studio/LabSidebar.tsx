@@ -69,7 +69,7 @@ export function LabSidebar({ user }: { user: User }) {
         <Image src="/brand/geno-evidence-simbolo-64.png" alt="" width={44} height={44} priority className="drop-shadow-[0_0_18px_rgba(123,77,224,0.55)]" />
         <span className="flex flex-col leading-none">
           <span className="text-[22px] font-semibold tracking-[-0.03em] text-white [font-family:var(--font-display)]">GenoLab</span>
-          <span className="mt-1 text-[12px] text-[#a7b2c8]">por GenoEvidence</span>
+          <span className="mt-1 text-[12px] text-muted">por GenoEvidence</span>
         </span>
       </Link>
       <nav aria-label="Navegação principal">
@@ -82,7 +82,7 @@ export function LabSidebar({ user }: { user: User }) {
                   href={it.href}
                   aria-current={ativo ? "page" : undefined}
                   onClick={() => setAberta(false)}
-                  className={`ge-press relative flex items-center gap-3.5 rounded-xl px-4 py-3 text-[15px] ${ativo ? "ge-nav-ativo font-semibold text-white" : "text-[#c9d2e3] hover:bg-white/5 hover:text-white"}`}
+                  className={`ge-press relative flex items-center gap-3.5 rounded-xl px-4 py-3 text-[15px] ${ativo ? "ge-nav-ativo font-semibold text-white" : "text-body hover:bg-white/5 hover:text-white"}`}
                 >
                   <Icon d={it.icone} />
                   {it.rotulo}
@@ -94,7 +94,7 @@ export function LabSidebar({ user }: { user: User }) {
       </nav>
       <div className="mt-auto grid gap-3">
         <InstalarApp />
-        <button type="button" onClick={togglePaused} aria-pressed={paused} className="ge-press flex items-center gap-3 rounded-xl px-4 py-2.5 text-sm text-[#c9d2e3] hover:bg-white/5">
+        <button type="button" onClick={togglePaused} aria-pressed={paused} className="ge-press flex items-center gap-3 rounded-xl px-4 py-2.5 text-sm text-body hover:bg-white/5">
           <Icon d={paused ? I.play : I.pausa} />
           {paused ? "Retomar animações" : "Pausar animações"}
         </button>
@@ -104,9 +104,9 @@ export function LabSidebar({ user }: { user: User }) {
           </span>
           <span className="min-w-0 flex-1 leading-tight">
             <span className="block truncate text-sm font-semibold text-white">{user.name}</span>
-            <span className="block truncate text-[11px] text-[#a7b2c8]">{user.email}</span>
+            <span className="block truncate text-[11px] text-muted">{user.email}</span>
           </span>
-          <button type="button" onClick={sair} className="ge-press rounded-lg p-1.5 text-[#c9d2e3] hover:bg-white/10 hover:text-white" title="Sair">
+          <button type="button" onClick={sair} className="ge-press rounded-lg p-1.5 text-body hover:bg-white/10 hover:text-white" title="Sair">
             <Icon d={I.sair} />
             <span className="sr-only">Sair</span>
           </button>

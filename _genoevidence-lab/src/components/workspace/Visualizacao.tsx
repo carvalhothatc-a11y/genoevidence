@@ -18,7 +18,7 @@ const Holo3D = dynamic(() => import("@/components/holo/Holo3D").then((m) => m.Ho
   ssr: false,
   loading: () => (
     <div className="grid h-full place-items-center" role="status">
-      <p className="ge-mono text-sm text-[#a7b2c8]">carregando a cena 3D…</p>
+      <p className="ge-mono text-sm text-muted">carregando a cena 3D…</p>
     </div>
   ),
 });
@@ -74,32 +74,32 @@ function PainelElemento({ etapa, objeto, onFechar, onPerguntar }: { etapa: Etapa
       initial={{ opacity: 0, x: 16 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 16 }}
-      className="absolute bottom-3 right-3 top-3 z-30 flex w-[min(320px,calc(100%-24px))] flex-col overflow-hidden rounded-2xl border border-white/12 bg-[#0b1221] shadow-[0_20px_60px_-20px_rgba(0,0,0,0.9)]"
+      className="absolute bottom-3 right-3 top-3 z-30 flex w-[min(320px,calc(100%-24px))] flex-col overflow-hidden rounded-2xl border border-white/12 bg-panel shadow-[0_20px_60px_-20px_rgba(0,0,0,0.9)]"
       aria-label={`Elemento selecionado: ${el?.rotulo ?? lib.nome}`}
       data-testid="painel-elemento"
       data-objeto={objeto}
     >
       <div className="flex items-start justify-between gap-2 border-b border-white/10 px-4 py-3">
         <div>
-          <p className="text-[11px] uppercase tracking-wide text-[#7d8aa3]">{lib.categoria === "equipamento" ? "Equipamento" : lib.categoria === "recipiente" ? "Recipiente" : lib.categoria === "celula" ? "Célula" : lib.categoria === "amostra" ? "Amostra" : "Material"}</p>
+          <p className="text-[11px] uppercase tracking-wide text-panel-dim">{lib.categoria === "equipamento" ? "Equipamento" : lib.categoria === "recipiente" ? "Recipiente" : lib.categoria === "celula" ? "Célula" : lib.categoria === "amostra" ? "Amostra" : "Material"}</p>
           <h3 className="text-[17px] font-semibold text-white">{el?.rotulo ?? lib.nome}</h3>
-          {el && el.rotulo !== lib.nome && <p className="text-[12px] text-[#a7b2c8]">{lib.nome}</p>}
+          {el && el.rotulo !== lib.nome && <p className="text-[12px] text-muted">{lib.nome}</p>}
         </div>
-        <button type="button" onClick={onFechar} className="ge-press rounded-full p-1.5 text-[#c9d2e3] hover:bg-white/10" aria-label="Fechar painel do elemento">
+        <button type="button" onClick={onFechar} className="ge-press rounded-full p-1.5 text-body hover:bg-white/10" aria-label="Fechar painel do elemento">
           <Icone d={IC.fechar} size={16} />
         </button>
       </div>
-      <div className="grid min-h-0 flex-1 gap-3 overflow-y-auto px-4 py-3 text-[13px] text-[#c9d2e3]">
+      <div className="grid min-h-0 flex-1 gap-3 overflow-y-auto px-4 py-3 text-[13px] text-body">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-wide text-[#7d8aa3]">Função</p>
+          <p className="text-[11px] font-semibold uppercase tracking-wide text-panel-dim">Função</p>
           <p className="text-white">{lib.funcao}</p>
         </div>
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-wide text-[#7d8aa3]">Relação com a ação</p>
+          <p className="text-[11px] font-semibold uppercase tracking-wide text-panel-dim">Relação com a ação</p>
           <p>{el ? `${PAPEL_TEXTO[el.papel]} (“${etapa.titulo}”).` : `Faz parte da ilustração de “${etapa.titulo}”; não foi citado nos seus materiais.`}</p>
         </div>
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-wide text-[#7d8aa3]">Parâmetros desta etapa</p>
+          <p className="text-[11px] font-semibold uppercase tracking-wide text-panel-dim">Parâmetros desta etapa</p>
           {etapa.parametros.length ? (
             <ul className="grid gap-0.5">
               {etapa.parametros.map((p) => (
@@ -110,29 +110,29 @@ function PainelElemento({ etapa, objeto, onFechar, onPerguntar }: { etapa: Etapa
               ))}
             </ul>
           ) : (
-            <p className="text-[#a7b2c8]">Nenhum valor informado para esta etapa.</p>
+            <p className="text-muted">Nenhum valor informado para esta etapa.</p>
           )}
         </div>
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-wide text-[#7d8aa3]">Fonte</p>
+          <p className="text-[11px] font-semibold uppercase tracking-wide text-panel-dim">Fonte</p>
           {el ? (
             el.inferido ? (
-              <p className="text-[#a7b2c8]">Representação padrão da ação na biblioteca do GenoLab (não citada nos seus materiais).</p>
+              <p className="text-muted">Representação padrão da ação na biblioteca do GenoLab (não citada nos seus materiais).</p>
             ) : (
               <ul className="grid gap-1.5">
                 {el.origens.slice(0, 4).map((o, i) => (
                   <li key={i} className="grid gap-0.5">
                     <OrigemChip o={o} nomeMaterial={nomeMaterial(o.materialId)} />
-                    {o.trecho && <span className="text-[12px] italic text-[#a7b2c8]">“{o.trecho.slice(0, 160)}”</span>}
+                    {o.trecho && <span className="text-[12px] italic text-muted">“{o.trecho.slice(0, 160)}”</span>}
                   </li>
                 ))}
               </ul>
             )
           ) : (
-            <p className="text-[#a7b2c8]">Ilustração da ação.</p>
+            <p className="text-muted">Ilustração da ação.</p>
           )}
           {lib.refs?.length ? (
-            <p className="mt-1 text-[11px] text-[#a7b2c8]">
+            <p className="mt-1 text-[11px] text-muted">
               Explicação baseada em:{" "}
               {lib.refs.map((r) => (
                 <span key={r.id + r.locator}>
@@ -143,7 +143,7 @@ function PainelElemento({ etapa, objeto, onFechar, onPerguntar }: { etapa: Etapa
           ) : null}
         </div>
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-wide text-[#7d8aa3]">Explicação</p>
+          <p className="text-[11px] font-semibold uppercase tracking-wide text-panel-dim">Explicação</p>
           <p>{lib.explicacao}</p>
           {!lib.forma3d && <p className="mt-1 text-[11px] text-[#ffd08a]">Sem forma 3D na biblioteca: aparece como rótulo.</p>}
         </div>
@@ -221,11 +221,11 @@ export function Visualizacao({ onPerguntar }: { onPerguntar: (q: string) => void
         <div className="min-w-0">
           <p className="ge-mono text-[12px] text-[#e679b5]">
             etapa {s.idx + 1} de {cena.etapas.length} · {etapa.titulo}
-            {etapa.passo.confianca === "conferir" && <span className="ml-2 rounded-full border border-[#ffb23f]/50 px-1.5 text-[10px] text-[#ffd08a]">interpretação a conferir</span>}
+            {etapa.passo.confianca === "conferir" && <span className="ml-2 rounded-full border border-warn/50 px-1.5 text-[10px] text-[#ffd08a]">interpretação a conferir</span>}
           </p>
           <p className="mt-0.5 line-clamp-2 text-[15px] font-semibold text-white">“{etapa.texto}”</p>
         </div>
-        <span className="shrink-0 rounded-full border border-[#b49cf5]/40 bg-[#7b4de0]/20 px-2 py-0.5 text-[11px] font-semibold text-[#cdbcff]" title="Representação didática da ação: não é resultado observado nem previsto">
+        <span className="shrink-0 rounded-full border border-violet/40 bg-[#7b4de0]/20 px-2 py-0.5 text-[11px] font-semibold text-[#cdbcff]" title="Representação didática da ação: não é resultado observado nem previsto">
           ✎ processo ilustrado
         </span>
       </div>
@@ -238,12 +238,12 @@ export function Visualizacao({ onPerguntar }: { onPerguntar: (q: string) => void
           </Limite3D>
         ) : webgl !== null ? (
           <div className="grid h-full place-items-center p-4">
-            {(webgl === false || falhou3d) && <p className="absolute left-3 top-3 rounded-lg border border-[#ffb23f]/40 bg-[#ffb23f]/10 px-2 py-1 text-[12px] text-[#ffd08a]">3D indisponível neste navegador: mostrando a ilustração 2D.</p>}
+            {(webgl === false || falhou3d) && <p className="absolute left-3 top-3 rounded-lg border border-warn/40 bg-warn/10 px-2 py-1 text-[12px] text-[#ffd08a]">3D indisponível neste navegador: mostrando a ilustração 2D.</p>}
             {svg2d}
           </div>
         ) : null}
         <AnimatePresence>{s.selecao && <PainelElemento key={s.selecao} etapa={etapa} objeto={s.selecao} onFechar={() => s.selecionar(null)} onPerguntar={onPerguntar} />}</AnimatePresence>
-        {usar3d && !s.selecao && <p className="pointer-events-none absolute bottom-2 left-3 text-[11px] text-[#a7b2c8]">Clique num rótulo para ver o elemento · arraste para girar</p>}
+        {usar3d && !s.selecao && <p className="pointer-events-none absolute bottom-2 left-3 text-[11px] text-muted">Clique num rótulo para ver o elemento · arraste para girar</p>}
       </div>
 
       {/* controles */}
@@ -251,9 +251,9 @@ export function Visualizacao({ onPerguntar }: { onPerguntar: (q: string) => void
         <div className="flex items-center gap-1">
           <Controle rotulo="Reiniciar" icone={IC.reiniciar} onClick={s.reiniciar} />
           <Controle rotulo={s.tocando ? "Pausar" : "Reproduzir"} icone={s.tocando ? IC.pausa : IC.play} onClick={() => (!s.tocando && s.idx === cena.etapas.length - 1 && t >= 1 ? s.reiniciar() : s.setTocando(!s.tocando))} destaque />
-          <label className="ml-1 flex items-center gap-1 text-[12px] text-[#a7b2c8]">
+          <label className="ml-1 flex items-center gap-1 text-[12px] text-muted">
             <span>Velocidade</span>
-            <select aria-label="Velocidade da animação" value={s.velocidade} onChange={(e) => s.setVelocidade(Number(e.target.value) as Velocidade)} className="rounded-full border border-white/15 bg-[#0b1221] px-2 py-1 text-[12px] text-white">
+            <select aria-label="Velocidade da animação" value={s.velocidade} onChange={(e) => s.setVelocidade(Number(e.target.value) as Velocidade)} className="rounded-full border border-white/15 bg-panel px-2 py-1 text-[12px] text-white">
               <option value={0.5}>0,5×</option>
               <option value={1}>1×</option>
               <option value={2}>2×</option>
@@ -265,13 +265,13 @@ export function Visualizacao({ onPerguntar }: { onPerguntar: (q: string) => void
           <Controle rotulo="Afastar" icone={IC.menos} onClick={() => zoomHolo(1.25)} disabled={!usar3d} />
           <Controle rotulo="Reiniciar visão" icone={IC.visao} onClick={() => reiniciarVisaoHolo()} disabled={!usar3d} />
           {webgl && (
-            <button type="button" onClick={() => setModo2d((v) => !v)} aria-pressed={modo2d} className="ge-press rounded-full border border-white/15 px-2.5 py-1 text-[12px] text-[#c9d2e3] hover:bg-white/10">
+            <button type="button" onClick={() => setModo2d((v) => !v)} aria-pressed={modo2d} className="ge-press rounded-full border border-white/15 px-2.5 py-1 text-[12px] text-body hover:bg-white/10">
               {modo2d ? "Voltar ao 3D" : "Ver em 2D"}
             </button>
           )}
         </div>
       </div>
-      <p className="px-1 text-[11px] text-[#7d8aa3]" data-testid="tempo-experimental">
+      <p className="px-1 text-[11px] text-panel-dim" data-testid="tempo-experimental">
         {etapa.tempoExperimental ? `Tempo experimental informado: ${etapa.tempoExperimental}. ` : ""}A animação dura {(DUR / s.velocidade / 1000).toLocaleString("pt-BR", { maximumFractionDigits: 1 })} s por etapa e não representa a duração real.
       </p>
 
@@ -284,7 +284,7 @@ export function Visualizacao({ onPerguntar }: { onPerguntar: (q: string) => void
               onClick={() => (s.setTocando(false), s.setIdx(i))}
               aria-current={i === s.idx ? "step" : undefined}
               data-passo={e.acao}
-              className={`ge-press flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[12px] ${i === s.idx ? "border-[#e679b5]/70 bg-[#7b4de0]/30 font-semibold text-white" : i < s.idx ? "border-[#7b4de0]/40 text-[#cdbcff]" : "border-white/12 text-[#a7b2c8] hover:text-white"}`}
+              className={`ge-press flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[12px] ${i === s.idx ? "border-[#e679b5]/70 bg-[#7b4de0]/30 font-semibold text-white" : i < s.idx ? "border-[#7b4de0]/40 text-[#cdbcff]" : "border-white/12 text-muted hover:text-white"}`}
             >
               <span className="ge-mono">{String(i + 1).padStart(2, "0")}</span>
               {e.titulo}
@@ -305,7 +305,7 @@ export function Visualizacao({ onPerguntar }: { onPerguntar: (q: string) => void
 
 function Controle({ rotulo, icone, onClick, disabled, destaque }: { rotulo: string; icone: string; onClick: () => void; disabled?: boolean; destaque?: boolean }) {
   return (
-    <button type="button" onClick={onClick} disabled={disabled} title={rotulo} className={`ge-press inline-flex h-9 min-w-9 items-center justify-center gap-1.5 rounded-full px-2.5 text-[12px] font-semibold disabled:opacity-35 ${destaque ? "bg-[#7b4de0] text-white hover:bg-[#8a5ef0]" : "border border-white/15 text-[#c9d2e3] hover:bg-white/10 hover:text-white"}`}>
+    <button type="button" onClick={onClick} disabled={disabled} title={rotulo} className={`ge-press inline-flex h-9 min-w-9 items-center justify-center gap-1.5 rounded-full px-2.5 text-[12px] font-semibold disabled:opacity-35 ${destaque ? "bg-[#7b4de0] text-white hover:bg-[#8a5ef0]" : "border border-white/15 text-body hover:bg-white/10 hover:text-white"}`}>
       <Icone d={icone} size={16} />
       <span className={destaque ? "" : "sr-only"}>{rotulo}</span>
     </button>
@@ -351,7 +351,7 @@ function BoasVindasGeninho() {
         <div className="hidden shrink-0 rounded-[28px] p-[3px] shadow-[0_10px_40px_-12px_rgba(123,77,224,0.8)] sm:block" style={{ background: "var(--ge-gradient)" }}>
           <GeninhoCorpo className={`rounded-[25px] bg-white object-cover ${recolhida ? "h-20 w-20" : "h-40 w-40"}`} />
         </div>
-        <div className="relative min-w-0 flex-1 rounded-2xl border border-white/12 bg-[#0f182b]/90 p-3 text-[14px] leading-relaxed text-[#c9d2e3] backdrop-blur sm:rounded-tl-md sm:p-4">
+        <div className="relative min-w-0 flex-1 rounded-2xl border border-white/12 bg-[#0f182b]/90 p-3 text-[14px] leading-relaxed text-body backdrop-blur sm:rounded-tl-md sm:p-4">
           <div className="flex items-center gap-3">
             {/* no celular a imagem fica pequena, ao lado do título, e o texto usa a largura toda */}
             <div className="shrink-0 rounded-[16px] p-[2px] shadow-[0_8px_28px_-10px_rgba(123,77,224,0.8)] sm:hidden" style={{ background: "var(--ge-gradient)" }}>
@@ -364,7 +364,7 @@ function BoasVindasGeninho() {
           {recolhida ? (
             <p className="mt-1">
               Descreva no campo de descrição o que você quer fazer e clique em <strong className="text-white">Criar visualização</strong>.{" "}
-              <button type="button" onClick={() => recolher(false)} className="text-[#9db4ff] underline">
+              <button type="button" onClick={() => recolher(false)} className="text-accent-ink underline">
                 Ver as instruções
               </button>
             </p>
@@ -388,14 +388,14 @@ function BoasVindasGeninho() {
                   Na cena, <strong className="text-white">clique nos elementos</strong> para ver de onde veio cada informação. Corrija o que precisar e salve num projeto quando quiser.
                 </li>
               </ol>
-              <p className="mt-2 text-[12px] text-[#a7b2c8]">Não é preciso criar um projeto antes. Se tiver dúvidas, me chame no botão “Geninho”, no topo.</p>
+              <p className="mt-2 text-[12px] text-muted">Não é preciso criar um projeto antes. Se tiver dúvidas, me chame no botão “Geninho”, no topo.</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {vazio && (
                   <button type="button" onClick={() => setTexto(EXEMPLOS_AREA[1].texto, "texto")} className="ge-press rounded-full bg-[#7b4de0] px-3 py-1.5 text-[12px] font-semibold text-white">
                     Ver com um exemplo
                   </button>
                 )}
-                <button type="button" onClick={() => recolher(true)} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-[#c9d2e3] hover:bg-white/10">
+                <button type="button" onClick={() => recolher(true)} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-body hover:bg-white/10">
                   Entendi
                 </button>
               </div>

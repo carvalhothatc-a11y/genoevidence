@@ -17,9 +17,9 @@ function Cartao({ titulo, selo, children, testid }: { titulo: string; selo: Reac
   );
 }
 
-export const SeloSimulacao = () => <span className="shrink-0 rounded-full border border-[#ffb23f]/40 bg-[#ffb23f]/10 px-1.5 py-0.5 text-[10px] font-semibold text-[#ffb23f]">ƒ simulação</span>;
-export const SeloIlustracao = () => <span className="shrink-0 rounded-full border border-[#b49cf5]/40 bg-[#7b4de0]/20 px-1.5 py-0.5 text-[10px] font-semibold text-[#b49cf5]">✎ ilustração</span>;
-export const SeloDados = () => <span className="shrink-0 rounded-full border border-[#7d9dff]/40 bg-[#4d7cff]/15 px-1.5 py-0.5 text-[10px] font-semibold text-[#9db4ff]">▦ dados</span>;
+export const SeloSimulacao = () => <span className="shrink-0 rounded-full border border-warn/40 bg-warn/10 px-1.5 py-0.5 text-[10px] font-semibold text-warn">ƒ simulação</span>;
+export const SeloIlustracao = () => <span className="shrink-0 rounded-full border border-violet/40 bg-[#7b4de0]/20 px-1.5 py-0.5 text-[10px] font-semibold text-violet">✎ ilustração</span>;
+export const SeloDados = () => <span className="shrink-0 rounded-full border border-[#7d9dff]/40 bg-[#4d7cff]/15 px-1.5 py-0.5 text-[10px] font-semibold text-accent-ink">▦ dados</span>;
 
 /** Perfil térmico do programa informado (modelo: soma de patamares; rampas excluídas). */
 export function PerfilTermicoMini({ cenario }: { cenario: Cenario }) {
@@ -27,7 +27,7 @@ export function PerfilTermicoMini({ cenario }: { cenario: Cenario }) {
   if (!prog)
     return (
       <Cartao titulo="Perfil do programa" selo={<SeloSimulacao />} testid="perfil-termico">
-        <p className="text-xs text-[#a7b2c8]">Não calculado: o programa está incompleto (faltam temperaturas, tempos ou o número de ciclos).</p>
+        <p className="text-xs text-muted">Não calculado: o programa está incompleto (faltam temperaturas, tempos ou o número de ciclos).</p>
       </Cartao>
     );
   const { segments, totalSeconds } = thermalProfile(prog, 3);
@@ -70,7 +70,7 @@ export function PerfilTermicoMini({ cenario }: { cenario: Cenario }) {
         ))}
         <polyline points={pts.join(" ")} fill="none" stroke="url(#perfilGrad)" strokeWidth="2.2" strokeLinejoin="round" filter="url(#perfilBrilho)" />
       </svg>
-      <p className="mt-1 text-[11px] text-[#a7b2c8]">
+      <p className="mt-1 text-[11px] text-muted">
         Desnaturação inicial + 3 de {prog.cycles} ciclos · duração total calculada: <span className="font-semibold text-white">{formatDuration(totalSeconds)}</span> (sem rampas; não é medição do equipamento).
       </p>
     </Cartao>
@@ -84,7 +84,7 @@ export function GelIlustrativo({ ampliconPb }: { ampliconPb: number | null }) {
   return (
     <Cartao titulo="Gel: posição esperada" selo={<SeloIlustracao />} testid="gel-ilustrativo">
       <div className="flex gap-3">
-        <svg viewBox={`0 0 120 ${H}`} className="h-28 w-28 shrink-0 rounded-lg bg-[#060a13]" aria-hidden="true">
+        <svg viewBox={`0 0 120 ${H}`} className="h-28 w-28 shrink-0 rounded-lg bg-paper" aria-hidden="true">
           {[22, 52, 82].map((xl) => (
             <rect key={xl} x={xl - 10} y="6" width="20" height="5" rx="1" fill="rgba(167,178,200,0.25)" />
           ))}
@@ -102,7 +102,7 @@ export function GelIlustrativo({ ampliconPb }: { ampliconPb: number | null }) {
             amostra
           </text>
         </svg>
-        <p className="text-[11px] leading-snug text-[#a7b2c8]">
+        <p className="text-[11px] leading-snug text-muted">
           {ampliconPb === null
             ? "Informe o tamanho do amplicon para ilustrar a posição esperada."
             : pos === null
@@ -117,10 +117,10 @@ export function GelIlustrativo({ ampliconPb }: { ampliconPb: number | null }) {
 
 export function ResultadoNaoPrevisto({ onAvaliar }: { onAvaliar?: () => void }) {
   return (
-    <Cartao titulo="Resultado do experimento" selo={<span className="shrink-0 rounded-full border border-white/15 px-1.5 py-0.5 text-[10px] font-semibold text-[#a7b2c8]">∅ não previsto</span>}>
-      <p className="text-[11px] text-[#a7b2c8]">Não há modelo validado para prever bandas ou rendimento. A previsão quantitativa fica suspensa; veja frequências publicadas e a avaliação fundamentada.</p>
+    <Cartao titulo="Resultado do experimento" selo={<span className="shrink-0 rounded-full border border-white/15 px-1.5 py-0.5 text-[10px] font-semibold text-muted">∅ não previsto</span>}>
+      <p className="text-[11px] text-muted">Não há modelo validado para prever bandas ou rendimento. A previsão quantitativa fica suspensa; veja frequências publicadas e a avaliação fundamentada.</p>
       {onAvaliar && (
-        <button type="button" onClick={onAvaliar} className="mt-1.5 text-[12px] font-semibold text-[#9db4ff] underline">
+        <button type="button" onClick={onAvaliar} className="mt-1.5 text-[12px] font-semibold text-accent-ink underline">
           Abrir avaliação
         </button>
       )}
@@ -133,7 +133,7 @@ export function CenaGerada({ imagem, titulo, idCena }: { imagem: string; titulo:
     <Cartao titulo={`Cena: ${titulo}`} selo={<SeloIlustracao />} testid="cena-gerada">
       {/* eslint-disable-next-line @next/next/no-img-element -- imagem gerada no navegador (data URL) */}
       <img src={imagem} alt={`Cena gerada no laboratório virtual: ${titulo}`} className="w-full rounded-lg border border-white/10" />
-      <a href={imagem} download={`genolab-cena-${idCena}.png`} className="mt-1.5 inline-block text-[12px] font-semibold text-[#9db4ff] underline">
+      <a href={imagem} download={`genolab-cena-${idCena}.png`} className="mt-1.5 inline-block text-[12px] font-semibold text-accent-ink underline">
         Baixar imagem
       </a>
     </Cartao>
@@ -152,7 +152,7 @@ export function Gaveta({ aberta, titulo, onFechar, children, id }: { aberta: boo
     <AnimatePresence>
       {aberta && (
         <motion.div key={id} className="absolute inset-0 z-40 flex justify-end" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-          <button type="button" aria-label="Fechar" className="absolute inset-0 bg-[#060a13]/55 backdrop-blur-[2px]" onClick={onFechar} />
+          <button type="button" aria-label="Fechar" className="absolute inset-0 bg-paper/55 backdrop-blur-[2px]" onClick={onFechar} />
           <motion.section
             role="dialog"
             aria-modal="true"
@@ -168,7 +168,7 @@ export function Gaveta({ aberta, titulo, onFechar, children, id }: { aberta: boo
               <h2 id={`${id}-titulo`} className="text-lg font-bold text-white">
                 {titulo}
               </h2>
-              <button type="button" onClick={onFechar} className="ge-press rounded-full border border-white/15 px-3 py-1 text-sm text-[#c9d2e3] hover:bg-white/10">
+              <button type="button" onClick={onFechar} className="ge-press rounded-full border border-white/15 px-3 py-1 text-sm text-body hover:bg-white/10">
                 Fechar ✕
               </button>
             </header>

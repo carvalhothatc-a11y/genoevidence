@@ -10,7 +10,7 @@ export function Retomar({ voltar }: { voltar?: string | null }) {
     router.replace(destinoSeguro(voltar) ?? ultimaPagina() ?? "/laboratorio");
   }, [router, voltar]);
   return (
-    <p role="status" className="grid min-h-[50vh] place-items-center text-sm text-[#a7b2c8]">
+    <p role="status" className="grid min-h-[50vh] place-items-center text-sm text-muted">
       Você já está conectado. Voltando para onde estava…
     </p>
   );

@@ -44,8 +44,8 @@ export function Caderno({ iniciais, projetos }: { iniciais: Registro[]; projetos
       {escrevendo && (
         <Formulario
           projetos={projetos}
-          aoCancelar={() => setEscrevendo(false)}
-          aoSalvar={(r) => {
+          onCancelar={() => setEscrevendo(false)}
+          onSalvar={(r) => {
             guardar(r);
             setEscrevendo(false);
           }}
@@ -56,8 +56,8 @@ export function Caderno({ iniciais, projetos }: { iniciais: Registro[]; projetos
         <Formulario
           projetos={projetos}
           registro={editando}
-          aoCancelar={() => setEditando(null)}
-          aoSalvar={(r) => {
+          onCancelar={() => setEditando(null)}
+          onSalvar={(r) => {
             guardar(r);
             setEditando(null);
           }}
@@ -75,9 +75,9 @@ export function Caderno({ iniciais, projetos }: { iniciais: Registro[]; projetos
               <Cartao
                 registro={r}
                 projetos={projetos}
-                aoEditar={() => setEditando(r)}
-                aoMudar={guardar}
-                aoExcluir={() => setRegistros((l) => l.filter((x) => x.id !== r.id))}
+                onEditar={() => setEditando(r)}
+                onMudar={guardar}
+                onExcluir={() => setRegistros((l) => l.filter((x) => x.id !== r.id))}
               />
             </li>
           ))}
@@ -90,13 +90,13 @@ export function Caderno({ iniciais, projetos }: { iniciais: Registro[]; projetos
 function Formulario({
   registro,
   projetos,
-  aoSalvar,
-  aoCancelar,
+  onSalvar,
+  onCancelar,
 }: {
   registro?: Registro;
   projetos: Projeto[];
-  aoSalvar: (r: Registro) => void;
-  aoCancelar: () => void;
+  onSalvar: (r: Registro) => void;
+  onCancelar: () => void;
 }) {
   const [dia, setDia] = useState(registro?.dia ?? diaDeHoje());
   const [texto, setTexto] = useState(registro?.texto ?? "");
@@ -115,7 +115,7 @@ function Formulario({
       });
       const d = (await r.json().catch(() => ({}))) as { registro?: Registro; error?: string };
       if (!r.ok || !d.registro) throw new Error(d.error ?? "Não foi possível salvar.");
-      aoSalvar(d.registro);
+      onSalvar(d.registro);
     } catch (e) {
       // O texto continua na tela: nada do que a pessoa escreveu some por causa de uma falha de rede.
       setErro(e instanceof Error ? e.message : "O registro não foi salvo.");
@@ -162,7 +162,7 @@ function Formulario({
         <Button onClick={() => void enviar()} disabled={salvando || texto.trim().length === 0} data-testid="salvar-caderno">
           {salvando ? "Guardando o registro…" : registro ? "Salvar a edição" : "Salvar no caderno"}
         </Button>
-        <Button variant="secondary" onClick={aoCancelar}>
+        <Button variant="secondary" onClick={onCancelar}>
           Cancelar
         </Button>
       </div>
@@ -173,15 +173,15 @@ function Formulario({
 function Cartao({
   registro,
   projetos,
-  aoEditar,
-  aoMudar,
-  aoExcluir,
+  onEditar,
+  onMudar,
+  onExcluir,
 }: {
   registro: Registro;
   projetos: Projeto[];
-  aoEditar: () => void;
-  aoMudar: (r: Registro) => void;
-  aoExcluir: () => void;
+  onEditar: () => void;
+  onMudar: (r: Registro) => void;
+  onExcluir: () => void;
 }) {
   const [aberto, setAberto] = useState(false);
   const [versoes, setVersoes] = useState(false);
@@ -190,7 +190,7 @@ function Cartao({
 
   const excluir = async () => {
     const r = await fetch(`/api/caderno/${registro.id}`, { method: "DELETE" });
-    if (r.ok) aoExcluir();
+    if (r.ok) onExcluir();
   };
 
   return (
@@ -214,7 +214,7 @@ function Cartao({
         </Button>
         {aberto && (
           <>
-            <Button size="sm" variant="secondary" onClick={aoEditar}>
+            <Button size="sm" variant="secondary" onClick={onEditar}>
               Editar o registro
             </Button>
             {registro.versoes.length > 0 && (
@@ -229,7 +229,7 @@ function Cartao({
         )}
       </div>
 
-      {aberto && <Arquivos registro={registro} aoMudar={aoMudar} />}
+      {aberto && <Arquivos registro={registro} onMudar={onMudar} />}
 
       {aberto && versoes && (
         <ol className="mt-3 grid gap-2 border-t border-line pt-3" data-testid="versoes">
@@ -263,7 +263,7 @@ function Cartao({
   );
 }
 
-function Arquivos({ registro, aoMudar }: { registro: Registro; aoMudar: (r: Registro) => void }) {
+function Arquivos({ registro, onMudar }: { registro: Registro; onMudar: (r: Registro) => void }) {
   const entrada = useRef<HTMLInputElement>(null);
   const [enviando, setEnviando] = useState(false);
   const [erro, setErro] = useState<string | null>(null);
@@ -277,7 +277,7 @@ function Arquivos({ registro, aoMudar }: { registro: Registro; aoMudar: (r: Regi
       const r = await fetch(`/api/caderno/${registro.id}/arquivos`, { method: "POST", body: fd });
       const d = (await r.json().catch(() => ({}))) as { registro?: Registro; error?: string };
       if (!r.ok || !d.registro) throw new Error(d.error ?? "Não foi possível anexar.");
-      aoMudar(d.registro);
+      onMudar(d.registro);
     } catch (e) {
       setErro(e instanceof Error ? e.message : "Não foi possível anexar.");
     } finally {
@@ -289,7 +289,7 @@ function Arquivos({ registro, aoMudar }: { registro: Registro; aoMudar: (r: Regi
   const remover = async (arquivoId: string) => {
     const r = await fetch(`/api/caderno/${registro.id}/arquivos/${arquivoId}`, { method: "DELETE" });
     const d = (await r.json().catch(() => ({}))) as { registro?: Registro };
-    if (r.ok && d.registro) aoMudar(d.registro);
+    if (r.ok && d.registro) onMudar(d.registro);
   };
 
   return (

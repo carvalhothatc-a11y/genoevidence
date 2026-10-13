@@ -47,6 +47,10 @@
   --ok: #14864a;
   --ok-soft: #e6f6ed;
   /* Painéis escuros de análise (tema das experiências: base.css do site) */
+  /* Superfície mais externa do APP (html/body). Fica fora de .ge-dark, que só começa no AppShell,
+     então aqui --paper ainda é o claro. Sem este token, o overscroll mostra branco por baixo do
+     laboratório. Mesmo valor de --paper dentro de .ge-dark. */
+  --app-bg: #060a13;
   --panel: #0b1221;
   --panel-2: #0f182b;
   --panel-line: #1b2742;
@@ -107,6 +111,7 @@
   --color-panel-2: var(--panel-2);
   --color-panel-line: var(--panel-line);
   --color-panel-muted: var(--panel-muted);
+  --color-panel-dim: var(--panel-dim);
   --color-dot: var(--ge-dot);
   /* Tipografia do site: Unbounded (títulos), IBM Plex Sans (texto), IBM Plex Mono (rótulos e valores) */
   --font-display: var(--font-unbounded), "Unbounded", "Arial Black", system-ui, sans-serif;
@@ -115,13 +120,13 @@
 }
 
 html {
-  background: var(--paper);
+  background: var(--app-bg);
   color: var(--ink);
   -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--paper);
+  background: var(--app-bg);
   color: var(--body);
   font-family: var(--font-sans);
   font-size: 16px;
