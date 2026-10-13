@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-13T00:51:13.832984+00:00",
+ "atualizado_em": "2026-10-13T07:50:00.540431+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -25,6 +25,84 @@
     "es": {
      "titulo": "El Premio Nobel de Medicina 2026 se destina a la optogenética: controlar las neuronas con luz",
      "resumo": "Karl Deisseroth, Peter Hegemann y Georg Nagel fueron galardonados \"por sus descubrimientos sobre los canales iónicos activados por la luz y la optogenética\". Hegemann y Nagel encontraron la canalrodopsina en un alga: bajo la luz azul, la proteína abre un canal, los iones entran y generan un impulso eléctrico en cualquier célula. Deisseroth puso este gen en las neuronas y las encendió con luz, primero en cultivo, luego en los cerebros de ratones vivos. Hoy en día, el método revela circuitos de memoria y emoción, y se prueba para d"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Estimulação cerebral aliada à educação nutricional reduz desejo por comida em mulheres com obesidade",
+   "resumo": "Estudo-piloto feito na USP indica que técnica não invasiva pode ajudar a controlar o chamado food craving . Efeito foi observado logo após a intervenção e se manteve por seis meses",
+   "url": "https://agencia.fapesp.br/estimulacao-cerebral-aliada-a-educacao-nutricional-reduz-desejo-por-comida-em-mulheres-com-obesidade/59377",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-13T07:50:00.540431+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59377.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Brain stimulation combined with nutrition education reduces food cravings in obese women",
+     "resumo": "Pilot study done at USP indicates that non-invasive technique can help control the so-called food craving . Effect was observed soon after the intervention and remained for six months"
+    },
+    "es": {
+     "titulo": "La estimulación cerebral combinada con la educación nutricional reduce los antojos de alimentos en mujeres obesas",
+     "resumo": "Un estudio piloto realizado en la USP indica que la técnica no invasiva puede ayudar a controlar el llamado antojo de alimentos. El efecto se observó poco después de la intervención y se mantuvo durante seis meses"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Sucesso da IA na indústria depende da união entre tecnologia e chão de fábrica",
+   "resumo": "Tentativa de automatizar processos excluindo o conhecimento prático acumulado pelas equipes operacionais está fadada ao fracasso, avaliou Ben Armstrong em palestra organizada pela Associação Nacional de Pesquisa e Desenvolvimento das…",
+   "url": "https://pesquisaparainovacao.fapesp.br/sucesso_da_ia_na_industria_depende_da_uniao_entre_tecnologia_e_chao_de_fabrica/4161",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-13T07:50:00.540431+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://pesquisaparainovacao.fapesp.br/imagens/materia/4161.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "AI's success in the industry depends on the union of technology and the shop floor",
+     "resumo": "Attempts to automate processes by excluding the practical knowledge accumulated by operational teams are doomed to failure, Ben Armstrong said in a lecture organized by the National Association for Research and Development of…"
+    },
+    "es": {
+     "titulo": "El éxito de la IA en la industria depende de la unión de la tecnología y el taller",
+     "resumo": "Los intentos de automatizar los procesos excluyendo el conocimiento práctico acumulado por los equipos operativos están condenados al fracaso, dijo Ben Armstrong en una conferencia organizada por la Asociación Nacional para la Investigación y el Desarrollo de..."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "ICMC-USP tem vaga de pós-doutorado em engenharia de software e IA",
+   "resumo": "Oportunidade integra o projeto AI PATROL, desenvolvido em parceria com a Embrapii",
+   "url": "https://agencia.fapesp.br/icmc-usp-tem-vaga-de-pos-doutorado-em-engenharia-de-software-e-ia/59380",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-13T07:50:00.540431+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59380.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "ICMC-USP has a postdoctoral position in software engineering and AI",
+     "resumo": "Opportunity is part of the AI PATROL project, developed in partnership with Embrapii"
+    },
+    "es": {
+     "titulo": "ICMC-USP tiene una posición postdoctoral en ingeniería de software e IA",
+     "resumo": "Opportunity forma parte del proyecto AI PATROL, desarrollado en colaboración con Embrapii"
     }
    }
   },
@@ -63,7 +141,7 @@
    "idioma": "en",
    "data": "2026-10-12T04:00:00+00:00",
    "tema": "Genética",
-   "relevancia": 9,
+   "relevancia": 8,
    "imagem": "https://static.scientificamerican.com/dam/asset/d6ef9d50-c92f-44b5-a584-23704d5f0ef6/2610_SQ_MON_OCT_12.png?m=1791575926.243&w=1200",
    "foco": {
     "x": 50,
@@ -78,27 +156,6 @@
     }
    },
    "resumo_original": "Breaking down this year’s Nobel Prize–winning science, from switching brain cells on and off with light to catching cosmic neutrinos in Antarctic ice to building mirror-image molecules. Plus, a 194-year-old tortoise’s DNA might hold the…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Prêmio Nobel de Economia por trabalho na estabilização de economias em crise",
-   "resumo": "Os laureados compartilham um prêmio que se baseia nas teorias que contribuíram para a intervenção dos governos durante a pandemia da COVID-19.",
-   "url": "https://www.nature.com/articles/d41586-026-03251-4",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-12T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 8,
-   "imagem": "",
-   "titulo_original": "Economics Nobel awarded for work on stabilizing economies in crisis",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Premio Nobel de Economía por su trabajo en la estabilización de las economías en crisis",
-     "resumo": "Los galardonados comparten un premio que se basa en las teorías que contribuyeron a que los gobiernos intervinieran durante la pandemia de COVID-19."
-    }
-   },
-   "resumo_original": "Laureates share award that builds on the theories that contributed to governments intervening during the COVID-19 pandemic."
   },
   {
    "tipo": "noticia",
@@ -177,6 +234,56 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Cientistas descobrem por que uma doença de cogumelos de 100 anos não desaparece",
+   "resumo": "Os cientistas descobriram um segredo surpreendente por trás de uma doença causada por cogumelos que frustra os produtores há mais de um século: ela envolve mais de 17 espécies de bactérias nocivas, não apenas uma. A descoberta pode explicar por que os tratamentos...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261008102716.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-11T20:01:25+00:00",
+   "tema": "Saúde",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/mushroom-farm.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists discover why a 100-year-old mushroom disease won't go away",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos descubren por qué una enfermedad causada por hongos hace 100 años no desaparecerá",
+     "resumo": "Los científicos han descubierto un sorprendente secreto detrás de una enfermedad de hongos que ha frustrado a los productores durante más de un siglo: involucra a más de 17 especies de bacterias dañinas, no solo a una. El descubrimiento podría explicar por qué los tratamientos..."
+    }
+   },
+   "resumo_original": "Scientists have uncovered a surprising secret behind a mushroom disease that has frustrated growers for more than a century: It involves more than 17 species of harmful bacteria, not just one. The discovery could explain why treatments…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A controvérsia de Monte Verde está de volta: quem primeiro viveu nas Américas?",
+   "resumo": "Os sítios de Monte Verde, no Chile, têm sido fonte de discussões entre os arqueólogos há décadas. O colunista Michael Marshall descobre que a briga está esquentando novamente – e pode mudar nossa compreensão dos primeiros povos das Américas",
+   "url": "https://www.newscientist.com/article/2593162-the-monte-verde-controversy-is-back-who-first-lived-in-the-americas/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-12T17:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315899487.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "The Monte Verde controversy is back: who first lived in the Americas?",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La controversia de Monte Verde está de vuelta: ¿quién vivió por primera vez en las Américas?",
+     "resumo": "Los sitios de Monte Verde en Chile han sido la fuente de discusiones entre los arqueólogos durante décadas. El columnista Michael Marshall descubre que la fila se está calentando nuevamente y podría cambiar nuestra comprensión de los primeros pueblos en las Américas"
+    }
+   },
+   "resumo_original": "The Monte Verde sites in Chile have been the source of arguments among archaeologists for decades. Columnist Michael Marshall finds the row is heating up again – and could change our understanding of the first peoples in the Americas"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Apenas 10 minutos de exercício diário podem desbloquear um sono mais profundo",
    "resumo": "Dormir melhor pode ser tão simples quanto se movimentar um pouco mais a cada dia. Pesquisadores da Universidade do Texas em Austin descobriram que as pessoas que se exercitavam com mais frequência experimentavam um sono mais profundo e restaurador, o que é essencial para...",
    "url": "https://www.sciencedaily.com/releases/2026/10/261008102721.htm",
@@ -184,7 +291,7 @@
    "idioma": "en",
    "data": "2026-10-12T00:51:31+00:00",
    "tema": "Ciência",
-   "relevancia": 5,
+   "relevancia": 4,
    "imagem": "https://www.sciencedaily.com/images/1920/happy-young-woman-waking-up-rested.webp",
    "foco": {
     "x": 50,
@@ -199,27 +306,6 @@
     }
    },
    "resumo_original": "Getting better sleep might be as simple as moving a little more every day. Researchers at The University of Texas at Austin found that people who exercised more frequently experienced more deep, restorative sleep, which is essential for…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Imagem de microscopia premiada desqualificada pelo uso de IA",
-   "resumo": "O incidente provocou discussões sobre o uso de inteligência artificial em imagens científicas.",
-   "url": "https://www.nature.com/articles/d41586-026-03240-7",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-12T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Award-winning microscopy image disqualified over AI use",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Imagen de microscopía galardonada descalificada por el uso de IA",
-     "resumo": "El incidente ha provocado discusiones sobre el uso de la inteligencia artificial en las imágenes científicas."
-    }
-   },
-   "resumo_original": "The incident has prompted discussions about the use of artificial intelligence in scientific imagery."
   },
   {
    "tipo": "noticia",
@@ -783,10 +869,10 @@
   "Europe PMC"
  ],
  "erros": [
+  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "author correction a mutually antagonistic mechanism mediated by rna m6a modification in plant virus interactions": "2026-10-03T02:06:42.713551+00:00",
   "pesquisadoras da usp criam treinamento para prevencao do suicidio em idosos": "2026-10-03T13:31:28.517659+00:00",
   "your gut may be making a molecule that raises alzheimers risk": "2026-10-03T13:31:28.517659+00:00",
   "vitamin c linked to fewer deaths in blood disorder trial": "2026-10-03T13:31:28.517659+00:00",
@@ -965,6 +1051,10 @@
   "award winning microscopy image disqualified over ai use": "2026-10-12T18:02:44.731694+00:00",
   "scientists discover why a 100 year old mushroom disease won t go away": "2026-10-12T18:02:44.731694+00:00",
   "just 10 minutes of daily exercise could unlock deeper sleep": "2026-10-12T18:02:44.731694+00:00",
-  "economics nobel awarded for work on stabilizing economies in crisis": "2026-10-13T00:51:13.832984+00:00"
+  "economics nobel awarded for work on stabilizing economies in crisis": "2026-10-13T00:51:13.832984+00:00",
+  "estimulacao cerebral aliada a educacao nutricional reduz desejo por comida em mulheres com obesidade": "2026-10-13T07:50:00.540431+00:00",
+  "sucesso da ia na industria depende da uniao entre tecnologia e chao de fabrica": "2026-10-13T07:50:00.540431+00:00",
+  "icmc usp tem vaga de pos doutorado em engenharia de software e ia": "2026-10-13T07:50:00.540431+00:00",
+  "the monte verde controversy is back who first lived in the americas": "2026-10-13T07:50:00.540431+00:00"
  }
 }
