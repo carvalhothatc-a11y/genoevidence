@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-12T18:02:44.731694+00:00",
+ "atualizado_em": "2026-10-13T00:51:13.832984+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -81,6 +81,27 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Prêmio Nobel de Economia por trabalho na estabilização de economias em crise",
+   "resumo": "Os laureados compartilham um prêmio que se baseia nas teorias que contribuíram para a intervenção dos governos durante a pandemia da COVID-19.",
+   "url": "https://www.nature.com/articles/d41586-026-03251-4",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-12T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 8,
+   "imagem": "",
+   "titulo_original": "Economics Nobel awarded for work on stabilizing economies in crisis",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Premio Nobel de Economía por su trabajo en la estabilización de las economías en crisis",
+     "resumo": "Los galardonados comparten un premio que se basa en las teorías que contribuyeron a que los gobiernos intervinieran durante la pandemia de COVID-19."
+    }
+   },
+   "resumo_original": "Laureates share award that builds on the theories that contributed to governments intervening during the COVID-19 pandemic."
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Uma forma única, um ladrilho de einstein 3D, foi descoberto",
    "resumo": "A IA ajudou a descobrir um objeto especial que pode preencher o espaço sem repetir padrões",
    "url": "https://www.scientificamerican.com/article/a-unique-shape-a-3d-einstein-tile-has-been-discovered/",
@@ -156,52 +177,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Imagem de microscopia premiada desqualificada pelo uso de IA",
-   "resumo": "O incidente provocou discussões sobre o uso de inteligência artificial em imagens científicas.",
-   "url": "https://www.nature.com/articles/d41586-026-03240-7",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-12T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "Award-winning microscopy image disqualified over AI use",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Imagen de microscopía galardonada descalificada por el uso de IA",
-     "resumo": "El incidente ha provocado discusiones sobre el uso de la inteligencia artificial en las imágenes científicas."
-    }
-   },
-   "resumo_original": "The incident has prompted discussions about the use of artificial intelligence in scientific imagery."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas descobrem por que uma doença de cogumelos de 100 anos não desaparece",
-   "resumo": "Os cientistas descobriram um segredo surpreendente por trás de uma doença causada por cogumelos que frustra os produtores há mais de um século: ela envolve mais de 17 espécies de bactérias nocivas, não apenas uma. A descoberta pode explicar por que os tratamentos...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261008102716.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-11T20:01:25+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/mushroom-farm.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists discover why a 100-year-old mushroom disease won't go away",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos descubren por qué una enfermedad causada por hongos hace 100 años no desaparecerá",
-     "resumo": "Los científicos han descubierto un sorprendente secreto detrás de una enfermedad de hongos que ha frustrado a los productores durante más de un siglo: involucra a más de 17 especies de bacterias dañinas, no solo a una. El descubrimiento podría explicar por qué los tratamientos..."
-    }
-   },
-   "resumo_original": "Scientists have uncovered a surprising secret behind a mushroom disease that has frustrated growers for more than a century: It involves more than 17 species of harmful bacteria, not just one. The discovery could explain why treatments…"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Apenas 10 minutos de exercício diário podem desbloquear um sono mais profundo",
    "resumo": "Dormir melhor pode ser tão simples quanto se movimentar um pouco mais a cada dia. Pesquisadores da Universidade do Texas em Austin descobriram que as pessoas que se exercitavam com mais frequência experimentavam um sono mais profundo e restaurador, o que é essencial para...",
    "url": "https://www.sciencedaily.com/releases/2026/10/261008102721.htm",
@@ -227,6 +202,27 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Imagem de microscopia premiada desqualificada pelo uso de IA",
+   "resumo": "O incidente provocou discussões sobre o uso de inteligência artificial em imagens científicas.",
+   "url": "https://www.nature.com/articles/d41586-026-03240-7",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-12T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "Award-winning microscopy image disqualified over AI use",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Imagen de microscopía galardonada descalificada por el uso de IA",
+     "resumo": "El incidente ha provocado discusiones sobre el uso de la inteligencia artificial en las imágenes científicas."
+    }
+   },
+   "resumo_original": "The incident has prompted discussions about the use of artificial intelligence in scientific imagery."
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
    "resumo": "Campanha segue até o fim do mês e destina as mechas as pacientes do Hospital do Câncer de Ribeirão Preto",
    "url": "https://jornal.usp.br/campus-ribeirao-preto/estudantes-da-usp-arrecadam-cabelo-no-outubro-rosa/",
@@ -234,7 +230,7 @@
    "idioma": "pt",
    "data": "2026-10-09T19:21:35+00:00",
    "tema": "Câncer",
-   "relevancia": 4,
+   "relevancia": 3,
    "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261009_mechasdecabelo.jpeg",
    "foco": {
     "x": 50,
@@ -786,23 +782,10 @@
   "ScienceDaily · Saúde",
   "Europe PMC"
  ],
- "erros": [],
+ "erros": [
+  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
+ ],
  "mostradas": {
-  "sus passa a oferecer tres novos medicamentos de alta tecnologia para o tratamento de cancer pulmonar": "2026-10-02T18:32:15.018849+00:00",
-  "usp seleciona voluntarios pos avc para estudo sobre reabilitacao motora em casa": "2026-10-02T18:32:15.018849+00:00",
-  "canal saude estreia nova temporada do ligado em saude": "2026-10-02T18:32:15.018849+00:00",
-  "pronta para a quarta onda": "2026-10-02T18:32:15.018849+00:00",
-  "medicamento para esquistossomose em criancas recebe aprovacao da anvisa": "2026-10-02T18:32:15.018849+00:00",
-  "can bioengineered bacteria help terraform mars": "2026-10-02T18:32:15.018849+00:00",
-  "mathematicians and ai in behind the scenes battle over whats true": "2026-10-02T18:32:15.018849+00:00",
-  "neurodegenerative disease risk associated with gene expression in peripheral monocytes across ancestries": "2026-10-02T18:32:15.018849+00:00",
-  "2026 has been a record hot year for the u s it can only get worse": "2026-10-02T18:32:15.018849+00:00",
-  "fossil mammal with reptile like teeth changes picture of our evolution": "2026-10-02T18:32:15.018849+00:00",
-  "learning about physics changed my life author hernan diaz on his new novel ply": "2026-10-02T18:32:15.018849+00:00",
-  "protocolo da usp orienta analise de variantes geneticas para diagnostico de doencas raras": "2026-10-02T23:04:48.572333+00:00",
-  "em visita a suecia centro de estudos em biogas e bioprodutos fortalece cooperacao internacional": "2026-10-02T23:04:48.572333+00:00",
-  "conheca o laboratorio que transforma plantas em tecnologia": "2026-10-02T23:04:48.572333+00:00",
-  "could a giant iceberg really break off greenland scientists check tom cruises new movie digger": "2026-10-02T23:04:48.572333+00:00",
   "author correction a mutually antagonistic mechanism mediated by rna m6a modification in plant virus interactions": "2026-10-03T02:06:42.713551+00:00",
   "pesquisadoras da usp criam treinamento para prevencao do suicidio em idosos": "2026-10-03T13:31:28.517659+00:00",
   "your gut may be making a molecule that raises alzheimers risk": "2026-10-03T13:31:28.517659+00:00",
@@ -981,6 +964,7 @@
   "why the worst el nino killed millions and how we can avoid a repeat": "2026-10-12T18:02:44.731694+00:00",
   "award winning microscopy image disqualified over ai use": "2026-10-12T18:02:44.731694+00:00",
   "scientists discover why a 100 year old mushroom disease won t go away": "2026-10-12T18:02:44.731694+00:00",
-  "just 10 minutes of daily exercise could unlock deeper sleep": "2026-10-12T18:02:44.731694+00:00"
+  "just 10 minutes of daily exercise could unlock deeper sleep": "2026-10-12T18:02:44.731694+00:00",
+  "economics nobel awarded for work on stabilizing economies in crisis": "2026-10-13T00:51:13.832984+00:00"
  }
 }
