@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-13T07:50:00.540431+00:00",
+ "atualizado_em": "2026-10-13T16:07:46.963620+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -25,6 +25,78 @@
     "es": {
      "titulo": "El Premio Nobel de Medicina 2026 se destina a la optogenética: controlar las neuronas con luz",
      "resumo": "Karl Deisseroth, Peter Hegemann y Georg Nagel fueron galardonados \"por sus descubrimientos sobre los canales iónicos activados por la luz y la optogenética\". Hegemann y Nagel encontraron la canalrodopsina en un alga: bajo la luz azul, la proteína abre un canal, los iones entran y generan un impulso eléctrico en cualquier célula. Deisseroth puso este gen en las neuronas y las encendió con luz, primero en cultivo, luego en los cerebros de ratones vivos. Hoy en día, el método revela circuitos de memoria y emoción, y se prueba para d"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Fiocruz pra Você vai oferecer vacinação a crianças e adultos",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/fiocruz-pra-voce-vai-oferecer-vacinacao-criancas-e-adultos",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-13T14:33:19+00:00",
+   "tema": "Ciência",
+   "relevancia": 12,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/fpv26.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Fiocruz for You will offer vaccination to children and adults"
+    },
+    "es": {
+     "titulo": "Fiocruz for You ofrecerá vacunación a niños y adultos"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Bioinformática na selva da inteligência artificial",
+   "resumo": "Temática será debatida em evento presencial no Cena-USP, em Piracicaba (SP), com base em dois artigos publicados no periódico PLOS Computational Biology",
+   "url": "https://agencia.fapesp.br/bioinformatica-na-selva-da-inteligencia-artificial/59381",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-13T16:07:46.963620+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Bioinformatics in the Jungle of Artificial Intelligence",
+     "resumo": "The theme will be discussed in a face-to-face event at Cena-USP, in Piracicaba (SP), based on two articles published in the journal PLOS Computational Biology"
+    },
+    "es": {
+     "titulo": "La bioinformática en la selva de la inteligencia artificial",
+     "resumo": "El tema será discutido en un evento presencial en Cena-USP, en Piracicaba (SP), a partir de dos artículos publicados en la revista PLOS Computational Biology"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O triunfo da viola no campo e na cidade",
+   "resumo": "Livro oriundo de tese de doutorado multipremiada conta como o instrumento se confunde com as transformações da história brasileira, dos jesuítas e poetas às celebridades atuais",
+   "url": "https://revistapesquisa.fapesp.br/o-triunfo-da-viola-no-campo-e-na-cidade/?utm_source=rss&utm_medium=rss&utm_campaign=o-triunfo-da-viola-no-campo-e-na-cidade",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-13T11:57:09+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/4967d91ecc588a05949f214bd0a6cbabc9063465_1200-630.jpg",
+   "foco": {
+    "x": 100,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "The triumph of the viola in the countryside and in the city",
+     "resumo": "A book from a multi-award-winning doctoral thesis tells how the instrument is intertwined with the transformations of Brazilian history, from Jesuits and poets to current celebrities"
+    },
+    "es": {
+     "titulo": "El triunfo de la viola en el campo y en la ciudad",
+     "resumo": "Un libro de una tesis doctoral multipremiada cuenta cómo el instrumento se entrelaza con las transformaciones de la historia brasileña, desde jesuitas y poetas hasta celebridades actuales"
     }
    }
   },
@@ -82,235 +154,207 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "ICMC-USP tem vaga de pós-doutorado em engenharia de software e IA",
-   "resumo": "Oportunidade integra o projeto AI PATROL, desenvolvido em parceria com a Embrapii",
-   "url": "https://agencia.fapesp.br/icmc-usp-tem-vaga-de-pos-doutorado-em-engenharia-de-software-e-ia/59380",
-   "fonte": "Agência FAPESP",
+   "titulo": "Estudo destaca benefícios de alternativa não hormonal para o climatério",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/estudo-destaca-beneficios-de-alternativa-nao-hormonal-para-o-climaterio",
+   "fonte": "Agência Fiocruz",
    "idioma": "pt",
-   "data": "2026-10-13T07:50:00.540431+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59380.jpg",
+   "data": "2026-10-13T15:21:48+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 8,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/menopausa_d.jpg",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 28
    },
    "i18n": {
     "en": {
-     "titulo": "ICMC-USP has a postdoctoral position in software engineering and AI",
-     "resumo": "Opportunity is part of the AI PATROL project, developed in partnership with Embrapii"
+     "titulo": "Study highlights benefits of non-hormonal alternative for climacteric"
     },
     "es": {
-     "titulo": "ICMC-USP tiene una posición postdoctoral en ingeniería de software e IA",
-     "resumo": "Opportunity forma parte del proyecto AI PATROL, desarrollado en colaboración con Embrapii"
+     "titulo": "El estudio destaca los beneficios de la alternativa no hormonal para el climaterio"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Novas fronteiras amazônicas",
-   "resumo": "Conheça o pequeno sapo-foguete, uma das possíveis novas espécies descobertas na serra do Aracá (AM)",
-   "url": "https://revistapesquisa.fapesp.br/novas-fronteiras-amazonicas/?utm_source=rss&utm_medium=rss&utm_campaign=novas-fronteiras-amazonicas",
+   "titulo": "Uma maneira revolucionária de atacar tumores poderia vencer até mesmo os piores tipos de câncer",
+   "resumo": "Há muito tempo tratamos o câncer com base em sua localização no corpo. Mas uma abordagem totalmente nova que analisa os tumores de forma diferente agora está ajudando as pessoas a sobreviver a formas de câncer que antes eram consideradas uma sentença de morte",
+   "url": "https://www.newscientist.com/article/2591348-a-revolutionary-way-of-targeting-tumours-could-beat-even-the-worst-cancers/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-13T15:00:00+00:00",
+   "tema": "Câncer",
+   "relevancia": 8,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315792197.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "A revolutionary way of targeting tumours could beat even the worst cancers",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Una forma revolucionaria de atacar los tumores podría vencer incluso a los peores cánceres",
+     "resumo": "Hemos tratado el cáncer durante mucho tiempo en función de su ubicación en el cuerpo. Pero un enfoque completamente nuevo que analiza los tumores de manera diferente ahora está ayudando a las personas a sobrevivir a formas de cáncer que alguna vez se consideraron una sentencia de muerte"
+    }
+   },
+   "resumo_original": "We have long treated cancer based on its location in the body. But a whole new approach that analyses tumours differently is now helping people survive forms of cancer that were once considered a death sentence"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Plantar, prensar e colher",
+   "resumo": "Nos primeiros anos da Segunda Guerra Mundial, dois laboratórios perseguiam uma pergunta que parecia pequena diante da encrenca global: de que é feita a maconha? Na Universidade de Illinois, Roger Adams (1889-1971), que chefiava o…",
+   "url": "https://revistapesquisa.fapesp.br/plantar-prensar-e-colher/?utm_source=rss&utm_medium=rss&utm_campaign=plantar-prensar-e-colher",
    "fonte": "Revista Pesquisa FAPESP",
    "idioma": "pt",
-   "data": "2026-10-12T12:03:31+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 9,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/f2f0ea8af67e567b436dc9a4ecd73c3ddadaeffd_1200-630.jpg",
+   "data": "2026-10-13T12:16:01+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/6546ee534d8f086223e7304965cee70706a2d941_1200-630.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "New Amazonian frontiers",
-     "resumo": "Meet the small rocket frog, one of the possible new species discovered in the Aracá mountain range (AM)"
+     "titulo": "Plant, press and harvest",
+     "resumo": "In the early years of World War II, two labs pursued a question that seemed small in the face of global trouble: What is marijuana made of? At the University of Illinois, Roger Adams (1889-1971), who headed the…"
     },
     "es": {
-     "titulo": "Nuevas fronteras amazónicas",
-     "resumo": "Conoce a la pequeña rana cohete, una de las posibles nuevas especies descubiertas en la cordillera de Aracá (AM)"
+     "titulo": "Plantar, prensar y cosechar"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Semana Nobel: cérebros controlados pela luz, partículas do espaço sideral e moléculas espelhadas",
-   "resumo": "Quebrando a ciência ganhadora do Prêmio Nobel deste ano, desde ligar e desligar células cerebrais com luz até capturar neutrinos cósmicos no gelo da Antártida e construir moléculas de imagem espelhada. Além disso, o DNA de uma tartaruga de 194 anos pode conter o...",
-   "url": "https://www.scientificamerican.com/podcast/episode/nobel-week-light-controlled-brains-particles-from-outer-space-and-mirror-molecules/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-12T04:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 8,
-   "imagem": "https://static.scientificamerican.com/dam/asset/d6ef9d50-c92f-44b5-a584-23704d5f0ef6/2610_SQ_MON_OCT_12.png?m=1791575926.243&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Nobel week: light-controlled brains, particles from outer space and mirror molecules",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Semana Nobel: cerebros controlados por la luz, partículas del espacio exterior y moléculas espejo",
-     "resumo": "Desglosando la ciencia ganadora del Premio Nobel de este año, desde encender y apagar las células cerebrales con luz hasta capturar neutrinos cósmicos en el hielo antártico y construir moléculas de imagen especular. Además, el ADN de una tortuga de 194 años podría contener el..."
-    }
-   },
-   "resumo_original": "Breaking down this year’s Nobel Prize–winning science, from switching brain cells on and off with light to catching cosmic neutrinos in Antarctic ice to building mirror-image molecules. Plus, a 194-year-old tortoise’s DNA might hold the…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Uma forma única, um ladrilho de einstein 3D, foi descoberto",
-   "resumo": "A IA ajudou a descobrir um objeto especial que pode preencher o espaço sem repetir padrões",
-   "url": "https://www.scientificamerican.com/article/a-unique-shape-a-3d-einstein-tile-has-been-discovered/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-12T10:00:00+00:00",
-   "tema": "Espaço",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/e2264ede-ffd2-40f0-96e0-11fd037635f3/chair44_graphic_leadImage.png?m=1791581085.38&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "A unique shape, a 3D einstein tile, has been discovered",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Se ha descubierto una forma única, un azulejo de Einstein 3D",
-     "resumo": "La IA ayudó a descubrir un objeto especial que puede llenar el espacio sin repetir patrones"
-    }
-   },
-   "resumo_original": "AI helped uncover a special object that can fill space without repeating patterns"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Medicamentos populares para perda de peso ligados a um problema surpreendente de unhas",
-   "resumo": "Os medicamentos populares para perda de peso GLP-1, como Ozempic e Wegovy, têm sido associados a taxas inesperadamente altas de descolamento de unhas, perda de cabelo e inflamação do couro cabeludo, com alguns problemas ocorrendo várias vezes mais frequentemente entre os usuários...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261011211604.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-12T09:34:48+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/fingernail-detachment.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Popular weight loss drugs linked to a surprising fingernail problem",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Fármacos populares para perder peso relacionados con un sorprendente problema en las uñas",
-     "resumo": "Los medicamentos populares para la pérdida de peso GLP-1, como Ozempic y Wegovy, se han relacionado con tasas inesperadamente altas de desprendimiento de uñas, pérdida de cabello e inflamación del cuero cabelludo, con algunos problemas que ocurren varias veces más frecuentemente entre los usuarios..."
-    }
-   },
-   "resumo_original": "Popular GLP-1 weight loss drugs, such as Ozempic and Wegovy, have been linked to unexpectedly high rates of nail detachment, hair loss, and scalp inflammation, with some problems occurring several times more frequently among users…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Por que o pior El Niño matou milhões – e como podemos evitar uma repetição",
-   "resumo": "O mundo não experimentava um El Niño tão forte desde a década de 1870, quando provocou uma terrível fome global. Estamos melhor preparados desta vez?",
-   "url": "https://www.newscientist.com/article/2592513-why-the-worst-el-nino-killed-millions-and-how-we-can-avoid-a-repeat/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "A capacidade da terra de armazenar carbono se recuperou após dois anos ruins",
+   "resumo": "A absorção de carbono por florestas e pastagens se recuperou em 2025 graças a condições de crescimento favoráveis, mas o El Niño pode levar a outra queda acentuada no próximo ano",
+   "url": "https://www.newscientist.com/article/2593284-the-land-carbon-sink-has-rebounded-strongly-after-two-terrible-years/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-12T09:00:00+00:00",
+   "data": "2026-10-13T13:00:00+00:00",
    "tema": "Meio ambiente",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315671720.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316419659.jpg",
    "foco": {
     "x": 50,
-    "y": 0
+    "y": 50
    },
-   "titulo_original": "Why the worst El Niño killed millions – and how we can avoid a repeat",
+   "titulo_original": "The land’s ability to store carbon has bounced back after two bad years",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Por qué el peor El Niño mató a millones y cómo podemos evitar que se repita",
-     "resumo": "El mundo no ha experimentado un El Niño tan fuerte desde la década de 1870, cuando provocó una terrible hambruna mundial. ¿Estamos mejor preparados esta vez?"
+     "titulo": "La capacidad de la tierra para almacenar carbono se ha recuperado después de dos años malos",
+     "resumo": "La absorción de carbono por parte de los bosques y pastizales se recuperó en 2025 gracias a las condiciones favorables de crecimiento, pero El Niño podría provocar otra fuerte caída el próximo año"
     }
    },
-   "resumo_original": "The world hasn't experienced an El Niño this strong since the 1870s, when it sparked a terrible global famine. Are we better prepared this time?"
+   "resumo_original": "Carbon absorption by forests and grasslands bounced back in 2025 thanks to favourable growing conditions, but El Niño could lead to another sharp slump next year"
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas descobrem por que uma doença de cogumelos de 100 anos não desaparece",
-   "resumo": "Os cientistas descobriram um segredo surpreendente por trás de uma doença causada por cogumelos que frustra os produtores há mais de um século: ela envolve mais de 17 espécies de bactérias nocivas, não apenas uma. A descoberta pode explicar por que os tratamentos...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261008102716.htm",
-   "fonte": "ScienceDaily",
+   "titulo": "Os cientistas temem que a IA esteja roubando suas ideias",
+   "resumo": "Os pesquisadores estão usando a IA como uma caixa de ressonância em todo o seu trabalho. Mas crescem as preocupações de que as empresas possam apresentar as ideias dos usuários como as de seus modelos",
+   "url": "https://www.scientificamerican.com/article/scientists-worry-ai-is-stealing-their-ideas/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-11T20:01:25+00:00",
+   "data": "2026-10-13T12:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/2d2cb012-db85-4856-a514-84292386e378/surveillance-from-AI.jpg?m=1791817128.409&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists worry AI is stealing their ideas",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "A los científicos les preocupa que la IA les esté robando sus ideas",
+     "resumo": "Los investigadores están utilizando la IA como caja de resonancia a lo largo de su trabajo. Pero crece la preocupación de que las empresas puedan presentar las ideas de los usuarios como las de sus modelos"
+    }
+   },
+   "resumo_original": "Researchers are using AI as a sounding board throughout their work. But concerns are growing that companies may present users’ ideas as those of their models"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O que acontece com o corpo durante a menopausa? Nova pesquisa sugere um ‘penhasco‘ biológico",
+   "resumo": "Certos marcadores de saúde parecem \"saltar\" durante a menopausa, de acordo com um novo estudo, mas não está claro por que",
+   "url": "https://www.scientificamerican.com/article/what-happens-to-the-body-during-menopause-new-research-hints-at-a-biological-cliff/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-13T14:35:00+00:00",
    "tema": "Saúde",
    "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/mushroom-farm.webp",
+   "imagem": "https://static.scientificamerican.com/dam/asset/6031d9c9-1a51-4ee6-bc62-d696d54a0b37/ovary-illo.jpg?m=1791902952.636&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Scientists discover why a 100-year-old mushroom disease won't go away",
+   "titulo_original": "What happens to the body during menopause? New research hints at a biological ‘cliff’",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los científicos descubren por qué una enfermedad causada por hongos hace 100 años no desaparecerá",
-     "resumo": "Los científicos han descubierto un sorprendente secreto detrás de una enfermedad de hongos que ha frustrado a los productores durante más de un siglo: involucra a más de 17 especies de bacterias dañinas, no solo a una. El descubrimiento podría explicar por qué los tratamientos..."
+     "titulo": "¿Qué le pasa al cuerpo durante la menopausia? Una nueva investigación apunta a un ‘acantilado’ biológico",
+     "resumo": "Ciertos marcadores de salud parecen \"saltar\" durante la menopausia, según un nuevo estudio, pero no está claro por qué"
     }
    },
-   "resumo_original": "Scientists have uncovered a surprising secret behind a mushroom disease that has frustrated growers for more than a century: It involves more than 17 species of harmful bacteria, not just one. The discovery could explain why treatments…"
+   "resumo_original": "Certain health markers seem to “jump” during menopause, according to a new study, but it’s unclear why"
   },
   {
    "tipo": "noticia",
-   "titulo": "A controvérsia de Monte Verde está de volta: quem primeiro viveu nas Américas?",
-   "resumo": "Os sítios de Monte Verde, no Chile, têm sido fonte de discussões entre os arqueólogos há décadas. O colunista Michael Marshall descobre que a briga está esquentando novamente – e pode mudar nossa compreensão dos primeiros povos das Américas",
-   "url": "https://www.newscientist.com/article/2593162-the-monte-verde-controversy-is-back-who-first-lived-in-the-americas/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-12T17:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315899487.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "The Monte Verde controversy is back: who first lived in the Americas?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La controversia de Monte Verde está de vuelta: ¿quién vivió por primera vez en las Américas?",
-     "resumo": "Los sitios de Monte Verde en Chile han sido la fuente de discusiones entre los arqueólogos durante décadas. El columnista Michael Marshall descubre que la fila se está calentando nuevamente y podría cambiar nuestra comprensión de los primeros pueblos en las Américas"
-    }
-   },
-   "resumo_original": "The Monte Verde sites in Chile have been the source of arguments among archaeologists for decades. Columnist Michael Marshall finds the row is heating up again – and could change our understanding of the first peoples in the Americas"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Apenas 10 minutos de exercício diário podem desbloquear um sono mais profundo",
-   "resumo": "Dormir melhor pode ser tão simples quanto se movimentar um pouco mais a cada dia. Pesquisadores da Universidade do Texas em Austin descobriram que as pessoas que se exercitavam com mais frequência experimentavam um sono mais profundo e restaurador, o que é essencial para...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261008102721.htm",
+   "titulo": "Os cientistas acabaram de dar às usinas de nossas células uma atualização de alta tecnologia",
+   "resumo": "Os cientistas criaram um novo revestimento para as mitocôndrias que preserva sua capacidade de produzir energia, potencialmente abrindo as portas para novos tratamentos para doenças que envolvem essas pequenas potências celulares. A tecnologia poderia um dia ajudar...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261012185008.htm",
    "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-12T00:51:31+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-13T01:33:58+00:00",
+   "tema": "Saúde",
    "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/happy-young-woman-waking-up-rested.webp",
+   "imagem": "https://www.sciencedaily.com/images/1920/mithocondria-coating.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Just 10 minutes of daily exercise could unlock deeper sleep",
+   "titulo_original": "Scientists just gave the powerhouses of our cells a high-tech upgrade",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Solo 10 minutos de ejercicio diario podrían desbloquear un sueño más profundo",
-     "resumo": "Dormir mejor puede ser tan simple como moverse un poco más cada día. Investigadores de la Universidad de Texas en Austin descubrieron que las personas que hacían ejercicio con más frecuencia experimentaban un sueño más profundo y reparador, que es esencial para..."
+     "titulo": "Los científicos acaban de dar a las potencias de nuestras células una actualización de alta tecnología",
+     "resumo": "Los científicos han creado un nuevo recubrimiento para las mitocondrias que preserva su capacidad de producir energía, lo que podría abrir la puerta a nuevos tratamientos para enfermedades que involucran a estas pequeñas potencias celulares. La tecnología podría algún día ayudar..."
     }
    },
-   "resumo_original": "Getting better sleep might be as simple as moving a little more every day. Researchers at The University of Texas at Austin found that people who exercised more frequently experienced more deep, restorative sleep, which is essential for…"
+   "resumo_original": "Scientists have created a new coating for mitochondria that preserves their ability to produce energy, potentially opening the door to new treatments for diseases involving these tiny cellular powerhouses. The technology could one day help…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "James Webb revela uma enorme estrutura cósmica que desafia nossa compreensão do Universo",
+   "resumo": "O Telescópio Espacial James Webb da NASA revelou um antigo aglomerado de galáxias com uma concentração inesperadamente densa de matéria escura, desafiando teorias sobre como o universo se desenvolveu. A descoberta também revelou uma conexão surpreendente...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261012185021.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-13T11:27:24+00:00",
+   "tema": "Espaço",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/cluster-xlssc-122.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "James Webb reveals a massive cosmic structure that challenges our understanding of the Universe",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "James Webb revela una estructura cósmica masiva que desafía nuestra comprensión del Universo",
+     "resumo": "El Telescopio Espacial James Webb de la NASA ha revelado un antiguo cúmulo de galaxias con una concentración inesperadamente densa de materia oscura, desafiando las teorías sobre cómo se desarrolló el universo. El descubrimiento también descubrió una conexión sorprendente..."
+    }
+   },
+   "resumo_original": "NASA’s James Webb Space Telescope has revealed an ancient galaxy cluster with an unexpectedly dense concentration of dark matter, challenging theories about how the universe developed. The discovery also uncovered a surprising connection…"
   },
   {
    "tipo": "noticia",
    "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
-   "resumo": "Campanha segue até o fim do mês e destina as mechas as pacientes do Hospital do Câncer de Ribeirão Preto",
+   "resumo": "Campanha segue até o fim do mês e destina as mechas às pacientes do Hospital do Câncer de Ribeirão Preto",
    "url": "https://jornal.usp.br/campus-ribeirao-preto/estudantes-da-usp-arrecadam-cabelo-no-outubro-rosa/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
@@ -325,61 +369,10 @@
    "i18n": {
     "en": {
      "titulo": "USP students collect hair in Pink October",
-     "resumo": "Campaign continues until the end of the month and destines the wicks to the patients of the Ribeirão Preto Cancer Hospital"
+     "resumo": "Campaign continues until the end of the month and destines the locks to the patients of the Ribeirão Preto Cancer Hospital"
     },
     "es": {
-     "titulo": "Los estudiantes de la USP recogen el cabello en octubre rosa",
-     "resumo": "La campaña continúa hasta fin de mes y destina las mechas a los pacientes del Hospital Oncológico de Ribeirão Preto"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Novo medicamento amplia opções de tratamento para câncer de pâncreas metastático",
-   "resumo": "Daraxonrasib, aprovado pela agência reguladora dos Estados Unidos, apresentou resultados superiores aos da quimioterapia em pacientes que já haviam recebido tratamento",
-   "url": "https://jornal.usp.br/radio-usp/novo-medicamento-amplia-opcoes-de-tratamento-para-cancer-de-pancreas-metastatico/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-09T17:18:53+00:00",
-   "tema": "Câncer",
-   "relevancia": 3,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/20170529_00_Pancreas.png",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "New drug expands treatment options for metastatic pancreatic cancer",
-     "resumo": "Daraxonrasib, approved by the United States regulatory agency, showed superior results to chemotherapy in patients who had already received treatment"
-    },
-    "es": {
-     "titulo": "Un nuevo fármaco amplía las opciones de tratamiento para el cáncer de páncreas metastásico",
-     "resumo": "Daraxonrasib, aprobado por la agencia reguladora de los Estados Unidos, mostró resultados superiores a la quimioterapia en pacientes que ya habían recibido tratamiento"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "InfoGripe alerta para a importância da vacinação contra Covid-19 e VSR",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/infogripe-alerta-para-importancia-da-vacinacao-contra-covid-19-e-vsr",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-08T13:58:04+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infocapa_12.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "InfoGripe warns of the importance of vaccination against Covid-19 and RSV"
-    },
-    "es": {
-     "titulo": "InfoGripe alerta de la importancia de la vacunación contra el Covid-19 y el VSR"
+     "titulo": "Los estudiantes de la USP recogen el cabello en octubre rosa"
     }
    }
   }
@@ -870,18 +863,10 @@
  ],
  "erros": [
   "Nature: not well-formed (invalid token): line 14, column 4",
-  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
+  "Nature · Genética: not well-formed (invalid token): line 14, column 4",
+  "ScienceDaily · Saúde: junk after document element: line 440, column 46"
  ],
  "mostradas": {
-  "pesquisadoras da usp criam treinamento para prevencao do suicidio em idosos": "2026-10-03T13:31:28.517659+00:00",
-  "your gut may be making a molecule that raises alzheimers risk": "2026-10-03T13:31:28.517659+00:00",
-  "vitamin c linked to fewer deaths in blood disorder trial": "2026-10-03T13:31:28.517659+00:00",
-  "jose goldemberg ganha biografia do projeto notaveis da fecomercio": "2026-10-03T13:31:28.517659+00:00",
-  "how ai helped bring an ancient tomb dating to before the roman empire back to life": "2026-10-03T13:31:28.517659+00:00",
-  "location location location how to edit genes only in the cells you want": "2026-10-03T13:31:28.517659+00:00",
-  "how the brain uses memory to imagine what might have been": "2026-10-03T13:31:28.517659+00:00",
-  "leucine does more than build muscle it powers up your cells": "2026-10-03T13:31:28.517659+00:00",
-  "brain area discovered that may be critical for viable pregnancies": "2026-10-03T13:31:28.517659+00:00",
   "no rastro dos atomos o desenvolvimento e a aplicacao de tecnicas analiticas em um instituto especializado da usp": "2026-10-03T18:01:43.064750+00:00",
   "plataforma criada na usp reune experiencias para ajudar a pensar o futuro do futebol feminino": "2026-10-03T18:01:43.064750+00:00",
   "this protective enzyme could help stop fatty liver disease from getting worse": "2026-10-03T18:01:43.064750+00:00",
@@ -1055,6 +1040,17 @@
   "estimulacao cerebral aliada a educacao nutricional reduz desejo por comida em mulheres com obesidade": "2026-10-13T07:50:00.540431+00:00",
   "sucesso da ia na industria depende da uniao entre tecnologia e chao de fabrica": "2026-10-13T07:50:00.540431+00:00",
   "icmc usp tem vaga de pos doutorado em engenharia de software e ia": "2026-10-13T07:50:00.540431+00:00",
-  "the monte verde controversy is back who first lived in the americas": "2026-10-13T07:50:00.540431+00:00"
+  "the monte verde controversy is back who first lived in the americas": "2026-10-13T07:50:00.540431+00:00",
+  "fiocruz pra voce vai oferecer vacinacao a criancas e adultos": "2026-10-13T16:07:46.963620+00:00",
+  "bioinformatica na selva da inteligencia artificial": "2026-10-13T16:07:46.963620+00:00",
+  "o triunfo da viola no campo e na cidade": "2026-10-13T16:07:46.963620+00:00",
+  "estudo destaca beneficios de alternativa nao hormonal para o climaterio": "2026-10-13T16:07:46.963620+00:00",
+  "a revolutionary way of targeting tumours could beat even the worst cancers": "2026-10-13T16:07:46.963620+00:00",
+  "plantar prensar e colher": "2026-10-13T16:07:46.963620+00:00",
+  "the lands ability to store carbon has bounced back after two bad years": "2026-10-13T16:07:46.963620+00:00",
+  "scientists worry ai is stealing their ideas": "2026-10-13T16:07:46.963620+00:00",
+  "what happens to the body during menopause new research hints at a biological cliff": "2026-10-13T16:07:46.963620+00:00",
+  "scientists just gave the powerhouses of our cells a high tech upgrade": "2026-10-13T16:07:46.963620+00:00",
+  "james webb reveals a massive cosmic structure that challenges our understanding of the universe": "2026-10-13T16:07:46.963620+00:00"
  }
 }
