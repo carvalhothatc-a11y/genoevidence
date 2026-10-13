@@ -2,6 +2,7 @@ import "server-only";
 import type Anthropic from "@anthropic-ai/sdk";
 import { buscarPubmed } from "./ferramentas/pubmed";
 import { buscarComposto, buscarEstruturas, buscarProteina, detalharEstrutura } from "./ferramentas/moleculas";
+import { gerarImagem, imagensDisponiveis, QUALIDADES, TAMANHOS, type Qualidade, type Tamanho } from "./imagens/openai";
 
 /**
  * Ciclo de execução do Geninho: compreender → escolher ferramentas → executar → conferir os
@@ -27,6 +28,7 @@ export type EventoAgente =
   | { t: "pensando" }
   | { t: "ferramenta"; nome: string; rotulo: string; estado: "iniciou" | "ok" | "vazio" | "falhou"; detalhe?: string }
   | { t: "molecula"; payload: MoleculaExibida }
+  | { t: "ilustracao"; payload: IlustracaoGerada }
   | { t: "fontes"; itens: FonteCitada[] }
   | { t: "fim"; motivo: string; voltas: number }
   | { t: "erro"; v: string };
@@ -39,8 +41,12 @@ export type MoleculaExibida =
 
 export type FonteCitada = { titulo: string; url: string; origem: string; leitura: "encontrada" | "resumo" | "lida" };
 
+/** Imagem criada por IA. Sempre marcada como ilustração: não comprova estrutura nem comportamento. */
+export type IlustracaoGerada = { b64: string; descricao: string; modelo: string; promptUsado?: string };
+
 type Ctx = {
   usos: Record<string, number>;
+  imagens: number;
   moleculas: MoleculaExibida[];
   fontes: FonteCitada[];
   emitir: (e: EventoAgente) => void;
@@ -55,6 +61,23 @@ const ROTULOS: Record<string, string> = {
   identificar_composto: "Identificando o composto no PubChem",
   web_search: "Pesquisando na internet",
   web_fetch: "Lendo a página",
+  gerar_ilustracao: "Gerando a ilustração",
+};
+
+const FERRAMENTA_ILUSTRACAO = {
+  name: "gerar_ilustracao",
+  description:
+    "Cria uma ILUSTRAÇÃO EDUCATIVA por IA a partir de uma descrição. Serve para explicar um processo ou um conceito de forma visual. NÃO serve como prova de estrutura química, de forma molecular nem de comportamento: para isso use buscar_estrutura ou identificar_composto, que trazem dados reais. Descreva a cena em inglês, com detalhe, e diga que é um diagrama ou esquema educativo. Uma imagem por pergunta.",
+  input_schema: {
+    type: "object" as const,
+    properties: {
+      descricao: { type: "string", description: "Descrição da imagem, em inglês, detalhada. Diga que é um diagrama ou esquema didático." },
+      legenda: { type: "string", description: "Legenda curta em português, para aparecer junto da imagem." },
+      tamanho: { type: "string", enum: [...TAMANHOS], description: "Formato da imagem. Padrão quadrado." },
+      qualidade: { type: "string", enum: [...QUALIDADES], description: "Qualidade. Padrão média; use baixa para rascunho." },
+    },
+    required: ["descricao", "legenda"],
+  },
 };
 
 export const FERRAMENTAS_APP = [
@@ -193,6 +216,26 @@ async function executar(nome: string, entrada: Record<string, unknown>, ctx: Ctx
       return JSON.stringify(c);
     }
 
+    if (nome === "gerar_ilustracao") {
+      if (ctx.imagens >= 1) {
+        ctx.emitir({ t: "ferramenta", nome, rotulo, estado: "falhou", detalhe: "uma imagem por pergunta" });
+        return "Já foi gerada uma imagem nesta pergunta. Use a que já existe ou explique em texto.";
+      }
+      ctx.imagens++;
+      const r = await gerarImagem(String(entrada.descricao ?? ""), {
+        tamanho: entrada.tamanho as Tamanho | undefined,
+        qualidade: entrada.qualidade as Qualidade | undefined,
+      });
+      if (!r.ok) {
+        ctx.emitir({ t: "ferramenta", nome, rotulo, estado: "falhou", detalhe: r.motivo });
+        return `A imagem NÃO foi gerada: ${r.motivo} Diga isso claramente a quem perguntou; não descreva uma imagem que não existe.`;
+      }
+      const legenda = String(entrada.legenda ?? "Ilustração educativa").slice(0, 200);
+      ctx.emitir({ t: "ilustracao", payload: { b64: r.imagem.b64, descricao: legenda, modelo: r.imagem.modelo, promptUsado: r.imagem.promptUsado } });
+      ctx.emitir({ t: "ferramenta", nome, rotulo, estado: "ok", detalhe: `${r.imagem.tamanho} · ${r.imagem.modelo}` });
+      return `Imagem gerada e já exibida ao lado da resposta, com a legenda "${legenda}". Ela é uma ilustração didática: não afirme que comprova estrutura, forma ou comportamento de nenhuma molécula.`;
+    }
+
     ctx.emitir({ t: "ferramenta", nome, rotulo, estado: "falhou", detalhe: "ferramenta desconhecida" });
     return `Ferramenta "${nome}" não existe.`;
   } catch (e) {
@@ -211,18 +254,22 @@ export type OpcoesAgente = {
   messages: Anthropic.MessageParam[];
   /** Busca na internet ligada para esta pergunta. */
   web: boolean;
+  /** Geração de ilustração disponível (chave presente e cota diária não esgotada). */
+  ilustracoes: boolean;
   signal: AbortSignal;
   emitir: (e: EventoAgente) => void;
 };
 
 /** Roda o ciclo até a resposta final, emitindo os estados reais de cada ferramenta. */
 export async function rodarAgente(o: OpcoesAgente): Promise<void> {
-  const ctx: Ctx = { usos: {}, moleculas: [], fontes: [], emitir: o.emitir };
+  const ctx: Ctx = { usos: {}, imagens: 0, moleculas: [], fontes: [], emitir: o.emitir };
   const messages: Anthropic.MessageParam[] = [...o.messages];
   const inicio = Date.now();
 
   const ferramentas = [
     ...FERRAMENTAS_APP,
+    // Só oferecemos a ferramenta quando ela existe de verdade neste servidor.
+    ...(o.ilustracoes && imagensDisponiveis().ok ? [FERRAMENTA_ILUSTRACAO] : []),
     ...(o.web
       ? [
           { type: "web_search_20260209" as const, name: "web_search" as const, max_uses: LIMITES_AGENTE.buscasWeb },

@@ -4,6 +4,7 @@ import { AuthError, rateLimit } from "@/lib/auth/store";
 import { assistantStatus } from "@/lib/assistant/status";
 import { GENINHO_LIMITS, GENINHO_SYSTEM, GeninhoRequest, comContexto, geninhoClient, geninhoErrorMessage } from "@/lib/assistant/geninho";
 import { rodarAgente, type EventoAgente } from "@/lib/assistant/agente";
+import { IMAGEM_LIMITES, imagensStatus } from "@/lib/assistant/imagens/openai";
 import { contentLengthOk } from "@/lib/security";
 
 export const dynamic = "force-dynamic";
@@ -39,6 +40,16 @@ export const POST = handle(async (req: Request) => {
     throw e;
   }
   const body = GeninhoRequest.parse(await readJsonBody(req, GENINHO_LIMITS.maxBodyBytes));
+  // Cada imagem é cobrada: teto por pessoa, por dia. Sem chave, a ferramenta nem é oferecida.
+  let podeIlustrar = imagensStatus().configured;
+  if (podeIlustrar) {
+    try {
+      rateLimit(`geninho-img:${user.id}`, IMAGEM_LIMITES.porDia, 24 * 3600_000);
+    } catch (e) {
+      if (!(e instanceof AuthError)) throw e;
+      podeIlustrar = false;
+    }
+  }
   const client = geninhoClient();
   if (!client) throw new ApiError(503, "O Geninho ainda não está configurado neste servidor.");
   const { model } = assistantStatus();
@@ -66,6 +77,7 @@ export const POST = handle(async (req: Request) => {
           system: GENINHO_SYSTEM,
           messages: comContexto(body.messages, body.contexto),
           web: Boolean(body.web),
+          ilustracoes: podeIlustrar,
           signal: req.signal,
           emitir,
         });
