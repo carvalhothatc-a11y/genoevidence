@@ -34,6 +34,7 @@ node scripts/e2e-area.mjs <base> <senha-demo> <capturas> --ia  # + identificaç�
 node scripts/teste-privacidade.mjs <base> <senha-demo> <dados> # CSP sem violações, privacidade, exclusão de conta
 node scripts/e2e-estudio.mjs <base> <senha-demo> <capturas>  # bancada 3D (PCR)
 node scripts/e2e-moleculas.mjs <base> <senha-demo> <capturas> # moléculas citadas: dado real, desambiguação e Mol*
+node scripts/e2e-caderno.mjs <base> <senha-demo> <capturas>   # caderno de laboratório: registro do dia, anexos e rastro de edição
 ```
 
 ## Limitações conhecidas
