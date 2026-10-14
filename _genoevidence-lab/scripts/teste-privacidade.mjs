@@ -33,6 +33,14 @@ const violacoes = (page) => page.evaluate(() => window.__csp ?? []);
   const csp = res.headers()["content-security-policy"] ?? "";
   ok(res.status() === 200, "/privacidade abre sem login");
   ok(/script-src 'self' 'nonce-[^']+' 'strict-dynamic'/.test(csp) && csp.includes("object-src 'none'") && csp.includes("frame-ancestors 'self'"), "cabeçalho CSP com nonce, strict-dynamic, object-src none");
+  // O <body> fica FORA de .ge-dark: se alguém trocar o fundo dele por um token (bg-paper), ele vira
+  // branco e aparece no overscroll. A captura de tela não pega, porque a div escura cobre a tela.
+  const fundo = await page.evaluate(() => {
+    const [r, g, b] = (getComputedStyle(document.body).backgroundColor.match(/\d+/g) ?? [255, 255, 255]).map(Number);
+    return { rgb: `${r},${g},${b}`, claro: r + g + b > 200, dentroDoEscuro: !!document.body.closest(".ge-dark") };
+  });
+  ok(!fundo.claro, `fundo do <body> continua escuro (${fundo.rgb})${fundo.dentroDoEscuro ? "" : " — ele está fora de .ge-dark"}`);
+
   const nonces = await page.locator("script[nonce]").count();
   ok(nonces > 0, `scripts do Next carregam com nonce (${nonces})`);
   ok(await page.getByRole("heading", { name: "Política de privacidade", level: 1 }).isVisible(), "título da política");

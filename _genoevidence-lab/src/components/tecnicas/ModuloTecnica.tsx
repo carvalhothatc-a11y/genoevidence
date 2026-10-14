@@ -14,7 +14,7 @@ import { STATUS_LABEL } from "@/lib/modules/registry";
 const Holo3D = dynamic(() => import("@/components/holo/Holo3D").then((m) => m.Holo3D), {
   ssr: false,
   loading: () => (
-    <div className="grid h-full place-items-center text-[13px] text-[#a7b2c8]" role="status">
+    <div className="grid h-full place-items-center text-[13px] text-muted" role="status">
       Carregando a cena 3D…
     </div>
   ),
@@ -32,8 +32,8 @@ const ABAS: { id: Aba; rotulo: string }[] = [
 
 const STATUS_CLS: Record<string, string> = {
   implementado: "border-[#3ccf8e]/40 bg-[#3ccf8e]/10 text-[#8de8bf]",
-  parcial: "border-[#ffb23f]/50 bg-[#ffb23f]/10 text-[#ffd08a]",
-  nao_implementado: "border-white/15 bg-white/5 text-[#a7b2c8]",
+  parcial: "border-warn/50 bg-warn/10 text-[#ffd08a]",
+  nao_implementado: "border-white/15 bg-white/5 text-muted",
 };
 
 export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
@@ -92,17 +92,17 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
     <div className="mx-auto grid max-w-[1180px] gap-4 px-4 py-6" data-testid="modulo-tecnica" data-tecnica={tecnica.id}>
       <header className="grid gap-2">
         <div className="flex flex-wrap items-center gap-2">
-          <Link href="/modulos" className="text-[13px] text-[#9db4ff] underline">
+          <Link href="/modulos" className="text-[13px] text-accent-ink underline">
             ← Técnicas
           </Link>
           <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-semibold ${STATUS_CLS[tecnica.status]}`}>{STATUS_LABEL[tecnica.status]}</span>
-          <span className="rounded-full border border-[#b49cf5]/40 bg-[#7b4de0]/20 px-2.5 py-0.5 text-[11px] font-semibold text-[#cdbcff]" title="Representação didática: não é resultado observado nem previsto">
+          <span className="rounded-full border border-violet/40 bg-[#7b4de0]/20 px-2.5 py-0.5 text-[11px] font-semibold text-[#cdbcff]" title="Representação didática: não é resultado observado nem previsto">
             ✎ módulo educativo
           </span>
         </div>
         <h1 className="ge-display text-3xl text-white sm:text-4xl">{tecnica.titulo}</h1>
-        <p className="max-w-3xl text-[15px] text-[#c9d2e3]">{tecnica.resumo}</p>
-        <p className="text-[12px] text-[#a7b2c8]">{tecnica.tecnica}</p>
+        <p className="max-w-3xl text-[15px] text-body">{tecnica.resumo}</p>
+        <p className="text-[12px] text-muted">{tecnica.tecnica}</p>
       </header>
 
       {/* trilha de etapas */}
@@ -113,7 +113,7 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
             type="button"
             onClick={() => setI(j)}
             aria-current={j === i ? "step" : undefined}
-            className={`ge-press rounded-full border px-3 py-1.5 text-[12px] ${j === i ? "border-[#b49cf5] bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 text-[#c9d2e3] hover:bg-white/10"}`}
+            className={`ge-press rounded-full border px-3 py-1.5 text-[12px] ${j === i ? "border-violet bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 text-body hover:bg-white/10"}`}
           >
             {j + 1}. {e.titulo}
           </button>
@@ -132,7 +132,7 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
           </div>
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div className="flex items-center gap-1.5">
-              <button type="button" onClick={() => (setT(0), setTocando(true))} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-[#c9d2e3] hover:bg-white/10">
+              <button type="button" onClick={() => (setT(0), setTocando(true))} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-body hover:bg-white/10">
                 Reiniciar
               </button>
               <button type="button" onClick={() => (t >= 1 ? (setT(0), setTocando(true)) : setTocando(!tocando))} className="ge-press rounded-full bg-[#7b4de0] px-3 py-1.5 text-[12px] font-semibold text-white">
@@ -140,15 +140,15 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
               </button>
             </div>
             <div className="flex items-center gap-1.5">
-              <button type="button" disabled={i === 0} onClick={() => setI(i - 1)} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-[#c9d2e3] hover:bg-white/10 disabled:opacity-40">
+              <button type="button" disabled={i === 0} onClick={() => setI(i - 1)} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-body hover:bg-white/10 disabled:opacity-40">
                 Anterior
               </button>
-              <button type="button" disabled={i === tecnica.etapas.length - 1} onClick={() => setI(i + 1)} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-[#c9d2e3] hover:bg-white/10 disabled:opacity-40">
+              <button type="button" disabled={i === tecnica.etapas.length - 1} onClick={() => setI(i + 1)} className="ge-press rounded-full border border-white/15 px-3 py-1.5 text-[12px] text-body hover:bg-white/10 disabled:opacity-40">
                 Próxima
               </button>
             </div>
           </div>
-          <p className="rounded-xl border border-white/10 bg-black/20 px-3 py-2 text-[12px] text-[#a7b2c8]" data-testid="legenda-cena">
+          <p className="rounded-xl border border-white/10 bg-black/20 px-3 py-2 text-[12px] text-muted" data-testid="legenda-cena">
             {etapa.cena.legenda}
           </p>
         </div>
@@ -160,7 +160,7 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
               etapa {i + 1} de {tecnica.etapas.length}
             </p>
             <h2 className="mt-0.5 text-[20px] font-semibold text-white">{etapa.titulo}</h2>
-            <p className="mt-1 text-[14px] text-[#c9d2e3]">{etapa.resumo}</p>
+            <p className="mt-1 text-[14px] text-body">{etapa.resumo}</p>
           </div>
 
           <div role="tablist" aria-label="Seções da etapa" className="flex flex-wrap gap-1.5">
@@ -171,7 +171,7 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
                 role="tab"
                 aria-selected={aba === x.id}
                 onClick={() => setAba(x.id)}
-                className={`ge-press rounded-full border px-3 py-1.5 text-[12px] ${aba === x.id ? "border-[#b49cf5] bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 text-[#c9d2e3] hover:bg-white/10"}`}
+                className={`ge-press rounded-full border px-3 py-1.5 text-[12px] ${aba === x.id ? "border-violet bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 text-body hover:bg-white/10"}`}
               >
                 {x.rotulo}
               </button>
@@ -188,11 +188,11 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
                     {etapa.materiais.map((m) => (
                       <li key={m.nome} className="rounded-xl border border-white/10 bg-white/[0.03] p-3">
                         <p className="text-[14px] font-semibold text-white">{m.nome}</p>
-                        <p className="text-[13px] text-[#c9d2e3]">{m.papel}</p>
+                        <p className="text-[13px] text-body">{m.papel}</p>
                         <SourceList refs={m.refs} compact />
                       </li>
                     ))}
-                    {!etapa.materiais.length && <li className="text-[13px] text-[#a7b2c8]">Sem materiais cadastrados para esta etapa.</li>}
+                    {!etapa.materiais.length && <li className="text-[13px] text-muted">Sem materiais cadastrados para esta etapa.</li>}
                   </ul>
                   <div>
                     <h3 className="text-[14px] font-semibold text-white">Controles</h3>
@@ -204,7 +204,7 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
                 <>
                   <ClaimList claims={etapa.observar} empty="Nada cadastrado para esta etapa." />
                   {etapa.limitacoes.length > 0 && (
-                    <div className="rounded-xl border border-[#ffb23f]/40 bg-[#ffb23f]/10 p-3">
+                    <div className="rounded-xl border border-warn/40 bg-warn/10 p-3">
                       <h3 className="text-[13px] font-semibold text-[#ffd08a]">Limitações desta etapa</h3>
                       <ul className="mt-1 list-disc pl-5 text-[13px] text-[#ffd08a]">
                         {etapa.limitacoes.map((l) => (
@@ -227,7 +227,7 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
                 return (
                   <div key={p.id} className="grid gap-2">
                     <p className="text-[14px] font-semibold text-white">{p.rotulo}</p>
-                    <p className="text-[13px] text-[#c9d2e3]">{p.descricao}</p>
+                    <p className="text-[13px] text-body">{p.descricao}</p>
                     <div className="flex flex-wrap gap-1.5" role="group" aria-label={p.rotulo}>
                       {p.opcoes.map((o) => (
                         <button
@@ -235,7 +235,7 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
                           type="button"
                           aria-pressed={o.valor === atual}
                           onClick={() => setEscolhas({ ...escolhas, [p.id]: o.valor })}
-                          className={`ge-press rounded-full border px-3 py-1.5 text-[12px] ${o.valor === atual ? "border-[#b49cf5] bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 text-[#c9d2e3] hover:bg-white/10"}`}
+                          className={`ge-press rounded-full border px-3 py-1.5 text-[12px] ${o.valor === atual ? "border-violet bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 text-body hover:bg-white/10"}`}
                         >
                           {o.rotulo}
                         </button>
@@ -247,7 +247,7 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
                   </div>
                 );
               })}
-              <p className="text-[12px] text-[#a7b2c8]">Mudar a escolha troca o que as fontes dizem sobre ela. Nada aqui recalcula um resultado nem prevê o que vai acontecer no seu experimento.</p>
+              <p className="text-[12px] text-muted">Mudar a escolha troca o que as fontes dizem sobre ela. Nada aqui recalcula um resultado nem prevê o que vai acontecer no seu experimento.</p>
             </section>
           )}
 
@@ -275,7 +275,7 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
       )}
 
       {/* o que o módulo não faz */}
-      <section className="grid gap-2 rounded-2xl border border-[#ffb23f]/40 bg-[#ffb23f]/[0.07] p-4" aria-labelledby="limites">
+      <section className="grid gap-2 rounded-2xl border border-warn/40 bg-warn/[0.07] p-4" aria-labelledby="limites">
         <h2 id="limites" className="text-[16px] font-semibold text-[#ffd08a]">
           O que este módulo não faz
         </h2>
@@ -294,7 +294,7 @@ export function ModuloTecnica({ tecnica }: { tecnica: TecnicaConteudo }) {
           Fontes deste módulo
         </h2>
         <SourceList refs={tecnica.fontes} />
-        <p className="text-[12px] text-[#a7b2c8]">{tecnica.autoria}</p>
+        <p className="text-[12px] text-muted">{tecnica.autoria}</p>
       </section>
     </div>
   );

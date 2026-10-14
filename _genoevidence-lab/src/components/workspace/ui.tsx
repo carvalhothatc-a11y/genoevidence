@@ -18,10 +18,10 @@ const ORIGEM_COR: Record<TipoOrigem, string> = {
   texto: "border-[#7d9dff]/40 text-[#b9c9ff]",
   voz: "border-[#7d9dff]/40 text-[#b9c9ff]",
   imagem: "border-[#3ccf8e]/40 text-[#8de8bf]",
-  relatorio: "border-[#b49cf5]/45 text-[#cdbcff]",
-  tabela: "border-[#ffb23f]/45 text-[#ffd08a]",
+  relatorio: "border-violet/45 text-[#cdbcff]",
+  tabela: "border-warn/45 text-[#ffd08a]",
   referencia: "border-[#e679b5]/45 text-[#f3a9d1]",
-  biblioteca: "border-white/20 text-[#a7b2c8]",
+  biblioteca: "border-white/20 text-muted",
   ia: "border-[#e679b5]/45 text-[#f3a9d1]",
   usuario: "border-white/30 text-white",
 };
@@ -38,10 +38,10 @@ export function OrigemChip({ o, nomeMaterial }: { o: Origem; nomeMaterial?: stri
 }
 
 export const ESTADO_FONTE: Record<EstadoFonte, { rotulo: string; cls: string; dica: string }> = {
-  enviado: { rotulo: "arquivo enviado", cls: "border-white/25 text-[#c9d2e3]", dica: "O arquivo está aqui, mas o conteúdo ainda não foi usado." },
+  enviado: { rotulo: "arquivo enviado", cls: "border-white/25 text-body", dica: "O arquivo está aqui, mas o conteúdo ainda não foi usado." },
   analisado: { rotulo: "documento analisado", cls: "border-[#3ccf8e]/45 text-[#8de8bf]", dica: "O conteúdo foi extraído e usado na interpretação." },
   cadastrada: { rotulo: "referência cadastrada", cls: "border-[#e679b5]/45 text-[#f3a9d1]", dica: "Registrada, mas o conteúdo não foi lido." },
-  indisponivel: { rotulo: "conteúdo não obtido", cls: "border-[#ffb23f]/50 text-[#ffd08a]", dica: "Não foi possível extrair o conteúdo deste arquivo." },
+  indisponivel: { rotulo: "conteúdo não obtido", cls: "border-warn/50 text-[#ffd08a]", dica: "Não foi possível extrair o conteúdo deste arquivo." },
   catalogo: { rotulo: "catálogo verificado", cls: "border-[#7d9dff]/40 text-[#b9c9ff]", dica: "Fonte do catálogo do GenoLab, conferida no PubMed." },
 };
 
@@ -59,13 +59,13 @@ export function Secao({ id, titulo, contagem, children, aberta = true, acao }: {
     <details open={aberta} className="group rounded-xl border border-white/10 bg-white/[0.025]" data-secao={id}>
       <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-3 py-2.5 text-[13px] font-semibold text-white [&::-webkit-details-marker]:hidden">
         <span className="flex items-center gap-2">
-          <span aria-hidden="true" className="text-[#7d8aa3] transition-transform group-open:rotate-90">›</span>
+          <span aria-hidden="true" className="text-panel-dim transition-transform group-open:rotate-90">›</span>
           {titulo}
-          {contagem !== undefined && <span className="ge-mono rounded-full bg-white/10 px-1.5 text-[10px] font-normal text-[#c9d2e3]">{contagem}</span>}
+          {contagem !== undefined && <span className="ge-mono rounded-full bg-white/10 px-1.5 text-[10px] font-normal text-body">{contagem}</span>}
         </span>
         {acao}
       </summary>
-      <div className="grid gap-2 px-3 pb-3 text-[13px] text-[#c9d2e3]">{children}</div>
+      <div className="grid gap-2 px-3 pb-3 text-[13px] text-body">{children}</div>
     </details>
   );
 }

@@ -54,7 +54,7 @@ export function TabelaPrevisibilidade({ cenario, frequencias }: { cenario: Cenar
       <table className="w-full min-w-[460px] border-separate border-spacing-y-1 text-left text-[12px]">
         <caption className="sr-only">Previsibilidade por etapa</caption>
         <thead>
-          <tr className="text-[11px] uppercase tracking-wide text-[#7d8aa3]">
+          <tr className="text-[11px] uppercase tracking-wide text-panel-dim">
             <th className="px-2 py-1 font-semibold">Etapa</th>
             <th className="px-2 py-1 font-semibold">Previsibilidade</th>
             <th className="px-2 py-1 font-semibold">Pode acontecer</th>
@@ -79,10 +79,10 @@ export function TabelaPrevisibilidade({ cenario, frequencias }: { cenario: Cenar
                   <span className="block font-semibold text-white">{p.titulo}</span>
                 </td>
                 <td className="px-2 py-2">
-                  <span className={`block text-[15px] font-bold ${pv.pct ? "text-white" : "text-[#7d8aa3]"}`} title={pv.base} data-pct={pv.pct ?? "sem"}>
+                  <span className={`block text-[15px] font-bold ${pv.pct ? "text-white" : "text-panel-dim"}`} title={pv.base} data-pct={pv.pct ?? "sem"}>
                     {pv.pct ?? "— %"}
                   </span>
-                  <span className="block text-[10.5px] leading-snug text-[#a7b2c8]">{pv.pct ? pv.base : pv.nivel === "sem_dados" ? "sem dado publicado" : "por regras, sem %"}</span>
+                  <span className="block text-[10.5px] leading-snug text-muted">{pv.pct ? pv.base : pv.nivel === "sem_dados" ? "sem dado publicado" : "por regras, sem %"}</span>
                   {pv.itens.length > 0 && (
                     <span className="mt-1 flex flex-wrap gap-1">
                       {contar(pv.itens).map(([e, n]) => (
@@ -94,7 +94,7 @@ export function TabelaPrevisibilidade({ cenario, frequencias }: { cenario: Cenar
                     </span>
                   )}
                 </td>
-                <td className="px-2 py-2 text-[#c9d2e3]">
+                <td className="px-2 py-2 text-body">
                   {pos.length ? (
                     <ul className="grid gap-0.5">
                       {pos.slice(0, 3).map((x) => (
@@ -102,10 +102,10 @@ export function TabelaPrevisibilidade({ cenario, frequencias }: { cenario: Cenar
                       ))}
                     </ul>
                   ) : (
-                    <span className="text-[#7d8aa3]">não catalogado</span>
+                    <span className="text-panel-dim">não catalogado</span>
                   )}
                 </td>
-                <td className="rounded-r-lg px-2 py-2 text-[#c9d2e3]">
+                <td className="rounded-r-lg px-2 py-2 text-body">
                   {p.variaveis.length ? (
                     <ul className="grid gap-0.5">
                       {p.variaveis.slice(0, 3).map((v) => (
@@ -113,7 +113,7 @@ export function TabelaPrevisibilidade({ cenario, frequencias }: { cenario: Cenar
                       ))}
                     </ul>
                   ) : (
-                    <span className="text-[#7d8aa3]">—</span>
+                    <span className="text-panel-dim">—</span>
                   )}
                 </td>
               </tr>
@@ -121,7 +121,7 @@ export function TabelaPrevisibilidade({ cenario, frequencias }: { cenario: Cenar
           })}
         </tbody>
       </table>
-      <p className="mt-1 text-[10.5px] leading-snug text-[#7d8aa3]">
+      <p className="mt-1 text-[10.5px] leading-snug text-panel-dim">
         Porcentagem só com frequência publicada registrada (com fonte e trecho) ou modelo validado; nunca por estimativa livre. Ausência de problema identificado não é garantia de sucesso.
       </p>
     </div>
@@ -154,7 +154,7 @@ export function DetalheVisual({ refsProjeto }: { refsProjeto: { id: string; titl
 
   return (
     <div className="grid gap-3 text-[13px]" data-testid="detalhe-visual">
-      <label className="flex flex-wrap items-center gap-2 text-xs text-[#a7b2c8]">
+      <label className="flex flex-wrap items-center gap-2 text-xs text-muted">
         Interpretado como
         <select value={p.acao} onChange={(e) => corrigir(p.id, e.target.value as Acao)} className="rounded-lg border border-white/15 bg-transparent px-2 py-1 text-xs text-white">
           {ACOES_DISPONIVEIS.map((a) => (
@@ -163,14 +163,14 @@ export function DetalheVisual({ refsProjeto }: { refsProjeto: { id: string; titl
             </option>
           ))}
         </select>
-        {p.confianca === "conferir" && <span className="text-[#ffb23f]">confira</span>}
+        {p.confianca === "conferir" && <span className="text-warn">confira</span>}
       </label>
 
       {p.atencao.length > 0 && (
         <div className="grid gap-1.5">
           {p.atencao.map((a) => (
-            <div key={a.texto} className="rounded-lg border border-[#ffb23f]/35 bg-[#ffb23f]/10 p-2 text-xs text-[#ffd99a]">
-              ! {a.texto} {a.base === "geral" ? <span className="text-[#a7b2c8]">(orientação geral, sem fonte cadastrada)</span> : <SourceList refs={a.refs} compact />}
+            <div key={a.texto} className="rounded-lg border border-warn/35 bg-warn/10 p-2 text-xs text-[#ffd99a]">
+              ! {a.texto} {a.base === "geral" ? <span className="text-muted">(orientação geral, sem fonte cadastrada)</span> : <SourceList refs={a.refs} compact />}
             </div>
           ))}
         </div>
@@ -178,11 +178,11 @@ export function DetalheVisual({ refsProjeto }: { refsProjeto: { id: string; titl
 
       {(POSSIBILIDADES[p.acao] ?? []).length > 0 && (
         <div>
-          <p className="text-[11px] font-bold uppercase tracking-wide text-[#7d8aa3]">O que pode acontecer</p>
+          <p className="text-[11px] font-bold uppercase tracking-wide text-panel-dim">O que pode acontecer</p>
           <ul className="mt-1 grid gap-1">
             {(POSSIBILIDADES[p.acao] ?? []).map((x) => (
               <li key={x.texto} className="text-xs">
-                • {x.texto} {x.base === "geral" ? <span className="text-[#7d8aa3]">(geral, sem fonte)</span> : <SourceList refs={x.refs} compact />}
+                • {x.texto} {x.base === "geral" ? <span className="text-panel-dim">(geral, sem fonte)</span> : <SourceList refs={x.refs} compact />}
               </li>
             ))}
           </ul>
@@ -191,11 +191,11 @@ export function DetalheVisual({ refsProjeto }: { refsProjeto: { id: string; titl
 
       {p.variaveis.length > 0 && (
         <div>
-          <p className="text-[11px] font-bold uppercase tracking-wide text-[#7d8aa3]">O que dá para mudar</p>
+          <p className="text-[11px] font-bold uppercase tracking-wide text-panel-dim">O que dá para mudar</p>
           <ul className="mt-1 grid gap-1.5">
             {p.variaveis.map((v) => (
               <li key={v.nome} className="text-xs">
-                <span className="font-semibold text-white">{v.nome}:</span> {v.efeito} {v.base === "geral" ? <span className="text-[#7d8aa3]">(geral, sem fonte)</span> : <SourceList refs={v.refs} compact />}
+                <span className="font-semibold text-white">{v.nome}:</span> {v.efeito} {v.base === "geral" ? <span className="text-panel-dim">(geral, sem fonte)</span> : <SourceList refs={v.refs} compact />}
               </li>
             ))}
           </ul>
@@ -203,33 +203,33 @@ export function DetalheVisual({ refsProjeto }: { refsProjeto: { id: string; titl
       )}
 
       <div>
-        <p className="text-[11px] font-bold uppercase tracking-wide text-[#7d8aa3]">Referências</p>
-        {p.refs.length ? <SourceList refs={p.refs} compact /> : <p className="text-xs text-[#a7b2c8]">Nenhuma referência verificada no catálogo do GenoLab para esta etapa.</p>}
+        <p className="text-[11px] font-bold uppercase tracking-wide text-panel-dim">Referências</p>
+        {p.refs.length ? <SourceList refs={p.refs} compact /> : <p className="text-xs text-muted">Nenhuma referência verificada no catálogo do GenoLab para esta etapa.</p>}
         {relacionadas.length > 0 && (
-          <p className="mt-1 text-xs text-[#c9d2e3]">
+          <p className="mt-1 text-xs text-body">
             Do seu projeto (pelo título; conteúdo não lido): {relacionadas.map((r) => r.title).join("; ")}
           </p>
         )}
         <div className="mt-2 rounded-lg border border-white/10 bg-white/[0.03] p-2 text-xs">
-          <button type="button" onClick={() => void buscar()} disabled={busca.estado === "buscando"} className="font-semibold text-[#9db4ff] underline disabled:opacity-50">
+          <button type="button" onClick={() => void buscar()} disabled={busca.estado === "buscando"} className="font-semibold text-accent-ink underline disabled:opacity-50">
             {busca.estado === "buscando" ? "Buscando no PubMed…" : "Buscar referências no PubMed"}
           </button>
-          <p className="mt-0.5 text-[10.5px] text-[#7d8aa3]">Envia ao NCBI apenas os termos “{TERMOS_PUBMED[p.acao]}{p.rotulos.gene ? ` ${p.rotulos.gene}` : ""}”, não o seu texto.</p>
-          {busca.estado === "erro" && <p className="mt-1 text-[#ff5470]">{busca.erro}</p>}
+          <p className="mt-0.5 text-[10.5px] text-panel-dim">Envia ao NCBI apenas os termos “{TERMOS_PUBMED[p.acao]}{p.rotulos.gene ? ` ${p.rotulos.gene}` : ""}”, não o seu texto.</p>
+          {busca.estado === "erro" && <p className="mt-1 text-danger">{busca.erro}</p>}
           {busca.estado === "ok" && (
             <ul className="mt-1.5 grid gap-1">
-              {busca.itens.length === 0 && <li className="text-[#a7b2c8]">Nada encontrado.</li>}
+              {busca.itens.length === 0 && <li className="text-muted">Nada encontrado.</li>}
               {busca.itens.map((it) => (
                 <li key={it.pmid}>
-                  <a href={it.doi ? `https://doi.org/${it.doi}` : `https://pubmed.ncbi.nlm.nih.gov/${it.pmid}/`} target="_blank" rel="noopener noreferrer" className="text-[#c9d2e3] underline">
+                  <a href={it.doi ? `https://doi.org/${it.doi}` : `https://pubmed.ncbi.nlm.nih.gov/${it.pmid}/`} target="_blank" rel="noopener noreferrer" className="text-body underline">
                     {it.title}
                   </a>{" "}
-                  <span className="text-[#7d8aa3]">
+                  <span className="text-panel-dim">
                     {it.journal}, {it.year} · PMID {it.pmid}
                   </span>
                 </li>
               ))}
-              {busca.itens.length > 0 && <li className="text-[10.5px] text-[#ffb23f]">Encontradas por busca: conteúdo não lido nem verificado pela plataforma.</li>}
+              {busca.itens.length > 0 && <li className="text-[10.5px] text-warn">Encontradas por busca: conteúdo não lido nem verificado pela plataforma.</li>}
             </ul>
           )}
         </div>

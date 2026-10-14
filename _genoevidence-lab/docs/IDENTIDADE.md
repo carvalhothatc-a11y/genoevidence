@@ -2,6 +2,10 @@
 
 O produto se chama **GenoLab** (nome definido pela responsável em 02/10/2026) e reutiliza a identidade do GenoEvidence. No cabeçalho, o lockup original “GenoEvidence” é seguido do rótulo “Lab”, sem alterar o logotipo.
 
+> **Como usar as cores no código:** nunca escreva o hex direto no componente — use a classe
+> semântica (`text-muted`, `bg-panel`, `border-warn/40`). A regra, as exceções legítimas e as
+> medições de contraste estão em [SISTEMA-DE-DESIGN.md](SISTEMA-DE-DESIGN.md).
+
 ## Fontes da identidade (analisadas em 02/10/2026)
 
 | Arquivo | Uso |

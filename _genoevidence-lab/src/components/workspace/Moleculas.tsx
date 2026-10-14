@@ -6,7 +6,7 @@ import { moleculasCitadas, ROTULO_TIPO, type MoleculaCitada, type TipoMolecula }
 const MolstarViewer = dynamic(() => import("@/components/structures/MolstarViewer"), {
   ssr: false,
   loading: () => (
-    <div className="grid h-full place-items-center text-[12px] text-[#a7b2c8]" role="status">
+    <div className="grid h-full place-items-center text-[12px] text-muted" role="status">
       Carregando o visualizador…
     </div>
   ),
@@ -56,7 +56,7 @@ export function Moleculas({ texto }: { texto: string }) {
     <section className="grid gap-2 rounded-2xl border border-white/10 bg-white/[0.03] p-3" aria-label="Moléculas citadas no experimento" data-testid="moleculas-citadas">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="text-[13px] font-semibold text-white">Moléculas citadas</h3>
-        <span className="text-[11px] text-[#7d8aa3]">a cena é ilustração; aqui vem o dado real</span>
+        <span className="text-[11px] text-panel-dim">a cena é ilustração; aqui vem o dado real</span>
       </div>
       <ul className="flex flex-wrap gap-1.5">
         {citadas.map((m) => {
@@ -69,10 +69,10 @@ export function Moleculas({ texto }: { texto: string }) {
                 type="button"
                 onClick={() => void buscar(m)}
                 aria-expanded={aberta === k}
-                className={`ge-press rounded-full border px-3 py-1.5 text-[12px] ${aberta === k ? "border-[#b49cf5] bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 text-[#c9d2e3] hover:bg-white/10"}`}
+                className={`ge-press rounded-full border px-3 py-1.5 text-[12px] ${aberta === k ? "border-violet bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 text-body hover:bg-white/10"}`}
                 data-molecula={m.termo}
               >
-                {m.termo} <span className="text-[#a7b2c8]">· {ROTULO_TIPO[tipo]}</span>
+                {m.termo} <span className="text-muted">· {ROTULO_TIPO[tipo]}</span>
                 {st?.carregando ? " …" : ""}
               </button>
             </li>
@@ -86,9 +86,9 @@ export function Moleculas({ texto }: { texto: string }) {
         if (aberta !== k) return null;
         const st = estados[k];
         return (
-          <div key={k} className="grid gap-2 rounded-xl border border-white/10 bg-[#0b1221] p-3 text-[12px] text-[#c9d2e3]">
+          <div key={k} className="grid gap-2 rounded-xl border border-white/10 bg-panel p-3 text-[12px] text-body">
             {m.ambiguo && (
-              <div className="grid gap-1.5 rounded-lg border border-[#ffb23f]/40 bg-[#ffb23f]/10 p-2">
+              <div className="grid gap-1.5 rounded-lg border border-warn/40 bg-warn/10 p-2">
                 <p className="text-[#ffd08a]">
                   “{m.termo}” pode ser o gene ou a proteína que ele codifica. São objetos diferentes e a estrutura muda. Qual você quer?
                 </p>
@@ -98,7 +98,7 @@ export function Moleculas({ texto }: { texto: string }) {
                       key={t}
                       type="button"
                       onClick={() => (setTipos((x) => ({ ...x, [m.termo]: t })), setAberta(`${m.termo}:${t}`))}
-                      className={`ge-press rounded-full border px-2.5 py-1 ${tipo === t ? "border-[#b49cf5] bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 hover:bg-white/10"}`}
+                      className={`ge-press rounded-full border px-2.5 py-1 ${tipo === t ? "border-violet bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 hover:bg-white/10"}`}
                     >
                       {t === "gene" ? `o gene ${m.termo}` : `a proteína de ${m.termo}`}
                     </button>
@@ -127,30 +127,30 @@ function Resultado({ d, tipo, termo }: { d: Extract<Resposta, { encontrado: true
         <img src={d.composto.imagem2d} alt={`Estrutura plana de ${d.composto.nome}`} width={110} height={110} className="rounded-lg bg-white" loading="lazy" />
         <div className="grid content-start gap-0.5">
           <strong className="text-[13px] text-white">{d.composto.nome}</strong>
-          <span className="text-[#a7b2c8]">
+          <span className="text-muted">
             PubChem CID {d.composto.cid}
             {d.composto.formula ? ` · ${d.composto.formula}` : ""}
             {d.composto.massa ? ` · ${d.composto.massa} g/mol` : ""}
           </span>
-          <a href={d.composto.url} target="_blank" rel="noreferrer noopener" className="text-[#9db4ff] underline">
+          <a href={d.composto.url} target="_blank" rel="noreferrer noopener" className="text-accent-ink underline">
             Ver no PubChem
           </a>
-          <span className="text-[#7d8aa3]">Desenho 2D do PubChem, servido pelo GenoLab.</span>
+          <span className="text-panel-dim">Desenho 2D do PubChem, servido pelo GenoLab.</span>
         </div>
       </div>
     );
 
-  if (!d.proteina) return <p className="text-[#a7b2c8]">Sem dados para mostrar.</p>;
+  if (!d.proteina) return <p className="text-muted">Sem dados para mostrar.</p>;
 
   return (
     <div className="grid gap-2">
       <div className="grid gap-0.5">
         <strong className="text-[13px] text-white">{d.proteina.nome}</strong>
-        <span className="text-[#a7b2c8]">
+        <span className="text-muted">
           UniProt {d.proteina.acesso}
           {d.proteina.genes.length ? ` · gene ${d.proteina.genes.join(", ")}` : ""} · {d.proteina.organismo}
         </span>
-        <a href={d.proteina.url} target="_blank" rel="noreferrer noopener" className="text-[#9db4ff] underline">
+        <a href={d.proteina.url} target="_blank" rel="noreferrer noopener" className="text-accent-ink underline">
           Ver no UniProt
         </a>
         {tipo === "gene" && (
@@ -162,7 +162,7 @@ function Resultado({ d, tipo, termo }: { d: Extract<Resposta, { encontrado: true
 
       {d.estruturas && d.estruturas.length > 0 ? (
         <div className="grid gap-1.5">
-          <p className="text-[11px] uppercase tracking-wide text-[#7d8aa3]">Estruturas no RCSB PDB</p>
+          <p className="text-[11px] uppercase tracking-wide text-panel-dim">Estruturas no RCSB PDB</p>
           <ul className="flex flex-wrap gap-1.5">
             {d.estruturas.slice(0, 5).map((e) => (
               <li key={e.pdbId}>
@@ -170,15 +170,15 @@ function Resultado({ d, tipo, termo }: { d: Extract<Resposta, { encontrado: true
                   type="button"
                   onClick={() => setPdb(pdb === e.pdbId ? null : e.pdbId)}
                   title={e.titulo}
-                  className={`ge-press rounded-full border px-2.5 py-1 ${pdb === e.pdbId ? "border-[#b49cf5] bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 hover:bg-white/10"}`}
+                  className={`ge-press rounded-full border px-2.5 py-1 ${pdb === e.pdbId ? "border-violet bg-[#7b4de0]/30 font-semibold text-white" : "border-white/15 hover:bg-white/10"}`}
                 >
                   {e.pdbId}
-                  {e.resolucao ? <span className="text-[#a7b2c8]"> · {e.resolucao} Å</span> : null}
+                  {e.resolucao ? <span className="text-muted"> · {e.resolucao} Å</span> : null}
                 </button>
               </li>
             ))}
           </ul>
-          <p className="text-[11px] text-[#7d8aa3]">
+          <p className="text-[11px] text-panel-dim">
             Só estruturas que contêm esta proteína (procuradas pelo acesso UniProt), da melhor resolução para a pior. Muitas são fragmentos ou complexos: leia o título.
           </p>
           {pdb && <Visor pdb={pdb} estrutura={d.estruturas.find((e) => e.pdbId === pdb)!} />}
@@ -199,14 +199,14 @@ function Visor({ pdb, estrutura }: { pdb: string; estrutura: Estrutura }) {
       <div className="relative h-[280px] overflow-hidden rounded-xl border border-white/10 bg-black/30">
         <MolstarViewer url={`/api/moleculas/estrutura?pdb=${pdb}`} format="mmcif" highlights={[]} command={null} reducedMotion={reduzido} onStatus={setEstado} />
       </div>
-      <figcaption className="grid gap-0.5 text-[11px] text-[#a7b2c8]">
-        <span className="text-[#c9d2e3]">
+      <figcaption className="grid gap-0.5 text-[11px] text-muted">
+        <span className="text-body">
           {pdb} — {estrutura.titulo}
         </span>
         <span>
           {estrutura.metodo ?? "método não informado"}
           {estrutura.resolucao ? ` · ${estrutura.resolucao} Å` : ""} ·{" "}
-          <a href={estrutura.url} target="_blank" rel="noreferrer noopener" className="text-[#9db4ff] underline">
+          <a href={estrutura.url} target="_blank" rel="noreferrer noopener" className="text-accent-ink underline">
             ver no RCSB PDB
           </a>
         </span>

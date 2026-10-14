@@ -124,7 +124,7 @@ export function PromptBar({ onEnviar, onArquivo, aviso }: { onEnviar: (texto: st
           <motion.div key="extra" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 6 }} className="ge-glass p-3 text-[13px]">
             {ouvindo && (
               <p role="status" className="flex items-center gap-2 text-white">
-                <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#ff5470]" aria-hidden="true" />
+                <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-danger" aria-hidden="true" />
                 Gravando… fale o procedimento e clique em “Encerrar”. Para sozinho após 2 minutos.
               </p>
             )}
@@ -133,7 +133,7 @@ export function PromptBar({ onEnviar, onArquivo, aviso }: { onEnviar: (texto: st
                 <p id="conferir-transcricao" className="font-semibold text-white">
                   Confira a transcrição antes de interpretar
                 </p>
-                <p className="text-xs text-[#a7b2c8]">Reconhecimento de voz erra nomes científicos, números e unidades. Edite o texto se precisar. Valores encontrados:</p>
+                <p className="text-xs text-muted">Reconhecimento de voz erra nomes científicos, números e unidades. Edite o texto se precisar. Valores encontrados:</p>
                 <ul className="mt-1.5 flex flex-wrap gap-1.5">
                   {previa?.extracoes.length ? (
                     previa.extracoes.map((x, i) => (
@@ -142,7 +142,7 @@ export function PromptBar({ onEnviar, onArquivo, aviso }: { onEnviar: (texto: st
                       </li>
                     ))
                   ) : (
-                    <li className="text-xs text-[#a7b2c8]">nenhum valor com unidade reconhecido</li>
+                    <li className="text-xs text-muted">nenhum valor com unidade reconhecido</li>
                   )}
                 </ul>
                 <label className="mt-2 flex items-center gap-2 text-xs font-semibold text-white">
@@ -151,8 +151,8 @@ export function PromptBar({ onEnviar, onArquivo, aviso }: { onEnviar: (texto: st
                 </label>
               </div>
             )}
-            {erroVoz && <p className="text-xs text-[#ff5470]">{erroVoz}</p>}
-            {aviso && <p className="text-xs text-[#ffb23f]">{aviso}</p>}
+            {erroVoz && <p className="text-xs text-danger">{erroVoz}</p>}
+            {aviso && <p className="text-xs text-warn">{aviso}</p>}
           </motion.div>
         ) : null}
       </AnimatePresence>
@@ -170,7 +170,7 @@ export function PromptBar({ onEnviar, onArquivo, aviso }: { onEnviar: (texto: st
                 setExemplos(false);
                 area.current?.focus();
               }}
-              className="block w-full rounded-lg px-3 py-1.5 text-left text-[13px] text-[#c9d2e3] hover:bg-white/10 hover:text-white"
+              className="block w-full rounded-lg px-3 py-1.5 text-left text-[13px] text-body hover:bg-white/10 hover:text-white"
             >
               {ex.rotulo}
             </button>
@@ -218,14 +218,14 @@ export function PromptBar({ onEnviar, onArquivo, aviso }: { onEnviar: (texto: st
           onBlur={() => setFoco(false)}
           maxLength={8000}
           placeholder="Descreva sua ideia ou procedimento"
-          className="min-h-[28px] flex-1 resize-none bg-transparent py-1 text-[15px] text-white outline-none placeholder:text-[#a7b2c8]"
+          className="min-h-[28px] flex-1 resize-none bg-transparent py-1 text-[15px] text-white outline-none placeholder:text-muted"
         />
         <div className="mb-0.5 flex shrink-0 items-center gap-1">
-          <button type="button" onClick={() => setExemplos(!exemplos)} aria-expanded={exemplos} title="Exemplos" className="ge-press rounded-lg p-1.5 text-[#c9d2e3] hover:bg-white/10 hover:text-white">
+          <button type="button" onClick={() => setExemplos(!exemplos)} aria-expanded={exemplos} title="Exemplos" className="ge-press rounded-lg p-1.5 text-body hover:bg-white/10 hover:text-white">
             <Icone d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1 2V16h5.2v-.2c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z" />
             <span className="sr-only">Exemplos</span>
           </button>
-          <label title="Anexar protocolo (.txt, .md ou .pdf)" className="ge-press cursor-pointer rounded-lg p-1.5 text-[#c9d2e3] hover:bg-white/10 hover:text-white">
+          <label title="Anexar protocolo (.txt, .md ou .pdf)" className="ge-press cursor-pointer rounded-lg p-1.5 text-body hover:bg-white/10 hover:text-white">
             <Icone d="M20 11.5 12.4 19a5 5 0 0 1-7.1-7.1l7.8-7.8a3.3 3.3 0 0 1 4.7 4.7l-7.8 7.8a1.7 1.7 0 0 1-2.4-2.4l7.1-7.1" />
             <span className="sr-only">Anexar protocolo</span>
             <input type="file" accept=".txt,.md,.pdf,text/plain,text/markdown,application/pdf" className="sr-only" onChange={(e) => e.target.files?.[0] && onArquivo(e.target.files[0])} />
@@ -233,11 +233,11 @@ export function PromptBar({ onEnviar, onArquivo, aviso }: { onEnviar: (texto: st
           <span aria-hidden="true" className="mx-1 h-6 w-px bg-white/15" />
           {suporteVoz &&
             (ouvindo ? (
-              <button type="button" onClick={() => recRef.current?.stop()} className="ge-press inline-flex items-center gap-1.5 rounded-full bg-[#ff5470] px-3 py-1.5 text-[13px] font-semibold text-white">
+              <button type="button" onClick={() => recRef.current?.stop()} className="ge-press inline-flex items-center gap-1.5 rounded-full bg-danger px-3 py-1.5 text-[13px] font-semibold text-white">
                 <span aria-hidden="true">■</span> Encerrar
               </button>
             ) : (
-              <button type="button" onClick={iniciarVoz} title="Iniciar microfone" className="ge-press rounded-lg p-1.5 text-[#c9d2e3] hover:bg-white/10 hover:text-white">
+              <button type="button" onClick={iniciarVoz} title="Iniciar microfone" className="ge-press rounded-lg p-1.5 text-body hover:bg-white/10 hover:text-white">
                 <Icone d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3zM5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21" />
                 <span className="sr-only">Iniciar microfone</span>
               </button>
@@ -248,7 +248,7 @@ export function PromptBar({ onEnviar, onArquivo, aviso }: { onEnviar: (texto: st
           </button>
         </div>
       </form>
-      {suporteVoz && <p className="px-2 text-center text-[10.5px] text-[#7d8aa3]">Microfone só quando ativado; transcrição feita pelo navegador (no Chrome/Edge o áudio vai ao serviço do fabricante). O GenoLab não grava o áudio.</p>}
+      {suporteVoz && <p className="px-2 text-center text-[10.5px] text-panel-dim">Microfone só quando ativado; transcrição feita pelo navegador (no Chrome/Edge o áudio vai ao serviço do fabricante). O GenoLab não grava o áudio.</p>}
     </div>
   );
 }
