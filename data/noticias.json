@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-14T20:50:32.551609+00:00",
+ "atualizado_em": "2026-10-14T23:58:41.898772+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -82,27 +82,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Selênio modifica a trajetória do mercúrio no organismo e atenua seus efeitos tóxicos",
-   "resumo": "Estudo com populações ribeirinhas do Pará mostra que o nutriente interfere na distribuição das diferentes formas químicas do contaminante no plasma sanguíneo e favorece sua eliminação pela urina",
-   "url": "https://agencia.fapesp.br/selenio-modifica-a-trajetoria-do-mercurio-no-organismo-e-atenua-seus-efeitos-toxicos/59388",
+   "titulo": "Apoio contínuo à pesquisa básica sustenta inovação e respostas a crises, destacam especialistas",
+   "resumo": "Em webinário promovido pelo Global Research Council, representantes de agências de fomento das Américas debatem o valor da ciência guiada pela curiosidade",
+   "url": "https://agencia.fapesp.br/apoio-continuo-a-pesquisa-basica-sustenta-inovacao-e-respostas-a-crises-destacam-especialistas/59391",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-14T20:50:32.551609+00:00",
+   "data": "2026-10-14T23:58:41.898772+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59388.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59391.jpg",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 0
    },
    "i18n": {
     "en": {
-     "titulo": "Selenium modifies the trajectory of mercury in the body and mitigates its toxic effects",
-     "resumo": "A study with riverine populations in Pará shows that the nutrient interferes with the distribution of the different chemical forms of the contaminant in the blood plasma and favors its elimination in the urine"
+     "titulo": "Continued support for basic research underpins innovation and crisis responses, experts highlight",
+     "resumo": "In a webinar promoted by the Global Research Council, representatives of funding agencies from the Americas discuss the value of science guided by curiosity"
     },
     "es": {
-     "titulo": "El selenio modifica la trayectoria del mercurio en el cuerpo y mitiga sus efectos tóxicos",
-     "resumo": "Un estudio con poblaciones ribereñas en Pará muestra que el nutriente interfiere con la distribución de las diferentes formas químicas del contaminante en el plasma sanguíneo y favorece su eliminación en la orina"
+     "titulo": "El apoyo continuo a la investigación básica sustenta la innovación y las respuestas a las crisis, destacan los expertos",
+     "resumo": "En un webinar promovido por el Global Research Council, representantes de organismos de financiación de las Américas debaten sobre el valor de la ciencia guiada por la curiosidad"
     }
    }
   },
@@ -282,6 +282,27 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "A engenharia biomédica está crescendo rapidamente, mas ajudará os pacientes?",
+   "resumo": "Assimilar a mais recente tecnologia nos sistemas de saúde é um desafio fundamental para o campo.",
+   "url": "https://www.nature.com/articles/d41586-026-03202-z",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-14T00:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "Biomedical engineering is growing rapidly, but will it help patients?",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La ingeniería biomédica está creciendo rápidamente, pero ¿ayudará a los pacientes?",
+     "resumo": "La asimilación de la última tecnología en los sistemas de salud es un desafío clave que enfrenta el campo."
+    }
+   },
+   "resumo_original": "Assimilating the latest technology into health systems is a key challenge facing the field."
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Nobel de Medicina reconhece criadores da optogenética",
    "resumo": "Pesquisadores do Centro de Pesquisa em Obesidade e Comorbidades da Unicamp já utilizam dados do método em suas pesquisas",
    "url": "https://jornal.unicamp.br/noticias/2026/10/13/nobel-de-medicina-reconhece-criadores-da-optogenetica/",
@@ -329,31 +350,6 @@
      "titulo": "Fiocruz for You ofrecerá vacunación a niños y adultos"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Novo tratamento para artrite no joelho proporciona alívio duradouro da dor sem cirurgia",
-   "resumo": "Um novo tratamento promissor para a artrite do joelho usa partículas minúsculas e solúveis para bloquear vasos sanguíneos anormais, aliviando a inflamação e a dor sem cirurgia de substituição articular. Em um estudo com 194 pacientes, 80% experimentaram clinicamente...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261013234801.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-14T04:39:11+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/arthritic-knee-joint-pain-inflammation-x-ray.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "New knee arthritis treatment delivers lasting pain relief without surgery",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El nuevo tratamiento para la artritis de rodilla proporciona un alivio duradero del dolor sin cirugía",
-     "resumo": "Un nuevo tratamiento prometedor para la artritis de rodilla utiliza partículas diminutas y solubles para bloquear los vasos sanguíneos anormales, aliviando la inflamación y el dolor sin cirugía de reemplazo de articulaciones. En un estudio de 194 pacientes, el 80% experimentó clínicamente..."
-    }
-   },
-   "resumo_original": "A promising new treatment for knee arthritis uses tiny, dissolvable particles to block abnormal blood vessels, easing inflammation and pain without joint replacement surgery. In a study of 194 patients, 80% experienced clinically…"
   },
   {
    "tipo": "noticia",
@@ -893,11 +889,9 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "ameaca de um super el nino desafia cidades brasileiras a se preparar para eventos extremos": "2026-10-04T22:22:32.195438+00:00",
   "compostos associados ao cancer sao detectados em residuos de espumas plasticos e artigos infantis": "2026-10-05T07:12:36.987129+00:00",
   "inteligencia artificial preve risco de complicacao apos cirurgia de tireoide": "2026-10-05T07:12:36.987129+00:00",
   "arquitetura molecular define resistencia do tomateiro contra sua principal praga": "2026-10-05T07:12:36.987129+00:00",
@@ -1098,6 +1092,7 @@
   "cornell scientists identify rare human genetic disorder in two unusually long legged cats": "2026-10-14T17:22:06.100709+00:00",
   "new first proof exam reveals how ai powered math is a pay to play sport": "2026-10-14T20:50:32.551609+00:00",
   "self replicating ais are a great digital horror story heres the reality": "2026-10-14T20:50:32.551609+00:00",
-  "we can rescue the amoc after its collapse but it wont be easy": "2026-10-14T20:50:32.551609+00:00"
+  "we can rescue the amoc after its collapse but it wont be easy": "2026-10-14T20:50:32.551609+00:00",
+  "biomedical engineering is growing rapidly but will it help patients": "2026-10-14T23:58:41.898772+00:00"
  }
 }
