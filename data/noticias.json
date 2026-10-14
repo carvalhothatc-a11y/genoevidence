@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-14T17:22:06.100709+00:00",
+ "atualizado_em": "2026-10-14T20:50:32.551609+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -82,79 +82,104 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Apoio contínuo à pesquisa básica sustenta inovação e respostas a crises, destacam especialistas",
-   "resumo": "Em webinário promovido pelo Global Research Council, representantes de agências de fomento das Américas debatem o valor da ciência guiada pela curiosidade",
-   "url": "https://agencia.fapesp.br/apoio-continuo-a-pesquisa-basica-sustenta-inovacao-e-respostas-a-crises-destacam-especialistas/59391",
+   "titulo": "Selênio modifica a trajetória do mercúrio no organismo e atenua seus efeitos tóxicos",
+   "resumo": "Estudo com populações ribeirinhas do Pará mostra que o nutriente interfere na distribuição das diferentes formas químicas do contaminante no plasma sanguíneo e favorece sua eliminação pela urina",
+   "url": "https://agencia.fapesp.br/selenio-modifica-a-trajetoria-do-mercurio-no-organismo-e-atenua-seus-efeitos-toxicos/59388",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-14T17:22:06.100709+00:00",
+   "data": "2026-10-14T20:50:32.551609+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59391.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59388.jpg",
    "foco": {
     "x": 50,
-    "y": 0
+    "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Continued support for basic research underpins innovation and crisis responses, experts highlight",
-     "resumo": "In a webinar promoted by the Global Research Council, representatives of funding agencies from the Americas discuss the value of science guided by curiosity"
+     "titulo": "Selenium modifies the trajectory of mercury in the body and mitigates its toxic effects",
+     "resumo": "A study with riverine populations in Pará shows that the nutrient interferes with the distribution of the different chemical forms of the contaminant in the blood plasma and favors its elimination in the urine"
     },
     "es": {
-     "titulo": "El apoyo continuo a la investigación básica sustenta la innovación y las respuestas a las crisis, destacan los expertos",
-     "resumo": "En un webinar promovido por el Global Research Council, representantes de organismos de financiación de las Américas debaten sobre el valor de la ciencia guiada por la curiosidad"
+     "titulo": "El selenio modifica la trayectoria del mercurio en el cuerpo y mitiga sus efectos tóxicos",
+     "resumo": "Un estudio con poblaciones ribereñas en Pará muestra que el nutriente interfiere con la distribución de las diferentes formas químicas del contaminante en el plasma sanguíneo y favorece su eliminación en la orina"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Tom Gauld: Evidências de DNA e fósseis provaram que eram parentes próximos",
-   "resumo": "Caricatura semanal de Tom Gauld",
-   "url": "https://www.newscientist.com/article/2593496-tom-gauld-dna-and-fossil-evidence-proved-they-were-close-relatives/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "Novo exame ‘First Proof’ revela como a matemática baseada em IA é um esporte pay-to-play",
+   "resumo": "O benchmark confirma que algumas IAs estão se tornando ferramentas excepcionais para matemática em nível de pesquisa. Mas os modelos de código aberto ainda têm dificuldades",
+   "url": "https://www.scientificamerican.com/article/new-first-proof-exam-reveals-how-ai-powered-math-is-a-pay-for-play-sport/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-14T17:00:00+00:00",
-   "tema": "Genética",
+   "data": "2026-10-14T19:00:00+00:00",
+   "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_315899499.jpg",
+   "imagem": "https://static.scientificamerican.com/dam/asset/9c82c6bb-90f8-4271-bab3-c6532285ce45/shutterstock_1214460805.jpg?m=1791996025.981&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Tom Gauld: DNA and fossil evidence proved they were close relatives",
+   "titulo_original": "New ‘First Proof’ exam reveals how AI-powered math is a pay-to-play sport",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Tom Gauld: El ADN y la evidencia fósil demostraron que eran parientes cercanos",
-     "resumo": "La caricatura semanal de Tom Gauld"
+     "titulo": "El nuevo examen ‘First Proof’ revela cómo las matemáticas impulsadas por IA son un deporte de pago por jugar",
+     "resumo": "El punto de referencia confirma que algunas IA se están convirtiendo en herramientas excepcionales para las matemáticas a nivel de investigación. Pero los modelos de código abierto todavía tienen dificultades"
     }
    },
-   "resumo_original": "Tom Gauld's weekly cartoon"
+   "resumo_original": "The benchmark confirms that some AIs are becoming exceptional tools for research-level math. But open-source models still struggle"
   },
   {
    "tipo": "noticia",
-   "titulo": "Esse El Niño trará desastres previsíveis, então por que não estamos prontos?",
-   "resumo": "Sabemos que este monstro El Niño trará inundações, secas, ciclones e incêndios florestais, mas alguns governos não estão colocando os recursos necessários para se preparar para o desastre",
-   "url": "https://www.newscientist.com/article/2593320-__trashed-111/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "IAs autorreplicantes são uma ótima história de terror digital – aqui está a realidade",
+   "resumo": "A Anthropic anunciou que uma IA poderia se auto-replicar dentro de dispositivos inteligentes dentro de meses, alimentando o medo na internet. O colunista Jacob Aron explica as limitações técnicas que tornam essa história de fantasma menos provável",
+   "url": "https://www.newscientist.com/article/2593983-self-replicating-ais-are-a-great-digital-horror-story-heres-the-reality/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-14T17:00:00+00:00",
-   "tema": "Meio ambiente",
+   "data": "2026-10-14T18:11:02+00:00",
+   "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316316106.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316607502.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "This El Niño will bring predictable disasters, so why aren’t we ready?",
+   "titulo_original": "Self-replicating AIs are a great digital horror story – here’s the reality",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Este El Niño traerá desastres predecibles, entonces, ¿por qué no estamos listos?",
-     "resumo": "Sabemos que este monstruo El Niño traerá inundaciones, sequías, ciclones e incendios forestales, pero algunos gobiernos no están poniendo los recursos necesarios para prepararse para el desastre"
+     "titulo": "Las IA autorreplicantes son una gran historia de terror digital: esta es la realidad",
+     "resumo": "Anthropic anunció que una IA podría autorreplicarse dentro de los dispositivos inteligentes en cuestión de meses, avivando el miedo en Internet. El columnista Jacob Aron explica las limitaciones técnicas que hacen que esta historia espeluznante sea menos probable"
     }
    },
-   "resumo_original": "We know that this monster El Niño will bring floods, droughts, cyclones and wildfires, but some governments aren’t putting in the necessary resources to prepare for disaster"
+   "resumo_original": "Anthropic announced that an AI could self-replicate inside smart devices within months, stoking fear around the internet. Columnist Jacob Aron explains the technical limitations that make this spook story less than likely"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Podemos resgatar o AMOC após seu colapso – mas não será fácil",
+   "resumo": "Um AMOC enfraquecido pelas mudanças climáticas pode ser revivido pelo resfriamento das temperaturas globais, mas não temos a tecnologia para remover grandes quantidades de CO2 e impulsionar esse resfriamento",
+   "url": "https://www.newscientist.com/article/2593766-we-can-rescue-the-amoc-after-its-collapse-but-it-wont-be-easy/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-14T18:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316600964.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "We can rescue the AMOC after its collapse – but it won’t be easy",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Podemos rescatar al AMOC después de su colapso, pero no será fácil",
+     "resumo": "Un AMOC debilitado por el cambio climático puede revivirse enfriando las temperaturas globales, pero no tenemos la tecnología para eliminar grandes cantidades de CO2 e impulsar ese enfriamiento"
+    }
+   },
+   "resumo_original": "An AMOC weakened by climate change can be revived by cooling global temperatures, but we don't have the technology to remove huge quantities of CO2 and drive that cooling"
   },
   {
    "tipo": "noticia",
@@ -180,31 +205,6 @@
     }
    },
    "resumo_original": "Leaf-peeping season is ramping up—here’s what to expect"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas do clima emitem um diagnóstico preocupante sobre os 'sinais vitais' da Terra",
-   "resumo": "“A emergência climática já chegou”",
-   "url": "https://www.scientificamerican.com/article/climate-scientists-issue-a-sobering-diagnosis-about-earths-vital-signs/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-14T14:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/2bd4d77f-19a4-4719-b523-dfa0a046f934/indonesia-flood.jpg?m=1791989296.871&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 100
-   },
-   "titulo_original": "Climate scientists issue a sobering diagnosis about Earth's 'vital signs'",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos del clima emiten un diagnóstico aleccionador sobre los \"signos vitales\" de la Tierra",
-     "resumo": "“La emergencia climática ya está aquí”"
-    }
-   },
-   "resumo_original": "“The climate emergency is already here”"
   },
   {
    "tipo": "noticia",
@@ -357,32 +357,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Artista residente Ivan Vilela abre espaço para os ‘muitos sons’ do Brasil",
-   "resumo": "Um dos novos projetos é musicar uma cantata de Carlos Rodrigues Brandão, retomando uma relação que marcou a trajetória do artista na Unicamp",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/13/artista-residente-ivan-vilela-abre-espaco-para-os-muitos-sons-do-brasil/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-13T18:54:18+00:00",
-   "tema": "Espaço",
-   "relevancia": 3,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261010_Ivan-Vilela_LUC_4711_Capa.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Resident artist Ivan Vilela makes room for the ‘many sounds’ of Brazil",
-     "resumo": "One of the new projects is to music a cantata by Carlos Rodrigues Brandão, resuming a relationship that marked the artist's trajectory at Unicamp"
-    },
-    "es": {
-     "titulo": "El artista residente Ivan Vilela deja espacio para los \"muchos sonidos\" de Brasil",
-     "resumo": "Uno de los nuevos proyectos es la música de una cantata de Carlos Rodrigues Brandão, retomando una relación que marcó la trayectoria del artista en la Unicamp"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Estudantes da USP arrecadam cabelo no Outubro Rosa",
    "resumo": "Campanha segue até o fim do mês e destina as mechas às pacientes do Hospital do Câncer de Ribeirão Preto",
    "url": "https://jornal.usp.br/campus-ribeirao-preto/estudantes-da-usp-arrecadam-cabelo-no-outubro-rosa/",
@@ -404,6 +378,32 @@
     "es": {
      "titulo": "Los estudiantes de la USP recogen el cabello en octubre rosa",
      "resumo": "La campaña continúa hasta fin de mes y destina las esclusas a los pacientes del Hospital Oncológico de Ribeirão Preto"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Novo medicamento amplia opções de tratamento para câncer de pâncreas metastático",
+   "resumo": "Daraxonrasib, aprovado pela agência reguladora dos Estados Unidos, apresentou resultados superiores aos da quimioterapia em pacientes que já haviam recebido tratamento",
+   "url": "https://jornal.usp.br/radio-usp/novo-medicamento-amplia-opcoes-de-tratamento-para-cancer-de-pancreas-metastatico/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-09T17:18:53+00:00",
+   "tema": "Câncer",
+   "relevancia": 3,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/20170529_00_Pancreas.png",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "New drug expands treatment options for metastatic pancreatic cancer",
+     "resumo": "Daraxonrasib, approved by the United States regulatory agency, showed superior results to chemotherapy in patients who had already received treatment"
+    },
+    "es": {
+     "titulo": "Un nuevo fármaco amplía las opciones de tratamiento para el cáncer de páncreas metastásico",
+     "resumo": "Daraxonrasib, aprobado por la agencia reguladora de los Estados Unidos, mostró resultados superiores a la quimioterapia en pacientes que ya habían recibido tratamiento"
     }
    }
   }
@@ -1095,6 +1095,9 @@
   "how a year of extreme weather and a super el nino will affect fall foliage": "2026-10-14T17:22:06.100709+00:00",
   "climate scientists issue a sobering diagnosis about earth s vital signs": "2026-10-14T17:22:06.100709+00:00",
   "scientists may have overlooked a hidden alzheimer s culprit for decades": "2026-10-14T17:22:06.100709+00:00",
-  "cornell scientists identify rare human genetic disorder in two unusually long legged cats": "2026-10-14T17:22:06.100709+00:00"
+  "cornell scientists identify rare human genetic disorder in two unusually long legged cats": "2026-10-14T17:22:06.100709+00:00",
+  "new first proof exam reveals how ai powered math is a pay to play sport": "2026-10-14T20:50:32.551609+00:00",
+  "self replicating ais are a great digital horror story heres the reality": "2026-10-14T20:50:32.551609+00:00",
+  "we can rescue the amoc after its collapse but it wont be easy": "2026-10-14T20:50:32.551609+00:00"
  }
 }
