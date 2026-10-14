@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-14T00:26:04.021071+00:00",
+ "atualizado_em": "2026-10-14T06:15:31.299862+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -80,53 +80,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Sucesso da IA na indústria depende da união entre tecnologia e chão de fábrica",
-   "resumo": "Tentativa de automatizar processos excluindo o conhecimento prático acumulado pelas equipes operacionais está fadada ao fracasso, avaliou Ben Armstrong em palestra organizada pela Associação Nacional de Pesquisa e Desenvolvimento das…",
-   "url": "https://pesquisaparainovacao.fapesp.br/sucesso_da_ia_na_industria_depende_da_uniao_entre_tecnologia_e_chao_de_fabrica/4161",
+   "titulo": "Direitos sociais se difundem em ondas pelas constituições do mundo",
+   "resumo": "Análise de dois séculos de história identifica momentos de inflexão impulsionados por documentos pioneiros, como a Carta brasileira de 1988, e mostra que essas garantias raramente são retiradas – ao menos do papel",
+   "url": "https://agencia.fapesp.br/direitos-sociais-se-difundem-em-ondas-pelas-constituicoes-do-mundo/59387",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-14T00:26:04.021071+00:00",
+   "data": "2026-10-14T06:15:31.299862+00:00",
    "tema": "Ciência",
    "relevancia": 9,
-   "imagem": "https://pesquisaparainovacao.fapesp.br/imagens/materia/4161.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "i18n": {
-    "en": {
-     "titulo": "AI's success in the industry depends on the union of technology and the shop floor",
-     "resumo": "Attempts to automate processes by excluding the practical knowledge accumulated by operational teams are doomed to failure, Ben Armstrong said in a lecture organized by the National Association for Research and Development of…"
-    },
-    "es": {
-     "titulo": "El éxito de la IA en la industria depende de la unión de la tecnología y el taller",
-     "resumo": "Los intentos de automatizar los procesos excluyendo el conocimiento práctico acumulado por los equipos operativos están condenados al fracaso, dijo Ben Armstrong en una conferencia organizada por la Asociación Nacional para la Investigación y el Desarrollo de..."
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "ICMC-USP tem vaga de pós-doutorado em engenharia de software e IA",
-   "resumo": "Oportunidade integra o projeto AI PATROL, desenvolvido em parceria com a Embrapii",
-   "url": "https://agencia.fapesp.br/icmc-usp-tem-vaga-de-pos-doutorado-em-engenharia-de-software-e-ia/59380",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-13T21:21:33.394976+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59380.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59387.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "ICMC-USP has a postdoctoral position in software engineering and AI",
-     "resumo": "Opportunity is part of the AI PATROL project, developed in partnership with Embrapii"
+     "titulo": "Social rights diffuse in waves through the world's constitutions",
+     "resumo": "Analysis of two centuries of history identifies moments of inflection driven by pioneering documents, such as the 1988 Brazilian Charter, and shows that these guarantees are rarely withdrawn – at least from paper"
     },
     "es": {
-     "titulo": "ICMC-USP tiene una posición postdoctoral en ingeniería de software e IA",
-     "resumo": "Opportunity forma parte del proyecto AI PATROL, desarrollado en colaboración con Embrapii"
+     "titulo": "Los derechos sociales se difunden en oleadas a través de las constituciones del mundo",
+     "resumo": "El análisis de dos siglos de historia identifica momentos de inflexión impulsados por documentos pioneros, como la Carta de Brasil de 1988, y muestra que estas garantías rara vez se retiran, al menos del papel"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "USP oferece duas bolsas de pós-doutorado em grandes modelos de linguagem",
+   "resumo": "Oportunidades com duração de 12 meses são no Centro de Inteligência Artificial e Aprendizado de Máquina",
+   "url": "https://agencia.fapesp.br/usp-oferece-duas-bolsas-de-pos-doutorado-em-grandes-modelos-de-linguagem/59390",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-14T06:15:31.299862+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59390.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "USP offers two postdoctoral fellowships in major language models",
+     "resumo": "Opportunities lasting 12 months are at the Artificial Intelligence and Machine Learning Center"
+    },
+    "es": {
+     "titulo": "La USP ofrece dos becas postdoctorales en los principales modelos lingüísticos",
+     "resumo": "Las oportunidades que duran 12 meses están en el Centro de Inteligencia Artificial y Aprendizaje Automático"
     }
    }
   },
@@ -153,28 +153,6 @@
     "es": {
      "titulo": "El artista residente Ivan Vilela deja espacio para los \"muchos sonidos\" de Brasil",
      "resumo": "Uno de los nuevos proyectos es la música de una cantata de Carlos Rodrigues Brandão, retomando una relación que marcó la trayectoria del artista en la Unicamp"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Bioinformática na selva da inteligência artificial",
-   "resumo": "Temática será debatida em evento presencial no Cena-USP, em Piracicaba (SP), com base em dois artigos publicados no periódico PLOS Computational Biology",
-   "url": "https://agencia.fapesp.br/bioinformatica-na-selva-da-inteligencia-artificial/59381",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-13T16:07:46.963620+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Bioinformatics in the Jungle of Artificial Intelligence",
-     "resumo": "The theme will be discussed in a face-to-face event at Cena-USP, in Piracicaba (SP), based on two articles published in the journal PLOS Computational Biology"
-    },
-    "es": {
-     "titulo": "La bioinformática en la selva de la inteligencia artificial",
-     "resumo": "El tema será discutido en un evento presencial en Cena-USP, en Piracicaba (SP), a partir de dos artículos publicados en la revista PLOS Computational Biology"
     }
    }
   },
@@ -227,6 +205,30 @@
     "es": {
      "titulo": "El libro trata sobre cómo la emergencia climática puede afectar la salud pública",
      "resumo": "Organizado por investigadores de la Unicamp, el trabajo reúne artículos de 120 estudiantes de medicina y está disponible en e-book y en versión impresa"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Estudo destaca benefícios de alternativa não hormonal para o climatério",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/estudo-destaca-beneficios-de-alternativa-nao-hormonal-para-o-climaterio",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-13T15:21:48+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 8,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/menopausa_d.jpg",
+   "foco": {
+    "x": 50,
+    "y": 28
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Study highlights benefits of non-hormonal alternative for climacteric"
+    },
+    "es": {
+     "titulo": "El estudio destaca los beneficios de la alternativa no hormonal para el climaterio"
     }
    }
   },
@@ -307,45 +309,78 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Preserve os dados de pesquisa para as verificações de integridade habilitadas para IA de amanhã",
-   "resumo": "Preserve os dados de pesquisa para as verificações de integridade habilitadas para IA de amanhã",
-   "url": "https://www.nature.com/articles/d41586-026-03244-3",
-   "fonte": "Nature",
+   "titulo": "A IA pode agir exatamente como um humano, mas ainda não achamos que é consciente",
+   "resumo": "Um novo estudo revela que as pessoas traçam uma linha surpreendentemente nítida entre a consciência humana e a inteligência artificial, mesmo quando ambas se comportam de forma idêntica. Os pesquisadores descobriram que os participantes consideravam até mesmo a IA mais responsiva menos...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261012185017.htm",
+   "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-13T00:00:00+00:00",
+   "data": "2026-10-14T01:41:55+00:00",
    "tema": "Ciência",
    "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Preserve research data for tomorrow’s AI-enabled integrity checks",
+   "imagem": "https://www.sciencedaily.com/images/1920/human-vs-ai-brain-thinking-understanding.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "AI can act exactly like a human, but we still don't think it's conscious",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Preservar los datos de investigación para las comprobaciones de integridad habilitadas por IA del mañana",
-     "resumo": "Preservar los datos de investigación para las comprobaciones de integridad habilitadas por IA del mañana"
+     "titulo": "La IA puede actuar exactamente como un ser humano, pero todavía no creemos que sea consciente",
+     "resumo": "Un nuevo estudio revela que las personas trazan una línea sorprendentemente nítida entre la conciencia humana y la inteligencia artificial, incluso cuando ambas se comportan de manera idéntica. Los investigadores descubrieron que los participantes consideraban que incluso la IA más receptiva era menos..."
     }
    },
-   "resumo_original": "Preserve research data for tomorrow’s AI-enabled integrity checks"
+   "resumo_original": "A new study reveals that people draw a surprisingly sharp line between human consciousness and artificial intelligence, even when both behave identically. Researchers found that participants considered even the most responsive AI less…"
   },
   {
    "tipo": "noticia",
-   "titulo": "A IA descentralizada precisa de mais evidências sobre o uso de energia",
-   "resumo": "A IA descentralizada precisa de mais evidências sobre o uso de energia",
-   "url": "https://www.nature.com/articles/d41586-026-03245-2",
-   "fonte": "Nature",
+   "titulo": "IA revela um atalho químico oculto que pode transformar CO2 em combustível",
+   "resumo": "Os cientistas usaram inteligência artificial para descobrir quase 10.000 reações químicas envolvidas na transformação de dióxido de carbono em combustíveis e produtos químicos, revelando caminhos cruciais que os modelos tradicionais haviam perdido. A descoberta dramaticamente...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261013015758.htm",
+   "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-13T00:00:00+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-14T00:01:11+00:00",
+   "tema": "Meio ambiente",
    "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Decentralized AI needs more evidence on energy use",
+   "imagem": "https://www.sciencedaily.com/images/1920/surface-of-copper-catalyst.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "AI reveals a hidden chemical shortcut that could turn CO2 into fuel",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La IA descentralizada necesita más pruebas sobre el uso de energía",
-     "resumo": "La IA descentralizada necesita más pruebas sobre el uso de energía"
+     "titulo": "La IA revela un atajo químico oculto que podría convertir el CO2 en combustible",
+     "resumo": "Los científicos utilizaron la inteligencia artificial para descubrir casi 10.000 reacciones químicas involucradas en la transformación del dióxido de carbono en combustibles y productos químicos, revelando vías cruciales que los modelos tradicionales habían pasado por alto. El descubrimiento dramáticamente..."
     }
    },
-   "resumo_original": "Decentralized AI needs more evidence on energy use"
+   "resumo_original": "Scientists used artificial intelligence to uncover nearly 10,000 chemical reactions involved in transforming carbon dioxide into fuels and chemicals, revealing crucial pathways that traditional models had missed. The discovery dramatically…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Novo tratamento para artrite no joelho proporciona alívio duradouro da dor sem cirurgia",
+   "resumo": "Um novo tratamento promissor para a artrite do joelho usa partículas minúsculas e solúveis para bloquear vasos sanguíneos anormais, aliviando a inflamação e a dor sem cirurgia de substituição articular. Em um estudo com 194 pacientes, 80% experimentaram clinicamente...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261013234801.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-14T04:39:11+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/arthritic-knee-joint-pain-inflammation-x-ray.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "New knee arthritis treatment delivers lasting pain relief without surgery",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El nuevo tratamiento para la artritis de rodilla proporciona un alivio duradero del dolor sin cirugía",
+     "resumo": "Un nuevo tratamiento prometedor para la artritis de rodilla utiliza partículas diminutas y solubles para bloquear los vasos sanguíneos anormales, aliviando la inflamación y el dolor sin cirugía de reemplazo de articulaciones. En un estudio de 194 pacientes, el 80% experimentó clínicamente..."
+    }
+   },
+   "resumo_original": "A promising new treatment for knee arthritis uses tiny, dissolvable particles to block abnormal blood vessels, easing inflammation and pain without joint replacement surgery. In a study of 194 patients, 80% experienced clinically…"
   },
   {
    "tipo": "noticia",
@@ -371,31 +406,6 @@
     }
    },
    "resumo_original": "Invictibellatrix amberina, a predator in the megaraptoran group of dinosaurs, lived in what is now Britain 120 million years ago and may have had claws 20 centimetres long"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Os cientistas acabaram de dar às usinas de nossas células uma atualização de alta tecnologia",
-   "resumo": "Os cientistas criaram um novo revestimento para as mitocôndrias que preserva sua capacidade de produzir energia, potencialmente abrindo as portas para novos tratamentos para doenças que envolvem essas pequenas potências celulares. A tecnologia poderia um dia ajudar...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261012185008.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-13T01:33:58+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/mithocondria-coating.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists just gave the powerhouses of our cells a high-tech upgrade",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos acaban de dar a las potencias de nuestras células una actualización de alta tecnología",
-     "resumo": "Los científicos han creado un nuevo recubrimiento para las mitocondrias que preserva su capacidad de producir energía, lo que podría abrir la puerta a nuevos tratamientos para enfermedades que involucran a estas pequeñas potencias celulares. La tecnología podría algún día ayudar..."
-    }
-   },
-   "resumo_original": "Scientists have created a new coating for mitochondria that preserves their ability to produce energy, potentially opening the door to new treatments for diseases involving these tiny cellular powerhouses. The technology could one day help…"
   }
  ],
  "artigos": [
@@ -883,8 +893,8 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature · Genética: not well-formed (invalid token): line 14, column 4",
-  "ScienceDaily · Saúde: junk after document element: line 440, column 46"
+  "Nature: not well-formed (invalid token): line 14, column 4",
+  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
   "this weird particle may have come from a black hole exploding in another dimension": "2026-10-04T08:32:44.371939+00:00",
@@ -1074,6 +1084,11 @@
   "openais blockbuster navier stokes proof isnt what we thought it was": "2026-10-13T21:21:33.394976+00:00",
   "preserve research data for tomorrows ai enabled integrity checks": "2026-10-13T21:21:33.394976+00:00",
   "decentralized ai needs more evidence on energy use": "2026-10-13T21:21:33.394976+00:00",
-  "dinosaur named new species 102 years after fossil found on isle of wight": "2026-10-14T00:26:04.021071+00:00"
+  "dinosaur named new species 102 years after fossil found on isle of wight": "2026-10-14T00:26:04.021071+00:00",
+  "direitos sociais se difundem em ondas pelas constituicoes do mundo": "2026-10-14T06:15:31.299862+00:00",
+  "usp oferece duas bolsas de pos doutorado em grandes modelos de linguagem": "2026-10-14T06:15:31.299862+00:00",
+  "ai can act exactly like a human but we still don t think it s conscious": "2026-10-14T06:15:31.299862+00:00",
+  "ai reveals a hidden chemical shortcut that could turn co2 into fuel": "2026-10-14T06:15:31.299862+00:00",
+  "new knee arthritis treatment delivers lasting pain relief without surgery": "2026-10-14T06:15:31.299862+00:00"
  }
 }
