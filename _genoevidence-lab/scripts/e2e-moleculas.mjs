@@ -120,7 +120,9 @@ if (pdbEscolhido) {
 // 5. Estrutura inexistente não é trocada por outra
 {
   const r = await p.evaluate(async () => {
-    const res = await fetch("/api/moleculas/resolver?termo=9ZZZ&tipo=pdb");
+    // 0ZZZ, não 9ZZZ: o PDB nunca emite código começando por zero, então este nunca vai existir.
+    // (9ZZZ foi atribuído a um nucleossomo e quebrou este teste em 15/10/2026.)
+    const res = await fetch("/api/moleculas/resolver?termo=0ZZZ&tipo=pdb");
     return { status: res.status, corpo: await res.text() };
   });
   ok(r.status === 200 && /não existe/i.test(r.corpo), `código inexistente é recusado sem substituir: ${r.corpo.slice(0, 90)}`);

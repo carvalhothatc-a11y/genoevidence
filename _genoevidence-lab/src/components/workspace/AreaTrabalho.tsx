@@ -210,7 +210,18 @@ export function AreaTrabalho({
               <div className={gerado ? "h-[min(72vh,640px)] min-h-[420px]" : "lg:h-full"}>
                 <Visualizacao onPerguntar={perguntar} />
               </div>
-              {gerado && s.cena && <Moleculas texto={s.cena.etapas.map((e) => e.texto).join(" ")} />}
+              {gerado && s.cena && (
+                <Moleculas
+                  texto={s.cena.etapas.map((e) => e.texto).join(" ")}
+                  elementos={(s.versoes[s.atual]?.participantes ?? []).map((p) => ({
+                    id: p.id,
+                    objeto: p.objeto,
+                    rotulo: p.rotulo,
+                    // “da foto”: veio da identificação de imagem, não do texto escrito
+                    daFoto: p.origens.some((o) => o.tipo === "imagem"),
+                  }))}
+                />
+              )}
               {gerado && <ResultadosExp onAvaliarPcr={avaliarPcr} />}
               {gerado && ideia.cenarios.length > 0 && (
                 <div className="flex flex-wrap gap-2">

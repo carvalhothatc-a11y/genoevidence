@@ -52,7 +52,7 @@ Limites para o ciclo não se estender sem fim: 8 voltas, 120 s de parede, 4 usos
 dizendo que parou.
 
 Cada passo emite um evento com o estado **real**: `iniciou`, `ok`, `vazio` ou `falhou`, com o
-detalhe que veio da ferramenta (“nenhum artigo para …”, “9ZZZ não existe no RCSB”,
+detalhe que veio da ferramenta (“nenhum artigo para …”, “0ZZZ não existe no RCSB”,
 “url_not_accessible”). Nada é marcado como concluído sem o retorno.
 
 ## Interface
@@ -81,7 +81,7 @@ daqui.
 - composto → PubChem CID 24477, Na₂O₃S₂, com o desenho 2D;
 - artigos → marcados como **encontrados**, não lidos, e a resposta diz isso;
 - “Me mostre TP53” → **pergunta** se é o gene ou a proteína, e não abre estrutura antes;
-- “PDB 9ZZZ” → diz que não existe e **recusa** mostrar outra no lugar;
+- “PDB 0ZZZ” → diz que não existe e **recusa** mostrar outra no lugar;
 - com `--web` → usa a busca, cada uma informa o resultado real, e o filtro interno não vira passo;
 - sem sessão, não responde.
 

@@ -1,6 +1,6 @@
 import { ApiError, handle, json, requireUser } from "@/lib/api";
 import { AuthError, rateLimit } from "@/lib/auth/store";
-import { buscarComposto, buscarProteina, detalharEstrutura, estruturasDaProteina } from "@/lib/assistant/ferramentas/moleculas";
+import { buscarComposto, buscarProteina, compostoPorCid, detalharEstrutura, estruturasDaProteina } from "@/lib/assistant/ferramentas/moleculas";
 
 export const dynamic = "force-dynamic";
 
@@ -52,11 +52,20 @@ export const GET = handle(async (req: Request) => {
     });
   }
 
+  // Por CID: as referências da cena já trazem o identificador conferido no PubChem, então não
+  // passamos pela busca por nome — o nome escrito no código nunca decide qual molécula aparece.
+  if (tipo === "cid") {
+    if (!/^\d{1,9}$/.test(termo)) throw new ApiError(400, "CID inválido.");
+    const r = await compostoPorCid(Number(termo));
+    if (!r.encontrado) return json({ encontrado: false, tipo, motivo: r.motivo });
+    return json({ encontrado: true, tipo: "composto", composto: r.itens[0] });
+  }
+
   if (tipo === "pdb") {
     const e = await detalharEstrutura(termo);
     if (!e) return json({ encontrado: false, tipo, motivo: `A estrutura ${termo.toUpperCase()} não existe no RCSB PDB.` });
     return json({ encontrado: true, tipo, estrutura: e });
   }
 
-  throw new ApiError(400, "Tipo inválido (use gene, proteina, composto ou pdb).");
+  throw new ApiError(400, "Tipo inválido (use gene, proteina, composto, cid ou pdb).");
 });

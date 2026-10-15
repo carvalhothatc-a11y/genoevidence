@@ -241,6 +241,36 @@ type PubChemProps = {
 
 const PUG = "https://pubchem.ncbi.nlm.nih.gov/rest/pug";
 
+/**
+ * Composto por CID, sem passar pela busca por nome. Usado pelas referências da cena, onde o CID já
+ * foi conferido no PubChem — assim o nome escrito no código nunca decide qual molécula aparece.
+ */
+export async function compostoPorCid(cid: number): Promise<ResultadoBusca<Composto>> {
+  if (!Number.isInteger(cid) || cid <= 0) return { encontrado: false, motivo: "CID inválido.", consulta: String(cid) };
+  const props = await pegarJson<PubChemProps>(`${PUG}/compound/cid/${cid}/property/MolecularFormula,MolecularWeight,IUPACName,SMILES,ConnectivitySMILES/JSON`, undefined, 3);
+  if (props.estado === "vazio") return { encontrado: false, motivo: `O PubChem não tem o composto CID ${cid}.`, consulta: String(cid) };
+  if (props.estado !== "ok") return { encontrado: false, motivo: motivoDe(props, "PubChem", String(cid)), consulta: String(cid) };
+  const pr = (props.dados.PropertyTable?.Properties ?? [])[0];
+  if (!pr) return { encontrado: false, motivo: `O PubChem não tem o composto CID ${cid}.`, consulta: String(cid) };
+  return {
+    encontrado: true,
+    consulta: String(cid),
+    itens: [
+      {
+        tipo: "composto",
+        cid,
+        nome: pr.IUPACName ?? `CID ${cid}`,
+        formula: pr.MolecularFormula,
+        massa: pr.MolecularWeight,
+        smiles: pr.SMILES ?? pr.ConnectivitySMILES,
+        imagem2d: `/api/moleculas/imagem?cid=${cid}`,
+        sdf3d: `${PUG}/compound/cid/${cid}/record/SDF?record_type=3d`,
+        url: `https://pubchem.ncbi.nlm.nih.gov/compound/${cid}`,
+      },
+    ],
+  };
+}
+
 /** Nome de composto → CID, propriedades, desenho 2D e, quando existir, coordenadas 3D. */
 export async function buscarComposto(nome: string, limite = 1): Promise<ResultadoBusca<Composto>> {
   const termo = nome.trim().slice(0, 120);

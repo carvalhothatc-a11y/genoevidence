@@ -109,7 +109,8 @@ const fontes = (r) => r.eventos.find((e) => e.t === "fontes")?.itens ?? [];
 
 // 5. Estrutura inexistente: recusa trocar por outra
 {
-  const r = await perguntar("Mostre a estrutura PDB 9ZZZ.");
+  // 0ZZZ nunca vai existir: o PDB não emite código começando por zero. (0ZZZ virou um nucleossomo.)
+  const r = await perguntar("Mostre a estrutura PDB 0ZZZ.");
   const vazio = passos(r).some((e) => e.nome === "buscar_estrutura" && e.estado === "vazio");
   ok(vazio, "a ferramenta devolve vazio para o código inexistente");
   ok(moleculas(r).length === 0, "nenhuma estrutura é mostrada no lugar");
