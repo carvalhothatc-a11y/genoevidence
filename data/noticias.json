@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-14T23:58:41.898772+00:00",
+ "atualizado_em": "2026-10-15T04:53:21.223857+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -30,81 +30,130 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Direitos sociais se difundem em ondas pelas constituições do mundo",
-   "resumo": "Análise de dois séculos de história identifica momentos de inflexão impulsionados por documentos pioneiros, como a Carta brasileira de 1988, e mostra que essas garantias raramente são retiradas – ao menos do papel",
-   "url": "https://agencia.fapesp.br/direitos-sociais-se-difundem-em-ondas-pelas-constituicoes-do-mundo/59387",
+   "titulo": "Vacina brasileira contra malária vivax recebe aval para testes em humanos",
+   "resumo": "Desenvolvida na USP em parceria com o CTVacinas da UFMG, formulação pode ser a primeira contra essa variedade da doença no mundo. Ensaio clínico de fase 1 vai avaliar segurança e resposta imune",
+   "url": "https://agencia.fapesp.br/vacina-brasileira-contra-malaria-vivax-recebe-aval-para-testes-em-humanos/59401",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-14T06:15:31.299862+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59387.jpg",
+   "data": "2026-10-15T04:53:21.223857+00:00",
+   "tema": "Saúde",
+   "relevancia": 14,
+   "imagem": "https://agencia.fapesp.br/files/post/59401.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Brazilian vaccine against vivax malaria receives approval for human trials",
+     "resumo": "Developed at USP in partnership with UFMG's CTVacinas, the formulation may be the first against this variety of the disease in the world. Phase 1 clinical trial will evaluate safety and immune response"
+    },
+    "es": {
+     "titulo": "La vacuna brasileña contra la malaria vivax recibe aprobación para ensayos en humanos",
+     "resumo": "Desarrollada en la USP en asociación con CTVacinas de UFMG, la formulación puede ser la primera contra esta variedad de la enfermedad en el mundo. El ensayo clínico de fase 1 evaluará la seguridad y la respuesta inmunitaria"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Marcadores no sangue podem prever eficácia de imunoterapia contra melanoma avançado",
+   "resumo": "Estudo do Hospital de Amor identificou um conjunto de sinais de inflamação no organismo capaz de antecipar a resposta ao tratamento antes mesmo da primeira dose. Achado pode contribuir para personalizar a terapia e otimizar recursos no SUS",
+   "url": "https://agencia.fapesp.br/marcadores-no-sangue-podem-prever-eficacia-de-imunoterapia-contra-melanoma-avancado/59398",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-15T04:53:21.223857+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://agencia.fapesp.br/files/post/59398.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Social rights diffuse in waves through the world's constitutions",
-     "resumo": "Analysis of two centuries of history identifies moments of inflection driven by pioneering documents, such as the 1988 Brazilian Charter, and shows that these guarantees are rarely withdrawn – at least from paper"
+     "titulo": "Blood markers can predict efficacy of immunotherapy against advanced melanoma",
+     "resumo": "A study by Hospital de Amor identified a set of signs of inflammation in the body capable of anticipating the response to treatment even before the first dose. Findings can contribute to personalize therapy and optimize resources in sus"
     },
     "es": {
-     "titulo": "Los derechos sociales se difunden en oleadas a través de las constituciones del mundo",
-     "resumo": "El análisis de dos siglos de historia identifica momentos de inflexión impulsados por documentos pioneros, como la Carta de Brasil de 1988, y muestra que estas garantías rara vez se retiran, al menos del papel"
+     "titulo": "Los marcadores sanguíneos pueden predecir la eficacia de la inmunoterapia contra el melanoma avanzado",
+     "resumo": "Un estudio realizado por el Hospital de Amor identificó un conjunto de signos de inflamación en el cuerpo capaces de anticipar la respuesta al tratamiento incluso antes de la primera dosis. Los hallazgos pueden contribuir a personalizar la terapia y optimizar los recursos en sus"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "USP oferece duas bolsas de pós-doutorado em grandes modelos de linguagem",
-   "resumo": "Oportunidades com duração de 12 meses são no Centro de Inteligência Artificial e Aprendizado de Máquina",
-   "url": "https://agencia.fapesp.br/usp-oferece-duas-bolsas-de-pos-doutorado-em-grandes-modelos-de-linguagem/59390",
+   "titulo": "FAPESP e Estônia articulam parcerias em ciência e inovação",
+   "resumo": "Em visita à sede da Fundação, comitiva liderada pelo ministro da Agricultura do país báltico explorou oportunidades conjuntas em áreas como produção sustentável de alimentos, tecnologias quânticas e inteligência artificial",
+   "url": "https://agencia.fapesp.br/fapesp-e-estonia-articulam-parcerias-em-ciencia-e-inovacao/59402",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-14T06:15:31.299862+00:00",
+   "data": "2026-10-15T04:53:21.223857+00:00",
    "tema": "Ciência",
    "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59390.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "USP offers two postdoctoral fellowships in major language models",
-     "resumo": "Opportunities lasting 12 months are at the Artificial Intelligence and Machine Learning Center"
-    },
-    "es": {
-     "titulo": "La USP ofrece dos becas postdoctorales en los principales modelos lingüísticos",
-     "resumo": "Las oportunidades que duran 12 meses están en el Centro de Inteligencia Artificial y Aprendizaje Automático"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Apoio contínuo à pesquisa básica sustenta inovação e respostas a crises, destacam especialistas",
-   "resumo": "Em webinário promovido pelo Global Research Council, representantes de agências de fomento das Américas debatem o valor da ciência guiada pela curiosidade",
-   "url": "https://agencia.fapesp.br/apoio-continuo-a-pesquisa-basica-sustenta-inovacao-e-respostas-a-crises-destacam-especialistas/59391",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-14T23:58:41.898772+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59391.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59402.jpg",
    "foco": {
     "x": 50,
     "y": 0
    },
    "i18n": {
     "en": {
-     "titulo": "Continued support for basic research underpins innovation and crisis responses, experts highlight",
-     "resumo": "In a webinar promoted by the Global Research Council, representatives of funding agencies from the Americas discuss the value of science guided by curiosity"
+     "titulo": "FAPESP and Estonia articulate partnerships in science and innovation",
+     "resumo": "Visiting the Foundation's headquarters, a delegation led by the Baltic country's Minister of Agriculture explored joint opportunities in areas such as sustainable food production, quantum technologies and artificial intelligence"
     },
     "es": {
-     "titulo": "El apoyo continuo a la investigación básica sustenta la innovación y las respuestas a las crisis, destacan los expertos",
-     "resumo": "En un webinar promovido por el Global Research Council, representantes de organismos de financiación de las Américas debaten sobre el valor de la ciencia guiada por la curiosidad"
+     "titulo": "La FAPESP y Estonia articulan alianzas en ciencia e innovación",
+     "resumo": "Al visitar la sede de la Fundación, una delegación encabezada por el Ministro de Agricultura del país báltico exploró oportunidades conjuntas en áreas como la producción sostenible de alimentos, las tecnologías cuánticas y la inteligencia artificial"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O câncer está aumentando em adultos mais jovens, e os cientistas não conseguem explicar completamente por que",
+   "resumo": "Um grande estudo descobriu que vários tipos de câncer estão aumentando mais rapidamente entre os adultos mais jovens na Inglaterra, mesmo quando o tabagismo, a dieta e outros fatores de risco estabelecidos geralmente melhoraram. O excesso de peso explica apenas parte do aumento, deixando...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261013015837.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-14T22:03:26+00:00",
+   "tema": "Câncer",
+   "relevancia": 7,
+   "imagem": "https://www.sciencedaily.com/images/1920/cancer-cells-hiding-on-tissue.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Cancer is rising in younger adults, and scientists can't fully explain why",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El cáncer está aumentando en los adultos más jóvenes, y los científicos no pueden explicar completamente por qué",
+     "resumo": "Un importante estudio encontró que varios tipos de cáncer están aumentando más rápido entre los adultos más jóvenes en Inglaterra, incluso cuando el tabaquismo, la dieta y otros factores de riesgo establecidos han mejorado en general. El exceso de peso explica solo una parte del aumento, dejando..."
+    }
+   },
+   "resumo_original": "A major study found that several cancers are rising faster among younger adults in England, even as smoking, diet, and other established risk factors have generally improved. Excess weight explains only part of the increase, leaving…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Ozempic e Wegovy ligados ao risco raro de perda súbita da visão",
+   "resumo": "Medicamentos populares para diabetes e perda de peso, como Ozempic e Wegovy, têm sido associados a um risco ligeiramente aumentado de uma condição rara que pode causar perda súbita e potencialmente permanente da visão. Embora o risco permaneça muito baixo, Rutgers...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261014015521.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-15T04:14:55+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/ozempic-semaglutide-injection-pens.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Ozempic and Wegovy linked to rare risk of sudden vision loss",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Ozempic y Wegovy vinculados a un riesgo poco frecuente de pérdida repentina de la visión",
+     "resumo": "Los medicamentos populares para la diabetes y la pérdida de peso, como Ozempic y Wegovy, se han relacionado con un riesgo ligeramente mayor de una afección rara que puede causar una pérdida de visión repentina y potencialmente permanente. Aunque el riesgo sigue siendo muy bajo, Rutgers..."
+    }
+   },
+   "resumo_original": "Popular diabetes and weight loss drugs such as Ozempic and Wegovy have been linked to a slightly increased risk of a rare condition that can cause sudden, potentially permanent vision loss. Although the risk remains very low, Rutgers…"
   },
   {
    "tipo": "noticia",
@@ -254,52 +303,6 @@
      "titulo": "La nota técnica aborda los impactos de los incendios en la calidad del aire y los riesgos para la salud indígena en Amazonas"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas de Cornell identificam rara desordem genética humana em dois gatos de pernas longas",
-   "resumo": "Dois gatos com pernas extraordinariamente longas ajudaram os cientistas a descobrir os primeiros casos geneticamente confirmados de síndrome de Marfan em felinos domésticos. Pesquisadores da Universidade de Cornell descobriram que os irmãos carregavam duas cópias alteradas de um gene...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261013015801.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-14T11:56:22+00:00",
-   "tema": "Genética",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/gary-and-shaggy-cats-marfan-syndrome.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Cornell scientists identify rare human genetic disorder in two unusually long-legged cats",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Científicos de Cornell identifican un raro trastorno genético humano en dos gatos de patas inusualmente largas",
-     "resumo": "Dos gatos de patas inusualmente largas han ayudado a los científicos a descubrir los primeros casos genéticamente confirmados del síndrome de Marfan en felinos domésticos. Investigadores de la Universidad de Cornell descubrieron que los hermanos portaban dos copias alteradas de un gen..."
-    }
-   },
-   "resumo_original": "Two unusually long-legged cats have helped scientists uncover the first genetically confirmed cases of Marfan syndrome in domestic felines. Researchers at Cornell University discovered that the brothers carried two altered copies of a gene…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A engenharia biomédica está crescendo rapidamente, mas ajudará os pacientes?",
-   "resumo": "Assimilar a mais recente tecnologia nos sistemas de saúde é um desafio fundamental para o campo.",
-   "url": "https://www.nature.com/articles/d41586-026-03202-z",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-14T00:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Biomedical engineering is growing rapidly, but will it help patients?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La ingeniería biomédica está creciendo rápidamente, pero ¿ayudará a los pacientes?",
-     "resumo": "La asimilación de la última tecnología en los sistemas de salud es un desafío clave que enfrenta el campo."
-    }
-   },
-   "resumo_original": "Assimilating the latest technology into health systems is a key challenge facing the field."
   },
   {
    "tipo": "noticia",
@@ -1093,6 +1096,11 @@
   "new first proof exam reveals how ai powered math is a pay to play sport": "2026-10-14T20:50:32.551609+00:00",
   "self replicating ais are a great digital horror story heres the reality": "2026-10-14T20:50:32.551609+00:00",
   "we can rescue the amoc after its collapse but it wont be easy": "2026-10-14T20:50:32.551609+00:00",
-  "biomedical engineering is growing rapidly but will it help patients": "2026-10-14T23:58:41.898772+00:00"
+  "biomedical engineering is growing rapidly but will it help patients": "2026-10-14T23:58:41.898772+00:00",
+  "vacina brasileira contra malaria vivax recebe aval para testes em humanos": "2026-10-15T04:53:21.223857+00:00",
+  "marcadores no sangue podem prever eficacia de imunoterapia contra melanoma avancado": "2026-10-15T04:53:21.223857+00:00",
+  "fapesp e estonia articulam parcerias em ciencia e inovacao": "2026-10-15T04:53:21.223857+00:00",
+  "cancer is rising in younger adults and scientists can t fully explain why": "2026-10-15T04:53:21.223857+00:00",
+  "ozempic and wegovy linked to rare risk of sudden vision loss": "2026-10-15T04:53:21.223857+00:00"
  }
 }
