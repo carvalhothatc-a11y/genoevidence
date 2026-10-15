@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-15T19:15:15.895757+00:00",
+ "atualizado_em": "2026-10-15T22:28:33.991725+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -124,6 +124,32 @@
     "es": {
      "titulo": "La FAPESP y Estonia articulan alianzas en ciencia e innovación",
      "resumo": "Al visitar la sede de la Fundación, una delegación encabezada por el Ministro de Agricultura del país báltico exploró oportunidades conjuntas en áreas como la producción sostenible de alimentos, las tecnologías cuánticas y la inteligencia artificial"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Em editorial, cientistas discutem formas de enfrentamento e controle da poluição plástica",
+   "resumo": "Especialistas das Américas e da Europa indicam como prioridades a colaboração entre disciplinas e a participação do Sul Global",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/15/em-editorial-cientistas-discutem-formas-de-enfrentamento-e-controle-da-poluicao-plastica/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-15T19:17:09+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261015_Microplastico_div_IMG_4102-Capa.jpg",
+   "foco": {
+    "x": 50,
+    "y": 100
+   },
+   "i18n": {
+    "en": {
+     "titulo": "In an editorial, scientists discuss ways of coping with and controlling plastic pollution",
+     "resumo": "Experts from the Americas and Europe indicate as priorities the collaboration between disciplines and the participation of the Global South"
+    },
+    "es": {
+     "titulo": "En un editorial, los científicos discuten formas de hacer frente y controlar la contaminación plástica",
+     "resumo": "Expertos de América y Europa señalan como prioridades la colaboración entre disciplinas y la participación del Sur Global"
     }
    }
   },
@@ -322,28 +348,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Por que uma escola de ensino médio na Virgínia está adquirindo um computador quântico",
-   "resumo": "A partir de janeiro, os alunos da Skyview High School, na Virgínia, aprenderão sobre os blocos de construção e os princípios subjacentes aos computadores quânticos, trabalhando diretamente com um",
-   "url": "https://www.newscientist.com/article/2593536-why-a-high-school-in-virginia-is-getting-a-quantum-computer/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "Geleira 'apocalíptica‘ da Antártida continuará derretendo mesmo se os oceanos esfriarem",
+   "resumo": "Modelos de computador sugerem que oceanos irrealisticamente frios seriam insuficientes para impedir o recuo da geleira Thwaites, embora uma geleira vizinha possa começar a crescer",
+   "url": "https://www.newscientist.com/article/2594246-antarcticas-doomsday-glacier-will-keep-melting-even-if-oceans-cool/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-15T19:00:00+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-15T20:00:00+00:00",
+   "tema": "Meio ambiente",
    "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316604296.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_313977141.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Why a high school in Virginia is getting a quantum computer",
+   "titulo_original": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Por qué una escuela secundaria en Virginia está recibiendo un ordenador cuántico",
-     "resumo": "A partir de enero, los alumnos que asisten a Skyview High School en Virginia aprenderán sobre los componentes básicos y los principios que subyacen a los ordenadores cuánticos trabajando directamente con uno"
+     "titulo": "El glaciar 'apocalíptico’ de la Antártida seguirá derritiéndose incluso si los océanos se enfrían",
+     "resumo": "Los modelos informáticos sugieren que los océanos fríos poco realistas serían insuficientes para detener la retirada del glaciar Thwaites, aunque un glaciar vecino podría comenzar a crecer"
     }
    },
-   "resumo_original": "Starting in January, students attending Skyview High School in Virginia will learn about the building blocks and principles underlying quantum computers by working with one directly"
+   "resumo_original": "Computer models suggest that unrealistically cold oceans would be insufficient to stop Thwaites glacier retreating, although a neighbouring glacier might begin to grow"
   },
   {
    "tipo": "noticia",
@@ -369,32 +395,6 @@
     }
    },
    "resumo_original": "The work could help improve quantum computers’ accuracy in complex calculations"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Nobel de Medicina reconhece criadores da optogenética",
-   "resumo": "Pesquisadores do Centro de Pesquisa em Obesidade e Comorbidades da Unicamp já utilizam dados do método em suas pesquisas",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/13/nobel-de-medicina-reconhece-criadores-da-optogenetica/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-13T17:06:08+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/capaJU_20261013_nobel-medicina_mIUkroe.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Nobel Prize in Medicine recognizes creators of optogenetics",
-     "resumo": "Researchers from the Research Center on Obesity and Comorbidities at Unicamp already use data from the method in their research"
-    },
-    "es": {
-     "titulo": "El Premio Nobel de Medicina reconoce a los creadores de la optogenética",
-     "resumo": "Investigadores del Centro de Investigación en Obesidad y Comorbilidades de la Unicamp ya utilizan los datos del método en su investigación"
-    }
-   }
   }
  ],
  "artigos": [
@@ -1088,6 +1088,8 @@
   "towering glacial ice cliffs may collapse in fits and starts": "2026-10-15T19:15:15.895757+00:00",
   "is ai eroding phd students critical thinking and analysis skills": "2026-10-15T19:15:15.895757+00:00",
   "why a high school in virginia is getting a quantum computer": "2026-10-15T19:15:15.895757+00:00",
-  "googles quantum willow chip may be able to grow magic states": "2026-10-15T19:15:15.895757+00:00"
+  "googles quantum willow chip may be able to grow magic states": "2026-10-15T19:15:15.895757+00:00",
+  "em editorial cientistas discutem formas de enfrentamento e controle da poluicao plastica": "2026-10-15T22:28:33.991725+00:00",
+  "antarcticas doomsday glacier will keep melting even if oceans cool": "2026-10-15T22:28:33.991725+00:00"
  }
 }
