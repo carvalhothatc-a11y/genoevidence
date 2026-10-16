@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-15T22:28:33.991725+00:00",
+ "atualizado_em": "2026-10-16T01:30:25.095738+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -30,31 +30,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Vacina brasileira contra malária vivax recebe aval para testes em humanos",
-   "resumo": "Desenvolvida na USP em parceria com o CTVacinas da UFMG, formulação pode ser a primeira contra essa variedade da doença no mundo. Ensaio clínico de fase 1 vai avaliar segurança e resposta imune",
-   "url": "https://agencia.fapesp.br/vacina-brasileira-contra-malaria-vivax-recebe-aval-para-testes-em-humanos/59401",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-15T04:53:21.223857+00:00",
-   "tema": "Saúde",
-   "relevancia": 14,
-   "imagem": "https://agencia.fapesp.br/files/post/59401.jpg",
-   "foco": {
-    "inteira": true
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Brazilian vaccine against vivax malaria receives approval for human trials",
-     "resumo": "Developed at USP in partnership with UFMG's CTVacinas, the formulation may be the first against this variety of the disease in the world. Phase 1 clinical trial will evaluate safety and immune response"
-    },
-    "es": {
-     "titulo": "La vacuna brasileña contra la malaria vivax recibe aprobación para ensayos en humanos",
-     "resumo": "Desarrollada en la USP en asociación con CTVacinas de UFMG, la formulación puede ser la primera contra esta variedad de la enfermedad en el mundo. El ensayo clínico de fase 1 evaluará la seguridad y la respuesta inmunitaria"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Fiocruz reforça a gratuidade da 3° Conferência de Promoção da Saúde",
    "resumo": "De forma gratuita, a Fiocruz vai promover, nos dias 24 e 25 de novembro, a 3° Conferência de Promoção da Saúde . O evento ocorrerá na Escola Nacional de Saúde Pública (Ensp/Fiocruz). A instituição recebeu diversas denúncias sobre uma…",
    "url": "https://agencia.fiocruz.br/fiocruz-reforca-gratuidade-da-3deg-conferencia-de-promocao-da-saude",
@@ -77,53 +52,74 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Marcadores no sangue podem prever eficácia de imunoterapia contra melanoma avançado",
-   "resumo": "Estudo do Hospital de Amor identificou um conjunto de sinais de inflamação no organismo capaz de antecipar a resposta ao tratamento antes mesmo da primeira dose. Achado pode contribuir para personalizar a terapia e otimizar recursos no SUS",
-   "url": "https://agencia.fapesp.br/marcadores-no-sangue-podem-prever-eficacia-de-imunoterapia-contra-melanoma-avancado/59398",
+   "titulo": "Faculdade de Ciências Farmacêuticas da Unesp de Araraquara seleciona professor titular",
+   "resumo": "Docente vai trabalhar no Departamento de Fármacos e Medicamentos",
+   "url": "https://agencia.fapesp.br/faculdade-de-ciencias-farmaceuticas-da-unesp-de-araraquara-seleciona-professor-titular/59400",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-15T04:53:21.223857+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://agencia.fapesp.br/files/post/59398.jpg",
+   "data": "2026-10-16T01:30:25.095738+00:00",
+   "tema": "Ciência",
+   "relevancia": 8,
+   "imagem": "https://agencia.fapesp.br/files/post/59400.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Blood markers can predict efficacy of immunotherapy against advanced melanoma",
-     "resumo": "A study by Hospital de Amor identified a set of signs of inflammation in the body capable of anticipating the response to treatment even before the first dose. Findings can contribute to personalize therapy and optimize resources in sus"
+     "titulo": "Faculty of Pharmaceutical Sciences of Unesp of Araraquara selects full professor",
+     "resumo": "Lecturer will work in the Department of Drugs and Medicines"
     },
     "es": {
-     "titulo": "Los marcadores sanguíneos pueden predecir la eficacia de la inmunoterapia contra el melanoma avanzado",
-     "resumo": "Un estudio realizado por el Hospital de Amor identificó un conjunto de signos de inflamación en el cuerpo capaces de anticipar la respuesta al tratamiento incluso antes de la primera dosis. Los hallazgos pueden contribuir a personalizar la terapia y optimizar los recursos en sus"
+     "titulo": "Facultad de Ciencias Farmacéuticas de la Unesp de Araraquara selecciona profesor titular",
+     "resumo": "El profesor trabajará en el Departamento de Drogas y Medicamentos"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "FAPESP e Estônia articulam parcerias em ciência e inovação",
-   "resumo": "Em visita à sede da Fundação, comitiva liderada pelo ministro da Agricultura do país báltico explorou oportunidades conjuntas em áreas como produção sustentável de alimentos, tecnologias quânticas e inteligência artificial",
-   "url": "https://agencia.fapesp.br/fapesp-e-estonia-articulam-parcerias-em-ciencia-e-inovacao/59402",
+   "titulo": "Vacina brasileira contra malária vivax recebe aval para testes em humanos",
+   "resumo": "Desenvolvida na USP em parceria com o CTVacinas da UFMG, formulação pode ser a primeira contra essa variedade da doença no mundo. Ensaio clínico de fase 1 vai avaliar segurança e resposta imune",
+   "url": "https://agencia.fapesp.br/vacina-brasileira-contra-malaria-vivax-recebe-aval-para-testes-em-humanos/59401",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
    "data": "2026-10-15T04:53:21.223857+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59402.jpg",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://agencia.fapesp.br/files/post/59401.jpg",
    "foco": {
-    "x": 50,
-    "y": 0
+    "inteira": true
    },
    "i18n": {
     "en": {
-     "titulo": "FAPESP and Estonia articulate partnerships in science and innovation",
-     "resumo": "Visiting the Foundation's headquarters, a delegation led by the Baltic country's Minister of Agriculture explored joint opportunities in areas such as sustainable food production, quantum technologies and artificial intelligence"
+     "titulo": "Brazilian vaccine against vivax malaria receives approval for human trials",
+     "resumo": "Developed at USP in partnership with UFMG's CTVacinas, the formulation may be the first against this variety of the disease in the world. Phase 1 clinical trial will evaluate safety and immune response"
     },
     "es": {
-     "titulo": "La FAPESP y Estonia articulan alianzas en ciencia e innovación",
-     "resumo": "Al visitar la sede de la Fundación, una delegación encabezada por el Ministro de Agricultura del país báltico exploró oportunidades conjuntas en áreas como la producción sostenible de alimentos, las tecnologías cuánticas y la inteligencia artificial"
+     "titulo": "La vacuna brasileña contra la malaria vivax recibe aprobación para ensayos en humanos",
+     "resumo": "Desarrollada en la USP en asociación con CTVacinas de UFMG, la formulación puede ser la primera contra esta variedad de la enfermedad en el mundo. El ensayo clínico de fase 1 evaluará la seguridad y la respuesta inmunitaria"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Ecologia teórica e a física da vida: ampliando a escala da biodiversidade em um mundo em transformação",
+   "resumo": "Evento do ICTP-SAIFR debaterá ferramentas da física e da matemática aplicadas a desafios ecológicos em um cenário de mudanças ambientais",
+   "url": "https://agencia.fapesp.br/ecologia-teorica-e-a-fisica-da-vida-ampliando-a-escala-da-biodiversidade-em-um-mundo-em-transformacao/59396",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-16T01:30:25.095738+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Theoretical ecology and the physics of life: Scaling up biodiversity in a changing world",
+     "resumo": "ICTP-SAIFR event will discuss physics and mathematics tools applied to ecological challenges in a scenario of environmental changes"
+    },
+    "es": {
+     "titulo": "Ecología teórica y física de la vida: Ampliación de la biodiversidad en un mundo cambiante",
+     "resumo": "El evento ICTP-SAIFR discutirá las herramientas de física y matemáticas aplicadas a los desafíos ecológicos en un escenario de cambios ambientales"
     }
    }
   },
@@ -281,73 +277,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Ozempic e Wegovy ligados ao risco raro de perda súbita da visão",
-   "resumo": "Medicamentos populares para diabetes e perda de peso, como Ozempic e Wegovy, têm sido associados a um risco ligeiramente aumentado de uma condição rara que pode causar perda súbita e potencialmente permanente da visão. Embora o risco permaneça muito baixo, Rutgers...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261014015521.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-15T04:14:55+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/ozempic-semaglutide-injection-pens.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Ozempic and Wegovy linked to rare risk of sudden vision loss",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Ozempic y Wegovy vinculados a un riesgo poco frecuente de pérdida repentina de la visión",
-     "resumo": "Los medicamentos populares para la diabetes y la pérdida de peso, como Ozempic y Wegovy, se han relacionado con un riesgo ligeramente mayor de una afección rara que puede causar una pérdida de visión repentina y potencialmente permanente. Aunque el riesgo sigue siendo muy bajo, Rutgers..."
-    }
-   },
-   "resumo_original": "Popular diabetes and weight loss drugs such as Ozempic and Wegovy have been linked to a slightly increased risk of a rare condition that can cause sudden, potentially permanent vision loss. Although the risk remains very low, Rutgers…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A IA está corroendo o pensamento crítico e as habilidades de análise dos alunos de doutorado?",
-   "resumo": "Um painel de especialistas debate o impacto da inteligência artificial nos programas de doutorado.",
-   "url": "https://www.nature.com/articles/d41586-026-03178-w",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-15T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "Is AI eroding PhD students’ critical thinking and analysis skills?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿La IA está erosionando el pensamiento crítico y las habilidades de análisis de los estudiantes de doctorado?",
-     "resumo": "Un panel de expertos debate sobre el impacto de la inteligencia artificial en los programas de doctorado."
-    }
-   },
-   "resumo_original": "An expert panel debates the impact of artificial intelligence on doctoral programmes."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Dê-me a boa notícia: quatro histórias científicas para alegrar o seu dia",
-   "resumo": "Drogas que podem reverter a esclerose múltipla em camundongos e uma nova espécie de pinguim são apenas o começo.",
-   "url": "https://www.nature.com/articles/d41586-026-03152-6",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-15T00:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Give me the good news: four science stories to brighten your day",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Dame la buena noticia: cuatro historias científicas para alegrarte el día",
-     "resumo": "Los medicamentos que pueden revertir la esclerosis múltiple en ratones y una nueva especie de pingüino son solo el comienzo."
-    }
-   },
-   "resumo_original": "Drugs that can reverse multiple sclerosis in mice and a new species of penguin are just the beginning."
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Geleira 'apocalíptica‘ da Antártida continuará derretendo mesmo se os oceanos esfriarem",
    "resumo": "Modelos de computador sugerem que oceanos irrealisticamente frios seriam insuficientes para impedir o recuo da geleira Thwaites, embora uma geleira vizinha possa começar a crescer",
    "url": "https://www.newscientist.com/article/2594246-antarcticas-doomsday-glacier-will-keep-melting-even-if-oceans-cool/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -395,6 +324,81 @@
     }
    },
    "resumo_original": "The work could help improve quantum computers’ accuracy in complex calculations"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Comer tarde da noite está associado a um risco até 30% maior de doença hepática",
+   "resumo": "Comer tarde da noite pode estar colocando seu fígado em risco, de acordo com um grande estudo liderado pela Oregon Health & Science University. Os pesquisadores analisaram dados de quase 200.000 pessoas e descobriram que aqueles que comiam regularmente depois do jantar ou...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261014015503.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-15T12:26:16+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/human-liver-organ-damage.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Eating late at night linked to up to 30% higher risk of liver disease",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Comer a altas horas de la noche está relacionado con un riesgo hasta un 30% mayor de enfermedad hepática",
+     "resumo": "Comer a altas horas de la noche podría poner en riesgo tu hígado, según un gran estudio dirigido por la Universidad de Salud y Ciencia de Oregón. Los investigadores analizaron datos de casi 200.000 personas y descubrieron que aquellos que comían regularmente después de la cena o..."
+    }
+   },
+   "resumo_original": "Eating late at night could be putting your liver at risk, according to a large study led by Oregon Health & Science University. Researchers analyzed data from nearly 200,000 people and found that those who regularly ate after dinner or…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Atividade cerebral misteriosa sob anestesia desafia o que sabemos sobre a consciência",
+   "resumo": "Mesmo sob anestesia geral, o cérebro humano pode analisar a linguagem, reconhecer diferentes tipos de palavras e prever o que vem a seguir em uma história, de acordo com uma descoberta surpreendente feita por pesquisadores da Baylor. As descobertas desafiam nossa...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261015003440.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-15T12:52:05+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/neuroscience-brain-connections-consciousness-signal-processing.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Mysterious brain activity under anesthesia challenges what we know about consciousness",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La misteriosa actividad cerebral bajo anestesia desafía lo que sabemos sobre la conciencia",
+     "resumo": "Incluso bajo anestesia general, el cerebro humano puede analizar el lenguaje, reconocer diferentes tipos de palabras y predecir lo que sigue en una historia, según un sorprendente descubrimiento de los investigadores de Baylor. Los hallazgos desafían nuestro..."
+    }
+   },
+   "resumo_original": "Even under general anesthesia, the human brain can analyze language, recognize different types of words, and predict what comes next in a story, according to a surprising discovery by Baylor researchers. The findings challenge our…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Gelo marinho do Ártico atinge outra baixa preocupante em 2026",
+   "resumo": "O gelo marinho do Ártico está encolhendo no inverno e no verão, com registros de satélite revelando que o gelo remanescente da região está se tornando mais fino, mais jovem e mais vulnerável ao derretimento. Apesar de uma recente desaceleração nas perdas de verão, os cientistas...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261015073212.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-15T12:40:44+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/arctic-sea-ice-2026-minimum.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Arctic sea ice hits another troubling low in 2026",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El hielo marino del Ártico alcanza otro mínimo preocupante en 2026",
+     "resumo": "El hielo marino del Ártico se está reduciendo tanto en invierno como en verano, y los registros satelitales revelan que el hielo restante de la región se está volviendo más delgado, más joven y más vulnerable al derretimiento. A pesar de una reciente desaceleración en las pérdidas de verano, los científicos..."
+    }
+   },
+   "resumo_original": "Arctic sea ice is shrinking in both winter and summer, with satellite records revealing that the region's remaining ice is becoming thinner, younger, and more vulnerable to melting. Despite a recent slowdown in summer losses, scientists…"
   }
  ],
  "artigos": [
@@ -882,13 +886,10 @@
   "Europe PMC"
  ],
  "erros": [
+  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "programa aproxima brasil e india para levar pesquisas em saude ao mercado": "2026-10-05T22:46:24.974255+00:00",
-  "alessandro batezelli do ig integra o projeto amazonia 10 do cnpq e fapesp": "2026-10-05T22:46:24.974255+00:00",
-  "falta de deus estudo desmistifica crencas sobre a religiosidade da populacao em situacao de rua que usa drogas": "2026-10-05T22:46:24.974255+00:00",
-  "should you be poop maxxing or fiber maxxing experts explain whats healthy": "2026-10-05T22:46:24.974255+00:00",
   "gotas de sangue podem antecipar o sinal de alerta contra o cancer": "2026-10-06T03:08:31.331255+00:00",
   "museus de historia universitarios na contemporaneidade": "2026-10-06T03:08:31.331255+00:00",
   "pos graduacao em estatistica seleciona candidatos": "2026-10-06T03:08:31.331255+00:00",
@@ -1090,6 +1091,11 @@
   "why a high school in virginia is getting a quantum computer": "2026-10-15T19:15:15.895757+00:00",
   "googles quantum willow chip may be able to grow magic states": "2026-10-15T19:15:15.895757+00:00",
   "em editorial cientistas discutem formas de enfrentamento e controle da poluicao plastica": "2026-10-15T22:28:33.991725+00:00",
-  "antarcticas doomsday glacier will keep melting even if oceans cool": "2026-10-15T22:28:33.991725+00:00"
+  "antarcticas doomsday glacier will keep melting even if oceans cool": "2026-10-15T22:28:33.991725+00:00",
+  "faculdade de ciencias farmaceuticas da unesp de araraquara seleciona professor titular": "2026-10-16T01:30:25.095738+00:00",
+  "ecologia teorica e a fisica da vida ampliando a escala da biodiversidade em um mundo em transformacao": "2026-10-16T01:30:25.095738+00:00",
+  "eating late at night linked to up to 30 higher risk of liver disease": "2026-10-16T01:30:25.095738+00:00",
+  "mysterious brain activity under anesthesia challenges what we know about consciousness": "2026-10-16T01:30:25.095738+00:00",
+  "arctic sea ice hits another troubling low in 2026": "2026-10-16T01:30:25.095738+00:00"
  }
 }
