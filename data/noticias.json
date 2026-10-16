@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-16T01:30:25.095738+00:00",
+ "atualizado_em": "2026-10-16T07:20:30.782749+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -52,74 +52,75 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Faculdade de Ciências Farmacêuticas da Unesp de Araraquara seleciona professor titular",
-   "resumo": "Docente vai trabalhar no Departamento de Fármacos e Medicamentos",
-   "url": "https://agencia.fapesp.br/faculdade-de-ciencias-farmaceuticas-da-unesp-de-araraquara-seleciona-professor-titular/59400",
+   "titulo": "VÍDEO | Cápsula prolonga vida útil de fungo usado como bioinseticida",
+   "resumo": "Equipe do Centro de Manejo Sustentável de Pragas, Doenças e Plantas Daninhas criou microesferas que combinam um derivado de celulose a partículas de alumínio e atuam como casca protetora do Beauveria bassiana . Ela garante liberação…",
+   "url": "https://www.youtube.com/watch?v=BgGvujci6Wc",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-16T01:30:25.095738+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-16T07:20:30.782749+00:00",
+   "tema": "Saúde",
    "relevancia": 8,
-   "imagem": "https://agencia.fapesp.br/files/post/59400.jpg",
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "VIDEO | Capsule prolongs useful life of fungus used as bioinsecticide",
+     "resumo": "A team from the Center for Sustainable Management of Pests, Diseases and Weeds created microspheres that combine a cellulose derivative with aluminum particles and act as a protective bark of Beauveria bassiana . It guarantees release…"
+    },
+    "es": {
+     "titulo": "VIDEO | Cápsula prolonga la vida útil del hongo utilizado como bioinsecticida",
+     "resumo": "Un equipo del Centro para el Manejo Sostenible de Plagas, Enfermedades y Malezas creó microesferas que combinan un derivado de celulosa con partículas de aluminio y actúan como corteza protectora de Beauveria bassiana . Garantiza la liberación..."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Acordo amplia presença paulista no maior levantamento astronômico da história",
+   "resumo": "Parceria da FAPESP com o consórcio norte-americano Aura garante a 60 pesquisadores do Estado acesso integral aos dados do Observatório Vera Rubin, em operação no Chile",
+   "url": "https://agencia.fapesp.br/acordo-amplia-presenca-paulista-no-maior-levantamento-astronomico-da-historia/59407",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-16T07:20:30.782749+00:00",
+   "tema": "Espaço",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59407.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Faculty of Pharmaceutical Sciences of Unesp of Araraquara selects full professor",
-     "resumo": "Lecturer will work in the Department of Drugs and Medicines"
+     "titulo": "Agreement expands São Paulo presence in the largest astronomical survey in history",
+     "resumo": "FAPESP's partnership with the North American consortium Aura guarantees 60 researchers from the State full access to data from the Vera Rubin Observatory, in operation in Chile"
     },
     "es": {
-     "titulo": "Facultad de Ciencias Farmacéuticas de la Unesp de Araraquara selecciona profesor titular",
-     "resumo": "El profesor trabajará en el Departamento de Drogas y Medicamentos"
+     "titulo": "Acuerdo amplía la presencia de São Paulo en el mayor sondeo astronómico de la historia",
+     "resumo": "La alianza de la FAPESP con el consorcio norteamericano Aura garantiza a 60 investigadores del Estado el pleno acceso a los datos del Observatorio Vera Rubin, en funcionamiento en Chile"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Vacina brasileira contra malária vivax recebe aval para testes em humanos",
-   "resumo": "Desenvolvida na USP em parceria com o CTVacinas da UFMG, formulação pode ser a primeira contra essa variedade da doença no mundo. Ensaio clínico de fase 1 vai avaliar segurança e resposta imune",
-   "url": "https://agencia.fapesp.br/vacina-brasileira-contra-malaria-vivax-recebe-aval-para-testes-em-humanos/59401",
+   "titulo": "Regeneração natural de florestas ajuda a conter o avanço de espécies invasoras",
+   "resumo": "Estudo internacional revela que o próprio amadurecimento das matas secundárias atua como uma solução natural para reduzir a densidade de árvores não nativas e recuperar ecossistemas",
+   "url": "https://agencia.fapesp.br/regeneracao-natural-de-florestas-ajuda-a-conter-o-avanco-de-especies-invasoras/59411",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-15T04:53:21.223857+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://agencia.fapesp.br/files/post/59401.jpg",
+   "data": "2026-10-16T07:20:30.782749+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59411.jpeg",
    "foco": {
-    "inteira": true
+    "x": 50,
+    "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Brazilian vaccine against vivax malaria receives approval for human trials",
-     "resumo": "Developed at USP in partnership with UFMG's CTVacinas, the formulation may be the first against this variety of the disease in the world. Phase 1 clinical trial will evaluate safety and immune response"
+     "titulo": "Natural forest regeneration helps stem the advance of invasive species",
+     "resumo": "International study reveals that the maturation of secondary forests acts as a natural solution to reduce the density of non-native trees and restore ecosystems"
     },
     "es": {
-     "titulo": "La vacuna brasileña contra la malaria vivax recibe aprobación para ensayos en humanos",
-     "resumo": "Desarrollada en la USP en asociación con CTVacinas de UFMG, la formulación puede ser la primera contra esta variedad de la enfermedad en el mundo. El ensayo clínico de fase 1 evaluará la seguridad y la respuesta inmunitaria"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Ecologia teórica e a física da vida: ampliando a escala da biodiversidade em um mundo em transformação",
-   "resumo": "Evento do ICTP-SAIFR debaterá ferramentas da física e da matemática aplicadas a desafios ecológicos em um cenário de mudanças ambientais",
-   "url": "https://agencia.fapesp.br/ecologia-teorica-e-a-fisica-da-vida-ampliando-a-escala-da-biodiversidade-em-um-mundo-em-transformacao/59396",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-16T01:30:25.095738+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Theoretical ecology and the physics of life: Scaling up biodiversity in a changing world",
-     "resumo": "ICTP-SAIFR event will discuss physics and mathematics tools applied to ecological challenges in a scenario of environmental changes"
-    },
-    "es": {
-     "titulo": "Ecología teórica y física de la vida: Ampliación de la biodiversidad en un mundo cambiante",
-     "resumo": "El evento ICTP-SAIFR discutirá las herramientas de física y matemáticas aplicadas a los desafíos ecológicos en un escenario de cambios ambientales"
+     "titulo": "La regeneración natural de los bosques ayuda a frenar el avance de las especies invasoras",
+     "resumo": "Un estudio internacional revela que la maduración de los bosques secundarios actúa como una solución natural para reducir la densidad de árboles no autóctonos y restaurar los ecosistemas"
     }
    }
   },
@@ -203,6 +204,31 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "A física será o próximo campo a ser virado de cabeça para baixo pela IA?",
+   "resumo": "A IA deu grandes passos na programação de computadores e na matemática – a física pode ser a próxima",
+   "url": "https://www.newscientist.com/article/2593273-will-physics-be-the-next-field-to-get-turned-upside-down-by-ai/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-16T06:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316576979.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Will physics be the next field to be turned upside down by AI?",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "¿Será la física el próximo campo en ser puesto patas arriba por la IA?",
+     "resumo": "La IA ha dado grandes pasos en la programación informática y las matemáticas; la física podría ser la siguiente"
+    }
+   },
+   "resumo_original": "AI has taken huge strides in computer programming and mathematics – physics could be next"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Penhascos de gelo glaciais altos podem desmoronar aos trancos e barrancos",
    "resumo": "Ainda não sabemos ao certo como os penhascos de gelo que se erguem sobre o mar na borda de algumas geleiras se comportarão à medida que o clima aquecer, mas dados de satélite oferecem algumas pistas",
    "url": "https://www.newscientist.com/article/2593672-towering-ice-cliffs-may-collapse-in-fits-and-starts/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -277,28 +303,24 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Geleira 'apocalíptica‘ da Antártida continuará derretendo mesmo se os oceanos esfriarem",
-   "resumo": "Modelos de computador sugerem que oceanos irrealisticamente frios seriam insuficientes para impedir o recuo da geleira Thwaites, embora uma geleira vizinha possa começar a crescer",
-   "url": "https://www.newscientist.com/article/2594246-antarcticas-doomsday-glacier-will-keep-melting-even-if-oceans-cool/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "A IA está corroendo o pensamento crítico e as habilidades de análise dos alunos de doutorado?",
+   "resumo": "Um painel de especialistas debate o impacto da inteligência artificial nos programas de doutorado.",
+   "url": "https://www.nature.com/articles/d41586-026-03178-w",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-15T20:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_313977141.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
+   "data": "2026-10-15T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "Is AI eroding PhD students’ critical thinking and analysis skills?",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El glaciar 'apocalíptico’ de la Antártida seguirá derritiéndose incluso si los océanos se enfrían",
-     "resumo": "Los modelos informáticos sugieren que los océanos fríos poco realistas serían insuficientes para detener la retirada del glaciar Thwaites, aunque un glaciar vecino podría comenzar a crecer"
+     "titulo": "¿La IA está erosionando el pensamiento crítico y las habilidades de análisis de los estudiantes de doctorado?",
+     "resumo": "Un panel de expertos debate sobre el impacto de la inteligencia artificial en los programas de doctorado."
     }
    },
-   "resumo_original": "Computer models suggest that unrealistically cold oceans would be insufficient to stop Thwaites glacier retreating, although a neighbouring glacier might begin to grow"
+   "resumo_original": "An expert panel debates the impact of artificial intelligence on doctoral programmes."
   },
   {
    "tipo": "noticia",
@@ -352,53 +374,24 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Atividade cerebral misteriosa sob anestesia desafia o que sabemos sobre a consciência",
-   "resumo": "Mesmo sob anestesia geral, o cérebro humano pode analisar a linguagem, reconhecer diferentes tipos de palavras e prever o que vem a seguir em uma história, de acordo com uma descoberta surpreendente feita por pesquisadores da Baylor. As descobertas desafiam nossa...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261015003440.htm",
-   "fonte": "ScienceDaily",
+   "titulo": "Dê-me a boa notícia: quatro histórias científicas para alegrar o seu dia",
+   "resumo": "Drogas que podem reverter a esclerose múltipla em camundongos e uma nova espécie de pinguim são apenas o começo.",
+   "url": "https://www.nature.com/articles/d41586-026-03152-6",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-15T12:52:05+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/neuroscience-brain-connections-consciousness-signal-processing.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Mysterious brain activity under anesthesia challenges what we know about consciousness",
+   "data": "2026-10-15T00:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 4,
+   "imagem": "",
+   "titulo_original": "Give me the good news: four science stories to brighten your day",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La misteriosa actividad cerebral bajo anestesia desafía lo que sabemos sobre la conciencia",
-     "resumo": "Incluso bajo anestesia general, el cerebro humano puede analizar el lenguaje, reconocer diferentes tipos de palabras y predecir lo que sigue en una historia, según un sorprendente descubrimiento de los investigadores de Baylor. Los hallazgos desafían nuestro..."
+     "titulo": "Dame la buena noticia: cuatro historias científicas para alegrarte el día",
+     "resumo": "Los medicamentos que pueden revertir la esclerosis múltiple en ratones y una nueva especie de pingüino son solo el comienzo."
     }
    },
-   "resumo_original": "Even under general anesthesia, the human brain can analyze language, recognize different types of words, and predict what comes next in a story, according to a surprising discovery by Baylor researchers. The findings challenge our…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Gelo marinho do Ártico atinge outra baixa preocupante em 2026",
-   "resumo": "O gelo marinho do Ártico está encolhendo no inverno e no verão, com registros de satélite revelando que o gelo remanescente da região está se tornando mais fino, mais jovem e mais vulnerável ao derretimento. Apesar de uma recente desaceleração nas perdas de verão, os cientistas...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261015073212.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-15T12:40:44+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/arctic-sea-ice-2026-minimum.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Arctic sea ice hits another troubling low in 2026",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El hielo marino del Ártico alcanza otro mínimo preocupante en 2026",
-     "resumo": "El hielo marino del Ártico se está reduciendo tanto en invierno como en verano, y los registros satelitales revelan que el hielo restante de la región se está volviendo más delgado, más joven y más vulnerable al derretimiento. A pesar de una reciente desaceleración en las pérdidas de verano, los científicos..."
-    }
-   },
-   "resumo_original": "Arctic sea ice is shrinking in both winter and summer, with satellite records revealing that the region's remaining ice is becoming thinner, younger, and more vulnerable to melting. Despite a recent slowdown in summer losses, scientists…"
+   "resumo_original": "Drugs that can reverse multiple sclerosis in mice and a new species of penguin are just the beginning."
   }
  ],
  "artigos": [
@@ -886,13 +879,9 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "gotas de sangue podem antecipar o sinal de alerta contra o cancer": "2026-10-06T03:08:31.331255+00:00",
-  "museus de historia universitarios na contemporaneidade": "2026-10-06T03:08:31.331255+00:00",
-  "pos graduacao em estatistica seleciona candidatos": "2026-10-06T03:08:31.331255+00:00",
   "proteina pouco conhecida e potencial alvo contra a doenca de chagas": "2026-10-06T10:32:56.757612+00:00",
   "nobel prize in physics awarded for discovery of high energy neutrinos": "2026-10-06T10:32:56.757612+00:00",
   "a internacionalizacao da ciencia paulista": "2026-10-06T10:32:56.757612+00:00",
@@ -1096,6 +1085,10 @@
   "ecologia teorica e a fisica da vida ampliando a escala da biodiversidade em um mundo em transformacao": "2026-10-16T01:30:25.095738+00:00",
   "eating late at night linked to up to 30 higher risk of liver disease": "2026-10-16T01:30:25.095738+00:00",
   "mysterious brain activity under anesthesia challenges what we know about consciousness": "2026-10-16T01:30:25.095738+00:00",
-  "arctic sea ice hits another troubling low in 2026": "2026-10-16T01:30:25.095738+00:00"
+  "arctic sea ice hits another troubling low in 2026": "2026-10-16T01:30:25.095738+00:00",
+  "video capsula prolonga vida util de fungo usado como bioinseticida": "2026-10-16T07:20:30.782749+00:00",
+  "acordo amplia presenca paulista no maior levantamento astronomico da historia": "2026-10-16T07:20:30.782749+00:00",
+  "regeneracao natural de florestas ajuda a conter o avanco de especies invasoras": "2026-10-16T07:20:30.782749+00:00",
+  "will physics be the next field to be turned upside down by ai": "2026-10-16T07:20:30.782749+00:00"
  }
 }
