@@ -112,7 +112,8 @@ const violacoes = (page) => page.evaluate(() => window.__csp ?? []);
   ok(!existsSync(cadernoDaConta), "o caderno da conta é apagado junto (não fica órfão no disco)");
 
   const todas = [];
-  await page.goto(`${base}/laboratorio/bancada`);
+  // Página WebGL pesada: era a bancada 3D, que saiu do ar; Moléculas carrega o Mol* e cobre o mesmo risco.
+  await page.goto(`${base}/moleculas`);
   await page.locator("canvas").first().waitFor({ timeout: 30000 });
   await page.waitForTimeout(2500);
   todas.push(...(await violacoes(page)));
@@ -134,6 +135,11 @@ const violacoes = (page) => page.evaluate(() => window.__csp ?? []);
     todas.push(...(await violacoes(page)));
     ok(true, "visualizador de estruturas (Mol*) carregou");
   }
+  // A bancada 3D está fora do ar: o código continua no repositório, mas a rota não pode responder.
+  const bancada = await page.goto(`${base}/laboratorio/bancada`);
+  ok(bancada?.status() === 404, `bancada 3D fora do ar (${bancada?.status()})`);
+  ok((await page.getByRole("link", { name: "Bancada 3D" }).count()) === 0, "e não aparece no menu");
+
   await page.goto(`${base}/ajuda`);
   ok(await page.getByRole("link", { name: "Política de privacidade" }).isVisible(), "Ajuda aponta para a política");
   const v = todas.concat(await violacoes(page));

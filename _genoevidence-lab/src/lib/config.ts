@@ -2,6 +2,17 @@
 export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME?.trim() || "GenoLab";
 export const APP_VERSION = "0.1.0";
 
+/**
+ * Bancada 3D: FORA DO AR por decisão da responsável (15/10/2026).
+ *
+ * O código inteiro continua no repositório — páginas, cena, equipamentos, testes. Só o acesso está
+ * fechado: o item some do menu e as rotas respondem 404. Para religar, basta `NEXT_PUBLIC_BANCADA_3D=1`
+ * no servidor, sem recompilar nada do código da bancada.
+ *
+ * É NEXT_PUBLIC_ porque a barra lateral roda no navegador e precisa ler o mesmo valor que o servidor.
+ */
+export const BANCADA_3D_ATIVA = process.env.NEXT_PUBLIC_BANCADA_3D === "1";
+
 export const LIMITS = {
   /** Tamanho máximo de upload (padrão 20 MB). */
   maxUploadBytes: Number(process.env.LAB_MAX_UPLOAD_BYTES) || 20 * 1024 * 1024,

@@ -199,7 +199,7 @@ export function AreaTrabalho({
               <Sintese />
               {!gerado && (
                 <p className="px-1 text-[12px] text-panel-dim">
-                  Prefere explorar uma técnica completa? Veja as <Link href="/modulos" className="underline">técnicas educativas</Link> ou a <Link href="/laboratorio/bancada" className="underline">bancada 3D</Link>.
+                  Prefere explorar uma técnica completa? Veja as <Link href="/modulos" className="underline">técnicas educativas</Link> ou procure uma molécula em <Link href="/moleculas" className="underline">Moléculas</Link>.
                 </p>
               )}
             </div>

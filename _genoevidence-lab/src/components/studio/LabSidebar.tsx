@@ -6,6 +6,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { hydrateUiPrefs, useUi } from "@/store/ui";
 import { esquecerPagina } from "@/lib/navegacao";
 import { InstalarApp } from "@/components/layout/InstalarApp";
+import { BANCADA_3D_ATIVA } from "@/lib/config";
 
 const I = {
   lab: (
@@ -16,6 +17,7 @@ const I = {
   tecnicas: <path d="M7 4c0 4 10 4 10 8s-10 4-10 8M17 4c0 4-10 4-10 8s10 4 10 8M8.5 7h7M8.5 17h7" />,
   ajuda: <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm-2.4-11.6a2.6 2.6 0 0 1 5 .9c0 1.7-2.6 2.2-2.6 3.7M12 17.2v.01" />,
   integracoes: <path d="M9 7H6a3 3 0 0 0 0 6h3m6-6h3a3 3 0 0 1 0 6h-3m-6-3h6M9 17l-1 3m7-3 1 3" />,
+  molecula: <path d="M12 12m-2.2 0a2.2 2.2 0 1 0 4.4 0a2.2 2.2 0 1 0-4.4 0M5 6.5m-1.8 0a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0-3.6 0M19 6.5m-1.8 0a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0-3.6 0M12 20m-1.8 0a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0-3.6 0M10.4 10.6 6.4 7.8M13.6 10.6l4-2.8M12 14.2V18" />,
   caderno: <path d="M6 4h11a2 2 0 0 1 2 2v14H7.5A1.5 1.5 0 0 1 6 18.5zM6 17.5h13M9.5 8h6M9.5 11.5h6" />,
   admin: <path d="M12 3 4.5 6v5.5c0 4.4 3.1 8.4 7.5 9.5 4.4-1.1 7.5-5.1 7.5-9.5V6zM9 12l2 2 4-4" />,
   pausa: <path d="M9 6v12M15 6v12" />,
@@ -36,14 +38,19 @@ type User = { name: string; email: string; role: string };
 
 const NAV = [
   { href: "/laboratorio", rotulo: "Área de trabalho", icone: I.lab },
-  { href: "/laboratorio/bancada", rotulo: "Bancada 3D", icone: I.tecnicas },
   { href: "/projetos", rotulo: "Projetos", icone: I.pasta },
+  { href: "/moleculas", rotulo: "Moléculas", icone: I.molecula },
   { href: "/caderno", rotulo: "Caderno", icone: I.caderno },
   { href: "/referencias", rotulo: "Referências", icone: I.livro },
   { href: "/ajuda", rotulo: "Ajuda e Geninho", icone: I.ajuda },
   { href: "/modulos", rotulo: "Técnicas", icone: I.tecnicas },
   { href: "/integracoes", rotulo: "Integrações", icone: I.integracoes },
 ];
+
+// A bancada 3D está fora do ar (ver BANCADA_3D_ATIVA). O código continua inteiro: religar a põe de volta aqui.
+const NAV_VISIVEL = BANCADA_3D_ATIVA
+  ? [NAV[0], { href: "/laboratorio/bancada", rotulo: "Bancada 3D", icone: I.tecnicas }, ...NAV.slice(1)]
+  : NAV;
 
 /** Barra lateral do estúdio imersivo (substitui o cabeçalho no laboratório). */
 export function LabSidebar({ user }: { user: User }) {
@@ -61,7 +68,7 @@ export function LabSidebar({ user }: { user: User }) {
     router.replace("/entrar");
     router.refresh();
   };
-  const itens = user.role === "admin" ? [...NAV, { href: "/admin", rotulo: "Administração", icone: I.admin }] : NAV;
+  const itens = user.role === "admin" ? [...NAV_VISIVEL, { href: "/admin", rotulo: "Administração", icone: I.admin }] : NAV_VISIVEL;
 
   const conteudo = (
     <div className="flex h-full flex-col gap-6 px-4 py-5">

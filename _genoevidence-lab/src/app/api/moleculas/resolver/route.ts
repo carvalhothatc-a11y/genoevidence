@@ -27,6 +27,37 @@ export const GET = handle(async (req: Request) => {
   if (!termo) throw new ApiError(400, "Informe o termo a buscar.");
   if (!/^[\p{L}\p{N}\s().,'·-]+$/u.test(termo)) throw new ApiError(400, "Termo com caracteres não aceitos.");
 
+  /**
+   * UMA caixa de busca só. Quem chega com pressa não deveria ter de escolher antes se o que
+   * digitou é proteína, gene, composto ou código de estrutura — então descobrimos aqui.
+   *
+   * Quando o mesmo nome existe em mais de uma base, devolvemos TODOS e a interface pergunta.
+   * Nunca escolhemos por conta própria entre uma proteína e um composto homônimos.
+   */
+  if (tipo === "auto") {
+    // Código do PDB é inconfundível: 4 caracteres começando por dígito.
+    if (/^[0-9][A-Za-z0-9]{3}$/.test(termo)) {
+      const e = await detalharEstrutura(termo);
+      if (e) return json({ encontrado: true, tipo: "auto", resultados: [{ tipo: "pdb", estrutura: e }] });
+      return json({ encontrado: false, tipo: "auto", motivo: `A estrutura ${termo.toUpperCase()} não existe no RCSB PDB.` });
+    }
+
+    const [prot, comp] = await Promise.all([buscarProteina(termo), buscarComposto(termo)]);
+    const resultados: unknown[] = [];
+    if (prot.encontrado) {
+      const proteina = prot.itens[0];
+      const e = await estruturasDaProteina(proteina.acesso, 5);
+      resultados.push({ tipo: "proteina", proteina, estruturas: e.encontrado ? e.itens : [], motivoEstruturas: e.encontrado ? undefined : e.motivo });
+    }
+    if (comp.encontrado) resultados.push({ tipo: "composto", composto: comp.itens[0] });
+    if (!resultados.length) {
+      // Serviço ocupado é diferente de não existir: repetimos o motivo real que a base deu.
+      const detalhe = !prot.encontrado ? prot.motivo : "";
+      return json({ encontrado: false, tipo: "auto", motivo: `Nada encontrado para “${termo}”. ${detalhe}`.trim() });
+    }
+    return json({ encontrado: true, tipo: "auto", resultados });
+  }
+
   if (tipo === "composto") {
     const r = await buscarComposto(termo);
     if (!r.encontrado) return json({ encontrado: false, tipo, motivo: r.motivo });
@@ -67,5 +98,5 @@ export const GET = handle(async (req: Request) => {
     return json({ encontrado: true, tipo, estrutura: e });
   }
 
-  throw new ApiError(400, "Tipo inválido (use gene, proteina, composto, cid ou pdb).");
+  throw new ApiError(400, "Tipo inválido (use auto, gene, proteina, composto, cid ou pdb).");
 });

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { authorizeProject, listVisibleProjects } from "@/lib/authz";
 import { requirePageUser } from "@/lib/projects/server";
+import { BANCADA_3D_ATIVA } from "@/lib/config";
 import { assistantStatus } from "@/lib/assistant/status";
 import { LabStudio } from "@/components/studio/LabStudio";
 import type { ProjectLinks } from "@/components/lab3d/EquipmentControls";
@@ -9,6 +11,8 @@ import type { ProjectLinks } from "@/components/lab3d/EquipmentControls";
 export const metadata: Metadata = { title: "Bancada 3D" };
 
 export default async function BancadaPage(props: PageProps<"/laboratorio/bancada">) {
+  // Fora do ar por decisão da responsável. O código continua inteiro; só o acesso está fechado.
+  if (!BANCADA_3D_ATIVA) notFound();
   const sp = await props.searchParams;
   const projectId = typeof sp.projeto === "string" ? sp.projeto : undefined;
   let project: ProjectLinks = null;
