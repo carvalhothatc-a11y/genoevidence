@@ -8,7 +8,16 @@ import { isZip, lerXlsx, MAX_COLUNAS, MAX_LINHAS, OfficeError, textoDocx } from 
  * NÃO guarda o arquivo (o original só é armazenado quando o pesquisador salva no projeto).
  * O conteúdo é tratado como dado: nada do arquivo é executado nem altera permissões.
  */
-export type ExtracaoRelatorio = { tipo: "relatorio"; formato: "pdf" | "docx" | "texto"; estado: "extraido" | "sem_texto" | "falhou"; texto: string; paginas: number | null; aviso: string | null };
+export type ExtracaoRelatorio = {
+  tipo: "relatorio";
+  formato: "pdf" | "docx" | "texto";
+  estado: "extraido" | "sem_texto" | "falhou";
+  texto: string;
+  paginas: number | null;
+  /** PDF: o texto de cada página, na ordem. Permite citar “página 7” em vez de só o arquivo. */
+  porPagina?: string[];
+  aviso: string | null;
+};
 export type ExtracaoTabela = { tipo: "tabela"; formato: "csv" | "xlsx"; abas: string[]; aba: string | null; colunas: string[]; linhas: (string | null)[][]; totalLinhas: number; avisos: string[] };
 export type Extracao = ExtracaoRelatorio | ExtracaoTabela;
 
@@ -26,14 +35,16 @@ async function textoPdf(bytes: Uint8Array): Promise<ExtracaoRelatorio> {
   const { extractText, getDocumentProxy } = await import("unpdf");
   const tarefa = (async () => {
     const pdf = await getDocumentProxy(new Uint8Array(bytes));
-    return extractText(pdf, { mergePages: true });
+    return extractText(pdf, { mergePages: false });
   })();
   const limite = new Promise<never>((_, rej) => setTimeout(() => rej(new ExtracaoErro("A leitura do PDF demorou demais.")), TEMPO_PDF_MS));
   try {
-    const { totalPages, text } = await Promise.race([tarefa, limite]);
-    const { texto, aviso } = limitarTexto(text);
+    const { totalPages, text: paginasBrutas } = await Promise.race([tarefa, limite]);
+    // Guardamos as páginas separadas (para citar) e o texto corrido (para quem já usa assim).
+    const porPagina = paginasBrutas.map((p) => p.replace(/\r/g, "").replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim());
+    const { texto, aviso } = limitarTexto(porPagina.join("\n\n"));
     if (texto.replace(/\s/g, "").length < 20) return { tipo: "relatorio", formato: "pdf", estado: "sem_texto", texto: "", paginas: totalPages, aviso: "PDF sem camada de texto (provavelmente imagem digitalizada). O conteúdo não pôde ser extraído." };
-    return { tipo: "relatorio", formato: "pdf", estado: "extraido", texto, paginas: totalPages, aviso };
+    return { tipo: "relatorio", formato: "pdf", estado: "extraido", texto, paginas: totalPages, porPagina, aviso };
   } catch (e) {
     const msg = e instanceof ExtracaoErro ? e.message : /password|encrypt/i.test(String(e)) ? "PDF protegido por senha." : "Não foi possível ler o PDF (arquivo corrompido ou em formato não suportado).";
     return { tipo: "relatorio", formato: "pdf", estado: "falhou", texto: "", paginas: null, aviso: msg };
