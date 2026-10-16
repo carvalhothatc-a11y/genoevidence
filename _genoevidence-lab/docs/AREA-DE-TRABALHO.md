@@ -15,7 +15,7 @@ A entrada é `/laboratorio`; a bancada 3D antiga continua em `/laboratorio/banca
 | Animações | `src/components/holo/*` | R3F: rótulos clicáveis ligados ao objeto da biblioteca, zoom, reiniciar visão, giro suave com o cursor, termociclador. Sem WebGL: ilustração 2D. |
 | Cálculos e previsões | `src/lib/ideia/*`, `src/lib/models/pcr.ts` | Perfil do programa da PCR (cálculo), posição esperada de banda (ilustração), avaliação por regras com fonte. Probabilidade de sucesso suspensa sem modelo validado. |
 | Persistência | `src/lib/experimento/store.ts`, `/api/projects/[id]/experimentos` | Rascunho no navegador (sem arquivos); ao salvar, arquivos originais vão para o projeto e todas as versões são preservadas. |
-| Moléculas reais | `src/lib/cena/moleculas.ts`, `src/components/workspace/Moleculas.tsx`, `/api/moleculas/*` | Painel abaixo da cena: nomes citados no experimento viram dado real (UniProt, RCSB PDB, PubChem) e estrutura no Mol\*. Gene, proteína e composto não se substituem; termo ambíguo pergunta antes. A busca só acontece ao clicar. Ver `docs/MOLECULAS-NA-CENA.md`. |
+| Moléculas reais | `src/lib/cena/moleculas.ts`, `src/components/workspace/Moleculas.tsx`, `/api/moleculas/*` | Painel abaixo da cena, em duas partes: nomes **citados** no texto, e os **objetos da cena** (inclusive os reconhecidos numa foto). Viram dado real (UniProt, RCSB PDB, PubChem) e estrutura no Mol\*. Objeto genérico avisa que a estrutura é **exemplo**, não a molécula do experimento. Gene, proteína e composto não se substituem; termo ambíguo pergunta antes. A busca só acontece ao clicar. Ver `docs/MOLECULAS-NA-CENA.md`. |
 | Interface | `src/components/workspace/*`, `src/store/experimento.ts` | Computador: materiais à esquerda, visualização à direita; celular: empilhado. Geninho dá as instruções iniciais e, sob demanda, recebe a síntese (com autorização). |
 
 ## Resultados (sempre identificados)
@@ -35,6 +35,7 @@ node scripts/teste-privacidade.mjs <base> <senha-demo> <dados> # CSP sem violaç
 node scripts/e2e-estudio.mjs <base> <senha-demo> <capturas>  # bancada 3D (PCR)
 node scripts/e2e-moleculas.mjs <base> <senha-demo> <capturas> # moléculas citadas: dado real, desambiguação e Mol*
 node scripts/e2e-caderno.mjs <base> <senha-demo> <capturas>   # caderno de laboratório: registro do dia, anexos e rastro de edição
+node scripts/e2e-cena-moleculas.mjs <base> <senha-demo> <capturas> # molécula real por trás de cada objeto da cena (e da foto)
 ```
 
 ## Limitações conhecidas

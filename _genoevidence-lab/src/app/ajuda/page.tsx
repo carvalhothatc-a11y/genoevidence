@@ -57,7 +57,7 @@ export default async function HelpPage() {
             <li>Os resultados ficam separados em processo ilustrado, resultado observado (seus dados), esperado (com fonte) e previsto (só com modelo aplicável). Sem modelo validado, nenhuma porcentagem é mostrada.</li>
             <li>Use “Salvar” para guardar descrição, materiais, arquivos originais e versões num projeto (novo ou existente); reabra pelo projeto quando quiser.</li>
             <li>
-              A <Link className="underline" href="/laboratorio/bancada">Bancada 3D</Link> e as <Link className="underline" href="/modulos">técnicas educativas</Link> continuam disponíveis para explorar uma técnica completa. Na bancada: arraste para girar, role para aproximar; Tab percorre os rótulos e Enter seleciona.
+              As <Link className="underline" href="/modulos">técnicas educativas</Link> explicam uma técnica completa, e em <Link className="underline" href="/moleculas">Moléculas</Link> você procura uma molécula pelo nome e vê a estrutura real em 3D.
             </li>
           </ol>
         </Section>

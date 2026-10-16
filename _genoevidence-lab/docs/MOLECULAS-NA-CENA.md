@@ -68,13 +68,62 @@ A legenda diz o que a imagem é e o que ela não é:
 Girar com o mouse muda o seu ponto de vista. Não é simulação, não é trajetória, não é o movimento da
 molécula no tempo.
 
+## Os objetos da cena também têm molécula real
+
+O painel tem duas partes. A de cima, **Moléculas citadas**, vem do que você escreveu. A de baixo,
+**Também na cena**, vem dos objetos que a cena desenhou — inclusive os que a IA reconheceu numa
+**foto** que você enviou (ficam marcados “da foto”).
+
+A cena usa um vocabulário genérico: “DNA”, “polimerase”, “anticorpo”. Cada um tem uma molécula de
+verdade por trás, e é isso que esta parte liga
+(`src/lib/cena/referencias-moleculares.ts`).
+
+### A regra: genérico não vira específico em silêncio
+
+Quando a cena diz “DNA”, o que existe para mostrar é um **exemplo** de dupla-hélice resolvida por
+cristalografia — não a sua sequência. A interface diz isso em destaque, antes de abrir a estrutura:
+
+> **É um exemplo, não a sua molécula.** Exemplo de dupla-hélice de DNA resolvida por cristalografia.
+> Não é a sequência do seu experimento — é a forma que o DNA assume.
+
+O campo `exemplo` no código é o que obriga esse aviso a aparecer. Um teste de unidade garante que
+toda referência marcada como exemplo traz a explicação junto.
+
+### O que tem estrutura, e o que não tem
+
+| Objeto da cena | O que aparece | Exemplo? |
+|---|---|---|
+| DNA | 1BNA — dodecâmero de B-DNA (Drew–Dickerson) | sim |
+| RNA | 1EHZ — tRNA de fenilalanina (levedura) | sim |
+| Polimerase | 1TAQ — Taq polimerase | sim |
+| Ligase | 6DT1 — ligase do fago T4 com DNA | sim |
+| Enzima de corte | 1ERI — EcoRI presa ao sítio que corta | sim |
+| Cas9 | 4OO8 — Cas9 de *S. pyogenes* com RNA-guia | sim |
+| Anticorpo | 1IGT — IgG inteira | sim |
+| Ribossomo | 4V6X — ribossomo 80S humano (ME, 5,0 Å) | sim |
+| **dNTPs** | dATP, dCTP, dGTP e dTTP, pelo CID do PubChem | **não** — são exatamente aqueles |
+
+Todos os códigos foram conferidos nas bases em 15/10/2026, e um teste garante que nenhum deles é um
+código inventado. Os compostos são buscados **pelo CID**, não pelo nome: assim o nome escrito no
+código nunca decide qual molécula aparece.
+
+E o que **não** tem estrutura diz por quê, em vez de mostrar algo parecido:
+
+- **célula, bactéria** — organismo inteiro, feito de milhões de moléculas;
+- **primer, produto de PCR, plasmídeo** — é a *sua* sequência; nenhum banco tem;
+- **precipitado, nanopartícula, extrato, amostra** — não são moléculas definidas;
+- **proteína, antibiótico, ácido, solvente, sal** — genéricos: a interface manda escrever o nome,
+  que aí cai no painel de moléculas citadas, de cima.
+
+Equipamento e recipiente nem entram no painel.
+
 ## Quando não dá
 
 Nada é preenchido por aproximação.
 
 - Serviço ocupado → *“O PubChem está recusando pedidos agora (muitas consultas).”* Isso é diferente
   de não existir, e a interface diz qual dos dois é.
-- Código de estrutura inexistente (9ZZZ) → *“A estrutura 9ZZZ não existe no RCSB PDB.”* Nenhuma
+- Código de estrutura inexistente (0ZZZ — o PDB nunca emite código começando por zero) → *“A estrutura 0ZZZ não existe no RCSB PDB.”* Nenhuma
   parecida é colocada no lugar.
 - Proteína sem estrutura depositada → diz isso, e não mostra a de um parente.
 
@@ -100,11 +149,21 @@ todas passando:
 - as 5 estruturas oferecidas são **todas** de p53 (9C5S, 3D06, 5MHC, 8UQR, 6GGC);
 - Mol\* desenha a estrutura e **fica no quadro** (altura 278 px, não a tela toda);
 - termo ambíguo pergunta antes de escolher, com as duas opções explícitas;
-- 9ZZZ é recusado sem substituição;
+- 0ZZZ é recusado sem substituição;
 - sem sessão, as rotas não respondem;
 - sem violação de CSP e sem erro no console.
 
-Unidade: `tests/unit/moleculas-cena.test.ts` (13 casos de reconhecimento, desambiguação e exclusão).
+`scripts/e2e-cena-moleculas.mjs` — 23 conferências sobre a parte nova:
+
+- o painel aparece com os objetos da cena, e equipamento/recipiente ficam de fora;
+- DNA abre **1BNA** com o aviso de exemplo em destaque;
+- dNTPs **não** são marcados como exemplo, e os quatro aparecem com o CID certo;
+- célula diz que não há estrutura, explica o motivo e **não abre nada parecido no lugar**;
+- nenhuma consulta às bases acontece **sem clique**.
+
+Unidade: `tests/unit/moleculas-cena.test.ts` (13 casos de reconhecimento, desambiguação e exclusão)
+e `tests/unit/referencias-moleculares.test.ts` (10 casos: nenhum objeto cai no vazio, todo exemplo
+avisa, nada específico ganha estrutura emprestada).
 
 ## Limites conhecidos
 

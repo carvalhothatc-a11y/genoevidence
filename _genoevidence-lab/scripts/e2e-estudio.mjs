@@ -2,6 +2,16 @@
 import { chromium } from "@playwright/test";
 import { readFileSync, statSync } from "node:fs";
 const [base, credFile, shots] = process.argv.slice(2);
+
+// A bancada 3D está FORA DO AR por decisão da responsável. O roteiro fica inteiro, para voltar a
+// rodar assim que ela for religada (NEXT_PUBLIC_BANCADA_3D=1). Enquanto isso, sai sem falhar.
+{
+  const r = await fetch(`${base}/laboratorio/bancada`, { redirect: "manual" });
+  if (r.status === 404) {
+    console.log("· bancada 3D fora do ar: roteiro preservado, nada a testar agora");
+    process.exit(0);
+  }
+}
 const pw = readFileSync(credFile, "utf8").trim();
 const browser = await chromium.launch({ args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] });
 const ctx = await browser.newContext({ viewport: { width: 1600, height: 940 }, acceptDownloads: true });

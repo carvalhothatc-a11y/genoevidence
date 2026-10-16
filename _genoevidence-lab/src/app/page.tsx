@@ -25,14 +25,11 @@ export default async function Home() {
             <ButtonLink href="/laboratorio" className="px-5 py-3 text-base">
               Entrar no laboratório
             </ButtonLink>
-            <ButtonLink href="/laboratorio/explorar" variant="accent" className="px-5 py-3 text-base">
-              Explorar uma ideia
+            <ButtonLink href="/moleculas" variant="accent" className="px-5 py-3 text-base">
+              Explorar moléculas
             </ButtonLink>
             <ButtonLink href="/projetos/novo" variant="secondary" className="px-5 py-3 text-base">
               Criar projeto
-            </ButtonLink>
-            <ButtonLink href="/laboratorio/bancada?modo=2d" variant="ghost" className="px-5 py-3 text-base">
-              Versão em painéis 2D
             </ButtonLink>
           </div>
         </div>
