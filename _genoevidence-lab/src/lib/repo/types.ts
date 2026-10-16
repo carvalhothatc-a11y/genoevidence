@@ -9,7 +9,8 @@ export type NewFileInput = {
   externalSource?: FileRecord["externalSource"];
 };
 
-export type DerivedKind = "datasets" | "references" | "ideias" | "evidencias" | "experimentos";
+/** "fontes": trechos já divididos de um arquivo, guardados para não reprocessar o PDF a cada pergunta. */
+export type DerivedKind = "datasets" | "references" | "ideias" | "evidencias" | "experimentos" | "fontes";
 
 /** Quem executa a alteração (registrado no histórico). */
 export type Actor = { id: string; name: string };

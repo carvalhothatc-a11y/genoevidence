@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { loadProjectFor, formatBytes, formatDate } from "@/lib/projects/server";
 import { ProjectForm } from "@/components/projects/ProjectForm";
+import { Perguntar } from "@/components/fontes/Perguntar";
 import { DeleteButton } from "@/components/projects/DeleteButton";
 import { FileUploadForm } from "@/components/projects/FileUploadForm";
 import { ReferenceAddForm } from "@/components/references/ReferenceAddForm";
@@ -22,6 +23,7 @@ export async function generateMetadata(props: PageProps<"/projetos/[id]">): Prom
 
 const SECTIONS = [
   ["resumo", "Resumo"],
+  ["fontes", "Perguntar às fontes"],
   ["dados", "Dados"],
   ["referencias", "Referências"],
   ["estruturas", "Estruturas"],
@@ -115,6 +117,16 @@ export default async function ProjectPage(props: PageProps<"/projetos/[id]">) {
               <ProjectForm project={project} />
             </div>
           </details>
+        </Card>
+
+        <Card title={<span id="fontes">Perguntar às fontes</span>}>
+          <p className="mb-3 text-sm text-muted">
+            Pergunte em português aos documentos deste projeto. A resposta cita o trecho, e cada citação é conferida contra o
+            seu arquivo antes de aparecer — o que não bate vira aviso, não vira fonte.
+          </p>
+          {/* A assinatura muda quando um arquivo entra ou sai: router.refresh() atualiza esta prop
+              e o painel relê a lista sozinho, sem a pessoa precisar recarregar a página. */}
+          <Perguntar projetoId={project.id} arquivos={project.files.map((f) => f.id).join(",")} />
         </Card>
 
         <Card
