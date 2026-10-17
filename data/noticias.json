@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-17T00:35:54.076349+00:00",
+ "atualizado_em": "2026-10-17T05:42:00.661896+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -132,80 +132,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "VÍDEO | Cápsula prolonga vida útil de fungo usado como bioinseticida",
-   "resumo": "Equipe do Centro de Manejo Sustentável de Pragas, Doenças e Plantas Daninhas criou microesferas que combinam um derivado de celulose a partículas de alumínio e atuam como casca protetora do Beauveria bassiana . Ela garante liberação…",
-   "url": "https://www.youtube.com/watch?v=BgGvujci6Wc",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-16T07:20:30.782749+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "VIDEO | Capsule prolongs useful life of fungus used as bioinsecticide",
-     "resumo": "A team from the Center for Sustainable Management of Pests, Diseases and Weeds created microspheres that combine a cellulose derivative with aluminum particles and act as a protective bark of Beauveria bassiana . It guarantees release…"
-    },
-    "es": {
-     "titulo": "VIDEO | Cápsula prolonga la vida útil del hongo utilizado como bioinsecticida",
-     "resumo": "Un equipo del Centro para el Manejo Sostenible de Plagas, Enfermedades y Malezas creó microesferas que combinan un derivado de celulosa con partículas de aluminio y actúan como corteza protectora de Beauveria bassiana . Garantiza la liberación..."
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Acordo amplia presença paulista no maior levantamento astronômico da história",
-   "resumo": "Parceria da FAPESP com o consórcio norte-americano Aura garante a 60 pesquisadores do Estado acesso integral aos dados do Observatório Vera Rubin, em operação no Chile",
-   "url": "https://agencia.fapesp.br/acordo-amplia-presenca-paulista-no-maior-levantamento-astronomico-da-historia/59407",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-17T00:35:54.076349+00:00",
-   "tema": "Espaço",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59407.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Agreement expands São Paulo presence in the largest astronomical survey in history",
-     "resumo": "FAPESP's partnership with the North American consortium Aura guarantees 60 researchers from the State full access to data from the Vera Rubin Observatory, in operation in Chile"
-    },
-    "es": {
-     "titulo": "Acuerdo amplía la presencia de São Paulo en el mayor sondeo astronómico de la historia",
-     "resumo": "La alianza de la FAPESP con el consorcio norteamericano Aura garantiza a 60 investigadores del Estado el pleno acceso a los datos del Observatorio Vera Rubin, en funcionamiento en Chile"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Regeneração natural de florestas ajuda a conter o avanço de espécies invasoras",
-   "resumo": "Estudo internacional revela que o próprio amadurecimento das matas secundárias atua como uma solução natural para reduzir a densidade de árvores não nativas e recuperar ecossistemas",
-   "url": "https://agencia.fapesp.br/regeneracao-natural-de-florestas-ajuda-a-conter-o-avanco-de-especies-invasoras/59411",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-17T00:35:54.076349+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59411.jpeg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Natural forest regeneration helps stem the advance of invasive species",
-     "resumo": "International study reveals that the maturation of secondary forests acts as a natural solution to reduce the density of non-native trees and restore ecosystems"
-    },
-    "es": {
-     "titulo": "La regeneración natural de los bosques ayuda a frenar el avance de las especies invasoras",
-     "resumo": "Un estudio internacional revela que la maduración de los bosques secundarios actúa como una solución natural para reducir la densidad de árboles no autóctonos y restaurar los ecosistemas"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "USP promove simpósio sobre mídias sociais e comportamento alimentar",
    "resumo": "Evento será no Anfiteatro da Bioquímica, Prédio Central da FMRP",
    "url": "https://jornal.usp.br/campus-ribeirao-preto/usp-promove-simposio-sobre-midias-sociais-e-comportamento-alimentar/",
@@ -282,28 +208,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "A física será o próximo campo a ser virado de cabeça para baixo pela IA?",
-   "resumo": "A IA deu grandes passos na programação de computadores e na matemática – a física pode ser a próxima",
-   "url": "https://www.newscientist.com/article/2593273-will-physics-be-the-next-field-to-get-turned-upside-down-by-ai/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-16T06:00:00+00:00",
+   "titulo": "Jogo do remedinho: testes clínicos ou bets?",
+   "resumo": "Mercado de predição abre apostas sobre pesquisas clínicas e levanta debate sobre ética e integridade científica",
+   "url": "https://revistapesquisa.fapesp.br/jogo-do-remedinho-testes-clinicos-ou-bets/?utm_source=rss&utm_medium=rss&utm_campaign=jogo-do-remedinho-testes-clinicos-ou-bets",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-16T12:03:55+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/87ed6fa472f0cf17f8c5168662e3ea44071cb66e_1200-630.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Pill game: clinical trials or bets?",
+     "resumo": "Prediction market opens bets on clinical research and raises debate on ethics and scientific integrity"
+    },
+    "es": {
+     "titulo": "Juego de píldoras: ¿ensayos clínicos o apuestas?",
+     "resumo": "El mercado de la predicción abre apuestas en la investigación clínica y plantea un debate sobre la ética y la integridad científica"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Método Wolbachia contra arboviroses começa a ser implantado no Ceará",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/metodo-wolbachia-contra-arboviroses-comeca-ser-implantado-no-ceara",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-16T16:54:37+00:00",
    "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316576979.jpg",
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/wolbito%20%281%29.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Will physics be the next field to be turned upside down by AI?",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "Wolbachia method against arboviruses begins to be implemented in Ceará"
+    },
     "es": {
-     "titulo": "¿Será la física el próximo campo en ser puesto patas arriba por la IA?",
-     "resumo": "La IA ha dado grandes pasos en la programación informática y las matemáticas; la física podría ser la siguiente"
+     "titulo": "Comienza a implementarse en Ceará el método Wolbachia contra arbovirus"
     }
-   },
-   "resumo_original": "AI has taken huge strides in computer programming and mathematics – physics could be next"
+   }
   },
   {
    "tipo": "noticia",
@@ -353,31 +304,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas descobrem como o exercício reverte o envelhecimento muscular",
-   "resumo": "Os cientistas descobriram um mecanismo biológico oculto que ajuda a explicar como o exercício pode reverter alguns dos danos causados pelo envelhecimento muscular. A chave é um gene chamado DEAF1, que se torna hiperativo com a idade e interfere com o…",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261015003550.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-16T00:41:45+00:00",
-   "tema": "Genética",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/body-rejuvenation-strength-boost.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists discover how exercise reverses muscle aging",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos descubren cómo el ejercicio revierte el envejecimiento muscular",
-     "resumo": "Los científicos han descubierto un mecanismo biológico oculto que ayuda a explicar cómo el ejercicio puede revertir parte del daño causado por el envejecimiento muscular. La clave es un gen llamado DEAF1, que se vuelve hiperactivo con la edad e interfiere con el..."
-    }
-   },
-   "resumo_original": "Scientists have uncovered a hidden biological mechanism that helps explain how exercise can reverse some of the damage caused by muscle aging. The key is a gene called DEAF1, which becomes overactive with age and interferes with the…"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Veja o que os cientistas pensam sobre a Theranos uma década depois de implodir",
    "resumo": "Um documentário viral faz com que todos falem sobre a startup fraudulenta de testes de sangue de Elizabeth Holmes novamente, mas os cientistas nunca pararam",
    "url": "https://www.scientificamerican.com/article/heres-what-scientists-think-about-theranos-a-decade-after-it-imploded/",
@@ -400,9 +326,153 @@
     }
    },
    "resumo_original": "A viral documentary has everyone talking about Elizabeth Holmes’s fraudulent blood testing start-up again—but scientists never stopped"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O Japão está lançando uma missão à maior lua de Marte, Fobos",
+   "resumo": "A espaçonave Martian Moons eXploration, com lançamento previsto para 20 de outubro, trará amostras que devem resolver um mistério lunar que atormenta cientistas há mais de um século",
+   "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-16T17:00:00+00:00",
+   "tema": "Espaço",
+   "relevancia": 4,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316887487.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Japan is launching a mission to Mars’s largest moon Phobos",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Japón lanza una misión a la luna más grande de Marte, Fobos",
+     "resumo": "La nave espacial Martian Moons eXploration, que se lanzará el 20 de octubre, traerá muestras que deberían resolver un misterio lunar que ha desconcertado a los científicos durante más de un siglo"
+    }
+   },
+   "resumo_original": "The Martian Moons eXploration spacecraft, set to launch on 20 October, will bring back samples that should solve a moon mystery that has been vexing scientists for more than a century"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Tudo o que você precisa saber sobre a temporada de gripe 2026",
+   "resumo": "Começar cedo não significa necessariamente desastre",
+   "url": "https://www.scientificamerican.com/article/everything-you-need-to-know-about-flu-season-2026/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-16T16:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/3f2bd140-c61b-4407-9ff3-bac2c050a340/flu-virus.jpg?m=1792166751.717&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Everything you need to know about flu season 2026",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Todo lo que necesitas saber sobre la temporada de gripe 2026",
+     "resumo": "Un comienzo temprano no significa necesariamente un desastre"
+    }
+   },
+   "resumo_original": "An early start doesn’t necessarily mean disaster"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Fiocruz reforça a gratuidade da 3° Conferência de Promoção da Saúde",
+   "resumo": "De forma gratuita, a Fiocruz vai promover, nos dias 24 e 25 de novembro, a 3° Conferência de Promoção da Saúde . O evento ocorrerá na Escola Nacional de Saúde Pública (Ensp/Fiocruz). A instituição recebeu diversas denúncias sobre uma…",
+   "url": "https://agencia.fiocruz.br/fiocruz-reforca-gratuidade-da-3deg-conferencia-de-promocao-da-saude",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-15T12:29:56+00:00",
+   "tema": "Saúde",
+   "relevancia": 3,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Fiocruz reinforces the gratuity of the 3rd Conference on Health Promotion",
+     "resumo": "For free, Fiocruz will promote, on November 24 and 25, the 3rd Health Promotion Conference. The event will take place at the National School of Public Health (ENSP/Fiocruz). The institution received several complaints about a…"
+    },
+    "es": {
+     "titulo": "Fiocruz refuerza la gratuidad de las III Jornadas de Promoción de la Salud",
+     "resumo": "De manera gratuita, la Fiocruz promoverá, los días 24 y 25 de noviembre, la III Jornada de Promoción de la Salud . El evento tendrá lugar en la Escuela Nacional de Salud Pública (ENSP/Fiocruz). La institución recibió varias quejas sobre un..."
+    }
+   }
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Resultados a Longo Prazo de Carcinomas Sinonasais Mutantes de IDH2 Comparados com Carcinoma Indiferenciado Sinonasal do Tipo Selvagem de IDH2.",
+   "autores": "Scholfield DW, Axiotakis L, Woods R, Tai K, Eagan A, Boe LA, Finnegan E, Tam K, Cracchiolo J, Dunn L, Lee N, Ganly I…",
+   "revista": "Head Neck",
+   "data": "2026-10-10T00:00:00+00:00",
+   "doi": "10.1002/hed.70495",
+   "url": "https://doi.org/10.1002/hed.70495",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Long-Term Outcomes of IDH2-Mutant Sinonasal Carcinomas Compared With IDH2-Wild Type Sinonasal Undifferentiated Carcinoma.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Resultados a largo plazo de los carcinomas sinonasales mutantes de IDH2 en comparación con el carcinoma sinonasal indiferenciado de tipo salvaje de IDH2."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "O eixo de sinalização NFIL3-MYC: um novo alvo terapêutico e marcador prognóstico no mieloma múltiplo de alto risco.",
+   "autores": "Maichl DS, Cheng WH, Kumari P, Kirner JA, Schmidt S, Ade CP, Yang M, Haider MS, Chi Y, Luxenhofer R, Taranets L…",
+   "revista": "Biomark Res",
+   "data": "2026-10-09T00:00:00+00:00",
+   "doi": "10.1186/s40364-026-01018-7",
+   "url": "https://doi.org/10.1186/s40364-026-01018-7",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "The NFIL3-MYC signaling axis: a novel therapeutic target and prognostic marker in high-risk multiple myeloma.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El eje de señalización NFIL3-MYC: una nueva diana terapéutica y marcador pronóstico en el mieloma múltiple de alto riesgo."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "A polidatina alivia a calcificação vascular através do eixo TP53/PI3K/AKT.",
+   "autores": "Feng S, Li S, Zhang C, Li S, Zhang L, Li M, Liu X, Xiu J.",
+   "revista": "Eur J Pharmacol",
+   "data": "2026-10-09T00:00:00+00:00",
+   "doi": "10.1016/j.ejphar.2026.179419",
+   "url": "https://doi.org/10.1016/j.ejphar.2026.179419",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Polydatin alleviates vascular calcification via the TP53/PI3K/AKT axis.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La polidatina alivia la calcificación vascular a través del eje TP53/PI3K/AKT."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Vias Moleculares Distintas Conduzindo Neoplasias Neuroendócrinas Tímicas e Pulmonares: Órgão de Origem Define Identidade Molecular e Rende CD44 como um Marcador de Tumores Neuroendócrinos Pulmonares.",
+   "autores": "Bohnenberger H, Küffer S, Qoku A, Bodemeyer J, Nause N, Häupl B, Reuter-Jessen K, Rosenthal T, Feldmann L, Ofner K…",
+   "revista": "Endocr Pathol",
+   "data": "2026-10-09T00:00:00+00:00",
+   "doi": "10.1007/s12022-026-09936-w",
+   "url": "https://doi.org/10.1007/s12022-026-09936-w",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Distinct Molecular Pathways Driving Thymic and Pulmonary Neuroendocrine Neoplasms: Organ of Origin Defines Molecular Identity and Yields CD44 as a Marker of Pulmonary Neuroendocrine Tumors.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Distintas vías moleculares que impulsan las neoplasias neuroendocrinas tímicas y pulmonares: el órgano de origen define la identidad molecular y produce CD44 como marcador de tumores neuroendocrinos pulmonares."
+    }
+   }
+  },
   {
    "tipo": "artigo",
    "titulo": "Preparação de centros de saúde primários para o manejo de picadas de cobra e desafios enfrentados pelos profissionais de saúde: um estudo de métodos mistos de um distrito selecionado, sul da Índia.",
@@ -576,7 +646,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "BRCA Mutation Carriers and Breast Implant-Associated Anaplastic Large-Cell Lymphoma: Accumulating Evidence, Proposed Mechanism, and Implications for Reconstructive Planning and Follow-Up.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "BRCA Mutation Carriers and Breast Implant-Associated Anaplastic Large-Cell Lymphoma: Accumulating Evidence, Proposed Mechanism, and Implications for Reconstructive Planning and Follow-Up."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -589,7 +664,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Frequent TP53 Mutations and Associated p53 Dysfunction Suggestive of Tumor Suppression Role in Complex Basal Cell Carcinomas.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Mutaciones frecuentes de TP53 y disfunción asociada de p53 que sugieren el papel de supresión tumoral en carcinomas basocelulares complejos."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -602,7 +682,12 @@
    "acesso_aberto": false,
    "tema": "Saúde",
    "titulo_original": "Myelodysplastic syndromes/neoplasms presenting with isolated thrombocytopenia: a poorly understood pathophysiology, difficult to diagnose, and challenging to treat entity.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Síndromes/neoplasias mielodisplásicas que se presentan con trombocitopenia aislada: una entidad de fisiopatología poco conocida, difícil de diagnosticar y difícil de tratar."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -615,7 +700,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Beyond 17p13.1: recurrent 17p11.2 breakpoints in <i>TP53</i>-altered acute myeloid leukemia.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Más allá de 17p13.1: puntos de corte recurrentes de 17p11.2 en la leucemia mieloide aguda alterada por <i>TP53</i>."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -628,7 +718,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Long-read sequencing and the boundary conditions for multi-hit reassurance in <i>TP53-</i>mutated myelodysplastic syndrome. Comment on: \"Long-read sequencing resolves <i>TP53</i> allelic status in myeloid neoplasms\".",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Secuenciación de lectura larga y las condiciones límite para la tranquilidad de múltiples impactos en <i>el</i> síndrome mielodisplásico mutado por TP53. Comentario en: “Long-read sequencing resolves <i>TP53</i> allelic status in myeloid neoplasms”."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -641,7 +736,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Universal Germline Genetic Testing after a Diagnosis of Cancer.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Pruebas genéticas universales de la línea germinal después de un diagnóstico de cáncer."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -654,7 +754,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Xeroderma Pigmentosum Monozygotic Twins: Same Mutation Divergent Clinical Outcomes.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Xeroderma pigmentosum Monozygotic Twins: Same Mutation Divergent Clinical Outcomes."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -667,7 +772,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "<i>RET</i> Variant Reclassification across Demographic Sub-Groups in a Large-Scale Clinical Population.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Reclasificación de variantes de <i>RET</i> entre subgrupos demográficos en una población clínica a gran escala."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -680,7 +790,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Current and future therapies for acute myeloblastic leukemia.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Terapias actuales y futuras para la leucemia mieloblástica aguda."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -693,7 +808,12 @@
    "acesso_aberto": false,
    "tema": "Saúde",
    "titulo_original": "EBV-HSA-RegDB: A database of regulatory interactions between Epstein-Barr virus and human miRNAs.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "EBV-HSA-RegDB: Una base de datos de interacciones reguladoras entre el virus de Epstein-Barr y los miARN humanos."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -706,7 +826,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Biomarkers as a Concept for Advanced Practice Registered Nurses in Oncology.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Biomarcadores como Concepto para Enfermeras Tituladas de Práctica Avanzada en Oncología."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -719,72 +844,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "In vitro correction of venom-induced coagulopathy in <i>Daboia russelii</i> envenomation demonstrated using tranexamic acid-modified rotational thromboelastometry.",
-   "traduzido": true
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "A composição do veneno da víbora ibérica (Vipera seoanei) do norte de Portugal revela uma variação limitada de sexo e tamanho.",
-   "autores": "Corga F, Lakušić M, Vitorino R, Martínez-Freiría F.",
-   "revista": "Toxicon",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1016/j.toxicon.2026.109320",
-   "url": "https://doi.org/10.1016/j.toxicon.2026.109320",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Venom composition of the Iberian adder (Vipera seoanei) from northern Portugal reveals limited sex and size variation.",
-   "traduzido": true
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Silenciamento direcionado ao núcleo da expressão de EPIC1 como uma estratégia epigenética para modular o microambiente imune tumoral e potencializar a imunoterapia contra o câncer.",
-   "autores": "Huang L, Xu R, Lin C, Liu M, Zhuo X, Zhao Z, Li R, Chen J, Xu X.",
-   "revista": "J Control Release",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1016/j.jconrel.2026.115441",
-   "url": "https://doi.org/10.1016/j.jconrel.2026.115441",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Nucleus-targeted silencing of EPIC1 expression as an epigenetic strategy to modulate tumor immune microenvironment and potentiate cancer immunotherapy.",
-   "traduzido": true
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "A complexidade cariotípica e o TP53 mutado estão associados a neoplasias mieloides com cromossomos em anel.",
-   "autores": "Santos TGD, Santos MFMD, Kishimoto RK, Borri D, Silveira CN, Rosa SEA, Cortes LGF, Campregher P, Velloso EDRP.",
-   "revista": "Hematol Transfus Cell Ther",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1016/j.htct.2026.108544",
-   "url": "https://doi.org/10.1016/j.htct.2026.108544",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Karyotypic complexity and mutated TP53 are associated with myeloid neoplasms with ring chromosomes.",
-   "traduzido": true
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Características Clínicas e Resultados de Neoplasias Mieloides Relacionadas à Terapia Após Terapia com Células T CAR.",
-   "autores": "Jain MD, Ali A, Roman Diaz J, Hamid S, Cheng P, Dahiya S, Sillito F, O'Reilly MA, Rejeski K, Subklewe M, Iacoboni G…",
-   "revista": "Blood Adv",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1182/bloodadvances.2026021831",
-   "url": "https://doi.org/10.1182/bloodadvances.2026021831",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Clinical Features and Outcomes of Therapy-Related Myeloid Neoplasms After CAR T-Cell Therapy.",
-   "traduzido": true
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Tendências temporais no envenenamento por animais peçonhentos: uma carga global de análise de doenças.",
-   "autores": "Lopes LCP.",
-   "revista": "Trop Doct",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1177/00494755261493670",
-   "url": "https://doi.org/10.1177/00494755261493670",
-   "acesso_aberto": false,
-   "tema": "Saúde",
-   "titulo_original": "Temporal trends in envenomation by venomous animals: A global burden of disease analysis.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Corrección in vitro de la coagulopatía inducida por veneno en el envenenamiento por <i>Daboia russelii</i> demostrado mediante tromboelastometría rotacional modificada con ácido tranexámico."
+    }
+   }
   }
  ],
  "fontes": [
@@ -805,7 +870,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "openai unleashes hundreds more math results upon a field already in shock": "2026-10-07T01:39:55.016805+00:00",
   "pesquisa detalha mecanismo que da energia rapida a celulas de defesa no inicio de infeccoes": "2026-10-07T08:53:39.271241+00:00",
   "enzima encontrada na raiz da cana aumenta em seis vezes a producao de acucar a partir do bagaco": "2026-10-07T08:53:39.271241+00:00",
   "estudo aponta como controlar falhas que prejudicam o desempenho das baterias de sodio": "2026-10-07T08:53:39.271241+00:00",
@@ -1012,6 +1076,7 @@
   "heres what scientists think about theranos a decade after it imploded": "2026-10-16T21:24:39.131630+00:00",
   "projeto da usp prepara profissionais do sus para impactos das mudancas climaticas sobre a saude da populacao": "2026-10-17T00:35:54.076349+00:00",
   "a crise ambiental vai muito alem do clima": "2026-10-17T00:35:54.076349+00:00",
-  "usp promove simposio sobre midias sociais e comportamento alimentar": "2026-10-17T00:35:54.076349+00:00"
+  "usp promove simposio sobre midias sociais e comportamento alimentar": "2026-10-17T00:35:54.076349+00:00",
+  "japan is launching a mission to marss largest moon phobos": "2026-10-17T05:42:00.661896+00:00"
  }
 }
