@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-17T17:20:17.470463+00:00",
+ "atualizado_em": "2026-10-17T19:33:26.212623+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -30,78 +30,103 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Projeto da USP prepara profissionais do SUS para impactos das mudanças climáticas sobre a saúde da população",
-   "resumo": "Iniciativa da Faculdade de Medicina de Bauru da USP integra ensino, serviço e comunidade para aproximar a academia das necessidades concretas dos territórios e do Sistema Único de Saúde",
-   "url": "https://jornal.usp.br/universidade/projeto-da-usp-prepara-profissionais-do-sus-para-impactos-das-mudancas-climaticas-sobre-a-saude-da-populacao/",
+   "titulo": "Fiocruz pra Você 2026 reforça importância da vacina como prevenção",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/fiocruz-pra-voce-2026-reforca-importancia-da-vacina-como-prevencao",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-16T13:17:38+00:00",
+   "tema": "Saúde",
+   "relevancia": 11,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/WhatsApp%20Image%202026-10-17%20at%2014.56.05.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 100
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Fiocruz pra Você 2026 reinforces the importance of the vaccine as prevention"
+    },
+    "es": {
+     "titulo": "Fiocruz pra Você 2026 refuerza la importancia de la vacuna como prevención"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "TV 3.0 amplia possibilidades para o jornalismo imersivo",
+   "resumo": "Pesquisadores da USP exploram a nova tecnologia com o objetivo de criar formas mais expressivas de interação com o público",
+   "url": "https://jornal.usp.br/cultura/tv-3-0-amplia-possibilidades-para-o-jornalismo-imersivo/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-16T21:23:28+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261016_00_fmbru_projeto_clima.jpg",
+   "data": "2026-10-16T18:18:22+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261016_realidadevirtual.jpg",
    "foco": {
     "x": 100,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "USP project prepares sus professionals for impacts of climate change on the health of the population",
-     "resumo": "Initiative of the Bauru School of Medicine of USP integrates teaching, service and community to bring academia closer to the concrete needs of the territories and the Unified Health System"
+     "titulo": "TV 3.0 expands possibilities for immersive journalism",
+     "resumo": "Researchers at USP explore the new technology with the aim of creating more expressive ways of interacting with the public"
     },
     "es": {
-     "titulo": "El proyecto USP prepara a los profesionales del sus para los impactos del cambio climático en la salud de la población",
-     "resumo": "Iniciativa de la Escuela de Medicina Bauru de la USP integra enseñanza, servicio y comunidad para acercar la academia a las necesidades concretas de los territorios y del Sistema Único de Salud"
+     "titulo": "TV 3.0 amplía las posibilidades del periodismo inmersivo",
+     "resumo": "Investigadores de la USP exploran la nueva tecnología con el objetivo de crear formas más expresivas de interactuar con el público"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "A crise ambiental vai muito além do clima",
-   "resumo": "Por Augusto Hauber Gameiro, professor da Faculdade de Medicina Veterinária e Zootecnia da USP",
-   "url": "https://jornal.usp.br/artigos/a-crise-ambiental-vai-muito-alem-do-clima/",
+   "titulo": "Quem estará ao nosso lado na velhice?",
+   "resumo": "Pesquisa que investiga redes de suporte e vínculos sociais, familiares e afetivos de pessoas idosas prioriza participantes LGBTQIAPN+, mas também aceita pessoas que não pertencem a essa comunidade",
+   "url": "https://jornal.usp.br/radio-usp/quem-estara-ao-nosso-lado-na-velhice-pesquisa-investiga-redes-de-suporte-e-as-diferentes-formas-de-envelhecer/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-16T23:08:10+00:00",
-   "tema": "Saúde",
-   "relevancia": 9,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/12/20251212_Augusto-Hauber-Gameiro.jpg",
+   "data": "2026-10-16T17:10:31+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/07/20260728_olhar.jpg",
    "foco": {
-    "x": 66,
+    "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "The environmental crisis goes far beyond the climate",
-     "resumo": "By Augusto Hauber Gameiro, professor at USP's School of Veterinary Medicine and Animal Science"
+     "titulo": "Who will be by our side in old age?",
+     "resumo": "Research that investigates support networks and social, family and emotional bonds of older people prioritizes LGBTQIAPN+ participants, but also accepts people who do not belong to this community"
     },
     "es": {
-     "titulo": "La crisis ambiental va mucho más allá del clima",
-     "resumo": "Por Augusto Hauber Gameiro, profesor de la Facultad de Veterinaria y Ciencia Animal de la USP"
+     "titulo": "¿Quién estará a nuestro lado en la vejez?",
+     "resumo": "La investigación que investiga las redes de apoyo y los vínculos sociales, familiares y emocionales de las personas mayores prioriza a los participantes LGBTQIAPN +, pero también acepta personas que no pertenecen a esta comunidad"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "USP promove simpósio sobre mídias sociais e comportamento alimentar",
-   "resumo": "Evento será no Anfiteatro da Bioquímica, Prédio Central da FMRP",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/usp-promove-simposio-sobre-midias-sociais-e-comportamento-alimentar/",
+   "titulo": "Rejeição da proposta do Antropoceno gera questionamentos sobre processo científico",
+   "resumo": "Pesquisadores pedem transparência sobre a votação que rejeitou a criação de uma nova época geológica, marcada pelos impactos das atividades humanas sobre o planeta",
+   "url": "https://jornal.usp.br/radio-usp/rejeicao-da-proposta-do-antropoceno-gera-questionamentos-sobre-processo-cientifico/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-16T19:54:48+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/03/comportamento-alimentar.png",
+   "data": "2026-10-16T15:01:22+00:00",
+   "tema": "Espaço",
+   "relevancia": 6,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261015_antropoceno.jpg",
    "foco": {
-    "inteira": true
+    "x": 50,
+    "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "USP promotes symposium on social media and eating behavior",
-     "resumo": "Event will be at the Biochemistry Amphitheater, FMRP Central Building"
+     "titulo": "Rejection of the Anthropocene proposal raises questions about the scientific process",
+     "resumo": "Researchers call for transparency on the vote that rejected the creation of a new geological epoch, marked by the impacts of human activities on the planet"
     },
     "es": {
-     "titulo": "La USP promueve un simposio sobre las redes sociales y el comportamiento alimentario",
-     "resumo": "El evento será en el Anfiteatro de Bioquímica, Edificio Central FMRP"
+     "titulo": "El rechazo a la propuesta del Antropoceno plantea interrogantes sobre el proceso científico",
+     "resumo": "Los investigadores piden transparencia en la votación que rechazó la creación de una nueva época geológica, marcada por los impactos de las actividades humanas en el planeta"
     }
    }
   },
@@ -129,6 +154,31 @@
     }
    },
    "resumo_original": "Scientists have discovered how to turn a protein that normally fuels cancer growth into a weapon against it. By activating PPARD in immune cells, researchers made them better at burning fat and attacking tumors, slowing or stopping cancer…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Fones de ouvido com cancelamento de ruído evitam vômitos após a cirurgia",
+   "resumo": "Náuseas e vômitos são comuns após a cirurgia, o que pode estar parcialmente relacionado aos ruídos aos quais os pacientes são expostos, mesmo sob anestesia geral. Usar fones de ouvido com cancelamento de ruído enquanto estiver na mesa de operação reduz o risco",
+   "url": "https://www.newscientist.com/article/2594276-noise-cancelling-headphones-prevent-vomiting-after-surgery/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-17T18:30:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 5,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316882731.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "titulo_original": "Noise-cancelling headphones prevent vomiting after surgery",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los auriculares con cancelación de ruido evitan el vómito después de la cirugía",
+     "resumo": "Las náuseas y los vómitos son comunes después de la cirugía, lo que puede estar relacionado en parte con los ruidos a los que están expuestos los pacientes, incluso bajo anestesia general. El uso de auriculares con cancelación de ruido mientras está en la mesa de operaciones reduce el riesgo"
+    }
+   },
+   "resumo_original": "Nausea and vomiting are common after surgery, which may be partly related to the noises patients are exposed to, even under general anaesthetic. Wearing noise-cancelling headphones while on the operating table reduces the risk"
   },
   {
    "tipo": "noticia",
@@ -182,31 +232,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Unicamp recebe escola internacional de ciência avançada dedicada à pesquisa sobre obesidade",
-   "resumo": "Evento financiado pela Fapesp reúne estudantes de 13 países e aborda fatores sociais e novas estratégias de prevenção e tratamento",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/16/unicamp-recebe-escola-internacional-de-ciencia-avancada-dedicada-a-pesquisa-sobre-obesidade/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-16T18:10:04+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261016_Obesidade_mona-Capa.jpg",
-   "foco": {
-    "inteira": true
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Unicamp hosts international advanced science school dedicated to obesity research",
-     "resumo": "FAPESP-funded event brings together students from 13 countries and addresses social factors and new prevention and treatment strategies"
-    },
-    "es": {
-     "titulo": "La Unicamp acoge una escuela internacional de ciencias avanzadas dedicada a la investigación sobre la obesidad",
-     "resumo": "El evento financiado por la FAPESP reúne a estudiantes de 13 países y aborda los factores sociales y las nuevas estrategias de prevención y tratamiento"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "O Telescópio Espacial Romano da NASA supera as expectativas em quase 30%",
    "resumo": "O Telescópio Espacial Nancy Grace Roman da NASA superou as expectativas depois que os engenheiros fizeram ajustes incrivelmente pequenos para aprimorar sua visão do universo. Ao mover um espelho com apenas um décimo sexto da largura de um cabelo humano, a equipe ajudou a trazer...",
    "url": "https://www.sciencedaily.com/releases/2026/10/261016070630.htm",
@@ -257,6 +282,31 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Unicamp recebe escola internacional de ciência avançada dedicada à pesquisa sobre obesidade",
+   "resumo": "Evento financiado pela Fapesp reúne estudantes de 13 países e aborda fatores sociais e novas estratégias de prevenção e tratamento",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/16/unicamp-recebe-escola-internacional-de-ciencia-avancada-dedicada-a-pesquisa-sobre-obesidade/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-16T18:10:04+00:00",
+   "tema": "Saúde",
+   "relevancia": 3,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261016_Obesidade_mona-Capa.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Unicamp hosts international advanced science school dedicated to obesity research",
+     "resumo": "FAPESP-funded event brings together students from 13 countries and addresses social factors and new prevention and treatment strategies"
+    },
+    "es": {
+     "titulo": "La Unicamp acoge una escuela internacional de ciencias avanzadas dedicada a la investigación sobre la obesidad",
+     "resumo": "El evento financiado por la FAPESP reúne a estudiantes de 13 países y aborda los factores sociales y las nuevas estrategias de prevención y tratamiento"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "O Japão está lançando uma missão à maior lua de Marte, Fobos",
    "resumo": "A espaçonave Martian Moons eXploration, com lançamento previsto para 20 de outubro, trará amostras que devem resolver um mistério lunar que atormenta cientistas há mais de um século",
    "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -282,31 +332,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Os cientistas acabaram de votar para abolir os segundos bissextos",
-   "resumo": "Desde 1972, os oficiais adicionaram 27 segundos bissextos ao relógio universal, mas em uma reunião esta semana na França, eles decidiram abandonar a prática",
-   "url": "https://www.newscientist.com/article/2594285-scientists-have-just-voted-to-abolish-leap-seconds/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-16T13:59:18+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316883520.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists have just voted to abolish leap seconds",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos acaban de votar para abolir los segundos intercalares",
-     "resumo": "Desde 1972, los funcionarios han añadido 27 segundos bisiestos al reloj universal, pero en una reunión esta semana en Francia han decidido abandonar la práctica"
-    }
-   },
-   "resumo_original": "Since 1972, officials have added 27 leap seconds to the universal clock, but in a meeting this week in France they have decided to abandon the practice"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Nobel de Medicina reconhece criadores da optogenética",
    "resumo": "Pesquisadores do Centro de Pesquisa em Obesidade e Comorbidades da Unicamp já utilizam dados do método em suas pesquisas",
    "url": "https://jornal.unicamp.br/noticias/2026/10/13/nobel-de-medicina-reconhece-criadores-da-optogenetica/",
@@ -328,30 +353,6 @@
     "es": {
      "titulo": "El Premio Nobel de Medicina reconoce a los creadores de la optogenética",
      "resumo": "Investigadores del Centro de Investigación en Obesidad y Comorbilidades de la Unicamp ya utilizan los datos del método en su investigación"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Fiocruz pra Você vai oferecer vacinação a crianças e adultos",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/fiocruz-pra-voce-vai-oferecer-vacinacao-criancas-e-adultos",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-13T14:33:19+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/fpv26.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Fiocruz for You will offer vaccination to children and adults"
-    },
-    "es": {
-     "titulo": "Fiocruz for You ofrecerá vacunación a niños y adultos"
     }
    }
   }
@@ -1020,6 +1021,11 @@
   "plants move to get away from their decaying brethren": "2026-10-17T14:17:04.272360+00:00",
   "nasas roman space telescope exceeds expectations by nearly 30": "2026-10-17T14:17:04.272360+00:00",
   "this bird flies thousands of miles but its wings have a catch": "2026-10-17T17:20:17.470463+00:00",
-  "scientists have just voted to abolish leap seconds": "2026-10-17T17:20:17.470463+00:00"
+  "scientists have just voted to abolish leap seconds": "2026-10-17T17:20:17.470463+00:00",
+  "fiocruz pra voce 2026 reforca importancia da vacina como prevencao": "2026-10-17T19:33:26.212623+00:00",
+  "tv 3 0 amplia possibilidades para o jornalismo imersivo": "2026-10-17T19:33:26.212623+00:00",
+  "quem estara ao nosso lado na velhice": "2026-10-17T19:33:26.212623+00:00",
+  "rejeicao da proposta do antropoceno gera questionamentos sobre processo cientifico": "2026-10-17T19:33:26.212623+00:00",
+  "noise cancelling headphones prevent vomiting after surgery": "2026-10-17T19:33:26.212623+00:00"
  }
 }
