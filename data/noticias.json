@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-17T19:33:26.212623+00:00",
+ "atualizado_em": "2026-10-17T22:27:25.951988+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -49,6 +49,30 @@
     },
     "es": {
      "titulo": "Fiocruz pra Você 2026 refuerza la importancia de la vacuna como prevención"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Castelo da Fiocruz fica lilás para o Dia Mundial de Luto e Memória às Mulheres Vítimas de Feminicídio",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/castelo-da-fiocruz-fica-lilas-para-o-dia-mundial-de-luto-e-memoria-mulheres-vitimas-de-feminicidio",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-16T13:14:50+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/DJI_0928.png",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Fiocruz Castle is lilac for the World Day of Mourning and Remembrance for Women Victims of Femicide"
+    },
+    "es": {
+     "titulo": "El castillo de Fiocruz es lila para el Día Mundial de Luto y Recuerdo de las Mujeres Víctimas de Femicidio"
     }
    }
   },
@@ -827,11 +851,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "superacao e esperanca como a ginastica para todos transformou a vida de mulheres com cancer": "2026-10-07T22:05:39.384056+00:00",
-  "nobel prizes 2026 brain switches ghost particle hunter and the chemistry of life": "2026-10-07T22:05:39.384056+00:00",
-  "194 year old tortoise has exceptional dna repair systems that fight off ageing": "2026-10-07T22:05:39.384056+00:00",
-  "scientists unlock the longevity secrets of 194 year old jonathan the giant tortoise": "2026-10-07T22:05:39.384056+00:00",
-  "twisteddoodles i made an ai version of you": "2026-10-07T22:05:39.384056+00:00",
   "nasas webb finds signs of mars sized worlds smashing together": "2026-10-08T02:04:32.593155+00:00",
   "seca e calor extremos do ultimo el nino antecipam novo normal nas florestas tropicais": "2026-10-08T09:09:52.985540+00:00",
   "estudo propoe integrar inteligencia artificial e processos naturais para restaurar florestas": "2026-10-08T09:09:52.985540+00:00",
@@ -1026,6 +1045,7 @@
   "tv 3 0 amplia possibilidades para o jornalismo imersivo": "2026-10-17T19:33:26.212623+00:00",
   "quem estara ao nosso lado na velhice": "2026-10-17T19:33:26.212623+00:00",
   "rejeicao da proposta do antropoceno gera questionamentos sobre processo cientifico": "2026-10-17T19:33:26.212623+00:00",
-  "noise cancelling headphones prevent vomiting after surgery": "2026-10-17T19:33:26.212623+00:00"
+  "noise cancelling headphones prevent vomiting after surgery": "2026-10-17T19:33:26.212623+00:00",
+  "castelo da fiocruz fica lilas para o dia mundial de luto e memoria as mulheres vitimas de feminicidio": "2026-10-17T22:27:25.951988+00:00"
  }
 }
