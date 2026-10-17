@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-17T05:42:00.661896+00:00",
+ "atualizado_em": "2026-10-17T10:58:13.962683+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -258,52 +258,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "IceCube acabou de ganhar um prêmio Nobel. Proteger projetos de física de astropartículas com o mesmo potencial",
-   "resumo": "Construir o experimento de neutrinos ganhador do prêmio Nobel era um grande risco. Para continuar seu sucesso, os cientistas — e financiadores — precisam permanecer ousados.",
-   "url": "https://www.nature.com/articles/d41586-026-03308-4",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-16T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "IceCube just won a Nobel prize. Protect astroparticle physics projects with the same potential",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "IceCube acaba de ganar un premio Nobel. Proteger los proyectos de física de astropartículas con el mismo potencial",
-     "resumo": "Construir el experimento de neutrinos ganador del Premio Nobel era un gran riesgo. Para continuar con su éxito, los científicos, y los financiadores, deben mantenerse audaces."
-    }
-   },
-   "resumo_original": "Building the Nobel-prizewinning neutrino experiment was a big risk. To continue its success, scientists — and funders — need to stay bold."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "NASA captura ondas estranhas acima do furacão Simon",
-   "resumo": "Quando o furacão Simon desencadeou ventos destrutivos e inundações ao longo da costa do México, os satélites da NASA capturaram uma visão extraordinária: ondas atmosféricas maciças ondulando acima da tempestade. As raras imagens revelam o quão poderosos os furacões podem ser...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261015073207.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-16T05:50:44+00:00",
-   "tema": "Espaço",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/hurricane-simon.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "NASA captures strange waves high above Hurricane Simon",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La NASA captura extrañas olas muy por encima del huracán Simon",
-     "resumo": "Mientras el huracán Simon desataba vientos destructivos e inundaciones a lo largo de la costa de México, los satélites de la NASA capturaron una vista extraordinaria: olas atmosféricas masivas ondulando por encima de la tormenta. Las raras imágenes revelan lo poderosos que pueden ser los huracanes..."
-    }
-   },
-   "resumo_original": "As Hurricane Simon unleashed destructive winds and flooding along Mexico’s coast, NASA satellites captured an extraordinary sight: massive atmospheric waves rippling high above the storm. The rare images reveal how powerful hurricanes can…"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Veja o que os cientistas pensam sobre a Theranos uma década depois de implodir",
    "resumo": "Um documentário viral faz com que todos falem sobre a startup fraudulenta de testes de sangue de Elizabeth Holmes novamente, mas os cientistas nunca pararam",
    "url": "https://www.scientificamerican.com/article/heres-what-scientists-think-about-theranos-a-decade-after-it-imploded/",
@@ -376,6 +330,56 @@
     }
    },
    "resumo_original": "An early start doesn’t necessarily mean disaster"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "NASA captura ondas estranhas acima do furacão Simon",
+   "resumo": "Quando o furacão Simon desencadeou ventos destrutivos e inundações ao longo da costa do México, os satélites da NASA capturaram uma visão extraordinária: ondas atmosféricas maciças ondulando acima da tempestade. As raras imagens revelam o quão poderosos os furacões podem ser...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261015073207.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-16T05:50:44+00:00",
+   "tema": "Espaço",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/hurricane-simon.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "NASA captures strange waves high above Hurricane Simon",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La NASA captura extrañas olas muy por encima del huracán Simon",
+     "resumo": "Mientras el huracán Simon desataba vientos destructivos e inundaciones a lo largo de la costa de México, los satélites de la NASA capturaron una vista extraordinaria: olas atmosféricas masivas ondulando por encima de la tormenta. Las raras imágenes revelan lo poderosos que pueden ser los huracanes..."
+    }
+   },
+   "resumo_original": "As Hurricane Simon unleashed destructive winds and flooding along Mexico’s coast, NASA satellites captured an extraordinary sight: massive atmospheric waves rippling high above the storm. The rare images reveal how powerful hurricanes can…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas descobrem como o exercício reverte o envelhecimento muscular",
+   "resumo": "Os cientistas descobriram um mecanismo biológico oculto que ajuda a explicar como o exercício pode reverter alguns dos danos causados pelo envelhecimento muscular. A chave é um gene chamado DEAF1, que se torna hiperativo com a idade e interfere com o…",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261015003550.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-16T00:41:45+00:00",
+   "tema": "Genética",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/body-rejuvenation-strength-boost.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists discover how exercise reverses muscle aging",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos descubren cómo el ejercicio revierte el envejecimiento muscular",
+     "resumo": "Los científicos han descubierto un mecanismo biológico oculto que ayuda a explicar cómo el ejercicio puede revertir parte del daño causado por el envejecimiento muscular. La clave es un gen llamado DEAF1, que se vuelve hiperactivo con la edad e interfiere con el..."
+    }
+   },
+   "resumo_original": "Scientists have uncovered a hidden biological mechanism that helps explain how exercise can reverse some of the damage caused by muscle aging. The key is a gene called DEAF1, which becomes overactive with age and interferes with the…"
   },
   {
    "tipo": "noticia",
@@ -867,15 +871,10 @@
   "Europe PMC"
  ],
  "erros": [
+  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "pesquisa detalha mecanismo que da energia rapida a celulas de defesa no inicio de infeccoes": "2026-10-07T08:53:39.271241+00:00",
-  "enzima encontrada na raiz da cana aumenta em seis vezes a producao de acucar a partir do bagaco": "2026-10-07T08:53:39.271241+00:00",
-  "estudo aponta como controlar falhas que prejudicam o desempenho das baterias de sodio": "2026-10-07T08:53:39.271241+00:00",
-  "2026 nobel prize in physics awarded to francis halzen for discovery of high energy neutrinos": "2026-10-07T08:53:39.271241+00:00",
-  "a new way to fight gum disease without wiping out good bacteria": "2026-10-07T08:53:39.271241+00:00",
-  "shoes may change the structure of our ankle bones": "2026-10-07T08:53:39.271241+00:00",
   "brazilian biologist who stressed snakes until they struck wins ig nobel": "2026-10-07T16:40:28.340133+00:00",
   "el nino influencia primavera com chuvas e temperaturas contrastantes no brasil": "2026-10-07T16:40:28.340133+00:00",
   "cannabis e saude mental promessas e lacunas nas evidencias": "2026-10-07T16:40:28.340133+00:00",
