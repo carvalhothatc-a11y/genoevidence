@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-16T21:24:39.131630+00:00",
+ "atualizado_em": "2026-10-17T00:35:54.076349+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -30,6 +30,32 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Projeto da USP prepara profissionais do SUS para impactos das mudanças climáticas sobre a saúde da população",
+   "resumo": "Iniciativa da Faculdade de Medicina de Bauru da USP integra ensino, serviço e comunidade para aproximar a academia das necessidades concretas dos territórios e do Sistema Único de Saúde",
+   "url": "https://jornal.usp.br/universidade/projeto-da-usp-prepara-profissionais-do-sus-para-impactos-das-mudancas-climaticas-sobre-a-saude-da-populacao/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-16T21:23:28+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261016_00_fmbru_projeto_clima.jpg",
+   "foco": {
+    "x": 100,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "USP project prepares sus professionals for impacts of climate change on the health of the population",
+     "resumo": "Initiative of the Bauru School of Medicine of USP integrates teaching, service and community to bring academia closer to the concrete needs of the territories and the Unified Health System"
+    },
+    "es": {
+     "titulo": "El proyecto USP prepara a los profesionales del sus para los impactos del cambio climático en la salud de la población",
+     "resumo": "Iniciativa de la Escuela de Medicina Bauru de la USP integra enseñanza, servicio y comunidad para acercar la academia a las necesidades concretas de los territorios y del Sistema Único de Salud"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Unicamp recebe escola internacional de ciência avançada dedicada à pesquisa sobre obesidade",
    "resumo": "Evento financiado pela Fapesp reúne estudantes de 13 países e aborda fatores sociais e novas estratégias de prevenção e tratamento",
    "url": "https://jornal.unicamp.br/noticias/2026/10/16/unicamp-recebe-escola-internacional-de-ciencia-avancada-dedicada-a-pesquisa-sobre-obesidade/",
@@ -50,6 +76,32 @@
     "es": {
      "titulo": "La Unicamp acoge una escuela internacional de ciencias avanzadas dedicada a la investigación sobre la obesidad",
      "resumo": "El evento financiado por la FAPESP reúne a estudiantes de 13 países y aborda los factores sociales y las nuevas estrategias de prevención y tratamiento"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A crise ambiental vai muito além do clima",
+   "resumo": "Por Augusto Hauber Gameiro, professor da Faculdade de Medicina Veterinária e Zootecnia da USP",
+   "url": "https://jornal.usp.br/artigos/a-crise-ambiental-vai-muito-alem-do-clima/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-16T23:08:10+00:00",
+   "tema": "Saúde",
+   "relevancia": 9,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/12/20251212_Augusto-Hauber-Gameiro.jpg",
+   "foco": {
+    "x": 66,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "The environmental crisis goes far beyond the climate",
+     "resumo": "By Augusto Hauber Gameiro, professor at USP's School of Veterinary Medicine and Animal Science"
+    },
+    "es": {
+     "titulo": "La crisis ambiental va mucho más allá del clima",
+     "resumo": "Por Augusto Hauber Gameiro, profesor de la Facultad de Veterinaria y Ciencia Animal de la USP"
     }
    }
   },
@@ -80,83 +132,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Nas ondas do autoritarismo: como o rádio foi instrumento de disputa política no Brasil",
-   "resumo": "Pesquisa da USP mostra como a radiodifusão foi mobilizada pelo governo Vargas na propaganda política e na aproximação diplomática, primeiro com regimes totalitários europeus e, depois, com os EUA",
-   "url": "https://jornal.usp.br/ciencias/nas-ondas-do-autoritarismo-como-o-radio-foi-instrumento-de-disputa-politica-no-brasil/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-16T10:10:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261014_radioantigo.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "In the waves of authoritarianism: how radio was an instrument of political dispute in Brazil",
-     "resumo": "USP research shows how broadcasting was mobilized by the Vargas government in political propaganda and diplomatic rapprochement, first with European totalitarian regimes and then with the US"
-    },
-    "es": {
-     "titulo": "En las olas del autoritarismo: cómo la radio fue un instrumento de disputa política en Brasil",
-     "resumo": "La investigación de la USP muestra cómo la radiodifusión fue movilizada por el gobierno de Vargas en propaganda política y acercamiento diplomático, primero con los regímenes totalitarios europeos y luego con Estados Unidos"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Redes sociais ampliam a desinformação científica e desafiam a credibilidade da ciência",
-   "resumo": "Luli Radfahrer explica como os algoritmos favorecem conteúdos sensacionalistas e defende medidas para conter a circulação de informações falsas e proteger a saúde pública",
-   "url": "https://jornal.usp.br/radio-usp/redes-sociais-ampliam-a-desinformacao-cientifica-e-desafiam-a-credibilidade-da-ciencia/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-16T12:00:19+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/03/pasta-dos-20230313_luli2-.jpg",
-   "foco": {
-    "inteira": true
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Social media amplifies scientific misinformation and challenges the credibility of science",
-     "resumo": "Luli Radfahrer explains how algorithms favor sensationalized content and advocates for measures to curb the circulation of false information and protect public health"
-    },
-    "es": {
-     "titulo": "Las redes sociales amplifican la desinformación científica y desafían la credibilidad de la ciencia",
-     "resumo": "Luli Radfahrer explica cómo los algoritmos favorecen el contenido sensacionalista y aboga por medidas para frenar la circulación de información falsa y proteger la salud pública"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Diagnóstico tardio de doenças ginecológicas afeta qualidade de vida e pode comprometer saúde das mulheres",
-   "resumo": "Endometriose atinge cerca de 190 milhões de mulheres no mundo; sintomas normalizados de cólicas menstruais dificultam a identificação precoce da doença",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/diagnostico-tardio-de-doencas-ginecologicas-afeta-qualidade-de-vida-e-pode-comprometer-saude-das-mulheres/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-16T12:00:19+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/05/20260513_utero.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Late diagnosis of gynecological diseases affects quality of life and can compromise women's health",
-     "resumo": "Endometriosis affects about 190 million women worldwide; normalized symptoms of menstrual cramps make it difficult to identify the disease early"
-    },
-    "es": {
-     "titulo": "El diagnóstico tardío de enfermedades ginecológicas afecta la calidad de vida y puede comprometer la salud de las mujeres",
-     "resumo": "La endometriosis afecta a unos 190 millones de mujeres en todo el mundo; los síntomas normalizados de los cólicos menstruales dificultan la identificación temprana de la enfermedad"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "VÍDEO | Cápsula prolonga vida útil de fungo usado como bioinseticida",
    "resumo": "Equipe do Centro de Manejo Sustentável de Pragas, Doenças e Plantas Daninhas criou microesferas que combinam um derivado de celulose a partículas de alumínio e atuam como casca protetora do Beauveria bassiana . Ela garante liberação…",
    "url": "https://www.youtube.com/watch?v=BgGvujci6Wc",
@@ -179,45 +154,78 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Explorando o Universo a partir da sala de aula",
-   "resumo": "Oficina gratuita para professores do ensino médio, promovida pelo ICTP-SAIFR em parceria com o Observatório Vera Rubin, está com inscrições abertas até 26 de outubro",
-   "url": "https://agencia.fapesp.br/explorando-o-universo-a-partir-da-sala-de-aula/59405",
+   "titulo": "Acordo amplia presença paulista no maior levantamento astronômico da história",
+   "resumo": "Parceria da FAPESP com o consórcio norte-americano Aura garante a 60 pesquisadores do Estado acesso integral aos dados do Observatório Vera Rubin, em operação no Chile",
+   "url": "https://agencia.fapesp.br/acordo-amplia-presenca-paulista-no-maior-levantamento-astronomico-da-historia/59407",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-16T21:24:39.131630+00:00",
+   "data": "2026-10-17T00:35:54.076349+00:00",
    "tema": "Espaço",
    "relevancia": 7,
-   "imagem": "",
+   "imagem": "https://agencia.fapesp.br/files/post/59407.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
    "i18n": {
     "en": {
-     "titulo": "Exploring the Universe from the Classroom",
-     "resumo": "Free workshop for high school teachers, promoted by ICTP-SAIFR in partnership with the Vera Rubin Observatory, is open until October 26"
+     "titulo": "Agreement expands São Paulo presence in the largest astronomical survey in history",
+     "resumo": "FAPESP's partnership with the North American consortium Aura guarantees 60 researchers from the State full access to data from the Vera Rubin Observatory, in operation in Chile"
     },
     "es": {
-     "titulo": "Explorar el universo desde el aula",
-     "resumo": "El taller gratuito para profesores de bachillerato, promovido por el ICTP-SAIFR en colaboración con el Observatorio Vera Rubin, está abierto hasta el 26 de octubre"
+     "titulo": "Acuerdo amplía la presencia de São Paulo en el mayor sondeo astronómico de la historia",
+     "resumo": "La alianza de la FAPESP con el consorcio norteamericano Aura garantiza a 60 investigadores del Estado el pleno acceso a los datos del Observatorio Vera Rubin, en funcionamiento en Chile"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Proteção radiológica com ênfase no uso, manuseio e preparo de fontes radioativas não seladas",
-   "resumo": "Aulas presenciais serão ministradas no Centro de Energia Nuclear na Agricultura, no campus Luiz de Queiroz, em Piracicaba",
-   "url": "https://agencia.fapesp.br/protecao-radiologica-com-enfase-no-uso-manuseio-e-preparo-de-fontes-radioativas-nao-seladas/59399",
+   "titulo": "Regeneração natural de florestas ajuda a conter o avanço de espécies invasoras",
+   "resumo": "Estudo internacional revela que o próprio amadurecimento das matas secundárias atua como uma solução natural para reduzir a densidade de árvores não nativas e recuperar ecossistemas",
+   "url": "https://agencia.fapesp.br/regeneracao-natural-de-florestas-ajuda-a-conter-o-avanco-de-especies-invasoras/59411",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-16T21:24:39.131630+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-17T00:35:54.076349+00:00",
+   "tema": "Meio ambiente",
    "relevancia": 7,
-   "imagem": "",
+   "imagem": "https://agencia.fapesp.br/files/post/59411.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
    "i18n": {
     "en": {
-     "titulo": "Radiological protection with emphasis on the use, handling and preparation of unsealed radioactive sources",
-     "resumo": "In-person classes will be held at the Center for Nuclear Energy in Agriculture, at the Luiz de Queiroz campus, in Piracicaba"
+     "titulo": "Natural forest regeneration helps stem the advance of invasive species",
+     "resumo": "International study reveals that the maturation of secondary forests acts as a natural solution to reduce the density of non-native trees and restore ecosystems"
     },
     "es": {
-     "titulo": "Protección radiológica con énfasis en el uso, manejo y preparación de fuentes radiactivas no selladas",
-     "resumo": "Las clases presenciales se impartirán en el Centro de Energía Nuclear en Agricultura, en el campus Luiz de Queiroz, en Piracicaba"
+     "titulo": "La regeneración natural de los bosques ayuda a frenar el avance de las especies invasoras",
+     "resumo": "Un estudio internacional revela que la maduración de los bosques secundarios actúa como una solución natural para reducir la densidad de árboles no autóctonos y restaurar los ecosistemas"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "USP promove simpósio sobre mídias sociais e comportamento alimentar",
+   "resumo": "Evento será no Anfiteatro da Bioquímica, Prédio Central da FMRP",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/usp-promove-simposio-sobre-midias-sociais-e-comportamento-alimentar/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-16T19:54:48+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/03/comportamento-alimentar.png",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "USP promotes symposium on social media and eating behavior",
+     "resumo": "Event will be at the Biochemistry Amphitheater, FMRP Central Building"
+    },
+    "es": {
+     "titulo": "La USP promueve un simposio sobre las redes sociales y el comportamiento alimentario",
+     "resumo": "El evento será en el Anfiteatro de Bioquímica, Edificio Central FMRP"
     }
    }
   },
@@ -274,27 +282,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "IceCube acabou de ganhar um prêmio Nobel. Proteger projetos de física de astropartículas com o mesmo potencial",
-   "resumo": "Construir o experimento de neutrinos ganhador do prêmio Nobel era um grande risco. Para continuar seu sucesso, os cientistas — e financiadores — precisam permanecer ousados.",
-   "url": "https://www.nature.com/articles/d41586-026-03308-4",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-16T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "",
-   "titulo_original": "IceCube just won a Nobel prize. Protect astroparticle physics projects with the same potential",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "IceCube acaba de ganar un premio Nobel. Proteger los proyectos de física de astropartículas con el mismo potencial",
-     "resumo": "Construir el experimento de neutrinos ganador del Premio Nobel era un gran riesgo. Para continuar con su éxito, los científicos, y los financiadores, deben mantenerse audaces."
-    }
-   },
-   "resumo_original": "Building the Nobel-prizewinning neutrino experiment was a big risk. To continue its success, scientists — and funders — need to stay bold."
-  },
-  {
-   "tipo": "noticia",
    "titulo": "A física será o próximo campo a ser virado de cabeça para baixo pela IA?",
    "resumo": "A IA deu grandes passos na programação de computadores e na matemática – a física pode ser a próxima",
    "url": "https://www.newscientist.com/article/2593273-will-physics-be-the-next-field-to-get-turned-upside-down-by-ai/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -317,6 +304,27 @@
     }
    },
    "resumo_original": "AI has taken huge strides in computer programming and mathematics – physics could be next"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "IceCube acabou de ganhar um prêmio Nobel. Proteger projetos de física de astropartículas com o mesmo potencial",
+   "resumo": "Construir o experimento de neutrinos ganhador do prêmio Nobel era um grande risco. Para continuar seu sucesso, os cientistas — e financiadores — precisam permanecer ousados.",
+   "url": "https://www.nature.com/articles/d41586-026-03308-4",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-16T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "IceCube just won a Nobel prize. Protect astroparticle physics projects with the same potential",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "IceCube acaba de ganar un premio Nobel. Proteger los proyectos de física de astropartículas con el mismo potencial",
+     "resumo": "Construir el experimento de neutrinos ganador del Premio Nobel era un gran riesgo. Para continuar con su éxito, los científicos, y los financiadores, deben mantenerse audaces."
+    }
+   },
+   "resumo_original": "Building the Nobel-prizewinning neutrino experiment was a big risk. To continue its success, scientists — and funders — need to stay bold."
   },
   {
    "tipo": "noticia",
@@ -406,7 +414,12 @@
    "acesso_aberto": false,
    "tema": "Saúde",
    "titulo_original": "Preparedness of primary health centres for snakebite management and challenges faced by healthcare providers: a mixed-methods study from a selected district, southern India.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Preparación de los centros de salud primaria para el manejo de mordeduras de serpiente y los desafíos que enfrentan los proveedores de atención médica: un estudio de métodos mixtos de un distrito seleccionado, al sur de la India."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -419,7 +432,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Multi‑target mechanisms of paeoniflorin in inflammatory regulation: A network pharmacology (Review).",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Mecanismos multidiana de la paeoniflorina en la regulación inflamatoria: una farmacología de red (Revisión)."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -432,7 +450,12 @@
    "acesso_aberto": true,
    "tema": "Saúde",
    "titulo_original": "Strengthening public health programmes and the antivenom ecosystem: strategic policy priorities to combat envenomation by animal bites and stings in Latin America and the Caribbean.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Fortalecimiento de los programas de salud pública y el ecosistema antiveneno: prioridades políticas estratégicas para combatir el envenenamiento por mordeduras y picaduras de animales en América Latina y el Caribe."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -445,7 +468,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Co-mutation patterns and survival associations in lung cancer: a comparative analysis of Swedish and global cohorts.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Patrones de comutación y asociaciones de supervivencia en el cáncer de pulmón: un análisis comparativo de cohortes suecas y globales."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -458,7 +486,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Probable Ophiophagus sp. envenomation with cardiopulmonary arrest: sequential antivenom escalation in the Philippines.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Probable envenenamiento de Ophiophagus sp. con parada cardiopulmonar: escalada secuencial del antiveneno en Filipinas."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -471,7 +504,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Comprehensive Genomic Characterization of Primary Dermal Melanoma: Delineating it from Metastatic Melanoma with Unknown Primary.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Caracterización Genómica Integral del Melanoma Dérmico Primario: Delineándolo a partir del Melanoma Metastásico con Primaria Desconocida."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -484,7 +522,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "GAMMA: A genetic-clinical prognostic model for risk stratification in patients with relapsed/refractory acute myeloid leukemia receiving allogeneic hematopoietic stem cell transplantation.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "GAMMA: Un modelo de pronóstico genético-clínico para la estratificación del riesgo en pacientes con leucemia mieloide aguda recidivante/refractaria que reciben trasplante alogénico de células madre hematopoyéticas."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -497,7 +540,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Molecular biomarkers in uterine sarcomas: a review of reviews with genomic data integration.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Biomarcadores moleculares en sarcomas uterinos: una revisión de revisiones con integración de datos genómicos."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -510,7 +558,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Choosing Value: Antivenom Selection in the Modern Trauma System.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Elección del valor: selección de antivenenos en el sistema de trauma moderno."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -566,14 +619,16 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Long-read sequencing and the boundary conditions for multi-hit reassurance in <i>TP53-</i>mutated myelodysplastic syndrome. Comment on: \"Long-read sequencing resolves <i>TP53</i> allelic status in myeloid neoplasms\".",
+   "titulo": "Sequenciamento de leitura longa e as condições de contorno para reafirmação de múltiplos acertos <i>na síndrome mielodisplásica com mutação TP53</i>. Comentário sobre: “Long-read sequencing resolves <i>TP53</i> allelic status in myeloid neoplasms”.",
    "autores": "Poon KS.",
    "revista": "Haematologica",
    "data": "2026-10-08T00:00:00+00:00",
    "doi": "10.3324/haematol.2026.302059",
    "url": "https://doi.org/10.3324/haematol.2026.302059",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Long-read sequencing and the boundary conditions for multi-hit reassurance in <i>TP53-</i>mutated myelodysplastic syndrome. Comment on: \"Long-read sequencing resolves <i>TP53</i> allelic status in myeloid neoplasms\".",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -603,36 +658,42 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "<i>RET</i> Variant Reclassification across Demographic Sub-Groups in a Large-Scale Clinical Population.",
+   "titulo": "Reclassificação da Variante <i>RET</i> em Subgrupos Demográficos em uma População Clínica de Grande Escala.",
    "autores": "Fergus KB, Richardson ME, Ziv E, Sosa JA, Grubbs EG.",
    "revista": "Thyroid",
    "data": "2026-10-07T00:00:00+00:00",
    "doi": "10.1177/10507256261493762",
    "url": "https://doi.org/10.1177/10507256261493762",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "<i>RET</i> Variant Reclassification across Demographic Sub-Groups in a Large-Scale Clinical Population.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Current and future therapies for acute myeloblastic leukemia.",
+   "titulo": "Terapias atuais e futuras para leucemia mieloblástica aguda.",
    "autores": "Marvin-Peek J, Ravandi F.",
    "revista": "J Hematol Oncol",
    "data": "2026-10-07T00:00:00+00:00",
    "doi": "10.1186/s13045-026-01849-9",
    "url": "https://doi.org/10.1186/s13045-026-01849-9",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Current and future therapies for acute myeloblastic leukemia.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "EBV-HSA-RegDB: A database of regulatory interactions between Epstein-Barr virus and human miRNAs.",
+   "titulo": "EBV-HSA-RegDB: Um banco de dados de interações regulatórias entre o vírus Epstein-Barr e miRNAs humanos.",
    "autores": "Palheta HGA, Mercês AF, de Lemos Cardoso Costa G, de Araújo GS.",
    "revista": "Arch Virol",
    "data": "2026-10-07T00:00:00+00:00",
    "doi": "10.1007/s00705-026-06753-8",
    "url": "https://doi.org/10.1007/s00705-026-06753-8",
    "acesso_aberto": false,
-   "tema": "Saúde"
+   "tema": "Saúde",
+   "titulo_original": "EBV-HSA-RegDB: A database of regulatory interactions between Epstein-Barr virus and human miRNAs.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -643,73 +704,87 @@
    "doi": "10.1111/jocn.70582",
    "url": "https://doi.org/10.1111/jocn.70582",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Biomarkers as a Concept for Advanced Practice Registered Nurses in Oncology.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "In vitro correction of venom-induced coagulopathy in <i>Daboia russelii</i> envenomation demonstrated using tranexamic acid-modified rotational thromboelastometry.",
+   "titulo": "Correção in vitro da coagulopatia induzida por veneno no envenenamento por <i>Daboia russelii</i> demonstrada usando tromboelastometria rotacional modificada por ácido tranexâmico.",
    "autores": "Rafi AM, Abraham SV, Innah SJ, Rajeev PC.",
    "revista": "BMJ Case Rep",
    "data": "2026-10-07T00:00:00+00:00",
    "doi": "10.1136/bcr-2026-272120",
    "url": "https://doi.org/10.1136/bcr-2026-272120",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "In vitro correction of venom-induced coagulopathy in <i>Daboia russelii</i> envenomation demonstrated using tranexamic acid-modified rotational thromboelastometry.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Venom composition of the Iberian adder (Vipera seoanei) from northern Portugal reveals limited sex and size variation.",
+   "titulo": "A composição do veneno da víbora ibérica (Vipera seoanei) do norte de Portugal revela uma variação limitada de sexo e tamanho.",
    "autores": "Corga F, Lakušić M, Vitorino R, Martínez-Freiría F.",
    "revista": "Toxicon",
    "data": "2026-10-07T00:00:00+00:00",
    "doi": "10.1016/j.toxicon.2026.109320",
    "url": "https://doi.org/10.1016/j.toxicon.2026.109320",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Venom composition of the Iberian adder (Vipera seoanei) from northern Portugal reveals limited sex and size variation.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Nucleus-targeted silencing of EPIC1 expression as an epigenetic strategy to modulate tumor immune microenvironment and potentiate cancer immunotherapy.",
+   "titulo": "Silenciamento direcionado ao núcleo da expressão de EPIC1 como uma estratégia epigenética para modular o microambiente imune tumoral e potencializar a imunoterapia contra o câncer.",
    "autores": "Huang L, Xu R, Lin C, Liu M, Zhuo X, Zhao Z, Li R, Chen J, Xu X.",
    "revista": "J Control Release",
    "data": "2026-10-07T00:00:00+00:00",
    "doi": "10.1016/j.jconrel.2026.115441",
    "url": "https://doi.org/10.1016/j.jconrel.2026.115441",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Nucleus-targeted silencing of EPIC1 expression as an epigenetic strategy to modulate tumor immune microenvironment and potentiate cancer immunotherapy.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Karyotypic complexity and mutated TP53 are associated with myeloid neoplasms with ring chromosomes.",
+   "titulo": "A complexidade cariotípica e o TP53 mutado estão associados a neoplasias mieloides com cromossomos em anel.",
    "autores": "Santos TGD, Santos MFMD, Kishimoto RK, Borri D, Silveira CN, Rosa SEA, Cortes LGF, Campregher P, Velloso EDRP.",
    "revista": "Hematol Transfus Cell Ther",
    "data": "2026-10-07T00:00:00+00:00",
    "doi": "10.1016/j.htct.2026.108544",
    "url": "https://doi.org/10.1016/j.htct.2026.108544",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Karyotypic complexity and mutated TP53 are associated with myeloid neoplasms with ring chromosomes.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Clinical Features and Outcomes of Therapy-Related Myeloid Neoplasms After CAR T-Cell Therapy.",
+   "titulo": "Características Clínicas e Resultados de Neoplasias Mieloides Relacionadas à Terapia Após Terapia com Células T CAR.",
    "autores": "Jain MD, Ali A, Roman Diaz J, Hamid S, Cheng P, Dahiya S, Sillito F, O'Reilly MA, Rejeski K, Subklewe M, Iacoboni G…",
    "revista": "Blood Adv",
    "data": "2026-10-07T00:00:00+00:00",
    "doi": "10.1182/bloodadvances.2026021831",
    "url": "https://doi.org/10.1182/bloodadvances.2026021831",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Clinical Features and Outcomes of Therapy-Related Myeloid Neoplasms After CAR T-Cell Therapy.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Temporal trends in envenomation by venomous animals: A global burden of disease analysis.",
+   "titulo": "Tendências temporais no envenenamento por animais peçonhentos: uma carga global de análise de doenças.",
    "autores": "Lopes LCP.",
    "revista": "Trop Doct",
    "data": "2026-10-07T00:00:00+00:00",
    "doi": "10.1177/00494755261493670",
    "url": "https://doi.org/10.1177/00494755261493670",
    "acesso_aberto": false,
-   "tema": "Saúde"
+   "tema": "Saúde",
+   "titulo_original": "Temporal trends in envenomation by venomous animals: A global burden of disease analysis.",
+   "traduzido": true
   }
  ],
  "fontes": [
@@ -730,12 +805,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "outubro rosa deteccao precoce e fundamental para reduzir risco de morte por cancer de mama": "2026-10-06T21:44:28.800200+00:00",
-  "coloquio apresenta a historia da participacao brasileira no centro europeu de pesquisa nuclear": "2026-10-06T21:44:28.800200+00:00",
-  "simposio em aborda nutricao materno infantil e saude reprodutiva": "2026-10-06T21:44:28.800200+00:00",
-  "clube sci saifr discute os misterios do mundo das particulas": "2026-10-06T21:44:28.800200+00:00",
-  "pesquisa detecta cocaina em rios do rio de janeiro": "2026-10-06T21:44:28.800200+00:00",
-  "scientists take a radiometer for a spin in a hot air balloon": "2026-10-06T21:44:28.800200+00:00",
   "openai unleashes hundreds more math results upon a field already in shock": "2026-10-07T01:39:55.016805+00:00",
   "pesquisa detalha mecanismo que da energia rapida a celulas de defesa no inicio de infeccoes": "2026-10-07T08:53:39.271241+00:00",
   "enzima encontrada na raiz da cana aumenta em seis vezes a producao de acucar a partir do bagaco": "2026-10-07T08:53:39.271241+00:00",
@@ -940,6 +1009,9 @@
   "diagnostico tardio de doencas ginecologicas afeta qualidade de vida e pode comprometer saude das mulheres": "2026-10-16T21:24:39.131630+00:00",
   "a educacao cientifica para alem da sala de aula": "2026-10-16T21:24:39.131630+00:00",
   "icecube just won a nobel prize protect astroparticle physics projects with the same potential": "2026-10-16T21:24:39.131630+00:00",
-  "heres what scientists think about theranos a decade after it imploded": "2026-10-16T21:24:39.131630+00:00"
+  "heres what scientists think about theranos a decade after it imploded": "2026-10-16T21:24:39.131630+00:00",
+  "projeto da usp prepara profissionais do sus para impactos das mudancas climaticas sobre a saude da populacao": "2026-10-17T00:35:54.076349+00:00",
+  "a crise ambiental vai muito alem do clima": "2026-10-17T00:35:54.076349+00:00",
+  "usp promove simposio sobre midias sociais e comportamento alimentar": "2026-10-17T00:35:54.076349+00:00"
  }
 }
