@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-18T01:13:15.240642+00:00",
+ "atualizado_em": "2026-10-18T06:04:30.515258+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -156,31 +156,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Uma proteína que alimenta o câncer também pode ser a chave para combatê-lo",
-   "resumo": "Os cientistas descobriram como transformar uma proteína que normalmente alimenta o crescimento do câncer em uma arma contra ele. Ao ativar o PPARD em células imunes, os pesquisadores as tornaram melhores na queima de gordura e no ataque a tumores, retardando ou interrompendo o câncer...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261015073203.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-16T04:51:38+00:00",
-   "tema": "Câncer",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/aggressive-breast-cancer-cell.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "A protein that fuels cancer could also be the key to fighting it",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Una proteína que alimenta el cáncer también podría ser la clave para combatirlo",
-     "resumo": "Los científicos han descubierto cómo convertir una proteína que normalmente alimenta el crecimiento del cáncer en un arma contra ella. Al activar PPARD en las células inmunitarias, los investigadores las hicieron mejores para quemar grasa y atacar tumores, ralentizar o detener el cáncer..."
-    }
-   },
-   "resumo_original": "Scientists have discovered how to turn a protein that normally fuels cancer growth into a weapon against it. By activating PPARD in immune cells, researchers made them better at burning fat and attacking tumors, slowing or stopping cancer…"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Fones de ouvido com cancelamento de ruído evitam vômitos após a cirurgia",
    "resumo": "Náuseas e vômitos são comuns após a cirurgia, o que pode estar parcialmente relacionado aos ruídos aos quais os pacientes são expostos, mesmo sob anestesia geral. Usar fones de ouvido com cancelamento de ruído enquanto estiver na mesa de operação reduz o risco",
    "url": "https://www.newscientist.com/article/2594276-noise-cancelling-headphones-prevent-vomiting-after-surgery/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -203,6 +178,31 @@
     }
    },
    "resumo_original": "Nausea and vomiting are common after surgery, which may be partly related to the noises patients are exposed to, even under general anaesthetic. Wearing noise-cancelling headphones while on the operating table reduces the risk"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Uma proteína que alimenta o câncer também pode ser a chave para combatê-lo",
+   "resumo": "Os cientistas descobriram como transformar uma proteína que normalmente alimenta o crescimento do câncer em uma arma contra ele. Ao ativar o PPARD em células imunes, os pesquisadores as tornaram melhores na queima de gordura e no ataque a tumores, retardando ou interrompendo o câncer...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261015073203.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-16T04:51:38+00:00",
+   "tema": "Câncer",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/aggressive-breast-cancer-cell.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "A protein that fuels cancer could also be the key to fighting it",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Una proteína que alimenta el cáncer también podría ser la clave para combatirlo",
+     "resumo": "Los científicos han descubierto cómo convertir una proteína que normalmente alimenta el crecimiento del cáncer en un arma contra ella. Al activar PPARD en las células inmunitarias, los investigadores las hicieron mejores para quemar grasa y atacar tumores, ralentizar o detener el cáncer..."
+    }
+   },
+   "resumo_original": "Scientists have discovered how to turn a protein that normally fuels cancer growth into a weapon against it. By activating PPARD in immune cells, researchers made them better at burning fat and attacking tumors, slowing or stopping cancer…"
   },
   {
    "tipo": "noticia",
@@ -851,7 +851,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "nasas webb finds signs of mars sized worlds smashing together": "2026-10-08T02:04:32.593155+00:00",
   "seca e calor extremos do ultimo el nino antecipam novo normal nas florestas tropicais": "2026-10-08T09:09:52.985540+00:00",
   "estudo propoe integrar inteligencia artificial e processos naturais para restaurar florestas": "2026-10-08T09:09:52.985540+00:00",
   "precisamos desconstruir a ideia de que os desastres sao naturais afirma pesquisadora": "2026-10-08T09:09:52.985540+00:00",
