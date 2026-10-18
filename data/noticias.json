@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-17T22:27:25.951988+00:00",
+ "atualizado_em": "2026-10-18T01:13:15.240642+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -331,28 +331,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O Japão está lançando uma missão à maior lua de Marte, Fobos",
-   "resumo": "A espaçonave Martian Moons eXploration, com lançamento previsto para 20 de outubro, trará amostras que devem resolver um mistério lunar que atormenta cientistas há mais de um século",
-   "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "Os cientistas acabaram de votar para abolir os segundos bissextos",
+   "resumo": "Desde 1972, os oficiais adicionaram 27 segundos bissextos ao relógio universal, mas em uma reunião esta semana na França, eles decidiram abandonar a prática",
+   "url": "https://www.newscientist.com/article/2594285-scientists-have-just-voted-to-abolish-leap-seconds/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-16T17:00:00+00:00",
-   "tema": "Espaço",
+   "data": "2026-10-16T13:59:18+00:00",
+   "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316887487.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316883520.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Japan is launching a mission to Mars’s largest moon Phobos",
+   "titulo_original": "Scientists have just voted to abolish leap seconds",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Japón lanza una misión a la luna más grande de Marte, Fobos",
-     "resumo": "La nave espacial Martian Moons eXploration, que se lanzará el 20 de octubre, traerá muestras que deberían resolver un misterio lunar que ha desconcertado a los científicos durante más de un siglo"
+     "titulo": "Los científicos acaban de votar para abolir los segundos intercalares",
+     "resumo": "Desde 1972, los funcionarios han añadido 27 segundos bisiestos al reloj universal, pero en una reunión esta semana en Francia han decidido abandonar la práctica"
     }
    },
-   "resumo_original": "The Martian Moons eXploration spacecraft, set to launch on 20 October, will bring back samples that should solve a moon mystery that has been vexing scientists for more than a century"
+   "resumo_original": "Since 1972, officials have added 27 leap seconds to the universal clock, but in a meeting this week in France they have decided to abandon the practice"
   },
   {
    "tipo": "noticia",
