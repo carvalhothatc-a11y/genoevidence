@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-18T06:04:30.515258+00:00",
+ "atualizado_em": "2026-10-18T11:24:24.858190+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -181,128 +181,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Uma proteína que alimenta o câncer também pode ser a chave para combatê-lo",
-   "resumo": "Os cientistas descobriram como transformar uma proteína que normalmente alimenta o crescimento do câncer em uma arma contra ele. Ao ativar o PPARD em células imunes, os pesquisadores as tornaram melhores na queima de gordura e no ataque a tumores, retardando ou interrompendo o câncer...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261015073203.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-16T04:51:38+00:00",
-   "tema": "Câncer",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/aggressive-breast-cancer-cell.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "A protein that fuels cancer could also be the key to fighting it",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Una proteína que alimenta el cáncer también podría ser la clave para combatirlo",
-     "resumo": "Los científicos han descubierto cómo convertir una proteína que normalmente alimenta el crecimiento del cáncer en un arma contra ella. Al activar PPARD en las células inmunitarias, los investigadores las hicieron mejores para quemar grasa y atacar tumores, ralentizar o detener el cáncer..."
-    }
-   },
-   "resumo_original": "Scientists have discovered how to turn a protein that normally fuels cancer growth into a weapon against it. By activating PPARD in immune cells, researchers made them better at burning fat and attacking tumors, slowing or stopping cancer…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Novo medicamento reverte doença hepática gordurosa grave reparando o intestino",
-   "resumo": "Os cientistas descobriram que um novo medicamento em potencial pode reverter a doença hepática gordurosa grave em modelos animais, restaurando a saúde intestinal e impedindo que substâncias nocivas cheguem ao fígado. O avanço pode abrir caminho para novos...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261016080912.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-17T13:45:06+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/human-liver-organ-damage.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "New drug reverses severe fatty liver disease by repairing the gut",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Un nuevo fármaco revierte la enfermedad hepática grasa grave mediante la reparación del intestino",
-     "resumo": "Los científicos han descubierto que un posible nuevo fármaco puede revertir la enfermedad hepática grasa grave en modelos animales al restaurar la salud intestinal y evitar que las sustancias nocivas lleguen al hígado. El avance podría allanar el camino para nuevos..."
-    }
-   },
-   "resumo_original": "Scientists have discovered that a potential new drug can reverse severe fatty liver disease in animal models by restoring gut health and blocking harmful substances from reaching the liver. The breakthrough could pave the way for new…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "As plantas se movem para se afastar de seus irmãos decadentes",
-   "resumo": "Uma nova descoberta revela como as plantas se protegem de micróbios em material em decomposição",
-   "url": "https://www.scientificamerican.com/article/plants-move-to-get-away-from-their-decaying-brethren/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-17T11:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/6b0e8aee-eced-4303-8bea-4a7267ec6ae8/saw1126Adva-skullroots.jpg?m=1790615840.35&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Plants move to get away from their decaying brethren",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las plantas se mueven para alejarse de sus hermanos en descomposición",
-     "resumo": "Un nuevo descubrimiento revela cómo las plantas se protegen de los microbios en el material en descomposición"
-    }
-   },
-   "resumo_original": "A new discovery reveals how plants protect themselves from microbes in rotting material"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O Telescópio Espacial Romano da NASA supera as expectativas em quase 30%",
-   "resumo": "O Telescópio Espacial Nancy Grace Roman da NASA superou as expectativas depois que os engenheiros fizeram ajustes incrivelmente pequenos para aprimorar sua visão do universo. Ao mover um espelho com apenas um décimo sexto da largura de um cabelo humano, a equipe ajudou a trazer...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261016070630.htm",
+   "titulo": "Cientistas descobrem como o sono profundo constrói músculos, queima gordura e estimula o cérebro",
+   "resumo": "Os cientistas descobriram uma surpreendente relação bidirecional entre o sono e o hormônio do crescimento, revelando como o cérebro equilibra cuidadosamente a recuperação física com a vigília. As descobertas podem ajudar a explicar por que o sono ruim prejudica o metabolismo...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261016081140.htm",
    "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-17T13:28:13+00:00",
-   "tema": "Espaço",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/nasa-roman-space-telescope-observes-cosmos.webp",
+   "data": "2026-10-17T05:14:50+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/deep-sleep-and-growth-hormone.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "NASA’s Roman Space Telescope exceeds expectations by nearly 30%",
+   "titulo_original": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El telescopio espacial romano de la NASA supera las expectativas en casi un 30%",
-     "resumo": "El Telescopio Espacial Romano Nancy Grace de la NASA ha superado las expectativas después de que los ingenieros hicieran ajustes increíblemente pequeños para agudizar su visión del universo. Al mover un espejo solo una dieciséisava parte del ancho de un cabello humano, el equipo ayudó a traer..."
+     "titulo": "Los científicos descubren cómo el sueño profundo construye músculo, quema grasa y estimula el cerebro",
+     "resumo": "Los científicos han descubierto una sorprendente relación bidireccional entre el sueño y la hormona del crecimiento, revelando cómo el cerebro equilibra cuidadosamente la recuperación física con la vigilia. Los hallazgos podrían ayudar a explicar por qué la falta de sueño perjudica el metabolismo..."
     }
    },
-   "resumo_original": "NASA’s Nancy Grace Roman Space Telescope has exceeded expectations after engineers made incredibly tiny adjustments to sharpen its view of the universe. By moving a mirror just one-sixteenth the width of a human hair, the team helped bring…"
+   "resumo_original": "Scientists have discovered a surprising two-way relationship between sleep and growth hormone, revealing how the brain carefully balances physical recovery with wakefulness. The findings could help explain why poor sleep harms metabolism…"
   },
   {
    "tipo": "noticia",
-   "titulo": "Este pássaro voa milhares de quilômetros, mas suas asas têm uma pegadinha",
-   "resumo": "Os cientistas descobriram uma troca inesperada nas asas do javali europeu, um pássaro que migra milhares de quilômetros, mas sacrifica a eficiência de voo em alta velocidade para caçar insetos com notável agilidade. Ainda mais...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261016070624.htm",
-   "fonte": "ScienceDaily",
+   "titulo": "Células cerebrais destinadas a nos proteger podem estar alimentando o declínio cognitivo",
+   "resumo": "Os cientistas descobriram uma causa surpreendente do declínio cognitivo relacionado à idade envolvendo células cerebrais que se pensava serem totalmente benéficas. À medida que essas células se tornam disfuncionais, elas podem produzir quantidades anormais de mielina, interrompendo...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261015073222.htm",
+   "fonte": "ScienceDaily · Saúde",
    "idioma": "en",
-   "data": "2026-10-17T13:05:02+00:00",
-   "tema": "Meio ambiente",
+   "data": "2026-10-17T12:44:22+00:00",
+   "tema": "Ciência",
    "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/european-nightjar-caprimulgus-europaeus-bird.webp",
+   "imagem": "https://www.sciencedaily.com/images/1920/multiple-sclerosis-nerve-disorder-and-damaged-myelin.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "This bird flies thousands of miles, but its wings have a catch",
+   "titulo_original": "Brain cells meant to protect us may be fueling cognitive decline",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Este pájaro vuela miles de millas, pero sus alas tienen una trampa",
-     "resumo": "Los científicos han descubierto una compensación inesperada en las alas del Nightjar europeo, un ave que migra miles de kilómetros pero sacrifica la eficiencia del vuelo a alta velocidad para cazar insectos con notable agilidad. Aún más..."
+     "titulo": "Las células cerebrales destinadas a protegernos pueden estar alimentando el deterioro cognitivo",
+     "resumo": "Los científicos han descubierto una causa sorprendente del deterioro cognitivo relacionado con la edad que involucra a las células cerebrales que antes se consideraban completamente beneficiosas. A medida que estas células se vuelven disfuncionales, pueden producir cantidades anormales de mielina, alterando..."
     }
    },
-   "resumo_original": "Scientists have uncovered an unexpected trade-off in the wings of the European nightjar, a bird that migrates thousands of kilometers but sacrifices high-speed flight efficiency to hunt insects with remarkable agility. Even more…"
+   "resumo_original": "Scientists have uncovered a surprising cause of age-related cognitive decline involving brain cells previously thought to be entirely beneficial. As these cells become dysfunctional, they can produce abnormal amounts of myelin, disrupting…"
   },
   {
    "tipo": "noticia",
@@ -328,31 +253,6 @@
      "resumo": "El evento financiado por la FAPESP reúne a estudiantes de 13 países y aborda los factores sociales y las nuevas estrategias de prevención y tratamiento"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Os cientistas acabaram de votar para abolir os segundos bissextos",
-   "resumo": "Desde 1972, os oficiais adicionaram 27 segundos bissextos ao relógio universal, mas em uma reunião esta semana na França, eles decidiram abandonar a prática",
-   "url": "https://www.newscientist.com/article/2594285-scientists-have-just-voted-to-abolish-leap-seconds/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-16T13:59:18+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316883520.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists have just voted to abolish leap seconds",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos acaban de votar para abolir los segundos intercalares",
-     "resumo": "Desde 1972, los funcionarios han añadido 27 segundos bisiestos al reloj universal, pero en una reunión esta semana en Francia han decidido abandonar la práctica"
-    }
-   },
-   "resumo_original": "Since 1972, officials have added 27 leap seconds to the universal clock, but in a meeting this week in France they have decided to abandon the practice"
   },
   {
    "tipo": "noticia",
@@ -851,12 +751,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "seca e calor extremos do ultimo el nino antecipam novo normal nas florestas tropicais": "2026-10-08T09:09:52.985540+00:00",
-  "estudo propoe integrar inteligencia artificial e processos naturais para restaurar florestas": "2026-10-08T09:09:52.985540+00:00",
-  "precisamos desconstruir a ideia de que os desastres sao naturais afirma pesquisadora": "2026-10-08T09:09:52.985540+00:00",
-  "stanford scientists turn a cancer driver into a kill switch": "2026-10-08T09:09:52.985540+00:00",
-  "the most interesting mathematical discoveries in openais 722 new papers": "2026-10-08T09:09:52.985540+00:00",
-  "not all trans fats are bad major review finds": "2026-10-08T09:09:52.985540+00:00",
   "infogripe alerta para a importancia da vacinacao contra covid 19 e vsr": "2026-10-08T16:38:13.734907+00:00",
   "da protecao fisica ao bem estar psicologico entenda o novo papel da cipa a nas empresas": "2026-10-08T16:38:13.734907+00:00",
   "a encruzilhada depois do doutorado": "2026-10-08T16:38:13.734907+00:00",
@@ -1045,6 +939,8 @@
   "quem estara ao nosso lado na velhice": "2026-10-17T19:33:26.212623+00:00",
   "rejeicao da proposta do antropoceno gera questionamentos sobre processo cientifico": "2026-10-17T19:33:26.212623+00:00",
   "noise cancelling headphones prevent vomiting after surgery": "2026-10-17T19:33:26.212623+00:00",
-  "castelo da fiocruz fica lilas para o dia mundial de luto e memoria as mulheres vitimas de feminicidio": "2026-10-17T22:27:25.951988+00:00"
+  "castelo da fiocruz fica lilas para o dia mundial de luto e memoria as mulheres vitimas de feminicidio": "2026-10-17T22:27:25.951988+00:00",
+  "scientists discover how deep sleep builds muscle burns fat and boosts the brain": "2026-10-18T11:24:24.858190+00:00",
+  "brain cells meant to protect us may be fueling cognitive decline": "2026-10-18T11:24:24.858190+00:00"
  }
 }
