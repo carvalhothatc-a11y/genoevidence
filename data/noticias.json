@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-18T18:42:50.774644+00:00",
+ "atualizado_em": "2026-10-18T21:36:01.595834+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -151,32 +151,6 @@
     }
    },
    "resumo_original": "Eating blueberries every day could have surprising effects on mood, according to a small study that found greater reductions in depressive symptoms among older adults who consumed the fruit for three months. Researchers also detected…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Projeto da USP prepara profissionais do SUS para impactos das mudanças climáticas sobre a saúde da população",
-   "resumo": "Iniciativa da Faculdade de Medicina de Bauru da USP integra ensino, serviço e comunidade para aproximar a academia das necessidades concretas dos territórios e do Sistema Único de Saúde",
-   "url": "https://jornal.usp.br/universidade/projeto-da-usp-prepara-profissionais-do-sus-para-impactos-das-mudancas-climaticas-sobre-a-saude-da-populacao/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-16T21:23:28+00:00",
-   "tema": "Saúde",
-   "relevancia": 3,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261016_00_fmbru_projeto_clima.jpg",
-   "foco": {
-    "x": 100,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "USP project prepares sus professionals for impacts of climate change on the health of the population",
-     "resumo": "Initiative of the Bauru School of Medicine of USP integrates teaching, service and community to bring academia closer to the concrete needs of the territories and the Unified Health System"
-    },
-    "es": {
-     "titulo": "El proyecto USP prepara a los profesionales del sus para los impactos del cambio climático en la salud de la población",
-     "resumo": "Iniciativa de la Escuela de Medicina Bauru de la USP integra enseñanza, servicio y comunidad para acercar la academia a las necesidades concretas de los territorios y del Sistema Único de Salud"
-    }
-   }
   },
   {
    "tipo": "noticia",
