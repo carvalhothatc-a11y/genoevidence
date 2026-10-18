@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-18T15:59:31.583814+00:00",
+ "atualizado_em": "2026-10-18T18:42:50.774644+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -25,30 +25,6 @@
     "es": {
      "titulo": "El Premio Nobel de Medicina 2026 se destina a la optogenética: controlar las neuronas con luz",
      "resumo": "Karl Deisseroth, Peter Hegemann y Georg Nagel fueron galardonados \"por sus descubrimientos sobre los canales iónicos activados por la luz y la optogenética\". Hegemann y Nagel encontraron la canalrodopsina en un alga: bajo la luz azul, la proteína abre un canal, los iones entran y generan un impulso eléctrico en cualquier célula. Deisseroth puso este gen en las neuronas y las encendió con luz, primero en cultivo, luego en los cerebros de ratones vivos. Hoy en día, el método revela circuitos de memoria y emoción, y se prueba para d"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Castelo da Fiocruz fica lilás para o Dia Mundial de Luto e Memória às Mulheres Vítimas de Feminicídio",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/castelo-da-fiocruz-fica-lilas-para-o-dia-mundial-de-luto-e-memoria-mulheres-vitimas-de-feminicidio",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-16T13:14:50+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/DJI_0928.png",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Fiocruz Castle is lilac for the World Day of Mourning and Remembrance for Women Victims of Femicide"
-    },
-    "es": {
-     "titulo": "El castillo de Fiocruz es lila para el Día Mundial de Luto y Recuerdo de las Mujeres Víctimas de Femicidio"
     }
    }
   },
@@ -199,31 +175,6 @@
     "es": {
      "titulo": "El proyecto USP prepara a los profesionales del sus para los impactos del cambio climático en la salud de la población",
      "resumo": "Iniciativa de la Escuela de Medicina Bauru de la USP integra enseñanza, servicio y comunidad para acercar la academia a las necesidades concretas de los territorios y del Sistema Único de Salud"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Unicamp recebe escola internacional de ciência avançada dedicada à pesquisa sobre obesidade",
-   "resumo": "Evento financiado pela Fapesp reúne estudantes de 13 países e aborda fatores sociais e novas estratégias de prevenção e tratamento",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/16/unicamp-recebe-escola-internacional-de-ciencia-avancada-dedicada-a-pesquisa-sobre-obesidade/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-16T18:10:04+00:00",
-   "tema": "Saúde",
-   "relevancia": 3,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261016_Obesidade_mona-Capa.jpg",
-   "foco": {
-    "inteira": true
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Unicamp hosts international advanced science school dedicated to obesity research",
-     "resumo": "FAPESP-funded event brings together students from 13 countries and addresses social factors and new prevention and treatment strategies"
-    },
-    "es": {
-     "titulo": "La Unicamp acoge una escuela internacional de ciencias avanzadas dedicada a la investigación sobre la obesidad",
-     "resumo": "El evento financiado por la FAPESP reúne a estudiantes de 13 países y aborda los factores sociales y las nuevas estrategias de prevención y tratamiento"
     }
    }
   },
@@ -724,17 +675,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "infogripe alerta para a importancia da vacinacao contra covid 19 e vsr": "2026-10-08T16:38:13.734907+00:00",
-  "da protecao fisica ao bem estar psicologico entenda o novo papel da cipa a nas empresas": "2026-10-08T16:38:13.734907+00:00",
-  "a encruzilhada depois do doutorado": "2026-10-08T16:38:13.734907+00:00",
-  "celulas cerebrais humanas transplantadas em camundongos estabelecem conexoes nervosas": "2026-10-08T16:38:13.734907+00:00",
-  "ecossistema de inovacao e integridade na pesquisa sao temas de conferencia na usp": "2026-10-08T16:38:13.734907+00:00",
-  "ai or super intelligence trump isnt the only one who is confused": "2026-10-08T16:38:13.734907+00:00",
-  "openai mistranslated mathematics into code for its navier stokes proof": "2026-10-08T16:38:13.734907+00:00",
-  "editorial expression of concern maternal gut bacteria promote neurodevelopmental abnormalities in mouse offspring": "2026-10-08T16:38:13.734907+00:00",
-  "scientists accidentally discover a genetic code that breaks the rules of life": "2026-10-08T16:38:13.734907+00:00",
-  "a suspected case of pneumonic plague is raising fears of an outbreak should you be worried": "2026-10-08T16:38:13.734907+00:00",
-  "artemis ii images boost nasas moon base plans": "2026-10-08T16:38:13.734907+00:00",
   "nobel de medicina reconhece descobertas que levam a testes para recuperar a visao": "2026-10-08T22:12:53.560323+00:00",
   "imigracao angolana para o brasil mantem semelhanca com exploracao iniciada no periodo colonial": "2026-10-08T22:12:53.560323+00:00",
   "do controle dos neuronios a grecia reimaginada": "2026-10-08T22:12:53.560323+00:00",
