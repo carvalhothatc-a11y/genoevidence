@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-18T11:24:24.858190+00:00",
+ "atualizado_em": "2026-10-18T15:59:31.583814+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -30,30 +30,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Fiocruz pra Você 2026 reforça importância da vacina como prevenção",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/fiocruz-pra-voce-2026-reforca-importancia-da-vacina-como-prevencao",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-16T13:17:38+00:00",
-   "tema": "Saúde",
-   "relevancia": 11,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/WhatsApp%20Image%202026-10-17%20at%2014.56.05.jpeg",
-   "foco": {
-    "x": 50,
-    "y": 100
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Fiocruz pra Você 2026 reinforces the importance of the vaccine as prevention"
-    },
-    "es": {
-     "titulo": "Fiocruz pra Você 2026 refuerza la importancia de la vacuna como prevención"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Castelo da Fiocruz fica lilás para o Dia Mundial de Luto e Memória às Mulheres Vítimas de Feminicídio",
    "resumo": "",
    "url": "https://agencia.fiocruz.br/castelo-da-fiocruz-fica-lilas-para-o-dia-mundial-de-luto-e-memoria-mulheres-vitimas-de-feminicidio",
@@ -61,7 +37,7 @@
    "idioma": "pt",
    "data": "2026-10-16T13:14:50+00:00",
    "tema": "Ciência",
-   "relevancia": 7,
+   "relevancia": 6,
    "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/DJI_0928.png",
    "foco": {
     "x": 50,
@@ -78,156 +54,153 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "TV 3.0 amplia possibilidades para o jornalismo imersivo",
-   "resumo": "Pesquisadores da USP exploram a nova tecnologia com o objetivo de criar formas mais expressivas de interação com o público",
-   "url": "https://jornal.usp.br/cultura/tv-3-0-amplia-possibilidades-para-o-jornalismo-imersivo/",
+   "titulo": "Cientistas ligam um açúcar estranho na carne vermelha a um risco 63% maior de diabetes",
+   "resumo": "Um estudo com quase 90.000 adultos descobriu que as pessoas que consomem a maior parte de um açúcar pouco conhecido encontrado na carne vermelha tinham um risco 63% maior de desenvolver diabetes tipo 2. Os cientistas suspeitam que o açúcar pode desencadear inflamação crônica, potencialmente...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261017230031.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-18T13:09:01+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/fresh-japanese-kobe-beef-steak.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists link a strange sugar in red meat to a 63% higher diabetes risk",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos relacionan un azúcar extraño en la carne roja con un riesgo de diabetes un 63% mayor",
+     "resumo": "Un estudio de casi 90,000 adultos encontró que las personas que consumen la mayor parte de un azúcar poco conocido que se encuentra en la carne roja tenían un riesgo 63% mayor de desarrollar diabetes tipo 2. Los científicos sospechan que el azúcar puede desencadenar una inflamación crónica, potencialmente..."
+    }
+   },
+   "resumo_original": "A study of nearly 90,000 adults found that people consuming the most of a little-known sugar found in red meat had a 63% higher risk of developing type 2 diabetes. Scientists suspect the sugar may trigger chronic inflammation, potentially…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas descobrem 3 principais vias cerebrais ligadas ao alívio duradouro da depressão",
+   "resumo": "Pesquisadores descobriram três vias cerebrais ligadas a melhorias duradouras em pessoas que recebem estimulação cerebral profunda para depressão grave e resistente ao tratamento. Eles também descobriram que os pacientes que não melhoraram após dois anos...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261017230021.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-18T12:19:08+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/deep-brain-stimulation-depression-treatment.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists uncover 3 key brain pathways linked to lasting depression relief",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos descubren 3 vías cerebrales clave relacionadas con el alivio duradero de la depresión",
+     "resumo": "Los investigadores han descubierto tres vías cerebrales relacionadas con mejoras duraderas en las personas que reciben estimulación cerebral profunda para la depresión grave y resistente al tratamiento. También descubrieron que los pacientes que no mejoraban después de dos años..."
+    }
+   },
+   "resumo_original": "Researchers have uncovered three brain pathways linked to lasting improvements in people receiving deep brain stimulation for severe, treatment-resistant depression. They also discovered that patients who failed to improve after two years…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Fiocruz pra Você 2026 reforça importância da vacina como prevenção",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/fiocruz-pra-voce-2026-reforca-importancia-da-vacina-como-prevencao",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-16T13:17:38+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/WhatsApp%20Image%202026-10-17%20at%2014.56.05.jpeg",
+   "foco": {
+    "x": 50,
+    "y": 100
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Fiocruz pra Você 2026 reinforces the importance of the vaccine as prevention"
+    },
+    "es": {
+     "titulo": "Fiocruz pra Você 2026 refuerza la importancia de la vacuna como prevención"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Físicos criam um novo estado quântico bizarro chamado mar de fermi fracionado",
+   "resumo": "Os físicos descobriram um novo e estranho estado da matéria quântica no qual átomos ultrafrios desafiam regras organizacionais familiares, formando uma configuração altamente excitada, mas surpreendentemente ordenada, chamada de \"mar de Fermi fracionário\". \"A descoberta...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261018084644.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-18T13:37:21+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/ultracold-cesium-atoms-locked-into-hidden-ordered-state.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Physicists create a bizarre new quantum state called a fractional fermi sea",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los físicos crean un nuevo estado cuántico extraño llamado mar de Fermi fraccional",
+     "resumo": "Los físicos han descubierto un nuevo y extraño estado de la materia cuántica en el que los átomos ultrafríos desafían las reglas de organización familiares, formando una configuración altamente excitada pero sorprendentemente ordenada llamada \"mar de Fermi fraccional\". -El descubrimiento..."
+    }
+   },
+   "resumo_original": "Physicists have discovered a strange new state of quantum matter in which ultracold atoms defy familiar organizational rules, forming a highly excited yet surprisingly orderly configuration called a \"fractional Fermi sea.\" The discovery…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Comer mirtilos todos os dias pode ter um efeito surpreendente no seu humor",
+   "resumo": "Comer mirtilos todos os dias pode ter efeitos surpreendentes no humor, de acordo com um pequeno estudo que encontrou maiores reduções nos sintomas depressivos entre os idosos que consumiram a fruta por três meses. Os pesquisadores também detectaram...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261017230028.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-18T13:22:24+00:00",
+   "tema": "Ciência",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/blueberries-close-up.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Eating blueberries every day may have a surprising effect on your mood",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Comer arándanos todos los días puede tener un efecto sorprendente en tu estado de ánimo",
+     "resumo": "Comer arándanos todos los días podría tener efectos sorprendentes en el estado de ánimo, según un pequeño estudio que encontró mayores reducciones en los síntomas depresivos entre los adultos mayores que consumieron la fruta durante tres meses. Los investigadores también detectaron..."
+    }
+   },
+   "resumo_original": "Eating blueberries every day could have surprising effects on mood, according to a small study that found greater reductions in depressive symptoms among older adults who consumed the fruit for three months. Researchers also detected…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Projeto da USP prepara profissionais do SUS para impactos das mudanças climáticas sobre a saúde da população",
+   "resumo": "Iniciativa da Faculdade de Medicina de Bauru da USP integra ensino, serviço e comunidade para aproximar a academia das necessidades concretas dos territórios e do Sistema Único de Saúde",
+   "url": "https://jornal.usp.br/universidade/projeto-da-usp-prepara-profissionais-do-sus-para-impactos-das-mudancas-climaticas-sobre-a-saude-da-populacao/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-16T18:18:22+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261016_realidadevirtual.jpg",
+   "data": "2026-10-16T21:23:28+00:00",
+   "tema": "Saúde",
+   "relevancia": 3,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261016_00_fmbru_projeto_clima.jpg",
    "foco": {
     "x": 100,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "TV 3.0 expands possibilities for immersive journalism",
-     "resumo": "Researchers at USP explore the new technology with the aim of creating more expressive ways of interacting with the public"
+     "titulo": "USP project prepares sus professionals for impacts of climate change on the health of the population",
+     "resumo": "Initiative of the Bauru School of Medicine of USP integrates teaching, service and community to bring academia closer to the concrete needs of the territories and the Unified Health System"
     },
     "es": {
-     "titulo": "TV 3.0 amplía las posibilidades del periodismo inmersivo",
-     "resumo": "Investigadores de la USP exploran la nueva tecnología con el objetivo de crear formas más expresivas de interactuar con el público"
+     "titulo": "El proyecto USP prepara a los profesionales del sus para los impactos del cambio climático en la salud de la población",
+     "resumo": "Iniciativa de la Escuela de Medicina Bauru de la USP integra enseñanza, servicio y comunidad para acercar la academia a las necesidades concretas de los territorios y del Sistema Único de Salud"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Quem estará ao nosso lado na velhice?",
-   "resumo": "Pesquisa que investiga redes de suporte e vínculos sociais, familiares e afetivos de pessoas idosas prioriza participantes LGBTQIAPN+, mas também aceita pessoas que não pertencem a essa comunidade",
-   "url": "https://jornal.usp.br/radio-usp/quem-estara-ao-nosso-lado-na-velhice-pesquisa-investiga-redes-de-suporte-e-as-diferentes-formas-de-envelhecer/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-16T17:10:31+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/07/20260728_olhar.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Who will be by our side in old age?",
-     "resumo": "Research that investigates support networks and social, family and emotional bonds of older people prioritizes LGBTQIAPN+ participants, but also accepts people who do not belong to this community"
-    },
-    "es": {
-     "titulo": "¿Quién estará a nuestro lado en la vejez?",
-     "resumo": "La investigación que investiga las redes de apoyo y los vínculos sociales, familiares y emocionales de las personas mayores prioriza a los participantes LGBTQIAPN +, pero también acepta personas que no pertenecen a esta comunidad"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Rejeição da proposta do Antropoceno gera questionamentos sobre processo científico",
-   "resumo": "Pesquisadores pedem transparência sobre a votação que rejeitou a criação de uma nova época geológica, marcada pelos impactos das atividades humanas sobre o planeta",
-   "url": "https://jornal.usp.br/radio-usp/rejeicao-da-proposta-do-antropoceno-gera-questionamentos-sobre-processo-cientifico/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-16T15:01:22+00:00",
-   "tema": "Espaço",
-   "relevancia": 6,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261015_antropoceno.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Rejection of the Anthropocene proposal raises questions about the scientific process",
-     "resumo": "Researchers call for transparency on the vote that rejected the creation of a new geological epoch, marked by the impacts of human activities on the planet"
-    },
-    "es": {
-     "titulo": "El rechazo a la propuesta del Antropoceno plantea interrogantes sobre el proceso científico",
-     "resumo": "Los investigadores piden transparencia en la votación que rechazó la creación de una nueva época geológica, marcada por los impactos de las actividades humanas en el planeta"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Fones de ouvido com cancelamento de ruído evitam vômitos após a cirurgia",
-   "resumo": "Náuseas e vômitos são comuns após a cirurgia, o que pode estar parcialmente relacionado aos ruídos aos quais os pacientes são expostos, mesmo sob anestesia geral. Usar fones de ouvido com cancelamento de ruído enquanto estiver na mesa de operação reduz o risco",
-   "url": "https://www.newscientist.com/article/2594276-noise-cancelling-headphones-prevent-vomiting-after-surgery/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-17T18:30:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316882731.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "titulo_original": "Noise-cancelling headphones prevent vomiting after surgery",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los auriculares con cancelación de ruido evitan el vómito después de la cirugía",
-     "resumo": "Las náuseas y los vómitos son comunes después de la cirugía, lo que puede estar relacionado en parte con los ruidos a los que están expuestos los pacientes, incluso bajo anestesia general. El uso de auriculares con cancelación de ruido mientras está en la mesa de operaciones reduce el riesgo"
-    }
-   },
-   "resumo_original": "Nausea and vomiting are common after surgery, which may be partly related to the noises patients are exposed to, even under general anaesthetic. Wearing noise-cancelling headphones while on the operating table reduces the risk"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas descobrem como o sono profundo constrói músculos, queima gordura e estimula o cérebro",
-   "resumo": "Os cientistas descobriram uma surpreendente relação bidirecional entre o sono e o hormônio do crescimento, revelando como o cérebro equilibra cuidadosamente a recuperação física com a vigília. As descobertas podem ajudar a explicar por que o sono ruim prejudica o metabolismo...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261016081140.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-17T05:14:50+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/deep-sleep-and-growth-hormone.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos descubren cómo el sueño profundo construye músculo, quema grasa y estimula el cerebro",
-     "resumo": "Los científicos han descubierto una sorprendente relación bidireccional entre el sueño y la hormona del crecimiento, revelando cómo el cerebro equilibra cuidadosamente la recuperación física con la vigilia. Los hallazgos podrían ayudar a explicar por qué la falta de sueño perjudica el metabolismo..."
-    }
-   },
-   "resumo_original": "Scientists have discovered a surprising two-way relationship between sleep and growth hormone, revealing how the brain carefully balances physical recovery with wakefulness. The findings could help explain why poor sleep harms metabolism…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Células cerebrais destinadas a nos proteger podem estar alimentando o declínio cognitivo",
-   "resumo": "Os cientistas descobriram uma causa surpreendente do declínio cognitivo relacionado à idade envolvendo células cerebrais que se pensava serem totalmente benéficas. À medida que essas células se tornam disfuncionais, elas podem produzir quantidades anormais de mielina, interrompendo...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261015073222.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-17T12:44:22+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/multiple-sclerosis-nerve-disorder-and-damaged-myelin.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Brain cells meant to protect us may be fueling cognitive decline",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Las células cerebrales destinadas a protegernos pueden estar alimentando el deterioro cognitivo",
-     "resumo": "Los científicos han descubierto una causa sorprendente del deterioro cognitivo relacionado con la edad que involucra a las células cerebrales que antes se consideraban completamente beneficiosas. A medida que estas células se vuelven disfuncionales, pueden producir cantidades anormales de mielina, alterando..."
-    }
-   },
-   "resumo_original": "Scientists have uncovered a surprising cause of age-related cognitive decline involving brain cells previously thought to be entirely beneficial. As these cells become dysfunctional, they can produce abnormal amounts of myelin, disrupting…"
   },
   {
    "tipo": "noticia",
@@ -941,6 +914,10 @@
   "noise cancelling headphones prevent vomiting after surgery": "2026-10-17T19:33:26.212623+00:00",
   "castelo da fiocruz fica lilas para o dia mundial de luto e memoria as mulheres vitimas de feminicidio": "2026-10-17T22:27:25.951988+00:00",
   "scientists discover how deep sleep builds muscle burns fat and boosts the brain": "2026-10-18T11:24:24.858190+00:00",
-  "brain cells meant to protect us may be fueling cognitive decline": "2026-10-18T11:24:24.858190+00:00"
+  "brain cells meant to protect us may be fueling cognitive decline": "2026-10-18T11:24:24.858190+00:00",
+  "scientists link a strange sugar in red meat to a 63 higher diabetes risk": "2026-10-18T15:59:31.583814+00:00",
+  "scientists uncover 3 key brain pathways linked to lasting depression relief": "2026-10-18T15:59:31.583814+00:00",
+  "physicists create a bizarre new quantum state called a fractional fermi sea": "2026-10-18T15:59:31.583814+00:00",
+  "eating blueberries every day may have a surprising effect on your mood": "2026-10-18T15:59:31.583814+00:00"
  }
 }
