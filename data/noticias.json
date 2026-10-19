@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-19T17:34:59.070308+00:00",
+ "atualizado_em": "2026-10-19T22:29:22.480474+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -25,6 +25,32 @@
     "es": {
      "titulo": "El Premio Nobel de Medicina 2026 se destina a la optogenética: controlar las neuronas con luz",
      "resumo": "Karl Deisseroth, Peter Hegemann y Georg Nagel fueron galardonados \"por sus descubrimientos sobre los canales iónicos activados por la luz y la optogenética\". Hegemann y Nagel encontraron la canalrodopsina en un alga: bajo la luz azul, la proteína abre un canal, los iones entran y generan un impulso eléctrico en cualquier célula. Deisseroth puso este gen en las neuronas y las encendió con luz, primero en cultivo, luego en los cerebros de ratones vivos. Hoy en día, el método revela circuitos de memoria y emoción, y se prueba para d"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Campanha oferece exames gratuitos à comunidade universitária para prevenir diabetes, hipertensão e colesterol",
+   "resumo": "De 20 a 22 de outubro, das 8h às 13h, a Faculdade de Ciências Farmacêuticas da USP oferece à comunidade universitária exames rápidos e gratuitos de saúde",
+   "url": "https://jornal.usp.br/universidade/campanha-oferece-exames-gratuitos-a-comunidade-universitaria-para-prevenir-diabetes-hipertensao-e-colesterol/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-19T18:07:48+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261019_Campanha-Diabetes-e-Hipertensao.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Campaign offers free exams to the university community to prevent diabetes, hypertension and cholesterol",
+     "resumo": "From October 20 to 22, from 8 am to 1 pm, USP's Faculty of Pharmaceutical Sciences offers the university community quick and free health exams"
+    },
+    "es": {
+     "titulo": "La campaña ofrece exámenes gratuitos a la comunidad universitaria para prevenir la diabetes, la hipertensión y el colesterol",
+     "resumo": "Del 20 al 22 de octubre, de 8 a 13 horas, la Facultad de Ciencias Farmacéuticas de la USP ofrece a la comunidad universitaria exámenes de salud rápidos y gratuitos"
     }
    }
   },
@@ -82,6 +108,31 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "O ambiente pode acelerar o envelhecimento",
+   "resumo": "Doenças antes associadas à idade avançada aparecem em pessoas mais jovens e pesquisadores investigam a influência do ambiente",
+   "url": "https://jornal.usp.br/radio-usp/o-ambiente-pode-acelerar-o-envelhecimento/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-19T19:47:38+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/03/pasta-dos-20230313_saldiva-.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "The environment can accelerate aging",
+     "resumo": "Diseases previously associated with old age appear in younger people and researchers investigate the influence of the environment"
+    },
+    "es": {
+     "titulo": "El medio ambiente puede acelerar el envejecimiento",
+     "resumo": "Las enfermedades previamente asociadas con la vejez aparecen en personas más jóvenes y los investigadores investigan la influencia del entorno"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "UTI pediátrica do HC destaca a importância do cuidado especializado a crianças em estado grave",
    "resumo": "Serviço do Instituto da Criança e do Adolescente da USP atende recém-nascidos, crianças e adolescentes, com destaque para pacientes com doenças crônicas",
    "url": "https://jornal.usp.br/radio-usp/uti-pediatrica-do-hc-destaca-a-importancia-do-cuidado-especializado-a-criancas-em-estado-grave/",
@@ -108,58 +159,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Ribeirão Preto sediará o “Colóquio Pan-Americano de Pesquisa em Enfermagem”",
-   "resumo": "Evento científico internacional reúne pesquisadores, gestores e profissionais de saúde para debater o fortalecimento dos sistemas de saúde",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/ribeirao-preto-sediara-o-coloquio-pan-americano-de-pesquisa-em-enfermagem/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-19T14:45:51+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/04/20260422_Coloquio-Pan-americano.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Ribeirão Preto will host the “Pan American Colloquium on Nursing Research”",
-     "resumo": "International scientific event brings together researchers, managers and health professionals to discuss the strengthening of health systems"
-    },
-    "es": {
-     "titulo": "Ribeirão Preto acogerá el “Coloquio Panamericano de Investigación en Enfermería”",
-     "resumo": "Evento científico internacional reúne a investigadores, gestores y profesionales de la salud para debatir sobre el fortalecimiento de los sistemas de salud"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Diagnóstico tardio de doenças ginecológicas compromete a saúde e qualidade de vida feminina",
-   "resumo": "Endometriose atinge cerca de 190 milhões de mulheres no mundo; sintomas normalizados de cólicas menstruais dificultam a identificação precoce da doença",
-   "url": "https://jornal.usp.br/atualidades/diagnostico-tardio-de-doencas-ginecologicas-afeta-qualidade-de-vida-e-pode-comprometer-saude-das-mulheres/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-19T12:00:19+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/05/20260513_utero.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Late diagnosis of gynecological diseases compromises women's health and quality of life",
-     "resumo": "Endometriosis affects about 190 million women worldwide; normalized symptoms of menstrual cramps make it difficult to identify the disease early"
-    },
-    "es": {
-     "titulo": "El diagnóstico tardío de enfermedades ginecológicas compromete la salud y la calidad de vida de las mujeres",
-     "resumo": "La endometriosis afecta a unos 190 millones de mujeres en todo el mundo; los síntomas normalizados de los cólicos menstruales dificultan la identificación temprana de la enfermedad"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Zero glúten: é possível na prática?",
    "resumo": "Doença celíaca atinge cerca de 1% da população e exige cuidados na escolha e preparo dos alimentos; pesquisadores buscam produtos mais seguros, nutritivos e acessíveis",
    "url": "https://revistapesquisa.fapesp.br/zero-gluten-e-possivel-na-pratica/?utm_source=rss&utm_medium=rss&utm_campaign=zero-gluten-e-possivel-na-pratica",
@@ -175,34 +174,64 @@
    },
    "i18n": {
     "en": {
-     "titulo": "Zero gluten: is it possible in practice?"
+     "titulo": "Zero gluten: is it possible in practice?",
+     "resumo": "Celiac disease affects about 1% of the population and requires care in the choice and preparation of food; researchers seek safer, more nutritious and affordable products"
     },
     "es": {
-     "titulo": "Cero gluten: ¿es posible en la práctica?"
+     "titulo": "Cero gluten: ¿es posible en la práctica?",
+     "resumo": "La enfermedad celíaca afecta a alrededor del 1% de la población y requiere cuidado en la elección y preparación de los alimentos; los investigadores buscan productos más seguros, nutritivos y asequibles"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Manejo adequado transforma pastagens degradadas em reservatórios de carbono",
-   "resumo": "Experimentos de longa duração no interior paulista revelam que a intensificação moderada do pasto não apenas recupera a produtividade da terra, mas maximiza o sequestro de CO 2 . Pesquisa também validou método mais barato de medição",
-   "url": "https://agencia.fapesp.br/manejo-adequado-transforma-pastagens-degradadas-em-reservatorios-de-carbono/59417",
+   "titulo": "Enzima encontrada na raiz da cana aumenta em seis vezes a produção de açúcar a partir do bagaço",
+   "resumo": "A reportagem mais acessada entre 9 e 15 de outubro detalha pesquisa de cientistas da USP que isolou a molécula ao estudar os aerênquimas – estruturas que a própria planta cria para formar canais de ar em suas raízes. O achado pode…",
+   "url": "https://agencia.fapesp.br/enzima-encontrada-na-raiz-da-cana-aumenta-em-seis-vezes-a-producao-de-acucar-a-partir-do-bagaco/59348",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-19T17:34:59.070308+00:00",
+   "data": "2026-10-19T22:29:22.480474+00:00",
    "tema": "Meio ambiente",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59417.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59348.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Proper management turns degraded pastures into carbon reservoirs"
+     "titulo": "Enzyme found in sugarcane root increases sugar production from bagasse by six times",
+     "resumo": "The most accessed report between October 9 and 15 details research by USP scientists who isolated the molecule by studying aerenchymas – structures that the plant itself creates to form air channels in its roots. The find may…"
     },
     "es": {
-     "titulo": "Una gestión adecuada convierte los pastos degradados en depósitos de carbono"
+     "titulo": "La enzima que se encuentra en la raíz de caña de azúcar aumenta la producción de azúcar del bagazo en seis veces",
+     "resumo": "El informe más consultado entre el 9 y el 15 de octubre detalla la investigación realizada por científicos de la USP que aislaron la molécula mediante el estudio de los aerénquimas, estructuras que la propia planta crea para formar canales de aire en sus raíces. El hallazgo puede..."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Prêmio Marta Vannucci reconhece trajetórias de mulheres na ciência do oceano",
+   "resumo": "Cristiana Seixas do Nepam e Bianca de Sousa Rangel (IB-USP) foram contempladas na quarta edição do Prêmio",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/19/premio-marta-vannucci-reconhece-trajetorias-de-mulheres-na-ciencia-do-oceano/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-19T20:36:04+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261019_Premio_Marta-Vanucci_div_IMG_1848-Capa.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Marta Vannucci Award recognizes trajectories of women in ocean science",
+     "resumo": "Cristiana Seixas do Nepam and Bianca de Sousa Rangel (IB-USP) were included in the fourth edition of the Award"
+    },
+    "es": {
+     "titulo": "El Premio Marta Vannucci reconoce las trayectorias de las mujeres en las ciencias oceánicas",
+     "resumo": "Cristiana Seixas do Nepam y Bianca de Sousa Rangel (IB-USP) fueron incluidas en la cuarta edición del Premio"
     }
    }
   },
@@ -233,7 +262,7 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Está prestes a ser muito mais difícil manter os países honestos sobre as mudanças climáticas",
+   "titulo": "Está prestes a ficar muito mais difícil manter os países honestos sobre as mudanças climáticas",
    "resumo": "Uma discussão sobre quando publicar avaliações cruciais sobre mudanças climáticas corre o risco de deixar os países livres dos cortes de emissões",
    "url": "https://www.newscientist.com/article/2594695-its-about-to-be-a-lot-harder-to-keep-countries-honest-about-climate-change/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
@@ -246,7 +275,7 @@
     "x": 50,
     "y": 50
    },
-   "titulo_original": "It’s about to be a lot harder to keep countries honest about climate change",
+   "titulo_original": "It’s about to get a lot harder to keep countries honest about climate change",
    "traduzido": true,
    "i18n": {
     "es": {
@@ -308,105 +337,368 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O El Niño está aumentando drasticamente o nível do mar – quão ruim poderia ficar?",
-   "resumo": "O El Niño já elevou o nível do mar em parte do Pacífico oriental em 40 centímetros e, à medida que continua a se fortalecer, pode haver inundações costeiras do Alasca ao Chile",
-   "url": "https://www.newscientist.com/article/2594376-el-nino-is-dramatically-increasing-sea-levels-how-bad-could-it-get/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "Áudio de leitura longa: Como se manter inteligente na era da IA — a ciência do pensamento crítico",
+   "resumo": "Embora as preocupações estejam crescendo sobre o potencial da IA para diminuir as habilidades de raciocínio, a pesquisa descobriu maneiras de manter o cérebro afiado.",
+   "url": "https://www.nature.com/articles/d41586-026-03228-3",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-19T10:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316726592.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "El Niño is dramatically increasing sea levels – how bad could it get?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El Niño está aumentando dramáticamente el nivel del mar, ¿qué tan malo podría llegar a ser?",
-     "resumo": "El Niño ya ha elevado el nivel del mar en parte del Pacífico oriental en 40 centímetros y, a medida que continúa fortaleciéndose, podría haber inundaciones costeras desde Alaska hasta Chile"
-    }
-   },
-   "resumo_original": "El Niño has already raised sea levels in part of the eastern Pacific by 40 centimetres and as it continues to strengthen, there could be coastal flooding from Alaska to Chile"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A mecânica dos ferrões das abelhas, os riscos para a saúde dos microplásticos e as novas descobertas sobre os ovários na pós-menopausa",
-   "resumo": "Nova pesquisa revela como funcionam os ferrões de abelha, por que os microplásticos podem ser prejudiciais e o que os ovários na pós-menopausa estão fazendo décadas depois",
-   "url": "https://www.scientificamerican.com/podcast/episode/the-mechanics-of-honeybee-stingers-microplastic-health-risks-and-new-findings-on-postmenopausal-ovaries/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-19T10:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "https://static.scientificamerican.com/dam/asset/d9410eeb-2788-4f49-8f34-fc93e355d169/2610_SQ_MON_OCT_19.png?m=1792175484.98&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "The mechanics of honeybee stingers, microplastic health risks and new findings on postmenopausal ovaries",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La mecánica de los aguijones de abeja, los riesgos para la salud de los microplásticos y los nuevos hallazgos sobre los ovarios posmenopáusicos",
-     "resumo": "Una nueva investigación revela cómo funcionan los aguijones de abeja, por qué los microplásticos pueden ser dañinos y qué están haciendo los ovarios posmenopáusicos décadas después"
-    }
-   },
-   "resumo_original": "New research reveals how bee stingers work, why microplastics may be harmful and what postmenopausal ovaries are doing decades later"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Como o que vemos e ouvimos se alimenta para nos ajudar a entender as emoções",
-   "resumo": "As emoções em si podem ser mais importantes do que os sentidos que usamos para percebê-las",
-   "url": "https://www.scientificamerican.com/article/how-what-we-see-and-hear-feed-together-to-help-us-understand-emotions/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-19T17:00:00+00:00",
+   "data": "2026-10-19T00:00:00+00:00",
    "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "Audio long read: How to stay smart in the age of AI — the science of critical thinking",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Audio de lectura larga: Cómo mantenerse inteligente en la era de la IA: la ciencia del pensamiento crítico",
+     "resumo": "Aunque crecen las preocupaciones sobre el potencial de la IA para atenuar las habilidades de razonamiento, la investigación ha descubierto formas de mantener el cerebro agudo."
+    }
+   },
+   "resumo_original": "Although worries are growing about AI's potential to blunt reasoning skills, research has uncovered ways to keep the brain sharp."
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Produtos químicos tóxicos no fentanil revelados pela técnica speedy",
+   "resumo": "A impressão digital química mostra os aumentos e declínios de adulterantes específicos em suprimentos ilícitos da droga.",
+   "url": "https://www.nature.com/articles/d41586-026-03317-3",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-19T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "",
+   "titulo_original": "Toxic chemicals in fentanyl revealed by speedy technique",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Sustancias químicas tóxicas en el fentanilo reveladas por una técnica rápida",
+     "resumo": "Las huellas dactilares químicas registran los aumentos y disminuciones de adulterantes específicos en los suministros ilícitos de la droga."
+    }
+   },
+   "resumo_original": "Chemical fingerprinting charts the rises and declines of specific adulterants in illicit supplies of the drug."
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Japão lança sonda para coletar rochas da lua de Marte, Fobos",
+   "resumo": "A missão de Exploração de Luas Marcianas terá como objetivo trazer de volta amostras de Fobos",
+   "url": "https://www.scientificamerican.com/article/japans-mission-to-collect-rocks-from-mars-moon-phobos-achieves-liftoff/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-19T20:00:00+00:00",
+   "tema": "Espaço",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/ed025c64-e1d0-471a-9a65-b3459a5902fb/emotions.jpg?m=1792427313.952&w=1200",
+   "imagem": "https://static.scientificamerican.com/dam/asset/a58e09fb-deac-49f3-a7aa-8819495f0330/MMX-mission.png?m=1792442130.551&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "How what we see and hear feed together to help us understand emotions",
+   "titulo_original": "Japan launches a probe to collect rocks from Mars’s moon Phobos",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Cómo lo que vemos y escuchamos se alimenta juntos para ayudarnos a comprender las emociones",
-     "resumo": "Las emociones en sí mismas pueden ser más importantes que los sentidos que usamos para percibirlas"
+     "titulo": "Japón lanza una sonda para recoger rocas de la luna Fobos de Marte",
+     "resumo": "La misión Martian Moons Exploration tendrá como objetivo traer muestras de Fobos"
     }
    },
-   "resumo_original": "The emotions themselves may be more important than the senses we use to perceive them"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Fiocruz pra Você 2026 reforça importância da vacina como prevenção",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/fiocruz-pra-voce-2026-reforca-importancia-da-vacina-como-prevencao",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-16T13:17:38+00:00",
-   "tema": "Saúde",
-   "relevancia": 3,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/WhatsApp%20Image%202026-10-17%20at%2014.56.05.jpeg",
-   "foco": {
-    "x": 50,
-    "y": 100
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Fiocruz pra Você 2026 reinforces the importance of the vaccine as prevention"
-    },
-    "es": {
-     "titulo": "Fiocruz pra Você 2026 refuerza la importancia de la vacuna como prevención"
-    }
-   }
+   "resumo_original": "The Martian Moons Exploration mission will aim to bring back samples from Phobos"
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Imuno-histoquímica PRAME e perfil molecular em neoplasias pleomórficas cutâneas indiferenciadas: uma série de casos de 8 tumores.",
+   "autores": "Parker DJ, Agni M, Cloutier JM, Sriharan A, LeBlanc RE, Yan S, Momtahen S.",
+   "revista": "J Cutan Pathol",
+   "data": "2026-10-18T00:00:00+00:00",
+   "doi": "10.1111/cup.70239",
+   "url": "https://doi.org/10.1111/cup.70239",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "PRAME Immunohistochemistry and Molecular Profiling in Undifferentiated Cutaneous Pleomorphic Neoplasms: A Case Series of 8 Tumors.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Caracterização das características morfológicas, imunofenotípicas e citogenéticas do linfoma de células B de alto grau com aberração 11q.",
+   "autores": "Wang Z, Liu Y, Wang J, Xu L, Zhang H, Li D, Wang B, Wang L, Wang Z, Wang W, Medeiros LJ, Yu F.",
+   "revista": "Histopathology",
+   "data": "2026-10-18T00:00:00+00:00",
+   "doi": "10.1111/his.70303",
+   "url": "https://doi.org/10.1111/his.70303",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Characterization of the morphological, immunophenotypical and cytogenetic features of high-grade B-cell lymphoma with 11q aberration.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "An Integrated Approach to MSI-High Colorectal Cancer Therapy in a Young Patient: A Clinical Case.",
+   "autores": "Turkpenova I, Smagulova K, Jumanov A, Moldasheva A, Kadyrbayeva R, Imanaliyeva A.",
+   "revista": "Am J Case Rep",
+   "data": "2026-10-18T00:00:00+00:00",
+   "doi": "10.12659/ajcr.953248",
+   "url": "https://doi.org/10.12659/ajcr.953248",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "An Integrated Approach to MSI-High Colorectal Cancer Therapy in a Young Patient: A Clinical Case.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Associação de mutações truncantes TP53 com tempo para falha do tratamento após quimioimunoterapia de primeira linha no câncer de pulmão de células não pequenas mutante HER2.",
+   "autores": "Yoshimura A, Yoshida J, Takumi C, Takayama K.",
+   "revista": "Target Oncol",
+   "data": "2026-10-17T00:00:00+00:00",
+   "doi": "10.1007/s11523-026-01263-8",
+   "url": "https://doi.org/10.1007/s11523-026-01263-8",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Association of TP53 Truncating Mutations with Time to Treatment Failure after First-Line Chemoimmunotherapy in HER2-Mutant Non-Small Cell Lung Cancer.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Leiomiomas uterinos em HLRCC: uma revisão de escopo de apresentação, histopatologia, padrões de tratamento e implicações reprodutivas.",
+   "autores": "Hessi R, Bendayan E, Mija LA, Ouchene L, Udupa M, Lazarowitz R, Fu L, Leung SOA, Cruz Marino T, Foulkes WD…",
+   "revista": "Eur J Hum Genet",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": "10.1038/s41431-026-02255-y",
+   "url": "https://doi.org/10.1038/s41431-026-02255-y",
+   "acesso_aberto": false,
+   "tema": "Saúde",
+   "titulo_original": "Uterine leiomyomas in HLRCC: a scoping review of presentation, histopathology, treatment patterns, and reproductive implications.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "The molecular heterogeneity and clinical impact of genomic driver alterations in prostate cancer.",
+   "autores": "Pellegrina D, Kiriy D, C L Cheng K, Favero F, Miletti E, Klein ZP, Hernando B, Olsen AV, Sahli A, Fu Y, Lutsik P…",
+   "revista": "Nat Commun",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": "10.1038/s41467-026-77900-7",
+   "url": "https://doi.org/10.1038/s41467-026-77900-7",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "The molecular heterogeneity and clinical impact of genomic driver alterations in prostate cancer.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Paisagem Variante da Linha Germinativa do Mundo Real e Manejo Clínico em Pacientes Coreanos Testados para Suspeita de Câncer Hereditário.",
+   "autores": "Kang MC, Lee HE, Park SY, Lee S, Jung SY, Lim MC, Kang HS, Seol CA, Jang JH, Woo SM, Joung JY, Choi W, Park SC, Kong SY.",
+   "revista": "Cancer Sci",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": "10.1111/cas.70562",
+   "url": "https://doi.org/10.1111/cas.70562",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Real-World Germline Variant Landscape and Clinical Management in Korean Patients Tested for Suspected Hereditary Cancer.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Carcinoma de células escamosas orais: uma revisão moderna da patogênese e tratamento.",
+   "autores": "Mishra G, Sen G, Patel PK, Sahu AN.",
+   "revista": "Int J Biochem Cell Biol",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": "10.1016/j.biocel.2026.107050",
+   "url": "https://doi.org/10.1016/j.biocel.2026.107050",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Oral squamous cell carcinoma: A Modern Review of Pathogenesis and Treatment.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Características clínicas e resultado de uma coorte de pacientes com LLC com mutação de gatekeeper BTK T474.",
+   "autores": "Omer Z, Rogers KA, Yano M, Rai J, Chen J, Woyach JA, Bhat SA, Jones D, Grever MR, Hertlein E, Elgamal S, Byrd JC.",
+   "revista": "Blood Adv",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": "10.1182/bloodadvances.2025019251",
+   "url": "https://doi.org/10.1182/bloodadvances.2025019251",
+   "acesso_aberto": false,
+   "tema": "Genética",
+   "titulo_original": "Clinical characteristics and outcome of a cohort of CLL patients with BTK T474 gatekeeper mutation.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Clinical implications of germline and somatic genetic testing in ovarian carcinoma: BRCA and beyond. O ensaio PERSONA-Ovary.",
+   "autores": "Betella I, Bonetti E, Ribero L, Zanzottera C, Fumagalli C, Sangalli C, Garbi A, Montinaro A, Multinu F, Marino E…",
+   "revista": "Gynecol Oncol",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": "10.1016/j.ygyno.2026.10.006",
+   "url": "https://doi.org/10.1016/j.ygyno.2026.10.006",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Clinical implications of germline and somatic genetic testing in ovarian carcinoma: BRCA and beyond. The PERSONA-Ovary trial.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "<i>PIK3CA</i> Mutations in Advanced or Recurrent Endometrial Cancer: An Exploratory Molecular Profiling From the Phase II MITO END-3 Study.",
+   "autores": "Passarelli A, Scaglione GL, Califano D, Bartoletti M, Lorusso D, Cecere SC, Fagotti A, Farolfi A, Andreetta C…",
+   "revista": "JCO Precis Oncol",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": "10.1200/po-26-00484",
+   "url": "https://doi.org/10.1200/po-26-00484",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Angiotensin-(1-7) attenuates collagen-induced arthritis and suppresses ferroptosis in THP-1-derived macrophages: involvement of p53/SLC7A11 signaling.",
+   "autores": "Yang H, Liu A, Sheng M, Zhang S, Tang L.",
+   "revista": "J Mol Histol",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": "10.1007/s10735-026-11009-5",
+   "url": "https://doi.org/10.1007/s10735-026-11009-5",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Monomorphic Epitheliotropic Intestinal T-Cell Lymphoma: Clinicopathologic and Genetic Analysis of a Large Chinese Cohort.",
+   "autores": "Li K, Wei R, Su M, Shui R, Lu H, Li X, Zhu X, Zhou X, Yu B.",
+   "revista": "Am J Surg Pathol",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": "10.1097/pas.0000000000002629",
+   "url": "https://doi.org/10.1097/pas.0000000000002629",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Real‐World Germline Variant Landscape and Clinical Management in Korean Patients Tested for Suspected Hereditary Cancer",
+   "autores": "Kang M, Lee H, Park S, Lee S, Jung S, Lim M, Kang H, Seol C, Jang J, Woo S, Joung J, Choi W, Park S, Kong S.",
+   "revista": "Cancer Sci",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": null,
+   "url": "https://europepmc.org/article/PMC/PMC13675117",
+   "acesso_aberto": true,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Polycythemia Vera Transforming to Pure Erythroid Leukemia: A Diagnostic Mimic of Thrombotic Microangiopathy With High-Risk TP53 Biology.",
+   "autores": "Kelley TP, Duc L, Sabile J, Swords R.",
+   "revista": "Case Rep Hematol",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.1155/crh/8549290",
+   "url": "https://doi.org/10.1155/crh/8549290",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Molecular Mechanisms and Therapeutic Advances in KRAS G12C-Mutant Non-Small Cell Lung Cancer: Toward Mechanism-Guided Longitudinal Management.",
+   "autores": "Wang H, Chen H, Li S, Zhao J.",
+   "revista": "Cancer Innov",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.1002/cai2.70082",
+   "url": "https://doi.org/10.1002/cai2.70082",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Bispecific NK-Cell Engager Targeting TP53 Mutation Through Integration of a TCR-mimic Antibody.",
+   "autores": "Wu H, Zhao Z, Zhang L, Xiong X, Yang M, Ge W, Zhi D, Cao X, Yi C, Qiao Y, Cao J, Mei Y, Jiao S, Liu Q, Zhou H, Xu Z…",
+   "revista": "MedComm (2020)",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.1002/mco2.71058",
+   "url": "https://doi.org/10.1002/mco2.71058",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Bispecific NK‐Cell Engager Targeting TP53 Mutation Through Integration of a TCR‐mimic Antibody",
+   "autores": "Wu H, Zhao Z, Zhang L, Xiong X, Yang M, Ge W, Zhi D, Cao X, Yi C, Qiao Y, Cao J, Mei Y, Jiao S, Liu Q, Zhou H, Xu Z…",
+   "revista": "MedComm (2020)",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": null,
+   "url": "https://europepmc.org/article/PMC/PMC13669819",
+   "acesso_aberto": true,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Survival by Design: Cell Fate Dynamics in Classical Hodgkin Lymphoma.",
+   "autores": "Seleusan M, Cenariu D, Gulei D, Kegyes D, Tigu AB, Riaz S, Zdrenghea M, Tomuleasa C.",
+   "revista": "Crit Rev Oncol Hematol",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.1016/j.critrevonc.2026.105651",
+   "url": "https://doi.org/10.1016/j.critrevonc.2026.105651",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Colubrid clotcraft: Divergent Factor Va cofactor utilisation underpins differential antivenom cross-reactivities for Boomslang (Dispholidus typus) and Eastern Twig Snake (Thelotornis mossambicanus) venoms.",
+   "autores": "Champagne PS, Seneci L, Qiao Z, Fry BG.",
+   "revista": "Comp Biochem Physiol C Toxicol Pharmacol",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.1016/j.cbpc.2026.110720",
+   "url": "https://doi.org/10.1016/j.cbpc.2026.110720",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Genomic characterization of advanced and recurrent endometrial carcinoma: KRAS and TP53 co-mutation as a biomarker for adverse prognosis and therapeutic failure.",
+   "autores": "Lee S, So KA, Kim S, Lee MK, Kim YH, Kim TJ, Kim MK.",
+   "revista": "Gynecol Oncol",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.1016/j.ygyno.2026.10.009",
+   "url": "https://doi.org/10.1016/j.ygyno.2026.10.009",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Colorectal neoplasia detected during colonoscopic surveillance in Li-Fraumeni syndrome: a retrospective case series.",
+   "autores": "Takagi A, Tajika M, Hori M, Ito N, Tanaka T, Hosoda W, Shimizu M, Imoto I, Niwa Y.",
+   "revista": "Clin J Gastroenterol",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.1007/s12328-026-02466-2",
+   "url": "https://doi.org/10.1007/s12328-026-02466-2",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Moderate-risk variants in hereditary breast and ovarian cancer: seven-year experience from a specialized center.",
+   "autores": "Krückel A, Beckmann MW, Brückner L, Fasching PA, Gass P, Gocke J, Hack CC, Heindl F, Hörner M, Kunze E, Müller-Wirtz C…",
+   "revista": "Fam Cancer",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.1007/s10689-026-00609-5",
+   "url": "https://doi.org/10.1007/s10689-026-00609-5",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Cerebrospinal Fluid Tumor-Derived DNA Analysis Aids in the Diagnosis of Postpartum Diffuse Midline Glioma.",
+   "autores": "Rodriguez A, Robinson D, Akhavan D, Cunningham D, Larson A, Udhane V, Schilter KF, Nie Q, Reddi HV.",
+   "revista": "Oncologist",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.1093/oncolo/oyag417",
+   "url": "https://doi.org/10.1093/oncolo/oyag417",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Efficacy of continuous ibrutinib monotherapy in patients with relapsed/refractory chronic lymphocytic leukemia with high-burden and low-burden TP53 mutations: Multicenter retrospective analysis of the Polish Adult…",
+   "autores": "Iskierka-Jażdżewska E, Zielonka K, Puła B, Chudy A, Kustra M, Brodacka B, Subocz E, Urbanowicz A, Wiśniewska-Organek D…",
+   "revista": "Adv Clin Exp Med",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.17219/acem/215822",
+   "url": "https://doi.org/10.17219/acem/215822",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
   {
    "tipo": "artigo",
    "titulo": "Características histopatológicas e subtipos de carcinoma espinocelular cutâneo invasivo: uma revisão abrangente.",
@@ -444,267 +736,25 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Refinement of the UKCGG/CanVIG framework for triage of putative germline variants identified via tumour and ctDNA sequencing: maximising clinical utility and harmonising gene and variant-restricted reporting across UK…",
-   "autores": "McVeigh TP, Hanson H, Snape K, Turnbull C, Burghel GJ.",
-   "revista": "J Med Genet",
+   "titulo": "Context-Dependent TP53 Mutation Gain-of-Function Is Correlated With Its Contribution to Genomic Instability.",
+   "autores": "Tanaka N, Hadi JA, Zhao M, Tang L, Wang Q, Wang J, Myers JN, Zhou G.",
+   "revista": "Laryngoscope Investig Otolaryngol",
    "data": "2026-10-14T00:00:00+00:00",
-   "doi": "10.1136/jmg-2026-111648",
-   "url": "https://doi.org/10.1136/jmg-2026-111648",
-   "acesso_aberto": false,
-   "tema": "Câncer"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Emerging Therapeutic targets and Early-phase drug Development in Gynecological Malignancies.",
-   "autores": "Ouali K, Tan D, Lheureux S, Massard C.",
-   "revista": "Ann Oncol",
-   "data": "2026-10-14T00:00:00+00:00",
-   "doi": "10.1016/j.annonc.2026.10.101",
-   "url": "https://doi.org/10.1016/j.annonc.2026.10.101",
-   "acesso_aberto": false,
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Lentinan-induced FUBP1 O-GlcNAcylation suppresses macrophage ferroptosis and atherosclerosis via the Tp53/SLC7A11 axis.",
-   "autores": "Liu X, Xu Z, Cheng F, Hu S, He M, Zheng W, Wei H, Li J, Yang H, Fang L, Wang Y, Zheng L, Rao X, Fang Q.",
-   "revista": "Pharmacol Res",
-   "data": "2026-10-14T00:00:00+00:00",
-   "doi": "10.1016/j.phrs.2026.109676",
-   "url": "https://doi.org/10.1016/j.phrs.2026.109676",
-   "acesso_aberto": false,
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Evaluation of Murrayanine's Anticancer Potential in Breast Cancer: Integrative Computational, In Vitro, and Nanoparticle Delivery Approaches.",
-   "autores": "Di Y, Hu X, Dai J, Rajalakshmi K, Arulsamy S, Kiruthiga N, Theivendren P, Muthusamy S, Zhu D.",
-   "revista": "J Steroid Biochem Mol Biol",
-   "data": "2026-10-14T00:00:00+00:00",
-   "doi": "10.1016/j.jsbmb.2026.107136",
-   "url": "https://doi.org/10.1016/j.jsbmb.2026.107136",
-   "acesso_aberto": false,
-   "tema": "Câncer"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "MLH1 p.His112Arg Variant Is Associated With Increased Cancer Susceptibility.",
-   "autores": "Elfatih A, Tout I, Doha NA, Arja TA, Mohammed I, Abdelrhaman D, Hasan W, Saad C, Mbarek H, Mifsud B, Da'as SI.",
-   "revista": "Int J Cancer",
-   "data": "2026-10-14T00:00:00+00:00",
-   "doi": "10.1002/ijc.70790",
-   "url": "https://doi.org/10.1002/ijc.70790",
-   "acesso_aberto": false,
-   "tema": "Câncer"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Molecular, Cytogenetic, and Immunophenotypic Biomarkers in Acute Myeloid Leukemia: Current Evidence and Future Directions-A Narrative Review.",
-   "autores": "Obeagu EI.",
-   "revista": "Health Sci Rep",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1002/hsr2.73393",
-   "url": "https://doi.org/10.1002/hsr2.73393",
-   "acesso_aberto": false,
-   "tema": "Câncer"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Immune and cellular determinants of response to HMA-venetoclax regimens in acute myeloid leukemia.",
-   "autores": "Marchetti A, Lazzaroni F, Da Via' MC, Lionetti M, Maggioni G, Campagna A, Ventura D, Croci GA, Marella A, Maeda A…",
-   "revista": "Hemasphere",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1002/hem3.70498",
-   "url": "https://doi.org/10.1002/hem3.70498",
-   "acesso_aberto": false,
-   "tema": "Câncer"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Association of Xeroderma Pigmentosum group F (XPF) with epigenetic regulation of T helper cell differentiation in coronary artery disease-associated prostate cancer.",
-   "autores": "Singha Deo A, P S, Karun S, S U S, Mukherjee O, George M, Sarkar K.",
-   "revista": "Epigenomics",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1080/17501911.2026.2746944",
-   "url": "https://doi.org/10.1080/17501911.2026.2746944",
-   "acesso_aberto": false,
-   "tema": "Câncer"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Driver mutation profiling by next-generation sequencing predicts survival and recurrence after curative-intent resection for pancreatic ductal adenocarcinoma: a genomic cohort study.",
-   "autores": "Ali MM, Aragon KK, Cher BA, Ahmed KS, Marcinak CT, Acher AW, Kratz J, Murtaza M, Burkard ME, Zafar SN.",
-   "revista": "Clin Transl Oncol",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1007/s12094-026-04564-6",
-   "url": "https://doi.org/10.1007/s12094-026-04564-6",
+   "doi": "10.1002/lio2.70562",
+   "url": "https://doi.org/10.1002/lio2.70562",
    "acesso_aberto": false,
    "tema": "Genética"
   },
   {
    "tipo": "artigo",
-   "titulo": "FERTILITY PRESERVATION IN PATIENTS WITH GENETIC CONDITIONS PREDISPOSING TO POI.",
-   "autores": "Angelini E, Oktay KH.",
-   "revista": "Fertil Steril",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1016/j.fertnstert.2026.10.007",
-   "url": "https://doi.org/10.1016/j.fertnstert.2026.10.007",
+   "titulo": "Sporadic ampullary adenoma mimicking adenocarcinoma in the absence of genetic predisposition: a case report.",
+   "autores": "Poluyanoff AA, Ajadi EA, Flood D, Salzberg AD.",
+   "revista": "J Surg Case Rep",
+   "data": "2026-10-14T00:00:00+00:00",
+   "doi": "10.1093/jscr/rjag925",
+   "url": "https://doi.org/10.1093/jscr/rjag925",
    "acesso_aberto": false,
    "tema": "Genética"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "[Molecular-Based Diagnostics and Therapy of Metastatic Hormone-Sensitive Prostate Cancer (mHSPC)].",
-   "autores": "Kesch C, Hadaschik B, von Amsberg G.",
-   "revista": "Aktuelle Urol",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1055/a-2970-7829",
-   "url": "https://doi.org/10.1055/a-2970-7829",
-   "acesso_aberto": false,
-   "tema": "Câncer"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "De novo MAP2K4 variants cause a neurodevelopmental syndrome and impaired JNK signaling in iPSC-derived neurons.",
-   "autores": "Nomakuchi TT, Rippert AL, Santos De León SA, Gonzalez EM, Li D, Angireddy R, Finoti LS, Faletra F, Musante L, Tuula R…",
-   "revista": "Am J Hum Genet",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1016/j.ajhg.2026.09.014",
-   "url": "https://doi.org/10.1016/j.ajhg.2026.09.014",
-   "acesso_aberto": false,
-   "tema": "Genética"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Ayurvedic approaches to scorpion stings: Historical insights, modern scientific perspectives and challenges.",
-   "autores": "Nath S, Hazarika NK, Mukherjee AK.",
-   "revista": "J Ayurveda Integr Med",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1016/j.jaim.2026.101397",
-   "url": "https://doi.org/10.1016/j.jaim.2026.101397",
-   "acesso_aberto": false,
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Molecular Consequences and Targeting of PPM1D Overexpression in Myeloproliferative Neoplasms.",
-   "autores": "Mia MB, Schaniel C, Clementelli C, Haines SE, Olszewska M, Arandela J, Elghaity-Beckley S, Klingborg S, Hoque Z…",
-   "revista": "Blood",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1182/blood.2025030377",
-   "url": "https://doi.org/10.1182/blood.2025030377",
-   "acesso_aberto": false,
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Germline DDX41 defines a distinct subgroup in MDS undergoing transplantation with reduced relapse and improved survival.",
-   "autores": "Gagelmann N, Reilly CR, Sasi A, Hebert K, Auer P, Dong J, Zhang T, Wang T, Cutler CS, Soiffer RJ, Spellman SR, Saber W…",
-   "revista": "Blood",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1182/blood.2026034923",
-   "url": "https://doi.org/10.1182/blood.2026034923",
-   "acesso_aberto": false,
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Molecular landscape of anaplastic transformation in pancreatic ductal adenocarcinoma.",
-   "autores": "Hayashi A, Sasagawa S, Shibayama T, Tsanov KM, Umeda S, Ho YJ, Tanabe K, Park W, Nagahama K, Onizuka H, Hibiya T…",
-   "revista": "J Pathol",
-   "data": "2026-10-13T00:00:00+00:00",
-   "doi": "10.1002/path.70136",
-   "url": "https://doi.org/10.1002/path.70136",
-   "acesso_aberto": false,
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Cytoprotective effect of microencapsulated Vaccinium floribundum Kunth on porcine vascular wall mesenchymal stem cells under serum deprivation conditions.",
-   "autores": "Biondolillo G, Tubon I, Antognoni F, Melotti L, Salaroli R, Zannoni A, Bernardini C.",
-   "revista": "Res Vet Sci",
-   "data": "2026-10-12T00:00:00+00:00",
-   "doi": "10.1016/j.rvsc.2026.106437",
-   "url": "https://doi.org/10.1016/j.rvsc.2026.106437",
-   "acesso_aberto": false,
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Paradoxical viper envenomation: minimal local manifestations with fatal intracranial hemorrhage- an autopsy case report.",
-   "autores": "Kirdoliya D, Zacaria A, Akbar M, Pulagura SSK, Meshram V.",
-   "revista": "Leg Med (Tokyo)",
-   "data": "2026-10-12T00:00:00+00:00",
-   "doi": "10.1016/j.legalmed.2026.103036",
-   "url": "https://doi.org/10.1016/j.legalmed.2026.103036",
-   "acesso_aberto": false,
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "First-line treatment outcomes in HER2-altered advanced NSCLC: a real-world multi-center study comparing trastuzumab deruxtecan with conventional therapies and analysis by HER2/EGFR co-alteration status.",
-   "autores": "Liu C, Li T, Qin BY, Yu L, Ji C, Liu M, Wang A, Wang YL, Liu ZF, Zhang T, Hu Y.",
-   "revista": "BMC Cancer",
-   "data": "2026-10-12T00:00:00+00:00",
-   "doi": "10.1186/s12885-026-16688-7",
-   "url": "https://doi.org/10.1186/s12885-026-16688-7",
-   "acesso_aberto": false,
-   "tema": "Saúde"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Molecular Recognition and Immunopharmacological Implications of Serratiopeptidase Targeting Snake Venom Bradykinin-Potentiating Peptides.",
-   "autores": "Dhiman A, Singh R, Purohit R.",
-   "revista": "Pharm Res",
-   "data": "2026-10-12T00:00:00+00:00",
-   "doi": "10.1007/s11095-026-04222-0",
-   "url": "https://doi.org/10.1007/s11095-026-04222-0",
-   "acesso_aberto": false,
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "A health-system-scale, episode-resolved multimodal atlas of cancer cachexia.",
-   "autores": "Castillon VJ, Xie AX, Boscenco S, Tse E, Ruthen N, Wang J, Bakouny Z, Waters M, Fu C, Fong C, Saleh M, Baroud T, Park…",
-   "revista": "Nat Med",
-   "data": "2026-10-12T00:00:00+00:00",
-   "doi": "10.1038/s41591-026-04689-9",
-   "url": "https://doi.org/10.1038/s41591-026-04689-9",
-   "acesso_aberto": false,
-   "tema": "Câncer"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "TFRC-associated ferroptosis in synovial macrophages promotes inflammatory and fibrotic remodeling in osteoarthritis.",
-   "autores": "Shi W, Wang X, Tian Y, Zhang L, Zhu L, Li X, Liu Q.",
-   "revista": "Gene",
-   "data": "2026-10-12T00:00:00+00:00",
-   "doi": "10.1016/j.gene.2026.150443",
-   "url": "https://doi.org/10.1016/j.gene.2026.150443",
-   "acesso_aberto": false,
-   "tema": "Ciência"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Molecular landscape of chondrosarcoma: From tumor biology to therapeutic vulnerabilities.",
-   "autores": "Belluzzi E, Pozzuoli A, Trovarelli G, Angelini A, Ruggieri P.",
-   "revista": "Biochim Biophys Acta Rev Cancer",
-   "data": "2026-10-12T00:00:00+00:00",
-   "doi": "10.1016/j.bbcan.2026.189736",
-   "url": "https://doi.org/10.1016/j.bbcan.2026.189736",
-   "acesso_aberto": false,
-   "tema": "Câncer"
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Immunostaining of p53 Is Associated With Efficacy of Anti-PD-1 Immune Checkpoint Inhibitors in Patients With Recurrent or Metastatic Head and Neck Squamous Cell Carcinoma.",
-   "autores": "Kuo MC, Huang TL, Chiu TJ, Huang WT, Tsai TH, Li SH.",
-   "revista": "J Immunother",
-   "data": "2026-10-12T00:00:00+00:00",
-   "doi": "10.1097/cji.0000000000000624",
-   "url": "https://doi.org/10.1097/cji.0000000000000624",
-   "acesso_aberto": false,
-   "tema": "Câncer"
   }
  ],
  "fontes": [
@@ -722,18 +772,9 @@
   "Europe PMC"
  ],
  "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "estudantes da usp arrecadam cabelo no outubro rosa": "2026-10-09T21:04:36.830010+00:00",
-  "novo medicamento amplia opcoes de tratamento para cancer de pancreas metastatico": "2026-10-09T21:04:36.830010+00:00",
-  "o premio nobel de fisica 2026 mais um para o neutrino": "2026-10-09T21:04:36.830010+00:00",
-  "fiocruz assina declaracao de barcelona e iniciativa de helsinki": "2026-10-09T21:04:36.830010+00:00",
-  "does each new covid 19 variant pose a significant threat": "2026-10-09T21:04:36.830010+00:00",
-  "breaking down nerve cell scaffold relieves chronic pain in mice": "2026-10-09T21:04:36.830010+00:00",
-  "major earthquake strikes panamadamage and injuries are expected": "2026-10-09T21:04:36.830010+00:00",
-  "two large asteroids found spinning as fast as a fairground ride": "2026-10-09T21:04:36.830010+00:00",
   "editora da unicamp tem tres obras entre as finalistas do premio abeu": "2026-10-10T07:17:35.907240+00:00",
   "novo observatorio amplia o conhecimento sobre os sistemas de saude do brics": "2026-10-10T07:17:35.907240+00:00",
   "unicamp sediara seis novos centros de pesquisa da fapesp": "2026-10-10T07:17:35.907240+00:00",
@@ -904,6 +945,13 @@
   "its about to be a lot harder to keep countries honest about climate change": "2026-10-19T17:34:59.070308+00:00",
   "scientists discover why some people still cant taste food after covid 19": "2026-10-19T17:34:59.070308+00:00",
   "scientists win 2026 nobel prize for controlling brain cells with light": "2026-10-19T17:34:59.070308+00:00",
-  "how what we see and hear feed together to help us understand emotions": "2026-10-19T17:34:59.070308+00:00"
+  "how what we see and hear feed together to help us understand emotions": "2026-10-19T17:34:59.070308+00:00",
+  "campanha oferece exames gratuitos a comunidade universitaria para prevenir diabetes hipertensao e colesterol": "2026-10-19T22:29:22.480474+00:00",
+  "o ambiente pode acelerar o envelhecimento": "2026-10-19T22:29:22.480474+00:00",
+  "premio marta vannucci reconhece trajetorias de mulheres na ciencia do oceano": "2026-10-19T22:29:22.480474+00:00",
+  "its about to get a lot harder to keep countries honest about climate change": "2026-10-19T22:29:22.480474+00:00",
+  "audio long read how to stay smart in the age of ai the science of critical thinking": "2026-10-19T22:29:22.480474+00:00",
+  "toxic chemicals in fentanyl revealed by speedy technique": "2026-10-19T22:29:22.480474+00:00",
+  "japan launches a probe to collect rocks from marss moon phobos": "2026-10-19T22:29:22.480474+00:00"
  }
 }
