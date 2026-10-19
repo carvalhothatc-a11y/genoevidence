@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-18T21:36:01.595834+00:00",
+ "atualizado_em": "2026-10-19T04:55:29.359700+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -25,6 +25,84 @@
     "es": {
      "titulo": "El Premio Nobel de Medicina 2026 se destina a la optogenética: controlar las neuronas con luz",
      "resumo": "Karl Deisseroth, Peter Hegemann y Georg Nagel fueron galardonados \"por sus descubrimientos sobre los canales iónicos activados por la luz y la optogenética\". Hegemann y Nagel encontraron la canalrodopsina en un alga: bajo la luz azul, la proteína abre un canal, los iones entran y generan un impulso eléctrico en cualquier célula. Deisseroth puso este gen en las neuronas y las encendió con luz, primero en cultivo, luego en los cerebros de ratones vivos. Hoy en día, el método revela circuitos de memoria y emoción, y se prueba para d"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Inalação controlada de ar rarefeito pode ser estratégia para atenuar sintomas de Parkinson",
+   "resumo": "Estudo preliminar conduzido na Unesp mostra que a abordagem é segura, não afeta o sono e ajuda a regular marcadores associados à inflamação",
+   "url": "https://agencia.fapesp.br/inalacao-controlada-de-ar-rarefeito-pode-ser-estrategia-para-atenuar-sintomas-de-parkinson/59415",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-19T04:55:29.359700+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59415.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Controlled inhalation of rarefied air can be a strategy to mitigate Parkinson's symptoms",
+     "resumo": "Preliminary study conducted at Unesp shows that the approach is safe, does not affect sleep and helps regulate markers associated with inflammation"
+    },
+    "es": {
+     "titulo": "La inhalación controlada de aire enrarecido puede ser una estrategia para mitigar los síntomas del Parkinson",
+     "resumo": "Un estudio preliminar realizado en la Unesp demuestra que el abordaje es seguro, no afecta al sueño y ayuda a regular los marcadores asociados a la inflamación"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Projeto busca universitários surdos para desenvolver plataforma de matemática em Libras",
+   "resumo": "Iniciativa do Centro Brasileiro de Geometria (CBG), um CEPID-FAPESP com sede na Unicamp, vai criar site com a resolução de questões de matemática e português do Enem",
+   "url": "https://agencia.fapesp.br/projeto-busca-universitarios-surdos-para-desenvolver-plataforma-de-matematica-em-libras/59418",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-19T04:55:29.359700+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59418.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Project seeks deaf university students to develop mathematics platform in Libras",
+     "resumo": "Initiative of the Brazilian Center of Geometry (CBG), a CEPID-FAPESP based at Unicamp, will create a website with the resolution of Enem's mathematics and Portuguese questions"
+    },
+    "es": {
+     "titulo": "Proyecto busca estudiantes universitarios sordos para desarrollar plataforma de matemáticas en Libras",
+     "resumo": "Iniciativa del Centro Brasileño de Geometría (CBG), un CEPID-FAPESP con sede en la Unicamp, creará un sitio web con la resolución de las preguntas de matemáticas y portugués de Enem"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Manejo adequado transforma pastagens degradadas em reservatórios de carbono",
+   "resumo": "Experimentos de longa duração no interior paulista revelam que a intensificação moderada do pasto não apenas recupera a produtividade da terra, mas maximiza o sequestro de CO 2 . Pesquisa também validou método mais barato de medição",
+   "url": "https://agencia.fapesp.br/manejo-adequado-transforma-pastagens-degradadas-em-reservatorios-de-carbono/59417",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-19T04:55:29.359700+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59417.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Proper management turns degraded pastures into carbon reservoirs",
+     "resumo": "Long-term experiments in the interior of São Paulo state reveal that moderate pasture intensification not only restores land productivity, but maximizes CO 2 sequestration. Research has also validated cheaper method of measurement"
+    },
+    "es": {
+     "titulo": "Una gestión adecuada convierte los pastos degradados en depósitos de carbono",
+     "resumo": "Los experimentos a largo plazo en el interior del estado de São Paulo revelan que la intensificación moderada de los pastizales no solo restaura la productividad de la tierra, sino que maximiza el secuestro de CO 2 . La investigación también ha validado un método de medición más barato"
     }
    }
   },
@@ -649,14 +727,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "nobel de medicina reconhece descobertas que levam a testes para recuperar a visao": "2026-10-08T22:12:53.560323+00:00",
-  "imigracao angolana para o brasil mantem semelhanca com exploracao iniciada no periodo colonial": "2026-10-08T22:12:53.560323+00:00",
-  "do controle dos neuronios a grecia reimaginada": "2026-10-08T22:12:53.560323+00:00",
-  "oficina reune estudantes para discutir o ensino juridico": "2026-10-08T22:12:53.560323+00:00",
-  "the most exciting claims from openais heap of new proofs": "2026-10-08T22:12:53.560323+00:00",
-  "mathematicians marvel and grumble at openais trove of new results": "2026-10-08T22:12:53.560323+00:00",
-  "how to build a mouse embryo development captured in stunning detail": "2026-10-08T22:12:53.560323+00:00",
-  "pesquisadores debatem sobre savanas com foco na cop31": "2026-10-09T02:18:17.561387+00:00",
   "biorrepositorio brasileiro pode ajudar a personalizar a prevencao do cancer no sus": "2026-10-09T09:18:03.324627+00:00",
   "estudo sobre imunidade metabolismo e saude hormonal busca voluntarios": "2026-10-09T09:18:03.324627+00:00",
   "instituto weizmann de ciencias oferece bolsa de pos doutorado": "2026-10-09T09:18:03.324627+00:00",
@@ -832,6 +902,9 @@
   "scientists link a strange sugar in red meat to a 63 higher diabetes risk": "2026-10-18T15:59:31.583814+00:00",
   "scientists uncover 3 key brain pathways linked to lasting depression relief": "2026-10-18T15:59:31.583814+00:00",
   "physicists create a bizarre new quantum state called a fractional fermi sea": "2026-10-18T15:59:31.583814+00:00",
-  "eating blueberries every day may have a surprising effect on your mood": "2026-10-18T15:59:31.583814+00:00"
+  "eating blueberries every day may have a surprising effect on your mood": "2026-10-18T15:59:31.583814+00:00",
+  "inalacao controlada de ar rarefeito pode ser estrategia para atenuar sintomas de parkinson": "2026-10-19T04:55:29.359700+00:00",
+  "projeto busca universitarios surdos para desenvolver plataforma de matematica em libras": "2026-10-19T04:55:29.359700+00:00",
+  "manejo adequado transforma pastagens degradadas em reservatorios de carbono": "2026-10-19T04:55:29.359700+00:00"
  }
 }
