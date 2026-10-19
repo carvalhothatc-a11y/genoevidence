@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-19T10:57:13.560411+00:00",
+ "atualizado_em": "2026-10-19T17:34:59.070308+00:00",
  "noticias": [
   {
    "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
@@ -57,7 +57,7 @@
   {
    "tipo": "noticia",
    "titulo": "Projeto busca universitários surdos para desenvolver plataforma de matemática em Libras",
-   "resumo": "Iniciativa do Centro Brasileiro de Geometria (CBG), um CEPID-FAPESP com sede na Unicamp, vai criar site com a resolução de questões de matemática e português do Enem",
+   "resumo": "Iniciativa do Centro Brasileiro de Geometria (CBG), um CEPID-FAPESP com sede na Unicamp, vai criar site com a resolução de questões de matemática do Enem",
    "url": "https://agencia.fapesp.br/projeto-busca-universitarios-surdos-para-desenvolver-plataforma-de-matematica-em-libras/59418",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
@@ -72,39 +72,239 @@
    "i18n": {
     "en": {
      "titulo": "Project seeks deaf university students to develop mathematics platform in Libras",
-     "resumo": "Initiative of the Brazilian Center of Geometry (CBG), a CEPID-FAPESP based at Unicamp, will create a website with the resolution of Enem's mathematics and Portuguese questions"
+     "resumo": "Initiative of the Brazilian Center of Geometry (CBG), a CEPID-FAPESP based at Unicamp, will create a website with the resolution of Enem's mathematics questions"
     },
     "es": {
      "titulo": "Proyecto busca estudiantes universitarios sordos para desarrollar plataforma de matemáticas en Libras",
-     "resumo": "Iniciativa del Centro Brasileño de Geometría (CBG), un CEPID-FAPESP con sede en la Unicamp, creará un sitio web con la resolución de las preguntas de matemáticas y portugués de Enem"
+     "resumo": "Iniciativa del Centro Brasileño de Geometría (CBG), un CEPID-FAPESP con sede en la Unicamp, creará un sitio web con la resolución de las preguntas de matemáticas de Enem"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Enzima encontrada na raiz da cana aumenta em seis vezes a produção de açúcar a partir do bagaço",
-   "resumo": "A reportagem mais acessada entre 9 e 15 de outubro detalha pesquisa de cientistas da USP que isolou a molécula ao estudar os aerênquimas – estruturas que a própria planta cria para formar canais de ar em suas raízes. O achado pode…",
-   "url": "https://agencia.fapesp.br/enzima-encontrada-na-raiz-da-cana-aumenta-em-seis-vezes-a-producao-de-acucar-a-partir-do-bagaco/59348",
-   "fonte": "Agência FAPESP",
+   "titulo": "UTI pediátrica do HC destaca a importância do cuidado especializado a crianças em estado grave",
+   "resumo": "Serviço do Instituto da Criança e do Adolescente da USP atende recém-nascidos, crianças e adolescentes, com destaque para pacientes com doenças crônicas",
+   "url": "https://jornal.usp.br/radio-usp/uti-pediatrica-do-hc-destaca-a-importancia-do-cuidado-especializado-a-criancas-em-estado-grave/",
+   "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-19T10:57:13.560411+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59348.jpg",
+   "data": "2026-10-19T16:01:35+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261019_uti.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Enzyme found in sugarcane root increases sugar production from bagasse by six times",
-     "resumo": "The most accessed report between October 9 and 15 details research by USP scientists who isolated the molecule by studying aerenchymas – structures that the plant itself creates to form air channels in its roots. The find may…"
+     "titulo": "Pediatric ICU of HC highlights the importance of specialized care for critically ill children",
+     "resumo": "Service of the Institute of Children and Adolescents of USP serves newborns, children and adolescents, with emphasis on patients with chronic diseases"
     },
     "es": {
-     "titulo": "La enzima que se encuentra en la raíz de caña de azúcar aumenta la producción de azúcar del bagazo en seis veces",
-     "resumo": "El informe más consultado entre el 9 y el 15 de octubre detalla la investigación realizada por científicos de la USP que aislaron la molécula mediante el estudio de los aerénquimas, estructuras que la propia planta crea para formar canales de aire en sus raíces. El hallazgo puede..."
+     "titulo": "La UCI pediátrica de HC destaca la importancia de la atención especializada para niños en estado crítico",
+     "resumo": "Servicio del Instituto de la Niñez y la Adolescencia de la USP atiende a recién nacidos, niños y adolescentes, con énfasis en pacientes con enfermedades crónicas"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Ribeirão Preto sediará o “Colóquio Pan-Americano de Pesquisa em Enfermagem”",
+   "resumo": "Evento científico internacional reúne pesquisadores, gestores e profissionais de saúde para debater o fortalecimento dos sistemas de saúde",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/ribeirao-preto-sediara-o-coloquio-pan-americano-de-pesquisa-em-enfermagem/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-19T14:45:51+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/04/20260422_Coloquio-Pan-americano.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Ribeirão Preto will host the “Pan American Colloquium on Nursing Research”",
+     "resumo": "International scientific event brings together researchers, managers and health professionals to discuss the strengthening of health systems"
+    },
+    "es": {
+     "titulo": "Ribeirão Preto acogerá el “Coloquio Panamericano de Investigación en Enfermería”",
+     "resumo": "Evento científico internacional reúne a investigadores, gestores y profesionales de la salud para debatir sobre el fortalecimiento de los sistemas de salud"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Diagnóstico tardio de doenças ginecológicas compromete a saúde e qualidade de vida feminina",
+   "resumo": "Endometriose atinge cerca de 190 milhões de mulheres no mundo; sintomas normalizados de cólicas menstruais dificultam a identificação precoce da doença",
+   "url": "https://jornal.usp.br/atualidades/diagnostico-tardio-de-doencas-ginecologicas-afeta-qualidade-de-vida-e-pode-comprometer-saude-das-mulheres/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-19T12:00:19+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/05/20260513_utero.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Late diagnosis of gynecological diseases compromises women's health and quality of life",
+     "resumo": "Endometriosis affects about 190 million women worldwide; normalized symptoms of menstrual cramps make it difficult to identify the disease early"
+    },
+    "es": {
+     "titulo": "El diagnóstico tardío de enfermedades ginecológicas compromete la salud y la calidad de vida de las mujeres",
+     "resumo": "La endometriosis afecta a unos 190 millones de mujeres en todo el mundo; los síntomas normalizados de los cólicos menstruales dificultan la identificación temprana de la enfermedad"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Zero glúten: é possível na prática?",
+   "resumo": "Doença celíaca atinge cerca de 1% da população e exige cuidados na escolha e preparo dos alimentos; pesquisadores buscam produtos mais seguros, nutritivos e acessíveis",
+   "url": "https://revistapesquisa.fapesp.br/zero-gluten-e-possivel-na-pratica/?utm_source=rss&utm_medium=rss&utm_campaign=zero-gluten-e-possivel-na-pratica",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-19T11:57:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/06bc25abe55ba464ea7271b43a6c60d32a33eb52_1200-630.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Zero gluten: is it possible in practice?"
+    },
+    "es": {
+     "titulo": "Cero gluten: ¿es posible en la práctica?"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Manejo adequado transforma pastagens degradadas em reservatórios de carbono",
+   "resumo": "Experimentos de longa duração no interior paulista revelam que a intensificação moderada do pasto não apenas recupera a produtividade da terra, mas maximiza o sequestro de CO 2 . Pesquisa também validou método mais barato de medição",
+   "url": "https://agencia.fapesp.br/manejo-adequado-transforma-pastagens-degradadas-em-reservatorios-de-carbono/59417",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-19T17:34:59.070308+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59417.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Proper management turns degraded pastures into carbon reservoirs"
+    },
+    "es": {
+     "titulo": "Una gestión adecuada convierte los pastos degradados en depósitos de carbono"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Por que algumas pessoas escapam da doença de Alzheimer apesar de carregarem um gene de alto risco",
+   "resumo": "Os cientistas descobriram por que algumas pessoas com alto risco genético de Alzheimer permanecem mentalmente afiadas até os 80 anos, descobrindo uma mutação rara que protege o cérebro do acúmulo de proteínas nocivas. Os resultados revelam um potencial novo...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261018205044.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-19T12:57:02+00:00",
+   "tema": "Genética",
+   "relevancia": 7,
+   "imagem": "https://www.sciencedaily.com/images/1920/genetic-neuroscience-human-brain-dna-mutation.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Why some people escape Alzheimer’s despite carrying a high-risk gene",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Por qué algunas personas escapan del Alzheimer a pesar de portar un gen de alto riesgo",
+     "resumo": "Los científicos han descubierto por qué algunas personas con un alto riesgo genético de Alzheimer siguen siendo mentalmente agudas hasta los 80 años, descubriendo una rara mutación que protege al cerebro de la acumulación de proteínas dañinas. Los hallazgos revelan un potencial nuevo..."
+    }
+   },
+   "resumo_original": "Scientists have discovered why some people with a high genetic risk of Alzheimer’s remain mentally sharp into their 80s, uncovering a rare mutation that protects the brain from harmful protein buildup. The findings reveal a potential new…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Está prestes a ser muito mais difícil manter os países honestos sobre as mudanças climáticas",
+   "resumo": "Uma discussão sobre quando publicar avaliações cruciais sobre mudanças climáticas corre o risco de deixar os países livres dos cortes de emissões",
+   "url": "https://www.newscientist.com/article/2594695-its-about-to-be-a-lot-harder-to-keep-countries-honest-about-climate-change/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-19T16:20:12+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317349988.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "It’s about to be a lot harder to keep countries honest about climate change",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Está a punto de ser mucho más difícil mantener a los países honestos sobre el cambio climático",
+     "resumo": "Una disputa sobre cuándo publicar evaluaciones cruciales del cambio climático corre el riesgo de dejar a los países libres de recortes de emisiones"
+    }
+   },
+   "resumo_original": "A row over when to publish crucial climate change assessments risks letting countries off the hook on emissions cuts"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas descobrem por que algumas pessoas ainda não conseguem saborear alimentos após a COVID-19",
+   "resumo": "Os cientistas descobriram uma possível explicação para o motivo pelo qual algumas pessoas lutam para provar os alimentos mais de um ano após se recuperarem da COVID-19. Ao examinar as papilas gustativas de pacientes com sintomas persistentes, os pesquisadores descobriram...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261018205033.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-19T12:03:02+00:00",
+   "tema": "Saúde",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/woman-tongue-taste-buds-close.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists discover why some people still can’t taste food after COVID-19",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos descubren por qué algunas personas todavía no pueden probar los alimentos después de la COVID-19",
+     "resumo": "Los científicos han descubierto una posible explicación de por qué algunas personas tienen dificultades para probar los alimentos más de un año después de recuperarse de la COVID-19. Al examinar las papilas gustativas de pacientes con síntomas persistentes, los investigadores descubrieron..."
+    }
+   },
+   "resumo_original": "Scientists have uncovered a possible explanation for why some people struggle to taste food more than a year after recovering from COVID-19. By examining taste buds from patients with lingering symptoms, researchers discovered molecular…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas ganham Prêmio Nobel de 2026 por controlar células cerebrais com luz",
+   "resumo": "Uma descoberta em pequenas algas levou a um avanço vencedor do Prêmio Nobel que permite aos cientistas ligar e desligar células cerebrais usando a luz. A técnica revolucionária já ajudou os pesquisadores a ativar memórias e está abrindo novas…",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261018205037.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-19T10:02:32+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/translucent-glowing-human-brain-signals-waves.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists win 2026 Nobel Prize for controlling brain cells with light",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos ganan el Premio Nobel de 2026 por controlar las células cerebrales con luz",
+     "resumo": "Un descubrimiento en algas diminutas condujo a un avance ganador del Premio Nobel que permite a los científicos encender y apagar las células cerebrales utilizando la luz. La técnica revolucionaria ya ha ayudado a los investigadores a activar los recuerdos y está abriendo nuevos..."
+    }
+   },
+   "resumo_original": "A discovery in tiny algae led to a Nobel Prize-winning breakthrough that allows scientists to switch brain cells on and off using light. The revolutionary technique has already helped researchers activate memories and is opening new…"
   },
   {
    "tipo": "noticia",
@@ -158,28 +358,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Por que a equação de Drake ainda é importante 65 anos após sua criação",
-   "resumo": "A equação de Drake fornece uma maneira de adivinhar com quantos alienígenas podemos nos comunicar, mas também é um excelente exemplo da importância da adivinhação científica, diz a colunista Leah Crane",
-   "url": "https://www.newscientist.com/article/2594385-why-the-drake-equation-is-still-important-65-years-after-its-creation/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "Como o que vemos e ouvimos se alimenta para nos ajudar a entender as emoções",
+   "resumo": "As emoções em si podem ser mais importantes do que os sentidos que usamos para percebê-las",
+   "url": "https://www.scientificamerican.com/article/how-what-we-see-and-hear-feed-together-to-help-us-understand-emotions/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-19T08:00:00+00:00",
+   "data": "2026-10-19T17:00:00+00:00",
    "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316868490.jpg",
+   "imagem": "https://static.scientificamerican.com/dam/asset/ed025c64-e1d0-471a-9a65-b3459a5902fb/emotions.jpg?m=1792427313.952&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Why the Drake equation is still important 65 years after its creation",
+   "titulo_original": "How what we see and hear feed together to help us understand emotions",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Por qué la ecuación de Drake sigue siendo importante 65 años después de su creación",
-     "resumo": "La ecuación de Drake proporciona una forma de adivinar con cuántos extraterrestres podríamos comunicarnos, pero también es un excelente ejemplo de la importancia de las conjeturas científicas, dice la columnista Leah Crane"
+     "titulo": "Cómo lo que vemos y escuchamos se alimenta juntos para ayudarnos a comprender las emociones",
+     "resumo": "Las emociones en sí mismas pueden ser más importantes que los sentidos que usamos para percibirlas"
     }
    },
-   "resumo_original": "The Drake equation provides a way to guess how many aliens we might be able to communicate with, but it’s also a prime example of the importance of scientific guessing, says columnist Leah Crane"
+   "resumo_original": "The emotions themselves may be more important than the senses we use to perceive them"
   },
   {
    "tipo": "noticia",
@@ -190,7 +390,7 @@
    "idioma": "pt",
    "data": "2026-10-16T13:17:38+00:00",
    "tema": "Saúde",
-   "relevancia": 4,
+   "relevancia": 3,
    "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/WhatsApp%20Image%202026-10-17%20at%2014.56.05.jpeg",
    "foco": {
     "x": 50,
@@ -204,560 +404,307 @@
      "titulo": "Fiocruz pra Você 2026 refuerza la importancia de la vacuna como prevención"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Do controle dos neurônios à Grécia reimaginada",
-   "resumo": "Nobel premia optogenética, detecção de neutrinos, moléculas assimétricas e autora que se inspira em Homero",
-   "url": "https://revistapesquisa.fapesp.br/do-controle-dos-neuronios-a-grecia-reimaginada/?utm_source=rss&utm_medium=rss&utm_campaign=do-controle-dos-neuronios-a-grecia-reimaginada",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-08T17:46:35+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/abba1e76ede807a6629e5d4e98a2ff713ffb63ab_1200-630.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "From neuron control to reimagined Greece",
-     "resumo": "Nobel Prize for optogenetics, detection of neutrinos, asymmetric molecules and author who is inspired by Homer"
-    },
-    "es": {
-     "titulo": "Del control neuronal a una Grecia reinventada",
-     "resumo": "Premio Nobel de optogenética, detección de neutrinos, moléculas asimétricas y autor que se inspira en Homero"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas descobrem um composto natural que pode proteger o cérebro de muito sal",
-   "resumo": "Comer muito sal pode fazer mais do que aumentar a pressão arterial. Também pode prejudicar a memória e o comportamento social. Em um novo estudo, pesquisadores japoneses descobriram que um composto derivado da soja chamado LPC70 ajudou a proteger os camundongos de vários danos...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261017230032.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-18T13:46:34+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/brain-shield-dementia-protection.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists discover a natural compound that could protect the brain from too much salt",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos descubren un compuesto natural que podría proteger el cerebro del exceso de sal",
-     "resumo": "Comer demasiada sal puede hacer más que aumentar la presión arterial. También podría dañar la memoria y el comportamiento social. En un nuevo estudio, investigadores japoneses descubrieron que un compuesto derivado de la soja llamado LPC70 ayudaba a proteger a los ratones de varios daños..."
-    }
-   },
-   "resumo_original": "Eating too much salt may do more than raise blood pressure. It could also harm memory and social behavior. In a new study, Japanese researchers discovered that a soy-derived compound called LPC70 helped protect mice from several damaging…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Ingrediente de cogumelo mágico tira a luta de peixes agressivos",
-   "resumo": "Um composto psicodélico encontrado em cogumelos mágicos parece ter um efeito inesperado: acalmar peixes altamente agressivos. Os pesquisadores descobriram que baixas doses de psilocibina reduziram significativamente os ataques agressivos em peixes rivulus de mangue...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261017230036.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-18T12:52:13+00:00",
-   "tema": "Ciência",
-   "relevancia": 3,
-   "imagem": "https://www.sciencedaily.com/images/1920/glowing-magic-mushrooms.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Magic mushroom ingredient takes the fight out of aggressive fish",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El ingrediente de setas mágicas elimina la lucha de los peces agresivos",
-     "resumo": "Un compuesto psicodélico que se encuentra en los hongos mágicos parece tener un efecto inesperado: calmar a los peces altamente agresivos. Los investigadores descubrieron que las dosis bajas de psilocibina reducían significativamente los ataques agresivos en los peces de los riachuelos de los manglares..."
-    }
-   },
-   "resumo_original": "A psychedelic compound found in magic mushrooms appears to have an unexpected effect: calming highly aggressive fish. Researchers discovered that low doses of psilocybin significantly reduced aggressive attacks in mangrove rivulus fish…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Nobel de Medicina reconhece criadores da optogenética",
-   "resumo": "Pesquisadores do Centro de Pesquisa em Obesidade e Comorbidades da Unicamp já utilizam dados do método em suas pesquisas",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/13/nobel-de-medicina-reconhece-criadores-da-optogenetica/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-13T17:06:08+00:00",
-   "tema": "Saúde",
-   "relevancia": 3,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/capaJU_20261013_nobel-medicina_mIUkroe.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Nobel Prize in Medicine recognizes creators of optogenetics",
-     "resumo": "Researchers from the Research Center on Obesity and Comorbidities at Unicamp already use data from the method in their research"
-    },
-    "es": {
-     "titulo": "El Premio Nobel de Medicina reconoce a los creadores de la optogenética",
-     "resumo": "Investigadores del Centro de Investigación en Obesidad y Comorbilidades de la Unicamp ya utilizan los datos del método en su investigación"
-    }
-   }
   }
  ],
  "artigos": [
   {
    "tipo": "artigo",
-   "titulo": "Resultados a Longo Prazo de Carcinomas Sinonasais Mutantes de IDH2 Comparados com Carcinoma Indiferenciado Sinonasal do Tipo Selvagem de IDH2.",
-   "autores": "Scholfield DW, Axiotakis L, Woods R, Tai K, Eagan A, Boe LA, Finnegan E, Tam K, Cracchiolo J, Dunn L, Lee N, Ganly I…",
-   "revista": "Head Neck",
-   "data": "2026-10-10T00:00:00+00:00",
-   "doi": "10.1002/hed.70495",
-   "url": "https://doi.org/10.1002/hed.70495",
+   "titulo": "Características histopatológicas e subtipos de carcinoma espinocelular cutâneo invasivo: uma revisão abrangente.",
+   "autores": "Cazzato G, Harnisch K, Kalmykova A, McKee P.",
+   "revista": "Histol Histopathol",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.14670/hh-25-154",
+   "url": "https://doi.org/10.14670/hh-25-154",
    "acesso_aberto": false,
    "tema": "Câncer",
-   "titulo_original": "Long-Term Outcomes of IDH2-Mutant Sinonasal Carcinomas Compared With IDH2-Wild Type Sinonasal Undifferentiated Carcinoma.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Resultados a largo plazo de los carcinomas sinonasales mutantes de IDH2 en comparación con el carcinoma sinonasal indiferenciado de tipo salvaje de IDH2."
-    }
-   }
+   "titulo_original": "Histopathologic features and subtypes of invasive cutaneous squamous cell carcinoma: A comprehensive review.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "O eixo de sinalização NFIL3-MYC: um novo alvo terapêutico e marcador prognóstico no mieloma múltiplo de alto risco.",
-   "autores": "Maichl DS, Cheng WH, Kumari P, Kirner JA, Schmidt S, Ade CP, Yang M, Haider MS, Chi Y, Luxenhofer R, Taranets L…",
-   "revista": "Biomark Res",
-   "data": "2026-10-09T00:00:00+00:00",
-   "doi": "10.1186/s40364-026-01018-7",
-   "url": "https://doi.org/10.1186/s40364-026-01018-7",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "The NFIL3-MYC signaling axis: a novel therapeutic target and prognostic marker in high-risk multiple myeloma.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El eje de señalización NFIL3-MYC: una nueva diana terapéutica y marcador pronóstico en el mieloma múltiple de alto riesgo."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "A polidatina alivia a calcificação vascular através do eixo TP53/PI3K/AKT.",
-   "autores": "Feng S, Li S, Zhang C, Li S, Zhang L, Li M, Liu X, Xiu J.",
-   "revista": "Eur J Pharmacol",
-   "data": "2026-10-09T00:00:00+00:00",
-   "doi": "10.1016/j.ejphar.2026.179419",
-   "url": "https://doi.org/10.1016/j.ejphar.2026.179419",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Polydatin alleviates vascular calcification via the TP53/PI3K/AKT axis.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La polidatina alivia la calcificación vascular a través del eje TP53/PI3K/AKT."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Vias Moleculares Distintas Conduzindo Neoplasias Neuroendócrinas Tímicas e Pulmonares: Órgão de Origem Define Identidade Molecular e Rende CD44 como um Marcador de Tumores Neuroendócrinos Pulmonares.",
-   "autores": "Bohnenberger H, Küffer S, Qoku A, Bodemeyer J, Nause N, Häupl B, Reuter-Jessen K, Rosenthal T, Feldmann L, Ofner K…",
-   "revista": "Endocr Pathol",
-   "data": "2026-10-09T00:00:00+00:00",
-   "doi": "10.1007/s12022-026-09936-w",
-   "url": "https://doi.org/10.1007/s12022-026-09936-w",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Distinct Molecular Pathways Driving Thymic and Pulmonary Neuroendocrine Neoplasms: Organ of Origin Defines Molecular Identity and Yields CD44 as a Marker of Pulmonary Neuroendocrine Tumors.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Distintas vías moleculares que impulsan las neoplasias neuroendocrinas tímicas y pulmonares: el órgano de origen define la identidad molecular y produce CD44 como marcador de tumores neuroendocrinos pulmonares."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Preparação de centros de saúde primários para o manejo de picadas de cobra e desafios enfrentados pelos profissionais de saúde: um estudo de métodos mistos de um distrito selecionado, sul da Índia.",
-   "autores": "Gumataj A, Chinnakali P, Bammigatti C, Basapure R, Ayyanar M, Thandapani V, Samraj SK, S GK.",
-   "revista": "Trans R Soc Trop Med Hyg",
-   "data": "2026-10-09T00:00:00+00:00",
-   "doi": "10.1093/trstmh/trag121",
-   "url": "https://doi.org/10.1093/trstmh/trag121",
-   "acesso_aberto": false,
-   "tema": "Saúde",
-   "titulo_original": "Preparedness of primary health centres for snakebite management and challenges faced by healthcare providers: a mixed-methods study from a selected district, southern India.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Preparación de los centros de salud primaria para el manejo de mordeduras de serpiente y los desafíos que enfrentan los proveedores de atención médica: un estudio de métodos mixtos de un distrito seleccionado, al sur de la India."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Mecanismos multi-alvo da peoniflorina na regulação inflamatória: Uma farmacologia de rede (Revisão).",
-   "autores": "Zhang J, Ye J, Jin K, Sun X, Yu X, Zhao Y, Zhu N.",
-   "revista": "Int J Mol Med",
-   "data": "2026-10-09T00:00:00+00:00",
-   "doi": "10.3892/ijmm.2026.6010",
-   "url": "https://doi.org/10.3892/ijmm.2026.6010",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Multi‑target mechanisms of paeoniflorin in inflammatory regulation: A network pharmacology (Review).",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Mecanismos multidiana de la paeoniflorina en la regulación inflamatoria: una farmacología de red (Revisión)."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Fortalecimento dos programas de saúde pública e do ecossistema antiveneno: prioridades políticas estratégicas para combater o envenenamento por mordidas e picadas de animais na América Latina e no Caribe.",
-   "autores": "Peichoto ME, Gutiérrez JM, Fan HW, Damasceno CP, Vigilato MAN, Latin American Network of Public Antivenom Manufacturing…",
-   "revista": "J Glob Health",
-   "data": "2026-10-09T00:00:00+00:00",
-   "doi": "10.7189/jogh.16.04329",
-   "url": "https://doi.org/10.7189/jogh.16.04329",
-   "acesso_aberto": true,
-   "tema": "Saúde",
-   "titulo_original": "Strengthening public health programmes and the antivenom ecosystem: strategic policy priorities to combat envenomation by animal bites and stings in Latin America and the Caribbean.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Fortalecimiento de los programas de salud pública y el ecosistema antiveneno: prioridades políticas estratégicas para combatir el envenenamiento por mordeduras y picaduras de animales en América Latina y el Caribe."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Padrões de co-mutação e associações de sobrevivência no câncer de pulmão: uma análise comparativa de coortes suecas e globais.",
-   "autores": "Karlowatz N, Köhn L, Patthey C, Nilsson J, Johansson M.",
-   "revista": "Acta Oncol",
-   "data": "2026-10-09T00:00:00+00:00",
-   "doi": "10.2340/1651-226x.2026.46330",
-   "url": "https://doi.org/10.2340/1651-226x.2026.46330",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Co-mutation patterns and survival associations in lung cancer: a comparative analysis of Swedish and global cohorts.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Patrones de comutación y asociaciones de supervivencia en el cáncer de pulmón: un análisis comparativo de cohortes suecas y globales."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Provável envenenamento por Ophiophagus sp. com parada cardiorrespiratória: escalonamento sequencial de antiveneno nas Filipinas.",
-   "autores": "Ortillo PS, Aoki Y, Paghubasan J, Tiglao PJ, Yamamoto K, Takahashi K, Yamano S, Hayakawa K, Tasaki O, Devora MRD.",
-   "revista": "Trans R Soc Trop Med Hyg",
-   "data": "2026-10-09T00:00:00+00:00",
-   "doi": "10.1093/trstmh/trag127",
-   "url": "https://doi.org/10.1093/trstmh/trag127",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Probable Ophiophagus sp. envenomation with cardiopulmonary arrest: sequential antivenom escalation in the Philippines.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Probable envenenamiento de Ophiophagus sp. con parada cardiopulmonar: escalada secuencial del antiveneno en Filipinas."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Caracterização Genômica Abrangente do Melanoma Dérmico Primário: Delineando-o a partir de Melanoma Metastático com Primário Desconhecido.",
-   "autores": "Chen JM, Chang JC, Jungbluth AA, Linos K, Shoushtari AN, Postow MA, Busam KJ.",
-   "revista": "Hum Pathol",
-   "data": "2026-10-08T00:00:00+00:00",
-   "doi": "10.1016/j.humpath.2026.106273",
-   "url": "https://doi.org/10.1016/j.humpath.2026.106273",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Comprehensive Genomic Characterization of Primary Dermal Melanoma: Delineating it from Metastatic Melanoma with Unknown Primary.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Caracterización Genómica Integral del Melanoma Dérmico Primario: Delineándolo a partir del Melanoma Metastásico con Primaria Desconocida."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "GAMA: Um modelo prognóstico genético-clínico para estratificação de risco em pacientes com leucemia mieloide aguda recidivante/refratária recebendo transplante alogênico de células-tronco hematopoiéticas.",
-   "autores": "Jin Y, An ZY, Zhao P, Fu HX, Lu Y, Wan D, Zhang X, Zhou F, Li N, Liu L, He P, Lou S, Li F, Wang L, Zhu H, Chen R, Cao…",
-   "revista": "Cancer Lett",
-   "data": "2026-10-08T00:00:00+00:00",
-   "doi": "10.1016/j.canlet.2026.218883",
-   "url": "https://doi.org/10.1016/j.canlet.2026.218883",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "GAMMA: A genetic-clinical prognostic model for risk stratification in patients with relapsed/refractory acute myeloid leukemia receiving allogeneic hematopoietic stem cell transplantation.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "GAMMA: Un modelo de pronóstico genético-clínico para la estratificación del riesgo en pacientes con leucemia mieloide aguda recidivante/refractaria que reciben trasplante alogénico de células madre hematopoyéticas."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Biomarcadores moleculares em sarcomas uterinos: uma revisão de revisões com integração de dados genômicos.",
-   "autores": "Iacobelli V, Romano V, Anderson G, Dababou S, Gubitosa MT, Mastrogiovanni S, Giovannetti A, Mazza T, Bruno M, Sabetta…",
-   "revista": "Gynecol Oncol",
-   "data": "2026-10-08T00:00:00+00:00",
-   "doi": "10.1016/j.ygyno.2026.09.016",
-   "url": "https://doi.org/10.1016/j.ygyno.2026.09.016",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Molecular biomarkers in uterine sarcomas: a review of reviews with genomic data integration.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Biomarcadores moleculares en sarcomas uterinos: una revisión de revisiones con integración de datos genómicos."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Escolhendo Valor: Seleção de Antiveneno no Sistema Moderno de Trauma.",
-   "autores": "Bowdle JH, Butler M, Pritchett J, Hungerford D, King SA, McKinney AL, Heidel RE, Smith LM, McKnight CL.",
-   "revista": "Am Surg",
-   "data": "2026-10-08T00:00:00+00:00",
-   "doi": "10.1177/00031348261492221",
-   "url": "https://doi.org/10.1177/00031348261492221",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Choosing Value: Antivenom Selection in the Modern Trauma System.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Elección del valor: selección de antivenenos en el sistema de trauma moderno."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "BRCA Mutation Carriers and Breast Implant-Associated Anaplastic Large-Cell Lymphoma: Accumulating Evidence, Proposed Mechanism, and Implications for Reconstructive Planning and Follow-Up.",
-   "autores": "Shachar Y.",
-   "revista": "Ann Surg Oncol",
-   "data": "2026-10-08T00:00:00+00:00",
-   "doi": "10.1245/s10434-026-20696-z",
-   "url": "https://doi.org/10.1245/s10434-026-20696-z",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "BRCA Mutation Carriers and Breast Implant-Associated Anaplastic Large-Cell Lymphoma: Accumulating Evidence, Proposed Mechanism, and Implications for Reconstructive Planning and Follow-Up.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "BRCA Mutation Carriers and Breast Implant-Associated Anaplastic Large-Cell Lymphoma: Accumulating Evidence, Proposed Mechanism, and Implications for Reconstructive Planning and Follow-Up."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Mutações TP53 Frequentes e Disfunção p53 Associada Sugestiva do Papel de Supressão Tumoral em Carcinomas Basocelulares Complexos.",
-   "autores": "Gandarillas S, Wolfe S, Mehregan D, Lee J, Dasgeb B.",
-   "revista": "Int J Dermatol",
-   "data": "2026-10-08T00:00:00+00:00",
-   "doi": "10.1111/ijd.70711",
-   "url": "https://doi.org/10.1111/ijd.70711",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Frequent TP53 Mutations and Associated p53 Dysfunction Suggestive of Tumor Suppression Role in Complex Basal Cell Carcinomas.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Mutaciones frecuentes de TP53 y disfunción asociada de p53 que sugieren el papel de supresión tumoral en carcinomas basocelulares complejos."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Síndromes/neoplasias mielodisplásicas que apresentam trombocitopenia isolada: uma fisiopatologia mal compreendida, difícil de diagnosticar e difícil de tratar.",
-   "autores": "Mohamed SF, Abdulgayoom M, Al-Mashdali AF, Mesilhy R, Bewersdorf JP, Zeidan AM.",
-   "revista": "Expert Rev Anticancer Ther",
-   "data": "2026-10-08T00:00:00+00:00",
-   "doi": "10.1080/14737140.2026.2746616",
-   "url": "https://doi.org/10.1080/14737140.2026.2746616",
-   "acesso_aberto": false,
-   "tema": "Saúde",
-   "titulo_original": "Myelodysplastic syndromes/neoplasms presenting with isolated thrombocytopenia: a poorly understood pathophysiology, difficult to diagnose, and challenging to treat entity.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Síndromes/neoplasias mielodisplásicas que se presentan con trombocitopenia aislada: una entidad de fisiopatología poco conocida, difícil de diagnosticar y difícil de tratar."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Além de 17p13.1: pontos de interrupção recorrentes de 17p11.2 na leucemia mieloide aguda alterada por <i>TP53</i>.",
-   "autores": "Mueller DM, Santhosh S, Singhal A, Singh R, Goldberg B, Jou E, Kolitz JE, Chitty DW, Gladstone DE, Boisclair S.",
+   "titulo": "Metronomic decitabine with venetoclax offers a patient-centered frontline therapeutic approach for <i>TP53</i>-mutated complex-karyotype myeloid neoplasms.",
+   "autores": "Walsh LF, Lee RP, Pan J, Dutta AB, Kaduluri VPS, Li HL, Abrams Z, Payne P, Imus PH, Ambinder AJ, Dalton WB, DeZern AE…",
    "revista": "Haematologica",
-   "data": "2026-10-08T00:00:00+00:00",
-   "doi": "10.3324/haematol.2026.301572",
-   "url": "https://doi.org/10.3324/haematol.2026.301572",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.3324/haematol.2026.301724",
+   "url": "https://doi.org/10.3324/haematol.2026.301724",
    "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Beyond 17p13.1: recurrent 17p11.2 breakpoints in <i>TP53</i>-altered acute myeloid leukemia.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Más allá de 17p13.1: puntos de corte recurrentes de 17p11.2 en la leucemia mieloide aguda alterada por <i>TP53</i>."
-    }
-   }
+   "tema": "Saúde"
   },
   {
    "tipo": "artigo",
-   "titulo": "Sequenciamento de leitura longa e as condições de contorno para reafirmação de múltiplos acertos <i>na síndrome mielodisplásica com mutação TP53</i>. Comentário sobre: “Long-read sequencing resolves <i>TP53</i> allelic status in myeloid neoplasms”.",
-   "autores": "Poon KS.",
-   "revista": "Haematologica",
-   "data": "2026-10-08T00:00:00+00:00",
-   "doi": "10.3324/haematol.2026.302059",
-   "url": "https://doi.org/10.3324/haematol.2026.302059",
+   "titulo": "Experiential Support Across Breast Cancer Care and Familial Breast Cancer Genetic Risk Assessment in Quebec, Canada: A Comparative Study of Accompanying Patients' Contributions.",
+   "autores": "Bouchard K, Dorval M, Bélanger L, Chiquette J, Côté M, Vialaron C, Normandin L, Iliescu Nelea M, Ahmed AB, Pomey MP.",
+   "revista": "J Cancer Educ",
+   "data": "2026-10-15T00:00:00+00:00",
+   "doi": "10.1007/s13187-026-02908-y",
+   "url": "https://doi.org/10.1007/s13187-026-02908-y",
    "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Long-read sequencing and the boundary conditions for multi-hit reassurance in <i>TP53-</i>mutated myelodysplastic syndrome. Comment on: \"Long-read sequencing resolves <i>TP53</i> allelic status in myeloid neoplasms\".",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Secuenciación de lectura larga y las condiciones límite para la tranquilidad de múltiples impactos en <i>el</i> síndrome mielodisplásico mutado por TP53. Comentario en: “Long-read sequencing resolves <i>TP53</i> allelic status in myeloid neoplasms”."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "Teste Genético da Linhagem Germinativa Universal após um Diagnóstico de Câncer.",
-   "autores": "Stadler ZK, Maio A, Khurram A, Arora K, Bandlamudi C, Liu YL, Kemel Y, Sheehan M, Salo-Mullen E, Padunan A, Alano T…",
-   "revista": "Cancer Discov",
-   "data": "2026-10-08T00:00:00+00:00",
-   "doi": "10.1158/2159-8290.cd-26-0971",
-   "url": "https://doi.org/10.1158/2159-8290.cd-26-0971",
+   "titulo": "Refinement of the UKCGG/CanVIG framework for triage of putative germline variants identified via tumour and ctDNA sequencing: maximising clinical utility and harmonising gene and variant-restricted reporting across UK…",
+   "autores": "McVeigh TP, Hanson H, Snape K, Turnbull C, Burghel GJ.",
+   "revista": "J Med Genet",
+   "data": "2026-10-14T00:00:00+00:00",
+   "doi": "10.1136/jmg-2026-111648",
+   "url": "https://doi.org/10.1136/jmg-2026-111648",
    "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Universal Germline Genetic Testing after a Diagnosis of Cancer.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Pruebas genéticas universales de la línea germinal después de un diagnóstico de cáncer."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "Gêmeos Monozigóticos Xeroderma Pigmentoso: Mesma Mutação Resultados Clínicos Divergentes.",
-   "autores": "Dos Santos Júnior JP, Dos Santos MCFC, da Silva LG, da Silva Júnior WJ, Corradi C, Munford V, de Queiroz Balbino V, de…",
-   "revista": "Hum Mutat",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1155/humu/7247751",
-   "url": "https://doi.org/10.1155/humu/7247751",
+   "titulo": "Emerging Therapeutic targets and Early-phase drug Development in Gynecological Malignancies.",
+   "autores": "Ouali K, Tan D, Lheureux S, Massard C.",
+   "revista": "Ann Oncol",
+   "data": "2026-10-14T00:00:00+00:00",
+   "doi": "10.1016/j.annonc.2026.10.101",
+   "url": "https://doi.org/10.1016/j.annonc.2026.10.101",
    "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Xeroderma Pigmentosum Monozygotic Twins: Same Mutation Divergent Clinical Outcomes.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Xeroderma pigmentosum Monozygotic Twins: Same Mutation Divergent Clinical Outcomes."
-    }
-   }
+   "tema": "Ciência"
   },
   {
    "tipo": "artigo",
-   "titulo": "Reclassificação da Variante <i>RET</i> em Subgrupos Demográficos em uma População Clínica de Grande Escala.",
-   "autores": "Fergus KB, Richardson ME, Ziv E, Sosa JA, Grubbs EG.",
-   "revista": "Thyroid",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1177/10507256261493762",
-   "url": "https://doi.org/10.1177/10507256261493762",
+   "titulo": "Lentinan-induced FUBP1 O-GlcNAcylation suppresses macrophage ferroptosis and atherosclerosis via the Tp53/SLC7A11 axis.",
+   "autores": "Liu X, Xu Z, Cheng F, Hu S, He M, Zheng W, Wei H, Li J, Yang H, Fang L, Wang Y, Zheng L, Rao X, Fang Q.",
+   "revista": "Pharmacol Res",
+   "data": "2026-10-14T00:00:00+00:00",
+   "doi": "10.1016/j.phrs.2026.109676",
+   "url": "https://doi.org/10.1016/j.phrs.2026.109676",
    "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "<i>RET</i> Variant Reclassification across Demographic Sub-Groups in a Large-Scale Clinical Population.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Reclasificación de variantes de <i>RET</i> entre subgrupos demográficos en una población clínica a gran escala."
-    }
-   }
+   "tema": "Ciência"
   },
   {
    "tipo": "artigo",
-   "titulo": "Terapias atuais e futuras para leucemia mieloblástica aguda.",
-   "autores": "Marvin-Peek J, Ravandi F.",
-   "revista": "J Hematol Oncol",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1186/s13045-026-01849-9",
-   "url": "https://doi.org/10.1186/s13045-026-01849-9",
+   "titulo": "Evaluation of Murrayanine's Anticancer Potential in Breast Cancer: Integrative Computational, In Vitro, and Nanoparticle Delivery Approaches.",
+   "autores": "Di Y, Hu X, Dai J, Rajalakshmi K, Arulsamy S, Kiruthiga N, Theivendren P, Muthusamy S, Zhu D.",
+   "revista": "J Steroid Biochem Mol Biol",
+   "data": "2026-10-14T00:00:00+00:00",
+   "doi": "10.1016/j.jsbmb.2026.107136",
+   "url": "https://doi.org/10.1016/j.jsbmb.2026.107136",
    "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Current and future therapies for acute myeloblastic leukemia.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Terapias actuales y futuras para la leucemia mieloblástica aguda."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "EBV-HSA-RegDB: Um banco de dados de interações regulatórias entre o vírus Epstein-Barr e miRNAs humanos.",
-   "autores": "Palheta HGA, Mercês AF, de Lemos Cardoso Costa G, de Araújo GS.",
-   "revista": "Arch Virol",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1007/s00705-026-06753-8",
-   "url": "https://doi.org/10.1007/s00705-026-06753-8",
+   "titulo": "MLH1 p.His112Arg Variant Is Associated With Increased Cancer Susceptibility.",
+   "autores": "Elfatih A, Tout I, Doha NA, Arja TA, Mohammed I, Abdelrhaman D, Hasan W, Saad C, Mbarek H, Mifsud B, Da'as SI.",
+   "revista": "Int J Cancer",
+   "data": "2026-10-14T00:00:00+00:00",
+   "doi": "10.1002/ijc.70790",
+   "url": "https://doi.org/10.1002/ijc.70790",
    "acesso_aberto": false,
-   "tema": "Saúde",
-   "titulo_original": "EBV-HSA-RegDB: A database of regulatory interactions between Epstein-Barr virus and human miRNAs.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "EBV-HSA-RegDB: Una base de datos de interacciones reguladoras entre el virus de Epstein-Barr y los miARN humanos."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "Biomarkers as a Concept for Advanced Practice Registered Nurses in Oncology.",
-   "autores": "Mcginn BK, Reed SM.",
-   "revista": "J Clin Nurs",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1111/jocn.70582",
-   "url": "https://doi.org/10.1111/jocn.70582",
+   "titulo": "Molecular, Cytogenetic, and Immunophenotypic Biomarkers in Acute Myeloid Leukemia: Current Evidence and Future Directions-A Narrative Review.",
+   "autores": "Obeagu EI.",
+   "revista": "Health Sci Rep",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1002/hsr2.73393",
+   "url": "https://doi.org/10.1002/hsr2.73393",
    "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Biomarkers as a Concept for Advanced Practice Registered Nurses in Oncology.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Biomarcadores como Concepto para Enfermeras Tituladas de Práctica Avanzada en Oncología."
-    }
-   }
+   "tema": "Câncer"
   },
   {
    "tipo": "artigo",
-   "titulo": "Correção in vitro da coagulopatia induzida por veneno no envenenamento por <i>Daboia russelii</i> demonstrada usando tromboelastometria rotacional modificada por ácido tranexâmico.",
-   "autores": "Rafi AM, Abraham SV, Innah SJ, Rajeev PC.",
-   "revista": "BMJ Case Rep",
-   "data": "2026-10-07T00:00:00+00:00",
-   "doi": "10.1136/bcr-2026-272120",
-   "url": "https://doi.org/10.1136/bcr-2026-272120",
+   "titulo": "Immune and cellular determinants of response to HMA-venetoclax regimens in acute myeloid leukemia.",
+   "autores": "Marchetti A, Lazzaroni F, Da Via' MC, Lionetti M, Maggioni G, Campagna A, Ventura D, Croci GA, Marella A, Maeda A…",
+   "revista": "Hemasphere",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1002/hem3.70498",
+   "url": "https://doi.org/10.1002/hem3.70498",
    "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "In vitro correction of venom-induced coagulopathy in <i>Daboia russelii</i> envenomation demonstrated using tranexamic acid-modified rotational thromboelastometry.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Corrección in vitro de la coagulopatía inducida por veneno en el envenenamiento por <i>Daboia russelii</i> demostrado mediante tromboelastometría rotacional modificada con ácido tranexámico."
-    }
-   }
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Association of Xeroderma Pigmentosum group F (XPF) with epigenetic regulation of T helper cell differentiation in coronary artery disease-associated prostate cancer.",
+   "autores": "Singha Deo A, P S, Karun S, S U S, Mukherjee O, George M, Sarkar K.",
+   "revista": "Epigenomics",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1080/17501911.2026.2746944",
+   "url": "https://doi.org/10.1080/17501911.2026.2746944",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Driver mutation profiling by next-generation sequencing predicts survival and recurrence after curative-intent resection for pancreatic ductal adenocarcinoma: a genomic cohort study.",
+   "autores": "Ali MM, Aragon KK, Cher BA, Ahmed KS, Marcinak CT, Acher AW, Kratz J, Murtaza M, Burkard ME, Zafar SN.",
+   "revista": "Clin Transl Oncol",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1007/s12094-026-04564-6",
+   "url": "https://doi.org/10.1007/s12094-026-04564-6",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "FERTILITY PRESERVATION IN PATIENTS WITH GENETIC CONDITIONS PREDISPOSING TO POI.",
+   "autores": "Angelini E, Oktay KH.",
+   "revista": "Fertil Steril",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1016/j.fertnstert.2026.10.007",
+   "url": "https://doi.org/10.1016/j.fertnstert.2026.10.007",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "[Molecular-Based Diagnostics and Therapy of Metastatic Hormone-Sensitive Prostate Cancer (mHSPC)].",
+   "autores": "Kesch C, Hadaschik B, von Amsberg G.",
+   "revista": "Aktuelle Urol",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1055/a-2970-7829",
+   "url": "https://doi.org/10.1055/a-2970-7829",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "De novo MAP2K4 variants cause a neurodevelopmental syndrome and impaired JNK signaling in iPSC-derived neurons.",
+   "autores": "Nomakuchi TT, Rippert AL, Santos De León SA, Gonzalez EM, Li D, Angireddy R, Finoti LS, Faletra F, Musante L, Tuula R…",
+   "revista": "Am J Hum Genet",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1016/j.ajhg.2026.09.014",
+   "url": "https://doi.org/10.1016/j.ajhg.2026.09.014",
+   "acesso_aberto": false,
+   "tema": "Genética"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Ayurvedic approaches to scorpion stings: Historical insights, modern scientific perspectives and challenges.",
+   "autores": "Nath S, Hazarika NK, Mukherjee AK.",
+   "revista": "J Ayurveda Integr Med",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1016/j.jaim.2026.101397",
+   "url": "https://doi.org/10.1016/j.jaim.2026.101397",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Molecular Consequences and Targeting of PPM1D Overexpression in Myeloproliferative Neoplasms.",
+   "autores": "Mia MB, Schaniel C, Clementelli C, Haines SE, Olszewska M, Arandela J, Elghaity-Beckley S, Klingborg S, Hoque Z…",
+   "revista": "Blood",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1182/blood.2025030377",
+   "url": "https://doi.org/10.1182/blood.2025030377",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Germline DDX41 defines a distinct subgroup in MDS undergoing transplantation with reduced relapse and improved survival.",
+   "autores": "Gagelmann N, Reilly CR, Sasi A, Hebert K, Auer P, Dong J, Zhang T, Wang T, Cutler CS, Soiffer RJ, Spellman SR, Saber W…",
+   "revista": "Blood",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1182/blood.2026034923",
+   "url": "https://doi.org/10.1182/blood.2026034923",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Molecular landscape of anaplastic transformation in pancreatic ductal adenocarcinoma.",
+   "autores": "Hayashi A, Sasagawa S, Shibayama T, Tsanov KM, Umeda S, Ho YJ, Tanabe K, Park W, Nagahama K, Onizuka H, Hibiya T…",
+   "revista": "J Pathol",
+   "data": "2026-10-13T00:00:00+00:00",
+   "doi": "10.1002/path.70136",
+   "url": "https://doi.org/10.1002/path.70136",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Cytoprotective effect of microencapsulated Vaccinium floribundum Kunth on porcine vascular wall mesenchymal stem cells under serum deprivation conditions.",
+   "autores": "Biondolillo G, Tubon I, Antognoni F, Melotti L, Salaroli R, Zannoni A, Bernardini C.",
+   "revista": "Res Vet Sci",
+   "data": "2026-10-12T00:00:00+00:00",
+   "doi": "10.1016/j.rvsc.2026.106437",
+   "url": "https://doi.org/10.1016/j.rvsc.2026.106437",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Paradoxical viper envenomation: minimal local manifestations with fatal intracranial hemorrhage- an autopsy case report.",
+   "autores": "Kirdoliya D, Zacaria A, Akbar M, Pulagura SSK, Meshram V.",
+   "revista": "Leg Med (Tokyo)",
+   "data": "2026-10-12T00:00:00+00:00",
+   "doi": "10.1016/j.legalmed.2026.103036",
+   "url": "https://doi.org/10.1016/j.legalmed.2026.103036",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "First-line treatment outcomes in HER2-altered advanced NSCLC: a real-world multi-center study comparing trastuzumab deruxtecan with conventional therapies and analysis by HER2/EGFR co-alteration status.",
+   "autores": "Liu C, Li T, Qin BY, Yu L, Ji C, Liu M, Wang A, Wang YL, Liu ZF, Zhang T, Hu Y.",
+   "revista": "BMC Cancer",
+   "data": "2026-10-12T00:00:00+00:00",
+   "doi": "10.1186/s12885-026-16688-7",
+   "url": "https://doi.org/10.1186/s12885-026-16688-7",
+   "acesso_aberto": false,
+   "tema": "Saúde"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Molecular Recognition and Immunopharmacological Implications of Serratiopeptidase Targeting Snake Venom Bradykinin-Potentiating Peptides.",
+   "autores": "Dhiman A, Singh R, Purohit R.",
+   "revista": "Pharm Res",
+   "data": "2026-10-12T00:00:00+00:00",
+   "doi": "10.1007/s11095-026-04222-0",
+   "url": "https://doi.org/10.1007/s11095-026-04222-0",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "A health-system-scale, episode-resolved multimodal atlas of cancer cachexia.",
+   "autores": "Castillon VJ, Xie AX, Boscenco S, Tse E, Ruthen N, Wang J, Bakouny Z, Waters M, Fu C, Fong C, Saleh M, Baroud T, Park…",
+   "revista": "Nat Med",
+   "data": "2026-10-12T00:00:00+00:00",
+   "doi": "10.1038/s41591-026-04689-9",
+   "url": "https://doi.org/10.1038/s41591-026-04689-9",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "TFRC-associated ferroptosis in synovial macrophages promotes inflammatory and fibrotic remodeling in osteoarthritis.",
+   "autores": "Shi W, Wang X, Tian Y, Zhang L, Zhu L, Li X, Liu Q.",
+   "revista": "Gene",
+   "data": "2026-10-12T00:00:00+00:00",
+   "doi": "10.1016/j.gene.2026.150443",
+   "url": "https://doi.org/10.1016/j.gene.2026.150443",
+   "acesso_aberto": false,
+   "tema": "Ciência"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Molecular landscape of chondrosarcoma: From tumor biology to therapeutic vulnerabilities.",
+   "autores": "Belluzzi E, Pozzuoli A, Trovarelli G, Angelini A, Ruggieri P.",
+   "revista": "Biochim Biophys Acta Rev Cancer",
+   "data": "2026-10-12T00:00:00+00:00",
+   "doi": "10.1016/j.bbcan.2026.189736",
+   "url": "https://doi.org/10.1016/j.bbcan.2026.189736",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Immunostaining of p53 Is Associated With Efficacy of Anti-PD-1 Immune Checkpoint Inhibitors in Patients With Recurrent or Metastatic Head and Neck Squamous Cell Carcinoma.",
+   "autores": "Kuo MC, Huang TL, Chiu TJ, Huang WT, Tsai TH, Li SH.",
+   "revista": "J Immunother",
+   "data": "2026-10-12T00:00:00+00:00",
+   "doi": "10.1097/cji.0000000000000624",
+   "url": "https://doi.org/10.1097/cji.0000000000000624",
+   "acesso_aberto": false,
+   "tema": "Câncer"
   }
  ],
  "fontes": [
@@ -779,19 +726,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "programa usp 60 reune especialistas em simposio sobre envelhecimento ativo": "2026-10-09T16:22:11.570881+00:00",
-  "feverish after a vaccine the reason could be your gut microbiome": "2026-10-09T16:22:11.570881+00:00",
-  "science communication in transition strategies responsibilities and emerging challenges in germany and brazil": "2026-10-09T16:22:11.570881+00:00",
-  "parceria entre usp e yale nos eua possibilitou a reconstrucao de uma musica em tupi antigo": "2026-10-09T16:22:11.570881+00:00",
-  "fiocruz expressa solidariedade a ufpe apos incendios": "2026-10-09T16:22:11.570881+00:00",
-  "an experiment to glimpse the future amazon in pictures": "2026-10-09T16:22:11.570881+00:00",
-  "o milagre da multiplicacao de referencias bibliograficas fantasmas": "2026-10-09T16:22:11.570881+00:00",
-  "scientists tested 5 natural compounds on cancer cells one stood out": "2026-10-09T16:22:11.570881+00:00",
-  "serie animada traz conteudos cientificos sobre astronomia para criancas": "2026-10-09T16:22:11.570881+00:00",
-  "i gave metas muse and openais dots my passwords for a week": "2026-10-09T16:22:11.570881+00:00",
-  "bacteria turn a virus own weapon against it": "2026-10-09T16:22:11.570881+00:00",
-  "tattoos could be turned on and off with light": "2026-10-09T16:22:11.570881+00:00",
-  "nearly 1 in 10 young adults could have fatty narrow arteries": "2026-10-09T16:22:11.570881+00:00",
   "estudantes da usp arrecadam cabelo no outubro rosa": "2026-10-09T21:04:36.830010+00:00",
   "novo medicamento amplia opcoes de tratamento para cancer de pancreas metastatico": "2026-10-09T21:04:36.830010+00:00",
   "o premio nobel de fisica 2026 mais um para o neutrino": "2026-10-09T21:04:36.830010+00:00",
@@ -961,6 +895,15 @@
   "why the drake equation is still important 65 years after its creation": "2026-10-19T10:57:13.560411+00:00",
   "do controle dos neuronios a grecia reimaginada": "2026-10-19T10:57:13.560411+00:00",
   "scientists discover a natural compound that could protect the brain from too much salt": "2026-10-19T10:57:13.560411+00:00",
-  "magic mushroom ingredient takes the fight out of aggressive fish": "2026-10-19T10:57:13.560411+00:00"
+  "magic mushroom ingredient takes the fight out of aggressive fish": "2026-10-19T10:57:13.560411+00:00",
+  "uti pediatrica do hc destaca a importancia do cuidado especializado a criancas em estado grave": "2026-10-19T17:34:59.070308+00:00",
+  "ribeirao preto sediara o coloquio pan americano de pesquisa em enfermagem": "2026-10-19T17:34:59.070308+00:00",
+  "diagnostico tardio de doencas ginecologicas compromete a saude e qualidade de vida feminina": "2026-10-19T17:34:59.070308+00:00",
+  "zero gluten e possivel na pratica": "2026-10-19T17:34:59.070308+00:00",
+  "why some people escape alzheimers despite carrying a high risk gene": "2026-10-19T17:34:59.070308+00:00",
+  "its about to be a lot harder to keep countries honest about climate change": "2026-10-19T17:34:59.070308+00:00",
+  "scientists discover why some people still cant taste food after covid 19": "2026-10-19T17:34:59.070308+00:00",
+  "scientists win 2026 nobel prize for controlling brain cells with light": "2026-10-19T17:34:59.070308+00:00",
+  "how what we see and hear feed together to help us understand emotions": "2026-10-19T17:34:59.070308+00:00"
  }
 }
