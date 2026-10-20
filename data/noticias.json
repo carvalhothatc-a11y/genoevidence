@@ -1,6 +1,32 @@
 {
- "atualizado_em": "2026-10-20T18:32:36.280982+00:00",
+ "atualizado_em": "2026-10-20T22:25:21.855048+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "Crianças, natureza e clima: a proteção das presentes e futuras gerações ganha novos contornos no Brasil",
+   "resumo": "Por Silmara Veiga Montemor, membro da Comissão Especial do Clima e do Meio Ambiente da OAB-SP, e Maria da Penha Vasconcellos, professora da Faculdade de Saúde Pública da USP e do Instituto de Estudos Avançados da USP",
+   "url": "https://jornal.usp.br/artigos/criancas-natureza-e-clima-a-protecao-das-presentes-e-futuras-geracoes-ganha-novos-contornos-no-brasil/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-20T21:02:18+00:00",
+   "tema": "Saúde",
+   "relevancia": 12,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/06/20250604_silmara-montemor_maria-da-penha-vasconcellos.jpg",
+   "foco": {
+    "x": 55,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Children, nature and climate: the protection of present and future generations gains new contours in Brazil",
+     "resumo": "By Silmara Veiga Montemor, member of the Special Committee on Climate and the Environment of OAB-SP, and Maria da Penha Vasconcellos, professor at the School of Public Health of USP and the Institute of Advanced Studies of USP"
+    },
+    "es": {
+     "titulo": "Niños, naturaleza y clima: la protección de las generaciones presentes y futuras adquiere nuevos contornos en Brasil",
+     "resumo": "Por Silmara Veiga Montemor, miembro del Comité Especial de Clima y Medio Ambiente de la OAB-SP, y Maria da Penha Vasconcellos, profesora de la Escuela de Salud Pública de la USP y del Instituto de Estudios Avanzados de la USP"
+    }
+   }
+  },
   {
    "tipo": "noticia",
    "titulo": "Inteligência artificial e futuro do trabalho são temas de encontro promovido na USP",
@@ -24,6 +50,58 @@
     "es": {
      "titulo": "La inteligencia artificial y el futuro del trabajo son temas de un encuentro promovido en la USP",
      "resumo": "Expertos de la investigación académica y del mercado tecnológico se reunirán el 29 de octubre en la Biblioteca Brasiliana, en el campus del barrio Butantã, para discutir las transformaciones y el futuro de las profesiones"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Estudo da USP investiga como a telemedicina transforma o atendimento em arquipélago amazônico",
+   "resumo": "Pesquisa de doutorado da Faculdade de Saúde Pública da USP analisa como o atendimento médico a distância reorganiza os serviços públicos de saúde e evidencia desafios relacionados às desigualdades territoriais e às diferenças culturais…",
+   "url": "https://jornal.usp.br/universidade/estudo-da-usp-investiga-como-a-telemedicina-transforma-o-atendimento-em-arquipelago-amazonico/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-20T19:21:14+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261020_00_equipe_telemedicina_parintins_fsp_usp.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "A USP study investigates how telemedicine transforms care in the Amazon archipelago",
+     "resumo": "Doctoral research from USP's School of Public Health analyzes how distance medical care reorganizes public health services and highlights challenges related to territorial inequalities and cultural differences…"
+    },
+    "es": {
+     "titulo": "Un estudio de la USP investiga cómo la telemedicina transforma la atención en el archipiélago amazónico",
+     "resumo": "La investigación doctoral de la Escuela de Salud Pública de la USP analiza cómo la atención médica a distancia reorganiza los servicios de salud pública y destaca los desafíos relacionados con las desigualdades territoriales y las diferencias culturales..."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Documentário celebra ‘maioridade’ da Olimpíada Nacional em História do Brasil",
+   "resumo": "Produção para web registra emoção da final da 18ª edição, com mais de 64 mil equipes",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/20/documentario-celebra-maioridade-da-olimpiada-nacional-em-historia-do-brasil/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-20T18:50:15+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261020_Olimpiadas-historia_Capa.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Documentary celebrates‘ coming of age ’of the National Olympiad in Brazilian History",
+     "resumo": "Web production records the emotion of the final of the 18th edition, with more than 64 thousand teams"
+    },
+    "es": {
+     "titulo": "Documental celebra la \"mayoría de edad\" de la Olimpiada Nacional en la historia de Brasil",
+     "resumo": "La producción web registra la emoción de la final de la 18ª edición, con más de 64 mil equipos"
     }
    }
   },
@@ -105,48 +183,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Desmistificando a radioatividade",
-   "resumo": "Oficina de física do IFGW-Unicamp, gratuita e on-line, vai tratar de temas que contemplam desde a radiação em diagnósticos de saúde até o acidente com o césio-137 em Goiânia",
-   "url": "https://agencia.fapesp.br/desmistificando-a-radioatividade/59427",
+   "titulo": "Plataforma rastreia sinais corporais para investigar origens dos transtornos mentais",
+   "resumo": "Equipamento instalado em São Paulo e Porto Alegre monitora cérebro, olhar e respostas fisiológicas de crianças durante tarefas do cotidiano. Projeto é conduzido pelo Centro de Pesquisa e Inovação em Saúde Mental",
+   "url": "https://agencia.fapesp.br/plataforma-rastreia-sinais-corporais-para-investigar-origens-dos-transtornos-mentais/59423",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-20T18:32:36.280982+00:00",
+   "data": "2026-10-20T22:25:21.855048+00:00",
    "tema": "Saúde",
    "relevancia": 8,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Demystifying radioactivity",
-     "resumo": "Physics workshop at IFGW-Unicamp, free and online, will address topics ranging from radiation in health diagnoses to the cesium-137 accident in Goiânia"
-    },
-    "es": {
-     "titulo": "Desmitificando la radiactividad",
-     "resumo": "El taller de física en IFGW-Unicamp, gratuito y en línea, abordará temas que van desde la radiación en los diagnósticos de salud hasta el accidente de cesio-137 en Goiânia"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Atividade física vai além da estética e promove saúde física e mental",
-   "resumo": "Além de fortalecer o corpo e estimular a memória, a prática regular de exercícios contribui para a saúde mental e a qualidade de vida, mostrando que pequenas mudanças na rotina podem fazer a diferença",
-   "url": "https://jornal.usp.br/radio-usp/atividade-fisica-vai-alem-da-estetica-e-promove-saude-fisica-e-mental/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-20T12:10:13+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/03/pasta-dos-20230313_farah-.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59423.jpg",
    "foco": {
-    "inteira": true
+    "x": 50,
+    "y": 0
    },
    "i18n": {
     "en": {
-     "titulo": "Physical activity goes beyond aesthetics and promotes physical and mental health",
-     "resumo": "In addition to strengthening the body and stimulating memory, regular exercise contributes to mental health and quality of life, showing that small changes in routine can make a difference"
+     "titulo": "Platform tracks body signals to investigate origins of mental disorders",
+     "resumo": "Equipment installed in São Paulo and Porto Alegre monitors children's brains, eyes and physiological responses during daily tasks. Project is conducted by the Center for Research and Innovation in Mental Health"
     },
     "es": {
-     "titulo": "La actividad física va más allá de la estética y promueve la salud física y mental",
-     "resumo": "Además de fortalecer el cuerpo y estimular la memoria, el ejercicio regular contribuye a la salud mental y la calidad de vida, lo que demuestra que los pequeños cambios en la rutina pueden marcar la diferencia"
+     "titulo": "La plataforma rastrea las señales corporales para investigar los orígenes de los trastornos mentales",
+     "resumo": "Los equipos instalados en São Paulo y Porto Alegre monitorean el cerebro, los ojos y las respuestas fisiológicas de los niños durante las tareas diarias. El proyecto es llevado a cabo por el Centro de Investigación e Innovación en Salud Mental"
     }
    }
   },
@@ -177,54 +234,24 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "CEM-USP atualiza dados sobre transporte público na Grande São Paulo",
-   "resumo": "Bases cartográficas georreferenciadas, com informações referentes a 2025, podem ser acessadas gratuitamente por pesquisadores e gestores públicos",
-   "url": "https://jornal.usp.br/radio-usp/cem-usp-atualiza-dados-sobre-transporte-publico-na-grande-sao-paulo/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-20T16:53:43+00:00",
+   "titulo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
+   "resumo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
+   "url": "https://www.nature.com/articles/d41586-026-03351-1",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-20T00:00:00+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/01/20240108_00_corredor_de_onibus.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
+   "imagem": "",
+   "titulo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "CEM-USP updates data on public transport in Greater São Paulo",
-     "resumo": "Georeferenced cartographic databases, with information referring to 2025, can be accessed free of charge by researchers and public managers"
-    },
     "es": {
-     "titulo": "CEM-USP actualiza datos sobre transporte público en el Gran São Paulo",
-     "resumo": "Las bases de datos cartográficas georreferenciadas, con información referida a 2025, pueden ser accedidas gratuitamente por investigadores y gestores públicos"
+     "titulo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos",
+     "resumo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos"
     }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Como é a trajetória do cotista: da entrada na universidade ao mercado de trabalho",
-   "resumo": "Pesquisas acompanham por que alunos que ingressam na graduação por reserva de vagas abandonam os cursos, o que faz outros permanecerem e como eles constroem a trajetória profissional",
-   "url": "https://revistapesquisa.fapesp.br/como-e-a-trajetoria-do-cotista-da-entrada-na-universidade-ao-mercado-de-trabalho/?utm_source=rss&utm_medium=rss&utm_campaign=como-e-a-trajetoria-do-cotista-da-entrada-na-universidade-ao-mercado-de-trabalho",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-20T11:57:28+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/uploads/2026/10/Formados_MOBILE.png",
-   "foco": {
-    "inteira": true
    },
-   "i18n": {
-    "en": {
-     "titulo": "What is the trajectory of the quota holder: from entering university to the labor market",
-     "resumo": "Research tracks why undergraduates drop out of courses, what makes others stay, and how they build their professional trajectory"
-    },
-    "es": {
-     "titulo": "Cuál es la trayectoria del cuentapropista: desde el ingreso a la universidad hasta el mercado laboral",
-     "resumo": "La investigación analiza por qué los estudiantes universitarios abandonan los cursos, qué hace que otros se queden y cómo construyen su trayectoria profesional"
-    }
-   }
+   "resumo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms"
   },
   {
    "tipo": "noticia",
@@ -350,31 +377,6 @@
     }
    },
    "resumo_original": "Scientists have found a promising way to protect the brain from Alzheimer’s-related damage by blocking immune cells that contribute to the destruction of neurons. In mice, the treatment preserved roughly 40% more tissue in memory centers…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A impossibilidade matemática de fazer um mapa-múndi perfeito",
-   "resumo": "Mapear uma esfera em um plano plano é matematicamente impossível. Mas um mapa-múndi melhor do que a projeção de Mercator é",
-   "url": "https://www.scientificamerican.com/article/the-mathematical-impossibility-of-making-a-perfect-world-map/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-20T18:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/ecb674ee-d180-495e-8b55-7df41b2d815f/Equal-Earth-projection.jpg?m=1792162360.46&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "The mathematical impossibility of making a perfect world map",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La imposibilidad matemática de hacer un mapa del mundo perfecto",
-     "resumo": "Mapear una esfera en un plano plano es matemáticamente imposible. Pero un mapa del mundo mejor que la proyección de Mercator es"
-    }
-   },
-   "resumo_original": "Mapping a sphere onto a flat plane is mathematically impossible. But a better world map than the Mercator projection is"
   }
  ],
  "artigos": [
@@ -933,15 +935,8 @@
   "ScienceDaily · Saúde",
   "Europe PMC"
  ],
- "erros": [
-  "Nature: not well-formed (invalid token): line 14, column 4",
-  "Nature · Genética: not well-formed (invalid token): line 14, column 4"
- ],
+ "erros": [],
  "mostradas": {
-  "litigancia climatica qualificada comeca na ciencia": "2026-10-10T18:42:45.309887+00:00",
-  "guia gratuito orienta pais sobre uso de telas por criancas de ate seis anos": "2026-10-10T18:42:45.309887+00:00",
-  "rising water is creating inland ghost forests in the us": "2026-10-10T18:42:45.309887+00:00",
-  "chimp and gorilla brains resist weight loss with age unlike human brains": "2026-10-10T18:42:45.309887+00:00",
   "bowel cancer melted away after immunotherapy then stayed away": "2026-10-10T22:41:49.839387+00:00",
   "nova abordagem para a educacao fisica escolar valoriza autonomia e inclusao": "2026-10-10T22:41:49.839387+00:00",
   "scientists may have found a shortcut to fusion energy": "2026-10-10T22:41:49.839387+00:00",
@@ -1131,6 +1126,9 @@
   "cem usp atualiza dados sobre transporte publico na grande sao paulo": "2026-10-20T18:32:36.280982+00:00",
   "parasite infected mosquitoes released in europe for first time": "2026-10-20T18:32:36.280982+00:00",
   "1000 human mathematicians pledge to shun ai in their research": "2026-10-20T18:32:36.280982+00:00",
-  "the mathematical impossibility of making a perfect world map": "2026-10-20T18:32:36.280982+00:00"
+  "the mathematical impossibility of making a perfect world map": "2026-10-20T18:32:36.280982+00:00",
+  "criancas natureza e clima a protecao das presentes e futuras geracoes ganha novos contornos no brasil": "2026-10-20T22:25:21.855048+00:00",
+  "estudo da usp investiga como a telemedicina transforma o atendimento em arquipelago amazonico": "2026-10-20T22:25:21.855048+00:00",
+  "documentario celebra maioridade da olimpiada nacional em historia do brasil": "2026-10-20T22:25:21.855048+00:00"
  }
 }
