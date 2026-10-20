@@ -1,32 +1,30 @@
 {
- "atualizado_em": "2026-10-19T22:29:22.480474+00:00",
+ "atualizado_em": "2026-10-20T01:55:40.308334+00:00",
  "noticias": [
   {
-   "titulo": "Nobel de Medicina 2026 vai para a optogenética: controlar neurônios com luz",
-   "resumo": "Karl Deisseroth, Peter Hegemann e Georg Nagel foram premiados “pelas descobertas sobre canais iônicos ativados por luz e optogenética”. Hegemann e Nagel acharam a canalrodopsina numa alga: sob luz azul, a proteína abre um canal, íons entram e geram um impulso elétrico em qualquer célula. Deisseroth pôs esse gene em neurônios e os acendeu com luz, primeiro em cultura, depois no cérebro de camundongos vivos. Hoje o método revela circuitos de memória e emoção, e é testado para devolver a visão. Ilustração: © The Nobel Committee for Physiology or Medicine. Ill. Mattias Karlén.",
-   "url": "https://www.nobelprize.org/prizes/medicine/2026/press-release/",
-   "fonte": "Assembleia Nobel do Instituto Karolinska",
-   "idioma": "pt",
-   "tema": "Genética",
-   "data": "2026-10-05T09:30:00+00:00",
-   "relevancia": 30,
-   "imagem": "https://www.nobelprize.org/uploads/2026/10/NP_POM_2026_3-2_01.jpg",
+   "tipo": "noticia",
+   "titulo": "A IA pode prever se você morrerá de câncer apenas com uma imagem do seu rosto?",
+   "resumo": "Os pesquisadores encarregaram um algoritmo de prever o risco de morte de pacientes com câncer. Para algumas pessoas, era chocantemente preciso",
+   "url": "https://www.scientificamerican.com/article/can-ai-predict-whether-youll-die-from-cancer-from-just-an-image-of-your-face/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-19T22:30:00+00:00",
+   "tema": "Câncer",
+   "relevancia": 11,
+   "imagem": "https://static.scientificamerican.com/dam/asset/43030498-6a8a-4e7e-ade9-1abf11916843/face-attention-mapping.png?m=1792445232.127&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "tipo": "noticia",
-   "escolhida": true,
+   "titulo_original": "Can AI predict whether you’ll die from cancer from just an image of your face?",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "Nobel Prize in Medicine 2026 goes to optogenetics: controlling neurons with light",
-     "resumo": "Karl Deisseroth, Peter Hegemann, and Georg Nagel were awarded “for their discoveries about light-activated ion channels and optogenetics.” Hegemann and Nagel found channelrodopsin in an alga: under blue light, the protein opens a channel, ions enter and generate an electrical impulse in any cell. Deisseroth put this gene into neurons and turned them on with light, first in culture, then in the brains of living mice. Today the method reveals circuits of memory and emotion, and is tested for d"
-    },
     "es": {
-     "titulo": "El Premio Nobel de Medicina 2026 se destina a la optogenética: controlar las neuronas con luz",
-     "resumo": "Karl Deisseroth, Peter Hegemann y Georg Nagel fueron galardonados \"por sus descubrimientos sobre los canales iónicos activados por la luz y la optogenética\". Hegemann y Nagel encontraron la canalrodopsina en un alga: bajo la luz azul, la proteína abre un canal, los iones entran y generan un impulso eléctrico en cualquier célula. Deisseroth puso este gen en las neuronas y las encendió con luz, primero en cultivo, luego en los cerebros de ratones vivos. Hoy en día, el método revela circuitos de memoria y emoción, y se prueba para d"
+     "titulo": "¿Puede la IA predecir si morirás de cáncer solo con una imagen de tu rostro?",
+     "resumo": "Los investigadores encargaron a un algoritmo la predicción del riesgo de muerte de los pacientes con cáncer. Para algunas personas, era sorprendentemente preciso"
     }
-   }
+   },
+   "resumo_original": "Researchers tasked an algorithm with predicting cancer patients’ risk of dying. For some people, it was shockingly accurate"
   },
   {
    "tipo": "noticia",
@@ -51,58 +49,6 @@
     "es": {
      "titulo": "La campaña ofrece exámenes gratuitos a la comunidad universitaria para prevenir la diabetes, la hipertensión y el colesterol",
      "resumo": "Del 20 al 22 de octubre, de 8 a 13 horas, la Facultad de Ciencias Farmacéuticas de la USP ofrece a la comunidad universitaria exámenes de salud rápidos y gratuitos"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Inalação controlada de ar rarefeito pode ser estratégia para atenuar sintomas de Parkinson",
-   "resumo": "Estudo preliminar conduzido na Unesp mostra que a abordagem é segura, não afeta o sono e ajuda a regular marcadores associados à inflamação",
-   "url": "https://agencia.fapesp.br/inalacao-controlada-de-ar-rarefeito-pode-ser-estrategia-para-atenuar-sintomas-de-parkinson/59415",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-19T04:55:29.359700+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59415.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Controlled inhalation of rarefied air can be a strategy to mitigate Parkinson's symptoms",
-     "resumo": "Preliminary study conducted at Unesp shows that the approach is safe, does not affect sleep and helps regulate markers associated with inflammation"
-    },
-    "es": {
-     "titulo": "La inhalación controlada de aire enrarecido puede ser una estrategia para mitigar los síntomas del Parkinson",
-     "resumo": "Un estudio preliminar realizado en la Unesp demuestra que el abordaje es seguro, no afecta al sueño y ayuda a regular los marcadores asociados a la inflamación"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Projeto busca universitários surdos para desenvolver plataforma de matemática em Libras",
-   "resumo": "Iniciativa do Centro Brasileiro de Geometria (CBG), um CEPID-FAPESP com sede na Unicamp, vai criar site com a resolução de questões de matemática do Enem",
-   "url": "https://agencia.fapesp.br/projeto-busca-universitarios-surdos-para-desenvolver-plataforma-de-matematica-em-libras/59418",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-19T04:55:29.359700+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59418.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Project seeks deaf university students to develop mathematics platform in Libras",
-     "resumo": "Initiative of the Brazilian Center of Geometry (CBG), a CEPID-FAPESP based at Unicamp, will create a website with the resolution of Enem's mathematics questions"
-    },
-    "es": {
-     "titulo": "Proyecto busca estudiantes universitarios sordos para desarrollar plataforma de matemáticas en Libras",
-     "resumo": "Iniciativa del Centro Brasileño de Geometría (CBG), un CEPID-FAPESP con sede en la Unicamp, creará un sitio web con la resolución de las preguntas de matemáticas de Enem"
     }
    }
   },
@@ -185,6 +131,28 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "17ª Simpósio Científico dos Pós-Graduandos no Cena-USP",
+   "resumo": "Com o tema “60 anos de pesquisa: passado, presente e futuro”, evento em Piracicaba está com inscrições abertas para submissão de trabalhos até amanhã (20/10)",
+   "url": "https://agencia.fapesp.br/17a-simposio-cientifico-dos-pos-graduandos-no-cena-usp/59413",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-20T01:55:40.308334+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "17th Scientific Symposium of Graduate Students at Cena-USP",
+     "resumo": "With the theme \"60 years of research: past, present and future\", the event in Piracicaba has applications open for submission of papers until tomorrow (10/20)"
+    },
+    "es": {
+     "titulo": "XVII Simposio Científico de Alumnos de Posgrado del Cena-USP",
+     "resumo": "Con el tema “60 años de investigación: pasado, presente y futuro”, el evento de Piracicaba tiene abiertas las solicitudes de presentación de trabajos hasta mañana (10/20)"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Enzima encontrada na raiz da cana aumenta em seis vezes a produção de açúcar a partir do bagaço",
    "resumo": "A reportagem mais acessada entre 9 e 15 de outubro detalha pesquisa de cientistas da USP que isolou a molécula ao estudar os aerênquimas – estruturas que a própria planta cria para formar canais de ar em suas raízes. O achado pode…",
    "url": "https://agencia.fapesp.br/enzima-encontrada-na-raiz-da-cana-aumenta-em-seis-vezes-a-producao-de-acucar-a-partir-do-bagaco/59348",
@@ -232,6 +200,32 @@
     "es": {
      "titulo": "El Premio Marta Vannucci reconoce las trayectorias de las mujeres en las ciencias oceánicas",
      "resumo": "Cristiana Seixas do Nepam y Bianca de Sousa Rangel (IB-USP) fueron incluidas en la cuarta edición del Premio"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Sucupira e erva-baleeira juntas contra dores musculares",
+   "resumo": "Composição patenteada na Unicamp e licenciada para empresa-filha da Universidade usa menos ativo vegetal e prolonga ação contra dor e inflamação",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/19/sucupira-e-erva-baleeira-juntas-contra-dores-musculares/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-19T19:36:46+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261019_sicupira7-Igor_Alisson-Capa-2.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Sucupira and weed together against muscle pain",
+     "resumo": "Composition patented at Unicamp and licensed to a daughter company of the University uses less plant active and prolongs action against pain and inflammation"
+    },
+    "es": {
+     "titulo": "Sucupira y hierba juntas contra el dolor muscular",
+     "resumo": "Composición patentada en la Unicamp y licenciada a una empresa hija de la Universidad utiliza menos activo vegetal y prolonga la acción contra el dolor y la inflamación"
     }
    }
   },
@@ -344,7 +338,7 @@
    "idioma": "en",
    "data": "2026-10-19T00:00:00+00:00",
    "tema": "Ciência",
-   "relevancia": 6,
+   "relevancia": 5,
    "imagem": "",
    "titulo_original": "Audio long read: How to stay smart in the age of AI — the science of critical thinking",
    "traduzido": true,
@@ -355,27 +349,6 @@
     }
    },
    "resumo_original": "Although worries are growing about AI's potential to blunt reasoning skills, research has uncovered ways to keep the brain sharp."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Produtos químicos tóxicos no fentanil revelados pela técnica speedy",
-   "resumo": "A impressão digital química mostra os aumentos e declínios de adulterantes específicos em suprimentos ilícitos da droga.",
-   "url": "https://www.nature.com/articles/d41586-026-03317-3",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-19T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Toxic chemicals in fentanyl revealed by speedy technique",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Sustancias químicas tóxicas en el fentanilo reveladas por una técnica rápida",
-     "resumo": "Las huellas dactilares químicas registran los aumentos y disminuciones de adulterantes específicos en los suministros ilícitos de la droga."
-    }
-   },
-   "resumo_original": "Chemical fingerprinting charts the rises and declines of specific adulterants in illicit supplies of the drug."
   },
   {
    "tipo": "noticia",
@@ -415,7 +388,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "PRAME Immunohistochemistry and Molecular Profiling in Undifferentiated Cutaneous Pleomorphic Neoplasms: A Case Series of 8 Tumors.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "PRAME Immunohistochemistry and Molecular Profiling in Undifferentiated Cutaneous Pleomorphic Neoplasms: A Case Series of 8 Tumors."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -428,7 +406,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Characterization of the morphological, immunophenotypical and cytogenetic features of high-grade B-cell lymphoma with 11q aberration.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Caracterización de las características morfológicas, inmunofenotípicas y citogenéticas del linfoma de células B de alto grado con aberración 11q."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -441,7 +424,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "An Integrated Approach to MSI-High Colorectal Cancer Therapy in a Young Patient: A Clinical Case.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "An Integrated Approach to MSI-High Colorectal Cancer Therapy in a Young Patient: A Clinical Case."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -454,7 +442,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Association of TP53 Truncating Mutations with Time to Treatment Failure after First-Line Chemoimmunotherapy in HER2-Mutant Non-Small Cell Lung Cancer.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Asociación de mutaciones truncantes de TP53 con el tiempo hasta el fracaso del tratamiento después de la quimioinmunoterapia de primera línea en el cáncer de pulmón de células no pequeñas mutante de HER2."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -467,7 +460,12 @@
    "acesso_aberto": false,
    "tema": "Saúde",
    "titulo_original": "Uterine leiomyomas in HLRCC: a scoping review of presentation, histopathology, treatment patterns, and reproductive implications.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Leiomiomas uterinos en HLRCC: una revisión del alcance de la presentación, la histopatología, los patrones de tratamiento y las implicaciones reproductivas."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -480,7 +478,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "The molecular heterogeneity and clinical impact of genomic driver alterations in prostate cancer.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La heterogeneidad molecular y el impacto clínico de las alteraciones del controlador genómico en el cáncer de próstata."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -506,7 +509,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Oral squamous cell carcinoma: A Modern Review of Pathogenesis and Treatment.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Carcinoma oral de células escamosas: una revisión moderna de la patogénesis y el tratamiento."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -536,58 +544,68 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "<i>PIK3CA</i> Mutations in Advanced or Recurrent Endometrial Cancer: An Exploratory Molecular Profiling From the Phase II MITO END-3 Study.",
+   "titulo": "Mutações <i>PIK3CA</i> em Câncer Endometrial Avançado ou Recorrente: Um Perfil Molecular Exploratório do Estudo MITO END-3 de Fase II.",
    "autores": "Passarelli A, Scaglione GL, Califano D, Bartoletti M, Lorusso D, Cecere SC, Fagotti A, Farolfi A, Andreetta C…",
    "revista": "JCO Precis Oncol",
    "data": "2026-10-16T00:00:00+00:00",
    "doi": "10.1200/po-26-00484",
    "url": "https://doi.org/10.1200/po-26-00484",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "<i>PIK3CA</i> Mutations in Advanced or Recurrent Endometrial Cancer: An Exploratory Molecular Profiling From the Phase II MITO END-3 Study.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Angiotensin-(1-7) attenuates collagen-induced arthritis and suppresses ferroptosis in THP-1-derived macrophages: involvement of p53/SLC7A11 signaling.",
+   "titulo": "A angiotensina- (1-7) atenua a artrite induzida por colágeno e suprime a ferroptose em macrófagos derivados de THP-1: envolvimento da sinalização de p53/SLC7A11.",
    "autores": "Yang H, Liu A, Sheng M, Zhang S, Tang L.",
    "revista": "J Mol Histol",
    "data": "2026-10-16T00:00:00+00:00",
    "doi": "10.1007/s10735-026-11009-5",
    "url": "https://doi.org/10.1007/s10735-026-11009-5",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Angiotensin-(1-7) attenuates collagen-induced arthritis and suppresses ferroptosis in THP-1-derived macrophages: involvement of p53/SLC7A11 signaling.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Monomorphic Epitheliotropic Intestinal T-Cell Lymphoma: Clinicopathologic and Genetic Analysis of a Large Chinese Cohort.",
+   "titulo": "Linfoma de Células T Intestinais Epitelotrópicas Monomórficas: Análise Clinicopatológica e Genética de uma Grande Coorte Chinesa.",
    "autores": "Li K, Wei R, Su M, Shui R, Lu H, Li X, Zhu X, Zhou X, Yu B.",
    "revista": "Am J Surg Pathol",
    "data": "2026-10-16T00:00:00+00:00",
    "doi": "10.1097/pas.0000000000002629",
    "url": "https://doi.org/10.1097/pas.0000000000002629",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Monomorphic Epitheliotropic Intestinal T-Cell Lymphoma: Clinicopathologic and Genetic Analysis of a Large Chinese Cohort.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Real‐World Germline Variant Landscape and Clinical Management in Korean Patients Tested for Suspected Hereditary Cancer",
+   "titulo": "Cenário de Variantes Germinativas do Mundo Real e Manejo Clínico em Pacientes Coreanos Testados para Suspeita de Câncer Hereditário",
    "autores": "Kang M, Lee H, Park S, Lee S, Jung S, Lim M, Kang H, Seol C, Jang J, Woo S, Joung J, Choi W, Park S, Kong S.",
    "revista": "Cancer Sci",
    "data": "2026-10-16T00:00:00+00:00",
    "doi": null,
    "url": "https://europepmc.org/article/PMC/PMC13675117",
    "acesso_aberto": true,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Real‐World Germline Variant Landscape and Clinical Management in Korean Patients Tested for Suspected Hereditary Cancer",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Polycythemia Vera Transforming to Pure Erythroid Leukemia: A Diagnostic Mimic of Thrombotic Microangiopathy With High-Risk TP53 Biology.",
+   "titulo": "Policitemia Vera transformando-se em leucemia eritroide pura: um mímico diagnóstico de microangiopatia trombótica com biologia TP53 de alto risco.",
    "autores": "Kelley TP, Duc L, Sabile J, Swords R.",
    "revista": "Case Rep Hematol",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.1155/crh/8549290",
    "url": "https://doi.org/10.1155/crh/8549290",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Polycythemia Vera Transforming to Pure Erythroid Leukemia: A Diagnostic Mimic of Thrombotic Microangiopathy With High-Risk TP53 Biology.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -598,106 +616,126 @@
    "doi": "10.1002/cai2.70082",
    "url": "https://doi.org/10.1002/cai2.70082",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Molecular Mechanisms and Therapeutic Advances in KRAS G12C-Mutant Non-Small Cell Lung Cancer: Toward Mechanism-Guided Longitudinal Management.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Bispecific NK-Cell Engager Targeting TP53 Mutation Through Integration of a TCR-mimic Antibody.",
+   "titulo": "Engatador de células NK biespecífico direcionado à mutação TP53 através da integração de um anticorpo mímico de TCR.",
    "autores": "Wu H, Zhao Z, Zhang L, Xiong X, Yang M, Ge W, Zhi D, Cao X, Yi C, Qiao Y, Cao J, Mei Y, Jiao S, Liu Q, Zhou H, Xu Z…",
    "revista": "MedComm (2020)",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.1002/mco2.71058",
    "url": "https://doi.org/10.1002/mco2.71058",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Bispecific NK-Cell Engager Targeting TP53 Mutation Through Integration of a TCR-mimic Antibody.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Bispecific NK‐Cell Engager Targeting TP53 Mutation Through Integration of a TCR‐mimic Antibody",
+   "titulo": "Engatador decélulas NK biespecífico direcionado à mutação TP53 através da integração de um anticorpo imitador de TCR",
    "autores": "Wu H, Zhao Z, Zhang L, Xiong X, Yang M, Ge W, Zhi D, Cao X, Yi C, Qiao Y, Cao J, Mei Y, Jiao S, Liu Q, Zhou H, Xu Z…",
    "revista": "MedComm (2020)",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": null,
    "url": "https://europepmc.org/article/PMC/PMC13669819",
    "acesso_aberto": true,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Bispecific NK‐Cell Engager Targeting TP53 Mutation Through Integration of a TCR‐mimic Antibody",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Survival by Design: Cell Fate Dynamics in Classical Hodgkin Lymphoma.",
+   "titulo": "Sobrevivência por Design: Dinâmica do Destino Celular no Linfoma de Hodgkin Clássico.",
    "autores": "Seleusan M, Cenariu D, Gulei D, Kegyes D, Tigu AB, Riaz S, Zdrenghea M, Tomuleasa C.",
    "revista": "Crit Rev Oncol Hematol",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.1016/j.critrevonc.2026.105651",
    "url": "https://doi.org/10.1016/j.critrevonc.2026.105651",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Survival by Design: Cell Fate Dynamics in Classical Hodgkin Lymphoma.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Colubrid clotcraft: Divergent Factor Va cofactor utilisation underpins differential antivenom cross-reactivities for Boomslang (Dispholidus typus) and Eastern Twig Snake (Thelotornis mossambicanus) venoms.",
+   "titulo": "Colubrid clotcraft: A utilização do cofator do Fator Va divergente sustenta as reatividades cruzadas antivenenos diferenciais para os venenos Boomslang (Dispholidus typus) e Eastern Twig Snake (Thelotornis mossambicanus).",
    "autores": "Champagne PS, Seneci L, Qiao Z, Fry BG.",
    "revista": "Comp Biochem Physiol C Toxicol Pharmacol",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.1016/j.cbpc.2026.110720",
    "url": "https://doi.org/10.1016/j.cbpc.2026.110720",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Colubrid clotcraft: Divergent Factor Va cofactor utilisation underpins differential antivenom cross-reactivities for Boomslang (Dispholidus typus) and Eastern Twig Snake (Thelotornis mossambicanus) venoms.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Genomic characterization of advanced and recurrent endometrial carcinoma: KRAS and TP53 co-mutation as a biomarker for adverse prognosis and therapeutic failure.",
+   "titulo": "Caracterização genômica do carcinoma endometrial avançado e recorrente: co-mutação de KRAS e TP53 como biomarcador para prognóstico adverso e falha terapêutica.",
    "autores": "Lee S, So KA, Kim S, Lee MK, Kim YH, Kim TJ, Kim MK.",
    "revista": "Gynecol Oncol",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.1016/j.ygyno.2026.10.009",
    "url": "https://doi.org/10.1016/j.ygyno.2026.10.009",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Genomic characterization of advanced and recurrent endometrial carcinoma: KRAS and TP53 co-mutation as a biomarker for adverse prognosis and therapeutic failure.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Colorectal neoplasia detected during colonoscopic surveillance in Li-Fraumeni syndrome: a retrospective case series.",
+   "titulo": "Neoplasia colorretal detectada durante a vigilância colonoscópica na síndrome de Li-Fraumeni: uma série de casos retrospectiva.",
    "autores": "Takagi A, Tajika M, Hori M, Ito N, Tanaka T, Hosoda W, Shimizu M, Imoto I, Niwa Y.",
    "revista": "Clin J Gastroenterol",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.1007/s12328-026-02466-2",
    "url": "https://doi.org/10.1007/s12328-026-02466-2",
    "acesso_aberto": false,
-   "tema": "Ciência"
+   "tema": "Ciência",
+   "titulo_original": "Colorectal neoplasia detected during colonoscopic surveillance in Li-Fraumeni syndrome: a retrospective case series.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Moderate-risk variants in hereditary breast and ovarian cancer: seven-year experience from a specialized center.",
+   "titulo": "Variantes de risco moderado no câncer hereditário de mama e ovário: experiência de sete anos em um centro especializado.",
    "autores": "Krückel A, Beckmann MW, Brückner L, Fasching PA, Gass P, Gocke J, Hack CC, Heindl F, Hörner M, Kunze E, Müller-Wirtz C…",
    "revista": "Fam Cancer",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.1007/s10689-026-00609-5",
    "url": "https://doi.org/10.1007/s10689-026-00609-5",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Moderate-risk variants in hereditary breast and ovarian cancer: seven-year experience from a specialized center.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Cerebrospinal Fluid Tumor-Derived DNA Analysis Aids in the Diagnosis of Postpartum Diffuse Midline Glioma.",
+   "titulo": "A análise de DNA derivada de tumor no líquido cefalorraquidiano auxilia no diagnóstico de glioma difuso da linha média pós-parto.",
    "autores": "Rodriguez A, Robinson D, Akhavan D, Cunningham D, Larson A, Udhane V, Schilter KF, Nie Q, Reddi HV.",
    "revista": "Oncologist",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.1093/oncolo/oyag417",
    "url": "https://doi.org/10.1093/oncolo/oyag417",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Cerebrospinal Fluid Tumor-Derived DNA Analysis Aids in the Diagnosis of Postpartum Diffuse Midline Glioma.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Efficacy of continuous ibrutinib monotherapy in patients with relapsed/refractory chronic lymphocytic leukemia with high-burden and low-burden TP53 mutations: Multicenter retrospective analysis of the Polish Adult…",
+   "titulo": "Eficácia da monoterapia contínua com ibrutinibe em pacientes com leucemia linfocítica crônica recidivante/refratária com mutações TP53 de alta e baixa carga: Análise retrospectiva multicêntrica do Adulto Polonês...",
    "autores": "Iskierka-Jażdżewska E, Zielonka K, Puła B, Chudy A, Kustra M, Brodacka B, Subocz E, Urbanowicz A, Wiśniewska-Organek D…",
    "revista": "Adv Clin Exp Med",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.17219/acem/215822",
    "url": "https://doi.org/10.17219/acem/215822",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Efficacy of continuous ibrutinib monotherapy in patients with relapsed/refractory chronic lymphocytic leukemia with high-burden and low-burden TP53 mutations: Multicenter retrospective analysis of the Polish Adult…",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -714,47 +752,55 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Metronomic decitabine with venetoclax offers a patient-centered frontline therapeutic approach for <i>TP53</i>-mutated complex-karyotype myeloid neoplasms.",
+   "titulo": "A decitabina metronômica com venetoclax oferece uma abordagem terapêutica de linha de frente centrada no paciente para neoplasias mieloides de cariótipo complexo com <i>mutação TP53</i>.",
    "autores": "Walsh LF, Lee RP, Pan J, Dutta AB, Kaduluri VPS, Li HL, Abrams Z, Payne P, Imus PH, Ambinder AJ, Dalton WB, DeZern AE…",
    "revista": "Haematologica",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.3324/haematol.2026.301724",
    "url": "https://doi.org/10.3324/haematol.2026.301724",
    "acesso_aberto": false,
-   "tema": "Saúde"
+   "tema": "Saúde",
+   "titulo_original": "Metronomic decitabine with venetoclax offers a patient-centered frontline therapeutic approach for <i>TP53</i>-mutated complex-karyotype myeloid neoplasms.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Experiential Support Across Breast Cancer Care and Familial Breast Cancer Genetic Risk Assessment in Quebec, Canada: A Comparative Study of Accompanying Patients' Contributions.",
+   "titulo": "Apoio Experimental no Cuidado do Câncer de Mama e Avaliação do Risco Genético do Câncer de Mama Familiar em Quebec, Canadá: Um Estudo Comparativo das Contribuições das Pacientes Acompanhantes.",
    "autores": "Bouchard K, Dorval M, Bélanger L, Chiquette J, Côté M, Vialaron C, Normandin L, Iliescu Nelea M, Ahmed AB, Pomey MP.",
    "revista": "J Cancer Educ",
    "data": "2026-10-15T00:00:00+00:00",
    "doi": "10.1007/s13187-026-02908-y",
    "url": "https://doi.org/10.1007/s13187-026-02908-y",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "Experiential Support Across Breast Cancer Care and Familial Breast Cancer Genetic Risk Assessment in Quebec, Canada: A Comparative Study of Accompanying Patients' Contributions.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Context-Dependent TP53 Mutation Gain-of-Function Is Correlated With Its Contribution to Genomic Instability.",
+   "titulo": "O ganho de função da mutação TP53 dependente do contexto está correlacionado com sua contribuição para a instabilidade genômica.",
    "autores": "Tanaka N, Hadi JA, Zhao M, Tang L, Wang Q, Wang J, Myers JN, Zhou G.",
    "revista": "Laryngoscope Investig Otolaryngol",
    "data": "2026-10-14T00:00:00+00:00",
    "doi": "10.1002/lio2.70562",
    "url": "https://doi.org/10.1002/lio2.70562",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Context-Dependent TP53 Mutation Gain-of-Function Is Correlated With Its Contribution to Genomic Instability.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
-   "titulo": "Sporadic ampullary adenoma mimicking adenocarcinoma in the absence of genetic predisposition: a case report.",
+   "titulo": "Adenoma ampular esporádico mimetizando adenocarcinoma na ausência de predisposição genética: relato de caso.",
    "autores": "Poluyanoff AA, Ajadi EA, Flood D, Salzberg AD.",
    "revista": "J Surg Case Rep",
    "data": "2026-10-14T00:00:00+00:00",
    "doi": "10.1093/jscr/rjag925",
    "url": "https://doi.org/10.1093/jscr/rjag925",
    "acesso_aberto": false,
-   "tema": "Genética"
+   "tema": "Genética",
+   "titulo_original": "Sporadic ampullary adenoma mimicking adenocarcinoma in the absence of genetic predisposition: a case report.",
+   "traduzido": true
   }
  ],
  "fontes": [
@@ -952,6 +998,9 @@
   "its about to get a lot harder to keep countries honest about climate change": "2026-10-19T22:29:22.480474+00:00",
   "audio long read how to stay smart in the age of ai the science of critical thinking": "2026-10-19T22:29:22.480474+00:00",
   "toxic chemicals in fentanyl revealed by speedy technique": "2026-10-19T22:29:22.480474+00:00",
-  "japan launches a probe to collect rocks from marss moon phobos": "2026-10-19T22:29:22.480474+00:00"
+  "japan launches a probe to collect rocks from marss moon phobos": "2026-10-19T22:29:22.480474+00:00",
+  "can ai predict whether youll die from cancer from just an image of your face": "2026-10-20T01:55:40.308334+00:00",
+  "17 simposio cientifico dos pos graduandos no cena usp": "2026-10-20T01:55:40.308334+00:00",
+  "sucupira e erva baleeira juntas contra dores musculares": "2026-10-20T01:55:40.308334+00:00"
  }
 }
