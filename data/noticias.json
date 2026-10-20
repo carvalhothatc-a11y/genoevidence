@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-20T01:55:40.308334+00:00",
+ "atualizado_em": "2026-10-20T07:45:08.803334+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -49,6 +49,80 @@
     "es": {
      "titulo": "La campaña ofrece exámenes gratuitos a la comunidad universitaria para prevenir la diabetes, la hipertensión y el colesterol",
      "resumo": "Del 20 al 22 de octubre, de 8 a 13 horas, la Facultad de Ciencias Farmacéuticas de la USP ofrece a la comunidad universitaria exámenes de salud rápidos y gratuitos"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "MIT desenvolve ferramenta baseada em IA para testar modelos de negócios",
+   "resumo": "Sistema combina pesquisas de mercado e simulação de clientes para validar viabilidade comercial de inovações em tempo recorde",
+   "url": "https://pesquisaparainovacao.fapesp.br/mit_desenvolve_ferramenta_baseada_em_ia_para_testar_modelos_de_negocios/4164",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-20T07:45:08.803334+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://pesquisaparainovacao.fapesp.br/imagens/materia/4164.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Mit Develops AI-Based Tool to Test Business Models",
+     "resumo": "System combines market research and customer simulation to validate commercial viability of innovations in record time"
+    },
+    "es": {
+     "titulo": "El MIT desarrolla una herramienta basada en IA para probar modelos de negocio",
+     "resumo": "El sistema combina la investigación de mercado y la simulación de clientes para validar la viabilidad comercial de las innovaciones en un tiempo récord"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Três em cada dez municípios brasileiros não têm plano de contingência contra desastres climáticos",
+   "resumo": "Estudo revela que 37% das cidades também não possuem sistema próprio de alerta; falta de verba, equipes reduzidas e baixa participação popular são os principais gargalos",
+   "url": "https://agencia.fapesp.br/tres-em-cada-dez-municipios-brasileiros-nao-tem-plano-de-contingencia-contra-desastres-climaticos/59420",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-20T07:45:08.803334+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59420.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Three out of ten Brazilian municipalities do not have a contingency plan against climate disasters",
+     "resumo": "A study reveals that 37% of cities also do not have their own alert system; lack of funding, reduced teams and low popular participation are the main bottlenecks"
+    },
+    "es": {
+     "titulo": "Tres de cada diez municipios brasileños no cuentan con un plan de contingencia ante desastres climáticos",
+     "resumo": "Un estudio revela que el 37% de las ciudades tampoco cuentan con un sistema de alerta propio; la falta de financiación, la reducción de equipos y la escasa participación popular son los principales cuellos de botella"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Desmistificando a radioatividade",
+   "resumo": "Oficina de física do IFGW-Unicamp, gratuita e on-line, vai tratar de temas que contemplam desde a radiação em diagnósticos de saúde até o acidente com o césio-137 em Goiânia",
+   "url": "https://agencia.fapesp.br/desmistificando-a-radioatividade/59427",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-20T07:45:08.803334+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Demystifying radioactivity",
+     "resumo": "Physics workshop at IFGW-Unicamp, free and online, will address topics ranging from radiation in health diagnoses to the cesium-137 accident in Goiânia"
+    },
+    "es": {
+     "titulo": "Desmitificando la radiactividad",
+     "resumo": "El taller de física en IFGW-Unicamp, gratuito y en línea, abordará temas que van desde la radiación en los diagnósticos de salud hasta el accidente de cesio-137 en Goiânia"
     }
    }
   },
@@ -131,54 +205,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "17ª Simpósio Científico dos Pós-Graduandos no Cena-USP",
-   "resumo": "Com o tema “60 anos de pesquisa: passado, presente e futuro”, evento em Piracicaba está com inscrições abertas para submissão de trabalhos até amanhã (20/10)",
-   "url": "https://agencia.fapesp.br/17a-simposio-cientifico-dos-pos-graduandos-no-cena-usp/59413",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-20T01:55:40.308334+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "17th Scientific Symposium of Graduate Students at Cena-USP",
-     "resumo": "With the theme \"60 years of research: past, present and future\", the event in Piracicaba has applications open for submission of papers until tomorrow (10/20)"
-    },
-    "es": {
-     "titulo": "XVII Simposio Científico de Alumnos de Posgrado del Cena-USP",
-     "resumo": "Con el tema “60 años de investigación: pasado, presente y futuro”, el evento de Piracicaba tiene abiertas las solicitudes de presentación de trabajos hasta mañana (10/20)"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Enzima encontrada na raiz da cana aumenta em seis vezes a produção de açúcar a partir do bagaço",
-   "resumo": "A reportagem mais acessada entre 9 e 15 de outubro detalha pesquisa de cientistas da USP que isolou a molécula ao estudar os aerênquimas – estruturas que a própria planta cria para formar canais de ar em suas raízes. O achado pode…",
-   "url": "https://agencia.fapesp.br/enzima-encontrada-na-raiz-da-cana-aumenta-em-seis-vezes-a-producao-de-acucar-a-partir-do-bagaco/59348",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-19T22:29:22.480474+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59348.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Enzyme found in sugarcane root increases sugar production from bagasse by six times",
-     "resumo": "The most accessed report between October 9 and 15 details research by USP scientists who isolated the molecule by studying aerenchymas – structures that the plant itself creates to form air channels in its roots. The find may…"
-    },
-    "es": {
-     "titulo": "La enzima que se encuentra en la raíz de caña de azúcar aumenta la producción de azúcar del bagazo en seis veces",
-     "resumo": "El informe más consultado entre el 9 y el 15 de octubre detalla la investigación realizada por científicos de la USP que aislaron la molécula mediante el estudio de los aerénquimas, estructuras que la propia planta crea para formar canales de aire en sus raíces. El hallazgo puede..."
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Prêmio Marta Vannucci reconhece trajetórias de mulheres na ciência do oceano",
    "resumo": "Cristiana Seixas do Nepam e Bianca de Sousa Rangel (IB-USP) foram contempladas na quarta edição do Prêmio",
    "url": "https://jornal.unicamp.br/noticias/2026/10/19/premio-marta-vannucci-reconhece-trajetorias-de-mulheres-na-ciencia-do-oceano/",
@@ -200,32 +226,6 @@
     "es": {
      "titulo": "El Premio Marta Vannucci reconoce las trayectorias de las mujeres en las ciencias oceánicas",
      "resumo": "Cristiana Seixas do Nepam y Bianca de Sousa Rangel (IB-USP) fueron incluidas en la cuarta edición del Premio"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Sucupira e erva-baleeira juntas contra dores musculares",
-   "resumo": "Composição patenteada na Unicamp e licenciada para empresa-filha da Universidade usa menos ativo vegetal e prolonga ação contra dor e inflamação",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/19/sucupira-e-erva-baleeira-juntas-contra-dores-musculares/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-19T19:36:46+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261019_sicupira7-Igor_Alisson-Capa-2.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Sucupira and weed together against muscle pain",
-     "resumo": "Composition patented at Unicamp and licensed to a daughter company of the University uses less plant active and prolongs action against pain and inflammation"
-    },
-    "es": {
-     "titulo": "Sucupira y hierba juntas contra el dolor muscular",
-     "resumo": "Composición patentada en la Unicamp y licenciada a una empresa hija de la Universidad utiliza menos activo vegetal y prolonga la acción contra el dolor y la inflamación"
     }
    }
   },
@@ -496,7 +496,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Real-World Germline Variant Landscape and Clinical Management in Korean Patients Tested for Suspected Hereditary Cancer.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Paisaje de variantes de la línea germinal del mundo real y manejo clínico en pacientes coreanos analizados por sospecha de cáncer hereditario."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -527,7 +532,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Clinical characteristics and outcome of a cohort of CLL patients with BTK T474 gatekeeper mutation.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Características clínicas y resultado de una cohorte de pacientes con LLC con mutación gatekeeper BTK T474."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -540,7 +550,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Clinical implications of germline and somatic genetic testing in ovarian carcinoma: BRCA and beyond. The PERSONA-Ovary trial.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Implicaciones clínicas de la línea germinal y las pruebas genéticas somáticas en el carcinoma de ovario: BRCA y más allá. El ensayo PERSONA-Ovary."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -553,7 +568,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "<i>PIK3CA</i> Mutations in Advanced or Recurrent Endometrial Cancer: An Exploratory Molecular Profiling From the Phase II MITO END-3 Study.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "<i>PIK3CA</i> Mutations in Advanced or Recurrent Endometrial Cancer: An Exploratory Molecular Profiling From the Phase II MITO END-3 Study."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -566,7 +586,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Angiotensin-(1-7) attenuates collagen-induced arthritis and suppresses ferroptosis in THP-1-derived macrophages: involvement of p53/SLC7A11 signaling.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La angiotensina-(1-7) atenúa la artritis inducida por colágeno y suprime la ferroptosis en macrófagos derivados de THP-1: implicación de la señalización de p53/SLC7A11."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -579,7 +604,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Monomorphic Epitheliotropic Intestinal T-Cell Lymphoma: Clinicopathologic and Genetic Analysis of a Large Chinese Cohort.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Linfoma epiteliotrópico monomórfico de células T intestinales: análisis clínico-patológico y genético de una gran cohorte china."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -592,7 +622,12 @@
    "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "Real‐World Germline Variant Landscape and Clinical Management in Korean Patients Tested for Suspected Hereditary Cancer",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Paisaje de variantes dela línea germinal del mundo real y manejo clínico en pacientes coreanos analizados por sospecha de cáncer hereditario"
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -605,7 +640,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Polycythemia Vera Transforming to Pure Erythroid Leukemia: A Diagnostic Mimic of Thrombotic Microangiopathy With High-Risk TP53 Biology.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Polycythemia Vera Transforming to Pure Erythroid Leukemia: A Diagnostic Mimic of Thrombotic Microangiopathy With High-Risk TP53 Biology."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -618,7 +658,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Molecular Mechanisms and Therapeutic Advances in KRAS G12C-Mutant Non-Small Cell Lung Cancer: Toward Mechanism-Guided Longitudinal Management.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Mecanismos moleculares y avances terapéuticos en el cáncer de pulmón no microcítico mutante KRAS G12C: hacia el manejo longitudinal guiado por mecanismos."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -631,7 +676,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Bispecific NK-Cell Engager Targeting TP53 Mutation Through Integration of a TCR-mimic Antibody.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Engranaje biespecífico de células NK que se dirige a la mutación TP53 a través de la integración de un anticuerpo imitador de TCR."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -644,7 +694,12 @@
    "acesso_aberto": true,
    "tema": "Genética",
    "titulo_original": "Bispecific NK‐Cell Engager Targeting TP53 Mutation Through Integration of a TCR‐mimic Antibody",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Accionador biespecífico decélulas NK que se dirige a la mutación TP53 a través de la integración de un anticuerpo TCR-mimético"
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -657,7 +712,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Survival by Design: Cell Fate Dynamics in Classical Hodgkin Lymphoma.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Survival by Design: Cell Fate Dynamics in Classical Hodgkin Lymphoma."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -670,7 +730,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Colubrid clotcraft: Divergent Factor Va cofactor utilisation underpins differential antivenom cross-reactivities for Boomslang (Dispholidus typus) and Eastern Twig Snake (Thelotornis mossambicanus) venoms.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Coagulación colúbrida: la utilización del cofactor del factor Va divergente respalda las reactividades cruzadas diferenciales del antiveneno para los venenos Boomslang (Dispholidus typus) y Eastern Twig Snake (Thelotornis mossambicanus)."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -683,7 +748,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Genomic characterization of advanced and recurrent endometrial carcinoma: KRAS and TP53 co-mutation as a biomarker for adverse prognosis and therapeutic failure.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Caracterización genómica del carcinoma de endometrio avanzado y recurrente: comutación de KRAS y TP53 como biomarcador de pronóstico adverso y fracaso terapéutico."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -696,7 +766,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Colorectal neoplasia detected during colonoscopic surveillance in Li-Fraumeni syndrome: a retrospective case series.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Neoplasia colorrectal detectada durante la vigilancia colonoscópica en el síndrome de Li-Fraumeni: una serie de casos retrospectivos."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -709,7 +784,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Moderate-risk variants in hereditary breast and ovarian cancer: seven-year experience from a specialized center.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Variantes de riesgo moderado en cáncer hereditario de mama y ovario: experiencia de siete años en un centro especializado."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -722,7 +802,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Cerebrospinal Fluid Tumor-Derived DNA Analysis Aids in the Diagnosis of Postpartum Diffuse Midline Glioma.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El análisis del ADN derivado del tumor del líquido cefalorraquídeo ayuda en el diagnóstico del glioma difuso de la línea media posparto."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -735,7 +820,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Efficacy of continuous ibrutinib monotherapy in patients with relapsed/refractory chronic lymphocytic leukemia with high-burden and low-burden TP53 mutations: Multicenter retrospective analysis of the Polish Adult…",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Eficacia de la monoterapia continua con ibrutinib en pacientes con leucemia linfocítica crónica recidivante/refractaria con mutaciones TP53 de alta y baja carga: análisis retrospectivo multicéntrico del adulto polaco..."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -748,7 +838,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Histopathologic features and subtypes of invasive cutaneous squamous cell carcinoma: A comprehensive review.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Características histopatológicas y subtipos de carcinoma cutáneo invasivo de células escamosas: una revisión exhaustiva."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -761,7 +856,12 @@
    "acesso_aberto": false,
    "tema": "Saúde",
    "titulo_original": "Metronomic decitabine with venetoclax offers a patient-centered frontline therapeutic approach for <i>TP53</i>-mutated complex-karyotype myeloid neoplasms.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La decitabina metronómica con venetoclax ofrece un enfoque terapéutico de primera línea centrado en el paciente para las neoplasias mieloides de cariotipo complejo <i>mutado TP53</i>."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -774,7 +874,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Experiential Support Across Breast Cancer Care and Familial Breast Cancer Genetic Risk Assessment in Quebec, Canada: A Comparative Study of Accompanying Patients' Contributions.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Apoyo experiencial en la atención del cáncer de mama y la evaluación del riesgo genético del cáncer de mama familiar en Quebec, Canadá: un estudio comparativo de las contribuciones de los pacientes acompañantes."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -787,7 +892,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Context-Dependent TP53 Mutation Gain-of-Function Is Correlated With Its Contribution to Genomic Instability.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La ganancia de función de la mutación TP53 dependiente del contexto se correlaciona con su contribución a la inestabilidad genómica."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -800,7 +910,12 @@
    "acesso_aberto": false,
    "tema": "Genética",
    "titulo_original": "Sporadic ampullary adenoma mimicking adenocarcinoma in the absence of genetic predisposition: a case report.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Adenoma ampular esporádico que imita al adenocarcinoma en ausencia de predisposición genética: informe de un caso."
+    }
+   }
   }
  ],
  "fontes": [
@@ -821,9 +936,6 @@
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "editora da unicamp tem tres obras entre as finalistas do premio abeu": "2026-10-10T07:17:35.907240+00:00",
-  "novo observatorio amplia o conhecimento sobre os sistemas de saude do brics": "2026-10-10T07:17:35.907240+00:00",
-  "unicamp sediara seis novos centros de pesquisa da fapesp": "2026-10-10T07:17:35.907240+00:00",
   "this beer making waste may offer a new stream for cleaner water": "2026-10-10T13:52:04.145003+00:00",
   "why taking a break from exercise might not mean you need to start from scratch": "2026-10-10T13:52:04.145003+00:00",
   "briefing chat top researchers are being misled by sham academic societies": "2026-10-10T13:52:04.145003+00:00",
@@ -1001,6 +1113,9 @@
   "japan launches a probe to collect rocks from marss moon phobos": "2026-10-19T22:29:22.480474+00:00",
   "can ai predict whether youll die from cancer from just an image of your face": "2026-10-20T01:55:40.308334+00:00",
   "17 simposio cientifico dos pos graduandos no cena usp": "2026-10-20T01:55:40.308334+00:00",
-  "sucupira e erva baleeira juntas contra dores musculares": "2026-10-20T01:55:40.308334+00:00"
+  "sucupira e erva baleeira juntas contra dores musculares": "2026-10-20T01:55:40.308334+00:00",
+  "mit desenvolve ferramenta baseada em ia para testar modelos de negocios": "2026-10-20T07:45:08.803334+00:00",
+  "tres em cada dez municipios brasileiros nao tem plano de contingencia contra desastres climaticos": "2026-10-20T07:45:08.803334+00:00",
+  "desmistificando a radioatividade": "2026-10-20T07:45:08.803334+00:00"
  }
 }
