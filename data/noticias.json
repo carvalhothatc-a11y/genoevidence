@@ -1,31 +1,6 @@
 {
- "atualizado_em": "2026-10-20T07:45:08.803334+00:00",
+ "atualizado_em": "2026-10-20T13:40:44.474888+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "A IA pode prever se você morrerá de câncer apenas com uma imagem do seu rosto?",
-   "resumo": "Os pesquisadores encarregaram um algoritmo de prever o risco de morte de pacientes com câncer. Para algumas pessoas, era chocantemente preciso",
-   "url": "https://www.scientificamerican.com/article/can-ai-predict-whether-youll-die-from-cancer-from-just-an-image-of-your-face/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-19T22:30:00+00:00",
-   "tema": "Câncer",
-   "relevancia": 11,
-   "imagem": "https://static.scientificamerican.com/dam/asset/43030498-6a8a-4e7e-ade9-1abf11916843/face-attention-mapping.png?m=1792445232.127&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Can AI predict whether you’ll die from cancer from just an image of your face?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿Puede la IA predecir si morirás de cáncer solo con una imagen de tu rostro?",
-     "resumo": "Los investigadores encargaron a un algoritmo la predicción del riesgo de muerte de los pacientes con cáncer. Para algunas personas, era sorprendentemente preciso"
-    }
-   },
-   "resumo_original": "Researchers tasked an algorithm with predicting cancer patients’ risk of dying. For some people, it was shockingly accurate"
-  },
   {
    "tipo": "noticia",
    "titulo": "Campanha oferece exames gratuitos à comunidade universitária para prevenir diabetes, hipertensão e colesterol",
@@ -106,25 +81,79 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Desmistificando a radioatividade",
-   "resumo": "Oficina de física do IFGW-Unicamp, gratuita e on-line, vai tratar de temas que contemplam desde a radiação em diagnósticos de saúde até o acidente com o césio-137 em Goiânia",
-   "url": "https://agencia.fapesp.br/desmistificando-a-radioatividade/59427",
+   "titulo": "Plataforma rastreia sinais corporais para investigar origens dos transtornos mentais",
+   "resumo": "Equipamento instalado em São Paulo e Porto Alegre monitora cérebro, olhar e respostas fisiológicas de crianças durante tarefas do cotidiano. Projeto é conduzido pelo Centro de Pesquisa e Inovação em Saúde Mental",
+   "url": "https://agencia.fapesp.br/plataforma-rastreia-sinais-corporais-para-investigar-origens-dos-transtornos-mentais/59423",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-20T07:45:08.803334+00:00",
+   "data": "2026-10-20T13:40:44.474888+00:00",
    "tema": "Saúde",
    "relevancia": 8,
-   "imagem": "",
+   "imagem": "https://agencia.fapesp.br/files/post/59423.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
    "i18n": {
     "en": {
-     "titulo": "Demystifying radioactivity",
-     "resumo": "Physics workshop at IFGW-Unicamp, free and online, will address topics ranging from radiation in health diagnoses to the cesium-137 accident in Goiânia"
+     "titulo": "Platform tracks body signals to investigate origins of mental disorders",
+     "resumo": "Equipment installed in São Paulo and Porto Alegre monitors children's brains, eyes and physiological responses during daily tasks. Project is conducted by the Center for Research and Innovation in Mental Health"
     },
     "es": {
-     "titulo": "Desmitificando la radiactividad",
-     "resumo": "El taller de física en IFGW-Unicamp, gratuito y en línea, abordará temas que van desde la radiación en los diagnósticos de salud hasta el accidente de cesio-137 en Goiânia"
+     "titulo": "La plataforma rastrea las señales corporales para investigar los orígenes de los trastornos mentales",
+     "resumo": "Los equipos instalados en São Paulo y Porto Alegre monitorean el cerebro, los ojos y las respuestas fisiológicas de los niños durante las tareas diarias. El proyecto es llevado a cabo por el Centro de Investigación e Innovación en Salud Mental"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Atividade física vai além da estética e promove saúde física e mental",
+   "resumo": "Além de fortalecer o corpo e estimular a memória, a prática regular de exercícios contribui para a saúde mental e a qualidade de vida, mostrando que pequenas mudanças na rotina podem fazer a diferença",
+   "url": "https://jornal.usp.br/radio-usp/atividade-fisica-vai-alem-da-estetica-e-promove-saude-fisica-e-mental/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-20T12:10:13+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/03/pasta-dos-20230313_farah-.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Physical activity goes beyond aesthetics and promotes physical and mental health",
+     "resumo": "In addition to strengthening the body and stimulating memory, regular exercise contributes to mental health and quality of life, showing that small changes in routine can make a difference"
+    },
+    "es": {
+     "titulo": "La actividad física va más allá de la estética y promueve la salud física y mental",
+     "resumo": "Además de fortalecer el cuerpo y estimular la memoria, el ejercicio regular contribuye a la salud mental y la calidad de vida, lo que demuestra que los pequeños cambios en la rutina pueden marcar la diferencia"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas descobrem uma ligação surpreendente entre a vitamina C e a sobrevivência ao câncer",
+   "resumo": "Um ensaio clínico surpreendente sugere que tomar vitamina C diariamente pode melhorar a sobrevida em pessoas com distúrbios sanguíneos pré-cancerosos e cânceres sanguíneos em estágio inicial. Os pacientes que receberam o suplemento tiveram menos eventos adversos e mostraram um...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261019093437.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-20T04:21:35+00:00",
+   "tema": "Câncer",
+   "relevancia": 8,
+   "imagem": "https://www.sciencedaily.com/images/1920/acute-lymphoblastic-leukemia-all-cancer-cells-in-blood.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists discover a surprising link between vitamin C and cancer survival",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Científicos descubren una sorprendente relación entre la vitamina C y la supervivencia al cáncer",
+     "resumo": "Un sorprendente ensayo clínico sugiere que tomar vitamina C diariamente podría mejorar la supervivencia en personas con trastornos sanguíneos precancerosos y cánceres de sangre en etapa temprana. Los pacientes que recibieron el suplemento tuvieron menos eventos adversos y mostraron un..."
+    }
+   },
+   "resumo_original": "A surprising clinical trial suggests that taking vitamin C daily could improve survival in people with precancerous blood disorders and early-stage blood cancers. Patients receiving the supplement had fewer adverse events and showed a…"
   },
   {
    "tipo": "noticia",
@@ -153,55 +182,44 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "UTI pediátrica do HC destaca a importância do cuidado especializado a crianças em estado grave",
-   "resumo": "Serviço do Instituto da Criança e do Adolescente da USP atende recém-nascidos, crianças e adolescentes, com destaque para pacientes com doenças crônicas",
-   "url": "https://jornal.usp.br/radio-usp/uti-pediatrica-do-hc-destaca-a-importancia-do-cuidado-especializado-a-criancas-em-estado-grave/",
-   "fonte": "Jornal da USP",
+   "titulo": "Como é a trajetória do cotista: da entrada na universidade ao mercado de trabalho",
+   "resumo": "Pesquisas acompanham por que alunos que ingressam na graduação por reserva de vagas abandonam os cursos, o que faz outros permanecerem e como eles constroem a trajetória profissional",
+   "url": "https://revistapesquisa.fapesp.br/como-e-a-trajetoria-do-cotista-da-entrada-na-universidade-ao-mercado-de-trabalho/?utm_source=rss&utm_medium=rss&utm_campaign=como-e-a-trajetoria-do-cotista-da-entrada-na-universidade-ao-mercado-de-trabalho",
+   "fonte": "Revista Pesquisa FAPESP",
    "idioma": "pt",
-   "data": "2026-10-19T16:01:35+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261019_uti.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
+   "data": "2026-10-20T11:57:28+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/uploads/2026/10/Formados_MOBILE.png",
    "i18n": {
     "en": {
-     "titulo": "Pediatric ICU of HC highlights the importance of specialized care for critically ill children",
-     "resumo": "Service of the Institute of Children and Adolescents of USP serves newborns, children and adolescents, with emphasis on patients with chronic diseases"
+     "titulo": "What is the trajectory of the quota holder: from entering university to the labor market"
     },
     "es": {
-     "titulo": "La UCI pediátrica de HC destaca la importancia de la atención especializada para niños en estado crítico",
-     "resumo": "Servicio del Instituto de la Niñez y la Adolescencia de la USP atiende a recién nacidos, niños y adolescentes, con énfasis en pacientes con enfermedades crónicas"
+     "titulo": "Cuál es la trayectoria del cuentapropista: desde el ingreso a la universidad hasta el mercado laboral"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Zero glúten: é possível na prática?",
-   "resumo": "Doença celíaca atinge cerca de 1% da população e exige cuidados na escolha e preparo dos alimentos; pesquisadores buscam produtos mais seguros, nutritivos e acessíveis",
-   "url": "https://revistapesquisa.fapesp.br/zero-gluten-e-possivel-na-pratica/?utm_source=rss&utm_medium=rss&utm_campaign=zero-gluten-e-possivel-na-pratica",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-19T11:57:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/06bc25abe55ba464ea7271b43a6c60d32a33eb52_1200-630.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
+   "titulo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
+   "resumo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
+   "url": "https://www.nature.com/articles/d41586-026-03351-1",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-20T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "",
+   "titulo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "Zero gluten: is it possible in practice?",
-     "resumo": "Celiac disease affects about 1% of the population and requires care in the choice and preparation of food; researchers seek safer, more nutritious and affordable products"
-    },
     "es": {
-     "titulo": "Cero gluten: ¿es posible en la práctica?",
-     "resumo": "La enfermedad celíaca afecta a alrededor del 1% de la población y requiere cuidado en la elección y preparación de los alimentos; los investigadores buscan productos más seguros, nutritivos y asequibles"
+     "titulo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos",
+     "resumo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos"
     }
-   }
+   },
+   "resumo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms"
   },
   {
    "tipo": "noticia",
@@ -231,149 +249,128 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Por que algumas pessoas escapam da doença de Alzheimer apesar de carregarem um gene de alto risco",
-   "resumo": "Os cientistas descobriram por que algumas pessoas com alto risco genético de Alzheimer permanecem mentalmente afiadas até os 80 anos, descobrindo uma mutação rara que protege o cérebro do acúmulo de proteínas nocivas. Os resultados revelam um potencial novo...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261018205044.htm",
+   "titulo": "Cientistas finalmente descobrem por que as estatinas podem causar dor muscular",
+   "resumo": "Os cientistas descobriram uma razão surpreendente pela qual as estatinas, os medicamentos para baixar o colesterol amplamente prescritos que ajudam a prevenir ataques cardíacos e derrames, às vezes podem causar dor muscular, fraqueza e até mesmo danos musculares graves. Usando...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261019093447.htm",
    "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-19T12:57:02+00:00",
-   "tema": "Genética",
-   "relevancia": 7,
-   "imagem": "https://www.sciencedaily.com/images/1920/genetic-neuroscience-human-brain-dna-mutation.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Why some people escape Alzheimer’s despite carrying a high-risk gene",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Por qué algunas personas escapan del Alzheimer a pesar de portar un gen de alto riesgo",
-     "resumo": "Los científicos han descubierto por qué algunas personas con un alto riesgo genético de Alzheimer siguen siendo mentalmente agudas hasta los 80 años, descubriendo una rara mutación que protege al cerebro de la acumulación de proteínas dañinas. Los hallazgos revelan un potencial nuevo..."
-    }
-   },
-   "resumo_original": "Scientists have discovered why some people with a high genetic risk of Alzheimer’s remain mentally sharp into their 80s, uncovering a rare mutation that protects the brain from harmful protein buildup. The findings reveal a potential new…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Está prestes a ficar muito mais difícil manter os países honestos sobre as mudanças climáticas",
-   "resumo": "Uma discussão sobre quando publicar avaliações cruciais sobre mudanças climáticas corre o risco de deixar os países livres dos cortes de emissões",
-   "url": "https://www.newscientist.com/article/2594695-its-about-to-be-a-lot-harder-to-keep-countries-honest-about-climate-change/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-19T16:20:12+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317349988.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "It’s about to get a lot harder to keep countries honest about climate change",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Está a punto de ser mucho más difícil mantener a los países honestos sobre el cambio climático",
-     "resumo": "Una disputa sobre cuándo publicar evaluaciones cruciales del cambio climático corre el riesgo de dejar a los países libres de recortes de emisiones"
-    }
-   },
-   "resumo_original": "A row over when to publish crucial climate change assessments risks letting countries off the hook on emissions cuts"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas descobrem por que algumas pessoas ainda não conseguem saborear alimentos após a COVID-19",
-   "resumo": "Os cientistas descobriram uma possível explicação para o motivo pelo qual algumas pessoas lutam para provar os alimentos mais de um ano após se recuperarem da COVID-19. Ao examinar as papilas gustativas de pacientes com sintomas persistentes, os pesquisadores descobriram...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261018205033.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-19T12:03:02+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/woman-tongue-taste-buds-close.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists discover why some people still can’t taste food after COVID-19",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos descubren por qué algunas personas todavía no pueden probar los alimentos después de la COVID-19",
-     "resumo": "Los científicos han descubierto una posible explicación de por qué algunas personas tienen dificultades para probar los alimentos más de un año después de recuperarse de la COVID-19. Al examinar las papilas gustativas de pacientes con síntomas persistentes, los investigadores descubrieron..."
-    }
-   },
-   "resumo_original": "Scientists have uncovered a possible explanation for why some people struggle to taste food more than a year after recovering from COVID-19. By examining taste buds from patients with lingering symptoms, researchers discovered molecular…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas ganham Prêmio Nobel de 2026 por controlar células cerebrais com luz",
-   "resumo": "Uma descoberta em pequenas algas levou a um avanço vencedor do Prêmio Nobel que permite aos cientistas ligar e desligar células cerebrais usando a luz. A técnica revolucionária já ajudou os pesquisadores a ativar memórias e está abrindo novas…",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261018205037.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-19T10:02:32+00:00",
+   "data": "2026-10-20T13:00:56+00:00",
    "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/translucent-glowing-human-brain-signals-waves.webp",
+   "imagem": "https://www.sciencedaily.com/images/1920/human-muscle-fibers-pain-healing.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Scientists win 2026 Nobel Prize for controlling brain cells with light",
+   "titulo_original": "Scientists finally uncover why statins can cause muscle pain",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los científicos ganan el Premio Nobel de 2026 por controlar las células cerebrales con luz",
-     "resumo": "Un descubrimiento en algas diminutas condujo a un avance ganador del Premio Nobel que permite a los científicos encender y apagar las células cerebrales utilizando la luz. La técnica revolucionaria ya ha ayudado a los investigadores a activar los recuerdos y está abriendo nuevos..."
+     "titulo": "Los científicos finalmente descubren por qué las estatinas pueden causar dolor muscular",
+     "resumo": "Los científicos han descubierto una razón sorprendente por la que las estatinas, los medicamentos ampliamente recetados para reducir el colesterol que ayudan a prevenir ataques cardíacos y accidentes cerebrovasculares, a veces pueden causar dolor muscular, debilidad e incluso daño muscular severo. Usando..."
     }
    },
-   "resumo_original": "A discovery in tiny algae led to a Nobel Prize-winning breakthrough that allows scientists to switch brain cells on and off using light. The revolutionary technique has already helped researchers activate memories and is opening new…"
+   "resumo_original": "Scientists have uncovered a surprising reason why statins, the widely prescribed cholesterol-lowering drugs that help prevent heart attacks and strokes, can sometimes cause muscle pain, weakness, and even severe muscle damage. Using…"
   },
   {
    "tipo": "noticia",
-   "titulo": "Áudio de leitura longa: Como se manter inteligente na era da IA — a ciência do pensamento crítico",
-   "resumo": "Embora as preocupações estejam crescendo sobre o potencial da IA para diminuir as habilidades de raciocínio, a pesquisa descobriu maneiras de manter o cérebro afiado.",
-   "url": "https://www.nature.com/articles/d41586-026-03228-3",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-19T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Audio long read: How to stay smart in the age of AI — the science of critical thinking",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Audio de lectura larga: Cómo mantenerse inteligente en la era de la IA: la ciencia del pensamiento crítico",
-     "resumo": "Aunque crecen las preocupaciones sobre el potencial de la IA para atenuar las habilidades de razonamiento, la investigación ha descubierto formas de mantener el cerebro agudo."
-    }
-   },
-   "resumo_original": "Although worries are growing about AI's potential to blunt reasoning skills, research has uncovered ways to keep the brain sharp."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Japão lança sonda para coletar rochas da lua de Marte, Fobos",
-   "resumo": "A missão de Exploração de Luas Marcianas terá como objetivo trazer de volta amostras de Fobos",
-   "url": "https://www.scientificamerican.com/article/japans-mission-to-collect-rocks-from-mars-moon-phobos-achieves-liftoff/",
+   "titulo": "O gene egoísta aos 50 anos",
+   "resumo": "Há meio século, O gene egoísta, de Richard Dawkins, tornou-se um best-seller instantâneo e transformou a consciência pública sobre a biologia evolutiva. Hoje, os cientistas ainda estão debatendo sua mensagem central",
+   "url": "https://www.scientificamerican.com/article/the-selfish-gene-at-50/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-19T20:00:00+00:00",
-   "tema": "Espaço",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/a58e09fb-deac-49f3-a7aa-8819495f0330/MMX-mission.png?m=1792442130.551&w=1200",
+   "data": "2026-10-20T12:45:00+00:00",
+   "tema": "Genética",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/ee914aee-5897-4c72-8e2c-40e698cc064d/shutterstock_160874294.jpg?m=1792500342.931&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "titulo_original": "The Selfish Gene at 50",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El gen egoísta a los 50",
+     "resumo": "Hace medio siglo, El gen egoísta de Richard Dawkins se convirtió en un éxito de ventas instantáneo y transformó la conciencia pública sobre la biología evolutiva. Hoy en día, los científicos todavía están debatiendo su mensaje central"
+    }
+   },
+   "resumo_original": "A half century ago The Selfish Gene by Richard Dawkins became an instant bestseller and transformed public awareness of evolutionary biology. Today scientists are still debating its core message"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Por dentro da busca arrojada e quixotesca para armazenar carbono que aquece o planeta no oceano",
+   "resumo": "Essas startups estão tentando sugar CO 2 do ar e esconder no mar. Está funcionando?",
+   "url": "https://www.scientificamerican.com/article/inside-the-bold-quixotic-quest-to-store-planet-warming-carbon-in-the-ocean/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-20T10:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 6,
+   "imagem": "https://static.scientificamerican.com/dam/asset/2a3b0f04-e239-4802-9d2c-110a9aff63ad/saw1126Luhn_lead.jpg?m=1791578350.184&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Japan launches a probe to collect rocks from Mars’s moon Phobos",
+   "titulo_original": "Inside the bold, quixotic quest to store planet-warming carbon in the ocean",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Japón lanza una sonda para recoger rocas de la luna Fobos de Marte",
-     "resumo": "La misión Martian Moons Exploration tendrá como objetivo traer muestras de Fobos"
+     "titulo": "Dentro de la audaz y quijotesca búsqueda para almacenar carbono que calienta el planeta en el océano",
+     "resumo": "Estas nuevas empresas están tratando de absorber CO 2 del aire y esconderse en el mar. ¿Está funcionando?"
     }
    },
-   "resumo_original": "The Martian Moons Exploration mission will aim to bring back samples from Phobos"
+   "resumo_original": "These start-ups are trying to suck CO 2 from the air and stash in the sea. Is it working?"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas encontram uma maneira de combater o dano cerebral de Alzheimer sem remover a tau tóxica",
+   "resumo": "Os cientistas descobriram uma maneira promissora de proteger o cérebro dos danos relacionados ao Alzheimer, bloqueando as células do sistema imunológico que contribuem para a destruição dos neurônios. Em camundongos, o tratamento preservou cerca de 40% mais tecido nos centros de memória...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261019093355.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-20T09:52:35+00:00",
+   "tema": "Saúde",
+   "relevancia": 6,
+   "imagem": "https://www.sciencedaily.com/images/1920/tau-tangles-amyloid-beta-neuron-cells-in-brain-alzheimers-dementia.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists find a way to fight Alzheimer’s brain damage without removing toxic tau",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos encuentran una manera de combatir el daño cerebral del Alzheimer sin eliminar la tau tóxica",
+     "resumo": "Los científicos han encontrado una forma prometedora de proteger el cerebro del daño relacionado con el Alzheimer mediante el bloqueo de las células inmunitarias que contribuyen a la destrucción de las neuronas. En ratones, el tratamiento conservó aproximadamente un 40% más de tejido en los centros de memoria..."
+    }
+   },
+   "resumo_original": "Scientists have found a promising way to protect the brain from Alzheimer’s-related damage by blocking immune cells that contribute to the destruction of neurons. In mice, the treatment preserved roughly 40% more tissue in memory centers…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "As raízes do medo da IA no Ocidente são culturais, não tecnológicas",
+   "resumo": "As concepções populares de IA diferem drasticamente entre os EUA e a China. A colunista Annalee Newitz mergulha nos fatores culturais, religiosos e de ficção científica que impulsionam nossas impressões sobre seu poder",
+   "url": "https://www.newscientist.com/article/2594390-the-roots-of-ai-fear-in-the-west-are-cultural-not-technological/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-20T08:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316892706.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "titulo_original": "The roots of AI fear in the West are cultural, not technological",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las raíces del miedo a la IA en Occidente son culturales, no tecnológicas",
+     "resumo": "Las concepciones populares de la IA difieren drásticamente entre EE. UU. y China. La columnista Annalee Newitz se sumerge en los factores culturales, religiosos y de ciencia ficción que impulsan nuestras impresiones sobre su poder"
+    }
+   },
+   "resumo_original": "Popular conceptions of AI differ drastically between the US and China. Columnist Annalee Newitz dives into the cultural, religious and sci-fi factors driving our impressions of its power"
   }
  ],
  "artigos": [
@@ -1116,6 +1113,16 @@
   "sucupira e erva baleeira juntas contra dores musculares": "2026-10-20T01:55:40.308334+00:00",
   "mit desenvolve ferramenta baseada em ia para testar modelos de negocios": "2026-10-20T07:45:08.803334+00:00",
   "tres em cada dez municipios brasileiros nao tem plano de contingencia contra desastres climaticos": "2026-10-20T07:45:08.803334+00:00",
-  "desmistificando a radioatividade": "2026-10-20T07:45:08.803334+00:00"
+  "desmistificando a radioatividade": "2026-10-20T07:45:08.803334+00:00",
+  "plataforma rastreia sinais corporais para investigar origens dos transtornos mentais": "2026-10-20T13:40:44.474888+00:00",
+  "atividade fisica vai alem da estetica e promove saude fisica e mental": "2026-10-20T13:40:44.474888+00:00",
+  "scientists discover a surprising link between vitamin c and cancer survival": "2026-10-20T13:40:44.474888+00:00",
+  "como e a trajetoria do cotista da entrada na universidade ao mercado de trabalho": "2026-10-20T13:40:44.474888+00:00",
+  "nobel prizewinning breakthroughs can emerge from neglected organisms": "2026-10-20T13:40:44.474888+00:00",
+  "scientists finally uncover why statins can cause muscle pain": "2026-10-20T13:40:44.474888+00:00",
+  "the selfish gene at 50": "2026-10-20T13:40:44.474888+00:00",
+  "inside the bold quixotic quest to store planet warming carbon in the ocean": "2026-10-20T13:40:44.474888+00:00",
+  "scientists find a way to fight alzheimers brain damage without removing toxic tau": "2026-10-20T13:40:44.474888+00:00",
+  "the roots of ai fear in the west are cultural not technological": "2026-10-20T13:40:44.474888+00:00"
  }
 }
