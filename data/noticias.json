@@ -1,29 +1,53 @@
 {
- "atualizado_em": "2026-10-20T13:40:44.474888+00:00",
+ "atualizado_em": "2026-10-20T18:32:36.280982+00:00",
  "noticias": [
   {
    "tipo": "noticia",
-   "titulo": "Campanha oferece exames gratuitos à comunidade universitária para prevenir diabetes, hipertensão e colesterol",
-   "resumo": "De 20 a 22 de outubro, das 8h às 13h, a Faculdade de Ciências Farmacêuticas da USP oferece à comunidade universitária exames rápidos e gratuitos de saúde",
-   "url": "https://jornal.usp.br/universidade/campanha-oferece-exames-gratuitos-a-comunidade-universitaria-para-prevenir-diabetes-hipertensao-e-colesterol/",
+   "titulo": "Inteligência artificial e futuro do trabalho são temas de encontro promovido na USP",
+   "resumo": "Especialistas da pesquisa acadêmica e do mercado de tecnologia se reúnem no dia 29 de outubro na Biblioteca Brasiliana, no campus do bairro do Butantã, para debater as transformações e o futuro das profissões",
+   "url": "https://jornal.usp.br/universidade/inteligencia-artificial-e-futuro-do-trabalho-sao-temas-de-encontro-promovido-na-usp/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-19T18:07:48+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261019_Campanha-Diabetes-e-Hipertensao.jpg",
+   "data": "2026-10-20T17:06:41+00:00",
+   "tema": "Ciência",
+   "relevancia": 11,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/10/20251007_00_serie_bbm_no_vestibular.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Campaign offers free exams to the university community to prevent diabetes, hypertension and cholesterol",
-     "resumo": "From October 20 to 22, from 8 am to 1 pm, USP's Faculty of Pharmaceutical Sciences offers the university community quick and free health exams"
+     "titulo": "Artificial intelligence and the future of work are topics of a meeting promoted at USP",
+     "resumo": "Experts from academic research and the technology market will meet on October 29 at the Brasiliana Library, on the campus of the Butantã neighborhood, to discuss the transformations and future of the professions"
     },
     "es": {
-     "titulo": "La campaña ofrece exámenes gratuitos a la comunidad universitaria para prevenir la diabetes, la hipertensión y el colesterol",
-     "resumo": "Del 20 al 22 de octubre, de 8 a 13 horas, la Facultad de Ciencias Farmacéuticas de la USP ofrece a la comunidad universitaria exámenes de salud rápidos y gratuitos"
+     "titulo": "La inteligencia artificial y el futuro del trabajo son temas de un encuentro promovido en la USP",
+     "resumo": "Expertos de la investigación académica y del mercado tecnológico se reunirán el 29 de octubre en la Biblioteca Brasiliana, en el campus del barrio Butantã, para discutir las transformaciones y el futuro de las profesiones"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Fiocruz avança em PDP para o tratamento de doenças inflamatórias",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/fiocruz-avanca-em-pdp-para-o-tratamento-de-doencas-inflamatorias",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-20T14:03:18+00:00",
+   "tema": "Saúde",
+   "relevancia": 9,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/ADALIMUMABE_ASCOM_d.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Fiocruz advances in PDP for the treatment of inflammatory diseases"
+    },
+    "es": {
+     "titulo": "Fiocruz avanza en PDP para el tratamiento de enfermedades inflamatorias"
     }
    }
   },
@@ -81,27 +105,23 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Plataforma rastreia sinais corporais para investigar origens dos transtornos mentais",
-   "resumo": "Equipamento instalado em São Paulo e Porto Alegre monitora cérebro, olhar e respostas fisiológicas de crianças durante tarefas do cotidiano. Projeto é conduzido pelo Centro de Pesquisa e Inovação em Saúde Mental",
-   "url": "https://agencia.fapesp.br/plataforma-rastreia-sinais-corporais-para-investigar-origens-dos-transtornos-mentais/59423",
+   "titulo": "Desmistificando a radioatividade",
+   "resumo": "Oficina de física do IFGW-Unicamp, gratuita e on-line, vai tratar de temas que contemplam desde a radiação em diagnósticos de saúde até o acidente com o césio-137 em Goiânia",
+   "url": "https://agencia.fapesp.br/desmistificando-a-radioatividade/59427",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-20T13:40:44.474888+00:00",
+   "data": "2026-10-20T18:32:36.280982+00:00",
    "tema": "Saúde",
    "relevancia": 8,
-   "imagem": "https://agencia.fapesp.br/files/post/59423.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
+   "imagem": "",
    "i18n": {
     "en": {
-     "titulo": "Platform tracks body signals to investigate origins of mental disorders",
-     "resumo": "Equipment installed in São Paulo and Porto Alegre monitors children's brains, eyes and physiological responses during daily tasks. Project is conducted by the Center for Research and Innovation in Mental Health"
+     "titulo": "Demystifying radioactivity",
+     "resumo": "Physics workshop at IFGW-Unicamp, free and online, will address topics ranging from radiation in health diagnoses to the cesium-137 accident in Goiânia"
     },
     "es": {
-     "titulo": "La plataforma rastrea las señales corporales para investigar los orígenes de los trastornos mentales",
-     "resumo": "Los equipos instalados en São Paulo y Porto Alegre monitorean el cerebro, los ojos y las respuestas fisiológicas de los niños durante las tareas diarias. El proyecto es llevado a cabo por el Centro de Investigación e Innovación en Salud Mental"
+     "titulo": "Desmitificando la radiactividad",
+     "resumo": "El taller de física en IFGW-Unicamp, gratuito y en línea, abordará temas que van desde la radiación en los diagnósticos de salud hasta el accidente de cesio-137 en Goiânia"
     }
    }
   },
@@ -157,26 +177,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O ambiente pode acelerar o envelhecimento",
-   "resumo": "Doenças antes associadas à idade avançada aparecem em pessoas mais jovens e pesquisadores investigam a influência do ambiente",
-   "url": "https://jornal.usp.br/radio-usp/o-ambiente-pode-acelerar-o-envelhecimento/",
+   "titulo": "CEM-USP atualiza dados sobre transporte público na Grande São Paulo",
+   "resumo": "Bases cartográficas georreferenciadas, com informações referentes a 2025, podem ser acessadas gratuitamente por pesquisadores e gestores públicos",
+   "url": "https://jornal.usp.br/radio-usp/cem-usp-atualiza-dados-sobre-transporte-publico-na-grande-sao-paulo/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-19T19:47:38+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/03/pasta-dos-20230313_saldiva-.jpg",
+   "data": "2026-10-20T16:53:43+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/01/20240108_00_corredor_de_onibus.jpg",
    "foco": {
-    "inteira": true
+    "x": 50,
+    "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "The environment can accelerate aging",
-     "resumo": "Diseases previously associated with old age appear in younger people and researchers investigate the influence of the environment"
+     "titulo": "CEM-USP updates data on public transport in Greater São Paulo",
+     "resumo": "Georeferenced cartographic databases, with information referring to 2025, can be accessed free of charge by researchers and public managers"
     },
     "es": {
-     "titulo": "El medio ambiente puede acelerar el envejecimiento",
-     "resumo": "Las enfermedades previamente asociadas con la vejez aparecen en personas más jóvenes y los investigadores investigan la influencia del entorno"
+     "titulo": "CEM-USP actualiza datos sobre transporte público en el Gran São Paulo",
+     "resumo": "Las bases de datos cartográficas georreferenciadas, con información referida a 2025, pueden ser accedidas gratuitamente por investigadores y gestores públicos"
     }
    }
   },
@@ -191,61 +212,69 @@
    "tema": "Ciência",
    "relevancia": 7,
    "imagem": "https://revistapesquisa.fapesp.br/wp-content/uploads/2026/10/Formados_MOBILE.png",
+   "foco": {
+    "inteira": true
+   },
    "i18n": {
     "en": {
-     "titulo": "What is the trajectory of the quota holder: from entering university to the labor market"
+     "titulo": "What is the trajectory of the quota holder: from entering university to the labor market",
+     "resumo": "Research tracks why undergraduates drop out of courses, what makes others stay, and how they build their professional trajectory"
     },
     "es": {
-     "titulo": "Cuál es la trayectoria del cuentapropista: desde el ingreso a la universidad hasta el mercado laboral"
+     "titulo": "Cuál es la trayectoria del cuentapropista: desde el ingreso a la universidad hasta el mercado laboral",
+     "resumo": "La investigación analiza por qué los estudiantes universitarios abandonan los cursos, qué hace que otros se queden y cómo construyen su trayectoria profesional"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
-   "resumo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
-   "url": "https://www.nature.com/articles/d41586-026-03351-1",
-   "fonte": "Nature",
+   "titulo": "Mosquitos infectados por parasitas liberados na Europa pela primeira vez",
+   "resumo": "Mosquitos machos infectados com um parasita foram liberados em Barcelona para reduzir o número de insetos que podem transmitir infecções como a dengue",
+   "url": "https://www.newscientist.com/article/2594886-parasite-infected-mosquitoes-released-in-europe-for-first-time/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-20T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "",
-   "titulo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms",
+   "data": "2026-10-20T15:19:24+00:00",
+   "tema": "Saúde",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317461295.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Parasite-infected mosquitoes released in Europe for first time",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos",
-     "resumo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos"
+     "titulo": "Los mosquitos infectados por parásitos liberados en Europa por primera vez",
+     "resumo": "Los mosquitos machos infectados con un parásito han sido liberados en Barcelona para reducir el número de insectos que pueden transmitir infecciones como el dengue"
     }
    },
-   "resumo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms"
+   "resumo_original": "Male mosquitoes infected with a parasite have been released in Barcelona to reduce the number of insects that can transmit infections such as dengue"
   },
   {
    "tipo": "noticia",
-   "titulo": "Prêmio Marta Vannucci reconhece trajetórias de mulheres na ciência do oceano",
-   "resumo": "Cristiana Seixas do Nepam e Bianca de Sousa Rangel (IB-USP) foram contempladas na quarta edição do Prêmio",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/19/premio-marta-vannucci-reconhece-trajetorias-de-mulheres-na-ciencia-do-oceano/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-19T20:36:04+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Ju_20261019_Premio_Marta-Vanucci_div_IMG_1848-Capa.jpg",
+   "titulo": "1000 matemáticos humanos se comprometem a evitar a IA em suas pesquisas",
+   "resumo": "Há uma reação crescente contra a maneira como as empresas de IA lidam com problemas matemáticos – e agora alguns matemáticos estão optando por evitar completamente a IA",
+   "url": "https://www.newscientist.com/article/2593621-a-thousand-human-mathematicians-pledge-to-shun-ai-in-their-research/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-20T15:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317353201.jpg",
    "foco": {
     "x": 50,
-    "y": 0
+    "y": 50
    },
+   "titulo_original": "1000 human mathematicians pledge to shun AI in their research",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "Marta Vannucci Award recognizes trajectories of women in ocean science",
-     "resumo": "Cristiana Seixas do Nepam and Bianca de Sousa Rangel (IB-USP) were included in the fourth edition of the Award"
-    },
     "es": {
-     "titulo": "El Premio Marta Vannucci reconoce las trayectorias de las mujeres en las ciencias oceánicas",
-     "resumo": "Cristiana Seixas do Nepam y Bianca de Sousa Rangel (IB-USP) fueron incluidas en la cuarta edición del Premio"
+     "titulo": "1000 matemáticos humanos se comprometen a evitar la IA en su investigación",
+     "resumo": "Hay una reacción cada vez mayor contra la forma en que las empresas de IA han abordado los problemas matemáticos, y ahora algunos matemáticos están optando por evitar la IA por completo"
     }
-   }
+   },
+   "resumo_original": "There is a growing backlash against the way AI companies have gone about tackling mathematical problems – and now some mathematicians are opting to avoid AI altogether"
   },
   {
    "tipo": "noticia",
@@ -299,31 +328,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Por dentro da busca arrojada e quixotesca para armazenar carbono que aquece o planeta no oceano",
-   "resumo": "Essas startups estão tentando sugar CO 2 do ar e esconder no mar. Está funcionando?",
-   "url": "https://www.scientificamerican.com/article/inside-the-bold-quixotic-quest-to-store-planet-warming-carbon-in-the-ocean/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-20T10:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/2a3b0f04-e239-4802-9d2c-110a9aff63ad/saw1126Luhn_lead.jpg?m=1791578350.184&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Inside the bold, quixotic quest to store planet-warming carbon in the ocean",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Dentro de la audaz y quijotesca búsqueda para almacenar carbono que calienta el planeta en el océano",
-     "resumo": "Estas nuevas empresas están tratando de absorber CO 2 del aire y esconderse en el mar. ¿Está funcionando?"
-    }
-   },
-   "resumo_original": "These start-ups are trying to suck CO 2 from the air and stash in the sea. Is it working?"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Cientistas encontram uma maneira de combater o dano cerebral de Alzheimer sem remover a tau tóxica",
    "resumo": "Os cientistas descobriram uma maneira promissora de proteger o cérebro dos danos relacionados ao Alzheimer, bloqueando as células do sistema imunológico que contribuem para a destruição dos neurônios. Em camundongos, o tratamento preservou cerca de 40% mais tecido nos centros de memória...",
    "url": "https://www.sciencedaily.com/releases/2026/10/261019093355.htm",
@@ -349,28 +353,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "As raízes do medo da IA no Ocidente são culturais, não tecnológicas",
-   "resumo": "As concepções populares de IA diferem drasticamente entre os EUA e a China. A colunista Annalee Newitz mergulha nos fatores culturais, religiosos e de ficção científica que impulsionam nossas impressões sobre seu poder",
-   "url": "https://www.newscientist.com/article/2594390-the-roots-of-ai-fear-in-the-west-are-cultural-not-technological/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "A impossibilidade matemática de fazer um mapa-múndi perfeito",
+   "resumo": "Mapear uma esfera em um plano plano é matematicamente impossível. Mas um mapa-múndi melhor do que a projeção de Mercator é",
+   "url": "https://www.scientificamerican.com/article/the-mathematical-impossibility-of-making-a-perfect-world-map/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-20T08:00:00+00:00",
+   "data": "2026-10-20T18:00:00+00:00",
    "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316892706.jpg",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/ecb674ee-d180-495e-8b55-7df41b2d815f/Equal-Earth-projection.jpg?m=1792162360.46&w=1200",
    "foco": {
     "x": 50,
-    "y": 0
+    "y": 50
    },
-   "titulo_original": "The roots of AI fear in the West are cultural, not technological",
+   "titulo_original": "The mathematical impossibility of making a perfect world map",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Las raíces del miedo a la IA en Occidente son culturales, no tecnológicas",
-     "resumo": "Las concepciones populares de la IA difieren drásticamente entre EE. UU. y China. La columnista Annalee Newitz se sumerge en los factores culturales, religiosos y de ciencia ficción que impulsan nuestras impresiones sobre su poder"
+     "titulo": "La imposibilidad matemática de hacer un mapa del mundo perfecto",
+     "resumo": "Mapear una esfera en un plano plano es matemáticamente imposible. Pero un mapa del mundo mejor que la proyección de Mercator es"
     }
    },
-   "resumo_original": "Popular conceptions of AI differ drastically between the US and China. Columnist Annalee Newitz dives into the cultural, religious and sci-fi factors driving our impressions of its power"
+   "resumo_original": "Mapping a sphere onto a flat plane is mathematically impossible. But a better world map than the Mercator projection is"
   }
  ],
  "artigos": [
@@ -930,12 +934,10 @@
   "Europe PMC"
  ],
  "erros": [
+  "Nature: not well-formed (invalid token): line 14, column 4",
   "Nature · Genética: not well-formed (invalid token): line 14, column 4"
  ],
  "mostradas": {
-  "this beer making waste may offer a new stream for cleaner water": "2026-10-10T13:52:04.145003+00:00",
-  "why taking a break from exercise might not mean you need to start from scratch": "2026-10-10T13:52:04.145003+00:00",
-  "briefing chat top researchers are being misled by sham academic societies": "2026-10-10T13:52:04.145003+00:00",
   "litigancia climatica qualificada comeca na ciencia": "2026-10-10T18:42:45.309887+00:00",
   "guia gratuito orienta pais sobre uso de telas por criancas de ate seis anos": "2026-10-10T18:42:45.309887+00:00",
   "rising water is creating inland ghost forests in the us": "2026-10-10T18:42:45.309887+00:00",
@@ -1123,6 +1125,12 @@
   "the selfish gene at 50": "2026-10-20T13:40:44.474888+00:00",
   "inside the bold quixotic quest to store planet warming carbon in the ocean": "2026-10-20T13:40:44.474888+00:00",
   "scientists find a way to fight alzheimers brain damage without removing toxic tau": "2026-10-20T13:40:44.474888+00:00",
-  "the roots of ai fear in the west are cultural not technological": "2026-10-20T13:40:44.474888+00:00"
+  "the roots of ai fear in the west are cultural not technological": "2026-10-20T13:40:44.474888+00:00",
+  "inteligencia artificial e futuro do trabalho sao temas de encontro promovido na usp": "2026-10-20T18:32:36.280982+00:00",
+  "fiocruz avanca em pdp para o tratamento de doencas inflamatorias": "2026-10-20T18:32:36.280982+00:00",
+  "cem usp atualiza dados sobre transporte publico na grande sao paulo": "2026-10-20T18:32:36.280982+00:00",
+  "parasite infected mosquitoes released in europe for first time": "2026-10-20T18:32:36.280982+00:00",
+  "1000 human mathematicians pledge to shun ai in their research": "2026-10-20T18:32:36.280982+00:00",
+  "the mathematical impossibility of making a perfect world map": "2026-10-20T18:32:36.280982+00:00"
  }
 }
