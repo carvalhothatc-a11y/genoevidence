@@ -82,7 +82,8 @@
       { nome: "Notícias da ciência", href: RAIZ + "noticias/", extra: "hoje" }, { nome: "Temas", href: RAIZ + "artigos/", extra: "artigos estudos" },
       { nome: "Revistas", href: RAIZ + "revistas/", extra: "publicações" },
       { nome: "Sobre o app", href: RAIZ + "sobre/", extra: "instalar" },
-      { nome: "GenoLab (acesso restrito)", href: RAIZ + "lab/", extra: "laboratório virtual experimento pcr bancada" }];
+      { nome: "GenoLab (acesso restrito)", href: RAIZ + "lab/", extra: "laboratório virtual experimento pcr bancada" },
+      { nome: "GenoGame", href: RAIZ + "genogame/", extra: "jogo game geninho laboratório experimentos dna pcr microscópio bactérias" }];
     // tema ou pesquisadora: ao tocar, abre uma ramificação com os estudos dela(e)
     const ramo = i => '<div class="gv-ramo" data-busca="' + esc((i.nome + " " + (i.extra || "")).toLowerCase()) + '" style="--c:' + esc(i.cor) + '">' +
       '<button type="button" class="gv-item gv-abre" aria-expanded="false"><i></i><span>' + esc(i.nome) + "</span><em>" + i.estudos.length + '</em><b class="gv-seta" aria-hidden="true">›</b></button>' +
