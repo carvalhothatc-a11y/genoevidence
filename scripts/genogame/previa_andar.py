@@ -3,9 +3,9 @@
 import sys, math
 from PIL import Image
 pasta, saida = sys.argv[1], sys.argv[2]
-ORD=['cauda','braco','corpo','perna-e','perna-d','cabeca']
-L={n:Image.open(pasta+'/gn-'+n+'.webp').convert('RGBA') for n in ORD}
-PIV={'cabeca':(360,236),'cauda':(526,556),'braco':(228,372),'perna-e':(305,590),'perna-d':(468,600)}
+ORD=['cauda','corpo','perna-e','perna-d','braco','cabeca']
+L={n:Image.open(pasta+'/gn2-'+n+'.webp').convert('RGBA') for n in ORD}
+PIV={'cabeca':(360,236),'cauda':(526,556),'braco':(266,300),'perna-e':(305,590),'perna-d':(468,600)}
 def ease(t): return t*t*(3-2*t)
 def kf(keys, p):
     # keys: lista (pos, valores...) ; interpolação suave entre quadros-chave
