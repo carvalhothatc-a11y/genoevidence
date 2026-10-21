@@ -362,9 +362,9 @@ html.ge-sem-animacao .gg-retrato .anel{animation:none}
 .gg-campo{display:grid;gap:6px;font:600 14px/1.2 var(--sans);color:var(--ink2)}
 .gg-campo input{font:500 17px/1.2 var(--sans);padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
 .gg-campo input:focus{outline:3px solid var(--violet);outline-offset:1px}
-.gg-cena .xCel{cursor:pointer;outline:none}
+.gg-cena .xCel,.gg-cena .xSlot{cursor:pointer;outline:none}
 .gg-cena .xCel:focus-visible rect{stroke:#D98A0B;stroke-width:4}
-.gg-cena .xSlot:focus-visible,.gg-cena .xCaixa:focus-visible rect,.gg-cena .xTubo:focus-visible circle{stroke:#D98A0B;stroke-width:4;outline:none}
+.gg-cena .xSlot:focus-visible .xAlvoDisco,.gg-cena .xCaixa:focus-visible rect,.gg-cena .xTubo:focus-visible circle{stroke:#D98A0B;stroke-width:4;outline:none}
 .gg-cena [tabindex]{outline:none}
 
 /* bioinformática: a tela com as letras */

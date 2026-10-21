@@ -283,7 +283,8 @@
     titulo: "pcr.titulo", kicker: "pcr.kicker", passos: 3,
     async jogar(c) {
       const t = c.t;
-      const FASES = [{ lo: 92, hi: 98, alvo: 95, cor: "#FF5470" }, { lo: 50, hi: 62, alvo: 55, cor: "#4D7CFF" }, { lo: 68, hi: 76, alvo: 72, cor: "#FFB23F" }];
+      // desnaturação ~98 °C (95–98), anelamento dos iniciadores ~55 °C (depende de cada iniciador), extensão 72 °C
+      const FASES = [{ lo: 94, hi: 100, alvo: 98, cor: "#FF5470" }, { lo: 50, hi: 62, alvo: 55, cor: "#4D7CFF" }, { lo: 68, hi: 76, alvo: 72, cor: "#FFB23F" }];
       const X0 = 60, X1 = 448, Y0 = 34, Y1 = 192, larg = (X1 - X0) / 3;
       const yT = T => Y1 - (clamp(T, 20, 100) - 20) / 80 * (Y1 - Y0);
       const s = c.svg("0 0 480 400",
@@ -333,12 +334,12 @@
       c.etapa(2, 3, t("pcr.p2"), t("pcr.p2.instr"), '<div class="gg-pcr-agora" id="xAgora"></div><div class="gg-teclas" id="xTeclas"></div><p class="gg-nota so-teclado">' + t("pcr.p2.teclado") + "</p>");
       const teclas = $("#xTeclas", c.lado), agoraEl = $("#xAgora", c.lado);
       teclas.className = "gg-temps";
-      teclas.innerHTML = [[95, 0], [72, 2], [55, 1]].map(([T, i]) => '<button type="button" class="btn gg-temp" data-t="' + T + '" style="--c:' + FASES[i].cor + '">' + T + " °C</button>").join("");
+      teclas.innerHTML = [[98, 0], [55, 1], [72, 2]].map(([T, i]) => '<button type="button" class="btn gg-temp" data-t="' + T + '" style="--c:' + FASES[i].cor + '">' + T + " °C</button>").join("");
       let sobe = false, desce = false, arrasta = false;
       const escolhe = T => { S = T; $$(".gg-temp", c.lado).forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.t === T))); };
       $$(".gg-temp", c.lado).forEach(b => c.on(b, "click", () => escolhe(+b.dataset.t)));
       c.on(document, "keydown", e => {
-        if (e.key === "9") escolhe(95); if (e.key === "7") escolhe(72); if (e.key === "5") escolhe(55);
+        if (e.key === "9") escolhe(98); if (e.key === "5") escolhe(55); if (e.key === "7") escolhe(72);
         if (e.key === "ArrowUp") { sobe = true; e.preventDefault(); } if (e.key === "ArrowDown") { desce = true; e.preventDefault(); }
       });
       c.on(document, "keyup", e => { if (e.key === "ArrowUp") sobe = false; if (e.key === "ArrowDown") desce = false; });
@@ -702,7 +703,8 @@
         Array.from({ length: 160 }, () => { const a = rnd(0, 6.28), d = Math.sqrt(Math.random()) * R; return '<circle cx="' + (CX + Math.cos(a) * d).toFixed(0) + '" cy="' + (CY + Math.sin(a) * d).toFixed(0) + '" r="' + rnd(1, 2.4).toFixed(1) + '" fill="#EADBB0"/>'; }).join("") + "</g>" +
         '<g id="xFungo" opacity="0" transform="translate(' + FUNGO[0] + "," + FUNGO[1] + ')"><circle r="22" fill="#F8FAF8"/><circle r="16" fill="#5FA38A"/><circle r="9" fill="#2F7A68"/>' +
         Array.from({ length: 14 }, (_, i) => '<circle cx="' + (Math.cos(i / 14 * 6.28) * 20).toFixed(1) + '" cy="' + (Math.sin(i / 14 * 6.28) * 20).toFixed(1) + '" r="4" fill="#fff"/>').join("") + "</g></g>" +
-        '<g id="xSlots">' + SLOTS.map(([x, y], i) => '<circle class="xSlot" data-i="' + i + '" cx="' + x + '" cy="' + y + '" r="17" fill="none" stroke="#7B4DE0" stroke-width="2.4" stroke-dasharray="5 4" opacity="0" tabindex="-1" role="button" aria-label="' + (i + 1) + '"/>').join("") + "</g>" +
+        '<g id="xSlots">' + SLOTS.map(([x, y], i) => '<g class="xSlot" data-i="' + i + '" opacity="0" tabindex="-1" role="button" aria-label="' + (i + 1) + '"><circle cx="' + x + '" cy="' + y + '" r="34" fill="transparent"/>' +
+          '<circle class="xAlvoDisco" cx="' + x + '" cy="' + y + '" r="18" fill="rgba(123,77,224,.10)" stroke="#7B4DE0" stroke-width="2.6" stroke-dasharray="5 4"/></g>').join("") + "</g>" +
         '<g id="xDiscos"></g><g id="xSwab" opacity="0"><path d="M0 0L46 -46" stroke="#D6A86A" stroke-width="5" stroke-linecap="round"/><ellipse cx="0" cy="0" rx="9" ry="7" fill="#fff" stroke="#E6E9F0"/></g><g id="xEstufa"></g>');
       const rastro = $("#xRastro", s), swab = $("#xSwab", s);
 
@@ -712,12 +714,12 @@
       const medB = $("#xMedB", c.lado);
       const N = 22, passo = (2 * R) / N, grade = [];
       for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) { const x = CX - R + (i + 0.5) * passo, y = CY - R + (j + 0.5) * passo; if (Math.hypot(x - CX, y - CY) < R - 4) grade.push({ x, y, ok: false }); }
-      let cobertos = 0, d = "", segB = false;
+      let cobertos = 0, d = "", segB = false, espalhando = true;
       const cobre = p => { grade.forEach(g => { if (!g.ok && Math.hypot(g.x - p.x, g.y - p.y) < 22) { g.ok = true; cobertos++; } }); medB.style.width = Math.min(100, cobertos / grade.length / 0.88 * 100).toFixed(0) + "%"; };
       await new Promise(r => {
         const ver = () => { if (cobertos / grade.length >= 0.88) { r(); return true; } };
-        c.on(s, "pointerdown", e => { segB = true; captura(s, e); const p = c.ponto(s, e); d += "M" + p.x.toFixed(0) + " " + p.y.toFixed(0); rastro.setAttribute("d", d); cobre(p); swab.setAttribute("opacity", "1"); swab.setAttribute("transform", "translate(" + p.x + "," + p.y + ")"); });
-        c.on(s, "pointermove", e => { if (!segB || cobertos / grade.length >= 0.88) return; const p = c.ponto(s, e); d += "L" + p.x.toFixed(0) + " " + p.y.toFixed(0); rastro.setAttribute("d", d); swab.setAttribute("transform", "translate(" + p.x + "," + p.y + ")"); cobre(p); ver(); });
+        c.on(s, "pointerdown", e => { if (!espalhando) return; segB = true; captura(s, e); const p = c.ponto(s, e); d += "M" + p.x.toFixed(0) + " " + p.y.toFixed(0); rastro.setAttribute("d", d); cobre(p); swab.setAttribute("opacity", "1"); swab.setAttribute("transform", "translate(" + p.x + "," + p.y + ")"); });
+        c.on(s, "pointermove", e => { if (!espalhando || !segB || cobertos / grade.length >= 0.88) return; const p = c.ponto(s, e); d += "L" + p.x.toFixed(0) + " " + p.y.toFixed(0); rastro.setAttribute("d", d); swab.setAttribute("transform", "translate(" + p.x + "," + p.y + ")"); cobre(p); ver(); });
         c.on(s, "pointerup", () => { segB = false; swab.setAttribute("opacity", "0"); });
         c.on(s, "pointercancel", () => { segB = false; });
         // teclado: espalha sozinho em zigue-zague
@@ -735,7 +737,7 @@
           }, c.rm() ? 5 : 90);
         });
       });
-      swab.setAttribute("opacity", "0"); medB.style.width = "100%";
+      espalhando = false; segB = false; swab.setAttribute("opacity", "0"); medB.style.width = "100%";
       c.retorno("ok", t("bac.p1.ok"));
       await c.continuar();
 
@@ -755,10 +757,11 @@
           if (n >= 4) r();
         };
         s.onclick = e => poe(e.target.closest(".xSlot"));
+        s.onpointerup = e => { const sl = e.target.closest && e.target.closest(".xSlot"); if (sl) { e.preventDefault(); poe(sl); } };
         s.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); poe(e.target.closest(".xSlot")); } };
         setTimeout(() => slots[0].focus && slots[0].focus({ preventScroll: true }), 60);
       });
-      s.onclick = s.onkeydown = null;
+      s.onclick = s.onkeydown = s.onpointerup = null;
       c.retorno("ok", t("bac.p2.ok"));
       await c.continuar();
 
