@@ -71,48 +71,41 @@
   const icone = (n, vb) => '<svg viewBox="0 0 ' + (vb || 48) + " " + (vb || 48) + '" fill="none" stroke="currentColor" stroke-width="' + (vb === 24 ? 2 : 2.6) + '" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + IC[n] + "</svg>";
   const estrela = on => '<svg viewBox="0 0 24 24" class="' + (on ? "on" : "") + '" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2 6.3 20.3l1.2-6.4-4.7-4.4 6.4-.8z" fill="' + (on ? "#FFB23F" : "none") + '" style="stroke:' + (on ? "#D98A0B" : "var(--line)") + '" stroke-width="1.6" stroke-linejoin="round"/></svg>';
 
-  /* ---------------- o Geninho (desenho vetorial a partir da arte oficial) ---------------- */
-  // pés na origem (0,0), olhando para a direita; cerca de 160 de altura
+  /* ---------------- o Geninho: a arte oficial (img/geninho-sprite.webp, recortada de geninho-corpo.jpg) ---------------- */
+  // pés na origem (0,0); cerca de 168 de altura. Os EPIs são desenhados por cima, nos pontos medidos na arte
+  // (coordenadas da imagem original de 720 × 720 px).
   function geninhoSVG() {
-    const P = "#B8A6DA", P2 = "#9C89C6", PE = "#8D7ABB", CR = "#F8F1E7", CR2 = "#EADFCF", TP = "#5A4A9E", JA = "#FCFAF5", JA2 = "#E6E0D4", VI = "#8E3B5F";
-    const pata = (cx, cy) => '<circle class="pata-mao" cx="' + cx + '" cy="' + cy + '" r="7" fill="' + PE + '"/><g class="epi luvas"><circle cx="' + cx + '" cy="' + cy + '" r="7.6" fill="#4F86F0"/><path d="M' + (cx - 6) + " " + (cy - 4) + "h12" + '" stroke="#3B6BD0" stroke-width="2"/></g>';
-    const pe = cx => '<ellipse class="pata-pe" cx="' + cx + '" cy="-4.5" rx="11" ry="5.6" fill="' + PE + '"/><g class="epi sapato"><path d="M' + (cx - 12) + " -2 q0 -9 9 -9 h6 q9 0 9 9 z" + '" fill="#2A3350"/><rect x="' + (cx - 12.5) + '" y="-3" width="25" height="3.4" rx="1.6" fill="#141A30"/></g>';
-    return '<ellipse cx="0" cy="1" rx="34" ry="5.5" class="c-sombra"/>' +
-      '<g class="tudo">' +
-      '<g class="cauda"><path d="M-10 -42C-38 -40 -60 -34 -66 -54C-71 -71 -59 -86 -47 -80C-54 -68 -52 -56 -40 -53C-27 -50 -17 -54 -8 -58Z" fill="' + P + '"/><path d="M-60 -60C-62 -70 -56 -79 -48 -79" stroke="' + P2 + '" stroke-width="3" fill="none" stroke-linecap="round" opacity=".6"/></g>' +
-      '<g class="perna e"><rect x="-17" y="-38" width="14" height="34" rx="7" fill="' + P2 + '"/>' + pe(-10) + "</g>" +
-      '<g class="perna d"><rect x="3" y="-38" width="14" height="34" rx="7" fill="' + P + '"/>' + pe(11) + "</g>" +
-      '<g class="braco e"><path d="M-22 -96C-30 -90 -33 -74 -32 -60L-25 -59C-24 -72 -21 -84 -16 -92Z" fill="' + JA2 + '"/>' + pata(-29, -56) + "</g>" +
-      '<g class="corpo">' +
-      '<ellipse cx="0" cy="-64" rx="27" ry="35" fill="' + P + '"/><ellipse cx="2" cy="-60" rx="17" ry="29" fill="' + CR + '"/>' +
-      '<path d="M-26 -96C-31 -76 -32 -46 -30 -22H-7C-9 -46 -9 -72 -6 -92Z" fill="' + JA + '"/>' +
-      '<path d="M26 -96C31 -76 32 -46 30 -22H7C9 -46 9 -72 6 -92Z" fill="' + JA + '"/>' +
-      '<path d="M-6 -92L-15 -76L-24 -97M6 -92L15 -76L24 -97" fill="' + JA + '" stroke="' + VI + '" stroke-width="1.6" stroke-linejoin="round"/>' +
-      '<path d="M-7 -22C-9 -46 -9 -72 -6 -92M7 -22C9 -46 9 -72 6 -92" stroke="' + VI + '" stroke-width="1.6" fill="none"/>' +
-      '<path d="M-30 -22H-7M7 -22H30" stroke="' + JA2 + '" stroke-width="2"/>' +
-      '<rect x="12" y="-58" width="14" height="13" rx="2" fill="' + JA + '" stroke="' + JA2 + '"/><path d="M12 -58h14" stroke="' + VI + '" stroke-width="1.6"/>' +
-      '<path d="M16.5 -56.5c4 2 4 3.5 0 5.5s-4 3.5 0 5.5M21.5 -56.5c-4 2-4 3.5 0 5.5s4 3.5 0 5.5M17 -53.5h4M17 -48h4" stroke="#6B57B8" stroke-width="1.1" fill="none"/>' +
-      '<path d="M-26 -60h10" stroke="' + JA2 + '" stroke-width="1.4"/>' +
-      "</g>" +
-      '<g class="braco d"><path d="M22 -96C30 -90 33 -74 32 -60L25 -59C24 -72 21 -84 16 -92Z" fill="' + JA + '" stroke="' + JA2 + '"/>' + pata(29, -56) + "</g>" +
-      '<g class="cabeca">' +
-      '<circle cx="-25" cy="-137" r="9.5" fill="' + P + '"/><circle cx="-25" cy="-137" r="5" fill="' + P2 + '"/><circle cx="25" cy="-137" r="9.5" fill="' + P + '"/><circle cx="25" cy="-137" r="5" fill="' + P2 + '"/>' +
-      '<ellipse cx="0" cy="-121" rx="34" ry="29" fill="' + P + '"/>' +
-      '<ellipse cx="0" cy="-113" rx="25" ry="19" fill="' + CR + '"/><ellipse cx="-14" cy="-106" rx="14" ry="10" fill="' + CR + '"/><ellipse cx="14" cy="-106" rx="14" ry="10" fill="' + CR + '"/>' +
-      '<path d="M-18 -128c4-5 12-5 15 0M3 -128c3-5 11-5 15 0" fill="' + CR + '"/>' +
-      '<path d="M-15 -143C-20 -160 2 -171 18 -161C9 -163 2 -159 7 -151C0 -156 -7 -151 -8 -145Z" fill="' + TP + '"/><path d="M-6 -150C-6 -158 4 -164 12 -162" stroke="#7563B8" stroke-width="2.4" fill="none" stroke-linecap="round"/>' +
-      '<g class="epi prendedor"><ellipse cx="-4" cy="-150" rx="6" ry="3.2" fill="none" stroke="#E0385A" stroke-width="2.8"/></g>' +
-      '<path d="M-17 -129q5 -3.5 10 0M7 -129q5 -3.5 10 0" stroke="' + P2 + '" stroke-width="1.5" fill="none" stroke-linecap="round"/>' +
-      '<g class="olhos"><circle cx="-11" cy="-119" r="6.6" fill="#5A3626"/><circle cx="-11" cy="-118.5" r="4.2" fill="#24140E"/><circle cx="-9" cy="-121.5" r="2.1" fill="#fff"/><circle cx="-13" cy="-116.5" r="1" fill="#fff"/>' +
-      '<circle cx="11" cy="-119" r="6.6" fill="#5A3626"/><circle cx="11" cy="-118.5" r="4.2" fill="#24140E"/><circle cx="13" cy="-121.5" r="2.1" fill="#fff"/><circle cx="9" cy="-116.5" r="1" fill="#fff"/></g>' +
-      '<ellipse cx="-20" cy="-106" rx="5" ry="3" fill="#F4A6B8" opacity=".55"/><ellipse cx="20" cy="-106" rx="5" ry="3" fill="#F4A6B8" opacity=".55"/>' +
-      '<path d="M-4.6 -109.5Q0 -112 4.6 -109.5Q3.2 -104.6 0 -104Q-3.2 -104.6 -4.6 -109.5Z" fill="#3B3048"/><ellipse cx="-1.4" cy="-109.6" rx="1.4" ry=".8" fill="#fff" opacity=".6"/>' +
-      '<path d="M-5.5 -101.5Q-2.7 -98.6 0 -101.5Q2.7 -98.6 5.5 -101.5" stroke="#3B3048" stroke-width="1.5" fill="none" stroke-linecap="round"/>' +
-      '<path d="M-17 -104L-36 -108M-17 -102L-35 -99M17 -104L36 -108M17 -102L35 -99" stroke="#6E5F86" stroke-width=".8" opacity=".45"/>' +
-      '<g class="epi oculos"><path d="M-34 -121L-21 -120M21 -120L34 -121" stroke="#2A3350" stroke-width="2.6"/><rect x="-21" y="-127" width="17" height="14" rx="5" fill="rgba(170,220,255,.42)" stroke="#2A3350" stroke-width="2.2"/><rect x="4" y="-127" width="17" height="14" rx="5" fill="rgba(170,220,255,.42)" stroke="#2A3350" stroke-width="2.2"/><path d="M-4 -121h8" stroke="#2A3350" stroke-width="2.2"/><path d="M-18 -124l4 -2M7 -124l4 -2" stroke="#fff" stroke-width="1.4" opacity=".8"/></g>' +
-      "</g>" +
-      '<g class="molhado"><g class="gotas"><path d="M-30 -150q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/><path d="M28 -140q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/><path d="M-6 -168q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/><path d="M36 -90q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/></g></g>' +
-      "</g>";
+    const AZ = "#5B8FF2", AZ2 = "#3E6FD6", AZ3 = "#A9C6FF", SA = "#2A3350", SA2 = "#4A5578";
+    return '<ellipse cx="0" cy="1" rx="42" ry="6" class="c-sombra"/>' +
+      '<g class="tudo"><g transform="scale(.264) translate(-385,-664)">' +
+      '<image href="img/geninho-sprite.webp" x="115" y="27" width="530" height="637"/>' +
+      // luvas de nitrilo nas duas patas
+      '<g class="epi luvas">' +
+      '<path d="M226 350C208 346 190 344 177 340C173 330 168 317 158 313C148 310 144 321 148 332C140 326 127 320 119 326C111 333 116 346 128 351C146 363 171 379 196 393C209 401 221 405 231 401Z" fill="' + AZ + '"/>' +
+      '<path d="M128 351C146 363 171 379 196 393C209 401 221 405 231 401L229 386C205 384 170 368 140 350Z" fill="' + AZ2 + '" opacity=".55"/>' +
+      '<path d="M182 344C196 346 210 348 222 352M152 318C156 316 160 318 163 324M124 328C128 325 134 326 139 330" stroke="' + AZ3 + '" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>' +
+      '<path d="M226 349L232 401" stroke="' + AZ2 + '" stroke-width="10" stroke-linecap="round"/>' +
+      '<path d="M452 391C430 385 401 387 388 395C376 403 377 426 392 433C412 441 438 433 452 426Z" fill="' + AZ + '"/>' +
+      '<path d="M392 433C412 441 438 433 452 426L451 414C432 422 405 424 384 420C384 426 387 430 392 433Z" fill="' + AZ2 + '" opacity=".55"/>' +
+      '<path d="M397 396C412 390 430 389 446 392" stroke="' + AZ3 + '" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>' +
+      '<path d="M449 390L451 428" stroke="' + AZ2 + '" stroke-width="9" stroke-linecap="round"/></g>' +
+      // sapatos fechados
+      '<g class="epi sapato">' +
+      '<path d="M248 640C244 628 250 612 266 607C284 601 300 598 318 596L350 594L352 640Z" fill="' + SA + '"/><path d="M263 611C281 604 300 601 320 599" stroke="' + SA2 + '" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+      '<path d="M246 641H354" stroke="#141A30" stroke-width="8" stroke-linecap="round"/>' +
+      '<path d="M430 662C426 640 428 620 436 605L506 603C514 622 516 645 512 662Z" fill="' + SA + '"/><path d="M438 641Q471 629 507 641" stroke="' + SA2 + '" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+      '<path d="M428 663H514" stroke="#141A30" stroke-width="8" stroke-linecap="round"/></g>' +
+      // presilha no topete
+      '<g class="epi prendedor"><g transform="rotate(-35 318 66)"><rect x="299" y="60" width="38" height="13" rx="6.5" fill="#E0385A"/><rect x="304" y="62.5" width="15" height="3.5" rx="1.75" fill="#fff" opacity=".6"/></g></g>' +
+      // óculos de proteção, acompanhando a inclinação da cabeça
+      '<g class="epi oculos"><g transform="rotate(-13 361.5 145)">' +
+      '<path d="M279 147L253 151M444 147L467 143" stroke="' + SA + '" stroke-width="7" stroke-linecap="round"/>' +
+      '<rect x="279" y="122" width="60" height="46" rx="18" fill="rgba(190,228,255,.30)" stroke="' + SA + '" stroke-width="5.5"/>' +
+      '<rect x="384" y="122" width="60" height="46" rx="18" fill="rgba(190,228,255,.30)" stroke="' + SA + '" stroke-width="5.5"/>' +
+      '<path d="M339 139Q361.5 128 384 139" stroke="' + SA + '" stroke-width="5.5" fill="none"/>' +
+      '<path d="M289 134l13 -6M394 134l13 -6" stroke="#fff" stroke-width="3.5" stroke-linecap="round" opacity=".85"/></g></g>' +
+      "</g></g>" +
+      '<g class="molhado"><g class="gotas"><path d="M-34 -150q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/><path d="M30 -150q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/><path d="M-4 -176q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/><path d="M42 -96q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/></g></g>';
   }
   window.GG_GENINHO = geninhoSVG;   // os experimentos também desenham o Geninho
 
@@ -836,7 +829,21 @@
     const p = painel({ kicker: t(def.kicker), titulo: t(def.titulo) });
     p.corpo.innerHTML = '<div class="gg-corpo"><div class="gg-cena"></div><div class="gg-lado" aria-live="polite"></div></div>';
     const cena = $(".gg-cena", p.corpo), lado = $(".gg-lado", p.corpo);
-    let vivo = true; p.limpezas.push(() => { vivo = false; });
+    let vivo = true, reg = null, depoisFeito = false;
+    p.limpezas.push(() => { vivo = false; });
+    // se o resultado já foi gravado e a pessoa fechou antes da tela final, o laboratório reage do mesmo jeito
+    p.limpezas.push(() => { if (reg && !depoisFeito) { depoisFeito = true; setTimeout(() => depoisDoExperimento(id, !reg.antes), 60); } });
+    // grava estrelas, carta e EPI assim que o experimento termina (antes da tela final)
+    const registrar = (estrelas, carta) => {
+      if (reg) return reg;
+      estrelas = clamp(Math.round(estrelas), 1, 3);
+      reg = { antes: +E.feitos[id] || 0, cartaNova: !!carta && !E.cartas[carta], estrelas };
+      E.feitos[id] = Math.max(reg.antes, estrelas);
+      if (carta) E.cartas[carta] = true;
+      if (id === "epi") { E.epi = true; vestirEPI(gn); }
+      salvar(); atualizarHUD(); atualizarHots();
+      return reg;
+    };
     const ctx = {
       t, tt, esc, icone, estrela, rm, toque: TOQUE, cena, lado, estado: E, salvar, locale: I.locale, opc: opc || {},
       get vivo() { return vivo; },
@@ -907,13 +914,10 @@
         });
       },
       // tela final: estrelas, o que aprendemos e a carta
+      registrar,
       async fim(estrelas, textos, carta) {
-        estrelas = clamp(Math.round(estrelas), 1, 3);
-        const antes = +E.feitos[id] || 0, cartaNova = carta && !E.cartas[carta];
-        E.feitos[id] = Math.max(antes, estrelas);
-        if (carta) E.cartas[carta] = true;
-        if (id === "epi") { E.epi = true; vestirEPI(gn); }
-        salvar(); atualizarHUD(); atualizarHots();
+        const { antes, cartaNova } = registrar(estrelas, carta);
+        estrelas = reg.estrelas;
         ctx.passos(def.passos || 1, def.passos || 1);
         lado.innerHTML = '<div class="gg-resultado"><p class="etapa">' + esc(t("ui.estrelas", { n: estrelas })) + '</p><div class="gg-estrelas">' + [1, 2, 3].map(k => estrela(k <= estrelas)).join("") + "</div>" +
           textos.map(x => "<p>" + x + "</p>").join("") + (carta ? '<p class="etapa">' + esc(cartaNova ? t("ui.cartaNova") : t("ui.cartas")) + "</p>" + cartaHTML(carta, cartaNova) : "") +
@@ -921,6 +925,7 @@
         lado.scrollTop = 0;
         const b = $("#ggVoltar", lado); b.focus({ preventScroll: true });
         await new Promise(r => b.addEventListener("click", r, { once: true }));
+        depoisFeito = true;
         p.fechar();
         depoisDoExperimento(id, !antes);
       },

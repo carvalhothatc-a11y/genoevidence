@@ -33,7 +33,7 @@
     async jogar(c) {
       const t = c.t;
       c.passos(1, 0);
-      const s = c.svg("0 0 480 400", '<ellipse cx="240" cy="376" rx="120" ry="12" fill="rgba(15,23,48,.10)"/><g id="xGn" class="gn" transform="translate(240,372) scale(1.95)">' + c.geninho() + "</g>");
+      const s = c.svg("0 0 480 400", '<ellipse cx="240" cy="388" rx="110" ry="11" fill="rgba(15,23,48,.10)"/><g id="xGn" class="gn" transform="translate(240,384) scale(2.12)">' + c.geninho() + "</g>");
       const gn = $("#xGn", s);
       c.etapa(1, 1, t("epi.p1"), t("epi.instr"));
       const ordem = ["jaleco", "luvas", "chinelo", "oculos", "lanche", "sapato", "bermuda", "prendedor"];
@@ -53,8 +53,8 @@
       c.retorno("info", t("epi.jaleco.r"));
       setTimeout(() => { const b = $('.gg-op[data-i="1"]', c.lado); if (b) b.focus({ preventScroll: true }); }, 80);
       const erros = await pr;
-      await c.espera(500);
-      await c.continuar();
+      c.registrar(est3(erros, 0, 1), "epi");   // vestido: já vale, mesmo que a pessoa feche agora
+      await c.espera(c.rm() ? 200 : 1100);
       await c.fim(est3(erros, 0, 1), [t("epi.fim")], "epi");
     }
   };

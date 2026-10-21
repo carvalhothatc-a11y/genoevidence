@@ -99,32 +99,18 @@ html.ge-zoom body>main#gg{zoom:1}
 .vapor.b{animation-delay:-.8s}.vapor.c{animation-delay:-1.5s}
 @keyframes vapor{0%{opacity:0;transform:translateY(0) scale(.6)}30%{opacity:.7}100%{opacity:0;transform:translateY(-40px) scale(1.4)}}
 
-/* ---------- o Geninho ---------- */
-.gn *{transform-box:fill-box}
-.gn .corpo{animation:respira 2.6s ease-in-out infinite;transform-origin:50% 100%}
-@keyframes respira{50%{transform:scaleY(1.018) translateY(-.6px)}}
-.gn .cauda{animation:cauda 2.8s ease-in-out infinite;transform-origin:85% 85%}
-@keyframes cauda{50%{transform:rotate(7deg)}}
-.gn .olhos{animation:pisca-olho 4.6s infinite;transform-origin:50% 50%}
-@keyframes pisca-olho{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}
-.gn .perna,.gn .braco{transform-origin:50% 8%}
-.gn.anda .perna.e{animation:passo .42s ease-in-out infinite}
-.gn.anda .perna.d{animation:passo .42s ease-in-out infinite reverse}
-.gn.anda .braco.e{animation:passo .42s ease-in-out infinite reverse}
-.gn.anda .braco.d{animation:passo .42s ease-in-out infinite}
-.gn.anda .cauda{animation-duration:.84s}
-.gn.anda .corpo{animation:quica .21s ease-in-out infinite alternate}
-@keyframes passo{0%{transform:rotate(16deg)}50%{transform:rotate(-16deg)}100%{transform:rotate(16deg)}}
-@keyframes quica{to{transform:translateY(-2.5px)}}
-.gn.acena .braco.d{animation:acena .5s ease-in-out 4;transform-origin:50% 8%}
-@keyframes acena{0%,100%{transform:rotate(0)}50%{transform:rotate(-150deg)}}
+/* ---------- o Geninho (arte oficial; o corpo todo balança ao andar) ---------- */
+.gn .tudo{transform-box:fill-box;transform-origin:50% 100%;animation:respira 3s ease-in-out infinite}
+@keyframes respira{50%{transform:scaleY(1.014)}}
+.gn.anda .tudo{animation:ginga .44s ease-in-out infinite}
+@keyframes ginga{0%,100%{transform:rotate(-3.5deg)}25%,75%{transform:translateY(-4px) rotate(0)}50%{transform:rotate(3.5deg)}}
+.gn.acena .tudo{animation:oi .6s ease-in-out 3}
+@keyframes oi{0%,100%{transform:rotate(0)}30%{transform:rotate(-6deg)}70%{transform:rotate(5deg)}}
 .gn.pula .tudo{animation:pula .55s cubic-bezier(.3,.7,.4,1)}
-@keyframes pula{0%{transform:translateY(0) scaleY(1)}20%{transform:translateY(0) scaleY(.9)}55%{transform:translateY(-26px) scaleY(1.04)}100%{transform:translateY(0) scaleY(1)}}
-.gn .tudo{transform-origin:50% 100%}
+@keyframes pula{0%{transform:translateY(0) scaleY(1)}20%{transform:translateY(0) scaleY(.92)}55%{transform:translateY(-26px) scaleY(1.04)}100%{transform:translateY(0) scaleY(1)}}
+.gn image{pointer-events:auto}
 .gn .epi{display:none}
 .gn.com-oculos .epi.oculos,.gn.com-luvas .epi.luvas,.gn.com-sapato .epi.sapato,.gn.com-prendedor .epi.prendedor{display:inline}
-.gn.com-luvas .pata-mao{display:none}
-.gn.com-sapato .pata-pe{display:none}
 .gn .molhado{display:none}
 .gn.molhado .molhado{display:inline}
 .gn .gotas{animation:gotas .6s linear infinite}
