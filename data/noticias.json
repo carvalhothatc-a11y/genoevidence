@@ -1,81 +1,55 @@
 {
- "atualizado_em": "2026-10-21T13:57:04.376266+00:00",
+ "atualizado_em": "2026-10-21T18:45:51.467883+00:00",
  "noticias": [
   {
    "tipo": "noticia",
-   "titulo": "Crianças, natureza e clima: a proteção das presentes e futuras gerações ganha novos contornos no Brasil",
-   "resumo": "Por Silmara Veiga Montemor, membro da Comissão Especial do Clima e do Meio Ambiente da OAB-SP, e Maria da Penha Vasconcellos, professora da Faculdade de Saúde Pública e do Instituto de Estudos Avançados, ambos da USP",
-   "url": "https://jornal.usp.br/artigos/criancas-natureza-e-clima-a-protecao-das-presentes-e-futuras-geracoes-ganha-novos-contornos-no-brasil/",
+   "titulo": "Uso de zolpidem pode provocar efeitos colaterais e alterações no comportamento durante o sono",
+   "resumo": "Pacientes devem ter atenção redobrada ao fazer tratamento de curto prazo da insônia",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/uso-de-zolpidem-pode-provocar-efeitos-colaterais-e-alteracoes-no-comportamento-durante-o-sono/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-20T21:02:18+00:00",
-   "tema": "Saúde",
-   "relevancia": 12,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/06/20250604_silmara-montemor_maria-da-penha-vasconcellos.jpg",
-   "foco": {
-    "x": 55,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Children, nature and climate: the protection of present and future generations gains new contours in Brazil",
-     "resumo": "By Silmara Veiga Montemor, member of the Special Commission on Climate and the Environment of OAB-SP, and Maria da Penha Vasconcellos, professor at the Faculty of Public Health and the Institute of Advanced Studies, both at USP"
-    },
-    "es": {
-     "titulo": "Niños, naturaleza y clima: la protección de las generaciones presentes y futuras adquiere nuevos contornos en Brasil",
-     "resumo": "Por Silmara Veiga Montemor, miembro de la Comisión Especial de Clima y Medio Ambiente de la OAB-SP, y Maria da Penha Vasconcellos, profesora de la Facultad de Salud Pública y del Instituto de Estudios Avanzados, ambos de la USP"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Estudo da USP investiga como a telemedicina transforma o atendimento em arquipélago amazônico",
-   "resumo": "Pesquisa de doutorado da Faculdade de Saúde Pública da USP analisa como o atendimento médico a distância reorganiza os serviços públicos de saúde e evidencia desafios relacionados às desigualdades territoriais e às diferenças culturais…",
-   "url": "https://jornal.usp.br/universidade/estudo-da-usp-investiga-como-a-telemedicina-transforma-o-atendimento-em-arquipelago-amazonico/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-20T19:21:14+00:00",
+   "data": "2026-10-21T16:30:37+00:00",
    "tema": "Saúde",
    "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261020_00_equipe_telemedicina_parintins_fsp_usp.jpg",
-   "foco": {
-    "x": 0,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "A USP study investigates how telemedicine transforms care in the Amazon archipelago",
-     "resumo": "Doctoral research from USP's School of Public Health analyzes how distance medical care reorganizes public health services and highlights challenges related to territorial inequalities and cultural differences…"
-    },
-    "es": {
-     "titulo": "Un estudio de la USP investiga cómo la telemedicina transforma la atención en el archipiélago amazónico",
-     "resumo": "La investigación doctoral de la Escuela de Salud Pública de la USP analiza cómo la atención médica a distancia reorganiza los servicios de salud pública y destaca los desafíos relacionados con las desigualdades territoriales y las diferencias culturales..."
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Documentário celebra ‘maioridade’ da Olimpíada Nacional em História do Brasil",
-   "resumo": "Produção para web registra emoção da final da 18ª edição, com mais de 64 mil equipes",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/20/documentario-celebra-maioridade-da-olimpiada-nacional-em-historia-do-brasil/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-20T18:50:15+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261020_Olimpiadas-historia_Capa.jpg",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/01/20250123_medicamento.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Documentary celebrates‘ coming of age ’of the National Olympiad in Brazilian History",
-     "resumo": "Web production records the emotion of the final of the 18th edition, with more than 64 thousand teams"
+     "titulo": "Use of zolpidem may cause side effects and changes in behavior during sleep",
+     "resumo": "Patients should pay extra attention when taking short-term treatment of insomnia"
     },
     "es": {
-     "titulo": "Documental celebra la \"mayoría de edad\" de la Olimpiada Nacional en la historia de Brasil",
-     "resumo": "La producción web registra la emoción de la final de la 18ª edición, con más de 64 mil equipos"
+     "titulo": "El uso de zolpidem puede causar efectos secundarios y cambios en el comportamiento durante el sueño",
+     "resumo": "Los pacientes deben prestar especial atención al tomar el tratamiento a corto plazo del insomnio"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Pesquisa busca voluntárias para saber como as mulheres vivenciam o parto no Brasil",
+   "resumo": "Estudo global sobre atenção obstétrica, nascimento e saúde materna é liderado por pesquisadores da Faculdade de Saúde Pública da USP e vai comparar os resultados entre 16 países de cinco continentes",
+   "url": "https://jornal.usp.br/universidade/pesquisa-busca-voluntarias-para-saber-como-as-mulheres-vivenciam-o-parto-no-brasil/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-21T16:16:40+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2018/08/20180821_00_gravida.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Research seeks volunteers to know how women experience childbirth in Brazil",
+     "resumo": "Global study on obstetric care, birth and maternal health is led by researchers from USP's School of Public Health and will compare the results between 16 countries on five continents"
+    },
+    "es": {
+     "titulo": "La investigación busca voluntarios para saber cómo las mujeres experimentan el parto en Brasil",
+     "resumo": "El estudio global sobre atención obstétrica, parto y salud materna está dirigido por investigadores de la Escuela de Salud Pública de la USP y comparará los resultados entre 16 países de los cinco continentes"
     }
    }
   },
@@ -105,6 +79,84 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Idosos mais ativos têm volume cerebral preservado em áreas de memória e raciocínio, mostra estudo",
+   "resumo": "Ao analisar dados de 2,7 mil indivíduos em torno de 70 anos, pesquisadores da Unesp concluíram que o movimento ajuda a conter a atrofia em estruturas vitais, como o hipocampo. Resultado reforça o papel do exercício na prevenção do declínio…",
+   "url": "https://agencia.fapesp.br/idosos-mais-ativos-tem-volume-cerebral-preservado-em-areas-de-memoria-e-raciocinio-mostra-estudo/59432",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-21T18:45:51.467883+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59432.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "More active older adults have preserved brain volume in areas of memory and reasoning, study shows",
+     "resumo": "By analyzing data from 2,700 individuals aged around 70 years, Unesp researchers concluded that the movement helps to contain atrophy in vital structures, such as the hippocampus. The result reinforces the role of exercise in preventing decline…"
+    },
+    "es": {
+     "titulo": "Un estudio muestra que los adultos mayores más activos han preservado el volumen cerebral en áreas de memoria y razonamiento",
+     "resumo": "Al analizar datos de 2.700 individuos de alrededor de 70 años, los investigadores de la Unesp concluyeron que el movimiento ayuda a contener la atrofia en estructuras vitales, como el hipocampo. El resultado refuerza el papel del ejercicio en la prevención del deterioro..."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Mesmo sem olhos, ostras e mexilhões possuem grande diversidade de proteínas que percebem a luz",
+   "resumo": "Estudo da USP e de colaboradores norte-americanos revela que o repertório químico na pele desses animais chega a superar a variedade encontrada na retina humana, indicando um complexo sistema de fotopercepção",
+   "url": "https://agencia.fapesp.br/mesmo-sem-olhos-ostras-e-mexilhoes-possuem-grande-diversidade-de-proteinas-que-percebem-a-luz/59433",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-21T18:45:51.467883+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59433.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Even without eyes, oysters and mussels have a great diversity of proteins that perceive light",
+     "resumo": "A study by USP and US collaborators reveals that the chemical repertoire in the skin of these animals surpasses the variety found in the human retina, indicating a complex photoperception system"
+    },
+    "es": {
+     "titulo": "Incluso sin ojos, las ostras y los mejillones tienen una gran diversidad de proteínas que perciben la luz",
+     "resumo": "Un estudio de la USP y colaboradores estadounidenses revela que el repertorio químico en la piel de estos animales supera la variedad encontrada en la retina humana, lo que indica un complejo sistema de fotopercepción"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Semana do Livro e da Biblioteca na USP vai discutir inovação e futuro da pesquisa científica",
+   "resumo": "A edição deste ano do evento será realizada entre os dias 26 e 30 de outubro, em várias unidades e campi da Universidade",
+   "url": "https://jornal.usp.br/universidade/semana-do-livro-e-da-biblioteca-na-usp-vai-discutir-inovacao-e-futuro-da-pesquisa-cientifica/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-21T17:42:09+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2021/07/20210705_00_biblioteca_estudante_notebook.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Book and Library Week at USP will discuss innovation and the future of scientific research",
+     "resumo": "This year's edition of the event will be held between October 26 and 30, in several units and campuses of the University"
+    },
+    "es": {
+     "titulo": "La Semana del Libro y la Biblioteca de la USP debatirá sobre la innovación y el futuro de la investigación científica",
+     "resumo": "La edición de este año del evento se celebrará entre el 26 y el 30 de octubre, en varias unidades y campus de la Universidad"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "SBPC premia alunas que se destacaram em atividades científicas",
    "resumo": "Estudantes do ensino médio e da graduação podem se inscrever até a próxima sexta-feira (30/10) para a 8ª edição do Prêmio Carolina Bori Ciência e Mulher",
    "url": "https://agencia.fapesp.br/sbpc-premia-alunas-que-se-destacaram-em-atividades-cientificas/59436",
@@ -126,50 +178,6 @@
     "es": {
      "titulo": "SBPC premia a los estudiantes que han sobresalido en actividades científicas",
      "resumo": "Los estudiantes de bachillerato y pregrado pueden postularse hasta el próximo viernes (30/10) para la 8ª edición del Carolina Bori Science and Women's Award"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Conecta Florestal aproxima estudantes e empresas na Esalq-USP",
-   "resumo": "Evento gratuito terá mesa-redonda com a participação de especialistas que abordarão temas atuais, desafios e perspectivas do setor florestal, além de uma feira de carreiras",
-   "url": "https://agencia.fapesp.br/conecta-florestal-aproxima-estudantes-e-empresas-na-esalq-usp/59437",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-21T13:57:04.376266+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Conecta Florestal brings students and companies closer together at Esalq-USP",
-     "resumo": "Free event will have a round table with the participation of experts who will address current issues, challenges and perspectives of the forest sector, as well as a career fair"
-    },
-    "es": {
-     "titulo": "Conecta Florestal acerca a estudiantes y empresas en Esalq-USP",
-     "resumo": "El evento gratuito contará con una mesa redonda con la participación de expertos que abordarán temas de actualidad, desafíos y perspectivas del sector forestal, así como una feria de carreras"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Encontro de Álgebra e Geometria Campinas-São Carlos",
-   "resumo": "Evento gratuito busca estimular a troca de conhecimento e criar novas possibilidades de colaboração científica. Inscrições abertas até a próxima segunda-feira (26/10)",
-   "url": "https://agencia.fapesp.br/encontro-de-algebra-e-geometria-campinas-sao-carlos/59445",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-21T13:57:04.376266+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Campinas-São Carlos Algebra and Geometry Meeting",
-     "resumo": "A free event seeks to stimulate the exchange of knowledge and create new possibilities for scientific collaboration. Registration open until next Monday (10/26)"
-    },
-    "es": {
-     "titulo": "Encuentro de Álgebra y Geometría Campinas-São Carlos",
-     "resumo": "Un evento gratuito busca estimular el intercambio de conocimiento y crear nuevas posibilidades de colaboración científica. Inscripciones abiertas hasta el próximo lunes (26/10)"
     }
    }
   },
@@ -251,53 +259,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "ONU diz que 1,5°C acabou e o mundo está a caminho de 2,8°C de aquecimento global",
-   "resumo": "O melhor cenário agora é que o planeta violará apenas temporariamente 1,5°C de aquecimento, mas as promessas climáticas atuais ficam muito aquém dessa esperança",
-   "url": "https://www.newscientist.com/article/2594831-un-says-1-5c-is-over-and-world-is-on-track-for-2-8c-of-global-warming/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "A queda do nível do mar devido ao El Niño atingirá manguezais e corais",
+   "resumo": "À medida que o nível do mar sobe no Pacífico oriental, eles estão caindo ao redor da Austrália e do Triângulo de Coral, deixando alguns manguezais e corais altos e secos",
+   "url": "https://www.newscientist.com/article/2594961-falling-sea-levels-due-to-el-nino-will-hit-mangroves-and-corals/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-21T05:00:00+00:00",
+   "data": "2026-10-21T17:00:00+00:00",
    "tema": "Meio ambiente",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317441814.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317553044.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "UN says 1.5°C is over and world is on track for 2.8°C of global warming",
+   "titulo_original": "Falling sea levels due to El Niño will hit mangroves and corals",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La ONU dice que 1,5° C ha terminado y el mundo está en camino de 2,8° C de calentamiento global",
-     "resumo": "El mejor de los casos ahora es que el planeta solo supere temporalmente 1,5 °C de calentamiento, pero las promesas climáticas actuales no alcanzan esa esperanza"
+     "titulo": "Caída del nivel del mar por El Niño afectará a manglares y corales",
+     "resumo": "A medida que aumenta el nivel del mar en el Pacífico oriental, están cayendo alrededor de Australia y el Triángulo de Coral, dejando algunos manglares y corales altos y secos"
     }
    },
-   "resumo_original": "The best-case scenario now is that the planet will only temporarily breach 1.5°C of warming, but current climate pledges fall way short of that hope"
+   "resumo_original": "As sea levels rise in the eastern Pacific, they are falling around Australia and the Coral Triangle, leaving some mangroves and corals high and dry"
   },
   {
    "tipo": "noticia",
-   "titulo": "Como os bilionários da tecnologia estão revolucionando a ciência biomédica",
-   "resumo": "O dinheiro dos empreendedores de tecnologia cada vez mais prósperos do mundo tem inundado a pesquisa biomédica. Isso está mudando a forma como a ciência é feita?",
-   "url": "https://www.nature.com/articles/d41586-026-03311-9",
-   "fonte": "Nature",
+   "titulo": "Alguns danos climáticos agora são inevitáveis, mesmo se limparmos nosso ato",
+   "resumo": "Com o mundo provavelmente ultrapassando 1,5°C de aquecimento, o plano agora é reduzir nossas emissões de carbono depois de ultrapassar a meta. Que dano duradouro isso terá?",
+   "url": "https://www.newscientist.com/article/2594773-some-climate-damage-is-now-unavoidable-even-if-we-clean-up-our-act/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-21T00:00:00+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-21T17:00:00+00:00",
+   "tema": "Meio ambiente",
    "relevancia": 6,
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03311-9/d41586-026-03311-9_53860580.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317321333.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "How tech billionaires are disrupting biomedical science",
+   "titulo_original": "Some climate damage is now unavoidable even if we clean up our act",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Cómo los multimillonarios de la tecnología están alterando la ciencia biomédica",
-     "resumo": "El dinero de los empresarios tecnológicos cada vez más prósperos del mundo ha estado inundando la investigación biomédica. ¿Está cambiando la forma en que se hace la ciencia?"
+     "titulo": "Algunos daños climáticos ahora son inevitables, incluso si limpiamos nuestro acto",
+     "resumo": "Dado que es probable que el mundo supere los 1,5 °C de calentamiento, el plan ahora es reducir nuestras emisiones de carbono después de superar el objetivo. ¿Qué daño duradero tendrá esto?"
     }
    },
-   "resumo_original": "Money from the world’s increasingly prosperous technology entrepreneurs has been flooding into biomedical research. Is it changing how science is done?"
+   "resumo_original": "With the world looking likely to exceed 1.5°C of warming, the plan is now to reduce our carbon emissions after overshooting the target. What lasting damage will this have?"
   },
   {
    "tipo": "noticia",
@@ -320,56 +328,91 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O primeiro transplante de medula espinhal do mundo foi realizado na Rússia",
-   "resumo": "Um cirurgião disse à New Scientist que realizou um transplante em alguém com uma lesão medular completa usando um pedaço da medula espinhal de um doador com morte cerebral, mas os pesquisadores levantaram preocupações",
-   "url": "https://www.newscientist.com/article/2594991-the-worlds-first-spinal-cord-transplant-has-been-performed-in-russia/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "Super tufão Champi estabelece o recorde de tempestade mais forte de 2026",
+   "resumo": "Os ventos do ciclone atingiram 185 milhas por hora - a maior velocidade do vento de qualquer tempestade este ano",
+   "url": "https://www.scientificamerican.com/article/super-typhoon-champi-sets-the-record-for-strongest-storm-of-2026/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-21T10:30:31+00:00",
+   "data": "2026-10-21T16:35:00+00:00",
    "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317465000_6f943c.jpg",
+   "imagem": "https://static.scientificamerican.com/dam/asset/d873326b-3476-48e2-8cc9-c6e679d4d8cf/Champi.png?m=1792603414.33&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "The world’s first spinal cord transplant has been performed in Russia",
+   "titulo_original": "Super Typhoon Champi sets the record for strongest storm of 2026",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El primer trasplante de médula espinal del mundo se ha realizado en Rusia",
-     "resumo": "Un cirujano le ha dicho a New Scientist que ha realizado un trasplante en alguien con una lesión completa de la médula espinal utilizando un trozo de médula espinal de un donante con muerte cerebral, pero los investigadores han expresado su preocupación"
+     "titulo": "El supertifón Champi establece el récord de tormenta más fuerte de 2026",
+     "resumo": "Los vientos del ciclón golpearon a 185 millas por hora, la velocidad del viento más fuerte de cualquier tormenta este año"
     }
    },
-   "resumo_original": "A surgeon has told New Scientist they have performed a transplant on someone with a complete spinal cord injury using a piece of spinal cord from a brain-dead donor, but researchers have raised concerns"
+   "resumo_original": "The cyclone’s winds hit 185 miles per hour—the strongest windspeed of any storm this year"
   },
   {
    "tipo": "noticia",
-   "titulo": "A Wall Is Also a Road explora a consciência alienígena, formas de vida de mofo e Pompeia",
-   "resumo": "Alienígenas do lodo exploram Pompeia - e a humanidade - em um novo livro de Annalee Newitz",
-   "url": "https://www.scientificamerican.com/podcast/episode/a-wall-is-also-a-road-explores-alien-consciousness-slime-mold-life-forms-and-pompeii/",
-   "fonte": "Scientific American",
+   "titulo": "Projeto de novo de fotocatalisadores de metaloenzimas artificiais enantiosseletivos",
+   "resumo": "Projeto de novo de fotocatalisadores de metaloenzimas artificiais enantiosseletivos",
+   "url": "https://www.nature.com/articles/s41586-026-11317-6",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-21T10:00:00+00:00",
+   "data": "2026-10-21T00:00:00+00:00",
    "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/7c40feca-d4d7-49f0-a69b-c0ad65684d2e/2610_SQ_WED_ROAD-1-1.png?m=1792530611.541&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "A Wall Is Also a Road explores alien consciousness, slime mold life-forms and Pompeii",
+   "imagem": "",
+   "titulo_original": "De novo design of enantioselective artificial metalloenzyme photocatalysts",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "A Wall Is Also a Road explora la conciencia alienígena, las formas de vida de moho de limo y Pompeya",
-     "resumo": "Los alienígenas del moho del fango exploran Pompeya y la humanidad en un nuevo libro de Annalee Newitz"
+     "titulo": "Diseño de novo de fotocatalizadores de metaloenzimas artificiales enantioselectivos",
+     "resumo": "Diseño de novo de fotocatalizadores de metaloenzimas artificiales enantioselectivos"
     }
    },
-   "resumo_original": "Slime mold aliens explore Pompeii—and humanity—in a new book by Annalee Newitz"
+   "resumo_original": "De novo design of enantioselective artificial metalloenzyme photocatalysts"
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Comentário sobre “Associations of neighborhood deprivation with breast cancer tumor genomics, targeted treatment use, and survival”.",
+   "autores": "Fatima Z, Choudhary S, Choudhary HZ.",
+   "revista": "Breast Cancer Res Treat",
+   "data": "2026-10-20T00:00:00+00:00",
+   "doi": "10.1007/s10549-026-08100-6",
+   "url": "https://doi.org/10.1007/s10549-026-08100-6",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Comment on \"Associations of neighborhood deprivation with breast cancer tumor genomics, targeted treatment use, and survival\".",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "O exercício de esteira de longo prazo melhora a memória espacial e aumenta as células SOX2-positivas no hipocampo de camundongos machos de meia-idade.",
+   "autores": "Yi R, Zhao Q, Zhang WM, Zhang XD, Chen Q, Liu JG.",
+   "revista": "Brain Res Bull",
+   "data": "2026-10-20T00:00:00+00:00",
+   "doi": "10.1016/j.brainresbull.2026.112177",
+   "url": "https://doi.org/10.1016/j.brainresbull.2026.112177",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Long-Term Treadmill Exercise Improves Spatial Memory and Increases SOX2-Positive Cells in the Hippocampus of Middle-Aged Male Mice.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Breve Relatório: Caracterização da Mutação TP53 Y220C Potencialmente Acionável no Câncer de Pulmão de Células Não Pequenas. Um estudo multicêntrico e europeu da plataforma de oncologia torácica.",
+   "autores": "Molina-Vila MA, Tsourti Z, Stenzinger A, Thüsen JV, Hillen LM, Hofman P, Rahmani-Khajouei S, Hegedüs B, Radonic T…",
+   "revista": "J Thorac Oncol",
+   "data": "2026-10-20T00:00:00+00:00",
+   "doi": "10.1016/j.jtho.2026.106162",
+   "url": "https://doi.org/10.1016/j.jtho.2026.106162",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Brief Report: Characterization of the Potentially Actionable TP53 Y220C Mutation in Non-Small Cell Lung Cancer. A Multicenter, European Thoracic Oncology Platform Study.",
+   "traduzido": true
+  },
   {
    "tipo": "artigo",
    "titulo": "Danos Tissulares Locais Induzidos por Envenenamento por Picada de Serpente: Mecanismos e Avanços Terapêuticos.",
@@ -411,14 +454,16 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "TP53 mutations and IGHV in naïve chronic lymphocytic leukemia: retrospective analysis of data from a Spanish collaborative network.",
+   "titulo": "Mutações TP53 e IGHV na leucemia linfocítica crônica naïve: análise retrospectiva de dados de uma rede colaborativa espanhola.",
    "autores": "Terol MJ, Serrano A, Ferrer-Lores B, Bosch F, González M, Crespo M, Alcoceba M, Fuentes A, Chaves FJ, Villanueva M.",
    "revista": "Int J Hematol",
    "data": "2026-10-20T00:00:00+00:00",
    "doi": "10.1007/s12185-026-04285-0",
    "url": "https://doi.org/10.1007/s12185-026-04285-0",
    "acesso_aberto": false,
-   "tema": "Câncer"
+   "tema": "Câncer",
+   "titulo_original": "TP53 mutations and IGHV in naïve chronic lymphocytic leukemia: retrospective analysis of data from a Spanish collaborative network.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -491,7 +536,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Rare prostate cancer histologies: detection, characteristics and treatment.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Histologías raras del cáncer de próstata: detección, características y tratamiento."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -806,60 +856,6 @@
      "titulo": "Paisaje de variantes dela línea germinal del mundo real y manejo clínico en pacientes coreanos analizados por sospecha de cáncer hereditario"
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Policitemia Vera transformando-se em leucemia eritroide pura: um mímico diagnóstico de microangiopatia trombótica com biologia TP53 de alto risco.",
-   "autores": "Kelley TP, Duc L, Sabile J, Swords R.",
-   "revista": "Case Rep Hematol",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.1155/crh/8549290",
-   "url": "https://doi.org/10.1155/crh/8549290",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Polycythemia Vera Transforming to Pure Erythroid Leukemia: A Diagnostic Mimic of Thrombotic Microangiopathy With High-Risk TP53 Biology.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Polycythemia Vera Transforming to Pure Erythroid Leukemia: A Diagnostic Mimic of Thrombotic Microangiopathy With High-Risk TP53 Biology."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Molecular Mechanisms and Therapeutic Advances in KRAS G12C-Mutant Non-Small Cell Lung Cancer: Toward Mechanism-Guided Longitudinal Management.",
-   "autores": "Wang H, Chen H, Li S, Zhao J.",
-   "revista": "Cancer Innov",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.1002/cai2.70082",
-   "url": "https://doi.org/10.1002/cai2.70082",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Molecular Mechanisms and Therapeutic Advances in KRAS G12C-Mutant Non-Small Cell Lung Cancer: Toward Mechanism-Guided Longitudinal Management.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Mecanismos moleculares y avances terapéuticos en el cáncer de pulmón no microcítico mutante KRAS G12C: hacia el manejo longitudinal guiado por mecanismos."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Engatador de células NK biespecífico direcionado à mutação TP53 através da integração de um anticorpo mímico de TCR.",
-   "autores": "Wu H, Zhao Z, Zhang L, Xiong X, Yang M, Ge W, Zhi D, Cao X, Yi C, Qiao Y, Cao J, Mei Y, Jiao S, Liu Q, Zhou H, Xu Z…",
-   "revista": "MedComm (2020)",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.1002/mco2.71058",
-   "url": "https://doi.org/10.1002/mco2.71058",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Bispecific NK-Cell Engager Targeting TP53 Mutation Through Integration of a TCR-mimic Antibody.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Engranaje biespecífico de células NK que se dirige a la mutación TP53 a través de la integración de un anticuerpo imitador de TCR."
-    }
-   }
   }
  ],
  "fontes": [
@@ -878,8 +874,6 @@
  ],
  "erros": [],
  "mostradas": {
-  "musculo e exercicio fisico nao saudavel sao temas de oficina na usp de ribeirao": "2026-10-11T15:49:04.454598+00:00",
-  "could tutankhamun s tomb hold clues to a mysterious egyptian queen": "2026-10-11T15:49:04.454598+00:00",
   "cellular and spatial context of genetic convergence between insomnia liability and dti alps perivascular diffusivity": "2026-10-12T00:22:42.302403+00:00",
   "hoxa5 silencing via dna methylation reveals the critical role of hox gene deregulation in oral carcinogenesis": "2026-10-12T00:22:42.302403+00:00",
   "nobel de medicina 2026 vai para a optogenetica controlar neuronios com luz": "2026-10-12T00:22:42.302403+00:00",
@@ -1077,6 +1071,13 @@
   "republican congressional candidate tom stalcup on how both parties abuse science for political gain": "2026-10-21T13:57:04.376266+00:00",
   "how tech billionaires are disrupting biomedical science": "2026-10-21T13:57:04.376266+00:00",
   "the worlds first spinal cord transplant has been performed in russia": "2026-10-21T13:57:04.376266+00:00",
-  "a wall is also a road explores alien consciousness slime mold life forms and pompeii": "2026-10-21T13:57:04.376266+00:00"
+  "a wall is also a road explores alien consciousness slime mold life forms and pompeii": "2026-10-21T13:57:04.376266+00:00",
+  "uso de zolpidem pode provocar efeitos colaterais e alteracoes no comportamento durante o sono": "2026-10-21T18:45:51.467883+00:00",
+  "pesquisa busca voluntarias para saber como as mulheres vivenciam o parto no brasil": "2026-10-21T18:45:51.467883+00:00",
+  "semana do livro e da biblioteca na usp vai discutir inovacao e futuro da pesquisa cientifica": "2026-10-21T18:45:51.467883+00:00",
+  "falling sea levels due to el nino will hit mangroves and corals": "2026-10-21T18:45:51.467883+00:00",
+  "some climate damage is now unavoidable even if we clean up our act": "2026-10-21T18:45:51.467883+00:00",
+  "super typhoon champi sets the record for strongest storm of 2026": "2026-10-21T18:45:51.467883+00:00",
+  "de novo design of enantioselective artificial metalloenzyme photocatalysts": "2026-10-21T18:45:51.467883+00:00"
  }
 }
