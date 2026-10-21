@@ -1,10 +1,10 @@
 {
- "atualizado_em": "2026-10-20T22:25:21.855048+00:00",
+ "atualizado_em": "2026-10-21T01:42:48.354225+00:00",
  "noticias": [
   {
    "tipo": "noticia",
    "titulo": "Crianças, natureza e clima: a proteção das presentes e futuras gerações ganha novos contornos no Brasil",
-   "resumo": "Por Silmara Veiga Montemor, membro da Comissão Especial do Clima e do Meio Ambiente da OAB-SP, e Maria da Penha Vasconcellos, professora da Faculdade de Saúde Pública da USP e do Instituto de Estudos Avançados da USP",
+   "resumo": "Por Silmara Veiga Montemor, membro da Comissão Especial do Clima e do Meio Ambiente da OAB-SP, e Maria da Penha Vasconcellos, professora da Faculdade de Saúde Pública e do Instituto de Estudos Avançados, ambos da USP",
    "url": "https://jornal.usp.br/artigos/criancas-natureza-e-clima-a-protecao-das-presentes-e-futuras-geracoes-ganha-novos-contornos-no-brasil/",
    "fonte": "Jornal da USP",
    "idioma": "pt",
@@ -19,11 +19,11 @@
    "i18n": {
     "en": {
      "titulo": "Children, nature and climate: the protection of present and future generations gains new contours in Brazil",
-     "resumo": "By Silmara Veiga Montemor, member of the Special Committee on Climate and the Environment of OAB-SP, and Maria da Penha Vasconcellos, professor at the School of Public Health of USP and the Institute of Advanced Studies of USP"
+     "resumo": "By Silmara Veiga Montemor, member of the Special Commission on Climate and the Environment of OAB-SP, and Maria da Penha Vasconcellos, professor at the Faculty of Public Health and the Institute of Advanced Studies, both at USP"
     },
     "es": {
      "titulo": "Niños, naturaleza y clima: la protección de las generaciones presentes y futuras adquiere nuevos contornos en Brasil",
-     "resumo": "Por Silmara Veiga Montemor, miembro del Comité Especial de Clima y Medio Ambiente de la OAB-SP, y Maria da Penha Vasconcellos, profesora de la Escuela de Salud Pública de la USP y del Instituto de Estudios Avanzados de la USP"
+     "resumo": "Por Silmara Veiga Montemor, miembro de la Comisión Especial de Clima y Medio Ambiente de la OAB-SP, y Maria da Penha Vasconcellos, profesora de la Facultad de Salud Pública y del Instituto de Estudios Avanzados, ambos de la USP"
     }
    }
   },
@@ -183,27 +183,23 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Plataforma rastreia sinais corporais para investigar origens dos transtornos mentais",
-   "resumo": "Equipamento instalado em São Paulo e Porto Alegre monitora cérebro, olhar e respostas fisiológicas de crianças durante tarefas do cotidiano. Projeto é conduzido pelo Centro de Pesquisa e Inovação em Saúde Mental",
-   "url": "https://agencia.fapesp.br/plataforma-rastreia-sinais-corporais-para-investigar-origens-dos-transtornos-mentais/59423",
+   "titulo": "Desmistificando a radioatividade",
+   "resumo": "Oficina de física do IFGW-Unicamp, gratuita e on-line, vai tratar de temas que contemplam desde a radiação em diagnósticos de saúde até o acidente com o césio-137 em Goiânia",
+   "url": "https://agencia.fapesp.br/desmistificando-a-radioatividade/59427",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-20T22:25:21.855048+00:00",
+   "data": "2026-10-21T01:42:48.354225+00:00",
    "tema": "Saúde",
    "relevancia": 8,
-   "imagem": "https://agencia.fapesp.br/files/post/59423.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
+   "imagem": "",
    "i18n": {
     "en": {
-     "titulo": "Platform tracks body signals to investigate origins of mental disorders",
-     "resumo": "Equipment installed in São Paulo and Porto Alegre monitors children's brains, eyes and physiological responses during daily tasks. Project is conducted by the Center for Research and Innovation in Mental Health"
+     "titulo": "Demystifying radioactivity",
+     "resumo": "Physics workshop at IFGW-Unicamp, free and online, will address topics ranging from radiation in health diagnoses to the cesium-137 accident in Goiânia"
     },
     "es": {
-     "titulo": "La plataforma rastrea las señales corporales para investigar los orígenes de los trastornos mentales",
-     "resumo": "Los equipos instalados en São Paulo y Porto Alegre monitorean el cerebro, los ojos y las respuestas fisiológicas de los niños durante las tareas diarias. El proyecto es llevado a cabo por el Centro de Investigación e Innovación en Salud Mental"
+     "titulo": "Desmitificando la radiactividad",
+     "resumo": "El taller de física en IFGW-Unicamp, gratuito y en línea, abordará temas que van desde la radiación en los diagnósticos de salud hasta el accidente de cesio-137 en Goiânia"
     }
    }
   },
@@ -231,27 +227,6 @@
     }
    },
    "resumo_original": "A surprising clinical trial suggests that taking vitamin C daily could improve survival in people with precancerous blood disorders and early-stage blood cancers. Patients receiving the supplement had fewer adverse events and showed a…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
-   "resumo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
-   "url": "https://www.nature.com/articles/d41586-026-03351-1",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-20T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "",
-   "titulo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos",
-     "resumo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos"
-    }
-   },
-   "resumo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms"
   },
   {
    "tipo": "noticia",
@@ -377,9 +352,84 @@
     }
    },
    "resumo_original": "Scientists have found a promising way to protect the brain from Alzheimer’s-related damage by blocking immune cells that contribute to the destruction of neurons. In mice, the treatment preserved roughly 40% more tissue in memory centers…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
+   "resumo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
+   "url": "https://www.nature.com/articles/d41586-026-03351-1",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-20T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos",
+     "resumo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos"
+    }
+   },
+   "resumo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms"
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Atualizações sobre a Classificação Molecular do Carcinoma Endometrial.",
+   "autores": "Van de Vijver KK, Gilks CB, Bosse T.",
+   "revista": "Adv Anat Pathol",
+   "data": "2026-10-19T00:00:00+00:00",
+   "doi": "10.1097/pap.0000000000000556",
+   "url": "https://doi.org/10.1097/pap.0000000000000556",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Updates on the Molecular Classification of Endometrial Carcinoma.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Actualizaciones en la Clasificación Molecular del Carcinoma Endometrial."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Contextos Clinicogenômicos Distintos de Gliomas Alterados por BRAF e Tumores Glioneuronais: Um Estudo Nacional do Mundo Real.",
+   "autores": "Yamada S, Takimoto T, Ueno S, Minamiguchi S, Ohba S, Hirose Y, Saya H, Sudo T.",
+   "revista": "Cancer Sci",
+   "data": "2026-10-18T00:00:00+00:00",
+   "doi": "10.1111/cas.70568",
+   "url": "https://doi.org/10.1111/cas.70568",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Distinct Clinicogenomic Contexts of BRAF-Altered Gliomas and Glioneuronal Tumors: A Nationwide Real-World Study.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Distintos contextos clinogenómicos de gliomas y tumores glioneuronales alterados por BRAF: un estudio nacional del mundo real."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Conscientização, necessidade e utilização de recursos de gerenciamento de risco de câncer de mama em mulheres com suscetibilidade hereditária ao câncer.",
+   "autores": "Parkinson G, Friedman S, Hodan R, Kurian AW.",
+   "revista": "Breast Cancer Res Treat",
+   "data": "2026-10-18T00:00:00+00:00",
+   "doi": "10.1007/s10549-026-08104-2",
+   "url": "https://doi.org/10.1007/s10549-026-08104-2",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Awareness, need and utilization of breast cancer risk management resources in women with hereditary cancer susceptibility.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Conciencia, necesidad y utilización de los recursos de gestión del riesgo de cáncer de mama en mujeres con susceptibilidad hereditaria al cáncer."
+    }
+   }
+  },
   {
    "tipo": "artigo",
    "titulo": "Imuno-histoquímica PRAME e perfil molecular em neoplasias pleomórficas cutâneas indiferenciadas: uma série de casos de 8 tumores.",
@@ -865,60 +915,6 @@
      "titulo": "La decitabina metronómica con venetoclax ofrece un enfoque terapéutico de primera línea centrado en el paciente para las neoplasias mieloides de cariotipo complejo <i>mutado TP53</i>."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Apoio Experimental no Cuidado do Câncer de Mama e Avaliação do Risco Genético do Câncer de Mama Familiar em Quebec, Canadá: Um Estudo Comparativo das Contribuições das Pacientes Acompanhantes.",
-   "autores": "Bouchard K, Dorval M, Bélanger L, Chiquette J, Côté M, Vialaron C, Normandin L, Iliescu Nelea M, Ahmed AB, Pomey MP.",
-   "revista": "J Cancer Educ",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.1007/s13187-026-02908-y",
-   "url": "https://doi.org/10.1007/s13187-026-02908-y",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Experiential Support Across Breast Cancer Care and Familial Breast Cancer Genetic Risk Assessment in Quebec, Canada: A Comparative Study of Accompanying Patients' Contributions.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Apoyo experiencial en la atención del cáncer de mama y la evaluación del riesgo genético del cáncer de mama familiar en Quebec, Canadá: un estudio comparativo de las contribuciones de los pacientes acompañantes."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "O ganho de função da mutação TP53 dependente do contexto está correlacionado com sua contribuição para a instabilidade genômica.",
-   "autores": "Tanaka N, Hadi JA, Zhao M, Tang L, Wang Q, Wang J, Myers JN, Zhou G.",
-   "revista": "Laryngoscope Investig Otolaryngol",
-   "data": "2026-10-14T00:00:00+00:00",
-   "doi": "10.1002/lio2.70562",
-   "url": "https://doi.org/10.1002/lio2.70562",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Context-Dependent TP53 Mutation Gain-of-Function Is Correlated With Its Contribution to Genomic Instability.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La ganancia de función de la mutación TP53 dependiente del contexto se correlaciona con su contribución a la inestabilidad genómica."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Adenoma ampular esporádico mimetizando adenocarcinoma na ausência de predisposição genética: relato de caso.",
-   "autores": "Poluyanoff AA, Ajadi EA, Flood D, Salzberg AD.",
-   "revista": "J Surg Case Rep",
-   "data": "2026-10-14T00:00:00+00:00",
-   "doi": "10.1093/jscr/rjag925",
-   "url": "https://doi.org/10.1093/jscr/rjag925",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Sporadic ampullary adenoma mimicking adenocarcinoma in the absence of genetic predisposition: a case report.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Adenoma ampular esporádico que imita al adenocarcinoma en ausencia de predisposición genética: informe de un caso."
-    }
-   }
   }
  ],
  "fontes": [
@@ -937,10 +933,6 @@
  ],
  "erros": [],
  "mostradas": {
-  "bowel cancer melted away after immunotherapy then stayed away": "2026-10-10T22:41:49.839387+00:00",
-  "nova abordagem para a educacao fisica escolar valoriza autonomia e inclusao": "2026-10-10T22:41:49.839387+00:00",
-  "scientists may have found a shortcut to fusion energy": "2026-10-10T22:41:49.839387+00:00",
-  "mit astronomers catch a star in a feast that could last billions of years": "2026-10-10T22:41:49.839387+00:00",
   "the eye has a hidden cleanup system scientists never knew existed": "2026-10-11T09:04:09.353021+00:00",
   "a plastic once thought harmless may be fueling fatty liver disease": "2026-10-11T09:04:09.353021+00:00",
   "scientists build a nuclear clock that could make atomic clocks obsolete": "2026-10-11T09:04:09.353021+00:00",
