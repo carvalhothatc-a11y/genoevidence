@@ -39,7 +39,8 @@
     artigos: '<rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><circle cx="17.25" cy="17.25" r="3.75"/>',
     revistas: '<path d="M5 4v16M10 4v16"/><path d="M14.5 5.5l4.2 14"/><path d="M3 20h18"/>',
     sobre: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5h.01"/>',
-    cadeado: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>'
+    cadeado: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+    jogo: '<path d="M7 7h10a5 5 0 0 1 4.9 6l-.7 3.4a2.7 2.7 0 0 1-4.6 1.3L14.8 16H9.2l-1.8 1.7a2.7 2.7 0 0 1-4.6-1.3L2.1 13A5 5 0 0 1 7 7z"/><path d="M7.5 10.5v3M6 12h3"/><path d="M15.5 11.2h.01M17.5 13h.01" stroke-width="2.6"/>'
   };
   const svg = n => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONES[n] + "</svg>";
   const ABAS = [["inicio", "Início", ""], ["noticias", "Notícias", "noticias/"], ["artigos", "Temas", "artigos/"], ["revistas", "Revistas", "revistas/"]];
@@ -54,6 +55,8 @@
       '<nav class="tabs-top" aria-label="Seções do app">' + ABAS.map(([n, l, h]) => '<a class="tab-' + n + '" href="' + RAIZ + h + '"' + atual(n) + ">" + l + "</a>").join("") + "</nav>" +
       // GenoLab: entrada para o app à parte (acesso restrito); a página lab/ abre o Lab em outra aba
       '<a class="lab-link" href="' + RAIZ + 'lab/"' + atual("lab") + ' aria-label="GenoLab, acesso restrito">' + svg("cadeado") + '<span class="lab-txt"><b>Lab</b></span></a>' +
+      // GenoGame: o jogo do laboratório com o Geninho
+      '<a class="lab-link game-link" href="' + RAIZ + 'genogame/"' + atual("genogame") + ' aria-label="GenoGame, o jogo do laboratório">' + svg("jogo") + '<span class="lab-txt"><b>Game</b></span></a>' +
       '<a class="icon-btn" href="' + RAIZ + 'sobre/" aria-label="Sobre o GenoEvidence"' + atual("sobre") + ">" + svg("sobre") + "</a></div>";
     I.montarSeletor($(".appbar-in", topo), $(".icon-btn", topo));
   }

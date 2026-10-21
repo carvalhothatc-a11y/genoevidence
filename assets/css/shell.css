@@ -51,7 +51,7 @@ p{margin:0}
 
 /* ---------- barra de abas (celular) ---------- */
 .tabbar{display:none}
-@media (max-width:760px){
+@media (max-width:900px){
   .tabs-top{display:none}
   .appbar-in .icon-btn{margin-left:auto}
   .appbar-in .ge-idioma{margin-left:auto}
@@ -213,6 +213,11 @@ footer.foot .credito strong{color:var(--ink2);font-weight:600}
   .install-card{flex-direction:column;align-items:flex-start}
   main{padding-bottom:28px}
   footer.foot{text-align:center;font-size:12.5px;padding-bottom:calc(var(--tabbar) + 22px + env(safe-area-inset-bottom,0px))}
+}
+/* tablet em pé: também tem a barra de abas embaixo (o rodapé fica acima dela) */
+@media (min-width:761px) and (max-width:900px){
+  main{padding-bottom:28px}
+  footer.foot{padding-bottom:calc(var(--tabbar) + 22px + env(safe-area-inset-bottom,0px))}
 }
 @media (display-mode:standalone){.install-card{display:none}}
 /* ---------- Temas (aba Temas e Início) ---------- */
@@ -442,7 +447,17 @@ html.sem-rolagem{overflow:hidden}
 .lab-link:hover,.lab-link[aria-current="page"]{background:var(--surface2);box-shadow:inset 0 0 0 1px var(--muted)}
 .lab-link svg{width:14px;height:14px;color:var(--accent)}
 .lab-link b{background:linear-gradient(90deg,#2F5BEA,#7B4DE0 55%,#E0385A);-webkit-background-clip:text;background-clip:text;color:transparent}
-@media (max-width:420px){.lab-link .lab-txt{display:none}}
+.game-link svg{width:16px;height:16px;color:var(--violet)}
+/* a barra do topo cabe em qualquer largura (Lab e Game lado a lado) */
+.game-link{margin-left:-14px}
+@media (min-width:901px) and (max-width:1120px){.appbar-in{gap:14px}.tabs-top a{padding:9px 9px}.game-link{margin-left:-6px}}
+@media (min-width:901px) and (max-width:1010px){.lab-link .lab-txt{display:none}.lab-link{padding:8px 9px}}
+@media (max-width:900px){.game-link{margin-left:-6px}}
+@media (max-width:590px){.appbar-in .logo b{display:none}}
+@media (max-width:480px){.appbar-in{gap:8px}.appbar-in .menu-btn{margin-right:0}.lab-link{padding:8px 9px}.game-link{margin-left:-2px}}
+@media (max-width:370px){.lab-link .lab-txt{display:none}}
+@media (max-width:340px){.appbar-in{gap:6px}}
+@media (max-width:660px){.appbar-in.com-voltar .lab-link .lab-txt{display:none}}
 .lab-grad{background:linear-gradient(90deg,#2F5BEA,#7B4DE0 55%,#E0385A);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lab-card{padding:clamp(18px,3vw,28px);margin-top:8px}
 .lab-lista{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:14px}
