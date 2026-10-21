@@ -71,39 +71,44 @@
   const icone = (n, vb) => '<svg viewBox="0 0 ' + (vb || 48) + " " + (vb || 48) + '" fill="none" stroke="currentColor" stroke-width="' + (vb === 24 ? 2 : 2.6) + '" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + IC[n] + "</svg>";
   const estrela = on => '<svg viewBox="0 0 24 24" class="' + (on ? "on" : "") + '" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2 6.3 20.3l1.2-6.4-4.7-4.4 6.4-.8z" fill="' + (on ? "#FFB23F" : "none") + '" style="stroke:' + (on ? "#D98A0B" : "var(--line)") + '" stroke-width="1.6" stroke-linejoin="round"/></svg>';
 
-  /* ---------------- o Geninho: a arte oficial (img/geninho-sprite.webp, recortada de geninho-corpo.jpg) ---------------- */
-  // pés na origem (0,0); cerca de 168 de altura. Os EPIs são desenhados por cima, nos pontos medidos na arte
-  // (coordenadas da imagem original de 720 × 720 px).
+  /* ---------------- o Geninho: a arte oficial, articulada ----------------
+     A arte (geninho-corpo.jpg) foi recortada e dividida em camadas (img/gn-*.webp): cauda e antebraço ficam
+     atrás do corpo; pernas e cabeça na frente, com bordas suaves que escondem as emendas. Cada parte gira em
+     torno da sua articulação (genogame.css). Os EPIs e as pálpebras são desenhados por cima, presos à parte
+     certa, em coordenadas da imagem original de 720 × 720 px. Pés na origem (0,0); cerca de 168 de altura. */
   function geninhoSVG() {
     const AZ = "#5B8FF2", AZ2 = "#3E6FD6", AZ3 = "#A9C6FF", SA = "#2A3350", SA2 = "#4A5578";
+    const img = n => '<image href="img/gn-' + n + '.webp" x="115" y="27" width="530" height="637"/>';
+    const palpebra = (cx, cy, rx, ry, ang) => '<g transform="rotate(' + ang + " " + cx + " " + cy + ')"><g class="palpebra" style="transform-origin:' + cx + "px " + (cy - ry) + 'px">' +
+      '<ellipse cx="' + cx + '" cy="' + cy + '" rx="' + rx + '" ry="' + ry + '" fill="#EBD9CD"/><path d="M' + (cx - rx + 2) + " " + (cy + 2) + "Q" + cx + " " + (cy + ry * 0.75) + " " + (cx + rx - 2) + " " + (cy + 2) + '" stroke="#3A2A24" stroke-width="3.5" fill="none" stroke-linecap="round"/></g></g>';
     return '<ellipse cx="0" cy="1" rx="42" ry="6" class="c-sombra"/>' +
       '<g class="tudo"><g transform="scale(.264) translate(-385,-664)">' +
-      '<image href="img/geninho-sprite.webp" x="115" y="27" width="530" height="637"/>' +
-      // luvas de nitrilo nas duas patas
-      '<g class="epi luvas">' +
-      '<path d="M226 350C208 346 190 344 177 340C173 330 168 317 158 313C148 310 144 321 148 332C140 326 127 320 119 326C111 333 116 346 128 351C146 363 171 379 196 393C209 401 221 405 231 401Z" fill="' + AZ + '"/>' +
-      '<path d="M128 351C146 363 171 379 196 393C209 401 221 405 231 401L229 386C205 384 170 368 140 350Z" fill="' + AZ2 + '" opacity=".55"/>' +
-      '<path d="M182 344C196 346 210 348 222 352M152 318C156 316 160 318 163 324M124 328C128 325 134 326 139 330" stroke="' + AZ3 + '" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>' +
-      '<path d="M226 349L232 401" stroke="' + AZ2 + '" stroke-width="10" stroke-linecap="round"/>' +
-      '<path d="M452 391C430 385 401 387 388 395C376 403 377 426 392 433C412 441 438 433 452 426Z" fill="' + AZ + '"/>' +
-      '<path d="M392 433C412 441 438 433 452 426L451 414C432 422 405 424 384 420C384 426 387 430 392 433Z" fill="' + AZ2 + '" opacity=".55"/>' +
-      '<path d="M397 396C412 390 430 389 446 392" stroke="' + AZ3 + '" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>' +
-      '<path d="M449 390L451 428" stroke="' + AZ2 + '" stroke-width="9" stroke-linecap="round"/></g>' +
-      // sapatos fechados
-      '<g class="epi sapato">' +
-      '<path d="M248 640C244 628 250 612 266 607C284 601 300 598 318 596L350 594L352 640Z" fill="' + SA + '"/><path d="M263 611C281 604 300 601 320 599" stroke="' + SA2 + '" stroke-width="4" fill="none" stroke-linecap="round"/>' +
-      '<path d="M246 641H354" stroke="#141A30" stroke-width="8" stroke-linecap="round"/>' +
-      '<path d="M430 662C426 640 428 620 436 605L506 603C514 622 516 645 512 662Z" fill="' + SA + '"/><path d="M438 641Q471 629 507 641" stroke="' + SA2 + '" stroke-width="4" fill="none" stroke-linecap="round"/>' +
-      '<path d="M428 663H514" stroke="#141A30" stroke-width="8" stroke-linecap="round"/></g>' +
-      // presilha no topete
-      '<g class="epi prendedor"><g transform="rotate(-35 318 66)"><rect x="299" y="60" width="38" height="13" rx="6.5" fill="#E0385A"/><rect x="304" y="62.5" width="15" height="3.5" rx="1.75" fill="#fff" opacity=".6"/></g></g>' +
-      // óculos de proteção, acompanhando a inclinação da cabeça
-      '<g class="epi oculos"><g transform="rotate(-13 361.5 145)">' +
-      '<path d="M279 147L253 151M444 147L467 143" stroke="' + SA + '" stroke-width="7" stroke-linecap="round"/>' +
-      '<rect x="279" y="122" width="60" height="46" rx="18" fill="rgba(190,228,255,.30)" stroke="' + SA + '" stroke-width="5.5"/>' +
-      '<rect x="384" y="122" width="60" height="46" rx="18" fill="rgba(190,228,255,.30)" stroke="' + SA + '" stroke-width="5.5"/>' +
-      '<path d="M339 139Q361.5 128 384 139" stroke="' + SA + '" stroke-width="5.5" fill="none"/>' +
-      '<path d="M289 134l13 -6M394 134l13 -6" stroke="#fff" stroke-width="3.5" stroke-linecap="round" opacity=".85"/></g></g>' +
+      '<g class="p-cauda">' + img("cauda") + "</g>" +
+      '<g class="p-braco">' + img("braco") +
+        '<g class="epi luvas"><path d="M226 350C208 346 190 344 177 340C173 330 168 317 158 313C148 310 144 321 148 332C140 326 127 320 119 326C111 333 116 346 128 351C146 363 171 379 196 393C209 401 221 405 231 401Z" fill="' + AZ + '"/>' +
+        '<path d="M128 351C146 363 171 379 196 393C209 401 221 405 231 401L229 386C205 384 170 368 140 350Z" fill="' + AZ2 + '" opacity=".55"/>' +
+        '<path d="M182 344C196 346 210 348 222 352M152 318C156 316 160 318 163 324M124 328C128 325 134 326 139 330" stroke="' + AZ3 + '" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/></g></g>' +
+      '<g class="p-corpo">' + img("corpo") +
+        '<g class="epi luvas"><path d="M226 349L232 401" stroke="' + AZ2 + '" stroke-width="10" stroke-linecap="round"/>' +
+        '<path d="M452 391C430 385 401 387 388 395C376 403 377 426 392 433C412 441 438 433 452 426Z" fill="' + AZ + '"/>' +
+        '<path d="M392 433C412 441 438 433 452 426L451 414C432 422 405 424 384 420C384 426 387 430 392 433Z" fill="' + AZ2 + '" opacity=".55"/>' +
+        '<path d="M397 396C412 390 430 389 446 392" stroke="' + AZ3 + '" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>' +
+        '<path d="M449 390L451 428" stroke="' + AZ2 + '" stroke-width="9" stroke-linecap="round"/></g></g>' +
+      '<g class="p-perna-e">' + img("perna-e") +
+        '<g class="epi sapato"><path d="M248 640C244 628 250 612 266 607C284 601 300 598 318 596L350 594L352 640Z" fill="' + SA + '"/><path d="M263 611C281 604 300 601 320 599" stroke="' + SA2 + '" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+        '<path d="M246 641H354" stroke="#141A30" stroke-width="8" stroke-linecap="round"/></g></g>' +
+      '<g class="p-perna-d">' + img("perna-d") +
+        '<g class="epi sapato"><path d="M430 662C426 640 428 620 436 605L506 603C514 622 516 645 512 662Z" fill="' + SA + '"/><path d="M438 641Q471 629 507 641" stroke="' + SA2 + '" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+        '<path d="M428 663H514" stroke="#141A30" stroke-width="8" stroke-linecap="round"/></g></g>' +
+      '<g class="p-cabeca">' + img("cabeca") +
+        palpebra(310, 157, 23, 19, -8) + palpebra(413, 133, 19, 18, -13) +
+        '<g class="epi prendedor"><g transform="rotate(-35 318 66)"><rect x="299" y="60" width="38" height="13" rx="6.5" fill="#E0385A"/><rect x="304" y="62.5" width="15" height="3.5" rx="1.75" fill="#fff" opacity=".6"/></g></g>' +
+        '<g class="epi oculos"><g transform="rotate(-13 361.5 145)">' +
+        '<path d="M279 147L253 151M444 147L467 143" stroke="' + SA + '" stroke-width="7" stroke-linecap="round"/>' +
+        '<rect x="279" y="122" width="60" height="46" rx="18" fill="rgba(190,228,255,.30)" stroke="' + SA + '" stroke-width="5.5"/>' +
+        '<rect x="384" y="122" width="60" height="46" rx="18" fill="rgba(190,228,255,.30)" stroke="' + SA + '" stroke-width="5.5"/>' +
+        '<path d="M339 139Q361.5 128 384 139" stroke="' + SA + '" stroke-width="5.5" fill="none"/>' +
+        '<path d="M289 134l13 -6M394 134l13 -6" stroke="#fff" stroke-width="3.5" stroke-linecap="round" opacity=".85"/></g></g></g>' +
       "</g></g>" +
       '<g class="molhado"><g class="gotas"><path d="M-34 -150q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/><path d="M30 -150q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/><path d="M-4 -176q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/><path d="M42 -96q3 5 0 7q-3 -2 0 -7z" fill="#7FB4FF"/></g></g>';
   }

@@ -73,7 +73,7 @@ data/rede-p53.json          rede da p53 do Início (dados da Iniciação Cientí
 data/noticias-escolhidas.json   notícias escolhidas à mão: aparecem primeiro até a data em "ate"
 genogame/                   o GenoGame: genogame.js (prédio, Geninho, falas, caderno), experimentos.js (as bancadas),
                             textos.js (português, inglês e espanhol), genogame.css e img/ (arte oficial do Geninho;
-                            geninho-sprite.webp é a arte recortada, e os EPIs são desenhados por cima)
+                            gn-*.webp são a arte recortada em partes que se mexem; os EPIs são desenhados por cima)
 assets/css/shell.css        visual das abas
 assets/css/base.css, artigo.css   visual da página de leitura
 assets/js/i18n.js           idiomas (português, inglês e espanhol): seletor no topo e tradução dos textos fixos
@@ -84,6 +84,7 @@ assets/js/pwa.js            instalar como app e modo offline
 assets/js/inicio.js         animações e seções interativas do Início (com assets/css/inicio.css)
 assets/js/acessibilidade.js painel de acessibilidade de todas as páginas
 scripts/atualizar_noticias.py   robô que escolhe as notícias mais relevantes do dia, pega a imagem de cada uma (sem cortar rostos) e as traduz para os três idiomas
+scripts/genogame/           recorte e camadas do Geninho do GenoGame (recorta.swift, camadas.py, previa_andar.py)
 scripts/modelos/            detector de rostos YuNet (OpenCV, licença MIT) usado pelo robô
 docs/COMO-ADICIONAR-ARTIGO.md   passo a passo para publicar um artigo novo
 manifest.webmanifest, sw.js, icons/   aplicativo instalável e modo offline
