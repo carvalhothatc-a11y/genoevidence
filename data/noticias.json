@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-21T01:42:48.354225+00:00",
+ "atualizado_em": "2026-10-21T07:49:16.507317+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -131,102 +131,123 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "MIT desenvolve ferramenta baseada em IA para testar modelos de negócios",
-   "resumo": "Sistema combina pesquisas de mercado e simulação de clientes para validar viabilidade comercial de inovações em tempo recorde",
-   "url": "https://pesquisaparainovacao.fapesp.br/mit_desenvolve_ferramenta_baseada_em_ia_para_testar_modelos_de_negocios/4164",
-   "fonte": "Agência FAPESP",
+   "titulo": "Fiocruz promove 6ª Festa Carioca das Sementes Agroecológicas pelo Dia Mundial da Alimentação",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/fiocruz-promove-6a-festa-carioca-das-sementes-agroecologicas-pelo-dia-mundial-da-alimentacao",
+   "fonte": "Agência Fiocruz",
    "idioma": "pt",
-   "data": "2026-10-20T07:45:08.803334+00:00",
+   "data": "2026-10-20T19:21:15+00:00",
    "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://pesquisaparainovacao.fapesp.br/imagens/materia/4164.jpg",
+   "relevancia": 8,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/fma_0.jpg",
    "foco": {
     "x": 50,
-    "y": 50
+    "y": 85
    },
    "i18n": {
     "en": {
-     "titulo": "Mit Develops AI-Based Tool to Test Business Models",
-     "resumo": "System combines market research and customer simulation to validate commercial viability of innovations in record time"
+     "titulo": "Fiocruz promotes 6th Carioca Festival of Agroecological Seeds for World Food Day"
     },
     "es": {
-     "titulo": "El MIT desarrolla una herramienta basada en IA para probar modelos de negocio",
-     "resumo": "El sistema combina la investigación de mercado y la simulación de clientes para validar la viabilidad comercial de las innovaciones en un tiempo récord"
+     "titulo": "Fiocruz promueve el VI Festival Carioca de Semillas Agroecológicas por el Día Mundial de la Alimentación"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Três em cada dez municípios brasileiros não têm plano de contingência contra desastres climáticos",
-   "resumo": "Estudo revela que 37% das cidades também não possuem sistema próprio de alerta; falta de verba, equipes reduzidas e baixa participação popular são os principais gargalos",
-   "url": "https://agencia.fapesp.br/tres-em-cada-dez-municipios-brasileiros-nao-tem-plano-de-contingencia-contra-desastres-climaticos/59420",
+   "titulo": "Idosos mais ativos têm volume cerebral preservado em áreas de memória e raciocínio, mostra estudo",
+   "resumo": "Ao analisar dados de 2,7 mil indivíduos em torno de 70 anos, pesquisadores da Unesp concluíram que o movimento ajuda a conter a atrofia em estruturas vitais, como o hipocampo. Resultado reforça o papel do exercício na prevenção do declínio…",
+   "url": "https://agencia.fapesp.br/idosos-mais-ativos-tem-volume-cerebral-preservado-em-areas-de-memoria-e-raciocinio-mostra-estudo/59432",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-20T07:45:08.803334+00:00",
+   "data": "2026-10-21T07:49:16.507317+00:00",
    "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59420.jpg",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59432.jpg",
    "foco": {
     "x": 50,
     "y": 0
    },
    "i18n": {
     "en": {
-     "titulo": "Three out of ten Brazilian municipalities do not have a contingency plan against climate disasters",
-     "resumo": "A study reveals that 37% of cities also do not have their own alert system; lack of funding, reduced teams and low popular participation are the main bottlenecks"
+     "titulo": "More active older adults have preserved brain volume in areas of memory and reasoning, study shows",
+     "resumo": "By analyzing data from 2,700 individuals aged around 70 years, Unesp researchers concluded that the movement helps to contain atrophy in vital structures, such as the hippocampus. The result reinforces the role of exercise in preventing decline…"
     },
     "es": {
-     "titulo": "Tres de cada diez municipios brasileños no cuentan con un plan de contingencia ante desastres climáticos",
-     "resumo": "Un estudio revela que el 37% de las ciudades tampoco cuentan con un sistema de alerta propio; la falta de financiación, la reducción de equipos y la escasa participación popular son los principales cuellos de botella"
+     "titulo": "Un estudio muestra que los adultos mayores más activos han preservado el volumen cerebral en áreas de memoria y razonamiento",
+     "resumo": "Al analizar datos de 2.700 individuos de alrededor de 70 años, los investigadores de la Unesp concluyeron que el movimiento ayuda a contener la atrofia en estructuras vitales, como el hipocampo. El resultado refuerza el papel del ejercicio en la prevención del deterioro..."
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Desmistificando a radioatividade",
-   "resumo": "Oficina de física do IFGW-Unicamp, gratuita e on-line, vai tratar de temas que contemplam desde a radiação em diagnósticos de saúde até o acidente com o césio-137 em Goiânia",
-   "url": "https://agencia.fapesp.br/desmistificando-a-radioatividade/59427",
+   "titulo": "Mesmo sem olhos, ostras e mexilhões possuem grande diversidade de proteínas que percebem a luz",
+   "resumo": "Estudo da USP e de colaboradores norte-americanos revela que o repertório químico na pele desses animais chega a superar a variedade encontrada na retina humana, indicando um complexo sistema de fotopercepção",
+   "url": "https://agencia.fapesp.br/mesmo-sem-olhos-ostras-e-mexilhoes-possuem-grande-diversidade-de-proteinas-que-percebem-a-luz/59433",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-21T01:42:48.354225+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Demystifying radioactivity",
-     "resumo": "Physics workshop at IFGW-Unicamp, free and online, will address topics ranging from radiation in health diagnoses to the cesium-137 accident in Goiânia"
-    },
-    "es": {
-     "titulo": "Desmitificando la radiactividad",
-     "resumo": "El taller de física en IFGW-Unicamp, gratuito y en línea, abordará temas que van desde la radiación en los diagnósticos de salud hasta el accidente de cesio-137 en Goiânia"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas descobrem uma ligação surpreendente entre a vitamina C e a sobrevivência ao câncer",
-   "resumo": "Um ensaio clínico surpreendente sugere que tomar vitamina C diariamente pode melhorar a sobrevida em pessoas com distúrbios sanguíneos pré-cancerosos e cânceres sanguíneos em estágio inicial. Os pacientes que receberam o suplemento tiveram menos eventos adversos e mostraram um...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261019093437.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-20T04:21:35+00:00",
-   "tema": "Câncer",
-   "relevancia": 8,
-   "imagem": "https://www.sciencedaily.com/images/1920/acute-lymphoblastic-leukemia-all-cancer-cells-in-blood.webp",
+   "data": "2026-10-21T07:49:16.507317+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59433.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Scientists discover a surprising link between vitamin C and cancer survival",
+   "i18n": {
+    "en": {
+     "titulo": "Even without eyes, oysters and mussels have a great diversity of proteins that perceive light",
+     "resumo": "A study by USP and US collaborators reveals that the chemical repertoire in the skin of these animals surpasses the variety found in the human retina, indicating a complex photoperception system"
+    },
+    "es": {
+     "titulo": "Incluso sin ojos, las ostras y los mejillones tienen una gran diversidad de proteínas que perciben la luz",
+     "resumo": "Un estudio de la USP y colaboradores estadounidenses revela que el repertorio químico en la piel de estos animales supera la variedad encontrada en la retina humana, lo que indica un complejo sistema de fotopercepción"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "ONU diz que 1,5°C acabou e o mundo está a caminho de 2,8°C de aquecimento global",
+   "resumo": "O melhor cenário agora é que o planeta violará apenas temporariamente 1,5°C de aquecimento, mas as promessas climáticas atuais ficam muito aquém dessa esperança",
+   "url": "https://www.newscientist.com/article/2594831-un-says-1-5c-is-over-and-world-is-on-track-for-2-8c-of-global-warming/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-21T05:00:00+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317441814.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "UN says 1.5°C is over and world is on track for 2.8°C of global warming",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Científicos descubren una sorprendente relación entre la vitamina C y la supervivencia al cáncer",
-     "resumo": "Un sorprendente ensayo clínico sugiere que tomar vitamina C diariamente podría mejorar la supervivencia en personas con trastornos sanguíneos precancerosos y cánceres de sangre en etapa temprana. Los pacientes que recibieron el suplemento tuvieron menos eventos adversos y mostraron un..."
+     "titulo": "La ONU dice que 1,5° C ha terminado y el mundo está en camino de 2,8° C de calentamiento global",
+     "resumo": "El mejor de los casos ahora es que el planeta solo supere temporalmente 1,5 °C de calentamiento, pero las promesas climáticas actuales no alcanzan esa esperanza"
     }
    },
-   "resumo_original": "A surprising clinical trial suggests that taking vitamin C daily could improve survival in people with precancerous blood disorders and early-stage blood cancers. Patients receiving the supplement had fewer adverse events and showed a…"
+   "resumo_original": "The best-case scenario now is that the planet will only temporarily breach 1.5°C of warming, but current climate pledges fall way short of that hope"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Associação de variantes genéticas EGLN1 e EGLN3 com a gravidade da COVID-19 em uma população mexicana",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41598-026-74011-7",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-10-21T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 6,
+   "imagem": "",
+   "titulo_original": "Association of EGLN1 and EGLN3 genetic variants with COVID-19 severity in a Mexican population",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Asociación de las variantes genéticas EGLN1 y EGLN3 con la gravedad del COVID-19 en una población mexicana"
+    }
+   }
   },
   {
    "tipo": "noticia",
@@ -255,127 +276,163 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "1000 matemáticos humanos se comprometem a evitar a IA em suas pesquisas",
-   "resumo": "Há uma reação crescente contra a maneira como as empresas de IA lidam com problemas matemáticos – e agora alguns matemáticos estão optando por evitar completamente a IA",
-   "url": "https://www.newscientist.com/article/2593621-a-thousand-human-mathematicians-pledge-to-shun-ai-in-their-research/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
+   "titulo": "Cientistas descobrem uma maneira de matar bactérias intestinais perigosas sem matar as boas",
+   "resumo": "Os cientistas descobriram um composto natural que tem como alvo bactérias C. difficile perigosas sem eliminar os micróbios benéficos do intestino. Testes iniciais bem-sucedidos sugerem que isso pode levar a um tratamento mais suave e eficaz para teimosia...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261019093353.htm",
+   "fonte": "ScienceDaily · Saúde",
    "idioma": "en",
-   "data": "2026-10-20T15:00:00+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-20T12:07:49+00:00",
+   "tema": "Saúde",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317353201.jpg",
+   "imagem": "https://www.sciencedaily.com/images/1920/escherichia-coli-bacterium-infecting-human-intestine.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "1000 human mathematicians pledge to shun AI in their research",
+   "titulo_original": "Scientists discover a way to kill dangerous gut bacteria without killing the good",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "1000 matemáticos humanos se comprometen a evitar la IA en su investigación",
-     "resumo": "Hay una reacción cada vez mayor contra la forma en que las empresas de IA han abordado los problemas matemáticos, y ahora algunos matemáticos están optando por evitar la IA por completo"
+     "titulo": "Los científicos descubren una forma de matar las bacterias intestinales peligrosas sin matar a las buenas",
+     "resumo": "Los científicos han descubierto un compuesto natural que se dirige a las peligrosas bacterias C. difficile sin eliminar los microbios beneficiosos del intestino. Las primeras pruebas exitosas sugieren que podría conducir a un tratamiento más suave y efectivo para los tercos..."
     }
    },
-   "resumo_original": "There is a growing backlash against the way AI companies have gone about tackling mathematical problems – and now some mathematicians are opting to avoid AI altogether"
+   "resumo_original": "Scientists have discovered a natural compound that targets dangerous C. difficile bacteria without wiping out the gut's beneficial microbes. Successful early tests suggest it could lead to a gentler, more effective treatment for stubborn…"
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas finalmente descobrem por que as estatinas podem causar dor muscular",
-   "resumo": "Os cientistas descobriram uma razão surpreendente pela qual as estatinas, os medicamentos para baixar o colesterol amplamente prescritos que ajudam a prevenir ataques cardíacos e derrames, às vezes podem causar dor muscular, fraqueza e até mesmo danos musculares graves. Usando...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261019093447.htm",
-   "fonte": "ScienceDaily",
+   "titulo": "É ‘golpe de lua’ ou um arrepio?",
+   "resumo": "Uma explicação para o efeito prejudicial de dormir ao luar, e um defensor de televisores totalmente eletrônicos, na escolha desta semana do arquivo da Nature.",
+   "url": "https://www.nature.com/articles/d41586-026-02975-7",
+   "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-20T13:00:56+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/human-muscle-fibers-pain-healing.webp",
+   "data": "2026-10-20T00:00:00+00:00",
+   "tema": "Espaço",
+   "relevancia": 5,
+   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-02975-7/d41586-026-02975-7_15948436.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Scientists finally uncover why statins can cause muscle pain",
+   "titulo_original": "Is it ‘moon-stroke’, or a chill?",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los científicos finalmente descubren por qué las estatinas pueden causar dolor muscular",
-     "resumo": "Los científicos han descubierto una razón sorprendente por la que las estatinas, los medicamentos ampliamente recetados para reducir el colesterol que ayudan a prevenir ataques cardíacos y accidentes cerebrovasculares, a veces pueden causar dolor muscular, debilidad e incluso daño muscular severo. Usando..."
+     "titulo": "¿Es un «golpe de luna» o un escalofrío?",
+     "resumo": "Una explicación para el efecto perjudicial de dormir a la luz de la luna, y un defensor de los televisores totalmente electrónicos, en la selección de esta semana del archivo de Nature."
     }
    },
-   "resumo_original": "Scientists have uncovered a surprising reason why statins, the widely prescribed cholesterol-lowering drugs that help prevent heart attacks and strokes, can sometimes cause muscle pain, weakness, and even severe muscle damage. Using…"
+   "resumo_original": "An explanation for the injurious effect of sleeping in the moonlight, and a proponent of all-electronic televisions, in this week’s pick from the Nature archive."
   },
   {
    "tipo": "noticia",
-   "titulo": "O gene egoísta aos 50 anos",
-   "resumo": "Há meio século, O gene egoísta, de Richard Dawkins, tornou-se um best-seller instantâneo e transformou a consciência pública sobre a biologia evolutiva. Hoje, os cientistas ainda estão debatendo sua mensagem central",
-   "url": "https://www.scientificamerican.com/article/the-selfish-gene-at-50/",
+   "titulo": "Christina Applegate diz que foi diagnosticada erroneamente com EM - como isso poderia acontecer?",
+   "resumo": "A atriz vencedora do Emmy revelou que um diagnóstico de esclerose múltipla em 2021 estava incorreto. É uma experiência surpreendentemente comum, dizem os especialistas",
+   "url": "https://www.scientificamerican.com/article/christina-applegate-says-she-was-misdiagnosed-with-ms-how-could-that-happen/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-20T12:45:00+00:00",
-   "tema": "Genética",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/ee914aee-5897-4c72-8e2c-40e698cc064d/shutterstock_160874294.jpg?m=1792500342.931&w=1200",
+   "data": "2026-10-20T20:45:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/1296a597-8232-4280-a86b-a49f571cdcab/Applegate.jpg?m=1792530397.474&w=1200",
    "foco": {
     "x": 50,
     "y": 0
    },
-   "titulo_original": "The Selfish Gene at 50",
+   "titulo_original": "Christina Applegate says she was misdiagnosed with MS—how could that happen?",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El gen egoísta a los 50",
-     "resumo": "Hace medio siglo, El gen egoísta de Richard Dawkins se convirtió en un éxito de ventas instantáneo y transformó la conciencia pública sobre la biología evolutiva. Hoy en día, los científicos todavía están debatiendo su mensaje central"
+     "titulo": "Christina Applegate dice que fue diagnosticada erróneamente con EM, ¿cómo podría suceder eso?",
+     "resumo": "La actriz ganadora del premio Emmy reveló que un diagnóstico de esclerosis múltiple en 2021 era incorrecto. Es una experiencia sorprendentemente común, dicen los expertos"
     }
    },
-   "resumo_original": "A half century ago The Selfish Gene by Richard Dawkins became an instant bestseller and transformed public awareness of evolutionary biology. Today scientists are still debating its core message"
+   "resumo_original": "The Emmy Award–winning actress revealed that a multiple sclerosis diagnosis in 2021 was incorrect. It’s a surprisingly common experience, experts say"
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas encontram uma maneira de combater o dano cerebral de Alzheimer sem remover a tau tóxica",
-   "resumo": "Os cientistas descobriram uma maneira promissora de proteger o cérebro dos danos relacionados ao Alzheimer, bloqueando as células do sistema imunológico que contribuem para a destruição dos neurônios. Em camundongos, o tratamento preservou cerca de 40% mais tecido nos centros de memória...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261019093355.htm",
-   "fonte": "ScienceDaily · Saúde",
+   "titulo": "A impossibilidade matemática de fazer um mapa-múndi perfeito",
+   "resumo": "Mapear uma esfera em um plano plano é matematicamente impossível. Mas um mapa-múndi melhor do que a projeção de Mercator é",
+   "url": "https://www.scientificamerican.com/article/the-mathematical-impossibility-of-making-a-perfect-world-map/",
+   "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-20T09:52:35+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/tau-tangles-amyloid-beta-neuron-cells-in-brain-alzheimers-dementia.webp",
+   "data": "2026-10-20T18:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/ecb674ee-d180-495e-8b55-7df41b2d815f/Equal-Earth-projection.jpg?m=1792162360.46&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Scientists find a way to fight Alzheimer’s brain damage without removing toxic tau",
+   "titulo_original": "The mathematical impossibility of making a perfect world map",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los científicos encuentran una manera de combatir el daño cerebral del Alzheimer sin eliminar la tau tóxica",
-     "resumo": "Los científicos han encontrado una forma prometedora de proteger el cerebro del daño relacionado con el Alzheimer mediante el bloqueo de las células inmunitarias que contribuyen a la destrucción de las neuronas. En ratones, el tratamiento conservó aproximadamente un 40% más de tejido en los centros de memoria..."
+     "titulo": "La imposibilidad matemática de hacer un mapa del mundo perfecto",
+     "resumo": "Mapear una esfera en un plano plano es matemáticamente imposible. Pero un mapa del mundo mejor que la proyección de Mercator es"
     }
    },
-   "resumo_original": "Scientists have found a promising way to protect the brain from Alzheimer’s-related damage by blocking immune cells that contribute to the destruction of neurons. In mice, the treatment preserved roughly 40% more tissue in memory centers…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
-   "resumo": "Avanços premiados com o Nobel podem emergir de organismos negligenciados",
-   "url": "https://www.nature.com/articles/d41586-026-03351-1",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-20T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos",
-     "resumo": "Los avances ganadores del premio Nobel pueden surgir de organismos desatendidos"
-    }
-   },
-   "resumo_original": "Nobel-prizewinning breakthroughs can emerge from neglected organisms"
+   "resumo_original": "Mapping a sphere onto a flat plane is mathematically impossible. But a better world map than the Mercator projection is"
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Organização do primeiro workshop nacional para famílias na Suíça preocupadas com síndromes de câncer hereditário.",
+   "autores": "Glick S, Aceti M, Barton CM, Zimmermann BM, Schiess L, Fluri M, Kaiser-Grolimund A, Pedrazzani C, Azzi E, Bonfanti AME…",
+   "revista": "J Community Genet",
+   "data": "2026-10-20T00:00:00+00:00",
+   "doi": "10.1007/s12687-026-00960-1",
+   "url": "https://doi.org/10.1007/s12687-026-00960-1",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Organization of the first national workshop for families in Switzerland concerned with hereditary cancer syndromes.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Organización del primer taller nacional para familias en Suiza preocupadas por los síndromes de cáncer hereditario."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Digital image analysis-based quantification of p53 immunohistochemistry in gastric cancer: a systematic comparison of three-tier cutoff-derivation strategies in tissue microarrays.",
+   "autores": "Ahn J, Kim K, Yang HJ, Song B, Kim DH, Chung Y, Chae SW.",
+   "revista": "J Pathol Transl Med",
+   "data": "2026-10-19T00:00:00+00:00",
+   "doi": "10.4132/jptm.2026.08.13",
+   "url": "https://doi.org/10.4132/jptm.2026.08.13",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Digital image analysis-based quantification of p53 immunohistochemistry in gastric cancer: a systematic comparison of three-tier cutoff-derivation strategies in tissue microarrays.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Histologias raras de câncer de próstata: detecção, características e tratamento.",
+   "autores": "Melão BVLA, Jardim DL, Li R, Collins K, Agarwal N, Grivas P, Briganti A, Necchi A, Cheng L, Spiess PE.",
+   "revista": "Nat Rev Urol",
+   "data": "2026-10-19T00:00:00+00:00",
+   "doi": "10.1038/s41585-026-01194-z",
+   "url": "https://doi.org/10.1038/s41585-026-01194-z",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Rare prostate cancer histologies: detection, characteristics and treatment.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Análise de genótipo-fenótipo em 333 indivíduos com variantes heterozigóticas em NFKB1.",
+   "autores": "Armbruster SM, Caballero-Oteyza A, Bartsch O, Lorenzini T, Abolhassani H, Chan S, González Granado LI, Garcia-Bustos V…",
+   "revista": "J Hum Immun",
+   "data": "2026-10-19T00:00:00+00:00",
+   "doi": "10.70962/jhi.20260076",
+   "url": "https://doi.org/10.70962/jhi.20260076",
+   "acesso_aberto": false,
+   "tema": "Genética",
+   "titulo_original": "Genotype-phenotype analysis in 333 individuals with heterozygous variants in NFKB1.",
+   "traduzido": true
+  },
   {
    "tipo": "artigo",
    "titulo": "Atualizações sobre a Classificação Molecular do Carcinoma Endometrial.",
@@ -504,6 +561,19 @@
   },
   {
    "tipo": "artigo",
+   "titulo": "Carcinoma de células escamosas orais: uma revisão moderna da patogênese e tratamento.",
+   "autores": "Mishra G, Sen G, Patel PK, Sahu AN.",
+   "revista": "Int J Biochem Cell Biol",
+   "data": "2026-10-17T00:00:00+00:00",
+   "doi": "10.1016/j.biocel.2026.107050",
+   "url": "https://doi.org/10.1016/j.biocel.2026.107050",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Oral squamous cell carcinoma: A modern review of pathogenesis and treatment.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
    "titulo": "Leiomiomas uterinos em HLRCC: uma revisão de escopo de apresentação, histopatologia, padrões de tratamento e implicações reprodutivas.",
    "autores": "Hessi R, Bendayan E, Mija LA, Ouchene L, Udupa M, Lazarowitz R, Fu L, Leung SOA, Cruz Marino T, Foulkes WD…",
    "revista": "Eur J Hum Genet",
@@ -553,24 +623,6 @@
    "i18n": {
     "es": {
      "titulo": "Paisaje de variantes de la línea germinal del mundo real y manejo clínico en pacientes coreanos analizados por sospecha de cáncer hereditario."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Carcinoma de células escamosas orais: uma revisão moderna da patogênese e tratamento.",
-   "autores": "Mishra G, Sen G, Patel PK, Sahu AN.",
-   "revista": "Int J Biochem Cell Biol",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": "10.1016/j.biocel.2026.107050",
-   "url": "https://doi.org/10.1016/j.biocel.2026.107050",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Oral squamous cell carcinoma: A Modern Review of Pathogenesis and Treatment.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Carcinoma oral de células escamosas: una revisión moderna de la patogénesis y el tratamiento."
     }
    }
   },
@@ -843,78 +895,6 @@
      "titulo": "Variantes de riesgo moderado en cáncer hereditario de mama y ovario: experiencia de siete años en un centro especializado."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "A análise de DNA derivada de tumor no líquido cefalorraquidiano auxilia no diagnóstico de glioma difuso da linha média pós-parto.",
-   "autores": "Rodriguez A, Robinson D, Akhavan D, Cunningham D, Larson A, Udhane V, Schilter KF, Nie Q, Reddi HV.",
-   "revista": "Oncologist",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.1093/oncolo/oyag417",
-   "url": "https://doi.org/10.1093/oncolo/oyag417",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Cerebrospinal Fluid Tumor-Derived DNA Analysis Aids in the Diagnosis of Postpartum Diffuse Midline Glioma.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El análisis del ADN derivado del tumor del líquido cefalorraquídeo ayuda en el diagnóstico del glioma difuso de la línea media posparto."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Eficácia da monoterapia contínua com ibrutinibe em pacientes com leucemia linfocítica crônica recidivante/refratária com mutações TP53 de alta e baixa carga: Análise retrospectiva multicêntrica do Adulto Polonês...",
-   "autores": "Iskierka-Jażdżewska E, Zielonka K, Puła B, Chudy A, Kustra M, Brodacka B, Subocz E, Urbanowicz A, Wiśniewska-Organek D…",
-   "revista": "Adv Clin Exp Med",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.17219/acem/215822",
-   "url": "https://doi.org/10.17219/acem/215822",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Efficacy of continuous ibrutinib monotherapy in patients with relapsed/refractory chronic lymphocytic leukemia with high-burden and low-burden TP53 mutations: Multicenter retrospective analysis of the Polish Adult…",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Eficacia de la monoterapia continua con ibrutinib en pacientes con leucemia linfocítica crónica recidivante/refractaria con mutaciones TP53 de alta y baja carga: análisis retrospectivo multicéntrico del adulto polaco..."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Características histopatológicas e subtipos de carcinoma espinocelular cutâneo invasivo: uma revisão abrangente.",
-   "autores": "Cazzato G, Harnisch K, Kalmykova A, McKee P.",
-   "revista": "Histol Histopathol",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.14670/hh-25-154",
-   "url": "https://doi.org/10.14670/hh-25-154",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Histopathologic features and subtypes of invasive cutaneous squamous cell carcinoma: A comprehensive review.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Características histopatológicas y subtipos de carcinoma cutáneo invasivo de células escamosas: una revisión exhaustiva."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "A decitabina metronômica com venetoclax oferece uma abordagem terapêutica de linha de frente centrada no paciente para neoplasias mieloides de cariótipo complexo com <i>mutação TP53</i>.",
-   "autores": "Walsh LF, Lee RP, Pan J, Dutta AB, Kaduluri VPS, Li HL, Abrams Z, Payne P, Imus PH, Ambinder AJ, Dalton WB, DeZern AE…",
-   "revista": "Haematologica",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.3324/haematol.2026.301724",
-   "url": "https://doi.org/10.3324/haematol.2026.301724",
-   "acesso_aberto": false,
-   "tema": "Saúde",
-   "titulo_original": "Metronomic decitabine with venetoclax offers a patient-centered frontline therapeutic approach for <i>TP53</i>-mutated complex-karyotype myeloid neoplasms.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La decitabina metronómica con venetoclax ofrece un enfoque terapéutico de primera línea centrado en el paciente para las neoplasias mieloides de cariotipo complejo <i>mutado TP53</i>."
-    }
-   }
   }
  ],
  "fontes": [
@@ -1121,6 +1101,14 @@
   "the mathematical impossibility of making a perfect world map": "2026-10-20T18:32:36.280982+00:00",
   "criancas natureza e clima a protecao das presentes e futuras geracoes ganha novos contornos no brasil": "2026-10-20T22:25:21.855048+00:00",
   "estudo da usp investiga como a telemedicina transforma o atendimento em arquipelago amazonico": "2026-10-20T22:25:21.855048+00:00",
-  "documentario celebra maioridade da olimpiada nacional em historia do brasil": "2026-10-20T22:25:21.855048+00:00"
+  "documentario celebra maioridade da olimpiada nacional em historia do brasil": "2026-10-20T22:25:21.855048+00:00",
+  "fiocruz promove 6 festa carioca das sementes agroecologicas pelo dia mundial da alimentacao": "2026-10-21T07:49:16.507317+00:00",
+  "idosos mais ativos tem volume cerebral preservado em areas de memoria e raciocinio mostra estudo": "2026-10-21T07:49:16.507317+00:00",
+  "mesmo sem olhos ostras e mexilhoes possuem grande diversidade de proteinas que percebem a luz": "2026-10-21T07:49:16.507317+00:00",
+  "un says 1 5c is over and world is on track for 2 8c of global warming": "2026-10-21T07:49:16.507317+00:00",
+  "association of egln1 and egln3 genetic variants with covid 19 severity in a mexican population": "2026-10-21T07:49:16.507317+00:00",
+  "scientists discover a way to kill dangerous gut bacteria without killing the good": "2026-10-21T07:49:16.507317+00:00",
+  "is it moon stroke or a chill": "2026-10-21T07:49:16.507317+00:00",
+  "christina applegate says she was misdiagnosed with mshow could that happen": "2026-10-21T07:49:16.507317+00:00"
  }
 }
