@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-21T07:49:16.507317+00:00",
+ "atualizado_em": "2026-10-21T13:57:04.376266+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -24,32 +24,6 @@
     "es": {
      "titulo": "Niños, naturaleza y clima: la protección de las generaciones presentes y futuras adquiere nuevos contornos en Brasil",
      "resumo": "Por Silmara Veiga Montemor, miembro de la Comisión Especial de Clima y Medio Ambiente de la OAB-SP, y Maria da Penha Vasconcellos, profesora de la Facultad de Salud Pública y del Instituto de Estudios Avanzados, ambos de la USP"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Inteligência artificial e futuro do trabalho são temas de encontro promovido na USP",
-   "resumo": "Especialistas da pesquisa acadêmica e do mercado de tecnologia se reúnem no dia 29 de outubro na Biblioteca Brasiliana, no campus do bairro do Butantã, para debater as transformações e o futuro das profissões",
-   "url": "https://jornal.usp.br/universidade/inteligencia-artificial-e-futuro-do-trabalho-sao-temas-de-encontro-promovido-na-usp/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-20T17:06:41+00:00",
-   "tema": "Ciência",
-   "relevancia": 11,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/10/20251007_00_serie_bbm_no_vestibular.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Artificial intelligence and the future of work are topics of a meeting promoted at USP",
-     "resumo": "Experts from academic research and the technology market will meet on October 29 at the Brasiliana Library, on the campus of the Butantã neighborhood, to discuss the transformations and future of the professions"
-    },
-    "es": {
-     "titulo": "La inteligencia artificial y el futuro del trabajo son temas de un encuentro promovido en la USP",
-     "resumo": "Expertos de la investigación académica y del mercado tecnológico se reunirán el 29 de octubre en la Biblioteca Brasiliana, en el campus del barrio Butantã, para discutir las transformaciones y el futuro de las profesiones"
     }
    }
   },
@@ -107,30 +81,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Fiocruz avança em PDP para o tratamento de doenças inflamatórias",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/fiocruz-avanca-em-pdp-para-o-tratamento-de-doencas-inflamatorias",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-20T14:03:18+00:00",
-   "tema": "Saúde",
-   "relevancia": 9,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/ADALIMUMABE_ASCOM_d.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Fiocruz advances in PDP for the treatment of inflammatory diseases"
-    },
-    "es": {
-     "titulo": "Fiocruz avanza en PDP para el tratamiento de enfermedades inflamatorias"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Fiocruz promove 6ª Festa Carioca das Sementes Agroecológicas pelo Dia Mundial da Alimentação",
    "resumo": "",
    "url": "https://agencia.fiocruz.br/fiocruz-promove-6a-festa-carioca-das-sementes-agroecologicas-pelo-dia-mundial-da-alimentacao",
@@ -155,55 +105,149 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Idosos mais ativos têm volume cerebral preservado em áreas de memória e raciocínio, mostra estudo",
-   "resumo": "Ao analisar dados de 2,7 mil indivíduos em torno de 70 anos, pesquisadores da Unesp concluíram que o movimento ajuda a conter a atrofia em estruturas vitais, como o hipocampo. Resultado reforça o papel do exercício na prevenção do declínio…",
-   "url": "https://agencia.fapesp.br/idosos-mais-ativos-tem-volume-cerebral-preservado-em-areas-de-memoria-e-raciocinio-mostra-estudo/59432",
+   "titulo": "SBPC premia alunas que se destacaram em atividades científicas",
+   "resumo": "Estudantes do ensino médio e da graduação podem se inscrever até a próxima sexta-feira (30/10) para a 8ª edição do Prêmio Carolina Bori Ciência e Mulher",
+   "url": "https://agencia.fapesp.br/sbpc-premia-alunas-que-se-destacaram-em-atividades-cientificas/59436",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-21T07:49:16.507317+00:00",
+   "data": "2026-10-21T13:57:04.376266+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59432.jpg",
+   "imagem": "https://agencia.fapesp.br/files/post/59436.jpg",
    "foco": {
     "x": 50,
     "y": 0
    },
    "i18n": {
     "en": {
-     "titulo": "More active older adults have preserved brain volume in areas of memory and reasoning, study shows",
-     "resumo": "By analyzing data from 2,700 individuals aged around 70 years, Unesp researchers concluded that the movement helps to contain atrophy in vital structures, such as the hippocampus. The result reinforces the role of exercise in preventing decline…"
+     "titulo": "SBPC awards students who have excelled in scientific activities",
+     "resumo": "High school and undergraduate students can apply until next Friday (10/30) for the 8th edition of the Carolina Bori Science and Women's Award"
     },
     "es": {
-     "titulo": "Un estudio muestra que los adultos mayores más activos han preservado el volumen cerebral en áreas de memoria y razonamiento",
-     "resumo": "Al analizar datos de 2.700 individuos de alrededor de 70 años, los investigadores de la Unesp concluyeron que el movimiento ayuda a contener la atrofia en estructuras vitales, como el hipocampo. El resultado refuerza el papel del ejercicio en la prevención del deterioro..."
+     "titulo": "SBPC premia a los estudiantes que han sobresalido en actividades científicas",
+     "resumo": "Los estudiantes de bachillerato y pregrado pueden postularse hasta el próximo viernes (30/10) para la 8ª edición del Carolina Bori Science and Women's Award"
     }
    }
   },
   {
    "tipo": "noticia",
-   "titulo": "Mesmo sem olhos, ostras e mexilhões possuem grande diversidade de proteínas que percebem a luz",
-   "resumo": "Estudo da USP e de colaboradores norte-americanos revela que o repertório químico na pele desses animais chega a superar a variedade encontrada na retina humana, indicando um complexo sistema de fotopercepção",
-   "url": "https://agencia.fapesp.br/mesmo-sem-olhos-ostras-e-mexilhoes-possuem-grande-diversidade-de-proteinas-que-percebem-a-luz/59433",
+   "titulo": "Conecta Florestal aproxima estudantes e empresas na Esalq-USP",
+   "resumo": "Evento gratuito terá mesa-redonda com a participação de especialistas que abordarão temas atuais, desafios e perspectivas do setor florestal, além de uma feira de carreiras",
+   "url": "https://agencia.fapesp.br/conecta-florestal-aproxima-estudantes-e-empresas-na-esalq-usp/59437",
    "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-21T07:49:16.507317+00:00",
+   "data": "2026-10-21T13:57:04.376266+00:00",
    "tema": "Meio ambiente",
    "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59433.jpg",
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Conecta Florestal brings students and companies closer together at Esalq-USP",
+     "resumo": "Free event will have a round table with the participation of experts who will address current issues, challenges and perspectives of the forest sector, as well as a career fair"
+    },
+    "es": {
+     "titulo": "Conecta Florestal acerca a estudiantes y empresas en Esalq-USP",
+     "resumo": "El evento gratuito contará con una mesa redonda con la participación de expertos que abordarán temas de actualidad, desafíos y perspectivas del sector forestal, así como una feria de carreras"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Encontro de Álgebra e Geometria Campinas-São Carlos",
+   "resumo": "Evento gratuito busca estimular a troca de conhecimento e criar novas possibilidades de colaboração científica. Inscrições abertas até a próxima segunda-feira (26/10)",
+   "url": "https://agencia.fapesp.br/encontro-de-algebra-e-geometria-campinas-sao-carlos/59445",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-21T13:57:04.376266+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Campinas-São Carlos Algebra and Geometry Meeting",
+     "resumo": "A free event seeks to stimulate the exchange of knowledge and create new possibilities for scientific collaboration. Registration open until next Monday (10/26)"
+    },
+    "es": {
+     "titulo": "Encuentro de Álgebra y Geometría Campinas-São Carlos",
+     "resumo": "Un evento gratuito busca estimular el intercambio de conocimiento y crear nuevas posibilidades de colaboración científica. Inscripciones abiertas hasta el próximo lunes (26/10)"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Estudo maciço com 460 mil pessoas desafia temores de câncer de alimentos ultraprocessados",
+   "resumo": "Um estudo maciço com mais de 460.000 americanos descobriu que os alimentos ultraprocessados não estavam associados ao aumento do risco geral de câncer colorretal, desafiando uma suposição amplamente aceita. Enquanto a carne processada estava ligada a um câncer maior...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261020085014.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-21T13:22:17+00:00",
+   "tema": "Câncer",
+   "relevancia": 7,
+   "imagem": "https://www.sciencedaily.com/images/1920/fast-food-burgers-fries-chicken-nuggets.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Massive study of 460,000 people challenges ultra-processed food cancer fears",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Un estudio masivo de 460.000 personas desafía los temores de los alimentos ultraprocesados sobre el cáncer",
+     "resumo": "Un estudio masivo de más de 460.000 estadounidenses descubrió que los alimentos ultraprocesados no estaban asociados con un mayor riesgo de cáncer colorrectal en general, desafiando una suposición ampliamente aceptada. Mientras que la carne procesada estaba relacionada con un mayor nivel de cáncer..."
+    }
+   },
+   "resumo_original": "A massive study of more than 460,000 Americans found that ultra-processed foods were not associated with increased colorectal cancer risk overall, challenging a widely held assumption. While processed meat was linked to higher cancer…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Corrida de obstáculos para os biossensores portáteis",
+   "resumo": "Apesar dos resultados promissores em laboratório, a maioria dos dispositivos ainda não está pronta para uso clínico e comercialização",
+   "url": "https://revistapesquisa.fapesp.br/corrida-de-obstaculos-para-os-biossensores-portateis/?utm_source=rss&utm_medium=rss&utm_campaign=corrida-de-obstaculos-para-os-biossensores-portateis",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-21T12:07:23+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/f991d7115b0f5e55bbf3d50a8f75c582545a64fd_1200-630.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Even without eyes, oysters and mussels have a great diversity of proteins that perceive light",
-     "resumo": "A study by USP and US collaborators reveals that the chemical repertoire in the skin of these animals surpasses the variety found in the human retina, indicating a complex photoperception system"
+     "titulo": "Obstacle course for portable biosensors",
+     "resumo": "Despite promising results in the lab, most devices are not yet ready for clinical use and commercialization"
     },
     "es": {
-     "titulo": "Incluso sin ojos, las ostras y los mejillones tienen una gran diversidad de proteínas que perciben la luz",
-     "resumo": "Un estudio de la USP y colaboradores estadounidenses revela que el repertorio químico en la piel de estos animales supera la variedad encontrada en la retina humana, lo que indica un complejo sistema de fotopercepción"
+     "titulo": "Carrera de obstáculos para biosensores portátiles",
+     "resumo": "A pesar de los resultados prometedores en el laboratorio, la mayoría de los dispositivos aún no están listos para su uso clínico y comercialización"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O candidato republicano ao Congresso Tom Stalcup sobre como ambas as partes abusam da ciência para obter ganhos políticos",
+   "resumo": "A Scientific American conversou com o candidato ao quarto distrito congressional de Massachusetts sobre mudanças climáticas, desinformação e por que, quando se trata de assistência médica, algum socialismo pode ser necessário",
+   "url": "https://www.scientificamerican.com/article/republican-congressional-candidate-tom-stalcup-on-how-both-parties-abuse-science-for-political-gain/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-21T10:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 7,
+   "imagem": "https://static.scientificamerican.com/dam/asset/7bf3e60c-8805-4474-8bcf-ac69248d5fec/Tom-Stalcup.jpeg?m=1792507334.262&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "titulo_original": "Republican congressional candidate Tom Stalcup on how both parties abuse science for political gain",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El candidato republicano al Congreso Tom Stalcup habla sobre cómo ambos partidos abusan de la ciencia para obtener beneficios políticos",
+     "resumo": "Scientific American habló con el candidato para el cuarto distrito del Congreso de Massachusetts sobre el cambio climático, la desinformación y por qué, cuando se trata de atención médica, se puede requerir algo de socialismo"
+    }
+   },
+   "resumo_original": "Scientific American spoke to the candidate for Massachusetts’s fourth congressional district about climate change, misinformation and why, when it comes to health care, some socialism may be required"
   },
   {
    "tipo": "noticia",
@@ -232,6 +276,31 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Como os bilionários da tecnologia estão revolucionando a ciência biomédica",
+   "resumo": "O dinheiro dos empreendedores de tecnologia cada vez mais prósperos do mundo tem inundado a pesquisa biomédica. Isso está mudando a forma como a ciência é feita?",
+   "url": "https://www.nature.com/articles/d41586-026-03311-9",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-21T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03311-9/d41586-026-03311-9_53860580.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "How tech billionaires are disrupting biomedical science",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Cómo los multimillonarios de la tecnología están alterando la ciencia biomédica",
+     "resumo": "El dinero de los empresarios tecnológicos cada vez más prósperos del mundo ha estado inundando la investigación biomédica. ¿Está cambiando la forma en que se hace la ciencia?"
+    }
+   },
+   "resumo_original": "Money from the world’s increasingly prosperous technology entrepreneurs has been flooding into biomedical research. Is it changing how science is done?"
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Associação de variantes genéticas EGLN1 e EGLN3 com a gravidade da COVID-19 em uma população mexicana",
    "resumo": "",
    "url": "https://www.nature.com/articles/s41598-026-74011-7",
@@ -251,131 +320,124 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Mosquitos infectados por parasitas liberados na Europa pela primeira vez",
-   "resumo": "Mosquitos machos infectados com um parasita foram liberados em Barcelona para reduzir o número de insetos que podem transmitir infecções como a dengue",
-   "url": "https://www.newscientist.com/article/2594886-parasite-infected-mosquitoes-released-in-europe-for-first-time/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "O primeiro transplante de medula espinhal do mundo foi realizado na Rússia",
+   "resumo": "Um cirurgião disse à New Scientist que realizou um transplante em alguém com uma lesão medular completa usando um pedaço da medula espinhal de um doador com morte cerebral, mas os pesquisadores levantaram preocupações",
+   "url": "https://www.newscientist.com/article/2594991-the-worlds-first-spinal-cord-transplant-has-been-performed-in-russia/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-20T15:19:24+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317461295.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Parasite-infected mosquitoes released in Europe for first time",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los mosquitos infectados por parásitos liberados en Europa por primera vez",
-     "resumo": "Los mosquitos machos infectados con un parásito han sido liberados en Barcelona para reducir el número de insectos que pueden transmitir infecciones como el dengue"
-    }
-   },
-   "resumo_original": "Male mosquitoes infected with a parasite have been released in Barcelona to reduce the number of insects that can transmit infections such as dengue"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas descobrem uma maneira de matar bactérias intestinais perigosas sem matar as boas",
-   "resumo": "Os cientistas descobriram um composto natural que tem como alvo bactérias C. difficile perigosas sem eliminar os micróbios benéficos do intestino. Testes iniciais bem-sucedidos sugerem que isso pode levar a um tratamento mais suave e eficaz para teimosia...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261019093353.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-20T12:07:49+00:00",
-   "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://www.sciencedaily.com/images/1920/escherichia-coli-bacterium-infecting-human-intestine.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists discover a way to kill dangerous gut bacteria without killing the good",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos descubren una forma de matar las bacterias intestinales peligrosas sin matar a las buenas",
-     "resumo": "Los científicos han descubierto un compuesto natural que se dirige a las peligrosas bacterias C. difficile sin eliminar los microbios beneficiosos del intestino. Las primeras pruebas exitosas sugieren que podría conducir a un tratamiento más suave y efectivo para los tercos..."
-    }
-   },
-   "resumo_original": "Scientists have discovered a natural compound that targets dangerous C. difficile bacteria without wiping out the gut's beneficial microbes. Successful early tests suggest it could lead to a gentler, more effective treatment for stubborn…"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "É ‘golpe de lua’ ou um arrepio?",
-   "resumo": "Uma explicação para o efeito prejudicial de dormir ao luar, e um defensor de televisores totalmente eletrônicos, na escolha desta semana do arquivo da Nature.",
-   "url": "https://www.nature.com/articles/d41586-026-02975-7",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-20T00:00:00+00:00",
-   "tema": "Espaço",
-   "relevancia": 5,
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-02975-7/d41586-026-02975-7_15948436.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Is it ‘moon-stroke’, or a chill?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "¿Es un «golpe de luna» o un escalofrío?",
-     "resumo": "Una explicación para el efecto perjudicial de dormir a la luz de la luna, y un defensor de los televisores totalmente electrónicos, en la selección de esta semana del archivo de Nature."
-    }
-   },
-   "resumo_original": "An explanation for the injurious effect of sleeping in the moonlight, and a proponent of all-electronic televisions, in this week’s pick from the Nature archive."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Christina Applegate diz que foi diagnosticada erroneamente com EM - como isso poderia acontecer?",
-   "resumo": "A atriz vencedora do Emmy revelou que um diagnóstico de esclerose múltipla em 2021 estava incorreto. É uma experiência surpreendentemente comum, dizem os especialistas",
-   "url": "https://www.scientificamerican.com/article/christina-applegate-says-she-was-misdiagnosed-with-ms-how-could-that-happen/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-20T20:45:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/1296a597-8232-4280-a86b-a49f571cdcab/Applegate.jpg?m=1792530397.474&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "titulo_original": "Christina Applegate says she was misdiagnosed with MS—how could that happen?",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Christina Applegate dice que fue diagnosticada erróneamente con EM, ¿cómo podría suceder eso?",
-     "resumo": "La actriz ganadora del premio Emmy reveló que un diagnóstico de esclerosis múltiple en 2021 era incorrecto. Es una experiencia sorprendentemente común, dicen los expertos"
-    }
-   },
-   "resumo_original": "The Emmy Award–winning actress revealed that a multiple sclerosis diagnosis in 2021 was incorrect. It’s a surprisingly common experience, experts say"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A impossibilidade matemática de fazer um mapa-múndi perfeito",
-   "resumo": "Mapear uma esfera em um plano plano é matematicamente impossível. Mas um mapa-múndi melhor do que a projeção de Mercator é",
-   "url": "https://www.scientificamerican.com/article/the-mathematical-impossibility-of-making-a-perfect-world-map/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-20T18:00:00+00:00",
+   "data": "2026-10-21T10:30:31+00:00",
    "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/ecb674ee-d180-495e-8b55-7df41b2d815f/Equal-Earth-projection.jpg?m=1792162360.46&w=1200",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317465000_6f943c.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "The mathematical impossibility of making a perfect world map",
+   "titulo_original": "The world’s first spinal cord transplant has been performed in Russia",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La imposibilidad matemática de hacer un mapa del mundo perfecto",
-     "resumo": "Mapear una esfera en un plano plano es matemáticamente imposible. Pero un mapa del mundo mejor que la proyección de Mercator es"
+     "titulo": "El primer trasplante de médula espinal del mundo se ha realizado en Rusia",
+     "resumo": "Un cirujano le ha dicho a New Scientist que ha realizado un trasplante en alguien con una lesión completa de la médula espinal utilizando un trozo de médula espinal de un donante con muerte cerebral, pero los investigadores han expresado su preocupación"
     }
    },
-   "resumo_original": "Mapping a sphere onto a flat plane is mathematically impossible. But a better world map than the Mercator projection is"
+   "resumo_original": "A surgeon has told New Scientist they have performed a transplant on someone with a complete spinal cord injury using a piece of spinal cord from a brain-dead donor, but researchers have raised concerns"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "A Wall Is Also a Road explora a consciência alienígena, formas de vida de mofo e Pompeia",
+   "resumo": "Alienígenas do lodo exploram Pompeia - e a humanidade - em um novo livro de Annalee Newitz",
+   "url": "https://www.scientificamerican.com/podcast/episode/a-wall-is-also-a-road-explores-alien-consciousness-slime-mold-life-forms-and-pompeii/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-21T10:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/7c40feca-d4d7-49f0-a69b-c0ad65684d2e/2610_SQ_WED_ROAD-1-1.png?m=1792530611.541&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "A Wall Is Also a Road explores alien consciousness, slime mold life-forms and Pompeii",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "A Wall Is Also a Road explora la conciencia alienígena, las formas de vida de moho de limo y Pompeya",
+     "resumo": "Los alienígenas del moho del fango exploran Pompeya y la humanidad en un nuevo libro de Annalee Newitz"
+    }
+   },
+   "resumo_original": "Slime mold aliens explore Pompeii—and humanity—in a new book by Annalee Newitz"
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "Danos Tissulares Locais Induzidos por Envenenamento por Picada de Serpente: Mecanismos e Avanços Terapêuticos.",
+   "autores": "Luo J, Xiong W, Gu J, Xie Y, Zheng X, Wang W, Dong D.",
+   "revista": "Am J Trop Med Hyg",
+   "data": "2026-10-20T00:00:00+00:00",
+   "doi": "10.4269/ajtmh.26-0353",
+   "url": "https://doi.org/10.4269/ajtmh.26-0353",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Local Tissue Damage Induced by Snakebite Envenoming: Mechanisms and Therapeutic Advances.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Resultados específicos do local e genômica no adenocarcinoma ductal pancreático metastático.",
+   "autores": "Yousef M, Chowdhury S, Albarouki S, Elhariri A, Vetere G, El Khoury S, Fanaeian M, Yousef A, Balachandran Pillai A…",
+   "revista": "Oncologist",
+   "data": "2026-10-20T00:00:00+00:00",
+   "doi": "10.1093/oncolo/oyag423",
+   "url": "https://doi.org/10.1093/oncolo/oyag423",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Site-Specific Outcomes and Genomics in Metastatic Pancreatic Ductal Adenocarcinoma.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Assinaturas Mutacionais e Fenótipos de Hipermutação Definem Cânceres de Bexiga Surgindo em Fumantes de Cachimbo de Água e Cigarro.",
+   "autores": "Shamseddine A, Abbas N, Eichholz J, Chatila WK, Walch H, Mahfouz R, Basar M, Schultz N, Solit D, Al Mahmasani L…",
+   "revista": "Mol Cancer Res",
+   "data": "2026-10-20T00:00:00+00:00",
+   "doi": "10.1158/1541-7786.mcr-26-0157",
+   "url": "https://doi.org/10.1158/1541-7786.mcr-26-0157",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Mutational Signatures and Hypermutation Phenotypes Define Bladder Cancers Arising in Waterpipe and Cigarette Smokers.",
+   "traduzido": true
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "TP53 mutations and IGHV in naïve chronic lymphocytic leukemia: retrospective analysis of data from a Spanish collaborative network.",
+   "autores": "Terol MJ, Serrano A, Ferrer-Lores B, Bosch F, González M, Crespo M, Alcoceba M, Fuentes A, Chaves FJ, Villanueva M.",
+   "revista": "Int J Hematol",
+   "data": "2026-10-20T00:00:00+00:00",
+   "doi": "10.1007/s12185-026-04285-0",
+   "url": "https://doi.org/10.1007/s12185-026-04285-0",
+   "acesso_aberto": false,
+   "tema": "Câncer"
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Riscos de câncer atualizados na síndrome de linchamento.",
+   "autores": "Drogan CM, Kupfer SS.",
+   "revista": "Fam Cancer",
+   "data": "2026-10-20T00:00:00+00:00",
+   "doi": "10.1007/s10689-026-00598-5",
+   "url": "https://doi.org/10.1007/s10689-026-00598-5",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Updated cancer risks in lynch syndrome.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Riesgos de cáncer actualizados en el síndrome de Lynch."
+    }
+   }
+  },
   {
    "tipo": "artigo",
    "titulo": "Organização do primeiro workshop nacional para famílias na Suíça preocupadas com síndromes de câncer hereditário.",
@@ -393,6 +455,17 @@
      "titulo": "Organización del primer taller nacional para familias en Suiza preocupadas por los síndromes de cáncer hereditario."
     }
    }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Genomic and immune profiling characterizes immune heterogeneity and a TIGIT-associated subtype in intrahepatic cholangiocarcinoma.",
+   "autores": "Korosteleva A, Reschke JS, Yi D, Marhenke S, Zhao J, Volk V, Reineke-Plaaß T, Peter S, Hoffmann C, Tran DDH, Gerdes C…",
+   "revista": "Hepatol Commun",
+   "data": "2026-10-19T00:00:00+00:00",
+   "doi": "10.1097/hc9.0000000000001052",
+   "url": "https://doi.org/10.1097/hc9.0000000000001052",
+   "acesso_aberto": false,
+   "tema": "Genética"
   },
   {
    "tipo": "artigo",
@@ -787,114 +860,6 @@
      "titulo": "Engranaje biespecífico de células NK que se dirige a la mutación TP53 a través de la integración de un anticuerpo imitador de TCR."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Engatador decélulas NK biespecífico direcionado à mutação TP53 através da integração de um anticorpo imitador de TCR",
-   "autores": "Wu H, Zhao Z, Zhang L, Xiong X, Yang M, Ge W, Zhi D, Cao X, Yi C, Qiao Y, Cao J, Mei Y, Jiao S, Liu Q, Zhou H, Xu Z…",
-   "revista": "MedComm (2020)",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": null,
-   "url": "https://europepmc.org/article/PMC/PMC13669819",
-   "acesso_aberto": true,
-   "tema": "Genética",
-   "titulo_original": "Bispecific NK‐Cell Engager Targeting TP53 Mutation Through Integration of a TCR‐mimic Antibody",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Accionador biespecífico decélulas NK que se dirige a la mutación TP53 a través de la integración de un anticuerpo TCR-mimético"
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Sobrevivência por Design: Dinâmica do Destino Celular no Linfoma de Hodgkin Clássico.",
-   "autores": "Seleusan M, Cenariu D, Gulei D, Kegyes D, Tigu AB, Riaz S, Zdrenghea M, Tomuleasa C.",
-   "revista": "Crit Rev Oncol Hematol",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.1016/j.critrevonc.2026.105651",
-   "url": "https://doi.org/10.1016/j.critrevonc.2026.105651",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Survival by Design: Cell Fate Dynamics in Classical Hodgkin Lymphoma.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Survival by Design: Cell Fate Dynamics in Classical Hodgkin Lymphoma."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Colubrid clotcraft: A utilização do cofator do Fator Va divergente sustenta as reatividades cruzadas antivenenos diferenciais para os venenos Boomslang (Dispholidus typus) e Eastern Twig Snake (Thelotornis mossambicanus).",
-   "autores": "Champagne PS, Seneci L, Qiao Z, Fry BG.",
-   "revista": "Comp Biochem Physiol C Toxicol Pharmacol",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.1016/j.cbpc.2026.110720",
-   "url": "https://doi.org/10.1016/j.cbpc.2026.110720",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Colubrid clotcraft: Divergent Factor Va cofactor utilisation underpins differential antivenom cross-reactivities for Boomslang (Dispholidus typus) and Eastern Twig Snake (Thelotornis mossambicanus) venoms.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Coagulación colúbrida: la utilización del cofactor del factor Va divergente respalda las reactividades cruzadas diferenciales del antiveneno para los venenos Boomslang (Dispholidus typus) y Eastern Twig Snake (Thelotornis mossambicanus)."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Caracterização genômica do carcinoma endometrial avançado e recorrente: co-mutação de KRAS e TP53 como biomarcador para prognóstico adverso e falha terapêutica.",
-   "autores": "Lee S, So KA, Kim S, Lee MK, Kim YH, Kim TJ, Kim MK.",
-   "revista": "Gynecol Oncol",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.1016/j.ygyno.2026.10.009",
-   "url": "https://doi.org/10.1016/j.ygyno.2026.10.009",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Genomic characterization of advanced and recurrent endometrial carcinoma: KRAS and TP53 co-mutation as a biomarker for adverse prognosis and therapeutic failure.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Caracterización genómica del carcinoma de endometrio avanzado y recurrente: comutación de KRAS y TP53 como biomarcador de pronóstico adverso y fracaso terapéutico."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Neoplasia colorretal detectada durante a vigilância colonoscópica na síndrome de Li-Fraumeni: uma série de casos retrospectiva.",
-   "autores": "Takagi A, Tajika M, Hori M, Ito N, Tanaka T, Hosoda W, Shimizu M, Imoto I, Niwa Y.",
-   "revista": "Clin J Gastroenterol",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.1007/s12328-026-02466-2",
-   "url": "https://doi.org/10.1007/s12328-026-02466-2",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Colorectal neoplasia detected during colonoscopic surveillance in Li-Fraumeni syndrome: a retrospective case series.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Neoplasia colorrectal detectada durante la vigilancia colonoscópica en el síndrome de Li-Fraumeni: una serie de casos retrospectivos."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Variantes de risco moderado no câncer hereditário de mama e ovário: experiência de sete anos em um centro especializado.",
-   "autores": "Krückel A, Beckmann MW, Brückner L, Fasching PA, Gass P, Gocke J, Hack CC, Heindl F, Hörner M, Kunze E, Müller-Wirtz C…",
-   "revista": "Fam Cancer",
-   "data": "2026-10-15T00:00:00+00:00",
-   "doi": "10.1007/s10689-026-00609-5",
-   "url": "https://doi.org/10.1007/s10689-026-00609-5",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Moderate-risk variants in hereditary breast and ovarian cancer: seven-year experience from a specialized center.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Variantes de riesgo moderado en cáncer hereditario de mama y ovario: experiencia de siete años en un centro especializado."
-    }
-   }
   }
  ],
  "fontes": [
@@ -913,12 +878,6 @@
  ],
  "erros": [],
  "mostradas": {
-  "the eye has a hidden cleanup system scientists never knew existed": "2026-10-11T09:04:09.353021+00:00",
-  "a plastic once thought harmless may be fueling fatty liver disease": "2026-10-11T09:04:09.353021+00:00",
-  "scientists build a nuclear clock that could make atomic clocks obsolete": "2026-10-11T09:04:09.353021+00:00",
-  "a surprisingly simple way to relieve knee arthritis pain without pills or surgery": "2026-10-11T09:04:09.353021+00:00",
-  "how hurricane isaias got so dangerously strong so fast": "2026-10-11T09:04:09.353021+00:00",
-  "the social reckoning is a surreal portrait of social medias harms scientist says": "2026-10-11T09:04:09.353021+00:00",
   "musculo e exercicio fisico nao saudavel sao temas de oficina na usp de ribeirao": "2026-10-11T15:49:04.454598+00:00",
   "could tutankhamun s tomb hold clues to a mysterious egyptian queen": "2026-10-11T15:49:04.454598+00:00",
   "cellular and spatial context of genetic convergence between insomnia liability and dti alps perivascular diffusivity": "2026-10-12T00:22:42.302403+00:00",
@@ -1109,6 +1068,15 @@
   "association of egln1 and egln3 genetic variants with covid 19 severity in a mexican population": "2026-10-21T07:49:16.507317+00:00",
   "scientists discover a way to kill dangerous gut bacteria without killing the good": "2026-10-21T07:49:16.507317+00:00",
   "is it moon stroke or a chill": "2026-10-21T07:49:16.507317+00:00",
-  "christina applegate says she was misdiagnosed with mshow could that happen": "2026-10-21T07:49:16.507317+00:00"
+  "christina applegate says she was misdiagnosed with mshow could that happen": "2026-10-21T07:49:16.507317+00:00",
+  "sbpc premia alunas que se destacaram em atividades cientificas": "2026-10-21T13:57:04.376266+00:00",
+  "conecta florestal aproxima estudantes e empresas na esalq usp": "2026-10-21T13:57:04.376266+00:00",
+  "encontro de algebra e geometria campinas sao carlos": "2026-10-21T13:57:04.376266+00:00",
+  "massive study of 460 000 people challenges ultra processed food cancer fears": "2026-10-21T13:57:04.376266+00:00",
+  "corrida de obstaculos para os biossensores portateis": "2026-10-21T13:57:04.376266+00:00",
+  "republican congressional candidate tom stalcup on how both parties abuse science for political gain": "2026-10-21T13:57:04.376266+00:00",
+  "how tech billionaires are disrupting biomedical science": "2026-10-21T13:57:04.376266+00:00",
+  "the worlds first spinal cord transplant has been performed in russia": "2026-10-21T13:57:04.376266+00:00",
+  "a wall is also a road explores alien consciousness slime mold life forms and pompeii": "2026-10-21T13:57:04.376266+00:00"
  }
 }
