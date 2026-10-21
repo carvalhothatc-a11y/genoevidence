@@ -695,18 +695,19 @@
     elevEl.innerHTML = '<h2 id="ggElevTit">' + esc(t("ui.paraOnde")) + '<button type="button" class="x" aria-label="' + esc(t("ui.fechar")) + '">✕</button></h2><div class="andares">' +
       ANDARES.map(a => {
         const trancado = a === "S" && !E.cracha, aqui = a === G.andar;
-        return '<button type="button" class="andar" data-a="' + a + '"' + (aqui ? ' aria-current="true"' : "") + (trancado ? " disabled" : "") + "><b>" + a + "</b><span>" + esc(t("ui.andar." + a)) +
+        return '<button type="button" class="andar" data-a="' + a + '"' + (aqui ? ' aria-current="true"' : "") + (trancado ? ' aria-disabled="true" data-trancado="1"' : "") + "><b>" + a + "</b><span>" + esc(t("ui.andar." + a)) +
           "<small>" + esc(trancado ? t("ui.precisaCracha") : aqui ? t("ui.voceEsta") : t("ui.andarSub." + a)) + "</small></span>" + (trancado ? icone("cadeado", 24) : "") + "</button>";
       }).join("") + "</div>";
     palco.appendChild(elevEl);
     elevEl.addEventListener("click", e => {
       if (e.target.closest(".x")) return fecharElevador();
       const b = e.target.closest(".andar"); if (!b) return;
-      if (b.disabled) return;
+      // trancado: o Geninho dá a pista de onde está o crachá
+      if (b.dataset.trancado) { fecharElevador(); fala(t("f.elevadorTrancado")); return; }
       fecharElevador();
       if (b.dataset.a !== G.andar) viajar(b.dataset.a);
     });
-    const f = $(".andar:not([aria-current]):not([disabled])", elevEl) || $(".x", elevEl); f.focus({ preventScroll: true });
+    const f = $(".andar:not([aria-current]):not([data-trancado])", elevEl) || $(".x", elevEl); f.focus({ preventScroll: true });
   }
   function fecharElevador() { if (elevEl) { elevEl.remove(); elevEl = null; } }
   function portas(an, abrir) {

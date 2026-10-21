@@ -190,7 +190,7 @@ html.ge-zoom .gg-fala,html.ge-zoom .gg-painel-in,html.ge-zoom .gg-elevador{zoom:
 .gg-elevador .andar b{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--w-placa);color:var(--w-placa-txt);font:700 14px/1 var(--mono);flex:none}
 .gg-elevador .andar small{display:block;font:500 12.5px/1.3 var(--sans);color:var(--muted);margin-top:2px}
 .gg-elevador .andar[aria-current="true"]{border-color:var(--violet);background:var(--violet-soft)}
-.gg-elevador .andar[disabled]{opacity:.55;cursor:not-allowed}
+.gg-elevador .andar[data-trancado]{opacity:.6}
 .gg-elevador .andar svg{width:16px;height:16px;margin-left:auto;color:var(--muted)}
 
 /* ---------- painéis (experimento, caderno, publicação) ---------- */
