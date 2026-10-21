@@ -3,7 +3,7 @@
      e guarda uma cópia; sem internet, usa a cópia guardada.
    - Imagens, ícones e fontes: usa a cópia guardada (carrega rápido) e atualiza em segundo plano.
    Ao mudar a lista BASICO, aumente a VERSAO. */
-const VERSAO = "genoevidence-v29";
+const VERSAO = "genoevidence-v30";
 const BASICO = [
   "./",
   "index.html",
@@ -80,12 +80,12 @@ const BASICO = [
   "genogame/experimentos.js",
   "genogame/textos.js",
   "genogame/img/geninho-corpo.jpg",
-  "genogame/img/gn2-cauda.webp",
-  "genogame/img/gn2-braco.webp",
-  "genogame/img/gn2-corpo.webp",
-  "genogame/img/gn2-perna-e.webp",
-  "genogame/img/gn2-perna-d.webp",
-  "genogame/img/gn2-cabeca.webp",
+  "genogame/img/gn-cauda.webp",
+  "genogame/img/gn-braco.webp",
+  "genogame/img/gn-corpo.webp",
+  "genogame/img/gn-perna-e.webp",
+  "genogame/img/gn-perna-d.webp",
+  "genogame/img/gn-cabeca.webp",
   "genogame/img/geninho-rosto-96.png",
   "genogame/img/geninho-rosto-256.png"
 ];

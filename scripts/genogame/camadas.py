@@ -1,10 +1,9 @@
-# GenoGame · divide a arte do Geninho em camadas que se mexem (genogame/img/gn2-*.webp).
-# Ao mudar as camadas, troque o prefixo (gn2- → gn3-) aqui e em genogame.js, para o modo offline não misturar versões.
+# GenoGame · divide a arte do Geninho em camadas que se mexem (genogame/img/gn-*.webp).
 # Uso: python3 scripts/genogame/camadas.py geninho-recorte.png genogame/img
 # O recorte (fundo transparente) sai de scripts/genogame/recorta.swift. Coordenadas da imagem original, 720 × 720 px;
 # as articulações usadas na animação estão em genogame/genogame.css (transform-origin de cada .p-*).
 import sys
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageFilter
 import numpy as np
 src, destino = sys.argv[1], sys.argv[2]
 im=Image.open(src).convert('RGBA')
@@ -18,28 +17,21 @@ camadas={}
 # cabeça: acima do pescoço; logo abaixo do corte fica opaca por 10 px e depois some
 cab_ex=(yy<228)
 camadas['cabeca']=(np.where(cab_ex,1.0,lin(yy,238,262)*(yy>=228)), A)
-# braço esquerdo inteiro (manga, antebraço e pata). Na arte ele está levantado; aqui ele desce, girando no
-# ombro, e fica NA FRENTE do corpo. A lateral do jaleco que a manga escondia é completada com a textura do
-# próprio painel do jaleco, logo abaixo (clonada para cima).
-OMBRO=(266,300); ANG_BRACO=55          # graus, no sentido anti-horário (o CSS gira a partir desta pose)
-def poligono(pts, blur=0):
-    m=Image.new('L',(W,H),0); ImageDraw.Draw(m).polygon(pts,fill=255)
-    if blur: m=m.filter(ImageFilter.GaussianBlur(blur))
-    return np.array(m).astype(np.float32)/255
-CONTORNO_BRACO=[(90,290),(205,318),(250,292),(261,297),(262,332),(262,414),(244,424),(90,424)]
-braco_ex=poligono(CONTORNO_BRACO)>0.5
-lateral=poligono([(262,292),(276,288),(272,340),(268,420),(246,422),(250,360)],1.5)
-A_corpo=A.copy()
-for y in range(280,425):
-    for x in range(236,282):
-        k=lateral[y,x]
-        if k<=0: continue
-        ys=min(H-1,y+118)
-        px=A[ys,x] if A[ys,x,3]>200 else A[ys,min(x+8,W-1)]
-        A_corpo[y,x,:3]=A_corpo[y,x,:3]*(1-k)+px[:3]*k
-        A_corpo[y,x,3]=max(A_corpo[y,x,3],255*k)
-braco_img=A.copy(); braco_img[...,3]=braco_img[...,3]*poligono(CONTORNO_BRACO,1.2)
-braco_img=np.array(Image.fromarray(braco_img.astype(np.uint8)).rotate(ANG_BRACO, resample=Image.BICUBIC, center=OMBRO)).astype(np.float32)
+# antebraço e pata levantada: os pixels lilases à esquerda do punho; ficam ATRÁS da manga
+punho=222+np.maximum(0,yy-335)*0.2          # linha do punho da manga
+ante_ex=(xx<punho)&(yy>296)&(yy<408)
+ante=suave(ante_ex*1.0,0.8)*((xx<punho+3)&(yy>292)&(yy<412))
+ante=np.maximum(ante,ante_ex*1.0)
+# prolongamento do antebraço por baixo da manga (só aparece se o braço girar)
+Bb=A.copy(); ab=ante.copy(); sangra=np.zeros_like(alpha,dtype=bool)
+for y in range(320,410):
+    linha=np.where(ante_ex[y])[0]
+    if len(linha)==0: continue
+    x1=linha.max(); cor=A[y,max(x1-3,0),:3]
+    for x in range(x1+1,min(x1+22,W)):
+        if alpha[y,x]>0.98: Bb[y,x,:3]=cor; ab[y,x]=1.0; sangra[y,x]=True
+Bb[...,3]=255
+camadas['braco']=(ab, Bb)
 # pernas: abaixo do corte é só da perna; acima, uma faixa opaca que depois some
 pe_e_ex=(yy>=602)&(xx>=236)&(xx<374)
 pe_d_ex=(yy>=612)&(xx>=418)&(xx<516)
@@ -59,16 +51,13 @@ for y in range(462,633):
         C[y,x,:3]=cor; ca[y,x]=max(ca[y,x], np.clip((x-470)/18,0,1))
 C[...,3]=255
 camadas['cauda']=(ca, C)
-corpo_ex=np.clip(cab_ex+(braco_ex&(lateral<0.5))+pe_e_ex+pe_d_ex+cauda_ex,0,1)
-camadas['corpo']=(1.0-corpo_ex, A_corpo)
-def salva(n, out):
-    Image.fromarray(np.clip(out,0,255).astype(np.uint8)).crop((115,27,645,664)).save(destino+'/gn2-'+n+'.webp','WEBP',quality=90,method=6)
+corpo_ex=np.clip(cab_ex+ante_ex+pe_e_ex+pe_d_ex+cauda_ex,0,1)
+camadas['corpo']=(1.0-corpo_ex, A)
 for n,(m,base) in camadas.items():
     out=base.copy()
     if n=='cauda': al=np.where(xx<524, 1.0, alpha)
-    elif n=='corpo': al=A_corpo[...,3]/255
+    elif n=='braco': al=np.where(sangra, 1.0, alpha)
     else: al=alpha
     out[...,3]=np.clip(al*m*255,0,255)
-    salva(n, out)
-salva('braco', braco_img)
+    Image.fromarray(out.astype(np.uint8)).crop((115,27,645,664)).save(destino+'/gn-'+n+'.webp','WEBP',quality=90,method=6)
 print('ok')

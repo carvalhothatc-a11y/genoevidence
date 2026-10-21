@@ -73,7 +73,7 @@ data/rede-p53.json          rede da p53 do Início (dados da Iniciação Cientí
 data/noticias-escolhidas.json   notícias escolhidas à mão: aparecem primeiro até a data em "ate"
 genogame/                   o GenoGame: genogame.js (prédio, Geninho, falas, caderno), experimentos.js (as bancadas),
                             textos.js (português, inglês e espanhol), genogame.css e img/ (arte oficial do Geninho;
-                            gn2-*.webp são a arte recortada em partes que se mexem (com o braço esquerdo abaixado); os EPIs são desenhados por cima)
+                            gn-*.webp são a arte recortada em partes que se mexem; os EPIs são desenhados por cima)
 assets/css/shell.css        visual das abas
 assets/css/base.css, artigo.css   visual da página de leitura
 assets/js/i18n.js           idiomas (português, inglês e espanhol): seletor no topo e tradução dos textos fixos

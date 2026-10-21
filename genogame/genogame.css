@@ -106,7 +106,7 @@ html.ge-zoom body>main#gg{zoom:1}
 .gn .tudo{transform-box:fill-box;transform-origin:50% 100%;animation:respira 3.2s ease-in-out infinite}
 .gn .p-cabeca{transform-origin:360px 236px;animation:cabeca 4.6s ease-in-out infinite}
 .gn .p-cauda{transform-origin:526px 556px;animation:cauda 3.4s ease-in-out infinite}
-.gn .p-braco{transform-origin:266px 300px;animation:braco 3.8s ease-in-out infinite}
+.gn .p-braco{transform-origin:228px 372px;animation:braco 3.8s ease-in-out infinite}
 .gn .p-perna-e{transform-origin:305px 590px}
 .gn .p-perna-d{transform-origin:468px 600px}
 .gn .palpebra{transform:scaleY(0);animation:pisca 4.4s infinite}
@@ -127,9 +127,9 @@ html.ge-zoom body>main#gg{zoom:1}
 @keyframes cauda-anda{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
 @keyframes cabeca-anda{0%,50%,100%{transform:translateY(0) rotate(-1.4deg)}25%{transform:translateY(6px) rotate(-3.2deg)}75%{transform:translateY(6px) rotate(.4deg)}}
 @keyframes braco-anda{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
-/* acenar: ele levanta a mão e dá tchau */
-.gn.acena .p-braco{animation:tchau 1.4s ease-in-out 2}
-@keyframes tchau{0%,100%{transform:rotate(0)}25%,65%{transform:rotate(34deg)}45%,85%{transform:rotate(22deg)}}
+/* acenar: a pata levantada dá tchau de verdade */
+.gn.acena .p-braco{animation:tchau .42s ease-in-out 5}
+@keyframes tchau{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(12deg)}}
 .gn.pula .tudo{animation:pula .6s cubic-bezier(.3,.7,.4,1)}
 .gn.pula .p-perna-e,.gn.pula .p-perna-d{animation:encolhe .6s ease-out}
 @keyframes pula{0%{transform:translateY(0) scaleY(1)}18%{transform:translateY(0) scaleY(.92)}52%{transform:translateY(-28px) scaleY(1.05)}100%{transform:translateY(0) scaleY(1)}}
