@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-21T18:45:51.467883+00:00",
+ "atualizado_em": "2026-10-21T22:28:45.007362+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -55,27 +55,97 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Fiocruz promove 6ª Festa Carioca das Sementes Agroecológicas pelo Dia Mundial da Alimentação",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/fiocruz-promove-6a-festa-carioca-das-sementes-agroecologicas-pelo-dia-mundial-da-alimentacao",
-   "fonte": "Agência Fiocruz",
+   "titulo": "Conecta Florestal aproxima estudantes e empresas na Esalq-USP",
+   "resumo": "Evento gratuito terá mesa-redonda com a participação de especialistas que abordarão temas atuais, desafios e perspectivas do setor florestal, além de uma feira de carreiras",
+   "url": "https://agencia.fapesp.br/conecta-florestal-aproxima-estudantes-e-empresas-na-esalq-usp/59437",
+   "fonte": "Agência FAPESP",
    "idioma": "pt",
-   "data": "2026-10-20T19:21:15+00:00",
+   "data": "2026-10-21T22:28:45.007362+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Conecta Florestal brings students and companies closer together at Esalq-USP",
+     "resumo": "Free event will have a round table with the participation of experts who will address current issues, challenges and perspectives of the forest sector, as well as a career fair"
+    },
+    "es": {
+     "titulo": "Conecta Florestal acerca a estudiantes y empresas en Esalq-USP",
+     "resumo": "El evento gratuito contará con una mesa redonda con la participación de expertos que abordarán temas de actualidad, desafíos y perspectivas del sector forestal, así como una feria de carreras"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Encontro de Álgebra e Geometria Campinas-São Carlos",
+   "resumo": "Evento gratuito busca estimular a troca de conhecimento e criar novas possibilidades de colaboração científica. Inscrições abertas até a próxima segunda-feira (26/10)",
+   "url": "https://agencia.fapesp.br/encontro-de-algebra-e-geometria-campinas-sao-carlos/59445",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-21T22:28:45.007362+00:00",
    "tema": "Ciência",
-   "relevancia": 8,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/fma_0.jpg",
+   "relevancia": 7,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Campinas-São Carlos Algebra and Geometry Meeting",
+     "resumo": "A free event seeks to stimulate the exchange of knowledge and create new possibilities for scientific collaboration. Registration open until next Monday (10/26)"
+    },
+    "es": {
+     "titulo": "Encuentro de Álgebra y Geometría Campinas-São Carlos",
+     "resumo": "Un evento gratuito busca estimular el intercambio de conocimiento y crear nuevas posibilidades de colaboración científica. Inscripciones abiertas hasta el próximo lunes (26/10)"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Octavio Ianni, uma voz que atravessa o tempo",
+   "resumo": "No centenário do sociólogo, gravações de aulas ministradas em 1998 podem ser ouvidas em exposição na biblioteca do IFCH",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/21/octavio-ianni-uma-voz-que-atravessa-o-tempo/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-21T20:00:12+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/Man_20261021_Octavio_Ianni_Capa.jpg",
    "foco": {
-    "x": 50,
-    "y": 85
+    "inteira": true
    },
    "i18n": {
     "en": {
-     "titulo": "Fiocruz promotes 6th Carioca Festival of Agroecological Seeds for World Food Day"
+     "titulo": "Octavio Ianni, a voice that crosses time",
+     "resumo": "On the sociologist's centenary, recordings of classes taught in 1998 can be heard on display in the IFCH library"
     },
     "es": {
-     "titulo": "Fiocruz promueve el VI Festival Carioca de Semillas Agroecológicas por el Día Mundial de la Alimentación"
+     "titulo": "Octavio Ianni, una voz que cruza el tiempo",
+     "resumo": "En el centenario del sociólogo, las grabaciones de las clases impartidas en 1998 se pueden escuchar en exhibición en la biblioteca del IFCH"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O colesterol pode perturbar o sistema de limpeza do cérebro na doença de Alzheimer",
+   "resumo": "O sistema glifático elimina as toxinas do cérebro, mas isso parece ser interrompido na doença de Alzheimer, e o colesterol pode estar envolvido",
+   "url": "https://www.newscientist.com/article/2595089-cholesterol-may-disrupt-the-brains-cleaning-system-in-alzheimers-disease/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-21T19:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 7,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317433383.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Cholesterol may disrupt the brain’s cleaning system in Alzheimer’s disease",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El colesterol puede alterar el sistema de limpieza del cerebro en la enfermedad de Alzheimer",
+     "resumo": "El sistema glifático elimina las toxinas del cerebro, pero esto parece estar alterado en la enfermedad de Alzheimer, y el colesterol puede estar involucrado"
+    }
+   },
+   "resumo_original": "The glymphatic system flushes toxins out of the brain, but this seems to be disrupted in Alzheimer's disease, and cholesterol may be involved"
   },
   {
    "tipo": "noticia",
@@ -105,32 +175,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Mesmo sem olhos, ostras e mexilhões possuem grande diversidade de proteínas que percebem a luz",
-   "resumo": "Estudo da USP e de colaboradores norte-americanos revela que o repertório químico na pele desses animais chega a superar a variedade encontrada na retina humana, indicando um complexo sistema de fotopercepção",
-   "url": "https://agencia.fapesp.br/mesmo-sem-olhos-ostras-e-mexilhoes-possuem-grande-diversidade-de-proteinas-que-percebem-a-luz/59433",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-21T18:45:51.467883+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59433.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Even without eyes, oysters and mussels have a great diversity of proteins that perceive light",
-     "resumo": "A study by USP and US collaborators reveals that the chemical repertoire in the skin of these animals surpasses the variety found in the human retina, indicating a complex photoperception system"
-    },
-    "es": {
-     "titulo": "Incluso sin ojos, las ostras y los mejillones tienen una gran diversidad de proteínas que perciben la luz",
-     "resumo": "Un estudio de la USP y colaboradores estadounidenses revela que el repertorio químico en la piel de estos animales supera la variedad encontrada en la retina humana, lo que indica un complejo sistema de fotopercepción"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Semana do Livro e da Biblioteca na USP vai discutir inovação e futuro da pesquisa científica",
    "resumo": "A edição deste ano do evento será realizada entre os dias 26 e 30 de outubro, em várias unidades e campi da Universidade",
    "url": "https://jornal.usp.br/universidade/semana-do-livro-e-da-biblioteca-na-usp-vai-discutir-inovacao-e-futuro-da-pesquisa-cientifica/",
@@ -152,32 +196,6 @@
     "es": {
      "titulo": "La Semana del Libro y la Biblioteca de la USP debatirá sobre la innovación y el futuro de la investigación científica",
      "resumo": "La edición de este año del evento se celebrará entre el 26 y el 30 de octubre, en varias unidades y campus de la Universidad"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "SBPC premia alunas que se destacaram em atividades científicas",
-   "resumo": "Estudantes do ensino médio e da graduação podem se inscrever até a próxima sexta-feira (30/10) para a 8ª edição do Prêmio Carolina Bori Ciência e Mulher",
-   "url": "https://agencia.fapesp.br/sbpc-premia-alunas-que-se-destacaram-em-atividades-cientificas/59436",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-21T13:57:04.376266+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59436.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "i18n": {
-    "en": {
-     "titulo": "SBPC awards students who have excelled in scientific activities",
-     "resumo": "High school and undergraduate students can apply until next Friday (10/30) for the 8th edition of the Carolina Bori Science and Women's Award"
-    },
-    "es": {
-     "titulo": "SBPC premia a los estudiantes que han sobresalido en actividades científicas",
-     "resumo": "Los estudiantes de bachillerato y pregrado pueden postularse hasta el próximo viernes (30/10) para la 8ª edición del Carolina Bori Science and Women's Award"
     }
    }
   },
@@ -234,97 +252,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O candidato republicano ao Congresso Tom Stalcup sobre como ambas as partes abusam da ciência para obter ganhos políticos",
-   "resumo": "A Scientific American conversou com o candidato ao quarto distrito congressional de Massachusetts sobre mudanças climáticas, desinformação e por que, quando se trata de assistência médica, algum socialismo pode ser necessário",
-   "url": "https://www.scientificamerican.com/article/republican-congressional-candidate-tom-stalcup-on-how-both-parties-abuse-science-for-political-gain/",
+   "titulo": "As pessoas estão codificando aplicativos com direitos autorais com IA – as empresas de tecnologia vão processar?",
+   "resumo": "Toda vez que uma nova tecnologia chega à internet, há uma batalha entre os direitos dos usuários e os das grandes empresas. Para ver como isso vai funcionar com a IA, o colunista Jacob Aron olha para exemplos do passado",
+   "url": "https://www.newscientist.com/article/2595251-people-are-vibe-coding-copyrighted-apps-with-ai-will-tech-firms-sue/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-21T19:18:25+00:00",
+   "tema": "Ciência",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317609661.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "People are vibe coding copyrighted apps with AI – will tech firms sue?",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La gente está codificando aplicaciones con derechos de autor con IA: ¿demandarán las empresas de tecnología?",
+     "resumo": "Cada vez que una nueva tecnología llega a Internet, hay una batalla entre los derechos de los usuarios y las principales empresas. Para ver cómo se desarrollará esto con la IA, el columnista Jacob Aron analiza ejemplos del pasado"
+    }
+   },
+   "resumo_original": "Every time a new technology hits the internet, there is a battle between the rights of users and major companies. To see how this will play out with AI, columnist Jacob Aron looks to examples from the past"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O líder da National Science Foundation, Brian Stone, vai se aposentar sem um substituto claro à vista",
+   "resumo": "O candidato do presidente Donald Trump para substituir Stone, James O’Neill, ainda não teve uma audiência de confirmação no Senado, deixando a futura liderança da NSF incerta",
+   "url": "https://www.scientificamerican.com/article/national-science-foundation-leader-brian-stone-to-retire-with-no-clear-replacement-in-sight/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-21T10:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 7,
-   "imagem": "https://static.scientificamerican.com/dam/asset/7bf3e60c-8805-4474-8bcf-ac69248d5fec/Tom-Stalcup.jpeg?m=1792507334.262&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "titulo_original": "Republican congressional candidate Tom Stalcup on how both parties abuse science for political gain",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El candidato republicano al Congreso Tom Stalcup habla sobre cómo ambos partidos abusan de la ciencia para obtener beneficios políticos",
-     "resumo": "Scientific American habló con el candidato para el cuarto distrito del Congreso de Massachusetts sobre el cambio climático, la desinformación y por qué, cuando se trata de atención médica, se puede requerir algo de socialismo"
-    }
-   },
-   "resumo_original": "Scientific American spoke to the candidate for Massachusetts’s fourth congressional district about climate change, misinformation and why, when it comes to health care, some socialism may be required"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A queda do nível do mar devido ao El Niño atingirá manguezais e corais",
-   "resumo": "À medida que o nível do mar sobe no Pacífico oriental, eles estão caindo ao redor da Austrália e do Triângulo de Coral, deixando alguns manguezais e corais altos e secos",
-   "url": "https://www.newscientist.com/article/2594961-falling-sea-levels-due-to-el-nino-will-hit-mangroves-and-corals/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-21T17:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317553044.jpg",
+   "data": "2026-10-21T19:30:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/e7ddb6ad-91e2-498f-917d-5de97db11f7f/NSF.jpg?m=1792614894.401&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Falling sea levels due to El Niño will hit mangroves and corals",
+   "titulo_original": "National Science Foundation leader Brian Stone to retire with no clear replacement in sight",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Caída del nivel del mar por El Niño afectará a manglares y corales",
-     "resumo": "A medida que aumenta el nivel del mar en el Pacífico oriental, están cayendo alrededor de Australia y el Triángulo de Coral, dejando algunos manglares y corales altos y secos"
+     "titulo": "El líder de la National Science Foundation, Brian Stone, se jubilará sin un reemplazo claro a la vista",
+     "resumo": "El candidato del presidente Donald Trump para reemplazar a Stone, James O’Neill, aún no ha tenido una audiencia de confirmación en el Senado, lo que deja poco claro el futuro liderazgo de la NSF"
     }
    },
-   "resumo_original": "As sea levels rise in the eastern Pacific, they are falling around Australia and the Coral Triangle, leaving some mangroves and corals high and dry"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Alguns danos climáticos agora são inevitáveis, mesmo se limparmos nosso ato",
-   "resumo": "Com o mundo provavelmente ultrapassando 1,5°C de aquecimento, o plano agora é reduzir nossas emissões de carbono depois de ultrapassar a meta. Que dano duradouro isso terá?",
-   "url": "https://www.newscientist.com/article/2594773-some-climate-damage-is-now-unavoidable-even-if-we-clean-up-our-act/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-21T17:00:00+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317321333.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Some climate damage is now unavoidable even if we clean up our act",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Algunos daños climáticos ahora son inevitables, incluso si limpiamos nuestro acto",
-     "resumo": "Dado que es probable que el mundo supere los 1,5 °C de calentamiento, el plan ahora es reducir nuestras emisiones de carbono después de superar el objetivo. ¿Qué daño duradero tendrá esto?"
-    }
-   },
-   "resumo_original": "With the world looking likely to exceed 1.5°C of warming, the plan is now to reduce our carbon emissions after overshooting the target. What lasting damage will this have?"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Associação de variantes genéticas EGLN1 e EGLN3 com a gravidade da COVID-19 em uma população mexicana",
-   "resumo": "",
-   "url": "https://www.nature.com/articles/s41598-026-74011-7",
-   "fonte": "Nature · Genética",
-   "idioma": "en",
-   "data": "2026-10-21T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 6,
-   "imagem": "",
-   "titulo_original": "Association of EGLN1 and EGLN3 genetic variants with COVID-19 severity in a Mexican population",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Asociación de las variantes genéticas EGLN1 y EGLN3 con la gravedad del COVID-19 en una población mexicana"
-    }
-   }
+   "resumo_original": "President Donald Trump’s nominee to replace Stone, James O’Neill, has yet to have a confirmation hearing in the Senate, leaving the future leadership of the NSF unclear"
   },
   {
    "tipo": "noticia",
@@ -371,6 +345,31 @@
     }
    },
    "resumo_original": "De novo design of enantioselective artificial metalloenzyme photocatalysts"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Os cientistas colocaram um pântano de sal em uma máquina de ondas gigantes: aqui está o que eles aprenderam",
+   "resumo": "Experimentos mostram como esses ecossistemas poderiam proteger os litorais de grandes tempestades — além disso, novas evidências sugerem como os denisovanos poderiam ter sido.",
+   "url": "https://www.nature.com/articles/d41586-026-03376-6",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-21T00:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03376-6/d41586-026-03376-6_53879440.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists put a salt marsh in a giant wave-machine: here's what they learned",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos colocaron una marisma en una máquina de olas gigante: esto es lo que aprendieron",
+     "resumo": "El experimento muestra cómo estos ecosistemas podrían proteger las costas de grandes tormentas. Además, nuevas pruebas apuntan a cómo podrían haber sido los denisovanos."
+    }
+   },
+   "resumo_original": "Experiment shows how these ecosystems could protect coastlines from huge storms — plus, new evidence hints at what Denisovans might have looked like."
   }
  ],
  "artigos": [
@@ -385,7 +384,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Comment on \"Associations of neighborhood deprivation with breast cancer tumor genomics, targeted treatment use, and survival\".",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Comentario en “Asociations of neighborhood deprivation with breast cancer tumor genomics, targeted treatment use, and survival”."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -398,7 +402,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Long-Term Treadmill Exercise Improves Spatial Memory and Increases SOX2-Positive Cells in the Hippocampus of Middle-Aged Male Mice.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El ejercicio en cinta a largo plazo mejora la memoria espacial y aumenta las células positivas para SOX2 en el hipocampo de ratones machos de mediana edad."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -411,7 +420,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Brief Report: Characterization of the Potentially Actionable TP53 Y220C Mutation in Non-Small Cell Lung Cancer. A Multicenter, European Thoracic Oncology Platform Study.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Breve informe: Caracterización de la mutación TP53 Y220C potencialmente accionable en el cáncer de pulmón de células no pequeñas. Un estudio multicéntrico de la plataforma europea de oncología torácica."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -424,7 +438,12 @@
    "acesso_aberto": false,
    "tema": "Ciência",
    "titulo_original": "Local Tissue Damage Induced by Snakebite Envenoming: Mechanisms and Therapeutic Advances.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Daño tisular local inducido por envenenamiento por mordedura de serpiente: mecanismos y avances terapéuticos."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -437,7 +456,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Site-Specific Outcomes and Genomics in Metastatic Pancreatic Ductal Adenocarcinoma.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Resultados específicos del sitio y genómica en el adenocarcinoma ductal pancreático metastásico."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -450,7 +474,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Mutational Signatures and Hypermutation Phenotypes Define Bladder Cancers Arising in Waterpipe and Cigarette Smokers.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las firmas mutacionales y los fenotipos de hipermutación definen los cánceres de vejiga que surgen en los fumadores de pipas de agua y cigarrillos."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -463,7 +492,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "TP53 mutations and IGHV in naïve chronic lymphocytic leukemia: retrospective analysis of data from a Spanish collaborative network.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Mutaciones de TP53 e IGHV en leucemia linfocítica crónica no tratada: análisis retrospectivo de datos de una red colaborativa española."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -491,7 +525,7 @@
    "data": "2026-10-20T00:00:00+00:00",
    "doi": "10.1007/s12687-026-00960-1",
    "url": "https://doi.org/10.1007/s12687-026-00960-1",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Câncer",
    "titulo_original": "Organization of the first national workshop for families in Switzerland concerned with hereditary cancer syndromes.",
    "traduzido": true,
@@ -503,14 +537,21 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Genomic and immune profiling characterizes immune heterogeneity and a TIGIT-associated subtype in intrahepatic cholangiocarcinoma.",
+   "titulo": "O perfil genômico e imunológico caracteriza a heterogeneidade imune e um subtipo associado ao TIGIT no colangiocarcinoma intra-hepático.",
    "autores": "Korosteleva A, Reschke JS, Yi D, Marhenke S, Zhao J, Volk V, Reineke-Plaaß T, Peter S, Hoffmann C, Tran DDH, Gerdes C…",
    "revista": "Hepatol Commun",
    "data": "2026-10-19T00:00:00+00:00",
    "doi": "10.1097/hc9.0000000000001052",
    "url": "https://doi.org/10.1097/hc9.0000000000001052",
-   "acesso_aberto": false,
-   "tema": "Genética"
+   "acesso_aberto": true,
+   "tema": "Genética",
+   "titulo_original": "Genomic and immune profiling characterizes immune heterogeneity and a TIGIT-associated subtype in intrahepatic cholangiocarcinoma.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El perfil genómico e inmune caracteriza la heterogeneidad inmune y un subtipo asociado a TIGIT en el colangiocarcinoma intrahepático."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -523,7 +564,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Digital image analysis-based quantification of p53 immunohistochemistry in gastric cancer: a systematic comparison of three-tier cutoff-derivation strategies in tissue microarrays.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Cuantificación basada en el análisis de imágenes digitales de la inmunohistoquímica de p53 en el cáncer gástrico: una comparación sistemática de estrategias de derivación de corte de tres niveles en micromatrices de tejidos."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -551,10 +597,15 @@
    "data": "2026-10-19T00:00:00+00:00",
    "doi": "10.70962/jhi.20260076",
    "url": "https://doi.org/10.70962/jhi.20260076",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Genética",
    "titulo_original": "Genotype-phenotype analysis in 333 individuals with heterozygous variants in NFKB1.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Análisis genotipo-fenotipo en 333 individuos con variantes heterocigóticas en NFKB1."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -582,7 +633,7 @@
    "data": "2026-10-18T00:00:00+00:00",
    "doi": "10.1111/cas.70568",
    "url": "https://doi.org/10.1111/cas.70568",
-   "acesso_aberto": false,
+   "acesso_aberto": true,
    "tema": "Ciência",
    "titulo_original": "Distinct Clinicogenomic Contexts of BRAF-Altered Gliomas and Glioneuronal Tumors: A Nationwide Real-World Study.",
    "traduzido": true,
@@ -1078,6 +1129,11 @@
   "falling sea levels due to el nino will hit mangroves and corals": "2026-10-21T18:45:51.467883+00:00",
   "some climate damage is now unavoidable even if we clean up our act": "2026-10-21T18:45:51.467883+00:00",
   "super typhoon champi sets the record for strongest storm of 2026": "2026-10-21T18:45:51.467883+00:00",
-  "de novo design of enantioselective artificial metalloenzyme photocatalysts": "2026-10-21T18:45:51.467883+00:00"
+  "de novo design of enantioselective artificial metalloenzyme photocatalysts": "2026-10-21T18:45:51.467883+00:00",
+  "octavio ianni uma voz que atravessa o tempo": "2026-10-21T22:28:45.007362+00:00",
+  "cholesterol may disrupt the brains cleaning system in alzheimers disease": "2026-10-21T22:28:45.007362+00:00",
+  "people are vibe coding copyrighted apps with ai will tech firms sue": "2026-10-21T22:28:45.007362+00:00",
+  "national science foundation leader brian stone to retire with no clear replacement in sight": "2026-10-21T22:28:45.007362+00:00",
+  "scientists put a salt marsh in a giant wave machine here s what they learned": "2026-10-21T22:28:45.007362+00:00"
  }
 }
