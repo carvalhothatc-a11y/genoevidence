@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-21T22:28:45.007362+00:00",
+ "atualizado_em": "2026-10-22T01:37:48.392910+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -55,6 +55,58 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Mesmo sem olhos, ostras e mexilhões possuem grande diversidade de proteínas que percebem a luz",
+   "resumo": "Estudo da USP e de colaboradores norte-americanos revela que o repertório químico na pele desses animais chega a superar a variedade encontrada na retina humana, indicando um complexo sistema de fotopercepção",
+   "url": "https://agencia.fapesp.br/mesmo-sem-olhos-ostras-e-mexilhoes-possuem-grande-diversidade-de-proteinas-que-percebem-a-luz/59433",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-22T01:37:48.392910+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59433.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Even without eyes, oysters and mussels have a great diversity of proteins that perceive light",
+     "resumo": "A study by USP and US collaborators reveals that the chemical repertoire in the skin of these animals surpasses the variety found in the human retina, indicating a complex photoperception system"
+    },
+    "es": {
+     "titulo": "Incluso sin ojos, las ostras y los mejillones tienen una gran diversidad de proteínas que perciben la luz",
+     "resumo": "Un estudio de la USP y colaboradores estadounidenses revela que el repertorio químico en la piel de estos animales supera la variedad encontrada en la retina humana, lo que indica un complejo sistema de fotopercepción"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "SBPC premia alunas que se destacaram em atividades científicas",
+   "resumo": "Estudantes do ensino médio e da graduação podem se inscrever até a próxima sexta-feira (30/10) para a 8ª edição do Prêmio Carolina Bori Ciência e Mulher",
+   "url": "https://agencia.fapesp.br/sbpc-premia-alunas-que-se-destacaram-em-atividades-cientificas/59436",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-22T01:37:48.392910+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://agencia.fapesp.br/files/post/59436.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "SBPC awards students who have excelled in scientific activities",
+     "resumo": "High school and undergraduate students can apply until next Friday (10/30) for the 8th edition of the Carolina Bori Science and Women's Award"
+    },
+    "es": {
+     "titulo": "SBPC premia a los estudiantes que han sobresalido en actividades científicas",
+     "resumo": "Los estudiantes de bachillerato y pregrado pueden postularse hasta el próximo viernes (30/10) para la 8ª edición del Carolina Bori Science and Women's Award"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Conecta Florestal aproxima estudantes e empresas na Esalq-USP",
    "resumo": "Evento gratuito terá mesa-redonda com a participação de especialistas que abordarão temas atuais, desafios e perspectivas do setor florestal, além de uma feira de carreiras",
    "url": "https://agencia.fapesp.br/conecta-florestal-aproxima-estudantes-e-empresas-na-esalq-usp/59437",
@@ -77,23 +129,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Encontro de Álgebra e Geometria Campinas-São Carlos",
-   "resumo": "Evento gratuito busca estimular a troca de conhecimento e criar novas possibilidades de colaboração científica. Inscrições abertas até a próxima segunda-feira (26/10)",
-   "url": "https://agencia.fapesp.br/encontro-de-algebra-e-geometria-campinas-sao-carlos/59445",
-   "fonte": "Agência FAPESP",
+   "titulo": "Proibir bets é política de segurança pública",
+   "resumo": "Por Bruno Paes Manso, pesquisador do Núcleo de Estudos da Violência da USP",
+   "url": "https://jornal.usp.br/artigos/proibir-bets-e-politica-de-seguranca-publica/",
+   "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-21T22:28:45.007362+00:00",
+   "data": "2026-10-21T21:30:30+00:00",
    "tema": "Ciência",
    "relevancia": 7,
-   "imagem": "",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261021_bruno-paes-manso.jpg",
+   "foco": {
+    "x": 61,
+    "y": 50
+   },
    "i18n": {
     "en": {
-     "titulo": "Campinas-São Carlos Algebra and Geometry Meeting",
-     "resumo": "A free event seeks to stimulate the exchange of knowledge and create new possibilities for scientific collaboration. Registration open until next Monday (10/26)"
+     "titulo": "Banning bets is public safety policy",
+     "resumo": "By Bruno Paes Manso, researcher at USP's Center for the Study of Violence"
     },
     "es": {
-     "titulo": "Encuentro de Álgebra y Geometría Campinas-São Carlos",
-     "resumo": "Un evento gratuito busca estimular el intercambio de conocimiento y crear nuevas posibilidades de colaboración científica. Inscripciones abiertas hasta el próximo lunes (26/10)"
+     "titulo": "Prohibir las apuestas es una política de seguridad pública",
+     "resumo": "Por Bruno Paes Manso, investigador del Centro para el Estudio de la Violencia de la USP"
     }
    }
   },
@@ -146,58 +202,6 @@
     }
    },
    "resumo_original": "The glymphatic system flushes toxins out of the brain, but this seems to be disrupted in Alzheimer's disease, and cholesterol may be involved"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Idosos mais ativos têm volume cerebral preservado em áreas de memória e raciocínio, mostra estudo",
-   "resumo": "Ao analisar dados de 2,7 mil indivíduos em torno de 70 anos, pesquisadores da Unesp concluíram que o movimento ajuda a conter a atrofia em estruturas vitais, como o hipocampo. Resultado reforça o papel do exercício na prevenção do declínio…",
-   "url": "https://agencia.fapesp.br/idosos-mais-ativos-tem-volume-cerebral-preservado-em-areas-de-memoria-e-raciocinio-mostra-estudo/59432",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-21T18:45:51.467883+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://agencia.fapesp.br/files/post/59432.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "i18n": {
-    "en": {
-     "titulo": "More active older adults have preserved brain volume in areas of memory and reasoning, study shows",
-     "resumo": "By analyzing data from 2,700 individuals aged around 70 years, Unesp researchers concluded that the movement helps to contain atrophy in vital structures, such as the hippocampus. The result reinforces the role of exercise in preventing decline…"
-    },
-    "es": {
-     "titulo": "Un estudio muestra que los adultos mayores más activos han preservado el volumen cerebral en áreas de memoria y razonamiento",
-     "resumo": "Al analizar datos de 2.700 individuos de alrededor de 70 años, los investigadores de la Unesp concluyeron que el movimiento ayuda a contener la atrofia en estructuras vitales, como el hipocampo. El resultado refuerza el papel del ejercicio en la prevención del deterioro..."
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Semana do Livro e da Biblioteca na USP vai discutir inovação e futuro da pesquisa científica",
-   "resumo": "A edição deste ano do evento será realizada entre os dias 26 e 30 de outubro, em várias unidades e campi da Universidade",
-   "url": "https://jornal.usp.br/universidade/semana-do-livro-e-da-biblioteca-na-usp-vai-discutir-inovacao-e-futuro-da-pesquisa-cientifica/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-21T17:42:09+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2021/07/20210705_00_biblioteca_estudante_notebook.jpg",
-   "foco": {
-    "x": 0,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Book and Library Week at USP will discuss innovation and the future of scientific research",
-     "resumo": "This year's edition of the event will be held between October 26 and 30, in several units and campuses of the University"
-    },
-    "es": {
-     "titulo": "La Semana del Libro y la Biblioteca de la USP debatirá sobre la innovación y el futuro de la investigación científica",
-     "resumo": "La edición de este año del evento se celebrará entre el 26 y el 30 de octubre, en varias unidades y campus de la Universidad"
-    }
-   }
   },
   {
    "tipo": "noticia",
@@ -277,6 +281,28 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Detecção em todo o genoma de interações genótipo-ambiente em escala de biobanco com fastGxE",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41588-026-02809-2",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-10-22T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 4,
+   "imagem": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41588-026-02809-2/MediaObjects/41588_2026_2809_Fig1_HTML.png",
+   "foco": {
+    "inteira": true
+   },
+   "titulo_original": "Genome-wide detection of genotype–environment interactions at biobank scale with fastGxE",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Detección en todo el genoma de interacciones genotipo-ambiente a escala de biobanco con fastGxE"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "O líder da National Science Foundation, Brian Stone, vai se aposentar sem um substituto claro à vista",
    "resumo": "O candidato do presidente Donald Trump para substituir Stone, James O’Neill, ainda não teve uma audiência de confirmação no Senado, deixando a futura liderança da NSF incerta",
    "url": "https://www.scientificamerican.com/article/national-science-foundation-leader-brian-stone-to-retire-with-no-clear-replacement-in-sight/",
@@ -327,49 +353,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Projeto de novo de fotocatalisadores de metaloenzimas artificiais enantiosseletivos",
-   "resumo": "Projeto de novo de fotocatalisadores de metaloenzimas artificiais enantiosseletivos",
-   "url": "https://www.nature.com/articles/s41586-026-11317-6",
-   "fonte": "Nature",
+   "titulo": "Demasiado RNA pode privar as células de energia, descobrem cientistas",
+   "resumo": "Os cientistas descobriram um perigo inesperado à espreita dentro das células: o excesso de RNA pode danificar as estruturas responsáveis pela produção de energia. Um novo estudo descobriu que o excesso de RNA, incluindo o RNA mensageiro normalmente essencial (mRNA), pode...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261020085023.htm",
+   "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-21T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "",
-   "titulo_original": "De novo design of enantioselective artificial metalloenzyme photocatalysts",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Diseño de novo de fotocatalizadores de metaloenzimas artificiales enantioselectivos",
-     "resumo": "Diseño de novo de fotocatalizadores de metaloenzimas artificiales enantioselectivos"
-    }
-   },
-   "resumo_original": "De novo design of enantioselective artificial metalloenzyme photocatalysts"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Os cientistas colocaram um pântano de sal em uma máquina de ondas gigantes: aqui está o que eles aprenderam",
-   "resumo": "Experimentos mostram como esses ecossistemas poderiam proteger os litorais de grandes tempestades — além disso, novas evidências sugerem como os denisovanos poderiam ter sido.",
-   "url": "https://www.nature.com/articles/d41586-026-03376-6",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-21T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03376-6/d41586-026-03376-6_53879440.jpg",
+   "data": "2026-10-21T13:02:34+00:00",
+   "tema": "Genética",
+   "relevancia": 3,
+   "imagem": "https://www.sciencedaily.com/images/1920/glowing-mitochondria-cell-biology.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Scientists put a salt marsh in a giant wave-machine: here's what they learned",
+   "titulo_original": "Too much RNA can starve cells of energy, scientists discover",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Los científicos colocaron una marisma en una máquina de olas gigante: esto es lo que aprendieron",
-     "resumo": "El experimento muestra cómo estos ecosistemas podrían proteger las costas de grandes tormentas. Además, nuevas pruebas apuntan a cómo podrían haber sido los denisovanos."
+     "titulo": "Demasiado ARN puede privar a las células de energía, descubren los científicos",
+     "resumo": "Los científicos han descubierto un peligro inesperado que acecha dentro de las células: demasiado ARN puede dañar las estructuras responsables de producir energía. Un nuevo estudio encontró que el exceso de ARN, incluido el ARN mensajero normalmente esencial (ARNm), puede..."
     }
    },
-   "resumo_original": "Experiment shows how these ecosystems could protect coastlines from huge storms — plus, new evidence hints at what Denisovans might have looked like."
+   "resumo_original": "Scientists have uncovered an unexpected danger lurking inside cells: too much RNA can damage the structures responsible for producing energy. A new study found that excess RNA, including the normally essential messenger RNA (mRNA), can…"
   }
  ],
  "artigos": [
@@ -744,7 +749,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Oral squamous cell carcinoma: A modern review of pathogenesis and treatment.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Carcinoma oral de células escamosas: una revisión moderna de la patogénesis y el tratamiento."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -925,9 +935,6 @@
  ],
  "erros": [],
  "mostradas": {
-  "cellular and spatial context of genetic convergence between insomnia liability and dti alps perivascular diffusivity": "2026-10-12T00:22:42.302403+00:00",
-  "hoxa5 silencing via dna methylation reveals the critical role of hox gene deregulation in oral carcinogenesis": "2026-10-12T00:22:42.302403+00:00",
-  "nobel de medicina 2026 vai para a optogenetica controlar neuronios com luz": "2026-10-12T00:22:42.302403+00:00",
   "novas fronteiras amazonicas": "2026-10-12T18:02:44.731694+00:00",
   "nobel week light controlled brains particles from outer space and mirror molecules": "2026-10-12T18:02:44.731694+00:00",
   "a unique shape a 3d einstein tile has been discovered": "2026-10-12T18:02:44.731694+00:00",
@@ -1134,6 +1141,9 @@
   "cholesterol may disrupt the brains cleaning system in alzheimers disease": "2026-10-21T22:28:45.007362+00:00",
   "people are vibe coding copyrighted apps with ai will tech firms sue": "2026-10-21T22:28:45.007362+00:00",
   "national science foundation leader brian stone to retire with no clear replacement in sight": "2026-10-21T22:28:45.007362+00:00",
-  "scientists put a salt marsh in a giant wave machine here s what they learned": "2026-10-21T22:28:45.007362+00:00"
+  "scientists put a salt marsh in a giant wave machine here s what they learned": "2026-10-21T22:28:45.007362+00:00",
+  "proibir bets e politica de seguranca publica": "2026-10-22T01:37:48.392910+00:00",
+  "genome wide detection of genotypeenvironment interactions at biobank scale with fastgxe": "2026-10-22T01:37:48.392910+00:00",
+  "too much rna can starve cells of energy scientists discover": "2026-10-22T01:37:48.392910+00:00"
  }
 }
