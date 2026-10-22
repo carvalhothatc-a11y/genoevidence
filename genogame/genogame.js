@@ -51,7 +51,15 @@
   let E = NOVO(), versaoSalva = 2;
   try { const s = JSON.parse(localStorage.getItem(CHAVE) || "null"); if (s && typeof s === "object") { versaoSalva = s.v || 1; E = Object.assign(NOVO(), s); } } catch (e) {}
   ["feitos", "cartas", "vistos", "fases", "etapas", "itens", "falas", "retomar"].forEach(k => { if (!E[k] || typeof E[k] !== "object") E[k] = {}; });
-  const salvar = () => { try { localStorage.setItem(CHAVE, JSON.stringify(E)); } catch (e) {} };
+  let zerando = false;
+  const salvar = () => { if (zerando) return; try { localStorage.setItem(CHAVE, JSON.stringify(E)); } catch (e) {} };
+  // começar do zero: apaga o progresso deste aparelho (só a versão kids continua como estava) e recarrega;
+  // nada mais é gravado até a página recarregar
+  function zerar() {
+    const kids = !!E.kids; zerando = true;
+    try { localStorage.removeItem(CHAVE); if (kids) localStorage.setItem(CHAVE, JSON.stringify({ v: 2, kids: true })); } catch (er) {}
+    location.reload();
+  }
   function aplicarKids() { KIDS = !!E.kids; html.classList.toggle("gg-kids", KIDS); if (KIDS && typeof maiusculas === "function") maiusculas(document.getElementById("gg")); }
   // versão kids: o CSS já põe tudo em maiúscula; os textos desenhados nas cenas (SVG) são trocados aqui também,
   // porque nem todo navegador aplica o CSS a eles (o Safari, por exemplo). Só textos sem outros elementos dentro.
@@ -1301,7 +1309,7 @@
       const r = e.target.closest("[data-repetir]");
       if (r) { const h = H(r.dataset.repetir); p.fechar(); if (h) comando({ h }); }
     });
-    $("#ggZerar", p.corpo).addEventListener("click", () => { if (confirm(KIDS ? caixaAlta(t("ui.recomecarConfirma")) : t("ui.recomecarConfirma"))) { try { localStorage.removeItem(CHAVE); } catch (er) {} location.reload(); } });
+    $("#ggZerar", p.corpo).addEventListener("click", () => { if (confirm(KIDS ? caixaAlta(t("ui.recomecarConfirma")) : t("ui.recomecarConfirma"))) zerar(); });
     $(".gg-kids-bt", p.corpo).addEventListener("click", e => {
       trocarKids(); const b = e.currentTarget; b.setAttribute("aria-checked", String(KIDS)); $("b", b).textContent = t("ui.kids"); $("small", b).textContent = t("ui.kidsTxt");
       mostrar($(".gg-aba[aria-selected=true]", p.corpo).dataset.aba);
@@ -1486,7 +1494,11 @@
       ponto(s, e) { const pt = s.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY; const m = s.getScreenCTM(); return m ? pt.matrixTransform(m.inverse()) : { x: 0, y: 0 }; },
       etapa(n, total, titulo, texto, extra) {
         lado.innerHTML = '<p class="etapa">' + esc(t("ui.etapa", { n, t: total })) + "</p><h3>" + esc(titulo) + "</h3><p>" + texto + "</p>" + (extra || "") + '<div class="gg-ret"></div><div class="gg-acoes"></div>';
-        if (avisar) { avisar = false; $(".gg-ret", lado).innerHTML = '<div class="gg-retorno info"><span>' + esc(t("ui.retomando")) + "</span></div>"; }
+        if (avisar) {   // continua de onde parou, com a opção de recomeçar a atividade do início
+          avisar = false;
+          $(".gg-ret", lado).innerHTML = '<div class="gg-retorno info"><span>' + esc(t("ui.retomando")) + ' <button type="button" class="gg-link-bt" id="ggDoInicio">' + esc(t("ui.doInicio")) + "</button></span></div>";
+          $("#ggDoInicio", lado).addEventListener("click", () => { delete E.retomar[id]; salvar(); vivo = false; p.fechar(); setTimeout(() => abrirExperimento(id, opc), 120); });
+        }
         return { ret: $(".gg-ret", lado), acoes: $(".gg-acoes", lado) };
       },
       retorno(tipo, h) { const r = $(".gg-ret", lado); if (r) r.innerHTML = h ? '<div class="gg-retorno ' + tipo + '">' + "<span>" + h + "</span></div>" : ""; },
@@ -1697,7 +1709,7 @@
       else { atualizarHots(); boasVindas(); }
     });
     const zr = $("#ggDoZero", c);
-    if (zr) zr.addEventListener("click", () => { if (confirm(KIDS ? caixaAlta(t("ui.recomecarConfirma")) : t("ui.recomecarConfirma"))) { try { localStorage.removeItem(CHAVE); } catch (er) {} location.reload(); } });
+    if (zr) zr.addEventListener("click", () => { if (confirm(KIDS ? caixaAlta(t("ui.recomecarConfirma")) : t("ui.recomecarConfirma"))) zerar(); });
     setTimeout(() => $("#ggJogar", c).focus({ preventScroll: true }), 60);
   }
   async function introducao() {
