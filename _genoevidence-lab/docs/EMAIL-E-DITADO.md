@@ -81,11 +81,47 @@ Aí é preciso domínio verificado:
 > corretamente. Cairia em spam ou seria recusada, e só se descobriria quando o e-mail importante
 > não chegasse.
 
+## O documento em Word
+
+Botão **“Baixar em Word”** e, com o envio ligado, **“Enviar o Word por e-mail”**.
+
+O documento é **reescrito em linguagem de relatório** — foi a escolha da responsável, para o texto
+poder ir junto do TCC. Formalizar tem um risco conhecido: ao arrumar a frase, um modelo tende a
+endurecer dúvida em afirmação e a preencher o que falta. Por isso existem três travas.
+
+**1. O original vai junto.** A anotação como foi ditada fica no fim do documento, sem alteração.
+Nada se perde, e dá para conferir se a reescrita mudou o sentido.
+
+**2. O documento diz que foi reescrito**, numa caixa em destaque, logo abaixo do título:
+
+> Este texto foi reescrito automaticamente a partir da sua anotação, para linguagem de relatório.
+> A anotação original está no fim do documento, sem alteração — confira se a reescrita manteve o
+> que você quis dizer.
+
+**3. Nenhum número novo.** Se aparecer no texto formal um valor que não estava na anotação, a
+reescrita é **recusada inteira** e o documento sai como cópia fiel, dizendo por quê. Num registro
+de laboratório, um número inventado é pior que texto feio.
+
+As instruções ao modelo também proíbem explicitamente transformar dúvida em certeza: *"provavelmente
+contaminou" pode virar "possivelmente houve contaminação", mas NUNCA "houve contaminação"*.
+
+### Como o .docx é gerado
+
+Sem dependência nova: um `.docx` é um ZIP com XML dentro, e o projeto já usa `fflate` para ler
+documentos do Word — agora ele também escreve (`src/lib/docx/gerar.ts`). Uma biblioteca de Word
+inteira traria dezenas de megabytes para o que cabe num arquivo.
+
+> **Erro cometido e corrigido:** a primeira versão gerava XML malformado (uma etiqueta `<w:pBdr>`
+> fechada como `</w:pPr>`). O TypeScript não reclama disso — só apareceu ao tentar abrir o arquivo,
+> que o macOS recusou com "o arquivo não está no formato correto". Hoje um teste confere que **todo
+> bloco gera XML bem formado**.
+
 ## Limites e proteções
 
 | | |
 |---|---|
 | Envios por pessoa | 10 por hora |
+| Documentos gerados | 12 por hora (a reescrita consome API) |
 | Plano gratuito do Resend | 100 por dia, 3.000 por mês |
 | Destinatário | sempre o e-mail da sessão |
 | Arquivos | **não** são anexados |

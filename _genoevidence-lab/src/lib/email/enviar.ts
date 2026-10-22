@@ -62,7 +62,10 @@ function mensagemDeErro(status: number, corpo: RespostaResend, destino: string):
   return detalhe ? `O serviço de e-mail recusou o envio: ${detalhe}` : `O serviço de e-mail recusou o envio (${status}).`;
 }
 
-export async function enviarEmail(opcoes: { para: string; assunto: string; texto: string; html?: string }): Promise<ResultadoEnvio> {
+/** Anexo do e-mail. O conteúdo vai em base64, como o serviço espera. */
+export type Anexo = { nome: string; bytes: Uint8Array };
+
+export async function enviarEmail(opcoes: { para: string; assunto: string; texto: string; html?: string; anexos?: Anexo[] }): Promise<ResultadoEnvio> {
   const estado = estadoEmail();
   if (!estado.configurado) return { ok: false, motivo: estado.motivo ?? "Envio de e-mail não configurado neste servidor." };
 
@@ -77,6 +80,9 @@ export async function enviarEmail(opcoes: { para: string; assunto: string; texto
         subject: opcoes.assunto.slice(0, LIMITE_ASSUNTO),
         text: opcoes.texto,
         ...(opcoes.html ? { html: opcoes.html } : {}),
+        ...(opcoes.anexos?.length
+          ? { attachments: opcoes.anexos.map((a) => ({ filename: a.nome, content: Buffer.from(a.bytes).toString("base64") })) }
+          : {}),
       }),
       signal: AbortSignal.timeout(20_000),
     });

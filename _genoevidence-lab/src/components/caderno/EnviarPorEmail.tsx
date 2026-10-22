@@ -54,6 +54,42 @@ export function EnviarPorEmail({ registro }: { registro: Registro }) {
     window.location.href = url;
   };
 
+  const documento = async (enviar: boolean) => {
+    setEnviando(true);
+    setMsg(null);
+    try {
+      const r = await fetch(`/api/caderno/${registro.id}/documento${enviar ? "?enviar=1" : ""}`, { method: "POST" });
+      if (!r.ok) {
+        const d = (await r.json().catch(() => ({}))) as { error?: string };
+        throw new Error(d.error ?? "Não foi possível gerar o documento.");
+      }
+      if (enviar) {
+        const d = (await r.json()) as { para: string; reescrito: boolean; motivo?: string };
+        setMsg({
+          tom: "ok",
+          texto: d.reescrito
+            ? `Documento enviado para ${d.para}. Ele foi reescrito em linguagem de relatório, e a sua anotação original está no fim dele.`
+            : `Documento enviado para ${d.para}, com o seu texto como você escreveu. ${d.motivo ?? ""}`.trim(),
+        });
+        return;
+      }
+      const bytes = await r.blob();
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(bytes);
+      a.download = `registro-${registro.dia}.docx`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+      setMsg({
+        tom: "ok",
+        texto: r.headers.get("X-Reescrito") === "1" ? "Documento baixado. Foi reescrito em relatório; o seu texto original está no fim dele." : "Documento baixado com o seu texto como você escreveu.",
+      });
+    } catch (e) {
+      setMsg({ tom: "erro", texto: e instanceof Error ? e.message : "Não foi possível gerar o documento." });
+    } finally {
+      setEnviando(false);
+    }
+  };
+
   const baixar = () => {
     const nome = `caderno-${registro.dia}.txt`;
     const blob = new Blob([`${assuntoDoDia(registro)}\n\n${corpoDoDia(registro)}`], { type: "text/plain;charset=utf-8" });
@@ -76,10 +112,22 @@ export function EnviarPorEmail({ registro }: { registro: Registro }) {
             Abrir no meu e-mail
           </Button>
         )}
+        <Button size="sm" variant="secondary" onClick={() => void documento(false)} disabled={enviando} data-testid="baixar-word">
+          {enviando ? "Montando…" : "Baixar em Word"}
+        </Button>
+        {estado?.configurado && (
+          <Button size="sm" variant="secondary" onClick={() => void documento(true)} disabled={enviando} data-testid="enviar-word">
+            Enviar o Word por e-mail
+          </Button>
+        )}
         <Button size="sm" variant="ghost" onClick={baixar} data-testid="baixar-dia">
-          Baixar o registro
+          Baixar como texto
         </Button>
       </div>
+
+      <p className="text-xs text-muted">
+        O documento em Word é reescrito em linguagem de relatório, e a sua anotação original vai no fim dele, sem alteração.
+      </p>
 
       {estado && !estado.configurado && (
         <p className="text-xs text-muted">
