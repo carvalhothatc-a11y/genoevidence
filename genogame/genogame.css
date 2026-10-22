@@ -547,8 +547,7 @@ html.ge-contraste .gg-missao,html.ge-contraste .gg-fases li,html.ge-contraste .g
 .gg-medalha-tela>:not(.pub-confete){position:relative;z-index:1}
 
 /* ---------- versão kids: tudo em letra maiúscula, letra um pouco maior ---------- */
-html.gg-kids #gg,html.gg-kids .gg-topo .gg-marca small{text-transform:uppercase;letter-spacing:.02em}
-html.gg-kids #gg input,html.gg-kids #gg .bio-tela{text-transform:none}
+html.gg-kids #gg,html.gg-kids .gg-topo .gg-marca small,html.gg-kids #gg input,html.gg-kids #gg button,html.gg-kids #gg text{text-transform:uppercase;letter-spacing:.02em}
 html.gg-kids .gg-fala .txt{font-size:18px;line-height:1.5}
 html.gg-kids .gg-missao .obj{font-size:15.5px}
 html.gg-kids .gg-lado p{font-size:17px}

@@ -52,7 +52,22 @@
   try { const s = JSON.parse(localStorage.getItem(CHAVE) || "null"); if (s && typeof s === "object") { versaoSalva = s.v || 1; E = Object.assign(NOVO(), s); } } catch (e) {}
   ["feitos", "cartas", "vistos", "fases", "etapas", "itens", "falas", "retomar"].forEach(k => { if (!E[k] || typeof E[k] !== "object") E[k] = {}; });
   const salvar = () => { try { localStorage.setItem(CHAVE, JSON.stringify(E)); } catch (e) {} };
-  function aplicarKids() { KIDS = !!E.kids; html.classList.toggle("gg-kids", KIDS); }
+  function aplicarKids() { KIDS = !!E.kids; html.classList.toggle("gg-kids", KIDS); if (KIDS && typeof maiusculas === "function") maiusculas(document.getElementById("gg")); }
+  // versão kids: o CSS já põe tudo em maiúscula; os textos desenhados nas cenas (SVG) são trocados aqui também,
+  // porque nem todo navegador aplica o CSS a eles (o Safari, por exemplo). Só textos sem outros elementos dentro.
+  const caixaAlta = s => String(s).toLocaleUpperCase(I.locale);
+  function maiusculas(raiz) {
+    if (!KIDS || !raiz) return;
+    const lista = raiz.tagName && raiz.tagName.toLowerCase() === "text" ? [raiz] : raiz.querySelectorAll ? raiz.querySelectorAll("text") : [];
+    lista.forEach(el => { if (el.children.length) return; const u = caixaAlta(el.textContent); if (u !== el.textContent) el.textContent = u; });
+  }
+  new MutationObserver(ms => {
+    if (!KIDS) return;
+    ms.forEach(m => {
+      if (m.type === "characterData") { const pai = m.target.parentNode; if (pai && pai.tagName && pai.tagName.toLowerCase() === "text") maiusculas(pai); }
+      else m.addedNodes.forEach(n => { if (n.nodeType === 1) maiusculas(n); else if (n.parentNode && n.parentNode.tagName && n.parentNode.tagName.toLowerCase() === "text") maiusculas(n.parentNode); });
+    });
+  }).observe(document.getElementById("gg"), { subtree: true, childList: true, characterData: true });
   aplicarKids();
   const hoje = () => { const d = new Date(); return d.getFullYear() + "-" + z2(d.getMonth() + 1) + "-" + z2(d.getDate()); };
   // registro local: um código para identificar a conquista neste aparelho (não há validação pública)
@@ -1286,7 +1301,7 @@
       const r = e.target.closest("[data-repetir]");
       if (r) { const h = H(r.dataset.repetir); p.fechar(); if (h) comando({ h }); }
     });
-    $("#ggZerar", p.corpo).addEventListener("click", () => { if (confirm(t("ui.recomecarConfirma"))) { try { localStorage.removeItem(CHAVE); } catch (er) {} location.reload(); } });
+    $("#ggZerar", p.corpo).addEventListener("click", () => { if (confirm(KIDS ? caixaAlta(t("ui.recomecarConfirma")) : t("ui.recomecarConfirma"))) { try { localStorage.removeItem(CHAVE); } catch (er) {} location.reload(); } });
     $(".gg-kids-bt", p.corpo).addEventListener("click", e => {
       trocarKids(); const b = e.currentTarget; b.setAttribute("aria-checked", String(KIDS)); $("b", b).textContent = t("ui.kids"); $("small", b).textContent = t("ui.kidsTxt");
       mostrar($(".gg-aba[aria-selected=true]", p.corpo).dataset.aba);
@@ -1337,6 +1352,15 @@
      O nome é pedido antes de emitir. Os arquivos são preparados antes do toque no botão (são links de verdade
      para os arquivos), assim o download funciona também no Safari do iPhone e do iPad. */
   function dadosCertificado(nome) {
+    const d = dadosCertificado1(nome);
+    if (!KIDS) return d;
+    const M = v => (typeof v === "string" ? caixaAlta(v) : Array.isArray(v) ? v.map(M) : v);
+    ["nome", "marcaSub", "certificamos", "registroRotulo", "creditoRotulo", "kicker", "data", "dataRotulo", "nota"].forEach(k => { d[k] = M(d[k]); });
+    d.frase = d.frase.map(([x, f]) => [caixaAlta(x), f]);
+    d.fases = d.fases.map(f => Object.assign({}, f, { titulo: caixaAlta(f.titulo), detalhe: caixaAlta(f.detalhe) }));
+    return d;
+  }
+  function dadosCertificado1(nome) {
     const partes = s => s.split("**").map((x, i) => [x, i % 2 === 1]).filter(x => x[0]);
     const j = E.jornada || { data: hoje(), id: "—" }, antigas = FASES.some(f => E.fases[f.n] && E.fases[f.n].reconhecida);
     return { rosto: "img/geninho-rosto-256.png", nome, marcaSub: "GenoGame · " + t("cert.jornadaEducativa"), certificamos: t("cert.certificamos"),
@@ -1673,7 +1697,7 @@
       else { atualizarHots(); boasVindas(); }
     });
     const zr = $("#ggDoZero", c);
-    if (zr) zr.addEventListener("click", () => { if (confirm(t("ui.recomecarConfirma"))) { try { localStorage.removeItem(CHAVE); } catch (er) {} location.reload(); } });
+    if (zr) zr.addEventListener("click", () => { if (confirm(KIDS ? caixaAlta(t("ui.recomecarConfirma")) : t("ui.recomecarConfirma"))) { try { localStorage.removeItem(CHAVE); } catch (er) {} location.reload(); } });
     setTimeout(() => $("#ggJogar", c).focus({ preventScroll: true }), 60);
   }
   async function introducao() {
