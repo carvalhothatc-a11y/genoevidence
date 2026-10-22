@@ -12,11 +12,13 @@
 O menu de barrinhas (☰), no topo, abre um painel com filtro para ir direto a qualquer página, tema, pesquisadora ou estudo.
 
 **GenoGame** (`genogame/`, no menu ☰): um jogo em que o Geninho, mascote do GenoLab, explora um laboratório de três andares
-(térreo, 1º andar e subsolo, com elevador) e faz oito experimentos de verdade, simplificados: vestir o EPI, extrair DNA de morango,
-PCR, eletroforese em gel, mitose ao microscópio, antibiograma, achar uma mutação no gene HBB e achar uma amostra no freezer a −80 °C.
-Cada experimento dá estrelas e uma carta de descoberta (cientistas e fatos conferidos); objetos escondidos dão mais cartas.
-No fim, o caderno vira um artigo, passa pela revisão por pares e gera um certificado. As janelas mostram o céu de acordo com a hora
-de quem joga. Sem som, nos três idiomas, com modo escuro e "reduzir movimento"; o progresso fica salvo só no aparelho.
+(térreo, 1º andar e subsolo, com elevador). A **Fase 1 · Primeiro dia no laboratório** tem dez etapas, cada uma com uma missão de
+verdade (ler o mural, vestir o EPI, extrair DNA de morango, PCR, eletroforese, mitose ao microscópio, antibiograma, mutação no gene
+HBB, guardar a amostra no biobanco e publicar o artigo). O Geninho pega, carrega e põe os materiais (tubos, lâmina, placa, caderno)
+onde eles vão. Cada etapa dá uma medalha; as atividades dão estrelas (dá para repetir e melhorar); objetos escondidos dão cartas
+de descoberta. No fim das dez etapas sai o certificado da Fase 1, em PDF (A4) e PNG. Tem versão kids (letra maiúscula e textos
+mais curtos). As janelas mostram o céu de acordo com a hora de quem joga. Sem som, nos três idiomas, com modo escuro e
+"reduzir movimento"; o progresso fica salvo só no aparelho.
 
 As abas têm fundo branco, com textos e detalhes coloridos. As páginas de cada estudo têm um visual imersivo próprio,
 com resumo em 1 minuto, gráficos interativos, figuras, glossário, título traduzido e o botão **Ler na revista**.
@@ -71,9 +73,10 @@ data/noticias.json          notícias e publicações do dia (gerado automaticam
 data/frases.json            frases de cientistas para a “frase do dia” do Início
 data/rede-p53.json          rede da p53 do Início (dados da Iniciação Científica)
 data/noticias-escolhidas.json   notícias escolhidas à mão: aparecem primeiro até a data em "ate"
-genogame/                   o GenoGame: genogame.js (prédio, Geninho, falas, caderno), experimentos.js (as bancadas),
-                            textos.js (português, inglês e espanhol), genogame.css e img/ (arte oficial do Geninho;
-                            gn-*.webp são a arte recortada em partes que se mexem; os EPIs são desenhados por cima)
+genogame/                   o GenoGame: genogame.js (prédio, comandos, materiais, etapas, medalhas, caderno), geninho.js
+                            (o Geninho e suas poses), fases.js (as dez etapas e os materiais), certificado.js (PDF e PNG),
+                            experimentos.js (as bancadas), textos.js (português, inglês e espanhol), genogame.css e img/
+                            (gp-*.webp: as poses do Geninho em camadas, com e sem EPI)
 assets/css/shell.css        visual das abas
 assets/css/base.css, artigo.css   visual da página de leitura
 assets/js/i18n.js           idiomas (português, inglês e espanhol): seletor no topo e tradução dos textos fixos
@@ -84,7 +87,7 @@ assets/js/pwa.js            instalar como app e modo offline
 assets/js/inicio.js         animações e seções interativas do Início (com assets/css/inicio.css)
 assets/js/acessibilidade.js painel de acessibilidade de todas as páginas
 scripts/atualizar_noticias.py   robô que escolhe as notícias mais relevantes do dia, pega a imagem de cada uma (sem cortar rostos) e as traduz para os três idiomas
-scripts/genogame/           recorte e camadas do Geninho do GenoGame (recorta.swift, camadas.py, previa_andar.py)
+scripts/genogame/           poses do Geninho (poses/, imagens originais de Thaisa Carvalho) e poses.py, que gera as camadas gp-*.webp
 scripts/modelos/            detector de rostos YuNet (OpenCV, licença MIT) usado pelo robô
 docs/COMO-ADICIONAR-ARTIGO.md   passo a passo para publicar um artigo novo
 manifest.webmanifest, sw.js, icons/   aplicativo instalável e modo offline

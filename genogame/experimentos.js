@@ -877,17 +877,19 @@
     }
   };
 
-  /* ===================================================================== freezer −80 °C */
+  /* ===================================================================== freezer −80 °C: guardar a amostra */
   EXP.freezer = {
     titulo: "fre.titulo", kicker: "fre.kicker", passos: 1,
     async jogar(c) {
       const t = c.t;
       c.passos(1, 0);
-      const LIN = "ABCDEF";
+      const LIN = "ABCDEF", CORES = ["#E0385A", "#2F5BEA", "#14864A", "#D98A0B", "#7B4DE0", "#0E9AA7"];
       let estrelas = 0;
       while (!estrelas) {
         const ped = { p: ri(1, 4), c: ri(1, 3), l: LIN[ri(0, 5)], n: ri(1, 6) };
         const posTxt = ped.l + ped.n;
+        // algumas vagas livres na caixa: só uma é a da etiqueta
+        const vazias = new Set([posTxt]); while (vazias.size < 7) vazias.add(LIN[ri(0, 5)] + ri(1, 6));
         c.etapa(1, 1, t("fre.p1"), t("fre.p1.instr"), '<p class="gg-pedido">' + t("fre.pedido", { p: ped.p, c: ped.c, x: posTxt }) + '</p><p class="etapa" style="margin-top:6px">' + c.esc(t("fre.frio")) + '</p><div class="gg-medidor frio"><i id="xFrio"></i></div>');
         const s = c.svg("0 0 480 400", '<rect x="60" y="14" width="360" height="372" rx="16" fill="#F6F8FC" stroke="#C9CFDC" stroke-width="3"/><rect x="74" y="28" width="332" height="344" rx="10" fill="#DCE9F7"/>' +
           '<g id="xPorta"><rect x="60" y="14" width="360" height="372" rx="16" fill="#F9FBFE" stroke="#C9CFDC" stroke-width="3"/><rect x="380" y="150" width="12" height="100" rx="6" fill="#9AA3BA"/><rect x="100" y="40" width="150" height="44" rx="8" fill="#111A33"/><text x="175" y="69" text-anchor="middle" font-size="19" fill="#7FD1FF">−80 °C</text></g><g id="xDentro"></g>' +
@@ -895,7 +897,7 @@
         const dentro = $("#xDentro", s), frioEl = $("#xFrio", c.lado);
         await c.continuar(t("fre.abrir"));
         $("#xPorta", s).setAttribute("opacity", "0"); $("#xNevoa", s).setAttribute("opacity", "1");
-        let frio = 0, tempo = 0, achou = false, falhou = false;
+        let frio = 0, tempo = 0, guardou = false, falhou = false;
         const prateleiras = () => {
           let h = "";
           for (let p = 1; p <= 4; p++) {
@@ -915,37 +917,46 @@
           for (let j = 0; j < 6; j++) h += '<text x="' + (154 + j * 44) + '" y="62" text-anchor="middle" font-size="14" font-weight="700" fill="#2A3350">' + (j + 1) + "</text>";
           for (let i = 0; i < 6; i++) {
             h += '<text x="122" y="' + (98 + i * 46) + '" text-anchor="middle" font-size="14" font-weight="700" fill="#2A3350">' + LIN[i] + "</text>";
-            for (let j = 0; j < 6; j++) h += '<g class="xTubo" data-pos="' + LIN[i] + (j + 1) + '" tabindex="0" role="button" aria-label="' + LIN[i] + (j + 1) + '" style="cursor:pointer"><circle cx="' + (154 + j * 44) + '" cy="' + (93 + i * 46) + '" r="17" fill="#fff" stroke="#8C96B0" stroke-width="1.5"/><circle cx="' + (154 + j * 44) + '" cy="' + (93 + i * 46) + '" r="9" fill="' + ["#E0385A", "#2F5BEA", "#14864A", "#D98A0B", "#7B4DE0", "#0E9AA7"][(i + j) % 6] + '" opacity=".75"/></g>';
+            for (let j = 0; j < 6; j++) {
+              const pos = LIN[i] + (j + 1), x = 154 + j * 44, y = 93 + i * 46, livre = p === ped.p && k === ped.c ? vazias.has(pos) : (i * 7 + j * 3 + p + k) % 5 === 0;
+              h += '<g class="xTubo" data-pos="' + pos + '"' + (livre ? ' data-livre="1"' : "") + ' tabindex="0" role="button" aria-label="' + pos + " · " + c.esc(livre ? t("fre.livre") : t("fre.ocupada")) + '" style="cursor:pointer">' +
+                (livre ? '<circle cx="' + x + '" cy="' + y + '" r="17" fill="#F4F8FF" stroke="#8C96B0" stroke-width="1.5" stroke-dasharray="4 3"/>'
+                  : '<circle cx="' + x + '" cy="' + y + '" r="17" fill="#fff" stroke="#8C96B0" stroke-width="1.5"/><circle cx="' + x + '" cy="' + y + '" r="9" fill="' + CORES[(i + j) % 6] + '" opacity=".75"/>') + "</g>";
+            }
           }
           dentro.innerHTML = h;
           const v = c.botao(c.esc(t("fre.voltar")), "ghost"); v.onclick = () => { prateleiras(); c.retorno("", ""); };
-          dentro.dataset.p = p; dentro.dataset.c = k;
         };
         prateleiras();
         const toca = g => {
-          if (!g || achou || falhou) return;
+          if (!g || guardou || falhou) return;
           if (g.classList.contains("xCaixa")) {
             const p = +g.dataset.p, k = +g.dataset.c;
             if (p === ped.p && k === ped.c) { c.retorno("", ""); caixa(p, k); }
             else c.retorno("erro", t("fre.caixaErrada", { c: k, p }));
           } else if (g.classList.contains("xTubo")) {
-            if (g.dataset.pos === posTxt) {
-              achou = true; g.querySelector("circle").setAttribute("stroke", "#FFB23F"); g.querySelector("circle").setAttribute("stroke-width", "5");
+            const pos = g.dataset.pos;
+            if (pos === posTxt) {
+              guardou = true;
+              const cc = g.querySelector("circle"), x = cc.getAttribute("cx"), y = cc.getAttribute("cy");
+              g.innerHTML = '<circle cx="' + x + '" cy="' + y + '" r="17" fill="#fff" stroke="#FFB23F" stroke-width="5"/><circle cx="' + x + '" cy="' + y + '" r="9" fill="#2F5BEA"/>';
               const seg = Math.max(1, Math.round(tempo)); c.retorno("ok", t(seg === 1 ? "fre.ok1" : "fre.ok", { n: seg }));
-            } else c.retorno("erro", t("fre.posErrada", { x: g.dataset.pos }));
+            } else if (g.dataset.livre) c.retorno("erro", t("fre.vagaErrada", { x: pos }));
+            else c.retorno("erro", t("fre.posOcupada", { x: pos }));
           }
         };
         s.onclick = e => toca(e.target.closest(".xCaixa,.xTubo"));
         s.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toca(e.target.closest(".xCaixa,.xTubo")); } };
         await new Promise(r => c.loop(dt => {
-          tempo += dt; frio = Math.min(1, tempo / 24); frioEl.style.width = (frio * 100).toFixed(0) + "%";
-          if (achou) { r(); return false; }
+          tempo += dt; frio = Math.min(1, tempo / 26); frioEl.style.width = (frio * 100).toFixed(0) + "%";
+          if (guardou) { r(); return false; }
           if (frio >= 1) { falhou = true; r(); return false; }
         }));
         s.onclick = s.onkeydown = null;
         $(".gg-acoes", c.lado).innerHTML = "";
         if (falhou) { $("#xPorta", s).setAttribute("opacity", "1"); dentro.innerHTML = ""; c.retorno("erro", t("fre.falhou")); await c.continuar(t("ui.tentarDeNovo")); continue; }
-        estrelas = tempo <= 12 ? 3 : tempo <= 19 ? 2 : 1;
+        estrelas = tempo <= 13 ? 3 : tempo <= 20 ? 2 : 1;
+        c.registrar(estrelas);   // guardado: vale mesmo que a pessoa feche agora
         await c.continuar();
       }
       await c.fim(estrelas, [t("fre.fim1")], "freezer");
@@ -957,86 +968,51 @@
     titulo: "pub.titulo", kicker: "pub.kicker", passos: 4,
     async jogar(c) {
       const t = c.t, E = c.estado;
-      if (!c.opc.certificado) {
-        /* 1. autoria */
-        c.passos(4, 0);
-        c.cena.innerHTML = '<div class="pub-geninho"><img src="img/geninho-corpo.jpg" alt="" width="360" height="360"></div>';
-        c.etapa(1, 4, t("pub.p1"), t("pub.p1.instr"), '<label class="gg-campo"><span>' + c.esc(t("pub.nome")) + '</span><input id="xNome" type="text" maxlength="40" autocomplete="name" value="' + c.esc(E.nome || "") + '"></label>');
-        const inp = $("#xNome", c.lado);
-        setTimeout(() => inp.focus({ preventScroll: true }), 80);
-        c.on(inp, "keydown", e => { if (e.key === "Enter") { e.preventDefault(); const b = $(".gg-acoes .btn", c.lado); if (b) b.click(); } });
-        await c.continuar();
-        E.nome = inp.value.trim().slice(0, 40); c.salvar();
-        const nome = E.nome || t("pub.voce");
+      /* 1. autoria */
+      c.passos(4, 0);
+      c.cena.innerHTML = '<div class="pub-geninho"><img src="img/geninho-corpo.jpg" alt="" width="360" height="360"></div>';
+      c.etapa(1, 4, t("pub.p1"), t("pub.p1.instr"), '<label class="gg-campo"><span>' + c.esc(t("pub.nome")) + '</span><input id="xNome" type="text" maxlength="60" autocomplete="name" value="' + c.esc(E.nome || "") + '"></label>');
+      const inp = $("#xNome", c.lado);
+      setTimeout(() => inp.focus({ preventScroll: true }), 80);
+      c.on(inp, "keydown", e => { if (e.key === "Enter") { e.preventDefault(); const b = $(".gg-acoes .btn", c.lado); if (b) b.click(); } });
+      await c.continuar();
+      E.nome = inp.value.replace(/\s+/g, " ").trim().slice(0, 60); c.salvar();
+      const nome = E.nome || t("pub.voce");
 
-        /* 2. o artigo */
-        c.passos(4, 1);
-        const ids = ["epi", "dna", "pcr", "gel", "micro", "bacterias", "bio", "freezer"].filter(id => E.feitos[id]);
-        c.cena.innerHTML = '<article class="pub-artigo"><p class="pub-rev">GenoGame · ' + new Date().getFullYear() + '</p><h3>' + c.esc(t("pub.artigoTitulo")) + '</h3><p class="pub-aut">' + c.esc(t("pub.autores", { x: nome })) + "</p>" +
-          '<div class="pub-sec">' + ids.map(id => '<p><span class="pub-est">' + "★".repeat(+E.feitos[id] || 0) + "</span>" + c.esc(t("tar." + id)) + "</p>").join("") + "</div>" +
-          '<div class="pub-figs"><span style="--c:#7B4DE0"></span><span style="--c:#2F5BEA"></span><span style="--c:#14864A"></span></div></article>';
-        c.etapa(2, 4, t("pub.p2"), t("pub.p2.instr"));
-        await c.continuar(t("pub.enviar"));
+      /* 2. o artigo */
+      c.passos(4, 1);
+      const ids = ["epi", "dna", "pcr", "gel", "micro", "bacterias", "bio", "freezer"].filter(id => E.feitos[id]);
+      c.cena.innerHTML = '<article class="pub-artigo"><p class="pub-rev">GenoGame · ' + new Date().getFullYear() + '</p><h3>' + c.esc(t("pub.artigoTitulo")) + '</h3><p class="pub-aut">' + c.esc(t("pub.autores", { x: nome })) + "</p>" +
+        '<div class="pub-sec">' + ids.map(id => '<p><span class="pub-est">' + "★".repeat(+E.feitos[id] || 0) + "</span>" + c.esc(t("tar." + id)) + "</p>").join("") + "</div>" +
+        '<div class="pub-figs"><span style="--c:#7B4DE0"></span><span style="--c:#2F5BEA"></span><span style="--c:#14864A"></span></div></article>';
+      c.etapa(2, 4, t("pub.p2"), t("pub.p2.instr"));
+      await c.continuar(t("pub.enviar"));
 
-        /* 3. revisão por pares */
-        c.passos(4, 2);
-        c.cena.innerHTML = '<div class="pub-revisores">' + [1, 2, 3].map(n => '<div class="pub-r" id="xR' + n + '"><b>R' + n + "</b><span>" + c.esc(t("pub.revisor", { n })) + "</span></div>").join("") + "</div>";
-        const QS = [["pub.r1", [["pub.r1.a", 1], ["pub.r1.b"]], 1], ["pub.r2", [["pub.r2.a", 1], ["pub.r2.b"], ["pub.r2.c"]], 2], ["pub.r3", [["pub.r3.a", 1], ["pub.r3.b"]], 2]];
-        for (let i = 0; i < QS.length; i++) {
-          const [q, ops, rev] = QS[i];
-          $$(".pub-r", c.cena).forEach(r => r.classList.toggle("ativo", r.id === "xR" + rev));
-          c.etapa(3, 4, t("pub.p3"), t("pub.p3.instr"), (i === 2 ? '<p class="gg-nota">' + c.esc(t("pub.revisor2")) + "</p>" : "") + "<p><b>" + c.esc(t("pub.revisor", { n: rev })) + ":</b> " + t(q) + "</p>");
-          await c.perguntar(ops.map(([k, ok]) => ({ rotulo: c.esc(t(k)), certo: !!ok, resp: ok ? t("pub.ok") : t("pub.corrigir") })), {});
-          $("#xR" + rev, c.cena).classList.add("ok");
-          await c.espera(600);
-        }
-        $("#xR1", c.cena).classList.add("ok");
-
-        /* 4. publicado */
-        c.passos(4, 3);
-        E.publicado = true; c.salvar();
-        c.cena.innerHTML = '<div class="pub-caminho">' + [1, 2, 3, 4].map(n => '<div class="pub-passo" style="--i:' + n + '"><b>' + n + "</b><span>" + c.esc(t("pub.c" + n)) + "</span></div>").join('<i aria-hidden="true"></i>') + '</div><div class="pub-confete" aria-hidden="true">' +
-          (c.rm() ? "" : Array.from({ length: 18 }, (_, i) => '<span style="left:' + rnd(2, 96).toFixed(0) + "%;animation-delay:-" + rnd(0, 4).toFixed(1) + "s;animation-duration:" + rnd(3.5, 6).toFixed(1) + "s;--c:" + ["#4D7CFF", "#FF5470", "#FFB23F", "#A58CFF", "#5FD39A"][i % 5] + '"></span>').join("")) + "</div>";
-        c.etapa(4, 4, t("pub.p4"), t("pub.p4.instr"));
-        const ac = $(".gg-acoes", c.lado);
-        ac.insertAdjacentHTML("beforeend", '<a class="btn ghost" href="../artigos/">' + c.esc(t("pub.verEstudos")) + "</a>");
-        await c.continuar(t("ui.verCertificado"));
+      /* 3. revisão por pares */
+      c.passos(4, 2);
+      c.cena.innerHTML = '<div class="pub-revisores">' + [1, 2, 3].map(n => '<div class="pub-r" id="xR' + n + '"><b>R' + n + "</b><span>" + c.esc(t("pub.revisor", { n })) + "</span></div>").join("") + "</div>";
+      const QS = [["pub.r1", [["pub.r1.a", 1], ["pub.r1.b"]], 1], ["pub.r2", [["pub.r2.a", 1], ["pub.r2.b"], ["pub.r2.c"]], 2], ["pub.r3", [["pub.r3.a", 1], ["pub.r3.b"]], 2]];
+      for (let i = 0; i < QS.length; i++) {
+        const [q, ops, rev] = QS[i];
+        $$(".pub-r", c.cena).forEach(r => r.classList.toggle("ativo", r.id === "xR" + rev));
+        c.etapa(3, 4, t("pub.p3"), t("pub.p3.instr"), (i === 2 ? '<p class="gg-nota">' + c.esc(t("pub.revisor2")) + "</p>" : "") + "<p><b>" + c.esc(t("pub.revisor", { n: rev })) + ":</b> " + t(q) + "</p>");
+        await c.perguntar(ops.map(([k, ok]) => ({ rotulo: c.esc(t(k)), certo: !!ok, resp: ok ? t("pub.ok") : t("pub.corrigir") })), {});
+        $("#xR" + rev, c.cena).classList.add("ok");
+        await c.espera(600);
       }
+      $("#xR1", c.cena).classList.add("ok");
 
-      /* certificado */
-      c.passos(4, 4);
-      c.cena.innerHTML = '<canvas id="xCert" width="1200" height="850" class="pub-cert" role="img" aria-label="' + c.esc(t("pub.cert")) + '"></canvas>';
-      const cv = $("#xCert", c.cena);
-      await desenharCertificado(c, cv);
-      c.lado.innerHTML = '<p class="etapa">' + c.esc(t("pub.cert")) + "</p><h3>" + c.esc(t("pub.certTitulo")) + '</h3><p>' + c.esc(t("ui.estrelasConta", { n: c.nEstrelas(), t: c.ESTRELAS_MAX })) + " · " + c.esc(t("ui.cartasConta", { n: c.nCartas(), t: c.CARTAS.length })) + "</p>" +
-        '<div class="gg-acoes"><a class="btn violeta" id="xSalvar" download="genogame-certificado.png">' + c.esc(t("pub.salvar")) + '</a><button type="button" class="btn ghost" id="xVoltar">' + c.esc(t("ui.voltarLab")) + "</button></div>" +
-        '<p class="gg-nota">' + c.esc(t("ui.desenvolvido")) + " Thaisa Carvalho</p>";
-      try { $("#xSalvar", c.lado).href = cv.toDataURL("image/png"); } catch (e) { $("#xSalvar", c.lado).remove(); }
-      $("#xVoltar", c.lado).onclick = () => c.fechar();
-      $("#xVoltar", c.lado).focus({ preventScroll: true });
+      /* 4. publicado */
+      c.passos(4, 3);
+      E.publicado = true; c.salvar();
+      c.cena.innerHTML = '<div class="pub-caminho">' + [1, 2, 3, 4].map(n => '<div class="pub-passo" style="--i:' + n + '"><b>' + n + "</b><span>" + c.esc(t("pub.c" + n)) + "</span></div>").join('<i aria-hidden="true"></i>') + '</div><div class="pub-confete" aria-hidden="true">' +
+        (c.rm() ? "" : Array.from({ length: 18 }, (_, i) => '<span style="left:' + rnd(2, 96).toFixed(0) + "%;animation-delay:-" + rnd(0, 4).toFixed(1) + "s;animation-duration:" + rnd(3.5, 6).toFixed(1) + "s;--c:" + ["#4D7CFF", "#FF5470", "#FFB23F", "#A58CFF", "#5FD39A"][i % 5] + '"></span>').join("")) + "</div>";
+      c.etapa(4, 4, t("pub.p4"), t("pub.p4.instr"));
+      const ac = $(".gg-acoes", c.lado);
+      ac.insertAdjacentHTML("beforeend", '<a class="btn ghost" href="../artigos/">' + c.esc(t("pub.verEstudos")) + "</a>");
+      await c.continuar(t("pub.terminar"));
+      c.fechar();
     }
   };
 
-  async function desenharCertificado(c, cv) {
-    const t = c.t, E = c.estado, g = cv.getContext("2d"), W = cv.width, H = cv.height;
-    try { await Promise.all(["700 64px Unbounded", "600 30px Unbounded", "500 26px 'IBM Plex Sans'", "600 22px 'IBM Plex Mono'"].map(f => document.fonts.load(f))); } catch (e) {}
-    const img = await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.onerror = () => r(null); i.src = "img/geninho-rosto-256.png"; });
-    g.fillStyle = "#FFFFFF"; g.fillRect(0, 0, W, H);
-    const gr = g.createLinearGradient(0, 0, W, H); gr.addColorStop(0, "#4D7CFF"); gr.addColorStop(0.5, "#A58CFF"); gr.addColorStop(1, "#FF5470");
-    g.strokeStyle = gr; g.lineWidth = 18; g.strokeRect(24, 24, W - 48, H - 48);
-    g.fillStyle = "#F4F2FB"; g.fillRect(42, 42, W - 84, 150);
-    g.fillStyle = "#E0385A"; g.font = "600 22px 'IBM Plex Mono', monospace"; g.fillText(t("pub.cert").toUpperCase() + " · GENOGAME", 90, 110);
-    g.fillStyle = "#0F1730"; g.font = "600 30px Unbounded, sans-serif"; g.fillText("GenoEvidence", 90, 155);
-    if (img) { g.save(); g.beginPath(); g.arc(W - 190, 300, 120, 0, Math.PI * 2); g.closePath(); g.fillStyle = gr; g.fill(); g.beginPath(); g.arc(W - 190, 300, 112, 0, Math.PI * 2); g.clip(); g.fillStyle = "#fff"; g.fill(); g.drawImage(img, W - 302, 188, 224, 224); g.restore(); }
-    g.fillStyle = "#0F1730"; g.font = "700 60px Unbounded, sans-serif"; g.fillText(t("pub.certTitulo"), 90, 300, W - 420);
-    const nome = E.nome || t("pub.voce");
-    g.fillStyle = "#7B4DE0"; g.font = "700 52px Unbounded, sans-serif"; g.fillText(nome, 90, 400, W - 420);
-    g.fillStyle = "#3A4560"; g.font = "500 28px 'IBM Plex Sans', sans-serif"; g.fillText(t("pub.certTexto"), 90, 460, W - 420);
-    g.font = "600 26px 'IBM Plex Mono', monospace"; g.fillStyle = "#D98A0B";
-    g.fillText("★ " + t("ui.estrelasConta", { n: c.nEstrelas(), t: c.ESTRELAS_MAX }), 90, 560);
-    g.fillStyle = "#7B4DE0"; g.fillText("◆ " + t("ui.cartasConta", { n: c.nCartas(), t: c.CARTAS.length }), 90, 606);
-    g.fillStyle = "#6B7590"; g.font = "500 22px 'IBM Plex Sans', sans-serif";
-    g.fillText(t("pub.data") + ": " + new Date().toLocaleDateString(c.locale, { day: "2-digit", month: "long", year: "numeric" }), 90, 690);
-    g.fillText(t("ui.desenvolvido") + " Thaisa Carvalho · genoevidence.com", 90, 760);
-  }
 })();

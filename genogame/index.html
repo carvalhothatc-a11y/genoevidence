@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../icons/ge-favicon-32.png">
 <link rel="manifest" href="../manifest.webmanifest">
 <title>GenoGame · GenoEvidence</title>
-<meta name="description" content="GenoGame: explore um laboratório com o Geninho e faça experimentos de verdade, da extração de DNA à PCR, ao microscópio e às bactérias.">
+<meta name="description" content="GenoGame: uma jornada em dez fases com o Geninho, do primeiro passo no laboratório à publicação de uma descoberta, com medalhas e certificados.">
 <meta property="og:title" content="GenoGame · GenoEvidence">
 <meta property="og:description" content="Um dia no laboratório com o Geninho: explore, faça experimentos e descubra a ciência por trás de cada um.">
 <meta property="og:image" content="img/geninho-corpo.jpg">
@@ -28,7 +28,7 @@
   <span class="gg-espaco"></span>
 </header>
 
-<!-- o jogo é montado pelo genogame.js; os textos dos três idiomas ficam em textos.js -->
+<!-- o jogo é montado pelo genogame.js (Geninho em geninho.js, fases em fases.js, certificados em certificado.js); os textos dos três idiomas ficam em textos.js -->
 <main id="gg" data-sem-traducao tabindex="-1">
   <div class="gg-mundo" id="ggMundo"></div>
   <noscript><p style="padding:24px">O GenoGame precisa de JavaScript ligado.</p></noscript>
@@ -36,6 +36,9 @@
 
 <script src="textos.js"></script>
 <script src="experimentos.js"></script>
+<script src="geninho.js"></script>
+<script src="fases.js"></script>
+<script src="certificado.js"></script>
 <script src="genogame.js"></script>
 <script src="../assets/js/pwa.js"></script>
 </body>

@@ -3,7 +3,7 @@
      e guarda uma cópia; sem internet, usa a cópia guardada.
    - Imagens, ícones e fontes: usa a cópia guardada (carrega rápido) e atualiza em segundo plano.
    Ao mudar a lista BASICO, aumente a VERSAO. */
-const VERSAO = "genoevidence-v30";
+const VERSAO = "genoevidence-v31";
 const BASICO = [
   "./",
   "index.html",
@@ -79,13 +79,27 @@ const BASICO = [
   "genogame/genogame.js",
   "genogame/experimentos.js",
   "genogame/textos.js",
+  "genogame/geninho.js",
+  "genogame/fases.js",
+  "genogame/certificado.js",
   "genogame/img/geninho-corpo.jpg",
-  "genogame/img/gn-cauda.webp",
-  "genogame/img/gn-braco.webp",
-  "genogame/img/gn-corpo.webp",
-  "genogame/img/gn-perna-e.webp",
-  "genogame/img/gn-perna-d.webp",
-  "genogame/img/gn-cabeca.webp",
+  "genogame/img/gp-ladoD-corpo.webp",
+  "genogame/img/gp-ladoD-braco.webp",
+  "genogame/img/gp-ladoD-manga.webp",
+  "genogame/img/gp-ladoE-corpo.webp",
+  "genogame/img/gp-ladoE-braco.webp",
+  "genogame/img/gp-andar-cauda.webp",
+  "genogame/img/gp-andar-braco2.webp",
+  "genogame/img/gp-andar-perna2.webp",
+  "genogame/img/gp-andar-pe2.webp",
+  "genogame/img/gp-andar-perna.webp",
+  "genogame/img/gp-andar-pe.webp",
+  "genogame/img/gp-andar-corpo.webp",
+  "genogame/img/gp-andar-braco.webp",
+  "genogame/img/gp-andar-manga.webp",
+  "genogame/img/gp-frente.webp",
+  "genogame/img/gp-costas.webp",
+  "genogame/img/gp-alcanca.webp",
   "genogame/img/geninho-rosto-96.png",
   "genogame/img/geninho-rosto-256.png"
 ];
