@@ -3,6 +3,8 @@ import { useRef, useState } from "react";
 import { Alert } from "@/components/ui/Alert";
 import { Button } from "@/components/ui/Button";
 import { Field, Select, TextArea, TextInput } from "@/components/ui/Field";
+import { Ditado } from "./Ditado";
+import { EnviarPorEmail } from "./EnviarPorEmail";
 import { diaDeHoje, diaPorExtenso, MAX_ARQUIVOS, type Registro } from "@/lib/caderno/tipos";
 
 type Projeto = { id: string; titulo: string };
@@ -141,6 +143,8 @@ function Formulario({
           onChange={(e) => setTexto(e.target.value)}
         />
       </Field>
+      {/* O ditado ACRESCENTA ao que já está escrito: ninguém perde o que digitou por falar depois. */}
+      <Ditado desabilitado={salvando} aoDitar={(falado) => setTexto((t) => (t.trim() ? `${t.trim()} ${falado}` : falado))} />
       {projetos.length > 0 && (
         <Field label="Ligar a um projeto (opcional)" hint="Você pode registrar agora e ligar depois." htmlFor="projeto">
           <Select id="projeto" value={projetoId} onChange={(e) => setProjetoId(e.target.value)}>
@@ -228,6 +232,12 @@ function Cartao({
           </>
         )}
       </div>
+
+      {aberto && (
+        <div className="mt-3 border-t border-line pt-3">
+          <EnviarPorEmail registro={registro} />
+        </div>
+      )}
 
       {aberto && <Arquivos registro={registro} onMudar={onMudar} />}
 

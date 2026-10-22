@@ -80,6 +80,11 @@ Unidade: `tests/unit/caderno.test.ts` (datas, validação) e `tests/unit/caderno
 
 `scripts/teste-privacidade.mjs` cobre o apagamento do caderno junto com a conta.
 
+## Ditar e enviar por e-mail
+
+Dá para **falar o registro** em vez de digitar, e **mandar o dia para o seu próprio e-mail** ao
+terminar. Ver [EMAIL-E-DITADO.md](EMAIL-E-DITADO.md).
+
 ## Limites conhecidos
 
 - O caderno é individual: não há caderno compartilhado de equipe, nem comentário de orientador.
