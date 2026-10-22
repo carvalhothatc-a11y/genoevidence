@@ -1,31 +1,56 @@
 {
- "atualizado_em": "2026-10-22T18:39:05.998776+00:00",
+ "atualizado_em": "2026-10-22T22:29:29.876070+00:00",
  "noticias": [
   {
    "tipo": "noticia",
-   "titulo": "Leishmaniose visceral pode ser confundida com outras doenças do sangue",
-   "resumo": "Relato de caso de paciente mostra como alterações causadas pela infecção podem dificultar o diagnóstico de doença, transmitida por inseto e endêmica no Brasil",
-   "url": "https://jornal.usp.br/ciencias/leishmaniose-visceral-pode-ser-confundida-com-outras-doencas-do-sangue/",
-   "fonte": "Jornal da USP",
+   "titulo": "Chamas na UFPE destroem 40 anos de pesquisas para tratamento do câncer",
+   "resumo": "Edifício abrigava laboratório de inovação terapêutica com banco de 20 mil moléculas; prejuízo é estimado em R$ 50 milhões",
+   "url": "https://revistapesquisa.fapesp.br/chamas-na-ufpe-destroem-40-anos-de-pesquisas-para-tratamento-do-cancer/?utm_source=rss&utm_medium=rss&utm_campaign=chamas-na-ufpe-destroem-40-anos-de-pesquisas-para-tratamento-do-cancer",
+   "fonte": "Revista Pesquisa FAPESP",
    "idioma": "pt",
-   "data": "2026-10-22T09:41:28+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261007_leishmania.jpg",
+   "data": "2026-10-22T18:22:46+00:00",
+   "tema": "Câncer",
+   "relevancia": 12,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/d49f20bf8feca5558cae7122addad65ae88c8ab8_1200-630.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Visceral leishmaniasis can be confused with other blood disorders",
-     "resumo": "Patient case report shows how changes caused by infection can make it difficult to diagnose disease, transmitted by insect and endemic in Brazil"
+     "titulo": "Flames at UFPE destroy 40 years of cancer treatment research",
+     "resumo": "The building housed a therapeutic innovation laboratory with a bank of 20,000 molecules; the loss is estimated at $50 million"
     },
     "es": {
-     "titulo": "La leishmaniasis visceral se puede confundir con otros trastornos sanguíneos",
-     "resumo": "El informe de casos de pacientes muestra cómo los cambios causados por la infección pueden dificultar el diagnóstico de enfermedades, transmitidas por insectos y endémicas en Brasil"
+     "titulo": "Las llamas en la UFPE destruyen 40 años de investigación sobre el tratamiento del cáncer",
+     "resumo": "Edificio albergó un laboratorio de innovación terapéutica con un banco de 20.000 moléculas; la pérdida se estima en R$ 50 millones"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "O conselheiro de RFK, Jr., Calley Means, anuncia sua renúncia ao governo Trump",
+   "resumo": "As opiniões de Means sobre a vacina COVID, leite cru e flúor foram criticadas pelos profissionais de saúde",
+   "url": "https://www.scientificamerican.com/article/rfk-jr-adviser-calley-means-announces-his-resignation-from-the-trump-administration/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-22T20:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 11,
+   "imagem": "https://static.scientificamerican.com/dam/asset/93e57095-dcba-4a40-a56f-f3df224f5254/Calley-Means.jpg?m=1792701262.696&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "titulo_original": "RFK, Jr., adviser Calley Means announces his resignation from the Trump administration",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El asesor de RFK, Jr., Calley Means, anuncia su renuncia a la administración Trump",
+     "resumo": "Los puntos de vista de Means sobre la vacuna COVID, la leche cruda y el fluoruro han sido criticados por los profesionales de la salud"
+    }
+   },
+   "resumo_original": "Means’s views on the COVID vaccine, raw milk and fluoride have all been criticized by health care professionals"
   },
   {
    "tipo": "noticia",
@@ -55,6 +80,32 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Fogo e desmatamento transformam Amazônia em fonte de carbono para a atmosfera",
+   "resumo": "Estudo do Inpe publicado na Nature revela que a ação humana inverteu o balanço natural da floresta, que passou a liberar 1,17 bilhão de toneladas de CO2 a mais do que consegue absorver todos os anos",
+   "url": "https://agencia.fapesp.br/fogo-e-desmatamento-transformam-amazonia-em-fonte-de-carbono-para-a-atmosfera/59446",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-22T22:29:29.876070+00:00",
+   "tema": "Meio ambiente",
+   "relevancia": 9,
+   "imagem": "https://agencia.fapesp.br/files/post/59446.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Fire and deforestation transform the Amazon into a source of carbon for the atmosphere",
+     "resumo": "A study by Inpe published in Nature reveals that human action has reversed the natural balance of the forest, which has begun to release 1.17 billion tons of CO2 more than it can absorb every year"
+    },
+    "es": {
+     "titulo": "El fuego y la deforestación transforman la Amazonía en una fuente de carbono para la atmósfera",
+     "resumo": "Un estudio del Inpe publicado en Nature revela que la acción humana ha revertido el equilibrio natural del bosque, que ha comenzado a liberar 1.170 millones de toneladas de CO2 más de lo que puede absorber cada año"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Inteligência Artificial e Jornalismo: desafios e possibilidades para a comunicação institucional",
    "resumo": "Instituto da Cultura Científica da UFSCar realiza debate on-line, na próxima terça-feira (27/10), com foco no cenário institucional",
    "url": "https://agencia.fapesp.br/inteligencia-artificial-e-jornalismo-desafios-e-possibilidades-para-a-comunicacao-institucional/59449",
@@ -72,28 +123,6 @@
     "es": {
      "titulo": "Inteligencia artificial y periodismo: retos y posibilidades para la comunicación institucional",
      "resumo": "El Instituto de Cultura Científica de la UFSCar celebrará un debate en línea el próximo martes (27/10), centrado en el escenario institucional"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Poéticas Bíblicas e Seculares",
-   "resumo": "Colóquio internacional, com foco nos temas do amor, da justiça e da esperança, será realizado em Campinas com conferencistas de instituições brasileiras e estrangeiras",
-   "url": "https://agencia.fapesp.br/poeticas-biblicas-e-seculares/59452",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-22T13:55:23.758612+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Biblical and Secular Poetics",
-     "resumo": "International colloquium, focusing on the themes of love, justice and hope, will be held in Campinas with speakers from Brazilian and foreign institutions"
-    },
-    "es": {
-     "titulo": "Poética bíblica y secular",
-     "resumo": "Coloquio internacional, centrado en los temas del amor, la justicia y la esperanza, se llevará a cabo en Campinas con ponentes de instituciones brasileñas y extranjeras"
     }
    }
   },
@@ -120,6 +149,32 @@
     "es": {
      "titulo": "De la genómica a la lingüística, África transfigurada",
      "resumo": "La investigación multidisciplinaria ve al continente y sus relaciones con Brasil más allá de los estereotipos"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Folder e e-book orientam gestantes sobre saúde bucal da mãe e do bebê",
+   "resumo": "Materiais do Projeto Gestante esclarecem dúvidas sobre atendimento odontológico durante a gravidez e apresentam cuidados com a saúde bucal da criança",
+   "url": "https://jornal.usp.br/campus-ribeirao-preto/folder-e-e-book-orientam-gestantes-sobre-saude-bucal-da-mae-e-do-bebe/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-22T17:42:40+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261022_folders.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Folder and e-book guide pregnant women on oral health of mother and baby",
+     "resumo": "Pregnant Project materials clarify doubts about dental care during pregnancy and present care for the child's oral health"
+    },
+    "es": {
+     "titulo": "La carpeta y el libro electrónico guían a las mujeres embarazadas sobre la salud bucal de la madre y el bebé",
+     "resumo": "Los materiales del Proyecto Embarazada aclaran las dudas sobre el cuidado dental durante el embarazo y presentan el cuidado de la salud bucal del niño"
     }
    }
   },
@@ -175,28 +230,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Cães grandes envelhecem mais rápido que os pequenos? Estudo americano dá pistas",
-   "resumo": "Cientistas avaliaram quase 900 animais de diferentes raças; achados podem ajudar a entender porque algumas pessoas vivem mais do que outras",
-   "url": "https://jornal.usp.br/radio-usp/caes-grandes-envelhecem-mais-rapido-que-os-pequenos-estudo-americano-da-pistas/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-22T14:32:11+00:00",
-   "tema": "Meio ambiente",
+   "titulo": "Uma novidade para o CRISPR: a poderosa edição prime altera o DNA diretamente no corpo humano",
+   "resumo": "A aplicação da técnica de alta precisão faz parte de um ensaio clínico para tratar uma doença genética que pode causar danos ao fígado e nervos.",
+   "url": "https://www.nature.com/articles/d41586-026-03371-x",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-22T00:00:00+00:00",
+   "tema": "Genética",
    "relevancia": 7,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2023/03/pasta-dos-20230313_mayana-.jpg",
+   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03371-x/d41586-026-03371-x_53883104.jpg",
    "foco": {
-    "inteira": true
+    "x": 50,
+    "y": 50
    },
+   "titulo_original": "A first for CRISPR: powerful prime editing alters DNA directly in the human body",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "Do large dogs age faster than small ones? American study gives clues",
-     "resumo": "Scientists have evaluated almost 900 animals of different breeds; findings may help to understand why some people live longer than others"
-    },
     "es": {
-     "titulo": "¿Los perros grandes envejecen más rápido que los pequeños? Un estudio estadounidense da pistas",
-     "resumo": "Los científicos han evaluado casi 900 animales de diferentes razas; los hallazgos pueden ayudar a comprender por qué algunas personas viven más que otras"
+     "titulo": "Una primicia para CRISPR: la potente edición principal altera el ADN directamente en el cuerpo humano",
+     "resumo": "La aplicación de la técnica de alta precisión es parte de un ensayo clínico para tratar una enfermedad genética que puede causar daño hepático y nervioso."
     }
-   }
+   },
+   "resumo_original": "Application of the high-precision technique is part of a clinical trial to treat a genetic disease that can cause liver and nerve damage."
   },
   {
    "tipo": "noticia",
@@ -222,31 +277,6 @@
     }
    },
    "resumo_original": "A new USB-sized device, tested in mice, could help people with type 2 diabetes better manage glucose levels"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A história por trás da prova matemática de um milhão de dólares da OpenAI",
-   "resumo": "A solução da IA para o problema de Navier-Stokes e os detalhes de como isso aconteceu preveem um futuro caótico para a matemática - e para o mundo",
-   "url": "https://www.scientificamerican.com/article/the-inside-story-behind-openais-million-dollar-math-proof/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-22T16:12:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://static.scientificamerican.com/dam/asset/676cb480-a9d0-4bb0-a42f-466e549cfa5c/ink-clash.jpg?m=1792683756.522&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "The inside story behind OpenAI’s million-dollar math proof",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La historia interna detrás de la prueba matemática de un millón de dólares de OpenAI",
-     "resumo": "La solución de IA al problema de Navier-Stokes, y los detalles de cómo sucedió, anticipan un futuro caótico para las matemáticas y el mundo"
-    }
-   },
-   "resumo_original": "AI’s solution to the Navier-Stokes problem, and the details of how it happened, preview a chaotic future for math—and the world"
   },
   {
    "tipo": "noticia",
@@ -341,31 +371,6 @@
      "titulo": "Metaanálisis de asociación de todo el genoma de Trans-ancestry de la enfermedad de cálculos biliares"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A Terra entrou em suas \"décadas ruins\" após a queda de um asteroide que acabou com os dinossauros",
-   "resumo": "Agora temos uma imagem mais clara do que aconteceu nas décadas seguintes ao impacto do asteroide que levou à extinção de quase todos os dinossauros",
-   "url": "https://www.newscientist.com/article/2594979-earths-bad-decades-after-dinosaur-ending-asteroid-strike/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-22T17:00:00+00:00",
-   "tema": "Espaço",
-   "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317718094.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Earth entered its ‘bad decades’ after dinosaur-ending asteroid strike",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La Tierra entró en sus ‘malas décadas’ tras el impacto de un asteroide que acabó con los dinosaurios",
-     "resumo": "Ahora tenemos una imagen más clara de lo que sucedió en las décadas posteriores al impacto del asteroide que llevó a la extinción de casi todos los dinosaurios"
-    }
-   },
-   "resumo_original": "We now have a clearer picture of what happened in the decades following the asteroid impact that led to the extinction of almost all dinosaurs"
   }
  ],
  "artigos": [
@@ -1149,6 +1154,10 @@
   "this implant burns up excess blood sugar with electricity": "2026-10-22T18:39:05.998776+00:00",
   "the inside story behind openais million dollar math proof": "2026-10-22T18:39:05.998776+00:00",
   "can maths survive ai fields medallist terence tao calls for a maths 2 0 world": "2026-10-22T18:39:05.998776+00:00",
-  "earth entered its bad decades after dinosaur ending asteroid strike": "2026-10-22T18:39:05.998776+00:00"
+  "earth entered its bad decades after dinosaur ending asteroid strike": "2026-10-22T18:39:05.998776+00:00",
+  "chamas na ufpe destroem 40 anos de pesquisas para tratamento do cancer": "2026-10-22T22:29:29.876070+00:00",
+  "rfk jr adviser calley means announces his resignation from the trump administration": "2026-10-22T22:29:29.876070+00:00",
+  "folder e e book orientam gestantes sobre saude bucal da mae e do bebe": "2026-10-22T22:29:29.876070+00:00",
+  "a first for crispr powerful prime editing alters dna directly in the human body": "2026-10-22T22:29:29.876070+00:00"
  }
 }
