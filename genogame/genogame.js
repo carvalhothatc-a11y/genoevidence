@@ -47,10 +47,10 @@
      na mão, além de tudo o que a versão anterior já guardava (experimentos, estrelas, cartas, nome). */
   const CHAVE = "genogame-v1";
   const NOVO = () => ({ v: 2, feitos: {}, cartas: {}, vistos: {}, cracha: false, epi: false, andar: "T", x: 160, nome: "", publicado: false, intro: false,
-    fases: {}, etapas: {}, itens: {}, mao: null, maoDe: null, jornada: null, falas: {}, kids: false });
+    fases: {}, etapas: {}, itens: {}, mao: null, maoDe: null, jornada: null, falas: {}, kids: false, retomar: {} });
   let E = NOVO(), versaoSalva = 2;
   try { const s = JSON.parse(localStorage.getItem(CHAVE) || "null"); if (s && typeof s === "object") { versaoSalva = s.v || 1; E = Object.assign(NOVO(), s); } } catch (e) {}
-  ["feitos", "cartas", "vistos", "fases", "etapas", "itens", "falas"].forEach(k => { if (!E[k] || typeof E[k] !== "object") E[k] = {}; });
+  ["feitos", "cartas", "vistos", "fases", "etapas", "itens", "falas", "retomar"].forEach(k => { if (!E[k] || typeof E[k] !== "object") E[k] = {}; });
   const salvar = () => { try { localStorage.setItem(CHAVE, JSON.stringify(E)); } catch (e) {} };
   function aplicarKids() { KIDS = !!E.kids; html.classList.toggle("gg-kids", KIDS); }
   aplicarKids();
@@ -1426,6 +1426,9 @@
     p.corpo.innerHTML = '<div class="gg-corpo"><div class="gg-cena"></div><div class="gg-lado" aria-live="polite"></div></div>';
     const cena = $(".gg-cena", p.corpo), lado = $(".gg-lado", p.corpo);
     let vivo = true, reg = null, depoisFeito = false;
+    // atividade fechada no meio: volta na etapa em que estava, com os dados guardados
+    const retoma = E.retomar[id] && E.retomar[id].etapa > 0 ? E.retomar[id] : null;
+    let avisar = !!retoma;
     p.limpezas.push(() => { vivo = false; });
     p.limpezas.push(() => { if (!depoisFeito) { depoisFeito = true; setTimeout(() => depoisDoExperimento(id, reg ? !reg.antes : false, !!reg), 60); } });
     const registrar = (estrelas, carta) => {
@@ -1434,12 +1437,16 @@
       reg = { antes: +E.feitos[id] || 0, cartaNova: !!carta && !E.cartas[carta], estrelas };
       E.feitos[id] = Math.max(reg.antes, estrelas);
       if (carta) E.cartas[carta] = true;
+      delete E.retomar[id];
       aoRegistrar(id);
       salvar(); atualizarHUD(); atualizarHots();
       return reg;
     };
     const ctx = {
       t, tt, esc, icone, estrela, rm, toque: TOQUE, cena, lado, estado: E, salvar, locale: I.locale, opc,
+      de: retoma ? retoma.etapa : 0, dados: retoma ? Object.assign({}, retoma.dados) : {},
+      marcar(k, dados) { if (!vivo || reg) return; ctx.dados = Object.assign({}, ctx.dados, dados || {}); E.retomar[id] = { etapa: k, dados: ctx.dados }; salvar(); },
+      esquecer() { delete E.retomar[id]; salvar(); },
       get vivo() { return vivo; },
       passos(n, atual) { p.passos.innerHTML = Array.from({ length: n }, (_, i) => "<i class=\"" + (i < atual ? "feito" : i === atual ? "agora" : "") + "\"></i>").join(""); },
       espera(ms) { return new Promise((r, j) => setTimeout(() => (vivo ? r() : j(FECHADO)), ms)); },
@@ -1455,6 +1462,7 @@
       ponto(s, e) { const pt = s.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY; const m = s.getScreenCTM(); return m ? pt.matrixTransform(m.inverse()) : { x: 0, y: 0 }; },
       etapa(n, total, titulo, texto, extra) {
         lado.innerHTML = '<p class="etapa">' + esc(t("ui.etapa", { n, t: total })) + "</p><h3>" + esc(titulo) + "</h3><p>" + texto + "</p>" + (extra || "") + '<div class="gg-ret"></div><div class="gg-acoes"></div>';
+        if (avisar) { avisar = false; $(".gg-ret", lado).innerHTML = '<div class="gg-retorno info"><span>' + esc(t("ui.retomando")) + "</span></div>"; }
         return { ret: $(".gg-ret", lado), acoes: $(".gg-acoes", lado) };
       },
       retorno(tipo, h) { const r = $(".gg-ret", lado); if (r) r.innerHTML = h ? '<div class="gg-retorno ' + tipo + '">' + "<span>" + h + "</span></div>" : ""; },

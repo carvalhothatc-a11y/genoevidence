@@ -12,7 +12,7 @@
 O menu de barrinhas (☰), no topo, abre um painel com filtro para ir direto a qualquer página, tema, pesquisadora ou estudo.
 
 **GenoGame** (`genogame/`, no menu ☰): um jogo em que o Geninho, mascote do GenoLab, explora um laboratório de três andares
-(térreo, 1º andar e subsolo, com elevador). A **Fase 1 · Primeiro dia no laboratório** tem dez etapas, cada uma com uma missão de
+(térreo, 1º andar e subsolo, com elevador). A **Fase 1 · Explorando o laboratório** tem dez etapas, cada uma com uma missão de
 verdade (ler o mural, vestir o EPI, extrair DNA de morango, PCR, eletroforese, mitose ao microscópio, antibiograma, mutação no gene
 HBB, guardar a amostra no biobanco e publicar o artigo). O Geninho pega, carrega e põe os materiais (tubos, lâmina, placa, caderno)
 onde eles vão. Cada etapa dá uma medalha; as atividades dão estrelas (dá para repetir e melhorar); objetos escondidos dão cartas

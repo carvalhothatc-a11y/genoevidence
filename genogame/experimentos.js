@@ -76,151 +76,160 @@
     titulo: "dna.titulo", kicker: "dna.kicker", passos: 5,
     async jogar(c) {
       const t = c.t;
-      let erros = 0;
+      // retomada: se a pessoa fechou no meio, volta na etapa em que estava (c.de) com os dados guardados (c.dados)
+      let erros = c.dados.erros || 0, s, cheio = c.dados.cheio != null ? c.dados.cheio : 0.5;
+      const marca = 0.45, alto = 158;
 
       /* 1. amassar */
-      c.passos(5, 0);
-      const sementes = Array.from({ length: 46 }, () => [rnd(150, 330), rnd(200, 334)]);
-      let s = c.svg("0 0 480 400",
-        '<rect x="130" y="66" width="220" height="276" rx="28" fill="rgba(200,225,255,.35)" stroke="#8C96B0" stroke-width="3"/>' +
-        '<path d="M132 98h216" stroke="#E0385A" stroke-width="5"/><path d="M132 107h216" stroke="#4D7CFF" stroke-width="3"/>' +
-        '<clipPath id="xSacoClip"><rect x="133" y="110" width="214" height="229" rx="24"/></clipPath>' +
-        '<g clip-path="url(#xSacoClip)"><rect id="xPure" x="130" y="342" width="220" height="0" fill="#E0385A" opacity=".85"/><g id="xSem">' +
-        sementes.map(([x, y]) => '<ellipse cx="' + x.toFixed(0) + '" cy="' + y.toFixed(0) + '" rx="1.4" ry="2" fill="#FFE7A8" opacity="0"/>').join("") + "</g></g>" +
-        '<g id="xMors">' + morango(196, 226, 1.9, 0) + morango(278, 240, 2.1, 1) + morango(226, 284, 1.8, 2) + morango(302, 292, 1.6, 3) + morango(172, 288, 1.5, 4) + "</g>" +
-        '<circle id="xDedo" r="20" fill="rgba(123,77,224,.18)" stroke="#7B4DE0" stroke-width="2" opacity="0"/>');
-      c.etapa(1, 5, t("dna.p1"), t("dna.p1.instr"), '<div class="gg-medidor"><i id="xMed"></i></div><p class="gg-nota so-teclado">' + t("dna.p1.teclado") + "</p>");
-      const mors = $$(".xMor", s), pure = $("#xPure", s), sem = $$("#xSem ellipse", s), dedo = $("#xDedo", s), med = $("#xMed", c.lado);
-      let prog = 0, ant = null, segura = false;
-      const desenhar1 = () => {
-        const p = clamp(prog / 2400, 0, 1);
-        mors.forEach((m, i) => { const k = +m.dataset.k * (1 - 0.6 * p); m.setAttribute("transform", "translate(" + (+m.dataset.x + Math.sin(prog / 60 + i) * 3 * (1 - p)) + "," + (+m.dataset.y + p * 30) + ") scale(" + k + ")"); m.setAttribute("opacity", String(1 - 0.92 * p)); });
-        const h = p * 140; pure.setAttribute("y", String(342 - h)); pure.setAttribute("height", String(h));
-        sem.forEach(e => e.setAttribute("opacity", +e.getAttribute("cy") > 342 - h + 6 ? "1" : "0"));
-        med.style.width = (p * 100).toFixed(0) + "%";
-      };
-      await new Promise(pronto => {
-        const fim = () => { if (prog >= 2400) { prog = 2400; desenhar1(); pronto(); return true; } };
-        c.on(s, "pointerdown", e => { segura = true; ant = c.ponto(s, e); captura(s, e); });
-        c.on(s, "pointerup", () => { segura = false; dedo.setAttribute("opacity", "0"); });
-        c.on(s, "pointercancel", () => { segura = false; });
-        c.on(s, "pointermove", e => {
-          if (!segura || prog >= 2400) return;
-          const p = c.ponto(s, e); dedo.setAttribute("cx", p.x); dedo.setAttribute("cy", p.y); dedo.setAttribute("opacity", "1");
-          if (p.x > 120 && p.x < 360 && p.y > 60 && p.y < 350) prog += Math.hypot(p.x - ant.x, p.y - ant.y);
-          ant = p; desenhar1(); fim();
+      if (c.de <= 0) {
+        c.passos(5, 0);
+        const sementes = Array.from({ length: 46 }, () => [rnd(150, 330), rnd(200, 334)]);
+        s = c.svg("0 0 480 400",
+          '<rect x="130" y="66" width="220" height="276" rx="28" fill="rgba(200,225,255,.35)" stroke="#8C96B0" stroke-width="3"/>' +
+          '<path d="M132 98h216" stroke="#E0385A" stroke-width="5"/><path d="M132 107h216" stroke="#4D7CFF" stroke-width="3"/>' +
+          '<clipPath id="xSacoClip"><rect x="133" y="110" width="214" height="229" rx="24"/></clipPath>' +
+          '<g clip-path="url(#xSacoClip)"><rect id="xPure" x="130" y="342" width="220" height="0" fill="#E0385A" opacity=".85"/><g id="xSem">' +
+          sementes.map(([x, y]) => '<ellipse cx="' + x.toFixed(0) + '" cy="' + y.toFixed(0) + '" rx="1.4" ry="2" fill="#FFE7A8" opacity="0"/>').join("") + "</g></g>" +
+          '<g id="xMors">' + morango(196, 226, 1.9, 0) + morango(278, 240, 2.1, 1) + morango(226, 284, 1.8, 2) + morango(302, 292, 1.6, 3) + morango(172, 288, 1.5, 4) + "</g>" +
+          '<circle id="xDedo" r="20" fill="rgba(123,77,224,.18)" stroke="#7B4DE0" stroke-width="2" opacity="0"/>');
+        c.etapa(1, 5, t("dna.p1"), t("dna.p1.instr"), '<div class="gg-medidor"><i id="xMed"></i></div><p class="gg-nota so-teclado">' + t("dna.p1.teclado") + "</p>");
+        const mors = $$(".xMor", s), pure = $("#xPure", s), sem = $$("#xSem ellipse", s), dedo = $("#xDedo", s), med = $("#xMed", c.lado);
+        let prog = 0, ant = null, segura = false;
+        const desenhar1 = () => {
+          const p = clamp(prog / 2400, 0, 1);
+          mors.forEach((m, i) => { const k = +m.dataset.k * (1 - 0.6 * p); m.setAttribute("transform", "translate(" + (+m.dataset.x + Math.sin(prog / 60 + i) * 3 * (1 - p)) + "," + (+m.dataset.y + p * 30) + ") scale(" + k + ")"); m.setAttribute("opacity", String(1 - 0.92 * p)); });
+          const h = p * 140; pure.setAttribute("y", String(342 - h)); pure.setAttribute("height", String(h));
+          sem.forEach(e => e.setAttribute("opacity", +e.getAttribute("cy") > 342 - h + 6 ? "1" : "0"));
+          med.style.width = (p * 100).toFixed(0) + "%";
+        };
+        await new Promise(pronto => {
+          const fim = () => { if (prog >= 2400) { prog = 2400; desenhar1(); pronto(); return true; } };
+          c.on(s, "pointerdown", e => { segura = true; ant = c.ponto(s, e); captura(s, e); });
+          c.on(s, "pointerup", () => { segura = false; dedo.setAttribute("opacity", "0"); });
+          c.on(s, "pointercancel", () => { segura = false; });
+          c.on(s, "pointermove", e => {
+            if (!segura || prog >= 2400) return;
+            const p = c.ponto(s, e); dedo.setAttribute("cx", p.x); dedo.setAttribute("cy", p.y); dedo.setAttribute("opacity", "1");
+            if (p.x > 120 && p.x < 360 && p.y > 60 && p.y < 350) prog += Math.hypot(p.x - ant.x, p.y - ant.y);
+            ant = p; desenhar1(); fim();
+          });
+          c.on(document, "keydown", e => { if (prog < 2400 && (e.key === "ArrowLeft" || e.key === "ArrowRight")) { e.preventDefault(); prog += 170; desenhar1(); fim(); } });
         });
-        c.on(document, "keydown", e => { if (prog < 2400 && (e.key === "ArrowLeft" || e.key === "ArrowRight")) { e.preventDefault(); prog += 170; desenhar1(); fim(); } });
-      });
-      dedo.setAttribute("opacity", "0");
-      c.retorno("ok", t("dna.p1.ok"));
-      await c.continuar();
-
+        dedo.setAttribute("opacity", "0");
+        c.retorno("ok", t("dna.p1.ok"));
+        await c.continuar();
+      }
+      c.marcar(1, { erros });
       /* 2. solução de extração */
-      c.passos(5, 1);
-      s = c.svg("0 0 480 400",
-        '<rect x="150" y="96" width="180" height="246" rx="26" fill="rgba(200,225,255,.35)" stroke="#8C96B0" stroke-width="3"/><path d="M152 124h176" stroke="#E0385A" stroke-width="5"/>' +
-        '<clipPath id="xSaco2"><rect x="153" y="130" width="174" height="209" rx="22"/></clipPath><g clip-path="url(#xSaco2)">' +
-        '<rect id="xLiq" x="150" y="300" width="180" height="42" fill="#F2A2B6" opacity=".9"/><rect x="150" y="300" width="180" height="42" fill="#E0385A" opacity=".75" id="xPure2"/>' +
-        '<g id="xEspuma" opacity="0">' + [170, 196, 222, 250, 276, 304].map((x, i) => '<circle cx="' + x + '" cy="0" r="' + (7 + (i % 3) * 3) + '" fill="#fff" opacity=".85"/>').join("") + "</g></g>" +
-        '<g id="xJato" opacity="0"><path d="M240 30V300" stroke="#7FB4FF" stroke-width="7" stroke-linecap="round" stroke-dasharray="14 10" class="agua-cai"/></g><g id="xFrasco" transform="translate(222,4) scale(1.15)" opacity="0"></g>');
-      c.etapa(2, 5, t("dna.p2"), t("dna.p2.instr"));
-      const liq = $("#xLiq", s), jato = $("#xJato", s), frasco = $("#xFrasco", s), espuma = $("#xEspuma", s);
-      let nivel = 300, certos = 0;
-      const cores = { agua: "#7FB4FF", detergente: "#5FD39A", sal: "#FFFFFF", acucar: "#FFFFFF", oleo: "#FFD27A" };
-      const despeja = async (id, sobe) => {
-        frasco.innerHTML = ING[id]; frasco.setAttribute("opacity", "1");
-        $("path", jato).setAttribute("stroke", cores[id]); $("path", jato).setAttribute("d", "M240 46V" + nivel);
-        jato.setAttribute("opacity", "1");
-        if (sobe) { nivel -= sobe; liq.setAttribute("y", String(nivel)); liq.setAttribute("height", String(342 - nivel)); }
-        if (id === "detergente") { espuma.setAttribute("opacity", "1"); espuma.setAttribute("transform", "translate(0," + nivel + ")"); }
-        else if (sobe) espuma.setAttribute("transform", "translate(0," + nivel + ")");
-        await new Promise(r => setTimeout(r, c.rm() ? 50 : 650));
-        jato.setAttribute("opacity", "0"); frasco.setAttribute("opacity", "0");
-      };
-      const lista = ["agua", "acucar", "detergente", "oleo", "sal"].map(id => ({ id, rotulo: t("dna." + id), icone: ico(ING[id]), certo: ["agua", "detergente", "sal"].includes(id), resp: t("dna." + id + ".r") }));
-      erros += await c.perguntar(lista, {
-        grade: true,
-        multi: (o, er, pronto) => { certos++; despeja(o.id, o.id === "agua" ? 70 : 22); if (certos >= 3) setTimeout(pronto, c.rm() ? 60 : 700); },
-        aoErrar: o => { frasco.innerHTML = ING[o.id]; frasco.setAttribute("opacity", "1"); setTimeout(() => frasco.setAttribute("opacity", "0"), 700); }
-      });
-      await c.continuar();
-
+      if (c.de <= 1) {
+        c.passos(5, 1);
+        s = c.svg("0 0 480 400",
+          '<rect x="150" y="96" width="180" height="246" rx="26" fill="rgba(200,225,255,.35)" stroke="#8C96B0" stroke-width="3"/><path d="M152 124h176" stroke="#E0385A" stroke-width="5"/>' +
+          '<clipPath id="xSaco2"><rect x="153" y="130" width="174" height="209" rx="22"/></clipPath><g clip-path="url(#xSaco2)">' +
+          '<rect id="xLiq" x="150" y="300" width="180" height="42" fill="#F2A2B6" opacity=".9"/><rect x="150" y="300" width="180" height="42" fill="#E0385A" opacity=".75" id="xPure2"/>' +
+          '<g id="xEspuma" opacity="0">' + [170, 196, 222, 250, 276, 304].map((x, i) => '<circle cx="' + x + '" cy="0" r="' + (7 + (i % 3) * 3) + '" fill="#fff" opacity=".85"/>').join("") + "</g></g>" +
+          '<g id="xJato" opacity="0"><path d="M240 30V300" stroke="#7FB4FF" stroke-width="7" stroke-linecap="round" stroke-dasharray="14 10" class="agua-cai"/></g><g id="xFrasco" transform="translate(222,4) scale(1.15)" opacity="0"></g>');
+        c.etapa(2, 5, t("dna.p2"), t("dna.p2.instr"));
+        const liq = $("#xLiq", s), jato = $("#xJato", s), frasco = $("#xFrasco", s), espuma = $("#xEspuma", s);
+        let nivel = 300, certos = 0;
+        const cores = { agua: "#7FB4FF", detergente: "#5FD39A", sal: "#FFFFFF", acucar: "#FFFFFF", oleo: "#FFD27A" };
+        const despeja = async (id, sobe) => {
+          frasco.innerHTML = ING[id]; frasco.setAttribute("opacity", "1");
+          $("path", jato).setAttribute("stroke", cores[id]); $("path", jato).setAttribute("d", "M240 46V" + nivel);
+          jato.setAttribute("opacity", "1");
+          if (sobe) { nivel -= sobe; liq.setAttribute("y", String(nivel)); liq.setAttribute("height", String(342 - nivel)); }
+          if (id === "detergente") { espuma.setAttribute("opacity", "1"); espuma.setAttribute("transform", "translate(0," + nivel + ")"); }
+          else if (sobe) espuma.setAttribute("transform", "translate(0," + nivel + ")");
+          await new Promise(r => setTimeout(r, c.rm() ? 50 : 650));
+          jato.setAttribute("opacity", "0"); frasco.setAttribute("opacity", "0");
+        };
+        const lista = ["agua", "acucar", "detergente", "oleo", "sal"].map(id => ({ id, rotulo: t("dna." + id), icone: ico(ING[id]), certo: ["agua", "detergente", "sal"].includes(id), resp: t("dna." + id + ".r") }));
+        erros += await c.perguntar(lista, {
+          grade: true,
+          multi: (o, er, pronto) => { certos++; despeja(o.id, o.id === "agua" ? 70 : 22); if (certos >= 3) setTimeout(pronto, c.rm() ? 60 : 700); },
+          aoErrar: o => { frasco.innerHTML = ING[o.id]; frasco.setAttribute("opacity", "1"); setTimeout(() => frasco.setAttribute("opacity", "0"), 700); }
+        });
+        await c.continuar();
+      }
+      c.marcar(2, { erros });
       /* 3. coar */
-      c.passos(5, 2);
-      const marca = 0.45, alto = 158;
-      s = c.svg("0 0 480 400",
-        '<g transform="rotate(-28 150 70)"><rect x="70" y="20" width="150" height="110" rx="22" fill="rgba(200,225,255,.35)" stroke="#8C96B0" stroke-width="3"/><rect x="73" y="86" width="144" height="41" rx="18" fill="#EB7C97"/></g>' +
-        '<path d="M190 120h100l-40 56v20h-20v-20z" fill="rgba(200,225,255,.25)" stroke="#8C96B0" stroke-width="3" stroke-linejoin="round"/><path d="M198 124h84l-34 46h-16z" fill="#FFFDF5" stroke="#E6DFC8" stroke-width="2"/>' +
-        '<path id="xRasto" d="M231 92q30 10 9 40" stroke="#EB7C97" stroke-width="0" fill="none" stroke-linecap="round"/>' +
-        '<path id="xGota" d="M240 200V200" stroke="#F2A2B6" stroke-width="5" stroke-linecap="round"/>' +
-        '<clipPath id="xTuboC"><path d="' + TUBO + 'z"/></clipPath><g clip-path="url(#xTuboC)"><rect id="xNivel" x="210" y="370" width="60" height="0" fill="#F2A2B6"/></g>' +
-        '<path d="' + TUBO + '" fill="none" stroke="#8C96B0" stroke-width="3.5"/>' +
-        '<path d="M206 ' + (370 - marca * alto) + 'h12M262 ' + (370 - marca * alto) + 'h12" stroke="#7B4DE0" stroke-width="3.5" stroke-linecap="round"/><path d="M276 ' + (370 - marca * alto) + 'l10 -6v12z" fill="#7B4DE0"/>');
-      const et3 = c.etapa(3, 5, t("dna.p3"), t("dna.p3.instr"));
-      const nivelEl = $("#xNivel", s), gota = $("#xGota", s), rasto = $("#xRasto", s);
-      const bt = c.botao(c.esc(t("dna.p3.bt")), "violeta gg-segurar");
-      let segurando = false, fluxo = 0, cheio = 0, avaliado = true, terminou = false;
-      c.segurar(bt, on => { segurando = on; if (on) avaliado = false; });
-      await new Promise(pronto => {
-        c.loop(dt => {
-          fluxo = segurando ? Math.min(1, fluxo + dt * 6) : Math.max(0, fluxo - dt * 2.6);
-          cheio = Math.min(0.97, cheio + fluxo * 0.16 * dt);
-          const y = 370 - cheio * alto;
-          nivelEl.setAttribute("y", y.toFixed(1)); nivelEl.setAttribute("height", (cheio * alto).toFixed(1));
-          gota.setAttribute("d", "M240 198V" + (fluxo > 0.03 ? y.toFixed(0) : "198")); gota.setAttribute("opacity", String(fluxo));
-          rasto.setAttribute("stroke-width", String(fluxo * 6));
-          if (cheio >= 0.97) segurando = false;
-          if (!segurando && fluxo === 0 && !avaliado) {
-            avaliado = true;
-            if (cheio < marca - 0.06) c.retorno("info", t("dna.p3.pouco"));
-            else { terminou = true; if (cheio > marca + 0.13) { erros++; c.retorno("erro", t("dna.p3.muito")); } else c.retorno("ok", t("dna.p3.ok")); pronto(); return false; }
-          }
+      if (c.de <= 2) {
+        c.passos(5, 2);
+        s = c.svg("0 0 480 400",
+          '<g transform="rotate(-28 150 70)"><rect x="70" y="20" width="150" height="110" rx="22" fill="rgba(200,225,255,.35)" stroke="#8C96B0" stroke-width="3"/><rect x="73" y="86" width="144" height="41" rx="18" fill="#EB7C97"/></g>' +
+          '<path d="M190 120h100l-40 56v20h-20v-20z" fill="rgba(200,225,255,.25)" stroke="#8C96B0" stroke-width="3" stroke-linejoin="round"/><path d="M198 124h84l-34 46h-16z" fill="#FFFDF5" stroke="#E6DFC8" stroke-width="2"/>' +
+          '<path id="xRasto" d="M231 92q30 10 9 40" stroke="#EB7C97" stroke-width="0" fill="none" stroke-linecap="round"/>' +
+          '<path id="xGota" d="M240 200V200" stroke="#F2A2B6" stroke-width="5" stroke-linecap="round"/>' +
+          '<clipPath id="xTuboC"><path d="' + TUBO + 'z"/></clipPath><g clip-path="url(#xTuboC)"><rect id="xNivel" x="210" y="370" width="60" height="0" fill="#F2A2B6"/></g>' +
+          '<path d="' + TUBO + '" fill="none" stroke="#8C96B0" stroke-width="3.5"/>' +
+          '<path d="M206 ' + (370 - marca * alto) + 'h12M262 ' + (370 - marca * alto) + 'h12" stroke="#7B4DE0" stroke-width="3.5" stroke-linecap="round"/><path d="M276 ' + (370 - marca * alto) + 'l10 -6v12z" fill="#7B4DE0"/>');
+        const et3 = c.etapa(3, 5, t("dna.p3"), t("dna.p3.instr"));
+        const nivelEl = $("#xNivel", s), gota = $("#xGota", s), rasto = $("#xRasto", s);
+        const bt = c.botao(c.esc(t("dna.p3.bt")), "violeta gg-segurar");
+        let segurando = false, fluxo = 0, avaliado = true, terminou = false; cheio = 0;
+        c.segurar(bt, on => { segurando = on; if (on) avaliado = false; });
+        await new Promise(pronto => {
+          c.loop(dt => {
+            fluxo = segurando ? Math.min(1, fluxo + dt * 6) : Math.max(0, fluxo - dt * 2.6);
+            cheio = Math.min(0.97, cheio + fluxo * 0.16 * dt);
+            const y = 370 - cheio * alto;
+            nivelEl.setAttribute("y", y.toFixed(1)); nivelEl.setAttribute("height", (cheio * alto).toFixed(1));
+            gota.setAttribute("d", "M240 198V" + (fluxo > 0.03 ? y.toFixed(0) : "198")); gota.setAttribute("opacity", String(fluxo));
+            rasto.setAttribute("stroke-width", String(fluxo * 6));
+            if (cheio >= 0.97) segurando = false;
+            if (!segurando && fluxo === 0 && !avaliado) {
+              avaliado = true;
+              if (cheio < marca - 0.06) c.retorno("info", t("dna.p3.pouco"));
+              else { terminou = true; if (cheio > marca + 0.13) { erros++; c.retorno("erro", t("dna.p3.muito")); } else c.retorno("ok", t("dna.p3.ok")); pronto(); return false; }
+            }
+          });
         });
-      });
-      bt.remove();
-      await c.continuar();
-
+        bt.remove();
+        await c.continuar();
+      }
+      c.marcar(3, { erros, cheio });
       /* 4. álcool gelado */
-      c.passos(5, 3);
-      const nivelVermelho = 370 - cheio * alto;
-      s = c.svg("0 0 480 400",
-        '<g transform="translate(206,150) rotate(125)"><rect x="-9" y="-2" width="18" height="20" rx="3" fill="#8C96B0"/><rect x="-26" y="16" width="52" height="100" rx="12" fill="#E6F2FF" stroke="#8C96B0" stroke-width="2.5"/>' +
-        '<rect x="-20" y="50" width="40" height="60" rx="8" fill="#BFE3FF" opacity=".75"/><path d="M-20 44h40" stroke="#7FB4FF" stroke-width="4"/></g>' +
-        '<path id="xFio" d="M206 150Q222 160 224 200" stroke="#BFE3FF" stroke-width="0" fill="none" stroke-linecap="round"/>' +
-        '<clipPath id="xTuboD"><path d="' + TUBO + 'z"/></clipPath><g clip-path="url(#xTuboD)">' +
-        '<rect x="210" y="' + nivelVermelho + '" width="60" height="' + (372 - nivelVermelho) + '" fill="#F2A2B6"/>' +
-        '<rect id="xAlc" x="210" y="' + nivelVermelho + '" width="60" height="0" fill="#CFE6FF" opacity=".85"/><rect id="xMist" x="210" y="' + (nivelVermelho - 30) + '" width="60" height="40" fill="#F6C6D3" opacity="0"/>' +
-        '<g id="xNuvem" opacity="0">' + [0, 1, 2, 3, 4].map(i => '<path d="M' + (224 + i * 3) + " " + (nivelVermelho - 2 - i * 3) + "q6 -8 12 0t12 0" + '" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>').join("") + "</g></g>" +
-        '<path d="' + TUBO + '" fill="none" stroke="#8C96B0" stroke-width="3.5"/>' +
-        '<g transform="translate(392,118)"><path d="M-62 0a62 62 0 0 1 124 0" fill="none" stroke="rgba(127,127,127,.25)" stroke-width="14"/>' +
-        '<path d="' + arco(62, 0.15, 0.55) + '" fill="none" stroke="#14864A" stroke-width="14"/><path d="' + arco(62, 0.55, 1) + '" fill="none" stroke="#E0385A" stroke-width="14"/>' +
-        '<g id="xAgulha"><path d="M0 0L-52 0" stroke="currentColor" style="stroke:var(--ink)" stroke-width="4" stroke-linecap="round"/></g><circle r="7" style="fill:var(--ink)"/>' +
-        '<text x="-38" y="24" text-anchor="middle" font-size="13" fill="#14864A">' + c.esc(t("dna.p4.devagar")) + '</text><text x="44" y="24" text-anchor="middle" font-size="13" fill="#E0385A">' + c.esc(t("dna.p4.rapidoRot")) + "</text></g>");
-      c.etapa(4, 5, t("dna.p4"), t("dna.p4.instr"), '<div class="gg-medidor"><i id="xMed4"></i></div>');
-      const alc = $("#xAlc", s), mist = $("#xMist", s), nuvem = $("#xNuvem", s), agulha = $("#xAgulha", s), fio = $("#xFio", s), med4 = $("#xMed4", c.lado);
-      const bt4 = c.botao(c.esc(t("dna.p4.bt")), "violeta gg-segurar");
-      let seg4 = false, vazao = 0, vol = 0, turb = 0, avisou = false;
-      c.segurar(bt4, on => { seg4 = on; });
-      await new Promise(pronto => {
-        c.loop(dt => {
-          vazao = clamp(vazao + (seg4 ? 75 : -95) * dt, 0, 100);
-          vol = Math.min(100, vol + vazao * dt * 0.55);
-          if (vazao > 55) { turb += dt; if (!avisou) { avisou = true; c.retorno("erro", t("dna.p4.rapido")); } }
-          else if (avisou && vazao < 50) { avisou = false; c.retorno("", ""); }
-          agulha.setAttribute("transform", "rotate(" + (vazao * 1.8).toFixed(1) + ")");
-          const h = vol * 0.5; alc.setAttribute("y", (nivelVermelho - h).toFixed(1)); alc.setAttribute("height", h.toFixed(1));
-          fio.setAttribute("stroke-width", (vazao / 100 * 7).toFixed(1)); fio.setAttribute("d", "M206 150Q222 160 224 200L224 " + Math.max(200, nivelVermelho - h).toFixed(0));
-          nuvem.setAttribute("opacity", (vol / 100 * (turb > 0.9 ? 0.6 : 1)).toFixed(2)); nuvem.setAttribute("transform", "translate(0," + (-h * 0.15).toFixed(1) + ")");
-          mist.setAttribute("opacity", turb > 0.9 ? "0.7" : "0");
-          med4.style.width = vol.toFixed(0) + "%";
-          if (vol >= 100) { pronto(); return false; }
+      if (c.de <= 3) {
+        c.passos(5, 3);
+        const nivelVermelho = 370 - cheio * alto;
+        s = c.svg("0 0 480 400",
+          '<g transform="translate(206,150) rotate(125)"><rect x="-9" y="-2" width="18" height="20" rx="3" fill="#8C96B0"/><rect x="-26" y="16" width="52" height="100" rx="12" fill="#E6F2FF" stroke="#8C96B0" stroke-width="2.5"/>' +
+          '<rect x="-20" y="50" width="40" height="60" rx="8" fill="#BFE3FF" opacity=".75"/><path d="M-20 44h40" stroke="#7FB4FF" stroke-width="4"/></g>' +
+          '<path id="xFio" d="M206 150Q222 160 224 200" stroke="#BFE3FF" stroke-width="0" fill="none" stroke-linecap="round"/>' +
+          '<clipPath id="xTuboD"><path d="' + TUBO + 'z"/></clipPath><g clip-path="url(#xTuboD)">' +
+          '<rect x="210" y="' + nivelVermelho + '" width="60" height="' + (372 - nivelVermelho) + '" fill="#F2A2B6"/>' +
+          '<rect id="xAlc" x="210" y="' + nivelVermelho + '" width="60" height="0" fill="#CFE6FF" opacity=".85"/><rect id="xMist" x="210" y="' + (nivelVermelho - 30) + '" width="60" height="40" fill="#F6C6D3" opacity="0"/>' +
+          '<g id="xNuvem" opacity="0">' + [0, 1, 2, 3, 4].map(i => '<path d="M' + (224 + i * 3) + " " + (nivelVermelho - 2 - i * 3) + "q6 -8 12 0t12 0" + '" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>').join("") + "</g></g>" +
+          '<path d="' + TUBO + '" fill="none" stroke="#8C96B0" stroke-width="3.5"/>' +
+          '<g transform="translate(392,118)"><path d="M-62 0a62 62 0 0 1 124 0" fill="none" stroke="rgba(127,127,127,.25)" stroke-width="14"/>' +
+          '<path d="' + arco(62, 0.15, 0.55) + '" fill="none" stroke="#14864A" stroke-width="14"/><path d="' + arco(62, 0.55, 1) + '" fill="none" stroke="#E0385A" stroke-width="14"/>' +
+          '<g id="xAgulha"><path d="M0 0L-52 0" stroke="currentColor" style="stroke:var(--ink)" stroke-width="4" stroke-linecap="round"/></g><circle r="7" style="fill:var(--ink)"/>' +
+          '<text x="-38" y="24" text-anchor="middle" font-size="13" fill="#14864A">' + c.esc(t("dna.p4.devagar")) + '</text><text x="44" y="24" text-anchor="middle" font-size="13" fill="#E0385A">' + c.esc(t("dna.p4.rapidoRot")) + "</text></g>");
+        c.etapa(4, 5, t("dna.p4"), t("dna.p4.instr"), '<div class="gg-medidor"><i id="xMed4"></i></div>');
+        const alc = $("#xAlc", s), mist = $("#xMist", s), nuvem = $("#xNuvem", s), agulha = $("#xAgulha", s), fio = $("#xFio", s), med4 = $("#xMed4", c.lado);
+        const bt4 = c.botao(c.esc(t("dna.p4.bt")), "violeta gg-segurar");
+        let seg4 = false, vazao = 0, vol = 0, turb = 0, avisou = false;
+        c.segurar(bt4, on => { seg4 = on; });
+        await new Promise(pronto => {
+          c.loop(dt => {
+            vazao = clamp(vazao + (seg4 ? 75 : -95) * dt, 0, 100);
+            vol = Math.min(100, vol + vazao * dt * 0.55);
+            if (vazao > 55) { turb += dt; if (!avisou) { avisou = true; c.retorno("erro", t("dna.p4.rapido")); } }
+            else if (avisou && vazao < 50) { avisou = false; c.retorno("", ""); }
+            agulha.setAttribute("transform", "rotate(" + (vazao * 1.8).toFixed(1) + ")");
+            const h = vol * 0.5; alc.setAttribute("y", (nivelVermelho - h).toFixed(1)); alc.setAttribute("height", h.toFixed(1));
+            fio.setAttribute("stroke-width", (vazao / 100 * 7).toFixed(1)); fio.setAttribute("d", "M206 150Q222 160 224 200L224 " + Math.max(200, nivelVermelho - h).toFixed(0));
+            nuvem.setAttribute("opacity", (vol / 100 * (turb > 0.9 ? 0.6 : 1)).toFixed(2)); nuvem.setAttribute("transform", "translate(0," + (-h * 0.15).toFixed(1) + ")");
+            mist.setAttribute("opacity", turb > 0.9 ? "0.7" : "0");
+            med4.style.width = vol.toFixed(0) + "%";
+            if (vol >= 100) { pronto(); return false; }
+          });
         });
-      });
-      bt4.remove(); fio.setAttribute("stroke-width", "0"); agulha.setAttribute("transform", "rotate(0)");
-      if (turb > 0.9) { erros++; c.retorno("erro", t("dna.p4.misturou")); } else c.retorno("ok", t("dna.p4.ok"));
-      await c.continuar();
-
+        bt4.remove(); fio.setAttribute("stroke-width", "0"); agulha.setAttribute("transform", "rotate(0)");
+        if (turb > 0.9) { erros++; c.retorno("erro", t("dna.p4.misturou")); } else c.retorno("ok", t("dna.p4.ok"));
+        await c.continuar();
+      }
+      c.marcar(4, { erros, cheio });
       /* 5. enrolar */
       c.passos(5, 4);
       s = c.svg("0 0 480 400",
@@ -322,82 +331,87 @@
         alca.setAttribute("transform", "translate(0," + yT(S).toFixed(1) + ")");
       }
       mol(); termo();
+      let acertos = c.dados.acertos || 0, copias = c.dados.copias || 1;
 
       /* 1. os 3 passos */
-      c.passos(3, 0);
-      c.etapa(1, 3, t("pcr.p1"), t("pcr.p1.instr"),
-        '<ol class="gg-lista-fases">' + [1, 2, 3].map(i => '<li style="--c:' + FASES[i - 1].cor + '"><b>' + c.esc(t("pcr.f" + i)) + " · " + FASES[i - 1].alvo + " °C</b><span>" + t("pcr.f" + i + ".r") + "</span></li>").join("") + "</ol>");
-      await c.continuar(t("ui.comecarBt"));
-
+      if (c.de <= 0) {
+        c.passos(3, 0);
+        c.etapa(1, 3, t("pcr.p1"), t("pcr.p1.instr"),
+          '<ol class="gg-lista-fases">' + [1, 2, 3].map(i => '<li style="--c:' + FASES[i - 1].cor + '"><b>' + c.esc(t("pcr.f" + i)) + " · " + FASES[i - 1].alvo + " °C</b><span>" + t("pcr.f" + i + ".r") + "</span></li>").join("") + "</ol>");
+        await c.continuar(t("ui.comecarBt"));
+      }
+      c.marcar(1, {});
       /* 2. três ciclos controlados por quem joga */
-      c.passos(3, 1);
-      c.etapa(2, 3, t("pcr.p2"), t("pcr.p2.instr"), '<div class="gg-pcr-agora" id="xAgora"></div><div class="gg-teclas" id="xTeclas"></div><p class="gg-nota so-teclado">' + t("pcr.p2.teclado") + "</p>");
-      const teclas = $("#xTeclas", c.lado), agoraEl = $("#xAgora", c.lado);
-      teclas.className = "gg-temps";
-      teclas.innerHTML = [[98, 0], [55, 1], [72, 2]].map(([T, i]) => '<button type="button" class="btn gg-temp" data-t="' + T + '" style="--c:' + FASES[i].cor + '">' + T + " °C</button>").join("");
-      let sobe = false, desce = false, arrasta = false;
-      const escolhe = T => { S = T; $$(".gg-temp", c.lado).forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.t === T))); };
-      $$(".gg-temp", c.lado).forEach(b => c.on(b, "click", () => escolhe(+b.dataset.t)));
-      c.on(document, "keydown", e => {
-        if (e.key === "9") escolhe(98); if (e.key === "5") escolhe(55); if (e.key === "7") escolhe(72);
-        if (e.key === "ArrowUp") { sobe = true; e.preventDefault(); } if (e.key === "ArrowDown") { desce = true; e.preventDefault(); }
-      });
-      c.on(document, "keyup", e => { if (e.key === "ArrowUp") sobe = false; if (e.key === "ArrowDown") desce = false; });
-      const ajusta = e => { const p = c.ponto(s, e); if (p.y < Y0 - 30 || p.y > Y1 + 30) return; S = clamp(20 + (Y1 - p.y) / (Y1 - Y0) * 80, 20, 100); };
-      c.on(s, "pointerdown", e => { arrasta = true; captura(s, e); ajusta(e); });
-      c.on(s, "pointermove", e => { if (arrasta) ajusta(e); });
-      c.on(s, "pointerup", () => { arrasta = false; }); c.on(s, "pointercancel", () => { arrasta = false; });
-      const DUR = [3.2, 2.9, 2.9];
-      let ciclo = 0, fase = -1, tf = 0, dentro = 0, somaT = 0, acertos = 0, copias = 1, okCiclo = true, pts = [];
-      const mostraFase = () => {
-        const i = fase < 0 ? 0 : fase, f = FASES[i];
-        agoraEl.style.setProperty("--c", f.cor);
-        agoraEl.innerHTML = "<b>" + c.esc(t("pcr.f" + (i + 1))) + " · " + f.alvo + " °C</b><span>" + t("pcr.f" + (i + 1) + ".r") + "</span>";
-        cTxt.textContent = t("pcr.ciclo", { n: ciclo + 1 });
-      };
-      mostraFase();
-      await new Promise(pronto => {
-        c.loop(dt => {
-          S = clamp(S + ((sobe ? 1 : 0) - (desce ? 1 : 0)) * 48 * dt, 20, 100);
-          T += clamp((S - T) * 3.4, -40, 40) * dt;
-          termo();
-          if (fase < 0) {
-            ponto.setAttribute("cx", X0); ponto.setAttribute("cy", yT(T).toFixed(1));
-            if (T >= FASES[0].lo) { fase = 0; tf = 0; dentro = 0; somaT = 0; pts = []; cab.setAttribute("opacity", "1"); }
-            return;
-          }
-          const f = FASES[fase], dur = DUR[fase];
-          tf += dt; somaT += T * dt;
-          const na = T >= f.lo && T <= f.hi; if (na) dentro += dt;
-          if (okCiclo && na) {
-            if (fase === 0) sep = Math.min(1, sep + dt * 1.3);
-            if (fase === 1 && sep > 0.9) pri = Math.min(1, pri + dt * 1.3);
-            if (fase === 2 && pri > 0.9) ext = Math.min(1, ext + dt * 0.62);
-            mol();
-          }
-          const x = X0 + fase * larg + Math.min(1, tf / dur) * larg;
-          pts.push(x.toFixed(1) + "," + yT(T).toFixed(1)); traco.setAttribute("points", pts.join(" "));
-          cab.setAttribute("x1", x); cab.setAttribute("x2", x); ponto.setAttribute("cx", x); ponto.setAttribute("cy", yT(T).toFixed(1));
-          if (tf < dur) return;
-          // fim da fase: deu certo se ficou tempo suficiente na faixa
-          if (dentro / dur >= 0.38) {
-            acertos++;
-            if (okCiclo) { if (fase === 0) sep = 1; if (fase === 1) pri = 1; if (fase === 2) ext = 1; mol(); c.retorno("ok", t("pcr.ok.f" + (fase + 1))); }
-          } else {
-            const media = somaT / dur, lado = media > f.hi ? "quente" : "frio";
-            c.retorno("erro", t("pcr.erro.f" + (fase + 1) + "." + lado) + (okCiclo ? " " + t("pcr.semCopia") : ""));
-            okCiclo = false;
-          }
-          fase++; tf = 0; dentro = 0; somaT = 0;
-          if (fase < 3) { mostraFase(); return; }
-          // fim do ciclo
-          if (okCiclo) { copias *= 2; cop.textContent = fmt(c, copias) + " " + t("pcr.copias"); if (!c.rm()) cop.animate([{ transform: "scale(1.35)" }, { transform: "scale(1)" }], { duration: 400, easing: "ease-out" }); }
-          ciclo++;
-          if (ciclo >= 3) { cab.setAttribute("opacity", "0"); pronto(); return false; }
-          fase = 0; okCiclo = true; sep = pri = ext = 0; pts = []; mol(); mostraFase();
+      if (c.de <= 1) {
+        c.passos(3, 1);
+        c.etapa(2, 3, t("pcr.p2"), t("pcr.p2.instr"), '<div class="gg-pcr-agora" id="xAgora"></div><div class="gg-teclas" id="xTeclas"></div><p class="gg-nota so-teclado">' + t("pcr.p2.teclado") + "</p>");
+        const teclas = $("#xTeclas", c.lado), agoraEl = $("#xAgora", c.lado);
+        teclas.className = "gg-temps";
+        teclas.innerHTML = [[98, 0], [55, 1], [72, 2]].map(([T, i]) => '<button type="button" class="btn gg-temp" data-t="' + T + '" style="--c:' + FASES[i].cor + '">' + T + " °C</button>").join("");
+        let sobe = false, desce = false, arrasta = false;
+        const escolhe = T => { S = T; $$(".gg-temp", c.lado).forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.t === T))); };
+        $$(".gg-temp", c.lado).forEach(b => c.on(b, "click", () => escolhe(+b.dataset.t)));
+        c.on(document, "keydown", e => {
+          if (e.key === "9") escolhe(98); if (e.key === "5") escolhe(55); if (e.key === "7") escolhe(72);
+          if (e.key === "ArrowUp") { sobe = true; e.preventDefault(); } if (e.key === "ArrowDown") { desce = true; e.preventDefault(); }
         });
-      });
-
+        c.on(document, "keyup", e => { if (e.key === "ArrowUp") sobe = false; if (e.key === "ArrowDown") desce = false; });
+        const ajusta = e => { const p = c.ponto(s, e); if (p.y < Y0 - 30 || p.y > Y1 + 30) return; S = clamp(20 + (Y1 - p.y) / (Y1 - Y0) * 80, 20, 100); };
+        c.on(s, "pointerdown", e => { arrasta = true; captura(s, e); ajusta(e); });
+        c.on(s, "pointermove", e => { if (arrasta) ajusta(e); });
+        c.on(s, "pointerup", () => { arrasta = false; }); c.on(s, "pointercancel", () => { arrasta = false; });
+        const DUR = [3.2, 2.9, 2.9];
+        let ciclo = 0, fase = -1, tf = 0, dentro = 0, somaT = 0, okCiclo = true, pts = [];
+        const mostraFase = () => {
+          const i = fase < 0 ? 0 : fase, f = FASES[i];
+          agoraEl.style.setProperty("--c", f.cor);
+          agoraEl.innerHTML = "<b>" + c.esc(t("pcr.f" + (i + 1))) + " · " + f.alvo + " °C</b><span>" + t("pcr.f" + (i + 1) + ".r") + "</span>";
+          cTxt.textContent = t("pcr.ciclo", { n: ciclo + 1 });
+        };
+        mostraFase();
+        await new Promise(pronto => {
+          c.loop(dt => {
+            S = clamp(S + ((sobe ? 1 : 0) - (desce ? 1 : 0)) * 48 * dt, 20, 100);
+            T += clamp((S - T) * 3.4, -40, 40) * dt;
+            termo();
+            if (fase < 0) {
+              ponto.setAttribute("cx", X0); ponto.setAttribute("cy", yT(T).toFixed(1));
+              if (T >= FASES[0].lo) { fase = 0; tf = 0; dentro = 0; somaT = 0; pts = []; cab.setAttribute("opacity", "1"); }
+              return;
+            }
+            const f = FASES[fase], dur = DUR[fase];
+            tf += dt; somaT += T * dt;
+            const na = T >= f.lo && T <= f.hi; if (na) dentro += dt;
+            if (okCiclo && na) {
+              if (fase === 0) sep = Math.min(1, sep + dt * 1.3);
+              if (fase === 1 && sep > 0.9) pri = Math.min(1, pri + dt * 1.3);
+              if (fase === 2 && pri > 0.9) ext = Math.min(1, ext + dt * 0.62);
+              mol();
+            }
+            const x = X0 + fase * larg + Math.min(1, tf / dur) * larg;
+            pts.push(x.toFixed(1) + "," + yT(T).toFixed(1)); traco.setAttribute("points", pts.join(" "));
+            cab.setAttribute("x1", x); cab.setAttribute("x2", x); ponto.setAttribute("cx", x); ponto.setAttribute("cy", yT(T).toFixed(1));
+            if (tf < dur) return;
+            // fim da fase: deu certo se ficou tempo suficiente na faixa
+            if (dentro / dur >= 0.38) {
+              acertos++;
+              if (okCiclo) { if (fase === 0) sep = 1; if (fase === 1) pri = 1; if (fase === 2) ext = 1; mol(); c.retorno("ok", t("pcr.ok.f" + (fase + 1))); }
+            } else {
+              const media = somaT / dur, lado = media > f.hi ? "quente" : "frio";
+              c.retorno("erro", t("pcr.erro.f" + (fase + 1) + "." + lado) + (okCiclo ? " " + t("pcr.semCopia") : ""));
+              okCiclo = false;
+            }
+            fase++; tf = 0; dentro = 0; somaT = 0;
+            if (fase < 3) { mostraFase(); return; }
+            // fim do ciclo
+            if (okCiclo) { copias *= 2; cop.textContent = fmt(c, copias) + " " + t("pcr.copias"); if (!c.rm()) cop.animate([{ transform: "scale(1.35)" }, { transform: "scale(1)" }], { duration: 400, easing: "ease-out" }); }
+            ciclo++;
+            if (ciclo >= 3) { cab.setAttribute("opacity", "0"); pronto(); return false; }
+            fase = 0; okCiclo = true; sep = pri = ext = 0; pts = []; mol(); mostraFase();
+          });
+        });
+      }
+      c.marcar(2, { acertos, copias });
       /* 3. mais 27 ciclos, sozinho */
       c.passos(3, 2);
       c.etapa(3, 3, t("pcr.p3"), t("pcr.p3.instr"));
@@ -434,8 +448,9 @@
     titulo: "gel.titulo", kicker: "gel.kicker", passos: 4,
     async jogar(c) {
       const t = c.t;
-      let erros = 0;
+      let erros = c.dados.erros || 0;
       const LANES = [150, 240, 330], WY = 80, GY0 = 89, GY1 = 340;
+      let frente = c.dados.frente != null ? c.dados.frente : GY0 + (GY1 - GY0) * 0.76;
       const nomes = ["gel.marcador", "gel.amostra", "gel.controle"];
       const s = c.svg("0 0 480 400",
         '<g id="xBase"><rect x="56" y="34" width="368" height="340" rx="14" fill="#DCEBFF" stroke="#9DB6E8" stroke-width="2.5"/>' +
@@ -451,115 +466,126 @@
       const pocos = $$(".xPoco", s), frentes = $$(".xFrente", s), alvo = $("#xAlvo", s), pip = $("#xPip", s), gotaP = $("#xGotaP", s);
 
       /* 1. carregar */
-      c.passos(4, 0);
-      c.etapa(1, 4, t("gel.p1"), c.tt("gel.p1.instr"));
-      const btSolta = c.botao(c.esc(t("gel.soltar")), "violeta");
-      pip.setAttribute("opacity", "1");
-      for (let i = 0; i < 3; i++) {
-        alvo.setAttribute("x", LANES[i] - 26); alvo.setAttribute("opacity", "1");
-        let fase = rnd(0, 6), px = 240, w = 1.7 + i * 0.45;
-        while (true) {
-          let soltou = false;
-          const solta = () => { soltou = true; };
-          const onKey = e => { if (e.key === " " || e.key === "Enter") { e.preventDefault(); solta(); } };
-          const onTap = e => { if (e.target.closest("button")) return; solta(); };
-          btSolta.onclick = solta;
-          c.on(document, "keydown", onKey); c.on(s, "pointerdown", onTap);
-          await new Promise(r => {
-            c.loop(dt => {
-              fase += dt * w; px = 240 + 140 * Math.sin(fase);
-              pip.setAttribute("transform", "translate(" + px.toFixed(1) + "," + (WY - 30) + ")");
-              alvo.setAttribute("stroke-opacity", (0.55 + 0.45 * Math.sin(performance.now() / 160)).toFixed(2));
-              if (soltou) { r(); return false; }
+      if (c.de <= 0) {
+        c.passos(4, 0);
+        c.etapa(1, 4, t("gel.p1"), c.tt("gel.p1.instr"));
+        const btSolta = c.botao(c.esc(t("gel.soltar")), "violeta");
+        pip.setAttribute("opacity", "1");
+        for (let i = 0; i < 3; i++) {
+          alvo.setAttribute("x", LANES[i] - 26); alvo.setAttribute("opacity", "1");
+          let fase = rnd(0, 6), px = 240, w = 1.7 + i * 0.45;
+          while (true) {
+            let soltou = false;
+            const solta = () => { soltou = true; };
+            const onKey = e => { if (e.key === " " || e.key === "Enter") { e.preventDefault(); solta(); } };
+            const onTap = e => { if (e.target.closest("button")) return; solta(); };
+            btSolta.onclick = solta;
+            c.on(document, "keydown", onKey); c.on(s, "pointerdown", onTap);
+            await new Promise(r => {
+              c.loop(dt => {
+                fase += dt * w; px = 240 + 140 * Math.sin(fase);
+                pip.setAttribute("transform", "translate(" + px.toFixed(1) + "," + (WY - 30) + ")");
+                alvo.setAttribute("stroke-opacity", (0.55 + 0.45 * Math.sin(performance.now() / 160)).toFixed(2));
+                if (soltou) { r(); return false; }
+              });
             });
-          });
-          document.removeEventListener("keydown", onKey); s.removeEventListener("pointerdown", onTap);
-          if (!c.vivo) return;
-          const d = Math.abs(px - LANES[i]);
-          gotaP.setAttribute("r", "5");
-          await c.espera(c.rm() ? 30 : 220); gotaP.setAttribute("r", "0");
-          if (d <= 21) { pocos[i].setAttribute("opacity", "1"); c.retorno("ok", t("gel.p1.certo")); break; }
-          erros++;
-          $("#xManchas", s).insertAdjacentHTML("beforeend", '<ellipse cx="' + px.toFixed(0) + '" cy="' + (WY + 4) + '" rx="10" ry="4" fill="#4450D0" opacity=".35"/>');
-          c.retorno("erro", t("gel.p1.errou"));
+            document.removeEventListener("keydown", onKey); s.removeEventListener("pointerdown", onTap);
+            if (!c.vivo) return;
+            const d = Math.abs(px - LANES[i]);
+            gotaP.setAttribute("r", "5");
+            await c.espera(c.rm() ? 30 : 220); gotaP.setAttribute("r", "0");
+            if (d <= 21) { pocos[i].setAttribute("opacity", "1"); c.retorno("ok", t("gel.p1.certo")); break; }
+            erros++;
+            $("#xManchas", s).insertAdjacentHTML("beforeend", '<ellipse cx="' + px.toFixed(0) + '" cy="' + (WY + 4) + '" rx="10" ry="4" fill="#4450D0" opacity=".35"/>');
+            c.retorno("erro", t("gel.p1.errou"));
+          }
         }
+        btSolta.remove(); pip.setAttribute("opacity", "0"); alvo.setAttribute("opacity", "0");
+        c.retorno("ok", t("gel.p1.ok"));
+        await c.continuar();
       }
-      btSolta.remove(); pip.setAttribute("opacity", "0"); alvo.setAttribute("opacity", "0");
-      c.retorno("ok", t("gel.p1.ok"));
-      await c.continuar();
-
+      if (c.de > 0) pocos.forEach(p => p.setAttribute("opacity", "1"));
+      c.marcar(1, { erros });
       /* 2. ligar os fios */
-      c.passos(4, 1);
-      c.etapa(2, 4, t("gel.p2"), t("gel.p2.instr"));
-      const t1 = $("#xTerm1", s), t2 = $("#xTerm2", s);
-      const pisca = c.loop(() => { const o = (0.55 + 0.45 * Math.sin(performance.now() / 180)).toFixed(2); t1.setAttribute("opacity", o); t2.setAttribute("opacity", o); });
-      [t1, t2].forEach((tm, i) => { tm.style.cursor = "pointer"; tm.setAttribute("r", "13"); });
-      let certoPolo = false;
-      while (!certoPolo) {
-        const escolha = await new Promise(r => {
-          const caixa = document.createElement("div"); caixa.className = "gg-perguntas";
-          caixa.innerHTML = '<button type="button" class="gg-op" data-p="1"><span>' + c.esc(t("gel.pertoPocos")) + '</span></button><button type="button" class="gg-op" data-p="2"><span>' + c.esc(t("gel.outroLado")) + "</span></button>";
-          $(".gg-acoes", c.lado).innerHTML = ""; $(".gg-acoes", c.lado).appendChild(caixa);
-          caixa.addEventListener("click", e => { const b = e.target.closest("[data-p]"); if (b) r(+b.dataset.p); });
-          t1.onclick = () => r(1); t2.onclick = () => r(2);
-          setTimeout(() => caixa.querySelector("button").focus({ preventScroll: true }), 50);
-        });
-        if (!c.vivo) return;
-        $(".gg-acoes", c.lado).innerHTML = "";
-        const ligar = vermelhoEmCima => {
-          const yR = vermelhoEmCima ? 48 : 360, yP = vermelhoEmCima ? 360 : 48;
-          $("#xCabos", s).innerHTML = '<path d="M0 ' + (yR + 30) + "Q30 " + yR + " 61 " + yR + '" stroke="#E0385A" stroke-width="5" fill="none"/><path d="M0 ' + (yP - 30) + "Q30 " + yP + " 61 " + yP + '" stroke="#2A3350" stroke-width="5" fill="none"/>';
-          t1.setAttribute("fill", vermelhoEmCima ? "#E0385A" : "#2A3350"); t2.setAttribute("fill", vermelhoEmCima ? "#2A3350" : "#E0385A");
-        };
-        if (escolha === 1) {
-          erros++; ligar(true);
-          // o corante sobe e sai do gel
-          await new Promise(r => {
-            const t0 = performance.now();
-            c.loop((dt, agora) => {
-              const k = clamp((agora - t0) / (c.rm() ? 1 : 900), 0, 1);
-              pocos.forEach(p => { p.setAttribute("transform", "translate(0," + (-40 * k).toFixed(1) + ")"); p.setAttribute("opacity", (1 - k).toFixed(2)); });
-              if (k >= 1) { r(); return false; }
-            });
+      if (c.de <= 1) {
+        c.passos(4, 1);
+        c.etapa(2, 4, t("gel.p2"), t("gel.p2.instr"));
+        const t1 = $("#xTerm1", s), t2 = $("#xTerm2", s);
+        const pisca = c.loop(() => { const o = (0.55 + 0.45 * Math.sin(performance.now() / 180)).toFixed(2); t1.setAttribute("opacity", o); t2.setAttribute("opacity", o); });
+        [t1, t2].forEach((tm, i) => { tm.style.cursor = "pointer"; tm.setAttribute("r", "13"); });
+        let certoPolo = false;
+        while (!certoPolo) {
+          const escolha = await new Promise(r => {
+            const caixa = document.createElement("div"); caixa.className = "gg-perguntas";
+            caixa.innerHTML = '<button type="button" class="gg-op" data-p="1"><span>' + c.esc(t("gel.pertoPocos")) + '</span></button><button type="button" class="gg-op" data-p="2"><span>' + c.esc(t("gel.outroLado")) + "</span></button>";
+            $(".gg-acoes", c.lado).innerHTML = ""; $(".gg-acoes", c.lado).appendChild(caixa);
+            caixa.addEventListener("click", e => { const b = e.target.closest("[data-p]"); if (b) r(+b.dataset.p); });
+            t1.onclick = () => r(1); t2.onclick = () => r(2);
+            setTimeout(() => caixa.querySelector("button").focus({ preventScroll: true }), 50);
           });
-          c.retorno("erro", t("gel.p2.errou"));
-          await c.continuar(t("ui.tentarDeNovo"));
-          pocos.forEach(p => { p.setAttribute("transform", ""); p.setAttribute("opacity", "1"); });
-          $("#xCabos", s).innerHTML = ""; t1.setAttribute("fill", "#9AA3BA"); t2.setAttribute("fill", "#9AA3BA");
-          c.retorno("", "");
-        } else { certoPolo = true; ligar(false); }
+          if (!c.vivo) return;
+          $(".gg-acoes", c.lado).innerHTML = "";
+          const ligar = vermelhoEmCima => {
+            const yR = vermelhoEmCima ? 48 : 360, yP = vermelhoEmCima ? 360 : 48;
+            $("#xCabos", s).innerHTML = '<path d="M0 ' + (yR + 30) + "Q30 " + yR + " 61 " + yR + '" stroke="#E0385A" stroke-width="5" fill="none"/><path d="M0 ' + (yP - 30) + "Q30 " + yP + " 61 " + yP + '" stroke="#2A3350" stroke-width="5" fill="none"/>';
+            t1.setAttribute("fill", vermelhoEmCima ? "#E0385A" : "#2A3350"); t2.setAttribute("fill", vermelhoEmCima ? "#2A3350" : "#E0385A");
+          };
+          if (escolha === 1) {
+            erros++; ligar(true);
+            // o corante sobe e sai do gel
+            await new Promise(r => {
+              const t0 = performance.now();
+              c.loop((dt, agora) => {
+                const k = clamp((agora - t0) / (c.rm() ? 1 : 900), 0, 1);
+                pocos.forEach(p => { p.setAttribute("transform", "translate(0," + (-40 * k).toFixed(1) + ")"); p.setAttribute("opacity", (1 - k).toFixed(2)); });
+                if (k >= 1) { r(); return false; }
+              });
+            });
+            c.retorno("erro", t("gel.p2.errou"));
+            await c.continuar(t("ui.tentarDeNovo"));
+            pocos.forEach(p => { p.setAttribute("transform", ""); p.setAttribute("opacity", "1"); });
+            $("#xCabos", s).innerHTML = ""; t1.setAttribute("fill", "#9AA3BA"); t2.setAttribute("fill", "#9AA3BA");
+            c.retorno("", "");
+          } else { certoPolo = true; ligar(false); }
+        }
+        pisca(); t1.setAttribute("opacity", "1"); t2.setAttribute("opacity", "1"); t1.onclick = t2.onclick = null; t1.style.cursor = t2.style.cursor = "";
+        $("#xBolhas", s).innerHTML = [90, 140, 200, 260, 320, 380].map((x, i) => '<g transform="translate(' + x + ',360)"><circle class="bolha' + (i % 3 === 1 ? " b" : i % 3 === 2 ? " c" : "") + '" r="2.4" fill="#fff"/></g><g transform="translate(' + (x + 14) + ',48)"><circle class="bolha' + (i % 3 === 2 ? " b" : "") + '" r="2" fill="#fff"/></g>').join("");
+        c.retorno("ok", t("gel.p2.ok"));
+        await c.continuar();
       }
-      pisca(); t1.setAttribute("opacity", "1"); t2.setAttribute("opacity", "1"); t1.onclick = t2.onclick = null; t1.style.cursor = t2.style.cursor = "";
-      $("#xBolhas", s).innerHTML = [90, 140, 200, 260, 320, 380].map((x, i) => '<g transform="translate(' + x + ',360)"><circle class="bolha' + (i % 3 === 1 ? " b" : i % 3 === 2 ? " c" : "") + '" r="2.4" fill="#fff"/></g><g transform="translate(' + (x + 14) + ',48)"><circle class="bolha' + (i % 3 === 2 ? " b" : "") + '" r="2" fill="#fff"/></g>').join("");
-      c.retorno("ok", t("gel.p2.ok"));
-      await c.continuar();
-
+      if (c.de > 1) {   // retomada: fios já ligados do jeito certo
+        $("#xCabos", s).innerHTML = '<path d="M0 390Q30 360 61 360" stroke="#E0385A" stroke-width="5" fill="none"/><path d="M0 18Q30 48 61 48" stroke="#2A3350" stroke-width="5" fill="none"/>';
+        $("#xTerm1", s).setAttribute("fill", "#2A3350"); $("#xTerm2", s).setAttribute("fill", "#E0385A");
+      }
+      c.marcar(2, { erros });
       /* 3. correr */
-      c.passos(4, 2);
-      c.etapa(3, 4, t("gel.p3"), t("gel.p3.instr"));
-      const btDesl = c.botao(c.esc(t("gel.desligar")), "");
-      let frente = GY0, parar = false;
-      btDesl.onclick = () => { parar = true; };
-      const onKey3 = e => { if (e.key === " ") { e.preventDefault(); parar = true; } };
-      c.on(document, "keydown", onKey3);
-      frentes.forEach(f => f.setAttribute("opacity", ".9"));
-      setTimeout(() => btDesl.focus({ preventScroll: true }), 60);
-      await new Promise(r => {
-        c.loop(dt => {
-          frente += dt * (GY1 - GY0) / 6.2;
-          frentes.forEach(f => f.setAttribute("y", frente.toFixed(1)));
-          if (frente >= GY1 + 4) { frentes.forEach(f => f.setAttribute("opacity", "0")); r(); return false; }
-          if (parar) { r(); return false; }
+      if (c.de <= 2) {
+        c.passos(4, 2);
+        c.etapa(3, 4, t("gel.p3"), t("gel.p3.instr"));
+        const btDesl = c.botao(c.esc(t("gel.desligar")), "");
+        frente = GY0; let parar = false;
+        btDesl.onclick = () => { parar = true; };
+        const onKey3 = e => { if (e.key === " ") { e.preventDefault(); parar = true; } };
+        c.on(document, "keydown", onKey3);
+        frentes.forEach(f => f.setAttribute("opacity", ".9"));
+        setTimeout(() => btDesl.focus({ preventScroll: true }), 60);
+        await new Promise(r => {
+          c.loop(dt => {
+            frente += dt * (GY1 - GY0) / 6.2;
+            frentes.forEach(f => f.setAttribute("y", frente.toFixed(1)));
+            if (frente >= GY1 + 4) { frentes.forEach(f => f.setAttribute("opacity", "0")); r(); return false; }
+            if (parar) { r(); return false; }
+          });
         });
-      });
-      document.removeEventListener("keydown", onKey3);
-      btDesl.remove(); $("#xBolhas", s).innerHTML = "";
-      const fr = (frente - GY0) / (GY1 - GY0);
-      if (fr < 0.66) { erros++; c.retorno("info", t("gel.p3.cedo")); }
-      else if (fr <= 0.86) c.retorno("ok", t("gel.p3.ok"));
-      else { erros++; c.retorno("erro", t("gel.p3.tarde")); }
-      await c.continuar();
-
+        document.removeEventListener("keydown", onKey3);
+        btDesl.remove(); $("#xBolhas", s).innerHTML = "";
+        const fr = (frente - GY0) / (GY1 - GY0);
+        if (fr < 0.66) { erros++; c.retorno("info", t("gel.p3.cedo")); }
+        else if (fr <= 0.86) c.retorno("ok", t("gel.p3.ok"));
+        else { erros++; c.retorno("erro", t("gel.p3.tarde")); }
+        await c.continuar();
+      }
+      c.marcar(3, { erros, frente });
       /* 4. ler sob a luz azul */
       c.passos(4, 3);
       const yF = Math.min(frente, GY1 + 40);
@@ -628,31 +654,34 @@
       const blur = $("#xBlur", s), campo = $("#xCampo", s);
 
       /* 1. focar */
-      c.passos(2, 0);
-      c.etapa(1, 2, t("micro.p1"), t("micro.p1.instr"), '<div class="gg-foco"><div><p class="etapa">' + c.esc(t("micro.macro")) + '</p><div class="gg-teclas"><button type="button" class="btn ghost" data-d="4">▲</button><button type="button" class="btn ghost" data-d="-4">▼</button></div></div>' +
-        '<div><p class="etapa">' + c.esc(t("micro.micro")) + '</p><div class="gg-teclas"><button type="button" class="btn ghost" data-d="0.6">▲</button><button type="button" class="btn ghost" data-d="-0.6">▼</button></div></div></div><p class="gg-nota so-teclado">' + t("micro.p1.teclado") + "</p>");
-      let foco = (Math.random() < 0.5 ? -1 : 1) * rnd(16, 24), firme = 0;
-      const aplica = () => { const b = Math.min(9, Math.abs(foco) * 0.42); blur.setAttribute("stdDeviation", b.toFixed(2)); campo.setAttribute("transform", "translate(240 200) scale(" + (1 + foco * 0.004).toFixed(3) + ") translate(-240 -200)"); };
-      aplica();
-      let repete = null;
-      $$(".gg-foco [data-d]", c.lado).forEach(b => {
-        const d = +b.dataset.d;
-        const para = () => { clearInterval(repete); repete = null; };
-        c.on(b, "pointerdown", e => { e.preventDefault(); foco += d; aplica(); para(); repete = setInterval(() => { foco += d; aplica(); }, 140); });
-        ["pointerup", "pointerleave", "pointercancel"].forEach(ev => c.on(b, ev, para));
-        c.on(b, "keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); foco += d; aplica(); } });
-      });
-      c.on(document, "keydown", e => {
-        const mapa = { ArrowUp: 4, ArrowDown: -4, ArrowRight: 0.6, ArrowLeft: -0.6 };
-        if (mapa[e.key] != null && firme >= 0) { e.preventDefault(); foco += mapa[e.key]; aplica(); }
-      });
-      c.on(s, "wheel", e => { if (firme < 0) return; e.preventDefault(); foco += e.deltaY > 0 ? -0.6 : 0.6; aplica(); }, { passive: false });
-      await new Promise(r => c.loop(dt => { if (Math.abs(foco) < 0.7) firme += dt; else firme = 0; if (firme > 0.35) { r(); return false; } }));
-      firme = -1; clearInterval(repete);
-      foco = 0; aplica(); campo.removeAttribute("filter");
-      c.retorno("ok", t("micro.p1.ok"));
-      await c.continuar();
-
+      if (c.de <= 0) {
+        c.passos(2, 0);
+        c.etapa(1, 2, t("micro.p1"), t("micro.p1.instr"), '<div class="gg-foco"><div><p class="etapa">' + c.esc(t("micro.macro")) + '</p><div class="gg-teclas"><button type="button" class="btn ghost" data-d="4">▲</button><button type="button" class="btn ghost" data-d="-4">▼</button></div></div>' +
+          '<div><p class="etapa">' + c.esc(t("micro.micro")) + '</p><div class="gg-teclas"><button type="button" class="btn ghost" data-d="0.6">▲</button><button type="button" class="btn ghost" data-d="-0.6">▼</button></div></div></div><p class="gg-nota so-teclado">' + t("micro.p1.teclado") + "</p>");
+        let foco = (Math.random() < 0.5 ? -1 : 1) * rnd(16, 24), firme = 0;
+        const aplica = () => { const b = Math.min(9, Math.abs(foco) * 0.42); blur.setAttribute("stdDeviation", b.toFixed(2)); campo.setAttribute("transform", "translate(240 200) scale(" + (1 + foco * 0.004).toFixed(3) + ") translate(-240 -200)"); };
+        aplica();
+        let repete = null;
+        $$(".gg-foco [data-d]", c.lado).forEach(b => {
+          const d = +b.dataset.d;
+          const para = () => { clearInterval(repete); repete = null; };
+          c.on(b, "pointerdown", e => { e.preventDefault(); foco += d; aplica(); para(); repete = setInterval(() => { foco += d; aplica(); }, 140); });
+          ["pointerup", "pointerleave", "pointercancel"].forEach(ev => c.on(b, ev, para));
+          c.on(b, "keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); foco += d; aplica(); } });
+        });
+        c.on(document, "keydown", e => {
+          const mapa = { ArrowUp: 4, ArrowDown: -4, ArrowRight: 0.6, ArrowLeft: -0.6 };
+          if (mapa[e.key] != null && firme >= 0) { e.preventDefault(); foco += mapa[e.key]; aplica(); }
+        });
+        c.on(s, "wheel", e => { if (firme < 0) return; e.preventDefault(); foco += e.deltaY > 0 ? -0.6 : 0.6; aplica(); }, { passive: false });
+        await new Promise(r => c.loop(dt => { if (Math.abs(foco) < 0.7) firme += dt; else firme = 0; if (firme > 0.35) { r(); return false; } }));
+        firme = -1; clearInterval(repete);
+        foco = 0; aplica(); campo.removeAttribute("filter");
+        c.retorno("ok", t("micro.p1.ok"));
+        await c.continuar();
+      }
+      if (c.de > 0) { blur.setAttribute("stdDeviation", "0"); campo.removeAttribute("filter"); }
+      c.marcar(1, {});
       /* 2. encontrar as fases */
       c.passos(2, 1);
       let erros = 0;
@@ -707,64 +736,69 @@
           '<circle class="xAlvoDisco" cx="' + x + '" cy="' + y + '" r="18" fill="rgba(123,77,224,.10)" stroke="#7B4DE0" stroke-width="2.6" stroke-dasharray="5 4"/></g>').join("") + "</g>" +
         '<g id="xDiscos"></g><g id="xSwab" opacity="0"><path d="M0 0L46 -46" stroke="#D6A86A" stroke-width="5" stroke-linecap="round"/><ellipse cx="0" cy="0" rx="9" ry="7" fill="#fff" stroke="#E6E9F0"/></g><g id="xEstufa"></g>');
       const rastro = $("#xRastro", s), swab = $("#xSwab", s);
+      const letras = ["A", "B", "C", "D"], pos = Object.assign({}, c.dados.pos);
 
       /* 1. espalhar */
-      c.passos(4, 0);
-      c.etapa(1, 4, t("bac.p1"), t("bac.p1.instr"), '<div class="gg-medidor"><i id="xMedB"></i></div><p class="gg-nota so-teclado">' + t("bac.p1.teclado") + "</p>");
-      const medB = $("#xMedB", c.lado);
-      const N = 22, passo = (2 * R) / N, grade = [];
-      for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) { const x = CX - R + (i + 0.5) * passo, y = CY - R + (j + 0.5) * passo; if (Math.hypot(x - CX, y - CY) < R - 4) grade.push({ x, y, ok: false }); }
-      let cobertos = 0, d = "", segB = false, espalhando = true;
-      const cobre = p => { grade.forEach(g => { if (!g.ok && Math.hypot(g.x - p.x, g.y - p.y) < 22) { g.ok = true; cobertos++; } }); medB.style.width = Math.min(100, cobertos / grade.length / 0.88 * 100).toFixed(0) + "%"; };
-      await new Promise(r => {
-        const ver = () => { if (cobertos / grade.length >= 0.88) { r(); return true; } };
-        c.on(s, "pointerdown", e => { if (!espalhando) return; segB = true; captura(s, e); const p = c.ponto(s, e); d += "M" + p.x.toFixed(0) + " " + p.y.toFixed(0); rastro.setAttribute("d", d); cobre(p); swab.setAttribute("opacity", "1"); swab.setAttribute("transform", "translate(" + p.x + "," + p.y + ")"); });
-        c.on(s, "pointermove", e => { if (!espalhando || !segB || cobertos / grade.length >= 0.88) return; const p = c.ponto(s, e); d += "L" + p.x.toFixed(0) + " " + p.y.toFixed(0); rastro.setAttribute("d", d); swab.setAttribute("transform", "translate(" + p.x + "," + p.y + ")"); cobre(p); ver(); });
-        c.on(s, "pointerup", () => { segB = false; swab.setAttribute("opacity", "0"); });
-        c.on(s, "pointercancel", () => { segB = false; });
-        // teclado: espalha sozinho em zigue-zague
-        let auto = false;
-        c.on(document, "keydown", e => {
-          if (e.key !== "Enter" || auto || cobertos / grade.length >= 0.88) return;
-          if (e.target.closest && e.target.closest("button")) return;
-          e.preventDefault(); auto = true;
-          let y = CY - R + 14, dir = 1; d += "M" + (CX - R) + " " + y;
-          const t0 = setInterval(() => {
-            if (!c.vivo) return clearInterval(t0);
-            y += 22; dir = -dir; d += "L" + (dir > 0 ? CX - R : CX + R) + " " + y; rastro.setAttribute("d", d);
-            for (let x = CX - R; x <= CX + R; x += 10) cobre({ x, y }), cobre({ x, y: y - 11 });
-            if (y > CY + R || ver()) { clearInterval(t0); r(); }
-          }, c.rm() ? 5 : 90);
+      if (c.de <= 0) {
+        c.passos(4, 0);
+        c.etapa(1, 4, t("bac.p1"), t("bac.p1.instr"), '<div class="gg-medidor"><i id="xMedB"></i></div><p class="gg-nota so-teclado">' + t("bac.p1.teclado") + "</p>");
+        const medB = $("#xMedB", c.lado);
+        const N = 22, passo = (2 * R) / N, grade = [];
+        for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) { const x = CX - R + (i + 0.5) * passo, y = CY - R + (j + 0.5) * passo; if (Math.hypot(x - CX, y - CY) < R - 4) grade.push({ x, y, ok: false }); }
+        let cobertos = 0, d = "", segB = false, espalhando = true;
+        const cobre = p => { grade.forEach(g => { if (!g.ok && Math.hypot(g.x - p.x, g.y - p.y) < 22) { g.ok = true; cobertos++; } }); medB.style.width = Math.min(100, cobertos / grade.length / 0.88 * 100).toFixed(0) + "%"; };
+        await new Promise(r => {
+          const ver = () => { if (cobertos / grade.length >= 0.88) { r(); return true; } };
+          c.on(s, "pointerdown", e => { if (!espalhando) return; segB = true; captura(s, e); const p = c.ponto(s, e); d += "M" + p.x.toFixed(0) + " " + p.y.toFixed(0); rastro.setAttribute("d", d); cobre(p); swab.setAttribute("opacity", "1"); swab.setAttribute("transform", "translate(" + p.x + "," + p.y + ")"); });
+          c.on(s, "pointermove", e => { if (!espalhando || !segB || cobertos / grade.length >= 0.88) return; const p = c.ponto(s, e); d += "L" + p.x.toFixed(0) + " " + p.y.toFixed(0); rastro.setAttribute("d", d); swab.setAttribute("transform", "translate(" + p.x + "," + p.y + ")"); cobre(p); ver(); });
+          c.on(s, "pointerup", () => { segB = false; swab.setAttribute("opacity", "0"); });
+          c.on(s, "pointercancel", () => { segB = false; });
+          // teclado: espalha sozinho em zigue-zague
+          let auto = false;
+          c.on(document, "keydown", e => {
+            if (e.key !== "Enter" || auto || cobertos / grade.length >= 0.88) return;
+            if (e.target.closest && e.target.closest("button")) return;
+            e.preventDefault(); auto = true;
+            let y = CY - R + 14, dir = 1; d += "M" + (CX - R) + " " + y;
+            const t0 = setInterval(() => {
+              if (!c.vivo) return clearInterval(t0);
+              y += 22; dir = -dir; d += "L" + (dir > 0 ? CX - R : CX + R) + " " + y; rastro.setAttribute("d", d);
+              for (let x = CX - R; x <= CX + R; x += 10) cobre({ x, y }), cobre({ x, y: y - 11 });
+              if (y > CY + R || ver()) { clearInterval(t0); r(); }
+            }, c.rm() ? 5 : 90);
+          });
         });
-      });
-      espalhando = false; segB = false; swab.setAttribute("opacity", "0"); medB.style.width = "100%";
-      c.retorno("ok", t("bac.p1.ok"));
-      await c.continuar();
-
+        espalhando = false; segB = false; swab.setAttribute("opacity", "0"); medB.style.width = "100%";
+        c.retorno("ok", t("bac.p1.ok"));
+        await c.continuar();
+      }
+      c.marcar(1, {});
       /* 2. discos */
-      c.passos(4, 1);
-      c.etapa(2, 4, t("bac.p2"), t("bac.p2.instr"));
-      const slots = $$(".xSlot", s);
-      slots.forEach(sl => { sl.setAttribute("opacity", "1"); sl.setAttribute("tabindex", "0"); sl.style.cursor = "pointer"; });
-      const letras = ["A", "B", "C", "D"], pos = {};
-      let n = 0;
-      await new Promise(r => {
-        const poe = sl => {
-          if (!sl || sl.dataset.ok) return;
-          sl.dataset.ok = "1"; sl.setAttribute("opacity", "0"); sl.setAttribute("tabindex", "-1");
-          const [x, y] = SLOTS[+sl.dataset.i], L = letras[n++]; pos[L] = [x, y];
-          $("#xDiscos", s).insertAdjacentHTML("beforeend", '<g transform="translate(' + x + "," + y + ')"><circle r="14" fill="#fff" stroke="#C9CFDC" stroke-width="2"/><text y="5" text-anchor="middle" font-size="15" font-weight="700" fill="#2A3350">' + L + "</text></g>");
-          if (n >= 4) r();
-        };
-        s.onclick = e => poe(e.target.closest(".xSlot"));
-        s.onpointerup = e => { const sl = e.target.closest && e.target.closest(".xSlot"); if (sl) { e.preventDefault(); poe(sl); } };
-        s.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); poe(e.target.closest(".xSlot")); } };
-        setTimeout(() => slots[0].focus && slots[0].focus({ preventScroll: true }), 60);
-      });
-      s.onclick = s.onkeydown = s.onpointerup = null;
-      c.retorno("ok", t("bac.p2.ok"));
-      await c.continuar();
-
+      if (c.de <= 1) {
+        c.passos(4, 1);
+        c.etapa(2, 4, t("bac.p2"), t("bac.p2.instr"));
+        const slots = $$(".xSlot", s);
+        slots.forEach(sl => { sl.setAttribute("opacity", "1"); sl.setAttribute("tabindex", "0"); sl.style.cursor = "pointer"; });
+        let n = 0;
+        await new Promise(r => {
+          const poe = sl => {
+            if (!sl || sl.dataset.ok) return;
+            sl.dataset.ok = "1"; sl.setAttribute("opacity", "0"); sl.setAttribute("tabindex", "-1");
+            const [x, y] = SLOTS[+sl.dataset.i], L = letras[n++]; pos[L] = [x, y];
+            $("#xDiscos", s).insertAdjacentHTML("beforeend", '<g transform="translate(' + x + "," + y + ')"><circle r="14" fill="#fff" stroke="#C9CFDC" stroke-width="2"/><text y="5" text-anchor="middle" font-size="15" font-weight="700" fill="#2A3350">' + L + "</text></g>");
+            if (n >= 4) r();
+          };
+          s.onclick = e => poe(e.target.closest(".xSlot"));
+          s.onpointerup = e => { const sl = e.target.closest && e.target.closest(".xSlot"); if (sl) { e.preventDefault(); poe(sl); } };
+          s.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); poe(e.target.closest(".xSlot")); } };
+          setTimeout(() => slots[0].focus && slots[0].focus({ preventScroll: true }), 60);
+        });
+        s.onclick = s.onkeydown = s.onpointerup = null;
+        c.retorno("ok", t("bac.p2.ok"));
+        await c.continuar();
+      }
+      if (c.de > 1) $("#xDiscos", s).innerHTML = letras.map(L => '<g transform="translate(' + pos[L][0] + "," + pos[L][1] + ')"><circle r="14" fill="#fff" stroke="#C9CFDC" stroke-width="2"/><text y="5" text-anchor="middle" font-size="15" font-weight="700" fill="#2A3350">' + L + "</text></g>").join("");
+      c.marcar(2, { pos });
       /* 3. estufa */
       c.passos(4, 2);
       c.etapa(3, 4, t("bac.p3"), t("bac.p3.instr"));
@@ -814,8 +848,9 @@
     titulo: "bio.titulo", kicker: "bio.kicker", passos: 3,
     async jogar(c) {
       const t = c.t;
-      let erros = 0;
+      let erros = c.dados.erros || 0;
       const PAD = 3;
+      const cor = s => [...s].map(b => '<b style="color:' + CORB[b] + '">' + b + "</b>").join("");
       let off = (Math.random() < 0.5 ? -1 : 1) * ri(2, 3);
       c.cena.innerHTML = '<div class="bio-tela" id="xTela"><div class="bio-num" id="xNum"></div><p class="bio-rot">' + c.esc(t("bio.ref")) + '</p><div class="bio-linha" id="xRef"></div>' +
         '<p class="bio-rot">' + c.esc(t("bio.amostra")) + '</p><div class="bio-linha bio-mov" id="xAmo" tabindex="0" role="slider" aria-valuemin="-3" aria-valuemax="3" aria-label="' + c.esc(t("bio.amostra")) + '"></div><div id="xExtra"></div></div>';
@@ -835,31 +870,36 @@
       c.on(window, "resize", desenhar);
 
       /* 1. alinhar */
-      c.passos(3, 0);
-      c.etapa(1, 3, t("bio.p1"), t("bio.p1.instr"), '<div class="gg-teclas"><button type="button" class="btn ghost" id="xEsq" aria-label="' + c.esc(t("bio.esq")) + '">◀</button><button type="button" class="btn ghost" id="xDir" aria-label="' + c.esc(t("bio.dir")) + '">▶</button></div>');
-      await new Promise(r => {
-        const move = dlt => { off = clamp(off + dlt, -PAD, PAD); desenhar(); if (off === 0) { r(); } };
-        $("#xEsq", c.lado).onclick = () => move(-1); $("#xDir", c.lado).onclick = () => move(1);
-        c.on(amoEl, "keydown", e => { if (e.key === "ArrowLeft") { e.preventDefault(); move(-1); } if (e.key === "ArrowRight") { e.preventDefault(); move(1); } });
-        let x0 = null, o0 = 0;
-        c.on(amoEl, "pointerdown", e => { x0 = e.clientX; o0 = off; captura(amoEl, e); });
-        c.on(amoEl, "pointermove", e => { if (x0 == null || off === 0) return; const n = clamp(o0 + Math.round((e.clientX - x0) / cw), -PAD, PAD); if (n !== off) { off = n; desenhar(); if (off === 0) { x0 = null; r(); } } });
-        c.on(amoEl, "pointerup", () => { x0 = null; });
-      });
-      amoEl.classList.add("travado");
-      $(".gg-teclas", c.lado).remove();
-      c.retorno("ok", t("bio.p1.ok"));
-      await c.continuar();
-
+      if (c.de <= 0) {
+        c.passos(3, 0);
+        c.etapa(1, 3, t("bio.p1"), t("bio.p1.instr"), '<div class="gg-teclas"><button type="button" class="btn ghost" id="xEsq" aria-label="' + c.esc(t("bio.esq")) + '">◀</button><button type="button" class="btn ghost" id="xDir" aria-label="' + c.esc(t("bio.dir")) + '">▶</button></div>');
+        await new Promise(r => {
+          const move = dlt => { off = clamp(off + dlt, -PAD, PAD); desenhar(); if (off === 0) { r(); } };
+          $("#xEsq", c.lado).onclick = () => move(-1); $("#xDir", c.lado).onclick = () => move(1);
+          c.on(amoEl, "keydown", e => { if (e.key === "ArrowLeft") { e.preventDefault(); move(-1); } if (e.key === "ArrowRight") { e.preventDefault(); move(1); } });
+          let x0 = null, o0 = 0;
+          c.on(amoEl, "pointerdown", e => { x0 = e.clientX; o0 = off; captura(amoEl, e); });
+          c.on(amoEl, "pointermove", e => { if (x0 == null || off === 0) return; const n = clamp(o0 + Math.round((e.clientX - x0) / cw), -PAD, PAD); if (n !== off) { off = n; desenhar(); if (off === 0) { x0 = null; r(); } } });
+          c.on(amoEl, "pointerup", () => { x0 = null; });
+        });
+        amoEl.classList.add("travado");
+        $(".gg-teclas", c.lado).remove();
+        c.retorno("ok", t("bio.p1.ok"));
+        await c.continuar();
+      }
+      if (c.de > 0) { off = 0; desenhar(); amoEl.classList.add("travado"); }
+      c.marcar(1, { erros });
       /* 2. a diferença */
-      c.passos(3, 1);
-      c.etapa(2, 3, t("bio.p2"), t("bio.p2.instr"));
-      const cods = Array.from({ length: 8 }, (_, k) => ({ k, r: REF.substr(k * 3, 3), a: AMO.substr(k * 3, 3) }));
-      const cor = s => [...s].map(b => '<b style="color:' + CORB[b] + '">' + b + "</b>").join("");
-      erros += await c.perguntar(cods.map(o => ({ rotulo: '<span class="bio-chip"><small>' + c.esc(t("bio.codon", { n: o.k + 1 })) + "</small><code>" + cor(o.r) + "</code><code>" + cor(o.a) + "</code></span>", certo: o.k === 5, resp: o.k === 5 ? t("bio.p2.ok") : t("bio.p2.e") })), { grade: true, desabilitaErro: true });
-      $$(".bio-l", amoEl).forEach(l => { if (l.classList.contains("nao")) l.classList.add("muta"); });
-      await c.continuar();
-
+      if (c.de <= 1) {
+        c.passos(3, 1);
+        c.etapa(2, 3, t("bio.p2"), t("bio.p2.instr"));
+        const cods = Array.from({ length: 8 }, (_, k) => ({ k, r: REF.substr(k * 3, 3), a: AMO.substr(k * 3, 3) }));
+        erros += await c.perguntar(cods.map(o => ({ rotulo: '<span class="bio-chip"><small>' + c.esc(t("bio.codon", { n: o.k + 1 })) + "</small><code>" + cor(o.r) + "</code><code>" + cor(o.a) + "</code></span>", certo: o.k === 5, resp: o.k === 5 ? t("bio.p2.ok") : t("bio.p2.e") })), { grade: true, desabilitaErro: true });
+        $$(".bio-l", amoEl).forEach(l => { if (l.classList.contains("nao")) l.classList.add("muta"); });
+        await c.continuar();
+      }
+      if (c.de > 1) $$(".bio-l", amoEl).forEach(l => { if (l.classList.contains("nao")) l.classList.add("muta"); });
+      c.marcar(2, { erros });
       /* 3. traduzir */
       c.passos(3, 2);
       const TAB = [["GTG", "bio.val"], ["CAT", "bio.his"], ["CTG", "bio.leu"], ["ACT", "bio.thr"], ["CCT", "bio.pro"], ["GAG", "bio.glu"], ["AAG", "bio.lys"]];
@@ -968,43 +1008,50 @@
     titulo: "pub.titulo", kicker: "pub.kicker", passos: 4,
     async jogar(c) {
       const t = c.t, E = c.estado;
+      let nome = E.nome || t("pub.voce");
       /* 1. autoria */
-      c.passos(4, 0);
-      c.cena.innerHTML = '<div class="pub-geninho"><img src="img/geninho-corpo.jpg" alt="" width="360" height="360"></div>';
-      c.etapa(1, 4, t("pub.p1"), t("pub.p1.instr"), '<label class="gg-campo"><span>' + c.esc(t("pub.nome")) + '</span><input id="xNome" type="text" maxlength="60" autocomplete="name" value="' + c.esc(E.nome || "") + '"></label>');
-      const inp = $("#xNome", c.lado);
-      setTimeout(() => inp.focus({ preventScroll: true }), 80);
-      c.on(inp, "keydown", e => { if (e.key === "Enter") { e.preventDefault(); const b = $(".gg-acoes .btn", c.lado); if (b) b.click(); } });
-      await c.continuar();
-      E.nome = inp.value.replace(/\s+/g, " ").trim().slice(0, 60); c.salvar();
-      const nome = E.nome || t("pub.voce");
-
-      /* 2. o artigo */
-      c.passos(4, 1);
-      const ids = ["epi", "dna", "pcr", "gel", "micro", "bacterias", "bio", "freezer"].filter(id => E.feitos[id]);
-      c.cena.innerHTML = '<article class="pub-artigo"><p class="pub-rev">GenoGame · ' + new Date().getFullYear() + '</p><h3>' + c.esc(t("pub.artigoTitulo")) + '</h3><p class="pub-aut">' + c.esc(t("pub.autores", { x: nome })) + "</p>" +
-        '<div class="pub-sec">' + ids.map(id => '<p><span class="pub-est">' + "★".repeat(+E.feitos[id] || 0) + "</span>" + c.esc(t("tar." + id)) + "</p>").join("") + "</div>" +
-        '<div class="pub-figs"><span style="--c:#7B4DE0"></span><span style="--c:#2F5BEA"></span><span style="--c:#14864A"></span></div></article>';
-      c.etapa(2, 4, t("pub.p2"), t("pub.p2.instr"));
-      await c.continuar(t("pub.enviar"));
-
-      /* 3. revisão por pares */
-      c.passos(4, 2);
-      c.cena.innerHTML = '<div class="pub-revisores">' + [1, 2, 3].map(n => '<div class="pub-r" id="xR' + n + '"><b>R' + n + "</b><span>" + c.esc(t("pub.revisor", { n })) + "</span></div>").join("") + "</div>";
-      const QS = [["pub.r1", [["pub.r1.a", 1], ["pub.r1.b"]], 1], ["pub.r2", [["pub.r2.a", 1], ["pub.r2.b"], ["pub.r2.c"]], 2], ["pub.r3", [["pub.r3.a", 1], ["pub.r3.b"]], 2]];
-      for (let i = 0; i < QS.length; i++) {
-        const [q, ops, rev] = QS[i];
-        $$(".pub-r", c.cena).forEach(r => r.classList.toggle("ativo", r.id === "xR" + rev));
-        c.etapa(3, 4, t("pub.p3"), t("pub.p3.instr"), (i === 2 ? '<p class="gg-nota">' + c.esc(t("pub.revisor2")) + "</p>" : "") + "<p><b>" + c.esc(t("pub.revisor", { n: rev })) + ":</b> " + t(q) + "</p>");
-        await c.perguntar(ops.map(([k, ok]) => ({ rotulo: c.esc(t(k)), certo: !!ok, resp: ok ? t("pub.ok") : t("pub.corrigir") })), {});
-        $("#xR" + rev, c.cena).classList.add("ok");
-        await c.espera(600);
+      if (c.de <= 0) {
+        c.passos(4, 0);
+        c.cena.innerHTML = '<div class="pub-geninho"><img src="img/geninho-corpo.jpg" alt="" width="360" height="360"></div>';
+        c.etapa(1, 4, t("pub.p1"), t("pub.p1.instr"), '<label class="gg-campo"><span>' + c.esc(t("pub.nome")) + '</span><input id="xNome" type="text" maxlength="60" autocomplete="name" value="' + c.esc(E.nome || "") + '"></label>');
+        const inp = $("#xNome", c.lado);
+        setTimeout(() => inp.focus({ preventScroll: true }), 80);
+        c.on(inp, "keydown", e => { if (e.key === "Enter") { e.preventDefault(); const b = $(".gg-acoes .btn", c.lado); if (b) b.click(); } });
+        await c.continuar();
+        E.nome = inp.value.replace(/\s+/g, " ").trim().slice(0, 60); c.salvar();
+        nome = E.nome || t("pub.voce");
       }
-      $("#xR1", c.cena).classList.add("ok");
-
+      c.marcar(1, {});
+      /* 2. o artigo */
+      if (c.de <= 1) {
+        c.passos(4, 1);
+        const ids = ["epi", "dna", "pcr", "gel", "micro", "bacterias", "bio", "freezer"].filter(id => E.feitos[id]);
+        c.cena.innerHTML = '<article class="pub-artigo"><p class="pub-rev">GenoGame · ' + new Date().getFullYear() + '</p><h3>' + c.esc(t("pub.artigoTitulo")) + '</h3><p class="pub-aut">' + c.esc(t("pub.autores", { x: nome })) + "</p>" +
+          '<div class="pub-sec">' + ids.map(id => '<p><span class="pub-est">' + "★".repeat(+E.feitos[id] || 0) + "</span>" + c.esc(t("tar." + id)) + "</p>").join("") + "</div>" +
+          '<div class="pub-figs"><span style="--c:#7B4DE0"></span><span style="--c:#2F5BEA"></span><span style="--c:#14864A"></span></div></article>';
+        c.etapa(2, 4, t("pub.p2"), t("pub.p2.instr"));
+        await c.continuar(t("pub.enviar"));
+      }
+      c.marcar(2, {});
+      /* 3. revisão por pares */
+      if (c.de <= 2) {
+        c.passos(4, 2);
+        c.cena.innerHTML = '<div class="pub-revisores">' + [1, 2, 3].map(n => '<div class="pub-r" id="xR' + n + '"><b>R' + n + "</b><span>" + c.esc(t("pub.revisor", { n })) + "</span></div>").join("") + "</div>";
+        const QS = [["pub.r1", [["pub.r1.a", 1], ["pub.r1.b"]], 1], ["pub.r2", [["pub.r2.a", 1], ["pub.r2.b"], ["pub.r2.c"]], 2], ["pub.r3", [["pub.r3.a", 1], ["pub.r3.b"]], 2]];
+        for (let i = 0; i < QS.length; i++) {
+          const [q, ops, rev] = QS[i];
+          $$(".pub-r", c.cena).forEach(r => r.classList.toggle("ativo", r.id === "xR" + rev));
+          c.etapa(3, 4, t("pub.p3"), t("pub.p3.instr"), (i === 2 ? '<p class="gg-nota">' + c.esc(t("pub.revisor2")) + "</p>" : "") + "<p><b>" + c.esc(t("pub.revisor", { n: rev })) + ":</b> " + t(q) + "</p>");
+          await c.perguntar(ops.map(([k, ok]) => ({ rotulo: c.esc(t(k)), certo: !!ok, resp: ok ? t("pub.ok") : t("pub.corrigir") })), {});
+          $("#xR" + rev, c.cena).classList.add("ok");
+          await c.espera(600);
+        }
+        $("#xR1", c.cena).classList.add("ok");
+      }
+      c.marcar(3, {});
       /* 4. publicado */
       c.passos(4, 3);
-      E.publicado = true; c.salvar();
+      E.publicado = true; c.esquecer(); c.salvar();
       c.cena.innerHTML = '<div class="pub-caminho">' + [1, 2, 3, 4].map(n => '<div class="pub-passo" style="--i:' + n + '"><b>' + n + "</b><span>" + c.esc(t("pub.c" + n)) + "</span></div>").join('<i aria-hidden="true"></i>') + '</div><div class="pub-confete" aria-hidden="true">' +
         (c.rm() ? "" : Array.from({ length: 18 }, (_, i) => '<span style="left:' + rnd(2, 96).toFixed(0) + "%;animation-delay:-" + rnd(0, 4).toFixed(1) + "s;animation-duration:" + rnd(3.5, 6).toFixed(1) + "s;--c:" + ["#4D7CFF", "#FF5470", "#FFB23F", "#A58CFF", "#5FD39A"][i % 5] + '"></span>').join("")) + "</div>";
       c.etapa(4, 4, t("pub.p4"), t("pub.p4.instr"));
