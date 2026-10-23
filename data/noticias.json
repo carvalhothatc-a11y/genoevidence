@@ -1,6 +1,28 @@
 {
- "atualizado_em": "2026-10-23T01:38:50.072715+00:00",
+ "atualizado_em": "2026-10-23T07:43:06.825522+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "VÍDEO | Composto do alho pode ajudar no combate ao câncer",
+   "resumo": "Estudo conduzido na Faculdade de Ciências Farmacêuticas de Ribeirão Preto da USP testou em laboratório o uso de dissulfeto de dialila aplicada a células de tumor colorretal em conjunto com medicamentos quimioterápicos. A combinação…",
+   "url": "https://www.youtube.com/watch?v=ZM8tMIW87vA",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-23T07:43:06.825522+00:00",
+   "tema": "Câncer",
+   "relevancia": 12,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "VIDEO | Garlic compound can help fight cancer",
+     "resumo": "A study conducted at the Faculty of Pharmaceutical Sciences of Ribeirão Preto of USP tested in the laboratory the use of diallyl disulfide applied to colorectal tumor cells in conjunction with chemotherapy drugs. The combination…"
+    },
+    "es": {
+     "titulo": "VIDEO | El compuesto de ajo puede ayudar a combatir el cáncer",
+     "resumo": "Un estudio realizado en la Facultad de Ciencias Farmacéuticas de Ribeirão Preto de la USP probó en el laboratorio el uso de disulfuro de dialilo aplicado a células tumorales colorrectales junto con medicamentos de quimioterapia. La combinación..."
+    }
+   }
+  },
   {
    "tipo": "noticia",
    "titulo": "Veja o que os dados mais recentes da vacina contra o câncer de mRNA da Moderna realmente mostram",
@@ -79,6 +101,32 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Sistema com realidade virtual e IA aprimora detecção de declínio cognitivo",
+   "resumo": "Ferramenta em desenvolvimento na USP integra experiências imersivas, rastreamento do olhar e respostas neurológicas para identificar o início de doenças neurodegenerativas",
+   "url": "https://agencia.fapesp.br/sistema-com-realidade-virtual-e-ia-aprimora-deteccao-de-declinio-cognitivo/59460",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-23T07:43:06.825522+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://agencia.fapesp.br/files/post/59460.jpg",
+   "foco": {
+    "x": 0,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "System with virtual reality and AI enhances detection of cognitive decline",
+     "resumo": "Tool under development at USP integrates immersive experiences, gaze tracking and neurological responses to identify the onset of neurodegenerative diseases"
+    },
+    "es": {
+     "titulo": "Sistema con realidad virtual e IA mejora la detección del deterioro cognitivo",
+     "resumo": "Herramienta en desarrollo en la USP que integra experiencias inmersivas, seguimiento de la mirada y respuestas neurológicas para identificar la aparición de enfermedades neurodegenerativas"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Nobel de Física 2026 e neutrinos",
    "resumo": "Por Elisabete Gouveia Dal Pino, professora do Instituto de Astronomia, Geofísica e Ciências Atmosféricas (IAG) da USP",
    "url": "https://jornal.usp.br/artigos/nobel-de-fisica-2026-e-neutrinos/",
@@ -100,80 +148,6 @@
     "es": {
      "titulo": "Premio Nobel de Física 2026 y neutrinos",
      "resumo": "Por Elisabete Gouveia Dal Pino, profesora del Instituto de Astronomía, Geofísica y Ciencias Atmosféricas (IAG) de la USP"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Ferramenta on-line gratuita facilita a análise de dados genéticos complexos",
-   "resumo": "Desenvolvido por pesquisadores da Unicamp, Unesp e USP, software CellForgeR permite que cientistas sem experiência em programação analisem dados de sequenciamento de células únicas para acelerar descobertas em saúde",
-   "url": "https://agencia.fapesp.br/ferramenta-on-line-gratuita-facilita-a-analise-de-dados-geneticos-complexos/59447",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-22T07:45:04.967759+00:00",
-   "tema": "Genética",
-   "relevancia": 10,
-   "imagem": "https://agencia.fapesp.br/files/post/59447.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Free online tool facilitates analysis of complex genetic data",
-     "resumo": "Developed by researchers at Unicamp, Unesp and USP, CellForgeR software allows scientists with no programming experience to analyze single-cell sequencing data to accelerate health discoveries"
-    },
-    "es": {
-     "titulo": "Herramienta en línea gratuita que facilita el análisis de datos genéticos complejos",
-     "resumo": "Desarrollado por investigadores de la Unicamp, la Unesp y la USP, el software CellForgeR permite a los científicos sin experiencia en programación analizar datos de secuenciación unicelular para acelerar los descubrimientos de salud"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Poéticas Bíblicas e Seculares",
-   "resumo": "Colóquio internacional, com foco nos temas do amor, da justiça e da esperança, será realizado em Campinas com conferencistas de instituições brasileiras e estrangeiras",
-   "url": "https://agencia.fapesp.br/poeticas-biblicas-e-seculares/59452",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-23T01:38:50.072715+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Biblical and Secular Poetics",
-     "resumo": "International colloquium, focusing on the themes of love, justice and hope, will be held in Campinas with speakers from Brazilian and foreign institutions"
-    },
-    "es": {
-     "titulo": "Poética bíblica y secular",
-     "resumo": "Coloquio internacional, centrado en los temas del amor, la justicia y la esperanza, se llevará a cabo en Campinas con ponentes de instituciones brasileñas y extranjeras"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Fogo e desmatamento transformam Amazônia em fonte de carbono para a atmosfera",
-   "resumo": "Estudo do Inpe publicado na Nature revela que a ação humana inverteu o balanço natural da floresta, que passou a liberar 1,17 bilhão de toneladas de CO2 a mais do que consegue absorver todos os anos",
-   "url": "https://agencia.fapesp.br/fogo-e-desmatamento-transformam-amazonia-em-fonte-de-carbono-para-a-atmosfera/59446",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-22T22:29:29.876070+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 9,
-   "imagem": "https://agencia.fapesp.br/files/post/59446.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Fire and deforestation transform the Amazon into a source of carbon for the atmosphere",
-     "resumo": "A study by Inpe published in Nature reveals that human action has reversed the natural balance of the forest, which has begun to release 1.17 billion tons of CO2 more than it can absorb every year"
-    },
-    "es": {
-     "titulo": "El fuego y la deforestación transforman la Amazonía en una fuente de carbono para la atmósfera",
-     "resumo": "Un estudio del Inpe publicado en Nature revela que la acción humana ha revertido el equilibrio natural del bosque, que ha comenzado a liberar 1.170 millones de toneladas de CO2 más de lo que puede absorber cada año"
     }
    }
   },
@@ -228,6 +202,57 @@
      "resumo": "La investigación multidisciplinaria ve al continente y sus relaciones con Brasil más allá de los estereotipos"
     }
    }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Exame de sangue poderá antecipar o risco de hipertensão pulmonar",
+   "resumo": "Estudo analisou cerca de 5 mil proteínas e identificou dez associadas ao desenvolvimento da doença. Resultados apontam a NOTCH3 como possível alvo para novos tratamentos",
+   "url": "https://agencia.fapesp.br/exame-de-sangue-podera-antecipar-o-risco-de-hipertensao-pulmonar/59458",
+   "fonte": "Agência FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-23T07:43:06.825522+00:00",
+   "tema": "Saúde",
+   "relevancia": 8,
+   "imagem": "https://agencia.fapesp.br/files/post/59458.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Blood test may anticipate the risk of pulmonary hypertension",
+     "resumo": "A study analyzed about 5,000 proteins and identified ten associated with the development of the disease. Results point to NOTCH3 as a possible target for new treatments"
+    },
+    "es": {
+     "titulo": "El análisis de sangre puede anticipar el riesgo de hipertensión pulmonar",
+     "resumo": "Un estudio analizó alrededor de 5.000 proteínas e identificó diez asociadas con el desarrollo de la enfermedad. Los resultados apuntan a NOTCH3 como un posible objetivo para nuevos tratamientos"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas descobrem uma arma imune escondida contra o câncer de pulmão mortal",
+   "resumo": "Pesquisadores descobriram uma defesa imunológica oculta capaz de atacar o câncer de pulmão de pequenas células, uma doença extremamente agressiva que muitas vezes escapa dos tratamentos convencionais. As células imunes especializadas podem reconhecer e destruir células cancerígenas...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261021231232.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-23T00:32:37+00:00",
+   "tema": "Câncer",
+   "relevancia": 8,
+   "imagem": "https://www.sciencedaily.com/images/1920/cancer-cell-destruction-nanoparticles.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists discover a hidden immune weapon against deadly lung cancer",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos descubren un arma inmune oculta contra el cáncer de pulmón mortal",
+     "resumo": "Los investigadores han descubierto una defensa inmune oculta capaz de atacar el cáncer de pulmón de células pequeñas, una enfermedad extremadamente agresiva que a menudo escapa a los tratamientos convencionales. Las células inmunitarias especializadas pueden reconocer y destruir las células cancerosas..."
+    }
+   },
+   "resumo_original": "Researchers have uncovered a hidden immune defense capable of attacking small cell lung cancer, an extremely aggressive disease that often escapes conventional treatments. The specialized immune cells can recognize and destroy cancer cells…"
   },
   {
    "tipo": "noticia",
@@ -354,31 +379,6 @@
     }
    },
    "resumo_original": "As machines race ahead in solving problems, mathematicians must establish a new era that prizes human understanding over simply publishing more solutions."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Pequenas ‘explosões solares’ recriadas em laboratório podem explicar o mistério da coroa",
-   "resumo": "Um experimento produziu nanoflares semelhantes aos vistos no sol e mostrou que eles podem ajudar a explicar por que as camadas externas da atmosfera solar são tão quentes",
-   "url": "https://www.newscientist.com/article/2595244-tiny-solar-flares-recreated-in-the-lab-may-explain-corona-mystery/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-22T19:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317692891.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Tiny ‘solar flares’ recreated in the lab may explain corona mystery",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Pequeñas ‘llamaradas solares’ recreadas en el laboratorio pueden explicar el misterio de la corona",
-     "resumo": "Un experimento ha producido nanoflamas similares a las que se ven en el sol, y ha demostrado que pueden ayudar a explicar por qué las capas externas de la atmósfera solar están tan calientes"
-    }
-   },
-   "resumo_original": "An experiment has produced nanoflares similar to those seen on the sun, and shown that they can help explain why the outer layers of the solar atmosphere are so hot"
   }
  ],
  "artigos": [
@@ -1169,6 +1169,10 @@
   "heres what modernas latest mrna cancer vaccine data actually show": "2026-10-23T01:38:50.072715+00:00",
   "nobel de fisica 2026 e neutrinos": "2026-10-23T01:38:50.072715+00:00",
   "no brasil cerca de 90 dos desastres climaticos ocorrem em cidades de pequeno porte": "2026-10-23T01:38:50.072715+00:00",
-  "tiny solar flares recreated in the lab may explain corona mystery": "2026-10-23T01:38:50.072715+00:00"
+  "tiny solar flares recreated in the lab may explain corona mystery": "2026-10-23T01:38:50.072715+00:00",
+  "video composto do alho pode ajudar no combate ao cancer": "2026-10-23T07:43:06.825522+00:00",
+  "sistema com realidade virtual e ia aprimora deteccao de declinio cognitivo": "2026-10-23T07:43:06.825522+00:00",
+  "exame de sangue podera antecipar o risco de hipertensao pulmonar": "2026-10-23T07:43:06.825522+00:00",
+  "scientists discover a hidden immune weapon against deadly lung cancer": "2026-10-23T07:43:06.825522+00:00"
  }
 }
