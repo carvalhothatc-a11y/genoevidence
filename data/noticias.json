@@ -1,30 +1,56 @@
 {
- "atualizado_em": "2026-10-23T13:36:25.618375+00:00",
+ "atualizado_em": "2026-10-23T18:29:49.674618+00:00",
  "noticias": [
   {
    "tipo": "noticia",
-   "titulo": "A vacina de mRNA da Moderna reduz quase pela metade o risco de retorno do câncer de pele",
-   "resumo": "Os resultados há muito esperados do ensaio de fase III mostram um enorme benefício no tratamento do melanoma resistente ao tratamento.",
-   "url": "https://www.nature.com/articles/d41586-026-03417-0",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-23T00:00:00+00:00",
+   "titulo": "Nav. ed. pt Entrevista Outubro Rosa Câncer de Mama",
+   "resumo": "renata.moehlecke Sex, 23/10/2026 - 12:10 Tipo de caixa Duplo horizontal Título Outubro Rosa Imagem Chamada Especialistas da Fiocruz esclarecem dúvidas sobre o câncer de mama e orientam sobre exames preventivos e acesso ao diagnóstico",
+   "url": "https://agencia.fiocruz.br/nav-ed-pt-entrevista-outubro-rosa-cancer-de-mama",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-23T15:10:55+00:00",
    "tema": "Câncer",
    "relevancia": 13,
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03417-0/d41586-026-03417-0_53894960.jpg",
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemNavegacaoEditorial/OutubroRosa_d.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Moderna mRNA vaccine almost halves the risk of skin cancer returning",
+   "i18n": {
+    "en": {
+     "titulo": "Nav. ed. en Interview October Pink Breast Cancer",
+     "resumo": "renata.moehlecke Fri, 10/23/2026 - 12:10 Box type Double horizontal Title October Pink Image Called Fiocruz experts clarify doubts about breast cancer and advise on preventive exams and access to diagnosis"
+    },
+    "es": {
+     "titulo": "Nav. ed. en Entrevista Octubre Pink Breast Cancer",
+     "resumo": "renata.moehlecke Vie, 23/10/2026 - 12:10 Tipo de caja Doble horizontal Título Octubre Imagen Rosa Llamado Fiocruz expertos aclaran dudas sobre cáncer de mama y asesoran sobre exámenes preventivos y acceso al diagnóstico"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Espera-se que a vacina personalizada contra o câncer seja aprovada no próximo ano",
+   "resumo": "Uma vacina sob medida que é adaptada para direcionar o câncer de pele exclusivo de um indivíduo reduziu as taxas de recorrência ou morte em um estudo em estágio avançado, fazendo com que uma aprovação fosse esperada",
+   "url": "https://www.newscientist.com/article/2595599-personalised-cancer-vaccine-expected-to-be-approved-next-year/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-23T14:42:27+00:00",
+   "tema": "Câncer",
+   "relevancia": 12,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317849720.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Personalised cancer vaccine expected to be approved next year",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La vacuna de ARNm de Moderna casi reduce a la mitad el riesgo de reaparición del cáncer de piel",
-     "resumo": "Los resultados tan esperados del ensayo de fase III muestran un gran beneficio en el tratamiento del melanoma resistente al tratamiento."
+     "titulo": "Se espera que la vacuna personalizada contra el cáncer se apruebe el próximo año",
+     "resumo": "Una vacuna a medida que se adapta para apuntar a las tasas de recurrencia o muerte reducidas de cáncer de piel únicas de un individuo en un ensayo en etapa tardía, lo que hace que se espere una aprobación"
     }
    },
-   "resumo_original": "Long-awaited results from phase III trial show a huge benefit in treating treatment-resistant melanoma."
+   "resumo_original": "A bespoke vaccine that is tailored to target an individual's unique skin cancer reduced rates of recurrence or death in a late-stage trial, making an approval expected"
   },
   {
    "tipo": "noticia",
@@ -45,32 +71,6 @@
     "es": {
      "titulo": "VIDEO | El compuesto de ajo puede ayudar a combatir el cáncer",
      "resumo": "Un estudio realizado en la Facultad de Ciencias Farmacéuticas de Ribeirão Preto de la USP probó en el laboratorio el uso de disulfuro de dialilo aplicado a células tumorales colorrectales junto con medicamentos de quimioterapia. La combinación..."
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Chamas na UFPE destroem 40 anos de pesquisas para tratamento do câncer",
-   "resumo": "Edifício abrigava laboratório de inovação terapêutica com banco de 20 mil moléculas; prejuízo é estimado em R$ 50 milhões",
-   "url": "https://revistapesquisa.fapesp.br/chamas-na-ufpe-destroem-40-anos-de-pesquisas-para-tratamento-do-cancer/?utm_source=rss&utm_medium=rss&utm_campaign=chamas-na-ufpe-destroem-40-anos-de-pesquisas-para-tratamento-do-cancer",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-22T18:22:46+00:00",
-   "tema": "Câncer",
-   "relevancia": 12,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/d49f20bf8feca5558cae7122addad65ae88c8ab8_1200-630.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Flames at UFPE destroy 40 years of cancer treatment research",
-     "resumo": "The building housed a therapeutic innovation laboratory with a bank of 20,000 molecules; the loss is estimated at $50 million"
-    },
-    "es": {
-     "titulo": "Las llamas en la UFPE destruyen 40 años de investigación sobre el tratamiento del cáncer",
-     "resumo": "Edificio albergó un laboratorio de innovación terapéutica con un banco de 20.000 moléculas; la pérdida se estima en R$ 50 millones"
     }
    }
   },
@@ -154,6 +154,75 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Fiocruz tem 36 pesquisadores entre os mais citados do mundo",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/fiocruz-tem-36-pesquisadores-entre-os-mais-citados-do-mundo",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-23T17:52:13+00:00",
+   "tema": "Ciência",
+   "relevancia": 8,
+   "imagem": "",
+   "i18n": {
+    "en": {
+     "titulo": "Fiocruz has 36 researchers among the most cited in the world"
+    },
+    "es": {
+     "titulo": "Fiocruz cuenta con 36 investigadores entre los más citados del mundo"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Eleição presidencial do Brasil perseguida por suposto viés das ferramentas Meta AI",
+   "resumo": "Apoiadores de Luiz Inácio Lula da Silva acusam Meta de interferir na eleição do Brasil ao facilitar a geração de conteúdo de campanha promovendo seu rival, Flávio Bolsonaro",
+   "url": "https://www.newscientist.com/article/2595540-brazil-presidential-election-dogged-by-alleged-bias-by-meta-ai-tools/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-23T13:58:34+00:00",
+   "tema": "Ciência",
+   "relevancia": 8,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317830225.jpg",
+   "foco": {
+    "x": 50,
+    "y": 100
+   },
+   "titulo_original": "Brazil presidential election dogged by alleged bias by Meta AI tools",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Elecciones presidenciales en Brasil perseguidas por el supuesto sesgo de las herramientas de Meta AI",
+     "resumo": "Los partidarios de Luiz Inácio Lula da Silva han acusado al Meta de interferir en las elecciones de Brasil al facilitar la generación de contenido de campaña promocionando a su rival, Flávio Bolsonaro"
+    }
+   },
+   "resumo_original": "Supporters of Luiz Inácio Lula da Silva have accused Meta of interfering in Brazil’s election by making it easier to generate campaign content promoting his rival, Flávio Bolsonaro"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Semana da Educação 2026 enaltece produção acadêmica e científica da Fiocruz",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/semana-da-educacao-2026-enaltece-producao-academica-e-cientifica-da-fiocruz",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-23T13:48:18+00:00",
+   "tema": "Ciência",
+   "relevancia": 8,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/educa.jpg",
+   "foco": {
+    "x": 50,
+    "y": 100
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Education Week 2026 praises Fiocruz's academic and scientific production"
+    },
+    "es": {
+     "titulo": "La Semana de la Educación 2026 elogia la producción académica y científica de la Fiocruz"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Exame de sangue poderá antecipar o risco de hipertensão pulmonar",
    "resumo": "Estudo analisou cerca de 5 mil proteínas e identificou dez associadas ao desenvolvimento da doença. Resultados apontam a NOTCH3 como possível alvo para novos tratamentos",
    "url": "https://agencia.fapesp.br/exame-de-sangue-podera-antecipar-o-risco-de-hipertensao-pulmonar/59458",
@@ -180,103 +249,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Folder e e-book orientam gestantes sobre saúde bucal da mãe e do bebê",
-   "resumo": "Materiais do Projeto Gestante esclarecem dúvidas sobre atendimento odontológico durante a gravidez e apresentam cuidados com a saúde bucal da criança",
-   "url": "https://jornal.usp.br/campus-ribeirao-preto/folder-e-e-book-orientam-gestantes-sobre-saude-bucal-da-mae-e-do-bebe/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-22T17:42:40+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261022_folders.jpg",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Folder and e-book guide pregnant women on oral health of mother and baby",
-     "resumo": "Pregnant Project materials clarify doubts about dental care during pregnancy and present care for the child's oral health"
-    },
-    "es": {
-     "titulo": "La carpeta y el libro electrónico guían a las mujeres embarazadas sobre la salud bucal de la madre y el bebé",
-     "resumo": "Los materiales del Proyecto Embarazada aclaran las dudas sobre el cuidado dental durante el embarazo y presentan el cuidado de la salud bucal del niño"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Emily St. John Mandel: \"Não quero escrever algo implacavelmente sombrio\"",
-   "resumo": "A romancista de ficção científica conversa com Alison Flood sobre seu último livro Exit Party, um conto de mundos paralelos que é a leitura de outubro para o New Scientist Book Club",
-   "url": "https://www.newscientist.com/article/2594154-emily-st-john-mandel-i-dont-want-to-write-something-relentlessly-bleak/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-23T09:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/Social-Image-Link.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Emily St. John Mandel: ‘I don’t want to write something relentlessly bleak’",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Emily St. John Mandel: \"No quiero escribir algo implacablemente sombrío\"",
-     "resumo": "La novelista de ciencia ficción habla con Alison Flood sobre su último libro Exit Party, una historia de mundos paralelos que es la lectura de octubre para el New Scientist Book Club"
-    }
-   },
-   "resumo_original": "The science-fiction novelist talks to Alison Flood about her latest book Exit Party, a tale of parallel worlds that is the October read for the New Scientist Book Club"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O sono diminui nas comunidades rurais após a chegada da eletricidade",
-   "resumo": "Os cientistas acompanharam as mudanças nos padrões de sono dos povos indígenas na Argentina que ganharam acesso à eletricidade — e telefones inteligentes.",
-   "url": "https://www.nature.com/articles/d41586-026-03318-2",
+   "titulo": "Primeira pessoa infectada com o raro vírus Shamonda: o que sabemos",
+   "resumo": "Pesquisadores de doenças infecciosas dizem que o risco de o patógeno animal se mover entre as pessoas é baixo.",
+   "url": "https://www.nature.com/articles/d41586-026-03416-1",
    "fonte": "Nature",
    "idioma": "en",
    "data": "2026-10-23T00:00:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 6,
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03318-2/d41586-026-03318-2_53869076.jpg",
+   "tema": "Saúde",
+   "relevancia": 7,
+   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03416-1/d41586-026-03416-1_53891592.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Sleep declines in rural communities after electricity arrives",
+   "titulo_original": "First person infected with rare Shamonda virus: what we know",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El sueño disminuye en las comunidades rurales después de que llega la electricidad",
-     "resumo": "Los científicos rastrearon los cambios en los patrones de sueño de los indígenas en Argentina que obtuvieron acceso a la red eléctrica y a los teléfonos inteligentes."
+     "titulo": "Primera persona infectada con el raro virus Shamonda: lo que sabemos",
+     "resumo": "Los investigadores de enfermedades infecciosas dicen que el riesgo de que el patógeno del ganado se mueva entre las personas es bajo."
     }
    },
-   "resumo_original": "Scientists tracked the changing sleep patterns of Indigenous people in Argentina who gained access to mains electricity — and smart phones."
+   "resumo_original": "Infectious-disease researchers say the risk of the livestock pathogen moving between people is low."
   },
   {
    "tipo": "noticia",
-   "titulo": "InfoGripe: três estados têm incidência de SRAG em nível de alerta ou risco, com sinal de crescimento",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/infogripe-tres-estados-tem-incidencia-de-srag-em-nivel-de-alerta-ou-risco-com-sinal-de-crescimento",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-22T14:19:00+00:00",
-   "tema": "Saúde",
+   "titulo": "Correção do autor: DYNLL1 se liga a MRE11 para limitar a ressecção final do DNA em células deficientes em BRCA1",
+   "resumo": "Correção do autor: DYNLL1 se liga a MRE11 para limitar a ressecção final do DNA em células deficientes em BRCA1",
+   "url": "https://www.nature.com/articles/s41586-026-11303-y",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-23T00:00:00+00:00",
+   "tema": "Genética",
    "relevancia": 6,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infocapa_14.jpg",
+   "imagem": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-026-11303-y/MediaObjects/41586_2026_11303_Fig1_HTML.png",
    "foco": {
     "x": 50,
     "y": 50
    },
+   "titulo_original": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells",
+   "traduzido": true,
    "i18n": {
-    "en": {
-     "titulo": "InfoGrip: three states have an incidence of SARS at alert or risk level, with a sign of growth"
-    },
     "es": {
-     "titulo": "InfoGrip: tres estados tienen una incidencia de SARS a nivel de alerta o riesgo, con un signo de crecimiento"
+     "titulo": "Corrección del autor: DYNLL1 se une a MRE11 para limitar la resección final del ADN en células deficientes en BRCA1",
+     "resumo": "Corrección del autor: DYNLL1 se une a MRE11 para limitar la resección final del ADN en células deficientes en BRCA1"
     }
-   }
+   },
+   "resumo_original": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells"
   },
   {
    "tipo": "noticia",
@@ -324,53 +343,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Como se expor aos seus medos pode domar sua ansiedade",
-   "resumo": "É possível tirar lições da terapia de exposição e aplicá-las fora da clínica, dizem especialistas",
-   "url": "https://www.scientificamerican.com/article/how-exposing-yourself-to-your-fears-can-tame-your-anxiety/",
+   "titulo": "O governo Trump está considerando uma arma de \"raio de calor\" para a fronteira - aqui está o que saber",
+   "resumo": "O Sistema de Negação Ativa usa ondas milimétricas para aquecer a pele das pessoas a até um quilômetro de distância",
+   "url": "https://www.scientificamerican.com/article/the-trump-administration-is-considering-a-heat-ray-weapon-for-the-border-heres-what-to-know/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-23T13:00:00+00:00",
+   "data": "2026-10-23T18:00:00+00:00",
    "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/17d02aff-4d71-45f0-9bad-423ae4f7b4f0/psychology-concept.jpg?m=1792691002.528&w=1200",
+   "imagem": "https://static.scientificamerican.com/dam/asset/6a6b5460-57f8-4f9c-bd63-1d66be144e31/US-Mexico-border.jpg?m=1792779620.968&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "How exposing yourself to your fears can tame your anxiety",
+   "titulo_original": "The Trump administration is considering a ‘heat ray’ weapon for the border—here’s what to know",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Cómo exponerse a sus miedos puede domar su ansiedad",
-     "resumo": "Es posible tomar lecciones de la terapia de exposición y aplicarlas fuera de la clínica, dicen los expertos"
+     "titulo": "El gobierno de Trump está considerando un arma de \"rayos de calor\" para la frontera: esto es lo que hay que saber",
+     "resumo": "El sistema Active Denial utiliza ondas milimétricas para calentar la piel de las personas desde una distancia de hasta un kilómetro"
     }
    },
-   "resumo_original": "It is possible to take lessons from exposure therapy and apply them outside the clinic, experts say"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Tratamento inovador de TEPT atinge taxa de remissão de 68% em ensaio clínico",
-   "resumo": "Um tratamento de TEPT recentemente aprovado pela FDA usa mapeamento cerebral personalizado e estimulação magnética para direcionar a atividade cerebral anormal, com um ensaio clínico relatando uma redução de 52% nos sintomas e 68% de remissão. Os pesquisadores acreditam que...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261022081309.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-23T11:02:25+00:00",
-   "tema": "Saúde",
-   "relevancia": 4,
-   "imagem": "https://www.sciencedaily.com/images/1920/head-brain-waves-neural-activity-signals.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Breakthrough PTSD treatment achieves 68% remission rate in clinical trial",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El tratamiento innovador para el TEPT logra una tasa de remisión del 68% en un ensayo clínico",
-     "resumo": "Un tratamiento de TEPT recientemente aprobado por la FDA utiliza mapeo cerebral personalizado y estimulación magnética para atacar la actividad cerebral anormal, con un ensayo clínico que informa una reducción del 52% en los síntomas y una remisión del 68%. Los investigadores creen que..."
-    }
-   },
-   "resumo_original": "A newly FDA-cleared PTSD treatment uses personalized brain mapping and magnetic stimulation to target abnormal brain activity, with a clinical trial reporting a 52% reduction in symptoms and 68% remission. Researchers believe the…"
+   "resumo_original": "The Active Denial System uses millimeter waves to heat people’s skin from as far as a kilometer away"
   }
  ],
  "artigos": [
@@ -475,7 +469,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Novel approaches to target prostate cancer stem cells driving therapy resistance and cancer progression.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Enfoques novedosos para atacar las células madre del cáncer de próstata que impulsan la resistencia a la terapia y la progresión del cáncer."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -650,7 +649,12 @@
    "acesso_aberto": false,
    "tema": "Câncer",
    "titulo_original": "Residual Oncological Risk After Chest Masculinization Surgery: Invasive Breast Cancer 2 Years After Surgery.",
-   "traduzido": true
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Riesgo oncológico residual después de la cirugía de masculinización torácica: cáncer de mama invasivo 2 años después de la cirugía."
+    }
+   }
   },
   {
    "tipo": "artigo",
@@ -921,17 +925,6 @@
  ],
  "erros": [],
  "mostradas": {
-  "fiocruz pra voce vai oferecer vacinacao a criancas e adultos": "2026-10-13T16:07:46.963620+00:00",
-  "bioinformatica na selva da inteligencia artificial": "2026-10-13T16:07:46.963620+00:00",
-  "o triunfo da viola no campo e na cidade": "2026-10-13T16:07:46.963620+00:00",
-  "estudo destaca beneficios de alternativa nao hormonal para o climaterio": "2026-10-13T16:07:46.963620+00:00",
-  "a revolutionary way of targeting tumours could beat even the worst cancers": "2026-10-13T16:07:46.963620+00:00",
-  "plantar prensar e colher": "2026-10-13T16:07:46.963620+00:00",
-  "the lands ability to store carbon has bounced back after two bad years": "2026-10-13T16:07:46.963620+00:00",
-  "scientists worry ai is stealing their ideas": "2026-10-13T16:07:46.963620+00:00",
-  "what happens to the body during menopause new research hints at a biological cliff": "2026-10-13T16:07:46.963620+00:00",
-  "scientists just gave the powerhouses of our cells a high tech upgrade": "2026-10-13T16:07:46.963620+00:00",
-  "james webb reveals a massive cosmic structure that challenges our understanding of the universe": "2026-10-13T16:07:46.963620+00:00",
   "nobel de medicina reconhece criadores da optogenetica": "2026-10-13T21:21:33.394976+00:00",
   "artista residente ivan vilela abre espaco para os muitos sons do brasil": "2026-10-13T21:21:33.394976+00:00",
   "livro trata de como a emergencia climatica pode afetar saude publica": "2026-10-13T21:21:33.394976+00:00",
@@ -1159,6 +1152,14 @@
   "dental implants can hijack your immune system scientists discover": "2026-10-23T13:36:25.618375+00:00",
   "polygenic risk for type 2 diabetes modulates gut microbiome associations across metabolic health traits": "2026-10-23T13:36:25.618375+00:00",
   "how exposing yourself to your fears can tame your anxiety": "2026-10-23T13:36:25.618375+00:00",
-  "breakthrough ptsd treatment achieves 68 remission rate in clinical trial": "2026-10-23T13:36:25.618375+00:00"
+  "breakthrough ptsd treatment achieves 68 remission rate in clinical trial": "2026-10-23T13:36:25.618375+00:00",
+  "nav ed pt entrevista outubro rosa cancer de mama": "2026-10-23T18:29:49.674618+00:00",
+  "personalised cancer vaccine expected to be approved next year": "2026-10-23T18:29:49.674618+00:00",
+  "fiocruz tem 36 pesquisadores entre os mais citados do mundo": "2026-10-23T18:29:49.674618+00:00",
+  "brazil presidential election dogged by alleged bias by meta ai tools": "2026-10-23T18:29:49.674618+00:00",
+  "semana da educacao 2026 enaltece producao academica e cientifica da fiocruz": "2026-10-23T18:29:49.674618+00:00",
+  "first person infected with rare shamonda virus what we know": "2026-10-23T18:29:49.674618+00:00",
+  "author correction dynll1 binds to mre11 to limit dna end resection in brca1 deficient cells": "2026-10-23T18:29:49.674618+00:00",
+  "the trump administration is considering a heat ray weapon for the borderheres what to know": "2026-10-23T18:29:49.674618+00:00"
  }
 }
