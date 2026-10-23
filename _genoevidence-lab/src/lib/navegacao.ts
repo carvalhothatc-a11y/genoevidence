@@ -32,6 +32,8 @@ export function ultimaPagina(): string | null {
 export function esquecerPagina() {
   try {
     localStorage.removeItem(CHAVE);
+    // as sequências coladas na BioMol (ficam só na aba) também saem com a conta
+    sessionStorage.removeItem("genolab:biomol");
   } catch {
     /* ignora */
   }

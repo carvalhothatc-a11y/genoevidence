@@ -35,6 +35,9 @@ async function pegarJson<T>(url: string, init?: RequestInit, tentativas = 2): Pr
         signal: AbortSignal.timeout(TEMPO_LIMITE),
         cache: "no-store",
       });
+      // 204 = "nada encontrado" no RCSB (resposta sem corpo). Tratar como falha diria que o serviço
+      // caiu quando ele só não achou nada.
+      if (r.status === 204) return { estado: "vazio" };
       if (r.ok) return { estado: "ok", dados: (await r.json()) as T };
       if (r.status === 404) return { estado: "vazio" };
       // PubChem e outros devolvem 503/429 quando estão sobrecarregados: esperamos e tentamos de novo
@@ -228,6 +231,127 @@ export async function detalharEstrutura(pdbId: string): Promise<EstruturaPdb | n
     url: `https://www.rcsb.org/structure/${id}`,
     arquivo: `https://files.rcsb.org/download/${id}.cif`,
   };
+}
+
+// ---------------------------------------------------------------- busca por sequência (RCSB)
+
+/** Uma cadeia depositada no PDB cuja sequência se parece com a procurada. */
+export type AchadoPorSequencia = {
+  /** Entidade polimérica, ex.: "1CRN_1". */
+  entidade: string;
+  pdbId: string;
+  /** Cadeias (numeração do autor) que são essa entidade na estrutura. */
+  cadeias: string[];
+  descricao?: string;
+  organismo?: string;
+  /** Fração de 0 a 1, como o RCSB devolve. */
+  identidade: number;
+  evalue: number;
+  /** Trecho alinhado, nas posições da sequência procurada e da depositada (1 = primeira letra). */
+  consultaInicio: number;
+  consultaFim: number;
+  consultaComprimento: number;
+  alvoInicio: number;
+  alvoFim: number;
+  alvoComprimento: number;
+  consultaAlinhada: string;
+  alvoAlinhada: string;
+  estrutura: EstruturaPdb | null;
+};
+
+type RcsbSequenciaResp = {
+  total_count?: number;
+  result_set?: {
+    identifier: string;
+    services?: {
+      nodes?: {
+        match_context?: {
+          sequence_identity: number;
+          evalue: number;
+          query_beg: number;
+          query_end: number;
+          query_length: number;
+          subject_beg: number;
+          subject_end: number;
+          subject_length: number;
+          query_aligned_seq: string;
+          subject_aligned_seq: string;
+        }[];
+      }[];
+    }[];
+  }[];
+};
+
+type RcsbEntidade = {
+  rcsb_polymer_entity_container_identifiers?: { auth_asym_ids?: string[] };
+  rcsb_polymer_entity?: { pdbx_description?: string };
+  rcsb_entity_source_organism?: { ncbi_scientific_name?: string }[];
+};
+
+/** Mínimo do serviço de busca por sequência do RCSB (resposta 400 abaixo disso, conferido em 2026-10). */
+export const MINIMO_SEQUENCIA = 10;
+
+/**
+ * Estruturas experimentais com sequência PARECIDA com uma proteína, pelo serviço de busca por
+ * sequência do RCSB (MMseqs2). Devolve a identidade e o trecho alinhado de cada achado, para a tela
+ * mostrar o quanto se parece — uma estrutura parecida não é a estrutura da sequência procurada.
+ */
+export async function buscarPorSequencia(proteina: string, limite = 8): Promise<ResultadoBusca<AchadoPorSequencia>> {
+  const seq = proteina.trim().toUpperCase().replace(/\*+$/, "");
+  if (seq.length < MINIMO_SEQUENCIA) return { encontrado: false, motivo: `O RCSB só procura sequências com pelo menos ${MINIMO_SEQUENCIA} aminoácidos.`, consulta: seq };
+  const corpo = {
+    query: { type: "terminal", service: "sequence", parameters: { evalue_cutoff: 0.1, identity_cutoff: 0.3, sequence_type: "protein", value: seq } },
+    return_type: "polymer_entity",
+    request_options: {
+      paginate: { start: 0, rows: Math.min(limite, 10) },
+      results_content_type: ["experimental"],
+      sort: [{ sort_by: "score", direction: "desc" }],
+      scoring_strategy: "sequence",
+      results_verbosity: "verbose",
+    },
+  };
+  const r0 = await pegarJson<RcsbSequenciaResp>("https://search.rcsb.org/rcsbsearch/v2/query", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(corpo),
+  });
+  const nada = "Nenhuma estrutura experimental no PDB tem sequência parecida (identidade de pelo menos 30%, e-value até 0,1).";
+  // O RCSB responde 204 (sem corpo) quando não acha nada; pegarJson trata 404 como vazio.
+  if (r0.estado === "vazio") return { encontrado: false, motivo: nada, consulta: seq };
+  if (r0.estado === "falhou" && r0.status === 400) return { encontrado: false, motivo: "O RCSB recusou a sequência (letras fora do alfabeto de proteína?).", consulta: seq };
+  if (r0.estado !== "ok") return { encontrado: false, motivo: motivoDe(r0, "RCSB PDB", "a sequência"), consulta: seq };
+
+  const brutos = (r0.dados.result_set ?? [])
+    .map((r) => ({ id: r.identifier, m: r.services?.[0]?.nodes?.[0]?.match_context?.[0] }))
+    .filter((r): r is { id: string; m: NonNullable<typeof r.m> } => /^[0-9][A-Za-z0-9]{3}_\d+$/.test(r.id) && Boolean(r.m));
+  if (!brutos.length) return { encontrado: false, motivo: nada, consulta: seq };
+
+  const itens = await Promise.all(
+    brutos.map(async ({ id, m }) => {
+      const [pdbId, ent] = id.split("_");
+      const [estrutura, e] = await Promise.all([detalharEstrutura(pdbId), pegarJson<RcsbEntidade>(`https://data.rcsb.org/rest/v1/core/polymer_entity/${pdbId}/${ent}`)]);
+      const d = e.estado === "ok" ? e.dados : null;
+      return {
+        entidade: id,
+        pdbId: pdbId.toUpperCase(),
+        cadeias: d?.rcsb_polymer_entity_container_identifiers?.auth_asym_ids ?? [],
+        descricao: d?.rcsb_polymer_entity?.pdbx_description,
+        organismo: d?.rcsb_entity_source_organism?.[0]?.ncbi_scientific_name,
+        identidade: m.sequence_identity,
+        evalue: m.evalue,
+        consultaInicio: m.query_beg,
+        consultaFim: m.query_end,
+        consultaComprimento: m.query_length,
+        alvoInicio: m.subject_beg,
+        alvoFim: m.subject_end,
+        alvoComprimento: m.subject_length,
+        consultaAlinhada: m.query_aligned_seq,
+        alvoAlinhada: m.subject_aligned_seq,
+        estrutura,
+      } satisfies AchadoPorSequencia;
+    }),
+  );
+  return { encontrado: true, itens, consulta: seq };
 }
 
 // ---------------------------------------------------------------- composto (PubChem)
