@@ -1,21 +1,25 @@
 // Teste ponta a ponta do estúdio (instância de demonstração, conta e dados fictícios). Não imprime credenciais.
 import { chromium } from "@playwright/test";
 import { readFileSync, statSync } from "node:fs";
+import { contextoAutenticado } from "./_sessao.mjs";
 const [base, credFile, shots] = process.argv.slice(2);
+
+const browser = await chromium.launch({ args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] });
+// Reaproveita a sessão salva: entrar em cada roteiro estoura o limite de 8 entradas a cada 15 min.
+const ctx = await contextoAutenticado(browser, base, credFile, { contexto: { viewport: { width: 1600, height: 940 }, acceptDownloads: true } });
+const page = await ctx.newPage();
 
 // A bancada 3D está FORA DO AR por decisão da responsável. O roteiro fica inteiro, para voltar a
 // rodar assim que ela for religada (NEXT_PUBLIC_BANCADA_3D=1). Enquanto isso, sai sem falhar.
+// A checagem é feita JÁ COM SESSÃO: sem ela, a rota responde 307 (manda para o login) e não 404.
 {
-  const r = await fetch(`${base}/laboratorio/bancada`, { redirect: "manual" });
-  if (r.status === 404) {
+  const r = await page.goto(`${base}/laboratorio/bancada`);
+  if (r?.status() === 404) {
     console.log("· bancada 3D fora do ar: roteiro preservado, nada a testar agora");
+    await browser.close();
     process.exit(0);
   }
 }
-const pw = readFileSync(credFile, "utf8").trim();
-const browser = await chromium.launch({ args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] });
-const ctx = await browser.newContext({ viewport: { width: 1600, height: 940 }, acceptDownloads: true });
-const page = await ctx.newPage();
 const erros = [];
 page.on("pageerror", (e) => erros.push("pageerror: " + e.message));
 page.on("console", (m) => m.type() === "error" && !/Failed to load resource/.test(m.text()) && erros.push("console: " + m.text()));
@@ -26,11 +30,6 @@ const descrever = async (texto) => {
   await page.getByTestId("palco").waitFor();
 };
 
-await page.goto(`${base}/entrar`);
-await page.getByLabel("E-mail").fill("demo@exemplo.test");
-await page.getByLabel("Senha", { exact: true }).fill(pw);
-await page.getByRole("button", { name: "Entrar" }).click();
-await page.waitForURL((u) => !u.pathname.startsWith("/entrar"), { timeout: 30000 });
 await page.goto(`${base}/projetos`);
 if (!(await page.getByRole("link", { name: /exemplo/i }).count())) {
   await page.getByRole("button", { name: /Criar projeto de exemplo/ }).click();

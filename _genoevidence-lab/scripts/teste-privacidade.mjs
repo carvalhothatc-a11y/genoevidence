@@ -5,15 +5,18 @@ import { chromium } from "@playwright/test";
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { randomBytes } from "node:crypto";
 import path from "node:path";
+import { contextoAutenticado } from "./_sessao.mjs";
 
 const [base, credFile, dataDir] = process.argv.slice(2);
-const pw = readFileSync(credFile, "utf8").trim();
 const browser = await chromium.launch({ args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] });
 const falhas = [];
 const ok = (c, m) => (console.log(`${c ? "✔" : "✖"} ${m}`), !c && falhas.push(m));
 
-async function contexto() {
-  const ctx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
+// Com `autenticado`, reaproveita a sessão salva: entrar em cada roteiro estoura o limite de 8
+// entradas a cada 15 min.
+async function contexto({ autenticado = false } = {}) {
+  const opcoes = { viewport: { width: 1400, height: 900 } };
+  const ctx = autenticado ? await contextoAutenticado(browser, base, credFile, { contexto: opcoes }) : await browser.newContext(opcoes);
   await ctx.addInitScript(() => {
     window.__csp = [];
     document.addEventListener("securitypolicyviolation", (e) => window.__csp.push(`${e.violatedDirective} ${e.blockedURI}`));
@@ -73,12 +76,7 @@ const violacoes = (page) => page.evaluate(() => window.__csp ?? []);
 
 // 2. Administração: excluir a conta de teste; páginas pesadas (laboratório 3D, Mol*) sem violação de CSP
 {
-  const { ctx, page, erros } = await contexto();
-  await page.goto(`${base}/entrar`);
-  await page.getByLabel("E-mail").fill("demo@exemplo.test");
-  await page.getByLabel("Senha", { exact: true }).fill(pw);
-  await page.getByRole("button", { name: "Entrar" }).click();
-  await page.waitForURL((u) => !u.pathname.startsWith("/entrar"), { timeout: 30000 });
+  const { ctx, page, erros } = await contexto({ autenticado: true });
 
   // O caderno é da pessoa e fica fora dos projetos: plantamos um registro para conferir que a
   // exclusão da conta leva o caderno junto, em vez de deixá-lo órfão no disco.

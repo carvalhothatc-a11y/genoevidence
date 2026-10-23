@@ -2,19 +2,15 @@
 // Uso: node scripts/e2e-arquivos-projeto.mjs <base> <arquivo-senha-demo> <pasta-de-capturas>
 // Instância de demonstração apenas (contas fictícias). Não imprime credenciais.
 import { chromium } from "@playwright/test";
-import { readFileSync } from "node:fs";
+import { contextoAutenticado } from "./_sessao.mjs";
 const [base, cred, out] = process.argv.slice(2);
 const DL = process.env.DOCS_TESTE ?? "";
 const b = await chromium.launch();
-const ctx = await b.newContext({ viewport: { width: 1400, height: 950 } });
+// Reaproveita a sessão salva: entrar em cada roteiro estoura o limite de 8 entradas a cada 15 min.
+const ctx = await contextoAutenticado(b, base, cred, { contexto: { viewport: { width: 1400, height: 950 } } });
 const p = await ctx.newPage();
 const falhas = [];
 const ok = (c, m) => (console.log(`${c ? "✔" : "✖"} ${m}`), !c && falhas.push(m));
-await p.goto(base + "/entrar");
-await p.getByLabel("E-mail").fill("demo@exemplo.test");
-await p.getByLabel("Senha", { exact: true }).fill(readFileSync(cred, "utf8").trim());
-await p.getByRole("button", { name: "Entrar" }).click();
-await p.waitForURL((u) => !u.pathname.startsWith("/entrar"), { timeout: 60000 });
 await p.goto(base + "/projetos");
 const link = p.getByRole("link", { name: /exemplo/i }).first();
 if (!(await link.count())) { await p.getByRole("button", { name: /Criar projeto de exemplo/ }).click(); await p.waitForTimeout(3000); }
