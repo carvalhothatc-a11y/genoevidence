@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-23T18:29:49.674618+00:00",
+ "atualizado_em": "2026-10-23T22:22:55.460377+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -24,6 +24,32 @@
     "es": {
      "titulo": "Nav. ed. en Entrevista Octubre Pink Breast Cancer",
      "resumo": "renata.moehlecke Vie, 23/10/2026 - 12:10 Tipo de caja Doble horizontal Título Octubre Imagen Rosa Llamado Fiocruz expertos aclaran dudas sobre cáncer de mama y asesoran sobre exámenes preventivos y acceso al diagnóstico"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Câncer de mama em idade reprodutiva: como conciliar o tratamento com o desejo de engravidar?",
+   "resumo": "Tratamento pode exigir o adiamento da gravidez, mas estratégias como a criopreservação de óvulos e embriões permitem preservar a fertilidade e planejar a maternidade após a terapia",
+   "url": "https://jornal.usp.br/radio-usp/cancer-de-mama-em-idade-reprodutiva-como-conciliar-o-tratamento-com-o-desejo-de-engravidar/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-23T18:04:58+00:00",
+   "tema": "Câncer",
+   "relevancia": 12,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/05/20240502_lacinho-cancer-de-mama-destaque.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Breast cancer of reproductive age: how to reconcile treatment with the desire to become pregnant?",
+     "resumo": "Treatment may require postponement of pregnancy, but strategies such as egg and embryo cryopreservation allow you to preserve fertility and plan for motherhood after therapy"
+    },
+    "es": {
+     "titulo": "Cáncer de mama en edad reproductiva: ¿cómo conciliar el tratamiento con el deseo de quedar embarazada?",
+     "resumo": "El tratamiento puede requerir el aplazamiento del embarazo, pero estrategias como la crioconservación de óvulos y embriones le permiten preservar la fertilidad y planificar la maternidad después de la terapia"
     }
    }
   },
@@ -97,58 +123,6 @@
     "es": {
      "titulo": "Sistema con realidad virtual e IA mejora la detección del deterioro cognitivo",
      "resumo": "Herramienta en desarrollo en la USP que integra experiencias inmersivas, seguimiento de la mirada y respuestas neurológicas para identificar la aparición de enfermedades neurodegenerativas"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Nobel de Física 2026 e neutrinos",
-   "resumo": "Por Elisabete Gouveia Dal Pino, professora do Instituto de Astronomia, Geofísica e Ciências Atmosféricas (IAG) da USP",
-   "url": "https://jornal.usp.br/artigos/nobel-de-fisica-2026-e-neutrinos/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-22T21:40:23+00:00",
-   "tema": "Espaço",
-   "relevancia": 10,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261022_elisabetegrande.jpg",
-   "foco": {
-    "x": 0,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Nobel Prize in Physics 2026 and neutrinos",
-     "resumo": "By Elisabete Gouveia Dal Pino, professor at the Institute of Astronomy, Geophysics and Atmospheric Sciences (IAG) at USP"
-    },
-    "es": {
-     "titulo": "Premio Nobel de Física 2026 y neutrinos",
-     "resumo": "Por Elisabete Gouveia Dal Pino, profesora del Instituto de Astronomía, Geofísica y Ciencias Atmosféricas (IAG) de la USP"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "No Brasil, cerca de 90% dos desastres climáticos ocorrem em cidades de pequeno porte",
-   "resumo": "Erick Correia Mota, autor da pesquisa, aponta que municípios com até 50 mil habitantes concentram as emergências ambientais, mas sofrem com equipes reduzidas e orçamentos limitados para responder aos eventos extremos",
-   "url": "https://jornal.usp.br/radio-usp/como-pequenos-municipios-se-adaptam-as-mudancas-climaticas/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-22T21:32:11+00:00",
-   "tema": "Meio ambiente",
-   "relevancia": 9,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2025/02/20250206_brigada-de-incendio-Prevfogo-comunidade-quilombola-Kalunga-cerrado-destaque.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "In Brazil, about 90% of climate disasters occur in small cities",
-     "resumo": "Erick Correia Mota, author of the research, points out that municipalities with up to 50,000 inhabitants concentrate environmental emergencies, but suffer from reduced teams and limited budgets to respond to extreme events"
-    },
-    "es": {
-     "titulo": "En Brasil, alrededor del 90% de los desastres climáticos ocurren en ciudades pequeñas",
-     "resumo": "Erick Correia Mota, autor de la investigación, señala que los municipios de hasta 50.000 habitantes concentran las emergencias ambientales, pero sufren de equipos reducidos y presupuestos limitados para responder a eventos extremos"
     }
    }
   },
@@ -249,6 +223,32 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Colóquio internacional debate relações entre literatura, textos bíblicos e experiência humana",
+   "resumo": "Evento reúne pesquisadores nacionais e internacionais para discutir teopoética, imaginação moral e as interfaces entre religião e arte",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/23/coloquio-internacional-debate-relacoes-entre-literatura-textos-biblicos-e-experiencia-humana/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-23T19:31:25+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261023_Poeticas-biblicas_Capa.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "International colloquium discusses relations between literature, biblical texts and human experience",
+     "resumo": "Event brings together national and international researchers to discuss theopoetics, moral imagination and the interfaces between religion and art"
+    },
+    "es": {
+     "titulo": "Coloquio internacional sobre las relaciones entre la literatura, los textos bíblicos y la experiencia humana",
+     "resumo": "El evento reúne a investigadores nacionales e internacionales para discutir la teopoética, la imaginación moral y las interfaces entre la religión y el arte"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "Primeira pessoa infectada com o raro vírus Shamonda: o que sabemos",
    "resumo": "Pesquisadores de doenças infecciosas dizem que o risco de o patógeno animal se mover entre as pessoas é baixo.",
    "url": "https://www.nature.com/articles/d41586-026-03416-1",
@@ -343,28 +343,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O governo Trump está considerando uma arma de \"raio de calor\" para a fronteira - aqui está o que saber",
-   "resumo": "O Sistema de Negação Ativa usa ondas milimétricas para aquecer a pele das pessoas a até um quilômetro de distância",
-   "url": "https://www.scientificamerican.com/article/the-trump-administration-is-considering-a-heat-ray-weapon-for-the-border-heres-what-to-know/",
+   "titulo": "A NASA estabelece um cronograma de 14 dias para a missão lunar Artemis III de 2027",
+   "resumo": "A missão, prevista para o verão de 2027, será fundamental para decidir se a SpaceX ou a Blue Origin fornecem o módulo lunar para a primeira viagem tripulada à superfície lunar em décadas",
+   "url": "https://www.scientificamerican.com/article/nasa-lays-out-a-packed-14-day-schedule-for-2027s-artemis-iii-moon-mission/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-23T18:00:00+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-23T20:20:00+00:00",
+   "tema": "Espaço",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/6a6b5460-57f8-4f9c-bd63-1d66be144e31/US-Mexico-border.jpg?m=1792779620.968&w=1200",
+   "imagem": "https://static.scientificamerican.com/dam/m/3114b95c23267e01/original/orion_transfer.jpg?m=1792789627.921&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "The Trump administration is considering a ‘heat ray’ weapon for the border—here’s what to know",
+   "titulo_original": "NASA lays out a packed 14-day schedule for 2027’s Artemis III moon mission",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El gobierno de Trump está considerando un arma de \"rayos de calor\" para la frontera: esto es lo que hay que saber",
-     "resumo": "El sistema Active Denial utiliza ondas milimétricas para calentar la piel de las personas desde una distancia de hasta un kilómetro"
+     "titulo": "La NASA establece un calendario repleto de 14 días para la misión lunar Artemisa III de 2027",
+     "resumo": "La misión, programada para el verano de 2027, será fundamental para decidir si SpaceX o Blue Origin suministran el módulo de aterrizaje lunar para el primer viaje tripulado a la superficie lunar en décadas"
     }
    },
-   "resumo_original": "The Active Denial System uses millimeter waves to heat people’s skin from as far as a kilometer away"
+   "resumo_original": "The mission, scheduled for the summer of 2027, will include be pivotal in deciding whether SpaceX or Blue Origin supplies the lunar lander for the first crewed trip to the lunar surface in decades"
   }
  ],
  "artigos": [
@@ -925,13 +925,6 @@
  ],
  "erros": [],
  "mostradas": {
-  "nobel de medicina reconhece criadores da optogenetica": "2026-10-13T21:21:33.394976+00:00",
-  "artista residente ivan vilela abre espaco para os muitos sons do brasil": "2026-10-13T21:21:33.394976+00:00",
-  "livro trata de como a emergencia climatica pode afetar saude publica": "2026-10-13T21:21:33.394976+00:00",
-  "hurricane isaias shows it only takes one to wreak havoc after historically calm atlantic hurricane season": "2026-10-13T21:21:33.394976+00:00",
-  "openais blockbuster navier stokes proof isnt what we thought it was": "2026-10-13T21:21:33.394976+00:00",
-  "preserve research data for tomorrows ai enabled integrity checks": "2026-10-13T21:21:33.394976+00:00",
-  "decentralized ai needs more evidence on energy use": "2026-10-13T21:21:33.394976+00:00",
   "dinosaur named new species 102 years after fossil found on isle of wight": "2026-10-14T00:26:04.021071+00:00",
   "direitos sociais se difundem em ondas pelas constituicoes do mundo": "2026-10-14T06:15:31.299862+00:00",
   "usp oferece duas bolsas de pos doutorado em grandes modelos de linguagem": "2026-10-14T06:15:31.299862+00:00",
@@ -1160,6 +1153,9 @@
   "semana da educacao 2026 enaltece producao academica e cientifica da fiocruz": "2026-10-23T18:29:49.674618+00:00",
   "first person infected with rare shamonda virus what we know": "2026-10-23T18:29:49.674618+00:00",
   "author correction dynll1 binds to mre11 to limit dna end resection in brca1 deficient cells": "2026-10-23T18:29:49.674618+00:00",
-  "the trump administration is considering a heat ray weapon for the borderheres what to know": "2026-10-23T18:29:49.674618+00:00"
+  "the trump administration is considering a heat ray weapon for the borderheres what to know": "2026-10-23T18:29:49.674618+00:00",
+  "cancer de mama em idade reprodutiva como conciliar o tratamento com o desejo de engravidar": "2026-10-23T22:22:55.460377+00:00",
+  "coloquio internacional debate relacoes entre literatura textos biblicos e experiencia humana": "2026-10-23T22:22:55.460377+00:00",
+  "nasa lays out a packed 14 day schedule for 2027s artemis iii moon mission": "2026-10-23T22:22:55.460377+00:00"
  }
 }
