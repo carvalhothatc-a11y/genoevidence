@@ -1,6 +1,31 @@
 {
- "atualizado_em": "2026-10-23T07:43:06.825522+00:00",
+ "atualizado_em": "2026-10-23T13:36:25.618375+00:00",
  "noticias": [
+  {
+   "tipo": "noticia",
+   "titulo": "A vacina de mRNA da Moderna reduz quase pela metade o risco de retorno do câncer de pele",
+   "resumo": "Os resultados há muito esperados do ensaio de fase III mostram um enorme benefício no tratamento do melanoma resistente ao tratamento.",
+   "url": "https://www.nature.com/articles/d41586-026-03417-0",
+   "fonte": "Nature",
+   "idioma": "en",
+   "data": "2026-10-23T00:00:00+00:00",
+   "tema": "Câncer",
+   "relevancia": 13,
+   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03417-0/d41586-026-03417-0_53894960.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Moderna mRNA vaccine almost halves the risk of skin cancer returning",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La vacuna de ARNm de Moderna casi reduce a la mitad el riesgo de reaparición del cáncer de piel",
+     "resumo": "Los resultados tan esperados del ensayo de fase III muestran un gran beneficio en el tratamiento del melanoma resistente al tratamiento."
+    }
+   },
+   "resumo_original": "Long-awaited results from phase III trial show a huge benefit in treating treatment-resistant melanoma."
+  },
   {
    "tipo": "noticia",
    "titulo": "VÍDEO | Composto do alho pode ajudar no combate ao câncer",
@@ -22,31 +47,6 @@
      "resumo": "Un estudio realizado en la Facultad de Ciencias Farmacéuticas de Ribeirão Preto de la USP probó en el laboratorio el uso de disulfuro de dialilo aplicado a células tumorales colorrectales junto con medicamentos de quimioterapia. La combinación..."
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Veja o que os dados mais recentes da vacina contra o câncer de mRNA da Moderna realmente mostram",
-   "resumo": "A vacina contra o câncer Moderna-Merck mRNA ajuda a prevenir a recorrência e a morte do câncer, mostram os novos resultados",
-   "url": "https://www.scientificamerican.com/article/heres-what-modernas-latest-mrna-cancer-vaccine-data-actually-show/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-22T22:55:00+00:00",
-   "tema": "Câncer",
-   "relevancia": 12,
-   "imagem": "https://static.scientificamerican.com/dam/asset/c4c5b45c-adec-4e39-b6a6-6df398515f37/Moderna.jpg?m=1792708999.453&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Here’s what Moderna’s latest mRNA cancer vaccine data actually show",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Esto es lo que muestran los últimos datos de la vacuna contra el cáncer de ARNm de Moderna",
-     "resumo": "La vacuna contra el cáncer de ARNm de Moderna-Merck ayuda a prevenir la recurrencia y la muerte del cáncer, según muestran los nuevos resultados"
-    }
-   },
-   "resumo_original": "The Moderna-Merck mRNA cancer vaccine helps prevent cancer recurrence and death, the new results show"
   },
   {
    "tipo": "noticia",
@@ -73,31 +73,6 @@
      "resumo": "Edificio albergó un laboratorio de innovación terapéutica con un banco de 20.000 moléculas; la pérdida se estima en R$ 50 millones"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "O conselheiro de RFK, Jr., Calley Means, anuncia sua renúncia ao governo Trump",
-   "resumo": "As opiniões de Means sobre a vacina COVID, leite cru e flúor foram criticadas pelos profissionais de saúde",
-   "url": "https://www.scientificamerican.com/article/rfk-jr-adviser-calley-means-announces-his-resignation-from-the-trump-administration/",
-   "fonte": "Scientific American",
-   "idioma": "en",
-   "data": "2026-10-22T20:00:00+00:00",
-   "tema": "Saúde",
-   "relevancia": 11,
-   "imagem": "https://static.scientificamerican.com/dam/asset/93e57095-dcba-4a40-a56f-f3df224f5254/Calley-Means.jpg?m=1792701262.696&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 0
-   },
-   "titulo_original": "RFK, Jr., adviser Calley Means announces his resignation from the Trump administration",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "El asesor de RFK, Jr., Calley Means, anuncia su renuncia a la administración Trump",
-     "resumo": "Los puntos de vista de Means sobre la vacuna COVID, la leche cruda y el fluoruro han sido criticados por los profesionales de la salud"
-    }
-   },
-   "resumo_original": "Means’s views on the COVID vaccine, raw milk and fluoride have all been criticized by health care professionals"
   },
   {
    "tipo": "noticia",
@@ -179,32 +154,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Da genômica à linguística, a África transfigurada",
-   "resumo": "Pesquisas multidisciplinares enxergam o continente e suas relações com o Brasil para além dos estereótipos",
-   "url": "https://revistapesquisa.fapesp.br/da-genomica-a-linguistica-a-africa-transfigurada/?utm_source=rss&utm_medium=rss&utm_campaign=da-genomica-a-linguistica-a-africa-transfigurada",
-   "fonte": "Revista Pesquisa FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-22T11:57:39+00:00",
-   "tema": "Ciência",
-   "relevancia": 9,
-   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/c5a509eaefad5f1613c0c2e3417801c5efd25d71_1200-630.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "From genomics to linguistics, transfigured Africa",
-     "resumo": "Multidisciplinary research sees the continent and its relations with Brazil beyond stereotypes"
-    },
-    "es": {
-     "titulo": "De la genómica a la lingüística, África transfigurada",
-     "resumo": "La investigación multidisciplinaria ve al continente y sus relaciones con Brasil más allá de los estereotipos"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Exame de sangue poderá antecipar o risco de hipertensão pulmonar",
    "resumo": "Estudo analisou cerca de 5 mil proteínas e identificou dez associadas ao desenvolvimento da doença. Resultados apontam a NOTCH3 como possível alvo para novos tratamentos",
    "url": "https://agencia.fapesp.br/exame-de-sangue-podera-antecipar-o-risco-de-hipertensao-pulmonar/59458",
@@ -228,31 +177,6 @@
      "resumo": "Un estudio analizó alrededor de 5.000 proteínas e identificó diez asociadas con el desarrollo de la enfermedad. Los resultados apuntan a NOTCH3 como un posible objetivo para nuevos tratamientos"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Cientistas descobrem uma arma imune escondida contra o câncer de pulmão mortal",
-   "resumo": "Pesquisadores descobriram uma defesa imunológica oculta capaz de atacar o câncer de pulmão de pequenas células, uma doença extremamente agressiva que muitas vezes escapa dos tratamentos convencionais. As células imunes especializadas podem reconhecer e destruir células cancerígenas...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261021231232.htm",
-   "fonte": "ScienceDaily · Saúde",
-   "idioma": "en",
-   "data": "2026-10-23T00:32:37+00:00",
-   "tema": "Câncer",
-   "relevancia": 8,
-   "imagem": "https://www.sciencedaily.com/images/1920/cancer-cell-destruction-nanoparticles.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Scientists discover a hidden immune weapon against deadly lung cancer",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos descubren un arma inmune oculta contra el cáncer de pulmón mortal",
-     "resumo": "Los investigadores han descubierto una defensa inmune oculta capaz de atacar el cáncer de pulmón de células pequeñas, una enfermedad extremadamente agresiva que a menudo escapa a los tratamientos convencionales. Las células inmunitarias especializadas pueden reconocer y destruir las células cancerosas..."
-    }
-   },
-   "resumo_original": "Researchers have uncovered a hidden immune defense capable of attacking small cell lung cancer, an extremely aggressive disease that often escapes conventional treatments. The specialized immune cells can recognize and destroy cancer cells…"
   },
   {
    "tipo": "noticia",
@@ -282,106 +206,277 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Corrida global para atualizar computadores à medida que a IA descobre o hack mais disruptivo de todos os tempos",
-   "resumo": "Mais de dois terços dos sites do mundo são vulneráveis a um hack que foi teorizado pela primeira vez em 2024, que a IA agora tornou muito real",
-   "url": "https://www.newscientist.com/article/2595282-global-race-to-update-computers-as-ai-discovers-most-disruptive-hack-yet/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "titulo": "Emily St. John Mandel: \"Não quero escrever algo implacavelmente sombrio\"",
+   "resumo": "A romancista de ficção científica conversa com Alison Flood sobre seu último livro Exit Party, um conto de mundos paralelos que é a leitura de outubro para o New Scientist Book Club",
+   "url": "https://www.newscientist.com/article/2594154-emily-st-john-mandel-i-dont-want-to-write-something-relentlessly-bleak/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fonte": "New Scientist",
    "idioma": "en",
-   "data": "2026-10-22T10:17:37+00:00",
+   "data": "2026-10-23T09:00:00+00:00",
    "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317697751.jpg",
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/09/Social-Image-Link.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Global race to update computers as AI discovers most disruptive hack yet",
+   "titulo_original": "Emily St. John Mandel: ‘I don’t want to write something relentlessly bleak’",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Carrera mundial para actualizar los ordenadores a medida que la IA descubre el hackeo más disruptivo hasta la fecha",
-     "resumo": "Más de dos tercios de los sitios web del mundo son vulnerables a un pirateo que se teorizó por primera vez en 2024, que la IA ahora ha hecho muy real"
+     "titulo": "Emily St. John Mandel: \"No quiero escribir algo implacablemente sombrío\"",
+     "resumo": "La novelista de ciencia ficción habla con Alison Flood sobre su último libro Exit Party, una historia de mundos paralelos que es la lectura de octubre para el New Scientist Book Club"
     }
    },
-   "resumo_original": "More than two thirds of the world's websites are vulnerable to a hack that was first theorised in 2024, which AI has now made very real"
+   "resumo_original": "The science-fiction novelist talks to Alison Flood about her latest book Exit Party, a tale of parallel worlds that is the October read for the New Scientist Book Club"
   },
   {
    "tipo": "noticia",
-   "titulo": "Uma novidade para o CRISPR: a poderosa edição prime altera o DNA diretamente no corpo humano",
-   "resumo": "A aplicação da técnica de alta precisão faz parte de um ensaio clínico para tratar uma doença genética que pode causar danos ao fígado e nervos.",
-   "url": "https://www.nature.com/articles/d41586-026-03371-x",
+   "titulo": "O sono diminui nas comunidades rurais após a chegada da eletricidade",
+   "resumo": "Os cientistas acompanharam as mudanças nos padrões de sono dos povos indígenas na Argentina que ganharam acesso à eletricidade — e telefones inteligentes.",
+   "url": "https://www.nature.com/articles/d41586-026-03318-2",
    "fonte": "Nature",
    "idioma": "en",
-   "data": "2026-10-22T00:00:00+00:00",
-   "tema": "Genética",
+   "data": "2026-10-23T00:00:00+00:00",
+   "tema": "Ciência",
    "relevancia": 6,
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03371-x/d41586-026-03371-x_53883104.jpg",
+   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03318-2/d41586-026-03318-2_53869076.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "A first for CRISPR: powerful prime editing alters DNA directly in the human body",
+   "titulo_original": "Sleep declines in rural communities after electricity arrives",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Una primicia para CRISPR: la potente edición principal altera el ADN directamente en el cuerpo humano",
-     "resumo": "La aplicación de la técnica de alta precisión es parte de un ensayo clínico para tratar una enfermedad genética que puede causar daño hepático y nervioso."
+     "titulo": "El sueño disminuye en las comunidades rurales después de que llega la electricidad",
+     "resumo": "Los científicos rastrearon los cambios en los patrones de sueño de los indígenas en Argentina que obtuvieron acceso a la red eléctrica y a los teléfonos inteligentes."
     }
    },
-   "resumo_original": "Application of the high-precision technique is part of a clinical trial to treat a genetic disease that can cause liver and nerve damage."
+   "resumo_original": "Scientists tracked the changing sleep patterns of Indigenous people in Argentina who gained access to mains electricity — and smart phones."
   },
   {
    "tipo": "noticia",
-   "titulo": "Cientistas de Oxford descobrem como os vírus se constroem sem um plano",
-   "resumo": "Os cientistas capturaram partículas semelhantes a vírus montando-se passo a passo, revelando como um processo surpreendentemente simples de tentativa e erro produz estruturas complexas com notável precisão. A descoberta revela uma crucial...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261021231248.htm",
+   "titulo": "InfoGripe: três estados têm incidência de SRAG em nível de alerta ou risco, com sinal de crescimento",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/infogripe-tres-estados-tem-incidencia-de-srag-em-nivel-de-alerta-ou-risco-com-sinal-de-crescimento",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-22T14:19:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 6,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/infocapa_14.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "InfoGrip: three states have an incidence of SARS at alert or risk level, with a sign of growth"
+    },
+    "es": {
+     "titulo": "InfoGrip: tres estados tienen una incidencia de SARS a nivel de alerta o riesgo, con un signo de crecimiento"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Os implantes dentários podem sequestrar seu sistema imunológico, descobrem cientistas",
+   "resumo": "Os pesquisadores descobriram uma razão surpreendente pela qual as infecções por implantes dentários geralmente resistem aos antibióticos: os próprios implantes podem contribuir para o problema. Bactérias corroem implantes de titânio, liberando partículas microscópicas que sequestram...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261022081314.htm",
    "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-22T11:42:05+00:00",
+   "data": "2026-10-23T11:12:28+00:00",
    "tema": "Saúde",
    "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/virus-like-particle-self-assembly.webp",
+   "imagem": "https://www.sciencedaily.com/images/1920/dental-implant.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Oxford scientists discover how viruses build themselves without a blueprint",
+   "titulo_original": "Dental implants can hijack your immune system, scientists discover",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Científicos de Oxford descubren cómo los virus se construyen sin un plano",
-     "resumo": "Los científicos han capturado partículas similares a virus que se ensamblan paso a paso, revelando cómo un proceso sorprendentemente simple de prueba y error produce estructuras complejas con una precisión notable. El descubrimiento descubre una crucial..."
+     "titulo": "Los científicos descubren que los implantes dentales pueden secuestrar tu sistema inmunológico",
+     "resumo": "Los investigadores han descubierto una razón sorprendente por la que las infecciones de los implantes dentales a menudo resisten los antibióticos: los propios implantes pueden contribuir al problema. Las bacterias corroen los implantes de titanio, liberando partículas microscópicas que secuestran..."
     }
    },
-   "resumo_original": "Scientists have captured virus-like particles assembling themselves step by step, revealing how a surprisingly simple process of trial and error produces complex structures with remarkable precision. The discovery uncovers a crucial…"
+   "resumo_original": "Researchers have uncovered a surprising reason dental implant infections often resist antibiotics: the implants themselves can contribute to the problem. Bacteria corrode titanium implants, releasing microscopic particles that hijack…"
   },
   {
    "tipo": "noticia",
-   "titulo": "A matemática pode sobreviver à IA? O medalhista do Fields, Terence Tao, pede um mundo ‘Maths 2.0’",
-   "resumo": "À medida que as máquinas avançam na resolução de problemas, os matemáticos devem estabelecer uma nova era que valorize a compreensão humana em vez de simplesmente publicar mais soluções.",
-   "url": "https://www.nature.com/articles/d41586-026-03389-1",
-   "fonte": "Nature",
+   "titulo": "O risco poligênico para diabetes tipo 2 modula as associações do microbioma intestinal em todos os traços de saúde metabólica",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41525-026-00626-4",
+   "fonte": "Nature · Genética",
    "idioma": "en",
-   "data": "2026-10-22T00:00:00+00:00",
-   "tema": "Ciência",
+   "data": "2026-10-23T00:00:00+00:00",
+   "tema": "Saúde",
    "relevancia": 5,
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03389-1/d41586-026-03389-1_53883260.jpg",
+   "imagem": "",
+   "titulo_original": "Polygenic risk for type 2 diabetes modulates gut microbiome associations across metabolic health traits",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El riesgo poligénico de diabetes tipo 2 modula las asociaciones del microbioma intestinal en todos los rasgos metabólicos de salud"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Como se expor aos seus medos pode domar sua ansiedade",
+   "resumo": "É possível tirar lições da terapia de exposição e aplicá-las fora da clínica, dizem especialistas",
+   "url": "https://www.scientificamerican.com/article/how-exposing-yourself-to-your-fears-can-tame-your-anxiety/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-23T13:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/17d02aff-4d71-45f0-9bad-423ae4f7b4f0/psychology-concept.jpg?m=1792691002.528&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Can maths survive AI? Fields medallist Terence Tao calls for a ‘Maths 2.0’ world",
+   "titulo_original": "How exposing yourself to your fears can tame your anxiety",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "¿Pueden las matemáticas sobrevivir a la IA? El medallista de Fields, Terence Tao, pide un mundo de \"Matemáticas 2.0\"",
-     "resumo": "A medida que las máquinas avanzan en la resolución de problemas, los matemáticos deben establecer una nueva era que premie la comprensión humana en lugar de simplemente publicar más soluciones."
+     "titulo": "Cómo exponerse a sus miedos puede domar su ansiedad",
+     "resumo": "Es posible tomar lecciones de la terapia de exposición y aplicarlas fuera de la clínica, dicen los expertos"
     }
    },
-   "resumo_original": "As machines race ahead in solving problems, mathematicians must establish a new era that prizes human understanding over simply publishing more solutions."
+   "resumo_original": "It is possible to take lessons from exposure therapy and apply them outside the clinic, experts say"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Tratamento inovador de TEPT atinge taxa de remissão de 68% em ensaio clínico",
+   "resumo": "Um tratamento de TEPT recentemente aprovado pela FDA usa mapeamento cerebral personalizado e estimulação magnética para direcionar a atividade cerebral anormal, com um ensaio clínico relatando uma redução de 52% nos sintomas e 68% de remissão. Os pesquisadores acreditam que...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261022081309.htm",
+   "fonte": "ScienceDaily",
+   "idioma": "en",
+   "data": "2026-10-23T11:02:25+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/head-brain-waves-neural-activity-signals.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Breakthrough PTSD treatment achieves 68% remission rate in clinical trial",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El tratamiento innovador para el TEPT logra una tasa de remisión del 68% en un ensayo clínico",
+     "resumo": "Un tratamiento de TEPT recientemente aprobado por la FDA utiliza mapeo cerebral personalizado y estimulación magnética para atacar la actividad cerebral anormal, con un ensayo clínico que informa una reducción del 52% en los síntomas y una remisión del 68%. Los investigadores creen que..."
+    }
+   },
+   "resumo_original": "A newly FDA-cleared PTSD treatment uses personalized brain mapping and magnetic stimulation to target abnormal brain activity, with a clinical trial reporting a 52% reduction in symptoms and 68% remission. Researchers believe the…"
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "WEE1 se opõe à atividade APC/C CDH1 para promover a entrada na fase S.",
+   "autores": "Vuillemenot LA, Morales LG, Dragoi CM, Pennycook BR, Harris E, Lin LC, Weston WA, Brown JE, Graham E, Moulin L, Andrew…",
+   "revista": "Nature",
+   "data": "2026-10-21T00:00:00+00:00",
+   "doi": "10.1038/s41586-026-11188-x",
+   "url": "https://doi.org/10.1038/s41586-026-11188-x",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "WEE1 opposes APC/C CDH1 activity to promote S phase entry.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "WEE1 se opone a la actividad de APC/C CDH1 para promover la entrada de la fase S."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Perfil genômico abrangente para iMprove accEss para terapias direcionadas em carcinoma seroso de alto grau: a rEal-world stUdy (PROMETHEUS).",
+   "autores": "Lorenzini D, Barbetta F, Piccolo A, Busico A, Capone I, Conca E, Bragantini E, Duca M, Azzollini J, Sabella G, Ardore…",
+   "revista": "J Mol Diagn",
+   "data": "2026-10-21T00:00:00+00:00",
+   "doi": "10.1016/j.jmoldx.2026.09.006",
+   "url": "https://doi.org/10.1016/j.jmoldx.2026.09.006",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Comprehensive genomic PROfiling to iMprove accEss to targeted Therapies in High Grade Serous Carcinoma: a rEal-world stUdy (PROMETHEUS).",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "PROfiling genómico integral para iMprove accEss a terapias dirigidas en carcinoma seroso de alto grado: un rEal-world stUdy (PROMETHEUS)."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Terapêutica de ácido nucleico para revigorar a função do p53 no glioblastoma: conceitos, limitações e avanços recentes.",
+   "autores": "Hagstotz A, Michen S, Aigner A, Eyüpoglu IY, Temme A.",
+   "revista": "Pharmacol Ther",
+   "data": "2026-10-21T00:00:00+00:00",
+   "doi": "10.1016/j.pharmthera.2026.109134",
+   "url": "https://doi.org/10.1016/j.pharmthera.2026.109134",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Nucleic acid therapeutics for reinvigorating p53 function in glioblastoma: concepts, limitations and recent advances.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Terapéutica de ácidos nucleicos para revitalizar la función de p53 en el glioblastoma: conceptos, limitaciones y avances recientes."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Revisitando o Potencial Obesogênico de Poluentes Legados: Evidências Epidemiológicas, Toxicogenômicas e Baseadas em Dose de Referência.",
+   "autores": "Li M, Cao Y, Shi S, Wu F, Xie C, Song L, Wang Y, Tao Y, Mei S.",
+   "revista": "Food Chem Toxicol",
+   "data": "2026-10-21T00:00:00+00:00",
+   "doi": "10.1016/j.fct.2026.116468",
+   "url": "https://doi.org/10.1016/j.fct.2026.116468",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Revisiting the Obesogenic Potential of Legacy Pollutants: Epidemiological, Toxicogenomic, and Benchmark Dose-Based Evidence.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Revisando el potencial obesogénico de los contaminantes heredados: evidencia epidemiológica, toxicogenómica y basada en la dosis de referencia."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Glofitamabe com polatuzumabe vedotina em linfomas do sistema nervoso central recidivantes/refratários.",
+   "autores": "Lopedote P, Kallam A, Danilov AV, Phillips TJ, Shouse G, Sworder B, Borogovac A, Liu Y, Song JYY, Herrera AF, Godfrey…",
+   "revista": "Blood Adv",
+   "data": "2026-10-21T00:00:00+00:00",
+   "doi": "10.1182/bloodadvances.2026022200",
+   "url": "https://doi.org/10.1182/bloodadvances.2026022200",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Glofitamab with polatuzumab vedotin in relapsed/refractory central nervous system lymphomas.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Glofitamab con polatuzumab vedotina en linfomas del sistema nervioso central recidivantes/refractarios."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Novas abordagens para direcionar as células-tronco do câncer de próstata que impulsionam a resistência à terapia e a progressão do câncer.",
+   "autores": "Alatawi FS.",
+   "revista": "Mol Biol Rep",
+   "data": "2026-10-21T00:00:00+00:00",
+   "doi": "10.1007/s11033-026-12948-8",
+   "url": "https://doi.org/10.1007/s11033-026-12948-8",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Novel approaches to target prostate cancer stem cells driving therapy resistance and cancer progression.",
+   "traduzido": true
+  },
   {
    "tipo": "artigo",
    "titulo": "Comentário sobre “Associations of neighborhood deprivation with breast cancer tumor genomics, targeted treatment use, and survival”.",
@@ -543,6 +638,19 @@
      "titulo": "Organización del primer taller nacional para familias en Suiza preocupadas por los síndromes de cáncer hereditario."
     }
    }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Risco Oncológico Residual Após Cirurgia de Masculinização Torácica: Câncer de Mama Invasivo 2 Anos Após a Cirurgia.",
+   "autores": "Wannasri T, Tosirisuk P, Limpratya T.",
+   "revista": "Plast Reconstr Surg Glob Open",
+   "data": "2026-10-19T00:00:00+00:00",
+   "doi": "10.1097/gox.0000000000008222",
+   "url": "https://doi.org/10.1097/gox.0000000000008222",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Residual Oncological Risk After Chest Masculinization Surgery: Invasive Breast Cancer 2 Years After Surgery.",
+   "traduzido": true
   },
   {
    "tipo": "artigo",
@@ -762,6 +870,24 @@
   },
   {
    "tipo": "artigo",
+   "titulo": "Utility of Vorasidenib in IDH1 R132C-Mutant WHO Grade 2 Astrocytoma: A Case Report.",
+   "autores": "Hickey J, Pack E, Arteaga D, Hodge J, Bhatia S, Han P, Feizi P, Miller L, Aulakh S.",
+   "revista": "Onco Targets Ther",
+   "data": "2026-10-16T00:00:00+00:00",
+   "doi": "10.2147/ott.s638827",
+   "url": "https://doi.org/10.2147/ott.s638827",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Utility of Vorasidenib in IDH1 R132C-Mutant WHO Grade 2 Astrocytoma: A Case Report.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Utilidad de Vorasidenib en IDH1 R132C-Mutante de la OMS Astrocitoma de grado 2: un informe de caso."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
    "titulo": "Leiomiomas uterinos em HLRCC: uma revisão de escopo de apresentação, histopatologia, padrões de tratamento e implicações reprodutivas.",
    "autores": "Hessi R, Bendayan E, Mija LA, Ouchene L, Udupa M, Lazarowitz R, Fu L, Leung SOA, Cruz Marino T, Foulkes WD…",
    "revista": "Eur J Hum Genet",
@@ -775,150 +901,6 @@
    "i18n": {
     "es": {
      "titulo": "Leiomiomas uterinos en HLRCC: una revisión del alcance de la presentación, la histopatología, los patrones de tratamiento y las implicaciones reproductivas."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "The molecular heterogeneity and clinical impact of genomic driver alterations in prostate cancer.",
-   "autores": "Pellegrina D, Kiriy D, C L Cheng K, Favero F, Miletti E, Klein ZP, Hernando B, Olsen AV, Sahli A, Fu Y, Lutsik P…",
-   "revista": "Nat Commun",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": "10.1038/s41467-026-77900-7",
-   "url": "https://doi.org/10.1038/s41467-026-77900-7",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "The molecular heterogeneity and clinical impact of genomic driver alterations in prostate cancer.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La heterogeneidad molecular y el impacto clínico de las alteraciones del controlador genómico en el cáncer de próstata."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Paisagem Variante da Linha Germinativa do Mundo Real e Manejo Clínico em Pacientes Coreanos Testados para Suspeita de Câncer Hereditário.",
-   "autores": "Kang MC, Lee HE, Park SY, Lee S, Jung SY, Lim MC, Kang HS, Seol CA, Jang JH, Woo SM, Joung JY, Choi W, Park SC, Kong SY.",
-   "revista": "Cancer Sci",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": "10.1111/cas.70562",
-   "url": "https://doi.org/10.1111/cas.70562",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Real-World Germline Variant Landscape and Clinical Management in Korean Patients Tested for Suspected Hereditary Cancer.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Paisaje de variantes de la línea germinal del mundo real y manejo clínico en pacientes coreanos analizados por sospecha de cáncer hereditario."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Características clínicas e resultado de uma coorte de pacientes com LLC com mutação de gatekeeper BTK T474.",
-   "autores": "Omer Z, Rogers KA, Yano M, Rai J, Chen J, Woyach JA, Bhat SA, Jones D, Grever MR, Hertlein E, Elgamal S, Byrd JC.",
-   "revista": "Blood Adv",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": "10.1182/bloodadvances.2025019251",
-   "url": "https://doi.org/10.1182/bloodadvances.2025019251",
-   "acesso_aberto": false,
-   "tema": "Genética",
-   "titulo_original": "Clinical characteristics and outcome of a cohort of CLL patients with BTK T474 gatekeeper mutation.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Características clínicas y resultado de una cohorte de pacientes con LLC con mutación gatekeeper BTK T474."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Clinical implications of germline and somatic genetic testing in ovarian carcinoma: BRCA and beyond. O ensaio PERSONA-Ovary.",
-   "autores": "Betella I, Bonetti E, Ribero L, Zanzottera C, Fumagalli C, Sangalli C, Garbi A, Montinaro A, Multinu F, Marino E…",
-   "revista": "Gynecol Oncol",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": "10.1016/j.ygyno.2026.10.006",
-   "url": "https://doi.org/10.1016/j.ygyno.2026.10.006",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Clinical implications of germline and somatic genetic testing in ovarian carcinoma: BRCA and beyond. The PERSONA-Ovary trial.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Implicaciones clínicas de la línea germinal y las pruebas genéticas somáticas en el carcinoma de ovario: BRCA y más allá. El ensayo PERSONA-Ovary."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Mutações <i>PIK3CA</i> em Câncer Endometrial Avançado ou Recorrente: Um Perfil Molecular Exploratório do Estudo MITO END-3 de Fase II.",
-   "autores": "Passarelli A, Scaglione GL, Califano D, Bartoletti M, Lorusso D, Cecere SC, Fagotti A, Farolfi A, Andreetta C…",
-   "revista": "JCO Precis Oncol",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": "10.1200/po-26-00484",
-   "url": "https://doi.org/10.1200/po-26-00484",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "<i>PIK3CA</i> Mutations in Advanced or Recurrent Endometrial Cancer: An Exploratory Molecular Profiling From the Phase II MITO END-3 Study.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "<i>PIK3CA</i> Mutations in Advanced or Recurrent Endometrial Cancer: An Exploratory Molecular Profiling From the Phase II MITO END-3 Study."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "A angiotensina- (1-7) atenua a artrite induzida por colágeno e suprime a ferroptose em macrófagos derivados de THP-1: envolvimento da sinalização de p53/SLC7A11.",
-   "autores": "Yang H, Liu A, Sheng M, Zhang S, Tang L.",
-   "revista": "J Mol Histol",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": "10.1007/s10735-026-11009-5",
-   "url": "https://doi.org/10.1007/s10735-026-11009-5",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Angiotensin-(1-7) attenuates collagen-induced arthritis and suppresses ferroptosis in THP-1-derived macrophages: involvement of p53/SLC7A11 signaling.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La angiotensina-(1-7) atenúa la artritis inducida por colágeno y suprime la ferroptosis en macrófagos derivados de THP-1: implicación de la señalización de p53/SLC7A11."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Linfoma de Células T Intestinais Epitelotrópicas Monomórficas: Análise Clinicopatológica e Genética de uma Grande Coorte Chinesa.",
-   "autores": "Li K, Wei R, Su M, Shui R, Lu H, Li X, Zhu X, Zhou X, Yu B.",
-   "revista": "Am J Surg Pathol",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": "10.1097/pas.0000000000002629",
-   "url": "https://doi.org/10.1097/pas.0000000000002629",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Monomorphic Epitheliotropic Intestinal T-Cell Lymphoma: Clinicopathologic and Genetic Analysis of a Large Chinese Cohort.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Linfoma epiteliotrópico monomórfico de células T intestinales: análisis clínico-patológico y genético de una gran cohorte china."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Cenário de Variantes Germinativas do Mundo Real e Manejo Clínico em Pacientes Coreanos Testados para Suspeita de Câncer Hereditário",
-   "autores": "Kang M, Lee H, Park S, Lee S, Jung S, Lim M, Kang H, Seol C, Jang J, Woo S, Joung J, Choi W, Park S, Kong S.",
-   "revista": "Cancer Sci",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": null,
-   "url": "https://europepmc.org/article/PMC/PMC13675117",
-   "acesso_aberto": true,
-   "tema": "Câncer",
-   "titulo_original": "Real‐World Germline Variant Landscape and Clinical Management in Korean Patients Tested for Suspected Hereditary Cancer",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Paisaje de variantes dela línea germinal del mundo real y manejo clínico en pacientes coreanos analizados por sospecha de cáncer hereditario"
     }
    }
   }
@@ -939,10 +921,6 @@
  ],
  "erros": [],
  "mostradas": {
-  "estimulacao cerebral aliada a educacao nutricional reduz desejo por comida em mulheres com obesidade": "2026-10-13T07:50:00.540431+00:00",
-  "sucesso da ia na industria depende da uniao entre tecnologia e chao de fabrica": "2026-10-13T07:50:00.540431+00:00",
-  "icmc usp tem vaga de pos doutorado em engenharia de software e ia": "2026-10-13T07:50:00.540431+00:00",
-  "the monte verde controversy is back who first lived in the americas": "2026-10-13T07:50:00.540431+00:00",
   "fiocruz pra voce vai oferecer vacinacao a criancas e adultos": "2026-10-13T16:07:46.963620+00:00",
   "bioinformatica na selva da inteligencia artificial": "2026-10-13T16:07:46.963620+00:00",
   "o triunfo da viola no campo e na cidade": "2026-10-13T16:07:46.963620+00:00",
@@ -1173,6 +1151,14 @@
   "video composto do alho pode ajudar no combate ao cancer": "2026-10-23T07:43:06.825522+00:00",
   "sistema com realidade virtual e ia aprimora deteccao de declinio cognitivo": "2026-10-23T07:43:06.825522+00:00",
   "exame de sangue podera antecipar o risco de hipertensao pulmonar": "2026-10-23T07:43:06.825522+00:00",
-  "scientists discover a hidden immune weapon against deadly lung cancer": "2026-10-23T07:43:06.825522+00:00"
+  "scientists discover a hidden immune weapon against deadly lung cancer": "2026-10-23T07:43:06.825522+00:00",
+  "moderna mrna vaccine almost halves the risk of skin cancer returning": "2026-10-23T13:36:25.618375+00:00",
+  "emily st john mandel i dont want to write something relentlessly bleak": "2026-10-23T13:36:25.618375+00:00",
+  "sleep declines in rural communities after electricity arrives": "2026-10-23T13:36:25.618375+00:00",
+  "infogripe tres estados tem incidencia de srag em nivel de alerta ou risco com sinal de crescimento": "2026-10-23T13:36:25.618375+00:00",
+  "dental implants can hijack your immune system scientists discover": "2026-10-23T13:36:25.618375+00:00",
+  "polygenic risk for type 2 diabetes modulates gut microbiome associations across metabolic health traits": "2026-10-23T13:36:25.618375+00:00",
+  "how exposing yourself to your fears can tame your anxiety": "2026-10-23T13:36:25.618375+00:00",
+  "breakthrough ptsd treatment achieves 68 remission rate in clinical trial": "2026-10-23T13:36:25.618375+00:00"
  }
 }
