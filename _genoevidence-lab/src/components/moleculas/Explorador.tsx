@@ -1,15 +1,20 @@
 "use client";
 import dynamic from "next/dynamic";
+import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { VisualKindBadge } from "@/components/ui/Badges";
+import type { FonteEstrutura } from "@/components/biomol/visor/VisorMolecular";
 
-const MolstarViewer = dynamic(() => import("@/components/structures/MolstarViewer"), {
+const VisorMolecular = dynamic(() => import("@/components/biomol/visor/VisorMolecular").then((m) => m.VisorMolecular), {
   ssr: false,
   loading: () => (
-    <div className="grid h-full place-items-center text-[13px] text-muted" role="status">
+    <div className="grid h-[clamp(420px,66vh,760px)] place-items-center rounded-2xl border border-line bg-panel text-[13px] text-muted" role="status">
       Carregando o visualizador…
     </div>
   ),
 });
+
+const MAX_ARQUIVO_ESTRUTURA = 30 * 1024 * 1024;
 
 type Proteina = { acesso: string; nome: string; genes: string[]; organismo: string; url: string };
 type Composto = { cid: number; nome: string; formula?: string; massa?: string; imagem2d: string; url: string };
@@ -50,12 +55,21 @@ export function Explorador() {
   const [erro, setErro] = useState<string | null>(null);
   const [pdb, setPdb] = useState<string | null>(null);
   const [titulo, setTitulo] = useState<Estrutura | null>(null);
+  const [local, setLocal] = useState<{ nome: string; texto: string } | null>(null);
+  const [erroArquivo, setErroArquivo] = useState("");
+  const arquivo = useRef<HTMLInputElement>(null);
+  const params = useSearchParams();
+  // Vindo de outra ferramenta (ex.: busca por sequência): ?pdb=1CRN&cadeia=A
+  const pedidoPdb = (params.get("pdb") ?? "").toUpperCase();
+  const pedidoCadeia = params.get("cadeia") ?? undefined;
+  const inicialPdb = /^[0-9][A-Z0-9]{3}$/.test(pedidoPdb) ? pedidoPdb : "1BNA";
 
   const buscar = useCallback(async (q: string) => {
     const limpo = q.trim();
     if (!limpo) return;
     setBuscando(true);
     setErro(null);
+    setLocal(null);
     try {
       const r = await fetch(`/api/moleculas/resolver?termo=${encodeURIComponent(limpo)}&tipo=auto`);
       const d = (await r.json().catch(() => ({}))) as Resposta & { error?: string };
@@ -79,14 +93,29 @@ export function Explorador() {
   }, []);
 
   const abrir = (e: Estrutura) => {
+    setLocal(null);
     setPdb(e.pdbId);
     setTitulo(e);
   };
 
-  // Abre com a dupla-hélice já na tela. Não envolve nenhum dado seu: é um arquivo público fixo.
+  // Abre com a dupla-hélice já na tela (ou com a estrutura pedida no endereço). Não envolve nenhum
+  // dado seu: é um arquivo público.
   useEffect(() => {
-    void buscar("1BNA");
-  }, [buscar]);
+    void buscar(inicialPdb);
+  }, [buscar, inicialPdb]);
+
+  const abrirArquivo = async (f: File | undefined) => {
+    setErroArquivo("");
+    if (!f) return;
+    if (f.size > MAX_ARQUIVO_ESTRUTURA) return setErroArquivo(`O arquivo tem ${(f.size / 1024 / 1024).toFixed(1)} MB; o limite aqui é 30 MB.`);
+    const texto = await f.text();
+    if (!/_atom_site\.|^(ATOM {2}|HETATM)/m.test(texto)) return setErroArquivo(`“${f.name}” não parece um arquivo PDB nem mmCIF (não achei átomos).`);
+    setAchados(null);
+    setErro(null);
+    setPdb(null);
+    setLocal({ nome: f.name, texto });
+    if (arquivo.current) arquivo.current.value = "";
+  };
 
   return (
     <div className="grid gap-4" data-testid="explorador">
@@ -118,7 +147,19 @@ export function Explorador() {
             {buscando ? "Procurando…" : "Procurar"}
           </button>
         </div>
-        <p className="text-xs text-muted">Não precisa dizer o que é: proteína, gene, composto ou código de estrutura, tudo na mesma caixa.</p>
+        <p className="text-xs text-muted">
+          Não precisa dizer o que é: proteína, gene, composto ou código de estrutura, tudo na mesma caixa. Ou{" "}
+          <button type="button" onClick={() => arquivo.current?.click()} className="text-accent-ink underline" data-testid="abrir-arquivo-estrutura">
+            abra um arquivo .pdb ou .cif do seu computador
+          </button>{" "}
+          — ele é lido aqui no navegador e não é enviado.
+        </p>
+        <input ref={arquivo} type="file" accept=".pdb,.ent,.cif,.mmcif" className="sr-only" tabIndex={-1} aria-hidden="true" onChange={(e) => void abrirArquivo(e.target.files?.[0])} />
+        {erroArquivo && (
+          <p className="text-sm text-danger" role="alert">
+            {erroArquivo}
+          </p>
+        )}
       </form>
 
       <div className="grid gap-1.5">
@@ -179,7 +220,11 @@ export function Explorador() {
         <Achadinho key={a.tipo} achado={a} aoAbrir={abrir} abertoPdb={pdb} />
       ))}
 
-      {pdb && titulo && <Visor pdb={pdb} estrutura={titulo} />}
+      {local ? (
+        <Visor fonte={{ tipo: "texto", nome: local.nome, texto: local.texto }} chave={`arquivo:${local.nome}`} />
+      ) : (
+        pdb && titulo && <Visor fonte={{ tipo: "pdb", id: pdb }} chave={pdb} estrutura={titulo} cadeia={pdb === inicialPdb ? pedidoCadeia : undefined} />
+      )}
     </div>
   );
 }
@@ -251,48 +296,49 @@ function Achadinho({ achado, aoAbrir, abertoPdb }: { achado: Achado; aoAbrir: (e
   );
 }
 
-function Visor({ pdb, estrutura }: { pdb: string; estrutura: Estrutura }) {
-  const [reduzido, setReduzido] = useState(false);
-  const [estado, setEstado] = useState<{ state: "carregando" | "pronto" | "erro"; message?: string }>({ state: "carregando" });
-  const [comando, setComando] = useState<{ type: "reset"; nonce: number } | null>(null);
-  const nonce = useRef(0);
-  useEffect(() => setReduzido(window.matchMedia("(prefers-reduced-motion: reduce)").matches), []);
-
+function Visor({ fonte, chave, estrutura, cadeia }: { fonte: FonteEstrutura; chave: string; estrutura?: Estrutura; cadeia?: string }) {
+  const pdb = fonte.tipo === "pdb" ? fonte.id : null;
   return (
-    <figure className="grid gap-2" data-testid="visor" data-pdb={pdb}>
-      <div className="relative h-[clamp(320px,52vh,560px)] overflow-hidden rounded-2xl border border-line bg-[#0b1221]">
-        <MolstarViewer url={`/api/moleculas/estrutura?pdb=${pdb}`} format="mmcif" highlights={[]} command={comando} reducedMotion={reduzido} onStatus={setEstado} />
-        {estado.state === "pronto" && (
-          <button
-            type="button"
-            onClick={() => setComando({ type: "reset", nonce: ++nonce.current })}
-            className="ge-press absolute right-3 top-3 rounded-full border border-white/20 bg-black/50 px-3 py-1.5 text-[13px] text-white backdrop-blur hover:bg-black/70"
-          >
-            Enquadrar de novo
-          </button>
-        )}
-      </div>
-      <figcaption className="grid gap-1 text-sm">
-        <strong className="font-semibold">
-          {pdb} — {estrutura.titulo}
-        </strong>
-        <span className="text-muted">
-          {estrutura.metodo ?? "método não informado"}
-          {estrutura.resolucao ? ` · ${estrutura.resolucao} Å` : ""} ·{" "}
-          <a href={estrutura.url} target="_blank" rel="noreferrer noopener" className="text-accent-ink underline">
-            ver no RCSB PDB
-          </a>
-        </span>
-        {estado.state === "erro" && (
-          <span className="text-danger" role="alert">
-            {estado.message ?? "Não foi possível carregar a estrutura."}
+    <figure className="grid gap-2" data-testid="visor" data-pdb={pdb ?? undefined} data-arquivo={fonte.tipo === "texto" ? fonte.nome : undefined}>
+      <VisorMolecular
+        key={chave}
+        fontes={[fonte]}
+        inicial={cadeia ? { cadeia } : undefined}
+        selo={
+          <span className="inline-flex flex-wrap items-center gap-1.5">
+            <VisualKindBadge kind="dados" />
+            <span className="rounded-full bg-black/55 px-2.5 py-0.5 text-xs font-semibold text-white backdrop-blur">
+              {pdb ? `PDB ${pdb} · estrutura experimental` : "arquivo do seu computador"}
+            </span>
           </span>
-        )}
-        <span className="text-xs text-muted">
-          Arraste para girar, use a roda para aproximar. Estrutura experimental depositada por terceiros — girar é só para olhar: não é
-          movimento calculado nem dinâmica molecular.
-        </span>
-      </figcaption>
+        }
+        legenda={
+          <figcaption className="grid gap-1 text-sm">
+            {pdb && estrutura ? (
+              <>
+                <strong className="font-semibold">
+                  {pdb} — {estrutura.titulo}
+                </strong>
+                <span className="text-muted">
+                  {estrutura.metodo ?? "método não informado"}
+                  {estrutura.resolucao ? ` · ${estrutura.resolucao} Å` : ""} ·{" "}
+                  <a href={estrutura.url} target="_blank" rel="noreferrer noopener" className="text-accent-ink underline">
+                    ver no RCSB PDB
+                  </a>
+                </span>
+              </>
+            ) : (
+              <strong className="font-semibold">{fonte.tipo === "texto" ? fonte.nome : ""}</strong>
+            )}
+            <span className="text-xs text-muted">
+              {fonte.tipo === "texto"
+                ? "Lido no seu navegador; não foi enviado ao GenoLab. A origem e o método são os que o próprio arquivo declara — o GenoLab não confere. "
+                : "Estrutura experimental depositada por terceiros. "}
+              Mostra a unidade assimétrica, modelo 1. Girar é só para olhar: não é movimento calculado nem dinâmica molecular.
+            </span>
+          </figcaption>
+        }
+      />
     </figure>
   );
 }
