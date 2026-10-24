@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-23T22:22:55.460377+00:00",
+ "atualizado_em": "2026-10-24T00:54:05.428107+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -97,6 +97,31 @@
     "es": {
      "titulo": "VIDEO | El compuesto de ajo puede ayudar a combatir el cáncer",
      "resumo": "Un estudio realizado en la Facultad de Ciencias Farmacéuticas de Ribeirão Preto de la USP probó en el laboratorio el uso de disulfuro de dialilo aplicado a células tumorales colorrectales junto con medicamentos de quimioterapia. La combinación..."
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "“Anatomia do Caos”: filme magistral marca os cinco anos da CPI da covid-19",
+   "resumo": "Por Deisy Ventura , professora títular da Faculdade de Saúde Pública da USP",
+   "url": "https://jornal.usp.br/articulistas/deisy-ventura/anatomia-do-caos-filme-magistral-marca-os-cinco-anos-da-cpi-da-covid-19/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-23T20:42:45+00:00",
+   "tema": "Saúde",
+   "relevancia": 10,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/04/perfil_-articulistas-deyse-ventura.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "\"Anatomy of Chaos\": masterful film marks the five years of the Covid-19 CPI",
+     "resumo": "By Deisy Ventura , title professor at USP's School of Public Health"
+    },
+    "es": {
+     "titulo": "“Anatomía del caos”: magistral película marca los cinco años del IPC Covid-19",
+     "resumo": "Por Deisy Ventura , profesora titular de la Escuela de Salud Pública de la USP"
     }
    }
   },
@@ -223,32 +248,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Colóquio internacional debate relações entre literatura, textos bíblicos e experiência humana",
-   "resumo": "Evento reúne pesquisadores nacionais e internacionais para discutir teopoética, imaginação moral e as interfaces entre religião e arte",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/23/coloquio-internacional-debate-relacoes-entre-literatura-textos-biblicos-e-experiencia-humana/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-23T19:31:25+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261023_Poeticas-biblicas_Capa.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "International colloquium discusses relations between literature, biblical texts and human experience",
-     "resumo": "Event brings together national and international researchers to discuss theopoetics, moral imagination and the interfaces between religion and art"
-    },
-    "es": {
-     "titulo": "Coloquio internacional sobre las relaciones entre la literatura, los textos bíblicos y la experiencia humana",
-     "resumo": "El evento reúne a investigadores nacionales e internacionales para discutir la teopoética, la imaginación moral y las interfaces entre la religión y el arte"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Primeira pessoa infectada com o raro vírus Shamonda: o que sabemos",
    "resumo": "Pesquisadores de doenças infecciosas dizem que o risco de o patógeno animal se mover entre as pessoas é baixo.",
    "url": "https://www.nature.com/articles/d41586-026-03416-1",
@@ -256,7 +255,7 @@
    "idioma": "en",
    "data": "2026-10-23T00:00:00+00:00",
    "tema": "Saúde",
-   "relevancia": 7,
+   "relevancia": 6,
    "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03416-1/d41586-026-03416-1_53891592.jpg",
    "foco": {
     "x": 50,
@@ -271,31 +270,6 @@
     }
    },
    "resumo_original": "Infectious-disease researchers say the risk of the livestock pathogen moving between people is low."
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Correção do autor: DYNLL1 se liga a MRE11 para limitar a ressecção final do DNA em células deficientes em BRCA1",
-   "resumo": "Correção do autor: DYNLL1 se liga a MRE11 para limitar a ressecção final do DNA em células deficientes em BRCA1",
-   "url": "https://www.nature.com/articles/s41586-026-11303-y",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-23T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 6,
-   "imagem": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-026-11303-y/MediaObjects/41586_2026_11303_Fig1_HTML.png",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Corrección del autor: DYNLL1 se une a MRE11 para limitar la resección final del ADN en células deficientes en BRCA1",
-     "resumo": "Corrección del autor: DYNLL1 se une a MRE11 para limitar la resección final del ADN en células deficientes en BRCA1"
-    }
-   },
-   "resumo_original": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells"
   },
   {
    "tipo": "noticia",
@@ -324,22 +298,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "O risco poligênico para diabetes tipo 2 modula as associações do microbioma intestinal em todos os traços de saúde metabólica",
-   "resumo": "",
-   "url": "https://www.nature.com/articles/s41525-026-00626-4",
-   "fonte": "Nature · Genética",
+   "titulo": "Correção do autor: DYNLL1 se liga a MRE11 para limitar a ressecção final do DNA em células deficientes em BRCA1",
+   "resumo": "Correção do autor: DYNLL1 se liga a MRE11 para limitar a ressecção final do DNA em células deficientes em BRCA1",
+   "url": "https://www.nature.com/articles/s41586-026-11303-y",
+   "fonte": "Nature",
    "idioma": "en",
    "data": "2026-10-23T00:00:00+00:00",
-   "tema": "Saúde",
+   "tema": "Genética",
    "relevancia": 5,
-   "imagem": "",
-   "titulo_original": "Polygenic risk for type 2 diabetes modulates gut microbiome associations across metabolic health traits",
+   "imagem": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-026-11303-y/MediaObjects/41586_2026_11303_Fig1_HTML.png",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "El riesgo poligénico de diabetes tipo 2 modula las asociaciones del microbioma intestinal en todos los rasgos metabólicos de salud"
+     "titulo": "Corrección del autor: DYNLL1 se une a MRE11 para limitar la resección final del ADN en células deficientes en BRCA1",
+     "resumo": "Corrección del autor: DYNLL1 se une a MRE11 para limitar la resección final del ADN en células deficientes en BRCA1"
     }
-   }
+   },
+   "resumo_original": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells"
   },
   {
    "tipo": "noticia",
@@ -365,12 +345,55 @@
     }
    },
    "resumo_original": "The mission, scheduled for the summer of 2027, will include be pivotal in deciding whether SpaceX or Blue Origin supplies the lunar lander for the first crewed trip to the lunar surface in decades"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Warhound quer projetar e clonar supercães militares - eles podem fazer isso?",
+   "resumo": "A startup é ideia de um dos fundadores da Anduril, empresa de tecnologia militar, e da Colossal Biosciences, empresa de biotecnologia conhecida por seus esforços de extinção",
+   "url": "https://www.scientificamerican.com/article/warhound-wants-to-engineer-and-clone-military-super-dogs-can-they-do-it/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-23T19:05:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/418a8a79-9bf9-4317-8974-95b4650cc4d9/warhound.png?m=1792783306.598&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Warhound wants to engineer and clone military superdogs—can they do it?",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Warhound quiere diseñar y clonar superperros militares, ¿pueden hacerlo?",
+     "resumo": "La puesta en marcha es una creación de un fundador de Anduril, la empresa de tecnología militar, y Colossal Biosciences, una empresa de biotecnología conocida por sus esfuerzos de desextinción"
+    }
+   },
+   "resumo_original": "The start-up is the brainchild of a founder of Anduril, the military tech firm, and Colossal Biosciences, a biotech company known for its de-extinction efforts"
   }
  ],
  "artigos": [
   {
    "tipo": "artigo",
-   "titulo": "WEE1 se opõe à atividade APC/C CDH1 para promover a entrada na fase S.",
+   "titulo": "A imunocoloração de p53 está associada à eficácia dos inibidores do ponto de verificação imunológico anti-PD-1 em pacientes com carcinoma de células escamosas de cabeça e pescoço recorrente ou metastático.",
+   "autores": "Kuo MC, Huang TL, Chiu TJ, Huang WT, Tsai TH, Li SH.",
+   "revista": "J Immunother",
+   "data": "2026-10-22T00:00:00+00:00",
+   "doi": "10.1097/cji.0000000000000624",
+   "url": "https://doi.org/10.1097/cji.0000000000000624",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Immunostaining of p53 Is Associated With Efficacy of Anti-PD-1 Immune Checkpoint Inhibitors in Patients With Recurrent or Metastatic Head and Neck Squamous Cell Carcinoma.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "La inmunotinción de p53 se asocia con la eficacia de los inhibidores de puntos de control inmunitarios anti-PD-1 en pacientes con carcinoma de células escamosas de cabeza y cuello recurrente o metastásico."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "WEE1 se opõe à atividade APC/C<sup>CDH1</sup> para promover a entrada na fase S.",
    "autores": "Vuillemenot LA, Morales LG, Dragoi CM, Pennycook BR, Harris E, Lin LC, Weston WA, Brown JE, Graham E, Moulin L, Andrew…",
    "revista": "Nature",
    "data": "2026-10-21T00:00:00+00:00",
@@ -378,11 +401,11 @@
    "url": "https://doi.org/10.1038/s41586-026-11188-x",
    "acesso_aberto": false,
    "tema": "Ciência",
-   "titulo_original": "WEE1 opposes APC/C CDH1 activity to promote S phase entry.",
+   "titulo_original": "WEE1 opposes APC/C<sup>CDH1</sup> activity to promote S phase entry.",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "WEE1 se opone a la actividad de APC/C CDH1 para promover la entrada de la fase S."
+     "titulo": "WEE1 se opone a la actividad de APC/C<sup>CDH1</sup> para promover la entrada de la fase S."
     }
    }
   },
@@ -473,6 +496,24 @@
    "i18n": {
     "es": {
      "titulo": "Enfoques novedosos para atacar las células madre del cáncer de próstata que impulsan la resistencia a la terapia y la progresión del cáncer."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Visando o interagoma da doença de Parkinson: uma investigação de farmacologia de sistemas e dinâmica molecular revela fitoconstituintes derivados de <i>Berberis aristata</i> como potenciais moduladores da tirosina hidroxilase e...",
+   "autores": "Chatterjee A, De A.",
+   "revista": "In Silico Pharmacol",
+   "data": "2026-10-20T00:00:00+00:00",
+   "doi": "10.1007/s40203-026-00758-6",
+   "url": "https://doi.org/10.1007/s40203-026-00758-6",
+   "acesso_aberto": false,
+   "tema": "Saúde",
+   "titulo_original": "Targeting the Parkinson's disease interactome: a systems pharmacology and molecular dynamics investigation unveils <i>Berberis aristata</i>-derived phytoconstituents as potential modulators of tyrosine hydroxylase and…",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Dirigirse al interactoma de la enfermedad de Parkinson: una investigación de farmacología de sistemas y dinámica molecular revela fitoconstituyentes derivados de <i>Berberis aristata</i> como posibles moduladores de la tirosina hidroxilasa y..."
     }
    }
   },
@@ -871,42 +912,6 @@
      "titulo": "Carcinoma oral de células escamosas: una revisión moderna de la patogénesis y el tratamiento."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Utility of Vorasidenib in IDH1 R132C-Mutant WHO Grade 2 Astrocytoma: A Case Report.",
-   "autores": "Hickey J, Pack E, Arteaga D, Hodge J, Bhatia S, Han P, Feizi P, Miller L, Aulakh S.",
-   "revista": "Onco Targets Ther",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": "10.2147/ott.s638827",
-   "url": "https://doi.org/10.2147/ott.s638827",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "Utility of Vorasidenib in IDH1 R132C-Mutant WHO Grade 2 Astrocytoma: A Case Report.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Utilidad de Vorasidenib en IDH1 R132C-Mutante de la OMS Astrocitoma de grado 2: un informe de caso."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Leiomiomas uterinos em HLRCC: uma revisão de escopo de apresentação, histopatologia, padrões de tratamento e implicações reprodutivas.",
-   "autores": "Hessi R, Bendayan E, Mija LA, Ouchene L, Udupa M, Lazarowitz R, Fu L, Leung SOA, Cruz Marino T, Foulkes WD…",
-   "revista": "Eur J Hum Genet",
-   "data": "2026-10-16T00:00:00+00:00",
-   "doi": "10.1038/s41431-026-02255-y",
-   "url": "https://doi.org/10.1038/s41431-026-02255-y",
-   "acesso_aberto": false,
-   "tema": "Saúde",
-   "titulo_original": "Uterine leiomyomas in HLRCC: a scoping review of presentation, histopathology, treatment patterns, and reproductive implications.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Leiomiomas uterinos en HLRCC: una revisión del alcance de la presentación, la histopatología, los patrones de tratamiento y las implicaciones reproductivas."
-    }
-   }
   }
  ],
  "fontes": [
@@ -925,7 +930,6 @@
  ],
  "erros": [],
  "mostradas": {
-  "dinosaur named new species 102 years after fossil found on isle of wight": "2026-10-14T00:26:04.021071+00:00",
   "direitos sociais se difundem em ondas pelas constituicoes do mundo": "2026-10-14T06:15:31.299862+00:00",
   "usp oferece duas bolsas de pos doutorado em grandes modelos de linguagem": "2026-10-14T06:15:31.299862+00:00",
   "ai can act exactly like a human but we still don t think it s conscious": "2026-10-14T06:15:31.299862+00:00",
@@ -1156,6 +1160,8 @@
   "the trump administration is considering a heat ray weapon for the borderheres what to know": "2026-10-23T18:29:49.674618+00:00",
   "cancer de mama em idade reprodutiva como conciliar o tratamento com o desejo de engravidar": "2026-10-23T22:22:55.460377+00:00",
   "coloquio internacional debate relacoes entre literatura textos biblicos e experiencia humana": "2026-10-23T22:22:55.460377+00:00",
-  "nasa lays out a packed 14 day schedule for 2027s artemis iii moon mission": "2026-10-23T22:22:55.460377+00:00"
+  "nasa lays out a packed 14 day schedule for 2027s artemis iii moon mission": "2026-10-23T22:22:55.460377+00:00",
+  "anatomia do caos filme magistral marca os cinco anos da cpi da covid 19": "2026-10-24T00:54:05.428107+00:00",
+  "warhound wants to engineer and clone military superdogscan they do it": "2026-10-24T00:54:05.428107+00:00"
  }
 }
