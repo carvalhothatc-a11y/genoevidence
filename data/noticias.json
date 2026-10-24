@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-24T06:00:58.589346+00:00",
+ "atualizado_em": "2026-10-24T11:17:39.310696+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -276,31 +276,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Os implantes dentários podem sequestrar seu sistema imunológico, descobrem cientistas",
-   "resumo": "Os pesquisadores descobriram uma razão surpreendente pela qual as infecções por implantes dentários geralmente resistem aos antibióticos: os próprios implantes podem contribuir para o problema. Bactérias corroem implantes de titânio, liberando partículas microscópicas que sequestram...",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261022081314.htm",
-   "fonte": "ScienceDaily",
-   "idioma": "en",
-   "data": "2026-10-23T11:12:28+00:00",
-   "tema": "Saúde",
-   "relevancia": 5,
-   "imagem": "https://www.sciencedaily.com/images/1920/dental-implant.webp",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Dental implants can hijack your immune system, scientists discover",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Los científicos descubren que los implantes dentales pueden secuestrar tu sistema inmunológico",
-     "resumo": "Los investigadores han descubierto una razón sorprendente por la que las infecciones de los implantes dentales a menudo resisten los antibióticos: los propios implantes pueden contribuir al problema. Las bacterias corroen los implantes de titanio, liberando partículas microscópicas que secuestran..."
-    }
-   },
-   "resumo_original": "Researchers have uncovered a surprising reason dental implant infections often resist antibiotics: the implants themselves can contribute to the problem. Bacteria corrode titanium implants, releasing microscopic particles that hijack…"
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Correção do autor: DYNLL1 se liga a MRE11 para limitar a ressecção final do DNA em células deficientes em BRCA1",
    "resumo": "Correção do autor: DYNLL1 se liga a MRE11 para limitar a ressecção final do DNA em células deficientes em BRCA1",
    "url": "https://www.nature.com/articles/s41586-026-11303-y",
@@ -323,6 +298,31 @@
     }
    },
    "resumo_original": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Conheça os \"Caçadores de Fantasmas\" originais - os cientistas do século XVII que investigaram assombrações",
+   "resumo": "Eles não tinham medo de nenhum fantasma",
+   "url": "https://www.scientificamerican.com/article/meet-the-original-ghost-busters-the-17th-century-scientists-who-investigated-hauntings/",
+   "fonte": "Scientific American",
+   "idioma": "en",
+   "data": "2026-10-24T11:00:00+00:00",
+   "tema": "Ciência",
+   "relevancia": 4,
+   "imagem": "https://static.scientificamerican.com/dam/asset/095ddc3e-e8fc-47a5-861c-c9502dbf2c8e/ghostly-building.jpg?m=1792778705.043&w=1200",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Meet the original 'Ghost Busters'—the 17th century scientists who investigated hauntings",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Conoce a los «cazafantasmas» originales, los científicos del siglo XVII que investigaron los fantasmas",
+     "resumo": "No le temían a ningún fantasma"
+    }
+   },
+   "resumo_original": "They weren't afraid of no ghost"
   },
   {
    "tipo": "noticia",
@@ -351,28 +351,22 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Warhound quer projetar e clonar supercães militares - eles podem fazer isso?",
-   "resumo": "A startup é ideia de um dos fundadores da Anduril, empresa de tecnologia militar, e da Colossal Biosciences, empresa de biotecnologia conhecida por seus esforços de extinção",
-   "url": "https://www.scientificamerican.com/article/warhound-wants-to-engineer-and-clone-military-super-dogs-can-they-do-it/",
-   "fonte": "Scientific American",
+   "titulo": "A filogenômica de Cryptosporidium capturado sequenciado diretamente de amostras de pacientes identifica arquitetura genômica específica de clado e linhagens adaptadas ao hospedeiro",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41467-026-78927-6",
+   "fonte": "Nature · Genética",
    "idioma": "en",
-   "data": "2026-10-23T19:05:00+00:00",
-   "tema": "Ciência",
-   "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/asset/418a8a79-9bf9-4317-8974-95b4650cc4d9/warhound.png?m=1792783306.598&w=1200",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Warhound wants to engineer and clone military superdogs—can they do it?",
+   "data": "2026-10-24T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 3,
+   "imagem": "",
+   "titulo_original": "Phylogenomics of captured Cryptosporidium sequenced directly from patient samples identifies clade-specific genomic architecture and host-adapted lineages",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Warhound quiere diseñar y clonar superperros militares, ¿pueden hacerlo?",
-     "resumo": "La puesta en marcha es una creación de un fundador de Anduril, la empresa de tecnología militar, y Colossal Biosciences, una empresa de biotecnología conocida por sus esfuerzos de desextinción"
+     "titulo": "La filogenómica de Cryptosporidium capturado secuenciado directamente de muestras de pacientes identifica la arquitectura genómica específica del clado y los linajes adaptados al huésped"
     }
-   },
-   "resumo_original": "The start-up is the brainchild of a founder of Anduril, the military tech firm, and Colossal Biosciences, a biotech company known for its de-extinction efforts"
+   }
   }
  ],
  "artigos": [
@@ -931,13 +925,10 @@
   "ScienceDaily · Saúde",
   "Europe PMC"
  ],
- "erros": [],
+ "erros": [
+  "Europe PMC: HTTP Error 503: "
+ ],
  "mostradas": {
-  "direitos sociais se difundem em ondas pelas constituicoes do mundo": "2026-10-14T06:15:31.299862+00:00",
-  "usp oferece duas bolsas de pos doutorado em grandes modelos de linguagem": "2026-10-14T06:15:31.299862+00:00",
-  "ai can act exactly like a human but we still don t think it s conscious": "2026-10-14T06:15:31.299862+00:00",
-  "ai reveals a hidden chemical shortcut that could turn co2 into fuel": "2026-10-14T06:15:31.299862+00:00",
-  "new knee arthritis treatment delivers lasting pain relief without surgery": "2026-10-14T06:15:31.299862+00:00",
   "rare cancer spread between twins in utero": "2026-10-14T12:08:05.976432+00:00",
   "selenio modifica a trajetoria do mercurio no organismo e atenua seus efeitos toxicos": "2026-10-14T12:08:05.976432+00:00",
   "nota tecnica aborda impactos das queimadas na qualidade do ar e riscos a saude indigena no amazonas": "2026-10-14T12:08:05.976432+00:00",
@@ -1167,6 +1158,8 @@
   "anatomia do caos filme magistral marca os cinco anos da cpi da covid 19": "2026-10-24T00:54:05.428107+00:00",
   "warhound wants to engineer and clone military superdogscan they do it": "2026-10-24T00:54:05.428107+00:00",
   "realidade virtual e ia auxiliam na deteccao precoce do declinio cognitivo em idosos": "2026-10-24T06:00:58.589346+00:00",
-  "com mais de 60 anos jornal estudantil e memoria viva da unicamp": "2026-10-24T06:00:58.589346+00:00"
+  "com mais de 60 anos jornal estudantil e memoria viva da unicamp": "2026-10-24T06:00:58.589346+00:00",
+  "meet the original ghost busters the 17th century scientists who investigated hauntings": "2026-10-24T11:17:39.310696+00:00",
+  "phylogenomics of captured cryptosporidium sequenced directly from patient samples identifies clade specific genomic architecture and host adapted lineages": "2026-10-24T11:17:39.310696+00:00"
  }
 }
