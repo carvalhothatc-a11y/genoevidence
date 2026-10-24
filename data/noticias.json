@@ -1,32 +1,6 @@
 {
- "atualizado_em": "2026-10-24T11:17:39.310696+00:00",
+ "atualizado_em": "2026-10-24T14:39:39.836426+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "Nav. ed. pt Entrevista Outubro Rosa Câncer de Mama",
-   "resumo": "renata.moehlecke Sex, 23/10/2026 - 12:10 Tipo de caixa Duplo horizontal Título Outubro Rosa Imagem Chamada Especialistas da Fiocruz esclarecem dúvidas sobre o câncer de mama e orientam sobre exames preventivos e acesso ao diagnóstico",
-   "url": "https://agencia.fiocruz.br/nav-ed-pt-entrevista-outubro-rosa-cancer-de-mama",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-23T15:10:55+00:00",
-   "tema": "Câncer",
-   "relevancia": 13,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemNavegacaoEditorial/OutubroRosa_d.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Nav. ed. en Interview October Pink Breast Cancer",
-     "resumo": "renata.moehlecke Fri, 10/23/2026 - 12:10 Box type Double horizontal Title October Pink Image Called Fiocruz experts clarify doubts about breast cancer and advise on preventive exams and access to diagnosis"
-    },
-    "es": {
-     "titulo": "Nav. ed. en Entrevista Octubre Pink Breast Cancer",
-     "resumo": "renata.moehlecke Vie, 23/10/2026 - 12:10 Tipo de caja Doble horizontal Título Octubre Imagen Rosa Llamado Fiocruz expertos aclaran dudas sobre cáncer de mama y asesoran sobre exámenes preventivos y acceso al diagnóstico"
-    }
-   }
-  },
   {
    "tipo": "noticia",
    "titulo": "Câncer de mama em idade reprodutiva: como conciliar o tratamento com o desejo de engravidar?",
@@ -52,31 +26,6 @@
      "resumo": "El tratamiento puede requerir el aplazamiento del embarazo, pero estrategias como la crioconservación de óvulos y embriones le permiten preservar la fertilidad y planificar la maternidad después de la terapia"
     }
    }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Espera-se que a vacina personalizada contra o câncer seja aprovada no próximo ano",
-   "resumo": "Uma vacina sob medida que é adaptada para direcionar o câncer de pele exclusivo de um indivíduo reduziu as taxas de recorrência ou morte em um estudo em estágio avançado, fazendo com que uma aprovação fosse esperada",
-   "url": "https://www.newscientist.com/article/2595599-personalised-cancer-vaccine-expected-to-be-approved-next-year/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-23T14:42:27+00:00",
-   "tema": "Câncer",
-   "relevancia": 12,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317849720.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "titulo_original": "Personalised cancer vaccine expected to be approved next year",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Se espera que la vacuna personalizada contra el cáncer se apruebe el próximo año",
-     "resumo": "Una vacuna a medida que se adapta para apuntar a las tasas de recurrencia o muerte reducidas de cáncer de piel únicas de un individuo en un ensayo en etapa tardía, lo que hace que se espere una aprobación"
-    }
-   },
-   "resumo_original": "A bespoke vaccine that is tailored to target an individual's unique skin cancer reduced rates of recurrence or death in a late-stage trial, making an approval expected"
   },
   {
    "tipo": "noticia",
@@ -131,75 +80,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Fiocruz tem 36 pesquisadores entre os mais citados do mundo",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/fiocruz-tem-36-pesquisadores-entre-os-mais-citados-do-mundo",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-23T17:52:13+00:00",
-   "tema": "Ciência",
-   "relevancia": 8,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "Fiocruz has 36 researchers among the most cited in the world"
-    },
-    "es": {
-     "titulo": "Fiocruz cuenta con 36 investigadores entre los más citados del mundo"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Eleição presidencial do Brasil perseguida por suposto viés das ferramentas Meta AI",
-   "resumo": "Apoiadores de Luiz Inácio Lula da Silva acusam Meta de interferir na eleição do Brasil ao facilitar a geração de conteúdo de campanha promovendo seu rival, Flávio Bolsonaro",
-   "url": "https://www.newscientist.com/article/2595540-brazil-presidential-election-dogged-by-alleged-bias-by-meta-ai-tools/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-23T13:58:34+00:00",
-   "tema": "Ciência",
-   "relevancia": 8,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317830225.jpg",
-   "foco": {
-    "x": 50,
-    "y": 100
-   },
-   "titulo_original": "Brazil presidential election dogged by alleged bias by Meta AI tools",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Elecciones presidenciales en Brasil perseguidas por el supuesto sesgo de las herramientas de Meta AI",
-     "resumo": "Los partidarios de Luiz Inácio Lula da Silva han acusado al Meta de interferir en las elecciones de Brasil al facilitar la generación de contenido de campaña promocionando a su rival, Flávio Bolsonaro"
-    }
-   },
-   "resumo_original": "Supporters of Luiz Inácio Lula da Silva have accused Meta of interfering in Brazil’s election by making it easier to generate campaign content promoting his rival, Flávio Bolsonaro"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "Semana da Educação 2026 enaltece produção acadêmica e científica da Fiocruz",
-   "resumo": "",
-   "url": "https://agencia.fiocruz.br/semana-da-educacao-2026-enaltece-producao-academica-e-cientifica-da-fiocruz",
-   "fonte": "Agência Fiocruz",
-   "idioma": "pt",
-   "data": "2026-10-23T13:48:18+00:00",
-   "tema": "Ciência",
-   "relevancia": 8,
-   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/educa.jpg",
-   "foco": {
-    "x": 50,
-    "y": 100
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Education Week 2026 praises Fiocruz's academic and scientific production"
-    },
-    "es": {
-     "titulo": "La Semana de la Educación 2026 elogia la producción académica y científica de la Fiocruz"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Colóquio internacional debate relações entre literatura, textos bíblicos e experiência humana",
    "resumo": "Evento reúne pesquisadores nacionais e internacionais para discutir teopoética, imaginação moral e as interfaces entre religião e arte",
    "url": "https://jornal.unicamp.br/noticias/2026/10/23/coloquio-internacional-debate-relacoes-entre-literatura-textos-biblicos-e-experiencia-humana/",
@@ -226,28 +106,129 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Primeira pessoa infectada com o raro vírus Shamonda: o que sabemos",
-   "resumo": "Pesquisadores de doenças infecciosas dizem que o risco de o patógeno animal se mover entre as pessoas é baixo.",
-   "url": "https://www.nature.com/articles/d41586-026-03416-1",
-   "fonte": "Nature",
-   "idioma": "en",
-   "data": "2026-10-23T00:00:00+00:00",
+   "titulo": "Evento discute vigilância em saúde integrada no Cerrado",
+   "resumo": "",
+   "url": "https://agencia.fiocruz.br/evento-discute-vigilancia-em-saude-integrada-no-cerrado",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-23T18:11:42+00:00",
    "tema": "Saúde",
-   "relevancia": 6,
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03416-1/d41586-026-03416-1_53891592.jpg",
+   "relevancia": 7,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/Cerrado_d.jpg",
+   "foco": {
+    "x": 50,
+    "y": 0
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Event discusses integrated health surveillance in the Cerrado"
+    },
+    "es": {
+     "titulo": "Evento discute la vigilancia integrada de la salud en el Cerrado"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Nav. ed. pt Entrevista Outubro Rosa Câncer de Mama",
+   "resumo": "renata.moehlecke Sex, 23/10/2026 - 12:10 Tipo de caixa Duplo horizontal Título Outubro Rosa Imagem Chamada Especialistas da Fiocruz esclarecem dúvidas sobre o câncer de mama e orientam sobre exames preventivos e acesso ao diagnóstico",
+   "url": "https://agencia.fiocruz.br/nav-ed-pt-entrevista-outubro-rosa-cancer-de-mama",
+   "fonte": "Agência Fiocruz",
+   "idioma": "pt",
+   "data": "2026-10-23T15:10:55+00:00",
+   "tema": "Câncer",
+   "relevancia": 7,
+   "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemNavegacaoEditorial/OutubroRosa_d.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "First person infected with rare Shamonda virus: what we know",
+   "i18n": {
+    "en": {
+     "titulo": "Nav. ed. en Interview October Pink Breast Cancer",
+     "resumo": "renata.moehlecke Fri, 10/23/2026 - 12:10 Box type Double horizontal Title October Pink Image Called Fiocruz experts clarify doubts about breast cancer and advise on preventive exams and access to diagnosis"
+    },
+    "es": {
+     "titulo": "Nav. ed. en Entrevista Octubre Pink Breast Cancer",
+     "resumo": "renata.moehlecke Vie, 23/10/2026 - 12:10 Tipo de caja Doble horizontal Título Octubre Imagen Rosa Llamado Fiocruz expertos aclaran dudas sobre cáncer de mama y asesoran sobre exámenes preventivos y acceso al diagnóstico"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Espera-se que a vacina personalizada contra o câncer seja aprovada no próximo ano",
+   "resumo": "Uma vacina sob medida que é adaptada para direcionar o câncer de pele exclusivo de um indivíduo reduziu as taxas de recorrência ou morte em um estudo em estágio avançado, fazendo com que uma aprovação fosse esperada",
+   "url": "https://www.newscientist.com/article/2595599-personalised-cancer-vaccine-expected-to-be-approved-next-year/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-23T14:42:27+00:00",
+   "tema": "Câncer",
+   "relevancia": 6,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317849720.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Personalised cancer vaccine expected to be approved next year",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Primera persona infectada con el raro virus Shamonda: lo que sabemos",
-     "resumo": "Los investigadores de enfermedades infecciosas dicen que el riesgo de que el patógeno del ganado se mueva entre las personas es bajo."
+     "titulo": "Se espera que la vacuna personalizada contra el cáncer se apruebe el próximo año",
+     "resumo": "Una vacuna a medida que se adapta para apuntar a las tasas de recurrencia o muerte reducidas de cáncer de piel únicas de un individuo en un ensayo en etapa tardía, lo que hace que se espere una aprobación"
     }
    },
-   "resumo_original": "Infectious-disease researchers say the risk of the livestock pathogen moving between people is low."
+   "resumo_original": "A bespoke vaccine that is tailored to target an individual's unique skin cancer reduced rates of recurrence or death in a late-stage trial, making an approval expected"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Cientistas descobrem um interruptor oculto que queima gordura e bloqueia novas células de gordura",
+   "resumo": "Os cientistas descobriram que desligar uma proteína chamada Mitch faz com que as células humanas queimem mais gordura e impede que novas células de gordura se desenvolvam. O avanço se baseia em experimentos em camundongos que mostraram notável resistência à obesidade...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261023002905.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-24T11:16:08+00:00",
+   "tema": "Ciência",
+   "relevancia": 5,
+   "imagem": "https://www.sciencedaily.com/images/1920/fat-burning-human-tissue-cells.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Scientists discover a hidden switch that burns fat and blocks new fat cells",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los científicos descubren un interruptor oculto que quema grasa y bloquea nuevas células grasas",
+     "resumo": "Los científicos han descubierto que desactivar una proteína llamada Mitch hace que las células humanas quemen más grasa y evita que se desarrollen nuevas células grasas. El avance se basa en experimentos en ratones que mostraron una notable resistencia a la obesidad..."
+    }
+   },
+   "resumo_original": "Scientists have discovered that switching off a protein called Mitch makes human cells burn more fat and prevents new fat cells from developing. The breakthrough builds on experiments in mice that showed remarkable resistance to obesity…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Chamas na UFPE destroem 40 anos de pesquisas para tratamento do câncer",
+   "resumo": "Edifício abrigava laboratório de inovação terapêutica com banco de 20 mil moléculas; prejuízo é estimado em R$ 50 milhões",
+   "url": "https://revistapesquisa.fapesp.br/chamas-na-ufpe-destroem-40-anos-de-pesquisas-para-tratamento-do-cancer/?utm_source=rss&utm_medium=rss&utm_campaign=chamas-na-ufpe-destroem-40-anos-de-pesquisas-para-tratamento-do-cancer",
+   "fonte": "Revista Pesquisa FAPESP",
+   "idioma": "pt",
+   "data": "2026-10-22T18:22:46+00:00",
+   "tema": "Câncer",
+   "relevancia": 5,
+   "imagem": "https://revistapesquisa.fapesp.br/wp-content/thumbs/d49f20bf8feca5558cae7122addad65ae88c8ab8_1200-630.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "i18n": {
+    "en": {
+     "titulo": "Flames at UFPE destroy 40 years of cancer treatment research",
+     "resumo": "The building housed a therapeutic innovation laboratory with a bank of 20,000 molecules; the loss is estimated at $50 million"
+    },
+    "es": {
+     "titulo": "Las llamas en la UFPE destruyen 40 años de investigación sobre el tratamiento del cáncer",
+     "resumo": "Edificio albergó un laboratorio de innovación terapéutica con un banco de 20.000 moléculas; la pérdida se estima en R$ 50 millones"
+    }
+   }
   },
   {
    "tipo": "noticia",
@@ -258,7 +239,7 @@
    "idioma": "pt",
    "data": "2026-10-22T12:00:00+00:00",
    "tema": "Saúde",
-   "relevancia": 6,
+   "relevancia": 5,
    "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/09/Man_20261021_O-Patologico_Capa.jpg",
    "foco": {
     "inteira": true
@@ -276,28 +257,53 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Correção do autor: DYNLL1 se liga a MRE11 para limitar a ressecção final do DNA em células deficientes em BRCA1",
-   "resumo": "Correção do autor: DYNLL1 se liga a MRE11 para limitar a ressecção final do DNA em células deficientes em BRCA1",
-   "url": "https://www.nature.com/articles/s41586-026-11303-y",
-   "fonte": "Nature",
+   "titulo": "Reduzir a pressão alta pode ser tão simples quanto estimular seu ouvido?",
+   "resumo": "Um pequeno dispositivo que estimula suavemente os nervos através do ouvido pode oferecer uma nova maneira de lidar com a pressão alta teimosa. Em um ensaio clínico com 63 pacientes que já tomavam medicação, o tratamento se mostrou seguro, fácil de usar em casa e...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261023023732.htm",
+   "fonte": "ScienceDaily",
    "idioma": "en",
-   "data": "2026-10-23T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 5,
-   "imagem": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-026-11303-y/MediaObjects/41586_2026_11303_Fig1_HTML.png",
+   "data": "2026-10-24T13:15:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/tinnitus-hearing-restoration.webp",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells",
+   "titulo_original": "Could lowering high blood pressure be as simple as stimulating your ear?",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "Corrección del autor: DYNLL1 se une a MRE11 para limitar la resección final del ADN en células deficientes en BRCA1",
-     "resumo": "Corrección del autor: DYNLL1 se une a MRE11 para limitar la resección final del ADN en células deficientes en BRCA1"
+     "titulo": "¿Bajar la presión arterial alta podría ser tan simple como estimular el oído?",
+     "resumo": "Un pequeño dispositivo que estimula suavemente los nervios a través del oído podría ofrecer una nueva forma de abordar la presión arterial alta persistente. En un ensayo clínico de 63 pacientes que ya tomaban medicamentos, el tratamiento demostró ser seguro, fácil de usar en el hogar y..."
     }
    },
-   "resumo_original": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells"
+   "resumo_original": "A small device that gently stimulates nerves through the ear could offer a new way to tackle stubborn high blood pressure. In a clinical trial of 63 patients already taking medication, the treatment proved safe, easy to use at home, and…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Seu sangue pode revelar doença inflamatória intestinal 10 anos antes do diagnóstico",
+   "resumo": "Um grande estudo descobriu sinais de alerta ocultos de doença inflamatória intestinal no sangue até 10 anos antes do diagnóstico. Os pesquisadores descobriram padrões distintos de anticorpos que poderiam ajudar a prever quem mais tarde desenvolveria a doença de Crohn...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261023023713.htm",
+   "fonte": "ScienceDaily · Saúde",
+   "idioma": "en",
+   "data": "2026-10-24T11:52:47+00:00",
+   "tema": "Saúde",
+   "relevancia": 4,
+   "imagem": "https://www.sciencedaily.com/images/1920/blood-test-tube-scientist.webp",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Your blood could reveal inflammatory bowel disease 10 years before diagnosis",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Su sangre podría revelar enfermedad inflamatoria intestinal 10 años antes del diagnóstico",
+     "resumo": "Un importante estudio ha descubierto señales de advertencia ocultas de enfermedad inflamatoria intestinal en la sangre hasta 10 años antes del diagnóstico. Los investigadores descubrieron distintos patrones de anticuerpos que podrían ayudar a predecir quién desarrollaría más tarde la enfermedad de Crohn..."
+    }
+   },
+   "resumo_original": "A major study has uncovered hidden warning signs of inflammatory bowel disease in the blood up to 10 years before diagnosis. Researchers discovered distinct antibody patterns that could help predict who would later develop Crohn’s disease…"
   },
   {
    "tipo": "noticia",
@@ -326,6 +332,25 @@
   },
   {
    "tipo": "noticia",
+   "titulo": "Insights genéticos e multiômicos sobre inflamação e metabolismo em uma coorte da Polinésia Francesa",
+   "resumo": "",
+   "url": "https://www.nature.com/articles/s41467-026-78816-y",
+   "fonte": "Nature · Genética",
+   "idioma": "en",
+   "data": "2026-10-24T00:00:00+00:00",
+   "tema": "Genética",
+   "relevancia": 4,
+   "imagem": "",
+   "titulo_original": "Genetic and multi-omic insights into inflammation and metabolism in a French Polynesian cohort",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Conocimientos genéticos y multiómicos sobre la inflamación y el metabolismo en una cohorte de la Polinesia Francesa"
+    }
+   }
+  },
+  {
+   "tipo": "noticia",
    "titulo": "A NASA estabelece um cronograma de 14 dias para a missão lunar Artemis III de 2027",
    "resumo": "A missão, prevista para o verão de 2027, será fundamental para decidir se a SpaceX ou a Blue Origin fornecem o módulo lunar para a primeira viagem tripulada à superfície lunar em décadas",
    "url": "https://www.scientificamerican.com/article/nasa-lays-out-a-packed-14-day-schedule-for-2027s-artemis-iii-moon-mission/",
@@ -348,28 +373,99 @@
     }
    },
    "resumo_original": "The mission, scheduled for the summer of 2027, will include be pivotal in deciding whether SpaceX or Blue Origin supplies the lunar lander for the first crewed trip to the lunar surface in decades"
-  },
-  {
-   "tipo": "noticia",
-   "titulo": "A filogenômica de Cryptosporidium capturado sequenciado diretamente de amostras de pacientes identifica arquitetura genômica específica de clado e linhagens adaptadas ao hospedeiro",
-   "resumo": "",
-   "url": "https://www.nature.com/articles/s41467-026-78927-6",
-   "fonte": "Nature · Genética",
-   "idioma": "en",
-   "data": "2026-10-24T00:00:00+00:00",
-   "tema": "Genética",
-   "relevancia": 3,
-   "imagem": "",
-   "titulo_original": "Phylogenomics of captured Cryptosporidium sequenced directly from patient samples identifies clade-specific genomic architecture and host-adapted lineages",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "La filogenómica de Cryptosporidium capturado secuenciado directamente de muestras de pacientes identifica la arquitectura genómica específica del clado y los linajes adaptados al huésped"
-    }
-   }
   }
  ],
  "artigos": [
+  {
+   "tipo": "artigo",
+   "titulo": "N-(3-Trifluorometilfenil) sulfonil-indol-3-carbaldeídotiossemicarbazonas induzem apoptose e modulam a sinalização associada a p53 no câncer de próstata: estudos experimentais e computacionais integrados.",
+   "autores": "Kubra KT, Acar ÖÖ, Şenol AM, Şen A, Şenol H, Batool K, Albekairi NA, Rasool A, Shafiq Z, Alshammari A.",
+   "revista": "Chem Biol Interact",
+   "data": "2026-10-22T00:00:00+00:00",
+   "doi": "10.1016/j.cbi.2026.112389",
+   "url": "https://doi.org/10.1016/j.cbi.2026.112389",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "N-(3-Trifluoromethylphenyl)sulfonyl-indole-3-carbaldehyde thiosemicarbazones induce apoptosis and modulate p53-associated signaling in prostate cancer: integrated experimental and computational studies.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Las tiosemicarbazonas de N-(3-trifluorometilfenil) sulfonil-indol-3-carbaldehído inducen la apoptosis y modulan la señalización asociada a p53 en el cáncer de próstata: estudios experimentales y computacionales integrados."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Os transportadores biomiméticos de sódio induzem sobrecarga intracelular de sódio para ativar a apoptose mediada por p53 e a parada do ciclo celular na leucemia mieloide aguda.",
+   "autores": "Sheng C, Xu Z, Hu C, Wu S, Cheng Y, Zhao J, Jin M, Zhang L, Li Y, Dong Z.",
+   "revista": "J Biol Chem",
+   "data": "2026-10-22T00:00:00+00:00",
+   "doi": "10.1016/j.jbc.2026.113679",
+   "url": "https://doi.org/10.1016/j.jbc.2026.113679",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Biomimetic Sodium Transporters Induce Intracellular Sodium Overload to Activate p53-Mediated Apoptosis and Cell Cycle Arrest in Acute Myeloid Leukemia.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Los transportadores de sodio biomiméticos inducen una sobrecarga de sodio intracelular para activar la apoptosis mediada por p53 y la detención del ciclo celular en la leucemia mieloide aguda."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Evidência de variabilidade de veneno associada ao intervalo de extração de veneno na cobra monoclulada (Naja kaouthia).",
+   "autores": "Vasaruchapong T, Tawan T, Thaveekarn W, Tan CH, Laoungbua P, Khow O, Chaiyabutr N.",
+   "revista": "Toxicon",
+   "data": "2026-10-22T00:00:00+00:00",
+   "doi": "10.1016/j.toxicon.2026.109336",
+   "url": "https://doi.org/10.1016/j.toxicon.2026.109336",
+   "acesso_aberto": false,
+   "tema": "Ciência",
+   "titulo_original": "Evidence of venom variability associated with venom extraction interval in the monocled cobra (Naja kaouthia).",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Evidencia de variabilidad de veneno asociada al intervalo de extracción de veneno en la cobra monocled (Naja kaouthia)."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Uma pesquisa transversal explorando experiências no acesso à terapia de reposição hormonal após cirurgia de redução de risco para indivíduos com risco hereditário de câncer de ovário.",
+   "autores": "Thornton S, O'Loughlin M, Nuk J, Borle K, Dawson L, Cook CB.",
+   "revista": "Gynecol Oncol",
+   "data": "2026-10-22T00:00:00+00:00",
+   "doi": "10.1016/j.ygyno.2026.10.003",
+   "url": "https://doi.org/10.1016/j.ygyno.2026.10.003",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "A cross-sectional survey exploring experiences in accessing hormone replacement therapy following risk-reducing surgery for individuals with hereditary ovarian cancer risk.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Una encuesta transversal que explora las experiencias en el acceso a la terapia de reemplazo hormonal después de la cirugía de reducción del riesgo para las personas con riesgo de cáncer de ovario hereditario."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "Molecular-genetic mechanisms of brain arteriovenous malformations: A systematic review of germline, somatic and experimental evidence.",
+   "autores": "Konovalov A, Grebenev F, Pilipenko Y, Okishev D, Belousova O, Pavlova G, Eliava S, Starostenko D, Artemyev A, Sergeeva…",
+   "revista": "Neurosurg Rev",
+   "data": "2026-10-22T00:00:00+00:00",
+   "doi": "10.1007/s10143-026-04541-1",
+   "url": "https://doi.org/10.1007/s10143-026-04541-1",
+   "acesso_aberto": false,
+   "tema": "Genética",
+   "titulo_original": "Molecular-genetic mechanisms of cerebral arteriovenous malformations: A systematic review of germline, somatic and experimental evidence.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Mecanismos molecular-genéticos de las malformaciones arteriovenosas cerebrales: una revisión sistemática de la evidencia germinal, somática y experimental."
+    }
+   }
+  },
   {
    "tipo": "artigo",
    "titulo": "A imunocoloração de p53 está associada à eficácia dos inibidores do ponto de verificação imunológico anti-PD-1 em pacientes com carcinoma de células escamosas de cabeça e pescoço recorrente ou metastático.",
@@ -385,6 +481,24 @@
    "i18n": {
     "es": {
      "titulo": "La inmunotinción de p53 se asocia con la eficacia de los inhibidores de puntos de control inmunitarios anti-PD-1 en pacientes con carcinoma de células escamosas de cabeza y cuello recurrente o metastásico."
+    }
+   }
+  },
+  {
+   "tipo": "artigo",
+   "titulo": "A análise exômica de variantes deletérias raras em 3.569 casos de sarcoma e 21.788 controles de múltiplas fontes de dados internacionais não revela novos genes de suscetibilidade.",
+   "autores": "Garrett A, Kuzbari Z, Wade I, Loveday C, Rowlands C, Larkeryd A, Allen S, Pattnaik S, Mundra P, Flannagan A, Tomlinson…",
+   "revista": "Genet Med",
+   "data": "2026-10-21T00:00:00+00:00",
+   "doi": "10.1016/j.gim.2026.102749",
+   "url": "https://doi.org/10.1016/j.gim.2026.102749",
+   "acesso_aberto": false,
+   "tema": "Câncer",
+   "titulo_original": "Exome-wide analysis of rare deleterious variants in 3,569 sarcoma cases and 21,788 controls from multiple international data sources reveals no novel susceptibility genes.",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "El análisis de todo el exoma de variantes nocivas raras en 3.569 casos de sarcoma y 21.788 controles de múltiples fuentes de datos internacionales no revela nuevos genes de susceptibilidad."
     }
    }
   },
@@ -801,114 +915,6 @@
      "titulo": "Distintos contextos clinogenómicos de gliomas y tumores glioneuronales alterados por BRAF: un estudio nacional del mundo real."
     }
    }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Conscientização, necessidade e utilização de recursos de gerenciamento de risco de câncer de mama em mulheres com suscetibilidade hereditária ao câncer.",
-   "autores": "Parkinson G, Friedman S, Hodan R, Kurian AW.",
-   "revista": "Breast Cancer Res Treat",
-   "data": "2026-10-18T00:00:00+00:00",
-   "doi": "10.1007/s10549-026-08104-2",
-   "url": "https://doi.org/10.1007/s10549-026-08104-2",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Awareness, need and utilization of breast cancer risk management resources in women with hereditary cancer susceptibility.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Conciencia, necesidad y utilización de los recursos de gestión del riesgo de cáncer de mama en mujeres con susceptibilidad hereditaria al cáncer."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Imuno-histoquímica PRAME e perfil molecular em neoplasias pleomórficas cutâneas indiferenciadas: uma série de casos de 8 tumores.",
-   "autores": "Parker DJ, Agni M, Cloutier JM, Sriharan A, LeBlanc RE, Yan S, Momtahen S.",
-   "revista": "J Cutan Pathol",
-   "data": "2026-10-18T00:00:00+00:00",
-   "doi": "10.1111/cup.70239",
-   "url": "https://doi.org/10.1111/cup.70239",
-   "acesso_aberto": false,
-   "tema": "Ciência",
-   "titulo_original": "PRAME Immunohistochemistry and Molecular Profiling in Undifferentiated Cutaneous Pleomorphic Neoplasms: A Case Series of 8 Tumors.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "PRAME Immunohistochemistry and Molecular Profiling in Undifferentiated Cutaneous Pleomorphic Neoplasms: A Case Series of 8 Tumors."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Caracterização das características morfológicas, imunofenotípicas e citogenéticas do linfoma de células B de alto grau com aberração 11q.",
-   "autores": "Wang Z, Liu Y, Wang J, Xu L, Zhang H, Li D, Wang B, Wang L, Wang Z, Wang W, Medeiros LJ, Yu F.",
-   "revista": "Histopathology",
-   "data": "2026-10-18T00:00:00+00:00",
-   "doi": "10.1111/his.70303",
-   "url": "https://doi.org/10.1111/his.70303",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Characterization of the morphological, immunophenotypical and cytogenetic features of high-grade B-cell lymphoma with 11q aberration.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Caracterización de las características morfológicas, inmunofenotípicas y citogenéticas del linfoma de células B de alto grado con aberración 11q."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "An Integrated Approach to MSI-High Colorectal Cancer Therapy in a Young Patient: A Clinical Case.",
-   "autores": "Turkpenova I, Smagulova K, Jumanov A, Moldasheva A, Kadyrbayeva R, Imanaliyeva A.",
-   "revista": "Am J Case Rep",
-   "data": "2026-10-18T00:00:00+00:00",
-   "doi": "10.12659/ajcr.953248",
-   "url": "https://doi.org/10.12659/ajcr.953248",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "An Integrated Approach to MSI-High Colorectal Cancer Therapy in a Young Patient: A Clinical Case.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "An Integrated Approach to MSI-High Colorectal Cancer Therapy in a Young Patient: A Clinical Case."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Associação de mutações truncantes TP53 com tempo para falha do tratamento após quimioimunoterapia de primeira linha no câncer de pulmão de células não pequenas mutante HER2.",
-   "autores": "Yoshimura A, Yoshida J, Takumi C, Takayama K.",
-   "revista": "Target Oncol",
-   "data": "2026-10-17T00:00:00+00:00",
-   "doi": "10.1007/s11523-026-01263-8",
-   "url": "https://doi.org/10.1007/s11523-026-01263-8",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Association of TP53 Truncating Mutations with Time to Treatment Failure after First-Line Chemoimmunotherapy in HER2-Mutant Non-Small Cell Lung Cancer.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Asociación de mutaciones truncantes de TP53 con el tiempo hasta el fracaso del tratamiento después de la quimioinmunoterapia de primera línea en el cáncer de pulmón de células no pequeñas mutante de HER2."
-    }
-   }
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Carcinoma de células escamosas orais: uma revisão moderna da patogênese e tratamento.",
-   "autores": "Mishra G, Sen G, Patel PK, Sahu AN.",
-   "revista": "Int J Biochem Cell Biol",
-   "data": "2026-10-17T00:00:00+00:00",
-   "doi": "10.1016/j.biocel.2026.107050",
-   "url": "https://doi.org/10.1016/j.biocel.2026.107050",
-   "acesso_aberto": false,
-   "tema": "Câncer",
-   "titulo_original": "Oral squamous cell carcinoma: A modern review of pathogenesis and treatment.",
-   "traduzido": true,
-   "i18n": {
-    "es": {
-     "titulo": "Carcinoma oral de células escamosas: una revisión moderna de la patogénesis y el tratamiento."
-    }
-   }
   }
  ],
  "fontes": [
@@ -925,16 +931,8 @@
   "ScienceDaily · Saúde",
   "Europe PMC"
  ],
- "erros": [
-  "Europe PMC: HTTP Error 503: "
- ],
+ "erros": [],
  "mostradas": {
-  "rare cancer spread between twins in utero": "2026-10-14T12:08:05.976432+00:00",
-  "selenio modifica a trajetoria do mercurio no organismo e atenua seus efeitos toxicos": "2026-10-14T12:08:05.976432+00:00",
-  "nota tecnica aborda impactos das queimadas na qualidade do ar e riscos a saude indigena no amazonas": "2026-10-14T12:08:05.976432+00:00",
-  "how el nino could spark a worldwide food crisis": "2026-10-14T12:08:05.976432+00:00",
-  "amateur astronomer harnesses ai to find a possible hidden exoplanet": "2026-10-14T12:08:05.976432+00:00",
-  "claude just found a crispr like dna pattern but even anthropic s scientists aren t sure what it does": "2026-10-14T12:08:05.976432+00:00",
   "apoio continuo a pesquisa basica sustenta inovacao e respostas a crises destacam especialistas": "2026-10-14T17:22:06.100709+00:00",
   "tom gauld dna and fossil evidence proved they were close relatives": "2026-10-14T17:22:06.100709+00:00",
   "this el nino will bring predictable disasters so why arent we ready": "2026-10-14T17:22:06.100709+00:00",
@@ -1160,6 +1158,11 @@
   "realidade virtual e ia auxiliam na deteccao precoce do declinio cognitivo em idosos": "2026-10-24T06:00:58.589346+00:00",
   "com mais de 60 anos jornal estudantil e memoria viva da unicamp": "2026-10-24T06:00:58.589346+00:00",
   "meet the original ghost busters the 17th century scientists who investigated hauntings": "2026-10-24T11:17:39.310696+00:00",
-  "phylogenomics of captured cryptosporidium sequenced directly from patient samples identifies clade specific genomic architecture and host adapted lineages": "2026-10-24T11:17:39.310696+00:00"
+  "phylogenomics of captured cryptosporidium sequenced directly from patient samples identifies clade specific genomic architecture and host adapted lineages": "2026-10-24T11:17:39.310696+00:00",
+  "evento discute vigilancia em saude integrada no cerrado": "2026-10-24T14:39:39.836426+00:00",
+  "scientists discover a hidden switch that burns fat and blocks new fat cells": "2026-10-24T14:39:39.836426+00:00",
+  "could lowering high blood pressure be as simple as stimulating your ear": "2026-10-24T14:39:39.836426+00:00",
+  "your blood could reveal inflammatory bowel disease 10 years before diagnosis": "2026-10-24T14:39:39.836426+00:00",
+  "genetic and multi omic insights into inflammation and metabolism in a french polynesian cohort": "2026-10-24T14:39:39.836426+00:00"
  }
 }
