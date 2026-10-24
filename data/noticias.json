@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-24T00:54:05.428107+00:00",
+ "atualizado_em": "2026-10-24T06:00:58.589346+00:00",
  "noticias": [
   {
    "tipo": "noticia",
@@ -80,28 +80,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "VÍDEO | Composto do alho pode ajudar no combate ao câncer",
-   "resumo": "Estudo conduzido na Faculdade de Ciências Farmacêuticas de Ribeirão Preto da USP testou em laboratório o uso de dissulfeto de dialila aplicada a células de tumor colorretal em conjunto com medicamentos quimioterápicos. A combinação…",
-   "url": "https://www.youtube.com/watch?v=ZM8tMIW87vA",
-   "fonte": "Agência FAPESP",
-   "idioma": "pt",
-   "data": "2026-10-23T07:43:06.825522+00:00",
-   "tema": "Câncer",
-   "relevancia": 12,
-   "imagem": "",
-   "i18n": {
-    "en": {
-     "titulo": "VIDEO | Garlic compound can help fight cancer",
-     "resumo": "A study conducted at the Faculty of Pharmaceutical Sciences of Ribeirão Preto of USP tested in the laboratory the use of diallyl disulfide applied to colorectal tumor cells in conjunction with chemotherapy drugs. The combination…"
-    },
-    "es": {
-     "titulo": "VIDEO | El compuesto de ajo puede ayudar a combatir el cáncer",
-     "resumo": "Un estudio realizado en la Facultad de Ciencias Farmacéuticas de Ribeirão Preto de la USP probó en el laboratorio el uso de disulfuro de dialilo aplicado a células tumorales colorrectales junto con medicamentos de quimioterapia. La combinación..."
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "“Anatomia do Caos”: filme magistral marca os cinco anos da CPI da covid-19",
    "resumo": "Por Deisy Ventura , professora títular da Faculdade de Saúde Pública da USP",
    "url": "https://jornal.usp.br/articulistas/deisy-ventura/anatomia-do-caos-filme-magistral-marca-os-cinco-anos-da-cpi-da-covid-19/",
@@ -127,27 +105,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Sistema com realidade virtual e IA aprimora detecção de declínio cognitivo",
-   "resumo": "Ferramenta em desenvolvimento na USP integra experiências imersivas, rastreamento do olhar e respostas neurológicas para identificar o início de doenças neurodegenerativas",
-   "url": "https://agencia.fapesp.br/sistema-com-realidade-virtual-e-ia-aprimora-deteccao-de-declinio-cognitivo/59460",
-   "fonte": "Agência FAPESP",
+   "titulo": "Realidade virtual e IA auxiliam na detecção precoce do declínio cognitivo em idosos",
+   "resumo": "Pesquisa do Instituto de Ciências Matemáticas e de Computação (ICMC) da USP, em São Carlos, combina realidade virtual e inteligência artificial para identificar sinais precoces de declínio cognitivo em idosos",
+   "url": "https://jornal.usp.br/diversidade/realidade-virtual-e-ia-auxiliam-na-deteccao-precoce-do-declinio-cognitivo-em-idosos/",
+   "fonte": "Jornal da USP",
    "idioma": "pt",
-   "data": "2026-10-23T07:43:06.825522+00:00",
-   "tema": "Saúde",
-   "relevancia": 10,
-   "imagem": "https://agencia.fapesp.br/files/post/59460.jpg",
+   "data": "2026-10-23T15:13:24+00:00",
+   "tema": "Ciência",
+   "relevancia": 9,
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261022_equipamento2.jpg",
    "foco": {
-    "x": 0,
+    "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "System with virtual reality and AI enhances detection of cognitive decline",
-     "resumo": "Tool under development at USP integrates immersive experiences, gaze tracking and neurological responses to identify the onset of neurodegenerative diseases"
+     "titulo": "Virtual reality and AI aid in the early detection of cognitive decline in the elderly",
+     "resumo": "Research from USP's Institute of Mathematical and Computer Sciences (ICMC) in São Carlos combines virtual reality and artificial intelligence to identify early signs of cognitive decline in the elderly"
     },
     "es": {
-     "titulo": "Sistema con realidad virtual e IA mejora la detección del deterioro cognitivo",
-     "resumo": "Herramienta en desarrollo en la USP que integra experiencias inmersivas, seguimiento de la mirada y respuestas neurológicas para identificar la aparición de enfermedades neurodegenerativas"
+     "titulo": "La realidad virtual y la IA ayudan en la detección precoz del deterioro cognitivo en las personas mayores",
+     "resumo": "La investigación del Instituto de Matemáticas y Ciencias de la Computación (ICMC) de la USP en São Carlos combina la realidad virtual y la inteligencia artificial para identificar signos tempranos de deterioro cognitivo en los ancianos"
     }
    }
   },
@@ -222,27 +200,27 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Exame de sangue poderá antecipar o risco de hipertensão pulmonar",
-   "resumo": "Estudo analisou cerca de 5 mil proteínas e identificou dez associadas ao desenvolvimento da doença. Resultados apontam a NOTCH3 como possível alvo para novos tratamentos",
-   "url": "https://agencia.fapesp.br/exame-de-sangue-podera-antecipar-o-risco-de-hipertensao-pulmonar/59458",
-   "fonte": "Agência FAPESP",
+   "titulo": "Colóquio internacional debate relações entre literatura, textos bíblicos e experiência humana",
+   "resumo": "Evento reúne pesquisadores nacionais e internacionais para discutir teopoética, imaginação moral e as interfaces entre religião e arte",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/23/coloquio-internacional-debate-relacoes-entre-literatura-textos-biblicos-e-experiencia-humana/",
+   "fonte": "Jornal da Unicamp",
    "idioma": "pt",
-   "data": "2026-10-23T07:43:06.825522+00:00",
-   "tema": "Saúde",
-   "relevancia": 8,
-   "imagem": "https://agencia.fapesp.br/files/post/59458.jpg",
+   "data": "2026-10-23T19:31:25+00:00",
+   "tema": "Ciência",
+   "relevancia": 7,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261023_Poeticas-biblicas_Capa.jpg",
    "foco": {
     "x": 50,
     "y": 50
    },
    "i18n": {
     "en": {
-     "titulo": "Blood test may anticipate the risk of pulmonary hypertension",
-     "resumo": "A study analyzed about 5,000 proteins and identified ten associated with the development of the disease. Results point to NOTCH3 as a possible target for new treatments"
+     "titulo": "International colloquium discusses relations between literature, biblical texts and human experience",
+     "resumo": "Event brings together national and international researchers to discuss theopoetics, moral imagination and the interfaces between religion and art"
     },
     "es": {
-     "titulo": "El análisis de sangre puede anticipar el riesgo de hipertensión pulmonar",
-     "resumo": "Un estudio analizó alrededor de 5.000 proteínas e identificó diez asociadas con el desarrollo de la enfermedad. Los resultados apuntan a NOTCH3 como un posible objetivo para nuevos tratamientos"
+     "titulo": "Coloquio internacional sobre las relaciones entre la literatura, los textos bíblicos y la experiencia humana",
+     "resumo": "El evento reúne a investigadores nacionales e internacionales para discutir la teopoética, la imaginación moral y las interfaces entre la religión y el arte"
     }
    }
   },
@@ -270,6 +248,31 @@
     }
    },
    "resumo_original": "Infectious-disease researchers say the risk of the livestock pathogen moving between people is low."
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Com mais de 60 anos, Jornal estudantil é memória viva da Unicamp",
+   "resumo": "“O Patológico”, criado em 1964 por estudantes de medicina antes mesmo da fundação da Unicamp, percorreu gerações e conta a história da Universidade",
+   "url": "https://jornal.unicamp.br/noticias/2026/10/22/com-mais-de-60-anos-jornal-estudantil-e-memoria-viva-da-unicamp/",
+   "fonte": "Jornal da Unicamp",
+   "idioma": "pt",
+   "data": "2026-10-22T12:00:00+00:00",
+   "tema": "Saúde",
+   "relevancia": 6,
+   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/09/Man_20261021_O-Patologico_Capa.jpg",
+   "foco": {
+    "inteira": true
+   },
+   "i18n": {
+    "en": {
+     "titulo": "With more than 60 years, Jornal Estudantil is a living memory of Unicamp",
+     "resumo": "\"O Patológico\", created in 1964 by medical students even before the foundation of Unicamp, spanned generations and tells the story of the University"
+    },
+    "es": {
+     "titulo": "Con más de 60 años, el Jornal Estudantil es un recuerdo vivo de la Unicamp",
+     "resumo": "\"O Patológico\", creado en 1964 por estudiantes de medicina incluso antes de la fundación de la Unicamp, abarcó generaciones y cuenta la historia de la Universidad"
+    }
+   }
   },
   {
    "tipo": "noticia",
@@ -1162,6 +1165,8 @@
   "coloquio internacional debate relacoes entre literatura textos biblicos e experiencia humana": "2026-10-23T22:22:55.460377+00:00",
   "nasa lays out a packed 14 day schedule for 2027s artemis iii moon mission": "2026-10-23T22:22:55.460377+00:00",
   "anatomia do caos filme magistral marca os cinco anos da cpi da covid 19": "2026-10-24T00:54:05.428107+00:00",
-  "warhound wants to engineer and clone military superdogscan they do it": "2026-10-24T00:54:05.428107+00:00"
+  "warhound wants to engineer and clone military superdogscan they do it": "2026-10-24T00:54:05.428107+00:00",
+  "realidade virtual e ia auxiliam na deteccao precoce do declinio cognitivo em idosos": "2026-10-24T06:00:58.589346+00:00",
+  "com mais de 60 anos jornal estudantil e memoria viva da unicamp": "2026-10-24T06:00:58.589346+00:00"
  }
 }
