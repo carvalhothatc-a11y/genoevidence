@@ -1,32 +1,6 @@
 {
- "atualizado_em": "2026-10-24T14:39:39.836426+00:00",
+ "atualizado_em": "2026-10-24T18:14:54.927000+00:00",
  "noticias": [
-  {
-   "tipo": "noticia",
-   "titulo": "Câncer de mama em idade reprodutiva: como conciliar o tratamento com o desejo de engravidar?",
-   "resumo": "Tratamento pode exigir o adiamento da gravidez, mas estratégias como a criopreservação de óvulos e embriões permitem preservar a fertilidade e planejar a maternidade após a terapia",
-   "url": "https://jornal.usp.br/radio-usp/cancer-de-mama-em-idade-reprodutiva-como-conciliar-o-tratamento-com-o-desejo-de-engravidar/",
-   "fonte": "Jornal da USP",
-   "idioma": "pt",
-   "data": "2026-10-23T18:04:58+00:00",
-   "tema": "Câncer",
-   "relevancia": 12,
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2024/05/20240502_lacinho-cancer-de-mama-destaque.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "Breast cancer of reproductive age: how to reconcile treatment with the desire to become pregnant?",
-     "resumo": "Treatment may require postponement of pregnancy, but strategies such as egg and embryo cryopreservation allow you to preserve fertility and plan for motherhood after therapy"
-    },
-    "es": {
-     "titulo": "Cáncer de mama en edad reproductiva: ¿cómo conciliar el tratamiento con el deseo de quedar embarazada?",
-     "resumo": "El tratamiento puede requerir el aplazamiento del embarazo, pero estrategias como la crioconservación de óvulos y embriones le permiten preservar la fertilidad y planificar la maternidad después de la terapia"
-    }
-   }
-  },
   {
    "tipo": "noticia",
    "titulo": "“Anatomia do Caos”: filme magistral marca os cinco anos da CPI da covid-19",
@@ -61,7 +35,7 @@
    "idioma": "pt",
    "data": "2026-10-23T15:13:24+00:00",
    "tema": "Ciência",
-   "relevancia": 9,
+   "relevancia": 8,
    "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261022_equipamento2.jpg",
    "foco": {
     "x": 50,
@@ -80,32 +54,6 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Colóquio internacional debate relações entre literatura, textos bíblicos e experiência humana",
-   "resumo": "Evento reúne pesquisadores nacionais e internacionais para discutir teopoética, imaginação moral e as interfaces entre religião e arte",
-   "url": "https://jornal.unicamp.br/noticias/2026/10/23/coloquio-internacional-debate-relacoes-entre-literatura-textos-biblicos-e-experiencia-humana/",
-   "fonte": "Jornal da Unicamp",
-   "idioma": "pt",
-   "data": "2026-10-23T19:31:25+00:00",
-   "tema": "Ciência",
-   "relevancia": 7,
-   "imagem": "https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/10/JU_20261023_Poeticas-biblicas_Capa.jpg",
-   "foco": {
-    "x": 50,
-    "y": 50
-   },
-   "i18n": {
-    "en": {
-     "titulo": "International colloquium discusses relations between literature, biblical texts and human experience",
-     "resumo": "Event brings together national and international researchers to discuss theopoetics, moral imagination and the interfaces between religion and art"
-    },
-    "es": {
-     "titulo": "Coloquio internacional sobre las relaciones entre la literatura, los textos bíblicos y la experiencia humana",
-     "resumo": "El evento reúne a investigadores nacionales e internacionales para discutir la teopoética, la imaginación moral y las interfaces entre la religión y el arte"
-    }
-   }
-  },
-  {
-   "tipo": "noticia",
    "titulo": "Evento discute vigilância em saúde integrada no Cerrado",
    "resumo": "",
    "url": "https://agencia.fiocruz.br/evento-discute-vigilancia-em-saude-integrada-no-cerrado",
@@ -113,7 +61,7 @@
    "idioma": "pt",
    "data": "2026-10-23T18:11:42+00:00",
    "tema": "Saúde",
-   "relevancia": 7,
+   "relevancia": 6,
    "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemDestaque/Cerrado_d.jpg",
    "foco": {
     "x": 50,
@@ -137,7 +85,7 @@
    "idioma": "pt",
    "data": "2026-10-23T15:10:55+00:00",
    "tema": "Câncer",
-   "relevancia": 7,
+   "relevancia": 6,
    "imagem": "https://agencia.fiocruz.br/sites/agencia.fiocruz.br/files/imagemNavegacaoEditorial/OutubroRosa_d.jpg",
    "foco": {
     "x": 50,
@@ -156,28 +104,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "Espera-se que a vacina personalizada contra o câncer seja aprovada no próximo ano",
-   "resumo": "Uma vacina sob medida que é adaptada para direcionar o câncer de pele exclusivo de um indivíduo reduziu as taxas de recorrência ou morte em um estudo em estágio avançado, fazendo com que uma aprovação fosse esperada",
-   "url": "https://www.newscientist.com/article/2595599-personalised-cancer-vaccine-expected-to-be-approved-next-year/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fonte": "New Scientist",
-   "idioma": "en",
-   "data": "2026-10-23T14:42:27+00:00",
-   "tema": "Câncer",
+   "titulo": "Leitura, música e jogos aproximam idosos do conhecimento sobre o cérebro",
+   "resumo": "Projeto coordenado por professora da Faculdade de Medicina de Ribeirão Preto estimula a memória e fortalece vínculos sociais com oficinas que atenderam mais de 50 idosos em 2026",
+   "url": "https://jornal.usp.br/universidade/leitura-musica-e-jogos-aproximam-idosos-do-conhecimento-sobre-o-cerebro/",
+   "fonte": "Jornal da USP",
+   "idioma": "pt",
+   "data": "2026-10-23T11:22:30+00:00",
+   "tema": "Saúde",
    "relevancia": 6,
-   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317849720.jpg",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/10/20261020_cravinhos.jpg",
    "foco": {
-    "x": 50,
-    "y": 50
+    "inteira": true
    },
-   "titulo_original": "Personalised cancer vaccine expected to be approved next year",
-   "traduzido": true,
    "i18n": {
+    "en": {
+     "titulo": "Reading, music and games bring older people closer to knowledge about the brain",
+     "resumo": "Project coordinated by a professor at the Faculty of Medicine of Ribeirão Preto stimulates memory and strengthens social bonds with workshops that served more than 50 elderly people in 2026"
+    },
     "es": {
-     "titulo": "Se espera que la vacuna personalizada contra el cáncer se apruebe el próximo año",
-     "resumo": "Una vacuna a medida que se adapta para apuntar a las tasas de recurrencia o muerte reducidas de cáncer de piel únicas de un individuo en un ensayo en etapa tardía, lo que hace que se espere una aprobación"
+     "titulo": "La lectura, la música y los juegos acercan a las personas mayores al conocimiento sobre el cerebro",
+     "resumo": "Proyecto coordinado por un profesor de la Facultad de Medicina de Ribeirão Preto estimula la memoria y fortalece los lazos sociales con talleres que atendieron a más de 50 personas mayores en 2026"
     }
-   },
-   "resumo_original": "A bespoke vaccine that is tailored to target an individual's unique skin cancer reduced rates of recurrence or death in a late-stage trial, making an approval expected"
+   }
   },
   {
    "tipo": "noticia",
@@ -203,6 +151,31 @@
     }
    },
    "resumo_original": "Scientists have discovered that switching off a protein called Mitch makes human cells burn more fat and prevents new fat cells from developing. The breakthrough builds on experiments in mice that showed remarkable resistance to obesity…"
+  },
+  {
+   "tipo": "noticia",
+   "titulo": "Espera-se que a vacina personalizada contra o câncer seja aprovada no próximo ano",
+   "resumo": "Uma vacina sob medida que é adaptada para direcionar o câncer de pele exclusivo de um indivíduo reduziu as taxas de recorrência ou morte em um estudo em estágio avançado, fazendo com que uma aprovação fosse esperada",
+   "url": "https://www.newscientist.com/article/2595599-personalised-cancer-vaccine-expected-to-be-approved-next-year/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fonte": "New Scientist",
+   "idioma": "en",
+   "data": "2026-10-23T14:42:27+00:00",
+   "tema": "Câncer",
+   "relevancia": 5,
+   "imagem": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317849720.jpg",
+   "foco": {
+    "x": 50,
+    "y": 50
+   },
+   "titulo_original": "Personalised cancer vaccine expected to be approved next year",
+   "traduzido": true,
+   "i18n": {
+    "es": {
+     "titulo": "Se espera que la vacuna personalizada contra el cáncer se apruebe el próximo año",
+     "resumo": "Una vacuna a medida que se adapta para apuntar a las tasas de recurrencia o muerte reducidas de cáncer de piel únicas de un individuo en un ensayo en etapa tardía, lo que hace que se espere una aprobación"
+    }
+   },
+   "resumo_original": "A bespoke vaccine that is tailored to target an individual's unique skin cancer reduced rates of recurrence or death in a late-stage trial, making an approval expected"
   },
   {
    "tipo": "noticia",
@@ -351,28 +324,28 @@
   },
   {
    "tipo": "noticia",
-   "titulo": "A NASA estabelece um cronograma de 14 dias para a missão lunar Artemis III de 2027",
-   "resumo": "A missão, prevista para o verão de 2027, será fundamental para decidir se a SpaceX ou a Blue Origin fornecem o módulo lunar para a primeira viagem tripulada à superfície lunar em décadas",
-   "url": "https://www.scientificamerican.com/article/nasa-lays-out-a-packed-14-day-schedule-for-2027s-artemis-iii-moon-mission/",
+   "titulo": "Warhound quer projetar e clonar supercães militares - eles podem fazer isso?",
+   "resumo": "A startup é ideia de um dos fundadores da Anduril, empresa de tecnologia militar, e da Colossal Biosciences, empresa de biotecnologia conhecida por seus esforços de extinção",
+   "url": "https://www.scientificamerican.com/article/warhound-wants-to-engineer-and-clone-military-super-dogs-can-they-do-it/",
    "fonte": "Scientific American",
    "idioma": "en",
-   "data": "2026-10-23T20:20:00+00:00",
-   "tema": "Espaço",
+   "data": "2026-10-23T19:05:00+00:00",
+   "tema": "Ciência",
    "relevancia": 4,
-   "imagem": "https://static.scientificamerican.com/dam/m/3114b95c23267e01/original/orion_transfer.jpg?m=1792789627.921&w=1200",
+   "imagem": "https://static.scientificamerican.com/dam/asset/418a8a79-9bf9-4317-8974-95b4650cc4d9/warhound.png?m=1792783306.598&w=1200",
    "foco": {
     "x": 50,
     "y": 50
    },
-   "titulo_original": "NASA lays out a packed 14-day schedule for 2027’s Artemis III moon mission",
+   "titulo_original": "Warhound wants to engineer and clone military superdogs—can they do it?",
    "traduzido": true,
    "i18n": {
     "es": {
-     "titulo": "La NASA establece un calendario repleto de 14 días para la misión lunar Artemisa III de 2027",
-     "resumo": "La misión, programada para el verano de 2027, será fundamental para decidir si SpaceX o Blue Origin suministran el módulo de aterrizaje lunar para el primer viaje tripulado a la superficie lunar en décadas"
+     "titulo": "Warhound quiere diseñar y clonar superperros militares, ¿pueden hacerlo?",
+     "resumo": "La puesta en marcha es una creación de un fundador de Anduril, la empresa de tecnología militar, y Colossal Biosciences, una empresa de biotecnología conocida por sus esfuerzos de desextinción"
     }
    },
-   "resumo_original": "The mission, scheduled for the summer of 2027, will include be pivotal in deciding whether SpaceX or Blue Origin supplies the lunar lander for the first crewed trip to the lunar surface in decades"
+   "resumo_original": "The start-up is the brainchild of a founder of Anduril, the military tech firm, and Colossal Biosciences, a biotech company known for its de-extinction efforts"
   }
  ],
  "artigos": [
@@ -933,13 +906,6 @@
  ],
  "erros": [],
  "mostradas": {
-  "apoio continuo a pesquisa basica sustenta inovacao e respostas a crises destacam especialistas": "2026-10-14T17:22:06.100709+00:00",
-  "tom gauld dna and fossil evidence proved they were close relatives": "2026-10-14T17:22:06.100709+00:00",
-  "this el nino will bring predictable disasters so why arent we ready": "2026-10-14T17:22:06.100709+00:00",
-  "how a year of extreme weather and a super el nino will affect fall foliage": "2026-10-14T17:22:06.100709+00:00",
-  "climate scientists issue a sobering diagnosis about earth s vital signs": "2026-10-14T17:22:06.100709+00:00",
-  "scientists may have overlooked a hidden alzheimer s culprit for decades": "2026-10-14T17:22:06.100709+00:00",
-  "cornell scientists identify rare human genetic disorder in two unusually long legged cats": "2026-10-14T17:22:06.100709+00:00",
   "new first proof exam reveals how ai powered math is a pay to play sport": "2026-10-14T20:50:32.551609+00:00",
   "self replicating ais are a great digital horror story heres the reality": "2026-10-14T20:50:32.551609+00:00",
   "we can rescue the amoc after its collapse but it wont be easy": "2026-10-14T20:50:32.551609+00:00",
@@ -1163,6 +1129,7 @@
   "scientists discover a hidden switch that burns fat and blocks new fat cells": "2026-10-24T14:39:39.836426+00:00",
   "could lowering high blood pressure be as simple as stimulating your ear": "2026-10-24T14:39:39.836426+00:00",
   "your blood could reveal inflammatory bowel disease 10 years before diagnosis": "2026-10-24T14:39:39.836426+00:00",
-  "genetic and multi omic insights into inflammation and metabolism in a french polynesian cohort": "2026-10-24T14:39:39.836426+00:00"
+  "genetic and multi omic insights into inflammation and metabolism in a french polynesian cohort": "2026-10-24T14:39:39.836426+00:00",
+  "leitura musica e jogos aproximam idosos do conhecimento sobre o cerebro": "2026-10-24T18:14:54.927000+00:00"
  }
 }
